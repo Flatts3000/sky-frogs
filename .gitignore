@@ -30,5 +30,8 @@ desktop.ini
 crash-reports/
 logs/
 
+# Ephemeral commit message buffers (used by long heredoc commit messages)
+.commit-msg-tmp
+
 # Reference pack (downloaded artifacts, not part of our work)
 *.zip
