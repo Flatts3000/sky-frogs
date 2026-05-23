@@ -20,7 +20,7 @@ Any mod that fails all three is rejected.
 
 | Mod                   | Role                                                                 | Notes                                                |
 |-----------------------|----------------------------------------------------------------------|------------------------------------------------------|
-| **Productive Frogs**  | The mod the pack is built around                                     | 1.21.11; not yet published on Modrinth/CF — local jar pending |
+| **Productive Frogs**  | The mod the pack is built around                                     | 1.21.11; not yet published on CurseForge — local jar pending |
 
 ### 2. Skyblock fundamentals
 

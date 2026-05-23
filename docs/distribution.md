@@ -1,35 +1,32 @@
 # Distribution
 
-> **Status:** DRAFT — non-canonical. Modrinth + CurseForge dual-publishing is the working assumption. Versioning policy, changelog format, and release workflow are first-draft proposals.
+> **Status:** DRAFT — non-canonical except for the CurseForge-only call (decided 2026-05-23, see `docs/backlog.md`). Versioning policy, changelog format, and release workflow are first-draft proposals.
 
 How Sky Frogs ships, where players install it from, and how releases happen.
 
 ## Channels
 
-| Channel        | URL pattern                                          | Format     | Primary?  |
-|----------------|------------------------------------------------------|------------|-----------|
-| **Modrinth**   | `modrinth.com/modpack/sky-frogs`                     | `.mrpack`  | Yes       |
-| **CurseForge** | `curseforge.com/minecraft/modpacks/sky-frogs`        | manifest zip | Yes     |
-| **GitHub Releases** | `github.com/Flatts3000/sky-frogs/releases`      | both       | Mirror    |
+| Channel             | URL pattern                                          | Format        | Primary? |
+|---------------------|------------------------------------------------------|---------------|----------|
+| **CurseForge**      | `curseforge.com/minecraft/modpacks/sky-frogs`        | manifest zip  | Yes      |
+| **GitHub Releases** | `github.com/Flatts3000/sky-frogs/releases`           | CF zip + server zip mirror | Artifact mirror — not an install path |
 
-Modrinth is the primary channel because:
-- Free hosting with no review backlog for new modpacks.
-- Better revision history and version pinning UX.
-- Open-source community alignment matches the MIT pack content.
-- packwiz outputs `.mrpack` natively.
+**CurseForge is the sole player-facing channel.** Modrinth was considered but ruled out:
 
-CurseForge is co-equal in priority because of the **user base size** — it's still the default launcher for many players. The cost is going through CF's modpack approval process (1–3 days first time, faster on subsequent versions).
+- The FTB utility stack (FTB Library / Quests / Teams / Chunks / Ranks / Essentials) is CurseForge-only.
+- `packwiz modrinth export` inlines CF-only mods as `overrides/mods/*.jar`. Modrinth's uploader rejects this on redistribution policy grounds.
+- FTB Quests is the canonical questbook (load-bearing for the pack), so dropping the FTB stack to enable Modrinth isn't an option.
+- Productive Frogs is also CF-only by the same constraint.
+
+GitHub Releases mirrors each tag's CF zip + server zip for transparency, rollback, and source-of-truth artifact hosting. Players are directed to CurseForge.
 
 ## Setup checklist (one-time, before v0.1)
 
-- [ ] **Claim Modrinth slug `sky-frogs`** — create empty project, mark as Modpack, set description, license MIT.
-- [ ] **Claim CurseForge slug `sky-frogs`** — submit empty project for approval. Allow 1-3 business days.
-- [ ] **GitHub repo** — create `Flatts3000/sky-frogs` (public), push existing local commits.
-- [ ] **Modrinth API token** — generate in Modrinth account → settings → API tokens. Save as GitHub secret `MODRINTH_TOKEN`.
-- [ ] **CurseForge API token** — generate in CurseForge account → API. Save as `CF_API_TOKEN`.
-- [ ] **Modrinth project ID** — save as `MODRINTH_PROJECT_ID` secret (referenced by the release action).
-- [ ] **CurseForge project ID** — save as `CF_PROJECT_ID`.
-- [ ] **Branding assets** — upload logo / banner / hero / gallery to both project pages. See [`pack_metadata.md`](./pack_metadata.md) for asset spec.
+- [ ] **Claim CurseForge slug `sky-frogs`** — submit empty project for approval. Allow 1–3 business days. Submit early in the v0.1 cycle so approval runs in parallel with content work.
+- [ ] **GitHub repo** — `Flatts3000/sky-frogs` exists; community health files landed.
+- [ ] **CurseForge API token** — generate in CurseForge account → API. Save as GitHub secret `CF_API_TOKEN`.
+- [ ] **CurseForge project ID** — save as `CF_PROJECT_ID` (referenced by the release action).
+- [ ] **Branding assets** — upload logo / banner / hero / gallery to the CF project page. See [`pack_metadata.md`](./pack_metadata.md) for asset spec.
 
 ## Release workflow
 
@@ -44,13 +41,12 @@ git push origin v0.1.0
 The `release.yml` GitHub Action takes over:
 
 1. Checks out the tag commit.
-2. Runs `tools/build_mrpack.sh` and `tools/build_cf_zip.sh`.
-3. Creates a GitHub release with both artifacts attached and a changelog excerpt from `CHANGELOG.md`.
-4. Uploads the `.mrpack` to Modrinth via API.
-5. Uploads the CF zip to CurseForge via API.
-6. Both uploads set the same version number, changelog, and `game_versions: [1.21.11]`, `loaders: [neoforge]`.
+2. Runs `tools/build_cf_zip.sh` (planned) — `packwiz refresh && packwiz curseforge export`.
+3. Creates a GitHub release with the CF zip + server zip attached and a changelog excerpt from `CHANGELOG.md`.
+4. Uploads the CF zip to CurseForge via API.
+5. Sets `game_versions: [1.21.11]`, `loaders: [neoforge]` on the CF release.
 
-Manual release path (fallback) if the action fails: download artifacts from the GitHub release page, upload manually via each platform's web UI.
+Manual release path (fallback) if the action fails: download the artifact from the GitHub release page, upload manually via the CurseForge web UI.
 
 ## Versioning policy (recap from pack_metadata.md)
 
@@ -90,23 +86,22 @@ For 0.x releases the changelog can be brisk; for 1.x and beyond, write player-fa
 
 ## Server pack
 
-Each release ships a `sky-frogs-server-<version>.zip` alongside the client artifacts. Built by `tools/build_server.sh` (TBD), which:
+Each release ships a `sky-frogs-server-<version>.zip` alongside the client artifact. Built by `tools/build_server.sh` (TBD), which:
 
 1. Resolves all mod jars locally via `packwiz install`.
 2. Copies `config/`, `defaultconfigs/`, `kubejs/`, `mods/` into a fresh directory.
 3. Adds `install.bat`, `install.sh`, `user_jvm_args.txt` (NeoForge installer scripts).
 4. Zips the lot.
 
-Server pack is uploaded to GitHub releases only — not to Modrinth/CurseForge (their server-pack workflow is per-platform and clunky).
+Server pack is uploaded to GitHub Releases only — CurseForge's server-pack workflow is per-platform and clunky. Pack hosts pull from GH Releases.
 
 ## Cross-promotion / discoverability
 
 For initial launch (v0.1):
 
-- **r/feedthebeast** subreddit announcement post — link Modrinth, CurseForge, GitHub.
+- **r/feedthebeast** subreddit announcement post — link CurseForge, GitHub.
 - **r/Minecraft** modded showcase post (optional, lower priority — usually noisy).
-- **Discord communities** — FTB Discord modpacks channel, NeoForge Discord modpack-showcase.
-- **Cross-link from Productive Frogs mod page** — both Modrinth and CurseForge listings for the mod should mention "Now featured in the Sky Frogs modpack!"
+- **Cross-link from Productive Frogs mod page** on CurseForge — should mention "Now featured in the Sky Frogs modpack!"
 
 Avoid:
 - Cross-posting to /r/Minecraft general — wrong audience.
@@ -120,7 +115,7 @@ Avoid:
 
 ## Documentation
 
-Modrinth and CurseForge project pages should both contain:
+The CurseForge project page should contain:
 
 - **One-paragraph hook** — "Skyblock where frogs replace mining."
 - **A short feature list** — five bullets.
@@ -130,21 +125,19 @@ Modrinth and CurseForge project pages should both contain:
 - **A short FAQ** — "Why frogs not bees? Is this related to Productive Bees? Can I add my own modded resource as a frog target?"
 - **Cross-link to GitHub repo** for issue reporting and source.
 
-Keep both project pages identical content-wise. Edit one, edit the other; templates live in `docs/distribution/page_templates.md` (TBD).
-
 ## Issue reporting
 
 - **Bugs:** GitHub Issues — `github.com/Flatts3000/sky-frogs/issues`. Template: pack version, MC version, mod loader version, steps to reproduce, log excerpt.
-- **Balance feedback:** GitHub Discussions or a dedicated Discord channel.
+- **Balance feedback:** GitHub Discussions.
 - **Suggestions for new mods to include:** GitHub Discussions, tagged `mod-suggestion`. Most will be declined per the [`mod_list.md`](./mod_list.md) selection criteria — that's fine, it's about being intentional, not blanket-rejecting.
 
 ## License notes (recap)
 
-MIT for pack-authored content only. Modrinth and CurseForge both have "license" fields — set to MIT but include in the description: *"Each bundled mod retains its own license. Refer to each mod's CurseForge or Modrinth page for license terms."*
+MIT for pack-authored content only. CurseForge has a "license" field — set to MIT but include in the description: *"Each bundled mod retains its own license. Refer to each mod's CurseForge page for license terms."*
 
 ## Open distribution questions
 
 - Do we set up a **dedicated server template** (Pterodactyl egg, Docker compose) for community hosts? Defer to post-v1.0 unless community demand emerges.
-- Do we offer a **client launcher one-click install** beyond Modrinth App and CurseForge launcher? E.g., `prismlauncher://...` URLs. Probably overengineering for v0.1.
+- Do we offer a **client launcher one-click install** beyond the CurseForge launcher? E.g., `prismlauncher://...` URLs. Probably overengineering for v0.1.
 - Should we ship a **localization workflow** (Crowdin? Weblate?) for community translations? Defer; en_us only at v1.0.
 - **Sponsorship / donations** — do we accept? If so, Ko-fi link in pack pages. Decision is the author's call, not a technical question.

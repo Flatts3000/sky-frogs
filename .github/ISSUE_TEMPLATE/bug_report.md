@@ -26,7 +26,7 @@ assignees: []
 - **Sky Frogs version:**
 - **Minecraft version:**
 - **NeoForge version:**
-- **Launcher:** <!-- Modrinth App / CurseForge / Prism / MultiMC / other -->
+- **Launcher:** <!-- CurseForge / Prism / MultiMC / ATLauncher / other -->
 - **Single-player or server:**
 - **Other mods added on top of the pack:** <!-- if any -->
 

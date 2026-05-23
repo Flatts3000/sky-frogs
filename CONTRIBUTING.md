@@ -20,7 +20,7 @@ If you're not sure where something belongs, open a Discussion before writing cod
 
 ## Reporting Issues
 
-- **Pack bugs**: open an issue using the **Bug Report** template. Include the pack version, Minecraft version, NeoForge version, launcher (Modrinth App / CurseForge / Prism / other), and steps to reproduce. Attach `latest.log` from `.minecraft/logs/` — long logs go in a gist.
+- **Pack bugs**: open an issue using the **Bug Report** template. Include the pack version, Minecraft version, NeoForge version, launcher (CurseForge / Prism / other), and steps to reproduce. Attach `latest.log` from `.minecraft/logs/` — long logs go in a gist.
 - **Mod inclusion / variant suggestions**: use the **Mod Suggestion** template. The pack is intentionally curated — most suggestions are declined per [`docs/mod_list.md`](./docs/mod_list.md). That's not a rejection of your taste; it's a scope decision. Suggestions that fit the existing tier structure or fill a clear gap are the ones most likely to land.
 - **Design / progression feedback**: use the **Feature Request** template. Frame it as the problem you're trying to solve, not just the change you want.
 - **General questions**: use [GitHub Discussions](https://github.com/Flatts3000/sky-frogs/discussions) rather than the issue tracker.

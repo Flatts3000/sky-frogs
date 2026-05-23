@@ -19,8 +19,8 @@ this repository:
 Mods bundled with the pack — or referenced by `packwiz` manifests and
 downloaded at install time — each retain their own license. Refer to each
 mod's distribution page on
-[CurseForge](https://www.curseforge.com/minecraft/modpacks/sky-frogs) or
-[Modrinth](https://modrinth.com/modpack/sky-frogs) for licensing terms.
+[CurseForge](https://www.curseforge.com/minecraft/modpacks/sky-frogs) for
+licensing terms.
 
 This pack does not relicense, sublicense, or modify the terms of any bundled
 mod. Mod authors retain all rights to their work.

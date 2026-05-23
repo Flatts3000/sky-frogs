@@ -6,9 +6,9 @@ How the Sky Frogs repo is organized, what tooling builds it, and where each kind
 
 ## Tool: packwiz
 
-We use [**packwiz**](https://github.com/packwiz/packwiz) — a CLI that manages mod versions in TOML files and exports both Modrinth `.mrpack` and CurseForge zip outputs from a single source tree. Industry-standard for community NeoForge packs in 2026.
+We use [**packwiz**](https://github.com/packwiz/packwiz) — a CLI that manages mod versions in TOML files and exports CurseForge zip outputs (and Modrinth `.mrpack`, which we don't use — see [`distribution.md`](./distribution.md)). Industry-standard for community NeoForge packs in 2026.
 
-Install: pre-built binaries on the packwiz GitHub releases page, or `go install github.com/packwiz/packwiz@latest`. Available on `winget` (`winget install packwiz`) once approved.
+Install: `go install github.com/packwiz/packwiz@latest`. (packwiz has no GitHub releases and isn't on winget; Go install from source is the only path.)
 
 ## Target directory layout (v0.1)
 
@@ -22,8 +22,8 @@ sky-frogs/                            # this repo root
 ├── .gitattributes
 ├── .github/
 │   └── workflows/
-│       ├── ci.yml                    # lint, validate packwiz, build mrpack + cf zip
-│       └── release.yml               # on tag: build + publish to Modrinth + CurseForge
+│       ├── ci.yml                    # lint, validate packwiz, build cf zip
+│       └── release.yml               # on tag: build + publish to CurseForge + GH Releases
 ├── docs/                             # all planning + design docs (this folder)
 │   ├── design_overview.md
 │   ├── pack_metadata.md
@@ -47,7 +47,6 @@ sky-frogs/                            # this repo root
 │   │   └── ... (one per mod from mod_list.md)
 │   └── config/, defaultconfigs/, kubejs/, ...    # overrides — see below
 └── tools/                            # build helper scripts (Python / shell)
-    ├── build_mrpack.sh
     ├── build_cf_zip.sh
     └── slime_variant_codegen.py     # generates kubejs/data/.../slime_variant/*.json
 ```
@@ -104,26 +103,11 @@ pack/
 1. pack.toml + per-mod .pw.toml + overrides
         ↓ (packwiz refresh)
 2. index.toml regenerated
-        ↓ (packwiz mrpack export)
-3. sky-frogs-<version>.mrpack          → upload to Modrinth
         ↓ (packwiz curseforge export)
-4. sky-frogs-<version>.zip             → upload to CurseForge
+3. sky-frogs-<version>.zip             → upload to CurseForge + attach to GH Release
 ```
-
-The two export commands consume the same `pack/` tree — no duplicated mod lists, no manual sync.
 
 ## Helper scripts (`tools/`)
-
-### `tools/build_mrpack.sh`
-```sh
-#!/usr/bin/env bash
-set -euo pipefail
-cd "$(dirname "$0")/../pack"
-packwiz refresh
-packwiz mrpack export
-mv ./*.mrpack ../dist/
-echo "Built dist/$(basename ../dist/*.mrpack)"
-```
 
 ### `tools/build_cf_zip.sh`
 ```sh
@@ -160,31 +144,28 @@ Lighter than embedding generation in KubeJS startup scripts, and the JSON files 
 ### `.github/workflows/ci.yml` — on every PR
 
 1. `packwiz refresh --no-print-confirms` (verify TOML parses, mods resolve)
-2. Build mrpack — fail if export errors
-3. Build CF zip — fail if export errors
-4. Validate every `.snbt` quest file parses (use FTB Quests' format spec)
-5. Lint KubeJS scripts (eslint with a permissive config — we don't enforce style hard, just catch syntax errors)
-6. Verify `tools/slime_variant_codegen.py` regenerates JSONs idempotently (re-run twice, diff zero)
+2. Build CF zip — fail if export errors
+3. Validate every `.snbt` quest file parses (use FTB Quests' format spec)
+4. Lint KubeJS scripts (eslint with a permissive config — we don't enforce style hard, just catch syntax errors)
+5. Verify `tools/slime_variant_codegen.py` regenerates JSONs idempotently (re-run twice, diff zero)
 
 ### `.github/workflows/release.yml` — on tag push (`v*`)
 
-1. Build mrpack + CF zip
-2. Create GitHub release with both artifacts attached + changelog excerpt
-3. Upload mrpack to Modrinth via [`modrinth-create-version` action](https://github.com/marketplace/actions/modrinth-create-version) (needs MODRINTH_TOKEN secret)
-4. Upload CF zip to CurseForge via [`curseforge-upload` action](https://github.com/marketplace/actions/upload-to-curseforge) (needs CF_API_TOKEN secret)
+1. Build CF zip
+2. Create GitHub release with the CF zip + server zip attached + changelog excerpt
+3. Upload CF zip to CurseForge via [`curseforge-upload` action](https://github.com/marketplace/actions/upload-to-curseforge) (needs CF_API_TOKEN secret)
 
 ## Adding a mod
 
 ```sh
 cd pack/
-packwiz mr add <modrinth-slug>          # for mods primarily on Modrinth
-packwiz cf add <curseforge-slug>        # for mods primarily on CurseForge
+packwiz cf add <curseforge-slug>        # CurseForge is the sole distribution channel
 packwiz refresh
 git add mods/<new-mod>.pw.toml index.toml
 git commit -m "feat: add <mod> for <reason from mod_list.md>"
 ```
 
-If the mod doesn't exist on Modrinth or CurseForge yet (rare — applies to dev versions of Productive Frogs maybe), use `packwiz url add` with a direct URL.
+If the mod doesn't exist on CurseForge yet (e.g., a dev version of Productive Frogs), use `packwiz url add` with a direct URL.
 
 ## Removing a mod
 
@@ -206,7 +187,6 @@ The in-game flow is faster for adding quests; direct-edit is better for bulk ren
 
 ## Open layout questions
 
-- **packwiz vs `kotlin-modpack-helper` vs raw scripts** — packwiz is the strongest community choice in 2026. No real contenders for both-Modrinth-and-CF dual-export.
+- **packwiz vs `kotlin-modpack-helper` vs raw scripts** — packwiz is the strongest community choice in 2026 even for CF-only distribution.
 - **Where do build artifacts live** — `dist/` at repo root, gitignored. Release uploads pull from there.
-- **Do we ship pack-side mods only via Modrinth, falling back to CF**, or mix-and-match per mod's preferred channel? packwiz lets us mix; default is "wherever the mod's official release is."
 - **Subrepo vs monorepo with productive-frogs** — Sky Frogs stays its own repo. Productive Frogs is a sibling project, pulled by version pin. No git submodule.

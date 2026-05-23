@@ -7,7 +7,7 @@
 | Field            | Value                                                              |
 |------------------|--------------------------------------------------------------------|
 | **Pack name**    | Sky Frogs                                                          |
-| **Slug**         | `sky-frogs` (Modrinth + CurseForge — claim on both before v0.1)    |
+| **Slug**         | `sky-frogs` (CurseForge — claim before v0.1)                       |
 | **Author**       | Flatts3000                                                         |
 | **Tagline**      | Skyblock where frogs replace mining                                |
 | **Long pitch**   | A void-skyblock NeoForge 1.21.11 modpack built around Productive Frogs. Iron, gold, diamonds, and beyond are won by breeding Resource Frogs and feeding them matching Resource Slimes — automated mining is disabled. |
@@ -21,7 +21,7 @@
 | **MC version**   | `1.21.11` — single version, no multi-version build matrix          |
 | **Loader**       | NeoForge `21.11.42` — version pinned in `pack/pack.toml`            |
 | **Java**         | Java 21 (NeoForge 1.21.11 requirement)                             |
-| **Launcher**     | Any Modrinth-compatible launcher (Prism, ATLauncher, Modrinth App) + CurseForge launcher |
+| **Launcher**     | CurseForge launcher (primary); Prism / ATLauncher / MultiMC also work via the CurseForge manifest |
 | **Server**       | Yes — server zip ships alongside client                            |
 
 ## Version Scheme
@@ -35,14 +35,14 @@ Semantic versioning with a leading `0.` until v1.0:
 
 ## Distribution Channels
 
-Both shipped from each tag:
+CurseForge is the sole distribution channel. The FTB utility stack (FTB Library / Quests / Teams / Chunks / Ranks / Essentials) is CurseForge-only, and Modrinth forbids inlining CF jars as overrides — so a Modrinth release isn't possible without dropping FTB Quests, which is non-negotiable. Productive Frogs is also CF-only by the same downstream constraint.
 
 | Channel        | Format            | Notes                                                          |
 |----------------|-------------------|----------------------------------------------------------------|
-| **Modrinth**   | `.mrpack`         | Primary channel — free hosting, faster review, open-source community alignment |
-| **CurseForge** | `manifest.json` + overrides zip | Secondary channel — larger user base. Requires CurseForge mod project IDs in manifest |
+| **CurseForge** | `manifest.json` + overrides zip | Sole primary channel. Requires CurseForge mod project IDs in manifest. |
+| **GitHub Releases** | source-of-truth artifact mirror | CF zip + server zip attached to each tag for transparency and rollback. Not a player install path. |
 
-Build tool: [`packwiz`](https://github.com/packwiz/packwiz) drives both outputs from a single `pack.toml` + `index.toml` + per-mod `.pw.toml` files. See [`repo_layout.md`](./repo_layout.md).
+Build tool: [`packwiz`](https://github.com/packwiz/packwiz) drives the CF export from a single `pack.toml` + `index.toml` + per-mod `.pw.toml` files. See [`repo_layout.md`](./repo_layout.md).
 
 ## Update Cadence
 
@@ -54,7 +54,7 @@ Build tool: [`packwiz`](https://github.com/packwiz/packwiz) drives both outputs 
 
 - 256×256 logo (frog silhouette on a void background — TBD)
 - 512×288 banner (CurseForge "header" dimensions)
-- 1280×720 hero (Modrinth gallery first slide)
+- 1280×720 hero (CurseForge gallery first slide)
 - A short demo gif (~5s, ~3MB) showing the egg→tadpole→frog→froglight loop
 
 All assets ship from `docs/branding/` (TBD directory). Use the same color palette as the Productive Frogs categories — six accent colors keyed to `Category.tintArgb()`.
@@ -63,7 +63,6 @@ All assets ship from `docs/branding/` (TBD directory). Use the same color palett
 
 | Account        | Needed for                                              |
 |----------------|---------------------------------------------------------|
-| Modrinth       | Pack project, mrpack upload                             |
 | CurseForge     | Pack project, manifest upload                           |
 | GitHub         | Source hosting, Actions release pipeline                |
 

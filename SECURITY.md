@@ -35,7 +35,7 @@ If you're unsure whether something qualifies, report it privately to us and we'l
 
 - **Acknowledgement**: within 7 days of receiving the report.
 - **Initial assessment**: within 14 days.
-- **Fix + disclosure**: timing varies by severity. Critical issues get a hotfix release on Modrinth + CurseForge; lower-severity issues land in the next regular release.
+- **Fix + disclosure**: timing varies by severity. Critical issues get a hotfix release on CurseForge; lower-severity issues land in the next regular release.
 
 This is a hobby OSS project — timelines are best-effort, not contractual.
 

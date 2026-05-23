@@ -16,7 +16,7 @@ assignees: []
 
 - **Mod name:**
 - **Mod version (current MC 1.21.11 release):**
-- **Link (Modrinth / CurseForge / GitHub):**
+- **Link (CurseForge / GitHub):**
 - **License:** <!-- needs to allow redistribution in a modpack -->
 - **Specific resource (for variant requests):**
 

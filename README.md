@@ -35,7 +35,7 @@ The six frog categories (Metallic, Mineral, Gem, Aquatic, Infernal, Arcane) defi
 
 ## Building
 
-TBD — see [docs/repo_layout.md](./docs/repo_layout.md). Target tool: `packwiz` producing both `.mrpack` (Modrinth) and CurseForge zip outputs.
+TBD — see [docs/repo_layout.md](./docs/repo_layout.md). Target tool: `packwiz` producing a CurseForge manifest zip. CurseForge is the sole distribution channel — FTB Quests and the rest of the FTB utility stack are CurseForge-only, so a Modrinth release isn't possible.
 
 ## License
 

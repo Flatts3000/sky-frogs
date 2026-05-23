@@ -49,10 +49,10 @@ Three differences justify a distinct pack:
 
 ## Success Criteria for v0.1
 
-1. A new player can install the pack from Modrinth, create a world, and see a 3×3 dirt island with a single tree.
+1. A new player can install the pack from CurseForge, create a world, and see a 3×3 dirt island with a single tree.
 2. By following the questbook, they can produce their first Iron Froglight within ~2 hours of play.
 3. KubeJS-disabled mining shortcuts (laser drill, mining lens) are absent from JEI or tooltipped as DISABLED.
-4. The pack loads cleanly on both Modrinth and CurseForge launchers with no error toasts.
+4. The pack loads cleanly in the CurseForge launcher (and Prism / ATLauncher via the CF manifest) with no error toasts.
 5. All six frog tiers are reachable through quests, even if late-tier balance is rough.
 
 ## Success Criteria for v1.0
@@ -60,7 +60,7 @@ Three differences justify a distinct pack:
 1. ~750 quests across ~22 chapters (parity with Sky Bees Reborn).
 2. All six PF categories have at least 5 slime variants each, including 2+ cross-mod variants.
 3. Endgame creative item is reachable through pure frog-farming with no exploit shortcut.
-4. CurseForge and Modrinth pages both live, with stable release cadence.
+4. CurseForge page live with stable release cadence.
 
 ## Open design questions
 
