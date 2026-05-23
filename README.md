@@ -25,15 +25,12 @@ Six frog categories define the tier progression:
 
 Slime species supply the variety inside each tier — adding a new modded resource is a single `slime_variant/*.json` drop, never a Java change.
 
-## Why this and not Sky Bees Reborn?
+## Design pillars
 
-[Sky Bees Reborn](https://www.curseforge.com/minecraft/modpacks/sky-bees-reborn) is the reference for the genre and a great pack. Sky Frogs is a different take built around a different mod:
-
-- **Productive Frogs leans on vanilla idioms** — frogspawn, slimeballs, water bottles, lead-based mob transport. Every interaction is right-click on a block; no custom UIs.
-- **Six well-loved frogs, not dozens of bees.** A smaller roster makes the questbook cleaner and progression more legible.
+- **Vanilla-feeling mechanics.** Productive Frogs leans on vanilla idioms — frogspawn, slimeballs, water bottles, lead-based mob transport. Every interaction is right-click on a block; no custom UIs.
+- **Category-based progression.** Six clear tiers (Metallic / Mineral / Gem / Aquatic / Infernal / Arcane) anchor the questbook in a structure that stays legible as more frog and slime variants ship.
 - **Cross-mod compat is the design center.** Drop a JSON, get a frog-eats-that-thing variant. Community PRs adding new modded resources need zero Java work.
-
-Sky Frogs is not a port of Sky Bees Reborn. SBR is bundled at `../sky-bees-reborn-reference/` as a read-only study object, not a template to mirror.
+- **Mining shortcuts disabled by design.** Laser drills, mining lenses, digital miners, and quarry cards are recipe-stripped or hidden from JEI. The frog tree is the path; the pack enforces it.
 
 ## Status
 

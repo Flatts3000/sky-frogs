@@ -22,7 +22,7 @@ It's built around [Productive Frogs](https://www.curseforge.com/minecraft/mc-mod
 
 ## Features (5-bullet scannable list)
 
-- **Six frog categories, deep slime ecosystem.** Metallic, Mineral, Gem, Aquatic, Infernal, Arcane — six well-loved frogs, dozens of slime variants per tier. No giant unmemorable bee zoo.
+- **Category-based progression, deep slime ecosystem.** Six clear tiers — Metallic, Mineral, Gem, Aquatic, Infernal, Arcane — with many slime variants inside each. The frog roster grows over time; the tier structure stays legible.
 - **Vanilla-feeling mechanics.** Every interaction is right-click on a block: glass bottles, slimeballs, water buckets, frogspawn. No custom UIs to learn.
 - **Mining shortcuts disabled by design.** Laser drills, mining lenses, digital miners, and quarry cards are recipe-stripped or hidden from JEI. The frog tree is the path; the pack enforces it.
 - **Cross-mod resources, one JSON each.** Every modded resource you want frog-farmable is a single `slime_variant/*.json` drop — Mekanism, AE2, Industrial Foregoing, Powah, EnderIO, all hook into the same loop.
@@ -79,20 +79,14 @@ Every mod retains its own license. Refer to each mod's CurseForge page for licen
 
 ## FAQ
 
-**Why frogs and not bees?**
-Productive Bees / Sky Bees Reborn are excellent, but Productive Frogs leans harder on vanilla idioms — frogspawn, water bottles, slimeballs, lead-based transport. Every interaction is something a vanilla player already knows how to do. Six well-defined frog categories also make the questbook cleaner than dozens of bee species. It's a different feel, not a replacement.
-
-**Is this related to Productive Bees?**
-No, but it owes the design language a debt. Productive Frogs is a separate mod (by the same author as this pack). Sky Frogs is to Productive Frogs roughly what Sky Bees Reborn is to Productive Bees — a curated, opinionated skyblock built around the mod.
+**Why frogs?**
+Productive Frogs leans hard on vanilla idioms — frogspawn, water bottles, slimeballs, lead-based transport. Every interaction is something a vanilla player already knows how to do, and the category-based progression gives the questbook a clean tier-by-tier structure that scales as the frog roster grows.
 
 **Can I add my own modded resource as a frog target?**
 Yes — that's the design center. Drop a single JSON at `data/<namespace>/productivefrogs/slime_variant/<name>.json` with the standard schema (see the repo `docs/kubejs_overrides.md`), wrap in `neoforge:conditions → mod_loaded` for your mod, and the matching-category frog will eat it. No Java change, no PR required to the underlying mod.
 
 **Is automation possible?**
 Yes, but not required. Productive Frogs V1 ships hand-operated appliances only. The pack is completable with hoppers, water streams, and patience. Tech-mod automation (Mekanism, AE2, Industrial Foregoing) makes things faster, but the progression doesn't gate behind it.
-
-**Why isn't this on Modrinth?**
-The FTB utility stack (FTB Library / Quests / Teams / Chunks / Ranks / Essentials) is CurseForge-only, and Modrinth's policy rejects modpacks that inline CurseForge jars as overrides. Since FTB Quests is the canonical questbook for this kind of pack, Modrinth isn't viable. We ship CurseForge-only.
 
 **Server-friendly?**
 Yes. Each release ships a server pack zip alongside the client. Skyblock party support via FTB Teams, claims via FTB Chunks, `/home` / `/tpa` via FTB Essentials. Server balance is single-player-tuned at v1.0 — multiplayer-specific tuning is a v1.x stretch goal.
