@@ -26,6 +26,7 @@ All design docs are DRAFT. When you settle a question, drop the DRAFT banner on 
 - [`docs/pack_metadata.md`](./docs/pack_metadata.md) — pack identity, versioning policy, asset spec
 - [`docs/repo_layout.md`](./docs/repo_layout.md) — packwiz tree, CI shape, helper scripts
 - [`docs/distribution.md`](./docs/distribution.md) — CurseForge release workflow
+- [`docs/curseforge_page.md`](./docs/curseforge_page.md) — public-facing CurseForge listing copy (hook, features, FAQ, mod credits) — edit here first, push to CF
 - [`docs/backlog.md`](./docs/backlog.md) — open questions, deferred features, known risks
 
 ## Versioning targets

@@ -1,14 +1,10 @@
 # Sky Frogs
 
-A Minecraft modpack for **NeoForge 1.21.11** built around [Productive Frogs](../productive-frogs). Early planning — pack scaffold landed; content TBD.
+A void-skyblock modpack for **NeoForge 1.21.11** built around [Productive Frogs](https://github.com/Flatts3000/productive-frogs).
+
+You spawn on a 3×3 dirt island. There's no overworld to mine. The only way past iron is through **Resource Frogs**: six categories of breedable frogs that each eat category-matching slimes and produce Configurable Froglights you smelt into ingots.
 
 ## Concept
-
-Sky Frogs is a skyblock modpack with **resource frogs** at the center: breed them, hatch them, feed them matching slimes, collect what they produce. The pack is finding its own identity — early thinking leans on a void skyblock with mining shortcuts disabled, but that's a starting point, not a thesis.
-
-[Sky Bees Reborn](https://www.curseforge.com/minecraft/modpacks/sky-bees-reborn) is a reference for the genre and ships in this directory tree as a study object. Sky Frogs is **not** a port of it.
-
-**Core loop:**
 
 ```
 Find frogspawn → bottle it → prime the egg with a category material →
@@ -16,27 +12,70 @@ hatch into a Resource Frog → feed it a matching Resource Slime →
 collect Configurable Froglight → smelt or crush for ingots
 ```
 
-The six frog categories (Metallic, Mineral, Gem, Aquatic, Infernal, Arcane) define the tier progression. Slime species supply variety inside each tier.
+Six frog categories define the tier progression:
+
+| Tier | Category   | Unlocks                                                        |
+|------|------------|----------------------------------------------------------------|
+| 1    | Metallic   | Iron, copper, gold, plus modded metals (osmium, tin, aluminum…) |
+| 2    | Mineral    | Redstone, lapis, coal, quartz, amethyst, certus, fluix          |
+| 3    | Gem        | Diamond, emerald, fluorite, peridot, ruby, sapphire             |
+| 4    | Aquatic    | Prismarine, kelp, nautilus, pink slime, latex                   |
+| 5    | Infernal   | Blaze rods, quartz, magma, glowstone, netherite line            |
+| 6    | Arcane     | Ender pearls, chorus, draconic, dimensional shards, end-tier    |
+
+Slime species supply the variety inside each tier — adding a new modded resource is a single `slime_variant/*.json` drop, never a Java change.
+
+## Why this and not Sky Bees Reborn?
+
+[Sky Bees Reborn](https://www.curseforge.com/minecraft/modpacks/sky-bees-reborn) is the reference for the genre and a great pack. Sky Frogs is a different take built around a different mod:
+
+- **Productive Frogs leans on vanilla idioms** — frogspawn, slimeballs, water bottles, lead-based mob transport. Every interaction is right-click on a block; no custom UIs.
+- **Six well-loved frogs, not dozens of bees.** A smaller roster makes the questbook cleaner and progression more legible.
+- **Cross-mod compat is the design center.** Drop a JSON, get a frog-eats-that-thing variant. Community PRs adding new modded resources need zero Java work.
+
+Sky Frogs is not a port of Sky Bees Reborn. SBR is bundled at `../sky-bees-reborn-reference/` as a read-only study object, not a template to mirror.
 
 ## Status
 
-**Early planning phase.** Repo skeleton + exploratory design docs only — no pack contents yet, and **no design choices are canonical yet**. Every doc in [docs/](./docs/) is marked DRAFT. The pack is looking for its own voice; treat everything written as a starting point to argue with.
+**Early development.** The repo scaffold, packwiz tree, FTB utility stack, JEI, and Jade are in place. Productive Frogs is bundled locally for testing but isn't on CurseForge yet — that's the v0.1 blocker. Content (KubeJS overrides, FTB Quests chapters, slime variant JSONs) is TBD.
+
+Every doc in [`docs/`](./docs/) is marked DRAFT and explicitly non-canonical. The pack is still finding its identity; design decisions are up for revision.
 
 ## Quick navigation
 
-- [docs/design_overview.md](./docs/design_overview.md) — concept and core loop
-- [docs/progression.md](./docs/progression.md) — tier-by-tier player journey
-- [docs/mod_list.md](./docs/mod_list.md) — what mods we ship and why
-- [docs/quest_book.md](./docs/quest_book.md) — chapter outline
-- [docs/kubejs_overrides.md](./docs/kubejs_overrides.md) — what we disable and force
-- [docs/repo_layout.md](./docs/repo_layout.md) — how the pack is built
-- [docs/distribution.md](./docs/distribution.md) — how it ships
-- [docs/backlog.md](./docs/backlog.md) — open questions
+For players:
+- [Concept and core loop](./docs/design_overview.md)
+- [Tier-by-tier journey](./docs/progression.md)
+- [Mod list and selection criteria](./docs/mod_list.md)
+- [The CurseForge listing copy](./docs/curseforge_page.md)
 
-## Building
+For contributors:
+- [Repo layout and packwiz workflow](./docs/repo_layout.md)
+- [KubeJS overrides (the four pillars)](./docs/kubejs_overrides.md)
+- [FTB Quests chapter outline](./docs/quest_book.md)
+- [Distribution + release workflow](./docs/distribution.md)
+- [Open questions and known risks](./docs/backlog.md)
+- [How to contribute](./CONTRIBUTING.md)
 
-TBD — see [docs/repo_layout.md](./docs/repo_layout.md). Target tool: `packwiz` producing a CurseForge manifest zip. CurseForge is the sole distribution channel — FTB Quests and the rest of the FTB utility stack are CurseForge-only, so a Modrinth release isn't possible.
+## Building locally
+
+`pack/` is initialized with packwiz. From inside `pack/`:
+
+```sh
+packwiz refresh                # regenerate index after editing a .pw.toml
+packwiz cf add <slug>          # add a CurseForge mod
+packwiz update --all           # bump every mod to its latest 1.21.11 NeoForge release
+packwiz curseforge export      # build the CF zip
+```
+
+Install packwiz with `go install github.com/packwiz/packwiz@latest` — packwiz has no GitHub releases or winget package; Go install is the only path.
+
+## Distribution
+
+**CurseForge only.** The FTB utility stack (FTB Library / Quests / Teams / Chunks / Ranks / Essentials) is CurseForge-only, and Modrinth's policy rejects packs that inline CF jars as overrides. Since FTB Quests is the canonical questbook for this kind of pack, Modrinth isn't viable. GitHub Releases mirrors each tag's artifacts for transparency; players install from CurseForge.
+
+The pack page copy lives in [`docs/curseforge_page.md`](./docs/curseforge_page.md) — edit there first, push to CurseForge.
 
 ## License
 
-MIT for the pack-authored content (KubeJS, configs, datapacks, branding, docs). Each bundled mod retains its own license. See [LICENSE](./LICENSE).
+[MIT](./LICENSE) for the pack-authored content (KubeJS scripts, configs, datapacks, questbook, branding, docs). Each bundled mod retains its own license — see [`NOTICE.md`](./NOTICE.md) for scope details.
