@@ -1,0 +1,21 @@
+version: 2
+
+updates:
+  # GitHub Actions versions
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: "09:00"
+    open-pull-requests-limit: 5
+    labels:
+      - "chore"
+    commit-message:
+      prefix: "ci"
+      include: scope
+
+  # Sky Frogs is a content pack — no Gradle, no npm, no Cargo.
+  # Mod versions are managed by packwiz (`packwiz update --all`),
+  # which Dependabot doesn't support. Add new ecosystems here if the
+  # repo ever grows tooling that uses them (Python via pip, etc.).
