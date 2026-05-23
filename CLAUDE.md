@@ -8,6 +8,26 @@ Guidance for Claude Code working in this repo.
 
 A read-only reference copy of Sky Bees Reborn lives at [`../sky-bees-reborn-reference/extracted/`](../sky-bees-reborn-reference/) as a **study object** — its `kubejs/server_scripts/`, `config/ftbquests/quests/`, and mod selection are useful for seeing how the genre has been solved before. They are **not** templates to mirror. Sky Frogs needs its own answers. When pulling patterns from SBR, attribute the inspiration but justify the choice on Sky-Frogs-specific grounds.
 
+### Sibling repos on this machine
+
+- `../productive-frogs` — the Java mod this pack is built around. File issues there for anything that needs new mod behavior.
+- `../sky-bees-reborn-reference/extracted/` — read-only SBR reference. Useful subpaths: `kubejs/server_scripts/anti.js`, `kubejs/server_scripts/productivebees.js`, `config/ftbquests/quests/`, `kubejs/data/productivebees/productivebees/`.
+
+### Doc map (start here)
+
+All design docs are DRAFT. When you settle a question, drop the DRAFT banner on the affected doc and update [`CLAUDE.md`](./CLAUDE.md) working assumptions or [`docs/backlog.md`](./docs/backlog.md).
+
+- [`docs/design_overview.md`](./docs/design_overview.md) — concept, core loop, target audience, success criteria
+- [`docs/progression.md`](./docs/progression.md) — tier-by-tier player journey (the six PF categories)
+- [`docs/mod_list.md`](./docs/mod_list.md) — what ships and why; selection criteria
+- [`docs/kubejs_overrides.md`](./docs/kubejs_overrides.md) — the four pillars (anti, parent spawn, slime variants, recipe forcing)
+- [`docs/quest_book.md`](./docs/quest_book.md) — FTB Quests chapter outline
+- [`docs/worldgen.md`](./docs/worldgen.md) — void skyblock setup, starter island, parent species distribution
+- [`docs/pack_metadata.md`](./docs/pack_metadata.md) — pack identity, versioning policy, asset spec
+- [`docs/repo_layout.md`](./docs/repo_layout.md) — packwiz tree, CI shape, helper scripts
+- [`docs/distribution.md`](./docs/distribution.md) — Modrinth + CurseForge release workflow
+- [`docs/backlog.md`](./docs/backlog.md) — open questions, deferred features, known risks
+
 ## Versioning targets
 
 - Minecraft: **1.21.1** (matches Productive Frogs)
@@ -51,4 +71,26 @@ When a working assumption gets challenged and we settle the question, **promote 
 
 ## Common commands
 
-TBD until packwiz is installed and wired up. See [`docs/repo_layout.md`](./docs/repo_layout.md).
+**Status:** the `pack/` tree and `tools/` scripts described below do not exist yet. These are the planned commands from [`docs/repo_layout.md`](./docs/repo_layout.md), captured here so future Claude knows the intended workflow. Until packwiz is wired up, the repo is docs-only.
+
+Once `pack/` exists, all packwiz commands run from inside `pack/`:
+
+```sh
+packwiz refresh                          # regenerate index.toml after editing any .pw.toml
+packwiz mr add <modrinth-slug>           # add a mod (prefer Modrinth source)
+packwiz cf add <curseforge-slug>         # add a mod (CurseForge fallback)
+packwiz remove <mod-slug>                # remove a mod
+packwiz update --all                     # pull latest versions of all pinned mods
+packwiz mrpack export                    # build the .mrpack for Modrinth
+packwiz curseforge export                # build the .zip for CurseForge
+```
+
+Higher-level helpers (planned in `tools/`):
+
+```sh
+tools/build_mrpack.sh                    # refresh + mrpack export → dist/
+tools/build_cf_zip.sh                    # refresh + cf export    → dist/
+tools/slime_variant_codegen.py           # regenerate pack/kubejs/data/skyfrogs/productivefrogs/slime_variant/*.json
+```
+
+Releases are tag-driven (`git tag v0.x.y && git push origin v0.x.y`) — `.github/workflows/release.yml` handles the dual upload. See [`docs/distribution.md`](./docs/distribution.md).
