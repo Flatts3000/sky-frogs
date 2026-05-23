@@ -28,6 +28,7 @@ All design docs are DRAFT. When you settle a question, drop the DRAFT banner on 
 - [`docs/distribution.md`](./docs/distribution.md) — CurseForge release workflow
 - [`docs/curseforge_page.md`](./docs/curseforge_page.md) — public-facing CurseForge listing copy (hook, features, FAQ, mod credits) — edit here first, push to CF
 - [`docs/branding.md`](./docs/branding.md) — visual identity spec: category color palette (sourced from PF's `Category.tintArgb()`), asset list, logo/hero composition guidelines
+- [`docs/roadmap.md`](./docs/roadmap.md) — phase-by-phase path from current state to v1.0 launch, with explicit user-vs-Claude ownership per deliverable
 - [`docs/backlog.md`](./docs/backlog.md) — open questions, deferred features, known risks
 - [`CHANGELOG.md`](./CHANGELOG.md) — Keep a Changelog format; `[Unreleased]` captures work landed on `main` since last tag
 
