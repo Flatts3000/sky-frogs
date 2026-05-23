@@ -8,6 +8,7 @@ Parking lot for open questions, deferred features, and post-1.0 ideas. Move item
 
 ### Productive Frogs feature requests blocking pack work
 
+- [ ] **Productive Frogs distribution channel.** PF is not yet on Modrinth or CurseForge — only a local jar at `../productive-frogs/build/libs/`. The pack can't ship to either platform until PF has a public release. Decide: publish PF first (Modrinth + CF), or bundle PF's jar directly into pack overrides (CF zip only; Modrinth forbids it). Tracking as v0.1 blocker.
 - [ ] **Datapack-driven parent species spawn** — verify whether Productive Frogs exposes biome-locked spawn recipes that Sky Frogs can KubeJS-override (mirror the Sky Bees Reborn `bee_spawning` pattern). If not, file a feature request upstream against [`productive-frogs`](../../productive-frogs). Workaround for v0.1: distribute parent species via quest-reward spawn eggs.
 - [ ] **Slime Milker automation hooks** — Productive Frogs V1 is hand-operated only. For v0.x of Sky Frogs we live with that and lean on Modular Routers + hoppers + water streams for "almost-automation." Real automation (PF V2) is the long-term unlock.
 - [ ] **Configurable Froglight data component schema** — confirm the variant component name is stable before we hard-code it into KubeJS scripts and quest checks.
@@ -55,8 +56,9 @@ Parking lot for open questions, deferred features, and post-1.0 ideas. Move item
 ## Known risks
 
 - **Productive Frogs V1 might not be feature-complete by Sky Frogs v0.1 target.** Slime Milker is the load-bearing block for the Tier 1 "scale up" beat; without it, players are stuck producing one Iron Froglight every ~10 minutes (single slime, no milking). Mitigation: gate Sky Frogs v0.1 release on Slime Milker landing in PF V1.
-- **Mod-update churn at NeoForge 1.21.1 → 1.21.x** could force a re-pin pass. Mitigation: stay on 1.21.1 explicitly until 1.21.x mod ecosystem catches up. Re-evaluate at v1.0.
+- **Mod-update churn through NeoForge 1.21.x** could force a re-pin pass on each PF bump. We're now on 1.21.11 (matched to PF). Mitigation: hold a single MC version per pack release; bump deliberately when PF bumps, not opportunistically.
 - **CurseForge approval delays** could block v0.1 launch on CF. Mitigation: ship Modrinth-first, follow with CF when approval lands.
+- **FTB mods are CurseForge-only.** FTB Library / Quests / Teams / Chunks / Ranks / Essentials are not on Modrinth. `packwiz modrinth export` falls back to inlining the jars as `overrides/mods/*.jar`, which Modrinth's uploader will reject on redistribution policy grounds. **Effective state: CurseForge-only distribution until either FTB publishes to Modrinth or we replace the FTB stack.** Tracked as a v0.1 distribution decision.
 - **License compatibility check** — verify every bundled mod's license allows redistribution in a modpack. Most do (MIT, ARR-with-modpack-permission, GPL, etc.). One or two outliers might require explicit author permission. Audit before v0.1.
 - **Productive Frogs is an in-development mod by the pack author**. Risk: pack might inadvertently expose / depend on private APIs that change. Mitigation: pin exact PF version per release; bump deliberately.
 

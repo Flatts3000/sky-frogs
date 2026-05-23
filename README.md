@@ -1,6 +1,6 @@
 # Sky Frogs
 
-A Minecraft modpack for **NeoForge 1.21.1** built around [Productive Frogs](../productive-frogs). Early planning — no pack content shipped yet.
+A Minecraft modpack for **NeoForge 1.21.11** built around [Productive Frogs](../productive-frogs). Early planning — pack scaffold landed; content TBD.
 
 ## Concept
 

@@ -10,17 +10,17 @@
 | **Slug**         | `sky-frogs` (Modrinth + CurseForge — claim on both before v0.1)    |
 | **Author**       | Flatts3000                                                         |
 | **Tagline**      | Skyblock where frogs replace mining                                |
-| **Long pitch**   | A void-skyblock NeoForge 1.21.1 modpack built around Productive Frogs. Iron, gold, diamonds, and beyond are won by breeding Resource Frogs and feeding them matching Resource Slimes — automated mining is disabled. |
+| **Long pitch**   | A void-skyblock NeoForge 1.21.11 modpack built around Productive Frogs. Iron, gold, diamonds, and beyond are won by breeding Resource Frogs and feeding them matching Resource Slimes — automated mining is disabled. |
 | **License**      | MIT (pack content); bundled mods retain their own licenses         |
-| **Source**       | `F:\minecraft-repos\sky-frogs` (GitHub repo TBD before v0.1)       |
+| **Source**       | [github.com/Flatts3000/sky-frogs](https://github.com/Flatts3000/sky-frogs) |
 
 ## Platform Targets
 
 | Field            | Value                                                              |
 |------------------|--------------------------------------------------------------------|
-| **MC version**   | `1.21.1` — single version, no multi-version build matrix           |
-| **Loader**       | NeoForge — version pinned in `pack.toml`, tracked against latest stable 1.21.1 NeoForge |
-| **Java**         | Java 21 (NeoForge 1.21.1 requirement)                              |
+| **MC version**   | `1.21.11` — single version, no multi-version build matrix          |
+| **Loader**       | NeoForge `21.11.42` — version pinned in `pack/pack.toml`            |
+| **Java**         | Java 21 (NeoForge 1.21.11 requirement)                             |
 | **Launcher**     | Any Modrinth-compatible launcher (Prism, ATLauncher, Modrinth App) + CurseForge launcher |
 | **Server**       | Yes — server zip ships alongside client                            |
 

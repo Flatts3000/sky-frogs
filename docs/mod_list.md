@@ -20,13 +20,13 @@ Any mod that fails all three is rejected.
 
 | Mod                   | Role                                                                 | Notes                                                |
 |-----------------------|----------------------------------------------------------------------|------------------------------------------------------|
-| **Productive Frogs**  | The mod the pack is built around                                     | Latest 1.21.1 release; bumps with each pack release  |
+| **Productive Frogs**  | The mod the pack is built around                                     | 1.21.11; not yet published on Modrinth/CF — local jar pending |
 
 ### 2. Skyblock fundamentals
 
 | Mod                   | Role                                                                 | Notes                                                |
 |-----------------------|----------------------------------------------------------------------|------------------------------------------------------|
-| **Skyblock Builder**  | Void worldgen + starting island template + per-player island UI      | Used by Sky Bees Reborn; battle-tested on 1.21.1     |
+| **Skyblock Builder**  | Void worldgen + starting island template + per-player island UI      | Used by Sky Bees Reborn on 1.21.1; verify 1.21.11 release exists before adding |
 | **Ex Deorum**         | Manual sieve, hammer, crucible — the bootstrap loop for dirt/water/lava/stone | Same role as in Sky Bees Reborn; sieving stays as the *manual* path to first iron, but we KubeJS-disable Ex Deorum's silkworm autocrafting |
 | **Forgiving Void**    | Don't die instantly from falling off your island                     | Quality-of-life — strongly preferred for skyblock    |
 | **Rain Shield**       | Prevent rain inside the player's island area                         | Optional but plays well with skyblock                |
@@ -141,5 +141,5 @@ This list will shift as we playtest. Anything moved into or out of the pack need
 
 - Do we ship **Create**? It would supplant several lower-tier processing roles and add transport delight, but it's a big mod with a steep learning curve. Defer to v1.x.
 - Do we ship **JourneyMap** vs FTB Chunks' built-in minimap? Both is overkill; one must go.
-- **Modular Bees** is in the SBR mod list — do we want **Modular Frogs** equivalent if one exists? (Unlikely on 1.21.1 — none observed.) Track as a stretch goal in [`backlog.md`](./backlog.md).
+- **Modular Bees** is in the SBR mod list — do we want **Modular Frogs** equivalent if one exists? (Unlikely on 1.21.11 — none observed.) Track as a stretch goal in [`backlog.md`](./backlog.md).
 - **Hostile Neural Networks** is interesting but partially overlaps the frog loop's "predictable resource generation" identity. Include but gate quests behind late-tier so it feels like a parallel side path, not a frog replacement.

@@ -48,7 +48,7 @@ The `release.yml` GitHub Action takes over:
 3. Creates a GitHub release with both artifacts attached and a changelog excerpt from `CHANGELOG.md`.
 4. Uploads the `.mrpack` to Modrinth via API.
 5. Uploads the CF zip to CurseForge via API.
-6. Both uploads set the same version number, changelog, and `game_versions: [1.21.1]`, `loaders: [neoforge]`.
+6. Both uploads set the same version number, changelog, and `game_versions: [1.21.11]`, `loaders: [neoforge]`.
 
 Manual release path (fallback) if the action fails: download artifacts from the GitHub release page, upload manually via each platform's web UI.
 

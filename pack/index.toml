@@ -1,0 +1,36 @@
+hash-format = "sha256"
+
+[[files]]
+file = "mods/architectury-api.pw.toml"
+hash = "de0dc5dd143062eee2bdda3ed1bac8c1f1d62be523ec738e8f9965e3654f2d24"
+metafile = true
+
+[[files]]
+file = "mods/ftb-chunks-forge.pw.toml"
+hash = "1d6eb560383c325d10127dccc6805a43eec0142ec843b4cf6f281a48ea030743"
+metafile = true
+
+[[files]]
+file = "mods/ftb-essentials.pw.toml"
+hash = "186e887f59df7c5f9c9b7ddaeeec05cd61112f9c28cbc232a5a89f901770f4be"
+metafile = true
+
+[[files]]
+file = "mods/ftb-library-forge.pw.toml"
+hash = "6d3c9c9ae95beb5a2645fa9ff0cb9431db3b0a04da2371a78c722cf2cfd40e27"
+metafile = true
+
+[[files]]
+file = "mods/ftb-quests-forge.pw.toml"
+hash = "f0dadbc1d9a316cdc5d8960f8ab6eef01b8cbcbd8490d7552b4f3fde2126651e"
+metafile = true
+
+[[files]]
+file = "mods/ftb-ranks-forge.pw.toml"
+hash = "73b5972aa5b0888db286f40efe1e754af0c5db0edf177db2c6ee8c58dff4cd23"
+metafile = true
+
+[[files]]
+file = "mods/ftb-teams-forge.pw.toml"
+hash = "7c297edf8a5619658e9843b6f280a0b32bf1bba2468224bc45ba3545c89db172"
+metafile = true

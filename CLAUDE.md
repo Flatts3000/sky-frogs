@@ -30,11 +30,11 @@ All design docs are DRAFT. When you settle a question, drop the DRAFT banner on 
 
 ## Versioning targets
 
-- Minecraft: **1.21.1** (matches Productive Frogs)
-- Loader: **NeoForge**
+- Minecraft: **1.21.11** (matches Productive Frogs — bumped from 1.21.1 when PF moved upstream)
+- Loader: **NeoForge 21.11.42**
 - Java: **21**
-- Distribution: **Modrinth `.mrpack`** + **CurseForge manifest** (both)
-- Productive Frogs version: **latest 1.21.1 release** — pinned in `pack.toml`
+- Distribution: **Modrinth `.mrpack`** + **CurseForge manifest** (both — see [`docs/distribution.md`](./docs/distribution.md) for current Modrinth limitation re: FTB mods being CF-only)
+- Productive Frogs: **not yet published** to Modrinth/CF. Local jar lives at `../productive-frogs/build/libs/productivefrogs-0.1.0.jar`. Once PF is published, add via `packwiz {mr,cf} add productive-frogs`.
 
 ## Project Conventions
 
@@ -71,26 +71,20 @@ When a working assumption gets challenged and we settle the question, **promote 
 
 ## Common commands
 
-**Status:** the `pack/` tree and `tools/` scripts described below do not exist yet. These are the planned commands from [`docs/repo_layout.md`](./docs/repo_layout.md), captured here so future Claude knows the intended workflow. Until packwiz is wired up, the repo is docs-only.
-
-Once `pack/` exists, all packwiz commands run from inside `pack/`:
+`pack/` is initialized (packwiz, MC 1.21.11 / NeoForge 21.11.42). All packwiz commands run from inside `pack/`:
 
 ```sh
 packwiz refresh                          # regenerate index.toml after editing any .pw.toml
 packwiz mr add <modrinth-slug>           # add a mod (prefer Modrinth source)
-packwiz cf add <curseforge-slug>         # add a mod (CurseForge fallback)
+packwiz cf add <curseforge-slug>         # add a mod (CurseForge fallback — FTB family is here)
 packwiz remove <mod-slug>                # remove a mod
 packwiz update --all                     # pull latest versions of all pinned mods
-packwiz mrpack export                    # build the .mrpack for Modrinth
+packwiz modrinth export                  # build the .mrpack for Modrinth
 packwiz curseforge export                # build the .zip for CurseForge
 ```
 
-Higher-level helpers (planned in `tools/`):
+**Modrinth export caveat:** CF-only mods (entire FTB family) currently get inlined into `overrides/mods/*.jar`. Modrinth's uploader rejects this on redistribution policy grounds — so the `.mrpack` is locally installable but not publishable to Modrinth until either FTB ships on Modrinth or we swap the questbook/utility stack. See [`docs/backlog.md`](./docs/backlog.md) "FTB mods are CurseForge-only."
 
-```sh
-tools/build_mrpack.sh                    # refresh + mrpack export → dist/
-tools/build_cf_zip.sh                    # refresh + cf export    → dist/
-tools/slime_variant_codegen.py           # regenerate pack/kubejs/data/skyfrogs/productivefrogs/slime_variant/*.json
-```
+`tools/` helper scripts (`build_mrpack.sh`, `build_cf_zip.sh`, `slime_variant_codegen.py`) are still planned per [`docs/repo_layout.md`](./docs/repo_layout.md) but not yet created.
 
-Releases are tag-driven (`git tag v0.x.y && git push origin v0.x.y`) — `.github/workflows/release.yml` handles the dual upload. See [`docs/distribution.md`](./docs/distribution.md).
+Releases will be tag-driven (`git tag v0.x.y && git push origin v0.x.y`) once `.github/workflows/release.yml` lands. See [`docs/distribution.md`](./docs/distribution.md).
