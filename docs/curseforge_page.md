@@ -34,7 +34,7 @@ It's built around [Productive Frogs](https://www.curseforge.com/minecraft/mc-mod
 
 Your first hour:
 
-1. **Spawn** on a 3×3 dirt island. Your starter chest has the bare essentials — sapling, a water source, an Ex Deorum porcelain bucket, the first frogspawn.
+1. **Spawn** on a 3×3 dirt island with a sapling, a water source, and your bootstrap kit in your inventory — porcelain bucket, sieve mesh, hammer, and your first frogspawn.
 2. **Set up the sieve loop.** Crush dirt → pebbles → cobble. Sieve crushed netherrack/stone with the right mesh until you have a few iron nuggets.
 3. **Smelt your first iron ingot** in a vanilla furnace.
 4. **Make a glass bottle.** Sieving gives you sand → smelt to glass → craft.
@@ -100,7 +100,7 @@ Pre-1.0: maybe. We're in active development; world wipes are signaled in the cha
 
 Gallery slots to fill before launch:
 
-1. Hero shot: void skyblock with one tree + starter chest, frog visible.
+1. Hero shot: void skyblock starter island with one tree, frog visible.
 2. Tier 1 enclosure: Metallic Frog eating Iron Slimes, Froglights stacking in a hopper.
 3. Tier 3 multi-enclosure scene: several Gem Frog setups in a row.
 4. Endgame singularity altar.

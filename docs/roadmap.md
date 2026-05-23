@@ -30,19 +30,19 @@ The pack currently loads into a void world with a starter island — but every r
 - None (all required mods are in the pack).
 
 **Deliverables:**
-- [ ] **Starter chest contents** decided and configured. Probably: one sapling, one porcelain bucket, one wooden hammer, one Ex Deorum sieve, a few dirt blocks. ([Skyblock Builder config](https://www.curseforge.com/minecraft/mc-mods/skyblock-builder).)
+- [ ] **First-join inventory grant** decided and implemented (KubeJS `PlayerEvents.loggedIn` with a first-join guard). Probably: porcelain bucket, sieve + string mesh, wooden hammer, a few crushed netherrack to sieve immediately, frogspawn item, FTB Quests book auto-opened.
 - [ ] **Ex Deorum sieve drop tables** verified or tuned. Defaults may give iron too easily or too rarely.
 - [ ] **First KubeJS override file**: `pack/kubejs/server_scripts/anti.js` — disable nothing yet (no tech mods to disable), but the file exists as scaffold for Phase 3+.
 - [ ] **Welcome quest chapter** in FTB Quests: 3-5 quests guiding the player from spawn to first iron. ([`docs/quest_book.md`](./quest_book.md) outlines the chapter list.)
 - [ ] **Pack version bump** to `0.0.4` once the above lands. Reimport and verify a new player can reach iron in ~30-60 min following only the quest book.
 
 **You drive:**
-- Decide the starter chest contents. (I can propose; you accept/edit.)
+- Decide the first-join inventory grant contents. (I can propose; you accept/edit.)
 - Playtest the loop and tell me where it breaks.
 - Tune sieve drop rates based on what feels right.
 
 **I drive:**
-- Write the KubeJS skeleton, the FTB Quests SNBT, the starter chest JSON config.
+- Write the KubeJS skeleton (including the first-join inventory grant), the FTB Quests SNBT.
 
 ## Phase 2 — First Iron Froglight (v0.1 alpha)
 
@@ -162,9 +162,9 @@ The pack currently loads into a void world with a starter island — but every r
 
 (In rough order. Each one is a question for you when we hit it.)
 
-- **Starter chest contents** (Phase 1).
+- **First-join inventory grant contents** (Phase 1).
 - **Sieve drop rate tuning** (Phase 1). Target: ~5 slimeballs in 30 min of sieving.
-- **First-launch frog source** (Phase 2) — starter chest egg vs. quest reward.
+- **First-launch frog source** (Phase 2) — inventory grant egg vs. quest reward.
 - **Mekanism in v0.2 or wait?** Decision on tech mods per tier.
 - **Endgame trophy** — KubeJS item vs. resourcepack-overridden item (Phase 4).
 - **Custom panorama / main menu** for v0.1 or defer to v1.0.

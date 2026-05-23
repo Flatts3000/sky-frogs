@@ -13,7 +13,7 @@ The Sky Frogs player journey — from spawning on a 3×3 island to building an a
 
 ## Tier 0 — Bootstrap
 
-Player spawns on a void with a 3×3 dirt island, a tree sapling, and a starter chest. No frog content yet.
+Player spawns on a void with a 3×3 dirt island, a tree sapling, and a first-join inventory grant (porcelain bucket, sieve mesh, hammer, a few crushed netherrack, the FTB Quests book). No frog content yet.
 
 **Goals:**
 - Get water (Ex Deorum porcelain bucket → pump from sky / find on island chest).
@@ -33,7 +33,7 @@ Estimated playtime: **30–60 min**.
 
 The player has iron. Now: frogs.
 
-1. Find or trap vanilla frogs. **Skyblock problem:** vanilla frogs don't spawn naturally. We solve this via **starter chest contents** (one frogspawn item, one slime spawn egg) or a **questbook reward** for completing the bootstrap.
+1. Find or trap vanilla frogs. **Skyblock problem:** vanilla frogs don't spawn naturally. We solve this via the **first-join inventory grant** (one frogspawn item, one slime spawn egg) or a **questbook reward** for completing the bootstrap.
 2. Breed frogs with slimeballs → frogspawn on water.
 3. Right-click frogspawn with empty glass bottle → **Frog Egg item**.
 4. Place Frog Egg on water → Frog Egg block.

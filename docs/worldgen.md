@@ -21,17 +21,21 @@ A 3×3 dirt platform at y=64 with:
 
 - 1× oak sapling (for wood bootstrap)
 - 1× water source block in a corner (to skip the Ex Deorum porcelain-bucket grind for very first water)
-- A starter chest containing:
-  - 1× Ex Deorum porcelain bucket
-  - 1× Ex Deorum string mesh
-  - 1× Ex Deorum hammer (wooden)
-  - 4× crushed netherrack (so the player has something to sieve immediately)
-  - 1× **frogspawn item** (or vanilla frog spawn egg — TBD)
-  - 1× book: "Welcome to Sky Frogs" (Patchouli book that opens to chapter 1 of the questbook)
+
+**First-join inventory grant** (via KubeJS `PlayerEvents.loggedIn` first-join hook, not a chest):
+
+- 1× Ex Deorum porcelain bucket
+- 1× Ex Deorum string mesh
+- 1× Ex Deorum hammer (wooden)
+- 4× crushed netherrack (so the player has something to sieve immediately)
+- 1× **frogspawn item** (or vanilla frog spawn egg — TBD)
+- 1× FTB Quests book auto-opened on first join
 
 Rationale: a *too* spartan start (just a sapling and a few dirt) is a common skyblock failure mode where the player can't progress for 20 minutes because they're hammering dirt. Frontloading the bootstrap kit gets them to "I'm starting on the Ex Deorum loop" within 5 minutes.
 
-The starter book + frog spawn item is the **one concession to "frogs don't exist in a void overworld."** Alternative we considered: have a quest reward grant the first frog. Decided against because it puts a 20-minute gate before any frog interaction. Better to put it in the player's hand on minute zero.
+Why inventory grant, not a chest: modern skyblock packs put first-join items directly in the player's inventory. It's lower friction (no "where do I open this?"), survives the player breaking the chest before taking everything, and the KubeJS hook lets us guard against re-granting on re-login.
+
+The frog spawn item is the **one concession to "frogs don't exist in a void overworld."** Alternative considered: gate the first frog behind a quest reward. Decided against because it puts a 20-minute gate before any frog interaction. Better to put it in the player's hand on minute zero.
 
 ## Dimensions
 

@@ -17,7 +17,7 @@ Parking lot for open questions, deferred features, and post-1.0 ideas. Move item
 
 ### Pack-internal decisions
 
-- [ ] **Frog source on first launch** — starter chest spawn egg vs quest-reward spawn egg vs custom Patchouli book reward. Leaning starter chest for least friction.
+- [ ] **Frog source on first launch** — first-join inventory grant (KubeJS `PlayerEvents.loggedIn`) vs quest-reward spawn egg vs custom Patchouli book reward. Leaning inventory grant for least friction.
 - [ ] **Bootstrap slimeball source** — Ex Deorum sieve drop chances need tuning. Target: a player should average ~5 slimeballs in 30 minutes of sieving (enough for the first frog breed + a few infusions).
 - [ ] **Slimeball-as-currency creep** — slimeballs are central to multiple loops (frog breeding, slime infusion, vanilla magma cream). Don't make any single loop demand huge quantities or scarcity becomes the bottleneck.
 - [ ] **Custom Sky Frogs Master Frog trophy item** — needs a 3D model + texture + Patchouli completion page. Could be a KubeJS-defined item (no Java needed) or a custom resourcepack-overridden item with components.
