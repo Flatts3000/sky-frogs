@@ -1,5 +1,7 @@
 # Repo Layout
 
+> **Status:** DRAFT — non-canonical. packwiz is the strong-default tooling choice and likely to stick, but the directory layout, CI shape, and helper-script approach are all proposals.
+
 How the Sky Frogs repo is organized, what tooling builds it, and where each kind of content lives.
 
 ## Tool: packwiz

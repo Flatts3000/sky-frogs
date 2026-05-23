@@ -1,5 +1,7 @@
 # Pack Metadata
 
+> **Status:** DRAFT — non-canonical. Slugs, version scheme, channel choices, and branding direction are all proposals, not decisions.
+
 ## Identity
 
 | Field            | Value                                                              |

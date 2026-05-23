@@ -1,5 +1,7 @@
 # Design Overview
 
+> **Status:** DRAFT — non-canonical. Every choice in this document is a starting point to argue with. Sky Frogs has its own identity to find; Sky Bees Reborn is one reference for the genre, not a template.
+
 ## Inspiration
 
 Two pieces of existing Minecraft content seeded this pack:

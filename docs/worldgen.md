@@ -1,5 +1,7 @@
 # Worldgen
 
+> **Status:** DRAFT — non-canonical. Skyblock Builder is a candidate, not a commitment. Starter island contents, dimension strategy, and parent-species seeding approach are all open. The "void overworld" assumption itself is up for revisiting — a different generator could give Sky Frogs a distinct opening.
+
 How the player's world is generated, what's on the starting island, and how dimension-specific Productive Frogs parent species are seeded without their natural biomes.
 
 ## Generator

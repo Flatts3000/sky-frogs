@@ -1,5 +1,7 @@
 # Progression
 
+> **Status:** DRAFT — non-canonical. The six-tier structure follows the Productive Frogs category enum and that's load-bearing; everything else (chapter sequencing, playtime estimates, gate-unlock items, bootstrap shape) is a sketch. The actual identity of Sky Frogs lives in *how* progression feels, and that's not yet decided.
+
 The Sky Frogs player journey — from spawning on a 3×3 island to building an automated Configurable Froglight farm of every category.
 
 ## Design principles

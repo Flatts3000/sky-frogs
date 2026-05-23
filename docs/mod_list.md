@@ -1,6 +1,8 @@
 # Mod List
 
-This document captures **which mod categories we ship and why**, with candidate mods per slot. Concrete version pins live in `pack.toml` once packwiz is wired up.
+> **Status:** DRAFT — non-canonical. The mod choices below are exploratory candidates. Many were seeded from inspecting Sky Bees Reborn's pack; that's a data point, not a vote. Expect this list to be cut hard and reshaped before v0.1 — the question isn't "what would SBR ship?" but "what does *this* pack need to feel like itself?"
+
+This document captures **candidate mod categories and what they'd be for**, with potential mods per slot. Concrete version pins land in `pack.toml` once packwiz is wired up.
 
 ## Selection criteria
 

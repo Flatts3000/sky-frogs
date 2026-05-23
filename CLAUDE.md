@@ -4,9 +4,9 @@ Guidance for Claude Code working in this repo.
 
 ## What this is
 
-**Sky Frogs** is a modpack (not a mod). It bundles existing NeoForge 1.21.1 mods — most importantly [Productive Frogs](../productive-frogs) — with configs, KubeJS overrides, a datapack, and an FTB Quests questbook to deliver a void-skyblock experience where frogs are the only viable material source. It is the Productive-Frogs analog of [Sky Bees Reborn](https://www.curseforge.com/minecraft/modpacks/sky-bees-reborn).
+**Sky Frogs** is a modpack (not a mod) built around [Productive Frogs](../productive-frogs). The pack is in **early exploratory planning** — everything in `docs/` is marked DRAFT and explicitly non-canonical. The pack is looking for its own identity; do not treat any design choice as decided.
 
-A read-only reference copy of Sky Bees Reborn lives at [`../sky-bees-reborn-reference/extracted/`](../sky-bees-reborn-reference/) — its `kubejs/server_scripts/`, `config/ftbquests/quests/`, and mod selection are the canonical priors when designing equivalent surfaces in Sky Frogs.
+A read-only reference copy of Sky Bees Reborn lives at [`../sky-bees-reborn-reference/extracted/`](../sky-bees-reborn-reference/) as a **study object** — its `kubejs/server_scripts/`, `config/ftbquests/quests/`, and mod selection are useful for seeing how the genre has been solved before. They are **not** templates to mirror. Sky Frogs needs its own answers. When pulling patterns from SBR, attribute the inspiration but justify the choice on Sky-Frogs-specific grounds.
 
 ## Versioning targets
 
@@ -38,14 +38,16 @@ Acceptable surfaces inside this repo:
 
 If something needs new Java behavior, file an issue against Productive Frogs and reference the pack-side need.
 
-## Key design priors (encoded in `docs/`)
+## Working assumptions (NOT yet canonical)
 
-These have been litigated. Read the relevant doc before making non-trivial changes:
+The current `docs/` write-ups lean on these working assumptions. None of them are decided — every one is up for revision and should be challenged when better ideas emerge:
 
-1. **Frogs replace mining** — automated mining mods (laser drills, mining lenses) are KubeJS-disabled. Manual Ex Deorum sieving is kept as the early-game bootstrap, mirroring Sky Bees Reborn. See [`docs/kubejs_overrides.md`](./docs/kubejs_overrides.md).
-2. **Six categories define tier progression** — quest chapters are organized around the six Productive Frogs categories (Metallic, Mineral, Gem, Aquatic, Infernal, Arcane). See [`docs/progression.md`](./docs/progression.md) and [`docs/quest_book.md`](./docs/quest_book.md).
-3. **Datapack-driven slime variants are the cross-mod compat surface** — adding a modded resource to the pack means dropping a `slime_variant` JSON under a KubeJS datapack namespace, never adding a Java compat module. See [`docs/kubejs_overrides.md`](./docs/kubejs_overrides.md).
-4. **No automation in v0.x — Slime Milker is the scaling tool** — Productive Frogs V1 ships hand-operated appliance blocks only. Real automation (hoppers, power, multiblocks) is Productive Frogs V2 territory. Sky Frogs v0.x will feel intentionally artisanal as a result; that's the tradeoff. See [`docs/backlog.md`](./docs/backlog.md).
+1. **Frogs as the spine of resource generation.** Whether this means "frogs replace mining entirely" or "frogs are the headline path among several" is unresolved. See [`docs/design_overview.md`](./docs/design_overview.md).
+2. **Six categories follow Productive Frogs.** This one is the closest to canonical because it inherits from the mod's enum — but the *progression order* and tier-mapping are open.
+3. **Cross-mod compat via datapack JSONs.** Inherited from how Productive Frogs already works; the pack-side workflow for generating those JSONs is unresolved.
+4. **Hand-operated appliances only in v0.x.** Tied to Productive Frogs V1 scope; if PF V2 ships earlier than expected this assumption flips.
+
+When a working assumption gets challenged and we settle the question, **promote it out of this list** into a dedicated decision record (and drop the DRAFT banner from the affected doc).
 
 ## Common commands
 

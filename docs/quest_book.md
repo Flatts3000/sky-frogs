@@ -1,6 +1,8 @@
 # Quest Book
 
-The FTB Quests structure for Sky Frogs. Target: ~22 chapters, ~750 quests at v1.0 — parity with Sky Bees Reborn.
+> **Status:** DRAFT — non-canonical. The 22-chapter / 750-quest target was lifted from Sky Bees Reborn as a scale reference, not as a goal. Sky Frogs' questbook should have its own shape — possibly fewer, denser chapters; possibly a wholly different organizing axis (per-category instead of per-mod). The proposal below is a starting point.
+
+The FTB Quests structure for Sky Frogs. Initial scale reference: ~22 chapters / ~750 quests (mirroring Sky Bees Reborn). Whether that's the right shape for Sky Frogs is an open question.
 
 ## Reference structure
 

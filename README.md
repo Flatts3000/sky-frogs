@@ -1,10 +1,12 @@
 # Sky Frogs
 
-A Minecraft modpack for **NeoForge 1.21.1** where **frogs replace mining** as the primary source of all materials. Skyblock progression, ~22 questbook chapters, 100+ mods.
+A Minecraft modpack for **NeoForge 1.21.1** built around [Productive Frogs](../productive-frogs). Early planning — no pack content shipped yet.
 
 ## Concept
 
-Sky Frogs is the [Productive Frogs](../productive-frogs) analog of [Sky Bees Reborn](https://www.curseforge.com/minecraft/modpacks/sky-bees-reborn) — a void skyblock where the only viable path to iron, gold, diamonds, and beyond is through breeding, hatching, and farming **resource frogs**. Sieving exists as a manual bootstrap; automated mining is disabled.
+Sky Frogs is a skyblock modpack with **resource frogs** at the center: breed them, hatch them, feed them matching slimes, collect what they produce. The pack is finding its own identity — early thinking leans on a void skyblock with mining shortcuts disabled, but that's a starting point, not a thesis.
+
+[Sky Bees Reborn](https://www.curseforge.com/minecraft/modpacks/sky-bees-reborn) is a reference for the genre and ships in this directory tree as a study object. Sky Frogs is **not** a port of it.
 
 **Core loop:**
 
@@ -18,7 +20,7 @@ The six frog categories (Metallic, Mineral, Gem, Aquatic, Infernal, Arcane) defi
 
 ## Status
 
-**Planning phase.** Repo skeleton + design docs only — no pack contents yet. See [docs/](./docs/) for the full design spec.
+**Early planning phase.** Repo skeleton + exploratory design docs only — no pack contents yet, and **no design choices are canonical yet**. Every doc in [docs/](./docs/) is marked DRAFT. The pack is looking for its own voice; treat everything written as a starting point to argue with.
 
 ## Quick navigation
 

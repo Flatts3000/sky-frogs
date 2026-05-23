@@ -1,5 +1,7 @@
 # Distribution
 
+> **Status:** DRAFT — non-canonical. Modrinth + CurseForge dual-publishing is the working assumption. Versioning policy, changelog format, and release workflow are first-draft proposals.
+
 How Sky Frogs ships, where players install it from, and how releases happen.
 
 ## Channels

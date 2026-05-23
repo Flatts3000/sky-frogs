@@ -1,6 +1,8 @@
 # KubeJS Overrides
 
-The KubeJS surface is where Sky Frogs enforces its identity: **frogs replace mining**. This document catalogues what we disable, what we add, and what we shape — with concrete references to the analogous logic in Sky Bees Reborn for each pattern.
+> **Status:** DRAFT — non-canonical. The "four pillars" framing and the disabled-item list are first-draft proposals. Sky Bees Reborn's KubeJS is referenced as a worked example so we don't reinvent the wheel on syntax — but Sky Frogs needs to decide its own answer to "what should the player NOT be allowed to do?" That's not just an anti-cheat question; it's an identity question.
+
+The KubeJS surface is where Sky Frogs enforces its identity: **frogs replace mining** (a candidate framing). This document catalogues proposed disables, additions, and reshapings — with cross-references to analogous logic in Sky Bees Reborn for syntax patterns.
 
 ## Script layout
 

@@ -1,5 +1,7 @@
 # Backlog
 
+> **Status:** living document — items are explicitly non-canonical until promoted. The other docs in this folder are also DRAFT; this one is the meta-parking-lot.
+
 Parking lot for open questions, deferred features, and post-1.0 ideas. Move items into proper docs when they crystallize into design decisions.
 
 ## Open design questions
