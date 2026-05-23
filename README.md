@@ -1,6 +1,6 @@
 # Sky Frogs
 
-A void-skyblock modpack for **NeoForge 1.21.11** built around [Productive Frogs](https://github.com/Flatts3000/productive-frogs).
+A void-skyblock modpack for **NeoForge 1.21.1** built around [Productive Frogs](https://github.com/Flatts3000/productive-frogs).
 
 You spawn on a 3×3 dirt island. There's no overworld to mine. The only way past iron is through **Resource Frogs**: six categories of breedable frogs that each eat category-matching slimes and produce Configurable Froglights you smelt into ingots.
 
@@ -61,7 +61,7 @@ For contributors:
 ```sh
 packwiz refresh                # regenerate index after editing a .pw.toml
 packwiz cf add <slug>          # add a CurseForge mod
-packwiz update --all           # bump every mod to its latest 1.21.11 NeoForge release
+packwiz update --all           # bump every mod to its latest 1.21.1 NeoForge release
 packwiz curseforge export      # build the CF zip
 ```
 

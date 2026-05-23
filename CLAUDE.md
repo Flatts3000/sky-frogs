@@ -31,8 +31,8 @@ All design docs are DRAFT. When you settle a question, drop the DRAFT banner on 
 
 ## Versioning targets
 
-- Minecraft: **1.21.11** (matches Productive Frogs — bumped from 1.21.1 when PF moved upstream)
-- Loader: **NeoForge 21.11.42**
+- Minecraft: **1.21.1** (rolled back from 1.21.11 on 2026-05-23 — Ex Deorum and Skyblock Builder have no 1.21.4+ NeoForge builds, and they're load-bearing for Tier 0 bootstrap and skyblock worldgen respectively. Productive Frogs needs to be rebuilt for 1.21.1 to match.)
+- Loader: **NeoForge 21.1.230**
 - Java: **21**
 - Distribution: **CurseForge only.** Modrinth is off the table because the FTB utility stack (FTB Library / Quests / Teams / Chunks / Ranks / Essentials) is CF-only and Modrinth forbids inlining CF jars as overrides. This same constraint applies to Productive Frogs — PF is CF-only too.
 - Productive Frogs: **not yet published** to CurseForge. Local jar lives at `../productive-frogs/build/libs/productivefrogs-0.1.0.jar`. Once PF is on CF, add via `packwiz cf add productive-frogs`.
@@ -72,7 +72,7 @@ When a working assumption gets challenged and we settle the question, **promote 
 
 ## Common commands
 
-`pack/` is initialized (packwiz, MC 1.21.11 / NeoForge 21.11.42). All packwiz commands run from inside `pack/`:
+`pack/` is initialized (packwiz, MC 1.21.1 / NeoForge 21.1.230). All packwiz commands run from inside `pack/`:
 
 ```sh
 packwiz refresh                          # regenerate index.toml after editing any .pw.toml

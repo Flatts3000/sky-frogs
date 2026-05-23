@@ -14,7 +14,7 @@ This is the copy that lives on `curseforge.com/minecraft/modpacks/sky-frogs`. Pa
 
 ## Hook (first paragraph on the page)
 
-Sky Frogs is a void-skyblock modpack for NeoForge 1.21.11. You spawn on a 3×3 dirt island with one tree and one chest. There's no overworld to mine. There's no Nether to raid for ancient debris. The only way to iron — and to everything past iron — is through **Resource Frogs**: six categories of breedable frogs that each eat category-matching slimes and produce Configurable Froglights you smelt into ingots.
+Sky Frogs is a void-skyblock modpack for NeoForge 1.21.1. You spawn on a 3×3 dirt island with one tree and one chest. There's no overworld to mine. There's no Nether to raid for ancient debris. The only way to iron — and to everything past iron — is through **Resource Frogs**: six categories of breedable frogs that each eat category-matching slimes and produce Configurable Froglights you smelt into ingots.
 
 It's built around [Productive Frogs](https://www.curseforge.com/minecraft/mc-mods/productive-frogs) (the underlying mod) and shaped by the FTB Quests questbook into a 50–80 hour campaign from first iron to the endgame creative trophy.
 

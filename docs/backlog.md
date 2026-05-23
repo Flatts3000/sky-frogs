@@ -8,6 +8,7 @@ Parking lot for open questions, deferred features, and post-1.0 ideas. Move item
 
 ### Productive Frogs feature requests blocking pack work
 
+- [ ] **Rebuild Productive Frogs for MC 1.21.1.** PF's current build targets MC 1.21.11 (NeoForge 21.11.42). Sky Frogs was rolled back to 1.21.1 on 2026-05-23 because Ex Deorum and Skyblock Builder have no 1.21.4+ NeoForge builds. PF needs a 1.21.1 build before it can be bundled into the pack. Coordinate with the [`productive-frogs`](../../productive-frogs) repo; the API-rename work captured in the `project_mc1211_api_renames.md` memory will need to be reversed (or held on a 1.21.11 branch for whenever the substrate mods catch up).
 - [ ] **Publish Productive Frogs to CurseForge.** PF is not yet on CurseForge — only a local jar at `../productive-frogs/build/libs/`. The pack can't ship until PF has a public CF release. (Modrinth is no longer a target — see "Recently moved out of backlog" below for the FTB CF-only decision.) Tracking as v0.1 blocker.
 - [ ] **Datapack-driven parent species spawn** — verify whether Productive Frogs exposes biome-locked spawn recipes that Sky Frogs can KubeJS-override (mirror the Sky Bees Reborn `bee_spawning` pattern). If not, file a feature request upstream against [`productive-frogs`](../../productive-frogs). Workaround for v0.1: distribute parent species via quest-reward spawn eggs.
 - [ ] **Slime Milker automation hooks** — Productive Frogs V1 is hand-operated only. For v0.x of Sky Frogs we live with that and lean on Modular Routers + hoppers + water streams for "almost-automation." Real automation (PF V2) is the long-term unlock.
@@ -54,7 +55,7 @@ Parking lot for open questions, deferred features, and post-1.0 ideas. Move item
 ## Known risks
 
 - **Productive Frogs V1 might not be feature-complete by Sky Frogs v0.1 target.** Slime Milker is the load-bearing block for the Tier 1 "scale up" beat; without it, players are stuck producing one Iron Froglight every ~10 minutes (single slime, no milking). Mitigation: gate Sky Frogs v0.1 release on Slime Milker landing in PF V1.
-- **Mod-update churn through NeoForge 1.21.x** could force a re-pin pass on each PF bump. We're now on 1.21.11 (matched to PF). Mitigation: hold a single MC version per pack release; bump deliberately when PF bumps, not opportunistically.
+- **Mod-update churn through NeoForge 1.21.x** could force a re-pin pass on each PF bump. We're now on 1.21.1 — rolled back from 1.21.11 because Ex Deorum and Skyblock Builder have no 1.21.4+ NeoForge builds. Mitigation: hold the pack to whatever MC version the bootstrap-substrate mods are on, not whatever PF is on. PF can be rebuilt to match.
 - **CurseForge approval delays** could block v0.1 launch on CF. Since CF is our sole channel, an approval delay = no v0.1 launch. Mitigation: submit the empty CF project for approval as early as possible in the v0.1 cycle so the approval window runs in parallel with content work.
 - **License compatibility check** — verify every bundled mod's license allows redistribution in a modpack. Most do (MIT, ARR-with-modpack-permission, GPL, etc.). One or two outliers might require explicit author permission. Audit before v0.1.
 - **Productive Frogs is an in-development mod by the pack author**. Risk: pack might inadvertently expose / depend on private APIs that change. Mitigation: pin exact PF version per release; bump deliberately.
@@ -68,6 +69,7 @@ Parking lot for open questions, deferred features, and post-1.0 ideas. Move item
 
 ## Recently moved out of backlog (changelog)
 
+- **2026-05-23 — DECIDED: Pack pinned to MC 1.21.1 (rolled back from 1.21.11).** Probed every 1.21.x patch from 1.21.1 through 1.21.11 — Ex Deorum and Skyblock Builder both stuck on the 1.21.1 release with no newer NeoForge builds. Since both are load-bearing (Tier 0 bootstrap + skyblock worldgen respectively), 1.21.1 is the only viable MC version for the pack as designed. Productive Frogs now needs to be rebuilt for 1.21.1 to match (tracked as open item above). Closes the prior "verify Skyblock Builder 1.21.11 release exists before adding" note in mod_list.md — confirmed it doesn't.
 - **2026-05-23 — DECIDED: CurseForge-only distribution.** The FTB utility stack (FTB Library / Quests / Teams / Chunks / Ranks / Essentials) is CurseForge-only. `packwiz modrinth export` falls back to inlining the FTB jars as `overrides/mods/*.jar`, which Modrinth's uploader rejects on redistribution policy grounds. Since FTB Quests is the canonical questbook (load-bearing), Modrinth is off the table for v0.1 and the foreseeable future. The same constraint applies to Productive Frogs — it'll publish CF-only too. See `docs/distribution.md`.
 
 When items leave the backlog, log them here briefly so we can see what's been processed.

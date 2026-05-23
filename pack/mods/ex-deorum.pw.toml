@@ -1,0 +1,13 @@
+name = "Ex Deorum"
+filename = "exdeorum-3.10.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "8363d527262192aaba8973b78d8fce6c8a5ce102"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7160864
+project-id = 901420

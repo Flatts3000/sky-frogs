@@ -44,7 +44,7 @@ The `release.yml` GitHub Action takes over:
 2. Runs `tools/build_cf_zip.sh` (planned) — `packwiz refresh && packwiz curseforge export`.
 3. Creates a GitHub release with the CF zip + server zip attached and a changelog excerpt from `CHANGELOG.md`.
 4. Uploads the CF zip to CurseForge via API.
-5. Sets `game_versions: [1.21.11]`, `loaders: [neoforge]` on the CF release.
+5. Sets `game_versions: [1.21.1]`, `loaders: [neoforge]` on the CF release.
 
 Manual release path (fallback) if the action fails: download the artifact from the GitHub release page, upload manually via the CurseForge web UI.
 
