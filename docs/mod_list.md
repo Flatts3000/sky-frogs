@@ -8,7 +8,7 @@ This document captures **candidate mod categories and what they'd be for**, with
 
 Every mod ships for one of three reasons:
 
-1. **Frog mechanic dependency** — the mod IS or feeds the central loop (e.g. Productive Frogs itself, Ex Deorum for bootstrap dirt/water/lava).
+1. **Frog mechanic dependency** — the mod IS or feeds the central loop (e.g. Productive Frogs itself, Ex Deorum for lava-handling + second water source).
 2. **Tier supplier** — provides a category of resources that frogs will farm via Resource Slimes (e.g. Mekanism = osmium/uranium/fluorite metallic+gem slimes).
 3. **Infrastructure** — skyblock fundamentals (worldgen, water source, item logistics) or unavoidable QoL (JEI, Jade, FTB Library family).
 
@@ -27,9 +27,8 @@ Any mod that fails all three is rejected.
 | Mod                   | Role                                                                 | Notes                                                |
 |-----------------------|----------------------------------------------------------------------|------------------------------------------------------|
 | **Skyblock Builder**  | Void worldgen + starting island template + per-player island UI      | 1.21.1 (`21.1.29`). No 1.21.4+ builds exist — partial reason pack is pinned to 1.21.1. |
-| **Ex Deorum**         | Manual sieve, hammer, crucible — the bootstrap loop for dirt/water/lava/stone | Same role as in Sky Bees Reborn; sieving stays as the *manual* path to first iron, but we KubeJS-disable Ex Deorum's silkworm autocrafting |
+| **Ex Deorum**         | Porcelain bucket, crucibles, barrels — lava-safe early bucket, leaves→lava crucible, **rain-collection barrels for second water source** (needed to bootstrap an infinite water source). **No sieving** — sieve recipes + meshes are KubeJS-disabled in `anti.js`. |
 | **Forgiving Void**    | Don't die instantly from falling off your island                     | Quality-of-life — strongly preferred for skyblock    |
-| **Rain Shield**       | Prevent rain inside the player's island area                         | Optional but plays well with skyblock                |
 
 ### 3. Tier suppliers — the resources frogs farm
 

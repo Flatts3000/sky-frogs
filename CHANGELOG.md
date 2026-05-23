@@ -11,6 +11,10 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 ### Changed
 - Pinned to MC 1.21.1 (Ex Deorum and Skyblock Builder have no 1.21.4+ NeoForge builds).
 - CurseForge-only distribution (FTB stack blocks Modrinth).
+- Tier 0 bootstrap reshaped: no sieving, vanilla slime farm via KubeJS spawn override; Ex Deorum demoted to porcelain bucket + crucibles + rain-collection barrels.
+
+### Removed
+- Rain Shield (conflicted with Ex Deorum barrel rain collection inside the player's claim).
 
 ---
 

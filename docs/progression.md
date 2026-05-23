@@ -13,19 +13,21 @@ The Sky Frogs player journey — from spawning on a 3×3 island to building an a
 
 ## Tier 0 — Bootstrap
 
-Player spawns on a void with a 3×3 dirt island, a tree sapling, and a first-join inventory grant (porcelain bucket, sieve mesh, hammer, a few crushed netherrack, the FTB Quests book). No frog content yet.
+Player spawns on a 3×3 dirt island with the first-join inventory grant (saplings, water bucket, lava bucket, food). The FTB Quests book auto-opens. No frog content yet; the goal is building a slime farm.
 
 **Goals:**
-- Get water (Ex Deorum porcelain bucket → pump from sky / find on island chest).
-- Set up the **manual Ex Deorum sieve loop** to produce dirt → pebbles → cobblestone → first iron via crushed netherrack/stone sieving.
-- Smelt first iron, make a glass bottle.
-- **Find or generate slimeballs** — vanilla slimes won't spawn naturally on a void. Bootstrap options:
-  - Ex Deorum sieving of crushed dirt has a small chance of slimeballs (mesh-dependent).
-  - Industrial Foregoing pink slime (later) replaces this, but that's Tier 3+.
+- **Wood bootstrap.** Plant saplings → grow tree → wooden tools.
+- **Cobble generator.** Vanilla water + lava (one bucket of each, placed adjacent) → infinite cobble. Source of all build material.
+- **Second water source.** The grant has 1 water bucket = 1 source. Vanilla infinite water needs 2 sources adjacent. Player builds an **Ex Deorum barrel outside their claim**, collects rainwater, buckets the second source → infinite water square. (Ex Deorum's barrel is the only Tier 0 mechanic from Ex Deorum the player touches — sieving is disabled pack-wide.)
+- **Mob farm.** Standard dark-room slime farm built from cobble. Vanilla `minecraft:slime` (per PF's `ParentSpeciesEntry`, this is the Metallic parent) spawns on the player's island via a KubeJS spawn-rule override that drops the slime-chunk / swamp-biome requirement.
+- **Collect slimeballs.** Vanilla slime kills drop slimeballs. Occasionally a slime split produces an Iron Slime via PF's `SlimeSplitDiscoveryHandler` (configurable rate).
+- **Complete the Welcome quest chapter** → reward is **2× Metallic Frogspawn** (category-typed, no priming step needed; two so the player has a breeding pair from minute one).
 
-**Unlock for Tier 1:** glass bottle + 2 slimeballs + 1 iron ingot.
+**Unlock for Tier 1:** the moment the player places one Metallic Frogspawn on water. That's the start of the frog loop.
 
 Estimated playtime: **30–60 min**.
+
+**No iron sourcing in Tier 0.** The player's first iron ingot is the smelted output of the first Iron Configurable Froglight, which their Metallic Resource Frog produces from an Iron Slime. Iron is a Tier 1 emergent property of the slime farm + frog loop, not a Tier 0 deliverable.
 
 ## Tier 1 — Metallic (gateway)
 

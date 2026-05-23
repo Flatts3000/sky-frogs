@@ -17,25 +17,28 @@ We ship a custom **island template** as a Skyblock Builder template NBT. See [`r
 
 ## Starting island contents
 
-A 3×3 dirt platform at y=64 with:
-
-- 1× oak sapling (for wood bootstrap)
-- 1× water source block in a corner (to skip the Ex Deorum porcelain-bucket grind for very first water)
+A 3×3 dirt platform at y=64. No starting blocks beyond the dirt itself.
 
 **First-join inventory grant** (via KubeJS `PlayerEvents.loggedIn` first-join hook, not a chest):
 
-- 1× Ex Deorum porcelain bucket
-- 1× Ex Deorum string mesh
-- 1× Ex Deorum hammer (wooden)
-- 4× crushed netherrack (so the player has something to sieve immediately)
-- 1× **frogspawn item** (or vanilla frog spawn egg — TBD)
-- 1× FTB Quests book auto-opened on first join
+- 2-3× oak sapling (wood bootstrap; multiple in case the first fails to grow)
+- 1× water bucket
+- 1× lava bucket
+- ~16× cooked beef (food economy buffer for the first session)
+- (FTB Quests book auto-opened on first join — no inventory slot needed)
 
-Rationale: a *too* spartan start (just a sapling and a few dirt) is a common skyblock failure mode where the player can't progress for 20 minutes because they're hammering dirt. Frontloading the bootstrap kit gets them to "I'm starting on the Ex Deorum loop" within 5 minutes.
+The grant is intentionally minimal. The player builds everything else from these primitives:
 
-Why inventory grant, not a chest: modern skyblock packs put first-join items directly in the player's inventory. It's lower friction (no "where do I open this?"), survives the player breaking the chest before taking everything, and the KubeJS hook lets us guard against re-granting on re-login.
+1. **Cobble generator** — vanilla water + lava (one bucket each, placed adjacent → infinite cobble).
+2. **Second water source** — the grant has only 1 water bucket, which is 1 source. Infinite water needs 2 sources adjacent (the standard vanilla pattern). The player gets the second source via **Ex Deorum's rain-collection barrel** — set a barrel outside, wait for rain to fill it, bucket out → second source → vanilla infinite water square. This gives Ex Deorum a load-bearing Tier 0 role beyond just "extras."
+3. **Mob farm** — built from the cobble. Vanilla `minecraft:slime` spawns via KubeJS-overridden spawn rule (the Metallic parent per PF's `ParentSpeciesEntry`). Player collects slimeballs and occasionally split-discovers Iron Slimes via PF's `SlimeSplitDiscoveryHandler`.
+4. **First Resource Frog** — Welcome quest chapter rewards **2× Metallic Frogspawn** (category-typed, so no priming step needed) at completion. Two for a breeding pair.
 
-The frog spawn item is the **one concession to "frogs don't exist in a void overworld."** Alternative considered: gate the first frog behind a quest reward. Decided against because it puts a 20-minute gate before any frog interaction. Better to put it in the player's hand on minute zero.
+The first Iron Configurable Froglight is the first iron source — smelting it gives the first iron ingot. No sieving, no Ex Deorum hammers needed.
+
+Why inventory grant, not a chest: modern skyblock packs put first-join items directly in the player's inventory. Lower friction (no "where do I open this?"), survives the player breaking the chest before taking everything, KubeJS hook guards against re-granting on re-login.
+
+Why minimal grant: the design wants the player engaged with the mob-farm loop within minutes, not hand-feeding a bootstrap inventory through 20 minutes of crafting. Saplings + water + lava + food + the questbook is everything needed to reach a slime farm in ~30 min.
 
 ## Dimensions
 

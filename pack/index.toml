@@ -66,11 +66,6 @@ hash = "5fae6a137e68aa9408d87d1dfc419d4450eec49c0c57c02a2d6756c3fca69a44"
 metafile = true
 
 [[files]]
-file = "mods/rain-shield.pw.toml"
-hash = "e2c90c98a80953acf2be2a89089c97e8034ee4eaebbb11438011df69ebba7178"
-metafile = true
-
-[[files]]
 file = "mods/skyblock-builder.pw.toml"
 hash = "036970b515dc649df33a4dc7804de3b92296c83f8a2ad7b44d7e6c5713cd00d1"
 metafile = true

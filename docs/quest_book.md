@@ -52,9 +52,9 @@ Sky Frogs mirrors this organization closely — six tier chapters drive progress
 
 | Chapter file              | Title                  | Covers                                                |
 |---------------------------|------------------------|--------------------------------------------------------|
-| `welcome.snbt`            | Welcome to Sky Frogs   | First-launch quest unlocking the rest                  |
-| `getting_started.snbt`    | Getting Started        | Tier 0 — Ex Deorum bootstrap, first water/dirt/wood    |
-| `productive_frogs.snbt`   | Productive Frogs       | Core mod teaching — bottling, priming, hatching, feeding (no tier gate, runs alongside Metallic Mastery) |
+| `welcome.snbt`            | Welcome to Sky Frogs   | Tier 0 — cobble gen, second water source via Ex Deorum barrel, mob farm, slime collection. Final reward: 2× Metallic Frogspawn. Includes a **cooldown-repeatable "Replacement Frogspawn" emergency quest** for when frogs die / jump off the island. |
+| `getting_started.snbt`    | Getting Started        | (Merged into `welcome.snbt`; chapter removed — Sky Frogs has no separate Ex Deorum bootstrap chapter since sieving is disabled.) |
+| `productive_frogs.snbt`   | Productive Frogs       | Core mod teaching — placing frogspawn, breeding, slime infusion, milking, feeding (no tier gate, runs alongside Metallic Mastery) |
 
 ### Dimension chapters (2)
 
@@ -96,8 +96,7 @@ Aim for **~30-40 quests per chapter** on average (22 × 35 ≈ 770). Distributio
 
 | Chapter group          | Average quests | Rationale                                             |
 |------------------------|---------------:|--------------------------------------------------------|
-| Welcome                |             5 | Onboarding only — tutorial steps                       |
-| Getting Started        |            20 | Bootstrap loop with optional side quests               |
+| Welcome                |            18 | Tier 0 bootstrap: spawn, cobble gen, water source, mob farm, slime collection, first frogspawn reward, emergency replacement quest. |
 | Tier 1-6 (6 chapters)  | 50 each = 300 | Densest — these are the spine. Per-resource subquests. |
 | Productive Frogs       |            30 | Mechanics teaching with explicit per-feature quests    |
 | Tech mods (9 chapters) | 40 each = 360 | Each teaches the mod from zero                         |
@@ -111,9 +110,7 @@ This is ~855 total which gives us 15% headroom for cutting. Target ship is ~750.
 High-level (chapter-to-chapter dependencies):
 
 ```
-welcome
-   ↓
-getting_started ─────┐
+welcome ─────────────┐
    ↓                 ↓
 metallic_mastery     productive_frogs
    ↓
@@ -161,6 +158,33 @@ Standardized reward tiers (mirror SBR pattern):
 | Notable      | Tier-completion quests             | 1 loot bag + 1 named reward (e.g., spawn egg)    |
 | Milestone    | Chapter-completion / Tier-unlock   | Multiple loot bags + tier-specific tool / hint   |
 | Legendary    | Endgame creative trophy            | Custom Sky Frogs Master Frog trophy item         |
+
+## The Welcome chapter (Tier 0 detail)
+
+Drafted quest spine for the `welcome.snbt` chapter — the only mandatory Tier 0 content:
+
+1. **Plant a sapling** — sapling from first-join grant placed on dirt.
+2. **Harvest wood + craft a wooden axe + pickaxe.**
+3. **Place your water source** — bucket the water onto the platform.
+4. **Place your lava source adjacent to water → first cobblestone.** Player understands the vanilla cobble generator.
+5. **Set up an Ex Deorum barrel outside your claim.** (Tooltip: Rain Shield is not in this pack — your claim does get rain inside, but the barrel works anywhere.)
+6. **Wait for rain → bucket the second water source.** Now infinite water.
+7. **Mine 64 cobblestone.** Scaling material.
+8. **Build a dark room** — minimum 5×5×3 enclosed space at light level 0.
+9. **Kill 8 slimes.** Slimes spawn via the KubeJS-overridden vanilla-slime rule. Reward: a few slimeballs (in case loot RNG was unkind).
+10. **Collect 16 slimeballs total.** Resource bar for frog breeding + crafting.
+11. **(Optional spine branch)** — split-discover an Iron Slime. Tooltip hint: keep farming, it's random.
+12. **(Final)** Complete the chapter → **reward: 2× Metallic Frogspawn**. Now Tier 1 is unlocked.
+
+**Repeatable emergency quest** (always visible in the Welcome chapter):
+
+- **"My frogs are gone"** — visible from the moment the chapter opens; completable at any time.
+  - Cooldown: 1 hour real-time (FTB Quests `cooldown` field).
+  - Cost: 4 slimeballs (so the player has to keep the farm running to use it; prevents infinite frog cheese).
+  - Reward: 2× Metallic Frogspawn.
+  - Quest description text: "Frogs jump. Frogs occasionally jump off your island. Frogs occasionally drown. This quest gets you back on your feet. Please consider building a fence around your enclosure."
+
+The intent is that a player who somehow loses every single frog AND has no frogspawn in inventory can recover, but it's friction-laden enough that the player will build a fence after the first use.
 
 ## Special: the "Master Pond" chapter
 

@@ -36,8 +36,10 @@ Reference: [`sky-bees-reborn-reference/extracted/kubejs/server_scripts/anti.js`]
 
 | Item                                      | Mod                    | Why disabled                                  |
 |-------------------------------------------|------------------------|------------------------------------------------|
-| `actuallyadditions:lens_of_the_miner`     | Actually Additions     | Same as SBR                                    |
-| `industrialforegoing:ore_laser_base`      | Industrial Foregoing   | Same as SBR                                    |
+| All `exdeorum:*_sieve` blocks             | Ex Deorum              | Sky Frogs does not use sieving as a mechanic   |
+| All `exdeorum:*_mesh` items               | Ex Deorum              | No sieves = no need for meshes                 |
+| `actuallyadditions:lens_of_the_miner`     | Actually Additions     | Generates ores directly from stone             |
+| `industrialforegoing:ore_laser_base`      | Industrial Foregoing   | Generates ores from nothing                    |
 | `rftoolsbuilder:builder` (with mining cards) | RFTools Builder    | Quarry → bypass; recipe-strip the quarry card  |
 | Mekanism digital miner                    | Mekanism               | Same — recipe-strip                            |
 
@@ -46,20 +48,29 @@ Reference: [`sky-bees-reborn-reference/extracted/kubejs/server_scripts/anti.js`]
 ```js
 // kubejs/server_scripts/anti.js
 ServerEvents.recipes(event => {
+  // Sieving disabled at the pack level — Sky Frogs uses a slime-farm bootstrap, not sieving.
+  event.remove({ id: /^exdeorum:sieve\// })
+  event.remove({ id: /^exdeorum:mesh\// })
+  // Mining shortcuts (added as mods land in the pack):
   event.remove({ type: 'actuallyadditions:mining_lens' })
   event.remove({ type: 'industrialforegoing:laser_drill_ore' })
-  // Sky-Frogs additions:
   event.remove({ output: 'rftoolsbuilder:shape_card_void' })
   event.remove({ output: 'mekanism:digital_miner' })
 })
 
 ItemEvents.modifyTooltips(event => {
+  // Hint to anyone looking up sieves in JEI that the omission is intentional
+  ['exdeorum:wooden_sieve', 'exdeorum:string_mesh', 'exdeorum:flint_mesh', 'exdeorum:iron_mesh']
+    .forEach(id => event.add(id, [
+      Text.red('⚠️ DISABLED'),
+      Text.gray('Sky Frogs uses a slime-farm bootstrap.'),
+      Text.gray('Build a dark-room mob farm instead.')
+    ]))
   event.add('actuallyadditions:lens_of_the_miner', [
     Text.red('⚠️ DISABLED'),
-    Text.gray('The lens has been disabled to preserve'),
-    Text.gray('the progression of the pack')
+    Text.gray('Mining shortcuts are disabled by design.'),
+    Text.gray('Use frogs.')
   ])
-  // ...repeat for each disabled item
 })
 ```
 
@@ -77,46 +88,41 @@ BlockEvents.rightClicked(event => {
 })
 ```
 
-### Pillar 2: Productive Frogs spawn recipes — allow species in any biome
+### Pillar 2: Parent species spawn rules — Metallic free, others gated
 
-Productive Frogs' parent species (cave/geode/tide/void slime) ship with biome-locked spawn recipes (TBD if PF exposes them as datapack recipes; verify against latest PF). On a void skyblock those biomes don't exist, so we KubeJS-override the spawn recipes to allow any-biome (or specifically `#minecraft:is_overworld`).
+Per PF's `ParentSpeciesEntry`, six parent species map to the six categories:
 
-Reference pattern (from SBR's [`productivebees.js`](../../sky-bees-reborn-reference/extracted/kubejs/server_scripts/productivebees.js) lines 167-199):
+| Parent entity              | Category  | Tier 0 spawn rule (Sky Frogs)                                  |
+|----------------------------|-----------|----------------------------------------------------------------|
+| `minecraft:slime`          | METALLIC  | **KubeJS-overridden to spawn in all biomes** on the player's island (drops slime-chunk + swamp-biome requirement). This is the Tier 0 slime-farm fuel. |
+| `minecraft:magma_cube`     | INFERNAL  | Vanilla rules unchanged — player reaches Nether at Tier 5.     |
+| `productivefrogs:cave_slime`  | MINERAL  | Quest-reward spawn egg unlocked at Tier 2 entry.              |
+| `productivefrogs:geode_slime` | GEM      | Quest-reward spawn egg at Tier 3.                              |
+| `productivefrogs:tide_slime`  | AQUATIC  | Quest-reward spawn egg at Tier 4.                              |
+| `productivefrogs:void_slime`  | ARCANE   | Quest-reward spawn egg at Tier 6.                              |
+
+The asymmetry is intentional: vanilla slime is free-spawning so the player has a Tier 0 fuel source for the mob farm; the other four PF parents are tier-gated via quests so the player can't skip-progress.
+
+**KubeJS pattern for the vanilla slime spawn override:**
 
 ```js
-event.remove({ type: 'productivebees:bee_spawning' })
+// kubejs/server_scripts/slime_spawning.js
+EntityEvents.checkSpawn('minecraft:slime', event => {
+  const { entity, level, x, y, z, type } = event
+  // Only override natural mob-spawning attempts (don't touch eggs / commands / etc.)
+  if (type !== 'NATURAL' && type !== 'CHUNK_GENERATION') return
 
-bee_nests.forEach((pair, index) => {
-  let builder = {
-    type: "productivebees:bee_spawning",
-    ingredient: { item: pair.nest },
-    results: [ `productivebees:${pair.bee}` ],
-    spawn_item: { item: 'productivebees:honey_treat' },
-    biomes: '#minecraft:is_overworld',  // <-- the key override
-  }
-  event.custom(builder).id(`skybeesreborn:nest_spawn_${pair.bee}_${index}`)
+  // Sky Frogs rule: vanilla slimes spawn in any biome, at any Y, in a dark area.
+  // Skyblock has no slime chunks and no swamps — without this, the Metallic
+  // parent (per ParentSpeciesEntry) never spawns and the mob-farm bootstrap dies.
+  const lightOk = level.getMaxLocalRawBrightness(BlockPos.containing(x, y, z)) <= 7
+  if (lightOk) event.allow()
 })
 ```
 
-**Sky Frogs equivalent (pending PF API verification):**
+(Exact KubeJS-on-NeoForge-1.21.1 event names will be verified during Phase 1 implementation. The vanilla-MC concept is `MobSpawnEvent.PositionCheck` / `MobSpawnEvent.FinalizeSpawn`; the KubeJS-side wrapper may differ slightly.)
 
-```js
-// kubejs/server_scripts/productive_frogs.js
-const parent_species = [
-  { species: 'productivefrogs:cave_slime',   category: 'mineral' },
-  { species: 'productivefrogs:geode_slime',  category: 'gem' },
-  { species: 'productivefrogs:tide_slime',   category: 'aquatic' },
-  { species: 'productivefrogs:void_slime',   category: 'arcane' },
-]
-
-ServerEvents.recipes(event => {
-  // If PF exposes biome-locked spawn recipes, remove + re-emit with any-biome.
-  // If not, skip — parent species are quest-reward-distributed instead.
-  // event.remove({ type: 'productivefrogs:parent_species_spawn' })  // TBD
-})
-```
-
-If PF doesn't expose datapack spawn rules, fallback is **quest-reward distribution** — see [`worldgen.md`](./worldgen.md) and [`quest_book.md`](./quest_book.md).
+The other four PF parents (cave/geode/tide/void slime) are **not** given KubeJS spawn overrides — they're acquired via quest-reward spawn eggs in their respective tier chapters. See [`quest_book.md`](./quest_book.md).
 
 ### Pillar 3: Generate Resource Slime variants for modded resources
 

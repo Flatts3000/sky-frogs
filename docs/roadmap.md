@@ -27,22 +27,24 @@ The pack currently loads into a void world with a starter island — but every r
 **Goal:** a fresh world is playable to first iron ingot without crashes or dead ends. No frogs yet — just the bootstrap loop.
 
 **Blockers:**
-- None (all required mods are in the pack).
+- Category-typed Metallic Frogspawn must exist as a PF item (so it can be a quest reward). If PF doesn't expose it, this becomes a PF-side feature request. Tracked in [`docs/backlog.md`](./backlog.md).
 
 **Deliverables:**
-- [ ] **First-join inventory grant** decided and implemented (KubeJS `PlayerEvents.loggedIn` with a first-join guard). Probably: porcelain bucket, sieve + string mesh, wooden hammer, a few crushed netherrack to sieve immediately, frogspawn item, FTB Quests book auto-opened.
-- [ ] **Ex Deorum sieve drop tables** verified or tuned. Defaults may give iron too easily or too rarely.
-- [ ] **First KubeJS override file**: `pack/kubejs/server_scripts/anti.js` — disable nothing yet (no tech mods to disable), but the file exists as scaffold for Phase 3+.
-- [ ] **Welcome quest chapter** in FTB Quests: 3-5 quests guiding the player from spawn to first iron. ([`docs/quest_book.md`](./quest_book.md) outlines the chapter list.)
-- [ ] **Pack version bump** to `0.0.4` once the above lands. Reimport and verify a new player can reach iron in ~30-60 min following only the quest book.
+- [ ] **First-join inventory grant** implemented in `pack/kubejs/server_scripts/first_join.js` (KubeJS `PlayerEvents.loggedIn` with a persistent-data first-join guard): 2-3× oak sapling, 1× water bucket, 1× lava bucket, ~16× cooked beef. FTB Quests book auto-opens.
+- [ ] **`anti.js`** KubeJS file — disables Ex Deorum sieves + meshes (per [`docs/kubejs_overrides.md`](./kubejs_overrides.md) Pillar 1). No tech-mod disables yet; scaffolds Phase 3+.
+- [ ] **`slime_spawning.js`** KubeJS file — overrides vanilla `minecraft:slime` spawn rules to allow any biome at low light (Pillar 2). Sanity-test the spawn rate in a dark 5×5×3 room.
+- [ ] **Welcome quest chapter** (`welcome.snbt`) in FTB Quests: ~18 quests per [`docs/quest_book.md`](./quest_book.md) spine, including the cooldown-repeatable "Replacement Frogspawn" emergency quest.
+- [ ] **Pack version bump** to `0.0.5` (next after the 0.0.4 design-pivot reset). Reimport and verify a fresh-world player reaches their first Iron Configurable Froglight in ~30-60 min following only the questbook.
 
 **You drive:**
-- Decide the first-join inventory grant contents. (I can propose; you accept/edit.)
-- Playtest the loop and tell me where it breaks.
-- Tune sieve drop rates based on what feels right.
+- Confirm the first-join grant final list (saplings count, food type/amount).
+- Confirm the slime spawn rate feels right after first playtest.
+- Confirm the Welcome quest spine reads well in-game.
 
 **I drive:**
-- Write the KubeJS skeleton (including the first-join inventory grant), the FTB Quests SNBT.
+- Write the KubeJS scripts (`first_join.js`, `anti.js`, `slime_spawning.js`).
+- Write the FTB Quests `welcome.snbt` SNBT.
+- Document the Ex Deorum barrel water-collection mechanic specifics during implementation.
 
 ## Phase 2 — First Iron Froglight (v0.1 alpha)
 

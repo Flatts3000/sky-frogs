@@ -34,14 +34,15 @@ It's built around [Productive Frogs](https://www.curseforge.com/minecraft/mc-mod
 
 Your first hour:
 
-1. **Spawn** on a 3×3 dirt island with a sapling, a water source, and your bootstrap kit in your inventory — porcelain bucket, sieve mesh, hammer, and your first frogspawn.
-2. **Set up the sieve loop.** Crush dirt → pebbles → cobble. Sieve crushed netherrack/stone with the right mesh until you have a few iron nuggets.
-3. **Smelt your first iron ingot** in a vanilla furnace.
-4. **Make a glass bottle.** Sieving gives you sand → smelt to glass → craft.
-5. **Hatch your first Resource Frog.** Right-click your starter frogspawn with the glass bottle → Frog Egg item. Place on water. Prime with the iron ingot. Wait for hatch.
-6. **Feed it slimes.** The questbook will walk you through getting your first Iron Slime — the Tier 1 "Metallic Mastery" chapter is your guide from here.
+1. **Spawn** on a 3×3 dirt island with a minimal kit: saplings, a water bucket, a lava bucket, food. The questbook auto-opens.
+2. **Build a vanilla cobble generator.** Place water and lava adjacent → infinite cobblestone.
+3. **Collect a second water source.** Set up an Ex Deorum barrel outside your claim; rain fills it; bucket the second source → vanilla infinite water square.
+4. **Build a dark-room mob farm** out of cobble. Slimes spawn here (the pack overrides vanilla rules so slimes spawn in any biome on your island).
+5. **Farm slimes.** Slimeballs from kills; occasionally a slime split produces an Iron Slime (random discovery — keep farming).
+6. **Complete the Welcome quest chapter** → reward is **two Metallic Frogspawn** for a breeding pair.
+7. **Place a frogspawn** → Metallic Resource Frog hatches. Feed it an Iron Slime → first **Iron Configurable Froglight** drops → smelt → first iron ingot.
 
-Within two hours of starting, you should have your first **Iron Configurable Froglight** dropping. Within a play session, your iron problem is solved forever.
+Within a play session, your iron problem is solved forever. The questbook drives every step.
 
 The questbook drives everything. If you're not sure what's next, open it.
 
