@@ -34,3 +34,17 @@ metafile = true
 file = "mods/ftb-teams-forge.pw.toml"
 hash = "7c297edf8a5619658e9843b6f280a0b32bf1bba2468224bc45ba3545c89db172"
 metafile = true
+
+[[files]]
+file = "mods/jade.pw.toml"
+hash = "7ab6f95a08d969c933504eaee2544cc3f53790f5ef67bc5725f483b88927ed9b"
+metafile = true
+
+[[files]]
+file = "mods/jei.pw.toml"
+hash = "ae4e81d71e0e56a3febfa95186de4923cbc9835ef2a4358d4ba2f610a305db88"
+metafile = true
+
+[[files]]
+file = "mods/productivefrogs-0.1.0.jar"
+hash = "0f85b243a08c76d21e5a40a80635fbdab6bbd35130d860eb299e59e70ccc0a49"
