@@ -66,6 +66,11 @@ hash = "5fae6a137e68aa9408d87d1dfc419d4450eec49c0c57c02a2d6756c3fca69a44"
 metafile = true
 
 [[files]]
+file = "mods/productive-frogs.pw.toml"
+hash = "c7d9c05717a7d2b0d150e299d0d34fcf623fa089f560557c6c953f9c0560e5a7"
+metafile = true
+
+[[files]]
 file = "mods/skyblock-builder.pw.toml"
 hash = "036970b515dc649df33a4dc7804de3b92296c83f8a2ad7b44d7e6c5713cd00d1"
 metafile = true

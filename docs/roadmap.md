@@ -51,10 +51,10 @@ The pack currently loads into a void world with a starter island — but every r
 **Goal:** a player can follow the questbook from spawn to producing their first Iron Configurable Froglight. The pack's core loop is provable.
 
 **Blockers:**
-- **Productive Frogs needs to be on CurseForge** (or at least built for 1.21.1 and bundled as a local override). You're handling the PF rebuild; PF CF publication is a v0.1 release gate.
+- ✅ **Productive Frogs on CurseForge** (resolved 2026-05-25) — PF published as v1.0.1 for 1.21.1 / NeoForge and added to the pack via `packwiz cf add`. This was the v0.1 release gate.
 
 **Deliverables:**
-- [ ] Productive Frogs added via `packwiz cf add productive-frogs` (or bundled as local override until CF publishes).
+- [x] Productive Frogs added via `packwiz cf add productive-frogs` (pinned at v1.0.1).
 - [ ] **KubeJS Pillar 2** — Productive Frogs parent species spawn overrides ([`docs/kubejs_overrides.md`](./kubejs_overrides.md)). Verify whether PF exposes datapack spawn recipes; if not, use quest-reward eggs as fallback.
 - [ ] **KubeJS Pillar 4** — first recipe override to force frog ingredients in the metal smelting path (or accept the unmodified path for alpha).
 - [ ] **First slime variant JSONs** for vanilla metallics (iron, copper, gold). Drop directly in `pack/kubejs/data/skyfrogs/productivefrogs/slime_variant/`.
