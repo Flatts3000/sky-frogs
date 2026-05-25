@@ -16,12 +16,12 @@ These six colors come directly from Productive Frogs' `Category` enum. Any per-c
 
 | Category   | Hex       | RGB             | Use                                                          |
 |------------|-----------|-----------------|--------------------------------------------------------------|
-| Metallic   | `#808088` | (128, 128, 136) | Tier 1 — iron / copper / gold tones, cool gray               |
-| Mineral    | `#B5651D` | (181, 101, 29)  | Tier 2 — redstone / coal / earth tones, saddle brown         |
-| Gem        | `#7EE8FA` | (126, 232, 250) | Tier 3 — diamond / amethyst / certus, light cyan sparkle     |
-| Aquatic    | `#70C7B8` | (112, 199, 184) | Tier 4 — prismarine / kelp / sea, soft sea green             |
+| Bog        | `#6A8540` | (106, 133, 64)  | Tier 1 — iron / copper / gold tones, mossy green             |
+| Cave       | `#B5651D` | (181, 101, 29)  | Tier 2 — redstone / coal / earth tones, saddle brown         |
+| Geode      | `#7EE8FA` | (126, 232, 250) | Tier 3 — diamond / amethyst / certus, light cyan sparkle     |
+| Tide       | `#70C7B8` | (112, 199, 184) | Tier 4 — prismarine / kelp / sea, soft sea green             |
 | Infernal   | `#C73E1D` | (199, 62, 29)   | Tier 5 — blaze / magma / nether, fire red                    |
-| Arcane     | `#9070D0` | (144, 112, 208) | Tier 6 — ender / chorus / end, royal purple                  |
+| Void       | `#9070D0` | (144, 112, 208) | Tier 6 — ender / chorus / end, royal purple                  |
 
 ### Parent slime tints (secondary palette)
 
@@ -29,12 +29,12 @@ The four PF parent slime species ship with their own outer-layer tints. These ar
 
 | Parent species | Hex       | Maps to category |
 |----------------|-----------|------------------|
-| Cave Slime     | `#8A8A8A` | Mineral          |
-| Geode Slime    | `#6CDCD7` | Gem              |
-| Tide Slime     | `#3F76E4` | Aquatic          |
-| Void Slime     | `#5E3782` | Arcane           |
+| Cave Slime     | `#8A8A8A` | Cave             |
+| Geode Slime    | `#6CDCD7` | Geode            |
+| Tide Slime     | `#3F76E4` | Tide             |
+| Void Slime     | `#5E3782` | Void             |
 
-(Metallic uses vanilla slimes infused with metals; Infernal uses vanilla magma cubes. No custom parent species there.)
+(Bog and Infernal also have dedicated PF parent species — `productivefrogs:bog_slime` and `productivefrogs:infernal_slime` — infused with metals and nether mats respectively. Their outer-layer tints track the Bog and Infernal accent colors above.)
 
 ### Neutrals
 
@@ -103,15 +103,15 @@ The CF gallery's first slide is the highest-leverage single asset. It should imm
 2. **There are frogs.** At least one Resource Frog visible, ideally mid-loop (next to a Frog Egg, or eating a slime).
 3. **Resources flow.** A Configurable Froglight item entity or a hopper-collected stack visible.
 
-Composition target: rule-of-thirds, frog as focal subject, void background giving the eye a place to rest, one tier color dominant (probably Metallic or Gem — both photograph well).
+Composition target: rule-of-thirds, frog as focal subject, void background giving the eye a place to rest, one tier color dominant (probably Bog or Geode — both photograph well).
 
 ## Gallery capture order
 
 Tracked in `docs/curseforge_page.md`. Recap:
 
 1. Hero — void skyblock starter island.
-2. Tier 1 enclosure — Metallic Frog setup with Iron Slimes.
-3. Tier 3 multi-enclosure — Gem Frog setups in a row.
+2. Tier 1 enclosure — Bog Frog setup with Iron Slimes.
+3. Tier 3 multi-enclosure — Geode Frog setups in a row.
 4. Endgame singularity altar.
 5. Quest book UI open to a tier chapter.
 6. Tier 5/6 set piece — Nether arena or End dimension.

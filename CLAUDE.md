@@ -67,7 +67,7 @@ If something needs new Java behavior, file an issue against Productive Frogs and
 The current `docs/` write-ups lean on these working assumptions. None of them are decided — every one is up for revision and should be challenged when better ideas emerge:
 
 1. **Frogs as the spine of resource generation.** Whether this means "frogs replace mining entirely" or "frogs are the headline path among several" is unresolved. See [`docs/design_overview.md`](./docs/design_overview.md).
-2. **Six categories follow Productive Frogs.** This one is the closest to canonical because it inherits from the mod's enum — but the *progression order* and tier-mapping are open.
+2. **Six categories follow Productive Frogs.** This one is the closest to canonical because it inherits from the mod's enum — but the *progression order* and tier-mapping are open. Settled 2026-05-25: PF v1.0.0's species-as-category redesign means the enum is now BOG / CAVE / GEODE / TIDE / INFERNAL / VOID (biome-species names, player-facing). Sky Frogs adopts these names; the tier mapping (Tier 1 = Bog, Tier 2 = Cave, etc.) is still ours to set.
 3. **Cross-mod compat via datapack JSONs.** Inherited from how Productive Frogs already works; the pack-side workflow for generating those JSONs is unresolved.
 4. **Hand-operated appliances only in v0.x.** Tied to Productive Frogs V1 scope; if PF V2 ships earlier than expected this assumption flips.
 

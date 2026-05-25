@@ -127,12 +127,12 @@ Reads a YAML manifest of slime variants and emits one JSON per variant under `pa
 - mod: mekanism
   variants:
     - id: osmium
-      category: metallic
+      category: bog
       primer: mekanism:ingot_osmium
       smelt: mekanism:ingot_osmium
       crush: { item: mekanism:dust_osmium, count: 2 }
     - id: tin
-      category: metallic
+      category: bog
       primer: mekanism:ingot_tin
       smelt: mekanism:ingot_tin
 ```

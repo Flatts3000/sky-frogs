@@ -16,25 +16,25 @@ Six frog categories define the tier progression:
 
 | Tier | Category   | Unlocks                                                        |
 |------|------------|----------------------------------------------------------------|
-| 1    | Metallic   | Iron, copper, gold, plus modded metals (osmium, tin, aluminum…) |
-| 2    | Mineral    | Redstone, lapis, coal, quartz, amethyst, certus, fluix          |
-| 3    | Gem        | Diamond, emerald, fluorite, peridot, ruby, sapphire             |
-| 4    | Aquatic    | Prismarine, kelp, nautilus, pink slime, latex                   |
+| 1    | Bog        | Iron, copper, gold, plus modded metals (osmium, tin, aluminum…) |
+| 2    | Cave       | Redstone, lapis, coal, quartz, amethyst, certus, fluix          |
+| 3    | Geode      | Diamond, emerald, fluorite, peridot, ruby, sapphire             |
+| 4    | Tide       | Prismarine, kelp, nautilus, pink slime, latex                   |
 | 5    | Infernal   | Blaze rods, quartz, magma, glowstone, netherite line            |
-| 6    | Arcane     | Ender pearls, chorus, draconic, dimensional shards, end-tier    |
+| 6    | Void       | Ender pearls, chorus, draconic, dimensional shards, end-tier    |
 
 Slime species supply the variety inside each tier — adding a new modded resource is a single `slime_variant/*.json` drop, never a Java change.
 
 ## Design pillars
 
 - **Vanilla-feeling mechanics.** Productive Frogs leans on vanilla idioms — frogspawn, slimeballs, water bottles, lead-based mob transport. Every interaction is right-click on a block; no custom UIs.
-- **Category-based progression.** Six clear tiers (Metallic / Mineral / Gem / Aquatic / Infernal / Arcane) anchor the questbook in a structure that stays legible as more frog and slime variants ship.
+- **Category-based progression.** Six clear tiers (Bog / Cave / Geode / Tide / Infernal / Void) anchor the questbook in a structure that stays legible as more frog and slime variants ship.
 - **Cross-mod compat is the design center.** Drop a JSON, get a frog-eats-that-thing variant. Community PRs adding new modded resources need zero Java work.
 - **Mining shortcuts disabled by design.** Laser drills, mining lenses, digital miners, and quarry cards are recipe-stripped or hidden from JEI. The frog tree is the path; the pack enforces it.
 
 ## Status
 
-**Early development.** The repo scaffold, packwiz tree, FTB utility stack, JEI, and Jade are in place. Productive Frogs is bundled locally for testing but isn't on CurseForge yet — that's the v0.1 blocker. Content (KubeJS overrides, FTB Quests chapters, slime variant JSONs) is TBD.
+**Early development.** The repo scaffold, packwiz tree, FTB utility stack, JEI, Jade, KubeJS, and Productive Frogs v1.0.1 (from CurseForge) are in place. The first Tier 0 KubeJS scripts have landed (first-join grant, sieving disable). Remaining content (FTB Quests chapters, slime variant JSONs, the rest of the KubeJS overrides) is in progress.
 
 Every doc in [`docs/`](./docs/) is marked DRAFT and explicitly non-canonical. The pack is still finding its identity; design decisions are up for revision.
 

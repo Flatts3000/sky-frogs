@@ -1,0 +1,81 @@
+{
+  // A list of biomes for each dimension.
+  // You can not use this for the end dimension. The end dimension will always have it's five biomes.
+  // Overworld has all oceans by default because animals cannot spawn in these biomes.
+  // A list of biomes will be generated at "config/skyblockbuilder/data/biomes.txt" each time joining a world.
+  // These are resource lists. See https://moddingx.org/libx/org/moddingx/libx/util/data/ResourceList.html#use_resource_lists_in_configs
+  //
+  // SKY FROGS: the overworld is forced to a single swamp biome. This is load-bearing for Tier 0.
+  // Productive Frogs' Bog Slime (the Tier 0 / Bog parent species) spawns only in minecraft:swamp +
+  // minecraft:mangrove_swamp via PF's own add_bog_slime_spawn.json biome modifier, gated by a
+  // light-based placement rule. A swamp island means a dark-room slime farm produces Bog Slimes with
+  // no pack-side spawn code. Swamp is also on-theme for a frog pack. See docs/worldgen.md +
+  // docs/kubejs_overrides.md Pillar 2.
+  "biomes": {
+    "minecraft:overworld": {
+      "allow_list": true,
+      "elements": [
+        "minecraft:swamp"
+      ]
+    },
+    "minecraft:the_nether": {
+      "allow_list": false,
+      "elements": []
+    }
+  },
+
+  // A list of carvers for each dimension.
+  // A list of carvers will be generated at "config/skyblockbuilder/data/carvers.txt" each time joining a world.
+  // These are resource lists. See https://moddingx.org/libx/org/moddingx/libx/util/data/ResourceList.html#use_resource_lists_in_configs
+  "carvers": {
+    "minecraft:overworld": {
+      "allow_list": true,
+      "elements": []
+    },
+    "minecraft:the_nether": {
+      "allow_list": true,
+      "elements": []
+    },
+    "minecraft:the_end": {
+      "allow_list": true,
+      "elements": []
+    }
+  },
+
+  // Distance between islands in overworld [default: 8192]
+  // Range: 64 - 29999900
+  "islandDistance": 8192,
+
+  // If a player is leaving a team, it will teleported to overworld spawn instead of spawn island.
+  "leaveToOverworld": false,
+
+  // Prevent scheduled ticks after generating the island
+  "preventScheduledTicks": true,
+
+  // Sea level in world [default: 63]
+  "seaHeight": 63,
+
+  // Should a surface be generated in the dimensions? [default: false]
+  "surface": false,
+
+  // The block settings for generating the different dimensions surfaces.
+  // Same format as flat world generation settings (blocks only).
+  // NOTE: inert while "surface": false above - SkyblockBuilder ignores this block
+  // unless surface generation is enabled. Kept at defaults in case it's flipped on.
+  "surfaceSettings": {
+    "minecraft:overworld": [
+      {
+        "block": "minecraft:bedrock"
+      },
+      {
+        "block": "minecraft:dirt",
+        "height": 2
+      },
+      {
+        "block": "minecraft:grass_block"
+      }
+    ],
+    "minecraft:the_nether": [],
+    "minecraft:the_end": []
+  }
+}
