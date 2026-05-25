@@ -222,6 +222,7 @@
 			y: 10.5d
 			can_repeat: true
 			repeat_cooldown: 72000
+			shape: "none"
 			description: [
 				"Frogs jump. Frogs drown. Frogs occasionally leap clean off the island into the void."
 				""
