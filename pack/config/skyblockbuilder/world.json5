@@ -59,7 +59,9 @@
   "surface": false,
 
   // The block settings for generating the different dimensions surfaces.
-  // Same format as flat world generation settings (blocks only)
+  // Same format as flat world generation settings (blocks only).
+  // NOTE: inert while "surface": false above - SkyblockBuilder ignores this block
+  // unless surface generation is enabled. Kept at defaults in case it's flipped on.
   "surfaceSettings": {
     "minecraft:overworld": [
       {
