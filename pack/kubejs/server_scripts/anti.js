@@ -31,8 +31,9 @@ ServerEvents.recipes(event => {
   //    Ex Deorum generates one per wood material (oak_sieve, acacia_compressed_sieve,
   //    mechanical_sieve, ...); the regex catches all of them, including modded woods
   //    and any added via config, without enumerating. Process recipe ids contain
-  //    slashes and don't match.
-  event.remove({ id: /^exdeorum:[a-z_]+_sieve$/ })
+  //    slashes and don't match. Digits are allowed in the wood segment because some
+  //    modded wood registry names contain them.
+  event.remove({ id: /^exdeorum:[a-z0-9_]+_sieve$/ })
 
   // 3. Strip mesh crafting. Meshes only feed sieves, so they're dead weight now.
   //    The `#exdeorum:sieve_meshes` tag covers all six (string/flint/iron/golden/
