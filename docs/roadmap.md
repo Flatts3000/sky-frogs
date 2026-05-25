@@ -6,7 +6,7 @@ The path from "pack scaffold boots in a launcher" to "Sky Frogs v1.0 lives on Cu
 
 ## Where we are right now
 
-Pack version `0.0.3`. The scaffold boots in the CurseForge launcher with the FTB utility stack, JEI, Jade, and the Tier 0 substrate mods (Skyblock Builder, Ex Deorum, Forgiving Void, Rain Shield). No quests yet. No KubeJS overrides yet. No Productive Frogs yet (waiting on the 1.21.1 rebuild).
+Pack version `0.0.4`. The scaffold boots in the CurseForge launcher with the FTB utility stack, JEI, Jade, and the Tier 0 substrate mods (Skyblock Builder, Ex Deorum, Forgiving Void). Productive Frogs v1.0.1 is integrated from CurseForge. No KubeJS overrides yet, and no quests yet.
 
 The pack currently loads into a void world with a starter island — but every recipe is vanilla and nothing has been tuned for skyblock progression.
 
@@ -15,7 +15,7 @@ The pack currently loads into a void world with a starter island — but every r
 | Phase | Target | What it unlocks |
 |-------|--------|-----------------|
 | **0. Foundation** ✅ | Repo + scaffold + decisions | A buildable pack and a public GitHub repo |
-| **1. Tier 0 playable** | `0.0.x` pre-alpha | Bootstrap loop: dirt → sieve → iron |
+| **1. Tier 0 playable** | `0.0.x` pre-alpha | Bootstrap loop: cobble gen + dark-room slime farm → iron |
 | **2. First Iron Froglight** | `0.1.0` alpha | Productive Frogs integrated; Tier 1 reachable |
 | **3. Mid-tier alpha** | `0.2.0` → `0.5.0` | Tiers 2 through 5 each get a chapter and slime variants |
 | **4. Feature-complete** | `0.6.0` → `0.9.0` | Tier 6 + Arcane endgame + per-mod side chapters |
@@ -165,7 +165,7 @@ The pack currently loads into a void world with a starter island — but every r
 (In rough order. Each one is a question for you when we hit it.)
 
 - **First-join inventory grant contents** (Phase 1).
-- **Sieve drop rate tuning** (Phase 1). Target: ~5 slimeballs in 30 min of sieving.
+- **Slime farm spawn-rate tuning** (Phase 1). Target: a dark room yields enough slimes in ~30 min to bootstrap a Metallic breeding pair.
 - **First-launch frog source** (Phase 2) — inventory grant egg vs. quest reward.
 - **Mekanism in v0.2 or wait?** Decision on tech mods per tier.
 - **Endgame trophy** — KubeJS item vs. resourcepack-overridden item (Phase 4).
