@@ -42,7 +42,7 @@ Don't open issues for security vulnerabilities — see [SECURITY.md](./SECURITY.
 ### Branching
 
 - `main` is protected — all changes land via PR.
-- Create a feature branch from `main` named like `feat/add-mekanism-osmium-variant` or `fix/tier3-gem-chapter-typos`.
+- Create a feature branch from `main` named like `feat/add-mekanism-osmium-variant` or `fix/tier3-geode-chapter-typos`.
 - Don't push directly to `main` (docs-only changes by the maintainer are the exception).
 
 ### Commit Messages

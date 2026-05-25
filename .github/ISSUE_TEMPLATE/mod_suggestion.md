@@ -32,7 +32,7 @@ assignees: []
 ## Tier / Category
 
 <!-- Which Productive Frogs category does this resource map to?
-     Metallic / Mineral / Gem / Aquatic / Infernal / Arcane.
+     Bog / Cave / Geode / Tide / Infernal / Void.
      If multiple, which is the primary? -->
 
 ## What Quests Would Use It

@@ -22,7 +22,7 @@ It's built around [Productive Frogs](https://www.curseforge.com/minecraft/mc-mod
 
 ## Features (5-bullet scannable list)
 
-- **Category-based progression, deep slime ecosystem.** Six clear tiers — Metallic, Mineral, Gem, Aquatic, Infernal, Arcane — with many slime variants inside each. The frog roster grows over time; the tier structure stays legible.
+- **Category-based progression, deep slime ecosystem.** Six clear tiers — Bog, Cave, Geode, Tide, Infernal, Void — with many slime variants inside each. The frog roster grows over time; the tier structure stays legible.
 - **Vanilla-feeling mechanics.** Every interaction is right-click on a block: glass bottles, slimeballs, water buckets, frogspawn. No custom UIs to learn.
 - **Mining shortcuts disabled by design.** Laser drills, mining lenses, digital miners, and quarry cards are recipe-stripped or hidden from JEI. The frog tree is the path; the pack enforces it.
 - **Cross-mod resources, one JSON each.** Every modded resource you want frog-farmable is a single `slime_variant/*.json` drop — Mekanism, AE2, Industrial Foregoing, Powah, EnderIO, all hook into the same loop.
@@ -37,10 +37,10 @@ Your first hour:
 1. **Spawn** on a 3×3 dirt island with a minimal kit: saplings, a water bucket, a lava bucket, food. The questbook auto-opens.
 2. **Build a vanilla cobble generator.** Place water and lava adjacent → infinite cobblestone.
 3. **Collect a second water source.** Set up an Ex Deorum barrel outside your claim; rain fills it; bucket the second source → vanilla infinite water square.
-4. **Build a dark-room mob farm** out of cobble. Slimes spawn here (the pack overrides vanilla rules so slimes spawn in any biome on your island).
+4. **Build a dark-room mob farm** out of cobble. Bog slimes spawn here (your island sits in the swamp biome, and Productive Frogs ships bog-slime spawning for swamps).
 5. **Farm slimes.** Slimeballs from kills; occasionally a slime split produces an Iron Slime (random discovery — keep farming).
-6. **Complete the Welcome quest chapter** → reward is **two Metallic Frogspawn** for a breeding pair.
-7. **Place a frogspawn** → Metallic Resource Frog hatches. Feed it an Iron Slime → first **Iron Configurable Froglight** drops → smelt → first iron ingot.
+6. **Complete the Welcome quest chapter** → reward is **two Bog frog eggs** for a breeding pair.
+7. **Place a Bog frog egg** → Bog Resource Frog hatches. Feed it an Iron Slime → first **Iron Configurable Froglight** drops → smelt → first iron ingot.
 
 Within a play session, your iron problem is solved forever. The questbook drives every step.
 
@@ -52,14 +52,14 @@ The questbook drives everything. If you're not sure what's next, open it.
 
 | Tier | Category   | Unlocks                                                        |
 |------|------------|----------------------------------------------------------------|
-| 1    | Metallic   | Iron, copper, gold, plus modded metals (osmium, tin, aluminum…) |
-| 2    | Mineral    | Redstone, lapis, coal, quartz, amethyst, certus, fluix          |
-| 3    | Gem        | Diamond, emerald, fluorite, peridot, ruby, sapphire             |
-| 4    | Aquatic    | Prismarine, kelp, nautilus, pink slime, latex                   |
+| 1    | Bog        | Iron, copper, gold, plus modded metals (osmium, tin, aluminum…) |
+| 2    | Cave       | Redstone, lapis, coal, quartz, amethyst, certus, fluix          |
+| 3    | Geode      | Diamond, emerald, fluorite, peridot, ruby, sapphire             |
+| 4    | Tide       | Prismarine, kelp, nautilus, pink slime, latex                   |
 | 5    | Infernal   | Blaze rods, quartz, magma, glowstone, netherite line            |
-| 6    | Arcane     | Ender pearls, chorus, draconic, dimensional shards, end-tier    |
+| 6    | Void       | Ender pearls, chorus, draconic, dimensional shards, end-tier    |
 
-Endgame: combine late-Arcane Configurable Froglights into singularities, then into the **Sky Frogs Master Frog** creative trophy.
+Endgame: combine late-Void Configurable Froglights into singularities, then into the **Sky Frogs Master Frog** creative trophy.
 
 ---
 
@@ -69,7 +69,7 @@ The full mod list lives in the repo's [`docs/mod_list.md`](https://github.com/Fl
 
 - **Productive Frogs** — the core mod. Six frog categories, hand-operated appliances, datapack-driven slime variants.
 - **Skyblock Builder** — void worldgen, starter island, per-player island UI.
-- **Ex Deorum** — sieve / hammer / crucible bootstrap loop. The only way out of Tier 0.
+- **Ex Deorum** — crucibles, the porcelain bucket, and rain-collection barrels (your second water source). Sieving is disabled in this pack; Tier 0 runs on a dark-room slime farm instead.
 - **FTB Quests + Library + Teams + Chunks + Ranks + Essentials** — questbook, claims, party support, server admin, `/home`/`/spawn`.
 - **JEI + Jade** — recipe browser and in-world block info. Standard QoL.
 - **Mekanism, AE2, Industrial Foregoing, Powah, EnderIO** — the tech mods that supply resource categories and post-bootstrap automation.
@@ -102,8 +102,8 @@ Pre-1.0: maybe. We're in active development; world wipes are signaled in the cha
 Gallery slots to fill before launch:
 
 1. Hero shot: void skyblock starter island with one tree, frog visible.
-2. Tier 1 enclosure: Metallic Frog eating Iron Slimes, Froglights stacking in a hopper.
-3. Tier 3 multi-enclosure scene: several Gem Frog setups in a row.
+2. Tier 1 enclosure: Bog Frog eating Iron Slimes, Froglights stacking in a hopper.
+3. Tier 3 multi-enclosure scene: several Geode Frog setups in a row.
 4. Endgame singularity altar.
 5. The questbook UI open to a tier chapter.
 6. Tier 5/6 Nether or End set piece.

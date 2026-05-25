@@ -31,8 +31,8 @@ The grant is intentionally minimal. The player builds everything else from these
 
 1. **Cobble generator** — vanilla water + lava (one bucket each, placed adjacent → infinite cobble).
 2. **Second water source** — the grant has only 1 water bucket, which is 1 source. Infinite water needs 2 sources adjacent (the standard vanilla pattern). The player gets the second source via **Ex Deorum's rain-collection barrel** — set a barrel outside, wait for rain to fill it, bucket out → second source → vanilla infinite water square. This gives Ex Deorum a load-bearing Tier 0 role beyond just "extras."
-3. **Mob farm** — built from the cobble. Vanilla `minecraft:slime` spawns via KubeJS-overridden spawn rule (the Metallic parent per PF's `ParentSpeciesEntry`). Player collects slimeballs and occasionally split-discovers Iron Slimes via PF's `SlimeSplitDiscoveryHandler`.
-4. **First Resource Frog** — Welcome quest chapter rewards **2× Metallic Frogspawn** (category-typed, so no priming step needed) at completion. Two for a breeding pair.
+3. **Mob farm** — built from the cobble. `productivefrogs:bog_slime` (the Bog parent per PF's `ParentSpeciesEntry`) spawns here because the island is forced to the `minecraft:swamp` biome and PF already ships bog_slime spawning for swamps. Player collects slimeballs and occasionally split-discovers Iron Slimes via PF's `SlimeSplitDiscoveryHandler`.
+4. **First Resource Frog** — Welcome quest chapter rewards **2× Bog frog egg** (the placeable `productivefrogs:bog_frog_egg` block, so no priming step needed) at completion. Two for a breeding pair.
 
 The first Iron Configurable Froglight is the first iron source — smelting it gives the first iron ingot. No sieving, no Ex Deorum hammers needed.
 
@@ -45,7 +45,7 @@ Why minimal grant: the design wants the player engaged with the mob-farm loop wi
 ### Overworld
 - **Type:** void
 - **Y-range:** standard 1.21.x (`-64` to `319`)
-- **Biomes:** the default biome of the starter chunk is `minecraft:plains` (the Skyblock Builder default). Frogs spawned here will be the **temperate** variant — informational only since our category model doesn't depend on vanilla frog variants.
+- **Biomes:** the starter island is forced to `minecraft:swamp` (overriding the Skyblock Builder default). This is load-bearing for Tier 0: PF ships bog_slime spawning for `minecraft:swamp` + `minecraft:mangrove_swamp`, so the swamp island lets a dark-room bog-slime farm work with no pack-side spawn override. Frogs spawned here will be the **temperate** variant — informational only since our category model doesn't depend on vanilla frog variants.
 
 ### Nether
 - **Type:** void (or near-void)
@@ -57,7 +57,7 @@ Why minimal grant: the design wants the player engaged with the mob-farm loop wi
 ### End
 - **Type:** standard end islands (not void)
 - **Access:** unlocked via Tier 6 quest reward, OR by defeating the Dragon (which requires assembling the End Portal from skyblock-farmed obsidian, eyes of ender, etc.).
-- **Why standard, not void:** dragon fight is part of the endgame; needs proper End geometry. The outer end islands also provide chorus fruit and end stone via natural worldgen (these resources are also farmable via Arcane frogs, but the dragon arc needs the dimension).
+- **Why standard, not void:** dragon fight is part of the endgame; needs proper End geometry. The outer end islands also provide chorus fruit and end stone via natural worldgen (these resources are also farmable via Void frogs, but the dragon arc needs the dimension).
 
 ### Custom dimensions (RFTools, Compact Machines)
 - **Compact Machines:** kept — used heavily in late-game builds.
@@ -67,27 +67,27 @@ Why minimal grant: the design wants the player engaged with the mob-farm loop wi
 
 Productive Frogs ships six parent slime species, each conceptually tied to a vanilla biome:
 
-| Parent species               | PF category | Default biome target          |
-|------------------------------|-------------|-------------------------------|
-| `minecraft:slime`            | METALLIC    | swamps + slime chunks         |
-| `minecraft:magma_cube`       | INFERNAL    | nether wastes / basalt deltas |
-| `productivefrogs:cave_slime` | MINERAL     | dripstone caves / deep dark   |
-| `productivefrogs:geode_slime`| GEM         | lush caves / geodes           |
-| `productivefrogs:tide_slime` | AQUATIC     | warm oceans                   |
-| `productivefrogs:void_slime` | ARCANE      | end / void                    |
+| Parent species                   | PF category | Default biome target          |
+|----------------------------------|-------------|-------------------------------|
+| `productivefrogs:bog_slime`      | BOG         | swamp + mangrove swamp        |
+| `productivefrogs:infernal_slime` | INFERNAL    | nether wastes / basalt deltas |
+| `productivefrogs:cave_slime`     | CAVE        | dripstone caves / deep dark   |
+| `productivefrogs:geode_slime`    | GEODE       | lush caves / geodes           |
+| `productivefrogs:tide_slime`     | TIDE        | warm oceans                   |
+| `productivefrogs:void_slime`     | VOID        | end / void                    |
 
-In a void skyblock **none of these biomes exist** in the meaningful sense (the player is in a single Plains chunk surrounded by void). So we need to seed parent species via an alternative path.
+In a void skyblock **none of these biomes exist** by default. The Bog parent is the exception: we force the starter island to `minecraft:swamp`, and PF already ships bog_slime spawning for swamps (a biome modifier targeting `minecraft:swamp` + `minecraft:mangrove_swamp`, plus a light-based placement rule), so a dark-room bog-slime farm works out of the box with no pack-side spawn override. The other five parents still need seeding via an alternative path.
 
-**Our solution (KubeJS-driven):**
+**Our solution:**
 
-1. **Quest reward** at the start of each tier chapter grants the player one parent species spawn egg. So Tier 1 grants `minecraft:slime` spawn egg, Tier 2 grants `productivefrogs:cave_slime`, etc.
-2. The player breeds the parent species with slimeballs (vanilla mechanic for `minecraft:slime`) or PF's equivalent breeding mechanic for custom species. Self-sustaining once the player has two.
-3. We override the **`productivebees:bee_spawning`-equivalent** recipes for PF parent species (if PF has analogous recipes for "spawn this species near these blocks") via KubeJS to allow spawning in any biome — same pattern Sky Bees Reborn uses for bee nests.
+1. **Bog parent: free-spawning.** Because the island is a swamp biome, PF's shipped bog_slime spawning handles Tier 0 directly. No KubeJS override, no pack biome modifier.
+2. **The other five: quest-reward spawn eggs.** A quest reward at the start of each tier chapter grants the player one parent species spawn egg. So Tier 2 grants `productivefrogs:cave_slime`, Tier 3 grants `productivefrogs:geode_slime`, etc.
+3. The player breeds the parent species with slimeballs (or PF's equivalent breeding mechanic for the custom species). Self-sustaining once the player has two.
 
-Concrete reference: see Sky Bees Reborn's [`kubejs/server_scripts/productivebees.js`](../../sky-bees-reborn-reference/extracted/kubejs/server_scripts/productivebees.js) `bee_nests` array — it remaps every nest's biome target via `event.custom({ type: 'productivebees:bee_spawning', biomes: '#minecraft:is_overworld', ... })`. We need to verify whether Productive Frogs exposes equivalent datapack-driven spawn recipes; if not, we file a feature request upstream and rely on quest-reward egg distribution in v0.x.
+This keeps the bootstrap reliable (the Bog parent spawns naturally in the swamp island) while tier-gating the other parents behind quests so the player can't skip-progress.
 
 ### Open worldgen questions
 
-- Does Productive Frogs ship `parent_species` spawn JSONs we can KubeJS-override, or is parent species spawning purely entity-attribute based? File an issue if not exposed.
+- Confirm the SkyblockBuilder island can be forced to `minecraft:swamp` (template biome assignment or a single-biome source) so PF's shipped bog_slime spawning fires in the dark room.
 - Should we ship a custom dimension for "frog paradise" lategame — a void dimension with maximized frog spawn rates? Defer to v1.x; see [`backlog.md`](./backlog.md).
 - Skyblock Builder vs. **Lost Cities** — both viable void generators. Skyblock Builder wins on UX (per-player island UI). Lost Cities would give a totally different feel (player starts in a ruined city). Locked in on Skyblock Builder.

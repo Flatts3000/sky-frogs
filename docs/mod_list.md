@@ -9,7 +9,7 @@ This document captures **candidate mod categories and what they'd be for**, with
 Every mod ships for one of three reasons:
 
 1. **Frog mechanic dependency** — the mod IS or feeds the central loop (e.g. Productive Frogs itself, Ex Deorum for lava-handling + second water source).
-2. **Tier supplier** — provides a category of resources that frogs will farm via Resource Slimes (e.g. Mekanism = osmium/uranium/fluorite metallic+gem slimes).
+2. **Tier supplier** — provides a category of resources that frogs will farm via Resource Slimes (e.g. Mekanism = osmium/uranium/fluorite Bog+Geode slimes).
 3. **Infrastructure** — skyblock fundamentals (worldgen, water source, item logistics) or unavoidable QoL (JEI, Jade, FTB Library family).
 
 Any mod that fails all three is rejected.
@@ -36,19 +36,19 @@ Each entry here directly maps to one or more PF category slime variants (see [`p
 
 | Mod                   | Resources it adds that frogs will farm                                | PF categories supplied                                |
 |-----------------------|------------------------------------------------------------------------|-------------------------------------------------------|
-| **Mekanism**          | Osmium, tin, lead, uranium, fluorite, refined glowstone               | Metallic, Mineral, Gem                                |
+| **Mekanism**          | Osmium, tin, lead, uranium, fluorite, refined glowstone               | Bog, Cave, Geode                                      |
 | **Mekanism Generators** | Renewable power infrastructure                                       | (Infrastructure, not a tier supplier itself)          |
-| **Mekanism Tools**    | Tier-specific tools using Mekanism alloys                              | Tool sink for Metallic + Gem outputs                  |
-| **Immersive Engineering** | Hop graphite coke, copper, aluminum, silver, nickel, uranium      | Metallic, Mineral                                     |
-| **Industrial Foregoing** | Latex, pink slime, biofuel, ether gas                              | Aquatic (pink slime is a great Resource Slime parent) |
-| **Powah!**            | Uraninite, niotic crystal, energizing orb resources                    | Mineral, Arcane                                       |
-| **Ender IO**          | Vibrant alloy components, capacitors, glite                            | Arcane (advanced)                                     |
-| **Applied Energistics 2** + **AE2 Things** + **Advanced AE** + **ExtendedAE** + **MegaCells** + **Applied Mekanistics** + **AppliedFlux** + **ae2wtlib** + **ae2importexportcard** + **ae2jeiintegration** + **soulplied_energistics** | Storage logistics + certus quartz, fluix, sky stone | Gem (certus, fluix), Arcane (sky stone) |
+| **Mekanism Tools**    | Tier-specific tools using Mekanism alloys                              | Tool sink for Bog + Geode outputs                     |
+| **Immersive Engineering** | Hop graphite coke, copper, aluminum, silver, nickel, uranium      | Bog, Cave                                             |
+| **Industrial Foregoing** | Latex, pink slime, biofuel, ether gas                              | Tide (pink slime is a great Resource Slime parent)    |
+| **Powah!**            | Uraninite, niotic crystal, energizing orb resources                    | Cave, Void                                            |
+| **Ender IO**          | Vibrant alloy components, capacitors, glite                            | Void (advanced)                                       |
+| **Applied Energistics 2** + **AE2 Things** + **Advanced AE** + **ExtendedAE** + **MegaCells** + **Applied Mekanistics** + **AppliedFlux** + **ae2wtlib** + **ae2importexportcard** + **ae2jeiintegration** + **soulplied_energistics** | Storage logistics + certus quartz, fluix, sky stone | Geode (certus, fluix), Void (sky stone) |
 | **Extended Crafting** | Singularities + ultimate singularity (endgame sink)                    | Endgame                                               |
 | **Productive Metalworks** | Smeltery-line alloys                                                | Tier processing (smelting Froglights → ingots, melting alloys) |
 | **Silent Gear** + **Silent Lib** + **sgearmetalworks** | Modular tools — accepts modded mats         | Tool sink across all tiers                            |
-| **Actually Additions** | Wide grab-bag — black quartz, crystals, lens of the miner (DISABLED) | Mineral, Gem; lens-of-the-miner is KubeJS-disabled    |
-| **RFTools Base/Builder/Storage/Utility** | Quark, infused diamond, dimensional shards          | Arcane                                                |
+| **Actually Additions** | Wide grab-bag — black quartz, crystals, lens of the miner (DISABLED) | Cave, Geode; lens-of-the-miner is KubeJS-disabled     |
+| **RFTools Base/Builder/Storage/Utility** | Quark, infused diamond, dimensional shards          | Void                                                  |
 | **Hostile Neural Networks** | Predict mob loot via simulation                                  | Endgame mob-drop substitution path                    |
 | **Apothic Spawners** + **Apothic Enchanting** + **Apothic Attributes** | Spawner manipulation + enchanting + RPG attributes | Mob-drop side path |
 

@@ -17,12 +17,12 @@ A **void skyblock** where the player must bootstrap from a 3×3 dirt island and 
 
 ```
 Tier 0: Vanilla bootstrap   → glass bottle + slimeballs + an iron primer
-Tier 1: Metallic            → iron, copper, gold (and modded metals via tag)
-Tier 2: Mineral             → redstone, lapis, coal, (modded minerals)
-Tier 3: Gem                 → diamond, emerald, amethyst, fluorite, certus
-Tier 4: Aquatic             → prismarine, nautilus, sea-themed resources
+Tier 1: Bog                 → iron, copper, gold (and modded metals via tag)
+Tier 2: Cave                → redstone, lapis, coal, (modded minerals)
+Tier 3: Geode               → diamond, emerald, amethyst, fluorite, certus
+Tier 4: Tide                → prismarine, nautilus, sea-themed resources
 Tier 5: Infernal            → blaze, quartz, magma, netherite line
-Tier 6: Arcane              → ender, draconic, end-tier and modded magic
+Tier 6: Void                → ender, draconic, end-tier and modded magic
 ```
 
 Each tier corresponds to one or two questbook chapters and to one category in the [Productive Frogs Category enum](../../productive-frogs/src/main/java/com/flatts/productivefrogs/data/Category.java).

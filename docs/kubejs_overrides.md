@@ -88,51 +88,40 @@ BlockEvents.rightClicked(event => {
 })
 ```
 
-### Pillar 2: Parent species spawn rules — Metallic free, others gated
+### Pillar 2: Parent species spawn rules — Bog free, others gated
 
 Per PF's `ParentSpeciesEntry`, six parent species map to the six categories:
 
-| Parent entity              | Category  | Tier 0 spawn rule (Sky Frogs)                                  |
-|----------------------------|-----------|----------------------------------------------------------------|
-| `minecraft:slime`          | METALLIC  | **KubeJS-overridden to spawn in all biomes** on the player's island (drops slime-chunk + swamp-biome requirement). This is the Tier 0 slime-farm fuel. |
-| `minecraft:magma_cube`     | INFERNAL  | Vanilla rules unchanged — player reaches Nether at Tier 5.     |
-| `productivefrogs:cave_slime`  | MINERAL  | Quest-reward spawn egg unlocked at Tier 2 entry.              |
-| `productivefrogs:geode_slime` | GEM      | Quest-reward spawn egg at Tier 3.                              |
-| `productivefrogs:tide_slime`  | AQUATIC  | Quest-reward spawn egg at Tier 4.                              |
-| `productivefrogs:void_slime`  | ARCANE   | Quest-reward spawn egg at Tier 6.                              |
+| Parent entity                    | Category  | Tier 0 spawn rule (Sky Frogs)                                  |
+|----------------------------------|-----------|----------------------------------------------------------------|
+| `productivefrogs:bog_slime`      | BOG       | **Spawns naturally in the dark room** because the island is forced to `minecraft:swamp` and PF already ships bog_slime spawning there. This is the Tier 0 slime-farm fuel. No pack-side override. |
+| `productivefrogs:infernal_slime` | INFERNAL  | PF's shipped rules unchanged — player reaches Nether at Tier 5. |
+| `productivefrogs:cave_slime`     | CAVE      | Quest-reward spawn egg unlocked at Tier 2 entry.              |
+| `productivefrogs:geode_slime`    | GEODE     | Quest-reward spawn egg at Tier 3.                              |
+| `productivefrogs:tide_slime`     | TIDE      | Quest-reward spawn egg at Tier 4.                              |
+| `productivefrogs:void_slime`     | VOID      | Quest-reward spawn egg at Tier 6.                              |
 
-The asymmetry is intentional: vanilla slime is free-spawning so the player has a Tier 0 fuel source for the mob farm; the other four PF parents are tier-gated via quests so the player can't skip-progress.
+The asymmetry is intentional: the Bog parent free-spawns so the player has a Tier 0 fuel source for the mob farm; the other four PF parents are tier-gated via quests so the player can't skip-progress.
 
-**Verified mechanism (settled 2026-05-25). This is NOT a KubeJS server script.** The original
-`EntityEvents.checkSpawn` + `event.allow()` idea does not work, confirmed against KubeJS 2101 source:
-`checkSpawn` wraps NeoForge's `FinalizeSpawnEvent`, which fires *after* the slime placement gate
-(`Slime.checkSlimeSpawnRules`) and is cancel-only. It can neither bypass that gate nor force a spawn
-the game never attempts, and KubeJS 2101 exposes no API for the placement rule. The working approach
-is two halves, **both required**:
+**Verified mechanism (settled 2026-05-25). This needs NO pack-side spawn code at all.** Productive Frogs
+v1.0.0 already ships bog_slime spawning end to end:
 
-1. **Pack-side: add slime to the biome monster spawn list** so the natural spawner *attempts* it.
-   A NeoForge biome modifier at `kubejs/data/skyfrogs/neoforge/biome_modifier/slime_spawns.json`:
+1. A biome modifier (`add_bog_slime_spawn.json`) that adds `productivefrogs:bog_slime` to the monster
+   spawn list of `minecraft:swamp` + `minecraft:mangrove_swamp`, so the natural spawner *attempts* it.
+2. A light-based placement rule (`checkParentSlimeSpawnRules`, registered via
+   `RegisterSpawnPlacementsEvent` REPLACE) so those attempts pass in a dark room.
 
-   ```json
-   {
-     "type": "neoforge:add_spawns",
-     "biomes": "#minecraft:is_overworld",
-     "spawners": { "type": "minecraft:slime", "weight": 100, "minCount": 1, "maxCount": 2 }
-   }
-   ```
+So the pack does **not** need a KubeJS spawn override, does **not** need its own biome modifier, and does
+**not** depend on any PF feature request. The only pack-side requirement is **forcing the SkyblockBuilder
+island to the `minecraft:swamp` biome** (see [`worldgen.md`](./worldgen.md)); PF's shipped bog_slime
+spawning then fires in a dark room on that island.
 
-   `#minecraft:is_overworld` covers every biome Skyblock Builder generates (it distributes the full
-   filtered-overworld multi-noise set). `weight` / `maxCount` are tuning knobs, see the roadmap's
-   "Slime farm spawn-rate tuning" decision point.
+> **Note:** the pack-side `slime_spawns.json` biome modifier that an earlier draft proposed has been
+> **removed** — PF ships its own biome modifier (`add_bog_slime_spawn.json`), so a duplicate pack-side
+> one is unnecessary and would only double-register the spawn entry. There is also no dependency on any
+> PF issue for slime spawning; the earlier `minecraft:slime` + placement-rule-flag plan is obsolete.
 
-2. **PF-side: replace the slime placement rule** so those attempts pass at low light in any biome.
-   This is Java (`RegisterSpawnPlacementsEvent` REPLACE with a `Monster.checkMobSpawnRules`-style
-   predicate), behind an opt-in, default-off PF config flag. Tracked as
-   [productive-frogs#107](https://github.com/Flatts3000/productive-frogs/issues/107); the pack enables
-   it via `config/`. Until PF ships the flag, slimes only spawn where vanilla allows (swamp columns /
-   slime chunks), so the bootstrap is not reliable on a void island.
-
-The other four PF parents (cave/geode/tide/void slime) are **not** given KubeJS spawn overrides — they're acquired via quest-reward spawn eggs in their respective tier chapters. See [`quest_book.md`](./quest_book.md).
+The other four PF parents (cave/geode/tide/void slime) are acquired via quest-reward spawn eggs in their respective tier chapters. See [`quest_book.md`](./quest_book.md).
 
 ### Pillar 3: Generate Resource Slime variants for modded resources
 
@@ -143,7 +132,7 @@ Productive Frogs supports cross-mod resource compatibility via JSON: drop a `sli
 ```js
 // kubejs/data/<datapack_ns>/productivefrogs/slime_variant/<resource_name>.json
 {
-  "category": "metallic",
+  "category": "bog",
   "primer_item": "mekanism:ingot_osmium",
   "drop_item": "productivefrogs:configurable_froglight",
   "drop_components": {
@@ -164,9 +153,9 @@ We'll write a KubeJS **startup-time generator** that takes a manifest like:
 ```js
 // kubejs/startup_scripts/slime_variant_generator.js
 const SLIME_VARIANTS = [
-  // Metallic — Mekanism
-  { mod: 'mekanism', ns: 'skyfrogs', id: 'osmium',  cat: 'metallic', primer: 'mekanism:ingot_osmium',  smelt: 'mekanism:ingot_osmium' },
-  { mod: 'mekanism', ns: 'skyfrogs', id: 'tin',     cat: 'metallic', primer: 'mekanism:ingot_tin',     smelt: 'mekanism:ingot_tin' },
+  // Bog — Mekanism
+  { mod: 'mekanism', ns: 'skyfrogs', id: 'osmium',  cat: 'bog', primer: 'mekanism:ingot_osmium',  smelt: 'mekanism:ingot_osmium' },
+  { mod: 'mekanism', ns: 'skyfrogs', id: 'tin',     cat: 'bog', primer: 'mekanism:ingot_tin',     smelt: 'mekanism:ingot_tin' },
   // ... ~50 variants across all categories
 ]
 ```

@@ -41,20 +41,20 @@ Sky Frogs mirrors this organization closely — six tier chapters drive progress
 
 | Chapter file              | Title                  | Covers                                                |
 |---------------------------|------------------------|--------------------------------------------------------|
-| `metallic_mastery.snbt`   | Metallic Mastery       | Tier 1 — iron/copper/gold via Metallic Frog            |
-| `mineral_veins.snbt`      | Mineral Veins          | Tier 2 — redstone/lapis/coal via Mineral Frog          |
-| `gem_workshop.snbt`       | The Gem Workshop       | Tier 3 — diamond/emerald via Gem Frog                  |
-| `drowned_riches.snbt`     | Drowned Riches         | Tier 4 — prismarine/aquatic resources via Aquatic Frog |
+| `bog_mastery.snbt`        | Bog Mastery            | Tier 1 — iron/copper/gold via Bog Frog                 |
+| `cave_veins.snbt`         | Cave Veins             | Tier 2 — redstone/lapis/coal via Cave Frog             |
+| `geode_workshop.snbt`     | The Geode Workshop     | Tier 3 — diamond/emerald via Geode Frog                |
+| `drowned_riches.snbt`     | Drowned Riches         | Tier 4 — prismarine/Tide resources via Tide Frog       |
 | `heat_and_flame.snbt`     | Heat & Flame           | Tier 5 — nether resources via Infernal Frog            |
-| `arcane_mastery.snbt`     | Arcane Mastery         | Tier 6 — ender/draconic via Arcane Frog                |
+| `void_mastery.snbt`       | Void Mastery           | Tier 6 — ender/draconic via Void Frog                  |
 
 ### Bootstrap & framing chapters (3)
 
 | Chapter file              | Title                  | Covers                                                |
 |---------------------------|------------------------|--------------------------------------------------------|
-| `welcome.snbt`            | Welcome to Sky Frogs   | Tier 0 — cobble gen, second water source via Ex Deorum barrel, mob farm, slime collection. Final reward: 2× Metallic Frogspawn. Includes a **cooldown-repeatable "Replacement Frogspawn" emergency quest** for when frogs die / jump off the island. |
+| `welcome.snbt`            | Welcome to Sky Frogs   | Tier 0 — cobble gen, second water source via Ex Deorum barrel, mob farm, slime collection. Final reward: 2× Bog frog egg. Includes a **cooldown-repeatable "Replacement Frog egg" emergency quest** for when frogs die / jump off the island. |
 | `getting_started.snbt`    | Getting Started        | (Merged into `welcome.snbt`; chapter removed — Sky Frogs has no separate Ex Deorum bootstrap chapter since sieving is disabled.) |
-| `productive_frogs.snbt`   | Productive Frogs       | Core mod teaching — placing frogspawn, breeding, slime infusion, milking, feeding (no tier gate, runs alongside Metallic Mastery) |
+| `productive_frogs.snbt`   | Productive Frogs       | Core mod teaching — placing frogspawn, breeding, slime infusion, milking, feeding (no tier gate, runs alongside Bog Mastery) |
 
 ### Dimension chapters (2)
 
@@ -112,17 +112,17 @@ High-level (chapter-to-chapter dependencies):
 ```
 welcome ─────────────┐
    ↓                 ↓
-metallic_mastery     productive_frogs
+bog_mastery          productive_frogs
    ↓
-mineral_veins ───────┐
+cave_veins ──────────┐
    ↓                 ↓
-gem_workshop         mekanism (unlocks at any Tier 2+)
+geode_workshop       mekanism (unlocks at any Tier 2+)
    ↓                 ↓
 drowned_riches       applied_energistics (Tier 3+)
    ↓
 heat_and_flame ──→ we_need_to_go_deeper
    ↓                 ↓
-arcane_mastery ──→ the_end
+void_mastery ────→ the_end
    ↓
 master_pond
 ```
@@ -131,10 +131,10 @@ Tech mod chapters unlock progressively as the player accumulates the resources t
 
 ## Within-chapter dependency style
 
-Mirror Sky Bees Reborn's `master_hive.snbt` structure: a central spine of mandatory quests for the chapter, with optional branches for resource variants. Sample for `metallic_mastery.snbt`:
+Mirror Sky Bees Reborn's `master_hive.snbt` structure: a central spine of mandatory quests for the chapter, with optional branches for resource variants. Sample for `bog_mastery.snbt`:
 
 ```
-[breed first frog] ─→ [hatch metallic egg] ─→ [first iron froglight]
+[breed first frog] ─→ [hatch bog egg] ─→ [first iron froglight]
                                                 ↓
                           ┌────────────────────┼────────────────────┐
                           ↓                    ↓                    ↓
@@ -171,17 +171,17 @@ Drafted quest spine for the `welcome.snbt` chapter — the only mandatory Tier 0
 6. **Wait for rain → bucket the second water source.** Now infinite water.
 7. **Mine 64 cobblestone.** Scaling material.
 8. **Build a dark room** — minimum 5×5×3 enclosed space at light level 0.
-9. **Kill 8 slimes.** Slimes spawn via the KubeJS-overridden vanilla-slime rule. Reward: a few slimeballs (in case loot RNG was unkind).
+9. **Kill 8 bog slimes.** `productivefrogs:bog_slime` spawns in the dark room because the island is forced to the `minecraft:swamp` biome and PF already ships bog_slime spawning there. Reward: a few slimeballs (in case loot RNG was unkind).
 10. **Collect 16 slimeballs total.** Resource bar for frog breeding + crafting.
 11. **(Optional spine branch)** — split-discover an Iron Slime. Tooltip hint: keep farming, it's random.
-12. **(Final)** Complete the chapter → **reward: 2× Metallic Frogspawn**. Now Tier 1 is unlocked.
+12. **(Final)** Complete the chapter → **reward: 2× Bog frog egg**. Now Tier 1 is unlocked.
 
 **Repeatable emergency quest** (always visible in the Welcome chapter):
 
 - **"My frogs are gone"** — visible from the moment the chapter opens; completable at any time.
   - Cooldown: 1 hour real-time (FTB Quests `cooldown` field).
   - Cost: 4 slimeballs (so the player has to keep the farm running to use it; prevents infinite frog cheese).
-  - Reward: 2× Metallic Frogspawn.
+  - Reward: 2× Bog frog egg.
   - Quest description text: "Frogs jump. Frogs occasionally jump off your island. Frogs occasionally drown. This quest gets you back on your feet. Please consider building a fence around your enclosure."
 
 The intent is that a player who somehow loses every single frog AND has no frogspawn in inventory can recover, but it's friction-laden enough that the player will build a fence after the first use.

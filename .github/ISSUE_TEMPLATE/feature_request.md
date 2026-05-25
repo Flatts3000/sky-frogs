@@ -32,7 +32,7 @@ assignees: []
 
 ## Affected Tier / Chapter
 
-<!-- Which Productive Frogs category does this touch? Metallic / Mineral / Gem / Aquatic / Infernal / Arcane.
+<!-- Which Productive Frogs category does this touch? Bog / Cave / Geode / Tide / Infernal / Void.
      Or is it pre-Tier-1 bootstrap / cross-tier? -->
 
 ## Additional Context
