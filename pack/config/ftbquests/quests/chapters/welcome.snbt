@@ -1,0 +1,237 @@
+{
+	autofocus_id: "01A8E068925B319F"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "welcome"
+	group: ""
+	icon: { id: "productivefrogs:bog_frog_egg" }
+	id: "F84143B9C5D63814"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "01A8E068925B319F"
+			title: "Welcome to Sky Frogs"
+			icon: { id: "productivefrogs:bog_frog_egg" }
+			x: 0.0d
+			y: 0.0d
+			shape: "hexagon"
+			size: 1.5d
+			description: [
+				"You're stranded on a speck of land in the void. No ore. No mineshafts. No mountain to dig into."
+				""
+				"Here, &afrogs&r do the digging. Breed them, feed them, and they hand you every resource the world has to offer."
+				""
+				"This book is your guide. Follow it, and you'll never swing a pickaxe at stone again."
+			]
+			tasks: [{ id: "4296B8F81CE7FD66", type: "checkmark" }]
+			rewards: [{ id: "2E6119B4EE9588F7", type: "xp", xp: 10 }]
+		}
+		{
+			id: "05BFA1537298A589"
+			title: "Frogs, Not Pickaxes"
+			dependencies: ["01A8E068925B319F"]
+			x: 0.0d
+			y: 1.5d
+			description: [
+				"The loop is simple:"
+				""
+				"&bResource Slimes&r spawn on your island. Feed one to the matching &aResource Frog&r, and the frog produces a &eConfigurable Froglight&r stamped with that resource."
+				""
+				"Smelt the Froglight, get the ingot. Iron, gold, diamond, ender - all of it, on tap, from frogs."
+			]
+			tasks: [{ id: "8681547B10F0F5A2", type: "checkmark" }]
+			rewards: [{ id: "9501710B6AD1BF8B", type: "xp", xp: 10 }]
+		}
+		{
+			id: "378B93672C31CF5D"
+			title: "The Road to Iron"
+			dependencies: ["05BFA1537298A589"]
+			x: 0.0d
+			y: 3.0d
+			description: [
+				"Your starter species is the &2Bog Frog&r - it handles the basic metals: iron, copper, gold."
+				""
+				"Tier 0 is about getting on your feet: water, stone, a dark room, and a &2Bog Slime&r farm. Then you breed your first frogs."
+				""
+				"Let's get started."
+			]
+			tasks: [{ id: "15D92B702B5B6338", type: "checkmark" }]
+			rewards: [{ id: "DEA958DB4B72AD0E", type: "xp", xp: 10 }]
+		}
+		{
+			id: "F9D9A7438B1DD129"
+			title: "Wood to Stand On"
+			dependencies: ["378B93672C31CF5D"]
+			x: -1.5d
+			y: 4.5d
+			description: ["Plant a sapling, grow a tree, punch some logs. Everything starts with wood."]
+			tasks: [{ id: "8AB98ED63DD877F0", item: { count: 1, id: "minecraft:oak_log" }, type: "item" }]
+			rewards: [{ id: "C5FF6B1B1EDE67AE", type: "xp", xp: 10 }]
+		}
+		{
+			id: "F47626B72182D7AC"
+			title: "A Crafting Table"
+			dependencies: ["F9D9A7438B1DD129"]
+			x: -1.5d
+			y: 6.0d
+			description: ["Four planks. You know the drill."]
+			tasks: [{ id: "FEBEF04B946330F8", item: { count: 1, id: "minecraft:crafting_table" }, type: "item" }]
+			rewards: [{ id: "A8B0644F25EA411B", type: "xp", xp: 10 }]
+		}
+		{
+			id: "326CDF23CD73DD71"
+			title: "Tools of the Trade"
+			dependencies: ["F47626B72182D7AC"]
+			x: -3.0d
+			y: 6.0d
+			description: ["A wooden pickaxe. Stone won't mine itself - yet."]
+			tasks: [{ id: "C077C2112863789B", item: { count: 1, id: "minecraft:wooden_pickaxe" }, type: "item" }]
+			rewards: [{ id: "320085BE98AFA990", type: "xp", xp: 10 }]
+		}
+		{
+			id: "0619B2305B645861"
+			title: "Infinite Stone"
+			dependencies: ["378B93672C31CF5D"]
+			x: 1.5d
+			y: 4.5d
+			description: [
+				"Place a water source next to lava. Congratulations: free cobblestone, forever."
+				""
+				"You start with a water bucket and a lava bucket - use them."
+			]
+			tasks: [{ id: "B4950E5D3DFFDB4E", item: { count: 1, id: "minecraft:cobblestone" }, type: "item" }]
+			rewards: [{ id: "A6BE7E31D30AB2EF", type: "xp", xp: 10 }]
+		}
+		{
+			id: "A32C8B2D12743470"
+			title: "Stockpile Cobble"
+			dependencies: ["0619B2305B645861"]
+			x: 1.5d
+			y: 6.0d
+			description: ["You'll need a lot. Mine 64 to start - walls, floors, and a dark room are coming."]
+			tasks: [{ count: 64L, id: "14DD22396647C641", item: { count: 1, id: "minecraft:cobblestone" }, type: "item" }]
+			rewards: [{ count: 16, id: "97DF365C2E6CCBF3", item: { count: 1, id: "minecraft:cobblestone" }, random_bonus: 16, type: "item" }]
+		}
+		{
+			id: "C1DAA577B6D63E14"
+			title: "An Ex Deorum Barrel"
+			dependencies: ["F47626B72182D7AC"]
+			x: -3.0d
+			y: 7.5d
+			description: ["Craft a barrel. Left out in the open, it catches rain - your ticket to a second water source."]
+			tasks: [{ id: "7047CA591D5BE072", item: { count: 1, id: "exdeorum:oak_barrel" }, type: "item" }]
+			rewards: [{ id: "FB4380676AB3F1FA", type: "xp", xp: 10 }]
+		}
+		{
+			id: "4C6BC1510B7F4107"
+			title: "Catch the Rain"
+			dependencies: ["C1DAA577B6D63E14"]
+			x: -3.0d
+			y: 9.0d
+			description: [
+				"Let the barrel fill with rain, then bottle that water onto your island."
+				""
+				"Two water sources one block apart make an infinite source. No more running dry."
+			]
+			tasks: [{ id: "C6716027C975C3A1", type: "checkmark" }]
+			rewards: [{ id: "870225096A51851D", type: "xp", xp: 10 }]
+		}
+		{
+			id: "070844DAF112CA92"
+			title: "Into the Dark"
+			dependencies: ["A32C8B2D12743470"]
+			x: 1.5d
+			y: 7.5d
+			description: [
+				"Wall off a sealed, pitch-black room - at least 5x5x3, light level 0."
+				""
+				"Mobs spawn in the dark. And because your island is a &2swamp&r, so do &2Bog Slimes&r."
+			]
+			tasks: [{ id: "2A1FD75984EC95F2", type: "checkmark" }]
+			rewards: [{ id: "7C0E89B048E148A7", type: "xp", xp: 15 }]
+		}
+		{
+			id: "3B8C60FD61D6C5BC"
+			title: "Bog Slimes"
+			icon: { id: "productivefrogs:bog_slime_spawn_egg" }
+			dependencies: ["070844DAF112CA92"]
+			x: 1.5d
+			y: 9.0d
+			description: [
+				"&2Bog Slimes&r are the heart of Tier 0 - the parent species your Bog Frogs come from, and a steady source of slimeballs."
+				""
+				"Hunt 8 to prove your farm works."
+			]
+			tasks: [{ entity: "productivefrogs:bog_slime", id: "22D42FA7B9C7F49C", type: "kill", value: 8L }]
+			rewards: [
+				{ id: "2E90ABD32AFB37D0", type: "xp", xp: 20 }
+				{ count: 4, id: "41F92353D8A4EA43", item: { count: 1, id: "minecraft:slime_ball" }, type: "item" }
+			]
+		}
+		{
+			id: "3D6E5A0067F4A3BC"
+			title: "Slimeball Stockpile"
+			dependencies: ["3B8C60FD61D6C5BC"]
+			x: 0.0d
+			y: 10.5d
+			description: ["Gather 16 slimeballs. Breeding frogs and crafting both run on these."]
+			tasks: [{ count: 16L, id: "44741AB7D441CDC3", item: { count: 1, id: "minecraft:slime_ball" }, type: "item" }]
+			rewards: [{ id: "88EE9CE742B5C427", type: "xp", xp: 20 }]
+		}
+		{
+			id: "ADEFF35F73257903"
+			title: "A Lucky Split"
+			icon: { id: "productivefrogs:configurable_froglight" }
+			dependencies: ["3B8C60FD61D6C5BC"]
+			x: 3.0d
+			y: 9.0d
+			description: [
+				"Optional, but worth knowing: every so often a Bog Slime splits into an &fIron Slime&r - your first resource variant."
+				""
+				"It's random. Keep farming, watch for one, and mark this when you spot it."
+			]
+			tasks: [{ id: "F8502A3F0FEB939F", type: "checkmark" }]
+			rewards: [{ id: "99345077F02E67F4", type: "xp", xp: 25 }]
+		}
+		{
+			id: "BCA7D23ACB6D16B8"
+			title: "Your First Frogs"
+			icon: { id: "productivefrogs:bog_frog_egg" }
+			dependencies: ["3D6E5A0067F4A3BC"]
+			x: 0.0d
+			y: 12.0d
+			shape: "gear"
+			size: 1.5d
+			description: [
+				"Water, stone, a slime farm - you've got the foundation. Time for frogs."
+				""
+				"Claim your breeding pair of &2Bog Frog eggs&r. Place them in water, wait for them to hatch and grow, then feed them Bog Slimes to start producing Froglights."
+				""
+				"Welcome to &2Tier 1: Bog&r."
+			]
+			tasks: [{ id: "DFC974DF4A5C02CD", type: "checkmark" }]
+			rewards: [{ count: 2, id: "B4AA800C9B33F804", item: { count: 1, id: "productivefrogs:bog_frog_egg" }, type: "item" }]
+		}
+		{
+			id: "A6EE305E83E27886"
+			title: "My Frogs Are Gone"
+			icon: { id: "productivefrogs:bog_frog_egg" }
+			dependencies: ["3B8C60FD61D6C5BC"]
+			x: 3.0d
+			y: 10.5d
+			can_repeat: true
+			repeat_cooldown: 72000
+			shape: "none"
+			description: [
+				"Frogs jump. Frogs drown. Frogs occasionally leap clean off the island into the void."
+				""
+				"This quest gets you back on your feet - a fresh breeding pair for the price of &b4 slimeballs&r. It can be claimed again once an hour."
+				""
+				"(Seriously, though: build a fence.)"
+			]
+			tasks: [{ consume_items: true, count: 4L, id: "95DDB79BA7504361", item: { count: 1, id: "minecraft:slime_ball" }, type: "item" }]
+			rewards: [{ count: 2, id: "4B0C1D7042F6D02E", item: { count: 1, id: "productivefrogs:bog_frog_egg" }, type: "item" }]
+		}
+	]
+}
