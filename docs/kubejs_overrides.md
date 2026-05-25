@@ -103,24 +103,34 @@ Per PF's `ParentSpeciesEntry`, six parent species map to the six categories:
 
 The asymmetry is intentional: vanilla slime is free-spawning so the player has a Tier 0 fuel source for the mob farm; the other four PF parents are tier-gated via quests so the player can't skip-progress.
 
-**KubeJS pattern for the vanilla slime spawn override:**
+**Verified mechanism (settled 2026-05-25). This is NOT a KubeJS server script.** The original
+`EntityEvents.checkSpawn` + `event.allow()` idea does not work, confirmed against KubeJS 2101 source:
+`checkSpawn` wraps NeoForge's `FinalizeSpawnEvent`, which fires *after* the slime placement gate
+(`Slime.checkSlimeSpawnRules`) and is cancel-only. It can neither bypass that gate nor force a spawn
+the game never attempts, and KubeJS 2101 exposes no API for the placement rule. The working approach
+is two halves, **both required**:
 
-```js
-// kubejs/server_scripts/slime_spawning.js
-EntityEvents.checkSpawn('minecraft:slime', event => {
-  const { entity, level, x, y, z, type } = event
-  // Only override natural mob-spawning attempts (don't touch eggs / commands / etc.)
-  if (type !== 'NATURAL' && type !== 'CHUNK_GENERATION') return
+1. **Pack-side: add slime to the biome monster spawn list** so the natural spawner *attempts* it.
+   A NeoForge biome modifier at `kubejs/data/skyfrogs/neoforge/biome_modifier/slime_spawns.json`:
 
-  // Sky Frogs rule: vanilla slimes spawn in any biome, at any Y, in a dark area.
-  // Skyblock has no slime chunks and no swamps — without this, the Metallic
-  // parent (per ParentSpeciesEntry) never spawns and the mob-farm bootstrap dies.
-  const lightOk = level.getMaxLocalRawBrightness(BlockPos.containing(x, y, z)) <= 7
-  if (lightOk) event.allow()
-})
-```
+   ```json
+   {
+     "type": "neoforge:add_spawns",
+     "biomes": "#minecraft:is_overworld",
+     "spawners": { "type": "minecraft:slime", "weight": 100, "minCount": 1, "maxCount": 2 }
+   }
+   ```
 
-(Exact KubeJS-on-NeoForge-1.21.1 event names will be verified during Phase 1 implementation. The vanilla-MC concept is `MobSpawnEvent.PositionCheck` / `MobSpawnEvent.FinalizeSpawn`; the KubeJS-side wrapper may differ slightly.)
+   `#minecraft:is_overworld` covers every biome Skyblock Builder generates (it distributes the full
+   filtered-overworld multi-noise set). `weight` / `maxCount` are tuning knobs, see the roadmap's
+   "Slime farm spawn-rate tuning" decision point.
+
+2. **PF-side: replace the slime placement rule** so those attempts pass at low light in any biome.
+   This is Java (`RegisterSpawnPlacementsEvent` REPLACE with a `Monster.checkMobSpawnRules`-style
+   predicate), behind an opt-in, default-off PF config flag. Tracked as
+   [productive-frogs#107](https://github.com/Flatts3000/productive-frogs/issues/107); the pack enables
+   it via `config/`. Until PF ships the flag, slimes only spawn where vanilla allows (swamp columns /
+   slime chunks), so the bootstrap is not reliable on a void island.
 
 The other four PF parents (cave/geode/tide/void slime) are **not** given KubeJS spawn overrides — they're acquired via quest-reward spawn eggs in their respective tier chapters. See [`quest_book.md`](./quest_book.md).
 

@@ -1,6 +1,14 @@
 hash-format = "sha256"
 
 [[files]]
+file = "kubejs/server_scripts/anti.js"
+hash = "f7955c54830cbc352d49b00f3c64b867d09b6b170721c4d8dbf920726a2ce1e9"
+
+[[files]]
+file = "kubejs/server_scripts/first_join.js"
+hash = "79b30d22ba026f1c3f45def6b5fa01a76fe75c317d647913cbc32f09f32c24e6"
+
+[[files]]
 file = "mods/architectury-api.pw.toml"
 hash = "6d3a1c92eee4dd671253c41ec000ae48064a33c45263d6adce5cad466395169d"
 metafile = true
@@ -61,6 +69,11 @@ hash = "d068154533d9a999acbb4008f7c33d307b583d2e6db7122a69fc02921ffdb411"
 metafile = true
 
 [[files]]
+file = "mods/kubejs.pw.toml"
+hash = "018fd970193f808f8c28f873d8b8c69ac9ba134712c7db27fc8d639cb226c9a6"
+metafile = true
+
+[[files]]
 file = "mods/libx.pw.toml"
 hash = "5fae6a137e68aa9408d87d1dfc419d4450eec49c0c57c02a2d6756c3fca69a44"
 metafile = true
@@ -68,6 +81,11 @@ metafile = true
 [[files]]
 file = "mods/productive-frogs.pw.toml"
 hash = "c7d9c05717a7d2b0d150e299d0d34fcf623fa089f560557c6c953f9c0560e5a7"
+metafile = true
+
+[[files]]
+file = "mods/rhino.pw.toml"
+hash = "75ff68dd0bfb30f2ff97f170ffbb74d5b6aaa791416c4a0559d09ac8778561ba"
 metafile = true
 
 [[files]]
