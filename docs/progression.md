@@ -1,183 +1,146 @@
 # Progression
 
-> **Status:** DRAFT — non-canonical. The six-tier structure follows the Productive Frogs category enum and that's load-bearing; everything else (chapter sequencing, playtime estimates, gate-unlock items, bootstrap shape) is a sketch. The actual identity of Sky Frogs lives in *how* progression feels, and that's not yet decided.
+> **Status:** DRAFT — for mark-up. This is the species-gated rewrite (2026-05-25) replacing the earlier resource-theme ordering. The premise (frog species gate progress) and the order (Cave → Geode → Bog → Tide → Infernal → Void) are settled; per-tier resource lists, gates, and playtimes are a sketch.
+>
+> **Version note:** this targets **Productive Frogs v1.1+** (57 thematic slime variants, component-driven Slime Milk, bottle-of-frogspawn). The pack currently consumes **PF v1.0.1** from CurseForge (only 12 variants, Bog empty, older milk). PF is published to CurseForge gradually, gated by CF review; the pack `packwiz update`s to newer PF as it clears. Until then, the live content lags this doc.
 
-The Sky Frogs player journey — from spawning on a 3×3 island to building an automated Configurable Froglight farm of every category.
+## The premise
+
+**Frog species gate progression.** Each Productive Frogs species is a self-contained quest group ("tier"). You complete one species' line to unlock the next. There is no separate resource-tier abstraction — the species *is* the tier, and each species owns a thematic family of resources (inherited from PF's slime-variant data).
+
+**Order (settled):**
+
+| Tier | Species | Resource theme (from PF v1.1 variants) |
+|------|---------|-----------------------------------------|
+| 0    | *(bootstrap)* | Get on your feet + your first Cave frogs |
+| 1    | **Cave**     | Ores & metals — iron, copper, gold, coal, lapis, redstone, diamond, obsidian, echo shard (+ modded metals) |
+| 2    | **Geode**    | Gems & crystals — emerald, amethyst (+ modded: certus quartz, fluix, fluorite, silicon) |
+| 3    | **Bog**      | Organic & mob-drops — bone, string, feather, leather, gunpowder, clay, rotten flesh (+ modded: pink slime, inferium/supremium) |
+| 4    | **Tide**     | Aquatic — sponge, prismarine, prismarine crystals, ink sac (+ modded aquatics) |
+| 5    | **Infernal** | Nether — blaze, nether quartz, soul sand/soil, netherrack, glowstone, netherite scrap |
+| 6    | **Void**     | End & endgame — ender pearl, chorus fruit, shulker shell (+ modded endgame: nitro, mythril, orichalcum) |
+
+Modded resources per tier are PF's conditional variants — they register only when the relevant mod ships in the pack, so the actual per-tier resource set tracks the Sky Frogs mod list.
 
 ## Design principles
 
-1. **Six clear tiers** — one per Productive Frogs category. Each tier is a quest chapter (sometimes two).
-2. **Every tier gates a new category of resources.** The player should always feel they're unlocking a new *kind* of thing, not just a faster version of the previous tier.
-3. **Bootstrap is friendly, mid-game is demanding.** Tier 0–1 should be reachable in a couple hours. Tier 6 should take a long campaign.
-4. **No tier requires automation.** Productive Frogs V1 ships hand-operated appliances only. The pack must be completable with hoppers, water streams, and patience. Automation (when PF V2 lands or via tech mods) is *faster*, not *required*.
+1. **Species gate progress.** Each tier unlocks a new *family* of resources, not a faster version of the last.
+2. **Each tier bootstraps the next.** A tier's quest line ends by crafting the next species' starter kit (see "Tier transitions"). You never have to find the next slime in the wild.
+3. **The pack owns spawning; the mod supports it.** Only the **Cave** parent spawns naturally (the Tier 0 dark-room farm). Every later species comes from a crafted Slime Milk source, not from spawning. PF supplies the spawn-placement hook; the pack disables PF's default biome spawns and decides what spawns where.
+4. **No tier requires automation.** PF V1 is hand-operated. The pack must be completable with hoppers, water streams, and patience. Automation (tech mods / PF V2) is *faster*, not *required*.
+
+## Tier transitions (the gate mechanic)
+
+Each species' quest line **ends by crafting two things** for the next species, via custom (KubeJS) recipes whose ingredients are the current tier's outputs:
+
+1. A **Bottle of <Next> Frog Frogspawn** — PF's `frog_egg` bottle carrying the next category. Place it on water to start the next species' frogs.
+2. A **bucket of <Next> Slime Milk** — place it as a source block; it spawns that species' parent slimes, giving the next tier its renewable slime supply with no natural spawning.
+
+So: finish the **Cave** line → craft a Bottle of Geode Frogspawn + Geode Slime Milk → **Geode** tier opens. Finish **Geode** → craft the **Bog** kit. And so on down the order.
+
+## The per-tier loop (same shape every tier)
+
+Once a species is unlocked:
+
+1. **Hatch the frogs.** Place the frogspawn bottle on water → primed frog egg → tadpoles → Resource Frogs of that species.
+2. **Get parent slimes.** Place the species' Slime Milk source → it spawns that species' parent slimes. (Tier 1 Cave also farms them naturally in the dark room.)
+3. **Infuse to a resource.** Right-click a parent slime with a resource's **primer item** (exact match, species-locked) → a Resource Slime of that variant. E.g. Cave Slime + iron → Iron Slime. A Cave Slime can only become a Cave variant; wrong-species primers are rejected.
+4. **Feed the frog.** The matching-species frog eats the Resource Slime → drops a **Configurable Froglight** stamped with that variant (`productivefrogs:slime_variant` component).
+5. **Process.** Smelt the Froglight → the resource. (Crush+smelt via a tech mod → 2×, later.)
+6. **Scale.** Milk Resource Slimes through a **Slime Milker** for more milk sources; hoppers + water streams move everything.
 
 ## Tier 0 — Bootstrap
 
-Player spawns on a 3×3 dirt island with the first-join inventory grant (saplings, water bucket, lava bucket, food). The FTB Quests book auto-opens. No frog content yet; the goal is building a slime farm.
+The Welcome quest chapter. Player spawns on the starter island with the first-join grant (saplings, water + lava buckets, food, quest book). No frog content yet — the goal is a slime farm and your first Cave frogs.
 
-**Goals:**
-- **Wood bootstrap.** Plant saplings → grow tree → wooden tools.
-- **Cobble generator.** Vanilla water + lava (one bucket of each, placed adjacent) → infinite cobble. Source of all build material.
-- **Second water source.** The grant has 1 water bucket = 1 source. Vanilla infinite water needs 2 sources adjacent. Player builds an **Ex Deorum barrel outside their claim**, collects rainwater, buckets the second source → infinite water square. (Ex Deorum's barrel is the only Tier 0 mechanic from Ex Deorum the player touches — sieving is disabled pack-wide.)
-- **Mob farm.** Standard dark-room slime farm built from cobble. `productivefrogs:bog_slime` (the Bog parent per PF's `ParentSpeciesEntry`) spawns in the dark room. PF v1.0.0 already ships bog_slime spawning (a biome modifier that adds it to `minecraft:swamp` + `minecraft:mangrove_swamp`, plus a light-based placement rule), so all the pack does is force the SkyblockBuilder island to the `minecraft:swamp` biome and PF's shipped spawning handles the rest. No pack-side spawn override needed.
-- **Collect slimeballs.** Bog slime kills drop slimeballs. Occasionally a slime split produces an Iron Slime via PF's `SlimeSplitDiscoveryHandler` (configurable rate).
-- **Complete the Welcome quest chapter** → reward is **2× Bog frog egg** (the placeable `productivefrogs:bog_frog_egg` block; no priming step needed; two so the player has a breeding pair from minute one).
-
-**Unlock for Tier 1:** the moment the player places one Bog frog egg on water. That's the start of the frog loop.
+- **Wood → tools → crafting table.**
+- **Cobblestone generator** (vanilla water + lava).
+- **Second water source** via an Ex Deorum rain-collection barrel → infinite water. (Ex Deorum's barrel is the only Tier 0 Ex Deorum mechanic; sieving is disabled pack-wide.)
+- **Dark-room mob farm.** The starter island is forced to a biome where **Cave Slimes** spawn (the pack adds `cave_slime` to the island biome; PF's light-based placement rule does the rest). Cave Slimes are the Tier 1 parent.
+- **Collect slimeballs**, and split-discover the occasional resource slime.
+- **Complete the chapter → reward: a Bottle of Cave Frog Frogspawn** (a breeding pair's worth). Place it on water to begin Tier 1.
 
 Estimated playtime: **30–60 min**.
 
-**No iron sourcing in Tier 0.** The player's first iron ingot is the smelted output of the first Iron Configurable Froglight, which their Bog Resource Frog produces from an Iron Slime. Iron is a Tier 1 emergent property of the slime farm + frog loop, not a Tier 0 deliverable.
+## Tier 1 — Cave (the ore engine)
 
-## Tier 1 — Bog (gateway)
+**Chapter:** *Cave* (working title). The foundational tier — this is where "frogs replace mining" becomes real.
 
-**Quest chapter:** *Bog Mastery*
+- Hatch Cave Frogs from the Tier 0 reward.
+- Farm Cave Slimes (dark room) and/or place Cave Slime Milk sources.
+- Infuse with ore primers → Iron/Copper/Gold/Coal/Lapis/Redstone/Diamond Slimes (+ modded metals if those mods ship).
+- Cave Frogs → Configurable Froglights → smelt → ingots.
+- **Gate to Tier 2:** craft a Bottle of Geode Frogspawn + Geode Slime Milk.
 
-The player has iron. Now: frogs.
+Estimated playtime: **3–6 hours** (it's the widest tier — most resources live here).
 
-1. Find or trap vanilla frogs. **Skyblock problem:** vanilla frogs don't spawn naturally. We solve this via the **first-join inventory grant** (one frogspawn item, one slime spawn egg) or a **questbook reward** for completing the bootstrap.
-2. Breed frogs with slimeballs → frogspawn on water.
-3. Right-click frogspawn with empty glass bottle → **Frog Egg item**.
-4. Place Frog Egg on water → Frog Egg block.
-5. Right-click Frog Egg block with any **Bog primer** (iron ingot / copper ingot / gold ingot or any modded primer tagged `productivefrogs:primer/bog`).
-6. Block becomes a **Bog Frog Egg**, ingot consumed.
-7. Hatch into **Bog Tadpole** → grows into **Bog Frog**.
-8. **Get an Iron Slime:**
-   - **Infusion path (deterministic):** right-click a bog slime with an iron ingot → it becomes an Iron Slime. Costs 1 ingot per slime.
-   - **Discovery path (random):** kill a bog slime; each split has a chance to convert.
-9. **Scale via milking:**
-   - Bucket the size-1 Iron Slime → **Bucket of Iron Slime**.
-   - Place bucket in a **Slime Milker** appliance block → **Bucket of Iron Slime Milk**.
-   - Place milk source blocks near your Bog Frog enclosure. Each source spawns size-1 Iron Slimes every ~20s (default 16 spawns per block).
-10. Bog Frog eats spawning Iron Slimes → drops **Iron Configurable Froglight** item entities.
-11. Collect via hopper → smelt → 1 iron ingot per Froglight, or crush+smelt via Mekanism / Productive Metalworks → 2 ingots.
+## Tier 2 — Geode (gems)
 
-**Resources unlocked at Tier 1 (Bog):**
-- Vanilla: iron, copper, gold
-- Modded (via tag): osmium (Mekanism), aluminum (IE), nickel (IE), zinc, lead (Mekanism), silver (IE), tin (Mekanism)
+**Chapter:** *Geode*. Faceted materials for better tooling and the first modded-crystal pipelines (AE2 certus/fluix, etc., if shipped).
 
-**Unlock for Tier 2:** redstone dust (or any item in `productivefrogs:primer/cave`).
+- Geode Frogs + Geode Slimes (from the crafted Geode Slime Milk).
+- Infuse with gem primers → Emerald/Amethyst Slimes (+ certus quartz, fluix, fluorite, silicon if modded).
+- **Gate to Tier 3:** craft the Bog starter kit.
 
-Estimated playtime: **2–4 hours**.
+Estimated playtime: **3–5 hours**.
 
-## Tier 2 — Cave
+## Tier 3 — Bog (organics & mob-drops)
 
-**Quest chapter:** *Cave Veins*
+**Chapter:** *Bog*. The overworld/swamp catch-all — the renewable source of mob-drop materials a skyblock normally grinds spawners for.
 
-Same loop, new category.
+- Bog Frogs + Bog Slimes (crafted milk).
+- Infuse → Bone/String/Feather/Leather/Gunpowder/Clay/Rotten-Flesh Slimes (+ pink slime, Mystical Agriculture inferium/supremium if modded).
+- **Gate to Tier 4:** craft the Tide starter kit.
 
-1. Acquire redstone dust (via crushing Tier 1 Bog outputs in Mekanism's enrichment chamber from sieved cobblestone? Or as a quest reward bridging the gap.)
-2. Prime a new Frog Egg with redstone → **Cave Frog Egg** → **Cave Frog**.
-3. Get a **Cave Slime** parent species — the PF Cave parent (`productivefrogs:cave_slime`). Spawns from PF's data-driven `parent_species` registry; we acquire it via a quest-reward spawn egg (no overworld biome needed).
-4. Infuse parent Cave Slime with redstone (or lapis, coal, etc.) → category-matching Cave Resource Slime.
-5. Cave Frog eats it → drops Configurable Froglight of that variant.
+Estimated playtime: **3–5 hours**.
 
-**Resources unlocked at Tier 2 (Cave):**
-- Vanilla: redstone, lapis, coal, quartz (overworld), amethyst shards
-- Modded: certus quartz (AE2), niotic crystal (Powah), fluix dust, black quartz (Actually Additions), industrial diamond seeds
+## Tier 4 — Tide (aquatic)
 
-**Unlock for Tier 3:** diamond or any item in `productivefrogs:primer/geode`.
+**Chapter:** *Drowned Riches* (working title). Ocean materials without an ocean.
+
+- Tide Frogs + Tide Slimes (crafted milk).
+- Infuse → Sponge/Prismarine/Prismarine-Crystal/Ink Slimes.
+- **Gate to Tier 5:** craft the Infernal starter kit.
 
 Estimated playtime: **3–6 hours**.
 
-## Tier 3 — Geode
+## Tier 5 — Infernal (nether)
 
-**Quest chapter:** *The Geode Workshop*
+**Chapter:** *Heat & Flame* (working title). Nether materials; an optional small Nether base for ambiance, but Infernal frogs are the real path.
 
-By now the player has a real economy, several frog enclosures, and is starting to demand more sophisticated tools.
-
-1. Prime with diamond / emerald / amethyst → **Geode Frog**.
-2. Use **Geode Slime** parent species (PF Geode parent).
-3. Infuse with diamond → Diamond Slime; emerald → Emerald Slime; etc.
-
-**Resources unlocked at Tier 3 (Geode):**
-- Vanilla: diamond, emerald
-- Modded: fluorite (Mekanism), certus crystal (AE2 grown), peridot/sapphire/ruby (Silent Gear), industrial diamonds
-
-**Unlock for Tier 4:** prismarine shard or item in `productivefrogs:primer/tide`.
-
-Estimated playtime: **4–8 hours**.
-
-## Tier 4 — Tide
-
-**Quest chapter:** *Drowned Riches*
-
-Tide resources are slightly harder to bootstrap on a void skyblock (no ocean), so the chapter starts with helping the player build a small water arena.
-
-1. Prime with prismarine shard / scute / nautilus shell → **Tide Frog**.
-2. Use **Tide Slime** parent species (PF Tide parent).
-3. Infuse parent with Tide primers.
-
-**Resources unlocked at Tier 4 (Tide):**
-- Vanilla: prismarine, sea pickles, kelp, ink/glow ink sacs, sponge
-- Modded: pink slime (IF), latex (IF), aqueous resources from Mekanism / Powah
-
-**Special:** Tide frogs power **Industrial Foregoing's Pink Slime line** — once Tier 4 is online, the player can produce pink slime ingots without an IF mob farm.
-
-**Unlock for Tier 5:** blaze rod or item in `productivefrogs:primer/infernal`.
-
-Estimated playtime: **3–6 hours**.
-
-## Tier 5 — Infernal
-
-**Quest chapter:** *Heat & Flame*
-
-Player can now visit the Nether via a portal kit reward from late Tier 4. The Nether dimension is intentionally limited — the player will build a small base for ambient Nether environment, but Infernal frog farming is still the main path.
-
-1. Prime with blaze rod / netherite ingot → **Infernal Frog**.
-2. Use **Infernal Slime** parent species (`productivefrogs:infernal_slime`, PF Infernal parent).
-3. Infuse with infernal primers → blaze slime, magmatic slime, etc.
-
-**Resources unlocked at Tier 5 (Infernal):**
-- Vanilla: blaze rods, ghast tears, nether quartz, glowstone, magma cream
-- Modded: nether-themed Mekanism resources, hop graphite coke (IE), crimson iron (Productive Metalworks)
-- **Netherite line** is gated through this tier — netherite scrap requires Infernal Froglight smelting + Tier 3+ Geode ancient debris equivalent.
-
-**Unlock for Tier 6:** ender pearl or item in `productivefrogs:primer/void`.
+- Infernal Frogs + Infernal Slimes (crafted milk).
+- Infuse → Blaze/Quartz/Soul-Sand/Netherrack/Glowstone/Netherite-Scrap Slimes.
+- **Netherite line** is gated here.
+- **Gate to Tier 6:** craft the Void starter kit.
 
 Estimated playtime: **6–10 hours**.
 
-## Tier 6 — Void
+## Tier 6 — Void (end & endgame)
 
-**Quest chapter:** *Void Mastery* and *The End*
+**Chapter:** *Void Mastery* + *The End*. Endgame.
 
-Endgame. The player has dragon-egg-tier ambitions.
-
-1. Prime with ender pearl / chorus fruit / dragon's breath → **Void Frog**.
-2. Use **Void Slime** parent species (PF Void parent).
-3. Infuse with Void primers.
-
-**Resources unlocked at Tier 6 (Void):**
-- Vanilla: ender pearls, chorus fruit, popped chorus fruit, dragon's breath, end stone
-- Modded: sky stone (AE2), vibrant alloy components (EnderIO), dimensional shards (RFTools), draconic-tier modded resources
-
-**The endgame creative loop:**
-- Late-Void: produce **Singularities** (Extended Crafting) at scale.
-- Combine into **Ultimate Singularity**.
-- Combine into a custom **Sky Frogs Master Frog** item — placeholder for the creative trophy. (Specific design TBD; see [`backlog.md`](./backlog.md).)
+- Void Frogs + Void Slimes (crafted milk).
+- Infuse → Ender-Pearl/Chorus/Shulker Slimes (+ modded endgame materials).
+- **Endgame creative loop:** scale Froglights → Singularities (Extended Crafting) → Ultimate Singularity → a custom **Sky Frogs Master Frog** trophy. (Design TBD; see [`backlog.md`](./backlog.md).)
 
 Estimated playtime: **15+ hours** to fully clear.
 
 ## Total estimated runtime
 
-**~50–80 hours** from fresh world to creative trophy on a single-player normal-difficulty run. This is comparable to Sky Bees Reborn.
+**~40–70 hours** from fresh world to creative trophy, single-player normal difficulty.
 
 ## Chapter-to-tier mapping (preview)
 
-For the full questbook structure see [`quest_book.md`](./quest_book.md). High-level mapping:
+For the full questbook structure see [`quest_book.md`](./quest_book.md).
 
-| Quest chapter           | Covers tier(s)                                |
-|-------------------------|-----------------------------------------------|
-| Welcome                 | First-launch only                             |
-| Getting Started         | Tier 0 bootstrap                              |
-| Bog Mastery             | Tier 1 (Bog)                                  |
-| Cave Veins              | Tier 2 (Cave)                                 |
-| The Geode Workshop      | Tier 3 (Geode)                                |
-| Drowned Riches          | Tier 4 (Tide)                                 |
-| Heat & Flame            | Tier 5 (Infernal)                             |
-| Void Mastery            | Tier 6 (Void) — overworld portion            |
-| The End                 | Tier 6 dimension                              |
-| Master Hive (Pond)      | Endgame singularity loop                      |
-| (per-mod side chapters) | One per significant tech mod (Mek/AE2/IE/IF/etc.) |
-
-The "per-mod side chapters" mirror Sky Bees Reborn's structure: a chapter each for `mekanism.snbt`, `applied_energistics.snbt`, `industrial_foregoing.snbt`, etc. — these are optional-but-recommended, providing the infrastructure the player will want to scale up.
+| Quest chapter        | Covers                                   |
+|----------------------|-------------------------------------------|
+| Welcome              | Tier 0 bootstrap → first Cave frogs       |
+| Cave                 | Tier 1 (Cave) — ores & metals             |
+| Geode                | Tier 2 (Geode) — gems                      |
+| Bog                  | Tier 3 (Bog) — organics & mob-drops        |
+| Drowned Riches       | Tier 4 (Tide) — aquatic                    |
+| Heat & Flame         | Tier 5 (Infernal) — nether                 |
+| Void Mastery / The End | Tier 6 (Void) — end & endgame            |
+| Master Pond          | Endgame singularity loop                  |
+| (per-mod side chapters) | One per significant tech mod, optional-but-recommended |
