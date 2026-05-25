@@ -8,6 +8,7 @@ Parking lot for open questions, deferred features, and post-1.0 ideas. Move item
 
 ### Productive Frogs feature requests blocking pack work
 
+- [ ] **Opt-in `slimesSpawnAnywhere` placement-rule flag** ([productive-frogs#107](https://github.com/Flatts3000/productive-frogs/issues/107)). Tier 0's dark-room slime farm needs `minecraft:slime` to spawn at low light in any biome on a void island. Verified 2026-05-25 that this can't be done pack-side: KubeJS 2101's `checkSpawn` wraps `FinalizeSpawnEvent` (post-placement-gate, cancel-only) and exposes no placement-rule API. PF must REPLACE the slime `SpawnPlacement` via Java, behind a default-off config. Pack-side half (biome-modifier `add_spawns`) is already shipped. Gated on a PF v1.0.2 release. v0.1 blocker.
 - [ ] **Datapack-driven parent species spawn** — verify whether Productive Frogs exposes biome-locked spawn recipes that Sky Frogs can KubeJS-override (mirror the Sky Bees Reborn `bee_spawning` pattern). If not, file a feature request upstream against [`productive-frogs`](../../productive-frogs). Workaround for v0.1: distribute parent species via quest-reward spawn eggs.
 - [ ] **Slime Milker automation hooks** — Productive Frogs V1 is hand-operated only. For v0.x of Sky Frogs we live with that and lean on Modular Routers + hoppers + water streams for "almost-automation." Real automation (PF V2) is the long-term unlock.
 - [ ] **Configurable Froglight data component schema** — confirm the variant component name is stable before we hard-code it into KubeJS scripts and quest checks.

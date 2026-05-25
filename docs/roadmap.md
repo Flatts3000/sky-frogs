@@ -28,11 +28,12 @@ The pack currently loads into a void world with a starter island — but every r
 
 **Blockers:**
 - Category-typed Metallic Frogspawn must exist as a PF item (so it can be a quest reward). If PF doesn't expose it, this becomes a PF-side feature request. Tracked in [`docs/backlog.md`](./backlog.md).
+- PF must ship the opt-in `slimesSpawnAnywhere` placement-rule flag ([productive-frogs#107](../../productive-frogs)) for the dark-room slime farm to work on a void island. The pack-side half (biome modifier) is done; this is gated on the PF release. KubeJS alone cannot do it (verified, see [`kubejs_overrides.md`](./kubejs_overrides.md) Pillar 2).
 
 **Deliverables:**
 - [ ] **First-join inventory grant** implemented in `pack/kubejs/server_scripts/first_join.js` (KubeJS `PlayerEvents.loggedIn` with a persistent-data first-join guard): 2-3× oak sapling, 1× water bucket, 1× lava bucket, ~16× cooked beef. FTB Quests book auto-opens.
 - [ ] **`anti.js`** KubeJS file — disables Ex Deorum sieves + meshes (per [`docs/kubejs_overrides.md`](./kubejs_overrides.md) Pillar 1). No tech-mod disables yet; scaffolds Phase 3+.
-- [ ] **`slime_spawning.js`** KubeJS file — overrides vanilla `minecraft:slime` spawn rules to allow any biome at low light (Pillar 2). Sanity-test the spawn rate in a dark 5×5×3 room.
+- [x] **Slime spawn enablement (pack-side half)** — `kubejs/data/skyfrogs/neoforge/biome_modifier/slime_spawns.json` adds `minecraft:slime` to overworld monster spawns. Pairs with PF's opt-in placement override ([productive-frogs#107](../../productive-frogs)); enable PF's flag in `config/` once it ships, then sanity-test spawn rate in a dark 5×5×3 room. KubeJS can't do this alone (verified, Pillar 2).
 - [ ] **Welcome quest chapter** (`welcome.snbt`) in FTB Quests: ~18 quests per [`docs/quest_book.md`](./quest_book.md) spine, including the cooldown-repeatable "Replacement Frogspawn" emergency quest.
 - [ ] **Pack version bump** to `0.0.5` (next after the 0.0.4 design-pivot reset). Reimport and verify a fresh-world player reaches their first Iron Configurable Froglight in ~30-60 min following only the questbook.
 
