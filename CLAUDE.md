@@ -38,7 +38,7 @@ All design docs are DRAFT. When you settle a question, drop the DRAFT banner on 
 - Loader: **NeoForge 21.1.230**
 - Java: **21**
 - Distribution: **CurseForge only.** Modrinth is off the table because the FTB utility stack (FTB Library / Quests / Teams / Chunks / Ranks / Essentials) is CF-only and Modrinth forbids inlining CF jars as overrides. This same constraint applies to Productive Frogs — PF is CF-only too.
-- Productive Frogs: **not yet published** to CurseForge. Local jar lives at `../productive-frogs/build/libs/productivefrogs-0.1.0.jar`. Once PF is on CF, add via `packwiz cf add productive-frogs`.
+- Productive Frogs: **published on CurseForge** (slug `productive-frogs`, project-id `1552728`) as of 2026-05-25. Added to the pack via `packwiz cf add productive-frogs`; currently pinned at `productivefrogs-1.0.1.jar` (1.21.1 / NeoForge). Pull newer files with `packwiz update productive-frogs`.
 
 ## Project Conventions
 

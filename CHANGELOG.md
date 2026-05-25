@@ -6,6 +6,7 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ### Added
 - Initial packwiz scaffold (MC 1.21.1 / NeoForge 21.1.230) with FTB utility stack, JEI, Jade, and Tier 0 substrate (Skyblock Builder, Ex Deorum, Forgiving Void, Rain Shield).
+- Productive Frogs v1.0.1 added from CurseForge (project-id 1552728) — the pack's load-bearing core mod is now pinned via packwiz instead of pending a local jar.
 - Design docs under `docs/` and community health files.
 
 ### Changed
