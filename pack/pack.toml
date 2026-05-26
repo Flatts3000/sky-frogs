@@ -1,6 +1,6 @@
 name = "Sky Frogs"
 author = "Flatts3000"
-version = "0.0.4"
+version = "0.0.5"
 pack-format = "packwiz:1.1.0"
 
 [index]
