@@ -50,11 +50,11 @@ hash = "cd769ff13d0f5686457656ec2c7e74f60dc23b7e9a0c6c5b8935d06b5621adca"
 
 [[files]]
 file = "kubejs/server_scripts/anti.js"
-hash = "a5da5aaa5f56910d83997ad13ea0aa2354f979e8a90e44153c3c04f690b352cd"
+hash = "a056f79ae1dc59bdb88a337ff7a83069333f8377cb25f0ea1bac89ee95368889"
 
 [[files]]
 file = "kubejs/server_scripts/first_join.js"
-hash = "8115892551c1da87fc66784ec5115e7f631a903b45aad546810b95454965750e"
+hash = "f371b5d0511aa5cf5780a7e3b40a247f275b9fff5306fa772f3722d2f3f072e2"
 
 [[files]]
 file = "mods/architectury-api.pw.toml"

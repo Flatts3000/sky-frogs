@@ -25,5 +25,5 @@ PlayerEvents.loggedIn(event => {
   // not a KubeJS one - configured separately in the quest book data.)
   player.give(Item.of('ftbquests:book'))
 
-  player.tell(Text.green('Welcome to Sky Frogs! Open your quest book to begin.'))
+  player.tell(Text.green('Welcome to Sky Frogs. Open your quest book - the frogs do the mining around here.'))
 })

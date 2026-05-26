@@ -59,8 +59,8 @@ ItemEvents.modifyTooltips(event => {
     'exdeorum:netherite_mesh'
   ]
   meshes.forEach(id => event.add(id, [
-    Text.red('⚠ DISABLED'),
-    Text.gray('Sky Frogs uses a slime-farm bootstrap, not sieving.'),
-    Text.gray('Build a dark-room mob farm instead.')
+    Text.red('⚠ Disabled in Sky Frogs'),
+    Text.gray('No sieving here - the frogs handle resources.'),
+    Text.gray('Build a dark-room slime farm instead.')
   ]))
 })
