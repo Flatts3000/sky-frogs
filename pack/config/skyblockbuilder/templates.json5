@@ -1,0 +1,45 @@
+{
+  // Sky Frogs custom starter island. Replaces SkyblockBuilder's built-in default
+  // template (which ships a chest we don't want - first-join items come from
+  // KubeJS, see kubejs/server_scripts/first_join.js). The island .nbt is generated
+  // by tools/gen_starter_island.py: a 5x5x3 chestless dirt platform topped with grass.
+
+  "defaultOffset": 0,
+
+  // World-spawn / first island. Single island, same as the team template below.
+  "mainSpawnIsland": {
+    "name": "default",
+    "desc": "Sky Frogs starter island.",
+    "file": "default.nbt",
+    "spawns": "default",
+    "surroundingBlocks": "default"
+  },
+
+  "netherSpreads": [],
+
+  // Spawn point relative to the island structure origin. The grass top sits at
+  // y=2, so the player stands at y=3, centered on the 5x5 pad (x=2, z=2).
+  "spawnPointReferences": {
+    "default": {
+      "south": [],
+      "west": [],
+      "north": [ [ 2, 3, 2 ] ],
+      "east": []
+    }
+  },
+
+  "spreadReferences": { "default": [] },
+
+  "surroundingBlockReferences": { "default": { "margin": 1 } },
+
+  // The team island a player gets. First entry is the default.
+  "templateList": [
+    {
+      "name": "default",
+      "file": "default.nbt",
+      "spawns": "default",
+      "surroundingBlocks": "default",
+      "spreads": "default"
+    }
+  ]
+}

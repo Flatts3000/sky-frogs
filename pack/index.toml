@@ -9,6 +9,14 @@ file = "config/skyblockbuilder/starter_inventory.json5"
 hash = "e3171de74e0d9e52dd88c94d70380c320cd7b0e06c96ab3dbc962f828decdd93"
 
 [[files]]
+file = "config/skyblockbuilder/templates.json5"
+hash = "01a923d8ace87245560207e60d49b658dc1cef5607e87593894f8a604ab4e880"
+
+[[files]]
+file = "config/skyblockbuilder/templates/islands/default.nbt"
+hash = "ce025e121c4a30a2532518928bb307bf37b72cdf09cd9247ea5a078eae2365bb"
+
+[[files]]
 file = "config/skyblockbuilder/world.json5"
 hash = "fcce4bb0b6017f641a1bd50d68ec0ed60d5d883939d3ad91fdc9ea2cbe0443e5"
 
@@ -46,7 +54,7 @@ hash = "a5da5aaa5f56910d83997ad13ea0aa2354f979e8a90e44153c3c04f690b352cd"
 
 [[files]]
 file = "kubejs/server_scripts/first_join.js"
-hash = "79b30d22ba026f1c3f45def6b5fa01a76fe75c317d647913cbc32f09f32c24e6"
+hash = "8115892551c1da87fc66784ec5115e7f631a903b45aad546810b95454965750e"
 
 [[files]]
 file = "mods/architectury-api.pw.toml"

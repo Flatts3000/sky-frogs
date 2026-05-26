@@ -16,7 +16,7 @@ PlayerEvents.loggedIn(event => {
   if (data.contains('skyfrogs:firstJoin')) return
   data.putBoolean('skyfrogs:firstJoin', true)
 
-  player.give(Item.of('minecraft:oak_sapling', 3))
+  player.give(Item.of('minecraft:oak_sapling', 6))
   player.give(Item.of('minecraft:water_bucket'))
   player.give(Item.of('minecraft:lava_bucket'))
   player.give(Item.of('minecraft:cooked_beef', 16))
