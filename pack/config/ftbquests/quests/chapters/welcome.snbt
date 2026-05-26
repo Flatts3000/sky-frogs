@@ -89,11 +89,9 @@
 			description: [
 				"Two quality-of-life tricks the void won't spell out for you:"
 				""
-				"&aSquat Grow&r - crouch (hold &eSneak&r) next to a sapling or crop and it grows while you squat. Free bone meal, basically. Plant your oak, squat on it, skip the wait."
+				"&aSquat Grow&r - press &eSneak&r next to a sapling or crop and it grows while you squat. Free bone meal, basically. Plant your oak, squat on it, skip the wait."
 				""
 				"&bFTB Ultimine&r - fell a whole tree or clear a whole crop patch in a single break. Bind the &eUltimine&r key under Options -> Controls if it isn't already, then hold it and break one block; every connected log or crop comes with it."
-				""
-				"Neither costs anything but the keypress. Use them."
 			]
 			tasks: [{ id: "E5F6A1B2C3D40002", title: "Got it", type: "checkmark" }]
 			rewards: [{ id: "E5F6A1B2C3D40003", type: "xp", xp: 10 }]
