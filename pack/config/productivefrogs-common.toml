@@ -1,0 +1,14 @@
+# Productive Frogs config - Sky Frogs pack defaults.
+#
+# Only the values Sky Frogs intentionally overrides from Productive Frogs' defaults
+# are set here. On first launch NeoForge fills every other key from the mod's config
+# spec, so this file stays minimal and easy to audit.
+
+[spawnery]
+	# Sky Frogs is a void skyblock: no swamps, so vanilla frogspawn is unreachable and
+	# the frog production loop cannot bootstrap on its own. The Spawnery is that bootstrap.
+	# Productive Frogs ships it OFF (a normal world has swamps and never needs it); the pack
+	# turns it ON so the Welcome chapter can hand the player their first Cave frog eggs.
+	# Pairs with the spawnery_primer/cave tag override, which gates Cave on cobblestone
+	# instead of the iron-ingot default (iron is frog-gated here and would soft-lock the loop).
+	enabled = true

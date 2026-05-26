@@ -22,7 +22,11 @@ hash = "16292b67fb727ff48461e686518ce6d46a86a36b0510fdcf5f5dd83791707ea5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
-hash = "d02e17f022cb0d084062c981f8210823c3293f3cf8606cfa4370c6d825f80573"
+hash = "01a1f53e0ccc8bc9ef63ebd55256f497e2aa0b7169afb630ea59773b9abefc89"
+
+[[files]]
+file = "config/productivefrogs-common.toml"
+hash = "62cc9815d8e8234d05376ecbada5301cf38ccc6bde048b41b5b75453366ac5c9"
 
 [[files]]
 file = "config/skyblockbuilder/starter_inventory.json5"
@@ -65,6 +69,10 @@ file = "kubejs/data/productivefrogs/neoforge/biome_modifier/add_void_slime_spawn
 hash = "99b969132018e9da1071065a8593ba9564928b1ed0aa5ae3ab45f9dac071f7d5"
 
 [[files]]
+file = "kubejs/data/productivefrogs/tags/item/spawnery_primer/cave.json"
+hash = "f7004bc086b9c1d15c7b12d8920d29e82711d71a2943e01e2215601a7eb745bb"
+
+[[files]]
 file = "kubejs/data/skyfrogs/neoforge/biome_modifier/add_cave_slime_island.json"
 hash = "cd769ff13d0f5686457656ec2c7e74f60dc23b7e9a0c6c5b8935d06b5621adca"
 
@@ -74,7 +82,7 @@ hash = "6abf6ad5b3630206acadfa47d12ecfa68eaaf3b42d1f383f014f008815f0ea66"
 
 [[files]]
 file = "kubejs/server_scripts/first_join.js"
-hash = "fa7781ca1159c52182db89c3fa5d792860e572da3b7f873816f71b9c4128cd54"
+hash = "659f7a086b994e6c47b0b7f0e37fbc037a7417fc1ab924455c60cd4a0d08f4e8"
 
 [[files]]
 file = "mods/almostunified.pw.toml"

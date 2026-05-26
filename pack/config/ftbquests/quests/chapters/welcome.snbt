@@ -243,5 +243,25 @@
 			tasks: [{ id: "C3D4E5F6A1B20042", item: { count: 1, id: "cobblegengalore:block_gen_stone" }, type: "item" }]
 			rewards: [{ id: "C3D4E5F6A1B20043", type: "xp", xp: 20 }]
 		}
+		{
+			id: "D4E5F6A1B2C30001"
+			title: "A Dark Room"
+			icon: { id: "minecraft:slime_ball" }
+			dependencies: ["F9D9A7438B1DD129"]
+			x: 0.0d
+			y: 6.0d
+			description: [
+				"&aCave Slimes&r keep to the dark. Wall off a room, cap it against the sky, and snuff the light - then wait."
+				""
+				"They'll start turning up. Cut them down for &eslime balls&r: fuel, frog feed, and the first link in every chain that follows."
+				""
+				"Here's a &6Sophisticated Backpack&r for the haul - you'll be carrying plenty before the frogs start pulling their weight."
+			]
+			tasks: [
+				{ id: "D4E5F6A1B2C30002", title: "Wall off a dark room", type: "checkmark" }
+				{ count: 16L, id: "D4E5F6A1B2C30004", item: { count: 1, id: "minecraft:slime_ball" }, type: "item" }
+			]
+			rewards: [{ id: "D4E5F6A1B2C30003", item: { count: 1, id: "sophisticatedbackpacks:backpack" }, type: "item" }]
+		}
 	]
 }
