@@ -22,7 +22,7 @@ hash = "16292b67fb727ff48461e686518ce6d46a86a36b0510fdcf5f5dd83791707ea5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
-hash = "ba05c46a34d9575a42632b98ad8780f21b10a3f7fb64e64d847569cbee8c23eb"
+hash = "d02e17f022cb0d084062c981f8210823c3293f3cf8606cfa4370c6d825f80573"
 
 [[files]]
 file = "config/skyblockbuilder/starter_inventory.json5"
@@ -127,8 +127,23 @@ hash = "42ffb6f5835250003da6ca3667ff751709ea295faee43b49c365b0f6c1e8f4d8"
 metafile = true
 
 [[files]]
+file = "mods/crafting-on-a-stick.pw.toml"
+hash = "e95f6e9384ea06e17022b7f03c9595d68e264f1af13134d27addab0bf10cf704"
+metafile = true
+
+[[files]]
+file = "mods/crafting-station.pw.toml"
+hash = "b1c1ca4d114e10f534952750ee8eabfaa3f26ba442a9ac41ebc85fd1c1dde14b"
+metafile = true
+
+[[files]]
 file = "mods/crafting-tweaks.pw.toml"
 hash = "6ad424af2b8614fe9547f622a5b3d84d003eeffc6284a517aea90e377958a17a"
+metafile = true
+
+[[files]]
+file = "mods/curios.pw.toml"
+hash = "f92e7a06645e41ea1934dc420eb2772edb1708c0d71cb427baef8cf753acb934"
 metafile = true
 
 [[files]]
