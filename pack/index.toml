@@ -26,7 +26,7 @@ hash = "a9029472f7a7435e2f54c4827589a0dabca28e522fb1fa6257a814cdf83d64f1"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
-hash = "2928a0ca3b4754981a21be5abc44ec4ea93cf65c85540b033983137e4c32f76a"
+hash = "49303b941e5be2abf58ea20c06e484c3d5546c5241f8f6d1788cf99e940fa5e5"
 
 [[files]]
 file = "config/productivefrogs-common.toml"
@@ -87,6 +87,10 @@ hash = "6abf6ad5b3630206acadfa47d12ecfa68eaaf3b42d1f383f014f008815f0ea66"
 [[files]]
 file = "kubejs/server_scripts/first_join.js"
 hash = "659f7a086b994e6c47b0b7f0e37fbc037a7417fc1ab924455c60cd4a0d08f4e8"
+
+[[files]]
+file = "kubejs/server_scripts/log_recipes.js"
+hash = "5c10c058739efefeed7b3d87b2adad36228609e5d2abae61a8466c3e49d41ee6"
 
 [[files]]
 file = "mods/almostunified.pw.toml"
