@@ -54,4 +54,4 @@ The line that kicked this off:
 
 - **ASCII punctuation only** - no em/en-dashes (use hyphen, comma, colon, parens). Matches the repo-wide rule.
 - **FTB Quests color codes** (`&a`, `&e`, ...) used sparingly to highlight key nouns (species, items), not for decoration.
-- **Proper nouns capitalized** consistently: Cave Frog, Resource Slime, Configurable Froglight, Bog Slime Milk.
+- **Proper nouns capitalized** consistently: Cave Frog, Resource Slime, Froglight, Bog Slime Milk.

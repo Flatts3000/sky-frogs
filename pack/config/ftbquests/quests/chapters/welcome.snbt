@@ -37,7 +37,7 @@
 			description: [
 				"Here's the whole trick:"
 				""
-				"A &bResource Slime&r, fed to its matching &aFrog&r, comes back out as a &eConfigurable Froglight&r loaded with that resource. Smelt the Froglight, pocket the ingot."
+				"A &bResource Slime&r, fed to its matching &aFrog&r, comes back out as a &eFroglight&r loaded with that resource. Smelt the Froglight, pocket the ingot."
 				""
 				"Iron, gold, diamond, ender - every one of them is just a frog you haven't met yet."
 			]
