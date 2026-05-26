@@ -24,7 +24,7 @@ A **5x5 dirt platform topped with grass**, shipped as a custom SkyblockBuilder t
 - 6× oak sapling (wood bootstrap; extras in case some fail to grow, and for replanting)
 - 1× water bucket
 - 1× lava bucket
-- ~16× cooked beef (food economy buffer for the first session)
+- (No food in the grant - food comes from early quest rewards instead.)
 - (FTB Quests book auto-opened on first join — no inventory slot needed)
 
 The grant is intentionally minimal. The player builds everything else from these primitives:
@@ -38,7 +38,7 @@ The first Iron Configurable Froglight is the first iron source — smelting it g
 
 Why inventory grant, not a chest: modern skyblock packs put first-join items directly in the player's inventory. Lower friction (no "where do I open this?"), survives the player breaking the chest before taking everything, KubeJS hook guards against re-granting on re-login.
 
-Why minimal grant: the design wants the player engaged with the mob-farm loop within minutes, not hand-feeding a bootstrap inventory through 20 minutes of crafting. Saplings + water + lava + food + the questbook is everything needed to reach a slime farm in ~30 min.
+Why minimal grant: the design wants the player engaged with the mob-farm loop within minutes, not hand-feeding a bootstrap inventory through 20 minutes of crafting. Saplings + water + lava + the questbook is everything needed to reach a slime farm in ~30 min (food comes from early quest rewards).
 
 ## Dimensions
 

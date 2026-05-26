@@ -1,0 +1,13 @@
+name = "Sky GUIs"
+filename = "SkyGUIs-21.1.8.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b88a127fdbc4c6d508640a384f7a13f23f7a3fcc"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7282783
+project-id = 557696

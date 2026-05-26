@@ -34,7 +34,7 @@ Everything from your first iron to the endgame comes through **Resource Frogs**:
 
 Your first hour, roughly:
 
-1. **Spawn** on your island with a starter kit - saplings, a water bucket, a lava bucket, some food. The questbook opens itself.
+1. **Spawn** on your island with a starter kit - saplings, a water bucket, a lava bucket. The questbook opens itself.
 2. **Make cobblestone the old-fashioned way:** water next to lava, infinite cobble. (Enjoy the pickaxe while it lasts.)
 3. **Get a second water source.** An Ex Deorum barrel catches rain; bottle it onto your island for an infinite water square.
 4. **Wall off a dark room.** **Cave Slimes** spawn in the dark here - they're your first ore source.

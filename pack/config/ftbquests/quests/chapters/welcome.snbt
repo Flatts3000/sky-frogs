@@ -8,6 +8,7 @@
 	id: "F84143B9C5D63814"
 	order_index: 0
 	quest_links: [ ]
+	title: "Welcome"
 	quests: [
 		{
 			id: "01A8E068925B319F"
