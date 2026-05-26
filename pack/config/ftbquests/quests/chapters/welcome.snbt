@@ -58,7 +58,11 @@
 				"Let's get you there."
 			]
 			tasks: [{ id: "15D92B702B5B6338", type: "checkmark" }]
-			rewards: [{ id: "DEA958DB4B72AD0E", type: "xp", xp: 10 }]
+			rewards: [
+				{ count: 6, id: "DEA958DB4B72AD0E", item: { count: 1, id: "minecraft:oak_sapling" }, type: "item" }
+				{ count: 1, id: "7C4D9E2F1A8B3605", item: { count: 1, id: "minecraft:water_bucket" }, type: "item" }
+				{ count: 1, id: "7D5E0F3A2B9C4716", item: { count: 1, id: "minecraft:lava_bucket" }, type: "item" }
+			]
 		}
 		{
 			id: "F9D9A7438B1DD129"
