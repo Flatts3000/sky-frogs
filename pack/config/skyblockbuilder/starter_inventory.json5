@@ -1,0 +1,6 @@
+{
+  // Sky Frogs grants the first-launch kit via KubeJS (kubejs/server_scripts/first_join.js),
+  // NOT SkyblockBuilder's starter inventory. Leave this empty so the two don't stack -
+  // otherwise the player gets SkyblockBuilder's default torch + bucket on top of our grant.
+  "items": []
+}

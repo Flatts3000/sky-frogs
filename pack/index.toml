@@ -1,8 +1,48 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/welcome.snbt"
+hash = "989a69a5b113bfba5ec69304eb42c402db16fc51e658c83a44db2a4421c2d55b"
+
+[[files]]
+file = "config/skyblockbuilder/starter_inventory.json5"
+hash = "e3171de74e0d9e52dd88c94d70380c320cd7b0e06c96ab3dbc962f828decdd93"
+
+[[files]]
+file = "config/skyblockbuilder/world.json5"
+hash = "fcce4bb0b6017f641a1bd50d68ec0ed60d5d883939d3ad91fdc9ea2cbe0443e5"
+
+[[files]]
+file = "kubejs/data/productivefrogs/neoforge/biome_modifier/add_bog_slime_spawn.json"
+hash = "99b969132018e9da1071065a8593ba9564928b1ed0aa5ae3ab45f9dac071f7d5"
+
+[[files]]
+file = "kubejs/data/productivefrogs/neoforge/biome_modifier/add_cave_slime_spawn.json"
+hash = "99b969132018e9da1071065a8593ba9564928b1ed0aa5ae3ab45f9dac071f7d5"
+
+[[files]]
+file = "kubejs/data/productivefrogs/neoforge/biome_modifier/add_geode_slime_spawn.json"
+hash = "99b969132018e9da1071065a8593ba9564928b1ed0aa5ae3ab45f9dac071f7d5"
+
+[[files]]
+file = "kubejs/data/productivefrogs/neoforge/biome_modifier/add_infernal_slime_spawn.json"
+hash = "99b969132018e9da1071065a8593ba9564928b1ed0aa5ae3ab45f9dac071f7d5"
+
+[[files]]
+file = "kubejs/data/productivefrogs/neoforge/biome_modifier/add_tide_slime_spawn.json"
+hash = "99b969132018e9da1071065a8593ba9564928b1ed0aa5ae3ab45f9dac071f7d5"
+
+[[files]]
+file = "kubejs/data/productivefrogs/neoforge/biome_modifier/add_void_slime_spawn.json"
+hash = "99b969132018e9da1071065a8593ba9564928b1ed0aa5ae3ab45f9dac071f7d5"
+
+[[files]]
+file = "kubejs/data/skyfrogs/neoforge/biome_modifier/add_cave_slime_island.json"
+hash = "cd769ff13d0f5686457656ec2c7e74f60dc23b7e9a0c6c5b8935d06b5621adca"
+
+[[files]]
 file = "kubejs/server_scripts/anti.js"
-hash = "f7955c54830cbc352d49b00f3c64b867d09b6b170721c4d8dbf920726a2ce1e9"
+hash = "a5da5aaa5f56910d83997ad13ea0aa2354f979e8a90e44153c3c04f690b352cd"
 
 [[files]]
 file = "kubejs/server_scripts/first_join.js"
