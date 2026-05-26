@@ -263,5 +263,57 @@
 			]
 			rewards: [{ id: "D4E5F6A1B2C30003", item: { count: 1, id: "sophisticatedbackpacks:backpack" }, type: "item" }]
 		}
+		{
+			id: "D4E5F6A1B2C30011"
+			title: "A Composter"
+			icon: { id: "minecraft:composter" }
+			dependencies: ["D4E5F6A1B2C30001"]
+			x: 0.0d
+			y: 7.5d
+			description: [
+				"A &acomposter&r is seven wooden slabs in a U. Feed it the overflow from your tree farm - spare saplings, leaves, seeds - and it pays you back in &ebone meal&r."
+				""
+				"Bone meal is worth hoarding. It forces crops and saplings up on command, and you'll have a use for it before long."
+			]
+			tasks: [
+				{ id: "D4E5F6A1B2C30012", item: { count: 1, id: "minecraft:composter" }, type: "item" }
+				{ count: 4L, id: "D4E5F6A1B2C30014", item: { count: 1, id: "minecraft:bone_meal" }, type: "item" }
+			]
+			rewards: [{ count: 4, id: "D4E5F6A1B2C30013", item: { count: 1, id: "farmersdelight:vegetable_soup" }, type: "item" }]
+		}
+		{
+			id: "D4E5F6A1B2C30021"
+			title: "The Spawnery"
+			icon: { id: "productivefrogs:spawnery" }
+			dependencies: ["D4E5F6A1B2C30011"]
+			x: 0.0d
+			y: 9.0d
+			description: [
+				"&aThe Spawnery&r is where life gets made: five cobblestone, three planks, and a scoop of bone meal in the middle. Crude - but it knows the trick stone and swamp forgot."
+				""
+				"Feed it a slime ball to burn and show it the resource you're after, and it draws frogspawn into a bottle."
+				""
+				"Take two &fglass bottles&r to pull from it."
+			]
+			tasks: [{ id: "D4E5F6A1B2C30022", item: { count: 1, id: "productivefrogs:spawnery" }, type: "item" }]
+			rewards: [{ count: 2, id: "D4E5F6A1B2C30023", item: { count: 1, id: "minecraft:glass_bottle" }, type: "item" }]
+		}
+		{
+			id: "D4E5F6A1B2C30031"
+			title: "Synthesize Life"
+			icon: { id: "productivefrogs:cave_frog_egg" }
+			dependencies: ["D4E5F6A1B2C30021"]
+			x: 0.0d
+			y: 10.5d
+			description: [
+				"&aPrime the Spawnery with cobblestone&r - that's the Cave frog's calling card - drop in a slime ball to burn, and seat a glass bottle."
+				""
+				"Out comes a &eBottle of Cave Frog Frogspawn&r. Make &btwo&r: two frogs is a breeding pair, and a breeding pair is a farm that never runs dry."
+				""
+				"That's the last thing you'll build by hand for a while. Tip them onto water and let the frogs take over."
+			]
+			tasks: [{ count: 2L, id: "D4E5F6A1B2C30032", item: { components: { "productivefrogs:contained_category": "cave" }, count: 1, id: "productivefrogs:frog_egg" }, type: "item" }]
+			rewards: [{ id: "D4E5F6A1B2C30033", type: "xp", xp: 50 }]
+		}
 	]
 }
