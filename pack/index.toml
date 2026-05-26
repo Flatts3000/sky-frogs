@@ -112,6 +112,11 @@ hash = "7fa0c360b22811152168f61e17a5d1c881eab1079b199f39f53c2508cdd27c9b"
 metafile = true
 
 [[files]]
+file = "mods/cloth-config.pw.toml"
+hash = "22286fa216349c0767808903a0a38662857d2adee54950a18cbf26c167a06029"
+metafile = true
+
+[[files]]
 file = "mods/clumps.pw.toml"
 hash = "2e6a2f8c477128a76ef059dfef7ca8a1befa2ae0ebe7ae2171e716f0c905cd00"
 metafile = true
@@ -209,6 +214,11 @@ metafile = true
 [[files]]
 file = "mods/ftb-teams-forge.pw.toml"
 hash = "e717bb275a54a5caadaa7cf82bc34df3589f49402074adf93c31eaac43860313"
+metafile = true
+
+[[files]]
+file = "mods/ftb-ultimine-forge.pw.toml"
+hash = "15dc3b581cc649acea7f375427dfd4116b29d724be1092c8ca306e968a0a4a98"
 metafile = true
 
 [[files]]
@@ -359,6 +369,11 @@ metafile = true
 [[files]]
 file = "mods/sophisticated-storage.pw.toml"
 hash = "6a1122336ce393f47f345628f39ded4eaa36004c3dca1dc6059c1d5e9d2b0c7a"
+metafile = true
+
+[[files]]
+file = "mods/squat-grow.pw.toml"
+hash = "f24d0f0ed898432765e846b945e8b993c64ff8794e537f3216f6077361a9a5ee"
 metafile = true
 
 [[files]]
