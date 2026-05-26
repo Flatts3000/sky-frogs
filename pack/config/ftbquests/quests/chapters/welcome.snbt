@@ -72,7 +72,10 @@
 			y: 4.5d
 			description: ["Plant a sapling, grow a tree, punch it. Everything starts with wood - even a frog empire."]
 			tasks: [{ id: "8AB98ED63DD877F0", item: { count: 1, id: "minecraft:oak_log" }, type: "item" }]
-			rewards: [{ id: "C5FF6B1B1EDE67AE", type: "xp", xp: 10 }]
+			rewards: [
+				{ count: 1, id: "1A2B3C4D5E6F7081", item: { count: 1, id: "craftingstation:crafting_station" }, type: "item" }
+				{ count: 1, id: "2B3C4D5E6F708192", item: { count: 1, id: "crafting_on_a_stick:crafting_table" }, type: "item" }
+			]
 		}
 		{
 			id: "F47626B72182D7AC"
