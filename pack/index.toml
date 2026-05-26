@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
-hash = "989a69a5b113bfba5ec69304eb42c402db16fc51e658c83a44db2a4421c2d55b"
+hash = "ba05c46a34d9575a42632b98ad8780f21b10a3f7fb64e64d847569cbee8c23eb"
 
 [[files]]
 file = "config/skyblockbuilder/starter_inventory.json5"
