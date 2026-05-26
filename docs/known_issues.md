@@ -33,6 +33,17 @@ In the Welcome chapter the intro spine draws its connecting lines, but the four 
 
 **Diagnostic state:** structurally it looks correct - the chapter sets `default_hide_dependency_lines: false`, no quest carries a `hide_dependency_lines` flag, and every `dependencies` entry resolves to a real quest id (integrity-checked). Cause undetermined. Leading hypothesis: FTB Quests renders locked-quest dependency lines in a dim grey that is near-invisible against the dark book background (only the completed/unlocked path shows bright green), so this may be cosmetic rather than truly missing. Needs in-game investigation (compare a locked vs unlocked branch) before deciding if it is a real bug.
 
+### 🟡 No JEI recipe-transfer ("+"/"?") button in the Crafting Station
+Viewing a recipe in JEI while the **Crafting Station** GUI is open shows no recipe-transfer button - the "+" (auto-fill) / "?" (transfer-status) icon JEI normally draws at the bottom-right of a recipe is absent. **Reported 2026-05-26.**
+
+**Root cause (diagnosed):** JEI only draws that button when a recipe-transfer handler is registered for the open container. The pack ships the **base Crafting Station** (modId `craftingstation`, project-id 318551, pinned `craftingstation-neoforge-1.21.1-5.jar` - the newest 1.21.1 file of that project, which has no JEI variant). The JEI plugin + transfer handler live in a **separately distributed JEI-integrated build** of Crafting Station (still modId `craftingstation`; ships `tfar/craftingstation/jei/JeiClientPlugin` + `CraftingStationTransferHandler` and declares a `jei` dependency) - present in FTB OceanBlock 2 (`craftingstation-jei-neoforge-1.21.1-1.5.0.jar`) and Sky Bees Reborn (`craftingstationjei-1.21.1-NeoForge-2.1.1.jar`), both of which ship it alongside the base mod. Sky Frogs ships only the base mod, so nothing registers the handler. (Confirmed via the CurseForge file list for project 318551 + decompiling the companion jars. One check left undone because the running game locked the instance jar: inspect the *deployed* `craftingstation-*.jar` for `tfar/craftingstation/jei/JeiClientPlugin` to be 100% sure the pinned build doesn't bundle it.)
+
+**Impact: low.** Recipes are still fully viewable in JEI, and the Crafting Station's actual point - remembering the last recipe and pulling ingredients from adjacent inventories - works regardless. You just can't one-click auto-fill a recipe from JEI into the station; arrange manually, or use the vanilla grid / Crafting on a Stick for JEI transfer.
+
+**Fix options (undecided):**
+1. Swap the base mod for the JEI-integrated Crafting Station build. Caveat: that build also declares dependencies on **Polymorph** (not currently in the pack) and Crafting Tweaks (we have it) - verify which are mandatory before committing, since option 1 likely pulls Polymorph in.
+2. Accept it (downgrade to 🔵) - the transfer button is a minor convenience and the pack already ships Crafting on a Stick + the vanilla grid for JEI auto-fill.
+
 ### 🟣 Duplicate ingots/dusts/etc. across mods (item unification)
 Multiple mods ship their own copy of the same material - e.g. **osmium ingot/dust/nugget/raw** exist in both **ATO (All the Ores)** and **Mekanism**, and this multiplies as more tech mods are added. Left alone it means cluttered JEI, fragmented recipes (a recipe wants "an osmium ingot" but two distinct ones exist), and an inconsistent economy.
 
