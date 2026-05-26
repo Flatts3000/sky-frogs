@@ -4,10 +4,10 @@
 // placing a chest on the island. We mirror the verified KubeJS 2101 pattern from
 // the Sky Bees Reborn reference: a one-shot guard stored in player.persistentData.
 //
-// The kit is the Tier 0 bootstrap: saplings for a tree farm, plus the second water
-// source + lava for a cobblestone generator. No food in the grant - that comes from
-// early quest rewards. No frog here either: the breeding pair (a Bottle of Cave Frog
-// Frogspawn) is the Welcome quest's completion reward.
+// The grant is just the quest book now. Every bootstrap item - saplings, the second
+// water source, lava for the cobble generator, food - is handed out as an early quest
+// reward instead, so the questbook drives the entire opening. No frog here either: the
+// breeding pair (a Bottle of Cave Frog Frogspawn) is the Welcome chapter's completion reward.
 
 PlayerEvents.loggedIn(event => {
   const { player } = event
@@ -15,10 +15,6 @@ PlayerEvents.loggedIn(event => {
 
   if (data.contains('skyfrogs:firstJoin')) return
   data.putBoolean('skyfrogs:firstJoin', true)
-
-  player.give(Item.of('minecraft:oak_sapling', 6))
-  player.give(Item.of('minecraft:water_bucket'))
-  player.give(Item.of('minecraft:lava_bucket'))
 
   // The guided path, in hand. (Auto-open on first join is an FTB Quests setting,
   // not a KubeJS one - configured separately in the quest book data.)
