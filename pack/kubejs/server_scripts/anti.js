@@ -40,11 +40,16 @@ ServerEvents.recipes(event => {
   //    diamond/netherite) and auto-extends if the mod adds more.
   event.remove({ output: '#exdeorum:sieve_meshes' })
 
-  // --- Scaffold: uncomment per mod as automated-mining mods are added to the pack.
+  // 4. Mining shortcuts from tech mods. The Mekanism Digital Miner is an automated ore
+  //    miner - a direct bypass of the frog loop - so strip its recipe now that Mekanism
+  //    is in the pack. (Inert in the void overworld, but live once the player reaches
+  //    the Nether/End, so disable it outright per Pillar 1.)
+  event.remove({ output: 'mekanism:digital_miner' })
+
+  // --- Scaffold: uncomment per mod as more automated-mining mods land.
   //     (Kept inert until the mods exist so KubeJS doesn't log unmatched-recipe noise.)
   // event.remove({ type: 'actuallyadditions:mining_lens' })       // Actually Additions
   // event.remove({ type: 'industrialforegoing:laser_drill_ore' }) // Industrial Foregoing
-  // event.remove({ output: 'mekanism:digital_miner' })            // Mekanism
 })
 
 // Flag the meshes in JEI/tooltips so the omission reads as intentional, not a bug.
@@ -63,4 +68,9 @@ ItemEvents.modifyTooltips(event => {
     Text.gray('No sieving here - the frogs handle resources.'),
     Text.gray('Build a dark-room slime farm instead.')
   ]))
+
+  event.add('mekanism:digital_miner', [
+    Text.red('⚠ Disabled in Sky Frogs'),
+    Text.gray('Automated mining bypasses the frogs - not in this pack.')
+  ])
 })
