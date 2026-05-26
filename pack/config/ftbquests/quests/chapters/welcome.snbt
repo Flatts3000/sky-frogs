@@ -96,7 +96,7 @@
 			description: [
 				"Those shears aren't for sheep. Run them across your oak leaves and the leaves come off as whole blocks - the one thing an Oak Crucible knows how to drink."
 				""
-				"Shear a stack."
+				"Shear sixteen."
 			]
 			tasks: [{ count: 16L, id: "A1B2C3D4E5F60012", item: { count: 1, id: "minecraft:oak_leaves" }, type: "item" }]
 			rewards: [{ count: 16, id: "A1B2C3D4E5F60013", item: { count: 1, id: "minecraft:torch" }, type: "item" }]
@@ -124,7 +124,7 @@
 			description: [
 				"Two water sources one block apart make an infinite one - scoop from the middle forever."
 				""
-				"You've got your spawn bucket and a barrel (or a crucible) working on the second. Set them side by side and never ration water again."
+				"You've got your first water bucket and a barrel (or a crucible) working on the second. Set them side by side and never ration water again."
 			]
 			tasks: [{ id: "A1B2C3D4E5F60032", type: "checkmark" }]
 			rewards: [{ id: "A1B2C3D4E5F60033", type: "xp", xp: 15 }]
@@ -135,7 +135,7 @@
 			dependencies: ["F9D9A7438B1DD129"]
 			x: -6.0d
 			y: 6.0d
-			description: ["Two sticks make a Crook. Drag it across oak leaves and they give up far more than bare hands would - saplings to replant, and now and then a wriggling &eSilkworm&r."]
+			description: ["Four sticks make a Crook. Drag it across oak leaves and they give up far more than bare hands would - saplings to replant, and now and then a wriggling &eSilkworm&r."]
 			tasks: [{ id: "B2C3D4E5F6A10002", item: { count: 1, id: "exdeorum:crook" }, type: "item" }]
 			rewards: [{ count: 4, id: "B2C3D4E5F6A10003", item: { count: 1, id: "farmersdelight:vegetable_soup" }, type: "item" }]
 		}
@@ -198,7 +198,7 @@
 			x: 3.0d
 			y: 7.5d
 			description: [
-				"Water and lava, one block apart, make cobble forever. You spawned with a bucket of each - set up the generator and chip off a stack."
+				"Water and lava, one block apart, make cobble forever. You've already got a bucket of each from the Road to Iron - set up the generator and chip off a stack."
 				""
 				"Then take the &eIron Hammer&r. It turns grey rock into other, more useful grey rock."
 			]
@@ -236,7 +236,7 @@
 			x: 3.0d
 			y: 12.0d
 			description: [
-				"Six smooth stone around two panes of glass builds a &eStone Block Generator&r - it churns out stone on its own, no water-and-lava rig to babysit."
+				"Six smooth stone around two glass blocks builds a &eStone Block Generator&r - it churns out stone on its own, no water-and-lava rig to babysit."
 				""
 				"Tier 0's groundwork is poured. Time to go meet some frogs."
 			]
