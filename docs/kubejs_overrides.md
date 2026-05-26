@@ -88,40 +88,28 @@ BlockEvents.rightClicked(event => {
 })
 ```
 
-### Pillar 2: Parent species spawn rules — Bog free, others gated
+### Pillar 2: Parent species spawn rules — the pack owns spawning
 
-Per PF's `ParentSpeciesEntry`, six parent species map to the six categories:
+Per PF's `ParentSpeciesEntry`, six parent species map to the six categories. Because progression is **species-gated** (see [`progression.md`](./progression.md)), only the *current* species should ever be obtainable, so the pack owns spawn policy entirely and PF just supplies a light-based placement-rule hook.
 
-| Parent entity                    | Category  | Tier 0 spawn rule (Sky Frogs)                                  |
+| Parent entity                    | Category  | How the player gets it in Sky Frogs                            |
 |----------------------------------|-----------|----------------------------------------------------------------|
-| `productivefrogs:bog_slime`      | BOG       | **Spawns naturally in the dark room** because the island is forced to `minecraft:swamp` and PF already ships bog_slime spawning there. This is the Tier 0 slime-farm fuel. No pack-side override. |
-| `productivefrogs:infernal_slime` | INFERNAL  | PF's shipped rules unchanged — player reaches Nether at Tier 5. |
-| `productivefrogs:cave_slime`     | CAVE      | Quest-reward spawn egg unlocked at Tier 2 entry.              |
-| `productivefrogs:geode_slime`    | GEODE     | Quest-reward spawn egg at Tier 3.                              |
-| `productivefrogs:tide_slime`     | TIDE      | Quest-reward spawn egg at Tier 4.                              |
-| `productivefrogs:void_slime`     | VOID      | Quest-reward spawn egg at Tier 6.                              |
+| `productivefrogs:cave_slime`     | CAVE      | **Spawns in the Tier 0 dark room** - the pack adds it to the island biome (below). The starter species. |
+| `productivefrogs:geode_slime`    | GEODE     | Crafted at the end of the Cave line (frogspawn bottle + Slime Milk). |
+| `productivefrogs:bog_slime`      | BOG       | Crafted at the end of the Geode line.                          |
+| `productivefrogs:tide_slime`     | TIDE      | Crafted at the end of the Bog line.                            |
+| `productivefrogs:infernal_slime` | INFERNAL  | Crafted at the end of the Tide line.                           |
+| `productivefrogs:void_slime`     | VOID      | Crafted at the end of the Infernal line.                       |
 
-The asymmetry is intentional: the Bog parent free-spawns so the player has a Tier 0 fuel source for the mob farm; the other four PF parents are tier-gated via quests so the player can't skip-progress.
+Only Cave spawns naturally; every later species is bootstrapped from the previous tier's crafted **Bottle of <species> Frogspawn + <species> Slime Milk** (the gate mechanic in [`progression.md`](./progression.md)). You can't get a Geode Slime before finishing the Cave line.
 
-**Verified mechanism (settled 2026-05-25). This needs NO pack-side spawn code at all.** Productive Frogs
-v1.0.0 already ships bog_slime spawning end to end:
+**Mechanism (pack owns it; PF supports it):**
 
-1. A biome modifier (`add_bog_slime_spawn.json`) that adds `productivefrogs:bog_slime` to the monster
-   spawn list of `minecraft:swamp` + `minecraft:mangrove_swamp`, so the natural spawner *attempts* it.
-2. A light-based placement rule (`checkParentSlimeSpawnRules`, registered via
-   `RegisterSpawnPlacementsEvent` REPLACE) so those attempts pass in a dark room.
+1. **Disable PF's default spawns.** PF ships per-species biome modifiers (`add_*_slime_spawn.json`) targeting vanilla biomes (cave -> dripstone/deep_dark, bog -> swamp, ...) - right for a normal world, wrong for a gated skyblock. The pack overrides all six with `{"type":"neoforge:none"}` at `kubejs/data/productivefrogs/neoforge/biome_modifier/add_*_slime_spawn.json`, so nothing spawns unless the pack says so.
+2. **Add Cave to the island.** `kubejs/data/skyfrogs/neoforge/biome_modifier/add_cave_slime_island.json` adds `productivefrogs:cave_slime` to the island biome (`minecraft:swamp`).
+3. **PF's hook does the rest.** PF's `checkParentSlimeSpawnRules` (registered via `RegisterSpawnPlacementsEvent`) is light-based, so cave_slime spawns in a dark room on the island regardless of the biome's theme.
 
-So the pack does **not** need a KubeJS spawn override, does **not** need its own biome modifier, and does
-**not** depend on any PF feature request. The only pack-side requirement is **forcing the SkyblockBuilder
-island to the `minecraft:swamp` biome** (see [`worldgen.md`](./worldgen.md)); PF's shipped bog_slime
-spawning then fires in a dark room on that island.
-
-> **Note:** the pack-side `slime_spawns.json` biome modifier that an earlier draft proposed has been
-> **removed** — PF ships its own biome modifier (`add_bog_slime_spawn.json`), so a duplicate pack-side
-> one is unnecessary and would only double-register the spawn entry. There is also no dependency on any
-> PF issue for slime spawning; the earlier `minecraft:slime` + placement-rule-flag plan is obsolete.
-
-The other four PF parents (cave/geode/tide/void slime) are acquired via quest-reward spawn eggs in their respective tier chapters. See [`quest_book.md`](./quest_book.md).
+> **Needs in-game verification:** that KubeJS's `data/` folder overrides PF's biome modifiers (datapack load order), so the `neoforge:none` disables actually take. Confirmed-working assumption; check on first load.
 
 ### Pillar 3: Generate Resource Slime variants for modded resources
 

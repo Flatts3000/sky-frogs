@@ -4,7 +4,7 @@
 	default_quest_shape: ""
 	filename: "welcome"
 	group: ""
-	icon: { id: "productivefrogs:bog_frog_egg" }
+	icon: { id: "productivefrogs:cave_frog_egg" }
 	id: "F84143B9C5D63814"
 	order_index: 0
 	quest_links: [ ]
@@ -12,17 +12,17 @@
 		{
 			id: "01A8E068925B319F"
 			title: "Welcome to Sky Frogs"
-			icon: { id: "productivefrogs:bog_frog_egg" }
+			icon: { id: "productivefrogs:cave_frog_egg" }
 			x: 0.0d
 			y: 0.0d
 			shape: "hexagon"
 			size: 1.5d
 			description: [
-				"You're stranded on a speck of land in the void. No ore. No mineshafts. No mountain to dig into."
+				"You're stranded on a speck of dirt in the void. No ore, no mineshafts, not so much as a mountain to feel bad about."
 				""
-				"Here, &afrogs&r do the digging. Breed them, feed them, and they hand you every resource the world has to offer."
+				"What you've got is &afrogs&r - and out here, that turns out to be the same thing as a mine."
 				""
-				"This book is your guide. Follow it, and you'll never swing a pickaxe at stone again."
+				"This book is the plan. Follow it and you'll never swing a pickaxe at stone again."
 			]
 			tasks: [{ id: "4296B8F81CE7FD66", type: "checkmark" }]
 			rewards: [{ id: "2E6119B4EE9588F7", type: "xp", xp: 10 }]
@@ -34,11 +34,11 @@
 			x: 0.0d
 			y: 1.5d
 			description: [
-				"The loop is simple:"
+				"Here's the whole trick:"
 				""
-				"&bResource Slimes&r spawn on your island. Feed one to the matching &aResource Frog&r, and the frog produces a &eConfigurable Froglight&r stamped with that resource."
+				"A &bResource Slime&r, fed to its matching &aFrog&r, comes back out as a &eConfigurable Froglight&r loaded with that resource. Smelt the Froglight, pocket the ingot."
 				""
-				"Smelt the Froglight, get the ingot. Iron, gold, diamond, ender - all of it, on tap, from frogs."
+				"Iron, gold, diamond, ender - every one of them is just a frog you haven't met yet."
 			]
 			tasks: [{ id: "8681547B10F0F5A2", type: "checkmark" }]
 			rewards: [{ id: "9501710B6AD1BF8B", type: "xp", xp: 10 }]
@@ -50,11 +50,11 @@
 			x: 0.0d
 			y: 3.0d
 			description: [
-				"Your starter species is the &2Bog Frog&r - it handles the basic metals: iron, copper, gold."
+				"Your first frog is the &eCave Frog&r. It deals in the things you'd normally swing a pickaxe for: iron, copper, gold, and the rest of the stone-and-ore crowd."
 				""
-				"Tier 0 is about getting on your feet: water, stone, a dark room, and a &2Bog Slime&r farm. Then you breed your first frogs."
+				"Tier 0 is just getting on your feet - water, stone, a dark room, and a slime farm. Then the frogs take over."
 				""
-				"Let's get started."
+				"Let's get you there."
 			]
 			tasks: [{ id: "15D92B702B5B6338", type: "checkmark" }]
 			rewards: [{ id: "DEA958DB4B72AD0E", type: "xp", xp: 10 }]
@@ -65,7 +65,7 @@
 			dependencies: ["378B93672C31CF5D"]
 			x: -1.5d
 			y: 4.5d
-			description: ["Plant a sapling, grow a tree, punch some logs. Everything starts with wood."]
+			description: ["Plant a sapling, grow a tree, punch it. Everything starts with wood - even a frog empire."]
 			tasks: [{ id: "8AB98ED63DD877F0", item: { count: 1, id: "minecraft:oak_log" }, type: "item" }]
 			rewards: [{ id: "C5FF6B1B1EDE67AE", type: "xp", xp: 10 }]
 		}
@@ -75,7 +75,7 @@
 			dependencies: ["F9D9A7438B1DD129"]
 			x: -1.5d
 			y: 6.0d
-			description: ["Four planks. You know the drill."]
+			description: ["Four planks. You've done this before."]
 			tasks: [{ id: "FEBEF04B946330F8", item: { count: 1, id: "minecraft:crafting_table" }, type: "item" }]
 			rewards: [{ id: "A8B0644F25EA411B", type: "xp", xp: 10 }]
 		}
@@ -85,7 +85,7 @@
 			dependencies: ["F47626B72182D7AC"]
 			x: -3.0d
 			y: 6.0d
-			description: ["A wooden pickaxe. Stone won't mine itself - yet."]
+			description: ["A wooden pickaxe. You'll mine stone the old-fashioned way exactly once more - to build the thing that ends mining."]
 			tasks: [{ id: "C077C2112863789B", item: { count: 1, id: "minecraft:wooden_pickaxe" }, type: "item" }]
 			rewards: [{ id: "320085BE98AFA990", type: "xp", xp: 10 }]
 		}
@@ -96,9 +96,9 @@
 			x: 1.5d
 			y: 4.5d
 			description: [
-				"Place a water source next to lava. Congratulations: free cobblestone, forever."
+				"Water source, lava source, side by side. Congratulations: free cobblestone until the heat death of the universe."
 				""
-				"You start with a water bucket and a lava bucket - use them."
+				"You spawned with a bucket of each. Use them."
 			]
 			tasks: [{ id: "B4950E5D3DFFDB4E", item: { count: 1, id: "minecraft:cobblestone" }, type: "item" }]
 			rewards: [{ id: "A6BE7E31D30AB2EF", type: "xp", xp: 10 }]
@@ -109,7 +109,7 @@
 			dependencies: ["0619B2305B645861"]
 			x: 1.5d
 			y: 6.0d
-			description: ["You'll need a lot. Mine 64 to start - walls, floors, and a dark room are coming."]
+			description: ["Mine 64. Walls, floors, and one very dark room are coming, and they're all made of grey."]
 			tasks: [{ count: 64L, id: "14DD22396647C641", item: { count: 1, id: "minecraft:cobblestone" }, type: "item" }]
 			rewards: [{ count: 16, id: "97DF365C2E6CCBF3", item: { count: 1, id: "minecraft:cobblestone" }, random_bonus: 16, type: "item" }]
 		}
@@ -119,7 +119,7 @@
 			dependencies: ["F47626B72182D7AC"]
 			x: -3.0d
 			y: 7.5d
-			description: ["Craft a barrel. Left out in the open, it catches rain - your ticket to a second water source."]
+			description: ["Craft a barrel and leave it out in the weather. It catches rain - which, on an island with one bucket of water, is the start of having two."]
 			tasks: [{ id: "7047CA591D5BE072", item: { count: 1, id: "exdeorum:oak_barrel" }, type: "item" }]
 			rewards: [{ id: "FB4380676AB3F1FA", type: "xp", xp: 10 }]
 		}
@@ -130,9 +130,9 @@
 			x: -3.0d
 			y: 9.0d
 			description: [
-				"Let the barrel fill with rain, then bottle that water onto your island."
+				"Let the barrel fill, then bottle that rainwater onto your island."
 				""
-				"Two water sources one block apart make an infinite source. No more running dry."
+				"Two sources a block apart make an infinite one. No more rationing."
 			]
 			tasks: [{ id: "C6716027C975C3A1", type: "checkmark" }]
 			rewards: [{ id: "870225096A51851D", type: "xp", xp: 10 }]
@@ -144,26 +144,26 @@
 			x: 1.5d
 			y: 7.5d
 			description: [
-				"Wall off a sealed, pitch-black room - at least 5x5x3, light level 0."
+				"Wall off a sealed, pitch-black room - 5x5x3 at minimum, light level 0."
 				""
-				"Mobs spawn in the dark. And because your island is a &2swamp&r, so do &2Bog Slimes&r."
+				"Things spawn in the dark. On your island, one of those things is the &eCave Slime&r. That's the one you're after."
 			]
 			tasks: [{ id: "2A1FD75984EC95F2", type: "checkmark" }]
 			rewards: [{ id: "7C0E89B048E148A7", type: "xp", xp: 15 }]
 		}
 		{
 			id: "3B8C60FD61D6C5BC"
-			title: "Bog Slimes"
-			icon: { id: "productivefrogs:bog_slime_spawn_egg" }
+			title: "Cave Slimes"
+			icon: { id: "productivefrogs:cave_slime_spawn_egg" }
 			dependencies: ["070844DAF112CA92"]
 			x: 1.5d
 			y: 9.0d
 			description: [
-				"&2Bog Slimes&r are the heart of Tier 0 - the parent species your Bog Frogs come from, and a steady source of slimeballs."
+				"&eCave Slimes&r are where your ore comes from - the parent your Cave Frogs grow from, and a tidy source of slimeballs besides."
 				""
-				"Hunt 8 to prove your farm works."
+				"Hunt 8 to prove the farm works."
 			]
-			tasks: [{ entity: "productivefrogs:bog_slime", id: "22D42FA7B9C7F49C", type: "kill", value: 8L }]
+			tasks: [{ entity: "productivefrogs:cave_slime", id: "22D42FA7B9C7F49C", type: "kill", value: 8L }]
 			rewards: [
 				{ id: "2E90ABD32AFB37D0", type: "xp", xp: 20 }
 				{ count: 4, id: "41F92353D8A4EA43", item: { count: 1, id: "minecraft:slime_ball" }, type: "item" }
@@ -175,7 +175,7 @@
 			dependencies: ["3B8C60FD61D6C5BC"]
 			x: 0.0d
 			y: 10.5d
-			description: ["Gather 16 slimeballs. Breeding frogs and crafting both run on these."]
+			description: ["Round up 16 slimeballs. Frogs breed on them, and half your early recipes want them too."]
 			tasks: [{ count: 16L, id: "44741AB7D441CDC3", item: { count: 1, id: "minecraft:slime_ball" }, type: "item" }]
 			rewards: [{ id: "88EE9CE742B5C427", type: "xp", xp: 20 }]
 		}
@@ -187,9 +187,9 @@
 			x: 3.0d
 			y: 9.0d
 			description: [
-				"Optional, but worth knowing: every so often a Bog Slime splits into an &fIron Slime&r - your first resource variant."
+				"Worth knowing: now and then a Cave Slime splits into an &fIron Slime&r - your first real resource slime, free of charge."
 				""
-				"It's random. Keep farming, watch for one, and mark this when you spot it."
+				"It's down to luck. Keep farming, keep an eye out, and tick this off when you catch one in the act."
 			]
 			tasks: [{ id: "F8502A3F0FEB939F", type: "checkmark" }]
 			rewards: [{ id: "99345077F02E67F4", type: "xp", xp: 25 }]
@@ -197,26 +197,26 @@
 		{
 			id: "BCA7D23ACB6D16B8"
 			title: "Your First Frogs"
-			icon: { id: "productivefrogs:bog_frog_egg" }
+			icon: { id: "productivefrogs:cave_frog_egg" }
 			dependencies: ["3D6E5A0067F4A3BC"]
 			x: 0.0d
 			y: 12.0d
 			shape: "gear"
 			size: 1.5d
 			description: [
-				"Water, stone, a slime farm - you've got the foundation. Time for frogs."
+				"Water, stone, a slime farm. The boring part is done - here come the frogs."
 				""
-				"Claim your breeding pair of &2Bog Frog eggs&r. Place them in water, wait for them to hatch and grow, then feed them Bog Slimes to start producing Froglights."
+				"Pour your &eBottle of Cave Frog Frogspawn&r onto water. Wait for the tadpoles to grow up, then feed the Cave Frogs your Cave Slimes and watch ore start falling out of them."
 				""
-				"Welcome to &2Tier 1: Bog&r."
+				"That's &eTier 1: Cave&r. The pickaxe can retire."
 			]
 			tasks: [{ id: "DFC974DF4A5C02CD", type: "checkmark" }]
-			rewards: [{ count: 2, id: "B4AA800C9B33F804", item: { count: 1, id: "productivefrogs:bog_frog_egg" }, type: "item" }]
+			rewards: [{ count: 2, id: "B4AA800C9B33F804", item: { components: { "productivefrogs:contained_category": "cave" }, count: 1, id: "productivefrogs:frog_egg" }, type: "item" }]
 		}
 		{
 			id: "A6EE305E83E27886"
 			title: "My Frogs Are Gone"
-			icon: { id: "productivefrogs:bog_frog_egg" }
+			icon: { id: "productivefrogs:cave_frog_egg" }
 			dependencies: ["3B8C60FD61D6C5BC"]
 			x: 3.0d
 			y: 10.5d
@@ -224,14 +224,14 @@
 			repeat_cooldown: 72000
 			shape: "none"
 			description: [
-				"Frogs jump. Frogs drown. Frogs occasionally leap clean off the island into the void."
+				"Frogs jump. Frogs drown. Frogs occasionally launch themselves clean off the island for reasons known only to frogs."
 				""
-				"This quest gets you back on your feet - a fresh breeding pair for the price of &b4 slimeballs&r. It can be claimed again once an hour."
+				"This gets you a fresh breeding pair for &b4 slimeballs&r, once an hour. Use it when disaster strikes."
 				""
-				"(Seriously, though: build a fence.)"
+				"Or - and this is just a thought - a fence."
 			]
 			tasks: [{ consume_items: true, count: 4L, id: "95DDB79BA7504361", item: { count: 1, id: "minecraft:slime_ball" }, type: "item" }]
-			rewards: [{ count: 2, id: "4B0C1D7042F6D02E", item: { count: 1, id: "productivefrogs:bog_frog_egg" }, type: "item" }]
+			rewards: [{ count: 2, id: "4B0C1D7042F6D02E", item: { components: { "productivefrogs:contained_category": "cave" }, count: 1, id: "productivefrogs:frog_egg" }, type: "item" }]
 		}
 	]
 }
