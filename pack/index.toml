@@ -9,6 +9,14 @@ file = "config/skyblockbuilder/starter_inventory.json5"
 hash = "e3171de74e0d9e52dd88c94d70380c320cd7b0e06c96ab3dbc962f828decdd93"
 
 [[files]]
+file = "config/skyblockbuilder/templates.json5"
+hash = "01a923d8ace87245560207e60d49b658dc1cef5607e87593894f8a604ab4e880"
+
+[[files]]
+file = "config/skyblockbuilder/templates/islands/default.nbt"
+hash = "dafc46e19f19eb74b5bb96d994886f411c10343437577d212cdd149fd920409d"
+
+[[files]]
 file = "config/skyblockbuilder/world.json5"
 hash = "fcce4bb0b6017f641a1bd50d68ec0ed60d5d883939d3ad91fdc9ea2cbe0443e5"
 
@@ -46,7 +54,7 @@ hash = "a056f79ae1dc59bdb88a337ff7a83069333f8377cb25f0ea1bac89ee95368889"
 
 [[files]]
 file = "kubejs/server_scripts/first_join.js"
-hash = "d345649f2315aa1612726e59cb797f15f9a628e78aadccb234a6e54e8110ec78"
+hash = "f371b5d0511aa5cf5780a7e3b40a247f275b9fff5306fa772f3722d2f3f072e2"
 
 [[files]]
 file = "mods/architectury-api.pw.toml"
@@ -120,7 +128,7 @@ metafile = true
 
 [[files]]
 file = "mods/productive-frogs.pw.toml"
-hash = "c7d9c05717a7d2b0d150e299d0d34fcf623fa089f560557c6c953f9c0560e5a7"
+hash = "6aea4a101210b965ae1e1ac738153489a8492bc109300f51c573c8111ad04f22"
 metafile = true
 
 [[files]]
