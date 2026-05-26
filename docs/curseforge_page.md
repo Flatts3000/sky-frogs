@@ -16,7 +16,7 @@ This is the copy that lives on `curseforge.com/minecraft/modpacks/sky-frogs`. Pa
 
 You spawn on a speck of land over the void. No ore to mine, no Nether to raid, no mountain to dig into. What you've got is frogs - and out here, that turns out to be the same thing as a mine.
 
-Everything from your first iron to the endgame comes through **Resource Frogs**: six species of breedable frog, each one eating its matching slimes and handing back **Configurable Froglights** you smelt into the real thing. Sky Frogs is built on [Productive Frogs](https://www.curseforge.com/minecraft/mc-mods/productive-frogs) for NeoForge 1.21.1, and wrapped in an FTB Quests campaign that walks you from a single dark-room slime farm to a frog for every resource in the game.
+Everything from your first iron to the endgame comes through **Resource Frogs**: six species of breedable frog, each one eating its matching slimes and handing back **Froglights** you smelt into the real thing. Sky Frogs is built on [Productive Frogs](https://www.curseforge.com/minecraft/mc-mods/productive-frogs) for NeoForge 1.21.1, and wrapped in an FTB Quests campaign that walks you from a single dark-room slime farm to a frog for every resource in the game.
 
 ---
 
@@ -40,7 +40,7 @@ Your first hour, roughly:
 4. **Wall off a dark room.** **Cave Slimes** spawn in the dark here - they're your first ore source.
 5. **Farm them** for slimeballs, and keep an eye out for the occasional Iron Slime.
 6. **Finish the Welcome chapter** → you're handed a **Bottle of Cave Frog Frogspawn** (a breeding pair's worth).
-7. **Pour it on water** → Cave Frogs hatch. Feed one an Iron Slime → an **Iron Configurable Froglight** drops → smelt it → your first iron.
+7. **Pour it on water** → Cave Frogs hatch. Feed one an Iron Slime → an **Iron Froglight** drops → smelt it → your first iron.
 
 By the end of a session, iron is a frog's problem, not yours. The book drives the rest.
 

@@ -2,14 +2,14 @@
 
 A void-skyblock modpack for **NeoForge 1.21.1** built around [Productive Frogs](https://github.com/Flatts3000/productive-frogs).
 
-You spawn on a 3×3 dirt island. There's no overworld to mine. The only way past iron is through **Resource Frogs**: six categories of breedable frogs that each eat category-matching slimes and produce Configurable Froglights you smelt into ingots.
+You spawn on a 3×3 dirt island. There's no overworld to mine. The only way past iron is through **Resource Frogs**: six categories of breedable frogs that each eat category-matching slimes and produce Froglights you smelt into ingots.
 
 ## Concept
 
 ```
 Find frogspawn → bottle it → prime the egg with a category material →
 hatch into a Resource Frog → feed it a matching Resource Slime →
-collect Configurable Froglight → smelt or crush for ingots
+collect Froglight → smelt or crush for ingots
 ```
 
 Six frog categories define the tier progression:
