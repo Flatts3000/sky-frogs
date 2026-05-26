@@ -35,13 +35,8 @@ Multiple mods ship their own copy of the same material - e.g. **osmium ingot/dus
 ### 🔴 "Configurable Froglight" leaks into client-facing text
 **Rule:** anything the player reads in-game must say **"Froglight"** (or "&lt;Material&gt; Froglight"), never "Configurable Froglight" - that's the internal/registry name, not a player-facing one.
 
-The block item itself is already correct - PF's lang names it `Froglight` / `Iron Froglight` / etc. (`block.productivefrogs.configurable_froglight` and its variants). The phrase leaks in only through **descriptive strings**:
+The block item itself is already correct - PF's lang names it `Froglight` / `Iron Froglight` / etc. (`block.productivefrogs.configurable_froglight` and its variants). The phrase leaks in only through **descriptive strings**, and the fix splits by which repo owns each one:
 
-- **PF's JEI info text** - `productivefrogs.jei.variant_slime.info` and `productivefrogs.jei.frog.info` both read "...drops a Configurable Froglight stamped with [this/that] variant."
-- **Our own quest text** - `config/ftbquests/quests/chapters/welcome.snbt`, quest "Frogs, Not Pickaxes": "...comes back out as a &eConfigurable Froglight&r..."
+**Upstream (Productive Frogs) - fixed at the source, no pack override.** PF's two JEI info strings (`productivefrogs.jei.variant_slime.info`, `productivefrogs.jei.frog.info`) read "...drops a Configurable Froglight stamped with [this/that] variant." Those are PF's own content and an internal inconsistency in PF (it already names the block "Froglight" everywhere else), so the fix belongs in the mod - tracked upstream in Productive Frogs' `docs/known_issues.md`. The pack inherits it on the next `packwiz update productive-frogs`. We deliberately do **not** ship a pack lang override: no point carrying a stopgap for a mod we own and are fixing at the source, and the pack isn't released yet. (If a test export ever needs it visibly correct before the next PF build, a temporary override of those two keys at `pack/kubejs/assets/productivefrogs/lang/en_us.json` is the stopgap - delete it once the PF fix ships.)
 
-**Fix:**
-1. Ship a pack resourcepack lang override at `pack/kubejs/assets/productivefrogs/lang/en_us.json` that re-defines the two PF JEI keys above with "Configurable Froglight" replaced by "Froglight".
-2. Edit `welcome.snbt` to say "&eFroglight&r".
-3. Sweep the rest of our player/public-facing copy for the phrase (the CurseForge page in particular) and replace with "Froglight". Dev docs (`progression.md`, `worldgen.md`) are internal - fix opportunistically, lower priority.
-4. (Optional) File a Productive Frogs issue to change the source JEI strings, so the override isn't needed long-term.
+**Pack-authored - fixed here.** Edit `config/ftbquests/quests/chapters/welcome.snbt` (quest "Frogs, Not Pickaxes"): "&eConfigurable Froglight&r" -> "&eFroglight&r". Then sweep the CurseForge page (`docs/curseforge_page.md`) for the phrase. Dev docs (`progression.md`, `worldgen.md`) are internal - fix opportunistically.
