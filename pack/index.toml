@@ -154,8 +154,8 @@ hash = "e95f6e9384ea06e17022b7f03c9595d68e264f1af13134d27addab0bf10cf704"
 metafile = true
 
 [[files]]
-file = "mods/crafting-station.pw.toml"
-hash = "b1c1ca4d114e10f534952750ee8eabfaa3f26ba442a9ac41ebc85fd1c1dde14b"
+file = "mods/crafting-station-jei-edition-updated.pw.toml"
+hash = "0ec31103ce44a005d4cfd59d8cd9260df352ffe1da96d1aea22ded0d3280ded4"
 metafile = true
 
 [[files]]
@@ -326,6 +326,11 @@ metafile = true
 [[files]]
 file = "mods/placebo.pw.toml"
 hash = "201e0be56d2d9430843688b4a04dea207732b6d60f8001fb9e6396d48aea287f"
+metafile = true
+
+[[files]]
+file = "mods/polymorph.pw.toml"
+hash = "8b725f1822c0feab9e51bef600f2ee6f4c26efbb55aa3ee9073a027f1f134202"
 metafile = true
 
 [[files]]
