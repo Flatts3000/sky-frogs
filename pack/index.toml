@@ -1,6 +1,26 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/almostunified/duplicates.json"
+hash = "3824f9d106398a53bbae1e2ced9dc7df8db1fdbea34c2721b968d4fbddd3e7d7"
+
+[[files]]
+file = "config/almostunified/placeholders.json"
+hash = "4a721fed372e2e887190b8b08d17dcc1382c9542f3d0a7461aafefaa9259979c"
+
+[[files]]
+file = "config/almostunified/startup.json"
+hash = "b4ce4d99b37a679b372fd2d5c34113f0b79adfe67a5b830e4fb5a20f47951278"
+
+[[files]]
+file = "config/almostunified/tags.json"
+hash = "5b17584469dc29a5a2dd92297b1ad28cf0168cb3130bba88a5eb48254d7784e5"
+
+[[files]]
+file = "config/almostunified/unification/materials.json"
+hash = "16292b67fb727ff48461e686518ce6d46a86a36b0510fdcf5f5dd83791707ea5"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
 hash = "ba05c46a34d9575a42632b98ad8780f21b10a3f7fb64e64d847569cbee8c23eb"
 
@@ -55,6 +75,11 @@ hash = "6abf6ad5b3630206acadfa47d12ecfa68eaaf3b42d1f383f014f008815f0ea66"
 [[files]]
 file = "kubejs/server_scripts/first_join.js"
 hash = "fa7781ca1159c52182db89c3fa5d792860e572da3b7f873816f71b9c4128cd54"
+
+[[files]]
+file = "mods/almostunified.pw.toml"
+hash = "3e902846339c2bb422d614993ba499fef007f185c9c29cb55804e3270ebb5ef7"
+metafile = true
 
 [[files]]
 file = "mods/architectury-api.pw.toml"

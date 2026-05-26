@@ -1,0 +1,32 @@
+{
+  "material": [
+    "iron",
+    "gold",
+    "copper",
+    "coal",
+    "charcoal",
+    "redstone",
+    "diamond",
+    "emerald",
+    "lapis",
+    "netherite",
+    "osmium",
+    "tin",
+    "lead",
+    "uranium",
+    "nickel",
+    "silver",
+    "zinc",
+    "aluminum",
+    "iridium",
+    "platinum",
+    "steel",
+    "bronze",
+    "electrum",
+    "constantan",
+    "invar",
+    "brass",
+    "sulfur",
+    "fluorite"
+  ]
+}
