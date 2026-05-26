@@ -124,7 +124,7 @@
 			description: [
 				"Two water sources one block apart make an infinite one - scoop from the middle forever."
 				""
-				"You've got your first water bucket and a barrel (or a crucible) working on the second. Set them side by side and never ration water again."
+				"You've got your first water bucket and a barrel (or a crucible) working on the second. Set them a block apart and never ration water again."
 			]
 			tasks: [{ id: "A1B2C3D4E5F60032", type: "checkmark" }]
 			rewards: [{ id: "A1B2C3D4E5F60033", type: "xp", xp: 15 }]
