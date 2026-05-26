@@ -14,7 +14,7 @@ hash = "01a923d8ace87245560207e60d49b658dc1cef5607e87593894f8a604ab4e880"
 
 [[files]]
 file = "config/skyblockbuilder/templates/islands/default.nbt"
-hash = "ce025e121c4a30a2532518928bb307bf37b72cdf09cd9247ea5a078eae2365bb"
+hash = "dafc46e19f19eb74b5bb96d994886f411c10343437577d212cdd149fd920409d"
 
 [[files]]
 file = "config/skyblockbuilder/world.json5"

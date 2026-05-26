@@ -29,7 +29,12 @@ OUT = os.path.normpath(os.path.join(
 def build():
     palette = List[Compound]([
         Compound({"Name": String("minecraft:dirt")}),
-        Compound({"Name": String("minecraft:grass_block")}),
+        # grass_block carries its (default) snowy state, matching how a real
+        # 1.21.1 structure-block save records any block that has block states.
+        Compound({
+            "Name": String("minecraft:grass_block"),
+            "Properties": Compound({"snowy": String("false")}),
+        }),
     ])
     blocks = []
     for y in range(SY):
