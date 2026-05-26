@@ -33,6 +33,7 @@ Parking lot for open questions, deferred features, and post-1.0 ideas. Move item
 - **Custom main menu** — branded panorama, custom button colors, version display. Use `packmenu` mod.
 - **Custom loading-screen tips** — Tips Mod is shipped; populate with Sky-Frogs-specific tips.
 - **Achievement / advancement tree** — vanilla advancements that mirror the questbook. Lower priority since FTB Quests is the canonical progression UI.
+- **Logs-direct convenience recipes** - craft sticks/chests/etc. straight from logs (e.g. 2 logs -> 16 sticks, 8 logs -> 4 chests), skipping the plank step. Noticed in playtest: the Crafting Station makes nothing from bare logs, which feels clunky early. Options: the [Convenience Recipes](https://www.curseforge.com/minecraft/mc-mods/convenience-recipes) mod (broad set + packing/unpacking + higher stair/wall yields), [Just Another Simple Recipes](https://www.curseforge.com/minecraft/mc-mods/just-another-simple-recipes) (exact ratios above), or - preferred for this content-over-mods pack - a few KubeJS `ServerEvents.recipes` lines keyed off the `#minecraft:logs` tag (no new mod, works with modded woods). Lean KubeJS unless we want the wider recipe set a mod brings.
 
 ### Content
 
