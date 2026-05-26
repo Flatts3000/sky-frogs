@@ -15,6 +15,7 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 - Welcome (Tier 0) FTB Quests chapter: 16 quests bootstrapping to the first Cave frogs, ending with a Bottle of Cave Frog Frogspawn. Written in the pack voice (`docs/voice_and_tone.md`).
 - Almost Unified (`almostunified` 1.4.2) with config at `config/almostunified/` to collapse duplicate ingots/dusts/nuggets/etc. that multiple tech mods (Mekanism, All the Ores) each provide into one canonical variant - hiding the rest from the recipe viewer and rewriting recipe outputs. Priority is `minecraft > alltheores > mekanism` (All the Ores wins for ingots/dusts; vanilla always wins). Safe for Productive Frogs: PF's cross-mod slime variants prime off `c:` item tags, so unification doesn't break frog priming.
 - Reward-candidate convenience mods, for use as quest rewards: Curios API (accessory-slot framework - slots only, no content mod yet), Crafting on a Stick (portable access to a crafting table and other workstations), and Crafting Station (a crafting block that remembers its recipe and pulls from adjacent inventories).
+- Food/farming mods (the food set ATM10SKY ships): Farmer's Delight (crops + cooking), Cooking for Blockheads (kitchen multiblock, cookbook, water sink), and Mama's Herbs and Harvest (additional crops/herbs). Establishes a sustainable food economy; starter seeds are granted via quest rewards rather than worldgen.
 - Design docs under `docs/` and community health files.
 
 ### Changed
