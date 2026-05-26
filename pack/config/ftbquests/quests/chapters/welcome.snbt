@@ -85,10 +85,7 @@
 			y: 6.0d
 			description: ["Craft an Oak Barrel and leave it out in the weather. It catches rain - which, on an island with one bucket of water, is the start of having two."]
 			tasks: [{ id: "A1B2C3D4E5F60002", item: { count: 1, id: "exdeorum:oak_barrel" }, type: "item" }]
-			rewards: [
-				{ id: "A1B2C3D4E5F60003", item: { count: 1, id: "minecraft:shears" }, type: "item" }
-				{ count: 4, id: "A1B2C3D4E5F60004", item: { count: 1, id: "farmersdelight:vegetable_soup" }, type: "item" }
-			]
+			rewards: [{ id: "A1B2C3D4E5F60003", item: { count: 1, id: "minecraft:shears" }, type: "item" }]
 		}
 		{
 			id: "A1B2C3D4E5F60011"
@@ -131,6 +128,58 @@
 			]
 			tasks: [{ id: "A1B2C3D4E5F60032", type: "checkmark" }]
 			rewards: [{ id: "A1B2C3D4E5F60033", type: "xp", xp: 15 }]
+		}
+		{
+			id: "B2C3D4E5F6A10001"
+			title: "A Crook"
+			dependencies: ["F9D9A7438B1DD129"]
+			x: -6.0d
+			y: 6.0d
+			description: ["Two sticks make a Crook. Drag it across oak leaves and they give up far more than bare hands would - saplings to replant, and now and then a wriggling &eSilkworm&r."]
+			tasks: [{ id: "B2C3D4E5F6A10002", item: { count: 1, id: "exdeorum:crook" }, type: "item" }]
+			rewards: [{ count: 4, id: "B2C3D4E5F6A10003", item: { count: 1, id: "farmersdelight:vegetable_soup" }, type: "item" }]
+		}
+		{
+			id: "B2C3D4E5F6A10011"
+			title: "Silkworms"
+			dependencies: ["B2C3D4E5F6A10001"]
+			x: -6.0d
+			y: 7.5d
+			description: [
+				"Crook your leaves until a Silkworm drops, then set it loose on a leaf block. It chews its way outward, infesting the leaves around it."
+				""
+				"Infested leaves are where your string comes from."
+			]
+			tasks: [{ id: "B2C3D4E5F6A10012", item: { count: 1, id: "exdeorum:silkworm" }, type: "item" }]
+			rewards: [{ count: 4, id: "B2C3D4E5F6A10013", item: { count: 1, id: "exdeorum:cooked_silkworm" }, type: "item" }]
+		}
+		{
+			id: "B2C3D4E5F6A10021"
+			title: "String from Silk"
+			dependencies: ["B2C3D4E5F6A10011"]
+			x: -6.0d
+			y: 9.0d
+			description: [
+				"Break the infested leaves and they shed &fstring&r - no spider required."
+				""
+				"Here's a &eMagnet&r to vacuum it up while you work. You'll want more than four for what's next."
+			]
+			tasks: [{ count: 4L, id: "B2C3D4E5F6A10022", item: { count: 1, id: "minecraft:string" }, type: "item" }]
+			rewards: [{ id: "B2C3D4E5F6A10023", item: { count: 1, id: "simplemagnets:basicmagnet" }, type: "item" }]
+		}
+		{
+			id: "B2C3D4E5F6A10031"
+			title: "A Bed of Your Own"
+			dependencies: ["B2C3D4E5F6A10021"]
+			x: -6.0d
+			y: 10.5d
+			description: [
+				"Four string crafts into wool; three wool and three planks make a bed."
+				""
+				"Sleep through the night and set your spawn somewhere that isn't the open void."
+			]
+			tasks: [{ id: "B2C3D4E5F6A10032", item: { count: 1, id: "minecraft:white_bed" }, type: "item" }]
+			rewards: [{ id: "B2C3D4E5F6A10033", type: "xp", xp: 15 }]
 		}
 	]
 }
