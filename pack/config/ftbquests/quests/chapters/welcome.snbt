@@ -181,5 +181,67 @@
 			tasks: [{ id: "B2C3D4E5F6A10032", item: { count: 1, id: "minecraft:white_bed" }, type: "item" }]
 			rewards: [{ id: "B2C3D4E5F6A10033", type: "xp", xp: 15 }]
 		}
+		{
+			id: "C3D4E5F6A1B20001"
+			title: "Tools of the Trade"
+			dependencies: ["F9D9A7438B1DD129"]
+			x: 3.0d
+			y: 6.0d
+			description: ["A wooden pickaxe: three planks, two sticks. It's the one mining tool you'll bother crafting - strictly for cobble. The frogs cover everything else."]
+			tasks: [{ id: "C3D4E5F6A1B20002", item: { count: 1, id: "minecraft:wooden_pickaxe" }, type: "item" }]
+			rewards: [{ count: 4, id: "C3D4E5F6A1B20003", item: { count: 1, id: "farmersdelight:vegetable_soup" }, type: "item" }]
+		}
+		{
+			id: "C3D4E5F6A1B20011"
+			title: "Cobblestone"
+			dependencies: ["C3D4E5F6A1B20001"]
+			x: 3.0d
+			y: 7.5d
+			description: [
+				"Water and lava, one block apart, make cobble forever. You spawned with a bucket of each - set up the generator and chip off a stack."
+				""
+				"Then take the &eIron Hammer&r. It turns grey rock into other, more useful grey rock."
+			]
+			tasks: [{ count: 16L, id: "C3D4E5F6A1B20012", item: { count: 1, id: "minecraft:cobblestone" }, type: "item" }]
+			rewards: [{ id: "C3D4E5F6A1B20013", item: { count: 1, id: "exdeorum:iron_hammer" }, type: "item" }]
+		}
+		{
+			id: "C3D4E5F6A1B20021"
+			title: "Sand"
+			dependencies: ["C3D4E5F6A1B20011"]
+			x: 3.0d
+			y: 9.0d
+			description: [
+				"The &eIron Hammer&r earns its keep here: pound cobblestone into gravel, then gravel into sand."
+				""
+				"A beach, one swing at a time."
+			]
+			tasks: [{ count: 4L, id: "C3D4E5F6A1B20022", item: { count: 1, id: "minecraft:sand" }, type: "item" }]
+			rewards: [{ count: 8, id: "C3D4E5F6A1B20023", item: { count: 1, id: "minecraft:charcoal" }, type: "item" }]
+		}
+		{
+			id: "C3D4E5F6A1B20031"
+			title: "Glass"
+			dependencies: ["C3D4E5F6A1B20021"]
+			x: 3.0d
+			y: 10.5d
+			description: ["Smelt that sand into glass. The charcoal you just earned makes fine furnace fuel."]
+			tasks: [{ count: 4L, id: "C3D4E5F6A1B20032", item: { count: 1, id: "minecraft:glass" }, type: "item" }]
+			rewards: [{ count: 4, id: "C3D4E5F6A1B20033", item: { count: 1, id: "farmersdelight:vegetable_soup" }, type: "item" }]
+		}
+		{
+			id: "C3D4E5F6A1B20041"
+			title: "Cobblestone Generator"
+			dependencies: ["C3D4E5F6A1B20031"]
+			x: 3.0d
+			y: 12.0d
+			description: [
+				"Six smooth stone around two panes of glass builds a &eStone Block Generator&r - it churns out stone on its own, no water-and-lava rig to babysit."
+				""
+				"Tier 0's groundwork is poured. Time to go meet some frogs."
+			]
+			tasks: [{ id: "C3D4E5F6A1B20042", item: { count: 1, id: "cobblegengalore:block_gen_stone" }, type: "item" }]
+			rewards: [{ id: "C3D4E5F6A1B20043", type: "xp", xp: 20 }]
+		}
 	]
 }
