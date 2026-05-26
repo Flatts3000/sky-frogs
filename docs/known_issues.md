@@ -8,6 +8,7 @@ Living tracker of Sky Frogs playtest bugs, limitations, and accepted-for-now qui
 |---|---|
 | 🔴 | Open. Fix pending. |
 | 🟡 | Open. Workaround available. |
+| 🟣 | Fix shipped. Awaiting in-game verification. |
 | 🔵 | Accepted for now. Low priority; may revisit. |
 | 🟢 | Resolved. |
 
@@ -15,12 +16,12 @@ Living tracker of Sky Frogs playtest bugs, limitations, and accepted-for-now qui
 
 ## Open
 
-### 🔵 Starter island spawns with a chest
+### 🟣 Starter island spawns with a chest
 SkyblockBuilder's built-in default island shipped a chest; Sky Frogs grants the first-launch kit via KubeJS instead. **Fix shipped (pending in-game verification):** the pack now ships a custom chestless starter island - `config/skyblockbuilder/templates.json5` plus a generated `default.nbt` (see [`tools/gen_starter_island.py`](../tools/gen_starter_island.py)) - replacing the built-in default. On first load, confirm the custom island loads, spawns the player correctly, and has no chest; then mark 🟢 and archive.
 
 > Related and already fixed: the extra hotbar starter items (torch, bucket) were SkyblockBuilder's *default starter inventory* stacking on top of our grant. Emptied via `config/skyblockbuilder/starter_inventory.json5`.
 
-### 🔵 Duplicate ingots/dusts/etc. across mods (item unification)
+### 🟣 Duplicate ingots/dusts/etc. across mods (item unification)
 Multiple mods ship their own copy of the same material - e.g. **osmium ingot/dust/nugget/raw** exist in both **ATO (All the Ores)** and **Mekanism**, and this multiplies as more tech mods are added. Left alone it means cluttered JEI, fragmented recipes (a recipe wants "an osmium ingot" but two distinct ones exist), and an inconsistent economy.
 
 **Fix shipped (pending in-game verification):** **[Almost Unified](https://www.curseforge.com/minecraft/mc-mods/almostunified)** (`almostunified`, NeoForge 1.21.1 / 1.4.2) - the standard tag-based unifier, and what ATM10 runs for this exact ATO+Mekanism overlap. It collapses items sharing a `c:ingots/<material>` (etc.) tag to one canonical variant, hides the duplicates from the recipe viewer, and rewrites recipe outputs. Config lives at `pack/config/almostunified/` (ported from ATM10's verified 1.4.x schema, trimmed to our mod set):
@@ -30,3 +31,17 @@ Multiple mods ship their own copy of the same material - e.g. **osmium ingot/dus
 **PF safety (verified against PF v1.2.0 source):** PF resolves a slime's variant by `primer_item` (exact id) **or** `primer_tag` (tag). All of PF's cross-mod variants - osmium included - use `primer_tag: c:ingots/<material>`, so whichever ingot AU keeps canonical still satisfies the tag and priming still matches. Vanilla variants (iron, gold, ...) use exact `primer_item` ids, but AU never unifies vanilla items, so there's no conflict. **Authoring rule:** any *pack-added* slime_variant for a modded resource must use `primer_tag`, never a mod-specific `primer_item`, or unification can break priming.
 
 **Verify in-game:** set `dump_overview` / `dump_unification` true in `config/almostunified/debug.json` (AU writes this file on first boot), launch once, and confirm osmium collapses to `alltheores:osmium_*` and JEI shows a single variant; then flip the dumps back off. If Mekanism *machine* recipes still emit their own osmium ingot afterward, strip those recipe ids in KubeJS (the way ATM10 does in its `Unification/ingots.js`).
+
+### 🔴 "Configurable Froglight" leaks into client-facing text
+**Rule:** anything the player reads in-game must say **"Froglight"** (or "&lt;Material&gt; Froglight"), never "Configurable Froglight" - that's the internal/registry name, not a player-facing one.
+
+The block item itself is already correct - PF's lang names it `Froglight` / `Iron Froglight` / etc. (`block.productivefrogs.configurable_froglight` and its variants). The phrase leaks in only through **descriptive strings**:
+
+- **PF's JEI info text** - `productivefrogs.jei.variant_slime.info` and `productivefrogs.jei.frog.info` both read "...drops a Configurable Froglight stamped with [this/that] variant."
+- **Our own quest text** - `config/ftbquests/quests/chapters/welcome.snbt`, quest "Frogs, Not Pickaxes": "...comes back out as a &eConfigurable Froglight&r..."
+
+**Fix:**
+1. Ship a pack resourcepack lang override at `pack/kubejs/assets/productivefrogs/lang/en_us.json` that re-defines the two PF JEI keys above with "Configurable Froglight" replaced by "Froglight".
+2. Edit `welcome.snbt` to say "&eFroglight&r".
+3. Sweep the rest of our player/public-facing copy for the phrase (the CurseForge page in particular) and replace with "Froglight". Dev docs (`progression.md`, `worldgen.md`) are internal - fix opportunistically, lower priority.
+4. (Optional) File a Productive Frogs issue to change the source JEI strings, so the override isn't needed long-term.
