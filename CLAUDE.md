@@ -38,7 +38,7 @@ All design docs are DRAFT. When you settle a question, drop the DRAFT banner on 
 - Loader: **NeoForge 21.1.230**
 - Java: **21**
 - Distribution: **CurseForge only.** Modrinth is off the table because the FTB utility stack (FTB Library / Quests / Teams / Chunks / Ranks / Essentials) is CF-only and Modrinth forbids inlining CF jars as overrides. This same constraint applies to Productive Frogs — PF is CF-only too.
-- Productive Frogs: **published on CurseForge** (slug `productive-frogs`, project-id `1552728`) as of 2026-05-25. Added to the pack via `packwiz cf add productive-frogs`; currently pinned at `productivefrogs-1.4.3.jar` (1.21.1 / NeoForge; 1.0.1 -> 1.2.0 on 2026-05-25, then -> 1.3.0 -> 1.4.0 -> 1.4.3 on 2026-05-26; 1.4.0 ships the Spawnery, 1.4.1-1.4.3 add Jade appliance tooltips + Geode/Tide/Void roster rebalancing). Pull newer files with `packwiz update productive-frogs`.
+- Productive Frogs: **published on CurseForge** (slug `productive-frogs`, project-id `1552728`) as of 2026-05-25. Added to the pack via `packwiz cf add productive-frogs`; currently pinned at `productivefrogs-1.5.1.jar` (1.21.1 / NeoForge; 1.0.1 -> 1.2.0 on 2026-05-25, then -> 1.3.0 -> 1.4.0 -> 1.4.3 on 2026-05-26, then -> 1.5.0 -> 1.5.1 on 2026-05-27; 1.4.0 ships the Spawnery, 1.4.1-1.4.3 add Jade appliance tooltips + Geode/Tide/Void roster rebalancing, **1.5.0 adds frog stats (Appetite/Bounty/Reach) + breeding via Sweetslime** - which the Scaling the Colony chapter depends on - and 1.5.1 moves Lapis from Cave to Geode). Pull newer files with `packwiz update productive-frogs`.
 
 ## Project Conventions
 

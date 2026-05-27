@@ -6,7 +6,7 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ### Added
 - Initial packwiz scaffold (MC 1.21.1 / NeoForge 21.1.230) with FTB utility stack, JEI, Jade, and Tier 0 substrate (Skyblock Builder, Ex Deorum, Forgiving Void, Rain Shield).
-- Productive Frogs added from CurseForge (project-id 1552728), pinned at **v1.4.3** — the pack's load-bearing core mod, via packwiz (initially v1.0.1; v1.2.0 unlocked the 57-variant resource set, component-driven Slime Milk, and data-driven spawn eggs; v1.3.0 adds the `mod_loaded`-gated cross-mod crush recipes; v1.4.0 ships the Spawnery appliance, which this pack enables; v1.4.1-1.4.3 add Jade appliance tooltips and rebalance the Geode/Tide/Void resource rosters - all additive, pack overrides unaffected).
+- Productive Frogs added from CurseForge (project-id 1552728), pinned at **v1.5.1** — the pack's load-bearing core mod, via packwiz (initially v1.0.1; v1.2.0 unlocked the 57-variant resource set, component-driven Slime Milk, and data-driven spawn eggs; v1.3.0 adds the `mod_loaded`-gated cross-mod crush recipes; v1.4.0 ships the Spawnery appliance, which this pack enables; v1.4.1-1.4.3 add Jade appliance tooltips and rebalance the Geode/Tide/Void resource rosters; **v1.5.0 adds frog stats (Appetite/Bounty/Reach) + breeding via Sweetslime** — which the Scaling the Colony chapter depends on; v1.5.1 moves Lapis from Cave to Geode — all additive, pack overrides unaffected).
 - KubeJS 2101.7.2 (+ Rhino) added for pack-side scripting and datapack overrides.
 - Tier 0 KubeJS scripts: `first_join.js` (first-launch inventory grant, persistent-guarded) and `anti.js` (disables Ex Deorum sieving — recipe types, sieve/mesh crafting, mesh tooltips, fake-player block cancel).
 - Tier 0 slime spawning is pack-owned: a biome modifier adds `productivefrogs:cave_slime` (the Cave / Tier 1 starter parent) to the swamp island, and PF's six default slime-spawn biome modifiers are disabled via `neoforge:none` overrides, so only Cave spawns. PF's light-based placement hook makes it spawn in a dark room.
@@ -41,6 +41,8 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 - Pack-side `slime_spawns.json` biome modifier (it targeted vanilla `minecraft:slime`, which PF v1.0.0 no longer uses as a parent; PF ships its own `bog_slime` biome modifier).
 
 ### Fixed
+- Sweetslime showed "Missing Item" in the Scaling the Colony quests: the pack was pinned at PF **1.4.3**, but `productivefrogs:sweetslime` (and the frog-stats breeding system the chapter teaches) are **v1.5.0** features. Updated the PF pin **1.4.3 -> 1.5.1** (also makes Lapis -> Geode live). The 1.5.x changes are additive plus the Lapis recategorization, which the Cave chain already excludes - no collateral.
+- Removed the redundant "Wire up the auto-smelter" checkmark from the Hands-Free Froglights quest; crafting the Iron Furnace is the single task.
 - Welcome chapter dependency tree was severed: the four branches (water / bed / cobble / frog-eggs) drew no dependency lines and Wood to Stand On showed "No Dependants". Root cause was hand-authored FTB Quests IDs that lead with hex `8-F` - FTB parses IDs as signed longs and rejects negative ones, regenerating them on load and dropping every dependency that referenced them. Remapped all 62 negative-leading IDs into the positive range (leading digit minus 8) via the new `tools/fix_quest_ids.py`; dependency references remap identically and stay linked. Authoring rule going forward: FTB Quests IDs must lead with hex `0-7`.
 
 ---

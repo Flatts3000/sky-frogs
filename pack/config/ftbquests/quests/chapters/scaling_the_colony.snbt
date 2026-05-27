@@ -195,10 +195,7 @@
 				""
 				"A frog that mines iron in its sleep."
 			]
-			tasks: [
-				{ id: "2A5700000A57001F", item: { count: 1, id: "ironfurnaces:iron_furnace" }, type: "item" }
-				{ id: "2A5700000A570020", title: "Wire up the auto-smelter", type: "checkmark" }
-			]
+			tasks: [{ id: "2A5700000A57001F", item: { count: 1, id: "ironfurnaces:iron_furnace" }, type: "item" }]
 			rewards: [{ id: "2A5700000A570021", type: "xp", xp: 30 }]
 		}
 	]
