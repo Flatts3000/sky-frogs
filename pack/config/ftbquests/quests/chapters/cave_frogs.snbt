@@ -16,7 +16,7 @@
 			icon: { id: "productivefrogs:cave_frog_spawn_egg" }
 			shape: "hexagon"
 			size: 1.5d
-			dependencies: ["2A5700000A570002"]
+			dependencies: ["2A5700000A570012"]
 			x: 0.0d
 			y: 0.0d
 			description: [
