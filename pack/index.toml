@@ -49,6 +49,10 @@ file = "config/skyblockbuilder/world.json5"
 hash = "fcce4bb0b6017f641a1bd50d68ec0ed60d5d883939d3ad91fdc9ea2cbe0443e5"
 
 [[files]]
+file = "config/toastcontrol-client.toml"
+hash = "7d8bd1b950b7c740f805a5f0bf4d9c742882556bf60c42f257da7c40a7402ffe"
+
+[[files]]
 file = "kubejs/data/productivefrogs/neoforge/biome_modifier/add_bog_slime_spawn.json"
 hash = "99b969132018e9da1071065a8593ba9564928b1ed0aa5ae3ab45f9dac071f7d5"
 
@@ -405,6 +409,11 @@ metafile = true
 [[files]]
 file = "mods/supermartijn642s-core-lib.pw.toml"
 hash = "83dae761dae86cc140fe971ce6a8cac9bfe0f9eb39417a71666441a2bcc634a8"
+metafile = true
+
+[[files]]
+file = "mods/toast-control.pw.toml"
+hash = "29d1e04030fcbdad4ee91eb9bc0b0d6b8907ffe967c9bd0543e8bb7e3dab5282"
 metafile = true
 
 [[files]]

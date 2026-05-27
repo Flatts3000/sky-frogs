@@ -19,6 +19,7 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 - Food/farming mods (the food set ATM10SKY ships): Farmer's Delight (crops + cooking), Cooking for Blockheads (kitchen multiblock, cookbook, water sink), and Mama's Herbs and Harvest (additional crops/herbs). Establishes a sustainable food economy; starter seeds are granted via quest rewards rather than worldgen.
 - Plant/harvest QoL mods: Squat Grow (sneak/"twerk" near saplings and crops to fast-grow them - pairs with the farming mods and bootstraps the first tree quickly) and FTB Ultimine (hold a key to harvest a whole tree or crop patch at once; no ore to vein-mine in the void, so it doesn't dent the no-mining pillar). Squat Grow pulled in Cloth Config API as a dependency.
 - Opening-loop conveniences: an optional **"Two Shortcuts"** Welcome-chapter quest that teaches Squat Grow + FTB Ultimine and how to use them, and **logs-direct crafting recipes** via KubeJS (`kubejs/server_scripts/log_recipes.js`) - 2 logs -> 16 sticks and 8 logs -> 4 chests off the `#minecraft:logs` tag (break-even ratios, every wood), so early crafting can skip the plank step.
+- Toast Control (`toastcontrol`, depends on Placebo which we already ship) with `config/toastcontrol-client.toml` blocking the vanilla **tutorial** ("Move with WASD" etc.), **recipe-unlock**, and **advancement** toasts - FTB Quests is the progression UI, so the vanilla toasts are redundant noise.
 - Design docs under `docs/` and community health files.
 
 ### Changed
