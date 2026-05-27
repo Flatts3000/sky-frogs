@@ -26,7 +26,7 @@ hash = "a9029472f7a7435e2f54c4827589a0dabca28e522fb1fa6257a814cdf83d64f1"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
-hash = "58a394c7f7458563dfedbf9e782924e18ec604f82809e4922419bdbedde3fcb3"
+hash = "2ef37e9d0fdb08ad4862a516771dc63fc646cf6b3b9617183930e8bc4f447d5d"
 
 [[files]]
 file = "config/productivefrogs-common.toml"

@@ -32,6 +32,9 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 - Rain Shield (conflicted with Ex Deorum barrel rain collection inside the player's claim).
 - Pack-side `slime_spawns.json` biome modifier (it targeted vanilla `minecraft:slime`, which PF v1.0.0 no longer uses as a parent; PF ships its own `bog_slime` biome modifier).
 
+### Fixed
+- Welcome chapter dependency tree was severed: the four branches (water / bed / cobble / frog-eggs) drew no dependency lines and Wood to Stand On showed "No Dependants". Root cause was hand-authored FTB Quests IDs that lead with hex `8-F` - FTB parses IDs as signed longs and rejects negative ones, regenerating them on load and dropping every dependency that referenced them. Remapped all 62 negative-leading IDs into the positive range (leading digit minus 8) via the new `tools/fix_quest_ids.py`; dependency references remap identically and stay linked. Authoring rule going forward: FTB Quests IDs must lead with hex `0-7`.
+
 ---
 
 ## Release template
