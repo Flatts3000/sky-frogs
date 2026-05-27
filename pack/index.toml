@@ -26,7 +26,7 @@ hash = "a9029472f7a7435e2f54c4827589a0dabca28e522fb1fa6257a814cdf83d64f1"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/cave_frogs.snbt"
-hash = "8f934e3da1d789157ad542c5beb62b63232008400472a945bb433d73c260192a"
+hash = "ea1404532058a863619e454f4f7fe89602c6440d75aff8ba7dbbdca136670821"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/scaling_the_colony.snbt"
@@ -99,6 +99,10 @@ hash = "cd769ff13d0f5686457656ec2c7e74f60dc23b7e9a0c6c5b8935d06b5621adca"
 [[files]]
 file = "kubejs/server_scripts/anti.js"
 hash = "6abf6ad5b3630206acadfa47d12ecfa68eaaf3b42d1f383f014f008815f0ea66"
+
+[[files]]
+file = "kubejs/server_scripts/cave_slime_chain.js"
+hash = "dbb7488e1c4a77eb3c909b7c89d8e2dd5412ec53047838aa901978efbd0f5677"
 
 [[files]]
 file = "kubejs/server_scripts/first_join.js"
