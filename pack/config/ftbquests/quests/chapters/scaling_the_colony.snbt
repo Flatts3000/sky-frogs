@@ -146,7 +146,7 @@
 				""
 				"Fill an Ex Deorum &eBarrel&r with organic scraps - saplings, leaves, seeds, the overflow from your tree farm - and it rots down into a block of &6dirt&r. Free earth, forever."
 			]
-			tasks: [{ id: "2A5700000A570016", title: "Compost scraps into dirt", type: "checkmark" }]
+			tasks: [{ id: "2A5700000A570016", item: { count: 1, id: "minecraft:dirt" }, type: "item" }]
 			rewards: [{ id: "2A5700000A570017", type: "xp", xp: 10 }]
 		}
 		{

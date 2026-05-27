@@ -26,19 +26,23 @@ hash = "a9029472f7a7435e2f54c4827589a0dabca28e522fb1fa6257a814cdf83d64f1"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/cave_frogs.snbt"
-hash = "5a344733aba871bec23dce33d643a697f86877c99759237b6a56df8c6bc2e45f"
+hash = "ec107e439a34a87768cc12921b84ea6f34c1c130700255259de4aa706bff40be"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/scaling_the_colony.snbt"
-hash = "144a7724f60b95ca6b2dc4b8dcc8cb2a9ac0427a1cf05b36436a0684637cbe6a"
+hash = "82df34b0b7f9af44c6956f5844ddb2eb118a13c08560ec6c11ffe0ee1eca4814"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/storage_and_crafting.snbt"
+hash = "86504d725898ecf012a00e515360b631f9b2aa6f1eb3f05018a0fc4f984e55b9"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
-hash = "02defb1844eaa7a27eceb4f00fe08fe702008acd20ee44ecb3cfdc2eed6ed521"
+hash = "81c0fdb620195a91a02fbe3565327855088c7cbf5b47ddd51ddd573c15ed180e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/your_first_iron_ingot.snbt"
-hash = "ebeb7e6f516cc6bfd952d750ce91c4e16813a999f035adbdde3d39a9536a175c"
+hash = "0fb1d6eecebe67a5005423ca8851cd4203383c68654f7cb2a51d8238a9e7ee65"
 
 [[files]]
 file = "config/productivefrogs-common.toml"
@@ -119,6 +123,10 @@ hash = "5f8d806e6fea7829f8e5b9b7344ddecf33208f4599eb7e7a2fee34c7a79e3b3e"
 [[files]]
 file = "kubejs/server_scripts/log_recipes.js"
 hash = "5c10c058739efefeed7b3d87b2adad36228609e5d2abae61a8466c3e49d41ee6"
+
+[[files]]
+file = "kubejs/server_scripts/storage_quartz_free.js"
+hash = "cb95c43547e5586f9054e2d1f4cc818fa9ddc706a0f4e07034417a26fbc01c87"
 
 [[files]]
 file = "mods/almostunified.pw.toml"

@@ -129,7 +129,7 @@
 				"Now scale it. The frogs don't tire."
 			]
 			tasks: [{ id: "6C1F0A2B3D4E5F74", item: { count: 1, id: "minecraft:iron_ingot" }, type: "item" }]
-			rewards: [{ id: "6C1F0A2B3D4E5F75", type: "xp", xp: 50 }]
+			rewards: [{ id: "6C1F0A2B3D4E5F75", type: "xp", xp: 50 }, { id: "6C1F0A2B3D4E5F76", item: { count: 1, id: "functionalstorage:compacting_drawer" }, type: "item" }]
 		}
 	]
 }

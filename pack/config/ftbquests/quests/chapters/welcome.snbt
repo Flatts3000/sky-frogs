@@ -276,10 +276,7 @@
 				""
 				"Here's a &6Sophisticated Backpack&r for the haul - you'll be carrying plenty before the frogs start pulling their weight."
 			]
-			tasks: [
-				{ id: "54E5F6A1B2C30002", title: "Wall off a dark room", type: "checkmark" }
-				{ count: 16L, id: "54E5F6A1B2C30004", item: { count: 1, id: "minecraft:slime_ball" }, type: "item" }
-			]
+			tasks: [{ count: 16L, id: "54E5F6A1B2C30004", item: { count: 1, id: "minecraft:slime_ball" }, type: "item" }]
 			rewards: [{ id: "54E5F6A1B2C30003", item: { count: 1, id: "sophisticatedbackpacks:backpack" }, type: "item" }]
 		}
 		{
