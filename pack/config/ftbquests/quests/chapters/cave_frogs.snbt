@@ -76,8 +76,6 @@
 			id: "7CA7E000C0DE000E"
 			title: "Redstone"
 			icon: { id: "minecraft:redstone" }
-			shape: "hexagon"
-			size: 1.5d
 			dependencies: ["7CA7E000C0DE000B"]
 			x: 0.0d
 			y: 6.0d
@@ -90,6 +88,25 @@
 			]
 			tasks: [{ id: "7CA7E000C0DE000F", item: { count: 1, id: "minecraft:redstone" }, type: "item" }]
 			rewards: [{ id: "7CA7E000C0DE0010", item: { count: 1, id: "sophisticatedbackpacks:advanced_feeding_upgrade" }, type: "item" }]
+		}
+		{
+			id: "7CA7E000C0DE0011"
+			title: "The Road to Geode"
+			icon: { id: "productivefrogs:frog_egg", components: { "productivefrogs:contained_category": "geode" } }
+			shape: "hexagon"
+			size: 1.5d
+			dependencies: ["7CA7E000C0DE000E"]
+			x: 0.0d
+			y: 7.5d
+			description: [
+				"You've wrung every metal the Cave frog knows out of bare stone. Time to look past it."
+				""
+				"Feed your &eSpawnery&r a slime ball and prime it with &credstone&r - the last thing the Cave taught you is the first thing the Geode frog answers to. Out comes a &dGeode Frogspawn&r bottle."
+				""
+				"Tip it onto water for Geode frogs: gems and crystals, the start of Tier 2. (The Geode slimes to feed them are the next chapter's job.)"
+			]
+			tasks: [{ id: "7CA7E000C0DE0012", item: { components: { "productivefrogs:contained_category": "geode" }, count: 1, id: "productivefrogs:frog_egg" }, type: "item" }]
+			rewards: [{ id: "7CA7E000C0DE0013", type: "xp", xp: 50 }]
 		}
 	]
 }

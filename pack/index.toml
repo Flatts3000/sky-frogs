@@ -26,7 +26,7 @@ hash = "a9029472f7a7435e2f54c4827589a0dabca28e522fb1fa6257a814cdf83d64f1"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/cave_frogs.snbt"
-hash = "c6777abaebb378bf02cc60a962c0604b5109a286040fab7ef8ac90765edde5f3"
+hash = "5a344733aba871bec23dce33d643a697f86877c99759237b6a56df8c6bc2e45f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/scaling_the_colony.snbt"
@@ -91,6 +91,10 @@ hash = "99b969132018e9da1071065a8593ba9564928b1ed0aa5ae3ab45f9dac071f7d5"
 [[files]]
 file = "kubejs/data/productivefrogs/tags/item/spawnery_primer/cave.json"
 hash = "f7004bc086b9c1d15c7b12d8920d29e82711d71a2943e01e2215601a7eb745bb"
+
+[[files]]
+file = "kubejs/data/productivefrogs/tags/item/spawnery_primer/geode.json"
+hash = "39a83486cb95a2b162d7b896e0f18f3591f822c483bdf66488c7a9145018ff30"
 
 [[files]]
 file = "kubejs/data/skyfrogs/neoforge/biome_modifier/add_cave_slime_island.json"
