@@ -13,7 +13,7 @@
 
 ServerEvents.recipes(event => {
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:iron"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:iron",Category:"CAVE"}]',
     [
       'SBS',
       'TKT',

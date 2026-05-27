@@ -66,7 +66,7 @@
 		{
 			id: "6C1F0A2B3D4E5F6A"
 			title: "Iron Slime in a Bucket"
-			icon: { id: "productivefrogs:slime_bucket", components: { "minecraft:bucket_entity_data": { Variant: "productivefrogs:iron" } } }
+			icon: { id: "productivefrogs:slime_bucket", components: { "minecraft:bucket_entity_data": { Variant: "productivefrogs:iron", Category: "CAVE" } } }
 			dependencies: ["6C1F0A2B3D4E5F67"]
 			x: 1.5d
 			y: 1.5d
@@ -77,7 +77,7 @@
 				""
 				"This is the seed. Every scrap of iron from here on grows out of it."
 			]
-			tasks: [{ id: "6C1F0A2B3D4E5F6B", item: { components: { "minecraft:bucket_entity_data": { Variant: "productivefrogs:iron" } }, count: 1, id: "productivefrogs:slime_bucket" }, type: "item" }]
+			tasks: [{ id: "6C1F0A2B3D4E5F6B", item: { components: { "minecraft:bucket_entity_data": { Variant: "productivefrogs:iron", Category: "CAVE" } }, count: 1, id: "productivefrogs:slime_bucket" }, type: "item" }]
 			rewards: [{ count: 4, id: "6C1F0A2B3D4E5F6C", item: { count: 1, id: "farmersdelight:pasta_with_meatballs" }, type: "item" }]
 		}
 		{
@@ -88,7 +88,7 @@
 			x: 1.5d
 			y: 3.0d
 			description: [
-				"Drop your &bIron Slime in a Bucket&r into the top of the Slime Milker and give it a few seconds - it presses the slime down into a bucket of &bIron Slime Milk&r."
+				"Drop your &bIron Slime in a Bucket&r into the top slot of the Slime Milker and give it a few seconds - it presses the slime down into a bucket of &bIron Slime Milk&r."
 				""
 				"Pour that milk out and it spawns &aIron Slimes&r, but the source isn't bottomless - it runs dry after a batch. Milk the slimes you catch for fresh buckets and the cycle feeds itself."
 				""
