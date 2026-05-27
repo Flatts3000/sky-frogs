@@ -26,7 +26,7 @@ hash = "a9029472f7a7435e2f54c4827589a0dabca28e522fb1fa6257a814cdf83d64f1"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
-hash = "2928a0ca3b4754981a21be5abc44ec4ea93cf65c85540b033983137e4c32f76a"
+hash = "2ef37e9d0fdb08ad4862a516771dc63fc646cf6b3b9617183930e8bc4f447d5d"
 
 [[files]]
 file = "config/productivefrogs-common.toml"
@@ -47,6 +47,10 @@ hash = "dafc46e19f19eb74b5bb96d994886f411c10343437577d212cdd149fd920409d"
 [[files]]
 file = "config/skyblockbuilder/world.json5"
 hash = "fcce4bb0b6017f641a1bd50d68ec0ed60d5d883939d3ad91fdc9ea2cbe0443e5"
+
+[[files]]
+file = "config/toastcontrol-client.toml"
+hash = "7d8bd1b950b7c740f805a5f0bf4d9c742882556bf60c42f257da7c40a7402ffe"
 
 [[files]]
 file = "kubejs/data/productivefrogs/neoforge/biome_modifier/add_bog_slime_spawn.json"
@@ -87,6 +91,10 @@ hash = "6abf6ad5b3630206acadfa47d12ecfa68eaaf3b42d1f383f014f008815f0ea66"
 [[files]]
 file = "kubejs/server_scripts/first_join.js"
 hash = "659f7a086b994e6c47b0b7f0e37fbc037a7417fc1ab924455c60cd4a0d08f4e8"
+
+[[files]]
+file = "kubejs/server_scripts/log_recipes.js"
+hash = "5c10c058739efefeed7b3d87b2adad36228609e5d2abae61a8466c3e49d41ee6"
 
 [[files]]
 file = "mods/almostunified.pw.toml"
@@ -340,7 +348,7 @@ metafile = true
 
 [[files]]
 file = "mods/productive-frogs.pw.toml"
-hash = "dba56cd456fbd0bf1e9cd8d3b4efcda2ccb1ca44f643a5a7ddb9bb4027ab48f2"
+hash = "4e4d100054d403a9b22f6b6b33931dbc7ddf7935c3959a7a202f52d6cabacd8c"
 metafile = true
 
 [[files]]
@@ -401,6 +409,11 @@ metafile = true
 [[files]]
 file = "mods/supermartijn642s-core-lib.pw.toml"
 hash = "83dae761dae86cc140fe971ce6a8cac9bfe0f9eb39417a71666441a2bcc634a8"
+metafile = true
+
+[[files]]
+file = "mods/toast-control.pw.toml"
+hash = "29d1e04030fcbdad4ee91eb9bc0b0d6b8907ffe967c9bd0543e8bb7e3dab5282"
 metafile = true
 
 [[files]]

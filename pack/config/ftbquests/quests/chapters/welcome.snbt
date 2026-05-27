@@ -5,7 +5,7 @@
 	filename: "welcome"
 	group: ""
 	icon: { id: "productivefrogs:cave_frog_egg" }
-	id: "F84143B9C5D63814"
+	id: "784143B9C5D63814"
 	order_index: 0
 	quest_links: [ ]
 	title: "Welcome"
@@ -41,8 +41,8 @@
 				""
 				"Iron, gold, diamond, ender - every one of them is just a frog you haven't met yet."
 			]
-			tasks: [{ id: "8681547B10F0F5A2", type: "checkmark" }]
-			rewards: [{ id: "9501710B6AD1BF8B", type: "xp", xp: 10 }]
+			tasks: [{ id: "0681547B10F0F5A2", type: "checkmark" }]
+			rewards: [{ id: "1501710B6AD1BF8B", type: "xp", xp: 10 }]
 		}
 		{
 			id: "378B93672C31CF5D"
@@ -59,38 +59,57 @@
 			]
 			tasks: [{ id: "15D92B702B5B6338", type: "checkmark" }]
 			rewards: [
-				{ count: 6, id: "DEA958DB4B72AD0E", item: { count: 1, id: "minecraft:oak_sapling" }, type: "item" }
+				{ count: 6, id: "5EA958DB4B72AD0E", item: { count: 1, id: "minecraft:oak_sapling" }, type: "item" }
 				{ count: 1, id: "7C4D9E2F1A8B3605", item: { count: 1, id: "minecraft:water_bucket" }, type: "item" }
 				{ count: 1, id: "7D5E0F3A2B9C4716", item: { count: 1, id: "minecraft:lava_bucket" }, type: "item" }
 			]
 		}
 		{
-			id: "F9D9A7438B1DD129"
+			id: "79D9A7438B1DD129"
 			title: "Wood to Stand On"
 			dependencies: ["378B93672C31CF5D"]
 			x: 0.0d
 			y: 4.5d
 			description: ["Plant a sapling, grow a tree, punch it. Everything starts with wood - even a frog empire."]
-			tasks: [{ id: "8AB98ED63DD877F0", item: { count: 1, id: "minecraft:oak_log" }, type: "item" }]
+			tasks: [{ id: "0AB98ED63DD877F0", item: { count: 1, id: "minecraft:oak_log" }, type: "item" }]
 			rewards: [
 				{ count: 1, id: "1A2B3C4D5E6F7081", item: { count: 1, id: "craftingstation:crafting_station" }, type: "item" }
 				{ count: 1, id: "2B3C4D5E6F708192", item: { count: 1, id: "crafting_on_a_stick:crafting_table" }, type: "item" }
 			]
 		}
 		{
-			id: "A1B2C3D4E5F60001"
+			id: "65F6A1B2C3D40001"
+			title: "Two Shortcuts"
+			icon: { id: "minecraft:bone_meal" }
+			shape: "diamond"
+			optional: true
+			dependencies: ["378B93672C31CF5D"]
+			x: 1.5d
+			y: 4.5d
+			description: [
+				"Two quality-of-life tricks the void won't spell out for you:"
+				""
+				"&aSquat Grow&r - press &eSneak&r next to a sapling or crop and it grows while you squat. Free bone meal, basically. Plant your oak, squat on it, skip the wait."
+				""
+				"&bFTB Ultimine&r - fell a whole tree or clear a whole crop patch in a single break. Bind the &eUltimine&r key under Options -> Controls if it isn't already, then hold it and break one block; every connected log or crop comes with it."
+			]
+			tasks: [{ id: "65F6A1B2C3D40002", title: "Got it", type: "checkmark" }]
+			rewards: [{ id: "65F6A1B2C3D40003", type: "xp", xp: 10 }]
+		}
+		{
+			id: "21B2C3D4E5F60001"
 			title: "A Rain Barrel"
-			dependencies: ["F9D9A7438B1DD129"]
+			dependencies: ["79D9A7438B1DD129"]
 			x: -3.0d
 			y: 6.0d
 			description: ["Craft an Oak Barrel and leave it out in the weather. It catches rain - which, on an island with one bucket of water, is the start of having two."]
-			tasks: [{ id: "A1B2C3D4E5F60002", item: { count: 1, id: "exdeorum:oak_barrel" }, type: "item" }]
-			rewards: [{ id: "A1B2C3D4E5F60003", item: { count: 1, id: "minecraft:shears" }, type: "item" }]
+			tasks: [{ id: "21B2C3D4E5F60002", item: { count: 1, id: "exdeorum:oak_barrel" }, type: "item" }]
+			rewards: [{ id: "21B2C3D4E5F60003", item: { count: 1, id: "minecraft:shears" }, type: "item" }]
 		}
 		{
-			id: "A1B2C3D4E5F60011"
+			id: "21B2C3D4E5F60011"
 			title: "Strip the Leaves"
-			dependencies: ["A1B2C3D4E5F60001"]
+			dependencies: ["21B2C3D4E5F60001"]
 			x: -3.0d
 			y: 7.5d
 			description: [
@@ -98,13 +117,13 @@
 				""
 				"Shear sixteen."
 			]
-			tasks: [{ count: 16L, id: "A1B2C3D4E5F60012", item: { count: 1, id: "minecraft:oak_leaves" }, type: "item" }]
-			rewards: [{ count: 16, id: "A1B2C3D4E5F60013", item: { count: 1, id: "minecraft:torch" }, type: "item" }]
+			tasks: [{ count: 16L, id: "21B2C3D4E5F60012", item: { count: 1, id: "minecraft:oak_leaves" }, type: "item" }]
+			rewards: [{ count: 16, id: "21B2C3D4E5F60013", item: { count: 1, id: "minecraft:torch" }, type: "item" }]
 		}
 		{
-			id: "A1B2C3D4E5F60021"
+			id: "21B2C3D4E5F60021"
 			title: "The Crucible"
-			dependencies: ["A1B2C3D4E5F60011"]
+			dependencies: ["21B2C3D4E5F60011"]
 			x: -3.0d
 			y: 9.0d
 			description: [
@@ -112,13 +131,13 @@
 				""
 				"Slow, free, and entirely yours."
 			]
-			tasks: [{ id: "A1B2C3D4E5F60022", item: { count: 1, id: "exdeorum:oak_crucible" }, type: "item" }]
-			rewards: [{ count: 4, id: "A1B2C3D4E5F60023", item: { count: 1, id: "farmersdelight:vegetable_soup" }, type: "item" }]
+			tasks: [{ id: "21B2C3D4E5F60022", item: { count: 1, id: "exdeorum:oak_crucible" }, type: "item" }]
+			rewards: [{ count: 4, id: "21B2C3D4E5F60023", item: { count: 1, id: "farmersdelight:vegetable_soup" }, type: "item" }]
 		}
 		{
-			id: "A1B2C3D4E5F60031"
+			id: "21B2C3D4E5F60031"
 			title: "Running Water"
-			dependencies: ["A1B2C3D4E5F60021"]
+			dependencies: ["21B2C3D4E5F60021"]
 			x: -3.0d
 			y: 10.5d
 			description: [
@@ -126,23 +145,23 @@
 				""
 				"You've got your first water bucket and a barrel (or a crucible) working on the second. Set them a block apart and never ration water again."
 			]
-			tasks: [{ id: "A1B2C3D4E5F60032", type: "checkmark" }]
-			rewards: [{ id: "A1B2C3D4E5F60033", type: "xp", xp: 15 }]
+			tasks: [{ id: "21B2C3D4E5F60032", type: "checkmark" }]
+			rewards: [{ id: "21B2C3D4E5F60033", type: "xp", xp: 15 }]
 		}
 		{
-			id: "B2C3D4E5F6A10001"
+			id: "32C3D4E5F6A10001"
 			title: "A Crook"
-			dependencies: ["F9D9A7438B1DD129"]
+			dependencies: ["79D9A7438B1DD129"]
 			x: -6.0d
 			y: 6.0d
 			description: ["Four sticks make a Crook. Drag it across oak leaves and they give up far more than bare hands would - saplings to replant, and now and then a wriggling &eSilkworm&r."]
-			tasks: [{ id: "B2C3D4E5F6A10002", item: { count: 1, id: "exdeorum:crook" }, type: "item" }]
-			rewards: [{ count: 4, id: "B2C3D4E5F6A10003", item: { count: 1, id: "farmersdelight:vegetable_soup" }, type: "item" }]
+			tasks: [{ id: "32C3D4E5F6A10002", item: { count: 1, id: "exdeorum:crook" }, type: "item" }]
+			rewards: [{ count: 4, id: "32C3D4E5F6A10003", item: { count: 1, id: "farmersdelight:vegetable_soup" }, type: "item" }]
 		}
 		{
-			id: "B2C3D4E5F6A10011"
+			id: "32C3D4E5F6A10011"
 			title: "Silkworms"
-			dependencies: ["B2C3D4E5F6A10001"]
+			dependencies: ["32C3D4E5F6A10001"]
 			x: -6.0d
 			y: 7.5d
 			description: [
@@ -150,13 +169,13 @@
 				""
 				"Infested leaves are where your string comes from."
 			]
-			tasks: [{ id: "B2C3D4E5F6A10012", item: { count: 1, id: "exdeorum:silkworm" }, type: "item" }]
-			rewards: [{ count: 4, id: "B2C3D4E5F6A10013", item: { count: 1, id: "exdeorum:cooked_silkworm" }, type: "item" }]
+			tasks: [{ id: "32C3D4E5F6A10012", item: { count: 1, id: "exdeorum:silkworm" }, type: "item" }]
+			rewards: [{ count: 4, id: "32C3D4E5F6A10013", item: { count: 1, id: "exdeorum:cooked_silkworm" }, type: "item" }]
 		}
 		{
-			id: "B2C3D4E5F6A10021"
+			id: "32C3D4E5F6A10021"
 			title: "String from Silk"
-			dependencies: ["B2C3D4E5F6A10011"]
+			dependencies: ["32C3D4E5F6A10011"]
 			x: -6.0d
 			y: 9.0d
 			description: [
@@ -164,13 +183,13 @@
 				""
 				"Here's a &eMagnet&r to vacuum it up while you work. You'll want more than four for what's next."
 			]
-			tasks: [{ count: 4L, id: "B2C3D4E5F6A10022", item: { count: 1, id: "minecraft:string" }, type: "item" }]
-			rewards: [{ id: "B2C3D4E5F6A10023", item: { count: 1, id: "simplemagnets:basicmagnet" }, type: "item" }]
+			tasks: [{ count: 4L, id: "32C3D4E5F6A10022", item: { count: 1, id: "minecraft:string" }, type: "item" }]
+			rewards: [{ id: "32C3D4E5F6A10023", item: { count: 1, id: "simplemagnets:basicmagnet" }, type: "item" }]
 		}
 		{
-			id: "B2C3D4E5F6A10031"
+			id: "32C3D4E5F6A10031"
 			title: "A Bed of Your Own"
-			dependencies: ["B2C3D4E5F6A10021"]
+			dependencies: ["32C3D4E5F6A10021"]
 			x: -6.0d
 			y: 10.5d
 			description: [
@@ -178,23 +197,23 @@
 				""
 				"Sleep through the night and set your spawn somewhere that isn't the open void."
 			]
-			tasks: [{ id: "B2C3D4E5F6A10032", item: { count: 1, id: "minecraft:white_bed" }, type: "item" }]
-			rewards: [{ id: "B2C3D4E5F6A10033", type: "xp", xp: 15 }]
+			tasks: [{ id: "32C3D4E5F6A10032", item: { count: 1, id: "minecraft:white_bed" }, type: "item" }]
+			rewards: [{ id: "32C3D4E5F6A10033", type: "xp", xp: 15 }]
 		}
 		{
-			id: "C3D4E5F6A1B20001"
+			id: "43D4E5F6A1B20001"
 			title: "Tools of the Trade"
-			dependencies: ["F9D9A7438B1DD129"]
+			dependencies: ["79D9A7438B1DD129"]
 			x: 3.0d
 			y: 6.0d
 			description: ["A wooden pickaxe: three planks, two sticks. It's the one mining tool you'll bother crafting - strictly for cobble. The frogs cover everything else."]
-			tasks: [{ id: "C3D4E5F6A1B20002", item: { count: 1, id: "minecraft:wooden_pickaxe" }, type: "item" }]
-			rewards: [{ count: 4, id: "C3D4E5F6A1B20003", item: { count: 1, id: "farmersdelight:vegetable_soup" }, type: "item" }]
+			tasks: [{ id: "43D4E5F6A1B20002", item: { count: 1, id: "minecraft:wooden_pickaxe" }, type: "item" }]
+			rewards: [{ count: 4, id: "43D4E5F6A1B20003", item: { count: 1, id: "farmersdelight:vegetable_soup" }, type: "item" }]
 		}
 		{
-			id: "C3D4E5F6A1B20011"
+			id: "43D4E5F6A1B20011"
 			title: "Cobblestone"
-			dependencies: ["C3D4E5F6A1B20001"]
+			dependencies: ["43D4E5F6A1B20001"]
 			x: 3.0d
 			y: 7.5d
 			description: [
@@ -202,13 +221,13 @@
 				""
 				"Then take the &eIron Hammer&r. It turns grey rock into other, more useful grey rock."
 			]
-			tasks: [{ count: 16L, id: "C3D4E5F6A1B20012", item: { count: 1, id: "minecraft:cobblestone" }, type: "item" }]
-			rewards: [{ id: "C3D4E5F6A1B20013", item: { count: 1, id: "exdeorum:iron_hammer" }, type: "item" }]
+			tasks: [{ count: 16L, id: "43D4E5F6A1B20012", item: { count: 1, id: "minecraft:cobblestone" }, type: "item" }]
+			rewards: [{ id: "43D4E5F6A1B20013", item: { count: 1, id: "exdeorum:iron_hammer" }, type: "item" }]
 		}
 		{
-			id: "C3D4E5F6A1B20021"
+			id: "43D4E5F6A1B20021"
 			title: "Sand"
-			dependencies: ["C3D4E5F6A1B20011"]
+			dependencies: ["43D4E5F6A1B20011"]
 			x: 3.0d
 			y: 9.0d
 			description: [
@@ -216,23 +235,23 @@
 				""
 				"A beach, one swing at a time."
 			]
-			tasks: [{ count: 4L, id: "C3D4E5F6A1B20022", item: { count: 1, id: "minecraft:sand" }, type: "item" }]
-			rewards: [{ count: 8, id: "C3D4E5F6A1B20023", item: { count: 1, id: "minecraft:charcoal" }, type: "item" }]
+			tasks: [{ count: 4L, id: "43D4E5F6A1B20022", item: { count: 1, id: "minecraft:sand" }, type: "item" }]
+			rewards: [{ count: 8, id: "43D4E5F6A1B20023", item: { count: 1, id: "minecraft:charcoal" }, type: "item" }]
 		}
 		{
-			id: "C3D4E5F6A1B20031"
+			id: "43D4E5F6A1B20031"
 			title: "Glass"
-			dependencies: ["C3D4E5F6A1B20021"]
+			dependencies: ["43D4E5F6A1B20021"]
 			x: 3.0d
 			y: 10.5d
 			description: ["Smelt that sand into glass. The charcoal you just earned makes fine furnace fuel."]
-			tasks: [{ count: 4L, id: "C3D4E5F6A1B20032", item: { count: 1, id: "minecraft:glass" }, type: "item" }]
-			rewards: [{ count: 4, id: "C3D4E5F6A1B20033", item: { count: 1, id: "farmersdelight:vegetable_soup" }, type: "item" }]
+			tasks: [{ count: 4L, id: "43D4E5F6A1B20032", item: { count: 1, id: "minecraft:glass" }, type: "item" }]
+			rewards: [{ count: 4, id: "43D4E5F6A1B20033", item: { count: 1, id: "farmersdelight:vegetable_soup" }, type: "item" }]
 		}
 		{
-			id: "C3D4E5F6A1B20041"
+			id: "43D4E5F6A1B20041"
 			title: "Cobblestone Generator"
-			dependencies: ["C3D4E5F6A1B20031"]
+			dependencies: ["43D4E5F6A1B20031"]
 			x: 3.0d
 			y: 12.0d
 			description: [
@@ -240,14 +259,14 @@
 				""
 				"Tier 0's groundwork is poured. Time to go meet some frogs."
 			]
-			tasks: [{ id: "C3D4E5F6A1B20042", item: { count: 1, id: "cobblegengalore:block_gen_stone" }, type: "item" }]
-			rewards: [{ id: "C3D4E5F6A1B20043", type: "xp", xp: 20 }]
+			tasks: [{ id: "43D4E5F6A1B20042", item: { count: 1, id: "cobblegengalore:block_gen_stone" }, type: "item" }]
+			rewards: [{ id: "43D4E5F6A1B20043", type: "xp", xp: 20 }]
 		}
 		{
-			id: "D4E5F6A1B2C30001"
+			id: "54E5F6A1B2C30001"
 			title: "A Dark Room"
 			icon: { id: "minecraft:slime_ball" }
-			dependencies: ["F9D9A7438B1DD129"]
+			dependencies: ["79D9A7438B1DD129"]
 			x: 0.0d
 			y: 6.0d
 			description: [
@@ -258,16 +277,16 @@
 				"Here's a &6Sophisticated Backpack&r for the haul - you'll be carrying plenty before the frogs start pulling their weight."
 			]
 			tasks: [
-				{ id: "D4E5F6A1B2C30002", title: "Wall off a dark room", type: "checkmark" }
-				{ count: 16L, id: "D4E5F6A1B2C30004", item: { count: 1, id: "minecraft:slime_ball" }, type: "item" }
+				{ id: "54E5F6A1B2C30002", title: "Wall off a dark room", type: "checkmark" }
+				{ count: 16L, id: "54E5F6A1B2C30004", item: { count: 1, id: "minecraft:slime_ball" }, type: "item" }
 			]
-			rewards: [{ id: "D4E5F6A1B2C30003", item: { count: 1, id: "sophisticatedbackpacks:backpack" }, type: "item" }]
+			rewards: [{ id: "54E5F6A1B2C30003", item: { count: 1, id: "sophisticatedbackpacks:backpack" }, type: "item" }]
 		}
 		{
-			id: "D4E5F6A1B2C30011"
+			id: "54E5F6A1B2C30011"
 			title: "A Composter"
 			icon: { id: "minecraft:composter" }
-			dependencies: ["D4E5F6A1B2C30001"]
+			dependencies: ["54E5F6A1B2C30001"]
 			x: 0.0d
 			y: 7.5d
 			description: [
@@ -276,16 +295,16 @@
 				"Bone meal is worth hoarding. It forces crops and saplings up on command, and you'll have a use for it before long."
 			]
 			tasks: [
-				{ id: "D4E5F6A1B2C30012", item: { count: 1, id: "minecraft:composter" }, type: "item" }
-				{ count: 4L, id: "D4E5F6A1B2C30014", item: { count: 1, id: "minecraft:bone_meal" }, type: "item" }
+				{ id: "54E5F6A1B2C30012", item: { count: 1, id: "minecraft:composter" }, type: "item" }
+				{ count: 4L, id: "54E5F6A1B2C30014", item: { count: 1, id: "minecraft:bone_meal" }, type: "item" }
 			]
-			rewards: [{ count: 4, id: "D4E5F6A1B2C30013", item: { count: 1, id: "farmersdelight:vegetable_soup" }, type: "item" }]
+			rewards: [{ count: 4, id: "54E5F6A1B2C30013", item: { count: 1, id: "farmersdelight:vegetable_soup" }, type: "item" }]
 		}
 		{
-			id: "D4E5F6A1B2C30021"
+			id: "54E5F6A1B2C30021"
 			title: "The Spawnery"
 			icon: { id: "productivefrogs:spawnery" }
-			dependencies: ["D4E5F6A1B2C30011"]
+			dependencies: ["54E5F6A1B2C30011"]
 			x: 0.0d
 			y: 9.0d
 			description: [
@@ -295,14 +314,14 @@
 				""
 				"Take two &fglass bottles&r to pull from it."
 			]
-			tasks: [{ id: "D4E5F6A1B2C30022", item: { count: 1, id: "productivefrogs:spawnery" }, type: "item" }]
-			rewards: [{ count: 2, id: "D4E5F6A1B2C30023", item: { count: 1, id: "minecraft:glass_bottle" }, type: "item" }]
+			tasks: [{ id: "54E5F6A1B2C30022", item: { count: 1, id: "productivefrogs:spawnery" }, type: "item" }]
+			rewards: [{ count: 2, id: "54E5F6A1B2C30023", item: { count: 1, id: "minecraft:glass_bottle" }, type: "item" }]
 		}
 		{
-			id: "D4E5F6A1B2C30031"
+			id: "54E5F6A1B2C30031"
 			title: "Synthesize Life"
 			icon: { id: "productivefrogs:cave_frog_egg" }
-			dependencies: ["D4E5F6A1B2C30021"]
+			dependencies: ["54E5F6A1B2C30021"]
 			x: 0.0d
 			y: 10.5d
 			description: [
@@ -312,8 +331,8 @@
 				""
 				"That's the last thing you'll build by hand for a while. Tip them onto water and let the frogs take over."
 			]
-			tasks: [{ count: 2L, id: "D4E5F6A1B2C30032", item: { components: { "productivefrogs:contained_category": "cave" }, count: 1, id: "productivefrogs:frog_egg" }, type: "item" }]
-			rewards: [{ id: "D4E5F6A1B2C30033", type: "xp", xp: 50 }]
+			tasks: [{ count: 2L, id: "54E5F6A1B2C30032", item: { components: { "productivefrogs:contained_category": "cave" }, count: 1, id: "productivefrogs:frog_egg" }, type: "item" }]
+			rewards: [{ id: "54E5F6A1B2C30033", type: "xp", xp: 50 }]
 		}
 	]
 }
