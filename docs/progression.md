@@ -31,12 +31,14 @@ Modded resources per tier are PF's conditional variants — they register only w
 
 ## Tier transitions (the gate mechanic)
 
-Each species' quest line **ends by crafting two things** for the next species, via custom (KubeJS) recipes whose ingredients are the current tier's outputs:
+Each species' quest line **ends by opening the next species**, in two halves:
 
-1. A **Bottle of <Next> Frog Frogspawn** — PF's `frog_egg` bottle carrying the next category. Place it on water to start the next species' frogs.
-2. A **bucket of <Next> Slime Milk** — place it as a source block; it spawns that species' parent slimes, giving the next tier its renewable slime supply with no natural spawning.
+1. **Frog side — the Spawnery.** Prime the Spawnery with the *current* tier's final resource to draw the *next* species' **Frogspawn** bottle (a `frog_egg` carrying the next `contained_category`). The pack overrides each `spawnery_primer/<species>` tag to a resource the player has by tier's end. So **Cave's redstone primes Geode frogspawn** (`spawnery_primer/geode` → `minecraft:redstone`); Geode's final resource primes Bog frogspawn; and so on. Place the frogspawn on water to start the next species' frogs.
+2. **Slime side — the seed-chain bootstrap.** The next tier's *resource* slimes come from a custom (KubeJS) **slime-in-a-bucket** recipe seeded from the current tier's outputs (the same pattern as Cave's iron→copper→… chain), milked for a renewable supply. This lives in the *next* tier's chapter, not the gateway.
 
-So: finish the **Cave** line → craft a Bottle of Geode Frogspawn + Geode Slime Milk → **Geode** tier opens. Finish **Geode** → craft the **Bog** kit. And so on down the order.
+> **Not slime milk for parents.** PF's Slime Milk is keyed by `SLIME_VARIANT` and spawns that *resource-variant* slime, not the bare parent species (the parent comes from a spawn egg / splitting). So the next tier is bootstrapped via frogspawn (Spawnery) + a resource-slime seed-chain, *not* a "parent slime milk" source. (Corrected 2026-05-27; the earlier draft of this section described a parent-spawning milk that PF does not implement.)
+
+So: finish the **Cave** line at redstone → prime the Spawnery with redstone for **Geode Frogspawn** → **Geode** tier opens (its resource seed-chain is the Geode chapter's job). Then Geode → Bog, and so on down the order.
 
 ## The per-tier loop (same shape every tier)
 
