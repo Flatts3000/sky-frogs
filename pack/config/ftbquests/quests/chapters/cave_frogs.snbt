@@ -1,0 +1,31 @@
+{
+	autofocus_id: "7CA7E000C0DE0002"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "cave_frogs"
+	group: ""
+	icon: { id: "productivefrogs:cave_frog_spawn_egg" }
+	id: "7CA7E000C0DE0001"
+	order_index: 3
+	quest_links: [ ]
+	title: "Tier 1: Cave Frogs"
+	quests: [
+		{
+			id: "7CA7E000C0DE0002"
+			title: "Beyond Iron"
+			icon: { id: "productivefrogs:cave_frog_spawn_egg" }
+			shape: "hexagon"
+			size: 1.5d
+			dependencies: ["2A5700000A570002"]
+			x: 0.0d
+			y: 0.0d
+			description: [
+				"You've pulled iron out of a frog. The Cave frog handles everything else the pickaxe used to: copper, gold, coal, lapis, redstone, obsidian - and the modded metals besides."
+				""
+				"&7(Chapter stub - the per-resource quests land here.)&r"
+			]
+			tasks: [{ id: "7CA7E000C0DE0003", title: "Got it", type: "checkmark" }]
+			rewards: [{ id: "7CA7E000C0DE0004", type: "xp", xp: 10 }]
+		}
+	]
+}

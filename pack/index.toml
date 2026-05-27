@@ -25,6 +25,14 @@ file = "config/exdeorum-server.toml"
 hash = "a9029472f7a7435e2f54c4827589a0dabca28e522fb1fa6257a814cdf83d64f1"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/cave_frogs.snbt"
+hash = "8f934e3da1d789157ad542c5beb62b63232008400472a945bb433d73c260192a"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/scaling_the_colony.snbt"
+hash = "f7434940db330d81c4fe11edd9fb992905f1af4657bc36b6de258fb0b95932de"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
 hash = "02defb1844eaa7a27eceb4f00fe08fe702008acd20ee44ecb3cfdc2eed6ed521"
 
@@ -267,6 +275,11 @@ metafile = true
 [[files]]
 file = "mods/functional-storage.pw.toml"
 hash = "0092f83b6663191fb947110c2b51a5213daea995da831d7de0a769cf4c353cd8"
+metafile = true
+
+[[files]]
+file = "mods/iron-furnaces.pw.toml"
+hash = "3f6a27001eb45ce6296829cfa9d7d41a0bd304914217f8dc3196feaa9030f963"
 metafile = true
 
 [[files]]
