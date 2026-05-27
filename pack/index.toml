@@ -26,7 +26,11 @@ hash = "a9029472f7a7435e2f54c4827589a0dabca28e522fb1fa6257a814cdf83d64f1"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
-hash = "2ef37e9d0fdb08ad4862a516771dc63fc646cf6b3b9617183930e8bc4f447d5d"
+hash = "02defb1844eaa7a27eceb4f00fe08fe702008acd20ee44ecb3cfdc2eed6ed521"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/your_first_iron_ingot.snbt"
+hash = "ebeb7e6f516cc6bfd952d750ce91c4e16813a999f035adbdde3d39a9536a175c"
 
 [[files]]
 file = "config/productivefrogs-common.toml"
@@ -93,6 +97,10 @@ file = "kubejs/server_scripts/first_join.js"
 hash = "659f7a086b994e6c47b0b7f0e37fbc037a7417fc1ab924455c60cd4a0d08f4e8"
 
 [[files]]
+file = "kubejs/server_scripts/iron_slime_bucket.js"
+hash = "5f8d806e6fea7829f8e5b9b7344ddecf33208f4599eb7e7a2fee34c7a79e3b3e"
+
+[[files]]
 file = "kubejs/server_scripts/log_recipes.js"
 hash = "5c10c058739efefeed7b3d87b2adad36228609e5d2abae61a8466c3e49d41ee6"
 
@@ -144,6 +152,11 @@ metafile = true
 [[files]]
 file = "mods/cobblegen-galore.pw.toml"
 hash = "8d91e416f8944d06519a4d065d89f4a76cba7cf9ac7398f91f19e977a31b6ba0"
+metafile = true
+
+[[files]]
+file = "mods/construction-sticks.pw.toml"
+hash = "893aad9df7e8e031d36ac74f9129f3cb3ad27f74db3bd4a71d32a6058f933ff6"
 metafile = true
 
 [[files]]
@@ -217,6 +230,11 @@ hash = "aaa5d15a2ebf6ae368561fc49d7994ffa5084138942095cb4ded4c8921189437"
 metafile = true
 
 [[files]]
+file = "mods/ftb-jei-extras.pw.toml"
+hash = "2d84cfd5fb3079d41713ed47e596e9986eb427f8e64906a2217cb459410c062e"
+metafile = true
+
+[[files]]
 file = "mods/ftb-library-forge.pw.toml"
 hash = "54b6ce5c7ccf54db4cf8888e1c7e56b2d840cddc0e3e3fd15869a03d5c76c2ef"
 metafile = true
@@ -239,6 +257,16 @@ metafile = true
 [[files]]
 file = "mods/ftb-ultimine-forge.pw.toml"
 hash = "15dc3b581cc649acea7f375427dfd4116b29d724be1092c8ca306e968a0a4a98"
+metafile = true
+
+[[files]]
+file = "mods/ftb-xmod-compat.pw.toml"
+hash = "43287a3c5030a05b370b45ec1ab9a4a8d5c3d43e9c740aae5218f07ffd041fd2"
+metafile = true
+
+[[files]]
+file = "mods/functional-storage.pw.toml"
+hash = "0092f83b6663191fb947110c2b51a5213daea995da831d7de0a769cf4c353cd8"
 metafile = true
 
 [[files]]
@@ -409,6 +437,11 @@ metafile = true
 [[files]]
 file = "mods/supermartijn642s-core-lib.pw.toml"
 hash = "83dae761dae86cc140fe971ce6a8cac9bfe0f9eb39417a71666441a2bcc634a8"
+metafile = true
+
+[[files]]
+file = "mods/titanium.pw.toml"
+hash = "b4839b51f328fbd3af8addab6905f444a425ffd8d540966766bbe2947528cba8"
 metafile = true
 
 [[files]]

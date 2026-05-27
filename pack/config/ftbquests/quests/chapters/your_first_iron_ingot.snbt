@@ -1,0 +1,135 @@
+{
+	autofocus_id: "6C1F0A2B3D4E5F61"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "your_first_iron_ingot"
+	group: ""
+	icon: { id: "minecraft:iron_ingot" }
+	id: "6C1F0A2B3D4E5F60"
+	order_index: 1
+	quest_links: [ ]
+	title: "Your First Iron Ingot"
+	quests: [
+		{
+			id: "6C1F0A2B3D4E5F61"
+			title: "A Place for Frogs"
+			icon: { id: "productivefrogs:cave_frog_spawn_egg" }
+			dependencies: ["54E5F6A1B2C30031"]
+			x: -1.5d
+			y: 0.0d
+			shape: "hexagon"
+			size: 1.5d
+			description: [
+				"Before you hatch a single frog, build them somewhere to live - and somewhere they can't leave."
+				""
+				"Frogs jump, and they jump high. You're on an island in the void: a frog that clears your wall isn't hopping back, it's gone for good. Don't trust a low fence - build the walls tall, or cap the whole pen with a roof or an overhang."
+				""
+				"Drop a little &bwater&r inside while you're at it. That's where your frogspawn goes next."
+			]
+			tasks: [{ id: "6C1F0A2B3D4E5F62", title: "Build an enclosed habitat", type: "checkmark" }]
+			rewards: [{ id: "6C1F0A2B3D4E5F63", type: "xp", xp: 10 }]
+		}
+		{
+			id: "6C1F0A2B3D4E5F64"
+			title: "Keep Them Close"
+			icon: { id: "minecraft:lead" }
+			dependencies: ["6C1F0A2B3D4E5F61"]
+			x: -1.5d
+			y: 1.5d
+			description: [
+				"A wall helps. A &eLead&r helps more - clip one to a frog and it stays put while your back is turned."
+				""
+				"Four &fstring&r and one &aslime ball&r make two leads, and you already have both: string from your silkworms, slime balls from the dark room."
+				""
+				"Craft a lead. Leash your frogs the moment they hatch."
+			]
+			tasks: [{ id: "6C1F0A2B3D4E5F65", item: { count: 1, id: "minecraft:lead" }, type: "item" }]
+			rewards: [{ count: 4, id: "6C1F0A2B3D4E5F66", item: { count: 1, id: "farmersdelight:noodle_soup" }, type: "item" }]
+		}
+		{
+			id: "6C1F0A2B3D4E5F67"
+			title: "The Slime Milker"
+			icon: { id: "productivefrogs:slime_milker" }
+			dependencies: ["54E5F6A1B2C30031"]
+			x: 1.5d
+			y: 0.0d
+			description: [
+				"Slimes won't hand over their milk on their own - you need a press."
+				""
+				"The &eSlime Milker&r is it: planks, cobblestone, and a slime ball. Drop a bucketed slime in the top, give it a few seconds, and it squeezes a bucket of that slime's milk back out."
+				""
+				"Build one. And take a spare &fbucket&r - iron's tight out here, and you'll want it for what comes next."
+			]
+			tasks: [{ id: "6C1F0A2B3D4E5F68", item: { count: 1, id: "productivefrogs:slime_milker" }, type: "item" }]
+			rewards: [{ id: "6C1F0A2B3D4E5F69", item: { count: 1, id: "minecraft:bucket" }, type: "item" }]
+		}
+		{
+			id: "6C1F0A2B3D4E5F6A"
+			title: "Iron Slime in a Bucket"
+			icon: { id: "productivefrogs:slime_bucket", components: { "minecraft:bucket_entity_data": { Variant: "productivefrogs:iron", Category: "CAVE" } } }
+			dependencies: ["6C1F0A2B3D4E5F67"]
+			x: 1.5d
+			y: 1.5d
+			description: [
+				"Productive Frogs wants an iron ingot to make an Iron Slime - and you don't have one. So we cheat, exactly once."
+				""
+				"Combine a &eCave Frogspawn&r bottle, &aslime balls&r, &fstring&r, &6bone meal&r, and that spare &fbucket&r into an &bIron Slime in a Bucket&r. It's the only iron-free Iron Slime you'll ever make."
+				""
+				"This is the seed. Every scrap of iron from here on grows out of it."
+			]
+			tasks: [{ id: "6C1F0A2B3D4E5F6B", item: { components: { "minecraft:bucket_entity_data": { Variant: "productivefrogs:iron", Category: "CAVE" } }, count: 1, id: "productivefrogs:slime_bucket" }, type: "item" }]
+			rewards: [{ count: 4, id: "6C1F0A2B3D4E5F6C", item: { count: 1, id: "farmersdelight:pasta_with_meatballs" }, type: "item" }]
+		}
+		{
+			id: "6C1F0A2B3D4E5F6D"
+			title: "Milk It"
+			icon: { id: "productivefrogs:slime_milk_bucket" }
+			dependencies: ["6C1F0A2B3D4E5F6A"]
+			x: 1.5d
+			y: 3.0d
+			description: [
+				"Drop your &bIron Slime in a Bucket&r into the top slot of the Slime Milker and give it a few seconds - it presses the slime down into a bucket of &bIron Slime Milk&r."
+				""
+				"Pour that milk out and it spawns &aIron Slimes&r, but the source isn't bottomless - it runs dry after a batch. Milk the slimes you catch for fresh buckets and the cycle feeds itself."
+				""
+				"Take a &eDiamond Stick&r for your trouble - it'll make building out your base a good deal faster."
+			]
+			tasks: [{ id: "6C1F0A2B3D4E5F6E", item: { components: { "productivefrogs:slime_variant": "productivefrogs:iron" }, count: 1, id: "productivefrogs:slime_milk_bucket" }, type: "item" }]
+			rewards: [{ id: "6C1F0A2B3D4E5F6F", item: { count: 1, id: "constructionstick:diamond_stick" }, type: "item" }]
+		}
+		{
+			id: "6C1F0A2B3D4E5F70"
+			title: "Feed the Frog"
+			icon: { id: "productivefrogs:configurable_froglight", components: { "productivefrogs:slime_variant": "productivefrogs:iron" } }
+			dependencies: ["6C1F0A2B3D4E5F64", "6C1F0A2B3D4E5F6D"]
+			x: 0.0d
+			y: 4.5d
+			description: [
+				"Here's where the two paths meet. Drop an &aIron Slime&r in with your &eCave Frogs&r and wait - the frog gulps it down and leaves a glowing &bIron Froglight&r behind, the resource sealed inside."
+				""
+				"This is the moment the void promised you: a frog making iron out of nothing you had to mine."
+			]
+			tasks: [{ id: "6C1F0A2B3D4E5F71", item: { components: { "productivefrogs:slime_variant": "productivefrogs:iron" }, count: 1, id: "productivefrogs:configurable_froglight" }, type: "item" }]
+			rewards: [{ count: 4, id: "6C1F0A2B3D4E5F72", item: { count: 1, id: "farmersdelight:barbecue_stick" }, type: "item" }]
+		}
+		{
+			id: "6C1F0A2B3D4E5F73"
+			title: "Your First Iron Ingot"
+			icon: { id: "minecraft:iron_ingot" }
+			shape: "hexagon"
+			size: 1.5d
+			dependencies: ["6C1F0A2B3D4E5F70"]
+			x: 0.0d
+			y: 6.0d
+			description: [
+				"One &bIron Froglight&r, one furnace. Smelt it and it runs down into a bar of plain &firon&r."
+				""
+				"There it is - your first iron ingot, grown on an island that had none, and not one swing of a pickaxe to show for it."
+				""
+				"Now scale it. The frogs don't tire."
+			]
+			tasks: [{ id: "6C1F0A2B3D4E5F74", item: { count: 1, id: "minecraft:iron_ingot" }, type: "item" }]
+			rewards: [{ id: "6C1F0A2B3D4E5F75", type: "xp", xp: 50 }]
+		}
+	]
+}

@@ -260,7 +260,7 @@
 				"Tier 0's groundwork is poured. Time to go meet some frogs."
 			]
 			tasks: [{ id: "43D4E5F6A1B20042", item: { count: 1, id: "cobblegengalore:block_gen_stone" }, type: "item" }]
-			rewards: [{ id: "43D4E5F6A1B20043", type: "xp", xp: 20 }]
+			rewards: [{ id: "43D4E5F6A1B20043", item: { count: 1, id: "functionalstorage:oak_1" }, type: "item" }]
 		}
 		{
 			id: "54E5F6A1B2C30001"
