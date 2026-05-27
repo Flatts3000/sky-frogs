@@ -30,7 +30,7 @@ hash = "c6777abaebb378bf02cc60a962c0604b5109a286040fab7ef8ac90765edde5f3"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/scaling_the_colony.snbt"
-hash = "f7434940db330d81c4fe11edd9fb992905f1af4657bc36b6de258fb0b95932de"
+hash = "144a7724f60b95ca6b2dc4b8dcc8cb2a9ac0427a1cf05b36436a0684637cbe6a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
@@ -393,7 +393,7 @@ metafile = true
 
 [[files]]
 file = "mods/productive-frogs.pw.toml"
-hash = "4e4d100054d403a9b22f6b6b33931dbc7ddf7935c3959a7a202f52d6cabacd8c"
+hash = "5edb1f438dcff350687dcb5034f5e94ac3018c30f827fa5370bcbbc85001cded"
 metafile = true
 
 [[files]]
