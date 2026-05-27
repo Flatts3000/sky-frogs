@@ -29,6 +29,10 @@ file = "config/ftbquests/quests/chapters/welcome.snbt"
 hash = "2ef37e9d0fdb08ad4862a516771dc63fc646cf6b3b9617183930e8bc4f447d5d"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/your_first_iron_ingot.snbt"
+hash = "861acceb9af83894425991ef03fe029d1e656b9f3cdcd965869265b27b490ba0"
+
+[[files]]
 file = "config/productivefrogs-common.toml"
 hash = "62cc9815d8e8234d05376ecbada5301cf38ccc6bde048b41b5b75453366ac5c9"
 
@@ -93,6 +97,10 @@ file = "kubejs/server_scripts/first_join.js"
 hash = "659f7a086b994e6c47b0b7f0e37fbc037a7417fc1ab924455c60cd4a0d08f4e8"
 
 [[files]]
+file = "kubejs/server_scripts/iron_slime_bucket.js"
+hash = "1753c70d2ab1b4b6881949d641953d14884ef41eabe249220a0540ed1b4647c5"
+
+[[files]]
 file = "kubejs/server_scripts/log_recipes.js"
 hash = "5c10c058739efefeed7b3d87b2adad36228609e5d2abae61a8466c3e49d41ee6"
 
@@ -144,6 +152,11 @@ metafile = true
 [[files]]
 file = "mods/cobblegen-galore.pw.toml"
 hash = "8d91e416f8944d06519a4d065d89f4a76cba7cf9ac7398f91f19e977a31b6ba0"
+metafile = true
+
+[[files]]
+file = "mods/construction-sticks.pw.toml"
+hash = "893aad9df7e8e031d36ac74f9129f3cb3ad27f74db3bd4a71d32a6058f933ff6"
 metafile = true
 
 [[files]]
