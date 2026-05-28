@@ -255,6 +255,11 @@ hash = "f92e7a06645e41ea1934dc420eb2772edb1708c0d71cb427baef8cf753acb934"
 metafile = true
 
 [[files]]
+file = "mods/dark-utilities.pw.toml"
+hash = "9d20637581a8ff591843eb4c3be9570e8c0db2c3ea9ca2c891f9945e4e83d0ee"
+metafile = true
+
+[[files]]
 file = "mods/ex-deorum.pw.toml"
 hash = "2077b38f089ba2cc007a29c98ef21a9e5b54186f7408ee53f25afffa41856fe6"
 metafile = true
@@ -430,6 +435,16 @@ hash = "cf3eab616572644e0c5683d1952faca689f25c2d5e2d7373a1594b8c9093604b"
 metafile = true
 
 [[files]]
+file = "mods/nyctography.pw.toml"
+hash = "0fa2bd5bdf0edfb930a18849a49fdf049fb100b5c8eaacb4f7f8c24827fa47f4"
+metafile = true
+
+[[files]]
+file = "mods/pig-pen-cipher.pw.toml"
+hash = "c542b169bf7c70a0ac4f66c895499abd37aa4897e0c4295ddd3e6aaa72afaef4"
+metafile = true
+
+[[files]]
 file = "mods/pipez.pw.toml"
 hash = "1bb1904689ab102397544b9234eaaad105b60b865e571139d3b3c971dc03cc2b"
 metafile = true
@@ -457,6 +472,11 @@ metafile = true
 [[files]]
 file = "mods/rhino.pw.toml"
 hash = "75ff68dd0bfb30f2ff97f170ffbb74d5b6aaa791416c4a0559d09ac8778561ba"
+metafile = true
+
+[[files]]
+file = "mods/runelic.pw.toml"
+hash = "ece6606ae5a408eb1683f68596db5f4ff1ee28bd0293043ed99794ffa6e33d64"
 metafile = true
 
 [[files]]
