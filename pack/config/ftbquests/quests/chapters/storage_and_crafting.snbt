@@ -146,25 +146,14 @@
 				id: "functionalstorage:fluid_1"
 			}
 			id: "570A6E0000000019"
-			rewards: [
-				{
-					count: 2
-					id: "570A6E000000001B"
-					item: {
-						count: 1
-						id: "functionalstorage:fluid_1"
-					}
-					type: "item"
+			rewards: [{
+				id: "570A6E0000000022"
+				item: {
+					count: 1
+					id: "functionalstorage:configuration_tool"
 				}
-				{
-					id: "570A6E0000000022"
-					item: {
-						count: 1
-						id: "functionalstorage:configuration_tool"
-					}
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			tasks: [{
 				id: "570A6E000000001A"
 				item: { count: 1, id: "functionalstorage:fluid_1" }
@@ -179,25 +168,14 @@
 				id: "functionalstorage:storage_controller"
 			}
 			id: "570A6E000000000E"
-			rewards: [
-				{
-					count: 4
-					id: "570A6E0000000010"
-					item: {
-						count: 1
-						id: "functionalstorage:compacting_drawer"
-					}
-					type: "item"
+			rewards: [{
+				id: "570A6E0000000023"
+				item: {
+					count: 1
+					id: "functionalstorage:linking_tool"
 				}
-				{
-					id: "570A6E0000000023"
-					item: {
-						count: 1
-						id: "functionalstorage:linking_tool"
-					}
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			tasks: [{
 				id: "570A6E000000000F"
 				item: { count: 1, id: "functionalstorage:storage_controller" }
@@ -216,7 +194,7 @@
 				id: "570A6E000000001E"
 				item: {
 					count: 1
-					id: "mekanism:basic_fluid_tank"
+					id: "farmersdelight:shepherds_pie"
 				}
 				type: "item"
 			}]
@@ -237,8 +215,8 @@
 			rewards: [{
 				id: "570A6E0000000021"
 				item: {
-					count: 1
-					id: "trashcans:item_trash_can"
+					count: 4
+					id: "farmersdelight:squid_ink_pasta"
 				}
 				type: "item"
 			}]
@@ -260,26 +238,14 @@
 				id: "minecraft:chest"
 			}
 			id: "570A6E0000000014"
-			rewards: [
-				{
-					count: 4
-					id: "570A6E0000000017"
-					item: {
-						count: 1
-						id: "sophisticatedstorage:stack_upgrade_tier_1"
-					}
-					type: "item"
+			rewards: [{
+				id: "570A6E0000000017"
+				item: {
+					count: 1
+					id: "sophisticatedbackpacks:advanced_feeding_upgrade"
 				}
-				{
-					count: 2
-					id: "570A6E0000000018"
-					item: {
-						count: 1
-						id: "functionalstorage:compacting_drawer"
-					}
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{

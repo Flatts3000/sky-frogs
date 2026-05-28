@@ -46,7 +46,7 @@ hash = "1b4322445ce5a9e3d0dc11456957bd317c82471611be20f27798abcb5e4502f9"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/storage_and_crafting.snbt"
-hash = "2db8c1ed2a57a693fa3788e536312ea6fa108b99c0acea46e35c322ccaa4f692"
+hash = "d3f392d415f7142e7010d6cfda9d51cd46a381c5e86b149a201e13a1c4402f0c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
