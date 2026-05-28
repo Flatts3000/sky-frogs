@@ -123,5 +123,34 @@
 			x: 0.0d
 			y: 6.0d
 		}
+		{
+			dependencies: ["6ECA15000000000B"]
+			icon: {
+				components: {
+					"minecraft:bucket_entity_data": {
+						Category: "CAVE"
+						Variant: "productivefrogs:steel"
+					}
+				}
+				id: "productivefrogs:slime_bucket"
+			}
+			id: "6ECA150000000011"
+			optional: true
+			rewards: [{
+				id: "6ECA150000000013"
+				item: {
+					count: 1
+					id: "functionalstorage:compacting_drawer"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6ECA150000000012"
+				item: { components: { "minecraft:bucket_entity_data": { Category: "CAVE", Variant: "productivefrogs:steel" } }, count: 1, id: "productivefrogs:slime_bucket" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.5d
+		}
 	]
 }

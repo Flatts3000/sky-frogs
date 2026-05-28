@@ -419,6 +419,12 @@
 		"A &bSteel Casing&r is the shell every Mekanism machine is built into. Craft one - with casings on hand, the machine line opens up."
 	]
 	quest.6ECA15000000000E.title: "Steel Casing"
+	quest.6ECA150000000011.quest_desc: [
+		"Steel doesn't have to come one infuse at a time. In the &eMetallurgic Infuser&r, infuse an &bIron Slime in a Bucket&r with &fcarbon&r (coal or charcoal) and it comes out a &7Steel Slime in a Bucket&r - the same iron-and-carbon trick that makes steel itself."
+		""
+		"Feed it to a Cave Frog and steel pours off the line like any other metal."
+	]
+	quest.6ECA150000000011.title: "Steel Slime"
 	quest.79D9A7438B1DD129.quest_desc: ["Plant a sapling, grow a tree, punch it. Everything starts with wood - even a frog empire."]
 	quest.79D9A7438B1DD129.title: "Wood to Stand On"
 	quest.7CA7E000C0DE0002.quest_desc: [
