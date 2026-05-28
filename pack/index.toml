@@ -66,7 +66,7 @@ hash = "d7dd511fa89cc9066374f537d8e9259d6caff8fe7db0a0a04db3af393100e0a4"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "52ba6d0f4f08c485b4a11061ae2c42a5e34b8b8d80ece693d975ab5cdbc16d65"
+hash = "7a8754e69e848b6340da763578f4ba3a37e42a5828a60ce90a5d7fe8436424de"
 
 [[files]]
 file = "config/productivefrogs-common.toml"
@@ -158,7 +158,7 @@ hash = "417bd2728614fa0253b29c01ffa257249c5e1d59ec6c5909b7137c598b46234a"
 
 [[files]]
 file = "kubejs/server_scripts/steel_slime_infusing.js"
-hash = "3f421923c2edd2779b67e32891eed842691bea33839619f10bf6c88fa323613e"
+hash = "38c034626da8d94bb0ddd2cfe8a4483f7665ffbbb26ff18f7044cb2271f2ec60"
 
 [[files]]
 file = "kubejs/server_scripts/storage_quartz_free.js"
