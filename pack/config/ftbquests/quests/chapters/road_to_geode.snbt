@@ -42,6 +42,31 @@
 			dependencies: ["60ADE60000000002"]
 			icon: {
 				components: {
+					"minecraft:bucket_entity_data": {
+						Category: "GEODE"
+						Variant: "productivefrogs:lapis"
+					}
+				}
+				id: "productivefrogs:slime_bucket"
+			}
+			id: "60ADE6000000000B"
+			rewards: [{
+				id: "60ADE6000000000D"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "60ADE6000000000C"
+				item: { components: { "minecraft:bucket_entity_data": { Category: "GEODE", Variant: "productivefrogs:lapis" } }, count: 1, id: "productivefrogs:slime_bucket" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["60ADE6000000000B"]
+			icon: {
+				components: {
 					"productivefrogs:slime_variant": "productivefrogs:lapis"
 				}
 				id: "productivefrogs:slime_milk_bucket"
@@ -61,7 +86,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 1.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["60ADE60000000005"]
@@ -85,7 +110,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 3.0d
+			y: 4.5d
 		}
 	]
 }

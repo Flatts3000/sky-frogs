@@ -275,19 +275,25 @@
 	]
 	quest.60ADE60000000002.title: "The Road to Geode"
 	quest.60ADE60000000005.quest_desc: [
-		"Geode frogs eat Geode slimes, and the first one threads straight off the Cave's last resource."
+		"Run your &bLapis Slime in a Bucket&r through the &eSlime Milker&r for a bucket of &9Lapis Slime Milk&r."
 		""
-		"Craft a &bLapis Slime in a Bucket&r from a bucket of &credstone Slime Milk&r (plus four stone, three sweetslime, and a Geode frogspawn bottle). Run it through the Slime Milker and bring back a bucket of &9Lapis Slime Milk&r."
+		"Pour it out and Lapis Slimes spawn - the start of real lapis production."
 	]
-	quest.60ADE60000000005.title: "A Bucket of Lapis"
+	quest.60ADE60000000005.title: "A Bucket of Lapis Slime Milk"
 	quest.60ADE60000000008.quest_desc: [
-		"Pour the Lapis Slime Milk and Lapis Slimes spawn. Feed them to a Geode frog, smelt the Froglight, and pocket your first &9lapis lazuli&r."
+		"Feed your Lapis Slimes to a Geode frog, smelt the Froglight, and pocket your first &9lapis lazuli&r."
 		""
 		"The gem chain runs on from here - amethyst, emerald, and diamond to cap it - but that's the next chapter."
 		""
 		"For crossing into Tier 2, an &eAdvanced Feeding Upgrade&r to keep you fed off your stockpile while you build."
 	]
 	quest.60ADE60000000008.title: "First Lapis"
+	quest.60ADE6000000000B.quest_desc: [
+		"Geode frogs eat Geode slimes, and the first one threads straight off the Cave's last resource."
+		""
+		"Craft a &bLapis Slime in a Bucket&r from a bucket of &credstone Slime Milk&r - plus four stone, three sweetslime, and a Geode frogspawn bottle."
+	]
+	quest.60ADE6000000000B.title: "A Lapis Slime in a Bucket"
 	quest.65F6A1B2C3D40001.quest_desc: [
 		"Two quality-of-life tricks the void won't spell out for you:"
 		""
