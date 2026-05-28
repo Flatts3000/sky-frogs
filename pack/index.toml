@@ -521,7 +521,7 @@ metafile = true
 
 [[files]]
 file = "mods/sophisticated-storage.pw.toml"
-hash = "6a1122336ce393f47f345628f39ded4eaa36004c3dca1dc6059c1d5e9d2b0c7a"
+hash = "8e87d947e258a9009357169f1f1ff88d3dac32cd61e58e8de2d365c8e4194fd2"
 metafile = true
 
 [[files]]
