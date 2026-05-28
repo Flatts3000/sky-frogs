@@ -4,125 +4,159 @@
 	default_quest_shape: ""
 	filename: "storage_and_crafting"
 	group: ""
-	icon: { id: "sophisticatedstorage:barrel" }
+	icon: {
+		id: "sophisticatedstorage:barrel"
+	}
 	id: "570A6E0000000001"
 	order_index: 4
 	quest_links: [ ]
-	title: "Storage and Crafting"
 	quests: [
 		{
+			dependencies: ["7CA7E000C0DE0005"]
+			icon: {
+				id: "sophisticatedstorage:barrel"
+			}
 			id: "570A6E0000000002"
-			title: "A Barrel of Your Own"
-			icon: { id: "sophisticatedstorage:barrel" }
+			rewards: [{
+				id: "570A6E0000000004"
+				type: "xp"
+				xp: 10
+			}]
 			shape: "hexagon"
 			size: 1.5d
-			dependencies: ["7CA7E000C0DE0005"]
+			tasks: [{
+				id: "570A6E0000000003"
+				item: { count: 1, id: "sophisticatedstorage:barrel" }
+				type: "item"
+			}]
 			x: 0.0d
 			y: 0.0d
-			description: [
-				"The metal's piling up faster than your chests can hold it. Time for storage that grows with you."
-				""
-				"A &eSophisticated Barrel&r starts as a plain wooden box - but it takes &fupgrades&r that stack it deeper, pull items in on their own, and pack them down. Craft your first; everything here slots into it."
-			]
-			tasks: [{ id: "570A6E0000000003", item: { count: 1, id: "sophisticatedstorage:barrel" }, type: "item" }]
-			rewards: [{ id: "570A6E0000000004", type: "xp", xp: 10 }]
 		}
 		{
-			id: "570A6E0000000005"
-			title: "Bigger on the Inside"
-			icon: { id: "sophisticatedstorage:gold_barrel" }
 			dependencies: ["570A6E0000000002"]
+			icon: {
+				id: "sophisticatedstorage:gold_barrel"
+			}
+			id: "570A6E0000000005"
+			rewards: [{
+				id: "570A6E0000000007"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "570A6E0000000006"
+				item: { count: 1, id: "sophisticatedstorage:gold_barrel" }
+				type: "item"
+			}]
 			x: 0.0d
 			y: 1.5d
-			description: [
-				"A barrel climbs through tiers, and the Cave frog hands you exactly what each one wants: &6copper&r, &eiron&r, then &egold&r. Every tier multiplies what it holds."
-				""
-				"Work one up to a &eGold Barrel&r."
-			]
-			tasks: [{ id: "570A6E0000000006", item: { count: 1, id: "sophisticatedstorage:gold_barrel" }, type: "item" }]
-			rewards: [{ id: "570A6E0000000007", type: "xp", xp: 10 }]
 		}
 		{
-			id: "570A6E0000000008"
-			title: "Stack 'Em High"
-			icon: { id: "sophisticatedstorage:stack_upgrade_tier_1" }
 			dependencies: ["570A6E0000000005"]
+			icon: {
+				id: "sophisticatedstorage:stack_upgrade_tier_1"
+			}
+			id: "570A6E0000000008"
+			rewards: [{
+				id: "570A6E000000000A"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "570A6E0000000009"
+				item: { count: 1, id: "sophisticatedstorage:stack_upgrade_tier_1" }
+				type: "item"
+			}]
 			x: 0.0d
 			y: 3.0d
-			description: [
-				"Here's the real magic. A &eStack Upgrade&r dropped into a barrel lets every slot hold far more than a stack - one barrel swallows a whole frog farm's output without blinking."
-				""
-				"Craft one and slot it in."
-			]
-			tasks: [{ id: "570A6E0000000009", item: { count: 1, id: "sophisticatedstorage:stack_upgrade_tier_1" }, type: "item" }]
-			rewards: [{ id: "570A6E000000000A", type: "xp", xp: 15 }]
 		}
 		{
-			id: "570A6E000000000B"
-			title: "Hands-Free Intake"
-			icon: { id: "sophisticatedstorage:pickup_upgrade" }
 			dependencies: ["570A6E0000000008"]
+			icon: {
+				id: "sophisticatedstorage:pickup_upgrade"
+			}
+			id: "570A6E000000000B"
+			rewards: [{
+				id: "570A6E000000000D"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "570A6E000000000C"
+				item: { count: 1, id: "sophisticatedstorage:pickup_upgrade" }
+				type: "item"
+			}]
 			x: 0.0d
 			y: 4.5d
-			description: [
-				"A &ePickup Upgrade&r tells a barrel to grab items off the ground around it - no more sweeping up after your frogs."
-				""
-				"The &asticky piston&r it needs is a slime ball away, and slime is the one thing you're never short of. Craft one."
-			]
-			tasks: [{ id: "570A6E000000000C", item: { count: 1, id: "sophisticatedstorage:pickup_upgrade" }, type: "item" }]
-			rewards: [{ id: "570A6E000000000D", type: "xp", xp: 15 }]
 		}
 		{
-			id: "570A6E000000000E"
-			title: "A Wall of Drawers"
-			icon: { id: "functionalstorage:storage_controller" }
 			dependencies: ["570A6E000000000B"]
+			icon: {
+				id: "functionalstorage:storage_controller"
+			}
+			id: "570A6E000000000E"
+			rewards: [{
+				id: "570A6E0000000010"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "570A6E000000000F"
+				item: { count: 1, id: "functionalstorage:storage_controller" }
+				type: "item"
+			}]
 			x: 0.0d
 			y: 6.0d
-			description: [
-				"You've been collecting &bCompacting Drawers&r one Cave metal at a time. Each holds a single resource by the thousand and auto-packs its nuggets, ingots, and blocks together."
-				""
-				"Tie the wall together: a &eStorage Controller&r linked to your drawers lets you pull from all of them in one spot. (It used to want nether quartz - not in this pack. Stone, redstone, and a repeater do it.)"
-			]
-			tasks: [{ id: "570A6E000000000F", item: { count: 1, id: "functionalstorage:storage_controller" }, type: "item" }]
-			rewards: [{ id: "570A6E0000000010", type: "xp", xp: 20 }]
 		}
 		{
-			id: "570A6E0000000011"
-			title: "One Window on Everything"
-			icon: { id: "sophisticatedstorage:controller" }
 			dependencies: ["570A6E000000000E"]
+			icon: {
+				id: "sophisticatedstorage:controller"
+			}
+			id: "570A6E0000000011"
+			rewards: [{
+				id: "570A6E0000000013"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "570A6E0000000012"
+				item: { count: 1, id: "sophisticatedstorage:controller" }
+				type: "item"
+			}]
 			x: 0.0d
 			y: 7.5d
-			description: [
-				"The last piece for your barrels. A &eStorage Controller&r set against them opens every connected barrel through one searchable window, and a &eStorage Link&r + &eStorage Tool&r reach the ones too far to touch."
-				""
-				"No power, no nether quartz - just a repeater where the comparator used to go. (The links want &dender pearls&r; your dark room coughs those up.)"
-				""
-				"This is the storage you live on until the Infernal tier - that's where &eRefined Storage&r takes it digital."
-			]
-			tasks: [{ id: "570A6E0000000012", item: { count: 1, id: "sophisticatedstorage:controller" }, type: "item" }]
-			rewards: [{ id: "570A6E0000000013", type: "xp", xp: 25 }]
 		}
 		{
+			dependencies: ["570A6E0000000011"]
+			icon: {
+				id: "minecraft:chest"
+			}
 			id: "570A6E0000000014"
-			title: "A Place for Everything"
-			icon: { id: "minecraft:chest" }
+			rewards: [
+				{
+					id: "570A6E0000000016"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 2
+					id: "570A6E0000000017"
+					item: {
+						count: 1
+						id: "sophisticatedstorage:stack_upgrade_tier_1"
+					}
+					type: "item"
+				}
+			]
 			shape: "hexagon"
 			size: 1.5d
-			dependencies: ["570A6E0000000011"]
+			tasks: [{
+				id: "570A6E0000000015"
+				type: "checkmark"
+			}]
 			x: 0.0d
 			y: 9.0d
-			description: [
-				"Barrels that swallow stacks, drawers that pack themselves, one window onto all of it - and the &eCrafting Station&r you've had since day one, pulling parts straight from the pile beside it. The island that began with a single chest now keeps its own house."
-				""
-				"This is the floor the rest of the pack gets built on. When the Infernal tier lands &eRefined Storage&r, the whole thing goes digital - but that's a long way down the line."
-			]
-			tasks: [{ id: "570A6E0000000015", title: "Storage, sorted", type: "checkmark" }]
-			rewards: [
-				{ id: "570A6E0000000016", type: "xp", xp: 50 }
-				{ count: 2, id: "570A6E0000000017", item: { count: 1, id: "sophisticatedstorage:stack_upgrade_tier_1" }, type: "item" }
-			]
 		}
 	]
 }

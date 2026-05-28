@@ -25,24 +25,36 @@ file = "config/exdeorum-server.toml"
 hash = "a9029472f7a7435e2f54c4827589a0dabca28e522fb1fa6257a814cdf83d64f1"
 
 [[files]]
+file = "config/ftbquests/quests/chapter_groups.snbt"
+hash = "739539b4146abfddb28d18027abc040e62af3634552c3c8092d021545f0c08fe"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/cave_frogs.snbt"
-hash = "ec107e439a34a87768cc12921b84ea6f34c1c130700255259de4aa706bff40be"
+hash = "17e26051bdd88e7fc8d3ebdb6667def500e2b67b16dfbb3ce8b16276a7daf60d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/scaling_the_colony.snbt"
-hash = "82df34b0b7f9af44c6956f5844ddb2eb118a13c08560ec6c11ffe0ee1eca4814"
+hash = "02a8ca4d8106134d3e2ea4050113ad6b05e00d7ff1963c154a91b8805f1429e8"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/storage_and_crafting.snbt"
-hash = "86504d725898ecf012a00e515360b631f9b2aa6f1eb3f05018a0fc4f984e55b9"
+hash = "b82271a7f464009da9c459ec727e4d1d21b0db3a6e38589cbef9d3348fe13260"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
-hash = "81c0fdb620195a91a02fbe3565327855088c7cbf5b47ddd51ddd573c15ed180e"
+hash = "f052d733f88ce035548e83cd464a828deb53d49fa231d13549e1c1978506462a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/your_first_iron_ingot.snbt"
-hash = "0fb1d6eecebe67a5005423ca8851cd4203383c68654f7cb2a51d8238a9e7ee65"
+hash = "69e8ed0dbaebf39af99f5a8fcff98da6e940cf75724562ce2d05db4adb24984c"
+
+[[files]]
+file = "config/ftbquests/quests/data.snbt"
+hash = "df92fd6b31e38ecbe9761f6ca2260e1b19eb9bcce38e9116565733ad47078b76"
+
+[[files]]
+file = "config/ftbquests/quests/lang/en_us.snbt"
+hash = "2866471980e9a7b5825514dcc12274f20b11438ab672817d428085883fb70ba7"
 
 [[files]]
 file = "config/productivefrogs-common.toml"
@@ -291,6 +303,11 @@ metafile = true
 [[files]]
 file = "mods/functional-storage.pw.toml"
 hash = "0092f83b6663191fb947110c2b51a5213daea995da831d7de0a769cf4c353cd8"
+metafile = true
+
+[[files]]
+file = "mods/inventory-tweaks-refoxed.pw.toml"
+hash = "1d3b922c0d1a43fa497faf27827bfa9f9f3841dfba51d8684435d58c1141fe93"
 metafile = true
 
 [[files]]

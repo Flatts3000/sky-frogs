@@ -4,199 +4,252 @@
 	default_quest_shape: ""
 	filename: "scaling_the_colony"
 	group: ""
-	icon: { id: "minecraft:hopper" }
+	icon: {
+		id: "minecraft:hopper"
+	}
 	id: "2A5700000A570001"
 	order_index: 2
 	quest_links: [ ]
-	title: "Scaling the Colony"
 	quests: [
 		{
+			dependencies: ["6C1F0A2B3D4E5F73"]
+			icon: {
+				id: "minecraft:hopper"
+			}
 			id: "2A5700000A570002"
-			title: "Hands Off"
-			icon: { id: "minecraft:hopper" }
+			rewards: [{
+				id: "2A5700000A570004"
+				type: "xp"
+				xp: 10
+			}]
 			shape: "hexagon"
 			size: 1.5d
-			dependencies: ["6C1F0A2B3D4E5F73"]
+			tasks: [{
+				id: "2A5700000A570003"
+				type: "checkmark"
+			}]
 			x: 0.0d
 			y: 0.0d
-			description: [
-				"You've been hand-feeding slimes to frogs and carrying Froglights to the furnace one at a time. It works - it just doesn't scale."
-				""
-				"This chapter makes the operation self-sustaining: first a renewable food-and-breeding supply, then the pipes and collectors to run the slime loop without you."
-				""
-				"It starts, oddly enough, by pulverizing cobblestone."
-			]
-			tasks: [{ id: "2A5700000A570003", title: "Got it", type: "checkmark" }]
-			rewards: [{ id: "2A5700000A570004", type: "xp", xp: 10 }]
 		}
 		{
-			id: "2A5700000A570005"
-			title: "Grind It Down"
-			icon: { id: "exdeorum:dust" }
 			dependencies: ["2A5700000A570002"]
+			icon: {
+				id: "exdeorum:dust"
+			}
+			id: "2A5700000A570005"
+			rewards: [{
+				id: "2A5700000A570007"
+				item: {
+					count: 1
+					id: "minecraft:hopper"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2A5700000A570006"
+				item: { count: 1, id: "exdeorum:dust" }
+				type: "item"
+			}]
 			x: 0.0d
 			y: 1.5d
-			description: [
-				"Botany Pots are built from clay, and clay starts as &7cobblestone&r run through a Hammer."
-				""
-				"Pound cobblestone into gravel, gravel into sand, and sand into &eDust&r. You already have the Iron Hammer from the cobble quest - put it to work."
-			]
-			tasks: [{ id: "2A5700000A570006", item: { count: 1, id: "exdeorum:dust" }, type: "item" }]
-			rewards: [{ id: "2A5700000A570007", item: { count: 1, id: "minecraft:hopper" }, type: "item" }]
 		}
 		{
-			id: "2A5700000A570008"
-			title: "Just Add Water"
-			icon: { id: "minecraft:clay" }
 			dependencies: ["2A5700000A570005"]
+			icon: {
+				id: "minecraft:clay"
+			}
+			id: "2A5700000A570008"
+			rewards: [{
+				id: "2A5700000A57000A"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "2A5700000A570009"
+				item: { count: 1, id: "minecraft:clay" }
+				type: "item"
+			}]
 			x: 0.0d
 			y: 3.0d
-			description: [
-				"Fill an Ex Deorum &bBarrel&r with water, drop the &eDust&r in, and it settles into a block of &fclay&r."
-				""
-				"Same barrel that catches your rainwater - it just does chemistry too."
-			]
-			tasks: [{ id: "2A5700000A570009", item: { count: 1, id: "minecraft:clay" }, type: "item" }]
-			rewards: [{ id: "2A5700000A57000A", type: "xp", xp: 10 }]
 		}
 		{
-			id: "2A5700000A57000B"
-			title: "Fired Earth"
-			icon: { id: "minecraft:flower_pot" }
 			dependencies: ["2A5700000A570008"]
+			icon: {
+				id: "minecraft:flower_pot"
+			}
+			id: "2A5700000A57000B"
+			rewards: [{
+				id: "2A5700000A57000E"
+				item: {
+					count: 1
+					id: "functionalstorage:oak_1"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "2A5700000A57000C"
+					item: { count: 1, id: "minecraft:terracotta" }
+					type: "item"
+				}
+				{
+					id: "2A5700000A57000D"
+					item: { count: 1, id: "minecraft:flower_pot" }
+					type: "item"
+				}
+			]
 			x: 0.0d
 			y: 4.5d
-			description: [
-				"Now bake it. Smelt a clay block into &eTerracotta&r. Crumble clay into clay balls, smelt those into bricks, and three bricks make a &eFlower Pot&r."
-				""
-				"You'll want &bfive terracotta&r and one flower pot for what's next, so keep the barrel running."
-			]
-			tasks: [
-				{ id: "2A5700000A57000C", item: { count: 1, id: "minecraft:terracotta" }, type: "item" }
-				{ id: "2A5700000A57000D", item: { count: 1, id: "minecraft:flower_pot" }, type: "item" }
-			]
-			rewards: [{ id: "2A5700000A57000E", item: { count: 1, id: "functionalstorage:oak_1" }, type: "item" }]
 		}
 		{
-			id: "2A5700000A57000F"
-			title: "A Pot to Grow In"
-			icon: { id: "botanypots:terracotta_botany_pot" }
 			dependencies: ["2A5700000A57000B"]
+			icon: {
+				id: "botanypots:terracotta_botany_pot"
+			}
+			id: "2A5700000A57000F"
+			rewards: [{
+				count: 3
+				id: "2A5700000A570011"
+				item: {
+					count: 1
+					id: "minecraft:sugar_cane"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2A5700000A570010"
+				item: { count: 1, id: "botanypots:terracotta_botany_pot" }
+				type: "item"
+			}]
 			x: 0.0d
 			y: 6.0d
-			description: [
-				"Five terracotta around a flower pot builds a &aBotany Pot&r - a self-tending planter. Drop in soil and a crop and it grows on its own, no farmland or sky needed."
-				""
-				"Here's your first crop: &asugar cane&r. Plant it and you've got a renewable source of sugar - which is about to matter a great deal."
-			]
-			tasks: [{ id: "2A5700000A570010", item: { count: 1, id: "botanypots:terracotta_botany_pot" }, type: "item" }]
-			rewards: [{ count: 3, id: "2A5700000A570011", item: { count: 1, id: "minecraft:sugar_cane" }, type: "item" }]
 		}
 		{
-			id: "2A5700000A570012"
-			title: "Sweet Tooth"
-			icon: { id: "productivefrogs:sweetslime" }
 			dependencies: ["2A5700000A57000F"]
+			icon: {
+				id: "productivefrogs:sweetslime"
+			}
+			id: "2A5700000A570012"
+			rewards: [{
+				count: 4
+				id: "2A5700000A570014"
+				item: {
+					count: 1
+					id: "farmersdelight:grilled_salmon"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2A5700000A570013"
+				item: { count: 1, id: "productivefrogs:sweetslime" }
+				type: "item"
+			}]
 			x: 0.0d
 			y: 7.5d
-			description: [
-				"Sugar cane crafts into &fsugar&r. Sugar plus a &aslime ball&r makes &dSweetslime&r - the one treat a frog will breed for."
-				""
-				"Sweetslime is the key to everything ahead: breed your frogs into a real colony with it, and it's the binding agent for coaxing brand-new resource slimes out of the ones you've already got."
-			]
-			tasks: [{ id: "2A5700000A570013", item: { count: 1, id: "productivefrogs:sweetslime" }, type: "item" }]
-			rewards: [{ count: 4, id: "2A5700000A570014", item: { count: 1, id: "farmersdelight:grilled_salmon" }, type: "item" }]
 		}
 		{
-			id: "2A5700000A570022"
-			title: "Raising the Line"
-			icon: { id: "productivefrogs:cave_frog_spawn_egg" }
 			dependencies: ["2A5700000A570012"]
+			icon: {
+				id: "productivefrogs:cave_frog_spawn_egg"
+			}
+			id: "2A5700000A570022"
+			rewards: [{
+				id: "2A5700000A570024"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "2A5700000A570023"
+				type: "checkmark"
+			}]
 			x: 0.0d
 			y: 9.0d
-			description: [
-				"You've got &dSweetslime&r now - which means you can &abreed your frogs&r."
-				""
-				"Feed it to two grown frogs and they'll pair off and breed. But breeding isn't just &omore&r frogs - done right, it's &lbetter&r ones."
-				""
-				"Every Resource Frog carries three stats. Point &bJade&r at a frog, tadpole, or primed egg to read them:"
-				""
-				"&aAppetite&r - how fast it eats. More Appetite means a shorter cooldown between slimes, so more Froglights per minute."
-				"&eBounty&r - how many Froglights it drops per slime fed. More Bounty, more output from the same slime."
-				"&bReach&r - how far it senses slimes. More Reach, the less you have to pile slimes against its nose."
-				""
-				"Stats run &b1 to 10&r. Frogs hatched from frogspawn start low (1-3); a &l10/10/10&r frog is the long game, and breeding is the only road there."
-				""
-				"Each baby's stat is rolled from its parents: roughly &a1 in 5&r it climbs a point above the better parent, sometimes it slips back toward their average, otherwise it holds at the better of the two. So breed your &lbest with your best&r - over generations the whole line drifts upward."
-				""
-				"Pair off two frogs to begin."
-			]
-			tasks: [{ id: "2A5700000A570023", title: "Breed two frogs with Sweetslime", type: "checkmark" }]
-			rewards: [{ id: "2A5700000A570024", type: "xp", xp: 20 }]
 		}
 		{
-			id: "2A5700000A570015"
-			title: "Dirt from Decay"
-			icon: { id: "minecraft:dirt" }
 			dependencies: ["2A5700000A570002"]
+			icon: {
+				id: "minecraft:dirt"
+			}
+			id: "2A5700000A570015"
+			rewards: [{
+				id: "2A5700000A570017"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "2A5700000A570016"
+				item: { count: 1, id: "minecraft:dirt" }
+				type: "item"
+			}]
 			x: 2.0d
 			y: 1.5d
-			description: [
-				"Dirt is finite up here - until you start &amaking&r it."
-				""
-				"Fill an Ex Deorum &eBarrel&r with organic scraps - saplings, leaves, seeds, the overflow from your tree farm - and it rots down into a block of &6dirt&r. Free earth, forever."
-			]
-			tasks: [{ id: "2A5700000A570016", item: { count: 1, id: "minecraft:dirt" }, type: "item" }]
-			rewards: [{ id: "2A5700000A570017", type: "xp", xp: 10 }]
 		}
 		{
-			id: "2A5700000A570018"
-			title: "Make Mud"
-			icon: { id: "minecraft:mud" }
 			dependencies: ["2A5700000A570015"]
+			icon: {
+				id: "minecraft:mud"
+			}
+			id: "2A5700000A570018"
+			rewards: [{
+				count: 8
+				id: "2A5700000A57001A"
+				item: {
+					count: 1
+					id: "minecraft:mud"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2A5700000A570019"
+				item: { count: 1, id: "minecraft:mud" }
+				type: "item"
+			}]
 			x: 2.0d
 			y: 3.0d
-			description: [
-				"A glass bottle of water poured onto a block of dirt makes &6mud&r."
-				""
-				"Mud sits just shy of a full block, so dropped items fall straight through it into whatever's below - which is how you'll catch your Froglights. Here are eight more, for &bnine&r total: enough to floor a 3x3 pen."
-			]
-			tasks: [{ id: "2A5700000A570019", item: { count: 1, id: "minecraft:mud" }, type: "item" }]
-			rewards: [{ count: 8, id: "2A5700000A57001A", item: { count: 1, id: "minecraft:mud" }, type: "item" }]
 		}
 		{
-			id: "2A5700000A57001B"
-			title: "A Floor of Hoppers"
-			icon: { id: "minecraft:hopper" }
 			dependencies: ["2A5700000A570018"]
+			icon: {
+				id: "minecraft:hopper"
+			}
+			id: "2A5700000A57001B"
+			rewards: [{
+				count: 8
+				id: "2A5700000A57001D"
+				item: {
+					count: 1
+					id: "minecraft:hopper"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2A5700000A57001C"
+				item: { count: 1, id: "minecraft:hopper" }
+				type: "item"
+			}]
 			x: 2.0d
 			y: 4.5d
-			description: [
-				"A &7hopper&r under each mud block swallows whatever falls through it."
-				""
-				"Craft one to prove the recipe - here are eight more, for &bnine&r total: one beneath every square of your 3x3 mud floor."
-			]
-			tasks: [{ id: "2A5700000A57001C", item: { count: 1, id: "minecraft:hopper" }, type: "item" }]
-			rewards: [{ count: 8, id: "2A5700000A57001D", item: { count: 1, id: "minecraft:hopper" }, type: "item" }]
 		}
 		{
+			dependencies: ["2A5700000A57001B"]
+			icon: {
+				id: "ironfurnaces:iron_furnace"
+			}
 			id: "2A5700000A57001E"
-			title: "Hands-Free Froglights"
-			icon: { id: "ironfurnaces:iron_furnace" }
+			rewards: [{
+				id: "2A5700000A570021"
+				type: "xp"
+				xp: 30
+			}]
 			shape: "hexagon"
 			size: 1.5d
-			dependencies: ["2A5700000A57001B"]
+			tasks: [{
+				id: "2A5700000A57001F"
+				item: { count: 1, id: "ironfurnaces:iron_furnace" }
+				type: "item"
+			}]
 			x: 2.0d
 			y: 6.0d
-			description: [
-				"The last piece. Craft an &eIron Furnace&r - unlike a vanilla one, it shoves its finished output straight into an adjacent inventory on its own."
-				""
-				"Stand your frog on the 3x3 mud floor. Funnel the nine hoppers beneath it into the Iron Furnace, and set a chest against its output side. Now Froglights drop through the mud, ride the hoppers into the furnace, get smelted into ingots, and stack up in the chest - all while you're off doing something else."
-				""
-				"A frog that mines iron in its sleep."
-			]
-			tasks: [{ id: "2A5700000A57001F", item: { count: 1, id: "ironfurnaces:iron_furnace" }, type: "item" }]
-			rewards: [{ id: "2A5700000A570021", type: "xp", xp: 30 }]
 		}
 	]
 }

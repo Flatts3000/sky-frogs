@@ -4,109 +4,154 @@
 	default_quest_shape: ""
 	filename: "cave_frogs"
 	group: ""
-	icon: { id: "productivefrogs:cave_frog_spawn_egg" }
+	icon: {
+		id: "productivefrogs:cave_frog_spawn_egg"
+	}
 	id: "7CA7E000C0DE0001"
 	order_index: 3
 	quest_links: [ ]
-	title: "Tier 1: Cave Frogs"
 	quests: [
 		{
+			dependencies: ["2A5700000A570012"]
+			icon: {
+				id: "productivefrogs:cave_frog_spawn_egg"
+			}
 			id: "7CA7E000C0DE0002"
-			title: "Beyond Iron"
-			icon: { id: "productivefrogs:cave_frog_spawn_egg" }
+			rewards: [{
+				id: "7CA7E000C0DE0004"
+				type: "xp"
+				xp: 10
+			}]
 			shape: "hexagon"
 			size: 1.5d
-			dependencies: ["2A5700000A570012"]
+			tasks: [{
+				id: "7CA7E000C0DE0003"
+				type: "checkmark"
+			}]
 			x: 0.0d
 			y: 0.0d
-			description: [
-				"You've pulled iron out of a frog. The Cave frog handles everything else the pickaxe used to: copper, gold, coal, lapis, redstone, obsidian - and the modded metals besides."
-				""
-				"&7(Chapter stub - the per-resource quests land here.)&r"
-			]
-			tasks: [{ id: "7CA7E000C0DE0003", title: "Got it", type: "checkmark" }]
-			rewards: [{ id: "7CA7E000C0DE0004", type: "xp", xp: 10 }]
 		}
 		{
-			id: "7CA7E000C0DE0005"
-			title: "Copper"
-			icon: { id: "minecraft:copper_ingot" }
 			dependencies: ["7CA7E000C0DE0002"]
+			icon: {
+				id: "minecraft:copper_ingot"
+			}
+			id: "7CA7E000C0DE0005"
+			rewards: [{
+				id: "7CA7E000C0DE0014"
+				item: {
+					count: 1
+					id: "functionalstorage:compacting_drawer"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7CA7E000C0DE0006"
+				item: { count: 1, id: "minecraft:copper_ingot" }
+				type: "item"
+			}]
 			x: 0.0d
 			y: 1.5d
-			description: [
-				"The first new metal off the line. Craft a &bCopper Slime in a Bucket&r from your &eiron milk&r (plus four stone, three sweetslime, and a Cave frogspawn bottle)."
-				""
-				"Then run the loop you already know: milk it, pour out the Copper Slime Milk, feed the slimes to a Cave Frog, and smelt the Froglight. Bring back a copper ingot."
-			]
-			tasks: [{ id: "7CA7E000C0DE0006", item: { count: 1, id: "minecraft:copper_ingot" }, type: "item" }]
-			rewards: [{ id: "7CA7E000C0DE0014", item: { count: 1, id: "functionalstorage:compacting_drawer" }, type: "item" }]
 		}
 		{
-			id: "7CA7E000C0DE0008"
-			title: "Gold"
-			icon: { id: "minecraft:gold_ingot" }
 			dependencies: ["7CA7E000C0DE0005"]
+			icon: {
+				id: "minecraft:gold_ingot"
+			}
+			id: "7CA7E000C0DE0008"
+			rewards: [{
+				id: "7CA7E000C0DE0015"
+				item: {
+					count: 1
+					id: "functionalstorage:compacting_drawer"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7CA7E000C0DE0009"
+				item: { count: 1, id: "minecraft:gold_ingot" }
+				type: "item"
+			}]
 			x: 0.0d
 			y: 3.0d
-			description: [
-				"One rung up: &ecopper milk&r becomes a &eGold Slime in a Bucket&r."
-				""
-				"Same loop. Bring back a gold ingot."
-			]
-			tasks: [{ id: "7CA7E000C0DE0009", item: { count: 1, id: "minecraft:gold_ingot" }, type: "item" }]
-			rewards: [{ id: "7CA7E000C0DE0015", item: { count: 1, id: "functionalstorage:compacting_drawer" }, type: "item" }]
 		}
 		{
-			id: "7CA7E000C0DE000B"
-			title: "Coal"
-			icon: { id: "minecraft:coal" }
 			dependencies: ["7CA7E000C0DE0008"]
+			icon: {
+				id: "minecraft:coal"
+			}
+			id: "7CA7E000C0DE000B"
+			rewards: [{
+				id: "7CA7E000C0DE0016"
+				item: {
+					count: 1
+					id: "functionalstorage:compacting_drawer"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7CA7E000C0DE000C"
+				item: { count: 1, id: "minecraft:coal" }
+				type: "item"
+			}]
 			x: 0.0d
 			y: 4.5d
-			description: [
-				"&6Gold milk&r this time, for a &7Coal Slime&r - fuel you can make without a single coal ore in sight."
-				""
-				"Smelt a Coal Froglight and pocket the coal."
-			]
-			tasks: [{ id: "7CA7E000C0DE000C", item: { count: 1, id: "minecraft:coal" }, type: "item" }]
-			rewards: [{ id: "7CA7E000C0DE0016", item: { count: 1, id: "functionalstorage:compacting_drawer" }, type: "item" }]
 		}
 		{
-			id: "7CA7E000C0DE000E"
-			title: "Redstone"
-			icon: { id: "minecraft:redstone" }
 			dependencies: ["7CA7E000C0DE000B"]
+			icon: {
+				id: "minecraft:redstone"
+			}
+			id: "7CA7E000C0DE000E"
+			rewards: [{
+				id: "7CA7E000C0DE0017"
+				item: {
+					count: 1
+					id: "functionalstorage:compacting_drawer"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7CA7E000C0DE000F"
+				item: { count: 1, id: "minecraft:redstone" }
+				type: "item"
+			}]
 			x: 0.0d
 			y: 6.0d
-			description: [
-				"Last of the Cave line: &7coal milk&r into a &cRedstone Slime&r."
-				""
-				"Redstone is the spark under everything mechanical, and now it drips out of a frog. Loop it, and the Cave is yours top to bottom."
-			]
-			tasks: [{ id: "7CA7E000C0DE000F", item: { count: 1, id: "minecraft:redstone" }, type: "item" }]
-			rewards: [{ id: "7CA7E000C0DE0017", item: { count: 1, id: "functionalstorage:compacting_drawer" }, type: "item" }]
 		}
 		{
+			dependencies: ["7CA7E000C0DE000E"]
+			icon: {
+				components: {
+					"productivefrogs:contained_category": "geode"
+				}
+				id: "productivefrogs:frog_egg"
+			}
 			id: "7CA7E000C0DE0011"
-			title: "The Road to Geode"
-			icon: { id: "productivefrogs:frog_egg", components: { "productivefrogs:contained_category": "geode" } }
+			rewards: [
+				{
+					id: "7CA7E000C0DE0013"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "7CA7E000C0DE0010"
+					item: {
+						count: 1
+						id: "sophisticatedbackpacks:advanced_feeding_upgrade"
+					}
+					type: "item"
+				}
+			]
 			shape: "hexagon"
 			size: 1.5d
-			dependencies: ["7CA7E000C0DE000E"]
+			tasks: [{
+				id: "7CA7E000C0DE0012"
+				item: { components: { "productivefrogs:contained_category": "geode" }, count: 1, id: "productivefrogs:frog_egg" }
+				type: "item"
+			}]
 			x: 0.0d
 			y: 7.5d
-			description: [
-				"You've wrung every metal the Cave frog knows out of bare stone. Time to look past it."
-				""
-				"Feed your &eSpawnery&r a slime ball and prime it with &credstone&r - the last thing the Cave taught you is the first thing the Geode frog answers to. Out comes a &dGeode Frogspawn&r bottle."
-				""
-				"Tip it onto water for Geode frogs: gems and crystals, the start of Tier 2. (The Geode slimes to feed them are the next chapter's job.)"
-				""
-				"For clearing the Cave end to end, an &eAdvanced Feeding Upgrade&r for your backpack - stock it with the good food you've been hoarding and it keeps you fed while you build out Tier 2."
-			]
-			tasks: [{ id: "7CA7E000C0DE0012", item: { components: { "productivefrogs:contained_category": "geode" }, count: 1, id: "productivefrogs:frog_egg" }, type: "item" }]
-			rewards: [{ id: "7CA7E000C0DE0013", type: "xp", xp: 50 }, { id: "7CA7E000C0DE0010", item: { count: 1, id: "sophisticatedbackpacks:advanced_feeding_upgrade" }, type: "item" }]
 		}
 	]
 }
