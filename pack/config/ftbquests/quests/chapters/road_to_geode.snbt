@@ -32,7 +32,8 @@
 			size: 1.5d
 			tasks: [{
 				id: "60ADE60000000003"
-				type: "checkmark"
+				item: { components: { "productivefrogs:contained_category": "geode" }, count: 1, id: "productivefrogs:frog_egg" }
+				type: "item"
 			}]
 			x: 0.0d
 			y: 0.0d
@@ -40,20 +41,23 @@
 		{
 			dependencies: ["60ADE60000000002"]
 			icon: {
-				id: "minecraft:redstone"
+				components: {
+					"productivefrogs:slime_variant": "productivefrogs:lapis"
+				}
+				id: "productivefrogs:slime_milk_bucket"
 			}
 			id: "60ADE60000000005"
 			rewards: [{
 				id: "60ADE60000000007"
 				item: {
 					count: 1
-					id: "sophisticatedbackpacks:advanced_feeding_upgrade"
+					id: "functionalstorage:compacting_drawer"
 				}
 				type: "item"
 			}]
 			tasks: [{
 				id: "60ADE60000000006"
-				item: { components: { "productivefrogs:contained_category": "geode" }, count: 1, id: "productivefrogs:frog_egg" }
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:lapis" }, count: 1, id: "productivefrogs:slime_milk_bucket" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -62,19 +66,23 @@
 		{
 			dependencies: ["60ADE60000000005"]
 			icon: {
-				id: "minecraft:amethyst_shard"
+				id: "minecraft:lapis_lazuli"
 			}
 			id: "60ADE60000000008"
 			rewards: [{
 				id: "60ADE6000000000A"
-				type: "xp"
-				xp: 10
+				item: {
+					count: 1
+					id: "sophisticatedbackpacks:advanced_feeding_upgrade"
+				}
+				type: "item"
 			}]
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
 				id: "60ADE60000000009"
-				type: "checkmark"
+				item: { count: 1, id: "minecraft:lapis_lazuli" }
+				type: "item"
 			}]
 			x: 0.0d
 			y: 3.0d

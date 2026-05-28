@@ -269,21 +269,25 @@
 	]
 	quest.570A6E000000001F.title: "Take Out the Trash"
 	quest.60ADE60000000002.quest_desc: [
-		"You've wrung every metal the Cave frog knows out of bare stone. Time to look past it - the Geode frog deals in gems and crystals, and coaxing one out is the last trick the Cave has left to teach you."
+		"You've wrung every metal the Cave frog knows out of bare stone. Time to look past it - the Geode frog deals in gems and crystals."
+		""
+		"Your Spawnery hatched your first Cave frogs from cobblestone; now feed it a slime ball and prime it with &credstone&r instead. Out comes a &dGeode Frogspawn&r bottle - tip it onto water for Geode frogs."
 	]
 	quest.60ADE60000000002.title: "The Road to Geode"
 	quest.60ADE60000000005.quest_desc: [
-		"Your Spawnery hatched your first Cave frogs from cobblestone. Now feed it a slime ball and prime it with &credstone&r instead - the last resource the Cave taught you is the first the Geode frog answers to."
+		"Geode frogs eat Geode slimes, and the first one threads straight off the Cave's last resource."
 		""
-		"Out comes a &dGeode Frogspawn&r bottle. Bring one back, and take an &eAdvanced Feeding Upgrade&r for clearing the Cave end to end - it keeps you fed off your stockpile while you build out Tier 2."
+		"Craft a &bLapis Slime in a Bucket&r from a bucket of &credstone Slime Milk&r (plus four stone, three sweetslime, and a Geode frogspawn bottle). Run it through the Slime Milker and bring back a bucket of &9Lapis Slime Milk&r."
 	]
-	quest.60ADE60000000005.title: "The Redstone Trick"
+	quest.60ADE60000000005.title: "A Bucket of Lapis"
 	quest.60ADE60000000008.quest_desc: [
-		"Tip the Geode Frogspawn onto water and you've got &aGeode frogs&r - gems and crystals, the real start of Tier 2."
+		"Pour the Lapis Slime Milk and Lapis Slimes spawn. Feed them to a Geode frog, smelt the Froglight, and pocket your first &9lapis lazuli&r."
 		""
-		"The Geode slimes to feed them are the next chapter's job."
+		"The gem chain runs on from here - amethyst, emerald, and diamond to cap it - but that's the next chapter."
+		""
+		"For crossing into Tier 2, an &eAdvanced Feeding Upgrade&r to keep you fed off your stockpile while you build."
 	]
-	quest.60ADE60000000008.title: "Tip It Onto Water"
+	quest.60ADE60000000008.title: "First Lapis"
 	quest.65F6A1B2C3D40001.quest_desc: [
 		"Two quality-of-life tricks the void won't spell out for you:"
 		""

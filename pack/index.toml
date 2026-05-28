@@ -38,7 +38,7 @@ hash = "e1cf27cbba9167544afff0da9dabfddb257112623f3354066eb27aa3a2efaaa3"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_geode.snbt"
-hash = "01bed181613b5c0c38012e960ae743f82de853351d8963622a0d99c4997cfc0d"
+hash = "a768175a5f0cebc29bb4a2a25a9c69a65793739cda441f9f4ff2cd147eb86be3"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/scaling_the_colony.snbt"
@@ -62,7 +62,7 @@ hash = "d7dd511fa89cc9066374f537d8e9259d6caff8fe7db0a0a04db3af393100e0a4"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "318a3b486515e5280b9d9ae04e4c4e66a22bff6626f910ac78607bd8ec47a35c"
+hash = "12954ada8a4fbf4b3c91d83a183661ec9ec64035494900a504b8e096db29dee2"
 
 [[files]]
 file = "config/productivefrogs-common.toml"
@@ -135,6 +135,10 @@ hash = "dbb7488e1c4a77eb3c909b7c89d8e2dd5412ec53047838aa901978efbd0f5677"
 [[files]]
 file = "kubejs/server_scripts/first_join.js"
 hash = "659f7a086b994e6c47b0b7f0e37fbc037a7417fc1ab924455c60cd4a0d08f4e8"
+
+[[files]]
+file = "kubejs/server_scripts/geode_slime_chain.js"
+hash = "e644463eb99c8ace3821ed6925a2200d4fa6d7138cab280ab7ce253c24568684"
 
 [[files]]
 file = "kubejs/server_scripts/iron_slime_bucket.js"
