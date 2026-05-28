@@ -3,7 +3,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "cave_frogs"
-	group: ""
+	group: "0C4F0E0000000001"
 	icon: {
 		id: "productivefrogs:cave_frog_spawn_egg"
 	}
