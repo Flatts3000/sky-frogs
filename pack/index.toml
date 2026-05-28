@@ -422,7 +422,7 @@ metafile = true
 
 [[files]]
 file = "mods/productive-frogs.pw.toml"
-hash = "5edb1f438dcff350687dcb5034f5e94ac3018c30f827fa5370bcbbc85001cded"
+hash = "d8bbcde5389e1f1388744bd79b421667ea36ca57691b78155406715cf5b8e482"
 metafile = true
 
 [[files]]
