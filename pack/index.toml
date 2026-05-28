@@ -54,7 +54,7 @@ hash = "459e1e4a9e07b4d6e8a469050fa1c02795ec60033dc0ce622e724c2f38c5ecee"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
-hash = "54a43d64a1726bb70104c3e42409742a202060c895acb293e7ee8cb0203e51f2"
+hash = "1a4ac8f895465b267c17ed2e8f577750fcf896efaab541e467579324e585ccf1"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/your_first_iron_ingot.snbt"
@@ -126,7 +126,7 @@ hash = "39a83486cb95a2b162d7b896e0f18f3591f822c483bdf66488c7a9145018ff30"
 
 [[files]]
 file = "kubejs/data/skyfrogs/neoforge/biome_modifier/add_cave_slime_island.json"
-hash = "cd769ff13d0f5686457656ec2c7e74f60dc23b7e9a0c6c5b8935d06b5621adca"
+hash = "7b229ff45dfddb7a42fc5d7bd6cb33bdca7b2b3edd6dabc721ad79d321eeeb54"
 
 [[files]]
 file = "kubejs/server_scripts/anti.js"
