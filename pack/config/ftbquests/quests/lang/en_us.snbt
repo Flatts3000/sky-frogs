@@ -246,6 +246,24 @@
 		"This is the floor the rest of the pack gets built on. When the Infernal tier lands &eRefined Storage&r, the whole thing goes digital - but that's a long way down the line."
 	]
 	quest.570A6E0000000014.title: "A Place for Everything"
+	quest.570A6E0000000019.quest_desc: [
+		"Your drawers handle solids - give liquids the same treatment. A &eFluid Drawer&r is the wet cousin of your drawer wall: planks and a bucket, and it holds a tide of one fluid - water, lava, milk, honey - with the amount right on the face."
+		""
+		"Best part: it links into the same &eStorage Controller&r as your item drawers, so it joins the network for free."
+	]
+	quest.570A6E0000000019.title: "Liquid Assets"
+	quest.570A6E000000001C.quest_desc: [
+		"When a drawer won't cut it, a &eBasic Fluid Tank&r is bulk fluid in a box - just &firon&r and &credstone&r, no machines and no osmium in sight."
+		""
+		"Pick it up full and haul it wherever you need. It's the right home for the &6lava&r you'll be stockpiling to feed the machines a few tiers from now."
+	]
+	quest.570A6E000000001C.title: "Tanks a Lot"
+	quest.570A6E000000001F.quest_desc: [
+		"Not everything's worth a slot. A &eTrash Can&r quietly voids whatever you feed it - the cobble your generator won't stop making, junk mob drops, the fourth stack of rotten flesh."
+		""
+		"Set its filter so it only eats what you tell it to, drop a hopper on top, and forget it."
+	]
+	quest.570A6E000000001F.title: "Take Out the Trash"
 	quest.65F6A1B2C3D40001.quest_desc: [
 		"Two quality-of-life tricks the void won't spell out for you:"
 		""

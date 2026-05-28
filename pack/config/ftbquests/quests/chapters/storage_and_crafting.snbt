@@ -18,9 +18,10 @@
 			}
 			id: "570A6E0000000002"
 			rewards: [{
+				count: 4
 				id: "570A6E0000000004"
-				type: "xp"
-				xp: 10
+				item: { count: 1, id: "sophisticatedstorage:upgrade_base" }
+				type: "item"
 			}]
 			shape: "hexagon"
 			size: 1.5d
@@ -40,15 +41,15 @@
 			id: "570A6E0000000005"
 			rewards: [{
 				id: "570A6E0000000007"
-				type: "xp"
-				xp: 10
+				item: { count: 1, id: "sophisticatedstorage:compacting_upgrade" }
+				type: "item"
 			}]
 			tasks: [{
 				id: "570A6E0000000006"
 				item: { count: 1, id: "sophisticatedstorage:gold_barrel" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: -1.5d
 			y: 1.5d
 		}
 		{
@@ -58,77 +59,160 @@
 			}
 			id: "570A6E0000000008"
 			rewards: [{
+				count: 2
 				id: "570A6E000000000A"
-				type: "xp"
-				xp: 15
+				item: { count: 1, id: "sophisticatedstorage:stack_upgrade_tier_1" }
+				type: "item"
 			}]
 			tasks: [{
 				id: "570A6E0000000009"
 				item: { count: 1, id: "sophisticatedstorage:stack_upgrade_tier_1" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: -2.5d
 			y: 3.0d
 		}
 		{
-			dependencies: ["570A6E0000000008"]
+			dependencies: ["570A6E0000000005"]
 			icon: {
 				id: "sophisticatedstorage:pickup_upgrade"
 			}
 			id: "570A6E000000000B"
 			rewards: [{
+				count: 2
 				id: "570A6E000000000D"
-				type: "xp"
-				xp: 15
+				item: { count: 1, id: "sophisticatedstorage:pickup_upgrade" }
+				type: "item"
 			}]
 			tasks: [{
 				id: "570A6E000000000C"
 				item: { count: 1, id: "sophisticatedstorage:pickup_upgrade" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: 4.5d
+			x: -0.5d
+			y: 3.0d
 		}
 		{
-			dependencies: ["570A6E000000000B"]
-			icon: {
-				id: "functionalstorage:storage_controller"
-			}
-			id: "570A6E000000000E"
-			rewards: [{
-				id: "570A6E0000000010"
-				type: "xp"
-				xp: 20
-			}]
-			tasks: [{
-				id: "570A6E000000000F"
-				item: { count: 1, id: "functionalstorage:storage_controller" }
-				type: "item"
-			}]
-			x: 0.0d
-			y: 6.0d
-		}
-		{
-			dependencies: ["570A6E000000000E"]
+			dependencies: [
+				"570A6E0000000008"
+				"570A6E000000000B"
+			]
 			icon: {
 				id: "sophisticatedstorage:controller"
 			}
 			id: "570A6E0000000011"
 			rewards: [{
+				count: 4
 				id: "570A6E0000000013"
-				type: "xp"
-				xp: 25
+				item: { count: 1, id: "sophisticatedstorage:storage_link" }
+				type: "item"
 			}]
 			tasks: [{
 				id: "570A6E0000000012"
 				item: { count: 1, id: "sophisticatedstorage:controller" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: 7.5d
+			x: -1.5d
+			y: 4.5d
 		}
 		{
-			dependencies: ["570A6E0000000011"]
+			dependencies: ["570A6E0000000002"]
+			icon: {
+				id: "functionalstorage:fluid_1"
+			}
+			id: "570A6E0000000019"
+			rewards: [
+				{
+					count: 2
+					id: "570A6E000000001B"
+					item: { count: 1, id: "functionalstorage:fluid_1" }
+					type: "item"
+				}
+				{
+					id: "570A6E0000000022"
+					item: { count: 1, id: "functionalstorage:configuration_tool" }
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "570A6E000000001A"
+				item: { count: 1, id: "functionalstorage:fluid_1" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["570A6E0000000019"]
+			icon: {
+				id: "functionalstorage:storage_controller"
+			}
+			id: "570A6E000000000E"
+			rewards: [
+				{
+					count: 4
+					id: "570A6E0000000010"
+					item: { count: 1, id: "functionalstorage:compacting_drawer" }
+					type: "item"
+				}
+				{
+					id: "570A6E0000000023"
+					item: { count: 1, id: "functionalstorage:linking_tool" }
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "570A6E000000000F"
+				item: { count: 1, id: "functionalstorage:storage_controller" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["570A6E0000000002"]
+			icon: {
+				id: "mekanism:basic_fluid_tank"
+			}
+			id: "570A6E000000001C"
+			rewards: [{
+				id: "570A6E000000001E"
+				item: { count: 1, id: "mekanism:basic_fluid_tank" }
+				type: "item"
+			}]
+			tasks: [{
+				id: "570A6E000000001D"
+				item: { count: 1, id: "mekanism:basic_fluid_tank" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["570A6E000000001C"]
+			icon: {
+				id: "trashcans:item_trash_can"
+			}
+			id: "570A6E000000001F"
+			rewards: [{
+				id: "570A6E0000000021"
+				item: { count: 1, id: "trashcans:item_trash_can" }
+				type: "item"
+			}]
+			tasks: [{
+				id: "570A6E0000000020"
+				item: { count: 1, id: "trashcans:item_trash_can" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"570A6E0000000011"
+				"570A6E000000000E"
+				"570A6E000000001F"
+			]
 			icon: {
 				id: "minecraft:chest"
 			}
@@ -140,12 +224,15 @@
 					xp: 50
 				}
 				{
-					count: 2
+					count: 4
 					id: "570A6E0000000017"
-					item: {
-						count: 1
-						id: "sophisticatedstorage:stack_upgrade_tier_1"
-					}
+					item: { count: 1, id: "sophisticatedstorage:stack_upgrade_tier_1" }
+					type: "item"
+				}
+				{
+					count: 2
+					id: "570A6E0000000018"
+					item: { count: 1, id: "functionalstorage:compacting_drawer" }
 					type: "item"
 				}
 			]
@@ -156,7 +243,7 @@
 				type: "checkmark"
 			}]
 			x: 0.0d
-			y: 9.0d
+			y: 6.0d
 		}
 	]
 }

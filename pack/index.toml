@@ -38,7 +38,7 @@ hash = "02a8ca4d8106134d3e2ea4050113ad6b05e00d7ff1963c154a91b8805f1429e8"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/storage_and_crafting.snbt"
-hash = "b82271a7f464009da9c459ec727e4d1d21b0db3a6e38589cbef9d3348fe13260"
+hash = "85f42c224ad8b4f73120d61a19b98f89488989416091765b7a384404025adcb1"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
@@ -54,7 +54,7 @@ hash = "df92fd6b31e38ecbe9761f6ca2260e1b19eb9bcce38e9116565733ad47078b76"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "2866471980e9a7b5825514dcc12274f20b11438ab672817d428085883fb70ba7"
+hash = "f4341c6c4ddf15b6ce0b0319c14ad247d78f748f728639419a7fdfe762b937c9"
 
 [[files]]
 file = "config/productivefrogs-common.toml"
