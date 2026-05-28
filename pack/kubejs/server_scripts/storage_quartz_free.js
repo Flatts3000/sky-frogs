@@ -30,64 +30,31 @@ ServerEvents.recipes(event => {
     result: { count: 1, id: 'sophisticatedstorage:controller' }
   })
 
-  // Functional Storage - controllers + extensions.
+  // Functional Storage - controllers + extensions, plain and framed. All share the
+  // IBI/CDC/IBI shape; only the result id and the corner ingredient differ (stones
+  // for the plain blocks, iron nuggets for the framed variants, matching stock).
   // quartz_block -> redstone_block; comparator -> repeater. The drawer slot keeps
-  // its component-stripping ingredient type so any drawer (with upgrades) still works.
+  // its component-stripping type so any drawer (with upgrades) still works.
   const drawer = { type: 'functionalstorage:tag_without_component', tag: 'functionalstorage:drawer' }
-
-  event.remove({ id: 'functionalstorage:storage_controller' })
-  event.custom({
-    type: 'minecraft:crafting_shaped',
-    category: 'misc',
-    pattern: ['IBI', 'CDC', 'IBI'],
-    key: {
-      B: { item: 'minecraft:redstone_block' },
-      C: drawer,
-      D: { item: 'minecraft:repeater' },
-      I: { tag: 'c:stones' }
-    },
-    result: { count: 1, id: 'functionalstorage:storage_controller' }
-  })
-
-  event.remove({ id: 'functionalstorage:controller_extension' })
-  event.custom({
-    type: 'minecraft:crafting_shaped',
-    category: 'misc',
-    pattern: ['IBI', 'CDC', 'IBI'],
-    key: {
-      B: { item: 'minecraft:redstone_block' },
-      C: drawer,
-      D: { item: 'minecraft:repeater' },
-      I: { tag: 'c:stones' }
-    },
-    result: { count: 1, id: 'functionalstorage:controller_extension' }
-  })
-
-  event.remove({ id: 'functionalstorage:framed_storage_controller' })
-  event.custom({
-    type: 'minecraft:crafting_shaped',
-    category: 'misc',
-    pattern: ['IBI', 'CDC', 'IBI'],
-    key: {
-      B: { item: 'minecraft:redstone_block' },
-      C: drawer,
-      D: { item: 'minecraft:repeater' },
-      I: { tag: 'c:nuggets/iron' }
-    },
-    result: { count: 1, id: 'functionalstorage:framed_storage_controller' }
-  })
-
-  event.remove({ id: 'functionalstorage:framed_controller_extension' })
-  event.custom({
-    type: 'minecraft:crafting_shaped',
-    category: 'misc',
-    pattern: ['IBI', 'CDC', 'IBI'],
-    key: {
-      B: { item: 'minecraft:redstone_block' },
-      C: drawer,
-      D: { item: 'minecraft:repeater' },
-      I: { tag: 'c:nuggets/iron' }
-    },
-    result: { count: 1, id: 'functionalstorage:framed_controller_extension' }
+  const functionalControllers = [
+    { id: 'functionalstorage:storage_controller', corner: 'c:stones' },
+    { id: 'functionalstorage:controller_extension', corner: 'c:stones' },
+    { id: 'functionalstorage:framed_storage_controller', corner: 'c:nuggets/iron' },
+    { id: 'functionalstorage:framed_controller_extension', corner: 'c:nuggets/iron' }
+  ]
+  functionalControllers.forEach(recipe => {
+    event.remove({ id: recipe.id })
+    event.custom({
+      type: 'minecraft:crafting_shaped',
+      category: 'misc',
+      pattern: ['IBI', 'CDC', 'IBI'],
+      key: {
+        B: { item: 'minecraft:redstone_block' },
+        C: drawer,
+        D: { item: 'minecraft:repeater' },
+        I: { tag: recipe.corner }
+      },
+      result: { count: 1, id: recipe.id }
+    })
   })
 })
