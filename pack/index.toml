@@ -38,7 +38,7 @@ hash = "0e4a28a5ae99349b3d5213b5665100c675925c26b1e08bc69168a497eb242436"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/mekanism.snbt"
-hash = "f27d33bffe7bc04da27ffc25e6f08aec6c164f29bd8eee64d32b12c8470b1020"
+hash = "90b0ebbb9e8b89cb74b59286e48e758879bcc1c7a85c53fd3fe0cc1cae0532f1"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_geode.snbt"
@@ -66,7 +66,7 @@ hash = "d7dd511fa89cc9066374f537d8e9259d6caff8fe7db0a0a04db3af393100e0a4"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "32cb6daa81d3f2c8674a712bca004552b8605471e4cd0433c349f8f1b916a971"
+hash = "869c7a4e98050aa3d9c3eb38740a101a8779e4071afcb4d6eb8f154e35f0dd84"
 
 [[files]]
 file = "config/productivefrogs-common.toml"

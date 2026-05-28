@@ -425,6 +425,12 @@
 		"Feed it to a Cave Frog and steel pours off the line like any other metal."
 	]
 	quest.6ECA150000000011.title: "Steel Slime"
+	quest.6ECA150000000014.quest_desc: [
+		"Up here in the void you're as high as the world goes - and a &eWind Generator&r turns altitude into power. Passive, no fuel, day and night, and the higher it sits the more it makes."
+		""
+		"Build one (a couple of &fEnergy Tablets&r from the Infuser do most of the work) and let the wind run your machines."
+	]
+	quest.6ECA150000000014.title: "Wind Generator"
 	quest.79D9A7438B1DD129.quest_desc: ["Plant a sapling, grow a tree, punch it. Everything starts with wood - even a frog empire."]
 	quest.79D9A7438B1DD129.title: "Wood to Stand On"
 	quest.7CA7E000C0DE0002.quest_desc: [
