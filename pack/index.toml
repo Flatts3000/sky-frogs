@@ -38,7 +38,7 @@ hash = "e1cf27cbba9167544afff0da9dabfddb257112623f3354066eb27aa3a2efaaa3"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_geode.snbt"
-hash = "e5ecd4dd4556e4ceaf9a1fe141673649ae15889fecd7144f70a48787e6852c55"
+hash = "8555af1d9bc262a314aafd7090d05515f7f918c462bc37629c58ed3a134dcf3c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/scaling_the_colony.snbt"
@@ -46,7 +46,7 @@ hash = "1b4322445ce5a9e3d0dc11456957bd317c82471611be20f27798abcb5e4502f9"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/storage_and_crafting.snbt"
-hash = "d3f392d415f7142e7010d6cfda9d51cd46a381c5e86b149a201e13a1c4402f0c"
+hash = "459e1e4a9e07b4d6e8a469050fa1c02795ec60033dc0ce622e724c2f38c5ecee"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"

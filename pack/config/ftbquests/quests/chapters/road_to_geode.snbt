@@ -73,9 +73,10 @@
 			}
 			id: "60ADE60000000005"
 			rewards: [{
+				count: 4
 				id: "60ADE60000000007"
 				item: {
-					count: 4
+					count: 1
 					id: "farmersdelight:bacon_sandwich"
 				}
 				type: "item"
