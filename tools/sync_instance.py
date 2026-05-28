@@ -97,19 +97,27 @@ def free_port() -> int:
         return s.getsockname()[1]
 
 
-def wait_for_serve(url: str, proc: subprocess.Popen, timeout: float = 30.0) -> bool:
-    """Poll the served pack.toml until it answers, or the serve process dies."""
+def wait_for_serve(url: str, proc: subprocess.Popen, timeout: float = 30.0) -> str | None:
+    """Return the served pack.toml body once it answers, or None if serve dies/times out."""
     deadline = time.time() + timeout
     while time.time() < deadline:
         if proc.poll() is not None:
-            return False  # `packwiz serve` exited early (e.g. port in use)
+            return None  # `packwiz serve` exited early (e.g. port in use)
         try:
             with urllib.request.urlopen(url, timeout=2) as resp:
                 if resp.status == 200:
-                    return True
+                    return resp.read().decode("utf-8", "replace")
         except Exception:  # noqa: BLE001 - connection refused until the server is up
             time.sleep(0.4)
-    return False
+    return None
+
+
+def expected_pack_name() -> str:
+    """The pack's declared name, used to confirm `packwiz serve` is serving OUR pack."""
+    for line in (PACK / "pack.toml").read_text(encoding="utf-8").splitlines():
+        if line.strip().startswith("name"):
+            return line.split("=", 1)[1].strip().strip('"')
+    return ""
 
 
 def main() -> int:
@@ -147,13 +155,23 @@ def main() -> int:
         sys.exit("tools/pack_refresh.py failed")
 
     url = f"http://127.0.0.1:{port}/pack.toml"
+    expected_name = expected_pack_name()
     print(f"serving pack on 127.0.0.1:{port} ...")
-    serve = subprocess.Popen(["packwiz", "serve", "--port", str(port)], cwd=PACK,
-                             stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    # --refresh=false: pack_refresh.py already refreshed the index. Without it,
+    # `packwiz serve` re-hashes the working tree on every query - wasteful, and it
+    # could re-record CRLF hashes that pack_refresh.py just normalized away.
+    serve = subprocess.Popen(["packwiz", "serve", "--port", str(port), "--refresh=false"],
+                             cwd=PACK, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     try:
-        if not wait_for_serve(url, serve):
+        body = wait_for_serve(url, serve)
+        if body is None:
             sys.exit(f"`packwiz serve` did not come up on :{port} "
                      "(is the port already in use? try --port).")
+        # Confirm the responder is OUR pack, not another HTTP server that grabbed the
+        # port between free_port() releasing it and packwiz binding it.
+        if expected_name and expected_name not in body:
+            sys.exit(f"server on :{port} is not pack '{expected_name}' - aborting rather "
+                     "than risk syncing the instance to the wrong pack.")
         print(f"running packwiz-installer (side={args.side}) in {args.instance} ...\n")
         rc = subprocess.run(
             ["java", "-jar", str(BOOTSTRAP), "-g", "-s", args.side, url],
