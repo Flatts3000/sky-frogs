@@ -363,7 +363,7 @@
 	]
 	quest.6E0DE00000000002.title: "Beyond Lapis"
 	quest.6E0DE00000000005.quest_desc: [
-		"The first gem past lapis. Craft an &bAmethyst Slime in a Bucket&r from your &elapis milk&r (plus four stone, three sweetslime, and a Geode frogspawn bottle)."
+		"The first crystal in the geode. Craft an &bAmethyst Slime in a Bucket&r from your &ecalcite milk&r (plus four stone, three sweetslime, and a Geode frogspawn bottle)."
 		""
 		"Then the loop you know: milk it, pour out the Amethyst Slime Milk, feed the slimes to a Geode Frog, and smelt the Froglight. Bring back an amethyst shard."
 	]
@@ -380,6 +380,18 @@
 		"Milk it, feed the slimes to a Geode Frog, smelt the Froglight, and bring back a diamond - the cap of the gem chain."
 	]
 	quest.6E0DE0000000000B.title: "Diamond"
+	quest.6E0DE0000000000E.quest_desc: [
+		"The geode's outer shell. Craft a &bTuff Slime in a Bucket&r from your &elapis milk&r (plus four stone, three sweetslime, and a Geode frogspawn bottle)."
+		""
+		"Milk it, feed the slimes to a Geode Frog, smelt the Froglight, and bring back tuff - the first stone the Geode frog gives past lapis."
+	]
+	quest.6E0DE0000000000E.title: "Tuff"
+	quest.6E0DE00000000011.quest_desc: [
+		"The layer under the shell. Craft a &bCalcite Slime in a Bucket&r from your &etuff milk&r (plus four stone, three sweetslime, and a Geode frogspawn bottle)."
+		""
+		"Milk it, feed the slimes to a Geode Frog, smelt the Froglight, and bring back calcite."
+	]
+	quest.6E0DE00000000011.title: "Calcite"
 	quest.79D9A7438B1DD129.quest_desc: ["Plant a sapling, grow a tree, punch it. Everything starts with wood - even a frog empire."]
 	quest.79D9A7438B1DD129.title: "Wood to Stand On"
 	quest.7CA7E000C0DE0002.quest_desc: [

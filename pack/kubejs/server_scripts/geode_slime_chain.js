@@ -2,9 +2,10 @@
 //
 // Mirrors cave_slime_chain.js one tier up. The first step crosses out of the Cave:
 // the Cave's last resource (redstone) Slime Milk seeds the first Geode slime (lapis),
-// so the Cave's final lesson feeds the Geode frog's first. From there the gem chain
-// runs lapis -> amethyst -> emerald -> diamond, each step converting the prior gem's
-// Slime Milk into the next gem's Slime in a Bucket.
+// so the Cave's final lesson feeds the Geode frog's first. From there the Geode chain
+// runs lapis -> tuff -> calcite -> amethyst -> emerald -> diamond - the geode-shell
+// blocks first, then the crystal and the gems - each step converting the prior
+// resource's Slime Milk into the next one's Slime in a Bucket.
 //
 // Per-step recipe (shapeless, 9 items):
 //   1x <prior> Slime Milk bucket  (supplies the bucket; the first step uses Cave redstone milk)
@@ -14,15 +15,17 @@
 //   -> 1x <next> Slime in a Bucket (stamped Category GEODE)
 //
 // Variant ids verified against productivefrogs-1.5.2 slime_variant data: lapis,
-// amethyst, emerald, and diamond are all category "geode". The lapis -> ... steps
-// are inert until the Geode Frogs chapter quests guide them; they self-gate on
-// needing the prior gem's milk.
+// tuff, calcite, amethyst, emerald, and diamond are all category "geode". The
+// lapis -> ... steps are inert until the Geode Frogs chapter quests guide them;
+// they self-gate on needing the prior resource's milk.
 
 ServerEvents.recipes(event => {
   // [from-milk variant, output slime-bucket variant]
   const chain = [
     ['redstone', 'lapis'],
-    ['lapis', 'amethyst'],
+    ['lapis', 'tuff'],
+    ['tuff', 'calcite'],
+    ['calcite', 'amethyst'],
     ['amethyst', 'emerald'],
     ['emerald', 'diamond']
   ]
