@@ -1,0 +1,377 @@
+{
+	chapter.2A5700000A570001.title: "Scaling the Colony"
+	chapter.570A6E0000000001.title: "Storage and Crafting"
+	chapter.6C1F0A2B3D4E5F60.title: "Your First Iron Ingot"
+	chapter.784143B9C5D63814.title: "Welcome"
+	chapter.7CA7E000C0DE0001.title: "Cave Frogs"
+	quest.01A8E068925B319F.quest_desc: [
+		"You're stranded on a speck of dirt in the void. No ore, no mineshafts, not so much as a mountain to feel bad about."
+		""
+		"What you've got is &afrogs&r - and out here, that turns out to be the same thing as a mine."
+		""
+		"This book is the plan. Follow it and you'll never swing a pickaxe at stone again."
+	]
+	quest.01A8E068925B319F.title: "Welcome to Sky Frogs"
+	quest.05BFA1537298A589.quest_desc: [
+		"Here's the whole trick:"
+		""
+		"A &bResource Slime&r, fed to its matching &aFrog&r, comes back out as a &eFroglight&r loaded with that resource. Smelt the Froglight, pocket the ingot."
+		""
+		"Iron, gold, diamond, ender - every one of them is just a frog you haven't met yet."
+	]
+	quest.05BFA1537298A589.title: "Frogs, Not Pickaxes"
+	quest.21B2C3D4E5F60001.quest_desc: ["Craft an Oak Barrel and leave it out in the weather. It catches rain - which, on an island with one bucket of water, is the start of having two."]
+	quest.21B2C3D4E5F60001.title: "A Rain Barrel"
+	quest.21B2C3D4E5F60011.quest_desc: [
+		"Those shears aren't for sheep. Run them across your oak leaves and the leaves come off as whole blocks - the one thing an Oak Crucible knows how to drink."
+		""
+		"Shear sixteen."
+	]
+	quest.21B2C3D4E5F60011.title: "Strip the Leaves"
+	quest.21B2C3D4E5F60021.quest_desc: [
+		"Build an Oak Crucible and prop a torch beneath it. Drop your leaves in; the heat slowly wrings them out into water."
+		""
+		"Slow, free, and entirely yours."
+	]
+	quest.21B2C3D4E5F60021.title: "The Crucible"
+	quest.21B2C3D4E5F60031.quest_desc: [
+		"Two water sources one block apart make an infinite one - scoop from the middle forever."
+		""
+		"You've got your first water bucket and a barrel (or a crucible) working on the second. Set them a block apart and never ration water again."
+	]
+	quest.21B2C3D4E5F60031.title: "Running Water"
+	quest.2A5700000A570002.quest_desc: [
+		"You've been hand-feeding slimes to frogs and carrying Froglights to the furnace one at a time. It works - it just doesn't scale."
+		""
+		"This chapter makes the operation self-sustaining: first a renewable food-and-breeding supply, then the pipes and collectors to run the slime loop without you."
+		""
+		"It starts, oddly enough, by pulverizing cobblestone."
+	]
+	quest.2A5700000A570002.title: "Hands Off"
+	quest.2A5700000A570005.quest_desc: [
+		"Botany Pots are built from clay, and clay starts as &7cobblestone&r run through a Hammer."
+		""
+		"Pound cobblestone into gravel, gravel into sand, and sand into &eDust&r. You already have the Iron Hammer from the cobble quest - put it to work."
+	]
+	quest.2A5700000A570005.title: "Grind It Down"
+	quest.2A5700000A570008.quest_desc: [
+		"Fill an Ex Deorum &bBarrel&r with water, drop the &eDust&r in, and it settles into a block of &fclay&r."
+		""
+		"Same barrel that catches your rainwater - it just does chemistry too."
+	]
+	quest.2A5700000A570008.title: "Just Add Water"
+	quest.2A5700000A57000B.quest_desc: [
+		"Now bake it. Smelt a clay block into &eTerracotta&r. Crumble clay into clay balls, smelt those into bricks, and three bricks make a &eFlower Pot&r."
+		""
+		"You'll want &bfive terracotta&r and one flower pot for what's next, so keep the barrel running."
+	]
+	quest.2A5700000A57000B.title: "Fired Earth"
+	quest.2A5700000A57000F.quest_desc: [
+		"Five terracotta around a flower pot builds a &aBotany Pot&r - a self-tending planter. Drop in soil and a crop and it grows on its own, no farmland or sky needed."
+		""
+		"Here's your first crop: &asugar cane&r. Plant it and you've got a renewable source of sugar - which is about to matter a great deal."
+	]
+	quest.2A5700000A57000F.title: "A Pot to Grow In"
+	quest.2A5700000A570012.quest_desc: [
+		"Sugar cane crafts into &fsugar&r. Sugar plus a &aslime ball&r makes &dSweetslime&r - the one treat a frog will breed for."
+		""
+		"Sweetslime is the key to everything ahead: breed your frogs into a real colony with it, and it's the binding agent for coaxing brand-new resource slimes out of the ones you've already got."
+	]
+	quest.2A5700000A570012.title: "Sweet Tooth"
+	quest.2A5700000A570015.quest_desc: [
+		"Dirt is finite up here - until you start &amaking&r it."
+		""
+		"Fill an Ex Deorum &eBarrel&r with organic scraps - saplings, leaves, seeds, the overflow from your tree farm - and it rots down into a block of &6dirt&r. Free earth, forever."
+	]
+	quest.2A5700000A570015.title: "Dirt from Decay"
+	quest.2A5700000A570018.quest_desc: [
+		"A glass bottle of water poured onto a block of dirt makes &6mud&r."
+		""
+		"Mud sits just shy of a full block, so dropped items fall straight through it into whatever's below - which is how you'll catch your Froglights. Here are eight more, for &bnine&r total: enough to floor a 3x3 pen."
+	]
+	quest.2A5700000A570018.title: "Make Mud"
+	quest.2A5700000A57001B.quest_desc: [
+		"A &7hopper&r under each mud block swallows whatever falls through it."
+		""
+		"Craft one to prove the recipe - here are eight more, for &bnine&r total: one beneath every square of your 3x3 mud floor."
+	]
+	quest.2A5700000A57001B.title: "A Floor of Hoppers"
+	quest.2A5700000A57001E.quest_desc: [
+		"The last piece. Craft an &eIron Furnace&r - unlike a vanilla one, it shoves its finished output straight into an adjacent inventory on its own."
+		""
+		"Stand your frog on the 3x3 mud floor. Funnel the nine hoppers beneath it into the Iron Furnace, and set a chest against its output side. Now Froglights drop through the mud, ride the hoppers into the furnace, get smelted into ingots, and stack up in the chest - all while you're off doing something else."
+		""
+		"A frog that mines iron in its sleep."
+	]
+	quest.2A5700000A57001E.title: "Hands-Free Froglights"
+	quest.2A5700000A570022.quest_desc: [
+		"You've got &dSweetslime&r now - which means you can &abreed your frogs&r."
+		""
+		"Feed it to two grown frogs and they'll pair off and breed. But breeding isn't just &omore&r frogs - done right, it's &lbetter&r ones."
+		""
+		"Every Resource Frog carries three stats. Point &bJade&r at a frog, tadpole, or primed egg to read them:"
+		""
+		"&aAppetite&r - how fast it eats. More Appetite means a shorter cooldown between slimes, so more Froglights per minute."
+		"&eBounty&r - how many Froglights it drops per slime fed. More Bounty, more output from the same slime."
+		"&bReach&r - how far it senses slimes. More Reach, the less you have to pile slimes against its nose."
+		""
+		"Stats run &b1 to 10&r. Frogs hatched from frogspawn start low (1-3); a &l10/10/10&r frog is the long game, and breeding is the only road there."
+		""
+		"Each baby's stat is rolled from its parents: roughly &a1 in 5&r it climbs a point above the better parent, sometimes it slips back toward their average, otherwise it holds at the better of the two. So breed your &lbest with your best&r - over generations the whole line drifts upward."
+		""
+		"Pair off two frogs to begin."
+	]
+	quest.2A5700000A570022.title: "Raising the Line"
+	quest.32C3D4E5F6A10001.quest_desc: ["Four sticks make a Crook. Drag it across oak leaves and they give up far more than bare hands would - saplings to replant, and now and then a wriggling &eSilkworm&r."]
+	quest.32C3D4E5F6A10001.title: "A Crook"
+	quest.32C3D4E5F6A10011.quest_desc: [
+		"Crook your leaves until a Silkworm drops, then set it loose on a leaf block. It chews its way outward, infesting the leaves around it."
+		""
+		"Infested leaves are where your string comes from."
+	]
+	quest.32C3D4E5F6A10011.title: "Silkworms"
+	quest.32C3D4E5F6A10021.quest_desc: [
+		"Break the infested leaves and they shed &fstring&r - no spider required."
+		""
+		"Here's a &eMagnet&r to vacuum it up while you work. You'll want more than four for what's next."
+	]
+	quest.32C3D4E5F6A10021.title: "String from Silk"
+	quest.32C3D4E5F6A10031.quest_desc: [
+		"Four string crafts into wool; three wool and three planks make a bed."
+		""
+		"Sleep through the night and set your spawn somewhere that isn't the open void."
+	]
+	quest.32C3D4E5F6A10031.title: "A Bed of Your Own"
+	quest.378B93672C31CF5D.quest_desc: [
+		"Your first frog is the &eCave Frog&r. It deals in the things you'd normally swing a pickaxe for: iron, copper, gold, and the rest of the stone-and-ore crowd."
+		""
+		"Tier 0 is just getting on your feet - water, stone, a dark room, and a slime farm. Then the frogs take over."
+		""
+		"Let's get you there."
+	]
+	quest.378B93672C31CF5D.title: "The Road to Iron"
+	quest.43D4E5F6A1B20001.quest_desc: ["A wooden pickaxe: three planks, two sticks. It's the one mining tool you'll bother crafting - strictly for cobble. The frogs cover everything else."]
+	quest.43D4E5F6A1B20001.title: "Tools of the Trade"
+	quest.43D4E5F6A1B20011.quest_desc: [
+		"Water and lava, one block apart, make cobble forever. You've already got a bucket of each from the Road to Iron - set up the generator and chip off a stack."
+		""
+		"Then take the &eIron Hammer&r. It turns grey rock into other, more useful grey rock."
+	]
+	quest.43D4E5F6A1B20011.title: "Cobblestone"
+	quest.43D4E5F6A1B20021.quest_desc: [
+		"The &eIron Hammer&r earns its keep here: pound cobblestone into gravel, then gravel into sand."
+		""
+		"A beach, one swing at a time."
+	]
+	quest.43D4E5F6A1B20021.title: "Sand"
+	quest.43D4E5F6A1B20031.quest_desc: ["Smelt that sand into glass. The charcoal you just earned makes fine furnace fuel."]
+	quest.43D4E5F6A1B20031.title: "Glass"
+	quest.43D4E5F6A1B20041.quest_desc: [
+		"Six smooth stone around two glass blocks builds a &eStone Block Generator&r - it churns out stone on its own, no water-and-lava rig to babysit."
+		""
+		"Tier 0's groundwork is poured. Time to go meet some frogs."
+	]
+	quest.43D4E5F6A1B20041.title: "Cobblestone Generator"
+	quest.54E5F6A1B2C30001.quest_desc: [
+		"&aCave Slimes&r keep to the dark. Wall off a room, cap it against the sky, and snuff the light - then wait."
+		""
+		"They'll start turning up. Cut them down for &eslime balls&r: fuel, frog feed, and the first link in every chain that follows."
+		""
+		"Here's a &6Sophisticated Backpack&r for the haul - you'll be carrying plenty before the frogs start pulling their weight."
+	]
+	quest.54E5F6A1B2C30001.title: "A Dark Room"
+	quest.54E5F6A1B2C30011.quest_desc: [
+		"A &acomposter&r is seven wooden slabs in a U. Feed it the overflow from your tree farm - spare saplings, leaves, seeds - and it pays you back in &ebone meal&r."
+		""
+		"Bone meal is worth hoarding. It forces crops and saplings up on command, and you'll have a use for it before long."
+	]
+	quest.54E5F6A1B2C30011.title: "A Composter"
+	quest.54E5F6A1B2C30021.quest_desc: [
+		"&aThe Spawnery&r is where life gets made: five cobblestone, three planks, and a scoop of bone meal in the middle. Crude - but it knows the trick stone and swamp forgot."
+		""
+		"Feed it a slime ball to burn and show it the resource you're after, and it draws frogspawn into a bottle."
+		""
+		"Take two &fglass bottles&r to pull from it."
+	]
+	quest.54E5F6A1B2C30021.title: "The Spawnery"
+	quest.54E5F6A1B2C30031.quest_desc: [
+		"&aPrime the Spawnery with cobblestone&r - that's the Cave frog's calling card - drop in a slime ball to burn, and seat a glass bottle."
+		""
+		"Out comes a &eBottle of Cave Frog Frogspawn&r. Make &btwo&r: two frogs is a breeding pair, and a breeding pair is a farm that never runs dry."
+		""
+		"That's the last thing you'll build by hand for a while. Tip them onto water and let the frogs take over."
+	]
+	quest.54E5F6A1B2C30031.title: "Synthesize Life"
+	quest.570A6E0000000002.quest_desc: [
+		"The metal's piling up faster than your chests can hold it. Time for storage that grows with you."
+		""
+		"A &eSophisticated Barrel&r starts as a plain wooden box - but it takes &fupgrades&r that stack it deeper, pull items in on their own, and pack them down. Craft your first; everything here slots into it."
+	]
+	quest.570A6E0000000002.title: "A Barrel of Your Own"
+	quest.570A6E0000000005.quest_desc: [
+		"A barrel climbs through tiers, and the Cave frog hands you exactly what each one wants: &6copper&r, &eiron&r, then &egold&r. Every tier multiplies what it holds."
+		""
+		"Work one up to a &eGold Barrel&r."
+	]
+	quest.570A6E0000000005.title: "Bigger on the Inside"
+	quest.570A6E0000000008.quest_desc: [
+		"Here's the real magic. A &eStack Upgrade&r dropped into a barrel lets every slot hold far more than a stack - one barrel swallows a whole frog farm's output without blinking."
+		""
+		"Craft one and slot it in."
+	]
+	quest.570A6E0000000008.title: "Stack 'Em High"
+	quest.570A6E000000000B.quest_desc: [
+		"A &ePickup Upgrade&r tells a barrel to grab items off the ground around it - no more sweeping up after your frogs."
+		""
+		"The &asticky piston&r it needs is a slime ball away, and slime is the one thing you're never short of. Craft one."
+	]
+	quest.570A6E000000000B.title: "Hands-Free Intake"
+	quest.570A6E000000000E.quest_desc: [
+		"You've been collecting &bCompacting Drawers&r one Cave metal at a time. Each holds a single resource by the thousand and auto-packs its nuggets, ingots, and blocks together."
+		""
+		"Tie the wall together: a &eStorage Controller&r linked to your drawers lets you pull from all of them in one spot. (It used to want nether quartz - not in this pack. Stone, redstone, and a repeater do it.)"
+	]
+	quest.570A6E000000000E.title: "A Wall of Drawers"
+	quest.570A6E0000000011.quest_desc: [
+		"The last piece for your barrels. A &eStorage Controller&r set against them opens every connected barrel through one searchable window, and a &eStorage Link&r + &eStorage Tool&r reach the ones too far to touch."
+		""
+		"No power, no nether quartz - just a repeater where the comparator used to go. (The links want &dender pearls&r; your dark room coughs those up.)"
+		""
+		"This is the storage you live on until the Infernal tier - that's where &eRefined Storage&r takes it digital."
+	]
+	quest.570A6E0000000011.title: "One Window on Everything"
+	quest.570A6E0000000014.quest_desc: [
+		"Barrels that swallow stacks, drawers that pack themselves, one window onto all of it - and the &eCrafting Station&r you've had since day one, pulling parts straight from the pile beside it. The island that began with a single chest now keeps its own house."
+		""
+		"This is the floor the rest of the pack gets built on. When the Infernal tier lands &eRefined Storage&r, the whole thing goes digital - but that's a long way down the line."
+	]
+	quest.570A6E0000000014.title: "A Place for Everything"
+	quest.570A6E0000000019.quest_desc: [
+		"Your drawers handle solids - give liquids the same treatment. A &eFluid Drawer&r is the wet cousin of your drawer wall: planks and a bucket, and it holds a tide of one fluid - water, lava, milk, honey - with the amount right on the face."
+		""
+		"Best part: it links into the same &eStorage Controller&r as your item drawers, so it joins the network for free."
+	]
+	quest.570A6E0000000019.title: "Liquid Assets"
+	quest.570A6E000000001C.quest_desc: [
+		"When a drawer won't cut it, a &eBasic Fluid Tank&r is bulk fluid in a box - just &firon&r and &credstone&r, no machines and no osmium in sight."
+		""
+		"Pick it up full and haul it wherever you need. It's the right home for the &6lava&r you'll be stockpiling to feed the machines a few tiers from now."
+	]
+	quest.570A6E000000001C.title: "Tanks a Lot"
+	quest.570A6E000000001F.quest_desc: [
+		"Not everything's worth a slot. A &eTrash Can&r quietly voids whatever you feed it - the cobble your generator won't stop making, junk mob drops, the fourth stack of rotten flesh."
+		""
+		"Set its filter so it only eats what you tell it to, drop a hopper on top, and forget it."
+	]
+	quest.570A6E000000001F.title: "Take Out the Trash"
+	quest.65F6A1B2C3D40001.quest_desc: [
+		"Two quality-of-life tricks the void won't spell out for you:"
+		""
+		"&aSquat Grow&r - press &eSneak&r next to a sapling or crop and it grows while you squat. Free bone meal, basically. Plant your oak, squat on it, skip the wait."
+		""
+		"&bFTB Ultimine&r - fell a whole tree or clear a whole crop patch in a single break. Bind the &eUltimine&r key under Options -> Controls if it isn't already, then hold it and break one block; every connected log or crop comes with it."
+	]
+	quest.65F6A1B2C3D40001.title: "Two Shortcuts"
+	quest.6C1F0A2B3D4E5F61.quest_desc: [
+		"Before you hatch a single frog, build them somewhere to live - and somewhere they can't leave."
+		""
+		"Frogs jump, and they jump high. You're on an island in the void: a frog that clears your wall isn't hopping back, it's gone for good. Don't trust a low fence - build the walls tall, or cap the whole pen with a roof or an overhang."
+		""
+		"Drop a little &bwater&r inside while you're at it. That's where your frogspawn goes next."
+	]
+	quest.6C1F0A2B3D4E5F61.title: "A Place for Frogs"
+	quest.6C1F0A2B3D4E5F64.quest_desc: [
+		"A wall helps. A &eLead&r helps more - clip one to a frog and it stays put while your back is turned."
+		""
+		"Four &fstring&r and one &aslime ball&r make two leads, and you already have both: string from your silkworms, slime balls from the dark room."
+		""
+		"Craft a lead. Leash your frogs the moment they hatch."
+	]
+	quest.6C1F0A2B3D4E5F64.title: "Keep Them Close"
+	quest.6C1F0A2B3D4E5F67.quest_desc: [
+		"Slimes won't hand over their milk on their own - you need a press."
+		""
+		"The &eSlime Milker&r is it: planks, cobblestone, and a slime ball. Drop a bucketed slime in the top, give it a few seconds, and it squeezes a bucket of that slime's milk back out."
+		""
+		"Build one. And take a spare &fbucket&r - iron's tight out here, and you'll want it for what comes next."
+	]
+	quest.6C1F0A2B3D4E5F67.title: "The Slime Milker"
+	quest.6C1F0A2B3D4E5F6A.quest_desc: [
+		"Productive Frogs wants an iron ingot to make an Iron Slime - and you don't have one. So we cheat, exactly once."
+		""
+		"Combine a &eCave Frogspawn&r bottle, &aslime balls&r, &fstring&r, &6bone meal&r, and that spare &fbucket&r into an &bIron Slime in a Bucket&r. It's the only iron-free Iron Slime you'll ever make."
+		""
+		"This is the seed. Every scrap of iron from here on grows out of it."
+	]
+	quest.6C1F0A2B3D4E5F6A.title: "Iron Slime in a Bucket"
+	quest.6C1F0A2B3D4E5F6D.quest_desc: [
+		"Drop your &bIron Slime in a Bucket&r into the top slot of the Slime Milker and give it a few seconds - it presses the slime down into a bucket of &bIron Slime Milk&r."
+		""
+		"Pour that milk out and it spawns &aIron Slimes&r, but the source isn't bottomless - it runs dry after a batch. Milk the slimes you catch for fresh buckets and the cycle feeds itself."
+		""
+		"Take a &eDiamond Stick&r for your trouble - it'll make building out your base a good deal faster."
+	]
+	quest.6C1F0A2B3D4E5F6D.title: "Milk It"
+	quest.6C1F0A2B3D4E5F70.quest_desc: [
+		"Here's where the two paths meet. Drop an &aIron Slime&r in with your &eCave Frogs&r and wait - the frog gulps it down and leaves a glowing &bIron Froglight&r behind, the resource sealed inside."
+		""
+		"This is the moment the void promised you: a frog making iron out of nothing you had to mine."
+	]
+	quest.6C1F0A2B3D4E5F70.title: "Feed the Frog"
+	quest.6C1F0A2B3D4E5F73.quest_desc: [
+		"One &bIron Froglight&r, one furnace. Smelt it and it runs down into a bar of plain &firon&r."
+		""
+		"There it is - your first iron ingot, grown on an island that had none, and not one swing of a pickaxe to show for it."
+		""
+		"Now scale it. The frogs don't tire."
+	]
+	quest.6C1F0A2B3D4E5F73.title: "Your First Iron Ingot"
+	quest.79D9A7438B1DD129.quest_desc: ["Plant a sapling, grow a tree, punch it. Everything starts with wood - even a frog empire."]
+	quest.79D9A7438B1DD129.title: "Wood to Stand On"
+	quest.7CA7E000C0DE0002.quest_desc: [
+		"You've pulled iron out of a frog. The Cave frog handles everything else the pickaxe used to: copper, gold, coal, lapis, redstone, obsidian - and the modded metals besides."
+		""
+		"&7(Chapter stub - the per-resource quests land here.)&r"
+	]
+	quest.7CA7E000C0DE0002.title: "Beyond Iron"
+	quest.7CA7E000C0DE0005.quest_desc: [
+		"The first new metal off the line. Craft a &bCopper Slime in a Bucket&r from your &eiron milk&r (plus four stone, three sweetslime, and a Cave frogspawn bottle)."
+		""
+		"Then run the loop you already know: milk it, pour out the Copper Slime Milk, feed the slimes to a Cave Frog, and smelt the Froglight. Bring back a copper ingot."
+	]
+	quest.7CA7E000C0DE0005.title: "Copper"
+	quest.7CA7E000C0DE0008.quest_desc: [
+		"One rung up: &ecopper milk&r becomes a &eGold Slime in a Bucket&r."
+		""
+		"Same loop. Bring back a gold ingot."
+	]
+	quest.7CA7E000C0DE0008.title: "Gold"
+	quest.7CA7E000C0DE000B.quest_desc: [
+		"&6Gold milk&r this time, for a &7Coal Slime&r - fuel you can make without a single coal ore in sight."
+		""
+		"Smelt a Coal Froglight and pocket the coal."
+	]
+	quest.7CA7E000C0DE000B.title: "Coal"
+	quest.7CA7E000C0DE000E.quest_desc: [
+		"Last of the Cave line: &7coal milk&r into a &cRedstone Slime&r."
+		""
+		"Redstone is the spark under everything mechanical, and now it drips out of a frog. Loop it, and the Cave is yours top to bottom."
+	]
+	quest.7CA7E000C0DE000E.title: "Redstone"
+	quest.7CA7E000C0DE0011.quest_desc: [
+		"You've wrung every metal the Cave frog knows out of bare stone. Time to look past it."
+		""
+		"Feed your &eSpawnery&r a slime ball and prime it with &credstone&r - the last thing the Cave taught you is the first thing the Geode frog answers to. Out comes a &dGeode Frogspawn&r bottle."
+		""
+		"Tip it onto water for Geode frogs: gems and crystals, the start of Tier 2. (The Geode slimes to feed them are the next chapter's job.)"
+		""
+		"For clearing the Cave end to end, an &eAdvanced Feeding Upgrade&r for your backpack - stock it with the good food you've been hoarding and it keeps you fed while you build out Tier 2."
+	]
+	quest.7CA7E000C0DE0011.title: "The Road to Geode"
+	task.2A5700000A570003.title: "Got it"
+	task.2A5700000A570023.title: "Breed two frogs with Sweetslime"
+	task.570A6E0000000015.title: "Storage, sorted"
+	task.65F6A1B2C3D40002.title: "Got it"
+	task.6C1F0A2B3D4E5F62.title: "Build an enclosed habitat"
+	task.7CA7E000C0DE0003.title: "Got it"
+}

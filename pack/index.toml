@@ -25,20 +25,36 @@ file = "config/exdeorum-server.toml"
 hash = "a9029472f7a7435e2f54c4827589a0dabca28e522fb1fa6257a814cdf83d64f1"
 
 [[files]]
+file = "config/ftbquests/quests/chapter_groups.snbt"
+hash = "49225dfc239c9e8c61bee522becc57609bc40849914b4445dc372e5e41f41b33"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/cave_frogs.snbt"
-hash = "5a344733aba871bec23dce33d643a697f86877c99759237b6a56df8c6bc2e45f"
+hash = "40d39e587c4175211a70e8ba71c80f50ae18ee769407edeca12a9f2720921a9f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/scaling_the_colony.snbt"
-hash = "144a7724f60b95ca6b2dc4b8dcc8cb2a9ac0427a1cf05b36436a0684637cbe6a"
+hash = "595d44bd5f6a14426838b6ee9f46364f65fe10a842d33c52a53445fc7f872915"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/storage_and_crafting.snbt"
+hash = "0f97b4fe1cbf6bbe9a73c9b508f90b6419f90ad5e026b23a5ce7b66bfcf08125"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
-hash = "02defb1844eaa7a27eceb4f00fe08fe702008acd20ee44ecb3cfdc2eed6ed521"
+hash = "54a43d64a1726bb70104c3e42409742a202060c895acb293e7ee8cb0203e51f2"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/your_first_iron_ingot.snbt"
-hash = "ebeb7e6f516cc6bfd952d750ce91c4e16813a999f035adbdde3d39a9536a175c"
+hash = "2e03a6cf5dc9efe93856f274a054a6c0d4d43306b7b548cfc6ad37e4f63c70bb"
+
+[[files]]
+file = "config/ftbquests/quests/data.snbt"
+hash = "d7dd511fa89cc9066374f537d8e9259d6caff8fe7db0a0a04db3af393100e0a4"
+
+[[files]]
+file = "config/ftbquests/quests/lang/en_us.snbt"
+hash = "75c84d0c38389e39c676548aa3d63c87ed73a1e33a3bbcad43864750db2dd15f"
 
 [[files]]
 file = "config/productivefrogs-common.toml"
@@ -119,6 +135,10 @@ hash = "5f8d806e6fea7829f8e5b9b7344ddecf33208f4599eb7e7a2fee34c7a79e3b3e"
 [[files]]
 file = "kubejs/server_scripts/log_recipes.js"
 hash = "5c10c058739efefeed7b3d87b2adad36228609e5d2abae61a8466c3e49d41ee6"
+
+[[files]]
+file = "kubejs/server_scripts/storage_quartz_free.js"
+hash = "2b6735fc64ee708364b30526b4d5d7b703cfc80e624eb8f6f2098f6a0b2b192d"
 
 [[files]]
 file = "mods/almostunified.pw.toml"
@@ -286,6 +306,11 @@ hash = "0092f83b6663191fb947110c2b51a5213daea995da831d7de0a769cf4c353cd8"
 metafile = true
 
 [[files]]
+file = "mods/inventory-tweaks-refoxed.pw.toml"
+hash = "1d3b922c0d1a43fa497faf27827bfa9f9f3841dfba51d8684435d58c1141fe93"
+metafile = true
+
+[[files]]
 file = "mods/iron-furnaces.pw.toml"
 hash = "3f6a27001eb45ce6296829cfa9d7d41a0bd304914217f8dc3196feaa9030f963"
 metafile = true
@@ -397,7 +422,7 @@ metafile = true
 
 [[files]]
 file = "mods/productive-frogs.pw.toml"
-hash = "5edb1f438dcff350687dcb5034f5e94ac3018c30f827fa5370bcbbc85001cded"
+hash = "d8bbcde5389e1f1388744bd79b421667ea36ca57691b78155406715cf5b8e482"
 metafile = true
 
 [[files]]

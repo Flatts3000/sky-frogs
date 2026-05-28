@@ -98,7 +98,7 @@ The chapter boundary is set by **theme + arc, not node count**: a chapter is *on
 - **One chapter per progression beat** - a tier, a major system, or a dimension. Split when a chapter is trying to be two things; merge when one can't stand on its own as a milestone.
 - **Use chapter groups** (`chapter_groups.snbt`) to organize the sidebar (Tiers / Systems / Tech / Dimensions), so "more, focused chapters" doesn't bloat navigation.
 
-This supersedes the SBR-scale ~30-40/chapter target below. Sky Frogs is frog-spined, not mod-sprawled, so it runs fewer, denser, theme-driven chapters than SBR's 22/750. Shipped chapters so far: Welcome (22, top of range), Your First Iron Ingot (7), Scaling the Colony (11), Tier 1: Cave Frogs (6, including the Geode-gateway capstone - kept lean by design; modded Cave metals live in their tech-mod chapters rather than padding this one).
+This supersedes the SBR-scale ~30-40/chapter target below. Sky Frogs is frog-spined, not mod-sprawled, so it runs fewer, denser, theme-driven chapters than SBR's 22/750. Shipped chapters so far: Welcome (22, top of range), Your First Iron Ingot (7), Scaling the Colony (11), Cave Frogs (6, including the Geode-gateway capstone - kept lean by design; modded Cave metals live in their tech-mod chapters rather than padding this one), and Storage and Crafting (10, the Tier 1 storage interlude). These four progression chapters sit under a "Tier 1: Cave" chapter group; Welcome stays ungrouped at the top.
 
 ## Quest density per chapter (SBR-scale reference - superseded by the sizing principle above)
 
