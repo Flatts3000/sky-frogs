@@ -285,7 +285,7 @@
 		""
 		"The gem chain runs on from here - amethyst, emerald, and diamond to cap it - but that's the next chapter."
 		""
-		"For crossing into Tier 2, an &eAdvanced Feeding Upgrade&r to keep you fed off your stockpile while you build."
+		"And a &bCompacting Drawer&r to bank the lapis you're about to mass-produce."
 	]
 	quest.60ADE60000000008.title: "First Lapis"
 	quest.60ADE6000000000B.quest_desc: [
