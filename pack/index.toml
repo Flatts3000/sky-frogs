@@ -38,7 +38,7 @@ hash = "0e4a28a5ae99349b3d5213b5665100c675925c26b1e08bc69168a497eb242436"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/mekanism.snbt"
-hash = "90b0ebbb9e8b89cb74b59286e48e758879bcc1c7a85c53fd3fe0cc1cae0532f1"
+hash = "426bfef3625a6114ed86483ac8056b2574adf5a951c7818a693bb928c815df18"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_geode.snbt"
@@ -66,7 +66,7 @@ hash = "d7dd511fa89cc9066374f537d8e9259d6caff8fe7db0a0a04db3af393100e0a4"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "869c7a4e98050aa3d9c3eb38740a101a8779e4071afcb4d6eb8f154e35f0dd84"
+hash = "52ba6d0f4f08c485b4a11061ae2c42a5e34b8b8d80ece693d975ab5cdbc16d65"
 
 [[files]]
 file = "config/productivefrogs-common.toml"
@@ -197,6 +197,11 @@ metafile = true
 [[files]]
 file = "mods/botany-pots.pw.toml"
 hash = "7fa0c360b22811152168f61e17a5d1c881eab1079b199f39f53c2508cdd27c9b"
+metafile = true
+
+[[files]]
+file = "mods/building-gadgets.pw.toml"
+hash = "88908286eebea979713b5626891f634317fcc4c5a5bd4ec0c9444a33863a4518"
 metafile = true
 
 [[files]]

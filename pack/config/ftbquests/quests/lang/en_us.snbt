@@ -431,6 +431,18 @@
 		"Build one (a couple of &fEnergy Tablets&r from the Infuser do most of the work) and let the wind run your machines."
 	]
 	quest.6ECA150000000014.title: "Wind Generator"
+	quest.6ECA150000000017.quest_desc: [
+		"A furnace burns fuel; the &eEnergized Smelter&r runs on the Joules you already make, and faster. It's also the back half of ore-doubling - dusts in, ingots out."
+	]
+	quest.6ECA150000000017.title: "Energized Smelter"
+	quest.6ECA15000000001A.quest_desc: [
+		"The payoff. The &eEnrichment Chamber&r is Mekanism's ore-doubler - run a metal &bFroglight&r through it and it splits into &btwo dusts&r. Feed those to the Energized Smelter and one froglight becomes &btwo ingots&r."
+		""
+		"Your frog metals, doubled. (Gems pass through unchanged - only the metals dust.)"
+		""
+		"For wiring it all together, a &eBuilding Gadget&r to throw up machine rooms in a click."
+	]
+	quest.6ECA15000000001A.title: "Enrichment Chamber"
 	quest.79D9A7438B1DD129.quest_desc: ["Plant a sapling, grow a tree, punch it. Everything starts with wood - even a frog empire."]
 	quest.79D9A7438B1DD129.title: "Wood to Stand On"
 	quest.7CA7E000C0DE0002.quest_desc: [
