@@ -109,12 +109,20 @@ pack/
 
 ## Helper scripts (`tools/`)
 
-### `tools/build_cf_zip.sh`
+### `tools/pack_refresh.py` (exists)
+
+Wrapper around `packwiz refresh`. FTB Quests and some mods rewrite their data files (`*.snbt`, configs) with the platform's native line endings on every world load - CRLF on Windows - while git stores them as LF (`.gitattributes`). packwiz hashes the working-tree bytes, so a bare `packwiz refresh` run against post-load CRLF disk state records hashes that the committed LF blobs don't have, leaving `index.toml` silently wrong. This script normalizes the LF-governed pack files back to LF on disk (the same transform git's clean filter applies on commit), then runs `packwiz refresh`. Use it instead of bare `packwiz refresh` whenever the game may have touched pack files. Run from anywhere: `python tools/pack_refresh.py`.
+
+### `tools/fix_quest_ids.py` (exists)
+
+Remaps FTB Quests IDs whose leading hex digit is 8-F (these parse as negative signed longs, get rejected on load, and drop their dependency links). Run after hand-editing any chapter: `python tools/fix_quest_ids.py <snbt-file> ...`.
+
+### `tools/build_cf_zip.sh` (planned)
 ```sh
 #!/usr/bin/env bash
 set -euo pipefail
+python "$(dirname "$0")/pack_refresh.py"   # LF-normalize + refresh (not bare `packwiz refresh`)
 cd "$(dirname "$0")/../pack"
-packwiz refresh
 packwiz curseforge export
 mv ./*.zip ../dist/
 ```
