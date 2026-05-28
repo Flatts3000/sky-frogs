@@ -357,11 +357,29 @@
 	]
 	quest.6C1F0A2B3D4E5F73.title: "Your First Iron Ingot"
 	quest.6E0DE00000000002.quest_desc: [
-		"You've coaxed a Geode frog out of the Cave's last lesson. Where the Cave frog answered in metals, the Geode frog answers in gems and crystals - the start of Tier 2."
+		"You've pulled lapis out of a Geode frog. The same frog has the rest of the gems in it: amethyst, emerald, and diamond - each a step further down the chain."
 		""
-		"&7(Chapter stub - the Geode quests land here.)&r"
+		"Same loop you ran for the metals, new stones to feed it. Work it down to diamond."
 	]
-	quest.6E0DE00000000002.title: "Geode Frogs"
+	quest.6E0DE00000000002.title: "Beyond Lapis"
+	quest.6E0DE00000000005.quest_desc: [
+		"The first gem past lapis. Craft an &bAmethyst Slime in a Bucket&r from your &elapis milk&r (plus four stone, three sweetslime, and a Geode frogspawn bottle)."
+		""
+		"Then the loop you know: milk it, pour out the Amethyst Slime Milk, feed the slimes to a Geode Frog, and smelt the Froglight. Bring back an amethyst shard."
+	]
+	quest.6E0DE00000000005.title: "Amethyst"
+	quest.6E0DE00000000008.quest_desc: [
+		"Craft an &bEmerald Slime in a Bucket&r from your &eamethyst milk&r (plus four stone, three sweetslime, and a Geode frogspawn bottle)."
+		""
+		"Milk it, feed the slimes to a Geode Frog, smelt the Froglight, and bring back an emerald."
+	]
+	quest.6E0DE00000000008.title: "Emerald"
+	quest.6E0DE0000000000B.quest_desc: [
+		"The last gem the Geode frog knows. Craft a &bDiamond Slime in a Bucket&r from your &eemerald milk&r (plus four stone, three sweetslime, and a Geode frogspawn bottle)."
+		""
+		"Milk it, feed the slimes to a Geode Frog, smelt the Froglight, and bring back a diamond - the cap of the gem chain."
+	]
+	quest.6E0DE0000000000B.title: "Diamond"
 	quest.79D9A7438B1DD129.quest_desc: ["Plant a sapling, grow a tree, punch it. Everything starts with wood - even a frog empire."]
 	quest.79D9A7438B1DD129.title: "Wood to Stand On"
 	quest.7CA7E000C0DE0002.quest_desc: [

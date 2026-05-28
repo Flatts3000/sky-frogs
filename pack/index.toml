@@ -34,7 +34,7 @@ hash = "76621c52f676651e52932b36f56c286cbdedfb30aa7cff8578390d22821acdcc"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/geode_frogs.snbt"
-hash = "e1cf27cbba9167544afff0da9dabfddb257112623f3354066eb27aa3a2efaaa3"
+hash = "726c4f750f78d03227cd68bdd0950b0646b6c4e6076feb3a42aabb73860e967a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_geode.snbt"
@@ -62,7 +62,7 @@ hash = "d7dd511fa89cc9066374f537d8e9259d6caff8fe7db0a0a04db3af393100e0a4"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "3a826721e3fecb006f23679e5e332a3ef7f27550d90ae2e4a98cbbd665496577"
+hash = "d80dafc610bb0c89ebd83ef4d17b243aed79fe1dba12def709192f368e004932"
 
 [[files]]
 file = "config/productivefrogs-common.toml"
