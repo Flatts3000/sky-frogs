@@ -87,6 +87,8 @@ packwiz curseforge export                # build the .zip for CurseForge
 
 `packwiz mr add` and `packwiz modrinth export` are intentionally unused — see "Distribution" in Versioning targets above.
 
-`tools/` helper scripts (`build_cf_zip.sh`, `slime_variant_codegen.py`) are still planned per [`docs/repo_layout.md`](./docs/repo_layout.md) but not yet created.
+**After the game has loaded a world** (FTB Quests and some mods rewrite their data files to CRLF on Windows), run `python tools/pack_refresh.py` from the repo root **instead of** bare `packwiz refresh`. It normalizes the LF-governed pack files (`*.snbt`, configs, etc.) back to LF on disk, then refreshes, so `index.toml` records hashes that match the committed LF blobs. Running bare `packwiz refresh` against CRLF disk state writes hashes that no committed file has (the pack's own integrity index goes silently wrong).
+
+`tools/` helper scripts that exist: `fix_quest_ids.py` (remap negative-leading quest IDs after editing a chapter), `gen_starter_island.py`, `pack_refresh.py` (above). `build_cf_zip.sh` and `slime_variant_codegen.py` are still planned per [`docs/repo_layout.md`](./docs/repo_layout.md) but not yet created.
 
 Releases will be tag-driven (`git tag v0.x.y && git push origin v0.x.y`) once `.github/workflows/release.yml` lands. See [`docs/distribution.md`](./docs/distribution.md).
