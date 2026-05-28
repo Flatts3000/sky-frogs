@@ -1,0 +1,35 @@
+{
+	autofocus_id: "6E0DE00000000002"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "geode_frogs"
+	group: "0C4F0E0000000002"
+	icon: {
+		id: "minecraft:amethyst_cluster"
+	}
+	id: "6E0DE00000000001"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7CA7E000C0DE0011"]
+			icon: {
+				id: "minecraft:amethyst_cluster"
+			}
+			id: "6E0DE00000000002"
+			rewards: [{
+				id: "6E0DE00000000004"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "6E0DE00000000003"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+	]
+}

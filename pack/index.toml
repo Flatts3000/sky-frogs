@@ -26,11 +26,15 @@ hash = "a9029472f7a7435e2f54c4827589a0dabca28e522fb1fa6257a814cdf83d64f1"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "49225dfc239c9e8c61bee522becc57609bc40849914b4445dc372e5e41f41b33"
+hash = "6b3f6274818057e0063cc638fd151d7634a6e3a6e110f78aa5bd71a3cb423162"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/cave_frogs.snbt"
 hash = "40d39e587c4175211a70e8ba71c80f50ae18ee769407edeca12a9f2720921a9f"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/geode_frogs.snbt"
+hash = "14a5d0afe204d093c9cc61e69fea300fd5327bd7514695797a7240ed4090de42"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/scaling_the_colony.snbt"
@@ -54,7 +58,7 @@ hash = "d7dd511fa89cc9066374f537d8e9259d6caff8fe7db0a0a04db3af393100e0a4"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "75c84d0c38389e39c676548aa3d63c87ed73a1e33a3bbcad43864750db2dd15f"
+hash = "429cb1b7ef8c75d5489545ff1247f92ecd60fbf2a393a22ffe62c4e06fa15f04"
 
 [[files]]
 file = "config/productivefrogs-common.toml"

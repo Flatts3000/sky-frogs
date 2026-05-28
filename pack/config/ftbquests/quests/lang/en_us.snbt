@@ -2,6 +2,7 @@
 	chapter.2A5700000A570001.title: "Scaling the Colony"
 	chapter.570A6E0000000001.title: "Storage and Crafting"
 	chapter.6C1F0A2B3D4E5F60.title: "Your First Iron Ingot"
+	chapter.6E0DE00000000001.title: "Geode Frogs"
 	chapter.784143B9C5D63814.title: "Welcome"
 	chapter.7CA7E000C0DE0001.title: "Cave Frogs"
 	quest.01A8E068925B319F.quest_desc: [
@@ -326,6 +327,12 @@
 		"Now scale it. The frogs don't tire."
 	]
 	quest.6C1F0A2B3D4E5F73.title: "Your First Iron Ingot"
+	quest.6E0DE00000000002.quest_desc: [
+		"You've coaxed a Geode frog out of the Cave's last lesson. Where the Cave frog answered in metals, the Geode frog answers in gems and crystals - the start of Tier 2."
+		""
+		"&7(Chapter stub - the Geode quests land here.)&r"
+	]
+	quest.6E0DE00000000002.title: "Geode Frogs"
 	quest.79D9A7438B1DD129.quest_desc: ["Plant a sapling, grow a tree, punch it. Everything starts with wood - even a frog empire."]
 	quest.79D9A7438B1DD129.title: "Wood to Stand On"
 	quest.7CA7E000C0DE0002.quest_desc: [
