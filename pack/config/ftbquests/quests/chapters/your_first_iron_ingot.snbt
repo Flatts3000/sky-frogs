@@ -8,7 +8,7 @@
 		id: "minecraft:iron_ingot"
 	}
 	id: "6C1F0A2B3D4E5F60"
-	order_index: 1
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
@@ -162,16 +162,14 @@
 				id: "minecraft:iron_ingot"
 			}
 			id: "6C1F0A2B3D4E5F73"
-			rewards: [
-				{
-					id: "6C1F0A2B3D4E5F76"
-					item: {
-						count: 1
-						id: "functionalstorage:compacting_drawer"
-					}
-					type: "item"
+			rewards: [{
+				id: "6C1F0A2B3D4E5F76"
+				item: {
+					count: 1
+					id: "functionalstorage:compacting_drawer"
 				}
-			]
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{

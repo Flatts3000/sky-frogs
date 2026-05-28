@@ -26,27 +26,39 @@ hash = "a9029472f7a7435e2f54c4827589a0dabca28e522fb1fa6257a814cdf83d64f1"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "49225dfc239c9e8c61bee522becc57609bc40849914b4445dc372e5e41f41b33"
+hash = "d1e42e03dd5483caf66ceffc69878c069d8b2973f11369decab3ffadd7b1dc87"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/cave_frogs.snbt"
-hash = "40d39e587c4175211a70e8ba71c80f50ae18ee769407edeca12a9f2720921a9f"
+hash = "76621c52f676651e52932b36f56c286cbdedfb30aa7cff8578390d22821acdcc"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/geode_frogs.snbt"
+hash = "0e4a28a5ae99349b3d5213b5665100c675925c26b1e08bc69168a497eb242436"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/mekanism.snbt"
+hash = "426bfef3625a6114ed86483ac8056b2574adf5a951c7818a693bb928c815df18"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/road_to_geode.snbt"
+hash = "8555af1d9bc262a314aafd7090d05515f7f918c462bc37629c58ed3a134dcf3c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/scaling_the_colony.snbt"
-hash = "595d44bd5f6a14426838b6ee9f46364f65fe10a842d33c52a53445fc7f872915"
+hash = "1b4322445ce5a9e3d0dc11456957bd317c82471611be20f27798abcb5e4502f9"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/storage_and_crafting.snbt"
-hash = "0f97b4fe1cbf6bbe9a73c9b508f90b6419f90ad5e026b23a5ce7b66bfcf08125"
+hash = "459e1e4a9e07b4d6e8a469050fa1c02795ec60033dc0ce622e724c2f38c5ecee"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
-hash = "54a43d64a1726bb70104c3e42409742a202060c895acb293e7ee8cb0203e51f2"
+hash = "402f098e3acd237aba1ec9bf9a6eb4547857b53d0a3e6f653e58fc7c319d29cd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/your_first_iron_ingot.snbt"
-hash = "2e03a6cf5dc9efe93856f274a054a6c0d4d43306b7b548cfc6ad37e4f63c70bb"
+hash = "710b687f0af3a4ce748f92792dc1999b1401334fbd0ab5711f4fb056dc9301fb"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -54,7 +66,7 @@ hash = "d7dd511fa89cc9066374f537d8e9259d6caff8fe7db0a0a04db3af393100e0a4"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "75c84d0c38389e39c676548aa3d63c87ed73a1e33a3bbcad43864750db2dd15f"
+hash = "7a8754e69e848b6340da763578f4ba3a37e42a5828a60ce90a5d7fe8436424de"
 
 [[files]]
 file = "config/productivefrogs-common.toml"
@@ -114,7 +126,7 @@ hash = "39a83486cb95a2b162d7b896e0f18f3591f822c483bdf66488c7a9145018ff30"
 
 [[files]]
 file = "kubejs/data/skyfrogs/neoforge/biome_modifier/add_cave_slime_island.json"
-hash = "cd769ff13d0f5686457656ec2c7e74f60dc23b7e9a0c6c5b8935d06b5621adca"
+hash = "7b229ff45dfddb7a42fc5d7bd6cb33bdca7b2b3edd6dabc721ad79d321eeeb54"
 
 [[files]]
 file = "kubejs/server_scripts/anti.js"
@@ -129,12 +141,24 @@ file = "kubejs/server_scripts/first_join.js"
 hash = "659f7a086b994e6c47b0b7f0e37fbc037a7417fc1ab924455c60cd4a0d08f4e8"
 
 [[files]]
+file = "kubejs/server_scripts/geode_slime_chain.js"
+hash = "9d82ed589e65bcb2478d27dbbdf24d652deae205925f1b792c315d46d7d29c04"
+
+[[files]]
 file = "kubejs/server_scripts/iron_slime_bucket.js"
 hash = "5f8d806e6fea7829f8e5b9b7344ddecf33208f4599eb7e7a2fee34c7a79e3b3e"
 
 [[files]]
 file = "kubejs/server_scripts/log_recipes.js"
 hash = "5c10c058739efefeed7b3d87b2adad36228609e5d2abae61a8466c3e49d41ee6"
+
+[[files]]
+file = "kubejs/server_scripts/osmium_slime_bucket.js"
+hash = "417bd2728614fa0253b29c01ffa257249c5e1d59ec6c5909b7137c598b46234a"
+
+[[files]]
+file = "kubejs/server_scripts/steel_slime_infusing.js"
+hash = "38c034626da8d94bb0ddd2cfe8a4483f7665ffbbb26ff18f7044cb2271f2ec60"
 
 [[files]]
 file = "kubejs/server_scripts/storage_quartz_free.js"
@@ -173,6 +197,11 @@ metafile = true
 [[files]]
 file = "mods/botany-pots.pw.toml"
 hash = "7fa0c360b22811152168f61e17a5d1c881eab1079b199f39f53c2508cdd27c9b"
+metafile = true
+
+[[files]]
+file = "mods/building-gadgets.pw.toml"
+hash = "88908286eebea979713b5626891f634317fcc4c5a5bd4ec0c9444a33863a4518"
 metafile = true
 
 [[files]]
@@ -223,6 +252,11 @@ metafile = true
 [[files]]
 file = "mods/curios.pw.toml"
 hash = "f92e7a06645e41ea1934dc420eb2772edb1708c0d71cb427baef8cf753acb934"
+metafile = true
+
+[[files]]
+file = "mods/dark-utilities.pw.toml"
+hash = "9d20637581a8ff591843eb4c3be9570e8c0db2c3ea9ca2c891f9945e4e83d0ee"
 metafile = true
 
 [[files]]
@@ -391,6 +425,11 @@ hash = "6a91ada52e4fcdb1c4d3867f1ddd784a99d51fa41c433aad41e5ddef70c0dec2"
 metafile = true
 
 [[files]]
+file = "mods/more-overlays-updated.pw.toml"
+hash = "c315824dfe979035e9943c2d6c051cb865e5501c8e48ac96860289a8fb81a28d"
+metafile = true
+
+[[files]]
 file = "mods/mouse-tweaks.pw.toml"
 hash = "2bdee19bd39b4bd411d7c858a7978ca9d2bdda41c1cf15920ea6be0014663f79"
 metafile = true
@@ -398,6 +437,16 @@ metafile = true
 [[files]]
 file = "mods/not-enough-wands.pw.toml"
 hash = "cf3eab616572644e0c5683d1952faca689f25c2d5e2d7373a1594b8c9093604b"
+metafile = true
+
+[[files]]
+file = "mods/nyctography.pw.toml"
+hash = "0fa2bd5bdf0edfb930a18849a49fdf049fb100b5c8eaacb4f7f8c24827fa47f4"
+metafile = true
+
+[[files]]
+file = "mods/pig-pen-cipher.pw.toml"
+hash = "c542b169bf7c70a0ac4f66c895499abd37aa4897e0c4295ddd3e6aaa72afaef4"
 metafile = true
 
 [[files]]
@@ -422,12 +471,17 @@ metafile = true
 
 [[files]]
 file = "mods/productive-frogs.pw.toml"
-hash = "d8bbcde5389e1f1388744bd79b421667ea36ca57691b78155406715cf5b8e482"
+hash = "a43ca6b1e98b0c71a6b4d5caa634db6ca109d9df94655608024f4ff96d5c79c4"
 metafile = true
 
 [[files]]
 file = "mods/rhino.pw.toml"
 hash = "75ff68dd0bfb30f2ff97f170ffbb74d5b6aaa791416c4a0559d09ac8778561ba"
+metafile = true
+
+[[files]]
+file = "mods/runelic.pw.toml"
+hash = "ece6606ae5a408eb1683f68596db5f4ff1ee28bd0293043ed99794ffa6e33d64"
 metafile = true
 
 [[files]]

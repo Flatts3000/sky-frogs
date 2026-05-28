@@ -8,6 +8,8 @@
 *.mcmeta      text eol=lf
 *.yml         text eol=lf
 *.yaml        text eol=lf
+*.py          text eol=lf
+.packwizignore text eol=lf
 
 # Windows-only scripts keep CRLF
 *.bat         text eol=crlf

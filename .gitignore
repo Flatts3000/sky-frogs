@@ -16,6 +16,10 @@ sky-frogs-*.zip
 /instances/
 /.minecraft/
 
+# Python tooling caches (from tools/*.py)
+.ruff_cache/
+__pycache__/
+
 # IDE
 /.idea/
 /.vscode/
