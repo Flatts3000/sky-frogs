@@ -4,6 +4,7 @@
 	chapter.60ADE60000000001.title: "Road to Geode"
 	chapter.6C1F0A2B3D4E5F60.title: "Your First Iron Ingot"
 	chapter.6E0DE00000000001.title: "Geode Frogs"
+	chapter.6ECA150000000001.title: "Power and Machines"
 	chapter.784143B9C5D63814.title: "Welcome"
 	chapter.7CA7E000C0DE0001.title: "Cave Frogs"
 	chapter_group.0C4F0E0000000001.title: "Tier 1: Cave"
@@ -392,6 +393,32 @@
 		"Milk it, feed the slimes to a Geode Frog, smelt the Froglight, and bring back calcite."
 	]
 	quest.6E0DE00000000011.title: "Calcite"
+	quest.6ECA150000000002.quest_desc: [
+		"Mekanism runs on &fosmium&r - and the Cave frog has had it all along. Craft an &bOsmium Slime in a Bucket&r from your &eredstone milk&r (plus four stone, three sweetslime, and a Cave frogspawn bottle)."
+		""
+		"Milk it, feed the slimes to a Cave Frog, smelt the Froglight, and bring back osmium. No ore, no mining - the metal that opens Mekanism, straight off a frog."
+	]
+	quest.6ECA150000000002.title: "Osmium"
+	quest.6ECA150000000005.quest_desc: [
+		"Machines need power. Build a &eHeat Generator&r - Mekanism's starter - and feed it &fcoal&r (your Cave frog makes it) or a bucket of lava. That trickle of Joules runs everything that follows."
+	]
+	quest.6ECA150000000005.title: "First Power"
+	quest.6ECA150000000008.quest_desc: [
+		"The &eMetallurgic Infuser&r is the gateway machine - it presses one material into another, powered off your generator."
+		""
+		"It's how you turn iron into the enriched iron that becomes steel."
+	]
+	quest.6ECA150000000008.title: "The Metallurgic Infuser"
+	quest.6ECA15000000000B.quest_desc: [
+		"Infuse iron with carbon into &fenriched iron&r, then smelt that into a &bSteel Ingot&r."
+		""
+		"Steel is the backbone of every Mekanism machine. Bring one back."
+	]
+	quest.6ECA15000000000B.title: "Steel"
+	quest.6ECA15000000000E.quest_desc: [
+		"A &bSteel Casing&r is the shell every Mekanism machine is built into. Craft one - with casings on hand, the machine line opens up."
+	]
+	quest.6ECA15000000000E.title: "Steel Casing"
 	quest.79D9A7438B1DD129.quest_desc: ["Plant a sapling, grow a tree, punch it. Everything starts with wood - even a frog empire."]
 	quest.79D9A7438B1DD129.title: "Wood to Stand On"
 	quest.7CA7E000C0DE0002.quest_desc: [

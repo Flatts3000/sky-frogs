@@ -37,6 +37,10 @@ file = "config/ftbquests/quests/chapters/geode_frogs.snbt"
 hash = "0e4a28a5ae99349b3d5213b5665100c675925c26b1e08bc69168a497eb242436"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/mekanism.snbt"
+hash = "7ede1895f70f0de4d3400f4cd60fd84c3990b91b3d48aa0db7c81a7deddd652d"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/road_to_geode.snbt"
 hash = "8555af1d9bc262a314aafd7090d05515f7f918c462bc37629c58ed3a134dcf3c"
 
@@ -62,7 +66,7 @@ hash = "d7dd511fa89cc9066374f537d8e9259d6caff8fe7db0a0a04db3af393100e0a4"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "3ac645be5fa86ceb58c4ff7a0f6f3af97392d253777925658252700c7ed7d1f5"
+hash = "bb46e78f8de1d1aa6296a8a8ed5e2fee4e9fc03bd1e1fd3a3af4a7f1e2085acc"
 
 [[files]]
 file = "config/productivefrogs-common.toml"
@@ -147,6 +151,10 @@ hash = "5f8d806e6fea7829f8e5b9b7344ddecf33208f4599eb7e7a2fee34c7a79e3b3e"
 [[files]]
 file = "kubejs/server_scripts/log_recipes.js"
 hash = "5c10c058739efefeed7b3d87b2adad36228609e5d2abae61a8466c3e49d41ee6"
+
+[[files]]
+file = "kubejs/server_scripts/osmium_slime_bucket.js"
+hash = "417bd2728614fa0253b29c01ffa257249c5e1d59ec6c5909b7137c598b46234a"
 
 [[files]]
 file = "kubejs/server_scripts/storage_quartz_free.js"
