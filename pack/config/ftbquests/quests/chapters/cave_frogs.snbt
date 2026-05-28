@@ -130,11 +130,6 @@
 			id: "7CA7E000C0DE0011"
 			rewards: [
 				{
-					id: "7CA7E000C0DE0013"
-					type: "xp"
-					xp: 50
-				}
-				{
 					id: "7CA7E000C0DE0010"
 					item: {
 						count: 1

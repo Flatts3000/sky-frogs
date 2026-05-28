@@ -101,12 +101,19 @@
 				id: "sophisticatedstorage:controller"
 			}
 			id: "570A6E0000000011"
-			rewards: [{
-				count: 4
-				id: "570A6E0000000013"
-				item: { count: 1, id: "sophisticatedstorage:storage_link" }
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "570A6E0000000013"
+					item: { count: 1, id: "sophisticatedstorage:storage_link" }
+					type: "item"
+				}
+				{
+					id: "570A6E0000000024"
+					item: { count: 1, id: "sophisticatedstorage:storage_tool" }
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "570A6E0000000012"
 				item: { count: 1, id: "sophisticatedstorage:controller" }
@@ -218,11 +225,6 @@
 			}
 			id: "570A6E0000000014"
 			rewards: [
-				{
-					id: "570A6E0000000016"
-					type: "xp"
-					xp: 50
-				}
 				{
 					count: 4
 					id: "570A6E0000000017"

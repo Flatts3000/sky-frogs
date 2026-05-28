@@ -30,7 +30,7 @@ hash = "739539b4146abfddb28d18027abc040e62af3634552c3c8092d021545f0c08fe"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/cave_frogs.snbt"
-hash = "17e26051bdd88e7fc8d3ebdb6667def500e2b67b16dfbb3ce8b16276a7daf60d"
+hash = "715196e0a1727b4acb22b0e01fe41f73ce0ce9466927a870f980d0535c991d2f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/scaling_the_colony.snbt"
@@ -38,7 +38,7 @@ hash = "02a8ca4d8106134d3e2ea4050113ad6b05e00d7ff1963c154a91b8805f1429e8"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/storage_and_crafting.snbt"
-hash = "85f42c224ad8b4f73120d61a19b98f89488989416091765b7a384404025adcb1"
+hash = "1ffb9685c09fb2202e88a5102701fe342f1275d6d468e40c6df3c9b0b46b6948"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
@@ -46,7 +46,7 @@ hash = "f052d733f88ce035548e83cd464a828deb53d49fa231d13549e1c1978506462a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/your_first_iron_ingot.snbt"
-hash = "69e8ed0dbaebf39af99f5a8fcff98da6e940cf75724562ce2d05db4adb24984c"
+hash = "7448da52dba1cf7ed87d875530a3869d3eab9aee8879840256c65b137ad65153"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"

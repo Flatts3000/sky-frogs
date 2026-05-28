@@ -164,11 +164,6 @@
 			id: "6C1F0A2B3D4E5F73"
 			rewards: [
 				{
-					id: "6C1F0A2B3D4E5F75"
-					type: "xp"
-					xp: 50
-				}
-				{
 					id: "6C1F0A2B3D4E5F76"
 					item: {
 						count: 1
