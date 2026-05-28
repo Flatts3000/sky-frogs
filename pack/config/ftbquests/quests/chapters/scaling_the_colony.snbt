@@ -8,7 +8,7 @@
 		id: "minecraft:hopper"
 	}
 	id: "2A5700000A570001"
-	order_index: 2
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{

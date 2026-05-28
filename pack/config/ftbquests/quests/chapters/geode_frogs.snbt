@@ -8,28 +8,26 @@
 		id: "minecraft:amethyst_cluster"
 	}
 	id: "6E0DE00000000001"
-	order_index: 5
+	order_index: 1
 	quest_links: [ ]
-	quests: [
-		{
-			dependencies: ["7CA7E000C0DE0011"]
-			icon: {
-				id: "minecraft:amethyst_cluster"
-			}
-			id: "6E0DE00000000002"
-			rewards: [{
-				id: "6E0DE00000000004"
-				type: "xp"
-				xp: 10
-			}]
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [{
-				id: "6E0DE00000000003"
-				type: "checkmark"
-			}]
-			x: 0.0d
-			y: 0.0d
+	quests: [{
+		dependencies: ["60ADE60000000008"]
+		icon: {
+			id: "minecraft:amethyst_cluster"
 		}
-	]
+		id: "6E0DE00000000002"
+		rewards: [{
+			id: "6E0DE00000000004"
+			type: "xp"
+			xp: 10
+		}]
+		shape: "hexagon"
+		size: 1.5d
+		tasks: [{
+			id: "6E0DE00000000003"
+			type: "checkmark"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
 }

@@ -26,23 +26,27 @@ hash = "a9029472f7a7435e2f54c4827589a0dabca28e522fb1fa6257a814cdf83d64f1"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "6b3f6274818057e0063cc638fd151d7634a6e3a6e110f78aa5bd71a3cb423162"
+hash = "d1e42e03dd5483caf66ceffc69878c069d8b2973f11369decab3ffadd7b1dc87"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/cave_frogs.snbt"
-hash = "40d39e587c4175211a70e8ba71c80f50ae18ee769407edeca12a9f2720921a9f"
+hash = "76621c52f676651e52932b36f56c286cbdedfb30aa7cff8578390d22821acdcc"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/geode_frogs.snbt"
-hash = "14a5d0afe204d093c9cc61e69fea300fd5327bd7514695797a7240ed4090de42"
+hash = "e1cf27cbba9167544afff0da9dabfddb257112623f3354066eb27aa3a2efaaa3"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/road_to_geode.snbt"
+hash = "01bed181613b5c0c38012e960ae743f82de853351d8963622a0d99c4997cfc0d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/scaling_the_colony.snbt"
-hash = "595d44bd5f6a14426838b6ee9f46364f65fe10a842d33c52a53445fc7f872915"
+hash = "1b4322445ce5a9e3d0dc11456957bd317c82471611be20f27798abcb5e4502f9"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/storage_and_crafting.snbt"
-hash = "0f97b4fe1cbf6bbe9a73c9b508f90b6419f90ad5e026b23a5ce7b66bfcf08125"
+hash = "2db8c1ed2a57a693fa3788e536312ea6fa108b99c0acea46e35c322ccaa4f692"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
@@ -50,7 +54,7 @@ hash = "54a43d64a1726bb70104c3e42409742a202060c895acb293e7ee8cb0203e51f2"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/your_first_iron_ingot.snbt"
-hash = "2e03a6cf5dc9efe93856f274a054a6c0d4d43306b7b548cfc6ad37e4f63c70bb"
+hash = "710b687f0af3a4ce748f92792dc1999b1401334fbd0ab5711f4fb056dc9301fb"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -58,7 +62,7 @@ hash = "d7dd511fa89cc9066374f537d8e9259d6caff8fe7db0a0a04db3af393100e0a4"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "429cb1b7ef8c75d5489545ff1247f92ecd60fbf2a393a22ffe62c4e06fa15f04"
+hash = "318a3b486515e5280b9d9ae04e4c4e66a22bff6626f910ac78607bd8ec47a35c"
 
 [[files]]
 file = "config/productivefrogs-common.toml"

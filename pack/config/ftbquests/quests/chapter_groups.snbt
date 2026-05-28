@@ -1,12 +1,6 @@
 {
 	chapter_groups: [
-		{
-			id: "0C4F0E0000000001"
-			title: "Tier 1: Cave"
-		}
-		{
-			id: "0C4F0E0000000002"
-			title: "Tier 2: Geode"
-		}
+		{ id: "0C4F0E0000000001" }
+		{ id: "0C4F0E0000000002" }
 	]
 }

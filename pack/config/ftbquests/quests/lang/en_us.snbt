@@ -1,10 +1,13 @@
 {
 	chapter.2A5700000A570001.title: "Scaling the Colony"
 	chapter.570A6E0000000001.title: "Storage and Crafting"
+	chapter.60ADE60000000001.title: "Road to Geode"
 	chapter.6C1F0A2B3D4E5F60.title: "Your First Iron Ingot"
 	chapter.6E0DE00000000001.title: "Geode Frogs"
 	chapter.784143B9C5D63814.title: "Welcome"
 	chapter.7CA7E000C0DE0001.title: "Cave Frogs"
+	chapter_group.0C4F0E0000000001.title: "Tier 1: Cave"
+	chapter_group.0C4F0E0000000002.title: "Tier 2: Geode"
 	quest.01A8E068925B319F.quest_desc: [
 		"You're stranded on a speck of dirt in the void. No ore, no mineshafts, not so much as a mountain to feel bad about."
 		""
@@ -265,6 +268,22 @@
 		"Set its filter so it only eats what you tell it to, drop a hopper on top, and forget it."
 	]
 	quest.570A6E000000001F.title: "Take Out the Trash"
+	quest.60ADE60000000002.quest_desc: [
+		"You've wrung every metal the Cave frog knows out of bare stone. Time to look past it - the Geode frog deals in gems and crystals, and coaxing one out is the last trick the Cave has left to teach you."
+	]
+	quest.60ADE60000000002.title: "The Road to Geode"
+	quest.60ADE60000000005.quest_desc: [
+		"Your Spawnery hatched your first Cave frogs from cobblestone. Now feed it a slime ball and prime it with &credstone&r instead - the last resource the Cave taught you is the first the Geode frog answers to."
+		""
+		"Out comes a &dGeode Frogspawn&r bottle. Bring one back, and take an &eAdvanced Feeding Upgrade&r for clearing the Cave end to end - it keeps you fed off your stockpile while you build out Tier 2."
+	]
+	quest.60ADE60000000005.title: "The Redstone Trick"
+	quest.60ADE60000000008.quest_desc: [
+		"Tip the Geode Frogspawn onto water and you've got &aGeode frogs&r - gems and crystals, the real start of Tier 2."
+		""
+		"The Geode slimes to feed them are the next chapter's job."
+	]
+	quest.60ADE60000000008.title: "Tip It Onto Water"
 	quest.65F6A1B2C3D40001.quest_desc: [
 		"Two quality-of-life tricks the void won't spell out for you:"
 		""
@@ -365,16 +384,6 @@
 		"Redstone is the spark under everything mechanical, and now it drips out of a frog. Loop it, and the Cave is yours top to bottom."
 	]
 	quest.7CA7E000C0DE000E.title: "Redstone"
-	quest.7CA7E000C0DE0011.quest_desc: [
-		"You've wrung every metal the Cave frog knows out of bare stone. Time to look past it."
-		""
-		"Feed your &eSpawnery&r a slime ball and prime it with &credstone&r - the last thing the Cave taught you is the first thing the Geode frog answers to. Out comes a &dGeode Frogspawn&r bottle."
-		""
-		"Tip it onto water for Geode frogs: gems and crystals, the start of Tier 2. (The Geode slimes to feed them are the next chapter's job.)"
-		""
-		"For clearing the Cave end to end, an &eAdvanced Feeding Upgrade&r for your backpack - stock it with the good food you've been hoarding and it keeps you fed while you build out Tier 2."
-	]
-	quest.7CA7E000C0DE0011.title: "The Road to Geode"
 	task.2A5700000A570003.title: "Got it"
 	task.2A5700000A570023.title: "Breed two frogs with Sweetslime"
 	task.570A6E0000000015.title: "Storage, sorted"

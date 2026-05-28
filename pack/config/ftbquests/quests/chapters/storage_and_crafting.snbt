@@ -8,7 +8,7 @@
 		id: "sophisticatedstorage:barrel"
 	}
 	id: "570A6E0000000001"
-	order_index: 4
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
@@ -20,7 +20,10 @@
 			rewards: [{
 				count: 4
 				id: "570A6E0000000004"
-				item: { count: 1, id: "sophisticatedstorage:upgrade_base" }
+				item: {
+					count: 1
+					id: "sophisticatedstorage:upgrade_base"
+				}
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -41,7 +44,10 @@
 			id: "570A6E0000000005"
 			rewards: [{
 				id: "570A6E0000000007"
-				item: { count: 1, id: "sophisticatedstorage:compacting_upgrade" }
+				item: {
+					count: 1
+					id: "sophisticatedstorage:compacting_upgrade"
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -61,7 +67,10 @@
 			rewards: [{
 				count: 2
 				id: "570A6E000000000A"
-				item: { count: 1, id: "sophisticatedstorage:stack_upgrade_tier_1" }
+				item: {
+					count: 1
+					id: "sophisticatedstorage:stack_upgrade_tier_1"
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -81,7 +90,10 @@
 			rewards: [{
 				count: 2
 				id: "570A6E000000000D"
-				item: { count: 1, id: "sophisticatedstorage:pickup_upgrade" }
+				item: {
+					count: 1
+					id: "sophisticatedstorage:pickup_upgrade"
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -105,12 +117,18 @@
 				{
 					count: 4
 					id: "570A6E0000000013"
-					item: { count: 1, id: "sophisticatedstorage:storage_link" }
+					item: {
+						count: 1
+						id: "sophisticatedstorage:storage_link"
+					}
 					type: "item"
 				}
 				{
 					id: "570A6E0000000024"
-					item: { count: 1, id: "sophisticatedstorage:storage_tool" }
+					item: {
+						count: 1
+						id: "sophisticatedstorage:storage_tool"
+					}
 					type: "item"
 				}
 			]
@@ -132,12 +150,18 @@
 				{
 					count: 2
 					id: "570A6E000000001B"
-					item: { count: 1, id: "functionalstorage:fluid_1" }
+					item: {
+						count: 1
+						id: "functionalstorage:fluid_1"
+					}
 					type: "item"
 				}
 				{
 					id: "570A6E0000000022"
-					item: { count: 1, id: "functionalstorage:configuration_tool" }
+					item: {
+						count: 1
+						id: "functionalstorage:configuration_tool"
+					}
 					type: "item"
 				}
 			]
@@ -159,12 +183,18 @@
 				{
 					count: 4
 					id: "570A6E0000000010"
-					item: { count: 1, id: "functionalstorage:compacting_drawer" }
+					item: {
+						count: 1
+						id: "functionalstorage:compacting_drawer"
+					}
 					type: "item"
 				}
 				{
 					id: "570A6E0000000023"
-					item: { count: 1, id: "functionalstorage:linking_tool" }
+					item: {
+						count: 1
+						id: "functionalstorage:linking_tool"
+					}
 					type: "item"
 				}
 			]
@@ -184,7 +214,10 @@
 			id: "570A6E000000001C"
 			rewards: [{
 				id: "570A6E000000001E"
-				item: { count: 1, id: "mekanism:basic_fluid_tank" }
+				item: {
+					count: 1
+					id: "mekanism:basic_fluid_tank"
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -203,7 +236,10 @@
 			id: "570A6E000000001F"
 			rewards: [{
 				id: "570A6E0000000021"
-				item: { count: 1, id: "trashcans:item_trash_can" }
+				item: {
+					count: 1
+					id: "trashcans:item_trash_can"
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -228,13 +264,19 @@
 				{
 					count: 4
 					id: "570A6E0000000017"
-					item: { count: 1, id: "sophisticatedstorage:stack_upgrade_tier_1" }
+					item: {
+						count: 1
+						id: "sophisticatedstorage:stack_upgrade_tier_1"
+					}
 					type: "item"
 				}
 				{
 					count: 2
 					id: "570A6E0000000018"
-					item: { count: 1, id: "functionalstorage:compacting_drawer" }
+					item: {
+						count: 1
+						id: "functionalstorage:compacting_drawer"
+					}
 					type: "item"
 				}
 			]
