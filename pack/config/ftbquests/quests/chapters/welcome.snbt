@@ -179,7 +179,7 @@
 				id: "21B2C3D4E5F60023"
 				item: {
 					count: 1
-					id: "farmersdelight:vegetable_soup"
+					id: "farmersdelight:smoked_ham"
 				}
 				type: "item"
 			}]
@@ -214,7 +214,7 @@
 				id: "32C3D4E5F6A10003"
 				item: {
 					count: 1
-					id: "farmersdelight:vegetable_soup"
+					id: "farmersdelight:hamburger"
 				}
 				type: "item"
 			}]
@@ -286,11 +286,11 @@
 			dependencies: ["79D9A7438B1DD129"]
 			id: "43D4E5F6A1B20001"
 			rewards: [{
-				count: 4
+				count: 1
 				id: "43D4E5F6A1B20003"
 				item: {
 					count: 1
-					id: "farmersdelight:vegetable_soup"
+					id: "farmersdelight:honey_glazed_ham"
 				}
 				type: "item"
 			}]
@@ -351,7 +351,7 @@
 				id: "43D4E5F6A1B20033"
 				item: {
 					count: 1
-					id: "farmersdelight:vegetable_soup"
+					id: "farmersdelight:chicken_sandwich"
 				}
 				type: "item"
 			}]
@@ -417,7 +417,7 @@
 				id: "54E5F6A1B2C30013"
 				item: {
 					count: 1
-					id: "farmersdelight:vegetable_soup"
+					id: "farmersdelight:beef_stew"
 				}
 				type: "item"
 			}]

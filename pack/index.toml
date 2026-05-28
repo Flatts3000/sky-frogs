@@ -54,7 +54,7 @@ hash = "459e1e4a9e07b4d6e8a469050fa1c02795ec60033dc0ce622e724c2f38c5ecee"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
-hash = "1a4ac8f895465b267c17ed2e8f577750fcf896efaab541e467579324e585ccf1"
+hash = "402f098e3acd237aba1ec9bf9a6eb4547857b53d0a3e6f653e58fc7c319d29cd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/your_first_iron_ingot.snbt"
