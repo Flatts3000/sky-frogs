@@ -26,7 +26,7 @@ hash = "a9029472f7a7435e2f54c4827589a0dabca28e522fb1fa6257a814cdf83d64f1"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "d1e42e03dd5483caf66ceffc69878c069d8b2973f11369decab3ffadd7b1dc87"
+hash = "058fec8b84839c7f12a71fec7182718bf24562425d2897fd5cface1c45abd417"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/cave_frogs.snbt"
@@ -66,7 +66,7 @@ hash = "d7dd511fa89cc9066374f537d8e9259d6caff8fe7db0a0a04db3af393100e0a4"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "52ba6d0f4f08c485b4a11061ae2c42a5e34b8b8d80ece693d975ab5cdbc16d65"
+hash = "326f81deeeb295e921e2051d91a45b721f5edbc119f61e40a21bd3d7e23903b6"
 
 [[files]]
 file = "config/productivefrogs-common.toml"
@@ -117,6 +117,10 @@ file = "kubejs/data/productivefrogs/neoforge/biome_modifier/add_void_slime_spawn
 hash = "99b969132018e9da1071065a8593ba9564928b1ed0aa5ae3ab45f9dac071f7d5"
 
 [[files]]
+file = "kubejs/data/productivefrogs/tags/item/spawnery_primer/bog.json"
+hash = "11dddcff2417ae79c580faef451fa0b4cefa9997777a3cb5a4442800e0f036eb"
+
+[[files]]
 file = "kubejs/data/productivefrogs/tags/item/spawnery_primer/cave.json"
 hash = "f7004bc086b9c1d15c7b12d8920d29e82711d71a2943e01e2215601a7eb745bb"
 
@@ -131,6 +135,10 @@ hash = "7b229ff45dfddb7a42fc5d7bd6cb33bdca7b2b3edd6dabc721ad79d321eeeb54"
 [[files]]
 file = "kubejs/server_scripts/anti.js"
 hash = "6abf6ad5b3630206acadfa47d12ecfa68eaaf3b42d1f383f014f008815f0ea66"
+
+[[files]]
+file = "kubejs/server_scripts/bog_slime_chain.js"
+hash = "9a9587102174fd09c3d924a90d7f4b2d636b86f395f7556f6bcedd73d8db343e"
 
 [[files]]
 file = "kubejs/server_scripts/cave_slime_chain.js"
