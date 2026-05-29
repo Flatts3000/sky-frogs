@@ -96,7 +96,7 @@
 			}]
 			tasks: [{
 				id: "6ECA15000000000C"
-				item: { components: { "productivefrogs:slime_variant": "productivefrogs:steel" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				item: { count: 1, id: "mekanism:ingot_steel" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -217,7 +217,7 @@
 			}]
 			tasks: [{
 				id: "6ECA150000000012"
-				item: { components: { "minecraft:bucket_entity_data": { Category: "CAVE", Variant: "productivefrogs:steel" } }, count: 1, id: "productivefrogs:slime_bucket" }
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:steel" }, count: 1, id: "productivefrogs:configurable_froglight" }
 				type: "item"
 			}]
 			x: 1.5d

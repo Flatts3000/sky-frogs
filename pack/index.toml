@@ -42,7 +42,7 @@ hash = "bfe9dee498742980f71edfb4c85e2ed18d11393a0f025183a065128ed076465a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/mekanism.snbt"
-hash = "dcb41f7f928324a69338f9a05e1853c847d6496d7c8f6d8a970fb2701ff12e6f"
+hash = "85aea53fc5f1e2a160a06860db92b5d33274aa7b1a71850747df62d7e912e830"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_bog.snbt"
@@ -74,7 +74,7 @@ hash = "d7dd511fa89cc9066374f537d8e9259d6caff8fe7db0a0a04db3af393100e0a4"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "eaf70f3f003ef4fe014124c80f8ef8ac7311f9942637d713a592f571e291873b"
+hash = "dbf58d210993581617dd01cb618224713ee684c08d6b7be6d242a3ab800c18c2"
 
 [[files]]
 file = "config/productivefrogs-common.toml"
