@@ -117,14 +117,6 @@ file = "kubejs/data/productivefrogs/neoforge/biome_modifier/add_void_slime_spawn
 hash = "99b969132018e9da1071065a8593ba9564928b1ed0aa5ae3ab45f9dac071f7d5"
 
 [[files]]
-file = "kubejs/data/productivefrogs/productivefrogs/slime_variant/plastic.json"
-hash = "2c70235e85e1335257b58f692dceb35dd8a20431c53169d8e2bf84fec1b09d17"
-
-[[files]]
-file = "kubejs/data/productivefrogs/recipe/configurable_froglight_plastic.json"
-hash = "d0b8f45296ae06072b9f802e4227974cd1bcc8137413111b8a55f525554e5ddf"
-
-[[files]]
 file = "kubejs/data/productivefrogs/tags/item/spawnery_primer/bog.json"
 hash = "11dddcff2417ae79c580faef451fa0b4cefa9997777a3cb5a4442800e0f036eb"
 
@@ -146,7 +138,7 @@ hash = "6abf6ad5b3630206acadfa47d12ecfa68eaaf3b42d1f383f014f008815f0ea66"
 
 [[files]]
 file = "kubejs/server_scripts/bog_slime_chain.js"
-hash = "fd89441b628899599c84562894fef207ca3aa965f94713e2abbec82a2e9caace"
+hash = "4898078fc49207f39676597d228c5138b77847e655f9ad14676d56b54d5ae60c"
 
 [[files]]
 file = "kubejs/server_scripts/cave_slime_chain.js"
