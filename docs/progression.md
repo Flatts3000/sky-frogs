@@ -113,7 +113,7 @@ Estimated playtime: **3–5 hours**.
 
 - Bog Frogs + Bog Slimes (from the crafted Bog seed-chain, bridged off diamond Slime Milk).
 - Infuse → Dirt → Mud → Clay_ball → Moss → Mycelium → Lily_pad → Leather → Feather → Plastic → Pink_slime Slimes. The last two (plastic, pink_slime) are Industrial Foregoing items; IF is a hard pack dependency.
-- **New verb:** Industrial Foregoing (the `industrial_foregoing.snbt` chapter). Plastic is hard-gated behind the Bog plastic-frog; the machine climb runs Pity Machine Frame -> Fluid Extractor (latex) -> **Dissolution Chamber**, with an optional Plant Gatherer + Sludge Refiner branch. The Dissolution Chamber is the **pack's slime engine**: Cave/Geode/Bog ship today as resource-threaded chamber recipes alongside the existing crafting tables (iron bootstraps off bone meal), and Tier 4+ rows land as those tiers ship.
+- **New verb:** Industrial Foregoing (the `industrial_foregoing.snbt` chapter). Plastic is hard-gated behind the Bog plastic-frog; the machine climb runs Pity Machine Frame -> Fluid Extractor (latex) -> **Dissolution Chamber**, with an optional Item Collector (Just Dire Things) + Exchanging Gadget (Building Gadgets 2) showcase. The Dissolution Chamber is the **pack's slime engine**: Cave/Geode/Bog ship today as resource-threaded chamber recipes alongside the existing crafting tables (iron bootstraps off bone meal), and Tier 4+ rows land as those tiers ship.
 - **Gate to Tier 4:** craft the Tide starter kit; the Tide gateway will depend on the Dissolution Chamber capstone the way Bog's gateway depends on the Mekanism capstone. *(Tier 4-6 unbuilt.)*
 
 Estimated playtime: **3–5 hours**.

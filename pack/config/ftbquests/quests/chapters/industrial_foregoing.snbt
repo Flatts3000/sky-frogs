@@ -115,7 +115,7 @@
 		{
 			dependencies: ["1F00000000000008"]
 			icon: {
-				id: "industrialforegoing:plant_gatherer"
+				id: "justdirethings:itemcollector"
 			}
 			id: "1F0000000000000E"
 			optional: true
@@ -126,16 +126,16 @@
 			}]
 			tasks: [{
 				id: "1F0000000000000F"
-				item: { count: 1, id: "industrialforegoing:plant_gatherer" }
+				item: { count: 1, id: "justdirethings:itemcollector" }
 				type: "item"
 			}]
 			x: 1.5d
 			y: 3.0d
 		}
 		{
-			dependencies: ["1F0000000000000E"]
+			dependencies: ["1F00000000000008"]
 			icon: {
-				id: "industrialforegoing:sludge_refiner"
+				id: "buildinggadgets2:gadget_exchanging"
 			}
 			id: "1F00000000000011"
 			optional: true
@@ -146,7 +146,7 @@
 			}]
 			tasks: [{
 				id: "1F00000000000012"
-				item: { count: 1, id: "industrialforegoing:sludge_refiner" }
+				item: { count: 1, id: "buildinggadgets2:gadget_exchanging" }
 				type: "item"
 			}]
 			x: 1.5d

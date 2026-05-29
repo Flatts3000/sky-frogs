@@ -40,17 +40,17 @@
 	]
 	quest.1F0000000000000B.title: "Industrial Foregoing, Online"
 	quest.1F0000000000000E.quest_desc: [
-		"A &ePlant Gatherer&r chops a fenced grove on a loop - logs for your latex, plus a trickle of &fSludge&r as a byproduct."
+		"An &eItem Collector&r vacuums up dropped items in a radius - Froglights, slimeballs, anything that hits the floor."
 		""
-		"Pair it with a &ePlant Sower&r to replant, and your latex supply never runs dry."
+		"Sink one into your habitat floor and stop chasing &bFroglights&r around. Just Dire Things has plenty more where this came from."
 	]
-	quest.1F0000000000000E.title: "Let the Trees Run"
+	quest.1F0000000000000E.title: "Item Collector"
 	quest.1F00000000000011.quest_desc: [
-		"Don't throw the &fSludge&r away. A &eSludge Refiner&r churns it back into &fearth&r - dirt, sand, clay, gravel, the organic odds and ends a skyblock always wants more of."
+		"The &eExchanging Gadget&r swaps one block for another in place - a clean way to refurbish your habitat or re-skin the platform without tearing it apart."
 		""
-		"The Bog's whole promise, automated."
+		"Pairs with the &bBuilding Gadget&r Mekanism gave you back at the Enrichment Chamber."
 	]
-	quest.1F00000000000011.title: "Sludge into Soil"
+	quest.1F00000000000011.title: "Exchanging Gadget"
 	quest.01A8E068925B319F.quest_desc: [
 		"You're stranded on a speck of dirt in the void. No ore, no mineshafts, not so much as a mountain to feel bad about."
 		""
@@ -576,7 +576,7 @@
 		""
 		"The swamp is open. Every organic the bog has is a frog away now."
 	]
-	quest.70B000000000000B.title: "First Dirt"
+	quest.70B000000000000B.title: "Dirt"
 	quest.7B06000000000002.quest_desc: [
 		"The Bog frog eats more than dirt. Each new resource threads off the &elast one's Slime Milk&r - mud from dirt, clay from mud, on down the swamp."
 		""

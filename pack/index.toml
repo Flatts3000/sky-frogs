@@ -42,7 +42,7 @@ hash = "0703ce17c26e144e0597910de3a0cbcd6f410141bf159e2e5791da8c0cc4aaab"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/industrial_foregoing.snbt"
-hash = "8625e92656929a82b457e2df64d562d52ac13e3ce035ad23a87959244c8cff50"
+hash = "60017e0bc7bbc29f7c5feb519a2fe490a10ffa06b601627a7f3002e03df5b440"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/mekanism.snbt"
@@ -78,7 +78,7 @@ hash = "d7dd511fa89cc9066374f537d8e9259d6caff8fe7db0a0a04db3af393100e0a4"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "3afabc7b19fb532cb71208b797775bb412236f077508e13f934faa91fffbc099"
+hash = "6b97323e24880f3043d2b847555697c2e60e330d8458da713c0a2bda92ee6bfe"
 
 [[files]]
 file = "config/productivefrogs-common.toml"
@@ -409,6 +409,11 @@ metafile = true
 [[files]]
 file = "mods/jei.pw.toml"
 hash = "d068154533d9a999acbb4008f7c33d307b583d2e6db7122a69fc02921ffdb411"
+metafile = true
+
+[[files]]
+file = "mods/just-dire-things.pw.toml"
+hash = "fd6d935a0145a7992c3ba365c66f655c65587c9c812db55adab264144e11ce3f"
 metafile = true
 
 [[files]]
