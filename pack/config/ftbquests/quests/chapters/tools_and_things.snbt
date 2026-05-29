@@ -12,7 +12,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["70B000000000000B"]
+			dependencies: ["7B0600000000000E"]
 			icon: {
 				id: "justdirethings:gooblock_tier1"
 			}
