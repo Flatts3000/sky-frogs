@@ -1,38 +1,85 @@
 // Sky Frogs - Dissolution Chamber slime recipes (the Bog / Industrial Foregoing verb).
 //
-// STATUS: DISABLED 2026-05-29, pending a design call. See the BLOCKER below.
+// The chamber is the slime engine for Tier 4 (Tide) and beyond. Each per-variant recipe
+// threads off a PRIOR vanilla resource, mirroring the Cave/Geode/Bog crafting-table seed
+// chains, just transposed into the IF machine:
 //
-// Intent: once you've built the Dissolution Chamber (gated at end-of-Bog by plastic), it
-// becomes the machine that makes slimes - bulk-making any unlocked Cave/Geode/Bog variant,
-// and (from Tier 4 on) bootstrapping each new tier's slimes.
+//   fluid:  100 mb industrialforegoing:latex   (tap it from logs with a Fluid Extractor)
+//   items:  1x prior resource                   (the previous TIER's last resource for the
+//                                                 FIRST variant in a tier; the previous
+//                                                 VARIANT's resource for each step after)
+//           4x tier filler block
+//           3x productivefrogs:sweetslime
+//   -> 1x   that variant's Slime in a Bucket    (stamped Variant + Category)
 //
-// BLOCKER (confirmed from the IF 3.6.38 + Titanium 4.0.43 jars and a client crash report):
-//   IF recipes sync to the client through Titanium's CodecRecipeSerializer, which round-trips
-//   the WHOLE recipe as JSON (FriendlyByteBuf.write/readJsonWithCodec, re-encoding server-side).
-//   A per-variant recipe MUST match the milk bucket by its slime_variant COMPONENT - every
-//   variant shares one item id (slime_milk_bucket) and one variant-agnostic milk fluid - i.e.
-//   a `neoforge:components` ingredient. That ingredient's `items` HolderSet does NOT survive
-//   IF's JSON round-trip: the server encodes `items` as a bare string, the client decode
-//   demands a json array, and clientbound/minecraft:update_recipes throws a DecoderException
-//   so the world won't load. (Mekanism's BINARY stream codec round-trips the same ingredient
-//   fine - that's why steel_slime_infusing.js works - but IF's JSON path does not, and the
-//   re-encode is server-side, so no recipe-JSON form fixes it.)
+// Resource-keyed (NOT milk-keyed): the variant's smelted resource is a distinct vanilla
+// item id, so it round-trips through IF/Titanium's JSON recipe codec fine. A milk-keyed
+// recipe would need a neoforge:components ingredient, which IF can't network-sync (PF
+// declined adding a per-variant component-free handle - see PF issue #127 - so the
+// chamber operates on the froglight -> resource production loop instead). The output
+// slime bucket carries its Variant + Category components via ItemStack.CODEC, which
+// handles JSON components broadly; that's the one round-trip to keep an eye on when
+// the first Tier 4 row lands.
 //
-// Net: IF dissolution inputs can only be vanilla item/tag ingredients, which can't select a
-// PF variant by component. Resolution: deferred pending a Productive Frogs feature that exposes
-// a distinct-per-variant item handle (so a non-component recipe can pick a variant) - tracked
-// at Flatts3000/productive-frogs#127. Re-enable these recipes once PF ships it. The
-// tier/variant/filler data is parked here for that.
+// Tier 1-3 (Cave/Geode/Bog) stay on their crafting-table seed-chains (cave_slime_chain.js
+// / geode_slime_chain.js / bog_slime_chain.js); retrofitting them to chamber-only would
+// be a wash (spend an iron ingot to make an iron slime) and they're already shipped.
+// The chamber rule starts at Tier 4 - exactly when the player has just earned it by
+// clearing Bog.
 
-// [Category stamp, tier filler block, [variants...]]
+// [Category stamp, tier filler block, [[variant, prior-resource], ...]]
+//
+// The FIRST variant in a tier consumes the PRIOR TIER'S LAST resource (Bog ends at
+// productivefrogs:pink_slime, so Tide's first variant takes pink_slime). Each subsequent
+// row consumes the variant ABOVE it in the list. Order within a tier is the progression
+// order, the same way Cave's chain is iron -> copper -> gold -> coal -> redstone.
+//
+// No rows yet - design pending per tier:
 const SLIME_TIERS = [
-  ['CAVE', 'minecraft:stone', ['iron', 'copper', 'gold', 'coal', 'redstone']],
-  ['GEODE', 'minecraft:gravel', ['lapis', 'tuff', 'calcite', 'amethyst', 'emerald', 'diamond']],
-  ['BOG', 'minecraft:mossy_cobblestone', ['dirt', 'mud', 'clay_ball', 'moss', 'mycelium', 'lily_pad', 'leather', 'feather', 'plastic', 'pink_slime']]
+  // ['TIDE', 'minecraft:<filler>', [
+  //   ['<first-variant>', 'industrialforegoing:pink_slime'],
+  //   ['<next-variant>',  'minecraft:<first-variant-resource>'],
+  //   ...
+  // ]],
+  // ['INFERNAL', 'minecraft:<filler>', [...]],
+  // ['VOID', 'minecraft:<filler>', [...]],
 ]
 
 ServerEvents.recipes(event => {
-  // Disabled: see BLOCKER above. Registering nothing keeps update_recipes decodable so the
-  // world loads; the IF chapter is unaffected. Re-enable once the approach is settled.
-  return
+  if (!Platform.isLoaded('industrialforegoing')) {
+    return
+  }
+
+  SLIME_TIERS.forEach(tier => {
+    const category = tier[0]
+    const filler = tier[1]
+    const rows = tier[2]
+
+    rows.forEach(row => {
+      const variant = row[0]
+      const priorResource = row[1]
+      const v = `productivefrogs:${variant}`
+
+      event.custom({
+        type: 'industrialforegoing:dissolution_chamber',
+        input: [
+          { item: priorResource },
+          { item: filler },
+          { item: filler },
+          { item: filler },
+          { item: filler },
+          { item: 'productivefrogs:sweetslime' },
+          { item: 'productivefrogs:sweetslime' },
+          { item: 'productivefrogs:sweetslime' }
+        ],
+        inputFluid: { fluid: 'industrialforegoing:latex', amount: 100 },
+        output: {
+          id: 'productivefrogs:slime_bucket',
+          count: 1,
+          components: { 'minecraft:bucket_entity_data': { Variant: v, Category: category } }
+        },
+        processingTime: 200
+      }).id(`kubejs:dissolution_slime/${variant}`)
+    })
+  })
 })

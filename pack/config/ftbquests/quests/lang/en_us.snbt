@@ -30,9 +30,11 @@
 	]
 	quest.1F00000000000008.title: "The Dissolution Chamber"
 	quest.1F0000000000000B.quest_desc: [
-		"You've built the heart of Industrial Foregoing. Fed power and &flatex&r, the &eDissolution Chamber&r is the Bog tier's capstone machine - and the groundwork for automating slime production as the pack grows."
+		"You've built the heart of Industrial Foregoing. Fed power and &flatex&r, the &eDissolution Chamber&r is the Bog tier's capstone machine."
 		""
-		"Claim your reward; the Industrial Foregoing line is complete."
+		"Going forward, this is where new tiers' slimes come from. From &eTier 4 (Tide)&r on, each variant's &bSlime in a Bucket&r is crafted here, threading off the previous tier's last resource - the same chain shape as your crafting-table chains today, just in the machine."
+		""
+		"Claim your reward."
 	]
 	quest.1F0000000000000B.title: "Industrial Foregoing, Online"
 	quest.1F0000000000000E.quest_desc: [
