@@ -482,4 +482,58 @@
 	task.65F6A1B2C3D40002.title: "Got it"
 	task.6C1F0A2B3D4E5F62.title: "Build an enclosed habitat"
 	task.7CA7E000C0DE0003.title: "Got it"
+	chapter.70B0000000000001.title: "Road to Bog"
+	chapter.7B06000000000001.title: "Bog Frogs"
+	quest.70B0000000000002.quest_desc: [
+		"Cave gave you ore, Geode gave you gems and machines - the swamp gives you &aearth itself&r. But a Bog frog won't hatch from just anything."
+		""
+		"Run a &bdiamond&r through the &eEnrichment Chamber&r into &dEnriched Diamond&r, then prime the Spawnery with it. Out comes a &2Bog Frogspawn&r bottle - so crossing into Bog takes the diamond &oand&r the automation to enrich it."
+	]
+	quest.70B0000000000002.title: "The Road to Bog"
+	quest.70B0000000000005.quest_desc: ["Craft a &2Dirt Slime in a Bucket&r from a bucket of &bdiamond Slime Milk&r - plus four stone, three sweetslime, and your Bog frogspawn bottle. The swamp threads straight off the Geode's last resource."]
+	quest.70B0000000000005.title: "A Dirt Slime in a Bucket"
+	quest.70B0000000000008.quest_desc: ["Run the Dirt Slime through the &eSlime Milker&r for a bucket of &2Dirt Slime Milk&r. Pour it out and Dirt Slimes start spawning on their own."]
+	quest.70B0000000000008.title: "A Bucket of Dirt Slime Milk"
+	quest.70B000000000000B.quest_desc: [
+		"Feed Dirt Slimes to your Bog Frog, smelt the Froglight, and pocket your first &6dirt&r - renewable land, no composting barrel required."
+		""
+		"The swamp is open. Every organic the bog has is a frog away now."
+	]
+	quest.70B000000000000B.title: "First Dirt"
+	quest.7B06000000000002.quest_desc: [
+		"The Bog frog eats more than dirt. Each new resource threads off the &elast one's Slime Milk&r - mud from dirt, clay from mud, on down the swamp."
+		""
+		"The loop never changes: prior milk + four stone + three sweetslime + a Bog frogspawn -> the next Slime in a Bucket. Milk it, feed the frog, smelt the Froglight."
+	]
+	quest.7B06000000000002.title: "Beyond Dirt"
+	quest.7B06000000000005.quest_desc: ["A &2Mud Slime&r off your &edirt milk&r. Bring back &6mud&r - the soft floor your Froglight collectors drop through."]
+	quest.7B06000000000005.title: "Mud"
+	quest.7B06000000000008.quest_desc: [
+		"&bClay&r from your &emud milk&r - terracotta, bricks, concrete, and Botany Pot soil all start here."
+		""
+		"Clay compacts, so here's a &9Compacting Drawer&r to stack it."
+	]
+	quest.7B06000000000008.title: "Clay"
+	quest.7B0600000000000B.quest_desc: ["&aMoss&r from your &eclay milk&r - bonemeal-spreadable ground cover, and a little green in the void."]
+	quest.7B0600000000000B.title: "Moss"
+	quest.7B0600000000000E.quest_desc: ["&dMycelium&r from your &emoss milk&r - the fungal mat that grows mushrooms without light."]
+	quest.7B0600000000000E.title: "Mycelium"
+	quest.7B06000000000011.quest_desc: ["&2Lily Pads&r from your &emycelium milk&r - the swamp's surface, and a step toward open water."]
+	quest.7B06000000000011.title: "Lily Pad"
+	quest.7B06000000000014.quest_desc: ["The swamp's animals leave a trace: &6leather&r from your &elily pad milk&r. Books, armor, frames - no cows required."]
+	quest.7B06000000000014.title: "Leather"
+	quest.7B06000000000017.quest_desc: ["&fFeathers&r from your &eleather milk&r - arrows, and the light touch a void island can't otherwise get."]
+	quest.7B06000000000017.title: "Feather"
+	quest.7B0600000000001A.quest_desc: [
+		"The swamp turns synthetic. &fPlastic&r from your &efeather milk&r - and since the &cnormal latex recipe is gone&r, this frog is now the &lonly&r source of plastic in the pack."
+		""
+		"Plastic is the key to &eIndustrial Foregoing&r - most of its machines need it - so the bog just became mandatory tech."
+	]
+	quest.7B0600000000001A.title: "Plastic"
+	quest.7B0600000000001D.quest_desc: [
+		"The apex of the swamp: &dPink Slime&r from your &eplastic milk&r - Industrial Foregoing's living synthetic."
+		""
+		"You've arrived. Take a full set of machine tuning - &bSpeed&r, &aEfficiency&r, and &eProcessing&r addons (tier 2) - and put your IF line into overdrive."
+	]
+	quest.7B0600000000001D.title: "Pink Slime"
 }
