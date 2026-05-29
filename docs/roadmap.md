@@ -6,60 +6,59 @@ The path from "pack scaffold boots in a launcher" to "Sky Frogs v1.0 lives on Cu
 
 ## Where we are right now
 
-Pack version `0.0.4`. The scaffold boots in the CurseForge launcher with the FTB utility stack, JEI, Jade, and the Tier 0 substrate mods (Skyblock Builder, Ex Deorum, Forgiving Void). Productive Frogs v1.0.1 is integrated from CurseForge. No KubeJS overrides yet, and no quests yet.
+The scaffold boots in the CurseForge launcher with the FTB utility stack, JEI, Jade, and the Tier 0 substrate mods (Skyblock Builder, Ex Deorum, Forgiving Void). Productive Frogs v1.6.0 is integrated from CurseForge. The frog loop is built and merged: ~10 KubeJS override scripts (anti.js, first_join.js, the per-tier slime chains, the slime-bucket bootstraps, storage_quartz_free.js, if_plastic_gate.js, log_recipes.js) and 10 quest chapters spanning Tiers 0-3. The mod set has grown well past the Tier 0 substrate: Mekanism (+ Generators + Tools), Industrial Foregoing (+ IF Souls), cobblegen-galore, All The Ores, and Sophisticated Storage all ship now.
 
-The pack currently loads into a void world with a starter island — but every recipe is vanilla and nothing has been tuned for skyblock progression.
+Tiers 0 through 3 (Welcome -> Cave -> Geode -> Bog) are playable end to end. The next frontier is Tier 4 (Tide); Infernal and Void are unbuilt.
 
 ## Phases at a glance
 
 | Phase | Target | What it unlocks |
 |-------|--------|-----------------|
 | **0. Foundation** ✅ | Repo + scaffold + decisions | A buildable pack and a public GitHub repo |
-| **1. Tier 0 playable** | `0.0.x` pre-alpha | Bootstrap loop: cobble gen + dark-room slime farm → iron |
-| **2. First Iron Froglight** | `0.1.0` alpha | Productive Frogs integrated; Tier 1 reachable |
-| **3. Mid-tier alpha** | `0.2.0` → `0.5.0` | Tiers 2 through 5 each get a chapter and slime variants |
-| **4. Feature-complete** | `0.6.0` → `0.9.0` | Tier 6 + Void endgame + per-mod side chapters |
+| **1. Tier 0 playable** ✅ | `0.0.x` pre-alpha | Bootstrap loop: cobble gen + dark-room cave_slime farm → iron |
+| **2. First Iron Froglight** ✅ | `0.1.0` alpha | Productive Frogs integrated; Tier 1 (Cave) reachable |
+| **3. Mid-tier alpha** (substantially done) | `0.2.0` → `0.5.0` | Tier 2 (Geode) and Tier 3 (Bog) built; Tier 4 (Tide) is the next frontier |
+| **4. Feature-complete** | `0.6.0` → `0.9.0` | Infernal + Void endgame + per-mod side chapters |
 | **5. v1.0 launch** | `1.0.0` | Polish, balance pass, branding assets, CF page live |
 | **6. Maintenance** | `1.x.y` | Mod updates, content additions, hotfixes |
 
-## Phase 1 — Tier 0 playable (current phase)
+## Phase 1 — Tier 0 playable ✅
 
 **Goal:** a fresh world is playable to first iron ingot without crashes or dead ends. No frogs yet — just the bootstrap loop.
 
 **Blockers:**
-- Category-typed Bog frog egg must exist as a PF item (so it can be a quest reward). PF v1.0.1 ships `productivefrogs:bog_frog_egg` (a placeable block that hatches a Bog tadpole, no priming step), so this is satisfied.
+- Category-typed frog egg must exist as a PF item (so it can be a quest reward). PF ships placeable frog eggs that hatch a tadpole with no priming step, so this is satisfied.
 
 **Deliverables:**
-- [ ] **First-join inventory grant** implemented in `pack/kubejs/server_scripts/first_join.js` (KubeJS `PlayerEvents.loggedIn` with a persistent-data first-join guard): 2-3× oak sapling, 1× water bucket, 1× lava bucket, ~16× cooked beef. FTB Quests book auto-opens.
-- [ ] **`anti.js`** KubeJS file — disables Ex Deorum sieves + meshes (per [`docs/kubejs_overrides.md`](./kubejs_overrides.md) Pillar 1). No tech-mod disables yet; scaffolds Phase 3+.
-- [ ] **Swamp-biome island** — force the SkyblockBuilder starter island to `minecraft:swamp` so PF's shipped bog_slime spawning fires in a dark room. No pack-side spawn override or biome modifier needed; PF v1.0.0 already ships bog_slime spawning for swamps (verified, see [`kubejs_overrides.md`](./kubejs_overrides.md) Pillar 2). Sanity-test spawn rate in a dark 5×5×3 room.
-- [ ] **Welcome quest chapter** (`welcome.snbt`) in FTB Quests: ~18 quests per [`docs/quest_book.md`](./quest_book.md) spine, including the cooldown-repeatable "Replacement Frog egg" emergency quest.
-- [ ] **Pack version bump** to `0.0.5` (next after the 0.0.4 design-pivot reset). Reimport and verify a fresh-world player reaches their first Iron Configurable Froglight in ~30-60 min following only the questbook.
+- [x] **First-join inventory grant** implemented in `pack/kubejs/server_scripts/first_join.js` (KubeJS `PlayerEvents.loggedIn` with a persistent-data first-join guard): saplings, water bucket, lava bucket, cooked food. FTB Quests book auto-opens.
+- [x] **`anti.js`** KubeJS file - disables Ex Deorum sieves + meshes (per [`docs/kubejs_overrides.md`](./kubejs_overrides.md) Pillar 1), plus the Mekanism Digital Miner now that tech mods ship.
+- [x] **Cave-slime starter island** - the SkyblockBuilder starter island is forced to `minecraft:swamp` and a pack biome modifier (`add_cave_slime_island.json`) adds `productivefrogs:cave_slime` to it. Cave is Tier 1, so cave_slime (not bog_slime) is the bootstrap parent. All 6 PF default slime spawns are disabled; the pack owns spawning.
+- [x] **Welcome quest chapter** (`welcome.snbt`) in FTB Quests, including the cooldown-repeatable replacement-frog emergency quest.
 
 **You drive:**
 - Confirm the first-join grant final list (saplings count, food type/amount).
-- Confirm the slime spawn rate feels right after first playtest.
+- Confirm the cave_slime spawn rate feels right after first playtest.
 - Confirm the Welcome quest spine reads well in-game.
 
 **I drive:**
 - Write the KubeJS scripts (`first_join.js`, `anti.js`).
-- Force the starter island to the `minecraft:swamp` biome (SkyblockBuilder template / config), then verify PF's shipped bog_slime spawning fires in a dark room.
+- Force the starter island to `minecraft:swamp` and add cave_slime via the biome modifier, then verify spawns in a dark room.
 - Write the FTB Quests `welcome.snbt` SNBT.
 - Document the Ex Deorum barrel water-collection mechanic specifics during implementation.
 
-## Phase 2 — First Iron Froglight (v0.1 alpha)
+## Phase 2 — First Iron Froglight (v0.1 alpha) ✅
 
 **Goal:** a player can follow the questbook from spawn to producing their first Iron Configurable Froglight. The pack's core loop is provable.
 
 **Blockers:**
-- ✅ **Productive Frogs on CurseForge** (resolved 2026-05-25) — PF published as v1.0.1 for 1.21.1 / NeoForge and added to the pack via `packwiz cf add`. This was the v0.1 release gate.
+- ✅ **Productive Frogs on CurseForge** (resolved 2026-05-25) - PF published for 1.21.1 / NeoForge and added to the pack via `packwiz cf add`. This was the v0.1 release gate.
 
 **Deliverables:**
-- [x] Productive Frogs added via `packwiz cf add productive-frogs` (pinned at v1.0.1).
-- [ ] **Pillar 2 parent species** ([`docs/kubejs_overrides.md`](./kubejs_overrides.md)) — the Bog parent needs no spawn override (PF ships bog_slime spawning for the swamp island). The other four parents (cave/geode/tide/void) are distributed via quest-reward spawn eggs in their tier chapters.
-- [ ] **KubeJS Pillar 4** — first recipe override to force frog ingredients in the metal smelting path (or accept the unmodified path for alpha).
-- [ ] **First slime variant JSONs** for vanilla metallics (iron, copper, gold). Drop directly in `pack/kubejs/data/skyfrogs/productivefrogs/slime_variant/`.
-- [ ] **Tier 1 quest chapter** ("Bog Mastery") in FTB Quests. ~15-20 quests walking from breeding to milking to first ingot.
+- [x] Productive Frogs added via `packwiz cf add productive-frogs` (now pinned at v1.6.0).
+- [x] **Pillar 2 parent species** ([`docs/kubejs_overrides.md`](./kubejs_overrides.md)) - the Cave parent (Tier 1) spawns on the starter island via the `add_cave_slime_island.json` biome modifier; the other parents are distributed via quest-reward frogspawn bottles in their tier chapters.
+- [x] **KubeJS recipe overrides** - `your_first_iron_ingot.snbt` plus `iron_slime_bucket.js` thread the first frog ingredients into the metal path; the pack-wide froglight-check principle (quests detect the variant Froglight, not the smelted resource) lands here too.
+- [x] **First slime variants** for the vanilla metallics, threaded through the Cave slime chain (`cave_slime_chain.js`: iron -> copper -> gold -> coal -> redstone).
+- [x] **Tier 1 (Cave) quest chapters** in FTB Quests: `your_first_iron_ingot.snbt`, `scaling_the_colony.snbt`, `cave_frogs.snbt`, `storage_and_crafting.snbt`. The Cave verb is crafting upgrades / storage (Sophisticated + Functional, quartz-free networks via `storage_quartz_free.js`).
 - [ ] **CurseForge project claimed** and submitted for approval. Allow 1-3 business days.
 - [ ] **CHANGELOG `[Unreleased]` rolled into `[v0.1.0]`** with date.
 - [ ] Tag `v0.1.0`, push, upload zip to CF.
@@ -77,14 +76,17 @@ The pack currently loads into a void world with a starter island — but every r
 
 ## Phase 3 — Mid-tier alpha (v0.2 → v0.5)
 
-**Goal:** Tiers 2 through 5 each become playable, one per minor release.
+**Goal:** the mid-tiers each become playable, one per minor release. Each tier layers ONE new verb onto the frog loop (anti-repetition).
 
-| Version | Tier | Category | New mods needed                                  |
-|---------|------|----------|--------------------------------------------------|
-| `v0.2`  | 2    | Cave     | (Optional) Mekanism for modded variants          |
-| `v0.3`  | 3    | Geode    | (Optional) AE2 for certus quartz variant         |
-| `v0.4`  | 4    | Tide     | (Optional) Industrial Foregoing for pink slime   |
-| `v0.5`  | 5    | Infernal | Portal kit mod for Nether access; Productive Metalworks for nether-themed metals |
+| Version | Tier | Category | Verb + mods                                      | Status |
+|---------|------|----------|--------------------------------------------------|--------|
+| `v0.1`  | 1    | Cave     | Crafting upgrades / storage (Sophisticated + Functional, quartz-free) | ✅ done |
+| `v0.2`  | 2    | Geode    | Automation (Mekanism + Generators + Tools)       | ✅ done |
+| `v0.3`  | 3    | Bog      | Industrial Foregoing (plastic hard-gated behind the Bog plastic-frog; pink-slime capstone) | ✅ done |
+| `v0.4`  | 4    | Tide     | (next frontier - verb TBD)                        | not started |
+| `v0.5`  | 5    | Infernal | Refined Storage (earmarked); Nether access        | not started |
+
+Note: the built tier order is Cave=Tier 1 (the starter), Geode=Tier 2, Bog=Tier 3. Per-tier slime-chain filler blocks: Cave = stone, Geode = gravel, Bog = mossy cobblestone.
 
 **Per-tier deliverables (repeat for each):**
 - [ ] Quest chapter authored in FTB Quests.
@@ -156,7 +158,7 @@ The pack currently loads into a void world with a starter island — but every r
 
 ## Top risks (track in `docs/backlog.md`)
 
-1. **Productive Frogs V1 might not be feature-complete** by v0.1 target. Slime Milker is the load-bearing block for Tier 1 scale-up; without it, players are stuck at one Iron Froglight per ~10 minutes. v0.1 gates on Slime Milker landing in PF V1.
+1. ~~**Productive Frogs V1 might not be feature-complete** by v0.1 target. Slime Milker is the load-bearing block for Tier 1 scale-up.~~ RESOLVED: PF 1.5.3 shipped the Slime Milker (with JEI pages), so the scale-up beat is unblocked.
 2. **Skyblock Builder / Ex Deorum staying on 1.21.1.** If either mod dies and we need to migrate MC versions, the entire bootstrap design needs rework. Track those mods' release activity.
 3. **CurseForge approval delay** on first project submission. CF is our sole channel; an approval delay = no launch. Submit the empty CF project as soon as you're ready to claim the slug, well before v0.1.
 4. **License compatibility** — one or two bundled mods might require explicit author permission to redistribute in a pack. Audit before v0.1.
@@ -165,10 +167,7 @@ The pack currently loads into a void world with a starter island — but every r
 
 (In rough order. Each one is a question for you when we hit it.)
 
-- **First-join inventory grant contents** (Phase 1).
-- **Slime farm spawn-rate tuning** (Phase 1). Target: a dark room yields enough slimes in ~30 min to bootstrap a Bog breeding pair.
-- **First-launch frog source** (Phase 2) — inventory grant egg vs. quest reward.
-- **Mekanism in v0.2 or wait?** Decision on tech mods per tier.
+- **Tier 4 (Tide) verb** - which new verb does Tide layer onto the frog loop? (Cave=storage, Geode=automation, Bog=IF; Tide is open.)
 - **Endgame trophy** — KubeJS item vs. resourcepack-overridden item (Phase 4).
 - **Custom panorama / main menu** for v0.1 or defer to v1.0.
 

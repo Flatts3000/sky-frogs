@@ -28,15 +28,15 @@ Slime species supply the variety inside each tier — adding a new modded resour
 ## Design pillars
 
 - **Vanilla-feeling mechanics.** Productive Frogs leans on vanilla idioms — frogspawn, slimeballs, water bottles, lead-based mob transport. Every interaction is right-click on a block; no custom UIs.
-- **Category-based progression.** Six clear tiers (Bog / Cave / Geode / Tide / Infernal / Void) anchor the questbook in a structure that stays legible as more frog and slime variants ship.
+- **Category-based progression.** Six clear tiers (Cave / Geode / Bog / Tide / Infernal / Void) anchor the questbook in a structure that stays legible as more frog and slime variants ship.
 - **Cross-mod compat is the design center.** Drop a JSON, get a frog-eats-that-thing variant. Community PRs adding new modded resources need zero Java work.
 - **Mining shortcuts disabled by design.** Laser drills, mining lenses, digital miners, and quarry cards are recipe-stripped or hidden from JEI. The frog tree is the path; the pack enforces it.
 
 ## Status
 
-**Early development.** The repo scaffold, packwiz tree, FTB utility stack, JEI, Jade, KubeJS, and Productive Frogs v1.0.1 (from CurseForge) are in place. The first Tier 0 KubeJS scripts have landed (first-join grant, sieving disable). Remaining content (FTB Quests chapters, slime variant JSONs, the rest of the KubeJS overrides) is in progress.
+**Early development.** The packwiz tree, FTB utility stack, JEI, Jade, KubeJS, and Productive Frogs v1.6.0 (from CurseForge) are in place, and Tiers 0-3 (Cave, Geode, Bog) are built: 10 FTB Quests chapters, the per-tier slime seed-chains, and the supporting KubeJS overrides (Mekanism automation and Industrial Foregoing among them). Tiers 4-6 (Tide, Infernal, Void) are next.
 
-Every doc in [`docs/`](./docs/) is marked DRAFT and explicitly non-canonical. The pack is still finding its identity; design decisions are up for revision.
+Docs in [`docs/`](./docs/) describe the built Tiers 0-3 and sketch the rest (Tide / Infernal / Void); the later tiers and finer design decisions are still up for revision.
 
 ## Quick navigation
 

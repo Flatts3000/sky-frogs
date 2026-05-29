@@ -1,8 +1,8 @@
 # Mod List
 
-> **Status:** DRAFT — non-canonical. The mod choices below are exploratory candidates. Many were seeded from inspecting Sky Bees Reborn's pack; that's a data point, not a vote. Expect this list to be cut hard and reshaped before v0.1 — the question isn't "what would SBR ship?" but "what does *this* pack need to feel like itself?"
+> **Status:** PARTIAL DRAFT. The Tier 0-3 mod stack is **shipped and pinned** in `pack/mods/*.pw.toml` (Productive Frogs, Mekanism family, Industrial Foregoing family, Ex Deorum, Cobblegen Galore, ATO, the FTB/QoL utility stack). The rest of this list is still **candidate** framing for Tier 4-6 and beyond - expect it to be cut and reshaped. Entries are tagged **SHIPPED** where they're pinned in the pack today.
 
-This document captures **candidate mod categories and what they'd be for**, with potential mods per slot. Concrete version pins land in `pack.toml` once packwiz is wired up.
+This document captures both the shipped Tier 0-3 stack and the **candidate mod categories** for later tiers. Concrete version pins live in `pack/mods/*.pw.toml`.
 
 ## Selection criteria
 
@@ -20,7 +20,7 @@ Any mod that fails all three is rejected.
 
 | Mod                   | Role                                                                 | Notes                                                |
 |-----------------------|----------------------------------------------------------------------|------------------------------------------------------|
-| **Productive Frogs**  | The mod the pack is built around                                     | Published on CurseForge (1.21.1 / NeoForge). Pinned at v1.0.1 in the pack. |
+| **Productive Frogs**  | The mod the pack is built around                                     | Published on CurseForge (1.21.1 / NeoForge). Pinned at **v1.6.0** (organic Bog roster + IF plastic/pink_slime variants). |
 
 ### 2. Skyblock fundamentals
 
@@ -36,18 +36,20 @@ Each entry here directly maps to one or more PF category slime variants (see [`p
 
 | Mod                   | Resources it adds that frogs will farm                                | PF categories supplied                                |
 |-----------------------|------------------------------------------------------------------------|-------------------------------------------------------|
-| **Mekanism**          | Osmium, tin, lead, uranium, fluorite, refined glowstone               | Bog, Cave, Geode                                      |
-| **Mekanism Generators** | Renewable power infrastructure                                       | (Infrastructure, not a tier supplier itself)          |
-| **Mekanism Tools**    | Tier-specific tools using Mekanism alloys                              | Tool sink for Bog + Geode outputs                     |
-| **Immersive Engineering** | Hop graphite coke, copper, aluminum, silver, nickel, uranium      | Bog, Cave                                             |
-| **Industrial Foregoing** | Latex, pink slime, biofuel, ether gas                              | Tide (pink slime is a great Resource Slime parent)    |
+| **Mekanism** (SHIPPED) | Osmium, steel; Metallurgic Infuser + Enrichment Chamber             | **Geode-tier automation verb** (power, infuser, enrichment). Osmium is the Cave->Mekanism bootstrap (`osmium_slime_bucket.js`); steel via the infuser (`steel_slime_infusing.js`). |
+| **Mekanism Generators** (SHIPPED) | Renewable power infrastructure                            | Part of the Geode automation verb (power for the machines above) |
+| **Mekanism Tools** (SHIPPED) | Tier-specific tools using Mekanism alloys                     | Tool sink for Cave + Geode outputs                    |
+| **ATO - All the Ores** (SHIPPED) | Cross-mod ore set (osmium etc.)                                | Cave. PF's osmium `slime_variant` is gated on ATO being loaded; supplies the osmium the Mekanism bootstrap primes. |
+| **Cobblegen Galore** (SHIPPED) | Configurable block generators (cobblestone -> gravel hammer path) | Infrastructure. Source of the **Geode gravel filler** for the seed-chains (alongside Ex Deorum). |
+| **Immersive Engineering** | Hop graphite coke, copper, aluminum, silver, nickel, uranium      | Bog, Cave (candidate)                                 |
+| **Industrial Foregoing** + **Industrial Foregoing Souls** (SHIPPED) | Latex, plastic, pink slime, biofuel       | **Bog-tier verb.** Plastic is hard-gated behind the Bog plastic-frog (`if_plastic_gate.js`); pink_slime is the **Bog capstone** (`bog_slime_chain.js`), not Tide. |
 | **Powah!**            | Uraninite, niotic crystal, energizing orb resources                    | Cave, Void                                            |
 | **Ender IO**          | Vibrant alloy components, capacitors, glite                            | Void (advanced)                                       |
 | **Applied Energistics 2** + **AE2 Things** + **Advanced AE** + **ExtendedAE** + **MegaCells** + **Applied Mekanistics** + **AppliedFlux** + **ae2wtlib** + **ae2importexportcard** + **ae2jeiintegration** + **soulplied_energistics** | Storage logistics + certus quartz, fluix, sky stone | Geode (certus, fluix), Void (sky stone) |
 | **Extended Crafting** | Singularities + ultimate singularity (endgame sink)                    | Endgame                                               |
 | **Productive Metalworks** | Smeltery-line alloys                                                | Tier processing (smelting Froglights → ingots, melting alloys) |
 | **Silent Gear** + **Silent Lib** + **sgearmetalworks** | Modular tools — accepts modded mats         | Tool sink across all tiers                            |
-| **Actually Additions** | Wide grab-bag — black quartz, crystals, lens of the miner (DISABLED) | Cave, Geode; lens-of-the-miner is KubeJS-disabled     |
+| **Actually Additions** | Wide grab-bag — black quartz, crystals                                | Cave, Geode (candidate; NOT currently in the pack). The mining-shortcut disable that actually ships is the Mekanism Digital Miner in `anti.js`, not AA's lens of the miner (AA isn't pinned). |
 | **RFTools Base/Builder/Storage/Utility** | Quark, infused diamond, dimensional shards          | Void                                                  |
 | **Hostile Neural Networks** | Predict mob loot via simulation                                  | Endgame mob-drop substitution path                    |
 | **Apothic Spawners** + **Apothic Enchanting** + **Apothic Attributes** | Spawner manipulation + enchanting + RPG attributes | Mob-drop side path |
@@ -63,7 +65,7 @@ Each entry here directly maps to one or more PF category slime variants (see [`p
 | **XNet** + **XNetGases** | Channeled item/fluid/gas transport                                 |
 | **LaserIO**           | Compact laser-based item transport                                    |
 | **Functional Storage** | Drawer storage                                                       |
-| **Sophisticated Backpacks** + **Sophisticated Storage** + **Sophisticated Core** | Upgraded backpacks + barrels  |
+| **Sophisticated Backpacks** + **Sophisticated Storage** + **Sophisticated Core** (SHIPPED) | Upgraded backpacks + barrels. Sophisticated Storage pinned at `1.5.52.1756`. Its controller recipe is re-issued quartz-free in `storage_quartz_free.js` so the analog network is a Cave-era stopgap. |
 | **DimStorage**        | Cross-dimensional storage                                             |
 | **Iron Furnaces**     | Tiered furnaces — needed for fast Froglight smelting                  |
 

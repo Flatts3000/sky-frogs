@@ -16,9 +16,9 @@ These six colors come directly from Productive Frogs' `Category` enum. Any per-c
 
 | Category   | Hex       | RGB             | Use                                                          |
 |------------|-----------|-----------------|--------------------------------------------------------------|
-| Bog        | `#6A8540` | (106, 133, 64)  | Tier 1 — iron / copper / gold tones, mossy green             |
-| Cave       | `#B5651D` | (181, 101, 29)  | Tier 2 — redstone / coal / earth tones, saddle brown         |
-| Geode      | `#7EE8FA` | (126, 232, 250) | Tier 3 — diamond / amethyst / certus, light cyan sparkle     |
+| Bog        | `#6A8540` | (106, 133, 64)  | Tier 3 — organics: dirt / moss / clay / leather, mossy green |
+| Cave       | `#B5651D` | (181, 101, 29)  | Tier 1 — ores: iron / copper / gold / coal / redstone, saddle brown |
+| Geode      | `#7EE8FA` | (126, 232, 250) | Tier 2 — gems: lapis / amethyst / emerald / diamond, light cyan sparkle |
 | Tide       | `#70C7B8` | (112, 199, 184) | Tier 4 — prismarine / kelp / sea, soft sea green             |
 | Infernal   | `#C73E1D` | (199, 62, 29)   | Tier 5 — blaze / magma / nether, fire red                    |
 | Void       | `#9070D0` | (144, 112, 208) | Tier 6 — ender / chorus / end, royal purple                  |
@@ -34,7 +34,7 @@ The four PF parent slime species ship with their own outer-layer tints. These ar
 | Tide Slime     | `#3F76E4` | Tide             |
 | Void Slime     | `#5E3782` | Void             |
 
-(Bog and Infernal also have dedicated PF parent species — `productivefrogs:bog_slime` and `productivefrogs:infernal_slime` — infused with metals and nether mats respectively. Their outer-layer tints track the Bog and Infernal accent colors above.)
+(Bog and Infernal also have dedicated PF parent species — `productivefrogs:bog_slime` and `productivefrogs:infernal_slime` — infused with organics and nether mats respectively. Their outer-layer tints track the Bog and Infernal accent colors above.)
 
 ### Neutrals
 
@@ -110,8 +110,8 @@ Composition target: rule-of-thirds, frog as focal subject, void background givin
 Tracked in `docs/curseforge_page.md`. Recap:
 
 1. Hero — void skyblock starter island.
-2. Tier 1 enclosure — Bog Frog setup with Iron Slimes.
-3. Tier 3 multi-enclosure — Geode Frog setups in a row.
+2. Tier 1 enclosure — Cave Frog setup with Iron Slimes.
+3. Tier 2 multi-enclosure — Geode Frog setups in a row.
 4. Endgame singularity altar.
 5. Quest book UI open to a tier chapter.
 6. Tier 5/6 set piece — Nether arena or End dimension.

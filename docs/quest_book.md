@@ -1,8 +1,8 @@
 # Quest Book
 
-> **Status:** DRAFT — non-canonical. The 22-chapter / 750-quest target was lifted from Sky Bees Reborn as a scale reference, not as a goal. Sky Frogs' questbook should have its own shape — possibly fewer, denser chapters; possibly a wholly different organizing axis (per-category instead of per-mod). The proposal below is a starting point.
+> **Status:** DRAFT. Tiers 0-3 (Welcome, Cave, Geode, Bog) are built and live; Tier 4-6 (Tide, Infernal, Void) and the tech/dimension/endgame chapters below remain a sketch. The questbook's shape is the **chapter-sizing principle** (theme + arc, ~8-20 nodes per chapter, see below), not the old 22-chapter / 750-quest SBR scale reference, which is superseded.
 
-The FTB Quests structure for Sky Frogs. Initial scale reference: ~22 chapters / ~750 quests (mirroring Sky Bees Reborn). Whether that's the right shape for Sky Frogs is an open question.
+The FTB Quests structure for Sky Frogs. The questbook is organized per-tier (one chapter group per frog species, plus per-tier "Road to" gateway chapters), with the [chapter-sizing principle](#chapter-sizing-settled-2026-05-27) setting chapter boundaries.
 
 ## Reference structure
 
@@ -33,62 +33,39 @@ we_need_to_go_deeper.snbt
 welcome.snbt
 ```
 
-Sky Frogs mirrors this organization closely — six tier chapters drive progression, mod-specific chapters teach individual tech mods, and special chapters cover dimensions and endgame.
+Sky Frogs does **not** mirror this organization. SBR is mod-sprawled (one chapter per tech mod); Sky Frogs is frog-spined (one chapter group per tier, with tech mods folded into the tier whose verb they supply). SBR is a study object for FTB Quests mechanics, not a structural template.
 
-## Sky Frogs chapter list (target v1.0)
+## Sky Frogs chapter list
 
-### Core progression chapters (6)
+### Built chapters (Tiers 0-3)
 
-| Chapter file              | Title                  | Covers                                                |
-|---------------------------|------------------------|--------------------------------------------------------|
-| `bog_mastery.snbt`        | Bog Mastery            | Tier 1 — iron/copper/gold via Bog Frog                 |
-| `cave_veins.snbt`         | Cave Veins             | Tier 2 — redstone/lapis/coal via Cave Frog             |
-| `geode_workshop.snbt`     | The Geode Workshop     | Tier 3 — diamond/emerald via Geode Frog                |
-| `drowned_riches.snbt`     | Drowned Riches         | Tier 4 — prismarine/Tide resources via Tide Frog       |
-| `heat_and_flame.snbt`     | Heat & Flame           | Tier 5 — nether resources via Infernal Frog            |
-| `void_mastery.snbt`       | Void Mastery           | Tier 6 — ender/draconic via Void Frog                  |
+These are the 10 chapter files that exist in `config/ftbquests/quests/chapters/`. They sit under three chapter groups (`chapter_groups.snbt`): "Tier 1: Cave", "Tier 2: Geode", "Tier 3: Bog"; Welcome stays ungrouped at the top. Note the **"Road to <tier>" gateway-chapter pattern**: each later tier opens with a short gateway chapter that crafts the next species' frogspawn (Spawnery + primer) and runs the seed-chain bridge, before the species' own chapter.
 
-### Bootstrap & framing chapters (3)
+| Tier group | Chapter file                  | Covers                                                |
+|------------|-------------------------------|--------------------------------------------------------|
+| Tier 0     | `welcome.snbt`                | Bootstrap: cobble gen, second water source via Ex Deorum barrel, dark-room **cave_slime** farm, slime collection. Final reward: a Bottle of **Cave** Frog Frogspawn. Includes a **cooldown-repeatable "Replacement Frog egg" emergency quest** for when frogs die / jump off the island. |
+| Tier 1: Cave | `your_first_iron_ingot.snbt` | The tutorial tier: place frogspawn, breed, infuse, feed, smelt -> first iron ingot. (The deliberate `iron_ingot` froglight-check exception, see below.) |
+| Tier 1: Cave | `scaling_the_colony.snbt`    | Scale the Cave loop: breeding via Sweetslime, frog stats, Slime Milker, the iron -> copper -> gold -> coal -> redstone resource chain. |
+| Tier 1: Cave | `cave_frogs.snbt`            | The Cave species' resource quests + the Geode-gateway capstone (lean by design; modded Cave metals live in their tech chapters). |
+| Tier 1: Cave | `storage_and_crafting.snbt`  | The Cave-tier **new verb**: crafting upgrades / storage (Sophisticated + Functional storage, quartz-free networks). |
+| Tier 2: Geode | `road_to_geode.snbt`        | Gateway: prime the Spawnery with **redstone** for Geode frogspawn, run the lapis seed-chain bridge. |
+| Tier 2: Geode | `geode_frogs.snbt`          | The Geode species: lapis -> tuff -> calcite -> amethyst -> emerald -> diamond. |
+| Tier 2: Geode | `mekanism.snbt`             | The Geode-tier **new verb**: automation (Mekanism power, Metallurgic Infuser, Enrichment Chamber). Steel quest keeps the `ingot_steel` check; the optional steel-slime quest carries the froglight check. |
+| Tier 3: Bog | `road_to_bog.snbt`           | Gateway: prime the Spawnery with **enriched diamond** (a Mekanism craft) for Bog frogspawn, run the diamond -> dirt seed-chain bridge. |
+| Tier 3: Bog | `bog_frogs.snbt`             | The Bog species: dirt -> mud -> clay_ball -> moss -> mycelium -> lily_pad -> leather -> feather -> plastic -> pink_slime. The Bog-tier **new verb** is Industrial Foregoing (plastic hard-gated, pink_slime capstone). |
 
-| Chapter file              | Title                  | Covers                                                |
-|---------------------------|------------------------|--------------------------------------------------------|
-| `welcome.snbt`            | Welcome to Sky Frogs   | Tier 0 — cobble gen, second water source via Ex Deorum barrel, mob farm, slime collection. Final reward: 2× Bog frog egg. Includes a **cooldown-repeatable "Replacement Frog egg" emergency quest** for when frogs die / jump off the island. |
-| `getting_started.snbt`    | Getting Started        | (Merged into `welcome.snbt`; chapter removed — Sky Frogs has no separate Ex Deorum bootstrap chapter since sieving is disabled.) |
-| `productive_frogs.snbt`   | Productive Frogs       | Core mod teaching — placing frogspawn, breeding, slime infusion, milking, feeding (no tier gate, runs alongside Bog Mastery) |
+### Sketched chapters (Tiers 4-6, unbuilt)
 
-### Dimension chapters (2)
+Tide / Infernal / Void follow the same per-tier shape (a "Road to" gateway + a species chapter + that tier's new-verb chapter; Infernal's verb is earmarked for Refined Storage). Plus the framing/endgame chapters below. None of these are built yet:
 
-| Chapter file              | Title                  | Covers                                                |
-|---------------------------|------------------------|--------------------------------------------------------|
-| `we_need_to_go_deeper.snbt` | We Need To Go Deeper | Nether arrival + basic Nether base (Tier 5 prelude)    |
-| `the_end.snbt`            | The End                | End access, dragon fight, outer islands (Tier 6 prelude) |
-
-### Tech mod chapters (~7-9)
-
-One per significant tech mod, mirroring SBR. Each chapter teaches the mod within the Sky Frogs progression — they're optional-but-recommended infrastructure.
-
-| Chapter file                | Title                       | Mod taught                            |
-|-----------------------------|-----------------------------|----------------------------------------|
-| `mekanism.snbt`             | Mekanism                    | Mekanism                               |
-| `applied_energistics.snbt`  | Applied Energistics 2       | AE2 + AE2 ecosystem                    |
-| `immersive_engineering.snbt`| Immersive Engineering       | IE                                     |
-| `industrial_foregoing.snbt` | Industrial Foregoing        | IF                                     |
-| `powah.snbt`                | Powah!                      | Powah                                  |
-| `ender_io.snbt`             | Ender IO                    | EnderIO                                |
-| `iron_furnaces.snbt`        | Iron Furnaces               | Iron Furnaces (and processing scaling) |
-| `flux_networks.snbt`        | Flux Networks               | Wireless power                         |
-| `storage.snbt`              | Storage Logistics           | Sophisticated Storage / Drawers / etc. |
-
-### Side / endgame chapters (2-3)
-
-| Chapter file              | Title                  | Covers                                                |
-|---------------------------|------------------------|--------------------------------------------------------|
-| `mob_slayer.snbt`         | Mob Slayer             | Combat / spawner manipulation (Apothic Spawners + HNN side path) |
-| `master_pond.snbt`        | Master Pond            | Endgame singularity loop — Ultimate Singularity, creative trophy |
-| `useful_mods.snbt`        | Useful Mods            | Catch-all for the QoL mods (Waystones, Backpacks, etc.) |
-| `challenges.snbt`         | Challenges             | Optional self-set challenges (kill the dragon under-tier, etc.) |
-
-**Total: ~22 chapters**, matching Sky Bees Reborn structurally.
+| Chapter (working name)    | Covers                                                |
+|---------------------------|--------------------------------------------------------|
+| Drowned Riches            | Tier 4 (Tide): aquatic resources                       |
+| Heat & Flame              | Tier 5 (Infernal): nether resources + Refined Storage  |
+| Void Mastery              | Tier 6 (Void): ender / endgame resources               |
+| We Need To Go Deeper      | Nether arrival + basic base (Tier 5 prelude)           |
+| The End                   | End access, dragon fight, outer islands (Tier 6 prelude) |
+| Master Pond               | Endgame singularity loop: Ultimate Singularity, creative trophy |
 
 ## Chapter sizing (settled 2026-05-27)
 
@@ -100,7 +77,9 @@ The chapter boundary is set by **theme + arc, not node count**: a chapter is *on
 
 This supersedes the SBR-scale ~30-40/chapter target below. Sky Frogs is frog-spined, not mod-sprawled, so it runs fewer, denser, theme-driven chapters than SBR's 22/750. Shipped chapters so far: Welcome (22, top of range), Your First Iron Ingot (7), Scaling the Colony (11), Cave Frogs (6, including the Geode-gateway capstone - kept lean by design; modded Cave metals live in their tech-mod chapters rather than padding this one), and Storage and Crafting (10, the Tier 1 storage interlude). These four progression chapters sit under a "Tier 1: Cave" chapter group; Welcome stays ungrouped at the top.
 
-## Quest density per chapter (SBR-scale reference - superseded by the sizing principle above)
+## Quest density per chapter (SBR-scale reference - SUPERSEDED, historical only)
+
+> Superseded by the chapter-sizing principle above. The ~22-chapter / ~750-quest target was an SBR-scale guess from before the pack found its frog-spined shape; the built tiers run fewer, denser chapters (Welcome 22, Your First Iron Ingot 7, Scaling the Colony 11, Cave Frogs 6, Storage and Crafting 10). Kept below for context, not as a target.
 
 Aim for **~30-40 quests per chapter** on average (22 × 35 ≈ 770). Distribution skews:
 
@@ -117,45 +96,52 @@ This is ~855 total which gives us 15% headroom for cutting. Target ship is ~750.
 
 ## Quest dependency graph
 
-High-level (chapter-to-chapter dependencies):
+High-level (chapter-to-chapter dependencies). Built chapters above the dashed line; sketched below it:
 
 ```
-welcome ─────────────┐
-   ↓                 ↓
-bog_mastery          productive_frogs
-   ↓
-cave_veins ──────────┐
-   ↓                 ↓
-geode_workshop       mekanism (unlocks at any Tier 2+)
-   ↓                 ↓
-drowned_riches       applied_energistics (Tier 3+)
-   ↓
-heat_and_flame ──→ we_need_to_go_deeper
-   ↓                 ↓
-void_mastery ────→ the_end
-   ↓
-master_pond
+welcome
+   |
+your_first_iron_ingot
+   |
+scaling_the_colony
+   |
+cave_frogs ----------------+
+   |                       |
+storage_and_crafting       | (Cave new verb: storage)
+   |
+road_to_geode  (prime Spawnery w/ redstone)
+   |
+geode_frogs ---------------+
+   |                       |
+mekanism                   | (Geode new verb: automation)
+   |
+road_to_bog    (prime Spawnery w/ enriched diamond)
+   |
+bog_frogs                    (Bog new verb: Industrial Foregoing)
+- - - - - - - - - - - - - - - - - - - - (sketch below)
+   |
+Drowned Riches (Tide) -> Heat & Flame (Infernal) -> Void Mastery
+                              |                          |
+                       we_need_to_go_deeper          the_end -> master_pond
 ```
 
-Tech mod chapters unlock progressively as the player accumulates the resources to engage with them. `mekanism.snbt` is unlockable at any Tier 2+, `applied_energistics.snbt` at Tier 3+, etc. — this avoids the "unlock everything at once" feeling.
+The "Road to <tier>" gateway chapters are where the tier transition fires (Spawnery primer + seed-chain bridge). Tier 4-6 tech-mod placement is a sketch; the verb-per-tier scheme decides which mod chapter folds into which tier.
 
 ## Within-chapter dependency style
 
-Mirror Sky Bees Reborn's `master_hive.snbt` structure: a central spine of mandatory quests for the chapter, with optional branches for resource variants. Sample for `bog_mastery.snbt`:
+A central spine of mandatory quests for the chapter, with optional branches for resource variants. Sample for the Cave tier (`cave_frogs.snbt` + its lead-ins):
 
 ```
-[breed first frog] ─→ [hatch bog egg] ─→ [first iron froglight]
-                                                ↓
-                          ┌────────────────────┼────────────────────┐
-                          ↓                    ↓                    ↓
-                  [iron variant complete] [copper variant]   [gold variant]
-                          ↓                    ↓                    ↓
-                  ┌───────┴───────┐    [osmium variant]    [aluminum variant]
-                  ↓               ↓                                   ↓
-            [tin variant]   [zinc variant]                  [nickel variant]
+[breed first Cave frog] -> [hatch Cave egg] -> [first iron froglight]
+                                                 |
+                          +----------------------+----------------------+
+                          |                      |                      |
+                  [iron variant complete] [copper variant]       [gold variant]
+                                                 |                      |
+                                          [coal variant]        [redstone variant]
 ```
 
-The "spine" mandatory quests gate Tier 2 unlock. Optional variant quests grant bonus rewards (slime spawn eggs for tier-1 modded slime species, XP bottles, etc.).
+Resource quests check the variant **Froglight** the frog drops (the froglight-check principle), not the smelted resource. The "spine" mandatory quests gate the Geode unlock. Optional variant quests grant bonus rewards (slime spawn eggs for modded Cave metals, XP bottles, etc.).
 
 ## Quest rewards
 
@@ -181,17 +167,17 @@ Drafted quest spine for the `welcome.snbt` chapter — the only mandatory Tier 0
 6. **Wait for rain → bucket the second water source.** Now infinite water.
 7. **Mine 64 cobblestone.** Scaling material.
 8. **Build a dark room** — minimum 5×5×3 enclosed space at light level 0.
-9. **Kill 8 bog slimes.** `productivefrogs:bog_slime` spawns in the dark room because the island is forced to the `minecraft:swamp` biome and PF already ships bog_slime spawning there. Reward: a few slimeballs (in case loot RNG was unkind).
+9. **Kill 8 cave slimes.** `productivefrogs:cave_slime` spawns in the dark room because the pack adds `cave_slime` to the (forced) island biome and PF's light-based placement rule does the rest. Reward: a few slimeballs (in case loot RNG was unkind).
 10. **Collect 16 slimeballs total.** Resource bar for frog breeding + crafting.
-11. **(Optional spine branch)** — split-discover an Iron Slime. Tooltip hint: keep farming, it's random.
-12. **(Final)** Complete the chapter → **reward: 2× Bog frog egg**. Now Tier 1 is unlocked.
+11. **(Optional spine branch)** — split-discover a resource slime. Tooltip hint: keep farming, it's random.
+12. **(Final)** Complete the chapter → **reward: a Bottle of Cave Frog Frogspawn**. Now Tier 1 (Cave) is unlocked.
 
 **Repeatable emergency quest** (always visible in the Welcome chapter):
 
 - **"My frogs are gone"** — visible from the moment the chapter opens; completable at any time.
   - Cooldown: 1 hour real-time (FTB Quests `cooldown` field).
   - Cost: 4 slimeballs (so the player has to keep the farm running to use it; prevents infinite frog cheese).
-  - Reward: 2× Bog frog egg.
+  - Reward: a Bottle of Cave Frog Frogspawn.
   - Quest description text: "Frogs jump. Frogs occasionally jump off your island. Frogs occasionally drown. This quest gets you back on your feet. Please consider building a fence around your enclosure."
 
 The intent is that a player who somehow loses every single frog AND has no frogspawn in inventory can recover, but it's friction-laden enough that the player will build a fence after the first use.
@@ -208,9 +194,11 @@ Loosely:
 4. Craft into **Sky Frogs Master Frog** (custom item, 3D model TBD).
 5. Place on display pedestal → quest completion → questbook reveals an epilogue page.
 
-## Open quest-book questions
+## Resolved: the froglight-check principle
 
-- **Quest item icons** for the six Resource Frog category quests — do we use the Configurable Froglight (already category-colored) or the Frog entity directly? Probably Froglight for legibility in the chapter sidebar.
+Per-tier resource quests **detect the variant Froglight** (`productivefrogs:configurable_froglight` carrying a `productivefrogs:slime_variant` component), not the smelted resource, so the frog loop can't be bypassed by obtaining the resource another way. This also settles the old quest-icon question: the Froglight is the check target *and* the natural quest icon (it's already category-colored). Two deliberate exceptions keep an ingot check: **Your First Iron Ingot** (the tutorial that teaches the smelt, gated upstream by its "Feed the Frog" quest) checks `iron_ingot`, and the main Mekanism **Steel** quest checks `ingot_steel` (a Mekanism craft, not a frog resource) while the *optional* steel-slime quest carries the froglight check.
+
+## Open quest-book questions
 - **Loot bag contents** — do we hand-author or use FTB Quests' weighted reward tables? Hand-authoring scales poorly past ~100 quests; weighted tables are the only viable path. Bake those during quest authoring.
 - **Translatable quest text** — FTB Quests supports lang files. Ship en_us only at v1.0; community translations welcomed via PR.
 - **Patchouli book vs. FTB Quests opening** — Sky Bees Reborn opens FTB Quests directly on first join. We could also ship a Patchouli "Welcome to Sky Frogs" book as a tutorial layer above the questbook. TBD; defer.

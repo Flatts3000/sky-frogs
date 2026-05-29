@@ -1,6 +1,6 @@
 # Design Overview
 
-> **Status:** DRAFT — non-canonical. Every choice in this document is a starting point to argue with. Sky Frogs has its own identity to find; Sky Bees Reborn is one reference for the genre, not a template.
+> **Status:** DRAFT. Tiers 0-3 (Welcome, Cave, Geode, Bog) are built and live; Tier 4-6 (Tide, Infernal, Void) remain a sketch. The higher-level framing here is still open to argue with. Sky Frogs has its own identity to find; Sky Bees Reborn is one reference for the genre, not a template.
 
 ## Inspiration
 
@@ -13,19 +13,19 @@ Sky Frogs is what you get when you swap the Productive Bees pillar of Sky Bees R
 
 ## Core Concept
 
-A **void skyblock** where the player must bootstrap from a 3×3 dirt island and the only path past iron is through the **Resource Frog** breeding tree. Each tier unlocks a new frog category, which in turn unlocks a new family of resources via category-matching Resource Slimes.
+A **void skyblock** where the player must bootstrap from a small starter island and the only path past the first ingot is through the **Resource Frog** breeding tree. Each tier unlocks a new frog category, which in turn unlocks a new family of resources via category-matching Resource Slimes.
 
 ```
-Tier 0: Vanilla bootstrap   → glass bottle + slimeballs + an iron primer
-Tier 1: Bog                 → iron, copper, gold (and modded metals via tag)
-Tier 2: Cave                → redstone, lapis, coal, (modded minerals)
-Tier 3: Geode               → diamond, emerald, amethyst, fluorite, certus
-Tier 4: Tide                → prismarine, nautilus, sea-themed resources
-Tier 5: Infernal            → blaze, quartz, magma, netherite line
-Tier 6: Void                → ender, draconic, end-tier and modded magic
+Tier 0: Vanilla bootstrap   -> a cave_slime farm + first Cave frogs (Cave primer = cobblestone)
+Tier 1: Cave                -> iron -> copper -> gold -> coal -> redstone (built)
+Tier 2: Geode               -> lapis -> tuff -> calcite -> amethyst -> emerald -> diamond (built)
+Tier 3: Bog                 -> dirt/mud/clay/moss/mycelium/lily_pad/leather/feather + plastic/pink_slime (built)
+Tier 4: Tide                -> prismarine, sponge, sea-themed resources (sketch)
+Tier 5: Infernal            -> blaze, quartz, magma, netherite line (sketch)
+Tier 6: Void                -> ender, draconic, end-tier and modded magic (sketch)
 ```
 
-Each tier corresponds to one or two questbook chapters and to one category in the [Productive Frogs Category enum](../../productive-frogs/src/main/java/com/flatts/productivefrogs/data/Category.java).
+Each tier corresponds to one or more questbook chapters and to one category in the [Productive Frogs Category enum](../../productive-frogs/src/main/java/com/flatts/productivefrogs/data/Category.java). Each tier also layers **one new verb** onto the frog loop for anti-repetition (Cave = crafting/storage, Geode = automation/Mekanism, Bog = Industrial Foregoing). Per-tier resource quests check the variant **Froglight** the frog drops, not the smelted resource, so the loop can't be skipped.
 
 ## Why Sky Frogs and not just play Sky Bees Reborn?
 
