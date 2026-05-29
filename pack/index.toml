@@ -38,7 +38,7 @@ hash = "13f68293531fb12de49a0e10f16b1a4a958c66d73988626119e623e75572f168"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/geode_frogs.snbt"
-hash = "bfe9dee498742980f71edfb4c85e2ed18d11393a0f025183a065128ed076465a"
+hash = "0703ce17c26e144e0597910de3a0cbcd6f410141bf159e2e5791da8c0cc4aaab"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/industrial_foregoing.snbt"
@@ -78,7 +78,7 @@ hash = "d7dd511fa89cc9066374f537d8e9259d6caff8fe7db0a0a04db3af393100e0a4"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "aba965e7c32ea1783c3d207e0eef4fb4f05b525e428cae2695021cc463115597"
+hash = "6f96c38b42d39fe1293155cd1345eef4b61f40da27672f7c5a4f5a5d53113f69"
 
 [[files]]
 file = "config/productivefrogs-common.toml"
@@ -151,6 +151,10 @@ hash = "6abf6ad5b3630206acadfa47d12ecfa68eaaf3b42d1f383f014f008815f0ea66"
 [[files]]
 file = "kubejs/server_scripts/bog_slime_chain.js"
 hash = "34b392722846f7d9aca57f66b60292ae8032a330b14d2d12291fdc6b30d8876e"
+
+[[files]]
+file = "kubejs/server_scripts/catalyst_recipes.js"
+hash = "fa00283144ec2ea72127c1deb38f7bfb1b23327807ea0d233f9524e6bb7981cd"
 
 [[files]]
 file = "kubejs/server_scripts/cave_slime_chain.js"
@@ -509,7 +513,7 @@ metafile = true
 
 [[files]]
 file = "mods/productive-frogs.pw.toml"
-hash = "709b325eab122fe772357c54149c7726b110738c35f17373f100bc2a88f6608d"
+hash = "c0a572ff8b2ff8323cbb590e772df7a8c4fea5ad05c2f0c29d1df94092436c48"
 metafile = true
 
 [[files]]

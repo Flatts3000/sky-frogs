@@ -419,6 +419,30 @@
 		"Milk it, feed the slimes to a Geode Frog, and turn in the &bDiamond Froglight&r - the cap of the gem chain. Smelt it for a diamond."
 	]
 	quest.6E0DE0000000000B.title: "Diamond"
+	quest.6E0DE00000000014.quest_desc: [
+		"Your Slime Milk sources don't have to run dry so fast. Craft a &bCount Catalyst&r (two &fsweetslime&r and a scoop of &fbone meal&r) and drop it straight into a placed &eSlime Milk&r pool."
+		""
+		"The buff saves to the source - it even rides along if you bucket the source back up. Stack as many as you like; Count has no cap."
+	]
+	quest.6E0DE00000000014.title: "Count Catalyst"
+	quest.6E0DE00000000017.quest_desc: [
+		"A &bSpeed Catalyst&r (two &fsweetslime&r and &fsugar&r) makes a source spit slimes out faster. Toss it in the pool like the last one."
+		""
+		"Speed climbs to a cap, so a few per source is plenty."
+	]
+	quest.6E0DE00000000017.title: "Speed Catalyst"
+	quest.6E0DE0000000001A.quest_desc: [
+		"A &bQuantity Catalyst&r (two &fsweetslime&r and &fredstone&r) makes a source spawn more slimes at once - more bodies per batch for your frogs to eat."
+		""
+		"Like Speed, it climbs to a cap."
+	]
+	quest.6E0DE0000000001A.title: "Quantity Catalyst"
+	quest.6E0DE0000000001D.quest_desc: [
+		"The big one. Ring eight &bCount Catalysts&r around a &fdiamond&r to forge an &bInfinite Count Catalyst&r, then drop it in: that source &enever runs dry&r again."
+		""
+		"This is what the diamonds were for. One per source and you never re-prime it."
+	]
+	quest.6E0DE0000000001D.title: "Never Runs Dry"
 	quest.6E0DE0000000000E.quest_desc: [
 		"The geode's outer shell. Craft a &bTuff Slime in a Bucket&r from your &elapis milk&r (plus four stone, three sweetslime, and a Geode frogspawn bottle)."
 		""

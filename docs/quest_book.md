@@ -49,7 +49,7 @@ These are the 11 chapter files that exist in `config/ftbquests/quests/chapters/`
 | Tier 1: Cave | `cave_frogs.snbt`            | The Cave species' resource quests + the Geode-gateway capstone (lean by design; modded Cave metals live in their tech chapters). |
 | Tier 1: Cave | `storage_and_crafting.snbt`  | The Cave-tier **new verb**: crafting upgrades / storage (Sophisticated + Functional storage, quartz-free networks). |
 | Tier 2: Geode | `road_to_geode.snbt`        | Gateway: prime the Spawnery with **redstone** for Geode frogspawn, run the lapis seed-chain bridge. |
-| Tier 2: Geode | `geode_frogs.snbt`          | The Geode species: lapis -> tuff -> calcite -> amethyst -> emerald -> diamond. |
+| Tier 2: Geode | `geode_frogs.snbt`          | The Geode species: lapis -> tuff -> calcite -> amethyst -> emerald -> diamond, plus a **Slime Milk catalyst** branch off the diamond capstone (Count -> Speed -> Quantity -> Infinite Count; PF v1.7.0). |
 | Tier 2: Geode | `mekanism.snbt`             | The Geode-tier **new verb**: automation (Mekanism power, Metallurgic Infuser, Enrichment Chamber). Steel quest keeps the `ingot_steel` check; the optional steel-slime quest carries the froglight check. |
 | Tier 3: Bog | `road_to_bog.snbt`           | Gateway: prime the Spawnery with **enriched diamond** (a Mekanism craft) for Bog frogspawn, run the diamond -> dirt seed-chain bridge. |
 | Tier 3: Bog | `bog_frogs.snbt`             | The Bog species: dirt -> mud -> clay_ball -> moss -> mycelium -> lily_pad -> leather -> feather -> plastic -> pink_slime (plastic hard-gated behind its frog, pink_slime capstone). |

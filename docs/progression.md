@@ -102,6 +102,7 @@ Estimated playtime: **3–6 hours** (it's the widest tier — most resources liv
 - Geode Frogs + Geode Slimes (from the crafted Geode seed-chain).
 - Infuse with gem primers → Lapis → Tuff → Calcite → Amethyst → Emerald → Diamond Slimes.
 - **New verb:** automation. Mekanism (power, Metallurgic Infuser, Enrichment Chamber). The Mekanism machines also craft the mossy cobblestone the Bog seed-chain needs.
+- **Slime Milk catalysts** (PF v1.7.0): a short branch off the diamond capstone introduces the four catalysts (Count / Speed / Quantity / Infinite Count) that buff placed Slime Milk sources. Infinite Count's recipe needs a diamond, so it gates naturally here; the Quantity catalyst is re-issued with redstone instead of glowstone for skyblock (`catalyst_recipes.js`).
 - **Gate to Tier 3:** prime the Spawnery with **enriched diamond** (a Mekanism craft) for Bog Frogspawn, then run the Bog seed-chain.
 
 Estimated playtime: **3–5 hours**.

@@ -141,5 +141,89 @@
 			x: 0.0d
 			y: 7.5d
 		}
+		{
+			dependencies: ["6E0DE0000000000B"]
+			icon: {
+				id: "productivefrogs:count_catalyst"
+			}
+			id: "6E0DE00000000014"
+			rewards: [{
+				count: 4
+				id: "6E0DE00000000016"
+				item: {
+					count: 1
+					id: "productivefrogs:sweetslime"
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "6E0DE00000000015"
+				item: { count: 1, id: "productivefrogs:count_catalyst" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["6E0DE00000000014"]
+			icon: {
+				id: "productivefrogs:speed_catalyst"
+			}
+			id: "6E0DE00000000017"
+			rewards: [{
+				id: "6E0DE00000000019"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "6E0DE00000000018"
+				item: { count: 1, id: "productivefrogs:speed_catalyst" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["6E0DE00000000017"]
+			icon: {
+				id: "productivefrogs:quantity_catalyst"
+			}
+			id: "6E0DE0000000001A"
+			rewards: [{
+				id: "6E0DE0000000001C"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "6E0DE0000000001B"
+				item: { count: 1, id: "productivefrogs:quantity_catalyst" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["6E0DE0000000001A"]
+			icon: {
+				id: "productivefrogs:infinite_catalyst"
+			}
+			id: "6E0DE0000000001D"
+			rewards: [{
+				id: "6E0DE0000000001F"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "6E0DE0000000001E"
+				item: { count: 1, id: "productivefrogs:infinite_catalyst" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 12.0d
+		}
 	]
 }
