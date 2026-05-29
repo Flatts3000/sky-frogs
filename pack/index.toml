@@ -26,7 +26,7 @@ hash = "a9029472f7a7435e2f54c4827589a0dabca28e522fb1fa6257a814cdf83d64f1"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "058fec8b84839c7f12a71fec7182718bf24562425d2897fd5cface1c45abd417"
+hash = "3448a3a6e7dc33a360a2b0864c0546bd927ccaf98d7f6ab09c99850b96ed908d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/bog_frogs.snbt"
@@ -53,6 +53,10 @@ file = "config/ftbquests/quests/chapters/road_to_geode.snbt"
 hash = "6e7f474e80aab4e45ac3ae272d671e2c274a8462c89057e857bcae6d72fee943"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/road_to_tide.snbt"
+hash = "81efc3395ece90546cc1e51f4d75b32cf5d724a1955ee0a1087102fed63e5667"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/scaling_the_colony.snbt"
 hash = "1b4322445ce5a9e3d0dc11456957bd317c82471611be20f27798abcb5e4502f9"
 
@@ -62,7 +66,7 @@ hash = "459e1e4a9e07b4d6e8a469050fa1c02795ec60033dc0ce622e724c2f38c5ecee"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tools_and_things.snbt"
-hash = "61fe91761eae8303b852463107d6a967d3b8843265b64321d95ac9ebaf130eb4"
+hash = "6f2e3140737da3b81d367c8a8283ebd0891ecff7d010a3a04ef6284c40da5582"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
@@ -78,7 +82,7 @@ hash = "d7dd511fa89cc9066374f537d8e9259d6caff8fe7db0a0a04db3af393100e0a4"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "2b7bac8940ee75eb50435b06dd644dc2cbc871f7cc7aa587f847f14a0edde0cb"
+hash = "db275c8fc61f9d03a87f6f8ff64f8b289eff1976a61abaca676c155afb90d1b1"
 
 [[files]]
 file = "config/productivefrogs-common.toml"

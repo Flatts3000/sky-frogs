@@ -7,50 +7,76 @@
 	chapter.6E0DE00000000001.title: "Geode Frogs"
 	chapter.6ECA150000000001.title: "Power and Machines"
 	chapter.784143B9C5D63814.title: "Welcome"
+	chapter.71DE000000000001.title: "Road to Tide"
 	chapter.7CA7E000C0DE0001.title: "Cave Frogs"
 	chapter_group.0C4F0E0000000001.title: "Tier 1: Cave"
 	chapter_group.0C4F0E0000000003.title: "Tier 3: Bog"
 	chapter_group.0C4F0E0000000002.title: "Tier 2: Geode"
+	chapter_group.0C4F0E0000000004.title: "Tier 4: Tide"
 	quest.1F00000000000002.quest_desc: [
-		"Mekanism gave you a &bBuilding Gadget&r back at the Enrichment Chamber. Building Gadgets 2 has more, and the first step up is the &eExchanging Gadget&r: swap one block for another in place instead of tearing things down to rebuild."
+		"Just Dire Things runs on &eGoo&r. Mix &fclay balls&r, &fdirt&r, &frotten flesh&r, and &fsugar&r into a &ePrimogel Goo Block&r - the tier-1 entry into JDT's farming and machines."
 		""
-		"Craft one. The rest of this chapter builds on top of it."
+		"Place the goo, top it with &ePrimogel Soil&r, and you've got a JDT seed bed. Direwolf20's mod is opening up."
 	]
-	quest.1F00000000000002.title: "Exchanging Gadget"
+	quest.1F00000000000002.title: "First Goo"
 	quest.1F00000000000005.quest_desc: [
-		"The &eCopy/Paste Gadget&r captures a shape into a &bTemplate&r and stamps it anywhere - build one frog habitat, paste it ten times, turn one corner of the platform into a whole pond."
+		"&fFerricore&r is JDT's iron - the metal every Simple machine downstream needs. Grow &fraw ferricore&r on your &ePrimogel Soil&r (right-click the soil with a raw resource to seed it), then smelt the raw ore to a &bFerricore Ingot&r."
 		""
-		"Craft one. The &bTemplate&r is its companion; the gadget loads it automatically."
+		"Stock up. Everything Direwolf20 makes from here takes ferricore."
 	]
-	quest.1F00000000000005.title: "Copy, Paste"
+	quest.1F00000000000005.title: "Ferricore Ingot"
 	quest.1F00000000000008.quest_desc: [
-		"Done chasing dropped &bFroglights&r across the platform? Just Dire Things has an &eItem Collector&r that vacuums up everything in a radius - Froglights, slimeballs, anything that hits the floor."
+		"JDT machines run on RF. Build a &eSimple Coal Generator&r with ferricore, a &fblast furnace&r, and some coal - your starter power plant."
 		""
-		"Sink one into your habitat floor and stop bending over. JDT has plenty more where this came from."
+		"Burn coal, get RF, run everything else in this chapter."
 	]
-	quest.1F00000000000008.title: "Vacuum the Floor"
+	quest.1F00000000000008.title: "Simple Generator"
 	quest.1F0000000000000B.quest_desc: [
-		"Direwolf20's signature move is letting blocks do the work. The &eSimple Clicker&r right-clicks for you on a timer - milk a Slime Milk source, feed a frog, work an anvil, while you're somewhere else."
-		""
-		"Build one and pick a corner of your operation to automate. Your habitat just got smarter."
-		""
-		"Claim your reward."
-	]
-	quest.1F0000000000000B.title: "Hands-Off"
-	quest.1F0000000000000E.quest_desc: [
-		"Pair a &eSimple Block Breaker&r with a Block Placer and you've got an auto-farm loop with no hands: cobblegen, crop rotation, anything that needs a block broken on a tick."
+		"A &eSimple Block Breaker&r breaks the block in front of it on a redstone tick. Pair it with a Block Placer and you've got an auto-farm loop with no hands: cobblegen, crop rotation, anything that needs a block broken on a tick."
 		""
 		"Stock up - you'll use them everywhere."
 	]
-	quest.1F0000000000000E.title: "Auto-Breaker"
+	quest.1F0000000000000B.title: "Auto-Breaker"
+	quest.1F0000000000000E.quest_desc: [
+		"Done chasing dropped &bFroglights&r across the platform? An &eItem Collector&r vacuums up everything in a radius - Froglights, slimeballs, anything that hits the floor."
+		""
+		"Sink one into your habitat floor and stop bending over. The Item Collector takes a diamond and an &fender pearl&r, so it's worth picking up after you've farmed a few enderman in the dark room."
+		""
+		"Claim your reward."
+	]
+	quest.1F0000000000000E.title: "Vacuum the Floor"
 	quest.1F00000000000011.quest_desc: [
-		"Industrial Foregoing's &eDissolution Chamber&r dissolves a pile of items in a fluid and presses out something new. Frame it with &fplastic&r (your &bplastic frog&r already supplies it), feed it &flatex&r from a Fluid Extractor on logs, and it becomes the pack's &eslime engine&r."
+		"Mekanism gave you a &bBuilding Gadget&r back at the Enrichment Chamber. The next step up is the &eExchanging Gadget&r: swap one block for another in place instead of tearing things down to rebuild."
+	]
+	quest.1F00000000000011.title: "Exchanging Gadget"
+	quest.1F00000000000014.quest_desc: [
+		"The &eCopy/Paste Gadget&r captures a shape into a &bTemplate&r and stamps it anywhere - build one frog habitat, paste it ten times, turn one corner of the platform into a whole pond."
+		""
+		"The &bTemplate&r is its companion; the gadget loads it automatically."
+	]
+	quest.1F00000000000014.title: "Copy, Paste"
+	quest.71DE000000000002.quest_desc: [
+		"Industrial Foregoing's machines all bolt onto a &eMachine Frame&r, and the humblest is the &ePity Machine Frame&r - logs, iron, and a block of redstone, no plastic required."
+		""
+		"Craft one. The &bDissolution Chamber&r bolts onto it."
+	]
+	quest.71DE000000000002.title: "The Machine Frame"
+	quest.71DE000000000005.quest_desc: [
+		"Set a &eFluid Extractor&r against a &flog&r and it slowly bleeds the wood for &fLiquid Latex&r."
+		""
+		"Latex is the fluid the &bDissolution Chamber&r runs on - keep a tank of it."
+	]
+	quest.71DE000000000005.title: "Tapping Latex"
+	quest.71DE000000000008.quest_desc: [
+		"Industrial Foregoing's &eDissolution Chamber&r dissolves a pile of items in a fluid and presses out something new. Frame it with &fplastic&r (your &bplastic frog&r already supplies it), feed it &flatex&r from the Fluid Extractor, and it becomes the pack's &eslime engine&r."
 		""
 		"Every variant in &eCave&r, &eGeode&r, and &eBog&r has a chamber recipe: feed it a prior resource (within a tier, the previous variant's; at a tier boundary, the previous tier's last) + tier filler + sweetslime + latex, and out comes that variant's &bSlime in a Bucket&r. Iron is the exception - it threads off &fbone meal&r."
 		""
-		"JEI knows the rest. Build the chamber and the slime production for your whole operation gets automatable."
+		"This is also the gateway into &eTier 4 (Tide)&r: when that tier ships, the first Tide slime is the chamber's job too, threading off &fpink slime&r (Bog's last resource)."
+		""
+		"Claim your reward; the engine is online."
 	]
-	quest.1F00000000000011.title: "The Slime Engine"
+	quest.71DE000000000008.title: "The Slime Engine"
 	quest.01A8E068925B319F.quest_desc: [
 		"You're stranded on a speck of dirt in the void. No ore, no mineshafts, not so much as a mountain to feel bad about."
 		""
