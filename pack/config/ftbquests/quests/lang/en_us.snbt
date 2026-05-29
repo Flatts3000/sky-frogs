@@ -55,6 +55,18 @@
 		"The &bTemplate&r is its companion; the gadget loads it automatically."
 	]
 	quest.1F00000000000014.title: "Copy, Paste"
+	quest.1F00000000000017.quest_desc: [
+		"A &eFluid Collector&r reaches into the block in front of it and slurps the fluid source - water, lava, latex, anything bucketable - into its internal tank."
+		""
+		"Pipe it into your Fluid Extractor's latex line, your cobblegen's water feed, anywhere a bucket would have done. Bucket by hand never again."
+	]
+	quest.1F00000000000017.title: "Fluid Collector"
+	quest.1F0000000000001A.quest_desc: [
+		"The other half of the pair. A &eFluid Placer&r pours from its tank into the block in front of it - infinite water spreads, lava cobblegens, automated infrastructure that fills itself."
+		""
+		"Pair it with a Fluid Collector and you've got a closed-loop fluid circuit."
+	]
+	quest.1F0000000000001A.title: "Fluid Placer"
 	quest.71DE000000000002.quest_desc: [
 		"Industrial Foregoing's machines all bolt onto a &eMachine Frame&r, and the humblest is the &ePity Machine Frame&r - logs, iron, and a block of redstone, no plastic required."
 		""
