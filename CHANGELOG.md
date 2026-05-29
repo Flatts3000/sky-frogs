@@ -56,6 +56,7 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 - Productive Frogs pin **v1.5.3 -> v1.7.0** (v1.6.0: organic Bog roster - dirt / mud / clay_ball / moss / mycelium / lily_pad / leather / feather, plus the Industrial Foregoing plastic and pink_slime variants the Bog chapters consume; v1.7.0: the four Slime Milk catalysts that buff placed Slime Milk sources). Additive; pack overrides unaffected.
 - Sophisticated Storage pin bumped to `1.5.52.1756` (matched a CurseForge-launcher patch bump that landed in the dev instance; patch only, no other pins touched).
 - IF chapter optional branch swapped: dropped the **Plant Gatherer** (redundant with Botany Pots) and **Sludge Refiner** quests; the two optional slots now showcase **Item Collector** (Just Dire Things) and **Exchanging Gadget** (Building Gadgets 2), both parallel off the Dissolution Chamber.
+- JDT **Primogel Goo Block** (`justdirethings:gooblock_tier1`) re-issued with **mycelium** instead of dirt (`kubejs/server_scripts/jdt_recipes.js`). Mycelium is a Bog Frogs chain variant, so this gates the JDT entry into the Bog mid-tier progression naturally; JDT's stock dirt recipe is left intact for other packs.
 - `road_to_bog` capstone quest title **"First Dirt" -> "Dirt"** (the "First X" gateway pattern reads awkward; the resource-name pattern from the gem chain reads cleaner). The `road_to_geode` capstone still says "First Lapis" - left for a separate decision.
 
 ### Removed

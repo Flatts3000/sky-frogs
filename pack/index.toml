@@ -82,7 +82,7 @@ hash = "d7dd511fa89cc9066374f537d8e9259d6caff8fe7db0a0a04db3af393100e0a4"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "96e25abacdc4bfa0a51f381384b69432962d7a3c32e4b7f99d002c81d089929c"
+hash = "2defcf4bc618a1a8c12e0b7a9d278987e8c1efc4ef43c6ae087a3239f8d307e7"
 
 [[files]]
 file = "config/productivefrogs-common.toml"
@@ -183,6 +183,10 @@ hash = "9b879f61d078ae01e7030e17801166cc20abbaa4ec188b475b0bf26eb0ffc846"
 [[files]]
 file = "kubejs/server_scripts/iron_slime_bucket.js"
 hash = "5f8d806e6fea7829f8e5b9b7344ddecf33208f4599eb7e7a2fee34c7a79e3b3e"
+
+[[files]]
+file = "kubejs/server_scripts/jdt_recipes.js"
+hash = "02e95ae9634e85d44eee635a2f41b8bdc21cb1a11d1461b844624a2b20429928"
 
 [[files]]
 file = "kubejs/server_scripts/log_recipes.js"
