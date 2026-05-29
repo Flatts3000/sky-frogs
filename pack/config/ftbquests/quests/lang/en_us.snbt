@@ -411,9 +411,9 @@
 	]
 	quest.6ECA150000000008.title: "The Metallurgic Infuser"
 	quest.6ECA15000000000B.quest_desc: [
-		"Infuse iron with carbon into &fenriched iron&r, then smelt that into a &bSteel Ingot&r."
+		"Steel is the backbone of every Mekanism machine, and the Cave frog can grow it. In the &eMetallurgic Infuser&r, infuse an &bIron Slime in a Bucket&r with &fcarbon&r into a &7Steel Slime&r."
 		""
-		"Steel is the backbone of every Mekanism machine. Bring one back."
+		"Milk it, feed the slimes to a Cave Frog, and turn in the &bSteel Froglight&r. Smelt it for steel ingots - the same iron-and-carbon trick that makes steel, run through a frog."
 	]
 	quest.6ECA15000000000B.title: "Steel"
 	quest.6ECA15000000000E.quest_desc: [

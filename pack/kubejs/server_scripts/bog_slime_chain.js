@@ -3,14 +3,16 @@
 // Bog is the organic/swamp species: dirt, mud, clay, moss, mycelium, lily pad,
 // leather, feather - plus Industrial Foregoing plastic + pink slime when IF is loaded.
 //
-// The BRIDGE BOOTSTRAP (diamond -> dirt) is special: it consumes 4 MOSSY COBBLESTONE
-// instead of plain stone. Mossy cobblestone is made in Mekanism's Metallurgic Infuser
-// (cobblestone + bio), so crossing into Bog requires the Geode-tier Infuser - the
-// mineral -> mossy -> organic transition. Every later step uses plain stone.
+// Bog's themed crafting block is MOSSY COBBLESTONE (Cave uses plain stone). Every step
+// - the diamond -> dirt bridge bootstrap and every chain step after it - takes 4 mossy
+// cobblestone, made in Mekanism's Metallurgic Infuser or Enrichment Chamber
+// (cobblestone + bio). So the whole tier leans on the Geode-era Mekanism machines: the
+// mineral -> mossy -> organic transition.
 //
-// Each step: prior Slime Milk + 4 stone + 3 sweetslime + a Bog frogspawn -> the next
-// Slime in a Bucket, so you can't skip ahead. Plastic gates Industrial Foregoing and
-// pink slime is the capstone; that IF tail is only chained when IF is loaded.
+// Each step: prior Slime Milk + 4 mossy cobblestone + 3 sweetslime + a Bog frogspawn ->
+// the next Slime in a Bucket, so you can't skip ahead. Plastic gates Industrial Foregoing
+// and pink slime is the capstone. IF is a required pack dependency; the Platform.isLoaded
+// guard below is dev-safety only (PF's plastic/pink_slime variants are IF-conditioned).
 ServerEvents.recipes(event => {
   // Bridge bootstrap: diamond Slime Milk + mossy cobblestone -> the first Bog (dirt) slime.
   event.shapeless(
@@ -23,7 +25,7 @@ ServerEvents.recipes(event => {
     ]
   )
 
-  // The organic chain proper (plain stone).
+  // The organic chain proper (mossy cobblestone, same as the bridge).
   const chain = [
     ['dirt', 'mud'],
     ['mud', 'clay_ball'],       // clay variant id is clay_ball (Froglight smelts to clay_ball)
@@ -44,7 +46,7 @@ ServerEvents.recipes(event => {
       `productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:${to}",Category:"BOG"}]`,
       [
         `productivefrogs:slime_milk_bucket[productivefrogs:slime_variant="productivefrogs:${from}"]`,
-        'minecraft:stone', 'minecraft:stone', 'minecraft:stone', 'minecraft:stone',
+        'minecraft:mossy_cobblestone', 'minecraft:mossy_cobblestone', 'minecraft:mossy_cobblestone', 'minecraft:mossy_cobblestone',
         'productivefrogs:sweetslime', 'productivefrogs:sweetslime', 'productivefrogs:sweetslime',
         `productivefrogs:frog_egg[productivefrogs:contained_category="bog"]`
       ]

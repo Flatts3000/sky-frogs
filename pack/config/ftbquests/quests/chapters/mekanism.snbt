@@ -96,7 +96,7 @@
 			}]
 			tasks: [{
 				id: "6ECA15000000000C"
-				item: { count: 1, id: "mekanism:ingot_steel" }
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:steel" }, count: 1, id: "productivefrogs:configurable_froglight" }
 				type: "item"
 			}]
 			x: 0.0d

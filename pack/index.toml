@@ -42,11 +42,11 @@ hash = "bfe9dee498742980f71edfb4c85e2ed18d11393a0f025183a065128ed076465a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/mekanism.snbt"
-hash = "6cd789a3c548cd12b992fb48a3b4bc88ee378bfdf37eb5b53d848a7a8576b89c"
+hash = "dcb41f7f928324a69338f9a05e1853c847d6496d7c8f6d8a970fb2701ff12e6f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_bog.snbt"
-hash = "ad14c15f5a1074a0a1a2dfdd2e96ba6087fa4692386eb03151b05c2790e1952f"
+hash = "08895939e9d89a2ba3a3a85586ab9ce9df5e5c0cc74cace49dc652bc6975f55b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_geode.snbt"
@@ -74,7 +74,7 @@ hash = "d7dd511fa89cc9066374f537d8e9259d6caff8fe7db0a0a04db3af393100e0a4"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "55eb252cb91ca58533961d90ec596047fec65c44b400580a4d0162bb6dee3de0"
+hash = "eaf70f3f003ef4fe014124c80f8ef8ac7311f9942637d713a592f571e291873b"
 
 [[files]]
 file = "config/productivefrogs-common.toml"
@@ -146,7 +146,7 @@ hash = "6abf6ad5b3630206acadfa47d12ecfa68eaaf3b42d1f383f014f008815f0ea66"
 
 [[files]]
 file = "kubejs/server_scripts/bog_slime_chain.js"
-hash = "b66c00674ea697f5b4009b45608628f27ab1ae79d6c81d46a301d9dd3578a2c7"
+hash = "34b392722846f7d9aca57f66b60292ae8032a330b14d2d12291fdc6b30d8876e"
 
 [[files]]
 file = "kubejs/server_scripts/cave_slime_chain.js"
@@ -162,7 +162,7 @@ hash = "9d82ed589e65bcb2478d27dbbdf24d652deae205925f1b792c315d46d7d29c04"
 
 [[files]]
 file = "kubejs/server_scripts/if_plastic_gate.js"
-hash = "16e606e73243c941004fada3b86298bdac5a253ce4b8dd82ea127443456de086"
+hash = "9b879f61d078ae01e7030e17801166cc20abbaa4ec188b475b0bf26eb0ffc846"
 
 [[files]]
 file = "kubejs/server_scripts/iron_slime_bucket.js"

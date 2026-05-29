@@ -15,7 +15,10 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["6E0DE0000000000B"]
+			dependencies: [
+				"6E0DE0000000000B"
+				"6ECA15000000001A"
+			]
 			icon: {
 				id: "mekanism:enriched_diamond"
 			}
