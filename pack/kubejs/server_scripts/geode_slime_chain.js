@@ -9,7 +9,7 @@
 //
 // Per-step recipe (shapeless, 9 items):
 //   1x <prior> Slime Milk bucket  (supplies the bucket; the first step uses Cave redstone milk)
-//   4x stone                      (abundant filler, same as the Cave chain)
+//   4x gravel                      (the Ex Deorum block you sieve gems from; the gem tier's filler)
 //   3x sweetslime                 (the frog-coaxing binder)
 //   1x Geode frogspawn bottle     (the Geode-category seed)
 //   -> 1x <next> Slime in a Bucket (stamped Category GEODE)
@@ -37,10 +37,10 @@ ServerEvents.recipes(event => {
       `productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:${to}",Category:"GEODE"}]`,
       [
         `productivefrogs:slime_milk_bucket[productivefrogs:slime_variant="productivefrogs:${from}"]`,
-        'minecraft:stone',
-        'minecraft:stone',
-        'minecraft:stone',
-        'minecraft:stone',
+        'minecraft:gravel',
+        'minecraft:gravel',
+        'minecraft:gravel',
+        'minecraft:gravel',
         'productivefrogs:sweetslime',
         'productivefrogs:sweetslime',
         'productivefrogs:sweetslime',

@@ -26,23 +26,31 @@ hash = "a9029472f7a7435e2f54c4827589a0dabca28e522fb1fa6257a814cdf83d64f1"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "d1e42e03dd5483caf66ceffc69878c069d8b2973f11369decab3ffadd7b1dc87"
+hash = "058fec8b84839c7f12a71fec7182718bf24562425d2897fd5cface1c45abd417"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/bog_frogs.snbt"
+hash = "5c2b5c98261a7a588ebd990fd5d0766ddc3c54c84033d2d9ae5a54244cf5494d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/cave_frogs.snbt"
-hash = "76621c52f676651e52932b36f56c286cbdedfb30aa7cff8578390d22821acdcc"
+hash = "13f68293531fb12de49a0e10f16b1a4a958c66d73988626119e623e75572f168"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/geode_frogs.snbt"
-hash = "0e4a28a5ae99349b3d5213b5665100c675925c26b1e08bc69168a497eb242436"
+hash = "bfe9dee498742980f71edfb4c85e2ed18d11393a0f025183a065128ed076465a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/mekanism.snbt"
-hash = "426bfef3625a6114ed86483ac8056b2574adf5a951c7818a693bb928c815df18"
+hash = "85aea53fc5f1e2a160a06860db92b5d33274aa7b1a71850747df62d7e912e830"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/road_to_bog.snbt"
+hash = "08895939e9d89a2ba3a3a85586ab9ce9df5e5c0cc74cace49dc652bc6975f55b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_geode.snbt"
-hash = "8555af1d9bc262a314aafd7090d05515f7f918c462bc37629c58ed3a134dcf3c"
+hash = "6e7f474e80aab4e45ac3ae272d671e2c274a8462c89057e857bcae6d72fee943"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/scaling_the_colony.snbt"
@@ -66,7 +74,7 @@ hash = "d7dd511fa89cc9066374f537d8e9259d6caff8fe7db0a0a04db3af393100e0a4"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "52ba6d0f4f08c485b4a11061ae2c42a5e34b8b8d80ece693d975ab5cdbc16d65"
+hash = "dbf58d210993581617dd01cb618224713ee684c08d6b7be6d242a3ab800c18c2"
 
 [[files]]
 file = "config/productivefrogs-common.toml"
@@ -117,6 +125,10 @@ file = "kubejs/data/productivefrogs/neoforge/biome_modifier/add_void_slime_spawn
 hash = "99b969132018e9da1071065a8593ba9564928b1ed0aa5ae3ab45f9dac071f7d5"
 
 [[files]]
+file = "kubejs/data/productivefrogs/tags/item/spawnery_primer/bog.json"
+hash = "11dddcff2417ae79c580faef451fa0b4cefa9997777a3cb5a4442800e0f036eb"
+
+[[files]]
 file = "kubejs/data/productivefrogs/tags/item/spawnery_primer/cave.json"
 hash = "f7004bc086b9c1d15c7b12d8920d29e82711d71a2943e01e2215601a7eb745bb"
 
@@ -133,6 +145,10 @@ file = "kubejs/server_scripts/anti.js"
 hash = "6abf6ad5b3630206acadfa47d12ecfa68eaaf3b42d1f383f014f008815f0ea66"
 
 [[files]]
+file = "kubejs/server_scripts/bog_slime_chain.js"
+hash = "34b392722846f7d9aca57f66b60292ae8032a330b14d2d12291fdc6b30d8876e"
+
+[[files]]
 file = "kubejs/server_scripts/cave_slime_chain.js"
 hash = "dbb7488e1c4a77eb3c909b7c89d8e2dd5412ec53047838aa901978efbd0f5677"
 
@@ -142,7 +158,11 @@ hash = "659f7a086b994e6c47b0b7f0e37fbc037a7417fc1ab924455c60cd4a0d08f4e8"
 
 [[files]]
 file = "kubejs/server_scripts/geode_slime_chain.js"
-hash = "9d82ed589e65bcb2478d27dbbdf24d652deae205925f1b792c315d46d7d29c04"
+hash = "0ada73db65f3f3945a5a0f02bb14de2174bff507ff7c971dbe357d9c2faec80d"
+
+[[files]]
+file = "kubejs/server_scripts/if_plastic_gate.js"
+hash = "9b879f61d078ae01e7030e17801166cc20abbaa4ec188b475b0bf26eb0ffc846"
 
 [[files]]
 file = "kubejs/server_scripts/iron_slime_bucket.js"
@@ -340,6 +360,16 @@ hash = "0092f83b6663191fb947110c2b51a5213daea995da831d7de0a769cf4c353cd8"
 metafile = true
 
 [[files]]
+file = "mods/industrial-foregoing-souls.pw.toml"
+hash = "a997c2462d8501aca9e25e7659cfcafd0736f6ff16bdfc46f0a4020500299328"
+metafile = true
+
+[[files]]
+file = "mods/industrial-foregoing.pw.toml"
+hash = "c307c6f682a2ddff8181191b1070bae08c11482eccef8ea3d0428ea63ac08d6e"
+metafile = true
+
+[[files]]
 file = "mods/inventory-tweaks-refoxed.pw.toml"
 hash = "1d3b922c0d1a43fa497faf27827bfa9f9f3841dfba51d8684435d58c1141fe93"
 metafile = true
@@ -471,7 +501,7 @@ metafile = true
 
 [[files]]
 file = "mods/productive-frogs.pw.toml"
-hash = "a43ca6b1e98b0c71a6b4d5caa634db6ca109d9df94655608024f4ff96d5c79c4"
+hash = "709b325eab122fe772357c54149c7726b110738c35f17373f100bc2a88f6608d"
 metafile = true
 
 [[files]]

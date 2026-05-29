@@ -47,7 +47,7 @@
 			}]
 			tasks: [{
 				id: "6E0DE0000000000F"
-				item: { count: 1, id: "minecraft:tuff" }
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:tuff" }, count: 1, id: "productivefrogs:configurable_froglight" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -69,7 +69,7 @@
 			}]
 			tasks: [{
 				id: "6E0DE00000000012"
-				item: { count: 1, id: "minecraft:calcite" }
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:calcite" }, count: 1, id: "productivefrogs:configurable_froglight" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -91,7 +91,7 @@
 			}]
 			tasks: [{
 				id: "6E0DE00000000006"
-				item: { count: 1, id: "minecraft:amethyst_shard" }
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:amethyst" }, count: 1, id: "productivefrogs:configurable_froglight" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -113,7 +113,7 @@
 			}]
 			tasks: [{
 				id: "6E0DE00000000009"
-				item: { count: 1, id: "minecraft:emerald" }
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:emerald" }, count: 1, id: "productivefrogs:configurable_froglight" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -135,7 +135,7 @@
 			}]
 			tasks: [{
 				id: "6E0DE0000000000C"
-				item: { count: 1, id: "minecraft:diamond" }
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:diamond" }, count: 1, id: "productivefrogs:configurable_froglight" }
 				type: "item"
 			}]
 			x: 0.0d
