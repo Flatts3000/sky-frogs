@@ -576,7 +576,7 @@
 	quest.7B06000000000002.quest_desc: [
 		"The Bog frog eats more than dirt. Each new resource threads off the &elast one's Slime Milk&r - mud from dirt, clay from mud, on down the swamp."
 		""
-		"The loop never changes: prior milk + four stone + three sweetslime + a Bog frogspawn -> the next Slime in a Bucket. Milk it, feed the frog, and it drops the &eFroglight&r."
+		"The loop never changes: prior milk + four mossy cobblestone + three sweetslime + a Bog frogspawn -> the next Slime in a Bucket. Milk it, feed the frog, and it drops the &eFroglight&r."
 		""
 		"Every quest here wants that &eFroglight&r - the frog's own proof - so hand one in before you smelt it into the resource."
 	]
