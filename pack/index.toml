@@ -78,7 +78,7 @@ hash = "d7dd511fa89cc9066374f537d8e9259d6caff8fe7db0a0a04db3af393100e0a4"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "6f96c38b42d39fe1293155cd1345eef4b61f40da27672f7c5a4f5a5d53113f69"
+hash = "cbacf0a505d49d3fa81aee9d242911351938dd50b05cc44316de39c8a577adb5"
 
 [[files]]
 file = "config/productivefrogs-common.toml"

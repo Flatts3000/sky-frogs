@@ -330,7 +330,7 @@
 	quest.60ADE6000000000B.quest_desc: [
 		"Geode frogs eat Geode slimes, and the first one threads straight off the Cave's last resource."
 		""
-		"Craft a &bLapis Slime in a Bucket&r from a bucket of &credstone Slime Milk&r - plus four stone, three sweetslime, and a Geode frogspawn bottle."
+		"Craft a &bLapis Slime in a Bucket&r from a bucket of &credstone Slime Milk&r - plus four gravel, three sweetslime, and a Geode frogspawn bottle."
 	]
 	quest.60ADE6000000000B.title: "A Lapis Slime in a Bucket"
 	quest.65F6A1B2C3D40001.quest_desc: [
@@ -402,19 +402,19 @@
 	]
 	quest.6E0DE00000000002.title: "Beyond Lapis"
 	quest.6E0DE00000000005.quest_desc: [
-		"The first crystal in the geode. Craft an &bAmethyst Slime in a Bucket&r from your &ecalcite milk&r (plus four stone, three sweetslime, and a Geode frogspawn bottle)."
+		"The first crystal in the geode. Craft an &bAmethyst Slime in a Bucket&r from your &ecalcite milk&r (plus four gravel, three sweetslime, and a Geode frogspawn bottle)."
 		""
 		"Then the loop you know: milk it, pour out the Amethyst Slime Milk, feed the slimes to a Geode Frog, and turn in the &bAmethyst Froglight&r. Smelt it for an amethyst shard."
 	]
 	quest.6E0DE00000000005.title: "Amethyst"
 	quest.6E0DE00000000008.quest_desc: [
-		"Craft an &bEmerald Slime in a Bucket&r from your &eamethyst milk&r (plus four stone, three sweetslime, and a Geode frogspawn bottle)."
+		"Craft an &bEmerald Slime in a Bucket&r from your &eamethyst milk&r (plus four gravel, three sweetslime, and a Geode frogspawn bottle)."
 		""
 		"Milk it, feed the slimes to a Geode Frog, and turn in the &bEmerald Froglight&r. Smelt it for an emerald."
 	]
 	quest.6E0DE00000000008.title: "Emerald"
 	quest.6E0DE0000000000B.quest_desc: [
-		"The last gem the Geode frog knows. Craft a &bDiamond Slime in a Bucket&r from your &eemerald milk&r (plus four stone, three sweetslime, and a Geode frogspawn bottle)."
+		"The last gem the Geode frog knows. Craft a &bDiamond Slime in a Bucket&r from your &eemerald milk&r (plus four gravel, three sweetslime, and a Geode frogspawn bottle)."
 		""
 		"Milk it, feed the slimes to a Geode Frog, and turn in the &bDiamond Froglight&r - the cap of the gem chain. Smelt it for a diamond."
 	]
@@ -444,13 +444,13 @@
 	]
 	quest.6E0DE0000000001D.title: "Never Runs Dry"
 	quest.6E0DE0000000000E.quest_desc: [
-		"The geode's outer shell. Craft a &bTuff Slime in a Bucket&r from your &elapis milk&r (plus four stone, three sweetslime, and a Geode frogspawn bottle)."
+		"The geode's outer shell. Craft a &bTuff Slime in a Bucket&r from your &elapis milk&r (plus four gravel, three sweetslime, and a Geode frogspawn bottle)."
 		""
 		"Milk it, feed the slimes to a Geode Frog, and turn in the &bTuff Froglight&r - the first stone the Geode frog gives past lapis. Smelt it for tuff."
 	]
 	quest.6E0DE0000000000E.title: "Tuff"
 	quest.6E0DE00000000011.quest_desc: [
-		"The layer under the shell. Craft a &bCalcite Slime in a Bucket&r from your &etuff milk&r (plus four stone, three sweetslime, and a Geode frogspawn bottle)."
+		"The layer under the shell. Craft a &bCalcite Slime in a Bucket&r from your &etuff milk&r (plus four gravel, three sweetslime, and a Geode frogspawn bottle)."
 		""
 		"Milk it, feed the slimes to a Geode Frog, and turn in the &bCalcite Froglight&r. Smelt it for calcite."
 	]
