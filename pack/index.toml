@@ -30,27 +30,27 @@ hash = "058fec8b84839c7f12a71fec7182718bf24562425d2897fd5cface1c45abd417"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/bog_frogs.snbt"
-hash = "8f18bbe8107379c651808b434358a72fbdb8f2761674a3ba0dc8a9146a2792fc"
+hash = "5c2b5c98261a7a588ebd990fd5d0766ddc3c54c84033d2d9ae5a54244cf5494d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/cave_frogs.snbt"
-hash = "76621c52f676651e52932b36f56c286cbdedfb30aa7cff8578390d22821acdcc"
+hash = "13f68293531fb12de49a0e10f16b1a4a958c66d73988626119e623e75572f168"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/geode_frogs.snbt"
-hash = "0e4a28a5ae99349b3d5213b5665100c675925c26b1e08bc69168a497eb242436"
+hash = "bfe9dee498742980f71edfb4c85e2ed18d11393a0f025183a065128ed076465a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/mekanism.snbt"
-hash = "426bfef3625a6114ed86483ac8056b2574adf5a951c7818a693bb928c815df18"
+hash = "6cd789a3c548cd12b992fb48a3b4bc88ee378bfdf37eb5b53d848a7a8576b89c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_bog.snbt"
-hash = "c4137e759a11b40533fe8a3c07b545caf8548373558b1fef15b1806c40e5824c"
+hash = "ad14c15f5a1074a0a1a2dfdd2e96ba6087fa4692386eb03151b05c2790e1952f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_geode.snbt"
-hash = "8555af1d9bc262a314aafd7090d05515f7f918c462bc37629c58ed3a134dcf3c"
+hash = "6e7f474e80aab4e45ac3ae272d671e2c274a8462c89057e857bcae6d72fee943"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/scaling_the_colony.snbt"
@@ -74,7 +74,7 @@ hash = "d7dd511fa89cc9066374f537d8e9259d6caff8fe7db0a0a04db3af393100e0a4"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "3b837f5777a501f339fc03b535b749f93ce049e5afd435e368ed0c4aa5c80764"
+hash = "55eb252cb91ca58533961d90ec596047fec65c44b400580a4d0162bb6dee3de0"
 
 [[files]]
 file = "config/productivefrogs-common.toml"

@@ -47,7 +47,7 @@
 			}]
 			tasks: [{
 				id: "7CA7E000C0DE0006"
-				item: { count: 1, id: "minecraft:copper_ingot" }
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:copper" }, count: 1, id: "productivefrogs:configurable_froglight" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -69,7 +69,7 @@
 			}]
 			tasks: [{
 				id: "7CA7E000C0DE0009"
-				item: { count: 1, id: "minecraft:gold_ingot" }
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:gold" }, count: 1, id: "productivefrogs:configurable_froglight" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -91,7 +91,7 @@
 			}]
 			tasks: [{
 				id: "7CA7E000C0DE000C"
-				item: { count: 1, id: "minecraft:coal" }
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:coal" }, count: 1, id: "productivefrogs:configurable_froglight" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -113,7 +113,7 @@
 			}]
 			tasks: [{
 				id: "7CA7E000C0DE000F"
-				item: { count: 1, id: "minecraft:redstone" }
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:redstone" }, count: 1, id: "productivefrogs:configurable_froglight" }
 				type: "item"
 			}]
 			x: 0.0d

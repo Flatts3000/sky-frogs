@@ -145,7 +145,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "70B000000000000C"
-				item: { count: 1, id: "minecraft:dirt" }
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:dirt" }, count: 1, id: "productivefrogs:configurable_froglight" }
 				type: "item"
 			}]
 			x: 0.0d

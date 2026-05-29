@@ -107,7 +107,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "60ADE60000000009"
-				item: { count: 1, id: "minecraft:lapis_lazuli" }
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:lapis" }, count: 1, id: "productivefrogs:configurable_froglight" }
 				type: "item"
 			}]
 			x: 0.0d
