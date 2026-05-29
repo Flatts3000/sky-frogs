@@ -41,10 +41,6 @@ file = "config/ftbquests/quests/chapters/geode_frogs.snbt"
 hash = "0703ce17c26e144e0597910de3a0cbcd6f410141bf159e2e5791da8c0cc4aaab"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/industrial_foregoing.snbt"
-hash = "60017e0bc7bbc29f7c5feb519a2fe490a10ffa06b601627a7f3002e03df5b440"
-
-[[files]]
 file = "config/ftbquests/quests/chapters/mekanism.snbt"
 hash = "85aea53fc5f1e2a160a06860db92b5d33274aa7b1a71850747df62d7e912e830"
 
@@ -65,6 +61,10 @@ file = "config/ftbquests/quests/chapters/storage_and_crafting.snbt"
 hash = "459e1e4a9e07b4d6e8a469050fa1c02795ec60033dc0ce622e724c2f38c5ecee"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/tools_and_things.snbt"
+hash = "61fe91761eae8303b852463107d6a967d3b8843265b64321d95ac9ebaf130eb4"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
 hash = "402f098e3acd237aba1ec9bf9a6eb4547857b53d0a3e6f653e58fc7c319d29cd"
 
@@ -78,7 +78,7 @@ hash = "d7dd511fa89cc9066374f537d8e9259d6caff8fe7db0a0a04db3af393100e0a4"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "6b97323e24880f3043d2b847555697c2e60e330d8458da713c0a2bda92ee6bfe"
+hash = "2b7bac8940ee75eb50435b06dd644dc2cbc871f7cc7aa587f847f14a0edde0cb"
 
 [[files]]
 file = "config/productivefrogs-common.toml"

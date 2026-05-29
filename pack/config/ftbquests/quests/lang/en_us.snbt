@@ -1,5 +1,5 @@
 {
-	chapter.1F00000000000001.title: "Plastic and Machines"
+	chapter.1F00000000000001.title: "Tools and Things"
 	chapter.2A5700000A570001.title: "Scaling the Colony"
 	chapter.570A6E0000000001.title: "Storage and Crafting"
 	chapter.60ADE60000000001.title: "Road to Geode"
@@ -12,45 +12,45 @@
 	chapter_group.0C4F0E0000000003.title: "Tier 3: Bog"
 	chapter_group.0C4F0E0000000002.title: "Tier 2: Geode"
 	quest.1F00000000000002.quest_desc: [
-		"Industrial Foregoing builds everything into a &eMachine Frame&r, and the humblest is the &ePity Machine Frame&r - logs, iron, and a block of redstone, no plastic required."
+		"Mekanism gave you a &bBuilding Gadget&r back at the Enrichment Chamber. Building Gadgets 2 has more, and the first step up is the &eExchanging Gadget&r: swap one block for another in place instead of tearing things down to rebuild."
 		""
-		"Craft one. It's the chassis every machine in this chapter bolts onto."
+		"Craft one. The rest of this chapter builds on top of it."
 	]
-	quest.1F00000000000002.title: "The Machine Frame"
+	quest.1F00000000000002.title: "Exchanging Gadget"
 	quest.1F00000000000005.quest_desc: [
-		"Set a &eFluid Extractor&r against a &flog&r and it slowly bleeds the wood for &fLiquid Latex&r."
+		"The &eCopy/Paste Gadget&r captures a shape into a &bTemplate&r and stamps it anywhere - build one frog habitat, paste it ten times, turn one corner of the platform into a whole pond."
 		""
-		"Latex is the fluid that feeds the machine this whole chapter is building toward, so keep a tank of it. (A tree farm helps - see the optional branch.)"
+		"Craft one. The &bTemplate&r is its companion; the gadget loads it automatically."
 	]
-	quest.1F00000000000005.title: "Tapping Latex"
+	quest.1F00000000000005.title: "Copy, Paste"
 	quest.1F00000000000008.quest_desc: [
-		"The &eDissolution Chamber&r dissolves a pile of items in a fluid and presses out something new. Its frame takes &fplastic&r, which is why you had to raise the &bplastic frog&r first."
+		"Done chasing dropped &bFroglights&r across the platform? Just Dire Things has an &eItem Collector&r that vacuums up everything in a radius - Froglights, slimeballs, anything that hits the floor."
 		""
-		"Craft one, give it power and a feed of &flatex&r, and you've built the heart of every tier from here on."
+		"Sink one into your habitat floor and stop bending over. JDT has plenty more where this came from."
 	]
-	quest.1F00000000000008.title: "The Dissolution Chamber"
+	quest.1F00000000000008.title: "Vacuum the Floor"
 	quest.1F0000000000000B.quest_desc: [
-		"You've built the heart of Industrial Foregoing. Fed power and &flatex&r, the &eDissolution Chamber&r is the Bog tier's capstone machine - and your &eslime engine&r from here on."
+		"Direwolf20's signature move is letting blocks do the work. The &eSimple Clicker&r right-clicks for you on a timer - milk a Slime Milk source, feed a frog, work an anvil, while you're somewhere else."
 		""
-		"Feed it a prior resource (the previous variant's, or the previous tier's last at tier boundaries) + tier filler + sweetslime + latex, and out comes that variant's &bSlime in a Bucket&r. &eCave&r, &eGeode&r, and &eBog&r all run in the chamber today; Tier 4 (Tide) and beyond land as those tiers ship."
-		""
-		"Iron is the one exception: it threads off &fbone meal&r in the chamber, the same way the original crafting-table bootstrap did."
+		"Build one and pick a corner of your operation to automate. Your habitat just got smarter."
 		""
 		"Claim your reward."
 	]
-	quest.1F0000000000000B.title: "Industrial Foregoing, Online"
+	quest.1F0000000000000B.title: "Hands-Off"
 	quest.1F0000000000000E.quest_desc: [
-		"An &eItem Collector&r vacuums up dropped items in a radius - Froglights, slimeballs, anything that hits the floor."
+		"Pair a &eSimple Block Breaker&r with a Block Placer and you've got an auto-farm loop with no hands: cobblegen, crop rotation, anything that needs a block broken on a tick."
 		""
-		"Sink one into your habitat floor and stop chasing &bFroglights&r around. Just Dire Things has plenty more where this came from."
+		"Stock up - you'll use them everywhere."
 	]
-	quest.1F0000000000000E.title: "Item Collector"
+	quest.1F0000000000000E.title: "Auto-Breaker"
 	quest.1F00000000000011.quest_desc: [
-		"The &eExchanging Gadget&r swaps one block for another in place - a clean way to refurbish your habitat or re-skin the platform without tearing it apart."
+		"Industrial Foregoing's &eDissolution Chamber&r dissolves a pile of items in a fluid and presses out something new. Frame it with &fplastic&r (your &bplastic frog&r already supplies it), feed it &flatex&r from a Fluid Extractor on logs, and it becomes the pack's &eslime engine&r."
 		""
-		"Pairs with the &bBuilding Gadget&r Mekanism gave you back at the Enrichment Chamber."
+		"Every variant in &eCave&r, &eGeode&r, and &eBog&r has a chamber recipe: feed it a prior resource (within a tier, the previous variant's; at a tier boundary, the previous tier's last) + tier filler + sweetslime + latex, and out comes that variant's &bSlime in a Bucket&r. Iron is the exception - it threads off &fbone meal&r."
+		""
+		"JEI knows the rest. Build the chamber and the slime production for your whole operation gets automatable."
 	]
-	quest.1F00000000000011.title: "Exchanging Gadget"
+	quest.1F00000000000011.title: "The Slime Engine"
 	quest.01A8E068925B319F.quest_desc: [
 		"You're stranded on a speck of dirt in the void. No ore, no mineshafts, not so much as a mountain to feel bad about."
 		""

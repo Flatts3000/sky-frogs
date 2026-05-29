@@ -32,7 +32,7 @@ Modded resources per tier are PF's conditional variants — they register only w
 6. **One new verb per tier (anti-repetition).** Each tier layers exactly one new verb onto the frog loop so the gameplay doesn't just repeat at a higher number:
    - **Cave** = crafting upgrades / storage (Sophisticated + Functional storage, quartz-free networks).
    - **Geode** = automation (Mekanism: power, Metallurgic Infuser, Enrichment Chamber).
-   - **Bog** = Industrial Foregoing (plastic hard-gated behind the Bog plastic-frog; pink_slime capstone). The machine climb (Pity frame -> Fluid Extractor for latex -> **Dissolution Chamber**) lives in the `industrial_foregoing.snbt` chapter.
+   - **Bog** = utility tools (Just Dire Things + Building Gadgets 2). Lives in the `tools_and_things.snbt` chapter; the **Dissolution Chamber** sits there as a side node introducing the pack's slime engine (and will move into `road_to_tide` when Tide ships).
    - **Infernal** = earmarked for Refined Storage (*sketch*).
 
 ## Tier transitions (the gate mechanic)
@@ -113,7 +113,7 @@ Estimated playtime: **3–5 hours**.
 
 - Bog Frogs + Bog Slimes (from the crafted Bog seed-chain, bridged off diamond Slime Milk).
 - Infuse → Dirt → Mud → Clay_ball → Moss → Mycelium → Lily_pad → Leather → Feather → Plastic → Pink_slime Slimes. The last two (plastic, pink_slime) are Industrial Foregoing items; IF is a hard pack dependency.
-- **New verb:** Industrial Foregoing (the `industrial_foregoing.snbt` chapter). Plastic is hard-gated behind the Bog plastic-frog; the machine climb runs Pity Machine Frame -> Fluid Extractor (latex) -> **Dissolution Chamber**, with an optional Item Collector (Just Dire Things) + Exchanging Gadget (Building Gadgets 2) showcase. The Dissolution Chamber is the **pack's slime engine**: Cave/Geode/Bog ship today as resource-threaded chamber recipes alongside the existing crafting tables (iron bootstraps off bone meal), and Tier 4+ rows land as those tiers ship.
+- **New verb:** utility tools (the `tools_and_things.snbt` chapter). Spine: Exchanging Gadget -> Copy/Paste Gadget -> Item Collector -> Simple Clicker (hexagon capstone) from **Just Dire Things** + **Building Gadgets 2**. Optionals: Simple Block Breaker, and a **Dissolution Chamber** side node that introduces the pack's slime engine. The chamber recipes for Cave/Geode/Bog ship today (21 rows in `kubejs/server_scripts/dissolution_slime_recipes.js`, resource-threaded; iron bootstraps off bone meal); the chamber moves into `road_to_tide` as that tier ships.
 - **Gate to Tier 4:** craft the Tide starter kit; the Tide gateway will depend on the Dissolution Chamber capstone the way Bog's gateway depends on the Mekanism capstone. *(Tier 4-6 unbuilt.)*
 
 Estimated playtime: **3–5 hours**.
