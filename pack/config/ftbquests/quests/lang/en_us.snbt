@@ -484,13 +484,25 @@
 	task.7CA7E000C0DE0003.title: "Got it"
 	chapter.70B0000000000001.title: "Road to Bog"
 	chapter.7B06000000000001.title: "Bog Frogs"
-	quest.70B0000000000002.quest_desc: [
-		"Cave gave you ore, Geode gave you gems and machines - the swamp gives you &aearth itself&r. But a Bog frog won't hatch from just anything."
+	quest.70B000000000000E.quest_desc: [
+		"The swamp won't take a raw diamond - it wants it &dEnriched&r."
 		""
-		"Run a &bdiamond&r through the &eEnrichment Chamber&r into &dEnriched Diamond&r, then prime the Spawnery with it. Out comes a &2Bog Frogspawn&r bottle - so crossing into Bog takes the diamond &oand&r the automation to enrich it."
+		"Run a &bdiamond&r through the &eEnrichment Chamber&r (your Geode capstone machine). The Enriched Diamond is the seed for everything Bog."
+	]
+	quest.70B000000000000E.title: "Enrich a Diamond"
+	quest.70B0000000000011.quest_desc: [
+		"Stone doesn't belong in a swamp - it has to go &amossy&r first."
+		""
+		"Infuse &7cobblestone&r with &abio fuel&r in the &eMetallurgic Infuser&r (10 mB of Bio each). Mossy cobblestone is the organic stand-in for plain stone that seeds the first Bog slime."
+	]
+	quest.70B0000000000011.title: "Mossy Cobblestone"
+	quest.70B0000000000002.quest_desc: [
+		"Cave gave you ore, Geode gave you gems and machines - the swamp gives you &aearth itself&r."
+		""
+		"Prime the &eSpawnery&r with your &dEnriched Diamond&r (plus a slime ball for fuel). Out comes a &2Bog Frogspawn&r bottle - your first swamp frog."
 	]
 	quest.70B0000000000002.title: "The Road to Bog"
-	quest.70B0000000000005.quest_desc: ["Craft a &2Dirt Slime in a Bucket&r from a bucket of &bdiamond Slime Milk&r - plus four stone, three sweetslime, and your Bog frogspawn bottle. The swamp threads straight off the Geode's last resource."]
+	quest.70B0000000000005.quest_desc: ["Craft a &2Dirt Slime in a Bucket&r from a bucket of &bdiamond Slime Milk&r - plus four &amossy cobblestone&r, three sweetslime, and your Bog frogspawn bottle. The mossy stone marks the crossover from the mineral tiers into the organic swamp."]
 	quest.70B0000000000005.title: "A Dirt Slime in a Bucket"
 	quest.70B0000000000008.quest_desc: ["Run the Dirt Slime through the &eSlime Milker&r for a bucket of &2Dirt Slime Milk&r. Pour it out and Dirt Slimes start spawning on their own."]
 	quest.70B0000000000008.title: "A Bucket of Dirt Slime Milk"
