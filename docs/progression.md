@@ -40,7 +40,7 @@ Modded resources per tier are PF's conditional variants — they register only w
 Each species' quest line **ends by opening the next species**, in two halves:
 
 1. **Frog side (the Spawnery).** Prime the Spawnery with a tier-specific **primer item** to draw the *next* species' **Frogspawn** bottle (a `frog_egg` carrying the next `contained_category`). The pack overrides each `spawnery_primer/<species>` tag to a resource the player has by the prior tier's end. The built primers: **Geode is primed by redstone** (Cave's last resource: `spawnery_primer/geode` -> `minecraft:redstone`), and **Bog is primed by enriched diamond** (a Mekanism craft: `spawnery_primer/bog` -> `mekanism:enriched_diamond`). Place the frogspawn on water to start the next species' frogs.
-2. **Slime side (the seed-chain bootstrap).** The next tier's *resource* slimes come from a custom (KubeJS) **slime-in-a-bucket** recipe seeded from the current tier's outputs (the same pattern as Cave's iron -> copper -> ... chain), milked for a renewable supply. This lives in the *next* tier's chapter, not the gateway. Each step also consumes **4 of a tier-themed filler block** (see "Per-tier filler blocks" below). **From Tier 4 (Tide) on, this bootstrap moves into the Industrial Foregoing Dissolution Chamber** (the Bog tech verb): the recipe runs on latex + the prior tier's variant-keyed Slime Milk + filler + sweetslime, replacing the crafting-table chain. The Dissolution Chamber also bulk-makes any already-unlocked Cave/Geode/Bog slime.
+2. **Slime side (the seed-chain bootstrap).** The next tier's *resource* slimes come from a custom (KubeJS) **slime-in-a-bucket** recipe seeded from the current tier's outputs (the same pattern as Cave's iron -> copper -> ... chain), milked for a renewable supply. This lives in the *next* tier's chapter, not the gateway. Each step also consumes **4 of a tier-themed filler block** (see "Per-tier filler blocks" below). The *intended* end state is for the Industrial Foregoing **Dissolution Chamber** (the Bog tech verb) to take over this bootstrap from Tier 4 on and to bulk-make any already-unlocked slime; that is currently blocked by an IF/Titanium recipe-sync limitation and **deferred** pending a PF feature ([productive-frogs#127](https://github.com/Flatts3000/productive-frogs/issues/127)), so the crafting-table seed-chain remains the mechanism for every built tier.
 
 > **Not slime milk for parents.** PF's Slime Milk is keyed by `SLIME_VARIANT` and spawns that *resource-variant* slime, not the bare parent species (the parent comes from a spawn egg / splitting). So the next tier is bootstrapped via frogspawn (Spawnery) + a resource-slime seed-chain, *not* a "parent slime milk" source. (Corrected 2026-05-27; the earlier draft of this section described a parent-spawning milk that PF does not implement.)
 
@@ -48,7 +48,7 @@ So: finish the **Cave** line at redstone → prime the Spawnery with redstone fo
 
 ### Per-tier filler blocks
 
-Each tier's slime-in-a-bucket seed-chain recipe spends **4 of a tier-themed filler block** per step. The constraint: a tier's filler must be mass-attainable *at that tier* (not a chain output, not gated behind a later tier). The same per-tier filler carries into the Dissolution Chamber slime recipes (the IF-era production path).
+Each tier's slime-in-a-bucket seed-chain recipe spends **4 of a tier-themed filler block** per step. The constraint: a tier's filler must be mass-attainable *at that tier* (not a chain output, not gated behind a later tier). The same per-tier filler is intended to carry into the Dissolution Chamber slime recipes (deferred, see productive-frogs#127).
 
 | Tier | Filler block | Source |
 |------|--------------|--------|
@@ -112,7 +112,7 @@ Estimated playtime: **3–5 hours**.
 
 - Bog Frogs + Bog Slimes (from the crafted Bog seed-chain, bridged off diamond Slime Milk).
 - Infuse → Dirt → Mud → Clay_ball → Moss → Mycelium → Lily_pad → Leather → Feather → Plastic → Pink_slime Slimes. The last two (plastic, pink_slime) are Industrial Foregoing items; IF is a hard pack dependency.
-- **New verb:** Industrial Foregoing (the `industrial_foregoing.snbt` chapter). Plastic is hard-gated behind the Bog plastic-frog; the machine climb runs Pity Machine Frame -> Fluid Extractor (latex) -> **Dissolution Chamber**, with an optional Plant Gatherer + Sludge Refiner branch. The Dissolution Chamber is the slime engine going forward: it bulk-makes unlocked slimes and (from Tier 4 on) bootstraps each new tier's slimes.
+- **New verb:** Industrial Foregoing (the `industrial_foregoing.snbt` chapter). Plastic is hard-gated behind the Bog plastic-frog; the machine climb runs Pity Machine Frame -> Fluid Extractor (latex) -> **Dissolution Chamber**, with an optional Plant Gatherer + Sludge Refiner branch. Making the Dissolution Chamber the slime engine (bulk-making unlocked slimes, bootstrapping Tier 4+) is the intended payoff but is **deferred** pending productive-frogs#127 - an IF/Titanium recipe-sync limitation blocks the component-keyed input.
 - **Gate to Tier 4:** craft the Tide starter kit; the Tide gateway will depend on the Dissolution Chamber capstone the way Bog's gateway depends on the Mekanism capstone. *(Tier 4-6 unbuilt.)*
 
 Estimated playtime: **3–5 hours**.

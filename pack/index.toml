@@ -78,7 +78,7 @@ hash = "d7dd511fa89cc9066374f537d8e9259d6caff8fe7db0a0a04db3af393100e0a4"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "37055fdd2eba7be79ff04be901dcdf26ccaead64d40899aa7667d546db9505dc"
+hash = "aba965e7c32ea1783c3d207e0eef4fb4f05b525e428cae2695021cc463115597"
 
 [[files]]
 file = "config/productivefrogs-common.toml"
@@ -158,7 +158,7 @@ hash = "dbb7488e1c4a77eb3c909b7c89d8e2dd5412ec53047838aa901978efbd0f5677"
 
 [[files]]
 file = "kubejs/server_scripts/dissolution_slime_recipes.js"
-hash = "850101334db19ec64fea367424434781e54cbc843398dc8fb7c3f61085550c09"
+hash = "6394ea7b4fa4d82eb9f1653ce7c5d44af3c74a3e3397babd973cb8398bf3185c"
 
 [[files]]
 file = "kubejs/server_scripts/first_join.js"

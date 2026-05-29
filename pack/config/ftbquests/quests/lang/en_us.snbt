@@ -30,13 +30,11 @@
 	]
 	quest.1F00000000000008.title: "The Dissolution Chamber"
 	quest.1F0000000000000B.quest_desc: [
-		"Here's what the Chamber is really for: &eit makes slimes&r."
+		"You've built the heart of Industrial Foregoing. Fed power and &flatex&r, the &eDissolution Chamber&r is the Bog tier's capstone machine - and the groundwork for automating slime production as the pack grows."
 		""
-		"Drop a variant's &bSlime Milk&r in with some filler and sweetslime, add &flatex&r, and the Chamber pours out that &bSlime in a Bucket&r - as many as you can feed it. Every slime you've already unlocked, now on tap."
-		""
-		"And going forward this is the road into each new tier: the Chamber bootstraps the next species' slimes the way the crafting bench did the early ones. Claim this once you've made your first slime by machine."
+		"Claim your reward; the Industrial Foregoing line is complete."
 	]
-	quest.1F0000000000000B.title: "Slimes by the Bucket"
+	quest.1F0000000000000B.title: "Industrial Foregoing, Online"
 	quest.1F0000000000000E.quest_desc: [
 		"A &ePlant Gatherer&r chops a fenced grove on a loop - logs for your latex, plus a trickle of &fSludge&r as a byproduct."
 		""

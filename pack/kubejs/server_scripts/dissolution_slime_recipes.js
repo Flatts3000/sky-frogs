@@ -19,9 +19,10 @@
 //   re-encode is server-side, so no recipe-JSON form fixes it.)
 //
 // Net: IF dissolution inputs can only be vanilla item/tag ingredients, which can't select a
-// PF variant by component. The slime-by-machine design needs a different shape; that's a
-// user decision (resource-keyed inputs / chamber makes the binder instead / a PF-side
-// feature). The tier/variant/filler data is parked here for whatever shape we land on.
+// PF variant by component. Resolution: deferred pending a Productive Frogs feature that exposes
+// a distinct-per-variant item handle (so a non-component recipe can pick a variant) - tracked
+// at Flatts3000/productive-frogs#127. Re-enable these recipes once PF ships it. The
+// tier/variant/filler data is parked here for that.
 
 // [Category stamp, tier filler block, [variants...]]
 const SLIME_TIERS = [
