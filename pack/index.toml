@@ -66,7 +66,7 @@ hash = "459e1e4a9e07b4d6e8a469050fa1c02795ec60033dc0ce622e724c2f38c5ecee"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tools_and_things.snbt"
-hash = "7804aa84b43caeb4d7c5ffd16b29bd02e8882bd73e1dda42119c2ca231b649b8"
+hash = "9a2dcf8477a1339285a8675485b9e5427d19e2e0701fce3eede60ccc6b92dd5e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
@@ -82,7 +82,7 @@ hash = "d7dd511fa89cc9066374f537d8e9259d6caff8fe7db0a0a04db3af393100e0a4"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "c9ca5dc854084e37a67741fb48690ce63cc0b700eb985441d5da9645de0007a3"
+hash = "a6b801b70afbdec9e42e515333cbb01e58255e78d61dc39a4a5c3c7eb0fd2369"
 
 [[files]]
 file = "config/productivefrogs-common.toml"

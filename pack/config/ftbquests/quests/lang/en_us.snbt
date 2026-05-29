@@ -25,12 +25,6 @@
 		"Stock up. Everything Direwolf20 makes from here takes ferricore."
 	]
 	quest.1F00000000000005.title: "Ferricore Ingot"
-	quest.1F0000000000000B.quest_desc: [
-		"A &eSimple Block Breaker&r breaks the block in front of it on a redstone tick. Pair it with a Block Placer and you've got an auto-farm loop with no hands: cobblegen, crop rotation, anything that needs a block broken on a tick."
-		""
-		"Stock up - you'll use them everywhere."
-	]
-	quest.1F0000000000000B.title: "Auto-Breaker"
 	quest.1F0000000000000E.quest_desc: [
 		"Done chasing dropped &bFroglights&r across the platform? An &eItem Collector&r vacuums up everything in a radius - Froglights, slimeballs, anything that hits the floor."
 		""

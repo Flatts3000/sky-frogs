@@ -32,7 +32,7 @@ Modded resources per tier are PF's conditional variants — they register only w
 6. **One new verb per tier (anti-repetition).** Each tier layers exactly one new verb onto the frog loop so the gameplay doesn't just repeat at a higher number:
    - **Cave** = crafting upgrades / storage (Sophisticated + Functional storage, quartz-free networks).
    - **Geode** = automation (Mekanism: power, Metallurgic Infuser, Enrichment Chamber).
-   - **Bog** = Just Dire Things' tier-1 progression (Primogel Goo -> Ferricore -> Simple Block Breaker -> Item Collector) plus a Building Gadgets 2 side branch and a JDT fluid pair (Fluid Collector -> Fluid Placer). Lives in `tools_and_things.snbt`. Mekanism RF from Geode powers the JDT machines (no separate Simple Generator quest needed).
+   - **Bog** = Just Dire Things' tier-1 progression (Primogel Goo -> Ferricore -> Fluid Collector -> Fluid Placer -> Item Collector) plus a Building Gadgets 2 side branch. Lives in `tools_and_things.snbt`. Mekanism RF from Geode powers the JDT machines.
    - **Infernal** = earmarked for Refined Storage (*sketch*).
 
 ## Tier transitions (the gate mechanic)
@@ -113,7 +113,7 @@ Estimated playtime: **3–5 hours**.
 
 - Bog Frogs + Bog Slimes (from the crafted Bog seed-chain, bridged off diamond Slime Milk).
 - Infuse → Dirt → Mud → Clay_ball → Moss → Mycelium → Lily_pad → Leather → Feather → Plastic → Pink_slime Slimes. The last two (plastic, pink_slime) are Industrial Foregoing items; IF is a hard pack dependency.
-- **New verb:** **Just Dire Things tier-1 progression** + Building Gadgets 2 side branch (the `tools_and_things.snbt` chapter). Spine: Primogel Goo Block (mycelium-gated) -> Ferricore Ingot -> Simple Block Breaker -> Item Collector (hexagon capstone). Optionals: Exchanging Gadget -> Copy/Paste Gadget (BG side) plus Fluid Collector -> Fluid Placer (JDT fluid pair). Mekanism RF from Geode powers the JDT machines.
+- **New verb:** **Just Dire Things tier-1 progression** + Building Gadgets 2 side branch (the `tools_and_things.snbt` chapter). Spine: Primogel Goo Block (mycelium-gated) -> Ferricore Ingot -> Fluid Collector -> Fluid Placer -> Item Collector (hexagon capstone). Optionals: Exchanging Gadget -> Copy/Paste Gadget (BG side). Mekanism RF from Geode powers the JDT machines.
 - **Gate to Tier 4:** complete `bog_frogs` (capstone = pink_slime). That unlocks the `road_to_tide` chapter, which holds the Industrial Foregoing spine (Pity Machine Frame -> Fluid Extractor -> **Dissolution Chamber**, the pack's slime engine for the 21 Cave/Geode/Bog chamber recipes; iron bootstraps off bone meal). Tide-specific content (Spawnery primer, first Tide slime, Tide frogs) extends `road_to_tide` when Tier 4 ships.
 
 Estimated playtime: **3–5 hours**.
