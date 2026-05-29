@@ -158,7 +158,7 @@ hash = "659f7a086b994e6c47b0b7f0e37fbc037a7417fc1ab924455c60cd4a0d08f4e8"
 
 [[files]]
 file = "kubejs/server_scripts/geode_slime_chain.js"
-hash = "9d82ed589e65bcb2478d27dbbdf24d652deae205925f1b792c315d46d7d29c04"
+hash = "0ada73db65f3f3945a5a0f02bb14de2174bff507ff7c971dbe357d9c2faec80d"
 
 [[files]]
 file = "kubejs/server_scripts/if_plastic_gate.js"
