@@ -1,4 +1,5 @@
 {
+	chapter.1F00000000000001.title: "Plastic and Machines"
 	chapter.2A5700000A570001.title: "Scaling the Colony"
 	chapter.570A6E0000000001.title: "Storage and Crafting"
 	chapter.60ADE60000000001.title: "Road to Geode"
@@ -10,6 +11,44 @@
 	chapter_group.0C4F0E0000000001.title: "Tier 1: Cave"
 	chapter_group.0C4F0E0000000003.title: "Tier 3: Bog"
 	chapter_group.0C4F0E0000000002.title: "Tier 2: Geode"
+	quest.1F00000000000002.quest_desc: [
+		"Industrial Foregoing builds everything into a &eMachine Frame&r, and the humblest is the &ePity Machine Frame&r - logs, iron, and a block of redstone, no plastic required."
+		""
+		"Craft one. It's the chassis every machine in this chapter bolts onto."
+	]
+	quest.1F00000000000002.title: "The Machine Frame"
+	quest.1F00000000000005.quest_desc: [
+		"Set a &eFluid Extractor&r against a &flog&r and it slowly bleeds the wood for &fLiquid Latex&r."
+		""
+		"Latex is the fluid that feeds the machine this whole chapter is building toward, so keep a tank of it. (A tree farm helps - see the optional branch.)"
+	]
+	quest.1F00000000000005.title: "Tapping Latex"
+	quest.1F00000000000008.quest_desc: [
+		"The &eDissolution Chamber&r dissolves a pile of items in a fluid and presses out something new. Its frame takes &fplastic&r, which is why you had to raise the &bplastic frog&r first."
+		""
+		"Craft one, give it power and a feed of &flatex&r, and you've built the heart of every tier from here on."
+	]
+	quest.1F00000000000008.title: "The Dissolution Chamber"
+	quest.1F0000000000000B.quest_desc: [
+		"Here's what the Chamber is really for: &eit makes slimes&r."
+		""
+		"Drop a variant's &bSlime Milk&r in with some filler and sweetslime, add &flatex&r, and the Chamber pours out that &bSlime in a Bucket&r - as many as you can feed it. Every slime you've already unlocked, now on tap."
+		""
+		"And going forward this is the road into each new tier: the Chamber bootstraps the next species' slimes the way the crafting bench did the early ones. Claim this once you've made your first slime by machine."
+	]
+	quest.1F0000000000000B.title: "Slimes by the Bucket"
+	quest.1F0000000000000E.quest_desc: [
+		"A &ePlant Gatherer&r chops a fenced grove on a loop - logs for your latex, plus a trickle of &fSludge&r as a byproduct."
+		""
+		"Pair it with a &ePlant Sower&r to replant, and your latex supply never runs dry."
+	]
+	quest.1F0000000000000E.title: "Let the Trees Run"
+	quest.1F00000000000011.quest_desc: [
+		"Don't throw the &fSludge&r away. A &eSludge Refiner&r churns it back into &fearth&r - dirt, sand, clay, gravel, the organic odds and ends a skyblock always wants more of."
+		""
+		"The Bog's whole promise, automated."
+	]
+	quest.1F00000000000011.title: "Sludge into Soil"
 	quest.01A8E068925B319F.quest_desc: [
 		"You're stranded on a speck of dirt in the void. No ore, no mineshafts, not so much as a mountain to feel bad about."
 		""

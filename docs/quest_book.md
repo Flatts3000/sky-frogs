@@ -39,7 +39,7 @@ Sky Frogs does **not** mirror this organization. SBR is mod-sprawled (one chapte
 
 ### Built chapters (Tiers 0-3)
 
-These are the 10 chapter files that exist in `config/ftbquests/quests/chapters/`. They sit under three chapter groups (`chapter_groups.snbt`): "Tier 1: Cave", "Tier 2: Geode", "Tier 3: Bog"; Welcome stays ungrouped at the top. Note the **"Road to <tier>" gateway-chapter pattern**: each later tier opens with a short gateway chapter that crafts the next species' frogspawn (Spawnery + primer) and runs the seed-chain bridge, before the species' own chapter.
+These are the 11 chapter files that exist in `config/ftbquests/quests/chapters/`. They sit under three chapter groups (`chapter_groups.snbt`): "Tier 1: Cave", "Tier 2: Geode", "Tier 3: Bog"; Welcome stays ungrouped at the top. Note the **"Road to <tier>" gateway-chapter pattern**: each later tier opens with a short gateway chapter that crafts the next species' frogspawn (Spawnery + primer) and runs the seed-chain bridge, before the species' own chapter.
 
 | Tier group | Chapter file                  | Covers                                                |
 |------------|-------------------------------|--------------------------------------------------------|
@@ -52,7 +52,8 @@ These are the 10 chapter files that exist in `config/ftbquests/quests/chapters/`
 | Tier 2: Geode | `geode_frogs.snbt`          | The Geode species: lapis -> tuff -> calcite -> amethyst -> emerald -> diamond. |
 | Tier 2: Geode | `mekanism.snbt`             | The Geode-tier **new verb**: automation (Mekanism power, Metallurgic Infuser, Enrichment Chamber). Steel quest keeps the `ingot_steel` check; the optional steel-slime quest carries the froglight check. |
 | Tier 3: Bog | `road_to_bog.snbt`           | Gateway: prime the Spawnery with **enriched diamond** (a Mekanism craft) for Bog frogspawn, run the diamond -> dirt seed-chain bridge. |
-| Tier 3: Bog | `bog_frogs.snbt`             | The Bog species: dirt -> mud -> clay_ball -> moss -> mycelium -> lily_pad -> leather -> feather -> plastic -> pink_slime. The Bog-tier **new verb** is Industrial Foregoing (plastic hard-gated, pink_slime capstone). |
+| Tier 3: Bog | `bog_frogs.snbt`             | The Bog species: dirt -> mud -> clay_ball -> moss -> mycelium -> lily_pad -> leather -> feather -> plastic -> pink_slime (plastic hard-gated behind its frog, pink_slime capstone). |
+| Tier 3: Bog | `industrial_foregoing.snbt` | The Bog-tier **new verb** in full: the Industrial Foregoing machine climb (Pity Machine Frame -> Fluid Extractor for latex -> **Dissolution Chamber** capstone, cross-linked to the bog plastic quest), plus an optional Plant Gatherer + Sludge Refiner branch. The Dissolution Chamber is the slime-crafting engine **going forward** - it bulk-makes any unlocked slime and bootstraps Tier 4+. |
 
 ### Sketched chapters (Tiers 4-6, unbuilt)
 
@@ -117,7 +118,10 @@ mekanism                   | (Geode new verb: automation)
    |
 road_to_bog    (prime Spawnery w/ enriched diamond)
    |
-bog_frogs                    (Bog new verb: Industrial Foregoing)
+bog_frogs ------------------+
+   |                        |
+industrial_foregoing        | (Bog new verb: Industrial Foregoing -> Dissolution Chamber)
+   |                        |
 - - - - - - - - - - - - - - - - - - - - (sketch below)
    |
 Drowned Riches (Tide) -> Heat & Flame (Infernal) -> Void Mastery
