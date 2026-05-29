@@ -1,48 +1,75 @@
 // Sky Frogs - Dissolution Chamber slime recipes (the Bog / Industrial Foregoing verb).
 //
-// The chamber is the slime engine for Tier 4 (Tide) and beyond. Each per-variant recipe
-// threads off a PRIOR vanilla resource, mirroring the Cave/Geode/Bog crafting-table seed
-// chains, just transposed into the IF machine:
+// The chamber is the pack's slime engine. Each per-variant recipe threads off a PRIOR
+// vanilla resource, mirroring the Cave/Geode/Bog crafting-table seed chains, just
+// transposed into the IF machine:
 //
 //   fluid:  100 mb industrialforegoing:latex   (tap it from logs with a Fluid Extractor)
-//   items:  1x prior resource                   (the previous TIER's last resource for the
-//                                                 FIRST variant in a tier; the previous
-//                                                 VARIANT's resource for each step after)
+//   items:  1x prior resource                   (see threading note below)
 //           4x tier filler block
 //           3x productivefrogs:sweetslime
 //   -> 1x   that variant's Slime in a Bucket    (stamped Variant + Category)
 //
-// Resource-keyed (NOT milk-keyed): the variant's smelted resource is a distinct vanilla
-// item id, so it round-trips through IF/Titanium's JSON recipe codec fine. A milk-keyed
-// recipe would need a neoforge:components ingredient, which IF can't network-sync (PF
-// declined adding a per-variant component-free handle - see PF issue #127 - so the
-// chamber operates on the froglight -> resource production loop instead). The output
-// slime bucket carries its Variant + Category components via ItemStack.CODEC, which
-// handles JSON components broadly; that's the one round-trip to keep an eye on when
-// the first Tier 4 row lands.
+// Threading:
+//   - WITHIN a tier, each variant's chamber input is the PRIOR variant's resource
+//     (e.g. copper takes iron_ingot, gold takes copper_ingot).
+//   - AT a tier boundary, the first variant of the new tier takes the LAST resource
+//     of the prior tier (Geode's lapis takes redstone; Bog's dirt takes diamond; Tide's
+//     first variant will take pink_slime when Tide ships).
+//   - IRON is the exception: there's no pre-Cave resource to thread off, so iron's
+//     chamber input is BONE MEAL - the same "starter" ingredient the crafting-table
+//     bootstrap (iron_slime_bucket.js) uses. Bone meal is abundant by Bog (composter +
+//     organic mats), so chamber-bootstrapping iron at end-of-Bog is a clean payoff.
 //
-// Tier 1-3 (Cave/Geode/Bog) stay on their crafting-table seed-chains (cave_slime_chain.js
-// / geode_slime_chain.js / bog_slime_chain.js); retrofitting them to chamber-only would
-// be a wash (spend an iron ingot to make an iron slime) and they're already shipped.
-// The chamber rule starts at Tier 4 - exactly when the player has just earned it by
-// clearing Bog.
+// Resource-keyed (NOT milk-keyed): the smelted resource is a distinct vanilla item id,
+// so it round-trips through IF/Titanium's JSON recipe codec. A milk-keyed recipe would
+// need a neoforge:components ingredient, which IF can't network-sync (PF declined the
+// per-variant component-free handle; productive-frogs#127 closed won't-fix). The
+// output slime bucket carries Variant + Category via ItemStack.CODEC, which handles
+// JSON components broadly; verify the round-trip stays green on the first Tier 4 row.
+//
+// Why parallel to the crafting-table chains (and not replacing them): the chamber is
+// only available at end-of-Bog (its frame needs plastic), so Cave/Geode/Bog players
+// don't have it yet - the crafting tables remain the path TO the chamber. Once you
+// have the chamber, you can automate the same slime production via hopper-fed input
+// instead of hand-crafting. The economics are a 1:1 wash; the value is automation.
 
 // [Category stamp, tier filler block, [[variant, prior-resource], ...]]
 //
-// The FIRST variant in a tier consumes the PRIOR TIER'S LAST resource (Bog ends at
-// productivefrogs:pink_slime, so Tide's first variant takes pink_slime). Each subsequent
-// row consumes the variant ABOVE it in the list. Order within a tier is the progression
-// order, the same way Cave's chain is iron -> copper -> gold -> coal -> redstone.
-//
-// No rows yet - design pending per tier:
+// Rows in the order a tier's chain runs. The first row of each tier consumes the prior
+// tier's last resource (or bone_meal for iron's bootstrap); every other row consumes
+// the variant above it.
 const SLIME_TIERS = [
-  // ['TIDE', 'minecraft:<filler>', [
-  //   ['<first-variant>', 'industrialforegoing:pink_slime'],
-  //   ['<next-variant>',  'minecraft:<first-variant-resource>'],
-  //   ...
-  // ]],
-  // ['INFERNAL', 'minecraft:<filler>', [...]],
-  // ['VOID', 'minecraft:<filler>', [...]],
+  ['CAVE', 'minecraft:stone', [
+    ['iron',     'minecraft:bone_meal'],   // bootstrap (also crafted at table via iron_slime_bucket.js)
+    ['copper',   'minecraft:iron_ingot'],
+    ['gold',     'minecraft:copper_ingot'],
+    ['coal',     'minecraft:gold_ingot'],
+    ['redstone', 'minecraft:coal']
+  ]],
+  ['GEODE', 'minecraft:gravel', [
+    ['lapis',    'minecraft:redstone'],      // bridges from Cave's last
+    ['tuff',     'minecraft:lapis_lazuli'],
+    ['calcite',  'minecraft:tuff'],
+    ['amethyst', 'minecraft:calcite'],
+    ['emerald',  'minecraft:amethyst_shard'],
+    ['diamond',  'minecraft:emerald']
+  ]],
+  ['BOG', 'minecraft:mossy_cobblestone', [
+    ['dirt',       'minecraft:diamond'],            // bridges from Geode's last
+    ['mud',        'minecraft:dirt'],
+    ['clay_ball',  'minecraft:mud'],
+    ['moss',       'minecraft:clay_ball'],
+    ['mycelium',   'minecraft:moss_block'],
+    ['lily_pad',   'minecraft:mycelium'],
+    ['leather',    'minecraft:lily_pad'],
+    ['feather',    'minecraft:leather'],
+    ['plastic',    'minecraft:feather'],
+    ['pink_slime', 'industrialforegoing:plastic']
+  ]]
+  // Tier 4 (Tide): filler + variant order TBD. The first row will take
+  //   'industrialforegoing:pink_slime' (Bog's last) as its prior-resource.
+  // Tier 5 (Infernal) and Tier 6 (Void): TBD.
 ]
 
 ServerEvents.recipes(event => {

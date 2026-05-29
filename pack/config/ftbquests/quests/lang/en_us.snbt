@@ -30,9 +30,11 @@
 	]
 	quest.1F00000000000008.title: "The Dissolution Chamber"
 	quest.1F0000000000000B.quest_desc: [
-		"You've built the heart of Industrial Foregoing. Fed power and &flatex&r, the &eDissolution Chamber&r is the Bog tier's capstone machine."
+		"You've built the heart of Industrial Foregoing. Fed power and &flatex&r, the &eDissolution Chamber&r is the Bog tier's capstone machine - and your &eslime engine&r from here on."
 		""
-		"Going forward, this is where new tiers' slimes come from. From &eTier 4 (Tide)&r on, each variant's &bSlime in a Bucket&r is crafted here, threading off the previous tier's last resource - the same chain shape as your crafting-table chains today, just in the machine."
+		"Feed it a prior resource (the previous variant's, or the previous tier's last at tier boundaries) + tier filler + sweetslime + latex, and out comes that variant's &bSlime in a Bucket&r. &eCave&r, &eGeode&r, and &eBog&r all run in the chamber today; Tier 4 (Tide) and beyond land as those tiers ship."
+		""
+		"Iron is the one exception: it threads off &fbone meal&r in the chamber, the same way the original crafting-table bootstrap did."
 		""
 		"Claim your reward."
 	]
