@@ -25,6 +25,10 @@ __pycache__/
 /.vscode/
 *.iml
 
+# Claude Code local runtime (per-user settings + scheduler lock; never shared)
+.claude/settings.local.json
+.claude/scheduled_tasks.lock
+
 # OS junk
 .DS_Store
 Thumbs.db
