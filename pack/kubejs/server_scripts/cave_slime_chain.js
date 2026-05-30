@@ -31,7 +31,7 @@ ServerEvents.recipes(event => {
     event.shapeless(
       `productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:${to}",Category:"CAVE"}]`,
       [
-        `productivefrogs:slime_milk_bucket[productivefrogs:slime_variant="productivefrogs:${from}"]`,
+        `productivefrogs:${from}_slime_milk_bucket`,
         'minecraft:stone',
         'minecraft:stone',
         'minecraft:stone',

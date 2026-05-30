@@ -66,10 +66,7 @@
 		{
 			dependencies: ["60ADE6000000000B"]
 			icon: {
-				components: {
-					"productivefrogs:slime_variant": "productivefrogs:lapis"
-				}
-				id: "productivefrogs:slime_milk_bucket"
+				id: "productivefrogs:lapis_slime_milk_bucket"
 			}
 			id: "60ADE60000000005"
 			rewards: [{
@@ -83,7 +80,7 @@
 			}]
 			tasks: [{
 				id: "60ADE60000000006"
-				item: { components: { "productivefrogs:slime_variant": "productivefrogs:lapis" }, count: 1, id: "productivefrogs:slime_milk_bucket" }
+				item: { count: 1, id: "productivefrogs:lapis_slime_milk_bucket" }
 				type: "item"
 			}]
 			x: 0.0d

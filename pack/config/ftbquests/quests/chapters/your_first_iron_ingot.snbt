@@ -108,7 +108,7 @@
 		{
 			dependencies: ["6C1F0A2B3D4E5F6A"]
 			icon: {
-				id: "productivefrogs:slime_milk_bucket"
+				id: "productivefrogs:iron_slime_milk_bucket"
 			}
 			id: "6C1F0A2B3D4E5F6D"
 			rewards: [{
@@ -121,7 +121,7 @@
 			}]
 			tasks: [{
 				id: "6C1F0A2B3D4E5F6E"
-				item: { components: { "productivefrogs:slime_variant": "productivefrogs:iron" }, count: 1, id: "productivefrogs:slime_milk_bucket" }
+				item: { count: 1, id: "productivefrogs:iron_slime_milk_bucket" }
 				type: "item"
 			}]
 			x: 1.5d
