@@ -54,7 +54,7 @@ hash = "ce140602036d2b62c1211368a732a43667da89bdb6737e33c75fb338cf0ee60f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_tide.snbt"
-hash = "81efc3395ece90546cc1e51f4d75b32cf5d724a1955ee0a1087102fed63e5667"
+hash = "c79b1c304af04653fad8b5484ee9b3232aeea2b7134effad2691edfe221e820a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/scaling_the_colony.snbt"
@@ -82,7 +82,7 @@ hash = "d7dd511fa89cc9066374f537d8e9259d6caff8fe7db0a0a04db3af393100e0a4"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "f8eb68f0ee0860bad8969c3377a1788b820173127581e17b02f71a201691efed"
+hash = "a1f452538c3522db76ccdbbcadec8011c98e4531a8b67b5b4778219afc06a12e"
 
 [[files]]
 file = "config/productivefrogs-common.toml"
@@ -149,6 +149,10 @@ file = "kubejs/data/productivefrogs/tags/item/spawnery_primer/geode.json"
 hash = "39a83486cb95a2b162d7b896e0f18f3591f822c483bdf66488c7a9145018ff30"
 
 [[files]]
+file = "kubejs/data/productivefrogs/tags/item/spawnery_primer/tide.json"
+hash = "0b7812099b96fcaa412f2a15d4ab9a432d0e617461671c48e91dc031b45512cc"
+
+[[files]]
 file = "kubejs/data/skyfrogs/neoforge/biome_modifier/add_cave_slime_island.json"
 hash = "7b229ff45dfddb7a42fc5d7bd6cb33bdca7b2b3edd6dabc721ad79d321eeeb54"
 
@@ -170,7 +174,7 @@ hash = "5988e55c01cba66280a66eeb2c68d3d13451e6ac1b5848f54217720bb34946d7"
 
 [[files]]
 file = "kubejs/server_scripts/dissolution_slime_recipes.js"
-hash = "dbf685eff591fc174905691638f14e3a9d2aedce7d4aeab05161f61d686c7fbd"
+hash = "208c4c478188e9ba1eb2f4e089bb49cef6c1082e71dc8c8ef5fdb11f8b2c203e"
 
 [[files]]
 file = "kubejs/server_scripts/first_join.js"
@@ -207,6 +211,10 @@ hash = "e1786b8cf0582208c9802eef75825c418bac0dd9b0d472ccee6e6ee5f50a81ba"
 [[files]]
 file = "kubejs/server_scripts/storage_quartz_free.js"
 hash = "2b6735fc64ee708364b30526b4d5d7b703cfc80e624eb8f6f2098f6a0b2b192d"
+
+[[files]]
+file = "kubejs/server_scripts/tide_slime_chain.js"
+hash = "46b5e53503e82c33b1cfe7aafdb9f2a2cb787e8c370d327b8e9d78319db389fc"
 
 [[files]]
 file = "mods/almostunified.pw.toml"

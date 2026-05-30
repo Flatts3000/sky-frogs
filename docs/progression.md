@@ -48,15 +48,16 @@ So: finish the **Cave** line at redstone → prime the Spawnery with redstone fo
 
 ### Per-tier filler blocks
 
-Each tier's slime-in-a-bucket seed-chain recipe spends **4 of a tier-themed filler block** per step. The constraint: a tier's filler must be mass-attainable *at that tier* (not a chain output, not gated behind a later tier). The same per-tier filler carries into the Dissolution Chamber slime recipes (Cave=stone, Geode=gravel, Bog=mossy cobblestone, all live; Tier 4+ filler picked per tier when each ships).
+Each tier's slime-in-a-bucket seed-chain recipe spends **4 of a tier-themed filler block** per step. The constraint: a tier's filler must be mass-attainable *at that tier* (not gated behind a later tier). The same per-tier filler carries into the Dissolution Chamber slime recipes (Cave=stone, Geode=gravel, Bog=mossy cobblestone, Tide=mycelium, all live; Tier 5+ filler picked per tier when each ships).
 
 | Tier | Filler block | Source |
 |------|--------------|--------|
 | Cave  | **stone** | smelted/farmed at Tier 1 |
 | Geode | **gravel** | the Ex Deorum block you sieve gems from |
 | Bog   | **mossy cobblestone** | crafted in Mekanism's Metallurgic Infuser / Enrichment Chamber (the Geode-era machines) |
+| Tide  | **mycelium** | a Bog chain resource, mass-renewable via the Bog frog loop by Tier 4 |
 
-Tide / Infernal / Void fillers are TBD.
+**Note on Tide's filler:** Cave/Geode/Bog fillers are all plain non-resource blocks. Tide's mycelium is the first filler that *is* a frog-chain resource (the Bog mycelium variant). This is a deliberate departure: it's safe because mycelium is fully produced within Bog, before Tide, so there's no circular dependency, and the swamp-tier resource thematically seeds the shore tier. Infernal / Void fillers are TBD.
 
 ## The per-tier loop (same shape every tier)
 
@@ -114,7 +115,7 @@ Estimated playtime: **3–5 hours**.
 - Bog Frogs + Bog Slimes (from the crafted Bog seed-chain, bridged off diamond Slime Milk).
 - Infuse → Dirt → Mud → Clay_ball → Moss → Mycelium → Lily_pad → Leather → Feather → Plastic → Pink_slime Slimes. The last two (plastic, pink_slime) are Industrial Foregoing items; IF is a hard pack dependency.
 - **New verb:** **Just Dire Things tier-1 progression** + Building Gadgets 2 side branch (the `tools_and_things.snbt` chapter). Spine: Primogel Goo Block (mycelium-gated) -> Ferricore Ingot -> Fluid Collector -> Fluid Placer -> Item Collector (hexagon capstone). Optionals: Exchanging Gadget -> Copy/Paste Gadget (BG side). Mekanism RF from Geode powers the JDT machines.
-- **Gate to Tier 4:** complete `bog_frogs` (capstone = pink_slime). That unlocks the `road_to_tide` chapter, which holds the Industrial Foregoing spine (Pity Machine Frame -> Fluid Extractor -> **Dissolution Chamber**, the pack's slime engine for the 21 Cave/Geode/Bog chamber recipes; iron bootstraps off bone meal). Tide-specific content (Spawnery primer, first Tide slime, Tide frogs) extends `road_to_tide` when Tier 4 ships.
+- **Gate to Tier 4:** complete `bog_frogs` (capstone = pink_slime). That unlocks the `road_to_tide` chapter, which holds the Industrial Foregoing spine (Pity Machine Frame -> Fluid Extractor -> **Dissolution Chamber**, the pack's slime engine for the Cave/Geode/Bog/Tide chamber recipes; iron bootstraps off bone meal). The chapter then **bridges into Tide**: prime the Spawnery with pink_slime -> Tide frogspawn -> mycelium filler -> first Prismarine slime -> milk -> first **Prismarine Froglight** (capstone). The rest of the aquatic chain (crystals, sponge, ink_sac, sea_pickle, nautilus_shell) is wired in `tide_slime_chain.js` + the TIDE Dissolution rows and waits on the `drowned_riches` species chapter.
 
 Estimated playtime: **3–5 hours**.
 

@@ -74,11 +74,47 @@
 		""
 		"Every variant in &eCave&r, &eGeode&r, and &eBog&r has a chamber recipe: feed it a prior resource (within a tier, the previous variant's; at a tier boundary, the previous tier's last) + tier filler + sweetslime + latex, and out comes that variant's &bSlime in a Bucket&r. Iron is the exception - it threads off &fbone meal&r."
 		""
-		"This chapter is the &eRoad to Tide&r - the bridge that closes out Bog. &eTide&r itself is unbuilt; the engine is in place for when that content ships."
+		"This chapter is the &eRoad to Tide&r - the bridge that closes out &eBog&r and opens &eTide&r. The engine is online; below, you'll prime your first &bTide Frog&r and pull a &bPrismarine Froglight&r out of the void-sea."
 		""
 		"Claim your reward; the engine is online."
 	]
 	quest.71DE000000000008.title: "The Slime Engine"
+	quest.71DE00000000000B.quest_desc: [
+		"You closed out &eBog&r with &bpink slime&r, Industrial Foregoing's strangest output. It's also your key to the sea."
+		""
+		"Feed &bpink slime&r to the &eSpawnery&r to prime it for &eTide&r - the swamp's last resource opens the shore. Grab one to begin."
+	]
+	quest.71DE00000000000B.title: "Prime for Tide"
+	quest.71DE00000000000E.quest_desc: [
+		"Prime the &eSpawnery&r with &bpink slime&r and it bottles a &bBottle of Tide Frog Frogspawn&r."
+		""
+		"Pour it on water. &eTide Frogs&r hatch: the aquatic species, hungry for sponge, prismarine, and ink."
+	]
+	quest.71DE00000000000E.title: "Tide Frogspawn"
+	quest.71DE000000000011.quest_desc: [
+		"Tide's slime chain is bound with &fmycelium&r, the same fungal turf your &bBog Frog&r already farms. The swamp seeds the shore."
+		""
+		"Stock a stack. Every step of the aquatic chain eats four."
+	]
+	quest.71DE000000000011.title: "A Bed of Mycelium"
+	quest.71DE000000000014.quest_desc: [
+		"Craft the bridge: &fpink slime milk&r + &fmycelium&r + &fsweetslime&r + a &bTide frogspawn&r presses out a &bBucket of Prismarine Slime&r, your first aquatic resource slime."
+		""
+		"Rather automate it? The &eDissolution Chamber&r runs the same recipe off &flatex&r."
+	]
+	quest.71DE000000000014.title: "A Bucket of Prismarine Slime"
+	quest.71DE000000000017.quest_desc: [
+		"Run the &bPrismarine Slime&r through a &eSlime Milker&r for &bPrismarine Slime Milk&r."
+		""
+		"Place the milk and prismarine slimes spawn for your &eTide Frog&r to eat."
+	]
+	quest.71DE000000000017.title: "Milk It"
+	quest.71DE00000000001A.quest_desc: [
+		"Feed a prismarine slime to a &eTide Frog&r and it drops a &bPrismarine Froglight&r. Smelt it for &fprismarine shards&r: ocean stone, no monument required."
+		""
+		"&eTide&r is open. The rest of the aquatic chain (crystals, sponge, ink, sea pickle, nautilus) waits in &eDrowned Riches&r, when that chapter ships."
+	]
+	quest.71DE00000000001A.title: "First Prismarine"
 	quest.01A8E068925B319F.quest_desc: [
 		"You're stranded on a speck of dirt in the void. No ore, no mineshafts, not so much as a mountain to feel bad about."
 		""
