@@ -39,7 +39,7 @@ Sky Frogs does **not** mirror this organization. SBR is mod-sprawled (one chapte
 
 ### Built chapters (Tiers 0-3)
 
-These are the 10 chapter files that exist in `config/ftbquests/quests/chapters/`. They sit under three chapter groups (`chapter_groups.snbt`): "Tier 1: Cave", "Tier 2: Geode", "Tier 3: Bog"; Welcome stays ungrouped at the top. Note the **"Road to <tier>" gateway-chapter pattern**: each later tier opens with a short gateway chapter that crafts the next species' frogspawn (Spawnery + primer) and runs the seed-chain bridge, before the species' own chapter.
+These are the 12 chapter files that exist in `config/ftbquests/quests/chapters/`. They sit under four chapter groups (`chapter_groups.snbt`): "Tier 1: Cave", "Tier 2: Geode", "Tier 3: Bog", "Tier 4: Tide"; Welcome stays ungrouped at the top. Note the **"Road to <tier>" gateway-chapter pattern**: each later tier opens with a short gateway chapter that crafts the next species' frogspawn (Spawnery + primer) and runs the seed-chain bridge, before the species' own chapter.
 
 | Tier group | Chapter file                  | Covers                                                |
 |------------|-------------------------------|--------------------------------------------------------|
@@ -49,10 +49,12 @@ These are the 10 chapter files that exist in `config/ftbquests/quests/chapters/`
 | Tier 1: Cave | `cave_frogs.snbt`            | The Cave species' resource quests + the Geode-gateway capstone (lean by design; modded Cave metals live in their tech chapters). |
 | Tier 1: Cave | `storage_and_crafting.snbt`  | The Cave-tier **new verb**: crafting upgrades / storage (Sophisticated + Functional storage, quartz-free networks). |
 | Tier 2: Geode | `road_to_geode.snbt`        | Gateway: prime the Spawnery with **redstone** for Geode frogspawn, run the lapis seed-chain bridge. |
-| Tier 2: Geode | `geode_frogs.snbt`          | The Geode species: lapis -> tuff -> calcite -> amethyst -> emerald -> diamond. |
+| Tier 2: Geode | `geode_frogs.snbt`          | The Geode species: lapis -> tuff -> calcite -> amethyst -> emerald -> diamond, plus a **Slime Milk catalyst** branch off the diamond capstone (Count -> Speed -> Quantity -> Infinite Count; PF v1.7.0). |
 | Tier 2: Geode | `mekanism.snbt`             | The Geode-tier **new verb**: automation (Mekanism power, Metallurgic Infuser, Enrichment Chamber). Steel quest keeps the `ingot_steel` check; the optional steel-slime quest carries the froglight check. |
 | Tier 3: Bog | `road_to_bog.snbt`           | Gateway: prime the Spawnery with **enriched diamond** (a Mekanism craft) for Bog frogspawn, run the diamond -> dirt seed-chain bridge. |
-| Tier 3: Bog | `bog_frogs.snbt`             | The Bog species: dirt -> mud -> clay_ball -> moss -> mycelium -> lily_pad -> leather -> feather -> plastic -> pink_slime. The Bog-tier **new verb** is Industrial Foregoing (plastic hard-gated, pink_slime capstone). |
+| Tier 3: Bog | `bog_frogs.snbt`             | The Bog species: dirt -> mud -> clay_ball -> moss -> mycelium -> lily_pad -> leather -> feather -> plastic -> pink_slime (plastic hard-gated behind its frog, pink_slime capstone). |
+| Tier 3: Bog | `tools_and_things.snbt` | The Bog-tier **new verb**: **Just Dire Things' natural tier-1 progression** plus a Building Gadgets 2 side branch. Spine: Primogel Goo Block (intro; mycelium-gated) -> Ferricore Ingot -> Fluid Collector -> Fluid Placer -> Item Collector (hexagon capstone). Optionals: Exchanging Gadget -> Copy/Paste Gadget (BG side). Mekanism RF from Geode powers the JDT machines. |
+| Tier 4: Tide | `road_to_tide.snbt` | Tier 4 gateway, starting with the Industrial Foregoing spine that ends Bog and bridges into Tide: Pity Machine Frame -> Fluid Extractor -> **Dissolution Chamber** (hexagon capstone, "The Slime Engine"). The chamber is the **pack's slime engine** (21 resource-threaded chamber rows for Cave/Geode/Bog ship today in `kubejs/server_scripts/dissolution_slime_recipes.js`; iron bootstraps off bone meal). Entry gates on the bog_frogs pink_slime capstone, so the chapter opens when Bog finishes. Tide-specific content (Spawnery primer, first Tide slime, Tide frogs) extends this chapter when Tier 4 ships. |
 
 ### Sketched chapters (Tiers 4-6, unbuilt)
 
@@ -117,7 +119,14 @@ mekanism                   | (Geode new verb: automation)
    |
 road_to_bog    (prime Spawnery w/ enriched diamond)
    |
-bog_frogs                    (Bog new verb: Industrial Foregoing)
+bog_frogs ------------------+
+   |                        |
+tools_and_things            | (Bog new verb: JDT tier-1 progression + BG side branch)
+   |
+- - - - - - - - - - - - - - - - - - - - (Tier 4 begins below)
+   |
+road_to_tide                | (IF spine: Pity Frame -> Fluid Extractor -> Dissolution Chamber capstone)
+   |                        |
 - - - - - - - - - - - - - - - - - - - - (sketch below)
    |
 Drowned Riches (Tide) -> Heat & Flame (Infernal) -> Void Mastery

@@ -82,7 +82,7 @@ Tiers 0 through 3 (Welcome -> Cave -> Geode -> Bog) are playable end to end. The
 |---------|------|----------|--------------------------------------------------|--------|
 | `v0.1`  | 1    | Cave     | Crafting upgrades / storage (Sophisticated + Functional, quartz-free) | ✅ done |
 | `v0.2`  | 2    | Geode    | Automation (Mekanism + Generators + Tools)       | ✅ done |
-| `v0.3`  | 3    | Bog      | Industrial Foregoing (plastic hard-gated behind the Bog plastic-frog; pink-slime capstone) | ✅ done |
+| `v0.3`  | 3    | Bog      | Just Dire Things tier-1 progression + Building Gadgets in `tools_and_things.snbt`; plastic hard-gated behind the Bog plastic-frog; pink-slime capstone. IF spine moved to `road_to_tide.snbt` (Tier 4 gateway). | ✅ done |
 | `v0.4`  | 4    | Tide     | (next frontier - verb TBD)                        | not started |
 | `v0.5`  | 5    | Infernal | Refined Storage (earmarked); Nether access        | not started |
 

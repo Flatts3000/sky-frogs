@@ -26,7 +26,7 @@ hash = "a9029472f7a7435e2f54c4827589a0dabca28e522fb1fa6257a814cdf83d64f1"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "058fec8b84839c7f12a71fec7182718bf24562425d2897fd5cface1c45abd417"
+hash = "3448a3a6e7dc33a360a2b0864c0546bd927ccaf98d7f6ab09c99850b96ed908d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/bog_frogs.snbt"
@@ -38,7 +38,7 @@ hash = "13f68293531fb12de49a0e10f16b1a4a958c66d73988626119e623e75572f168"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/geode_frogs.snbt"
-hash = "bfe9dee498742980f71edfb4c85e2ed18d11393a0f025183a065128ed076465a"
+hash = "0703ce17c26e144e0597910de3a0cbcd6f410141bf159e2e5791da8c0cc4aaab"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/mekanism.snbt"
@@ -53,12 +53,20 @@ file = "config/ftbquests/quests/chapters/road_to_geode.snbt"
 hash = "6e7f474e80aab4e45ac3ae272d671e2c274a8462c89057e857bcae6d72fee943"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/road_to_tide.snbt"
+hash = "81efc3395ece90546cc1e51f4d75b32cf5d724a1955ee0a1087102fed63e5667"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/scaling_the_colony.snbt"
 hash = "1b4322445ce5a9e3d0dc11456957bd317c82471611be20f27798abcb5e4502f9"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/storage_and_crafting.snbt"
 hash = "459e1e4a9e07b4d6e8a469050fa1c02795ec60033dc0ce622e724c2f38c5ecee"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/tools_and_things.snbt"
+hash = "51e75a06c5da04f89eadf1d57fa6cd44403f98794b2a256b31d54746d4ab05eb"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
@@ -74,7 +82,7 @@ hash = "d7dd511fa89cc9066374f537d8e9259d6caff8fe7db0a0a04db3af393100e0a4"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "dbf58d210993581617dd01cb618224713ee684c08d6b7be6d242a3ab800c18c2"
+hash = "f8eb68f0ee0860bad8969c3377a1788b820173127581e17b02f71a201691efed"
 
 [[files]]
 file = "config/productivefrogs-common.toml"
@@ -149,8 +157,16 @@ file = "kubejs/server_scripts/bog_slime_chain.js"
 hash = "34b392722846f7d9aca57f66b60292ae8032a330b14d2d12291fdc6b30d8876e"
 
 [[files]]
+file = "kubejs/server_scripts/catalyst_recipes.js"
+hash = "0a97a7117e479eb05b1d2b4e5e5a3fee8da64adc3c14c923244a0da5d4ecc024"
+
+[[files]]
 file = "kubejs/server_scripts/cave_slime_chain.js"
 hash = "dbb7488e1c4a77eb3c909b7c89d8e2dd5412ec53047838aa901978efbd0f5677"
+
+[[files]]
+file = "kubejs/server_scripts/dissolution_slime_recipes.js"
+hash = "dbf685eff591fc174905691638f14e3a9d2aedce7d4aeab05161f61d686c7fbd"
 
 [[files]]
 file = "kubejs/server_scripts/first_join.js"
@@ -167,6 +183,10 @@ hash = "9b879f61d078ae01e7030e17801166cc20abbaa4ec188b475b0bf26eb0ffc846"
 [[files]]
 file = "kubejs/server_scripts/iron_slime_bucket.js"
 hash = "5f8d806e6fea7829f8e5b9b7344ddecf33208f4599eb7e7a2fee34c7a79e3b3e"
+
+[[files]]
+file = "kubejs/server_scripts/jdt_recipes.js"
+hash = "0df0fc9e6f4aa4aa4fa621d2431d63fd0ce85d717bce7708878cde811c687de6"
 
 [[files]]
 file = "kubejs/server_scripts/log_recipes.js"
@@ -400,6 +420,11 @@ hash = "d068154533d9a999acbb4008f7c33d307b583d2e6db7122a69fc02921ffdb411"
 metafile = true
 
 [[files]]
+file = "mods/just-dire-things.pw.toml"
+hash = "fd6d935a0145a7992c3ba365c66f655c65587c9c812db55adab264144e11ce3f"
+metafile = true
+
+[[files]]
 file = "mods/just-enough-professions-jep.pw.toml"
 hash = "f68d6d20d2f1ae3edb429736a46e63fb0a7c3828d876b927431697dd289ab138"
 metafile = true
@@ -501,7 +526,7 @@ metafile = true
 
 [[files]]
 file = "mods/productive-frogs.pw.toml"
-hash = "709b325eab122fe772357c54149c7726b110738c35f17373f100bc2a88f6608d"
+hash = "c0a572ff8b2ff8323cbb590e772df7a8c4fea5ad05c2f0c29d1df94092436c48"
 metafile = true
 
 [[files]]

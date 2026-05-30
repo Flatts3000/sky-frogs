@@ -2,7 +2,7 @@
 
 > **Status:** DRAFT. Tiers 0-3 (Welcome, Cave, Geode, Bog) are built and live; Tier 4-6 (Tide, Infernal, Void) remain a sketch. The premise (frog species gate progress) and the order (Cave -> Geode -> Bog -> Tide -> Infernal -> Void) are settled; the Tier 4-6 resource lists, gates, and playtimes below are still a sketch.
 >
-> **Version note:** the pack consumes **Productive Frogs v1.6.0** (organic Bog roster + Industrial Foregoing plastic/pink_slime variants, component-driven Slime Milk, bottle-of-frogspawn). The Tier 0-3 content described here is built against that pin and live in the pack. PF continues to publish to CurseForge gradually; the pack `packwiz update`s to newer PF as it clears.
+> **Version note:** the pack consumes **Productive Frogs v1.7.0** (organic Bog roster + Industrial Foregoing plastic/pink_slime variants, component-driven Slime Milk, bottle-of-frogspawn, and the four Slime Milk catalysts). The Tier 0-3 content described here is built against that pin and live in the pack. PF continues to publish to CurseForge gradually; the pack `packwiz update`s to newer PF as it clears.
 
 ## The premise
 
@@ -32,7 +32,7 @@ Modded resources per tier are PF's conditional variants — they register only w
 6. **One new verb per tier (anti-repetition).** Each tier layers exactly one new verb onto the frog loop so the gameplay doesn't just repeat at a higher number:
    - **Cave** = crafting upgrades / storage (Sophisticated + Functional storage, quartz-free networks).
    - **Geode** = automation (Mekanism: power, Metallurgic Infuser, Enrichment Chamber).
-   - **Bog** = Industrial Foregoing (plastic hard-gated behind the Bog plastic-frog; pink_slime capstone).
+   - **Bog** = Just Dire Things' tier-1 progression (Primogel Goo -> Ferricore -> Fluid Collector -> Fluid Placer -> Item Collector) plus a Building Gadgets 2 side branch. Lives in `tools_and_things.snbt`. Mekanism RF from Geode powers the JDT machines.
    - **Infernal** = earmarked for Refined Storage (*sketch*).
 
 ## Tier transitions (the gate mechanic)
@@ -40,7 +40,7 @@ Modded resources per tier are PF's conditional variants — they register only w
 Each species' quest line **ends by opening the next species**, in two halves:
 
 1. **Frog side (the Spawnery).** Prime the Spawnery with a tier-specific **primer item** to draw the *next* species' **Frogspawn** bottle (a `frog_egg` carrying the next `contained_category`). The pack overrides each `spawnery_primer/<species>` tag to a resource the player has by the prior tier's end. The built primers: **Geode is primed by redstone** (Cave's last resource: `spawnery_primer/geode` -> `minecraft:redstone`), and **Bog is primed by enriched diamond** (a Mekanism craft: `spawnery_primer/bog` -> `mekanism:enriched_diamond`). Place the frogspawn on water to start the next species' frogs.
-2. **Slime side (the seed-chain bootstrap).** The next tier's *resource* slimes come from a custom (KubeJS) **slime-in-a-bucket** recipe seeded from the current tier's outputs (the same pattern as Cave's iron -> copper -> ... chain), milked for a renewable supply. This lives in the *next* tier's chapter, not the gateway. Each step also consumes **4 of a tier-themed filler block** (see "Per-tier filler blocks" below).
+2. **Slime side (the seed-chain bootstrap).** The next tier's *resource* slimes come from a custom (KubeJS) **slime-in-a-bucket** recipe seeded from the current tier's outputs (the same pattern as Cave's iron -> copper -> ... chain), milked for a renewable supply. This lives in the *next* tier's chapter, not the gateway. Each step also consumes **4 of a tier-themed filler block** (see "Per-tier filler blocks" below). The Industrial Foregoing **Dissolution Chamber** (taught in `road_to_tide.snbt`, the Tier 4 gateway, gated on completing `bog_frogs`) is the pack's slime engine. Each recipe consumes a prior vanilla resource (the previous tier's last resource for the first variant in a tier; the previous variant's resource for each step after) + tier filler + sweetslime + latex - the same chain shape as the Cave/Geode/Bog crafting-table chains, just transposed into the machine. Cave/Geode/Bog all ship today as chamber recipes alongside the existing crafting tables (iron bootstraps off bone meal in the chamber; the crafting tables remain a parallel hand-craft path); Tier 4 (Tide) onward land as those tiers ship. Resource-keyed inputs sidestep IF/Titanium's JSON-codec drop of component ingredients (the milk-keyed approach hit the codec wall; PF declined a component-free per-variant handle, see [productive-frogs#127](https://github.com/Flatts3000/productive-frogs/issues/127)).
 
 > **Not slime milk for parents.** PF's Slime Milk is keyed by `SLIME_VARIANT` and spawns that *resource-variant* slime, not the bare parent species (the parent comes from a spawn egg / splitting). So the next tier is bootstrapped via frogspawn (Spawnery) + a resource-slime seed-chain, *not* a "parent slime milk" source. (Corrected 2026-05-27; the earlier draft of this section described a parent-spawning milk that PF does not implement.)
 
@@ -48,7 +48,7 @@ So: finish the **Cave** line at redstone → prime the Spawnery with redstone fo
 
 ### Per-tier filler blocks
 
-Each tier's slime-in-a-bucket seed-chain recipe spends **4 of a tier-themed filler block** per step. The constraint: a tier's filler must be mass-attainable *at that tier* (not a chain output, not gated behind a later tier).
+Each tier's slime-in-a-bucket seed-chain recipe spends **4 of a tier-themed filler block** per step. The constraint: a tier's filler must be mass-attainable *at that tier* (not a chain output, not gated behind a later tier). The same per-tier filler carries into the Dissolution Chamber slime recipes (Cave=stone, Geode=gravel, Bog=mossy cobblestone, all live; Tier 4+ filler picked per tier when each ships).
 
 | Tier | Filler block | Source |
 |------|--------------|--------|
@@ -102,6 +102,7 @@ Estimated playtime: **3–6 hours** (it's the widest tier — most resources liv
 - Geode Frogs + Geode Slimes (from the crafted Geode seed-chain).
 - Infuse with gem primers → Lapis → Tuff → Calcite → Amethyst → Emerald → Diamond Slimes.
 - **New verb:** automation. Mekanism (power, Metallurgic Infuser, Enrichment Chamber). The Mekanism machines also craft the mossy cobblestone the Bog seed-chain needs.
+- **Slime Milk catalysts** (PF v1.7.0): a short branch off the diamond capstone introduces the four catalysts (Count / Speed / Quantity / Infinite Count) that buff placed Slime Milk sources. Infinite Count's recipe needs a diamond, so it gates naturally here; the Quantity catalyst is re-issued with redstone instead of glowstone for skyblock (`catalyst_recipes.js`).
 - **Gate to Tier 3:** prime the Spawnery with **enriched diamond** (a Mekanism craft) for Bog Frogspawn, then run the Bog seed-chain.
 
 Estimated playtime: **3–5 hours**.
@@ -112,8 +113,8 @@ Estimated playtime: **3–5 hours**.
 
 - Bog Frogs + Bog Slimes (from the crafted Bog seed-chain, bridged off diamond Slime Milk).
 - Infuse → Dirt → Mud → Clay_ball → Moss → Mycelium → Lily_pad → Leather → Feather → Plastic → Pink_slime Slimes. The last two (plastic, pink_slime) are Industrial Foregoing items; IF is a hard pack dependency.
-- **New verb:** Industrial Foregoing. Plastic is hard-gated behind the Bog plastic-frog, and pink_slime is the tier capstone.
-- **Gate to Tier 4:** craft the Tide starter kit. *(Tier 4-6 unbuilt.)*
+- **New verb:** **Just Dire Things tier-1 progression** + Building Gadgets 2 side branch (the `tools_and_things.snbt` chapter). Spine: Primogel Goo Block (mycelium-gated) -> Ferricore Ingot -> Fluid Collector -> Fluid Placer -> Item Collector (hexagon capstone). Optionals: Exchanging Gadget -> Copy/Paste Gadget (BG side). Mekanism RF from Geode powers the JDT machines.
+- **Gate to Tier 4:** complete `bog_frogs` (capstone = pink_slime). That unlocks the `road_to_tide` chapter, which holds the Industrial Foregoing spine (Pity Machine Frame -> Fluid Extractor -> **Dissolution Chamber**, the pack's slime engine for the 21 Cave/Geode/Bog chamber recipes; iron bootstraps off bone meal). Tide-specific content (Spawnery primer, first Tide slime, Tide frogs) extends `road_to_tide` when Tier 4 ships.
 
 Estimated playtime: **3–5 hours**.
 
@@ -161,7 +162,7 @@ For the full questbook structure see [`quest_book.md`](./quest_book.md).
 | Welcome              | Tier 0 bootstrap (cave_slime farm) -> first Cave frogs |
 | Tier 1: Cave         | Your First Iron Ingot, Scaling the Colony, Cave Frogs, Storage and Crafting (ores & metals) |
 | Tier 2: Geode        | Road to Geode, Geode Frogs, Mekanism (gems & automation) |
-| Tier 3: Bog          | Road to Bog, Bog Frogs (organics & Industrial Foregoing) |
+| Tier 3: Bog          | Road to Bog, Bog Frogs, Tools and Things (organics + JDT tier-1 progression / Building Gadgets) |
 | Drowned Riches       | Tier 4 (Tide), aquatic *(unbuilt)*        |
 | Heat & Flame         | Tier 5 (Infernal), nether *(unbuilt)*     |
 | Void Mastery / The End | Tier 6 (Void), end & endgame *(unbuilt)* |
