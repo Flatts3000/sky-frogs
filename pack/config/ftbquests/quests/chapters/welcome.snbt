@@ -475,6 +475,7 @@
 				count: 2L
 				id: "54E5F6A1B2C30032"
 				item: { components: { "productivefrogs:contained_category": "cave" }, count: 1, id: "productivefrogs:frog_egg" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 0.0d

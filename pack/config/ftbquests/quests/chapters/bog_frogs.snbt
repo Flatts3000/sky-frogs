@@ -48,6 +48,7 @@
 			tasks: [{
 				id: "7B06000000000006"
 				item: { components: { "productivefrogs:slime_variant": "productivefrogs:mud" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 0.0d
@@ -70,6 +71,7 @@
 			tasks: [{
 				id: "7B06000000000009"
 				item: { components: { "productivefrogs:slime_variant": "productivefrogs:clay_ball" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 0.0d
@@ -92,6 +94,7 @@
 			tasks: [{
 				id: "7B0600000000000C"
 				item: { components: { "productivefrogs:slime_variant": "productivefrogs:moss" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 0.0d
@@ -114,6 +117,7 @@
 			tasks: [{
 				id: "7B0600000000000F"
 				item: { components: { "productivefrogs:slime_variant": "productivefrogs:mycelium" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 0.0d
@@ -136,6 +140,7 @@
 			tasks: [{
 				id: "7B06000000000012"
 				item: { components: { "productivefrogs:slime_variant": "productivefrogs:lily_pad" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 0.0d
@@ -158,6 +163,7 @@
 			tasks: [{
 				id: "7B06000000000015"
 				item: { components: { "productivefrogs:slime_variant": "productivefrogs:leather" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 0.0d
@@ -180,6 +186,7 @@
 			tasks: [{
 				id: "7B06000000000018"
 				item: { components: { "productivefrogs:slime_variant": "productivefrogs:feather" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 0.0d
@@ -202,6 +209,7 @@
 			tasks: [{
 				id: "7B0600000000001B"
 				item: { components: { "productivefrogs:slime_variant": "productivefrogs:plastic" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 0.0d
@@ -235,6 +243,7 @@
 			tasks: [{
 				id: "7B0600000000001E"
 				item: { components: { "productivefrogs:slime_variant": "productivefrogs:pink_slime" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 0.0d

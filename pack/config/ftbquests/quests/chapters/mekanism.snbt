@@ -30,6 +30,7 @@
 			tasks: [{
 				id: "6ECA150000000003"
 				item: { components: { "productivefrogs:slime_variant": "productivefrogs:osmium" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 0.0d
@@ -218,6 +219,7 @@
 			tasks: [{
 				id: "6ECA150000000012"
 				item: { components: { "productivefrogs:slime_variant": "productivefrogs:steel" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 1.5d
