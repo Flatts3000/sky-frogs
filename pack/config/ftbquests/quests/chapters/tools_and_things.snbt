@@ -132,13 +132,9 @@
 			id: "1F00000000000011"
 			optional: true
 			rewards: [{
-				count: 2
 				id: "1F00000000000013"
-				item: {
-					count: 1
-					id: "buildinggadgets2:template"
-				}
-				type: "item"
+				type: "xp"
+				xp: 10
 			}]
 			tasks: [{
 				id: "1F00000000000012"
