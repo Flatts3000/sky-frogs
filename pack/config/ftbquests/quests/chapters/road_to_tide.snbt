@@ -75,27 +75,6 @@
 		{
 			dependencies: ["71DE000000000008"]
 			icon: {
-				id: "industrialforegoing:pink_slime"
-			}
-			id: "71DE00000000000B"
-			rewards: [{
-				id: "71DE00000000000D"
-				type: "xp"
-				xp: 10
-			}]
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [{
-				id: "71DE00000000000C"
-				item: { count: 1, id: "industrialforegoing:pink_slime" }
-				type: "item"
-			}]
-			x: 0.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["71DE00000000000B"]
-			icon: {
 				components: {
 					"productivefrogs:contained_category": "tide"
 				}
@@ -113,29 +92,10 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 6.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["71DE00000000000E"]
-			icon: {
-				id: "minecraft:mycelium"
-			}
-			id: "71DE000000000011"
-			rewards: [{
-				id: "71DE000000000013"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "71DE000000000012"
-				item: { count: 1, id: "minecraft:mycelium" }
-				type: "item"
-			}]
-			x: 0.0d
-			y: 7.5d
-		}
-		{
-			dependencies: ["71DE000000000011"]
 			icon: {
 				components: {
 					"minecraft:bucket_entity_data": {
@@ -157,7 +117,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 9.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["71DE000000000014"]

@@ -54,7 +54,7 @@ hash = "ce140602036d2b62c1211368a732a43667da89bdb6737e33c75fb338cf0ee60f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_tide.snbt"
-hash = "c79b1c304af04653fad8b5484ee9b3232aeea2b7134effad2691edfe221e820a"
+hash = "95424d03d1c4ce9c286db670f1a5ec6e0023bbef627aab8dd4aecc3e06c04f9b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/scaling_the_colony.snbt"
@@ -82,7 +82,7 @@ hash = "d7dd511fa89cc9066374f537d8e9259d6caff8fe7db0a0a04db3af393100e0a4"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "a1f452538c3522db76ccdbbcadec8011c98e4531a8b67b5b4778219afc06a12e"
+hash = "ec01b4dadd5bd1806610244459c8f221746bc0fbffa11fbfb6551c5baf2dd079"
 
 [[files]]
 file = "config/productivefrogs-common.toml"
@@ -211,10 +211,6 @@ hash = "e1786b8cf0582208c9802eef75825c418bac0dd9b0d472ccee6e6ee5f50a81ba"
 [[files]]
 file = "kubejs/server_scripts/storage_quartz_free.js"
 hash = "2b6735fc64ee708364b30526b4d5d7b703cfc80e624eb8f6f2098f6a0b2b192d"
-
-[[files]]
-file = "kubejs/server_scripts/tide_slime_chain.js"
-hash = "46b5e53503e82c33b1cfe7aafdb9f2a2cb787e8c370d327b8e9d78319db389fc"
 
 [[files]]
 file = "mods/almostunified.pw.toml"

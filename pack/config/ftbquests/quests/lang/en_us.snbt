@@ -70,37 +70,25 @@
 	]
 	quest.71DE000000000005.title: "Tapping Latex"
 	quest.71DE000000000008.quest_desc: [
-		"Industrial Foregoing's &eDissolution Chamber&r dissolves a pile of items in a fluid and presses out something new. Frame it with &fplastic&r (your &bplastic frog&r already supplies it), feed it &flatex&r from the Fluid Extractor, and it becomes the pack's &eslime engine&r."
+		"Industrial Foregoing's &eDissolution Chamber&r dissolves a pile of items in a fluid and presses out something new. Frame it with &fplastic&r (your &bplastic slime&r already supplies it), feed it &flatex&r from the Fluid Extractor, and it becomes the pack's &eslime engine&r."
 		""
-		"Every variant in &eCave&r, &eGeode&r, and &eBog&r has a chamber recipe: feed it a prior resource (within a tier, the previous variant's; at a tier boundary, the previous tier's last) + tier filler + sweetslime + latex, and out comes that variant's &bSlime in a Bucket&r. Iron is the exception - it threads off &fbone meal&r."
+		"Every variant in &eCave&r, &eGeode&r, &eBog&r, and &eTide&r has a chamber recipe: feed it a prior resource (within a tier, the previous variant's; at a tier boundary, the previous tier's last) + tier filler + sweetslime + latex, and out comes that variant's &bSlime in a Bucket&r. Iron is the exception - it threads off &fbone meal&r. Cave, Geode, and Bog also have hand-craft chains; from &eTide&r on, the chamber is the only way."
 		""
 		"This chapter is the &eRoad to Tide&r - the bridge that closes out &eBog&r and opens &eTide&r. The engine is online; below, you'll prime your first &bTide Frog&r and pull a &bPrismarine Froglight&r out of the void-sea."
 		""
 		"Claim your reward; the engine is online."
 	]
 	quest.71DE000000000008.title: "The Slime Engine"
-	quest.71DE00000000000B.quest_desc: [
-		"You closed out &eBog&r with &bpink slime&r, Industrial Foregoing's strangest output. It's also your key to the sea."
-		""
-		"Feed &bpink slime&r to the &eSpawnery&r to prime it for &eTide&r - the swamp's last resource opens the shore. Grab one to begin."
-	]
-	quest.71DE00000000000B.title: "Prime for Tide"
 	quest.71DE00000000000E.quest_desc: [
-		"Prime the &eSpawnery&r with &bpink slime&r and it bottles a &bBottle of Tide Frog Frogspawn&r."
+		"You closed out &eBog&r with &bpink slime&r - it's also your key to the sea. Feed &bpink slime&r to the &eSpawnery&r to prime it for &eTide&r, and it bottles a &bBottle of Tide Frog Frogspawn&r."
 		""
 		"Pour it on water. &eTide Frogs&r hatch: the aquatic species, hungry for sponge, prismarine, and ink."
 	]
 	quest.71DE00000000000E.title: "Tide Frogspawn"
-	quest.71DE000000000011.quest_desc: [
-		"Tide's slime chain is bound with &fmycelium&r, the same fungal turf your &bBog Frog&r already farms. The swamp seeds the shore."
-		""
-		"Stock a stack. Every step of the aquatic chain eats four."
-	]
-	quest.71DE000000000011.title: "A Bed of Mycelium"
 	quest.71DE000000000014.quest_desc: [
-		"Craft the bridge: &fpink slime milk&r + &fmycelium&r + &fsweetslime&r + a &bTide frogspawn&r presses out a &bBucket of Prismarine Slime&r, your first aquatic resource slime."
+		"From here on, the &eDissolution Chamber&r is the only way to make resource slimes - no more crafting-table chains. Feed it &fpink slime&r + &fmycelium&r + &fsweetslime&r and &flatex&r, and it presses out a &bBucket of Prismarine Slime&r, your first aquatic resource slime."
 		""
-		"Rather automate it? The &eDissolution Chamber&r runs the same recipe off &flatex&r."
+		"&eTide&r and every tier after it runs on the chamber."
 	]
 	quest.71DE000000000014.title: "A Bucket of Prismarine Slime"
 	quest.71DE000000000017.quest_desc: [
