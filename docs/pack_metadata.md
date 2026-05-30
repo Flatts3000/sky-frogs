@@ -7,7 +7,8 @@
 | Field            | Value                                                              |
 |------------------|--------------------------------------------------------------------|
 | **Pack name**    | Sky Frogs                                                          |
-| **Slug**         | `sky-frogs` (CurseForge — claim before v0.1)                       |
+| **Slug**         | `sky-frogs` (CurseForge - claimed)                                 |
+| **CF project ID**| `1558075` (load-bearing for future `release.yml` automation; set as `CF_PROJECT_ID` GitHub secret) |
 | **Author**       | Flatts3000                                                         |
 | **Tagline**      | Skyblock where frogs replace mining                                |
 | **Long pitch**   | A void-skyblock NeoForge 1.21.1 modpack built around Productive Frogs. Iron, gold, diamonds, and beyond are won by breeding Resource Frogs and feeding them matching Resource Slimes — automated mining is disabled. |

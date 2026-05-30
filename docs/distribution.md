@@ -22,11 +22,21 @@ GitHub Releases mirrors each tag's CF zip + server zip for transparency, rollbac
 
 ## Setup checklist (one-time, before v0.1)
 
-- [ ] **Claim CurseForge slug `sky-frogs`** — submit empty project for approval. Allow 1–3 business days. Submit early in the v0.1 cycle so approval runs in parallel with content work.
-- [ ] **GitHub repo** — `Flatts3000/sky-frogs` exists; community health files landed.
-- [ ] **CurseForge API token** — generate in CurseForge account → API. Save as GitHub secret `CF_API_TOKEN`.
-- [ ] **CurseForge project ID** — save as `CF_PROJECT_ID` (referenced by the release action).
+- [x] **Claim CurseForge slug `sky-frogs`** — submitted with v0.1.0 alpha file at project ID `1558075`. Approved 2026-05-29.
+- [x] **GitHub repo** — `Flatts3000/sky-frogs` exists; community health files landed.
+- [x] **CurseForge API token** — reuses the token from `productive-frogs/.env` (same author account). For CI, save as GitHub secret `CF_API_TOKEN`.
+- [x] **CurseForge project ID** — `1558075`. Save as `CF_PROJECT_ID` GitHub secret when wiring `release.yml`.
 - [ ] **Branding assets** — upload logo / banner / hero / gallery to the CF project page. See [`pack_metadata.md`](./pack_metadata.md) for asset spec.
+
+### CF upload API quirks discovered on first submission
+
+The CF upload API rejects modpack uploads that include game-version IDs from the wrong type:
+
+- **MC 1.21.1**: use `11779` (type 77784 = the modpack-class MC version), NOT `12735` (type 1 = the mod-class MC version). CF returns `errorCode 1009: Invalid game version ID ... belongs to an invalid dependency` if the wrong one is sent.
+- **NeoForge**: `10150` (type 68441).
+- **Java version**: do NOT send a Java-version ID in the `gameVersions` payload for modpacks. CF rejects it. Java is implied by the loader for modpack class.
+
+So the canonical `gameVersions` payload for any Sky Frogs file going forward is `[11779, 10150]`. The future `release.yml` should pin these.
 
 ## Release workflow
 
