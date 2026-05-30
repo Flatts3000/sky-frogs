@@ -22,7 +22,7 @@ GitHub Releases mirrors each tag's CF zip + server zip for transparency, rollbac
 
 ## Setup checklist (one-time, before v0.1)
 
-- [x] **Claim CurseForge slug `sky-frogs`** — submitted with v0.1.0 alpha file at project ID `1558075`. Approved 2026-05-29.
+- [x] **Claim CurseForge slug `sky-frogs`** — submitted 2026-05-29 with the v0.1.0 alpha file (file id `8167200`) at project ID `1558075`. Project + file are queued for CF moderation (typically 1-3 business days); not yet confirmed live.
 - [x] **GitHub repo** — `Flatts3000/sky-frogs` exists; community health files landed.
 - [x] **CurseForge API token** — reuses the token from `productive-frogs/.env` (same author account). For CI, save as GitHub secret `CF_API_TOKEN`.
 - [x] **CurseForge project ID** — `1558075`. Save as `CF_PROJECT_ID` GitHub secret when wiring `release.yml`.

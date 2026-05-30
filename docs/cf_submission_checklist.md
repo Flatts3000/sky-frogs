@@ -16,7 +16,7 @@
 - [ ] **`pack/pack.toml` version = `0.1.0`** (or whatever you're submitting as).
   This is the manifest version that CF reads; bump it before exporting.
 - [ ] **Pack zip built**: from inside `pack/`, run `packwiz refresh && packwiz curseforge export`.
-  Output is `Sky Frogs-0.1.0.zip` (~55 KB - manifest + overrides only; mods are
+  Output is `Sky Frogs-0.1.0.zip` (~53 KB - manifest + overrides only; mods are
   CF references, not bundled).
 - [ ] **CF account** in good standing (no active project bans).
 
@@ -31,7 +31,7 @@ Go to <https://www.curseforge.com/dashboard/projects/create>.
 | **Slug** | `sky-frogs` (auto-derived from name; verify it isn't taken) |
 | **Summary** (≤120 chars) | `A skyblock where frogs do the mining. Breed Resource Frogs, feed them slimes, and watch the ore, gems, and ender pearls fall out.` |
 | **Categories** | `Skyblock` (primary), `Quests` (secondary). Add `Tech` if a third slot exists. |
-| **Description** | Paste the full body of [`curseforge_page.md`](./curseforge_page.md) starting at the `Tagline` heading. Edit out the `### Tagline (short description, ~120 chars)` line itself since the tagline is the Summary field above. |
+| **Description** | Paste the body of [`cf_description.md`](./cf_description.md) - everything below the leading HTML comment. It is already paste-ready (no meta labels to strip); the `# Sky Frogs` heading down through the License section goes straight into the CF Description field. (`curseforge_page.md` is the meta-doc that `cf_description.md` is derived from; edit copy there first, then regenerate this file.) |
 | **License** | `MIT` (pack content). The page copy already includes the "each bundled mod retains its own license" disclaimer. |
 | **Source code URL** | `https://github.com/Flatts3000/sky-frogs` |
 | **Issue tracker** | `https://github.com/Flatts3000/sky-frogs/issues` |
@@ -55,6 +55,12 @@ CF projects under review are not publicly visible. You can still:
 
 ## Step 3 - Upload the file
 
+> The v0.1.0 alpha file was uploaded via the **CF Upload API** (file id `8167200`), not the
+> web form. If you script future uploads, read the "CF upload API quirks" section in
+> [`distribution.md`](./distribution.md) first - the modpack-class game-version IDs are
+> `[11779, 10150]` and a Java-version ID must NOT be sent. The web-form fields below are the
+> manual fallback.
+
 From the approved project dashboard, **Files** -> **Upload File**:
 
 | Field | Value |
@@ -62,9 +68,9 @@ From the approved project dashboard, **Files** -> **Upload File**:
 | **File** | `pack/Sky Frogs-0.1.0.zip` |
 | **Display name** | `Sky Frogs v0.1.0 (alpha)` |
 | **Release type** | **Alpha** (mark it explicitly so curious players know expectations) |
-| **Game version** | `1.21.1` |
+| **Game version** | `1.21.1` (pick by name; the web form resolves the modpack-class ID for you - only the API needs the raw `11779`) |
 | **Mod loader** | `NeoForge` (version `21.1.230` if asked) |
-| **Java version** | `Java 21` (if the field exists; otherwise skip) |
+| **Java version** | Skip - the modpack class does not take a Java-version selector (CF rejects one on the API; the web form omits the field). Java is implied by the loader. |
 | **Changelog** | First release - paste the `## [Unreleased]` block from `CHANGELOG.md` and retitle to `## [v0.1.0] - YYYY-MM-DD`. |
 
 Submit. The file goes through a separate moderation pass (usually faster than the project pass).
