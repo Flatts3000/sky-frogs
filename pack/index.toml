@@ -82,7 +82,7 @@ hash = "d7dd511fa89cc9066374f537d8e9259d6caff8fe7db0a0a04db3af393100e0a4"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "a6b801b70afbdec9e42e515333cbb01e58255e78d61dc39a4a5c3c7eb0fd2369"
+hash = "f8eb68f0ee0860bad8969c3377a1788b820173127581e17b02f71a201691efed"
 
 [[files]]
 file = "config/productivefrogs-common.toml"
@@ -158,7 +158,7 @@ hash = "34b392722846f7d9aca57f66b60292ae8032a330b14d2d12291fdc6b30d8876e"
 
 [[files]]
 file = "kubejs/server_scripts/catalyst_recipes.js"
-hash = "fa00283144ec2ea72127c1deb38f7bfb1b23327807ea0d233f9524e6bb7981cd"
+hash = "0a97a7117e479eb05b1d2b4e5e5a3fee8da64adc3c14c923244a0da5d4ecc024"
 
 [[files]]
 file = "kubejs/server_scripts/cave_slime_chain.js"
@@ -166,7 +166,7 @@ hash = "dbb7488e1c4a77eb3c909b7c89d8e2dd5412ec53047838aa901978efbd0f5677"
 
 [[files]]
 file = "kubejs/server_scripts/dissolution_slime_recipes.js"
-hash = "9a2d434b9ac6b1d3df58dc9cc69bc6a862059107c8621bfc538bab540c3c2884"
+hash = "dbf685eff591fc174905691638f14e3a9d2aedce7d4aeab05161f61d686c7fbd"
 
 [[files]]
 file = "kubejs/server_scripts/first_join.js"
@@ -186,7 +186,7 @@ hash = "5f8d806e6fea7829f8e5b9b7344ddecf33208f4599eb7e7a2fee34c7a79e3b3e"
 
 [[files]]
 file = "kubejs/server_scripts/jdt_recipes.js"
-hash = "02e95ae9634e85d44eee635a2f41b8bdc21cb1a11d1461b844624a2b20429928"
+hash = "0df0fc9e6f4aa4aa4fa621d2431d63fd0ce85d717bce7708878cde811c687de6"
 
 [[files]]
 file = "kubejs/server_scripts/log_recipes.js"

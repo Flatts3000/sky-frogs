@@ -34,7 +34,9 @@
 	]
 	quest.1F0000000000000E.title: "Vacuum the Floor"
 	quest.1F00000000000011.quest_desc: [
-		"Mekanism gave you a &bBuilding Gadget&r back at the Enrichment Chamber. The next step up is the &eExchanging Gadget&r: swap one block for another in place instead of tearing things down to rebuild."
+		"Building Gadgets 2 gives you fast block-placement tools. The &eExchanging Gadget&r swaps one block for another in place - refurbish your habitat or re-skin a wall without tearing it down first."
+		""
+		"(Mekanism hands you the basic &bBuilding Gadget&r as the Enrichment Chamber reward if you took that path; this is the next step up.)"
 	]
 	quest.1F00000000000011.title: "Exchanging Gadget"
 	quest.1F00000000000014.quest_desc: [
@@ -72,7 +74,7 @@
 		""
 		"Every variant in &eCave&r, &eGeode&r, and &eBog&r has a chamber recipe: feed it a prior resource (within a tier, the previous variant's; at a tier boundary, the previous tier's last) + tier filler + sweetslime + latex, and out comes that variant's &bSlime in a Bucket&r. Iron is the exception - it threads off &fbone meal&r."
 		""
-		"This is also the gateway into &eTier 4 (Tide)&r: when that tier ships, the first Tide slime is the chamber's job too, threading off &fpink slime&r (Bog's last resource)."
+		"This chapter is the &eRoad to Tide&r - the bridge that closes out Bog. &eTide&r itself is unbuilt; the engine is in place for when that content ships."
 		""
 		"Claim your reward; the engine is online."
 	]

@@ -25,7 +25,7 @@ Tier 5: Infernal            -> blaze, quartz, magma, netherite line (sketch)
 Tier 6: Void                -> ender, draconic, end-tier and modded magic (sketch)
 ```
 
-Each tier corresponds to one or more questbook chapters and to one category in the [Productive Frogs Category enum](../../productive-frogs/src/main/java/com/flatts/productivefrogs/data/Category.java). Each tier also layers **one new verb** onto the frog loop for anti-repetition (Cave = crafting/storage, Geode = automation/Mekanism, Bog = Industrial Foregoing). Per-tier resource quests check the variant **Froglight** the frog drops, not the smelted resource, so the loop can't be skipped.
+Each tier corresponds to one or more questbook chapters and to one category in the [Productive Frogs Category enum](../../productive-frogs/src/main/java/com/flatts/productivefrogs/data/Category.java). Each tier also layers **one new verb** onto the frog loop for anti-repetition (Cave = crafting/storage, Geode = automation/Mekanism, Bog = Just Dire Things tier-1 progression + Building Gadgets in `tools_and_things.snbt`; Industrial Foregoing's machine spine and the Dissolution Chamber moved to `road_to_tide.snbt` as the Tier 4 gateway). Per-tier resource quests check the variant **Froglight** the frog drops, not the smelted resource, so the loop can't be skipped.
 
 ## Why Sky Frogs and not just play Sky Bees Reborn?
 

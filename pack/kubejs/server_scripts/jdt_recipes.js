@@ -5,14 +5,21 @@
 // this gates the JDT entry into the Bog progression naturally - and "fungal substrate"
 // reads as a more apt growth medium for the goo than dirt anyway.
 //
-// Same shape (csc / fmf / csc) and same other ingredients (clay balls + rotten flesh +
-// sugar) as JDT's default; only the centre changes. JDT's stock dirt recipe is left
-// intact for other packs - this is a pack-side override only.
+// JDT's default is the shape `csc / fdf / csc` with c=clay_ball, s=sugar, f=rotten_flesh,
+// d=dirt. The override preserves the corners and edges (clay + rotten_flesh + sugar in the
+// same positions) and only swaps the centre from dirt to mycelium. JDT's stock dirt recipe
+// is left intact for other packs - this is a pack-side override only.
+//
+// Preserves JDT's `group: "justdirethings"` so the re-issued recipe lands in the same JEI
+// recipe group as the rest of JDT's t1 items.
+//
+// Last verified against Just Dire Things v1.5.7 (data/justdirethings/recipe/gooblock_tier1.json).
+// Re-verify the shape and group on every JDT pin bump.
 ServerEvents.recipes(event => {
   if (!Platform.isLoaded('justdirethings')) {
     return
   }
-  // Remove JDT's default recipe (by id) and re-issue mycelium-centered.
+  // Remove JDT's default recipe (by id) and re-issue mycelium-centered, same group.
   event.remove({ id: 'justdirethings:gooblock_tier1' })
   event.shaped(
     'justdirethings:gooblock_tier1',
@@ -27,5 +34,5 @@ ServerEvents.recipes(event => {
       F: 'minecraft:rotten_flesh',
       M: 'minecraft:mycelium'
     }
-  )
+  ).group('justdirethings')
 })

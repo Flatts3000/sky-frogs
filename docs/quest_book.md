@@ -39,7 +39,7 @@ Sky Frogs does **not** mirror this organization. SBR is mod-sprawled (one chapte
 
 ### Built chapters (Tiers 0-3)
 
-These are the 11 chapter files that exist in `config/ftbquests/quests/chapters/`. They sit under three chapter groups (`chapter_groups.snbt`): "Tier 1: Cave", "Tier 2: Geode", "Tier 3: Bog"; Welcome stays ungrouped at the top. Note the **"Road to <tier>" gateway-chapter pattern**: each later tier opens with a short gateway chapter that crafts the next species' frogspawn (Spawnery + primer) and runs the seed-chain bridge, before the species' own chapter.
+These are the 12 chapter files that exist in `config/ftbquests/quests/chapters/`. They sit under four chapter groups (`chapter_groups.snbt`): "Tier 1: Cave", "Tier 2: Geode", "Tier 3: Bog", "Tier 4: Tide"; Welcome stays ungrouped at the top. Note the **"Road to <tier>" gateway-chapter pattern**: each later tier opens with a short gateway chapter that crafts the next species' frogspawn (Spawnery + primer) and runs the seed-chain bridge, before the species' own chapter.
 
 | Tier group | Chapter file                  | Covers                                                |
 |------------|-------------------------------|--------------------------------------------------------|

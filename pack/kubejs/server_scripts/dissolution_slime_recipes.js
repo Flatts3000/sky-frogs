@@ -1,4 +1,4 @@
-// Sky Frogs - Dissolution Chamber slime recipes (the Bog / Industrial Foregoing verb).
+// Sky Frogs - Dissolution Chamber slime recipes (Industrial Foregoing tech; chamber lives in road_to_tide.snbt).
 //
 // The chamber is the pack's slime engine. Each per-variant recipe threads off a PRIOR
 // vanilla resource, mirroring the Cave/Geode/Bog crafting-table seed chains, just
@@ -106,7 +106,10 @@ ServerEvents.recipes(event => {
           components: { 'minecraft:bucket_entity_data': { Variant: v, Category: category } }
         },
         processingTime: 200
-      }).id(`kubejs:dissolution_slime/${variant}`)
+      // Category-prefixed id so a future-tier variant can never accidentally collide on
+      // bare name with a Cave/Geode/Bog row (variant ids are unique within a tier today,
+      // but the slime_variant registry has no global-uniqueness guarantee across tiers).
+      }).id(`kubejs:dissolution_slime/${category.toLowerCase()}_${variant}`)
     })
   })
 })

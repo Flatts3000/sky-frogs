@@ -2,7 +2,7 @@
 
 > **Status:** DRAFT. Tiers 0-3 (Welcome, Cave, Geode, Bog) are built and live; Tier 4-6 (Tide, Infernal, Void) remain a sketch. The premise (frog species gate progress) and the order (Cave -> Geode -> Bog -> Tide -> Infernal -> Void) are settled; the Tier 4-6 resource lists, gates, and playtimes below are still a sketch.
 >
-> **Version note:** the pack consumes **Productive Frogs v1.6.0** (organic Bog roster + Industrial Foregoing plastic/pink_slime variants, component-driven Slime Milk, bottle-of-frogspawn). The Tier 0-3 content described here is built against that pin and live in the pack. PF continues to publish to CurseForge gradually; the pack `packwiz update`s to newer PF as it clears.
+> **Version note:** the pack consumes **Productive Frogs v1.7.0** (organic Bog roster + Industrial Foregoing plastic/pink_slime variants, component-driven Slime Milk, bottle-of-frogspawn, and the four Slime Milk catalysts). The Tier 0-3 content described here is built against that pin and live in the pack. PF continues to publish to CurseForge gradually; the pack `packwiz update`s to newer PF as it clears.
 
 ## The premise
 
@@ -162,7 +162,7 @@ For the full questbook structure see [`quest_book.md`](./quest_book.md).
 | Welcome              | Tier 0 bootstrap (cave_slime farm) -> first Cave frogs |
 | Tier 1: Cave         | Your First Iron Ingot, Scaling the Colony, Cave Frogs, Storage and Crafting (ores & metals) |
 | Tier 2: Geode        | Road to Geode, Geode Frogs, Mekanism (gems & automation) |
-| Tier 3: Bog          | Road to Bog, Bog Frogs (organics & Industrial Foregoing) |
+| Tier 3: Bog          | Road to Bog, Bog Frogs, Tools and Things (organics + JDT tier-1 progression / Building Gadgets) |
 | Drowned Riches       | Tier 4 (Tide), aquatic *(unbuilt)*        |
 | Heat & Flame         | Tier 5 (Infernal), nether *(unbuilt)*     |
 | Void Mastery / The End | Tier 6 (Void), end & endgame *(unbuilt)* |
