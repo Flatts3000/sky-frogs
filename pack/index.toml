@@ -205,6 +205,10 @@ file = "kubejs/server_scripts/osmium_slime_bucket.js"
 hash = "fcd826f0045add7d9a2dc7c8b1cd4306787be6625e61c23d63db5d010cd9b504"
 
 [[files]]
+file = "kubejs/server_scripts/selftest.js"
+hash = "063b0f251975c3f706540613d78a2374317547769c5eee1efa5290336f631b6d"
+
+[[files]]
 file = "kubejs/server_scripts/steel_slime_infusing.js"
 hash = "e1786b8cf0582208c9802eef75825c418bac0dd9b0d472ccee6e6ee5f50a81ba"
 

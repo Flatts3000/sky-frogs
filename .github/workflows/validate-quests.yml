@@ -1,0 +1,28 @@
+name: Validate Quests
+
+# Layer 1 of docs/quest_testing.md: blocks any PR/push that ships a quest-data bug
+# (tier-skip exploit, dangling dependency, negative-leading id, em-dash, etc.).
+
+on:
+  pull_request:
+    paths:
+      - "pack/config/ftbquests/**"
+      - "pack/kubejs/**"
+      - "tools/validate_quests.py"
+  push:
+    branches: [main]
+    paths:
+      - "pack/config/ftbquests/**"
+      - "pack/kubejs/**"
+      - "tools/validate_quests.py"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate FTB Quests data
+        run: python tools/validate_quests.py
