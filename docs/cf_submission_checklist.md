@@ -10,9 +10,10 @@
 
 ## Before you start
 
-- [ ] **Pack icon ready** - `pack/icon.png`, 256x256, PNG, ≤500 KB. Frog
-  silhouette on void background per [`branding.md`](./branding.md). AI-assisted
-  placeholder is fine for v0.1; refine post-claim.
+- [x] **Pack icon ready** - `pack/icon.png`, 256x256 RGBA PNG, ~61 KB (well under
+  the 500 KB ceiling). "SKY / FROGS" wordmark over the mossy frog on void per
+  [`branding.md`](./branding.md). AI-assisted composite; refine post-claim if
+  desired.
 - [ ] **`pack/pack.toml` version = `0.1.0`** (or whatever you're submitting as).
   This is the manifest version that CF reads; bump it before exporting.
 - [ ] **Pack zip built**: from inside `pack/`, run `packwiz refresh && packwiz curseforge export`.
