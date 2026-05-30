@@ -135,13 +135,15 @@ The output stamps both `Variant` and `Category` into `minecraft:bucket_entity_da
 event.shapeless(
   `productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:${to}",Category:"CAVE"}]`,
   [
-    `productivefrogs:slime_milk_bucket[productivefrogs:slime_variant="productivefrogs:${from}"]`,
+    `productivefrogs:${from}_slime_milk_bucket`,
     'minecraft:stone', 'minecraft:stone', 'minecraft:stone', 'minecraft:stone',
     'productivefrogs:sweetslime', 'productivefrogs:sweetslime', 'productivefrogs:sweetslime',
     'productivefrogs:frog_egg[productivefrogs:contained_category="cave"]'
   ]
 )
 ```
+
+The `<from>` Slime Milk ingredient is a **per-variant item** (`productivefrogs:<variant>_slime_milk_bucket`) as of PF v1.8.0. Earlier versions used a single `slime_milk_bucket` carrying the variant in a `productivefrogs:slime_variant` component; v1.8 split each variant into its own fluid + bucket so pipe automation preserves the variant, and the component form no longer exists.
 
 **Per-tier filler blocks.** The 4 filler blocks are themed per tier, with one hard constraint: the filler must be attainable AT that tier (never a chain output, never gated behind a later tier).
 

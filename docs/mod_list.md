@@ -20,7 +20,7 @@ Any mod that fails all three is rejected.
 
 | Mod                   | Role                                                                 | Notes                                                |
 |-----------------------|----------------------------------------------------------------------|------------------------------------------------------|
-| **Productive Frogs**  | The mod the pack is built around                                     | Published on CurseForge (1.21.1 / NeoForge). Pinned at **v1.6.0** (organic Bog roster + IF plastic/pink_slime variants). |
+| **Productive Frogs**  | The mod the pack is built around                                     | Published on CurseForge (1.21.1 / NeoForge). Pinned at **v1.8.0** (organic Bog roster + IF plastic/pink_slime variants, per-variant Slime Milk). |
 
 ### 2. Skyblock fundamentals
 

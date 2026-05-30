@@ -2,7 +2,7 @@
 
 > **Status:** DRAFT. Tiers 0-3 (Welcome, Cave, Geode, Bog) are built and live; Tier 4-6 (Tide, Infernal, Void) remain a sketch. The premise (frog species gate progress) and the order (Cave -> Geode -> Bog -> Tide -> Infernal -> Void) are settled; the Tier 4-6 resource lists, gates, and playtimes below are still a sketch.
 >
-> **Version note:** the pack consumes **Productive Frogs v1.7.0** (organic Bog roster + Industrial Foregoing plastic/pink_slime variants, component-driven Slime Milk, bottle-of-frogspawn, and the four Slime Milk catalysts). The Tier 0-3 content described here is built against that pin and live in the pack. PF continues to publish to CurseForge gradually; the pack `packwiz update`s to newer PF as it clears.
+> **Version note:** the pack consumes **Productive Frogs v1.8.0** (organic Bog roster + Industrial Foregoing plastic/pink_slime variants, per-variant Slime Milk fluids/buckets that survive pipe automation, bottle-of-frogspawn, and the four Slime Milk catalysts). The Tier 0-3 content described here is built against that pin and live in the pack. PF continues to publish to CurseForge gradually; the pack `packwiz update`s to newer PF as it clears.
 
 ## The premise
 

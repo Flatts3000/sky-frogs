@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
   event.shapeless(
     'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:dirt",Category:"BOG"}]',
     [
-      'productivefrogs:slime_milk_bucket[productivefrogs:slime_variant="productivefrogs:diamond"]',
+      'productivefrogs:diamond_slime_milk_bucket',
       'minecraft:mossy_cobblestone', 'minecraft:mossy_cobblestone', 'minecraft:mossy_cobblestone', 'minecraft:mossy_cobblestone',
       'productivefrogs:sweetslime', 'productivefrogs:sweetslime', 'productivefrogs:sweetslime',
       'productivefrogs:frog_egg[productivefrogs:contained_category="bog"]'
@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
     event.shapeless(
       `productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:${to}",Category:"BOG"}]`,
       [
-        `productivefrogs:slime_milk_bucket[productivefrogs:slime_variant="productivefrogs:${from}"]`,
+        `productivefrogs:${from}_slime_milk_bucket`,
         'minecraft:mossy_cobblestone', 'minecraft:mossy_cobblestone', 'minecraft:mossy_cobblestone', 'minecraft:mossy_cobblestone',
         'productivefrogs:sweetslime', 'productivefrogs:sweetslime', 'productivefrogs:sweetslime',
         `productivefrogs:frog_egg[productivefrogs:contained_category="bog"]`

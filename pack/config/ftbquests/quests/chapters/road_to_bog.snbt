@@ -107,10 +107,7 @@
 		{
 			dependencies: ["70B0000000000005"]
 			icon: {
-				components: {
-					"productivefrogs:slime_variant": "productivefrogs:dirt"
-				}
-				id: "productivefrogs:slime_milk_bucket"
+				id: "productivefrogs:dirt_slime_milk_bucket"
 			}
 			id: "70B0000000000008"
 			rewards: [{
@@ -124,7 +121,7 @@
 			}]
 			tasks: [{
 				id: "70B0000000000009"
-				item: { components: { "productivefrogs:slime_variant": "productivefrogs:dirt" }, count: 1, id: "productivefrogs:slime_milk_bucket" }
+				item: { count: 1, id: "productivefrogs:dirt_slime_milk_bucket" }
 				type: "item"
 			}]
 			x: 0.0d
