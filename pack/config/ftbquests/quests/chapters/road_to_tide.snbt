@@ -29,7 +29,7 @@
 				item: { count: 1, id: "industrialforegoing:machine_frame_pity" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: -1.5d
 			y: 0.0d
 		}
 		{
@@ -48,7 +48,7 @@
 				item: { count: 1, id: "industrialforegoing:fluid_extractor" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: -1.5d
 			y: 1.5d
 		}
 		{
@@ -69,11 +69,11 @@
 				item: { count: 1, id: "industrialforegoing:dissolution_chamber" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: -1.5d
 			y: 3.0d
 		}
 		{
-			dependencies: ["71DE000000000008"]
+			dependencies: ["7B0600000000001D"]
 			icon: {
 				components: {
 					"productivefrogs:contained_category": "tide"
@@ -91,11 +91,14 @@
 				item: { components: { "productivefrogs:contained_category": "tide" }, count: 1, id: "productivefrogs:frog_egg" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: 4.5d
+			x: 1.5d
+			y: 3.0d
 		}
 		{
-			dependencies: ["71DE00000000000E"]
+			dependencies: [
+				"71DE000000000008"
+				"71DE00000000000E"
+			]
 			icon: {
 				components: {
 					"minecraft:bucket_entity_data": {
@@ -117,7 +120,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 6.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["71DE000000000014"]
@@ -136,7 +139,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 10.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["71DE000000000017"]
@@ -160,7 +163,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 12.0d
+			y: 7.5d
 		}
 	]
 }
