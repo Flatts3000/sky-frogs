@@ -64,9 +64,13 @@
 			}
 			id: "1F00000000000017"
 			rewards: [{
+				count: 4
 				id: "1F00000000000019"
-				type: "xp"
-				xp: 10
+				item: {
+					count: 1
+					id: "farmersdelight:stuffed_potato"
+				}
+				type: "item"
 			}]
 			tasks: [{
 				id: "1F00000000000018"
@@ -83,9 +87,13 @@
 			}
 			id: "1F0000000000001A"
 			rewards: [{
+				count: 4
 				id: "1F0000000000001C"
-				type: "xp"
-				xp: 10
+				item: {
+					count: 1
+					id: "farmersdelight:ratatouille"
+				}
+				type: "item"
 			}]
 			tasks: [{
 				id: "1F0000000000001B"
@@ -101,29 +109,11 @@
 				id: "justdirethings:itemcollector"
 			}
 			id: "1F0000000000000E"
-			rewards: [
-				{
-					id: "1F00000000000010"
-					item: {
-						count: 1
-						id: "functionalstorage:compacting_drawer"
-					}
-					type: "item"
-				}
-				{
-					id: "1F00000000000020"
-					item: {
-						count: 1
-						id: "farmersdelight:roast_chicken"
-					}
-					type: "item"
-				}
-				{
-					id: "1F00000000000021"
-					type: "xp"
-					xp: 25
-				}
-			]
+			rewards: [{
+				id: "1F00000000000010"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
@@ -169,7 +159,7 @@
 				id: "1F00000000000016"
 				item: {
 					count: 1
-					id: "buildinggadgets2:redprint"
+					id: "buildinggadgets2:template_manager"
 				}
 				type: "item"
 			}]

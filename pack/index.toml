@@ -66,7 +66,7 @@ hash = "459e1e4a9e07b4d6e8a469050fa1c02795ec60033dc0ce622e724c2f38c5ecee"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tools_and_things.snbt"
-hash = "9a2dcf8477a1339285a8675485b9e5427d19e2e0701fce3eede60ccc6b92dd5e"
+hash = "d854912a2d0f1dfc72ec87356db1d7a96cdb3f3683f7eb1a3b942dba2f2c0625"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
