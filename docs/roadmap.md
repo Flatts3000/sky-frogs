@@ -6,7 +6,7 @@ The path from "pack scaffold boots in a launcher" to "Sky Frogs v1.0 lives on Cu
 
 ## Where we are right now
 
-The scaffold boots in the CurseForge launcher with the FTB utility stack, JEI, Jade, and the Tier 0 substrate mods (Skyblock Builder, Ex Deorum, Forgiving Void). Productive Frogs v1.6.0 is integrated from CurseForge. The frog loop is built and merged: ~10 KubeJS override scripts (anti.js, first_join.js, the per-tier slime chains, the slime-bucket bootstraps, storage_quartz_free.js, if_plastic_gate.js, log_recipes.js) and 10 quest chapters spanning Tiers 0-3. The mod set has grown well past the Tier 0 substrate: Mekanism (+ Generators + Tools), Industrial Foregoing (+ IF Souls), cobblegen-galore, All The Ores, and Sophisticated Storage all ship now.
+The scaffold boots in the CurseForge launcher with the FTB utility stack, JEI, Jade, and the Tier 0 substrate mods (Skyblock Builder, Ex Deorum, Forgiving Void). Productive Frogs v1.8.0 is integrated from CurseForge. The frog loop is built and merged: ~10 KubeJS override scripts (anti.js, first_join.js, the per-tier slime chains, the slime-bucket bootstraps, storage_quartz_free.js, if_plastic_gate.js, log_recipes.js) and 10 quest chapters spanning Tiers 0-3. The mod set has grown well past the Tier 0 substrate: Mekanism (+ Generators + Tools), Industrial Foregoing (+ IF Souls), cobblegen-galore, All The Ores, and Sophisticated Storage all ship now.
 
 Tiers 0 through 3 (Welcome -> Cave -> Geode -> Bog) are playable end to end. The next frontier is Tier 4 (Tide); Infernal and Void are unbuilt.
 
@@ -54,7 +54,7 @@ Tiers 0 through 3 (Welcome -> Cave -> Geode -> Bog) are playable end to end. The
 - ✅ **Productive Frogs on CurseForge** (resolved 2026-05-25) - PF published for 1.21.1 / NeoForge and added to the pack via `packwiz cf add`. This was the v0.1 release gate.
 
 **Deliverables:**
-- [x] Productive Frogs added via `packwiz cf add productive-frogs` (now pinned at v1.6.0).
+- [x] Productive Frogs added via `packwiz cf add productive-frogs` (now pinned at v1.8.0).
 - [x] **Pillar 2 parent species** ([`docs/kubejs_overrides.md`](./kubejs_overrides.md)) - the Cave parent (Tier 1) spawns on the starter island via the `add_cave_slime_island.json` biome modifier; the other parents are distributed via quest-reward frogspawn bottles in their tier chapters.
 - [x] **KubeJS recipe overrides** - `your_first_iron_ingot.snbt` plus `iron_slime_bucket.js` thread the first frog ingredients into the metal path; the pack-wide froglight-check principle (quests detect the variant Froglight, not the smelted resource) lands here too.
 - [x] **First slime variants** for the vanilla metallics, threaded through the Cave slime chain (`cave_slime_chain.js`: iron -> copper -> gold -> coal -> redstone).
