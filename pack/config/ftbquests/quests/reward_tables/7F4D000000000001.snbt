@@ -1,0 +1,91 @@
+{
+	icon: {
+		id: "minecraft:chiseled_bookshelf"
+	}
+	id: "7F4D000000000001"
+	loot_size: 1
+	order_index: 4
+	rewards: [
+		{
+			count: 1
+			id: "7F4D000000000010"
+			item: {
+				count: 1
+				id: "minecraft:chiseled_bookshelf"
+			}
+			weight: 1.0f
+		}
+		{
+			count: 1
+			id: "7F4D000000000011"
+			item: {
+				count: 1
+				id: "minecraft:lectern"
+			}
+			weight: 1.0f
+		}
+		{
+			count: 1
+			id: "7F4D000000000012"
+			item: {
+				count: 1
+				id: "minecraft:cartography_table"
+			}
+			weight: 1.0f
+		}
+		{
+			count: 4
+			id: "7F4D000000000013"
+			item: {
+				count: 1
+				id: "minecraft:bookshelf"
+			}
+			weight: 5.0f
+		}
+		{
+			count: 4
+			id: "7F4D000000000014"
+			item: {
+				count: 1
+				id: "minecraft:item_frame"
+			}
+			weight: 5.0f
+		}
+		{
+			count: 4
+			id: "7F4D000000000015"
+			item: {
+				count: 1
+				id: "minecraft:lantern"
+			}
+			weight: 5.0f
+		}
+		{
+			count: 64
+			id: "7F4D000000000016"
+			item: {
+				count: 1
+				id: "minecraft:bricks"
+			}
+			weight: 12.0f
+		}
+		{
+			count: 64
+			id: "7F4D000000000017"
+			item: {
+				count: 1
+				id: "minecraft:terracotta"
+			}
+			weight: 12.0f
+		}
+		{
+			count: 64
+			id: "7F4D000000000018"
+			item: {
+				count: 1
+				id: "minecraft:cut_copper"
+			}
+			weight: 12.0f
+		}
+	]
+}

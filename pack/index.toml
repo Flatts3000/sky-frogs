@@ -30,19 +30,19 @@ hash = "3448a3a6e7dc33a360a2b0864c0546bd927ccaf98d7f6ab09c99850b96ed908d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/bog_frogs.snbt"
-hash = "0234d29d5811a1a0b2e634ebbabf554c8a5c615aef5fc6666dd161b6e5bd7f5e"
+hash = "9ad0540f6e5ccb933cc9255dd52eaf157d3c75d9e312ca3698412f8976fad3c4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/cave_frogs.snbt"
-hash = "aefef849cd96a62409eb4b24c174407446fd9e6eb2000a7f048deda70fb79bea"
+hash = "95293a5901b712eaf4a02ca07e064f2af44ee397ce885d397ddb5c5427786d33"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/drowned_riches.snbt"
-hash = "9f00f63aed16dc39f23f9706e1a04a588bd8dde6b3feb5c203623abe3b6f7be3"
+hash = "b0b1c5e35579d02711b12664629e7bcc6b5c451c7cc158707c57cca8f260be2a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/geode_frogs.snbt"
-hash = "b0e4f19fecba6887112351c67abc68aac8028c09c81cfb78cba040b3f0036e4e"
+hash = "890d112484fd9bd27d331611ec1956703b2985da0dd06759aa72f69b63dea405"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/mekanism.snbt"
@@ -50,19 +50,19 @@ hash = "8ca7ca6f564368f83863e5ff3fd7801f26e9623b1d386266e681ae2c1a7e8ab5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_bog.snbt"
-hash = "b3128c4bbe52eaf4e42a943bd688f586e5d8512d843732e08404812f9e89aad9"
+hash = "c9261e257601e8a8304ef8d5a5904d39e503e4e44797aa78a452450bd6a7e53f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_geode.snbt"
-hash = "6af7cf5d4721425eff2671cf4f318fc9fe8fb2dfa5256c9edb196d480eb37458"
+hash = "f44b1bfb021cf2b0d003d016b8af40e53f11f734a4335cbf4dc92164c4ba865d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_tide.snbt"
-hash = "432c1416fa440e2cc8cb43b26b6c08abeeb741e48847098c2fe5db146a2f97c4"
+hash = "bb94f55d7b7bc2e4aa85e26b1da33cd05bb102433e727adcab8864b7c6fc7603"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/scaling_the_colony.snbt"
-hash = "b7a4acfba6dae9d67e541dbaef2df3aab7be0f28179fe7135c2df3ae27f1a44f"
+hash = "01e3daf039dfc3825421110e6b725a231d1800991a7db361549309424070cc42"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/storage_and_crafting.snbt"
@@ -70,19 +70,19 @@ hash = "58271c8c5e3648bd813f226f8a340896e4715394d7274982cb690051051fb289"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/take_flight.snbt"
-hash = "4c227841d5766c23d120812ece3640d86d85b2fb78d5d4954ddc1e004f95fd75"
+hash = "72409c9c7e206f819236d400210692be566f7720527f269a8dd8d534ffb84243"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tools_and_things.snbt"
-hash = "d776fadefcaaaad4142b778a172556b7ddef9ea98e677ec7f8f0cd1f3c625634"
+hash = "0ed1282b7fd32d1c5c9b721a10f9f22a349f145c27abc58c7895b7b608d2ba45"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
-hash = "83eaf5ea2c31dbcb7e93d2be172490001869bee7b8e9857f909192323dbf47e0"
+hash = "2686d04333dfbace1db38a2fa463bf35e16d8788c3085092dec201dccfaaf48b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/your_first_iron_ingot.snbt"
-hash = "5f38f849ed56843b3f63118198d41a6068593e484520b9acc190e67b6a7f9b8e"
+hash = "c4688a4d2f2cfd0d5f4f447b9c034489d7e6ab2caeb1f4aad21618f080fa145e"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -95,6 +95,22 @@ hash = "82cd27a3767b1d8a00f51d4a94576e83e9e3ed1414b33e5b829ecfa2ae7208e2"
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
 hash = "7e0719c0d4d1aee0eb59cb72621da41ea112abc34b7427210b9b30dc68229961"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/7F1C000000000001.snbt"
+hash = "0c4f17b053312d9da8b69e75706ec9b4631190ddff987bb144a5c590e2013c08"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/7F2E000000000001.snbt"
+hash = "a5193119bbfdda93f1bb65da9d462c4b8f9f08bc348ab8b4ca0daceacd3e66a0"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/7F3B000000000001.snbt"
+hash = "8ca209449607510d4524afe24e4eede19fb258d2f07fe8c88d064538355255b2"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/7F4D000000000001.snbt"
+hash = "1a21e7eb11d4423609df4555f53d31cf1ae055d45555f6f165d89f7dbd67ccc7"
 
 [[files]]
 file = "config/productivefrogs-common.toml"

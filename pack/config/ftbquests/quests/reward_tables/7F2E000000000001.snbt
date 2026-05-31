@@ -1,0 +1,91 @@
+{
+	icon: {
+		id: "minecraft:enchanting_table"
+	}
+	id: "7F2E000000000001"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{
+			count: 1
+			id: "7F2E000000000010"
+			item: {
+				count: 1
+				id: "minecraft:enchanting_table"
+			}
+			weight: 1.0f
+		}
+		{
+			count: 1
+			id: "7F2E000000000011"
+			item: {
+				count: 1
+				id: "minecraft:anvil"
+			}
+			weight: 1.0f
+		}
+		{
+			count: 1
+			id: "7F2E000000000012"
+			item: {
+				count: 1
+				id: "minecraft:grindstone"
+			}
+			weight: 1.0f
+		}
+		{
+			count: 4
+			id: "7F2E000000000013"
+			item: {
+				count: 1
+				id: "minecraft:repeater"
+			}
+			weight: 5.0f
+		}
+		{
+			count: 4
+			id: "7F2E000000000014"
+			item: {
+				count: 1
+				id: "minecraft:piston"
+			}
+			weight: 5.0f
+		}
+		{
+			count: 8
+			id: "7F2E000000000015"
+			item: {
+				count: 1
+				id: "minecraft:powered_rail"
+			}
+			weight: 5.0f
+		}
+		{
+			count: 64
+			id: "7F2E000000000016"
+			item: {
+				count: 1
+				id: "minecraft:smooth_stone"
+			}
+			weight: 12.0f
+		}
+		{
+			count: 64
+			id: "7F2E000000000017"
+			item: {
+				count: 1
+				id: "minecraft:cut_copper"
+			}
+			weight: 12.0f
+		}
+		{
+			count: 64
+			id: "7F2E000000000018"
+			item: {
+				count: 1
+				id: "minecraft:glass"
+			}
+			weight: 12.0f
+		}
+	]
+}
