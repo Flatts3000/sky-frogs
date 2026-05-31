@@ -129,13 +129,13 @@ Ordered by leverage-per-hour. P0/P1 deliver most of the AAA jump; P2/P3 are deep
      headline capstones (First Iron, First Lapis, First Prismarine, Nautilus Shell, ...) are
      item-rewarded, so escalating their XP would override that rule. Decide first: do capstones
      get XP *on top of* their item reward, or only the xp-only milestones get bumped?
-   - **`toast` celebration: SHIPPED 2026-05-31.** Decompiled `ToastReward.class` (FTB Quests
-     2101.1.24) settled the shape: the reward has a single inline `description` string (plain
-     `putString`, not lang-extracted), and `claim()` sends `CustomToastMessage(questId)` so the
-     toast renders the *quest's own icon + title* with `description` as the line beneath (there is
-     no `title` field). A populated `toast` now fires on each of the five tier-gateway capstones
-     (Synthesize Life, Your First Iron Ingot, First Lapis, Dirt, First Prismarine) - additive, so
-     no conflict with the no-item+xp rule.
+   - **`toast` celebration: TRIED AND REVERTED 2026-05-31.** A `type: "toast"` reward on each
+     tier-gateway capstone fired the notification correctly, but FTB renders *every* reward
+     (toasts included) as a claimable icon in the quest's Rewards row - so it left a stray "Toast"
+     entry sitting in the rewards list like loot. Playtest feedback: "Why is there a toast quest
+     reward?" Removed. The right home for a tier-unlock celebration is a KubeJS
+     `FTBQuestsEvents.completed(<questId>)` hook (fire a toast/title on completion, no reward-list
+     entry) - deferred until that approach is verified against the installed XMod Compat build.
    - **`stage`/`gamestage`: deferred until a consumer exists.** `type: "gamestage"` with a
      `stage: "<id>"` field is confirmed (FTB OceanBlock 2), but a stage nothing reads is dead
      machinery. Add when a quest/KubeJS gate actually branches on it.
