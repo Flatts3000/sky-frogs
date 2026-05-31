@@ -131,12 +131,25 @@ Ordered by leverage-per-hour. P0/P1 deliver most of the AAA jump; P2/P3 are deep
 
 ### P1 - The reward overhaul (high leverage, medium effort)
 
-5. **Reward tables / loot crates for the resource grind.** Create 4 tier-themed tables in
-   `reward_tables/` (Froglight crates: weighted drawer / food / bonus resource / XP, 2 rolls
-   each), and switch the ~40 species-chain `item` rewards to `type: "loot", table_id: ...`.
-   Kills the 29-drawer monotony AND adds the "what did I get?" hit. ~6 hrs. This is the single
+5. **Reward tables / loot crates for the resource grind.** Create tier-themed tables in
+   `reward_tables/` and switch the ~40 species-chain `item` rewards to `type: "loot", table_id: ...`.
+   Kills the 29-drawer monotony AND adds the "what did I get?" hit. This is the single
    highest-impact reward change. **New file type for us - validate `table_id` references resolve
-   (extend the validator, see Risks).**
+   (extend the validator, see Risks).** Build in two steps:
+
+   - **5a. Good Food Loot Crate (the pilot table).** Convert the manual good-food workflow (today
+     we hand-pick the top-unused entry from `gen/good_food_map.md` and mark it used per quest) into
+     a single `reward_tables/good_food.snbt` table holding the whole good-food set, weighted.
+     Quests that currently grant hand-picked food switch to one `type: "loot"` reward pointing at
+     it - FTB now rolls the random food at claim time, retiring the manual queue entirely. Ship it
+     as a **physical crate** (`loot_crate` block: `item_name` "Good Food Crate", themed color/glow)
+     so the player *opens* it, not a silent grant. This one table is the proof-of-concept: it
+     validates the reward-table SNBT shape in our build and lets us wire the `Q-REWARD-TABLE-RESOLVES`
+     validator guard before scaling up. **Build it in the in-game editor first, read the resulting
+     snbt, copy that exact shape** (same discipline as the `getCraftingRemainingItem` fix). ~2 hrs.
+   - **5b. The four tier crates.** Once 5a's shape is proven, add the Froglight crates (weighted
+     drawer / food / bonus resource / XP, 2 rolls each) per tier and migrate the species-chain
+     rewards onto them. ~4 hrs.
 6. **Diversify the filler rewards.** Where a drawer repeats, swap ~half for tier-appropriate
    items (hoppers/cauldrons at Cave, Mekanism upgrades at Geode, JDT/IF parts at Bog, jetpack
    prep at Tide) so the *items you collect* show progression. ~2 hrs.
