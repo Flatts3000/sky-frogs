@@ -1,0 +1,232 @@
+{
+	autofocus_id: "52E0000000000002"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_network"
+	group: "0C4F0E0000000005"
+	icon: {
+		id: "refinedstorage:controller"
+	}
+	id: "52E0000000000001"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["51F0000000000005"]
+			icon: {
+				id: "refinedstorage:quartz_enriched_iron"
+			}
+			id: "52E0000000000002"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "52E0000000000004"
+				table_id: 9177773090627649537L
+				type: "loot"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+			{
+				id: "52E0000000000003"
+				item: { count: 1, id: "refinedstorage:quartz_enriched_iron" }
+				type: "item"
+			}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["52E0000000000002"]
+			icon: {
+				id: "refinedstorage:controller"
+			}
+			id: "52E0000000000005"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "52E0000000000007"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}]
+			tasks: [
+			{
+				id: "52E0000000000006"
+				item: { count: 1, id: "refinedstorage:controller" }
+				type: "item"
+			}
+			]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["52E0000000000005"]
+			icon: {
+				id: "refinedstorage:grid"
+			}
+			id: "52E0000000000008"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "52E000000000000A"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}]
+			tasks: [
+			{
+				id: "52E0000000000009"
+				item: { count: 1, id: "refinedstorage:grid" }
+				type: "item"
+			}
+			]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["52E0000000000008"]
+			icon: {
+				id: "refinedstorage:disk_drive"
+			}
+			id: "52E000000000000B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "52E000000000000E"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}]
+			tasks: [
+			{
+				id: "52E000000000000C"
+				item: { count: 1, id: "refinedstorage:disk_drive" }
+				type: "item"
+			}
+			{
+				id: "52E000000000000D"
+				item: { count: 1, id: "refinedstorage:1k_storage_disk" }
+				type: "item"
+			}
+			]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["52E000000000000B"]
+			icon: {
+				id: "refinedstorage:cable"
+			}
+			id: "52E000000000000F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "52E0000000000011"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}]
+			tasks: [
+			{
+				id: "52E0000000000010"
+				item: { count: 1, id: "refinedstorage:cable" }
+				type: "item"
+			}
+			]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["52E000000000000F"]
+			icon: {
+				id: "refinedstorage:external_storage"
+			}
+			id: "52E0000000000012"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "52E0000000000014"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}]
+			tasks: [
+			{
+				id: "52E0000000000013"
+				item: { count: 1, id: "refinedstorage:external_storage" }
+				type: "item"
+			}
+			]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["52E0000000000012"]
+			icon: {
+				id: "refinedstorage:importer"
+			}
+			id: "52E0000000000015"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "52E0000000000018"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}]
+			tasks: [
+			{
+				id: "52E0000000000016"
+				item: { count: 1, id: "refinedstorage:importer" }
+				type: "item"
+			}
+			{
+				id: "52E0000000000017"
+				item: { count: 1, id: "refinedstorage:exporter" }
+				type: "item"
+			}
+			]
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["52E0000000000015"]
+			icon: {
+				id: "refinedstorage:crafting_grid"
+			}
+			id: "52E0000000000019"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "52E000000000001B"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}]
+			tasks: [
+			{
+				id: "52E000000000001A"
+				item: { count: 1, id: "refinedstorage:crafting_grid" }
+				type: "item"
+			}
+			]
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["52E0000000000019"]
+			icon: {
+				id: "refinedstorage:autocrafter"
+			}
+			id: "52E000000000001C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "52E000000000001F"
+				table_id: 9177773090627649537L
+				type: "loot"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+			{
+				id: "52E000000000001D"
+				item: { count: 1, id: "refinedstorage:pattern_grid" }
+				type: "item"
+			}
+			{
+				id: "52E000000000001E"
+				item: { count: 1, id: "refinedstorage:autocrafter" }
+				type: "item"
+			}
+			]
+			x: 0.0d
+			y: 12.0d
+		}
+	]
+}

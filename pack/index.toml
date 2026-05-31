@@ -81,6 +81,10 @@ file = "config/ftbquests/quests/chapters/take_flight.snbt"
 hash = "72409c9c7e206f819236d400210692be566f7720527f269a8dd8d534ffb84243"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/the_network.snbt"
+hash = "fb08b45462b0d6160d8429bea1ccea3a3b36cfdb1c3183c3810b794b389e29d7"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/tools_and_things.snbt"
 hash = "39e9f83466356e54d1c99bb72debb8b3370b787273f8ce3cd23115a9dbaaafec"
 
@@ -98,7 +102,7 @@ hash = "2e69afacf774749222ca1e925dc94d32e6c3db8bef4557aa33144751c2770206"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "d26163577b617a439ff4e059cb3bd9e20b70b17961abb3fad06ccbe121414758"
+hash = "f73d23e59dd441ca14e847c8e6d47a0071da311fe72368529da354a8a98bebb7"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"

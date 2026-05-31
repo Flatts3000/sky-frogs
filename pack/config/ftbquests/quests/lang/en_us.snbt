@@ -906,4 +906,54 @@
 	]
 	quest.51F0000000000014.quest_subtitle: "The metal at the bottom."
 	quest.51F0000000000014.title: "Netherite Scrap"
+	chapter.52E0000000000001.title: "The Network"
+	quest.52E0000000000002.quest_desc: [
+		"Every &eRefined Storage&r part starts here: &biron&r forged with &enether quartz&r. Until the"
+		""
+		"Infernal frog gave you quartz, none of this was buildable. Now it all is."
+	]
+	quest.52E0000000000002.quest_subtitle: "The key the whole network turns on."
+	quest.52E0000000000002.title: "Quartz Enriched Iron"
+	quest.52E0000000000005.quest_desc: [
+		"The &eController&r is the network. Feed it &bForge Energy&r from your Geode-era Mekanism setup and everything downstream wakes up."
+	]
+	quest.52E0000000000005.quest_subtitle: "The heart that powers it."
+	quest.52E0000000000005.title: "The Controller"
+	quest.52E0000000000008.quest_desc: [
+		"The &eGrid&r is the terminal - search, sort, and pull any item in the network from one screen."
+	]
+	quest.52E0000000000008.quest_subtitle: "Your window into everything."
+	quest.52E0000000000008.title: "The Grid"
+	quest.52E000000000000B.quest_desc: [
+		"A &eDisk Drive&r full of &bStorage Disks&r is the network's memory. Start with a 1k disk; scale to 64k and beyond later."
+	]
+	quest.52E000000000000B.quest_subtitle: "Where it all lives."
+	quest.52E000000000000B.title: "Disk Drive"
+	quest.52E000000000000F.quest_desc: [
+		"&eCable&r carries the network signal. Run it between the Controller, Grid, Disk Drive, and everything else."
+	]
+	quest.52E000000000000F.quest_subtitle: "Cables tie the network together."
+	quest.52E000000000000F.title: "Wire It Up"
+	quest.52E0000000000012.quest_desc: [
+		"&eExternal Storage&r exposes a drawer, barrel, or chest to the network - your old Functional Storage wall becomes searchable."
+	]
+	quest.52E0000000000012.quest_subtitle: "Plug in the drawer wall."
+	quest.52E0000000000012.title: "External Storage"
+	quest.52E0000000000015.quest_desc: [
+		"An &eImporter&r pulls items into the network; an &eExporter&r pushes them out. Wire a frog loop straight into storage."
+	]
+	quest.52E0000000000015.quest_subtitle: "Let it stock itself."
+	quest.52E0000000000015.title: "Import and Export"
+	quest.52E0000000000019.quest_desc: [
+		"The &eCrafting Grid&r is a crafting table wired to the network - no hauling materials, it pulls them for you."
+	]
+	quest.52E0000000000019.quest_subtitle: "Craft straight from storage."
+	quest.52E0000000000019.title: "Crafting Grid"
+	quest.52E000000000001C.quest_desc: [
+		"A &ePattern Grid&r records a recipe; an &eAutocrafter&r runs it on demand. Request an item and the network"
+		""
+		"crafts the whole tree itself. The Infernal verb, complete - the network now runs the base for you."
+	]
+	quest.52E000000000001C.quest_subtitle: "Ask, and it builds."
+	quest.52E000000000001C.title: "Autocrafting"
 }
