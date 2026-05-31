@@ -129,10 +129,13 @@ Ordered by leverage-per-hour. P0/P1 deliver most of the AAA jump; P2/P3 are deep
      headline capstones (First Iron, First Lapis, First Prismarine, Nautilus Shell, ...) are
      item-rewarded, so escalating their XP would override that rule. Decide first: do capstones
      get XP *on top of* their item reward, or only the xp-only milestones get bumped?
-   - **`toast` celebration: needs one in-game round-trip.** `type: "toast"` is confirmed across
-     ATM10/ATMons (data.snbt version 13, matches ours), but every real example ships an *empty*
-     `description` - so rich custom title/description text can't be verified from files alone.
-     Build one populated toast in the editor, read the snbt, then author at tier transitions.
+   - **`toast` celebration: SHIPPED 2026-05-31.** Decompiled `ToastReward.class` (FTB Quests
+     2101.1.24) settled the shape: the reward has a single inline `description` string (plain
+     `putString`, not lang-extracted), and `claim()` sends `CustomToastMessage(questId)` so the
+     toast renders the *quest's own icon + title* with `description` as the line beneath (there is
+     no `title` field). A populated `toast` now fires on each of the five tier-gateway capstones
+     (Synthesize Life, Your First Iron Ingot, First Lapis, Dirt, First Prismarine) - additive, so
+     no conflict with the no-item+xp rule.
    - **`stage`/`gamestage`: deferred until a consumer exists.** `type: "gamestage"` with a
      `stage: "<id>"` field is confirmed (FTB OceanBlock 2), but a stage nothing reads is dead
      machinery. Add when a quest/KubeJS gate actually branches on it.

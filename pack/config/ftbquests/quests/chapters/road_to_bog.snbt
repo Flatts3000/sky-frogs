@@ -139,6 +139,11 @@
 					id: "functionalstorage:oak_1"
 				}
 				type: "item"
+			}
+			{
+				description: "Tier 3 is open. The Bog turns frogs into life itself."
+				id: "70B0000000000020"
+				type: "toast"
 			}]
 			shape: "hexagon"
 			size: 1.5d

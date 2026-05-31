@@ -455,6 +455,11 @@
 				id: "54E5F6A1B2C30033"
 				type: "xp"
 				xp: 50
+			}
+			{
+				description: "The frogs are alive. Sky Frogs starts here."
+				id: "54E5F6A1B2C30034"
+				type: "toast"
 			}]
 			tasks: [{
 				count: 2L

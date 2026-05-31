@@ -50,15 +50,15 @@ hash = "8ca7ca6f564368f83863e5ff3fd7801f26e9623b1d386266e681ae2c1a7e8ab5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_bog.snbt"
-hash = "b3128c4bbe52eaf4e42a943bd688f586e5d8512d843732e08404812f9e89aad9"
+hash = "788775eb2d7b32b1512326ba20f2ae316d4599bb164617252b94c229b3f2c071"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_geode.snbt"
-hash = "6af7cf5d4721425eff2671cf4f318fc9fe8fb2dfa5256c9edb196d480eb37458"
+hash = "67c2e79cebb8b427808dabe451359c3557e96d8c819a260d445b6c6496d07bdf"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_tide.snbt"
-hash = "432c1416fa440e2cc8cb43b26b6c08abeeb741e48847098c2fe5db146a2f97c4"
+hash = "fbccffa2dd71de04db7b284031ac53dd9db2f8dce9df419476341842fbe97599"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/scaling_the_colony.snbt"
@@ -78,11 +78,11 @@ hash = "d776fadefcaaaad4142b778a172556b7ddef9ea98e677ec7f8f0cd1f3c625634"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
-hash = "83eaf5ea2c31dbcb7e93d2be172490001869bee7b8e9857f909192323dbf47e0"
+hash = "ea2e18eb763f9e59642670d191be701252c4668ae296719d1e73e5df7039d38a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/your_first_iron_ingot.snbt"
-hash = "5f38f849ed56843b3f63118198d41a6068593e484520b9acc190e67b6a7f9b8e"
+hash = "fff9b2574150b6cfbe287db14bee08bb2bee8567892889015d1a9bbc97fdcd8c"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
