@@ -100,9 +100,73 @@
 	quest.71DE00000000001A.quest_desc: [
 		"Feed a prismarine slime to a &eTide Frog&r and it drops a &bPrismarine Froglight&r. Smelt it for &fprismarine shards&r: ocean stone, no monument required."
 		""
-		"&eTide&r is open. The rest of the aquatic chain (crystals, sponge, ink, sea pickle, nautilus) waits in &eDrowned Riches&r, when that chapter ships."
+		"&eTide&r is open. The rest of the aquatic chain - crystals, sponge, ink, sea pickle, nautilus - waits in &eDrowned Riches&r."
 	]
 	quest.71DE00000000001A.title: "First Prismarine"
+	chapter.7D00000000000001.title: "Drowned Riches"
+	quest.7D00000000000002.quest_desc: [
+		"You pulled &bprismarine&r out of the void-sea; the rest of the reef follows the same loop. Each &eTide&r resource: chamber its slime, milk it, feed a &eTide Frog&r, smelt the &bFroglight&r."
+		""
+		"Five more to land the full aquatic roster. Claim your reward and dive in."
+	]
+	quest.7D00000000000002.title: "Drowned Riches"
+	quest.7D00000000000005.quest_desc: [
+		"Run the loop for &bPrismarine Crystals&r. Smelt the &bPrismarine Crystals Froglight&r into crystals - four of them around a prismarine shard make a &esea lantern&r."
+	]
+	quest.7D00000000000005.title: "Prismarine Crystals"
+	quest.7D00000000000008.quest_desc: [
+		"&bSponge&r, with no ocean monument and no guardians in sight. Smelt the &bSponge Froglight&r for a dry sponge - then soak up a puddle of the void."
+	]
+	quest.7D00000000000008.title: "Sponge"
+	quest.7D0000000000000B.quest_desc: [
+		"&bInk Sac&r from a frog instead of a squid. Smelt the &bInk Sac Froglight&r for ink - black dye on tap, no fishing required."
+	]
+	quest.7D0000000000000B.title: "Ink Sac"
+	quest.7D0000000000000E.quest_desc: [
+		"&bSea Pickle&r, the reef's little lanterns. Smelt the &bSea Pickle Froglight&r and light up the shallows."
+	]
+	quest.7D0000000000000E.title: "Sea Pickle"
+	quest.7D00000000000011.quest_desc: [
+		"The last of the tide: &bNautilus Shell&r, the shell that aims a Conduit. Smelt the &bNautilus Shell Froglight&r and the aquatic roster is yours, top to bottom."
+	]
+	quest.7D00000000000011.title: "Nautilus Shell"
+	chapter.7F00000000000001.title: "Take Flight"
+	quest.7F00000000000002.quest_desc: [
+		"Your island has spread out under you, and walking it is getting old. Time to fly. &eIron Jetpacks&r runs on the metals your frogs already make and the &bRF&r your Geode machines already spin."
+		""
+		"No new resource to chase - just a new way to move."
+	]
+	quest.7F00000000000002.title: "Take Flight"
+	quest.7F00000000000005.quest_desc: [
+		"Start with a &eLeather Strap&r - &fleather&r from your Bog frog, &firon nuggets&r from your Cave one. It's the harness everything else bolts onto."
+	]
+	quest.7F00000000000005.title: "Leather Strap"
+	quest.7F00000000000008.quest_desc: [
+		"A &eBasic Coil&r - &firon&r, &fredstone&r, and a couple sticks - is the heart of the cheapest jetpack. Cave resources, all of it."
+	]
+	quest.7F00000000000008.title: "Basic Coil"
+	quest.7F0000000000000B.quest_desc: [
+		"Build an &bIron Jetpack&r: the coil plus an iron &ecell&r, &ethruster&r, and &ecapacitor&r on the strap. Wear it in a &eCurios&r back slot (or over your chestplate) - you're a pilot now."
+	]
+	quest.7F0000000000000B.title: "Off the Ground"
+	quest.7F0000000000000E.quest_desc: [
+		"A jetpack is dead weight without power. Charge it from any &bForge Energy&r source - a &eMekanism&r energy cube or cable off your Geode setup - then hold jump and lift off. Tap hover to hang in place."
+		""
+		"&aClaim this once you've flown.&r"
+	]
+	quest.7F0000000000000E.title: "Fuel and Fly"
+	quest.7F00000000000011.quest_desc: [
+		"An &eAdvanced Coil&r swaps the iron for &fgold&r - a faster, higher jetpack. Your Cave gold frog has you covered."
+	]
+	quest.7F00000000000011.title: "Advanced Coil"
+	quest.7F00000000000014.quest_desc: [
+		"The &eElite Coil&r runs on &fdiamond&r. Geode gem-tier mobility: climb higher, burn fuel slower."
+	]
+	quest.7F00000000000014.title: "Elite Coil"
+	quest.7F00000000000017.quest_desc: [
+		"The &eUltimate Coil&r tops it out with &femerald&r, the Geode capstone gem - the fastest jetpack in the pack. The void is yours to cross."
+	]
+	quest.7F00000000000017.title: "Ultimate Coil"
 	quest.01A8E068925B319F.quest_desc: [
 		"You're stranded on a speck of dirt in the void. No ore, no mineshafts, not so much as a mountain to feel bad about."
 		""

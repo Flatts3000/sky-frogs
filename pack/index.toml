@@ -37,6 +37,10 @@ file = "config/ftbquests/quests/chapters/cave_frogs.snbt"
 hash = "c974ad0f7739ac20f20c542179378fc01be2c5519a73c0a676deb4a6657872f4"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/drowned_riches.snbt"
+hash = "0e18c283a3cf242ba65d43da2e34821c66868374d489e074938bd9ff6e3bfdce"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/geode_frogs.snbt"
 hash = "b0e4f19fecba6887112351c67abc68aac8028c09c81cfb78cba040b3f0036e4e"
 
@@ -65,6 +69,10 @@ file = "config/ftbquests/quests/chapters/storage_and_crafting.snbt"
 hash = "459e1e4a9e07b4d6e8a469050fa1c02795ec60033dc0ce622e724c2f38c5ecee"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/take_flight.snbt"
+hash = "81d6d3bf88a9a55c7f8f8649a447a2d25f11b1096d5b1038534f1c749e53020f"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/tools_and_things.snbt"
 hash = "51e75a06c5da04f89eadf1d57fa6cd44403f98794b2a256b31d54746d4ab05eb"
 
@@ -82,7 +90,7 @@ hash = "d7dd511fa89cc9066374f537d8e9259d6caff8fe7db0a0a04db3af393100e0a4"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "ec01b4dadd5bd1806610244459c8f221746bc0fbffa11fbfb6551c5baf2dd079"
+hash = "a01c9180964333bfea0d2c0efa93f61a492ca632b3ccde916ee0650f2af06880"
 
 [[files]]
 file = "config/productivefrogs-common.toml"
@@ -306,6 +314,11 @@ hash = "6ad424af2b8614fe9547f622a5b3d84d003eeffc6284a517aea90e377958a17a"
 metafile = true
 
 [[files]]
+file = "mods/cucumber.pw.toml"
+hash = "a1e99e73f9b3d71358832896d6a08d45c55b7a0037e00df69f98ba6880994341"
+metafile = true
+
+[[files]]
 file = "mods/curios.pw.toml"
 hash = "f92e7a06645e41ea1934dc420eb2772edb1708c0d71cb427baef8cf753acb934"
 metafile = true
@@ -413,6 +426,11 @@ metafile = true
 [[files]]
 file = "mods/iron-furnaces.pw.toml"
 hash = "3f6a27001eb45ce6296829cfa9d7d41a0bd304914217f8dc3196feaa9030f963"
+metafile = true
+
+[[files]]
+file = "mods/iron-jetpacks.pw.toml"
+hash = "396254c3cd156fa0bfd06d1fef4af115c21e7222e3c2fa13450e89f50bc7df40"
 metafile = true
 
 [[files]]
