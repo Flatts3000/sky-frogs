@@ -162,9 +162,15 @@ Ordered by leverage-per-hour. P0/P1 deliver most of the AAA jump; P2/P3 are deep
      reference (its Farmers Delight food table), and the `Q-REWARD-TABLE-RESOLVES` /
      `Q-REWARD-TABLE-ORPHAN` validator guards now ratchet it. This proves the reward-table shape
      for 5b.
-   - **5b. The four tier crates.** Once 5a's shape is proven, add the Froglight crates (weighted
-     drawer / food / bonus resource / XP, 2 rolls each) per tier and migrate the species-chain
-     rewards onto them. ~4 hrs.
+   - **5b. The four tier crates. SHIPPED 2026-05-31.** Cave/Geode/Bog/Tide category crates, each
+     a weighted 3-group table (rare processing block / occasional components / common 64-stack).
+     **Crate contents are restricted to fully-prior-tier + Tier-0 materials and recipe-gate-checked**
+     - the hard lesson was that a crate must never grant what the player cannot yet craft, including
+     materials hidden inside recipes (quartz in comparators/observers/diorite, glowstone in redstone
+     lamps, obsidian); the Enchanting Table is the one blessed vanilla-style out-of-order grant.
+     **The XP placeholders were dropped entirely** (not escalated) and backfilled with a mix: hexagon
+     milestones get the tier crate, process steps get the Good Food Crate. **Existing item/block
+     rewards were left untouched** (no migration of the per-resource drawers).
 6. **Diversify the filler rewards.** Where a drawer repeats, swap ~half for tier-appropriate
    items (hoppers/cauldrons at Cave, Mekanism upgrades at Geode, JDT/IF parts at Bog, jetpack
    prep at Tide) so the *items you collect* show progression. ~2 hrs.

@@ -18,9 +18,10 @@
 			}
 			id: "6C1F0A2B3D4E5F61"
 			rewards: [{
+				exclude_from_claim_all: true
 				id: "6C1F0A2B3D4E5F63"
-				type: "xp"
-				xp: 10
+				table_id: 9159195742164746241L
+				type: "loot"
 			}]
 			shape: "hexagon"
 			size: 1.5d

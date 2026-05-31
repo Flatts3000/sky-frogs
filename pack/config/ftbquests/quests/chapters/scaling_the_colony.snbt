@@ -18,9 +18,10 @@
 			}
 			id: "2A5700000A570002"
 			rewards: [{
+				exclude_from_claim_all: true
 				id: "2A5700000A570004"
-				type: "xp"
-				xp: 10
+				table_id: 9159195742164746241L
+				type: "loot"
 			}]
 			shape: "hexagon"
 			size: 1.5d
@@ -60,9 +61,10 @@
 			}
 			id: "2A5700000A570008"
 			rewards: [{
+				exclude_from_claim_all: true
 				id: "2A5700000A57000A"
-				type: "xp"
-				xp: 10
+				table_id: 9151543141235425281L
+				type: "loot"
 			}]
 			tasks: [{
 				id: "2A5700000A570009"
@@ -151,9 +153,10 @@
 			}
 			id: "2A5700000A570022"
 			rewards: [{
+				exclude_from_claim_all: true
 				id: "2A5700000A570024"
-				type: "xp"
-				xp: 20
+				table_id: 9151543141235425281L
+				type: "loot"
 			}]
 			tasks: [{
 				id: "2A5700000A570023"
@@ -169,9 +172,10 @@
 			}
 			id: "2A5700000A570015"
 			rewards: [{
+				exclude_from_claim_all: true
 				id: "2A5700000A570017"
-				type: "xp"
-				xp: 10
+				table_id: 9151543141235425281L
+				type: "loot"
 			}]
 			tasks: [{
 				id: "2A5700000A570016"
@@ -234,9 +238,10 @@
 			}
 			id: "2A5700000A57001E"
 			rewards: [{
+				exclude_from_claim_all: true
 				id: "2A5700000A570021"
-				type: "xp"
-				xp: 30
+				table_id: 9159195742164746241L
+				type: "loot"
 			}]
 			shape: "hexagon"
 			size: 1.5d

@@ -1,0 +1,91 @@
+{
+	icon: {
+		id: "minecraft:blast_furnace"
+	}
+	id: "7F1C000000000001"
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{
+			count: 1
+			id: "7F1C000000000010"
+			item: {
+				count: 1
+				id: "minecraft:blast_furnace"
+			}
+			weight: 1.0f
+		}
+		{
+			count: 1
+			id: "7F1C000000000011"
+			item: {
+				count: 1
+				id: "minecraft:stonecutter"
+			}
+			weight: 1.0f
+		}
+		{
+			count: 1
+			id: "7F1C000000000012"
+			item: {
+				count: 1
+				id: "minecraft:smoker"
+			}
+			weight: 1.0f
+		}
+		{
+			count: 4
+			id: "7F1C000000000013"
+			item: {
+				count: 1
+				id: "minecraft:hopper"
+			}
+			weight: 5.0f
+		}
+		{
+			count: 8
+			id: "7F1C000000000014"
+			item: {
+				count: 1
+				id: "minecraft:chain"
+			}
+			weight: 5.0f
+		}
+		{
+			count: 8
+			id: "7F1C000000000015"
+			item: {
+				count: 1
+				id: "minecraft:iron_bars"
+			}
+			weight: 5.0f
+		}
+		{
+			count: 64
+			id: "7F1C000000000016"
+			item: {
+				count: 1
+				id: "minecraft:glass"
+			}
+			weight: 12.0f
+		}
+		{
+			count: 64
+			id: "7F1C000000000017"
+			item: {
+				count: 1
+				id: "minecraft:stone_bricks"
+			}
+			weight: 12.0f
+		}
+		{
+			count: 64
+			id: "7F1C000000000018"
+			item: {
+				count: 1
+				id: "minecraft:torch"
+			}
+			weight: 12.0f
+		}
+	]
+}

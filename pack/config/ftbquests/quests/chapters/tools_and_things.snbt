@@ -102,9 +102,10 @@
 			}
 			id: "1F0000000000000E"
 			rewards: [{
+				exclude_from_claim_all: true
 				id: "1F00000000000010"
-				type: "xp"
-				xp: 25
+				table_id: 9167921466442776577L
+				type: "loot"
 			}]
 			shape: "hexagon"
 			size: 1.5d
@@ -124,9 +125,10 @@
 			id: "1F00000000000011"
 			optional: true
 			rewards: [{
+				exclude_from_claim_all: true
 				id: "1F00000000000013"
-				type: "xp"
-				xp: 10
+				table_id: 9151543141235425281L
+				type: "loot"
 			}]
 			tasks: [{
 				id: "1F00000000000012"
