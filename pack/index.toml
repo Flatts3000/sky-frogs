@@ -34,7 +34,7 @@ hash = "0234d29d5811a1a0b2e634ebbabf554c8a5c615aef5fc6666dd161b6e5bd7f5e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/cave_frogs.snbt"
-hash = "c974ad0f7739ac20f20c542179378fc01be2c5519a73c0a676deb4a6657872f4"
+hash = "aefef849cd96a62409eb4b24c174407446fd9e6eb2000a7f048deda70fb79bea"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/drowned_riches.snbt"
@@ -90,7 +90,7 @@ hash = "2e69afacf774749222ca1e925dc94d32e6c3db8bef4557aa33144751c2770206"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "c8c270299b8769d5a7380527b8bfea62b57e26f8734cc86e073209b660076035"
+hash = "a15d7889ab972af5404b08263730cd9fe81001e255a7e87c655c680024478b44"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
