@@ -11,6 +11,9 @@
 *.py          text eol=lf
 .packwizignore text eol=lf
 
+# Git hooks run under sh - must stay LF even on Windows
+.githooks/**  text eol=lf
+
 # Windows-only scripts keep CRLF
 *.bat         text eol=crlf
 *.cmd         text eol=crlf

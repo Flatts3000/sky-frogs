@@ -66,9 +66,15 @@ const SLIME_TIERS = [
     ['feather',    'minecraft:leather'],
     ['plastic',    'minecraft:feather'],
     ['pink_slime', 'industrialforegoing:plastic']
+  ]],
+  ['TIDE', 'minecraft:mycelium', [
+    ['prismarine',          'industrialforegoing:pink_slime'],  // bridges from Bog's last
+    ['prismarine_crystals', 'minecraft:prismarine_shard'],
+    ['sponge',              'minecraft:prismarine_crystals'],
+    ['ink_sac',             'minecraft:sponge'],
+    ['sea_pickle',          'minecraft:ink_sac'],
+    ['nautilus_shell',      'minecraft:sea_pickle']
   ]]
-  // Tier 4 (Tide): filler + variant order TBD. The first row will take
-  //   'industrialforegoing:pink_slime' (Bog's last) as its prior-resource.
   // Tier 5 (Infernal) and Tier 6 (Void): TBD.
 ]
 

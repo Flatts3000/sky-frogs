@@ -29,7 +29,7 @@
 				item: { count: 1, id: "industrialforegoing:machine_frame_pity" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: -1.5d
 			y: 0.0d
 		}
 		{
@@ -48,7 +48,7 @@
 				item: { count: 1, id: "industrialforegoing:fluid_extractor" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: -1.5d
 			y: 1.5d
 		}
 		{
@@ -69,8 +69,104 @@
 				item: { count: 1, id: "industrialforegoing:dissolution_chamber" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: -1.5d
 			y: 3.0d
+		}
+		{
+			dependencies: ["7B0600000000001D"]
+			icon: {
+				components: {
+					"productivefrogs:contained_category": "tide"
+				}
+				id: "productivefrogs:frog_egg"
+			}
+			id: "71DE00000000000E"
+			rewards: [{
+				id: "71DE000000000010"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "71DE00000000000F"
+				item: { components: { "productivefrogs:contained_category": "tide" }, count: 1, id: "productivefrogs:frog_egg" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"71DE000000000008"
+				"71DE00000000000E"
+			]
+			icon: {
+				components: {
+					"minecraft:bucket_entity_data": {
+						Category: "TIDE"
+						Variant: "productivefrogs:prismarine"
+					}
+				}
+				id: "productivefrogs:slime_bucket"
+			}
+			id: "71DE000000000014"
+			rewards: [{
+				id: "71DE000000000016"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "71DE000000000015"
+				item: { components: { "minecraft:bucket_entity_data": { Category: "TIDE", Variant: "productivefrogs:prismarine" } }, count: 1, id: "productivefrogs:slime_bucket" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["71DE000000000014"]
+			icon: {
+				id: "productivefrogs:prismarine_slime_milk_bucket"
+			}
+			id: "71DE000000000017"
+			rewards: [{
+				id: "71DE000000000019"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "71DE000000000018"
+				item: { count: 1, id: "productivefrogs:prismarine_slime_milk_bucket" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["71DE000000000017"]
+			icon: {
+				id: "minecraft:prismarine"
+			}
+			id: "71DE00000000001A"
+			rewards: [{
+				id: "71DE00000000001C"
+				item: {
+					count: 1
+					id: "farmersdelight:roast_chicken"
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "71DE00000000001B"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:prismarine" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.5d
 		}
 	]
 }

@@ -30,31 +30,31 @@ hash = "3448a3a6e7dc33a360a2b0864c0546bd927ccaf98d7f6ab09c99850b96ed908d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/bog_frogs.snbt"
-hash = "5c2b5c98261a7a588ebd990fd5d0766ddc3c54c84033d2d9ae5a54244cf5494d"
+hash = "0234d29d5811a1a0b2e634ebbabf554c8a5c615aef5fc6666dd161b6e5bd7f5e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/cave_frogs.snbt"
-hash = "13f68293531fb12de49a0e10f16b1a4a958c66d73988626119e623e75572f168"
+hash = "c974ad0f7739ac20f20c542179378fc01be2c5519a73c0a676deb4a6657872f4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/geode_frogs.snbt"
-hash = "0703ce17c26e144e0597910de3a0cbcd6f410141bf159e2e5791da8c0cc4aaab"
+hash = "b0e4f19fecba6887112351c67abc68aac8028c09c81cfb78cba040b3f0036e4e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/mekanism.snbt"
-hash = "85aea53fc5f1e2a160a06860db92b5d33274aa7b1a71850747df62d7e912e830"
+hash = "8ca7ca6f564368f83863e5ff3fd7801f26e9623b1d386266e681ae2c1a7e8ab5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_bog.snbt"
-hash = "ac647830ace67885bc8d415e868c12f6211d49f60dec410811a22f9ad6166ed8"
+hash = "ec0e8b97611a4259b0feeded17991a4e6fe88782e49a0f60cce8596b05648c28"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_geode.snbt"
-hash = "ce140602036d2b62c1211368a732a43667da89bdb6737e33c75fb338cf0ee60f"
+hash = "030b34c70a157c49f06b56924623aa7701f12e649989479fde244cb656e4d3ec"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_tide.snbt"
-hash = "81efc3395ece90546cc1e51f4d75b32cf5d724a1955ee0a1087102fed63e5667"
+hash = "b5b90cda6b410e67f9efbd9d8e14b41dda4acbbb90d6437aa2ab710a44dce5fb"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/scaling_the_colony.snbt"
@@ -70,11 +70,11 @@ hash = "51e75a06c5da04f89eadf1d57fa6cd44403f98794b2a256b31d54746d4ab05eb"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
-hash = "402f098e3acd237aba1ec9bf9a6eb4547857b53d0a3e6f653e58fc7c319d29cd"
+hash = "df482eb1e8191dca20548b4b344a24e711b3677fd10465d3aff505b8c1cd1622"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/your_first_iron_ingot.snbt"
-hash = "eb213e49014e10f352322c052cf1ed9b44b94e29e94a3ded45c4059cc452af92"
+hash = "819c6b7e6e1070fbfc8c6c9e4942f7781015def29262e963be5ca13a3521256e"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -82,7 +82,7 @@ hash = "d7dd511fa89cc9066374f537d8e9259d6caff8fe7db0a0a04db3af393100e0a4"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "f8eb68f0ee0860bad8969c3377a1788b820173127581e17b02f71a201691efed"
+hash = "ec01b4dadd5bd1806610244459c8f221746bc0fbffa11fbfb6551c5baf2dd079"
 
 [[files]]
 file = "config/productivefrogs-common.toml"
@@ -149,6 +149,10 @@ file = "kubejs/data/productivefrogs/tags/item/spawnery_primer/geode.json"
 hash = "39a83486cb95a2b162d7b896e0f18f3591f822c483bdf66488c7a9145018ff30"
 
 [[files]]
+file = "kubejs/data/productivefrogs/tags/item/spawnery_primer/tide.json"
+hash = "0b7812099b96fcaa412f2a15d4ab9a432d0e617461671c48e91dc031b45512cc"
+
+[[files]]
 file = "kubejs/data/skyfrogs/neoforge/biome_modifier/add_cave_slime_island.json"
 hash = "7b229ff45dfddb7a42fc5d7bd6cb33bdca7b2b3edd6dabc721ad79d321eeeb54"
 
@@ -170,7 +174,7 @@ hash = "5988e55c01cba66280a66eeb2c68d3d13451e6ac1b5848f54217720bb34946d7"
 
 [[files]]
 file = "kubejs/server_scripts/dissolution_slime_recipes.js"
-hash = "dbf685eff591fc174905691638f14e3a9d2aedce7d4aeab05161f61d686c7fbd"
+hash = "208c4c478188e9ba1eb2f4e089bb49cef6c1082e71dc8c8ef5fdb11f8b2c203e"
 
 [[files]]
 file = "kubejs/server_scripts/first_join.js"
@@ -201,12 +205,20 @@ file = "kubejs/server_scripts/osmium_slime_bucket.js"
 hash = "fcd826f0045add7d9a2dc7c8b1cd4306787be6625e61c23d63db5d010cd9b504"
 
 [[files]]
+file = "kubejs/server_scripts/selftest.js"
+hash = "063b0f251975c3f706540613d78a2374317547769c5eee1efa5290336f631b6d"
+
+[[files]]
 file = "kubejs/server_scripts/steel_slime_infusing.js"
 hash = "e1786b8cf0582208c9802eef75825c418bac0dd9b0d472ccee6e6ee5f50a81ba"
 
 [[files]]
 file = "kubejs/server_scripts/storage_quartz_free.js"
 hash = "2b6735fc64ee708364b30526b4d5d7b703cfc80e624eb8f6f2098f6a0b2b192d"
+
+[[files]]
+file = "kubejs/startup_scripts/milk_bucket_no_remainder.js"
+hash = "5a0b56abe3b4676294232d16934ca1d115cb395a44710d408a6194b9c08b4ce0"
 
 [[files]]
 file = "mods/almostunified.pw.toml"

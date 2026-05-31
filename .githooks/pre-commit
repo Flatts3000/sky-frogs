@@ -1,0 +1,17 @@
+#!/bin/sh
+# Sky Frogs pre-commit hook: validate FTB Quests data before it enters history.
+# Enable once per clone:  git config core.hooksPath .githooks
+#
+# Runs the static validator (docs/quest_testing.md, Layer 1) only when quest or
+# kubejs files are staged. Blocks the commit on any ERROR. Bypass (rarely) with
+# `git commit --no-verify`.
+
+if git diff --cached --name-only | grep -qE '^pack/(config/ftbquests|kubejs)/'; then
+    echo "[pre-commit] validating FTB Quests data..."
+    if ! python tools/validate_quests.py; then
+        echo "[pre-commit] quest validation failed - commit blocked."
+        echo "             Fix the ERROR(s) above (or 'git commit --no-verify' to bypass)."
+        exit 1
+    fi
+fi
+exit 0

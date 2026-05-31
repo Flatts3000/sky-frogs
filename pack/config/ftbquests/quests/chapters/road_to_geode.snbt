@@ -33,6 +33,7 @@
 			tasks: [{
 				id: "60ADE60000000003"
 				item: { components: { "productivefrogs:contained_category": "geode" }, count: 1, id: "productivefrogs:frog_egg" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 0.0d
@@ -58,6 +59,7 @@
 			tasks: [{
 				id: "60ADE6000000000C"
 				item: { components: { "minecraft:bucket_entity_data": { Category: "GEODE", Variant: "productivefrogs:lapis" } }, count: 1, id: "productivefrogs:slime_bucket" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 0.0d
@@ -105,6 +107,7 @@
 			tasks: [{
 				id: "60ADE60000000009"
 				item: { components: { "productivefrogs:slime_variant": "productivefrogs:lapis" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 0.0d
