@@ -545,7 +545,8 @@ def run():
     findings: list[Finding] = []
     for check in CHECKS:
         findings.extend(check(chapters, ctx))
-    return findings
+    n_quests = sum(len(ch.quests) for ch in chapters)
+    return findings, len(chapters), n_quests
 
 
 def main(argv=None):
@@ -560,7 +561,7 @@ def main(argv=None):
         pass
 
     try:
-        findings = run()
+        findings, n_chapters, n_quests = run()
     except SNBTError as e:
         print(f"PARSE ERROR: {e}", file=sys.stderr)
         return 1
@@ -577,8 +578,7 @@ def main(argv=None):
     warns = sum(1 for f in findings if f.severity == WARN)
     infos = sum(1 for f in findings if f.severity == INFO)
     print(f"\n{errors} error(s), {warns} warning(s), {infos} info "
-          f"({len(list(iter_quests(load_chapters())))} quests in "
-          f"{len(load_chapters())} chapters checked)", file=sys.stderr)
+          f"({n_quests} quests in {n_chapters} chapters checked)", file=sys.stderr)
 
     if errors:
         return 1

@@ -102,7 +102,7 @@ quest), **WARN** is a smell worth a human look.
 |----|-----|------|---------|
 | **Q-LANG-TITLE** | ERROR | every quest has a `quest.<id>.title` in `lang/en_us.snbt` (FTB wipes inline titles; missing = blank quest) | inline-text-gets-wiped rule |
 | **Q-LANG-ORPHAN** | WARN | every `quest.<id>.{title,quest_desc}` in lang maps to a real quest id | dead lang entries from deleted/renumbered quests |
-| **Q-NO-DASHES** | ERROR | no `—` (U+2014) / `–` (U+2013) in any authored lang value | house rule (ASCII punctuation only) |
+| **Q-NO-DASHES** | ERROR | no em-dash (U+2014) or en-dash (U+2013) in any authored lang value | house rule (ASCII punctuation only) |
 
 #### Item & recipe cross-checks (needs an item allowlist - Phase 2)
 

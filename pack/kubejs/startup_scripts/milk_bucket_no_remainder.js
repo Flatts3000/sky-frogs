@@ -11,6 +11,9 @@
 // (craftRemainder only matters in crafting; placing milk / using the Slime Milker is untouched.)
 ItemEvents.modification(event => {
   event.modify(/^productivefrogs:.+_slime_milk_bucket$/, item => {
-    item.craftRemainder = 'minecraft:air'
+    // KubeJS exposes the setter setCraftingRemainder(...) as the JS bean property
+    // `craftingRemainder`. (An earlier `craftRemainder` was a no-op - no such setter -
+    // so the remainder was never cleared and the dupe persisted.)
+    item.craftingRemainder = 'minecraft:air'
   })
 })
