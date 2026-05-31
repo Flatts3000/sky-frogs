@@ -165,7 +165,7 @@ frequent. Until then, the canaries can live as a documented manual checklist ins
 | **1** | `validate_quests.py` with structural + match-components + lang checks (Q-ID-*, Q-DEP-*, Q-MATCH-COMPONENTS, Q-NO-DUP-TASK, Q-LANG-*, Q-NO-DASHES) | today's tier-skip + dependency + lang bugs, all instances, forever | **DONE** |
 | **2** | cross-checks (Q-VARIANT-MADE DONE; Q-ITEM-EXISTS dormant pending `tools/data/item_ids.txt`; Q-FROGLIGHT-IS-CHECK deferred - too heuristic to define without false positives) | "Missing Item" gaps, quest/recipe drift | **PARTIAL** |
 | **3** | `.github/workflows/validate-quests.yml` CI gate + `.githooks/pre-commit` (enable: `git config core.hooksPath .githooks`) | regression prevention at commit + PR/push | **DONE** |
-| **4** | KubeJS `/sf_selftest` canaries | runtime confirmation of fixes after `/reload` | **DONE** (needs first in-game run to confirm the ItemStack API) |
+| **4** | KubeJS `/sf_selftest` canaries | runtime confirmation of fixes after `/reload` | **DONE** (the craft-remainder canary reads `ItemStack.getCraftingRemainingItem()` - the NeoForge 1.21 name; `getCraftingRemainder` does not exist) |
 
 The validator is self-verifying: it runs clean on the current pack, and injecting a missing
 `match_components` or a dangling dependency makes it exit non-zero with the exact finding. To
