@@ -52,10 +52,13 @@ function runSelfTest(source) {
   check('configurable_froglight exists', () =>
     !Item.of('productivefrogs:configurable_froglight').isEmpty())
 
-  // 3. Milk buckets carry NO craft remainder (the bucket-dupe fix held).
+  // 3. Milk buckets carry NO craft remainder (the bucket-dupe fix held). NeoForge 1.21
+  //    exposes this as ItemStack.getCraftingRemainingItem() - NOT getCraftingRemainder
+  //    (confirmed against neoforge IItemStackExtension). Checked per-variant, so a
+  //    regex-modify miss on any single variant surfaces as a real failure here.
   CANARY_VARIANTS.forEach(v => {
-    check('no bucket dupe (milk craftRemainder empty): ' + v, () => {
-      const rem = Item.of('productivefrogs:' + v + '_slime_milk_bucket').getCraftingRemainder()
+    check('no bucket dupe (milk craft-remainder empty): ' + v, () => {
+      const rem = Item.of('productivefrogs:' + v + '_slime_milk_bucket').getCraftingRemainingItem()
       return rem == null || rem.isEmpty()
     })
   })

@@ -110,6 +110,8 @@ Each entry here directly maps to one or more PF category slime variants (see [`p
 | **Showcase Item**     | Display items as pedestals                                            |
 | **Construction Sticks** | Quick build sticks                                                  |
 | **Building Gadgets 2** | Larger build tools                                                   |
+| **Iron Jetpacks**     | Tiered, FE-charged jetpacks - the **Tide-tier mobility verb** (`take_flight`) |
+| **Cucumber Library**  | Library dependency of Iron Jetpacks                                  |
 
 ### 7. Performance & system
 

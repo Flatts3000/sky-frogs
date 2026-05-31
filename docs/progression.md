@@ -33,6 +33,7 @@ Modded resources per tier are PF's conditional variants — they register only w
    - **Cave** = crafting upgrades / storage (Sophisticated + Functional storage, quartz-free networks).
    - **Geode** = automation (Mekanism: power, Metallurgic Infuser, Enrichment Chamber).
    - **Bog** = Just Dire Things' tier-1 progression (Primogel Goo -> Ferricore -> Fluid Collector -> Fluid Placer -> Item Collector) plus a Building Gadgets 2 side branch. Lives in `tools_and_things.snbt`. Mekanism RF from Geode powers the JDT machines.
+   - **Tide** = **jetpacks (mobility)** - Iron Jetpacks' coil-tiered progression (basic/iron -> advanced/gold -> elite/diamond -> ultimate/emerald), charged with Geode-era Mekanism RF. Lives in `take_flight.snbt`. The first *mobility* verb - every prior verb was stationary, and a sprawling void island wants flight.
    - **Infernal** = earmarked for Refined Storage (*sketch*).
 
 ## Tier transitions (the gate mechanic)
@@ -121,10 +122,11 @@ Estimated playtime: **3–5 hours**.
 
 ## Tier 4 — Tide (aquatic)
 
-**Chapter:** *Drowned Riches* (working title). Ocean materials without an ocean.
+**Chapters:** *Drowned Riches* (the aquatic resource chain) + *Take Flight* (the jetpack verb). **Built.** Ocean materials without an ocean.
 
-- Tide Frogs + Tide Slimes (crafted milk).
-- Infuse → Sponge/Prismarine/Prismarine-Crystal/Ink Slimes.
+- Tide Frogs + Tide Slimes, Dissolution-Chamber only (no crafting-table chain from Tier 4 on).
+- The roster: prismarine (in `road_to_tide`), then prismarine_crystals, sponge, ink_sac, sea_pickle, nautilus_shell in `drowned_riches`.
+- **New verb:** jetpacks (Iron Jetpacks), the `take_flight` chapter - coil-tiered mobility (iron -> gold -> diamond -> emerald) on frog-farmed metals + Geode RF.
 - **Gate to Tier 5:** craft the Infernal starter kit.
 
 Estimated playtime: **3–6 hours**.
@@ -164,6 +166,7 @@ For the full questbook structure see [`quest_book.md`](./quest_book.md).
 | Tier 1: Cave         | Your First Iron Ingot, Scaling the Colony, Cave Frogs, Storage and Crafting (ores & metals) |
 | Tier 2: Geode        | Road to Geode, Geode Frogs, Mekanism (gems & automation) |
 | Tier 3: Bog          | Road to Bog, Bog Frogs, Tools and Things (organics + JDT tier-1 progression / Building Gadgets) |
+| Tier 4: Tide         | Road to Tide, Drowned Riches, Take Flight (aquatic resources + Iron Jetpacks mobility) |
 | Drowned Riches       | Tier 4 (Tide), aquatic *(unbuilt)*        |
 | Heat & Flame         | Tier 5 (Infernal), nether *(unbuilt)*     |
 | Void Mastery / The End | Tier 6 (Void), end & endgame *(unbuilt)* |

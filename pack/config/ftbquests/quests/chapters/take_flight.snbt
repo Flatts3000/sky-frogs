@@ -1,0 +1,189 @@
+{
+	autofocus_id: "7F00000000000002"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "take_flight"
+	group: "0C4F0E0000000004"
+	icon: {
+		components: {
+			"ironjetpacks:jetpack_id": "ironjetpacks:iron"
+		}
+		id: "ironjetpacks:jetpack"
+	}
+	id: "7F00000000000001"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["71DE00000000001A"]
+			icon: {
+				components: {
+					"ironjetpacks:jetpack_id": "ironjetpacks:iron"
+				}
+				id: "ironjetpacks:jetpack"
+			}
+			id: "7F00000000000002"
+			rewards: [{
+				id: "7F00000000000004"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "7F00000000000003"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7F00000000000002"]
+			icon: {
+				id: "ironjetpacks:strap"
+			}
+			id: "7F00000000000005"
+			rewards: [{
+				id: "7F00000000000007"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7F00000000000006"
+				item: { count: 1, id: "ironjetpacks:strap" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7F00000000000005"]
+			icon: {
+				id: "ironjetpacks:basic_coil"
+			}
+			id: "7F00000000000008"
+			rewards: [{
+				id: "7F0000000000000A"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7F00000000000009"
+				item: { count: 1, id: "ironjetpacks:basic_coil" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7F00000000000008"]
+			icon: {
+				components: {
+					"ironjetpacks:jetpack_id": "ironjetpacks:iron"
+				}
+				id: "ironjetpacks:jetpack"
+			}
+			id: "7F0000000000000B"
+			rewards: [{
+				count: 4
+				id: "7F0000000000000D"
+				item: {
+					count: 1
+					id: "farmersdelight:onion_soup"
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "7F0000000000000C"
+				item: { components: { "ironjetpacks:jetpack_id": "ironjetpacks:iron" }, count: 1, id: "ironjetpacks:jetpack" }
+				match_components: "fuzzy"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7F0000000000000B"]
+			icon: {
+				id: "ironjetpacks:capacitor"
+			}
+			id: "7F0000000000000E"
+			rewards: [{
+				id: "7F00000000000010"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7F0000000000000F"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7F0000000000000E"]
+			icon: {
+				id: "ironjetpacks:advanced_coil"
+			}
+			id: "7F00000000000011"
+			rewards: [{
+				id: "7F00000000000013"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7F00000000000012"
+				item: { count: 1, id: "ironjetpacks:advanced_coil" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["7F00000000000011"]
+			icon: {
+				id: "ironjetpacks:elite_coil"
+			}
+			id: "7F00000000000014"
+			rewards: [{
+				id: "7F00000000000016"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7F00000000000015"
+				item: { count: 1, id: "ironjetpacks:elite_coil" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["7F00000000000014"]
+			icon: {
+				id: "ironjetpacks:ultimate_coil"
+			}
+			id: "7F00000000000017"
+			rewards: [{
+				count: 4
+				id: "7F00000000000019"
+				item: {
+					count: 1
+					id: "farmersdelight:pasta_with_mutton_chop"
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "7F00000000000018"
+				item: { count: 1, id: "ironjetpacks:ultimate_coil" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.5d
+		}
+	]
+}
