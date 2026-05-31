@@ -9,12 +9,14 @@ on:
       - "pack/config/ftbquests/**"
       - "pack/kubejs/**"
       - "tools/validate_quests.py"
+      - "tools/data/item_ids.txt"
   push:
     branches: [main]
     paths:
       - "pack/config/ftbquests/**"
       - "pack/kubejs/**"
       - "tools/validate_quests.py"
+      - "tools/data/item_ids.txt"
 
 jobs:
   validate:
