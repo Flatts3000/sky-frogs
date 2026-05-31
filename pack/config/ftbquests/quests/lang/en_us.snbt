@@ -834,4 +834,76 @@
 	task.65F6A1B2C3D40002.title: "Got it"
 	task.6C1F0A2B3D4E5F62.title: "Build an enclosed habitat"
 	task.7CA7E000C0DE0003.title: "Got it"
+	chapter_group.0C4F0E0000000005.title: "Tier 5: Infernal"
+	chapter.5140000000000001.title: "Road to Infernal"
+	chapter.51F0000000000001.title: "Infernal Frogs"
+	quest.5140000000000002.quest_desc: [
+		"The &cInfernal frog&r is how you reach the Nether without one. Prime the &eSpawnery&r with a"
+		""
+		"&bNautilus Shell&r - the last thing the Tide gave you - to draw an &cInfernal Frogspawn&r."
+	]
+	quest.5140000000000002.quest_subtitle: "No nether? No problem."
+	quest.5140000000000002.title: "The Road to Infernal"
+	quest.5140000000000005.quest_desc: [
+		"Same &eDissolution Chamber&r you built for the Tide. Feed it a &bNautilus Shell&r and"
+		""
+		"&eprismarine&r filler to get a &cNetherrack Slime in a Bucket&r."
+	]
+	quest.5140000000000005.quest_subtitle: "The chamber's first hellish brew."
+	quest.5140000000000005.title: "A Bucket of Netherrack Slime"
+	quest.5140000000000008.quest_desc: [
+		"Pour the slime into a &eSlime Milker&r. &cNetherrack Slime Milk&r spawns Netherrack Slimes for the frog to eat."
+	]
+	quest.5140000000000008.quest_subtitle: "Netherrack Slime Milk."
+	quest.5140000000000008.title: "Milk It"
+	quest.514000000000000B.quest_desc: [
+		"Your Infernal frog eats a Netherrack Slime and leaves a &bNetherrack Froglight&r. Smelt it for"
+		""
+		"&cnetherrack&r - the bedrock of everything nether. The Infernal chain is yours."
+	]
+	quest.514000000000000B.quest_subtitle: "Tier 5 opens."
+	quest.514000000000000B.title: "First Netherrack"
+	quest.51F0000000000002.quest_desc: [
+		"Netherrack was just the floor. Now the &cInfernal&r frog gives you everything the Nether was hiding:"
+		""
+		"quartz, glowstone, blaze, and the metal at the bottom of it all."
+	]
+	quest.51F0000000000002.quest_subtitle: "The Nether chain opens."
+	quest.51F0000000000002.title: "Beyond Netherrack"
+	quest.51F0000000000005.quest_desc: [
+		"&eNether quartz&r at last - comparators, observers, and the &bQuartz Enriched Iron&r that"
+		""
+		"&eRefined Storage&r runs on. Turn in the &bQuartz Froglight&r."
+	]
+	quest.51F0000000000005.quest_subtitle: "The gate so many recipes wanted."
+	quest.51F0000000000005.title: "Quartz"
+	quest.51F0000000000008.quest_desc: [
+		"&eGlowstone&r - for lamps, redstone toys, and beacons to come. Turn in the &bGlowstone Froglight&r."
+	]
+	quest.51F0000000000008.quest_subtitle: "Light that isn't a torch."
+	quest.51F0000000000008.title: "Glowstone"
+	quest.51F000000000000B.quest_desc: [
+		"&eSoul Sand&r - bubble columns, wither fuel, and soul-speed paths. Turn in the &bSoul Sand Froglight&r."
+	]
+	quest.51F000000000000B.quest_subtitle: "It drags you down."
+	quest.51F000000000000B.title: "Soul Sand"
+	quest.51F000000000000E.quest_desc: [
+		"&eSoul Soil&r - soul campfires and lanterns burn blue. Turn in the &bSoul Soil Froglight&r."
+	]
+	quest.51F000000000000E.quest_subtitle: "Blue fire country."
+	quest.51F000000000000E.title: "Soul Soil"
+	quest.51F0000000000011.quest_desc: [
+		"&cBlaze powder&r - brewing stands, magic fuel, and the road to the End. No blaze hunt required."
+		""
+		"Turn in the &bBlaze Froglight&r."
+	]
+	quest.51F0000000000011.quest_subtitle: "Powder without the rods."
+	quest.51F0000000000011.title: "Blaze"
+	quest.51F0000000000014.quest_desc: [
+		"&8Netherite scrap&r - smelted from ancient debris no skyblock should reach. Four scrap plus gold"
+		""
+		"makes a &8Netherite Ingot&r and the best gear in the game. The Infernal crown. Turn in the &bNetherite Scrap Froglight&r."
+	]
+	quest.51F0000000000014.quest_subtitle: "The metal at the bottom."
+	quest.51F0000000000014.title: "Netherite Scrap"
 }

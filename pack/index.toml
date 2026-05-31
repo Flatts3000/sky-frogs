@@ -26,7 +26,7 @@ hash = "a9029472f7a7435e2f54c4827589a0dabca28e522fb1fa6257a814cdf83d64f1"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "3448a3a6e7dc33a360a2b0864c0546bd927ccaf98d7f6ab09c99850b96ed908d"
+hash = "4ddbc67227bc43e9368ad9a52e370af19a367601231ec1dd4af9c75cfe280177"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/bog_frogs.snbt"
@@ -45,6 +45,10 @@ file = "config/ftbquests/quests/chapters/geode_frogs.snbt"
 hash = "ad642501aadd8ced3a65d7fd2bc33fa58abfab43ad54cf512f9416d5d2c70050"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/infernal_frogs.snbt"
+hash = "fd03027775e61a0ed7eddb9c1fd1f98803b4dffb9b1da973906f111d9d940406"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/mekanism.snbt"
 hash = "9c91a775a9afc6b27caff8330351ab74d8261577ec3a0164179de7d13df193ca"
 
@@ -55,6 +59,10 @@ hash = "c9261e257601e8a8304ef8d5a5904d39e503e4e44797aa78a452450bd6a7e53f"
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_geode.snbt"
 hash = "f44b1bfb021cf2b0d003d016b8af40e53f11f734a4335cbf4dc92164c4ba865d"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/road_to_infernal.snbt"
+hash = "1e4b2293b066725d02e4d30a113755cee95d054cc1385f501b6652daaf3fa926"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_tide.snbt"
@@ -90,7 +98,7 @@ hash = "2e69afacf774749222ca1e925dc94d32e6c3db8bef4557aa33144751c2770206"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "82cd27a3767b1d8a00f51d4a94576e83e9e3ed1414b33e5b829ecfa2ae7208e2"
+hash = "d26163577b617a439ff4e059cb3bd9e20b70b17961abb3fad06ccbe121414758"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
@@ -111,6 +119,10 @@ hash = "8ca209449607510d4524afe24e4eede19fb258d2f07fe8c88d064538355255b2"
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F4D000000000001.snbt"
 hash = "1a21e7eb11d4423609df4555f53d31cf1ae055d45555f6f165d89f7dbd67ccc7"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/7F5E000000000001.snbt"
+hash = "68771e78998f48e12c61fa63cf56a1e90865d224d7e4384b822a2d3f687abb2d"
 
 [[files]]
 file = "config/productivefrogs-common.toml"
@@ -177,6 +189,10 @@ file = "kubejs/data/productivefrogs/tags/item/spawnery_primer/geode.json"
 hash = "39a83486cb95a2b162d7b896e0f18f3591f822c483bdf66488c7a9145018ff30"
 
 [[files]]
+file = "kubejs/data/productivefrogs/tags/item/spawnery_primer/infernal.json"
+hash = "3348630c8081386c9dfd9ff9c4e9a3a27e85e83c7db4085a8a2a1f5851c42c13"
+
+[[files]]
 file = "kubejs/data/productivefrogs/tags/item/spawnery_primer/tide.json"
 hash = "0b7812099b96fcaa412f2a15d4ab9a432d0e617461671c48e91dc031b45512cc"
 
@@ -202,7 +218,7 @@ hash = "5988e55c01cba66280a66eeb2c68d3d13451e6ac1b5848f54217720bb34946d7"
 
 [[files]]
 file = "kubejs/server_scripts/dissolution_slime_recipes.js"
-hash = "208c4c478188e9ba1eb2f4e089bb49cef6c1082e71dc8c8ef5fdb11f8b2c203e"
+hash = "e544d9fca3efd143136443d96a39931b05887fe99cfa148311692fb56eaf2f4a"
 
 [[files]]
 file = "kubejs/server_scripts/dump_items.js"
