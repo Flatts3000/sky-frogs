@@ -67,6 +67,7 @@ Each entry here directly maps to one or more PF category slime variants (see [`p
 | **Functional Storage** | Drawer storage                                                       |
 | **Sophisticated Backpacks** + **Sophisticated Storage** + **Sophisticated Core** (SHIPPED) | Upgraded backpacks + barrels. Sophisticated Storage pinned at `1.5.52.1756`. Its controller recipe is re-issued quartz-free in `storage_quartz_free.js` so the analog network is a Cave-era stopgap. |
 | **DimStorage**        | Cross-dimensional storage                                             |
+| **Refined Storage** (core 2.0.8) + addons: **Extra Storage**, **Extra Disks**, **RS Curios / Mekanism / JEI Integration**, **RS Quartz Arsenal** (+ EdivadLib dep) (SHIPPED) | The digital storage network - the **Tier 5 (Infernal) verb**. Naturally gated: RS components need Quartz Enriched Iron (quartz), which is Infernal-only, so it stays locked until the Infernal frog produces quartz. The Mekanism integration ties it to the Geode-tier power. The ATM10 RS set. |
 | **Iron Furnaces**     | Tiered furnaces — needed for fast Froglight smelting                  |
 
 ### 5. Quality of life & UX

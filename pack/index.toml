@@ -388,8 +388,23 @@ hash = "9d20637581a8ff591843eb4c3be9570e8c0db2c3ea9ca2c891f9945e4e83d0ee"
 metafile = true
 
 [[files]]
+file = "mods/edivadlib.pw.toml"
+hash = "e2271f01117b2e3469832199b0830aacd678be821b4a4121fadd1805e0256195"
+metafile = true
+
+[[files]]
 file = "mods/ex-deorum.pw.toml"
 hash = "2077b38f089ba2cc007a29c98ef21a9e5b54186f7408ee53f25afffa41856fe6"
+metafile = true
+
+[[files]]
+file = "mods/extra-disks.pw.toml"
+hash = "919bac8b36a180748d2a575572572e75ebbe63a96814b0f93990a8e1e0769826"
+metafile = true
+
+[[files]]
+file = "mods/extrastorage.pw.toml"
+hash = "8d92b5b6c812f7e8c7bf5792aa0fe0efae659f124f3ed4e67e9874e88730e5d7"
 metafile = true
 
 [[files]]
@@ -700,6 +715,31 @@ metafile = true
 [[files]]
 file = "mods/rechiseled.pw.toml"
 hash = "7bdd9f530098c1579202d4e7e51f6dff9e6afe560b56770d94b332d9570b1e7f"
+metafile = true
+
+[[files]]
+file = "mods/refined-storage-curios-integration.pw.toml"
+hash = "dd921ca691006e169455a925ed330319df5d19771863be0e9e80b5083d8f08d1"
+metafile = true
+
+[[files]]
+file = "mods/refined-storage-jei-integration.pw.toml"
+hash = "4ef51a87a42bf93295c8af21e543d41b204a7b604a810a2329923937362d2e61"
+metafile = true
+
+[[files]]
+file = "mods/refined-storage-mekanism-integration.pw.toml"
+hash = "a0572398bbce4b3bc0671939e57c3cc67c2dfb831aa42dadfa2c8438e9183044"
+metafile = true
+
+[[files]]
+file = "mods/refined-storage-quartz-arsenal.pw.toml"
+hash = "d820a5387d1c0a667fab73d13d007352f30c789a02ce3fee46a556bd2fe9cc15"
+metafile = true
+
+[[files]]
+file = "mods/refined-storage.pw.toml"
+hash = "8388fcc060ea2b7b3126297538a4c5663f9884c940c31297f697e8739f441aa2"
 metafile = true
 
 [[files]]
