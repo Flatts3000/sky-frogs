@@ -150,12 +150,10 @@
 			}
 			id: "71DE00000000001A"
 			rewards: [{
+				exclude_from_claim_all: true
 				id: "71DE00000000001C"
-				item: {
-					count: 1
-					id: "farmersdelight:roast_chicken"
-				}
-				type: "item"
+				table_id: 9151543141235425281L
+				type: "loot"
 			}]
 			shape: "hexagon"
 			size: 1.5d

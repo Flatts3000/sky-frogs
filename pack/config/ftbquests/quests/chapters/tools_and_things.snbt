@@ -18,12 +18,10 @@
 			}
 			id: "1F00000000000002"
 			rewards: [{
+				exclude_from_claim_all: true
 				id: "1F00000000000004"
-				item: {
-					count: 1
-					id: "farmersdelight:gleaming_salad"
-				}
-				type: "item"
+				table_id: 9151543141235425281L
+				type: "loot"
 			}]
 			shape: "hexagon"
 			size: 1.5d
@@ -64,13 +62,10 @@
 			}
 			id: "1F00000000000017"
 			rewards: [{
-				count: 4
+				exclude_from_claim_all: true
 				id: "1F00000000000019"
-				item: {
-					count: 1
-					id: "farmersdelight:stuffed_potato"
-				}
-				type: "item"
+				table_id: 9151543141235425281L
+				type: "loot"
 			}]
 			tasks: [{
 				id: "1F00000000000018"
@@ -87,13 +82,10 @@
 			}
 			id: "1F0000000000001A"
 			rewards: [{
-				count: 4
+				exclude_from_claim_all: true
 				id: "1F0000000000001C"
-				item: {
-					count: 1
-					id: "farmersdelight:ratatouille"
-				}
-				type: "item"
+				table_id: 9151543141235425281L
+				type: "loot"
 			}]
 			tasks: [{
 				id: "1F0000000000001B"

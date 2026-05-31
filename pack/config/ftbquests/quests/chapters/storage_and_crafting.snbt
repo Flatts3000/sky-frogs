@@ -191,12 +191,10 @@
 			}
 			id: "570A6E000000001C"
 			rewards: [{
+				exclude_from_claim_all: true
 				id: "570A6E000000001E"
-				item: {
-					count: 1
-					id: "farmersdelight:shepherds_pie"
-				}
-				type: "item"
+				table_id: 9151543141235425281L
+				type: "loot"
 			}]
 			tasks: [{
 				id: "570A6E000000001D"
@@ -213,13 +211,10 @@
 			}
 			id: "570A6E000000001F"
 			rewards: [{
-				count: 4
+				exclude_from_claim_all: true
 				id: "570A6E0000000021"
-				item: {
-					count: 1
-					id: "farmersdelight:squid_ink_pasta"
-				}
-				type: "item"
+				table_id: 9151543141235425281L
+				type: "loot"
 			}]
 			tasks: [{
 				id: "570A6E0000000020"

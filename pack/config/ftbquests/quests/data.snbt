@@ -12,7 +12,7 @@
 	fallback_locale: "en_us"
 	grid_scale: 0.5d
 	hide_excluded_quests: false
-	lock_message: ""
+	lock_message: "Locked. Out-frog the game to open this one."
 	loot_crate_no_drop: {
 		boss: 0
 		monster: 600
@@ -20,7 +20,7 @@
 	}
 	pause_game: false
 	progression_mode: "linear"
-	show_lock_icons: false
+	show_lock_icons: true
 	verify_on_load: false
 	version: 13
 }

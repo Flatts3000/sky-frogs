@@ -130,13 +130,10 @@
 			}
 			id: "7D00000000000011"
 			rewards: [{
-				count: 4
+				exclude_from_claim_all: true
 				id: "7D00000000000013"
-				item: {
-					count: 1
-					id: "farmersdelight:roasted_mutton_chops"
-				}
-				type: "item"
+				table_id: 9151543141235425281L
+				type: "loot"
 			}]
 			shape: "hexagon"
 			size: 1.5d

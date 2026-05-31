@@ -113,13 +113,10 @@
 			}
 			id: "70B0000000000008"
 			rewards: [{
-				count: 4
+				exclude_from_claim_all: true
 				id: "70B000000000000A"
-				item: {
-					count: 1
-					id: "farmersdelight:fried_rice"
-				}
-				type: "item"
+				table_id: 9151543141235425281L
+				type: "loot"
 			}]
 			tasks: [{
 				id: "70B0000000000009"

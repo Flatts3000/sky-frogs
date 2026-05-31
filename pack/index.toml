@@ -34,11 +34,11 @@ hash = "0234d29d5811a1a0b2e634ebbabf554c8a5c615aef5fc6666dd161b6e5bd7f5e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/cave_frogs.snbt"
-hash = "c974ad0f7739ac20f20c542179378fc01be2c5519a73c0a676deb4a6657872f4"
+hash = "aefef849cd96a62409eb4b24c174407446fd9e6eb2000a7f048deda70fb79bea"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/drowned_riches.snbt"
-hash = "0e18c283a3cf242ba65d43da2e34821c66868374d489e074938bd9ff6e3bfdce"
+hash = "9f00f63aed16dc39f23f9706e1a04a588bd8dde6b3feb5c203623abe3b6f7be3"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/geode_frogs.snbt"
@@ -50,47 +50,51 @@ hash = "8ca7ca6f564368f83863e5ff3fd7801f26e9623b1d386266e681ae2c1a7e8ab5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_bog.snbt"
-hash = "ec0e8b97611a4259b0feeded17991a4e6fe88782e49a0f60cce8596b05648c28"
+hash = "b3128c4bbe52eaf4e42a943bd688f586e5d8512d843732e08404812f9e89aad9"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_geode.snbt"
-hash = "030b34c70a157c49f06b56924623aa7701f12e649989479fde244cb656e4d3ec"
+hash = "6af7cf5d4721425eff2671cf4f318fc9fe8fb2dfa5256c9edb196d480eb37458"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_tide.snbt"
-hash = "b5b90cda6b410e67f9efbd9d8e14b41dda4acbbb90d6437aa2ab710a44dce5fb"
+hash = "432c1416fa440e2cc8cb43b26b6c08abeeb741e48847098c2fe5db146a2f97c4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/scaling_the_colony.snbt"
-hash = "1b4322445ce5a9e3d0dc11456957bd317c82471611be20f27798abcb5e4502f9"
+hash = "b7a4acfba6dae9d67e541dbaef2df3aab7be0f28179fe7135c2df3ae27f1a44f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/storage_and_crafting.snbt"
-hash = "459e1e4a9e07b4d6e8a469050fa1c02795ec60033dc0ce622e724c2f38c5ecee"
+hash = "58271c8c5e3648bd813f226f8a340896e4715394d7274982cb690051051fb289"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/take_flight.snbt"
-hash = "2c2165dc3e6dc425cbbc135daa083b070dfc99130667b0c17718b01afba28d09"
+hash = "4c227841d5766c23d120812ece3640d86d85b2fb78d5d4954ddc1e004f95fd75"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tools_and_things.snbt"
-hash = "51e75a06c5da04f89eadf1d57fa6cd44403f98794b2a256b31d54746d4ab05eb"
+hash = "d776fadefcaaaad4142b778a172556b7ddef9ea98e677ec7f8f0cd1f3c625634"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
-hash = "df482eb1e8191dca20548b4b344a24e711b3677fd10465d3aff505b8c1cd1622"
+hash = "83eaf5ea2c31dbcb7e93d2be172490001869bee7b8e9857f909192323dbf47e0"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/your_first_iron_ingot.snbt"
-hash = "819c6b7e6e1070fbfc8c6c9e4942f7781015def29262e963be5ca13a3521256e"
+hash = "5f38f849ed56843b3f63118198d41a6068593e484520b9acc190e67b6a7f9b8e"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
-hash = "d7dd511fa89cc9066374f537d8e9259d6caff8fe7db0a0a04db3af393100e0a4"
+hash = "2e69afacf774749222ca1e925dc94d32e6c3db8bef4557aa33144751c2770206"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "c8c270299b8769d5a7380527b8bfea62b57e26f8734cc86e073209b660076035"
+hash = "a15d7889ab972af5404b08263730cd9fe81001e255a7e87c655c680024478b44"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
+hash = "7e0719c0d4d1aee0eb59cb72621da41ea112abc34b7427210b9b30dc68229961"
 
 [[files]]
 file = "config/productivefrogs-common.toml"
@@ -214,7 +218,7 @@ hash = "fcd826f0045add7d9a2dc7c8b1cd4306787be6625e61c23d63db5d010cd9b504"
 
 [[files]]
 file = "kubejs/server_scripts/selftest.js"
-hash = "a2944128f705a564812b7b0c46a167edbf66a029b89a10478c420a0a827e8113"
+hash = "4507b563aacc7e8333ee7eb44062b5fe84cd8629dc61acd033b6c9058051bbd6"
 
 [[files]]
 file = "kubejs/server_scripts/steel_slime_infusing.js"
