@@ -123,13 +123,22 @@ Ordered by leverage-per-hour. P0/P1 deliver most of the AAA jump; P2/P3 are deep
    optional Geode Slime Milk catalyst side-branch (concealing opt-in discovery content). Lesson:
    reveal-gating belongs only on genuinely linear chains with no optional branches, if at all -
    not as a blanket species-chain pass. The `Q-HIDE-UNTIL-NOOP` validator guard stays (dormant).
-2. **Capstone reward escalation + celebration.** Bump tier-gateway and chapter-capstone XP onto
-   a real curve (e.g. Tier 1 caps ~40, Tier 4 gateway ~75) and add a `toast` reward
-   (`title` + `description`) to each tier transition. Add a `stage` reward at tier gateways so
-   later content can gate/branch on it. ~14 capstones, ~2 hrs. **Verify `toast`/`stage` reward
-   types work in our build first** (build one in the editor, read the snbt).
-3. **Subtitles.** Add `quest.<id>.quest_subtitle` one-liner hooks to resource and milestone
-   quests ("Copper / the first new metal"). Pure lang-file work, big readability gain. ~2 hrs.
+2. **Capstone reward escalation + celebration.** *Partially blocked - see notes.*
+   - **XP escalation: HELD pending a convention call.** A tier curve (Tier 1 caps ~40, Tier 4
+     gateway ~75) collides with the pack's "item-reward quests don't also grant XP" rule - the
+     headline capstones (First Iron, First Lapis, First Prismarine, Nautilus Shell, ...) are
+     item-rewarded, so escalating their XP would override that rule. Decide first: do capstones
+     get XP *on top of* their item reward, or only the xp-only milestones get bumped?
+   - **`toast` celebration: needs one in-game round-trip.** `type: "toast"` is confirmed across
+     ATM10/ATMons (data.snbt version 13, matches ours), but every real example ships an *empty*
+     `description` - so rich custom title/description text can't be verified from files alone.
+     Build one populated toast in the editor, read the snbt, then author at tier transitions.
+   - **`stage`/`gamestage`: deferred until a consumer exists.** `type: "gamestage"` with a
+     `stage: "<id>"` field is confirmed (FTB OceanBlock 2), but a stage nothing reads is dead
+     machinery. Add when a quest/KubeJS gate actually branches on it.
+3. ~~**Subtitles.**~~ **SHIPPED 2026-05-31.** Every one of the 123 named quests now has a
+   `quest.<id>.quest_subtitle` one-liner hook in `lang/en_us.snbt` (lang form, per our text-in-lang
+   convention; shape verified against ATM10SKY). Pure additive lang work.
 4. **Global settings polish.** `data.snbt`: `show_lock_icons: true` + a `lock_message`. 5 min.
 
 ### P1 - The reward overhaul (high leverage, medium effort)
