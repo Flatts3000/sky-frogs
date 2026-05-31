@@ -98,6 +98,11 @@
 					id: "functionalstorage:compacting_drawer"
 				}
 				type: "item"
+			}
+			{
+				description: "Tier 2 is open. The Geode pours gems from frogs."
+				id: "60ADE60000000020"
+				type: "toast"
 			}]
 			shape: "hexagon"
 			size: 1.5d

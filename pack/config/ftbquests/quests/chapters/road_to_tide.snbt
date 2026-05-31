@@ -154,6 +154,11 @@
 				id: "71DE00000000001C"
 				table_id: 9151543141235425281L
 				type: "loot"
+			}
+			{
+				description: "Tier 4 is open. The Tide is yours to farm."
+				id: "71DE00000000001E"
+				type: "toast"
 			}]
 			shape: "hexagon"
 			size: 1.5d

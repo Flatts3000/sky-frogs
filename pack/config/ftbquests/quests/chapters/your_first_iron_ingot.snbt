@@ -162,6 +162,11 @@
 					id: "functionalstorage:compacting_drawer"
 				}
 				type: "item"
+			}
+			{
+				description: "Iron, and not one ore was mined. The premise holds."
+				id: "6C1F0A2B3D4E5F77"
+				type: "toast"
 			}]
 			shape: "hexagon"
 			size: 1.5d
