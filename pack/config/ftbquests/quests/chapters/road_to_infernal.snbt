@@ -39,6 +39,12 @@
 		{
 			dependencies: ["5140000000000002"]
 			icon: {
+				components: {
+					"minecraft:bucket_entity_data": {
+						Category: "INFERNAL"
+						Variant: "productivefrogs:netherrack"
+					}
+				}
 				id: "productivefrogs:slime_bucket"
 			}
 			id: "5140000000000005"
