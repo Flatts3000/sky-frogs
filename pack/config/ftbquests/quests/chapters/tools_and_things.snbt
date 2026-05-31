@@ -123,6 +123,7 @@
 				id: "buildinggadgets2:gadget_exchanging"
 			}
 			id: "1F00000000000011"
+			shape: "diamond"
 			optional: true
 			rewards: [{
 				exclude_from_claim_all: true
@@ -144,6 +145,7 @@
 				id: "buildinggadgets2:gadget_copy_paste"
 			}
 			id: "1F00000000000014"
+			shape: "diamond"
 			optional: true
 			rewards: [{
 				id: "1F00000000000016"
