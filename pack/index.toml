@@ -30,23 +30,23 @@ hash = "3448a3a6e7dc33a360a2b0864c0546bd927ccaf98d7f6ab09c99850b96ed908d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/bog_frogs.snbt"
-hash = "9ad0540f6e5ccb933cc9255dd52eaf157d3c75d9e312ca3698412f8976fad3c4"
+hash = "2ce495feeac76793034a7fab08a12562188f2fa3802bb63bfb3515816958d206"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/cave_frogs.snbt"
-hash = "95293a5901b712eaf4a02ca07e064f2af44ee397ce885d397ddb5c5427786d33"
+hash = "439a9a712311180442b4c0b8fbf30d97dcd59509e6f8f0b1945974da17a37a3d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/drowned_riches.snbt"
-hash = "b0b1c5e35579d02711b12664629e7bcc6b5c451c7cc158707c57cca8f260be2a"
+hash = "fa2c5b67edcdeea2f1c11b8a8ec9f574d3226e8dbb61e217fad39e5c589e03c4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/geode_frogs.snbt"
-hash = "890d112484fd9bd27d331611ec1956703b2985da0dd06759aa72f69b63dea405"
+hash = "ad642501aadd8ced3a65d7fd2bc33fa58abfab43ad54cf512f9416d5d2c70050"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/mekanism.snbt"
-hash = "8ca7ca6f564368f83863e5ff3fd7801f26e9623b1d386266e681ae2c1a7e8ab5"
+hash = "9c91a775a9afc6b27caff8330351ab74d8261577ec3a0164179de7d13df193ca"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_bog.snbt"
@@ -74,7 +74,7 @@ hash = "72409c9c7e206f819236d400210692be566f7720527f269a8dd8d534ffb84243"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tools_and_things.snbt"
-hash = "0ed1282b7fd32d1c5c9b721a10f9f22a349f145c27abc58c7895b7b608d2ba45"
+hash = "39e9f83466356e54d1c99bb72debb8b3370b787273f8ce3cd23115a9dbaaafec"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
@@ -82,7 +82,7 @@ hash = "2686d04333dfbace1db38a2fa463bf35e16d8788c3085092dec201dccfaaf48b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/your_first_iron_ingot.snbt"
-hash = "c4688a4d2f2cfd0d5f4f447b9c034489d7e6ab2caeb1f4aad21618f080fa145e"
+hash = "52abeaa3a79ca598c6395d70b633e6af01420d7c690f55da8a9d394d16683364"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"

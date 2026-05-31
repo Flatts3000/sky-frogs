@@ -38,6 +38,7 @@
 				id: "minecraft:copper_ingot"
 			}
 			id: "7CA7E000C0DE0005"
+			shape: "square"
 			rewards: [{
 				id: "7CA7E000C0DE0014"
 				item: {
@@ -61,6 +62,7 @@
 				id: "minecraft:gold_ingot"
 			}
 			id: "7CA7E000C0DE0008"
+			shape: "square"
 			rewards: [{
 				id: "7CA7E000C0DE0015"
 				item: {
@@ -106,6 +108,7 @@
 				id: "minecraft:coal"
 			}
 			id: "7CA7E000C0DE000B"
+			shape: "square"
 			rewards: [{
 				id: "7CA7E000C0DE0016"
 				item: {
@@ -129,6 +132,7 @@
 				id: "minecraft:redstone"
 			}
 			id: "7CA7E000C0DE000E"
+			shape: "square"
 			rewards: [{
 				id: "7CA7E000C0DE0017"
 				item: {

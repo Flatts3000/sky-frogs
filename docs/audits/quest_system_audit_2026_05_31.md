@@ -181,9 +181,10 @@ Ordered by leverage-per-hour. P0/P1 deliver most of the AAA jump; P2/P3 are deep
 
 ### P2 - Presentation pass (the visual AAA lift)
 
-8. **Shape hierarchy.** Give quest *types* distinct shapes (hexagon = milestone, square =
-   resource check, diamond = optional, default circle = step) so the canvas is legible at a
-   glance. ~2 hrs of tagging.
+8. **Shape hierarchy. SHIPPED 2026-05-31.** Quest types now read at a glance: **hexagon** =
+   milestone/capstone (29, unchanged), **square** = resource-check Froglight quest (22),
+   **diamond** = optional side content (6), default **circle** = process step. Where a quest was
+   both a resource check and optional (the Mekanism Steel Slime), optional/diamond wins.
 9. **Chapter banners** via the `images[]` field - one tier-themed banner per chapter group
    (4 images, reused across each tier's chapters). Requires sourcing/designing 4 images.
    This is the difference between "spreadsheet" and "curated book." ~half a day incl. art.

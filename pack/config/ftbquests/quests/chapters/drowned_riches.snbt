@@ -38,6 +38,7 @@
 				id: "minecraft:prismarine_crystals"
 			}
 			id: "7D00000000000005"
+			shape: "square"
 			rewards: [{
 				id: "7D00000000000007"
 				item: {
@@ -61,6 +62,7 @@
 				id: "minecraft:sponge"
 			}
 			id: "7D00000000000008"
+			shape: "square"
 			rewards: [{
 				id: "7D0000000000000A"
 				item: {
@@ -84,6 +86,7 @@
 				id: "minecraft:ink_sac"
 			}
 			id: "7D0000000000000B"
+			shape: "square"
 			rewards: [{
 				id: "7D0000000000000D"
 				item: {
@@ -107,6 +110,7 @@
 				id: "minecraft:sea_pickle"
 			}
 			id: "7D0000000000000E"
+			shape: "square"
 			rewards: [{
 				id: "7D00000000000010"
 				item: {

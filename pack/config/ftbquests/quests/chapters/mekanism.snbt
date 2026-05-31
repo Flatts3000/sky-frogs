@@ -178,6 +178,7 @@
 				id: "mekanismgenerators:wind_generator"
 			}
 			id: "6ECA150000000014"
+			shape: "diamond"
 			optional: true
 			rewards: [{
 				id: "6ECA150000000016"
@@ -207,6 +208,7 @@
 				id: "productivefrogs:slime_bucket"
 			}
 			id: "6ECA150000000011"
+			shape: "diamond"
 			optional: true
 			rewards: [{
 				id: "6ECA150000000013"

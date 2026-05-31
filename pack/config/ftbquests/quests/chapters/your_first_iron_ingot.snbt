@@ -135,6 +135,7 @@
 				id: "productivefrogs:configurable_froglight"
 			}
 			id: "6C1F0A2B3D4E5F70"
+			shape: "square"
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "6C1F0A2B3D4E5F72"
