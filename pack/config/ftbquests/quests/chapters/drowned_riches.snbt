@@ -56,6 +56,7 @@
 		}
 		{
 			dependencies: ["7D00000000000005"]
+			hide_until_deps_complete: true
 			icon: {
 				id: "minecraft:sponge"
 			}
@@ -79,6 +80,7 @@
 		}
 		{
 			dependencies: ["7D00000000000008"]
+			hide_until_deps_complete: true
 			icon: {
 				id: "minecraft:ink_sac"
 			}
@@ -102,6 +104,7 @@
 		}
 		{
 			dependencies: ["7D0000000000000B"]
+			hide_until_deps_complete: true
 			icon: {
 				id: "minecraft:sea_pickle"
 			}
@@ -125,18 +128,16 @@
 		}
 		{
 			dependencies: ["7D0000000000000E"]
+			hide_until_deps_complete: true
 			icon: {
 				id: "minecraft:nautilus_shell"
 			}
 			id: "7D00000000000011"
 			rewards: [{
-				count: 4
+				exclude_from_claim_all: true
 				id: "7D00000000000013"
-				item: {
-					count: 1
-					id: "farmersdelight:roasted_mutton_chops"
-				}
-				type: "item"
+				table_id: 9151543141235425281L
+				type: "loot"
 			}]
 			shape: "hexagon"
 			size: 1.5d

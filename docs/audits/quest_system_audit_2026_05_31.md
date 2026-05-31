@@ -137,16 +137,16 @@ Ordered by leverage-per-hour. P0/P1 deliver most of the AAA jump; P2/P3 are deep
    highest-impact reward change. **New file type for us - validate `table_id` references resolve
    (extend the validator, see Risks).** Build in two steps:
 
-   - **5a. Good Food Loot Crate (the pilot table).** Convert the manual good-food workflow (today
-     we hand-pick the top-unused entry from `gen/good_food_map.md` and mark it used per quest) into
-     a single `reward_tables/good_food.snbt` table holding the whole good-food set, weighted.
-     Quests that currently grant hand-picked food switch to one `type: "loot"` reward pointing at
-     it - FTB now rolls the random food at claim time, retiring the manual queue entirely. Ship it
-     as a **physical crate** (`loot_crate` block: `item_name` "Good Food Crate", themed color/glow)
-     so the player *opens* it, not a silent grant. This one table is the proof-of-concept: it
-     validates the reward-table SNBT shape in our build and lets us wire the `Q-REWARD-TABLE-RESOLVES`
-     validator guard before scaling up. **Build it in the in-game editor first, read the resulting
-     snbt, copy that exact shape** (same discipline as the `getCraftingRemainingItem` fix). ~2 hrs.
+   - **5a. Good Food Loot Crate (the pilot table). SHIPPED 2026-05-31.** The manual good-food
+     workflow (hand-pick the top-unused entry from `gen/good_food_map.md`, mark it used per quest)
+     is retired: a single `reward_tables/7F00D00000000001.snbt` table holds the 32-food pool, and
+     the 20 pre-existing hand-picked food rewards were bulk-converted to one `type: "loot"` reward
+     (table_id `9151543141235425281L`) - a **physical openable crate** (FTB's default crate skin;
+     no custom `loot_crate` block, which has no SBR ground truth - custom name/color is deferred
+     polish). FTB rolls the random food at claim time. The SNBT shape was taken from the SBR
+     reference (its Farmers Delight food table), and the `Q-REWARD-TABLE-RESOLVES` /
+     `Q-REWARD-TABLE-ORPHAN` validator guards now ratchet it. This proves the reward-table shape
+     for 5b.
    - **5b. The four tier crates.** Once 5a's shape is proven, add the Froglight crates (weighted
      drawer / food / bonus resource / XP, 2 rolls each) per tier and migrate the species-chain
      rewards onto them. ~4 hrs.

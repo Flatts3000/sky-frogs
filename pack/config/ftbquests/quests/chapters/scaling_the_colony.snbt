@@ -131,13 +131,10 @@
 			}
 			id: "2A5700000A570012"
 			rewards: [{
-				count: 4
+				exclude_from_claim_all: true
 				id: "2A5700000A570014"
-				item: {
-					count: 1
-					id: "farmersdelight:grilled_salmon"
-				}
-				type: "item"
+				table_id: 9151543141235425281L
+				type: "loot"
 			}]
 			tasks: [{
 				id: "2A5700000A570013"

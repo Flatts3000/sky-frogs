@@ -85,13 +85,10 @@
 			}
 			id: "7F0000000000000B"
 			rewards: [{
-				count: 4
+				exclude_from_claim_all: true
 				id: "7F0000000000000D"
-				item: {
-					count: 1
-					id: "farmersdelight:onion_soup"
-				}
-				type: "item"
+				table_id: 9151543141235425281L
+				type: "loot"
 			}]
 			shape: "hexagon"
 			size: 1.5d
@@ -167,13 +164,10 @@
 			}
 			id: "7F00000000000017"
 			rewards: [{
-				count: 4
+				exclude_from_claim_all: true
 				id: "7F00000000000019"
-				item: {
-					count: 1
-					id: "farmersdelight:pasta_with_mutton_chop"
-				}
-				type: "item"
+				table_id: 9151543141235425281L
+				type: "loot"
 			}]
 			shape: "hexagon"
 			size: 1.5d

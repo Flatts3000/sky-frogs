@@ -175,13 +175,10 @@
 			dependencies: ["21B2C3D4E5F60011"]
 			id: "21B2C3D4E5F60021"
 			rewards: [{
-				count: 4
+				exclude_from_claim_all: true
 				id: "21B2C3D4E5F60023"
-				item: {
-					count: 1
-					id: "farmersdelight:smoked_ham"
-				}
-				type: "item"
+				table_id: 9151543141235425281L
+				type: "loot"
 			}]
 			tasks: [{
 				id: "21B2C3D4E5F60022"
@@ -210,13 +207,10 @@
 			dependencies: ["79D9A7438B1DD129"]
 			id: "32C3D4E5F6A10001"
 			rewards: [{
-				count: 4
+				exclude_from_claim_all: true
 				id: "32C3D4E5F6A10003"
-				item: {
-					count: 1
-					id: "farmersdelight:hamburger"
-				}
-				type: "item"
+				table_id: 9151543141235425281L
+				type: "loot"
 			}]
 			tasks: [{
 				id: "32C3D4E5F6A10002"
@@ -286,13 +280,10 @@
 			dependencies: ["79D9A7438B1DD129"]
 			id: "43D4E5F6A1B20001"
 			rewards: [{
-				count: 1
+				exclude_from_claim_all: true
 				id: "43D4E5F6A1B20003"
-				item: {
-					count: 1
-					id: "farmersdelight:honey_glazed_ham"
-				}
-				type: "item"
+				table_id: 9151543141235425281L
+				type: "loot"
 			}]
 			tasks: [{
 				id: "43D4E5F6A1B20002"
@@ -347,13 +338,10 @@
 			dependencies: ["43D4E5F6A1B20021"]
 			id: "43D4E5F6A1B20031"
 			rewards: [{
-				count: 4
+				exclude_from_claim_all: true
 				id: "43D4E5F6A1B20033"
-				item: {
-					count: 1
-					id: "farmersdelight:chicken_sandwich"
-				}
-				type: "item"
+				table_id: 9151543141235425281L
+				type: "loot"
 			}]
 			tasks: [{
 				count: 4L
@@ -413,13 +401,10 @@
 			}
 			id: "54E5F6A1B2C30011"
 			rewards: [{
-				count: 4
+				exclude_from_claim_all: true
 				id: "54E5F6A1B2C30013"
-				item: {
-					count: 1
-					id: "farmersdelight:beef_stew"
-				}
-				type: "item"
+				table_id: 9151543141235425281L
+				type: "loot"
 			}]
 			tasks: [
 				{

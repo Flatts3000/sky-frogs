@@ -1,0 +1,266 @@
+{
+	icon: {
+		id: "farmersdelight:roast_chicken"
+	}
+	id: "7F00D00000000001"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{
+			count: 4
+			id: "7F00D00000000010"
+			item: {
+				count: 1
+				id: "farmersdelight:noodle_soup"
+			}
+		}
+		{
+			count: 4
+			id: "7F00D00000000011"
+			item: {
+				count: 1
+				id: "farmersdelight:pasta_with_meatballs"
+			}
+		}
+		{
+			count: 4
+			id: "7F00D00000000012"
+			item: {
+				count: 1
+				id: "farmersdelight:barbecue_stick"
+			}
+		}
+		{
+			count: 4
+			id: "7F00D00000000013"
+			item: {
+				count: 1
+				id: "farmersdelight:grilled_salmon"
+			}
+		}
+		{
+			count: 4
+			id: "7F00D00000000014"
+			item: {
+				count: 1
+				id: "farmersdelight:bacon_sandwich"
+			}
+		}
+		{
+			count: 1
+			id: "7F00D00000000015"
+			item: {
+				count: 1
+				id: "farmersdelight:shepherds_pie"
+			}
+		}
+		{
+			count: 4
+			id: "7F00D00000000016"
+			item: {
+				count: 1
+				id: "farmersdelight:squid_ink_pasta"
+			}
+		}
+		{
+			count: 4
+			id: "7F00D00000000017"
+			item: {
+				count: 1
+				id: "farmersdelight:smoked_ham"
+			}
+		}
+		{
+			count: 4
+			id: "7F00D00000000018"
+			item: {
+				count: 1
+				id: "farmersdelight:hamburger"
+			}
+		}
+		{
+			count: 1
+			id: "7F00D00000000019"
+			item: {
+				count: 1
+				id: "farmersdelight:honey_glazed_ham"
+			}
+		}
+		{
+			count: 4
+			id: "7F00D0000000001A"
+			item: {
+				count: 1
+				id: "farmersdelight:chicken_sandwich"
+			}
+		}
+		{
+			count: 4
+			id: "7F00D0000000001B"
+			item: {
+				count: 1
+				id: "farmersdelight:beef_stew"
+			}
+		}
+		{
+			count: 4
+			id: "7F00D0000000001C"
+			item: {
+				count: 1
+				id: "farmersdelight:fried_rice"
+			}
+		}
+		{
+			count: 1
+			id: "7F00D0000000001D"
+			item: {
+				count: 1
+				id: "farmersdelight:gleaming_salad"
+			}
+		}
+		{
+			count: 1
+			id: "7F00D0000000001E"
+			item: {
+				count: 1
+				id: "farmersdelight:roast_chicken"
+			}
+		}
+		{
+			count: 4
+			id: "7F00D0000000001F"
+			item: {
+				count: 1
+				id: "farmersdelight:stuffed_potato"
+			}
+		}
+		{
+			count: 4
+			id: "7F00D00000000020"
+			item: {
+				count: 1
+				id: "farmersdelight:ratatouille"
+			}
+		}
+		{
+			count: 4
+			id: "7F00D00000000021"
+			item: {
+				count: 1
+				id: "farmersdelight:roasted_mutton_chops"
+			}
+		}
+		{
+			count: 4
+			id: "7F00D00000000022"
+			item: {
+				count: 1
+				id: "farmersdelight:onion_soup"
+			}
+		}
+		{
+			count: 4
+			id: "7F00D00000000023"
+			item: {
+				count: 1
+				id: "farmersdelight:pasta_with_mutton_chop"
+			}
+		}
+		{
+			count: 4
+			id: "7F00D00000000024"
+			item: {
+				count: 1
+				id: "farmersdelight:mushroom_rice"
+			}
+		}
+		{
+			count: 4
+			id: "7F00D00000000025"
+			item: {
+				count: 1
+				id: "farmersdelight:bacon_and_eggs"
+			}
+		}
+		{
+			count: 4
+			id: "7F00D00000000026"
+			item: {
+				count: 1
+				id: "farmersdelight:fish_stew"
+			}
+		}
+		{
+			count: 4
+			id: "7F00D00000000027"
+			item: {
+				count: 1
+				id: "farmersdelight:baked_cod_stew"
+			}
+		}
+		{
+			count: 4
+			id: "7F00D00000000028"
+			item: {
+				count: 1
+				id: "farmersdelight:pumpkin_soup"
+			}
+		}
+		{
+			count: 4
+			id: "7F00D00000000029"
+			item: {
+				count: 1
+				id: "farmersdelight:vegetable_noodles"
+			}
+		}
+		{
+			count: 4
+			id: "7F00D0000000002A"
+			item: {
+				count: 1
+				id: "farmersdelight:egg_sandwich"
+			}
+		}
+		{
+			count: 4
+			id: "7F00D0000000002B"
+			item: {
+				count: 1
+				id: "farmersdelight:steak_and_potatoes"
+			}
+		}
+		{
+			count: 4
+			id: "7F00D0000000002C"
+			item: {
+				count: 1
+				id: "farmersdelight:mutton_wrap"
+			}
+		}
+		{
+			count: 1
+			id: "7F00D0000000002D"
+			item: {
+				count: 1
+				id: "farmersdelight:stuffed_pumpkin"
+			}
+		}
+		{
+			count: 4
+			id: "7F00D0000000002E"
+			item: {
+				count: 1
+				id: "farmersdelight:dumplings"
+			}
+		}
+		{
+			count: 4
+			id: "7F00D0000000002F"
+			item: {
+				count: 1
+				id: "farmersdelight:chicken_soup"
+			}
+		}
+	]
+}

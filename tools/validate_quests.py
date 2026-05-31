@@ -27,6 +27,7 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parent.parent
 QUESTS = REPO / "pack" / "config" / "ftbquests" / "quests"
 CHAPTERS_DIR = QUESTS / "chapters"
+TABLES_DIR = QUESTS / "reward_tables"
 LANG_FILE = QUESTS / "lang" / "en_us.snbt"
 GROUPS_FILE = QUESTS / "chapter_groups.snbt"
 RECIPE_DIR = REPO / "pack" / "kubejs" / "server_scripts"
@@ -163,6 +164,30 @@ def load_chapters() -> list[Chapter]:
     return out
 
 
+class RewardTable:
+    """A reward_tables/<hexid>.snbt file. `table_id` references it as the signed-long
+    decimal of the hex id (same id space as quests), e.g. id 7F00D00000000001 is
+    referenced as table_id: 9151543141235425281L."""
+
+    def __init__(self, path: Path):
+        self.path = path
+        self.name = path.name
+        self.raw = path.read_text(encoding="utf-8")
+        self.data = SNBT(self.raw).parse()
+        self.id = self.data.get("id", "")
+        self.rewards = self.data.get("rewards", []) or []
+
+    def line_of(self, token: str) -> int:
+        idx = self.raw.find(token)
+        return self.raw.count("\n", 0, idx) + 1 if idx >= 0 else 0
+
+
+def load_reward_tables() -> list[RewardTable]:
+    if not TABLES_DIR.exists():
+        return []
+    return [RewardTable(p) for p in sorted(TABLES_DIR.glob("*.snbt"))]
+
+
 def load_group_ids() -> set[str]:
     if not GROUPS_FILE.exists():
         return set()
@@ -297,6 +322,13 @@ def check_ids(chapters, ctx):
             for r in q.get("rewards", []) or []:
                 if isinstance(r, dict) and "id" in r:
                     _check_one_id(r["id"], "reward", ch, qid, seen, f, HEXID)
+    # reward tables share the same 64-bit id space; a collision with a quest id breaks both
+    for tbl in ctx["reward_tables"]:
+        if tbl.id:
+            _check_one_id(tbl.id, "reward-table", tbl, tbl.id, seen, f, HEXID)
+        for e in tbl.rewards:
+            if isinstance(e, dict) and "id" in e:
+                _check_one_id(e["id"], "reward-table entry", tbl, e["id"], seen, f, HEXID)
     return f
 
 
@@ -449,7 +481,7 @@ DASH_RE = re.compile("[—–]")
 def check_dashes(chapters, ctx):
     """Q-NO-DASHES (ERROR) - house rule: ASCII punctuation only."""
     f = []
-    files = [LANG_FILE] + [ch.path for ch in chapters]
+    files = [LANG_FILE] + [ch.path for ch in chapters] + [t.path for t in ctx["reward_tables"]]
     for p in files:
         if not p.exists():
             continue
@@ -484,6 +516,13 @@ def check_item_exists(chapters, ctx):
                 f.append(Finding(ERROR, "Q-ITEM-EXISTS", ch.name, ch.line_of(anchor),
                                  f"quest {qid} references item {iid}, not in the pack registry "
                                  f"(Missing Item)"))
+    for tbl in ctx["reward_tables"]:
+        for e in tbl.rewards:
+            it = e.get("item") if isinstance(e, dict) else None
+            if isinstance(it, dict) and it.get("id") and it["id"] not in allow:
+                f.append(Finding(ERROR, "Q-ITEM-EXISTS", tbl.name, tbl.line_of(e.get("id", "")),
+                                 f"reward table {tbl.id} grants item {it['id']}, not in the pack "
+                                 f"registry (Missing Item)"))
     return f
 
 
@@ -517,6 +556,59 @@ def check_variant_made(chapters, ctx):
     return f
 
 
+TABLE_REWARD_TYPES = {"loot", "random", "choice"}
+
+
+def check_reward_tables(chapters, ctx):
+    """Q-REWARD-TABLE-RESOLVES (ERROR) + Q-REWARD-TABLE-ORPHAN (WARN).
+
+    A loot/random/choice reward points at a reward_tables/<hexid>.snbt via
+    `table_id: <signed-long-decimal>L`. Verify it carries a table_id and that the id
+    resolves to a real table (the decimal is int(hexid, 16)). Encodes the new
+    reward-crate feature so a typo'd table_id can't ship a silently-empty reward.
+    """
+    f = []
+    tables = ctx["reward_tables"]
+    by_long = {}
+    for tbl in tables:
+        if isinstance(tbl.id, str) and re.fullmatch(r"[0-9A-Fa-f]{16}", tbl.id):
+            by_long[int(tbl.id, 16)] = tbl
+    referenced = set()
+    for ch, q in iter_quests(chapters):
+        qid = q.get("id", "")
+        for r in q.get("rewards", []) or []:
+            if not isinstance(r, dict) or r.get("type") not in TABLE_REWARD_TYPES:
+                continue
+            raw_tid = r.get("table_id")
+            if raw_tid is None:
+                f.append(Finding(ERROR, "Q-REWARD-TABLE-RESOLVES", ch.name,
+                                 ch.line_of(r.get("id", qid)),
+                                 f"quest {qid}: {r.get('type')} reward has no table_id "
+                                 f"(empty reward - nothing is granted)"))
+                continue
+            tid = str(raw_tid)
+            tid = tid[:-1] if tid.endswith(("L", "l")) else tid
+            try:
+                val = int(tid)
+            except ValueError:
+                f.append(Finding(ERROR, "Q-REWARD-TABLE-RESOLVES", ch.name,
+                                 ch.line_of(r.get("id", qid)),
+                                 f"quest {qid}: table_id {raw_tid!r} is not a long"))
+                continue
+            if val in by_long:
+                referenced.add(val)
+            else:
+                f.append(Finding(ERROR, "Q-REWARD-TABLE-RESOLVES", ch.name,
+                                 ch.line_of(r.get("id", qid)),
+                                 f"quest {qid}: table_id {raw_tid} resolves to no reward table "
+                                 f"in reward_tables/ (hex {val & 0xFFFFFFFFFFFFFFFF:016X})"))
+    for val, tbl in by_long.items():
+        if val not in referenced:
+            f.append(Finding(WARN, "Q-REWARD-TABLE-ORPHAN", tbl.name, tbl.line_of(tbl.id),
+                             f"reward table {tbl.id} is referenced by no quest (dead table)"))
+    return f
+
+
 CHECKS = [
     check_ids,
     check_dependencies,
@@ -527,6 +619,7 @@ CHECKS = [
     check_dashes,
     check_item_exists,
     check_variant_made,
+    check_reward_tables,
 ]
 
 
@@ -541,6 +634,7 @@ def run():
         "lang_ids": load_lang_ids(),
         "item_allowlist": load_item_allowlist(),
         "makeable_variants": makeable_variants(),
+        "reward_tables": load_reward_tables(),
     }
     findings: list[Finding] = []
     for check in CHECKS:

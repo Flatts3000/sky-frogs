@@ -38,13 +38,10 @@
 			}
 			id: "6C1F0A2B3D4E5F64"
 			rewards: [{
-				count: 4
+				exclude_from_claim_all: true
 				id: "6C1F0A2B3D4E5F66"
-				item: {
-					count: 1
-					id: "farmersdelight:noodle_soup"
-				}
-				type: "item"
+				table_id: 9151543141235425281L
+				type: "loot"
 			}]
 			tasks: [{
 				id: "6C1F0A2B3D4E5F65"
@@ -89,13 +86,10 @@
 			}
 			id: "6C1F0A2B3D4E5F6A"
 			rewards: [{
-				count: 4
+				exclude_from_claim_all: true
 				id: "6C1F0A2B3D4E5F6C"
-				item: {
-					count: 1
-					id: "farmersdelight:pasta_with_meatballs"
-				}
-				type: "item"
+				table_id: 9151543141235425281L
+				type: "loot"
 			}]
 			tasks: [{
 				id: "6C1F0A2B3D4E5F6B"
@@ -141,13 +135,10 @@
 			}
 			id: "6C1F0A2B3D4E5F70"
 			rewards: [{
-				count: 4
+				exclude_from_claim_all: true
 				id: "6C1F0A2B3D4E5F72"
-				item: {
-					count: 1
-					id: "farmersdelight:barbecue_stick"
-				}
-				type: "item"
+				table_id: 9151543141235425281L
+				type: "loot"
 			}]
 			tasks: [{
 				id: "6C1F0A2B3D4E5F71"

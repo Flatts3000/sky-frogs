@@ -104,6 +104,16 @@ quest), **WARN** is a smell worth a human look.
 | **Q-LANG-ORPHAN** | WARN | every `quest.<id>.{title,quest_desc}` in lang maps to a real quest id | dead lang entries from deleted/renumbered quests |
 | **Q-NO-DASHES** | ERROR | no em-dash (U+2014) or en-dash (U+2013) in any authored lang value | house rule (ASCII punctuation only) |
 
+#### Reward tables (the loot-crate class)
+
+| ID | Sev | Rule | Encodes |
+|----|-----|------|---------|
+| **Q-REWARD-TABLE-RESOLVES** | ERROR | every `loot`/`random`/`choice` reward carries a `table_id` that resolves to a real `reward_tables/<hexid>.snbt` (the decimal long == `int(hexid, 16)`) | a typo'd/empty `table_id` ships a reward that grants nothing (the Good Food Loot Crate feature) |
+| **Q-REWARD-TABLE-ORPHAN** | WARN | every reward table is referenced by at least one quest | a dead table left after a quest was renumbered/removed |
+
+Reward-table ids and their entry ids share the same 64-bit id space as quests, so they also flow
+through `Q-ID-POSITIVE` / `Q-ID-UNIQUE`, and their granted items through `Q-ITEM-EXISTS`.
+
 #### Item & recipe cross-checks (needs an item allowlist - Phase 2)
 
 | ID | Sev | Rule | Encodes |
