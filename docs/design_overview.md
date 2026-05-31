@@ -1,6 +1,6 @@
 # Design Overview
 
-> **Status:** DRAFT. Tiers 0-3 (Welcome, Cave, Geode, Bog) are built and live; Tier 4-6 (Tide, Infernal, Void) remain a sketch. The higher-level framing here is still open to argue with. Sky Frogs has its own identity to find; Sky Bees Reborn is one reference for the genre, not a template.
+> **Status:** DRAFT. Tiers 0-5 (Welcome, Cave, Geode, Bog, Tide, Infernal) are built and live; only Tier 6 (Void) remains a sketch. The higher-level framing here is still open to argue with. Sky Frogs has its own identity to find; Sky Bees Reborn is one reference for the genre, not a template.
 
 ## Inspiration
 
@@ -20,8 +20,8 @@ Tier 0: Vanilla bootstrap   -> a cave_slime farm + first Cave frogs (Cave primer
 Tier 1: Cave                -> iron -> copper -> gold -> coal -> redstone (built)
 Tier 2: Geode               -> lapis -> tuff -> calcite -> amethyst -> emerald -> diamond (built)
 Tier 3: Bog                 -> dirt/mud/clay/moss/mycelium/lily_pad/leather/feather + plastic/pink_slime (built)
-Tier 4: Tide                -> prismarine, sponge, sea-themed resources (sketch)
-Tier 5: Infernal            -> blaze, quartz, magma, netherite line (sketch)
+Tier 4: Tide                -> prismarine -> prismarine_crystals -> sponge -> ink_sac -> sea_pickle -> nautilus_shell (built)
+Tier 5: Infernal            -> netherrack -> quartz -> glowstone -> soul_sand -> soul_soil -> blaze -> netherite_scrap (built)
 Tier 6: Void                -> ender, draconic, end-tier and modded magic (sketch)
 ```
 

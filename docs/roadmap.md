@@ -6,9 +6,9 @@ The path from "pack scaffold boots in a launcher" to "Sky Frogs v1.0 lives on Cu
 
 ## Where we are right now
 
-The scaffold boots in the CurseForge launcher with the FTB utility stack, JEI, Jade, and the Tier 0 substrate mods (Skyblock Builder, Ex Deorum, Forgiving Void). Productive Frogs v1.8.0 is integrated from CurseForge. The frog loop is built and merged: ~10 KubeJS override scripts (anti.js, first_join.js, the per-tier slime chains, the slime-bucket bootstraps, storage_quartz_free.js, if_plastic_gate.js, log_recipes.js) and 10 quest chapters spanning Tiers 0-3. The mod set has grown well past the Tier 0 substrate: Mekanism (+ Generators + Tools), Industrial Foregoing (+ IF Souls), cobblegen-galore, All The Ores, and Sophisticated Storage all ship now.
+The scaffold boots in the CurseForge launcher with the FTB utility stack, JEI, Jade, and the Tier 0 substrate mods (Skyblock Builder, Ex Deorum, Forgiving Void). Productive Frogs v1.8.1 is integrated from CurseForge. The frog loop is built and merged: a dozen-plus KubeJS override scripts (anti.js, first_join.js, the per-tier slime chains, the slime-bucket bootstraps, the Dissolution Chamber slime engine, storage_quartz_free.js, if_plastic_gate.js, log_recipes.js) and 17 quest chapters spanning Tiers 0-5. The mod set has grown well past the Tier 0 substrate: Mekanism (+ Generators + Tools), Industrial Foregoing (+ IF Souls), Iron Jetpacks, Refined Storage (+ addons), the decoration suite (Macaw's, Chipped, Supplementaries, ...), cobblegen-galore, All The Ores, and Sophisticated Storage all ship now.
 
-Tiers 0 through 3 (Welcome -> Cave -> Geode -> Bog) are playable end to end. The next frontier is Tier 4 (Tide); Infernal and Void are unbuilt.
+Tiers 0 through 5 (Welcome -> Cave -> Geode -> Bog -> Tide -> Infernal) are playable end to end. The only unbuilt tier is Tier 6 (Void).
 
 ## Phases at a glance
 
@@ -17,8 +17,8 @@ Tiers 0 through 3 (Welcome -> Cave -> Geode -> Bog) are playable end to end. The
 | **0. Foundation** ✅ | Repo + scaffold + decisions | A buildable pack and a public GitHub repo |
 | **1. Tier 0 playable** ✅ | `0.0.x` pre-alpha | Bootstrap loop: cobble gen + dark-room cave_slime farm → iron |
 | **2. First Iron Froglight** ✅ | `0.1.0` alpha | Productive Frogs integrated; Tier 1 (Cave) reachable |
-| **3. Mid-tier alpha** (substantially done) | `0.2.0` → `0.5.0` | Tier 2 (Geode) and Tier 3 (Bog) built; Tier 4 (Tide) is the next frontier |
-| **4. Feature-complete** | `0.6.0` → `0.9.0` | Infernal + Void endgame + per-mod side chapters |
+| **3. Mid-tier alpha** ✅ | `0.2.0` → `0.5.0` | Tiers 2-5 (Geode, Bog, Tide, Infernal) built |
+| **4. Feature-complete** | `0.6.0` → `0.9.0` | Tier 6 (Void) endgame + per-mod side chapters + reward/polish passes |
 | **5. v1.0 launch** | `1.0.0` | Polish, balance pass, branding assets, CF page live |
 | **6. Maintenance** | `1.x.y` | Mod updates, content additions, hotfixes |
 
@@ -83,10 +83,11 @@ Tiers 0 through 3 (Welcome -> Cave -> Geode -> Bog) are playable end to end. The
 | `v0.1`  | 1    | Cave     | Crafting upgrades / storage (Sophisticated + Functional, quartz-free) | ✅ done |
 | `v0.2`  | 2    | Geode    | Automation (Mekanism + Generators + Tools)       | ✅ done |
 | `v0.3`  | 3    | Bog      | Just Dire Things tier-1 progression + Building Gadgets in `tools_and_things.snbt`; plastic hard-gated behind the Bog plastic-frog; pink-slime capstone. IF spine moved to `road_to_tide.snbt` (Tier 4 gateway). | ✅ done |
-| `v0.4`  | 4    | Tide     | (next frontier - verb TBD)                        | not started |
-| `v0.5`  | 5    | Infernal | Refined Storage (earmarked); Nether access        | not started |
+| `v0.4`  | 4    | Tide     | Jetpacks/mobility (Iron Jetpacks) in `take_flight.snbt`; aquatic chain in `drowned_riches.snbt`; nautilus_shell capstone. | ✅ done |
+| `v0.5`  | 5    | Infernal | Refined Storage (digital storage + autocrafting) in `the_network.snbt`; nether chain in `infernal_frogs.snbt`; netherite_scrap capstone. The nether-on-skyblock tier. | ✅ done |
+| `v0.6`  | 6    | Void     | (the last tier - verb TBD)                        | not started |
 
-Note: the built tier order is Cave=Tier 1 (the starter), Geode=Tier 2, Bog=Tier 3. Per-tier slime-chain filler blocks: Cave = stone, Geode = gravel, Bog = mossy cobblestone.
+Note: the built tier order is Cave=Tier 1 (the starter), Geode=Tier 2, Bog=Tier 3, Tide=Tier 4, Infernal=Tier 5. Per-tier slime-chain filler blocks: Cave = stone, Geode = gravel, Bog = mossy cobblestone, Tide = mycelium, Infernal = prismarine.
 
 **Per-tier deliverables (repeat for each):**
 - [ ] Quest chapter authored in FTB Quests.

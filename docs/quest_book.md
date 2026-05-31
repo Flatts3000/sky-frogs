@@ -37,9 +37,9 @@ Sky Frogs does **not** mirror this organization. SBR is mod-sprawled (one chapte
 
 ## Sky Frogs chapter list
 
-### Built chapters (Tiers 0-3)
+### Built chapters (Tiers 0-5)
 
-These are the 12 chapter files that exist in `config/ftbquests/quests/chapters/`. They sit under four chapter groups (`chapter_groups.snbt`): "Tier 1: Cave", "Tier 2: Geode", "Tier 3: Bog", "Tier 4: Tide"; Welcome stays ungrouped at the top. Note the **"Road to <tier>" gateway-chapter pattern**: each later tier opens with a short gateway chapter that crafts the next species' frogspawn (Spawnery + primer) and runs the seed-chain bridge, before the species' own chapter.
+These are the 17 chapter files that exist in `config/ftbquests/quests/chapters/`. They sit under five chapter groups (`chapter_groups.snbt`): "Tier 1: Cave", "Tier 2: Geode", "Tier 3: Bog", "Tier 4: Tide", "Tier 5: Infernal"; Welcome stays ungrouped at the top. Note the **"Road to <tier>" gateway-chapter pattern**: each later tier opens with a short gateway chapter that crafts the next species' frogspawn (Spawnery + primer) and runs the seed-chain bridge, before the species' own chapter.
 
 | Tier group | Chapter file                  | Covers                                                |
 |------------|-------------------------------|--------------------------------------------------------|
@@ -57,16 +57,17 @@ These are the 12 chapter files that exist in `config/ftbquests/quests/chapters/`
 | Tier 4: Tide | `road_to_tide.snbt` | Tier 4 gateway. First the Industrial Foregoing spine that ends Bog: Pity Machine Frame -> Fluid Extractor -> **Dissolution Chamber** (hexagon, "The Slime Engine") - the **pack's slime engine** (resource-threaded chamber rows for Cave/Geode/Bog/Tide in `kubejs/server_scripts/dissolution_slime_recipes.js`; iron bootstraps off bone meal). Then the **Bog -> Tide bridge** as two paths off the Bog gate that converge: a **machine path** (Pity Machine Frame -> Fluid Extractor -> Dissolution Chamber) and a **frog path** (Tide Frogspawn, Spawnery primed with pink_slime), meeting at **A Bucket of Prismarine Slime** (made in the chamber), then a single tail: Milk It -> **First Prismarine** (hexagon capstone). Both paths gate on the bog_frogs pink_slime capstone. **Tide onward is chamber-only** (no crafting-table chain). |
 | Tier 4: Tide | `drowned_riches.snbt` | The Tide species chapter: the rest of the aquatic roster, all chamber-made - prismarine_crystals -> sponge -> ink_sac -> sea_pickle -> nautilus_shell (hexagon capstone). Each quest checks that variant's Froglight (`match_components: strict`). Gates off the road_to_tide First Prismarine capstone. |
 | Tier 4: Tide | `take_flight.snbt` | The Tide **new verb**: **jetpacks (mobility)** via Iron Jetpacks. Spine: Leather Strap -> Basic Coil -> first jetpack (hexagon) -> Fuel and Fly (charge with Geode RF) -> Advanced Coil -> Elite Coil -> Ultimate Coil (hexagon capstone). Coils tier on frog-farmed resources (iron -> gold -> diamond -> emerald); no recipe override needed. |
+| Tier 5: Infernal | `road_to_infernal.snbt` | Tier 5 gateway. The Dissolution Chamber was built back in road_to_tide, so this is frog-path only: prime the Spawnery with **nautilus_shell** (Tide's last) for Infernal Frogspawn, make the first Netherrack Slime in the chamber (prismarine filler), milk it, smelt the **First Netherrack** Froglight (hexagon capstone). |
+| Tier 5: Infernal | `infernal_frogs.snbt` | The Infernal species: quartz -> glowstone -> soul_sand -> soul_soil -> blaze -> **netherite_scrap** (hexagon capstone, the vanilla endgame). All chamber-made Froglight checks (`match_components: strict`). Gates off the road_to_infernal First Netherrack capstone. |
+| Tier 5: Infernal | `the_network.snbt` | The Infernal **new verb**: **Refined Storage** (RS 2.0). Spine: Quartz Enriched Iron (the quartz gate) -> Controller -> Grid -> Disk Drive + disk -> Cable -> External Storage -> Importer/Exporter -> Crafting Grid -> **Autocrafting** (Pattern Grid + Autocrafter, hexagon capstone). Gated on nether quartz, which only the Infernal frog produces. |
 
-### Sketched chapters (Tiers 5-6, unbuilt)
+### Sketched chapters (Tier 6, unbuilt)
 
-Infernal / Void follow the same per-tier shape (a "Road to" gateway + a species chapter + that tier's new-verb chapter; Infernal's verb is earmarked for Refined Storage). Plus the framing/endgame chapters below. None of these are built yet:
+Void follows the same per-tier shape (a "Road to" gateway + a species chapter + that tier's new-verb chapter). Plus the framing/endgame chapters below. None of these are built yet:
 
 | Chapter (working name)    | Covers                                                |
 |---------------------------|--------------------------------------------------------|
-| Heat & Flame              | Tier 5 (Infernal): nether resources + Refined Storage  |
 | Void Mastery              | Tier 6 (Void): ender / endgame resources               |
-| We Need To Go Deeper      | Nether arrival + basic base (Tier 5 prelude)           |
 | The End                   | End access, dragon fight, outer islands (Tier 6 prelude) |
 | Master Pond               | Endgame singularity loop: Ultimate Singularity, creative trophy |
 
