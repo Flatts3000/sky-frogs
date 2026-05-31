@@ -56,7 +56,6 @@
 		}
 		{
 			dependencies: ["6E0DE0000000000E"]
-			hide_until_deps_complete: true
 			icon: {
 				id: "minecraft:calcite"
 			}
@@ -80,7 +79,6 @@
 		}
 		{
 			dependencies: ["6E0DE00000000011"]
-			hide_until_deps_complete: true
 			icon: {
 				id: "minecraft:amethyst_shard"
 			}
@@ -104,7 +102,6 @@
 		}
 		{
 			dependencies: ["6E0DE00000000005"]
-			hide_until_deps_complete: true
 			icon: {
 				id: "minecraft:emerald"
 			}
@@ -128,7 +125,6 @@
 		}
 		{
 			dependencies: ["6E0DE00000000008"]
-			hide_until_deps_complete: true
 			icon: {
 				id: "minecraft:diamond"
 			}
@@ -152,7 +148,6 @@
 		}
 		{
 			dependencies: ["6E0DE0000000000B"]
-			hide_until_deps_complete: true
 			icon: {
 				id: "productivefrogs:count_catalyst"
 			}
@@ -178,7 +173,6 @@
 		}
 		{
 			dependencies: ["6E0DE00000000014"]
-			hide_until_deps_complete: true
 			icon: {
 				id: "productivefrogs:speed_catalyst"
 			}
@@ -198,7 +192,6 @@
 		}
 		{
 			dependencies: ["6E0DE00000000017"]
-			hide_until_deps_complete: true
 			icon: {
 				id: "productivefrogs:quantity_catalyst"
 			}
@@ -218,7 +211,6 @@
 		}
 		{
 			dependencies: ["6E0DE0000000001A"]
-			hide_until_deps_complete: true
 			icon: {
 				id: "productivefrogs:infinite_catalyst"
 			}

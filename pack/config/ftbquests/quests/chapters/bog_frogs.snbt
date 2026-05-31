@@ -56,7 +56,6 @@
 		}
 		{
 			dependencies: ["7B06000000000005"]
-			hide_until_deps_complete: true
 			icon: {
 				id: "minecraft:clay_ball"
 			}
@@ -80,7 +79,6 @@
 		}
 		{
 			dependencies: ["7B06000000000008"]
-			hide_until_deps_complete: true
 			icon: {
 				id: "minecraft:moss_block"
 			}
@@ -104,7 +102,6 @@
 		}
 		{
 			dependencies: ["7B0600000000000B"]
-			hide_until_deps_complete: true
 			icon: {
 				id: "minecraft:mycelium"
 			}
@@ -128,7 +125,6 @@
 		}
 		{
 			dependencies: ["7B0600000000000E"]
-			hide_until_deps_complete: true
 			icon: {
 				id: "minecraft:lily_pad"
 			}
@@ -152,7 +148,6 @@
 		}
 		{
 			dependencies: ["7B06000000000011"]
-			hide_until_deps_complete: true
 			icon: {
 				id: "minecraft:leather"
 			}
@@ -176,7 +171,6 @@
 		}
 		{
 			dependencies: ["7B06000000000014"]
-			hide_until_deps_complete: true
 			icon: {
 				id: "minecraft:feather"
 			}
@@ -200,7 +194,6 @@
 		}
 		{
 			dependencies: ["7B06000000000017"]
-			hide_until_deps_complete: true
 			icon: {
 				id: "industrialforegoing:plastic"
 			}
@@ -224,7 +217,6 @@
 		}
 		{
 			dependencies: ["7B0600000000001A"]
-			hide_until_deps_complete: true
 			icon: {
 				id: "industrialforegoing:pink_slime"
 			}

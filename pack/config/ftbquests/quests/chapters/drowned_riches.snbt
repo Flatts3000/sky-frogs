@@ -56,7 +56,6 @@
 		}
 		{
 			dependencies: ["7D00000000000005"]
-			hide_until_deps_complete: true
 			icon: {
 				id: "minecraft:sponge"
 			}
@@ -80,7 +79,6 @@
 		}
 		{
 			dependencies: ["7D00000000000008"]
-			hide_until_deps_complete: true
 			icon: {
 				id: "minecraft:ink_sac"
 			}
@@ -104,7 +102,6 @@
 		}
 		{
 			dependencies: ["7D0000000000000B"]
-			hide_until_deps_complete: true
 			icon: {
 				id: "minecraft:sea_pickle"
 			}
@@ -128,7 +125,6 @@
 		}
 		{
 			dependencies: ["7D0000000000000E"]
-			hide_until_deps_complete: true
 			icon: {
 				id: "minecraft:nautilus_shell"
 			}

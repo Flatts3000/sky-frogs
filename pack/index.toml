@@ -30,19 +30,19 @@ hash = "3448a3a6e7dc33a360a2b0864c0546bd927ccaf98d7f6ab09c99850b96ed908d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/bog_frogs.snbt"
-hash = "9a4a86a10e9e910c96f95bf16b3c686d610515fca587581fd823677c7fc341fa"
+hash = "0234d29d5811a1a0b2e634ebbabf554c8a5c615aef5fc6666dd161b6e5bd7f5e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/cave_frogs.snbt"
-hash = "149762a2ddd67dadd0a27c83c8844cdb5e779cbdfb00c8c484a23c8cefec16a5"
+hash = "c974ad0f7739ac20f20c542179378fc01be2c5519a73c0a676deb4a6657872f4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/drowned_riches.snbt"
-hash = "084d9723e71492fc80abacdcefd260370fb1e9f7efdd300619ef5dcb6e7de8c4"
+hash = "9f00f63aed16dc39f23f9706e1a04a588bd8dde6b3feb5c203623abe3b6f7be3"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/geode_frogs.snbt"
-hash = "370b158a3c3f6b29c51f4eee78cb8c67cec68edffdcaf228961398259dea5e18"
+hash = "b0e4f19fecba6887112351c67abc68aac8028c09c81cfb78cba040b3f0036e4e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/mekanism.snbt"
@@ -218,7 +218,7 @@ hash = "fcd826f0045add7d9a2dc7c8b1cd4306787be6625e61c23d63db5d010cd9b504"
 
 [[files]]
 file = "kubejs/server_scripts/selftest.js"
-hash = "a2944128f705a564812b7b0c46a167edbf66a029b89a10478c420a0a827e8113"
+hash = "4507b563aacc7e8333ee7eb44062b5fe84cd8629dc61acd033b6c9058051bbd6"
 
 [[files]]
 file = "kubejs/server_scripts/steel_slime_infusing.js"

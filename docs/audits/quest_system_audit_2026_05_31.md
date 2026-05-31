@@ -117,9 +117,12 @@ Ordered by leverage-per-hour. P0/P1 deliver most of the AAA jump; P2/P3 are deep
 
 ### P0 - Quick wins (high leverage, low effort, low risk)
 
-1. **`hide_until_deps_complete: true` on species-chain steps** (one line per non-first quest in
-   cave/geode/bog/drowned_riches). Turns "6 quests in a grid" into one-at-a-time discovery.
-   ~20 lines, ~1 hr. Biggest UX-per-byte change in the pack.
+1. ~~**`hide_until_deps_complete: true` on species-chain steps.**~~ **TRIED AND REVERTED
+   2026-05-31.** Shipped a one-at-a-time reveal on cave/geode/bog/drowned_riches, then pulled it:
+   playtest feedback wanted the resource chains fully visible, and the heuristic wrongly hid the
+   optional Geode Slime Milk catalyst side-branch (concealing opt-in discovery content). Lesson:
+   reveal-gating belongs only on genuinely linear chains with no optional branches, if at all -
+   not as a blanket species-chain pass. The `Q-HIDE-UNTIL-NOOP` validator guard stays (dormant).
 2. **Capstone reward escalation + celebration.** Bump tier-gateway and chapter-capstone XP onto
    a real curve (e.g. Tier 1 caps ~40, Tier 4 gateway ~75) and add a `toast` reward
    (`title` + `description`) to each tier transition. Add a `stage` reward at tier gateways so
