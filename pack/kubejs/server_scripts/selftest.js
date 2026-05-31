@@ -30,6 +30,14 @@ const CANARY_VARIANTS = [
   'prismarine'                                                     // Tide (first variant)
 ]
 
+// Representative slice of the Good Food Loot Crate (reward_tables/7F00D00000000001.snbt):
+// the 5 feasts + a few dishes. If Farmers Delight drops/renames one, the crate would grant
+// an empty slot - this catches it without re-listing all 32.
+const GOOD_FOOD_CANARIES = [
+  'shepherds_pie', 'honey_glazed_ham', 'gleaming_salad', 'roast_chicken', 'stuffed_pumpkin',
+  'noodle_soup', 'squid_ink_pasta', 'baked_cod_stew'
+]
+
 function runSelfTest(source) {
   let pass = 0
   const fails = []
@@ -61,6 +69,14 @@ function runSelfTest(source) {
       const rem = Item.of('productivefrogs:' + v + '_slime_milk_bucket').getCraftingRemainingItem()
       return rem == null || rem.isEmpty()
     })
+  })
+
+  // 4. The Good Food Loot Crate's contents resolve as real items. Representative sample
+  //    (the table has 32; this catches a Farmers Delight pin drift that would rename/remove
+  //    a food and leave the crate granting empty slots). One canary per invariant.
+  GOOD_FOOD_CANARIES.forEach(food => {
+    check('good food crate item exists: ' + food, () =>
+      !Item.of('farmersdelight:' + food).isEmpty())
   })
 
   fails.forEach(name => source.sendSystemMessage(Text.red('FAIL: ' + name)))

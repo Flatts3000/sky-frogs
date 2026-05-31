@@ -109,7 +109,9 @@ quest), **WARN** is a smell worth a human look.
 | ID | Sev | Rule | Encodes |
 |----|-----|------|---------|
 | **Q-REWARD-TABLE-RESOLVES** | ERROR | every `loot`/`random`/`choice` reward carries a `table_id` that resolves to a real `reward_tables/<hexid>.snbt` (the decimal long == `int(hexid, 16)`) | a typo'd/empty `table_id` ships a reward that grants nothing (the Good Food Loot Crate feature) |
+| **Q-REWARD-TABLE-EMPTY** | ERROR | every reward table has at least one entry | an empty table = a loot crate that grants nothing |
 | **Q-REWARD-TABLE-ORPHAN** | WARN | every reward table is referenced by at least one quest | a dead table left after a quest was renumbered/removed |
+| **Q-HIDE-UNTIL-NOOP** | WARN | `hide_until_deps_complete` only on quests that have dependencies (else the condition is vacuously true and the flag does nothing) | the P0 reveal-pacing work: a hide flag dropped on a chapter-root or copy-pasted where it has no effect |
 
 Reward-table ids and their entry ids share the same 64-bit id space as quests, so they also flow
 through `Q-ID-POSITIVE` / `Q-ID-UNIQUE`, and their granted items through `Q-ITEM-EXISTS`.

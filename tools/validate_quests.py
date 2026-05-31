@@ -573,6 +573,11 @@ def check_reward_tables(chapters, ctx):
     for tbl in tables:
         if isinstance(tbl.id, str) and re.fullmatch(r"[0-9A-Fa-f]{16}", tbl.id):
             by_long[int(tbl.id, 16)] = tbl
+    for tbl in tables:
+        if not tbl.rewards:
+            f.append(Finding(ERROR, "Q-REWARD-TABLE-EMPTY", tbl.name, tbl.line_of(tbl.id or ""),
+                             f"reward table {tbl.id} has no entries - any loot crate pointing at "
+                             f"it grants nothing"))
     referenced = set()
     for ch, q in iter_quests(chapters):
         qid = q.get("id", "")
@@ -609,6 +614,23 @@ def check_reward_tables(chapters, ctx):
     return f
 
 
+def check_hide_until(chapters, ctx):
+    """Q-HIDE-UNTIL-NOOP (WARN) - hide_until_deps_complete on a quest with no dependencies.
+
+    The flag hides a quest until its dependencies complete; with no deps the condition is
+    vacuously true, so the flag does nothing. Encodes the P0 reveal-pacing work: catches a
+    hide flag dropped on a chapter-root (or copy-paste) where it has no effect.
+    """
+    f = []
+    for ch, q in iter_quests(chapters):
+        flag = q.get("hide_until_deps_complete")
+        if flag in (True, "true", "1b", "1") and not deps_of(q):
+            f.append(Finding(WARN, "Q-HIDE-UNTIL-NOOP", ch.name, ch.line_of(q.get("id", "")),
+                             f"quest {q.get('id')} sets hide_until_deps_complete but has no "
+                             f"dependencies - the flag has no effect"))
+    return f
+
+
 CHECKS = [
     check_ids,
     check_dependencies,
@@ -620,6 +642,7 @@ CHECKS = [
     check_item_exists,
     check_variant_made,
     check_reward_tables,
+    check_hide_until,
 ]
 
 
