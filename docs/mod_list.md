@@ -99,12 +99,14 @@ Each entry here directly maps to one or more PF category slime variants (see [`p
 
 | Mod                   | Role                                                                  |
 |-----------------------|------------------------------------------------------------------------|
-| **Chipped** + **Rechiseled** + **Rechiseled Chipped** | Variants of blocks for builders                  |
-| **FramedBlocks**      | Camouflage-able blocks                                                |
-| **Handcrafted**       | Decorative furniture                                                  |
-| **Supplementaries**   | Decoration grab-bag (also some functional items)                      |
-| **Glassential**       | Light-passing glass variants                                          |
-| **Simply Light** + **Mcw Lights**  | Light blocks                                            |
+| **Chipped** + **Rechiseled** + **Rechiseled: Chipped** | Hundreds of decorative variants per base block (frog-farmed stone/dirt/etc. -> build blocks) |
+| **Chisel Reborn** + **Chisel-Chipped Integration** | Classic in-world chiseling, bridged into the Chipped catalog          |
+| **FramedBlocks**      | Camouflage / "framed" blocks (slabs, slopes, panes textured with any block)          |
+| **Handcrafted**       | Furniture proper (chairs, tables, benches, shelves, dishware)                         |
+| **Supplementaries**   | Decoration grab-bag (signs, lamps, planters, faucets; some functional)               |
+| **Macaw's** suite (10 mods) | Bridges, Doors, Windows, Roofs, Fences & Walls, Trapdoors, Paths & Pavings, Lights & Lamps, Paintings, Furniture - the workhorse build-decor set |
+| **Connected Glass** + **Glassential** | Seamless/decorative glass; light-passing and one-way variants         |
+| **CTM** + **Fusion**  | Connected-textures libraries powering the chisel/variant mods (deps: Athena, Moonlight, Resourceful Lib, Cryonic Config) |
 | **Colorful Hearts**   | Per-effect heart colors                                               |
 | **Nyctography**       | Aesthetic darkness                                                    |
 | **Showcase Item**     | Display items as pedestals                                            |
