@@ -5,6 +5,9 @@
 	filename: "take_flight"
 	group: "0C4F0E0000000004"
 	icon: {
+		components: {
+			"ironjetpacks:jetpack_id": "ironjetpacks:iron"
+		}
 		id: "ironjetpacks:jetpack"
 	}
 	id: "7F00000000000001"
@@ -14,6 +17,9 @@
 		{
 			dependencies: ["71DE00000000001A"]
 			icon: {
+				components: {
+					"ironjetpacks:jetpack_id": "ironjetpacks:iron"
+				}
 				id: "ironjetpacks:jetpack"
 			}
 			id: "7F00000000000002"
@@ -72,6 +78,9 @@
 		{
 			dependencies: ["7F00000000000008"]
 			icon: {
+				components: {
+					"ironjetpacks:jetpack_id": "ironjetpacks:iron"
+				}
 				id: "ironjetpacks:jetpack"
 			}
 			id: "7F0000000000000B"
@@ -88,7 +97,8 @@
 			size: 1.5d
 			tasks: [{
 				id: "7F0000000000000C"
-				item: { count: 1, id: "ironjetpacks:jetpack" }
+				item: { components: { "ironjetpacks:jetpack_id": "ironjetpacks:iron" }, count: 1, id: "ironjetpacks:jetpack" }
+				match_components: "fuzzy"
 				type: "item"
 			}]
 			x: 0.0d
