@@ -83,8 +83,15 @@ const SLIME_TIERS = [
     ['soul_soil',       'minecraft:soul_sand'],
     ['blaze',           'minecraft:soul_soil'],
     ['netherite_scrap', 'minecraft:blaze_powder']
+  ]],
+  ['VOID', 'minecraft:soul_soil', [
+    ['ender_pearl',   'minecraft:netherite_scrap'],     // bridges from Infernal's last; filler is soul_soil (Infernal, mass-renewable - end_stone would be circular)
+    ['end_stone',     'minecraft:ender_pearl'],
+    ['chorus_fruit',  'minecraft:end_stone'],
+    ['echo_shard',    'minecraft:popped_chorus_fruit'], // chorus_fruit variant smelts to popped_chorus_fruit
+    ['sculk',         'minecraft:echo_shard'],
+    ['shulker_shell', 'minecraft:sculk']
   ]]
-  // Tier 6 (Void): TBD.
 ]
 
 ServerEvents.recipes(event => {

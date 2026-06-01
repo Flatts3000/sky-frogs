@@ -1,0 +1,15 @@
+{
+  "name": "singularity.extendedcrafting.iron",
+  "colors": [
+    "e1e1e1",
+    "6c6c6c"
+  ],
+  "ingredient": {
+    "type": "neoforge:components",
+    "items": "productivefrogs:configurable_froglight",
+    "components": {
+      "productivefrogs:slime_variant": "productivefrogs:iron"
+    },
+    "strict": false
+  }
+}
