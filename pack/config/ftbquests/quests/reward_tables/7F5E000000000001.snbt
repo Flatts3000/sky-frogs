@@ -1,0 +1,91 @@
+{
+	icon: {
+		id: "minecraft:quartz_block"
+	}
+	id: "7F5E000000000001"
+	loot_size: 1
+	order_index: 5
+	rewards: [
+		{
+			count: 1
+			id: "7F5E000000000010"
+			item: {
+				count: 1
+				id: "minecraft:brewing_stand"
+			}
+			weight: 1.0f
+		}
+		{
+			count: 1
+			id: "7F5E000000000011"
+			item: {
+				count: 1
+				id: "minecraft:respawn_anchor"
+			}
+			weight: 1.0f
+		}
+		{
+			count: 1
+			id: "7F5E000000000012"
+			item: {
+				count: 1
+				id: "minecraft:lodestone"
+			}
+			weight: 1.0f
+		}
+		{
+			count: 4
+			id: "7F5E000000000013"
+			item: {
+				count: 1
+				id: "minecraft:comparator"
+			}
+			weight: 5.0f
+		}
+		{
+			count: 4
+			id: "7F5E000000000014"
+			item: {
+				count: 1
+				id: "minecraft:observer"
+			}
+			weight: 5.0f
+		}
+		{
+			count: 4
+			id: "7F5E000000000015"
+			item: {
+				count: 1
+				id: "minecraft:daylight_detector"
+			}
+			weight: 5.0f
+		}
+		{
+			count: 64
+			id: "7F5E000000000016"
+			item: {
+				count: 1
+				id: "minecraft:quartz_block"
+			}
+			weight: 12.0f
+		}
+		{
+			count: 64
+			id: "7F5E000000000017"
+			item: {
+				count: 1
+				id: "minecraft:glowstone"
+			}
+			weight: 12.0f
+		}
+		{
+			count: 64
+			id: "7F5E000000000018"
+			item: {
+				count: 1
+				id: "minecraft:nether_bricks"
+			}
+			weight: 12.0f
+		}
+	]
+}

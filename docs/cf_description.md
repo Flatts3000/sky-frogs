@@ -5,14 +5,14 @@ this comment into the CF dashboard's Description field at project creation
 
 Source: derived from curseforge_page.md (the meta-doc with sectioning).
 This file is the actual page body without the meta labels.
-Status: written for v0.1.0-alpha submission. Refresh for v0.5 / v1.0 milestones.
+Status: covers the Tier 0-5 alpha (Welcome through Infernal). Refresh at v1.0. Push to the live CF page only when the matching release is tagged (the live listing should match what downloaders get).
 -->
 
 # Sky Frogs
 
 > A void-skyblock NeoForge 1.21.1 modpack built around [Productive Frogs](https://www.curseforge.com/minecraft/mc-mods/productive-frogs).
 
-**Status: v0.1.0-alpha.** Tier 0 through Tier 3 (Welcome / Cave / Geode / Bog) are built and playable end-to-end. The bridge into Tier 4 (Tide) is in place; Tide / Infernal / Void content lands in later releases. Feedback welcome via [GitHub Issues](https://github.com/Flatts3000/sky-frogs/issues).
+**Status: alpha.** Tier 0 through Tier 5 (Welcome / Cave / Geode / Bog / Tide / Infernal) are built and playable end-to-end - frogs for ores, gems, organics, the ocean, and the Nether. Tier 6 (Void, the endgame) lands in a later release. Feedback welcome via [GitHub Issues](https://github.com/Flatts3000/sky-frogs/issues).
 
 ---
 
@@ -47,8 +47,8 @@ By the end of a session, iron is a frog's problem, not yours. The book drives th
 | 1    | Cave     | The ores: iron, copper, gold, coal, redstone                                       | Playable |
 | 2    | Geode    | Gems and crystals: lapis, tuff, calcite, amethyst, emerald, diamond                | Playable |
 | 3    | Bog      | Organics: dirt, moss, clay, mycelium, leather, feather, plus plastic and pink slime | Playable |
-| 4    | Tide     | The ocean's haul: prismarine, sponge, ink                                          | Coming next |
-| 5    | Infernal | The Nether: blaze, quartz, glowstone, netherite                                    | Forthcoming |
+| 4    | Tide     | The ocean's haul: prismarine, sponge, sea pickles, nautilus shells (and jetpacks)  | Playable |
+| 5    | Infernal | The Nether, earned by one real fortress trip: quartz, glowstone, blaze, netherite  | Playable |
 | 6    | Void     | The End and endgame: ender pearls, chorus, shulker shells                          | Forthcoming |
 
 Each tier extends with modded resources as those mods ship in the pack. Endgame plan: stack up your late-game Froglights into singularities, then into the **Sky Frogs Master Frog**, a creative trophy that says you out-frogged the game.

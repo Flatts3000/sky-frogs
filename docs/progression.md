@@ -1,8 +1,8 @@
 # Progression
 
-> **Status:** DRAFT. Tiers 0-3 (Welcome, Cave, Geode, Bog) are built and live; Tier 4-6 (Tide, Infernal, Void) remain a sketch. The premise (frog species gate progress) and the order (Cave -> Geode -> Bog -> Tide -> Infernal -> Void) are settled; the Tier 4-6 resource lists, gates, and playtimes below are still a sketch.
+> **Status:** DRAFT. Tiers 0-5 (Welcome, Cave, Geode, Bog, Tide, Infernal) are built and live; only Tier 6 (Void) remains a sketch. The premise (frog species gate progress) and the order (Cave -> Geode -> Bog -> Tide -> Infernal -> Void) are settled; the Tier 6 resource list, gate, and playtime below are still a sketch.
 >
-> **Version note:** the pack consumes **Productive Frogs v1.8.0** (organic Bog roster + Industrial Foregoing plastic/pink_slime variants, per-variant Slime Milk fluids/buckets that survive pipe automation, bottle-of-frogspawn, and the four Slime Milk catalysts). The Tier 0-3 content described here is built against that pin and live in the pack. PF continues to publish to CurseForge gradually; the pack `packwiz update`s to newer PF as it clears.
+> **Version note:** the pack consumes **Productive Frogs v1.8.1** (organic Bog roster + Industrial Foregoing plastic/pink_slime variants, per-variant Slime Milk fluids/buckets that survive pipe automation, bottle-of-frogspawn, the four Slime Milk catalysts, and Slime Bucket fixes). The Tier 0-5 content described here is built against that pin and live in the pack. PF continues to publish to CurseForge gradually; the pack `packwiz update`s to newer PF as it clears.
 
 ## The premise
 
@@ -13,11 +13,11 @@
 | Tier | Species | Resource theme (built unless noted) |
 |------|---------|-----------------------------------------|
 | 0    | *(bootstrap)* | Get on your feet + a cave_slime farm |
-| 1    | **Cave**     | Ores & metals: iron -> copper -> gold -> coal -> redstone (the built chain). Lapis moved to Geode in PF 1.5.1; diamond is a Geode resource; obsidian deferred to Infernal. |
+| 1    | **Cave**     | Ores & metals: iron -> copper -> gold -> coal -> redstone (the built chain). Lapis moved to Geode in PF 1.5.1; diamond is a Geode resource; obsidian omitted (an unquested Cave variant - unreachable on skyblock without a diamond pickaxe). |
 | 2    | **Geode**    | Gems & crystals: lapis -> tuff -> calcite -> amethyst -> emerald -> diamond |
 | 3    | **Bog**      | Organic & swamp: dirt -> mud -> clay_ball -> moss -> mycelium -> lily_pad -> leather -> feather -> plastic -> pink_slime (the last two are Industrial Foregoing items; IF is a hard pack dependency) |
-| 4    | **Tide**     | Aquatic: sponge, prismarine, prismarine crystals, ink sac (+ modded aquatics). *Sketch.* |
-| 5    | **Infernal** | Nether: blaze, nether quartz, soul sand/soil, netherrack, glowstone, netherite scrap. *Sketch.* |
+| 4    | **Tide**     | Aquatic: prismarine -> prismarine_crystals -> sponge -> ink_sac -> sea_pickle -> nautilus_shell (the built chain). |
+| 5    | **Infernal** | Nether: netherrack -> quartz -> glowstone -> soul_sand -> soul_soil -> blaze -> netherite_scrap (the built chain; netherite scrap is the endgame capstone). |
 | 6    | **Void**     | End & endgame: ender pearl, chorus fruit, shulker shell (+ modded endgame: nitro, mythril, orichalcum). *Sketch.* |
 
 Modded resources per tier are PF's conditional variants — they register only when the relevant mod ships in the pack, so the actual per-tier resource set tracks the Sky Frogs mod list.
@@ -34,13 +34,15 @@ Modded resources per tier are PF's conditional variants — they register only w
    - **Geode** = automation (Mekanism: power, Metallurgic Infuser, Enrichment Chamber).
    - **Bog** = Just Dire Things' tier-1 progression (Primogel Goo -> Ferricore -> Fluid Collector -> Fluid Placer -> Item Collector) plus a Building Gadgets 2 side branch. Lives in `tools_and_things.snbt`. Mekanism RF from Geode powers the JDT machines.
    - **Tide** = **jetpacks (mobility)** - Iron Jetpacks' coil-tiered progression (basic/iron -> advanced/gold -> elite/diamond -> ultimate/emerald), charged with Geode-era Mekanism RF. Lives in `take_flight.snbt`. The first *mobility* verb - every prior verb was stationary, and a sprawling void island wants flight.
-   - **Infernal** = earmarked for Refined Storage (*sketch*).
+   - **Infernal** = **Refined Storage** (RS 2.0): the digital storage + autocrafting network. Lives in `the_network.snbt` - Quartz Enriched Iron -> Controller -> Grid -> Disk Drive -> External Storage -> Import/Export -> Crafting Grid -> Autocrafting. Naturally gated on nether quartz (RS parts need Quartz Enriched Iron), which only the Infernal frog produces.
 
 ## Tier transitions (the gate mechanic)
 
 Each species' quest line **ends by opening the next species**, in two halves:
 
-1. **Frog side (the Spawnery).** Prime the Spawnery with a tier-specific **primer item** to draw the *next* species' **Frogspawn** bottle (a `frog_egg` carrying the next `contained_category`). The pack overrides each `spawnery_primer/<species>` tag to a resource the player has by the prior tier's end. The built primers: **Geode is primed by redstone** (Cave's last resource: `spawnery_primer/geode` -> `minecraft:redstone`), and **Bog is primed by enriched diamond** (a Mekanism craft: `spawnery_primer/bog` -> `mekanism:enriched_diamond`). Place the frogspawn on water to start the next species' frogs.
+1. **Frog side (the Spawnery).** Prime the Spawnery with a tier-specific **primer item** to draw the *next* species' **Frogspawn** bottle (a `frog_egg` carrying the next `contained_category`). The pack overrides each `spawnery_primer/<species>` tag to a resource the player has by the prior tier's end. The built primers: **Geode** by redstone (Cave's last: `spawnery_primer/geode` -> `minecraft:redstone`), **Bog** by enriched diamond (a Mekanism craft: `spawnery_primer/bog` -> `mekanism:enriched_diamond`), **Tide** by pink_slime (Bog's last: `spawnery_primer/tide` -> `industrialforegoing:pink_slime`), and **Infernal** by **nether brick** (`spawnery_primer/infernal` -> `minecraft:nether_bricks`). Place the frogspawn on water to start the next species' frogs.
+
+**The Infernal gate is the exception - a real Nether expedition.** Nether brick is the only primer not handed to you by the prior tier, on purpose: it isn't craftable before Infernal (netherrack, the first Infernal resource, is gated behind the very frog you're trying to summon), so its only source is a **Nether fortress**. To enter Infernal the player builds a portal (the gateway grants the obsidian), flies the void Nether on their Tide-tier **jetpack**, raids a floating fortress for nether brick, and primes the Spawnery with it. After that one trip the frog automates the Nether forever. This needs `config/skyblockbuilder/structures.json5` to whitelist `minecraft:fortress` (SkyblockBuilder generates no structures by default).
 2. **Slime side (the seed-chain bootstrap).** The next tier's *resource* slimes come from a custom (KubeJS) **slime-in-a-bucket** recipe seeded from the current tier's outputs (the same pattern as Cave's iron -> copper -> ... chain), milked for a renewable supply. This lives in the *next* tier's chapter, not the gateway. Each step also consumes **4 of a tier-themed filler block** (see "Per-tier filler blocks" below). The Industrial Foregoing **Dissolution Chamber** (taught in `road_to_tide.snbt`, the Tier 4 gateway, gated on completing `bog_frogs`) is the pack's slime engine. Each recipe consumes a prior vanilla resource (the previous tier's last resource for the first variant in a tier; the previous variant's resource for each step after) + tier filler + sweetslime + latex - the same chain shape as the Cave/Geode/Bog crafting-table chains, just transposed into the machine. Cave/Geode/Bog all ship today as chamber recipes alongside the existing crafting tables (iron bootstraps off bone meal in the chamber; the crafting tables remain a parallel hand-craft path); Tier 4 (Tide) onward land as those tiers ship. Resource-keyed inputs sidestep IF/Titanium's JSON-codec drop of component ingredients (the milk-keyed approach hit the codec wall; PF declined a component-free per-variant handle, see [productive-frogs#127](https://github.com/Flatts3000/productive-frogs/issues/127)).
 
 > **Not slime milk for parents.** PF's Slime Milk is keyed by `SLIME_VARIANT` and spawns that *resource-variant* slime, not the bare parent species (the parent comes from a spawn egg / splitting). So the next tier is bootstrapped via frogspawn (Spawnery) + a resource-slime seed-chain, *not* a "parent slime milk" source. (Corrected 2026-05-27; the earlier draft of this section described a parent-spawning milk that PF does not implement.)
@@ -49,7 +51,7 @@ So: finish the **Cave** line at redstone → prime the Spawnery with redstone fo
 
 ### Per-tier filler blocks
 
-Each tier's slime-in-a-bucket seed-chain recipe spends **4 of a tier-themed filler block** per step. The constraint: a tier's filler must be mass-attainable *at that tier* (not gated behind a later tier). The same per-tier filler carries into the Dissolution Chamber slime recipes (Cave=stone, Geode=gravel, Bog=mossy cobblestone, Tide=mycelium, all live; Tier 5+ filler picked per tier when each ships).
+Each tier's slime-in-a-bucket seed-chain recipe spends **4 of a tier-themed filler block** per step. The constraint: a tier's filler must be mass-attainable *at that tier* (not gated behind a later tier). The same per-tier filler carries into the Dissolution Chamber slime recipes (Cave=stone, Geode=gravel, Bog=mossy cobblestone, Tide=mycelium, Infernal=prismarine, all live; Void filler picked when that tier ships).
 
 | Tier | Filler block | Source |
 |------|--------------|--------|
@@ -57,8 +59,9 @@ Each tier's slime-in-a-bucket seed-chain recipe spends **4 of a tier-themed fill
 | Geode | **gravel** | the Ex Deorum block you sieve gems from |
 | Bog   | **mossy cobblestone** | crafted in Mekanism's Metallurgic Infuser / Enrichment Chamber (the Geode-era machines) |
 | Tide  | **mycelium** | a Bog chain resource, mass-renewable via the Bog frog loop by Tier 4 |
+| Infernal | **prismarine** | a Tide chain resource, mass-renewable via the Tide frog loop by Tier 5 |
 
-**Note on Tide's filler:** Cave/Geode/Bog fillers are all plain non-resource blocks. Tide's mycelium is the first filler that *is* a frog-chain resource (the Bog mycelium variant). This is a deliberate departure: it's safe because mycelium is fully produced within Bog, before Tide, so there's no circular dependency, and the swamp-tier resource thematically seeds the shore tier. Infernal / Void fillers are TBD.
+**Note on Tide's and Infernal's fillers:** Cave/Geode/Bog fillers are all plain non-resource blocks. Tide's mycelium (a Bog chain resource) and Infernal's prismarine (a Tide chain resource) are the exceptions: each reuses a *prior* tier's mass-renewable chain output. Safe because that resource is fully produced before the tier in question, so there's no circular dependency. For Infernal the obvious nether-themed pick, netherrack, would be circular (you'd need netherrack to make the first netherrack slime), so prismarine is used instead. Void's filler is TBD.
 
 ## The per-tier loop (same shape every tier)
 
@@ -90,7 +93,7 @@ Estimated playtime: **30–60 min**.
 
 - Hatch Cave Frogs from the Tier 0 reward.
 - Farm Cave Slimes (dark room) and/or place Cave Slime Milk sources.
-- Infuse with ore primers → Iron → Copper → Gold → Coal → Redstone Slimes (+ modded metals if those mods ship). (Lapis and diamond are Geode resources; obsidian is deferred to Infernal.)
+- Infuse with ore primers → Iron → Copper → Gold → Coal → Redstone Slimes (+ modded metals if those mods ship). (Lapis and diamond are Geode resources; obsidian is omitted - an unquested Cave variant.)
 - Cave Frogs → Configurable Froglights → smelt → ingots.
 - **New verb:** crafting upgrades / storage. Sophisticated + Functional storage, with quartz-free network recipes (the Cave-tier "Storage and Crafting" interlude).
 - **Gate to Tier 2:** prime the Spawnery with **redstone** for a Bottle of Geode Frogspawn, then run the Geode seed-chain.
@@ -127,18 +130,18 @@ Estimated playtime: **3–5 hours**.
 - Tide Frogs + Tide Slimes, Dissolution-Chamber only (no crafting-table chain from Tier 4 on).
 - The roster: prismarine (in `road_to_tide`), then prismarine_crystals, sponge, ink_sac, sea_pickle, nautilus_shell in `drowned_riches`.
 - **New verb:** jetpacks (Iron Jetpacks), the `take_flight` chapter - coil-tiered mobility (iron -> gold -> diamond -> emerald) on frog-farmed metals + Geode RF.
-- **Gate to Tier 5:** craft the Infernal starter kit.
+- **Gate to Tier 5:** the Nether expedition (the `road_to_infernal` gateway). Build a portal, fly the void Nether on your jetpack to a fortress, mine nether brick, and prime the Spawnery with it for the Infernal Frogspawn. The Tide mobility verb is the literal key to Infernal.
 
 Estimated playtime: **3–6 hours**.
 
 ## Tier 5 — Infernal (nether)
 
-**Chapter:** *Heat & Flame* (working title). Nether materials; an optional small Nether base for ambiance, but Infernal frogs are the real path.
+**Chapters:** *Road to Infernal* (gateway) + *Infernal Frogs* (the nether resource chain) + *The Network* (the Refined Storage verb). **Built.** The Nether without a Nether - the Infernal frog produces the materials a void skyblock otherwise can't reach.
 
-- Infernal Frogs + Infernal Slimes (crafted milk).
-- Infuse → Blaze/Quartz/Soul-Sand/Netherrack/Glowstone/Netherite-Scrap Slimes.
-- **Netherite line** is gated here.
-- **Gate to Tier 6:** craft the Void starter kit.
+- Infernal Frogs + Infernal Slimes, Dissolution-Chamber only (filler = prismarine, a Tide resource - netherrack would be circular).
+- The roster: netherrack (in `road_to_infernal`), then quartz, glowstone, soul_sand, soul_soil, blaze, **netherite_scrap** in `infernal_frogs`. Netherite is the vanilla-endgame capstone (kept in Infernal, not deferred to Void).
+- **New verb:** **Refined Storage** (RS 2.0), the `the_network` chapter - the digital storage + autocrafting network (Quartz Enriched Iron -> Controller -> Grid -> Disk Drive -> External Storage -> Import/Export -> Crafting Grid -> Autocrafting). Gated on nether quartz, which only the Infernal frog produces.
+- **Gate to Tier 6:** TBD when Void ships.
 
 Estimated playtime: **6–10 hours**.
 

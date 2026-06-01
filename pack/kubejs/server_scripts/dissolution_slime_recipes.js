@@ -74,8 +74,17 @@ const SLIME_TIERS = [
     ['ink_sac',             'minecraft:sponge'],
     ['sea_pickle',          'minecraft:ink_sac'],
     ['nautilus_shell',      'minecraft:sea_pickle']
+  ]],
+  ['INFERNAL', 'minecraft:prismarine', [
+    ['netherrack',      'minecraft:nautilus_shell'],   // bridges from Tide's last; filler is prismarine (Tide, mass-renewable - netherrack would be circular)
+    ['quartz',          'minecraft:netherrack'],
+    ['glowstone_dust',  'minecraft:quartz'],
+    ['soul_sand',       'minecraft:glowstone_dust'],
+    ['soul_soil',       'minecraft:soul_sand'],
+    ['blaze',           'minecraft:soul_soil'],
+    ['netherite_scrap', 'minecraft:blaze_powder']
   ]]
-  // Tier 5 (Infernal) and Tier 6 (Void): TBD.
+  // Tier 6 (Void): TBD.
 ]
 
 ServerEvents.recipes(event => {
