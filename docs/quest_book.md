@@ -1,6 +1,6 @@
 # Quest Book
 
-> **Status:** DRAFT. Tiers 0-3 (Welcome, Cave, Geode, Bog) are built and live; Tier 4-6 (Tide, Infernal, Void) and the tech/dimension/endgame chapters below remain a sketch. The questbook's shape is the **chapter-sizing principle** (theme + arc, ~8-20 nodes per chapter, see below), not the old 22-chapter / 750-quest SBR scale reference, which is superseded.
+> **Status:** All six tiers (Welcome, Cave, Geode, Bog, Tide, Infernal, Void) are built and live, through the Master Pond endgame and the Sky Frogs Master Frog trophy. The optional per-mod tech side chapters below remain future work. The questbook's shape is the **chapter-sizing principle** (theme + arc, ~8-20 nodes per chapter, see below), not the old 22-chapter / 750-quest SBR scale reference, which is superseded.
 
 The FTB Quests structure for Sky Frogs. The questbook is organized per-tier (one chapter group per frog species, plus per-tier "Road to" gateway chapters), with the [chapter-sizing principle](#chapter-sizing-settled-2026-05-27) setting chapter boundaries.
 
@@ -61,15 +61,16 @@ These are the 17 chapter files that exist in `config/ftbquests/quests/chapters/`
 | Tier 5: Infernal | `infernal_frogs.snbt` | The Infernal species: quartz -> glowstone -> soul_sand -> soul_soil -> blaze -> **netherite_scrap** (hexagon capstone, the vanilla endgame). All chamber-made Froglight checks (`match_components: strict`). Gates off the road_to_infernal First Netherrack capstone. |
 | Tier 5: Infernal | `the_network.snbt` | The Infernal **new verb**: **Refined Storage** (RS 2.0). Spine: Quartz Enriched Iron (the quartz gate) -> Controller -> Grid -> Disk Drive + disk -> Cable -> External Storage -> Importer/Exporter -> Crafting Grid -> **Autocrafting** (Pattern Grid + Autocrafter, hexagon capstone). Gated on nether quartz, which only the Infernal frog produces. |
 
-### Sketched chapters (Tier 6, unbuilt)
+### Tier 6 (Void) chapters - BUILT
 
-Void follows the same per-tier shape (a "Road to" gateway + a species chapter + that tier's new-verb chapter). Plus the framing/endgame chapters below. None of these are built yet:
+Void follows the same per-tier shape (a "Road to" gateway + a species chapter + that tier's new-verb chapter), plus a dedicated endgame chapter:
 
-| Chapter (working name)    | Covers                                                |
-|---------------------------|--------------------------------------------------------|
-| Void Mastery              | Tier 6 (Void): ender / endgame resources               |
-| The End                   | End access, dragon fight, outer islands (Tier 6 prelude) |
-| Master Pond               | Endgame singularity loop: Ultimate Singularity, creative trophy |
+| Chapter             | File | Covers                                                |
+|---------------------|------|--------------------------------------------------------|
+| Road to the Void    | `road_to_void.snbt` | The **dragon expedition** gateway: ender pearls (dark-room endermen) -> eyes -> a crafted 12-frame End portal (frog-farmed glowstone + soul sand, since no stronghold generates) -> Into the End -> **Slay the Dragon** -> the frog sub-chain (frogspawn -> slime -> milk -> First Ender Pearl). |
+| Void Frogs          | `void_frogs.snbt` | The End resource chain: end_stone -> chorus_fruit -> echo_shard -> sculk -> **shulker_shell** Froglight checks. |
+| The Ultimate Table  | `the_ultimate_table.snbt` | The Void **new verb**: **Extended Crafting**. Black iron -> luminessence -> basic/advanced/elite/**ultimate** crafting tables -> the **Quantum Compressor**. |
+| Master Pond         | `master_pond.snbt` | The endgame: froglight Singularities (one per species, a proof-of-automation gate) -> the **Ultimate Singularity** -> the **Sky Frogs Master Frog** trophy + a closing epilogue. |
 
 ## Chapter sizing (settled 2026-05-27)
 
@@ -100,7 +101,7 @@ This is ~855 total which gives us 15% headroom for cutting. Target ship is ~750.
 
 ## Quest dependency graph
 
-High-level (chapter-to-chapter dependencies). Built chapters above the dashed line; sketched below it:
+High-level (chapter-to-chapter dependencies). All chapters built:
 
 ```
 welcome
@@ -125,18 +126,28 @@ bog_frogs ------------------+
    |                        |
 tools_and_things            | (Bog new verb: JDT tier-1 progression + BG side branch)
    |
-- - - - - - - - - - - - - - - - - - - - (Tier 4 begins below)
+road_to_tide   (IF spine: Pity Frame -> Fluid Extractor -> Dissolution Chamber capstone)
    |
-road_to_tide                | (IF spine: Pity Frame -> Fluid Extractor -> Dissolution Chamber capstone)
-   |                        |
-- - - - - - - - - - - - - - - - - - - - (sketch below)
+drowned_riches ------------+
+   |                       |
+take_flight                | (Tide new verb: Iron Jetpacks mobility)
    |
-Drowned Riches (Tide) -> Heat & Flame (Infernal) -> Void Mastery
-                              |                          |
-                       we_need_to_go_deeper          the_end -> master_pond
+road_to_infernal  (Nether expedition: portal -> fortress -> nether brick)
+   |
+infernal_frogs ------------+
+   |                       |
+the_network                | (Infernal new verb: Refined Storage)
+   |
+road_to_void   (End expedition: eyes -> crafted End portal -> slay the dragon)
+   |                       |
+void_frogs                 |
+   |                       |
+the_ultimate_table         | (Void new verb: Extended Crafting)
+   |
+master_pond    (froglight Singularities -> Ultimate Singularity -> Master Frog trophy)
 ```
 
-The "Road to <tier>" gateway chapters are where the tier transition fires (Spawnery primer + seed-chain bridge). Tier 4-6 tech-mod placement is a sketch; the verb-per-tier scheme decides which mod chapter folds into which tier.
+The "Road to <tier>" gateway chapters are where the tier transition fires (Spawnery primer / expedition + seed-chain bridge). Each tier's new-verb chapter branches off its species chapter; `master_pond` depends on both the dragon kill and the Extended Crafting Quantum Compressor.
 
 ## Within-chapter dependency style
 

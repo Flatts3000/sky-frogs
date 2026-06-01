@@ -1,6 +1,6 @@
 # Design Overview
 
-> **Status:** DRAFT. Tiers 0-5 (Welcome, Cave, Geode, Bog, Tide, Infernal) are built and live; only Tier 6 (Void) remains a sketch. The higher-level framing here is still open to argue with. Sky Frogs has its own identity to find; Sky Bees Reborn is one reference for the genre, not a template.
+> **Status:** All six tiers (Welcome, Cave, Geode, Bog, Tide, Infernal, Void) are built and live, through the Master Pond endgame and the Sky Frogs Master Frog trophy. The higher-level framing here is still open to argue with. Sky Frogs has its own identity to find; Sky Bees Reborn is one reference for the genre, not a template.
 
 ## Inspiration
 
@@ -22,7 +22,7 @@ Tier 2: Geode               -> lapis -> tuff -> calcite -> amethyst -> emerald -
 Tier 3: Bog                 -> dirt/mud/clay/moss/mycelium/lily_pad/leather/feather + plastic/pink_slime (built)
 Tier 4: Tide                -> prismarine -> prismarine_crystals -> sponge -> ink_sac -> sea_pickle -> nautilus_shell (built)
 Tier 5: Infernal            -> netherrack -> quartz -> glowstone -> soul_sand -> soul_soil -> blaze -> netherite_scrap (built)
-Tier 6: Void                -> ender, draconic, end-tier and modded magic (sketch)
+Tier 6: Void                -> ender_pearl -> end_stone -> chorus_fruit -> echo_shard -> sculk -> shulker_shell (built; ends in the Master Frog trophy)
 ```
 
 Each tier corresponds to one or more questbook chapters and to one category in the [Productive Frogs Category enum](../../productive-frogs/src/main/java/com/flatts/productivefrogs/data/Category.java). Each tier also layers **one new verb** onto the frog loop for anti-repetition (Cave = crafting/storage, Geode = automation/Mekanism, Bog = Just Dire Things tier-1 progression + Building Gadgets in `tools_and_things.snbt`; Industrial Foregoing's machine spine and the Dissolution Chamber moved to `road_to_tide.snbt` as the Tier 4 gateway). Per-tier resource quests check the variant **Froglight** the frog drops, not the smelted resource, so the loop can't be skipped.
