@@ -150,7 +150,7 @@ hash = "2e69afacf774749222ca1e925dc94d32e6c3db8bef4557aa33144751c2770206"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "ee45dc6c3403fe06552ddb4bb7980a0c5dc008dfecc5f91c7a76a0568284b0c4"
+hash = "d551864ea6279c8ea3501eb003e7935d8cb19b2e5ef743a4288c3c10bdb36b22"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
@@ -185,12 +185,16 @@ file = "config/productivefrogs-common.toml"
 hash = "62cc9815d8e8234d05376ecbada5301cf38ccc6bde048b41b5b75453366ac5c9"
 
 [[files]]
+file = "config/skyblockbuilder/dimensions.json5"
+hash = "4d2319aa9a4910827ff5a67a81030ee050f0b59df34981af16152feb8b2129db"
+
+[[files]]
 file = "config/skyblockbuilder/starter_inventory.json5"
 hash = "e3171de74e0d9e52dd88c94d70380c320cd7b0e06c96ab3dbc962f828decdd93"
 
 [[files]]
 file = "config/skyblockbuilder/structures.json5"
-hash = "bd4e9295a38d369f004a944862813d08f5e50d7acef7f2385466ea4a361daebf"
+hash = "ad8195a4df84d7c902ba6313967443c6010b51a700680b5b3a2f9af9d369180b"
 
 [[files]]
 file = "config/skyblockbuilder/templates.json5"

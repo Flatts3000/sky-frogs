@@ -1,0 +1,39 @@
+{
+  "End": {
+
+    // Should end use custom generation? [default: true]
+    // SKY FROGS: false - the End is a TRADITIONAL vanilla End (central island + ender dragon +
+    // the outer end-island ring with end cities, ships, and chorus forests), NOT a void skyblock.
+    // With isCustom=false SkyblockBuilder hands the End to vanilla's NoiseBasedChunkGenerator
+    // (TheEndBiomeSource + the END noise settings). The Tier 6 (Void) dragon expedition
+    // (road_to_void.snbt) needs the real dragon fight and the outer islands. keepMainIsland is
+    // ignored when isCustom=false. Only the OVERWORLD stays void-skyblock; the Nether stays the
+    // SkyblockBuilder void Nether (its fortresses come from config/skyblockbuilder/structures.json5).
+    // NOTE: dimension generators are baked at WORLD CREATION - this only affects NEW worlds (an
+    // existing world's End keeps whatever generator it was created with).
+    "isCustom": false,
+
+    // Should the main island be generated as normal? [default: true]
+    "keepMainIsland": true
+  },
+
+  "Nether": {
+
+    // A list of biomes for each island in a circle shape around the island.
+    "centeredBiomes": [],
+
+    // Should nether use custom generation? [default: true]
+    // Kept true: the void Nether is load-bearing for the Tier 5 (Infernal) fortress expedition.
+    "isCustom": true
+  },
+
+  "Overworld": {
+
+    // A list of biomes for each island in a circle shape around the island.
+    "centeredBiomes": [],
+
+    // Should overworld use custom generation? [default: true]
+    // Kept true: the void-skyblock overworld is the whole premise of the pack.
+    "isCustom": true
+  }
+}
