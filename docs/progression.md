@@ -154,7 +154,7 @@ Estimated playtime: **6–10 hours**.
 - Void Frogs + Void Slimes, Dissolution-Chamber only (filler = soul soil, an Infernal resource - end stone would be circular).
 - The roster: **ender_pearl** (in `road_to_void`), then end_stone, chorus_fruit, echo_shard, sculk, **shulker_shell** in `void_frogs`. Six vanilla End variants; the modded Void variants (Powah / Mystical Agriculture / Mythic Metals) stay deferred until those mods join the pack.
 - **New verb:** **Extended Crafting**, the `the_ultimate_table` chapter - black iron -> luminessence -> basic/advanced/elite/ultimate tables -> the Quantum Compressor.
-- **Endgame (`master_pond`):** each species' **Froglight** compresses (1000 per, in the Quantum Compressor) into a **Singularity** - a proof you automated that frog. Six Singularities -> the **Ultimate Singularity** -> the **Sky Frogs Master Frog** trophy + a closing epilogue. The Master Frog is a KubeJS-defined item (placeholder texture; final art is a backlog item).
+- **Endgame (`master_pond`):** 1000 **Froglights** compress (in the Quantum Compressor) into one **Froglight Singularity** - a proof you automated a frog farm. -> the **Ultimate Singularity** -> the **Sky Frogs Master Frog** trophy + a closing epilogue. The Master Frog is a KubeJS-defined item (placeholder texture; final art is a backlog item). (Per-species singularities were the original plan, but EC's singularity ingredient is item-only and can't match a froglight variant - one plain-froglight singularity is the codec-valid form; the six-species span is enforced by progression instead.)
 
 Estimated playtime: **15+ hours** to fully clear.
 

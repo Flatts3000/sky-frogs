@@ -51,7 +51,7 @@ By the end of a session, iron is a frog's problem, not yours. The book drives th
 | 5    | Infernal | The Nether, earned by one real fortress trip: quartz, glowstone, blaze, netherite  | Playable |
 | 6    | Void     | The End and endgame: ender pearls, end stone, chorus, echo shards, sculk, shulker shells | Playable |
 
-Each tier extends with modded resources as those mods ship in the pack. The endgame: compress your froglights into singularities (one per species - a proof you automated every frog), fold those into the Ultimate Singularity, and craft the **Sky Frogs Master Frog**, a trophy that says you out-frogged the game.
+Each tier extends with modded resources as those mods ship in the pack. The endgame: compress a thousand froglights into a Froglight Singularity (a proof you automated your farm), refine it into the Ultimate Singularity, and craft the **Sky Frogs Master Frog**, a trophy that says you out-frogged the game.
 
 ## Mod Highlights
 
