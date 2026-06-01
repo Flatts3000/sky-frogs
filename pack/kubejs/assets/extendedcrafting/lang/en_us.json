@@ -1,8 +1,3 @@
 {
-  "singularity.extendedcrafting.iron": "Iron Singularity",
-  "singularity.extendedcrafting.diamond": "Diamond Singularity",
-  "singularity.extendedcrafting.clay": "Clay Singularity",
-  "singularity.extendedcrafting.prismarine": "Prismarine Singularity",
-  "singularity.extendedcrafting.netherite": "Netherite Singularity",
-  "singularity.extendedcrafting.ender_pearl": "Ender Singularity"
+  "singularity.extendedcrafting.froglight": "Froglight Singularity"
 }

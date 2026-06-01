@@ -1,0 +1,10 @@
+{
+  "name": "singularity.extendedcrafting.froglight",
+  "colors": [
+    "c5e89a",
+    "7fbf5f"
+  ],
+  "ingredient": {
+    "item": "productivefrogs:configurable_froglight"
+  }
+}

@@ -1138,32 +1138,32 @@
 	quest.6EC0000000000017.quest_subtitle: "A thousand froglights, one cube."
 	quest.6EC0000000000017.title: "The Quantum Compressor"
 	quest.6A0D000000000002.quest_desc: [
-		"You have cleared the dragon and built the compressor. One task remains: prove you automated"
+		"You have cleared the dragon and built the compressor. One task remains: prove the frogs run"
 		""
-		"&aevery&r frog. A Singularity takes a thousand Froglights - you cannot hand-make that. Only a"
+		"without you. A &bFroglight Singularity&r swallows a thousand Froglights - you cannot hand-make"
 		""
-		"running farm can. Six farms, six Singularities, one trophy."
+		"that many. Only a running farm can. That is the whole point."
 	]
-	quest.6A0D000000000002.quest_subtitle: "Prove you automated every frog."
+	quest.6A0D000000000002.quest_subtitle: "Prove the frogs run without you."
 	quest.6A0D000000000002.title: "The Long Compression"
 	quest.6A0D000000000005.quest_desc: [
-		"Point a froglight farm at the Quantum Compressor and wait. &bOne Singularity&r is proof one"
+		"Point a froglight farm at the Quantum Compressor and wait. A thousand Froglights fold into one"
 		""
-		"species runs itself. Five to go."
+		"&bFroglight Singularity&r - the proof your farm runs itself, not your hands."
 	]
-	quest.6A0D000000000005.quest_subtitle: "One species, automated."
+	quest.6A0D000000000005.quest_subtitle: "A thousand froglights, one cube."
 	quest.6A0D000000000005.title: "Your First Singularity"
 	quest.6A0D000000000008.quest_desc: [
-		"One Singularity per species - &eiron, diamond, clay, prismarine, netherite, ender&r - combine"
+		"Crystallize your Froglight Singularity in the Ultimate Table into the &dUltimate Singularity&r -"
 		""
-		"in the Ultimate Table into the &dUltimate Singularity&r. Every frog you own, compressed to a point."
+		"the densest form of everything your frogs ever made."
 	]
-	quest.6A0D000000000008.quest_subtitle: "All six, in one."
+	quest.6A0D000000000008.quest_subtitle: "The densest frog there is."
 	quest.6A0D000000000008.title: "The Ultimate Singularity"
 	quest.6A0D00000000000B.quest_desc: [
-		"The Ultimate Singularity already holds all six species. Set it in the Ultimate Table, ring it"
+		"Set the Ultimate Singularity in the Ultimate Table, ring it with Froglights, and craft the"
 		""
-		"with Froglights, and craft the &aSky Frogs Master Frog&r. It does nothing. It is everything."
+		"&aSky Frogs Master Frog&r. It does nothing. It is everything."
 	]
 	quest.6A0D00000000000B.quest_subtitle: "The trophy at the end of the pond."
 	quest.6A0D00000000000B.title: "The Sky Frogs Master Frog"

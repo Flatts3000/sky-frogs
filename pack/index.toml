@@ -30,31 +30,11 @@ hash = "2c822b0ecab94471171ceb4c3bb79cb4e3f3a894bdb914421807534688ff88a2"
 
 [[files]]
 file = "config/extendedcrafting/singularities/README.md"
-hash = "66a99e147d4fb6d7a2b7d5ffcf234f7b6793972243a485f064ea82e0b9559955"
+hash = "54ddfc988d1583d84be02572fe622289c821a932d3a41a2a241a723dc8f24f8b"
 
 [[files]]
-file = "config/extendedcrafting/singularities/clay.json"
-hash = "ab14e7587f1d55edad37f5021f718b1779fd7092c41d346772d4eb57ec127e5f"
-
-[[files]]
-file = "config/extendedcrafting/singularities/diamond.json"
-hash = "d91223e587816f258a7db68adfd2fac7ad112a9f5c2a834b4ed0bdc026e53215"
-
-[[files]]
-file = "config/extendedcrafting/singularities/ender_pearl.json"
-hash = "0109729c3713d4662774a050af4c690f13884e3adc839360d75a3f39a1beb8a9"
-
-[[files]]
-file = "config/extendedcrafting/singularities/iron.json"
-hash = "31b802e073f1d838f7cd1fad3a0e5cf52c396f268e4bd79f97020697d204774a"
-
-[[files]]
-file = "config/extendedcrafting/singularities/netherite.json"
-hash = "df6e7a6e80e8c9f6ca0ca927e10d4507951fc7ee882bb385d3a06c1211474aac"
-
-[[files]]
-file = "config/extendedcrafting/singularities/prismarine.json"
-hash = "c8c2888afbb4534804f97d1b2b05466c3abff15276b61c4fcddc94ebc03ddb2b"
+file = "config/extendedcrafting/singularities/froglight.json"
+hash = "d6dc2fb19d08ea7156302dac4ff9039403c746ad2343179d22562748234cb86b"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
@@ -150,7 +130,7 @@ hash = "2e69afacf774749222ca1e925dc94d32e6c3db8bef4557aa33144751c2770206"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "d551864ea6279c8ea3501eb003e7935d8cb19b2e5ef743a4288c3c10bdb36b22"
+hash = "dd276a6e4d13de9ee39a694846b673c0d8e0c07ab11150fcd227ed5a7f52dfb8"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
@@ -218,7 +198,7 @@ hash = "0fdbebfaceb8b88bc78fcbe8abe8d6bfb27c0f8f10838e08e900cce1fc6a6911"
 
 [[files]]
 file = "kubejs/assets/extendedcrafting/lang/en_us.json"
-hash = "cfa4235cec0eb1853c783d5fc53374fe641d1653037065e288c6409330ebc177"
+hash = "e72d995ac9c072d717ca4d362204ced79dc42bf70fbff43a0c0d015aefbf87ad"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/master_frog.png"
