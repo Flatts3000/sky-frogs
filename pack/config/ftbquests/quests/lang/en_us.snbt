@@ -933,7 +933,7 @@
 	quest.5140000000000002.quest_desc: [
 		"There's no Nether to raid, they said. There is now - you just have to build the door. Make"
 		""
-		"14 &eobsidian&r for a 4x5 frame, craft a &eflint and steel&r, and raise the portal. The void Nether waits beyond."
+		"10 &eobsidian&r for a portal frame (skip the corners), craft a &eflint and steel&r, and raise it. The void Nether waits beyond."
 	]
 	quest.5140000000000002.quest_subtitle: "Tide gave you wings. Now use them."
 	quest.5140000000000002.title: "A Portal to the Nether"
