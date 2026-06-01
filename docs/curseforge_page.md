@@ -53,8 +53,8 @@ By the end of a session, iron is a frog's problem, not yours. The book drives th
 | 1    | Cave     | The ores: iron, copper, gold, coal, redstone                        |
 | 2    | Geode    | Gems & crystals: lapis, tuff, calcite, amethyst, emerald, diamond   |
 | 3    | Bog      | Organics: dirt, moss, clay, mycelium, leather, feather, plus plastic & pink slime |
-| 4    | Tide     | The ocean's haul: prismarine, sponge, ink                           |
-| 5    | Infernal | The Nether: blaze, quartz, glowstone, netherite                     |
+| 4    | Tide     | The ocean's haul: prismarine, sponge, sea pickles, nautilus shells (and jetpacks) |
+| 5    | Infernal | The Nether, earned by one real fortress trip: quartz, glowstone, blaze, netherite |
 | 6    | Void     | The End & endgame: ender pearls, chorus, shulker shells             |
 
 Each tier extends with modded resources as those mods ship in the pack. Endgame: stack up your late-game Froglights into singularities, then into the **Sky Frogs Master Frog** - a creative trophy that says you out-frogged the game.
