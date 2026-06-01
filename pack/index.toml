@@ -25,8 +25,40 @@ file = "config/exdeorum-server.toml"
 hash = "a9029472f7a7435e2f54c4827589a0dabca28e522fb1fa6257a814cdf83d64f1"
 
 [[files]]
+file = "config/extendedcrafting-common.toml"
+hash = "2c822b0ecab94471171ceb4c3bb79cb4e3f3a894bdb914421807534688ff88a2"
+
+[[files]]
+file = "config/extendedcrafting/singularities/README.md"
+hash = "66a99e147d4fb6d7a2b7d5ffcf234f7b6793972243a485f064ea82e0b9559955"
+
+[[files]]
+file = "config/extendedcrafting/singularities/clay.json"
+hash = "ab14e7587f1d55edad37f5021f718b1779fd7092c41d346772d4eb57ec127e5f"
+
+[[files]]
+file = "config/extendedcrafting/singularities/diamond.json"
+hash = "d91223e587816f258a7db68adfd2fac7ad112a9f5c2a834b4ed0bdc026e53215"
+
+[[files]]
+file = "config/extendedcrafting/singularities/ender_pearl.json"
+hash = "0109729c3713d4662774a050af4c690f13884e3adc839360d75a3f39a1beb8a9"
+
+[[files]]
+file = "config/extendedcrafting/singularities/iron.json"
+hash = "31b802e073f1d838f7cd1fad3a0e5cf52c396f268e4bd79f97020697d204774a"
+
+[[files]]
+file = "config/extendedcrafting/singularities/netherite.json"
+hash = "df6e7a6e80e8c9f6ca0ca927e10d4507951fc7ee882bb385d3a06c1211474aac"
+
+[[files]]
+file = "config/extendedcrafting/singularities/prismarine.json"
+hash = "c8c2888afbb4534804f97d1b2b05466c3abff15276b61c4fcddc94ebc03ddb2b"
+
+[[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "4ddbc67227bc43e9368ad9a52e370af19a367601231ec1dd4af9c75cfe280177"
+hash = "df445ffea5b103d5c372e233a3afe5e7538c40c54c886246cf0c7de7301de4b7"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/bog_frogs.snbt"
@@ -49,6 +81,10 @@ file = "config/ftbquests/quests/chapters/infernal_frogs.snbt"
 hash = "7cf5e8074d6d11e044a0688c596c4a2ffb36552e669b2ccff2593d062f36b4f6"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/master_pond.snbt"
+hash = "4a64ba59342a635437c0a88b54df1aae1fe3d9b7ebe725e5d94afb39f5316989"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/mekanism.snbt"
 hash = "9c91a775a9afc6b27caff8330351ab74d8261577ec3a0164179de7d13df193ca"
 
@@ -69,6 +105,10 @@ file = "config/ftbquests/quests/chapters/road_to_tide.snbt"
 hash = "bb94f55d7b7bc2e4aa85e26b1da33cd05bb102433e727adcab8864b7c6fc7603"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/road_to_void.snbt"
+hash = "be77e856661b4be9a009c9b5851e2666bea6ab48189d2309ca32faffe6dad2ab"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/scaling_the_colony.snbt"
 hash = "01e3daf039dfc3825421110e6b725a231d1800991a7db361549309424070cc42"
 
@@ -85,8 +125,16 @@ file = "config/ftbquests/quests/chapters/the_network.snbt"
 hash = "fb08b45462b0d6160d8429bea1ccea3a3b36cfdb1c3183c3810b794b389e29d7"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/the_ultimate_table.snbt"
+hash = "ddb84f735246b1274a7fc2742b48d7f1b7dee36125bbc3002cb3d3101ef7695e"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/tools_and_things.snbt"
 hash = "39e9f83466356e54d1c99bb72debb8b3370b787273f8ce3cd23115a9dbaaafec"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/void_frogs.snbt"
+hash = "60ba3c990a63c8055a7a400613febaf1f32c8ce7376c53830b40f15ee2fb96a9"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
@@ -102,7 +150,7 @@ hash = "2e69afacf774749222ca1e925dc94d32e6c3db8bef4557aa33144751c2770206"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "842434e205466f14766bc951b3eaf4c028d9a5b297c1dc5d9f9418e220c9a1f6"
+hash = "ee45dc6c3403fe06552ddb4bb7980a0c5dc008dfecc5f91c7a76a0568284b0c4"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
@@ -127,6 +175,10 @@ hash = "1a21e7eb11d4423609df4555f53d31cf1ae055d45555f6f165d89f7dbd67ccc7"
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F5E000000000001.snbt"
 hash = "68771e78998f48e12c61fa63cf56a1e90865d224d7e4384b822a2d3f687abb2d"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/7F60000000000001.snbt"
+hash = "4aa4170ba30c9aea7358dafdb637afab38f5a49e7a7798838d9222f0121ce66c"
 
 [[files]]
 file = "config/productivefrogs-common.toml"
@@ -159,6 +211,14 @@ hash = "7d8bd1b950b7c740f805a5f0bf4d9c742882556bf60c42f257da7c40a7402ffe"
 [[files]]
 file = "icon.png"
 hash = "0fdbebfaceb8b88bc78fcbe8abe8d6bfb27c0f8f10838e08e900cce1fc6a6911"
+
+[[files]]
+file = "kubejs/assets/extendedcrafting/lang/en_us.json"
+hash = "cfa4235cec0eb1853c783d5fc53374fe641d1653037065e288c6409330ebc177"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/master_frog.png"
+hash = "0d3cc76779315ec45b9b240837bb6753cc9bdec57e13a88bb4d948132f7a80b5"
 
 [[files]]
 file = "kubejs/data/productivefrogs/neoforge/biome_modifier/add_bog_slime_spawn.json"
@@ -205,6 +265,10 @@ file = "kubejs/data/productivefrogs/tags/item/spawnery_primer/tide.json"
 hash = "0b7812099b96fcaa412f2a15d4ab9a432d0e617461671c48e91dc031b45512cc"
 
 [[files]]
+file = "kubejs/data/productivefrogs/tags/item/spawnery_primer/void.json"
+hash = "42d8057fd56d926e1cdacbc98c5b42a195823b5b0b79316f5f6666339c04e094"
+
+[[files]]
 file = "kubejs/data/skyfrogs/neoforge/biome_modifier/add_cave_slime_island.json"
 hash = "7b229ff45dfddb7a42fc5d7bd6cb33bdca7b2b3edd6dabc721ad79d321eeeb54"
 
@@ -226,7 +290,7 @@ hash = "5988e55c01cba66280a66eeb2c68d3d13451e6ac1b5848f54217720bb34946d7"
 
 [[files]]
 file = "kubejs/server_scripts/dissolution_slime_recipes.js"
-hash = "e544d9fca3efd143136443d96a39931b05887fe99cfa148311692fb56eaf2f4a"
+hash = "3b272ef696c469aeb3b382c2ce27d8184fe564d1c49ad2e44065146ac2f68bc3"
 
 [[files]]
 file = "kubejs/server_scripts/dump_items.js"
@@ -271,6 +335,14 @@ hash = "e1786b8cf0582208c9802eef75825c418bac0dd9b0d472ccee6e6ee5f50a81ba"
 [[files]]
 file = "kubejs/server_scripts/storage_quartz_free.js"
 hash = "2b6735fc64ee708364b30526b4d5d7b703cfc80e624eb8f6f2098f6a0b2b192d"
+
+[[files]]
+file = "kubejs/server_scripts/void_recipes.js"
+hash = "8ef16166f7bcf69343e01c72f76882cbc281d0f159b99357aaa369a999b7cb17"
+
+[[files]]
+file = "kubejs/startup_scripts/master_frog_item.js"
+hash = "efaf1e4217483b187eee73db0a49058b5fdbe1c317adb6a21b40752bfb23baef"
 
 [[files]]
 file = "kubejs/startup_scripts/milk_bucket_no_remainder.js"

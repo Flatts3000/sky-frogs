@@ -975,4 +975,199 @@
 	]
 	quest.5140000000000016.quest_subtitle: "Tier 5 opens."
 	quest.5140000000000016.title: "First Netherrack"
+	chapter_group.0C4F0E0000000006.title: "Tier 6: Void"
+	chapter.601D000000000001.title: "Road to the Void"
+	chapter.60F0000000000001.title: "Void Frogs"
+	chapter.6EC0000000000001.title: "The Ultimate Table"
+	chapter.6A0D000000000001.title: "Master Pond"
+	quest.601D000000000002.quest_desc: [
+		"The End is out there, past the void. To reach it you need &eEnder Pearls&r - and out here,"
+		""
+		"&dEndermen&r spawn in full darkness. Wall off a dark room (or hunt the Nether's warped forest) and gather &e12&r."
+	]
+	quest.601D000000000002.quest_subtitle: "The void wants a key."
+	quest.601D000000000002.title: "Pearls from the Dark"
+	quest.601D000000000005.quest_desc: [
+		"Pearls plus &cBlaze Powder&r - your Infernal frog already makes the powder - become &aEyes of Ender&r."
+		""
+		"Craft &a12&r, one per portal frame."
+	]
+	quest.601D000000000005.quest_subtitle: "Pearl plus powder."
+	quest.601D000000000005.title: "Eyes of Ender"
+	quest.601D000000000008.quest_desc: [
+		"No stronghold floats in the void, so there is no portal to find. Build your own: &eglowstone&r"
+		""
+		"and &esoul sand&r press into &5End Portal Frames&r. You need &e12&r to ring the portal."
+	]
+	quest.601D000000000008.quest_subtitle: "If the world won't give you a portal, make one."
+	quest.601D000000000008.title: "Frame the Void"
+	quest.601D00000000000B.quest_desc: [
+		"Set the 12 frames in a ring, drop an Eye of Ender into each, and the portal tears open."
+		""
+		"Step through. Mind the drop on the far side."
+	]
+	quest.601D00000000000B.quest_subtitle: "Step off the edge of the world."
+	quest.601D00000000000B.title: "Into the End"
+	quest.601D00000000000E.quest_desc: [
+		"The &5Ender Dragon&r guards the central island. This is the fight the whole pack has been"
+		""
+		"walking toward. Bring beds, bring jetpacks, bring patience - then put it down."
+	]
+	quest.601D00000000000E.quest_subtitle: "The fight the pack was walking toward."
+	quest.601D00000000000E.title: "Slay the Dragon"
+	quest.601D000000000011.quest_desc: [
+		"&eEnder Pearl&r primes the Spawnery for &5Void&r slimes. Raise a Void frog and let it lay."
+		""
+		"Turn in a &bBottle of Void Frog Frogspawn&r."
+	]
+	quest.601D000000000011.quest_subtitle: "The last species."
+	quest.601D000000000011.title: "Void Frogspawn"
+	quest.601D000000000014.quest_desc: [
+		"Catch an &5Ender Pearl Slime&r in a bucket - the seed of the Void milk chain."
+		""
+		"(The Dissolution Chamber makes these too, if you would rather automate it.)"
+	]
+	quest.601D000000000014.quest_subtitle: "Bottle the void."
+	quest.601D000000000014.title: "A Bucket of Ender Pearl Slime"
+	quest.601D000000000017.quest_desc: [
+		"Run the slime through the Slime Milker for a &bBucket of Ender Pearl Slime Milk&r - the food"
+		""
+		"that turns a frog's light into &eender pearls&r."
+	]
+	quest.601D000000000017.quest_subtitle: "One more bucket."
+	quest.601D000000000017.title: "Milk It"
+	quest.601D00000000001A.quest_desc: [
+		"Feed the milk, take the &bEnder Pearl Froglight&r, and the &5Void&r frog is yours."
+		""
+		"Tier 6 opens - the last species, and the road to the endgame."
+	]
+	quest.601D00000000001A.quest_subtitle: "Tier 6 opens."
+	quest.601D00000000001A.title: "First Ender Pearl"
+	quest.60F0000000000002.quest_desc: [
+		"Ender pearls were just the doorway. The &5Void&r frog hands you the whole End:"
+		""
+		"end stone, chorus, echo shards, sculk, and the shells the shulkers leave behind."
+	]
+	quest.60F0000000000002.quest_subtitle: "The End, on tap."
+	quest.60F0000000000002.title: "Beyond the Pearl"
+	quest.60F0000000000005.quest_desc: [
+		"&eEnd Stone&r - the ground of the outer islands, now a frog's job. Turn in the &bEnd Stone Froglight&r."
+	]
+	quest.60F0000000000005.quest_subtitle: "Pale and endless."
+	quest.60F0000000000005.title: "End Stone"
+	quest.60F0000000000008.quest_desc: [
+		"&dChorus Fruit&r - teleport snacks, and popped chorus for purpur. Turn in the &bChorus Froglight&r."
+	]
+	quest.60F0000000000008.quest_subtitle: "A fruit that moves you."
+	quest.60F0000000000008.title: "Chorus Fruit"
+	quest.60F000000000000B.quest_desc: [
+		"&3Echo Shards&r - recovery compasses, straight from the frog instead of the deep dark."
+		""
+		"Turn in the &bEcho Shard Froglight&r."
+	]
+	quest.60F000000000000B.quest_subtitle: "The deep dark, skipped."
+	quest.60F000000000000B.title: "Echo Shard"
+	quest.60F000000000000E.quest_desc: [
+		"&3Sculk&r - XP blocks and redstone-by-sound. Turn in the &bSculk Froglight&r."
+	]
+	quest.60F000000000000E.quest_subtitle: "It listens."
+	quest.60F000000000000E.title: "Sculk"
+	quest.60F0000000000011.quest_desc: [
+		"&dShulker Shells&r - shulker boxes, the only portable storage that survives the void."
+		""
+		"No shulker hunt required. Turn in the &bShulker Shell Froglight&r."
+	]
+	quest.60F0000000000011.quest_subtitle: "Boxes that come with you."
+	quest.60F0000000000011.title: "Shulker Shell"
+	quest.6EC0000000000002.quest_desc: [
+		"The endgame's crafting spine is &6Extended Crafting&r. It starts plain: iron plus black dye"
+		""
+		"(your Tide frog's ink) makes &7Black Iron&r. Everything here builds from it."
+	]
+	quest.6EC0000000000002.quest_subtitle: "Iron, dyed for greater things."
+	quest.6EC0000000000002.title: "Black Iron"
+	quest.6EC0000000000005.quest_desc: [
+		"&eGlowstone, redstone, and gunpowder&r fuse into &eLuminessence&r - the spark inside every"
+		""
+		"Extended Crafting component. Make some; you will need a lot."
+	]
+	quest.6EC0000000000005.quest_subtitle: "The spark in the machine."
+	quest.6EC0000000000005.title: "Luminessence"
+	quest.6EC0000000000008.quest_desc: [
+		"A &63x3&r table that eats the Luminessence components. The first rung of the ladder."
+		""
+		"Craft the &6Basic Table&r."
+	]
+	quest.6EC0000000000008.quest_subtitle: "Bigger than a workbench, barely."
+	quest.6EC0000000000008.title: "The Basic Table"
+	quest.6EC000000000000B.quest_desc: [
+		"&65x5&r now. Feed it a gold block and the basic table. Craft the &6Advanced Table&r."
+	]
+	quest.6EC000000000000B.quest_subtitle: "Five by five."
+	quest.6EC000000000000B.title: "The Advanced Table"
+	quest.6EC000000000000E.quest_desc: [
+		"&67x7&r, built on a diamond block. Craft the &6Elite Table&r."
+	]
+	quest.6EC000000000000E.quest_subtitle: "Seven by seven."
+	quest.6EC000000000000E.title: "The Elite Table"
+	quest.6EC0000000000011.quest_desc: [
+		"&69x9&r, crowned with an emerald block. The biggest grid in the pack, and the only one that"
+		""
+		"can craft a Master Frog. Build the &6Ultimate Table&r."
+	]
+	quest.6EC0000000000011.quest_subtitle: "Nine by nine. The big one."
+	quest.6EC0000000000011.title: "The Ultimate Table"
+	quest.6EC0000000000014.quest_desc: [
+		"The &dUltimate Catalyst&r is what the Quantum Compressor burns to fold thousands of items"
+		""
+		"into one. Craft one to feed the compressor."
+	]
+	quest.6EC0000000000014.quest_subtitle: "Fuel for the fold."
+	quest.6EC0000000000014.title: "The Ultimate Catalyst"
+	quest.6EC0000000000017.quest_desc: [
+		"The &dQuantum Compressor&r presses a thousand Froglights into a single &bSingularity&r. It runs"
+		""
+		"on power - wire it to your Mekanism grid. Build it; the endgame starts here."
+	]
+	quest.6EC0000000000017.quest_subtitle: "A thousand froglights, one cube."
+	quest.6EC0000000000017.title: "The Quantum Compressor"
+	quest.6A0D000000000002.quest_desc: [
+		"You have cleared the dragon and built the compressor. One task remains: prove you automated"
+		""
+		"&aevery&r frog. A Singularity takes a thousand Froglights - you cannot hand-make that. Only a"
+		""
+		"running farm can. Six farms, six Singularities, one trophy."
+	]
+	quest.6A0D000000000002.quest_subtitle: "Prove you automated every frog."
+	quest.6A0D000000000002.title: "The Long Compression"
+	quest.6A0D000000000005.quest_desc: [
+		"Point a froglight farm at the Quantum Compressor and wait. &bOne Singularity&r is proof one"
+		""
+		"species runs itself. Five to go."
+	]
+	quest.6A0D000000000005.quest_subtitle: "One species, automated."
+	quest.6A0D000000000005.title: "Your First Singularity"
+	quest.6A0D000000000008.quest_desc: [
+		"One Singularity per species - &eiron, diamond, clay, prismarine, netherite, ender&r - combine"
+		""
+		"in the Ultimate Table into the &dUltimate Singularity&r. Every frog you own, compressed to a point."
+	]
+	quest.6A0D000000000008.quest_subtitle: "All six, in one."
+	quest.6A0D000000000008.title: "The Ultimate Singularity"
+	quest.6A0D00000000000B.quest_desc: [
+		"Ring the Ultimate Singularity with the six species' Froglights and craft the"
+		""
+		"&aSky Frogs Master Frog&r. It does nothing. It is everything."
+	]
+	quest.6A0D00000000000B.quest_subtitle: "The trophy at the end of the pond."
+	quest.6A0D00000000000B.title: "The Sky Frogs Master Frog"
+	quest.6A0D00000000000E.quest_desc: [
+		"Set it on a shelf. You started on a speck of dirt with a bottle of frogspawn, and you turned"
+		""
+		"frogs into the entire world - ore, gem, bog, ocean, nether, and void."
+		""
+		"There is nothing left to mine. Thanks for playing Sky Frogs."
+	]
+	quest.6A0D00000000000E.quest_subtitle: "Thanks for playing."
+	quest.6A0D00000000000E.title: "You Out-Frogged the Game"
 }
