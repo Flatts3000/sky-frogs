@@ -62,7 +62,7 @@ hash = "f44b1bfb021cf2b0d003d016b8af40e53f11f734a4335cbf4dc92164c4ba865d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_infernal.snbt"
-hash = "2eec7b848679c9e2424558101ca952690f4cb0a0013e88373708b1584b05af45"
+hash = "e45a9aec50011dc5d0d1eb6b8c1af89b4eb1d888716f738ef41ff01a8ba9e6c0"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_tide.snbt"
@@ -102,7 +102,7 @@ hash = "2e69afacf774749222ca1e925dc94d32e6c3db8bef4557aa33144751c2770206"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "41e19286a2202a6ff8ce7f5f037cd9fb358ca384b144bee174926a73193d5aef"
+hash = "f5ccab7abdc09bbd59cb306fcafbf42685de384a9dd675c7e7918f8973c3b9b6"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
