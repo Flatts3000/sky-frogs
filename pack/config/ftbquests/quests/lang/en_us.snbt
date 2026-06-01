@@ -1155,9 +1155,9 @@
 	quest.6A0D000000000008.quest_subtitle: "All six, in one."
 	quest.6A0D000000000008.title: "The Ultimate Singularity"
 	quest.6A0D00000000000B.quest_desc: [
-		"Ring the Ultimate Singularity with the six species' Froglights and craft the"
+		"The Ultimate Singularity already holds all six species. Set it in the Ultimate Table, ring it"
 		""
-		"&aSky Frogs Master Frog&r. It does nothing. It is everything."
+		"with Froglights, and craft the &aSky Frogs Master Frog&r. It does nothing. It is everything."
 	]
 	quest.6A0D00000000000B.quest_subtitle: "The trophy at the end of the pond."
 	quest.6A0D00000000000B.title: "The Sky Frogs Master Frog"
