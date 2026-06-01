@@ -1002,11 +1002,17 @@
 	quest.601D000000000008.quest_subtitle: "If the world won't give you a portal, make one."
 	quest.601D000000000008.title: "Frame the Void"
 	quest.601D00000000000B.quest_desc: [
-		"Set the 12 frames in a ring, drop an Eye of Ender into each, and the portal tears open."
+		"No stronghold floats in the void, so build the portal by hand. Lay the 12 frames in a square -"
 		""
-		"Step through. Mind the drop on the far side."
+		"three to a side - ringing an empty &e3x3&r hole. &lStand inside the hole as you place each frame&r so"
+		""
+		"it faces inward (the green eye-socket points back at you); a frame facing the wrong way won't light."
+		""
+		"Then right-click an &aEye of Ender&r into all 12 sockets. The twelfth eye tears the portal open."
+		""
+		"Jump in - you'll land on an obsidian platform beside the central island. Mind the drop."
 	]
-	quest.601D00000000000B.quest_subtitle: "Step off the edge of the world."
+	quest.601D00000000000B.quest_subtitle: "Build the portal the world won't give you."
 	quest.601D00000000000B.title: "Into the End"
 	quest.601D00000000000E.quest_desc: [
 		"The &5Ender Dragon&r guards the central island. This is the fight the whole pack has been"
