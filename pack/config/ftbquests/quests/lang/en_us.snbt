@@ -837,32 +837,6 @@
 	chapter_group.0C4F0E0000000005.title: "Tier 5: Infernal"
 	chapter.5140000000000001.title: "Road to Infernal"
 	chapter.51F0000000000001.title: "Infernal Frogs"
-	quest.5140000000000002.quest_desc: [
-		"The &cInfernal frog&r is how you reach the Nether without one. Prime the &eSpawnery&r with a"
-		""
-		"&bNautilus Shell&r - the last thing the Tide gave you - to draw an &cInfernal Frogspawn&r."
-	]
-	quest.5140000000000002.quest_subtitle: "No nether? No problem."
-	quest.5140000000000002.title: "The Road to Infernal"
-	quest.5140000000000005.quest_desc: [
-		"Same &eDissolution Chamber&r you built for the Tide. Feed it a &bNautilus Shell&r and"
-		""
-		"&eprismarine&r filler to get a &cNetherrack Slime in a Bucket&r."
-	]
-	quest.5140000000000005.quest_subtitle: "The chamber's first hellish brew."
-	quest.5140000000000005.title: "A Bucket of Netherrack Slime"
-	quest.5140000000000008.quest_desc: [
-		"Pour the slime into a &eSlime Milker&r. &cNetherrack Slime Milk&r spawns Netherrack Slimes for the frog to eat."
-	]
-	quest.5140000000000008.quest_subtitle: "Netherrack Slime Milk."
-	quest.5140000000000008.title: "Milk It"
-	quest.514000000000000B.quest_desc: [
-		"Your Infernal frog eats a Netherrack Slime and leaves a &bNetherrack Froglight&r. Smelt it for"
-		""
-		"&cnetherrack&r - the bedrock of everything nether. The Infernal chain is yours."
-	]
-	quest.514000000000000B.quest_subtitle: "Tier 5 opens."
-	quest.514000000000000B.title: "First Netherrack"
 	quest.51F0000000000002.quest_desc: [
 		"Netherrack was just the floor. Now the &cInfernal&r frog gives you everything the Nether was hiding:"
 		""
@@ -956,4 +930,49 @@
 	]
 	quest.52E000000000001C.quest_subtitle: "Ask, and it builds."
 	quest.52E000000000001C.title: "Autocrafting"
+	quest.5140000000000002.quest_desc: [
+		"There's no Nether to raid, they said. There is now - you just have to build the door. Here's"
+		""
+		"&eobsidian&r for a 4x5 frame and a flint and steel to light it. The void Nether waits beyond."
+	]
+	quest.5140000000000002.quest_subtitle: "Tide gave you wings. Now use them."
+	quest.5140000000000002.title: "A Portal to the Nether"
+	quest.5140000000000007.quest_desc: [
+		"Light the portal and walk in. The Nether here is a &cvoid&r - no floor, no ceiling, just dark and your jetpack. Fly."
+	]
+	quest.5140000000000007.quest_subtitle: "Step through."
+	quest.5140000000000007.title: "Into the Nether"
+	quest.514000000000000A.quest_desc: [
+		"Somewhere out in the dark a &cNether Fortress&r floats. Find it, fly to it, mine its &enether brick&r -"
+		""
+		"the only thing the void Nether hands out, and the key to the Infernal frog."
+	]
+	quest.514000000000000A.quest_subtitle: "The one thing you can't make yet."
+	quest.514000000000000A.title: "Raid a Fortress"
+	quest.514000000000000D.quest_desc: [
+		"Home again. Prime the &eSpawnery&r with a &eNether Brick&r and it draws an &cInfernal Frogspawn&r."
+		""
+		"The fortress trip was the toll; the frog automates the rest."
+	]
+	quest.514000000000000D.quest_subtitle: "Feed the brick to the Spawnery."
+	quest.514000000000000D.title: "Infernal Frogspawn"
+	quest.5140000000000010.quest_desc: [
+		"Same &eDissolution Chamber&r from the Tide. Feed it a &bNautilus Shell&r and &eprismarine&r filler"
+		""
+		"for a &cNetherrack Slime in a Bucket&r."
+	]
+	quest.5140000000000010.quest_subtitle: "The chamber's first hellish brew."
+	quest.5140000000000010.title: "A Bucket of Netherrack Slime"
+	quest.5140000000000013.quest_desc: [
+		"Pour the slime into a &eSlime Milker&r. &cNetherrack Slime Milk&r spawns Netherrack Slimes for the frog."
+	]
+	quest.5140000000000013.quest_subtitle: "Netherrack Slime Milk."
+	quest.5140000000000013.title: "Milk It"
+	quest.5140000000000016.quest_desc: [
+		"Your Infernal frog eats a Netherrack Slime and leaves a &bNetherrack Froglight&r. Smelt it for"
+		""
+		"&cnetherrack&r. From here the frog gives you the whole Nether - no more portal trips."
+	]
+	quest.5140000000000016.quest_subtitle: "Tier 5 opens."
+	quest.5140000000000016.title: "First Netherrack"
 }

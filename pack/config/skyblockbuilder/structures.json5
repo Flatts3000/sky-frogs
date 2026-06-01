@@ -1,0 +1,26 @@
+{
+  // Vanilla features SkyblockBuilder should generate in its void dimensions.
+  // The two end entries are required for the End's obsidian towers (dragon respawn).
+  // (Resource list; full options at config/skyblockbuilder/data/features.txt on load.)
+  "featuresToGenerate": {
+    "allow_list": true,
+    "elements": [
+      "minecraft:end_spike",
+      "minecraft:end_gateway_return"
+    ]
+  },
+
+  // Vanilla structures SkyblockBuilder should generate in its void dimensions.
+  // SKY FROGS: nether fortress + bastion are enabled so the Tier 5 (Infernal) gate
+  // works - the player flies the void Nether (jetpacks, the Tide verb) to a floating
+  // fortress and mines nether brick, the Infernal Spawnery primer. Without this whitelist
+  // SkyblockBuilder generates no structures at all (matches ATM10-To-the-Sky's config).
+  // (Resource list; full options at config/skyblockbuilder/data/structures.txt on load.)
+  "structuresToGenerate": {
+    "allow_list": true,
+    "elements": [
+      "minecraft:fortress",
+      "minecraft:bastion_remnant"
+    ]
+  }
+}

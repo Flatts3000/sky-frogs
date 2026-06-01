@@ -5,7 +5,7 @@
 	filename: "road_to_infernal"
 	group: "0C4F0E0000000005"
 	icon: {
-		id: "minecraft:netherrack"
+		id: "minecraft:nether_bricks"
 	}
 	id: "5140000000000001"
 	order_index: 0
@@ -14,30 +14,112 @@
 		{
 			dependencies: ["7D00000000000011"]
 			icon: {
-				components: {
-					"productivefrogs:contained_category": "infernal"
-				}
-				id: "productivefrogs:frog_egg"
+				id: "minecraft:obsidian"
 			}
 			id: "5140000000000002"
-			rewards: [{
-				exclude_from_claim_all: true
+			rewards: [
+			{
+				count: 14
 				id: "5140000000000004"
-				table_id: 9177773090627649537L
-				type: "loot"
-			}]
-			size: 1.5d
-			tasks: [{
-				id: "5140000000000003"
-				item: { components: { "productivefrogs:contained_category": "infernal" }, count: 1, id: "productivefrogs:frog_egg" }
-				match_components: "strict"
+				item: { count: 1, id: "minecraft:obsidian" }
 				type: "item"
-			}]
+			}
+			{
+				count: 1
+				id: "5140000000000005"
+				item: { count: 1, id: "minecraft:flint_and_steel" }
+				type: "item"
+			}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+			{
+				id: "5140000000000003"
+				type: "checkmark"
+			}
+			]
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["5140000000000002"]
+			icon: {
+				id: "minecraft:flint_and_steel"
+			}
+			id: "5140000000000007"
+			rewards: [
+			{
+				exclude_from_claim_all: true
+				id: "5140000000000009"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}
+			]
+			tasks: [
+			{
+				dimension: "minecraft:the_nether"
+				id: "5140000000000008"
+				type: "dimension"
+			}
+			]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5140000000000007"]
+			icon: {
+				id: "minecraft:nether_bricks"
+			}
+			id: "514000000000000A"
+			rewards: [
+			{
+				exclude_from_claim_all: true
+				id: "514000000000000C"
+				table_id: 9177773090627649537L
+				type: "loot"
+			}
+			]
+			tasks: [
+			{
+				id: "514000000000000B"
+				item: { count: 4, id: "minecraft:nether_bricks" }
+				type: "item"
+			}
+			]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["514000000000000A"]
+			icon: {
+				components: {
+					"productivefrogs:contained_category": "infernal"
+				}
+				id: "productivefrogs:frog_egg"
+			}
+			id: "514000000000000D"
+			rewards: [
+			{
+				exclude_from_claim_all: true
+				id: "514000000000000F"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}
+			]
+			tasks: [
+			{
+				id: "514000000000000E"
+				item: { components: { "productivefrogs:contained_category": "infernal" }, count: 1, id: "productivefrogs:frog_egg" }
+				match_components: "strict"
+				type: "item"
+			}
+			]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["514000000000000D"]
 			icon: {
 				components: {
 					"minecraft:bucket_entity_data": {
@@ -47,63 +129,76 @@
 				}
 				id: "productivefrogs:slime_bucket"
 			}
-			id: "5140000000000005"
-			rewards: [{
+			id: "5140000000000010"
+			rewards: [
+			{
 				exclude_from_claim_all: true
-				id: "5140000000000007"
+				id: "5140000000000012"
 				table_id: 9151543141235425281L
 				type: "loot"
-			}]
-			tasks: [{
-				id: "5140000000000006"
+			}
+			]
+			tasks: [
+			{
+				id: "5140000000000011"
 				item: { components: { "minecraft:bucket_entity_data": { Category: "INFERNAL", Variant: "productivefrogs:netherrack" } }, count: 1, id: "productivefrogs:slime_bucket" }
 				match_components: "strict"
 				type: "item"
-			}]
+			}
+			]
 			x: 0.0d
-			y: 1.5d
+			y: 6.0d
 		}
 		{
-			dependencies: ["5140000000000005"]
+			dependencies: ["5140000000000010"]
 			icon: {
 				id: "productivefrogs:netherrack_slime_milk_bucket"
 			}
-			id: "5140000000000008"
-			rewards: [{
+			id: "5140000000000013"
+			rewards: [
+			{
 				exclude_from_claim_all: true
-				id: "514000000000000A"
+				id: "5140000000000015"
 				table_id: 9151543141235425281L
 				type: "loot"
-			}]
-			tasks: [{
-				id: "5140000000000009"
+			}
+			]
+			tasks: [
+			{
+				id: "5140000000000014"
 				item: { count: 1, id: "productivefrogs:netherrack_slime_milk_bucket" }
 				type: "item"
-			}]
+			}
+			]
 			x: 0.0d
-			y: 3.0d
+			y: 7.5d
 		}
 		{
-			dependencies: ["5140000000000008"]
+			dependencies: ["5140000000000013"]
 			icon: {
 				id: "minecraft:netherrack"
 			}
-			id: "514000000000000B"
-			rewards: [{
+			id: "5140000000000016"
+			rewards: [
+			{
 				exclude_from_claim_all: true
-				id: "514000000000000D"
+				id: "5140000000000018"
 				table_id: 9177773090627649537L
 				type: "loot"
-			}]
+			}
+			]
+			shape: "hexagon"
 			size: 1.5d
-			tasks: [{
-				id: "514000000000000C"
+			tasks: [
+			{
+				id: "5140000000000017"
 				item: { components: { "productivefrogs:slime_variant": "productivefrogs:netherrack" }, count: 1, id: "productivefrogs:configurable_froglight" }
 				match_components: "strict"
 				type: "item"
-			}]
+			}
+			]
 			x: 0.0d
-			y: 4.5d
+			y: 9.0d
 		}
 	]
 }

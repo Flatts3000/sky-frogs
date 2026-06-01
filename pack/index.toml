@@ -46,7 +46,7 @@ hash = "ad642501aadd8ced3a65d7fd2bc33fa58abfab43ad54cf512f9416d5d2c70050"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/infernal_frogs.snbt"
-hash = "fd03027775e61a0ed7eddb9c1fd1f98803b4dffb9b1da973906f111d9d940406"
+hash = "7cf5e8074d6d11e044a0688c596c4a2ffb36552e669b2ccff2593d062f36b4f6"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/mekanism.snbt"
@@ -62,7 +62,7 @@ hash = "f44b1bfb021cf2b0d003d016b8af40e53f11f734a4335cbf4dc92164c4ba865d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_infernal.snbt"
-hash = "ec4c127603bcedbcbdc79b8bfe37035df3b03486bf57ed02ed8baf60df254ee3"
+hash = "2eec7b848679c9e2424558101ca952690f4cb0a0013e88373708b1584b05af45"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_tide.snbt"
@@ -102,7 +102,7 @@ hash = "2e69afacf774749222ca1e925dc94d32e6c3db8bef4557aa33144751c2770206"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "f73d23e59dd441ca14e847c8e6d47a0071da311fe72368529da354a8a98bebb7"
+hash = "41e19286a2202a6ff8ce7f5f037cd9fb358ca384b144bee174926a73193d5aef"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
@@ -135,6 +135,10 @@ hash = "62cc9815d8e8234d05376ecbada5301cf38ccc6bde048b41b5b75453366ac5c9"
 [[files]]
 file = "config/skyblockbuilder/starter_inventory.json5"
 hash = "e3171de74e0d9e52dd88c94d70380c320cd7b0e06c96ab3dbc962f828decdd93"
+
+[[files]]
+file = "config/skyblockbuilder/structures.json5"
+hash = "bd4e9295a38d369f004a944862813d08f5e50d7acef7f2385466ea4a361daebf"
 
 [[files]]
 file = "config/skyblockbuilder/templates.json5"
@@ -194,7 +198,7 @@ hash = "39a83486cb95a2b162d7b896e0f18f3591f822c483bdf66488c7a9145018ff30"
 
 [[files]]
 file = "kubejs/data/productivefrogs/tags/item/spawnery_primer/infernal.json"
-hash = "3348630c8081386c9dfd9ff9c4e9a3a27e85e83c7db4085a8a2a1f5851c42c13"
+hash = "645e801efd8f97bc7ad1b53b0648c2e816bf0f9534375976fabce0adeb3a3206"
 
 [[files]]
 file = "kubejs/data/productivefrogs/tags/item/spawnery_primer/tide.json"
