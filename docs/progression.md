@@ -1,6 +1,6 @@
 # Progression
 
-> **Status:** DRAFT. Tiers 0-5 (Welcome, Cave, Geode, Bog, Tide, Infernal) are built and live; only Tier 6 (Void) remains a sketch. The premise (frog species gate progress) and the order (Cave -> Geode -> Bog -> Tide -> Infernal -> Void) are settled; the Tier 6 resource list, gate, and playtime below are still a sketch.
+> **Status:** All six tiers (Welcome, Cave, Geode, Bog, Tide, Infernal, Void) are built and live, through the Master Pond endgame and the Sky Frogs Master Frog trophy. The premise (frog species gate progress) and the order (Cave -> Geode -> Bog -> Tide -> Infernal -> Void) are settled. The content campaign is complete; remaining work is balance, art (the Master Frog texture), and optional modded-variant expansion.
 >
 > **Version note:** the pack consumes **Productive Frogs v1.8.1** (organic Bog roster + Industrial Foregoing plastic/pink_slime variants, per-variant Slime Milk fluids/buckets that survive pipe automation, bottle-of-frogspawn, the four Slime Milk catalysts, and Slime Bucket fixes). The Tier 0-5 content described here is built against that pin and live in the pack. PF continues to publish to CurseForge gradually; the pack `packwiz update`s to newer PF as it clears.
 
@@ -18,7 +18,7 @@
 | 3    | **Bog**      | Organic & swamp: dirt -> mud -> clay_ball -> moss -> mycelium -> lily_pad -> leather -> feather -> plastic -> pink_slime (the last two are Industrial Foregoing items; IF is a hard pack dependency) |
 | 4    | **Tide**     | Aquatic: prismarine -> prismarine_crystals -> sponge -> ink_sac -> sea_pickle -> nautilus_shell (the built chain). |
 | 5    | **Infernal** | Nether: netherrack -> quartz -> glowstone -> soul_sand -> soul_soil -> blaze -> netherite_scrap (the built chain; netherite scrap is the endgame capstone). |
-| 6    | **Void**     | End & endgame: ender pearl, chorus fruit, shulker shell (+ modded endgame: nitro, mythril, orichalcum). *Sketch.* |
+| 6    | **Void**     | End & endgame: ender pearl, end stone, chorus fruit, echo shard, sculk, shulker shell. Earned by a one-time dragon expedition; ends in the Master Frog trophy. |
 
 Modded resources per tier are PF's conditional variants — they register only when the relevant mod ships in the pack, so the actual per-tier resource set tracks the Sky Frogs mod list.
 
@@ -35,6 +35,7 @@ Modded resources per tier are PF's conditional variants — they register only w
    - **Bog** = Just Dire Things' tier-1 progression (Primogel Goo -> Ferricore -> Fluid Collector -> Fluid Placer -> Item Collector) plus a Building Gadgets 2 side branch. Lives in `tools_and_things.snbt`. Mekanism RF from Geode powers the JDT machines.
    - **Tide** = **jetpacks (mobility)** - Iron Jetpacks' coil-tiered progression (basic/iron -> advanced/gold -> elite/diamond -> ultimate/emerald), charged with Geode-era Mekanism RF. Lives in `take_flight.snbt`. The first *mobility* verb - every prior verb was stationary, and a sprawling void island wants flight.
    - **Infernal** = **Refined Storage** (RS 2.0): the digital storage + autocrafting network. Lives in `the_network.snbt` - Quartz Enriched Iron -> Controller -> Grid -> Disk Drive -> External Storage -> Import/Export -> Crafting Grid -> Autocrafting. Naturally gated on nether quartz (RS parts need Quartz Enriched Iron), which only the Infernal frog produces.
+   - **Void** = **Extended Crafting** (the singularity endgame): black iron -> luminessence -> the tiered crafting tables (basic/advanced/elite/ultimate) -> the Quantum Compressor. Lives in `the_ultimate_table.snbt`. The compressor folds a thousand Froglights into one **Singularity** (per species), so it doubles as a proof-of-automation gate - you cannot hand-make the inputs. Six Singularities combine into the Ultimate Singularity, which crafts the **Master Frog** trophy (the `master_pond.snbt` endgame chapter).
 
 ## Tier transitions (the gate mechanic)
 
@@ -51,7 +52,7 @@ So: finish the **Cave** line at redstone → prime the Spawnery with redstone fo
 
 ### Per-tier filler blocks
 
-Each tier's slime-in-a-bucket seed-chain recipe spends **4 of a tier-themed filler block** per step. The constraint: a tier's filler must be mass-attainable *at that tier* (not gated behind a later tier). The same per-tier filler carries into the Dissolution Chamber slime recipes (Cave=stone, Geode=gravel, Bog=mossy cobblestone, Tide=mycelium, Infernal=prismarine, all live; Void filler picked when that tier ships).
+Each tier's slime-in-a-bucket seed-chain recipe spends **4 of a tier-themed filler block** per step. The constraint: a tier's filler must be mass-attainable *at that tier* (not gated behind a later tier). The same per-tier filler carries into the Dissolution Chamber slime recipes (Cave=stone, Geode=gravel, Bog=mossy cobblestone, Tide=mycelium, Infernal=prismarine, Void=soul soil, all live).
 
 | Tier | Filler block | Source |
 |------|--------------|--------|
@@ -60,8 +61,9 @@ Each tier's slime-in-a-bucket seed-chain recipe spends **4 of a tier-themed fill
 | Bog   | **mossy cobblestone** | crafted in Mekanism's Metallurgic Infuser / Enrichment Chamber (the Geode-era machines) |
 | Tide  | **mycelium** | a Bog chain resource, mass-renewable via the Bog frog loop by Tier 4 |
 | Infernal | **prismarine** | a Tide chain resource, mass-renewable via the Tide frog loop by Tier 5 |
+| Void  | **soul soil** | an Infernal chain resource, mass-renewable via the Infernal frog loop by Tier 6 |
 
-**Note on Tide's and Infernal's fillers:** Cave/Geode/Bog fillers are all plain non-resource blocks. Tide's mycelium (a Bog chain resource) and Infernal's prismarine (a Tide chain resource) are the exceptions: each reuses a *prior* tier's mass-renewable chain output. Safe because that resource is fully produced before the tier in question, so there's no circular dependency. For Infernal the obvious nether-themed pick, netherrack, would be circular (you'd need netherrack to make the first netherrack slime), so prismarine is used instead. Void's filler is TBD.
+**Note on Tide's, Infernal's, and Void's fillers:** Cave/Geode/Bog fillers are all plain non-resource blocks. Tide's mycelium (a Bog chain resource), Infernal's prismarine (a Tide chain resource), and Void's soul soil (an Infernal chain resource) are the exceptions: each reuses a *prior* tier's mass-renewable chain output. Safe because that resource is fully produced before the tier in question, so there's no circular dependency. For Infernal the obvious nether-themed pick, netherrack, would be circular (you'd need netherrack to make the first netherrack slime), so prismarine is used; for Void the same logic rules out end stone, so soul soil is used.
 
 ## The per-tier loop (same shape every tier)
 
@@ -141,17 +143,18 @@ Estimated playtime: **3–6 hours**.
 - Infernal Frogs + Infernal Slimes, Dissolution-Chamber only (filler = prismarine, a Tide resource - netherrack would be circular).
 - The roster: netherrack (in `road_to_infernal`), then quartz, glowstone, soul_sand, soul_soil, blaze, **netherite_scrap** in `infernal_frogs`. Netherite is the vanilla-endgame capstone (kept in Infernal, not deferred to Void).
 - **New verb:** **Refined Storage** (RS 2.0), the `the_network` chapter - the digital storage + autocrafting network (Quartz Enriched Iron -> Controller -> Grid -> Disk Drive -> External Storage -> Import/Export -> Crafting Grid -> Autocrafting). Gated on nether quartz, which only the Infernal frog produces.
-- **Gate to Tier 6:** TBD when Void ships.
+- **Gate to Tier 6:** the **dragon expedition** (the `road_to_void` gateway). Farm ender pearls from dark-room endermen, craft eyes of ender, and (since no stronghold generates on a void skyblock) craft a 12-frame End portal from frog-farmed glowstone + soul sand. Enter the End and slay the dragon. The Tide jetpack verb makes the void-island crossings feasible; the dragon kill gates the endgame.
 
 Estimated playtime: **6–10 hours**.
 
-## Tier 6 — Void (end & endgame)
+## Tier 6 — Void (end & endgame). Built.
 
-**Chapter:** *Void Mastery* + *The End*. Endgame.
+**Chapters:** *Road to the Void* (the dragon expedition gateway) + *Void Frogs* (the End resource chain) + *The Ultimate Table* (the Extended Crafting verb) + *Master Pond* (the singularity endgame). **Built.** The End without a stronghold, and a frog for every resource in the game.
 
-- Void Frogs + Void Slimes (crafted milk).
-- Infuse → Ender-Pearl/Chorus/Shulker Slimes (+ modded endgame materials).
-- **Endgame creative loop:** scale Froglights → Singularities (Extended Crafting) → Ultimate Singularity → a custom **Sky Frogs Master Frog** trophy. (Design TBD; see [`backlog.md`](./backlog.md).)
+- Void Frogs + Void Slimes, Dissolution-Chamber only (filler = soul soil, an Infernal resource - end stone would be circular).
+- The roster: **ender_pearl** (in `road_to_void`), then end_stone, chorus_fruit, echo_shard, sculk, **shulker_shell** in `void_frogs`. Six vanilla End variants; the modded Void variants (Powah / Mystical Agriculture / Mythic Metals) stay deferred until those mods join the pack.
+- **New verb:** **Extended Crafting**, the `the_ultimate_table` chapter - black iron -> luminessence -> basic/advanced/elite/ultimate tables -> the Quantum Compressor.
+- **Endgame (`master_pond`):** one **Singularity** per vanilla froglight resource - **40 in all** - each compressed in the Quantum Compressor from 1000 of that resource (a proof you automated *every* farm). Fold all 40 into the **Ultimate Singularity** -> the **Sky Frogs Master Frog** trophy + a closing epilogue. The Master Frog is a KubeJS-defined item (placeholder texture; final art is a backlog item). The 40 singularity JSONs are generated by `tools/gen_singularities.py` from PF's `slime_variant` data. (The compressor input is the smelted resource, not the Froglight directly: EC's singularity ingredient and the compressor's Cucumber input are both item/tag-only and cannot match a froglight's `slime_variant` component; on this skyblock the 40 resources have no source but their frog, so each singularity is still froglight-gated.)
 
 Estimated playtime: **15+ hours** to fully clear.
 
@@ -170,7 +173,6 @@ For the full questbook structure see [`quest_book.md`](./quest_book.md).
 | Tier 2: Geode        | Road to Geode, Geode Frogs, Mekanism (gems & automation) |
 | Tier 3: Bog          | Road to Bog, Bog Frogs, Tools and Things (organics + JDT tier-1 progression / Building Gadgets) |
 | Tier 4: Tide         | Road to Tide, Drowned Riches, Take Flight (aquatic resources + Iron Jetpacks mobility) |
-| Drowned Riches       | Tier 4 (Tide), aquatic *(unbuilt)*        |
-| Heat & Flame         | Tier 5 (Infernal), nether *(unbuilt)*     |
-| Void Mastery / The End | Tier 6 (Void), end & endgame *(unbuilt)* |
-| Master Pond          | Endgame singularity loop *(unbuilt)*      |
+| Tier 5: Infernal     | Road to Infernal, Infernal Frogs, The Network (nether resources + Refined Storage) |
+| Tier 6: Void         | Road to the Void, Void Frogs, The Ultimate Table (end resources + Extended Crafting) |
+| Master Pond          | Endgame singularity loop -> the Sky Frogs Master Frog trophy |

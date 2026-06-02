@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.echo_shard",
+  "colors": [
+    "1e6b72",
+    "154b50"
+  ],
+  "ingredient": {
+    "item": "minecraft:echo_shard"
+  },
+  "inUltimateSingularity": true
+}

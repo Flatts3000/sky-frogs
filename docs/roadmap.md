@@ -8,7 +8,7 @@ The path from "pack scaffold boots in a launcher" to "Sky Frogs v1.0 lives on Cu
 
 The scaffold boots in the CurseForge launcher with the FTB utility stack, JEI, Jade, and the Tier 0 substrate mods (Skyblock Builder, Ex Deorum, Forgiving Void). Productive Frogs v1.8.1 is integrated from CurseForge. The frog loop is built and merged: a dozen-plus KubeJS override scripts (anti.js, first_join.js, the per-tier slime chains, the slime-bucket bootstraps, the Dissolution Chamber slime engine, storage_quartz_free.js, if_plastic_gate.js, log_recipes.js) and 17 quest chapters spanning Tiers 0-5. The mod set has grown well past the Tier 0 substrate: Mekanism (+ Generators + Tools), Industrial Foregoing (+ IF Souls), Iron Jetpacks, Refined Storage (+ addons), the decoration suite (Macaw's, Chipped, Supplementaries, ...), cobblegen-galore, All The Ores, and Sophisticated Storage all ship now.
 
-Tiers 0 through 5 (Welcome -> Cave -> Geode -> Bog -> Tide -> Infernal) are playable end to end. The only unbuilt tier is Tier 6 (Void).
+All six tiers (Welcome -> Cave -> Geode -> Bog -> Tide -> Infernal -> Void) are built and playable end to end, through the Master Pond endgame and the Sky Frogs Master Frog trophy. The content campaign is complete; remaining work is balance, art, and optional side chapters.
 
 ## Phases at a glance
 
@@ -85,9 +85,9 @@ Tiers 0 through 5 (Welcome -> Cave -> Geode -> Bog -> Tide -> Infernal) are play
 | `v0.3`  | 3    | Bog      | Just Dire Things tier-1 progression + Building Gadgets in `tools_and_things.snbt`; plastic hard-gated behind the Bog plastic-frog; pink-slime capstone. IF spine moved to `road_to_tide.snbt` (Tier 4 gateway). | ✅ done |
 | `v0.4`  | 4    | Tide     | Jetpacks/mobility (Iron Jetpacks) in `take_flight.snbt`; aquatic chain in `drowned_riches.snbt`; nautilus_shell capstone. | ✅ done |
 | `v0.5`  | 5    | Infernal | Refined Storage (digital storage + autocrafting) in `the_network.snbt`; nether chain in `infernal_frogs.snbt`; netherite_scrap capstone. The nether-on-skyblock tier. | ✅ done |
-| `v0.6`  | 6    | Void     | (the last tier - verb TBD)                        | not started |
+| `v0.6`  | 6    | Void     | Extended Crafting (singularity endgame) in `the_ultimate_table.snbt`; End chain in `void_frogs.snbt`; dragon-expedition gate in `road_to_void.snbt`; the Master Frog trophy in `master_pond.snbt`. The content campaign's capstone. | ✅ built (held for playtest) |
 
-Note: the built tier order is Cave=Tier 1 (the starter), Geode=Tier 2, Bog=Tier 3, Tide=Tier 4, Infernal=Tier 5. Per-tier slime-chain filler blocks: Cave = stone, Geode = gravel, Bog = mossy cobblestone, Tide = mycelium, Infernal = prismarine.
+Note: the built tier order is Cave=Tier 1 (the starter), Geode=Tier 2, Bog=Tier 3, Tide=Tier 4, Infernal=Tier 5, Void=Tier 6. Per-tier slime-chain filler blocks: Cave = stone, Geode = gravel, Bog = mossy cobblestone, Tide = mycelium, Infernal = prismarine, Void = soul soil.
 
 **Per-tier deliverables (repeat for each):**
 - [ ] Quest chapter authored in FTB Quests.
@@ -110,9 +110,9 @@ Note: the built tier order is Cave=Tier 1 (the starter), Geode=Tier 2, Bog=Tier 
 **Goal:** Tier 6 (Void) reachable; per-mod side chapters added; endgame creative trophy exists.
 
 **Deliverables:**
-- [ ] Tier 6 chapter ("Void Mastery") + The End chapter.
-- [ ] Endgame singularity loop ("Master Hive (Pond)" chapter — see [`docs/quest_book.md`](./quest_book.md)).
-- [ ] **Sky Frogs Master Frog trophy item** — KubeJS-defined item or resourcepack-overridden custom item with components. Resolution captured in [`docs/backlog.md`](./backlog.md).
+- [x] Tier 6 chapters: `road_to_void` (dragon-expedition gateway) + `void_frogs` (End chain) + `the_ultimate_table` (Extended Crafting verb). **Built 2026-06-01.**
+- [x] Endgame singularity loop (`master_pond.snbt`): froglight Singularities -> Ultimate Singularity -> Master Frog. **Built.**
+- [x] **Sky Frogs Master Frog trophy item** — shipped as a KubeJS-defined item (`kubejs:master_frog`) with a placeholder texture; final 3D art remains a [`backlog.md`](./backlog.md) item.
 - [ ] Per-mod side chapters: one for each significant tech mod (Mekanism, AE2, IF, Powah, EnderIO, etc.). These are optional-but-recommended infrastructure guides.
 - [ ] Full slime variant catalog — every shipped mod has at least one variant per applicable category.
 

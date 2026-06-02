@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.leather",
+  "colors": [
+    "9c6b3f",
+    "6d4b2c"
+  ],
+  "ingredient": {
+    "item": "minecraft:leather"
+  },
+  "inUltimateSingularity": true
+}

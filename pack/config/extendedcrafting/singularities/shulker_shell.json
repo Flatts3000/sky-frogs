@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.shulker_shell",
+  "colors": [
+    "8e6090",
+    "634365"
+  ],
+  "ingredient": {
+    "item": "minecraft:shulker_shell"
+  },
+  "inUltimateSingularity": true
+}

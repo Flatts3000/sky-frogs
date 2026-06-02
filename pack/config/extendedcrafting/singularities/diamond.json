@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.diamond",
+  "colors": [
+    "6cdcd7",
+    "3fb7b0"
+  ],
+  "ingredient": {
+    "item": "minecraft:diamond"
+  },
+  "inUltimateSingularity": true
+}

@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.blaze",
+  "colors": [
+    "e8a41c",
+    "a27314"
+  ],
+  "ingredient": {
+    "item": "minecraft:blaze_powder"
+  },
+  "inUltimateSingularity": true
+}

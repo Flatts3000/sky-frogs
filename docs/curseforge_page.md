@@ -55,7 +55,7 @@ By the end of a session, iron is a frog's problem, not yours. The book drives th
 | 3    | Bog      | Organics: dirt, moss, clay, mycelium, leather, feather, plus plastic & pink slime |
 | 4    | Tide     | The ocean's haul: prismarine, sponge, sea pickles, nautilus shells (and jetpacks) |
 | 5    | Infernal | The Nether, earned by one real fortress trip: quartz, glowstone, blaze, netherite |
-| 6    | Void     | The End & endgame: ender pearls, chorus, shulker shells             |
+| 6    | Void     | The End & endgame: ender pearls, end stone, chorus, echo shards, sculk, shulker shells (earned by a real dragon expedition) |
 
 Each tier extends with modded resources as those mods ship in the pack. Endgame: stack up your late-game Froglights into singularities, then into the **Sky Frogs Master Frog** - a creative trophy that says you out-frogged the game.
 

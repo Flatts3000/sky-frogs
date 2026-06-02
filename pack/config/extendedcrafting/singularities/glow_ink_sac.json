@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.glow_ink_sac",
+  "colors": [
+    "3dbeb6",
+    "2b857f"
+  ],
+  "ingredient": {
+    "item": "minecraft:glow_ink_sac"
+  },
+  "inUltimateSingularity": true
+}

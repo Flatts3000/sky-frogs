@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.sculk",
+  "colors": [
+    "14403f",
+    "0e2d2c"
+  ],
+  "ingredient": {
+    "item": "minecraft:sculk"
+  },
+  "inUltimateSingularity": true
+}

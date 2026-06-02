@@ -55,9 +55,10 @@ Why minimal grant: the design wants the player engaged with the mob-farm loop wi
 - **Surface generation:** intentionally minimal — we override most ore generation via KubeJS to force the frog path. Nether quartz, basalt deltas, etc. exist but yields are sparse.
 
 ### End
-- **Type:** standard end islands (not void)
-- **Access:** unlocked via Tier 6 quest reward, OR by defeating the Dragon (which requires assembling the End Portal from skyblock-farmed obsidian, eyes of ender, etc.).
-- **Why standard, not void:** dragon fight is part of the endgame; needs proper End geometry. The outer end islands also provide chorus fruit and end stone via natural worldgen (these resources are also farmable via Void frogs, but the dragon arc needs the dimension).
+- **Type:** **traditional vanilla End** (central island + ender dragon + the outer end-island ring with end cities, ships, and chorus forests). **Settled 2026-06-01, built.** Only the Overworld is a void skyblock; the End is full vanilla.
+- **How:** `config/skyblockbuilder/dimensions.json5` sets `End.isCustom = false`, which hands the End to vanilla's `NoiseBasedChunkGenerator` (`TheEndBiomeSource` + the `END` noise settings) instead of SkyblockBuilder's void End generator. The Nether stays the SkyblockBuilder void Nether (its fortresses come from `structures.json5`). **Caveat:** dimension generators are baked at world creation, so this only affects NEW worlds - an existing world's End keeps whatever generator it was created with.
+- **Access:** the Tier 6 `road_to_void.snbt` gateway - craft a 12-frame End portal (no stronghold generates on a void overworld, so `kubejs/server_scripts/void_recipes.js` gives `end_portal_frame` a recipe from frog-farmed glowstone + soul sand), light it with eyes of ender, and step through to the standard obsidian platform.
+- **Why vanilla, not void:** the dragon fight is the campaign's climax and needs proper End geometry; the outer islands provide end cities, elytra, and the chorus/end-stone the Void frog also farms. A void End would lose all of that.
 
 ### Custom dimensions (RFTools, Compact Machines)
 - **Compact Machines:** kept — used heavily in late-game builds.

@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.ink_sac",
+  "colors": [
+    "26262b",
+    "1b1b1e"
+  ],
+  "ingredient": {
+    "item": "minecraft:ink_sac"
+  },
+  "inUltimateSingularity": true
+}

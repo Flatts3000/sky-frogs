@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.soul_sand",
+  "colors": [
+    "4a3a2e",
+    "342920"
+  ],
+  "ingredient": {
+    "item": "minecraft:soul_sand"
+  },
+  "inUltimateSingularity": true
+}

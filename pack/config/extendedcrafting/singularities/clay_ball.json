@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.clay_ball",
+  "colors": [
+    "a4a8b8",
+    "737681"
+  ],
+  "ingredient": {
+    "item": "minecraft:clay_ball"
+  },
+  "inUltimateSingularity": true
+}

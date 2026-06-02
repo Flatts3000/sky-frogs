@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.prismarine",
+  "colors": [
+    "73b3a0",
+    "508578"
+  ],
+  "ingredient": {
+    "item": "minecraft:prismarine_shard"
+  },
+  "inUltimateSingularity": true
+}

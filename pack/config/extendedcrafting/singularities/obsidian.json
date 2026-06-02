@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.obsidian",
+  "colors": [
+    "2a2440",
+    "1d192d"
+  ],
+  "ingredient": {
+    "item": "minecraft:obsidian"
+  },
+  "inUltimateSingularity": true
+}

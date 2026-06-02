@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.moss",
+  "colors": [
+    "5e7a33",
+    "425524"
+  ],
+  "ingredient": {
+    "item": "minecraft:moss_block"
+  },
+  "inUltimateSingularity": true
+}

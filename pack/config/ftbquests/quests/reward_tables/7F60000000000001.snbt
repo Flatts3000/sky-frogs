@@ -1,0 +1,91 @@
+{
+	icon: {
+		id: "minecraft:end_crystal"
+	}
+	id: "7F60000000000001"
+	loot_size: 1
+	order_index: 6
+	rewards: [
+		{
+			count: 1
+			id: "7F60000000000010"
+			item: {
+				count: 1
+				id: "minecraft:ender_chest"
+			}
+			weight: 1.0f
+		}
+		{
+			count: 1
+			id: "7F60000000000011"
+			item: {
+				count: 1
+				id: "minecraft:beacon"
+			}
+			weight: 1.0f
+		}
+		{
+			count: 1
+			id: "7F60000000000012"
+			item: {
+				count: 1
+				id: "minecraft:end_crystal"
+			}
+			weight: 1.0f
+		}
+		{
+			count: 4
+			id: "7F60000000000013"
+			item: {
+				count: 1
+				id: "minecraft:end_rod"
+			}
+			weight: 5.0f
+		}
+		{
+			count: 4
+			id: "7F60000000000014"
+			item: {
+				count: 1
+				id: "minecraft:ender_eye"
+			}
+			weight: 5.0f
+		}
+		{
+			count: 4
+			id: "7F60000000000015"
+			item: {
+				count: 1
+				id: "minecraft:chorus_flower"
+			}
+			weight: 5.0f
+		}
+		{
+			count: 64
+			id: "7F60000000000016"
+			item: {
+				count: 1
+				id: "minecraft:purpur_block"
+			}
+			weight: 12.0f
+		}
+		{
+			count: 64
+			id: "7F60000000000017"
+			item: {
+				count: 1
+				id: "minecraft:end_stone_bricks"
+			}
+			weight: 12.0f
+		}
+		{
+			count: 64
+			id: "7F60000000000018"
+			item: {
+				count: 1
+				id: "minecraft:obsidian"
+			}
+			weight: 12.0f
+		}
+	]
+}

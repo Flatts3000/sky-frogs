@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.lily_pad",
+  "colors": [
+    "6fb04a",
+    "4e7b34"
+  ],
+  "ingredient": {
+    "item": "minecraft:lily_pad"
+  },
+  "inUltimateSingularity": true
+}

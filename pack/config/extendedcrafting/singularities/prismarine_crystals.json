@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.prismarine_crystals",
+  "colors": [
+    "a9dcc9",
+    "769a8d"
+  ],
+  "ingredient": {
+    "item": "minecraft:prismarine_crystals"
+  },
+  "inUltimateSingularity": true
+}

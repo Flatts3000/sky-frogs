@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.nautilus_shell",
+  "colors": [
+    "d8caa4",
+    "978d73"
+  ],
+  "ingredient": {
+    "item": "minecraft:nautilus_shell"
+  },
+  "inUltimateSingularity": true
+}

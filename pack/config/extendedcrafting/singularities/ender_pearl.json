@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.ender_pearl",
+  "colors": [
+    "40a38c",
+    "1f6058"
+  ],
+  "ingredient": {
+    "item": "minecraft:ender_pearl"
+  },
+  "inUltimateSingularity": true
+}

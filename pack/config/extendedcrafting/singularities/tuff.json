@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.tuff",
+  "colors": [
+    "6c6d66",
+    "4c4c47"
+  ],
+  "ingredient": {
+    "item": "minecraft:tuff"
+  },
+  "inUltimateSingularity": true
+}

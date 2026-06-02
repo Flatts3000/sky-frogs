@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.netherrack",
+  "colors": [
+    "703434",
+    "4e2424"
+  ],
+  "ingredient": {
+    "item": "minecraft:netherrack"
+  },
+  "inUltimateSingularity": true
+}

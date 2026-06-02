@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.mud",
+  "colors": [
+    "4a433d",
+    "342f2b"
+  ],
+  "ingredient": {
+    "item": "minecraft:mud"
+  },
+  "inUltimateSingularity": true
+}

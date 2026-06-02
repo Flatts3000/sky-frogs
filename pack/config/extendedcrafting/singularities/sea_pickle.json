@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.sea_pickle",
+  "colors": [
+    "5f742e",
+    "425120"
+  ],
+  "ingredient": {
+    "item": "minecraft:sea_pickle"
+  },
+  "inUltimateSingularity": true
+}

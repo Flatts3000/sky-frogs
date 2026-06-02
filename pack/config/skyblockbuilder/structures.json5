@@ -1,6 +1,9 @@
 {
   // Vanilla features SkyblockBuilder should generate in its void dimensions.
-  // The two end entries are required for the End's obsidian towers (dragon respawn).
+  // NOTE: as of the Tier 6 build the End is a TRADITIONAL vanilla End (dimensions.json5
+  // End.isCustom = false), so vanilla handles its obsidian towers / gateways directly - the two
+  // end entries below are now harmless no-ops for the End (SkyblockBuilder only applies this list
+  // to dimensions it still generates, i.e. the void Nether). Kept for clarity / safety.
   // (Resource list; full options at config/skyblockbuilder/data/features.txt on load.)
   "featuresToGenerate": {
     "allow_list": true,

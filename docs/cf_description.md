@@ -5,14 +5,14 @@ this comment into the CF dashboard's Description field at project creation
 
 Source: derived from curseforge_page.md (the meta-doc with sectioning).
 This file is the actual page body without the meta labels.
-Status: covers the Tier 0-5 alpha (Welcome through Infernal). Refresh at v1.0. Push to the live CF page only when the matching release is tagged (the live listing should match what downloaders get).
+Status: covers the content-complete alpha (Welcome through Void + the Master Pond endgame). Refresh at v1.0. Push to the live CF page only when the matching release is tagged (the live listing should match what downloaders get).
 -->
 
 # Sky Frogs
 
 > A void-skyblock NeoForge 1.21.1 modpack built around [Productive Frogs](https://www.curseforge.com/minecraft/mc-mods/productive-frogs).
 
-**Status: alpha.** Tier 0 through Tier 5 (Welcome / Cave / Geode / Bog / Tide / Infernal) are built and playable end-to-end - frogs for ores, gems, organics, the ocean, and the Nether. Tier 6 (Void, the endgame) lands in a later release. Feedback welcome via [GitHub Issues](https://github.com/Flatts3000/sky-frogs/issues).
+**Status: alpha, content-complete.** All six tiers (Welcome / Cave / Geode / Bog / Tide / Infernal / Void) are built and playable end-to-end - frogs for ores, gems, organics, the ocean, the Nether, and the End - finishing with a real dragon expedition and a singularity-powered endgame that caps off in the **Sky Frogs Master Frog** trophy. What remains is balance, polish, and art. Feedback welcome via [GitHub Issues](https://github.com/Flatts3000/sky-frogs/issues).
 
 ---
 
@@ -49,9 +49,9 @@ By the end of a session, iron is a frog's problem, not yours. The book drives th
 | 3    | Bog      | Organics: dirt, moss, clay, mycelium, leather, feather, plus plastic and pink slime | Playable |
 | 4    | Tide     | The ocean's haul: prismarine, sponge, sea pickles, nautilus shells (and jetpacks)  | Playable |
 | 5    | Infernal | The Nether, earned by one real fortress trip: quartz, glowstone, blaze, netherite  | Playable |
-| 6    | Void     | The End and endgame: ender pearls, chorus, shulker shells                          | Forthcoming |
+| 6    | Void     | The End and endgame: ender pearls, end stone, chorus, echo shards, sculk, shulker shells | Playable |
 
-Each tier extends with modded resources as those mods ship in the pack. Endgame plan: stack up your late-game Froglights into singularities, then into the **Sky Frogs Master Frog**, a creative trophy that says you out-frogged the game.
+Each tier extends with modded resources as those mods ship in the pack. The endgame: compress a thousand of each of the frogs' forty resources into its own Singularity (a proof you automated every farm), fold all forty into the Ultimate Singularity, and craft the **Sky Frogs Master Frog**, a trophy that says you out-frogged the game.
 
 ## Mod Highlights
 
@@ -64,7 +64,9 @@ The full mod list is in the repo at [`docs/mod_list.md`](https://github.com/Flat
 - **JEI + Jade** - recipe browser and in-world block info. Standard quality-of-life.
 - **Mekanism** (Tier 2 verb) - power, Metallurgic Infuser, Enrichment Chamber.
 - **Just Dire Things + Building Gadgets 2** (Tier 3 verb) - utility / automation toys; the JDT goo and gadget chain.
-- **Industrial Foregoing** (Tier 4 gateway) - the Dissolution Chamber is the pack's slime engine; 21 chamber recipes ship for Cave / Geode / Bog with resource-threaded inputs.
+- **Industrial Foregoing** (Tier 4 gateway) - the Dissolution Chamber is the pack's slime engine; resource-threaded chamber recipes for every tier.
+- **Refined Storage** (Tier 5 verb) - the digital storage + autocrafting network, gated on nether quartz.
+- **Extended Crafting** (Tier 6 verb + endgame) - the tiered crafting tables and the Quantum Compressor that turns froglights into singularities, ending in the Master Frog trophy.
 
 Every bundled mod keeps its own license; see each mod's CurseForge page. The pack's own content (configs, KubeJS, datapacks, questbook, branding) is MIT.
 

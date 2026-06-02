@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.mycelium",
+  "colors": [
+    "6e5f69",
+    "4d424a"
+  ],
+  "ingredient": {
+    "item": "minecraft:mycelium"
+  },
+  "inUltimateSingularity": true
+}

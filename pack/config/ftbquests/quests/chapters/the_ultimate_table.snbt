@@ -1,0 +1,181 @@
+{
+	autofocus_id: "6EC0000000000002"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_ultimate_table"
+	group: "0C4F0E0000000006"
+	icon: {
+		id: "extendedcrafting:ultimate_table"
+	}
+	id: "6EC0000000000001"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["601D00000000001A"]
+			icon: {
+				id: "extendedcrafting:black_iron_ingot"
+			}
+			id: "6EC0000000000002"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6EC0000000000004"
+				table_id: 9178336040581070849L
+				type: "loot"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "6EC0000000000003"
+				item: { count: 1, id: "extendedcrafting:black_iron_ingot" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6EC0000000000002"]
+			icon: {
+				id: "extendedcrafting:luminessence"
+			}
+			id: "6EC0000000000005"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6EC0000000000007"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "6EC0000000000006"
+				item: { count: 1, id: "extendedcrafting:luminessence" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6EC0000000000005"]
+			icon: {
+				id: "extendedcrafting:basic_table"
+			}
+			id: "6EC0000000000008"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6EC000000000000A"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "6EC0000000000009"
+				item: { count: 1, id: "extendedcrafting:basic_table" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6EC0000000000008"]
+			icon: {
+				id: "extendedcrafting:advanced_table"
+			}
+			id: "6EC000000000000B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6EC000000000000D"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "6EC000000000000C"
+				item: { count: 1, id: "extendedcrafting:advanced_table" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6EC000000000000B"]
+			icon: {
+				id: "extendedcrafting:elite_table"
+			}
+			id: "6EC000000000000E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6EC0000000000010"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "6EC000000000000F"
+				item: { count: 1, id: "extendedcrafting:elite_table" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6EC000000000000E"]
+			icon: {
+				id: "extendedcrafting:ultimate_table"
+			}
+			id: "6EC0000000000011"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6EC0000000000013"
+				table_id: 9178336040581070849L
+				type: "loot"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "6EC0000000000012"
+				item: { count: 1, id: "extendedcrafting:ultimate_table" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["6EC0000000000011"]
+			icon: {
+				id: "extendedcrafting:ultimate_catalyst"
+			}
+			id: "6EC0000000000014"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6EC0000000000016"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "6EC0000000000015"
+				item: { count: 1, id: "extendedcrafting:ultimate_catalyst" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["6EC0000000000014"]
+			icon: {
+				id: "extendedcrafting:compressor"
+			}
+			id: "6EC0000000000017"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6EC0000000000019"
+				table_id: 9178336040581070849L
+				type: "loot"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "6EC0000000000018"
+				item: { count: 1, id: "extendedcrafting:compressor" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.5d
+		}
+	]
+}
