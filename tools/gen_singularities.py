@@ -84,7 +84,11 @@ def main():
             with open(path, "w", encoding="utf-8", newline="\n") as handle:
                 json.dump(obj, handle, indent=2)
                 handle.write("\n")
-            lang[key] = "%s Singularity" % title(variant)
+            # EC's SingularityItem renders the display name as "%s Singularity" (its own
+            # item.extendedcrafting.singularity lang), filling %s with this value - so emit the
+            # BARE resource name here, NOT "<X> Singularity", or it doubles to "Iron Singularity
+            # Singularity". Matches EC's own convention (singularity.extendedcrafting.iron = "Iron").
+            lang[key] = title(variant)
             written.append(variant)
 
     with open(LANG, "w", encoding="utf-8", newline="\n") as handle:

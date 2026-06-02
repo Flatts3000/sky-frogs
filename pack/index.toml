@@ -354,7 +354,7 @@ hash = "0fdbebfaceb8b88bc78fcbe8abe8d6bfb27c0f8f10838e08e900cce1fc6a6911"
 
 [[files]]
 file = "kubejs/assets/extendedcrafting/lang/en_us.json"
-hash = "ea65e6bfa133be8104a2be3dd86f801a3388bdc7cddc82d096218cfbb3606c13"
+hash = "1c1d0f44c05de8fdb363596c142c3fd1551317881c44153dee6a74463ea66337"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/master_frog.png"
@@ -430,7 +430,7 @@ hash = "5988e55c01cba66280a66eeb2c68d3d13451e6ac1b5848f54217720bb34946d7"
 
 [[files]]
 file = "kubejs/server_scripts/dissolution_slime_recipes.js"
-hash = "3b272ef696c469aeb3b382c2ce27d8184fe564d1c49ad2e44065146ac2f68bc3"
+hash = "0f53666f9b3dd1e2ece4108a4fe062d4462e2f21a9a40b3f86f59a5c31d502dc"
 
 [[files]]
 file = "kubejs/server_scripts/dump_items.js"

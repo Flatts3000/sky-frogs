@@ -88,7 +88,7 @@ const SLIME_TIERS = [
     ['ender_pearl',   'minecraft:netherite_scrap'],     // bridges from Infernal's last; filler is soul_soil (Infernal, mass-renewable - end_stone would be circular)
     ['end_stone',     'minecraft:ender_pearl'],
     ['chorus_fruit',  'minecraft:end_stone'],
-    ['echo_shard',    'minecraft:popped_chorus_fruit'], // chorus_fruit variant smelts to popped_chorus_fruit
+    ['echo_shard',    'minecraft:chorus_fruit'],         // prior variant chorus_fruit's resource (raw, its primer_item)
     ['sculk',         'minecraft:echo_shard'],
     ['shulker_shell', 'minecraft:sculk']
   ]]
