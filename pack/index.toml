@@ -26,15 +26,171 @@ hash = "a9029472f7a7435e2f54c4827589a0dabca28e522fb1fa6257a814cdf83d64f1"
 
 [[files]]
 file = "config/extendedcrafting-common.toml"
-hash = "2c822b0ecab94471171ceb4c3bb79cb4e3f3a894bdb914421807534688ff88a2"
+hash = "6902720ca14e78f2ee14f60711c5a7e9f3601cc454627af22e6b10087f644fbb"
 
 [[files]]
 file = "config/extendedcrafting/singularities/README.md"
-hash = "54ddfc988d1583d84be02572fe622289c821a932d3a41a2a241a723dc8f24f8b"
+hash = "eee848322416a75e2b4c6bebd2cdbc9ba5e2474567029a89a80b4a7a64805223"
 
 [[files]]
-file = "config/extendedcrafting/singularities/froglight.json"
-hash = "d6dc2fb19d08ea7156302dac4ff9039403c746ad2343179d22562748234cb86b"
+file = "config/extendedcrafting/singularities/amethyst.json"
+hash = "702d3ab8615c4715ab152efcea7caa4bfe7a5d28c14999f5470e9581f8c03744"
+
+[[files]]
+file = "config/extendedcrafting/singularities/blaze.json"
+hash = "b229236e4d394439f2fb849431a4aab2efb76560bae57cfe3237a325363e8dcb"
+
+[[files]]
+file = "config/extendedcrafting/singularities/calcite.json"
+hash = "cf0b0d9e9c5ce167e343462dad5b99f9b8beedf6e0fc45b31ecc3fc3174b548a"
+
+[[files]]
+file = "config/extendedcrafting/singularities/chorus_fruit.json"
+hash = "15994b964c62e09a5380cd75f43a1635d3a216aef42541dc4d75ca0793b94423"
+
+[[files]]
+file = "config/extendedcrafting/singularities/clay_ball.json"
+hash = "a55d685e548aa82e592ea527d39766e7fb722fcca0bbab6a6cf459348e034f38"
+
+[[files]]
+file = "config/extendedcrafting/singularities/coal.json"
+hash = "225779f9003341f82a7fe32bf28a24102c07f9389faf01999e9d4c689ca9b6ee"
+
+[[files]]
+file = "config/extendedcrafting/singularities/copper.json"
+hash = "a6574d3b70c97a5464867b2afb08c286807e90513cf5b618618100448f9aa75f"
+
+[[files]]
+file = "config/extendedcrafting/singularities/diamond.json"
+hash = "6408dc3132118d12e2ea79b1ebeeb89b4b4fb40822cea7b5b3051963585fa41e"
+
+[[files]]
+file = "config/extendedcrafting/singularities/dirt.json"
+hash = "9ce7eda49fdaabf565a11cb1699f0b93ce824762c5ead70d2ed5c1d757dd4b13"
+
+[[files]]
+file = "config/extendedcrafting/singularities/echo_shard.json"
+hash = "cd1649cc92c5422c0198f86c1f88ebf5490a0c8d7d1064a072c1cced4cab4c1f"
+
+[[files]]
+file = "config/extendedcrafting/singularities/emerald.json"
+hash = "82657245e30580416eed45984b691a3b2e1fbb1b1d34eabe3331c05fbacc0460"
+
+[[files]]
+file = "config/extendedcrafting/singularities/end_stone.json"
+hash = "cb893e0a79170f8bc14e6dbdb647328ea9df20c912b64bfd8496260557cc30a5"
+
+[[files]]
+file = "config/extendedcrafting/singularities/ender_pearl.json"
+hash = "0aa49e86917d8e06facbda2c2249c11b6dcfd8acd31e40911cc61dc13a80dca0"
+
+[[files]]
+file = "config/extendedcrafting/singularities/feather.json"
+hash = "44f49dcd01305219007676cae782fb4666cc9514d182e4b8a17442c84987f393"
+
+[[files]]
+file = "config/extendedcrafting/singularities/glow_ink_sac.json"
+hash = "9e8e606b9f862afcb0dc249e751d73ba34db54e314eb357e53bec64f8a69a2d9"
+
+[[files]]
+file = "config/extendedcrafting/singularities/glowstone_dust.json"
+hash = "f6a32c6da10b499ca7406a065b9dffa25831603dcfa6745c8ace6ab3d8f7655b"
+
+[[files]]
+file = "config/extendedcrafting/singularities/gold.json"
+hash = "e2b9a48904a1e86ffe538ec63307ba29f12a10789d9386d8493261f195573a4c"
+
+[[files]]
+file = "config/extendedcrafting/singularities/ink_sac.json"
+hash = "f4b291f64e9e7c6947f0d0408829e07f8d158b76f1d92ea1a630318f2bb9377b"
+
+[[files]]
+file = "config/extendedcrafting/singularities/iron.json"
+hash = "3fe38854e68cecdf70cbfe705ac8ccdd9c5f7fe988dd0cc0fdd6ba05027517ff"
+
+[[files]]
+file = "config/extendedcrafting/singularities/lapis.json"
+hash = "6556f64a50dcde58ee76dbded69a7b2eca61bd9abef7e6617761f4d75b08ebd8"
+
+[[files]]
+file = "config/extendedcrafting/singularities/leather.json"
+hash = "8b25754e47ddd45ad7dda5a1e51245325c33cb9af3dae79f9b211828c8d5bb27"
+
+[[files]]
+file = "config/extendedcrafting/singularities/lily_pad.json"
+hash = "b34fbf397b4ac931bfa8ca926b569f28f7381a981e0405b20a4f9dade324b1cf"
+
+[[files]]
+file = "config/extendedcrafting/singularities/moss.json"
+hash = "62e223cba5cf79e654b49b289bdbc7806b209d02c1497279e10812e252356c11"
+
+[[files]]
+file = "config/extendedcrafting/singularities/mud.json"
+hash = "48e12fbd39cf9d72c810399ad81ecec434f5c1e2ee91134fb646ec1fed714cbb"
+
+[[files]]
+file = "config/extendedcrafting/singularities/mycelium.json"
+hash = "153080ef60bf574ba70cc0d812f041032a8d35e74a6884278a28be04ed95b99b"
+
+[[files]]
+file = "config/extendedcrafting/singularities/nautilus_shell.json"
+hash = "a624495dda5623ff0155de3bcd979fd6c16bc4a7ac5af9f1e27317504dc4648f"
+
+[[files]]
+file = "config/extendedcrafting/singularities/netherite_scrap.json"
+hash = "3c3c2a6cb358bb1a075684998f0edf6d4aa18b0841317761652a093ed5004cee"
+
+[[files]]
+file = "config/extendedcrafting/singularities/netherrack.json"
+hash = "e37d9e4ab3de913a9ffd3045cde91d1211b72a54e836a04c308cb4ab5b7087aa"
+
+[[files]]
+file = "config/extendedcrafting/singularities/obsidian.json"
+hash = "c163c9275b9e3106fbf02a72a20d34a1fb86300eedec56fd8c515063eb80fb5f"
+
+[[files]]
+file = "config/extendedcrafting/singularities/prismarine.json"
+hash = "c8151df7f6a77aae4224bdc85711cdf24df2479194c4967cdad3b40b95fe9133"
+
+[[files]]
+file = "config/extendedcrafting/singularities/prismarine_crystals.json"
+hash = "f4bdfd6ac8de48204112ce42cca491a1465fb1417a294651122912a578990b70"
+
+[[files]]
+file = "config/extendedcrafting/singularities/quartz.json"
+hash = "60a8c7b4a1bd713eb1eb16fcc4f47b10a4e9051f765c817e84662aa7ed641b7b"
+
+[[files]]
+file = "config/extendedcrafting/singularities/redstone.json"
+hash = "bcd1e28ec7675d06c852976685a59ed14669873171555614c1e9a069c7fa87bd"
+
+[[files]]
+file = "config/extendedcrafting/singularities/sculk.json"
+hash = "63fd606fe08a0b749e04fb98e5baf0accbb5493fc5f1167b429a83bae6b28122"
+
+[[files]]
+file = "config/extendedcrafting/singularities/sea_pickle.json"
+hash = "1f300bf3f536f616e84bf781f01a22c9edb5c96c88b5fd2f8447f293c2f52c8d"
+
+[[files]]
+file = "config/extendedcrafting/singularities/shulker_shell.json"
+hash = "04bb1df5b00b4572b56fd435feffcb53239ed9ab823c9512e66fc4703e124fed"
+
+[[files]]
+file = "config/extendedcrafting/singularities/soul_sand.json"
+hash = "2aab124e6be39fba2718276acdb49173be88aaf92a91442a34d889f228c4a19e"
+
+[[files]]
+file = "config/extendedcrafting/singularities/soul_soil.json"
+hash = "58e1b84bf46e45cb4fe2bc9e42fe42dc49c84bf8e17ab4c0d19e032e1f516e76"
+
+[[files]]
+file = "config/extendedcrafting/singularities/sponge.json"
+hash = "087e02e6d36aed4328632d10d84b081c1961e92ded7b10d207d99aa5ba7ecb21"
+
+[[files]]
+file = "config/extendedcrafting/singularities/tuff.json"
+hash = "88253f517aa225d78788808c359990cbe10edb930607cc0456cfe87dde96c971"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
@@ -130,7 +286,7 @@ hash = "2e69afacf774749222ca1e925dc94d32e6c3db8bef4557aa33144751c2770206"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "dd276a6e4d13de9ee39a694846b673c0d8e0c07ab11150fcd227ed5a7f52dfb8"
+hash = "b20ddc3d8f234cd8e1c710cbda9a78b356b892c892e815ecbd0cef409caffb23"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
@@ -198,7 +354,7 @@ hash = "0fdbebfaceb8b88bc78fcbe8abe8d6bfb27c0f8f10838e08e900cce1fc6a6911"
 
 [[files]]
 file = "kubejs/assets/extendedcrafting/lang/en_us.json"
-hash = "e72d995ac9c072d717ca4d362204ced79dc42bf70fbff43a0c0d015aefbf87ad"
+hash = "ea65e6bfa133be8104a2be3dd86f801a3388bdc7cddc82d096218cfbb3606c13"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/master_frog.png"
@@ -322,11 +478,11 @@ hash = "2b6735fc64ee708364b30526b4d5d7b703cfc80e624eb8f6f2098f6a0b2b192d"
 
 [[files]]
 file = "kubejs/server_scripts/void_recipes.js"
-hash = "8ef16166f7bcf69343e01c72f76882cbc281d0f159b99357aaa369a999b7cb17"
+hash = "4fb171aa74dde96e84e105ebfef86ba46d1bd4e43c4d5d0aff43539f1eaeda58"
 
 [[files]]
 file = "kubejs/startup_scripts/master_frog_item.js"
-hash = "efaf1e4217483b187eee73db0a49058b5fdbe1c317adb6a21b40752bfb23baef"
+hash = "ee6c0c16a8621af41a060caaf2d9c8e36ffaf6aad9aafd7f9c3ab5c0f9a33223"
 
 [[files]]
 file = "kubejs/startup_scripts/milk_bucket_no_remainder.js"

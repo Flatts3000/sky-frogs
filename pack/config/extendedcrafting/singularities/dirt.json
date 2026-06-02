@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.dirt",
+  "colors": [
+    "9b7653",
+    "6c533a"
+  ],
+  "ingredient": {
+    "item": "minecraft:dirt"
+  },
+  "inUltimateSingularity": true
+}

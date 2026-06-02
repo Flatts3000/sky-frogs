@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.soul_soil",
+  "colors": [
+    "52423a",
+    "392e29"
+  ],
+  "ingredient": {
+    "item": "minecraft:soul_soil"
+  },
+  "inUltimateSingularity": true
+}

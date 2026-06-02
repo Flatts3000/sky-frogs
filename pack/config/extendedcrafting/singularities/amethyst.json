@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.amethyst",
+  "colors": [
+    "9d70d0",
+    "6e4e92"
+  ],
+  "ingredient": {
+    "item": "minecraft:amethyst_shard"
+  },
+  "inUltimateSingularity": true
+}

@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.chorus_fruit",
+  "colors": [
+    "97709c",
+    "6a4e6d"
+  ],
+  "ingredient": {
+    "item": "minecraft:chorus_fruit"
+  },
+  "inUltimateSingularity": true
+}

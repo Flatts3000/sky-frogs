@@ -109,9 +109,11 @@
 	#The default amount of items required to create a Singularity.
 	# Default: 10000
 	# Range: > 1
-	# Sky Frogs: lowered from EC's default so the six species singularities -> Ultimate
-	# Singularity -> Master Frog endgame fits the documented ~15h budget. 1000 x 6 species
-	# = 6000 frog-farmed resources, reachable with frog automation + RS/Mekanism by Void.
+	# Sky Frogs: 1000 each. The endgame is one singularity per vanilla froglight resource
+	# (40 in all) -> the Ultimate Singularity -> the Master Frog, so the full grind is
+	# 1000 x 40 = 40,000 frog-farmed resources + 40 Ultimate Catalysts. Deliberately a
+	# mega-sink: an "automate every farm" capstone, reachable only with full frog automation
+	# + RS/Mekanism by Void. Per-singularity counts are tunable via each file's materialCount.
 	defaultMaterialsRequired = 1000
 	#The default amount of FE required to create a Singularity.
 	# Default: 5000000

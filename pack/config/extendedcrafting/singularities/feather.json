@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.feather",
+  "colors": [
+    "efefef",
+    "a7a7a7"
+  ],
+  "ingredient": {
+    "item": "minecraft:feather"
+  },
+  "inUltimateSingularity": true
+}

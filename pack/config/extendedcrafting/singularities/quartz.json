@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.quartz",
+  "colors": [
+    "eae4da",
+    "a4a099"
+  ],
+  "ingredient": {
+    "item": "minecraft:quartz"
+  },
+  "inUltimateSingularity": true
+}

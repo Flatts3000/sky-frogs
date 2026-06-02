@@ -9,10 +9,10 @@
 //    Yields 4 per craft (3 crafts = a full 12-frame ring) to keep the grind sane.
 //
 // 2) MASTER FROG. The campaign capstone, crafted in the Extended Crafting ULTIMATE table
-//    (tier 4) from the Ultimate Singularity - which itself demands one singularity per
-//    frog species (config/extendedcrafting/singularities/*.json), so the whole pack is
-//    compressed into that one input - ringed by six Froglights (the six species' light)
-//    with sweetslime accents. The "one per species" rule is enforced upstream in the
+//    (tier 4) from the Ultimate Singularity - which itself demands one singularity for every
+//    vanilla froglight resource (all 40; config/extendedcrafting/singularities/*.json), so
+//    the whole pack is compressed into that one input - ringed by six Froglights (the species'
+//    light) with sweetslime accents. The "every resource" rule is enforced upstream in the
 //    Ultimate Singularity, so plain froglight ingredients here are intentional (robust,
 //    no per-variant component matcher needed). Output is the KubeJS trophy item
 //    (kubejs:master_frog, registered in startup_scripts/master_frog_item.js).

@@ -1,9 +1,9 @@
 // Sky Frogs - the Master Frog trophy item (Tier 6 / Void endgame capstone).
 //
 // The campaign's final reward: a creative trophy you craft from the Ultimate Singularity
-// (which itself demands one singularity per frog species - the whole pack compressed into
-// one item) plus a Froglight of each of the six species. It does nothing but sit on a shelf
-// and say you out-frogged the game. master_pond.snbt's capstone hands out the recipe.
+// (which itself demands one singularity for every vanilla froglight resource - all 40, the
+// whole pack compressed into one item) plus a Froglight ring. It does nothing but sit on a
+// shelf and say you out-frogged the game. master_pond.snbt's capstone hands out the recipe.
 //
 // Registered here (item registration must run at startup, not in ServerEvents); the
 // Ultimate-Crafting-Table recipe lives in server_scripts/void_recipes.js. Texture is a

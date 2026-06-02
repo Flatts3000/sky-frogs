@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.end_stone",
+  "colors": [
+    "dad7a0",
+    "999670"
+  ],
+  "ingredient": {
+    "item": "minecraft:end_stone"
+  },
+  "inUltimateSingularity": true
+}

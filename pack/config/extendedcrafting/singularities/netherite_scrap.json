@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.netherite_scrap",
+  "colors": [
+    "70513f",
+    "4e392c"
+  ],
+  "ingredient": {
+    "item": "minecraft:netherite_scrap"
+  },
+  "inUltimateSingularity": true
+}

@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.calcite",
+  "colors": [
+    "dfe0db",
+    "9c9d99"
+  ],
+  "ingredient": {
+    "item": "minecraft:calcite"
+  },
+  "inUltimateSingularity": true
+}

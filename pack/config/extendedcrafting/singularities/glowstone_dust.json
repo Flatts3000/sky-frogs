@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.glowstone_dust",
+  "colors": [
+    "d9a93f",
+    "98762c"
+  ],
+  "ingredient": {
+    "item": "minecraft:glowstone_dust"
+  },
+  "inUltimateSingularity": true
+}

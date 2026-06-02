@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.sponge",
+  "colors": [
+    "e2dd58",
+    "b0ab30"
+  ],
+  "ingredient": {
+    "item": "minecraft:sponge"
+  },
+  "inUltimateSingularity": true
+}

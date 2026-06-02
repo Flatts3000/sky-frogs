@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.gold",
+  "colors": [
+    "fcee4b",
+    "d4b925"
+  ],
+  "ingredient": {
+    "item": "minecraft:gold_ingot"
+  },
+  "inUltimateSingularity": true
+}
