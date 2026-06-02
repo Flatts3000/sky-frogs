@@ -85,7 +85,7 @@ All six tiers (Welcome -> Cave -> Geode -> Bog -> Tide -> Infernal -> Void) are 
 | `v0.3`  | 3    | Bog      | Just Dire Things tier-1 progression + Building Gadgets in `tools_and_things.snbt`; plastic hard-gated behind the Bog plastic-frog; pink-slime capstone. IF spine moved to `road_to_tide.snbt` (Tier 4 gateway). | ✅ done |
 | `v0.4`  | 4    | Tide     | Jetpacks/mobility (Iron Jetpacks) in `take_flight.snbt`; aquatic chain in `drowned_riches.snbt`; nautilus_shell capstone. | ✅ done |
 | `v0.5`  | 5    | Infernal | Refined Storage (digital storage + autocrafting) in `the_network.snbt`; nether chain in `infernal_frogs.snbt`; netherite_scrap capstone. The nether-on-skyblock tier. | ✅ done |
-| `v0.6`  | 6    | Void     | Extended Crafting (singularity endgame) in `the_ultimate_table.snbt`; End chain in `void_frogs.snbt`; dragon-expedition gate in `road_to_void.snbt`; the Master Frog trophy in `master_pond.snbt`. The content campaign's capstone. | ✅ built (held for playtest) |
+| `v0.6`  | 6    | Void     | Extended Crafting (singularity endgame) in `the_ultimate_table.snbt`; End chain in `void_frogs.snbt`; dragon-expedition gate in `road_to_void.snbt`; the Master Frog trophy in `master_pond.snbt`. The content campaign's capstone. | ✅ shipped (merged #47, 2026-06-02) |
 
 Note: the built tier order is Cave=Tier 1 (the starter), Geode=Tier 2, Bog=Tier 3, Tide=Tier 4, Infernal=Tier 5, Void=Tier 6. Per-tier slime-chain filler blocks: Cave = stone, Geode = gravel, Bog = mossy cobblestone, Tide = mycelium, Infernal = prismarine, Void = soul soil.
 
