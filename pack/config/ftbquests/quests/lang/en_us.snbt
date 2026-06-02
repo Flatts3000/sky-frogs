@@ -1151,13 +1151,13 @@
 	quest.6A0D000000000002.quest_subtitle: "Prove the frogs run without you."
 	quest.6A0D000000000002.title: "The Long Compression"
 	quest.6A0D000000000005.quest_desc: [
-		"Point a frog farm at the Quantum Compressor and wait. A thousand of one frog's resource folds"
+		"Point your iron-frog farm at the Quantum Compressor and wait. A thousand iron folds into a"
 		""
-		"into a single &bSingularity&r - one for every resource the frogs make, from iron to shulker"
+		"single &bIron Singularity&r - the first of forty, one for every resource the frogs make, from"
 		""
-		"shells. Make your first; you will want all forty."
+		"iron to shulker shells. Start here; you will want them all."
 	]
-	quest.6A0D000000000005.quest_subtitle: "A thousand of a haul, one cube."
+	quest.6A0D000000000005.quest_subtitle: "A thousand iron, one cube."
 	quest.6A0D000000000005.title: "Your First Singularity"
 	quest.6A0D000000000008.quest_desc: [
 		"Gather one Singularity for every resource the frogs make - all forty - and crystallize them"
@@ -1169,7 +1169,7 @@
 	quest.6A0D000000000008.quest_subtitle: "The densest frog there is."
 	quest.6A0D000000000008.title: "The Ultimate Singularity"
 	quest.6A0D00000000000B.quest_desc: [
-		"Set the Ultimate Singularity in the Ultimate Table, ring it with Froglights, and craft the"
+		"Set the Ultimate Singularity in a crafting table, ring it with Froglights, and craft the"
 		""
 		"&aSky Frogs Master Frog&r. It does nothing. It is everything."
 	]

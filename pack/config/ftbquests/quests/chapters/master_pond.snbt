@@ -34,9 +34,7 @@
 		}
 		{
 			dependencies: ["6A0D000000000002"]
-			icon: {
-				id: "extendedcrafting:singularity"
-			}
+			icon: { components: { "extendedcrafting:singularity_id": "extendedcrafting:iron" }, count: 1, id: "extendedcrafting:singularity" }
 			id: "6A0D000000000005"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -46,7 +44,8 @@
 			}]
 			tasks: [{
 				id: "6A0D000000000006"
-				item: { count: 1, id: "extendedcrafting:singularity" }
+				item: { components: { "extendedcrafting:singularity_id": "extendedcrafting:iron" }, count: 1, id: "extendedcrafting:singularity" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 0.0d

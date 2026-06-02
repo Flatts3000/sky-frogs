@@ -218,7 +218,7 @@ hash = "7cf5e8074d6d11e044a0688c596c4a2ffb36552e669b2ccff2593d062f36b4f6"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/master_pond.snbt"
-hash = "4a64ba59342a635437c0a88b54df1aae1fe3d9b7ebe725e5d94afb39f5316989"
+hash = "c91aefc0366e21bdcafa5415dc89c1d56e5249099a0e1579c36aebe3373572fb"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/mekanism.snbt"
@@ -286,7 +286,7 @@ hash = "2e69afacf774749222ca1e925dc94d32e6c3db8bef4557aa33144751c2770206"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "b20ddc3d8f234cd8e1c710cbda9a78b356b892c892e815ecbd0cef409caffb23"
+hash = "7b5a95e4032aeed29666fac91b8801e64ee244682e5312fc24f134f174c8222b"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
@@ -478,11 +478,11 @@ hash = "2b6735fc64ee708364b30526b4d5d7b703cfc80e624eb8f6f2098f6a0b2b192d"
 
 [[files]]
 file = "kubejs/server_scripts/void_recipes.js"
-hash = "4fb171aa74dde96e84e105ebfef86ba46d1bd4e43c4d5d0aff43539f1eaeda58"
+hash = "6fcd714abc5f7be382f7aafe0ebed1d90c2b17a2a19e801dedfdfb86a0e315e0"
 
 [[files]]
 file = "kubejs/startup_scripts/master_frog_item.js"
-hash = "ee6c0c16a8621af41a060caaf2d9c8e36ffaf6aad9aafd7f9c3ab5c0f9a33223"
+hash = "7ec952ab40598c3f7b67e25028af5772c9c7243b6e5a16152a43ef60c2be6175"
 
 [[files]]
 file = "kubejs/startup_scripts/milk_bucket_no_remainder.js"

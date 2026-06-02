@@ -8,9 +8,9 @@
 //    Frames carry no eye (you still craft 12 loose eyes of ender to activate the ring).
 //    Yields 4 per craft (3 crafts = a full 12-frame ring) to keep the grind sane.
 //
-// 2) MASTER FROG. The campaign capstone, crafted in the Extended Crafting ULTIMATE table
-//    (tier 4) from the Ultimate Singularity - which itself demands one singularity for every
-//    vanilla froglight resource (all 40; config/extendedcrafting/singularities/*.json), so
+// 2) MASTER FROG. The campaign capstone, crafted in a regular crafting table from the
+//    Ultimate Singularity - which itself demands one singularity for every vanilla froglight
+//    resource (all 40; config/extendedcrafting/singularities/*.json), so
 //    the whole pack is compressed into that one input - ringed by six Froglights (the species'
 //    light) with sweetslime accents. The "every resource" rule is enforced upstream in the
 //    Ultimate Singularity, so plain froglight ingredients here are intentional (robust,
@@ -32,22 +32,22 @@ ServerEvents.recipes(event => {
     }
   ).id('kubejs:void/end_portal_frame')
 
-  // Master Frog - Ultimate Crafting Table (tier 4) capstone craft.
+  // Master Frog - regular crafting table capstone craft. The Ultimate Singularity is already
+  // the gated endgame item, so the final trophy just needs a vanilla 3x3 grid (no EC table).
+  // Guarded on EC only because the Ultimate Singularity (the U key) is an Extended Crafting item.
   if (Platform.isLoaded('extendedcrafting')) {
-    event.custom({
-      type: 'extendedcrafting:shaped_table',
-      tier: 4,
-      pattern: [
+    event.shaped(
+      'kubejs:master_frog',
+      [
         'FFF',
         'FUF',
         'sFs'
       ],
-      key: {
-        F: { item: 'productivefrogs:configurable_froglight' },
-        U: { item: 'extendedcrafting:ultimate_singularity' },
-        s: { item: 'productivefrogs:sweetslime' }
-      },
-      result: { id: 'kubejs:master_frog', count: 1 }
-    }).id('kubejs:void/master_frog')
+      {
+        F: 'productivefrogs:configurable_froglight',
+        U: 'extendedcrafting:ultimate_singularity',
+        s: 'productivefrogs:sweetslime'
+      }
+    ).id('kubejs:void/master_frog')
   }
 })
