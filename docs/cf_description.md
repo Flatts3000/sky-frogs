@@ -5,14 +5,14 @@ this comment into the CF dashboard's Description field at project creation
 
 Source: derived from curseforge_page.md (the meta-doc with sectioning).
 This file is the actual page body without the meta labels.
-Status: covers the content-complete alpha (Welcome through Void + the Master Pond endgame). Refresh at v1.0. Push to the live CF page only when the matching release is tagged (the live listing should match what downloaders get).
+Status: covers the v0.2.0 content-complete beta (Welcome through Void + the Master Pond endgame). Refresh at v1.0. Push to the live CF page only when the matching release is tagged (the live listing should match what downloaders get).
 -->
 
 # Sky Frogs
 
 > A void-skyblock NeoForge 1.21.1 modpack built around [Productive Frogs](https://www.curseforge.com/minecraft/mc-mods/productive-frogs).
 
-**Status: alpha, content-complete.** All six tiers (Welcome / Cave / Geode / Bog / Tide / Infernal / Void) are built and playable end-to-end - frogs for ores, gems, organics, the ocean, the Nether, and the End - finishing with a real dragon expedition and a singularity-powered endgame that caps off in the **Sky Frogs Master Frog** trophy. What remains is balance, polish, and art. Feedback welcome via [GitHub Issues](https://github.com/Flatts3000/sky-frogs/issues).
+**Status: beta, content-complete.** All six tiers (Welcome / Cave / Geode / Bog / Tide / Infernal / Void) are built and playable end-to-end - frogs for ores, gems, organics, the ocean, the Nether, and the End - finishing with a real dragon expedition and a singularity-powered endgame that caps off in the **Sky Frogs Master Frog** trophy. What remains is balance, polish, and art. Feedback welcome via [GitHub Issues](https://github.com/Flatts3000/sky-frogs/issues).
 
 ---
 
