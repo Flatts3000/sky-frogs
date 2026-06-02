@@ -4,6 +4,10 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-06-02
+
+**First complete-campaign beta.** All six Productive Frogs species tiers are built and playable end-to-end - Cave (ores), Geode (gems), Bog (organics), Tide (the ocean + jetpacks), Infernal (the Nether, via a real fortress expedition), and Void (the End, via a dragon expedition) - capped by the singularity endgame and the Sky Frogs Master Frog trophy. This supersedes the v0.1.0 alpha (Tiers 0-4); the full detail of everything in the build is below. Beta: balance, polish, and art are still in progress. A fresh world is recommended (the Void tier ships a traditional vanilla End).
+
 ### Added
 - Initial packwiz scaffold (MC 1.21.1 / NeoForge 21.1.230) with FTB utility stack, JEI, Jade, and Tier 0 substrate (Skyblock Builder, Ex Deorum, Forgiving Void, Rain Shield).
 - Productive Frogs added from CurseForge (project-id 1552728), pinned at **v1.6.0** — the pack's load-bearing core mod, via packwiz (initially v1.0.1; v1.2.0 unlocked the 57-variant resource set, component-driven Slime Milk, and data-driven spawn eggs; v1.3.0 adds the `mod_loaded`-gated cross-mod crush recipes; v1.4.0 ships the Spawnery appliance, which this pack enables; v1.4.1-1.4.3 add Jade appliance tooltips and rebalance the Geode/Tide/Void resource rosters; **v1.5.0 adds frog stats (Appetite/Bounty/Reach) + breeding via Sweetslime** — which the Scaling the Colony chapter depends on; v1.5.1 moves Lapis from Cave to Geode; v1.5.2 is a patch bump; **v1.5.3 adds JEI recipe pages for the Spawnery + Slime Milker** (frogspawn / slime-milk recipe lookups, tag-driven so pack primer overrides show through) — all additive, pack overrides unaffected; **v1.6.0** ships the organic Bog roster the Tier 3 chapters consume: dirt, mud, clay_ball, moss, mycelium, lily_pad, leather, feather, plus the Industrial Foregoing plastic and pink_slime variants).
