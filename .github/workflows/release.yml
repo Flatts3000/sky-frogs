@@ -35,9 +35,10 @@ jobs:
         id: ver
         run: echo "version=${GITHUB_REF_NAME#v}" >> "$GITHUB_OUTPUT"
 
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v6
         with:
           go-version: stable
+          cache: false # no go.sum in this repo (packwiz is `go install`-ed); skip the cache restore
 
       - name: Install packwiz
         run: |
