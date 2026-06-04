@@ -1,0 +1,53 @@
+{
+  // SKY FROGS - spawn protection config.
+  //
+  // WHY THIS FILE EXISTS: SkyblockBuilder's spawn protection disables a list of events
+  // within `spawnProtectionRadius` chunks of the world-origin spawn island. The default
+  // radius is non-zero AND the default event list includes `mobs_spawn` - so out of the
+  // box, hostile mobs (including the Tier 1 Cave Slime that the dark-room farm relies on)
+  // will NOT spawn anywhere near the starter island. `mobs_spawn` is a world rule, so an
+  // op singleplayer can still BUILD the dark room there, but nothing spawns in it - players
+  // only got slimes after `/skyblock create` moved them thousands of blocks away, outside
+  // the radius (reported on CurseForge by rerezcb + n3twoik, 2026-06-04).
+  //
+  // FIX: spawnProtectionRadius = 0 disables the protected area entirely, so mobs spawn on
+  // the starter island. Matches what ATM10SKY ships. The starter island IS the player's
+  // home on a per-player-island skyblock, so there is nothing to "protect" at spawn anyway.
+  // (The event/interaction lists below are inert at radius 0; kept at sane defaults in case
+  // the radius is ever raised.)
+
+  "interactionBlocksInSpawnProtection": { "allow_list": true, "elements": [] },
+  "interactionEntitiesInSpawnProtection": { "allow_list": true, "elements": [] },
+  "interactionItemsInSpawnProtection": { "allow_list": true, "elements": [] },
+
+  // The radius to find a valid spawn if no given spawn is valid
+  "radiusToFindValidSpawn": 50,
+
+  // If true, the first island is not generated at 0 ~ 0. We keep the center island at origin.
+  "skipCenterIslandCreation": false,
+
+  "spawnDimension": "minecraft:overworld",
+
+  // Inert while spawnProtectionRadius = 0. Left at SkyblockBuilder defaults.
+  "spawnProtectionEvents": [
+    "interact_entities",
+    "interact_blocks",
+    "mob_griefing",
+    "explosions",
+    "crop_grow",
+    "apply_bonemeal",
+    "mobs_spawn",
+    "mobs_spawn_egg",
+    "damage",
+    "healing"
+  ],
+
+  // THE FIX: 0 = no spawn-protection area, so mobs spawn on the starter island.
+  "spawnProtectionRadius": 0,
+
+  "Height": {
+    "heightCalculationType": "set",
+    "offset": 0,
+    "range": { "bottom": 64, "top": 319 }
+  }
+}

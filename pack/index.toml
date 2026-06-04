@@ -325,6 +325,10 @@ file = "config/skyblockbuilder/dimensions.json5"
 hash = "4d2319aa9a4910827ff5a67a81030ee050f0b59df34981af16152feb8b2129db"
 
 [[files]]
+file = "config/skyblockbuilder/spawn.json5"
+hash = "6b0521552f9788bab1fff5f3726e6226ab9375436c11607cdb1af20108f40496"
+
+[[files]]
 file = "config/skyblockbuilder/starter_inventory.json5"
 hash = "e3171de74e0d9e52dd88c94d70380c320cd7b0e06c96ab3dbc962f828decdd93"
 
@@ -342,7 +346,7 @@ hash = "dafc46e19f19eb74b5bb96d994886f411c10343437577d212cdd149fd920409d"
 
 [[files]]
 file = "config/skyblockbuilder/world.json5"
-hash = "fcce4bb0b6017f641a1bd50d68ec0ed60d5d883939d3ad91fdc9ea2cbe0443e5"
+hash = "83840d5fcef99ccd9e9b788b3efb57fb3807131a6c6ad9bf72f2ba1cd93e6377"
 
 [[files]]
 file = "config/toastcontrol-client.toml"
