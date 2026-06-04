@@ -4,6 +4,13 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+## [0.2.2] - 2026-06-04
+
+Hotfix: Cave Slimes now spawn on the starter island.
+
+### Fixed
+- **Cave Slimes wouldn't spawn on the starter island.** SkyblockBuilder's default spawn protection disables mob spawning in the chunks around world origin, so the Tier 1 dark-room farm produced nothing until you ran `/skyblock create` to make a distant island. The pack now ships `config/skyblockbuilder/spawn.json5` with `spawnProtectionRadius: 0`, so slimes spawn on the starter island as intended. (#58 - reported by rerezcb + n3twoik)
+
 ## [0.2.1] - 2026-06-04
 
 Bug-fix and quality-of-life release on top of the v0.2.0 campaign beta. Fixes two Mekanism-chapter blockers found in playtest and adds three QoL mods.
@@ -136,6 +143,7 @@ Bug-fix and quality-of-life release on top of the v0.2.0 campaign beta. Fixes tw
 ### Fixed
 ```
 
-[Unreleased]: https://github.com/Flatts3000/sky-frogs/compare/v0.2.1...HEAD
+[Unreleased]: https://github.com/Flatts3000/sky-frogs/compare/v0.2.2...HEAD
+[0.2.2]: https://github.com/Flatts3000/sky-frogs/compare/v0.2.1...v0.2.2
 [0.2.1]: https://github.com/Flatts3000/sky-frogs/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/Flatts3000/sky-frogs/releases/tag/v0.2.0
