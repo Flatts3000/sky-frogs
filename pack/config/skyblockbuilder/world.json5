@@ -5,11 +5,14 @@
   // A list of biomes will be generated at "config/skyblockbuilder/data/biomes.txt" each time joining a world.
   // These are resource lists. See https://moddingx.org/libx/org/moddingx/libx/util/data/ResourceList.html#use_resource_lists_in_configs
   //
-  // SKY FROGS: the overworld is forced to a single swamp biome. This is load-bearing for Tier 0.
-  // Productive Frogs' Bog Slime (the Tier 0 / Bog parent species) spawns only in minecraft:swamp +
-  // minecraft:mangrove_swamp via PF's own add_bog_slime_spawn.json biome modifier, gated by a
-  // light-based placement rule. A swamp island means a dark-room slime farm produces Bog Slimes with
-  // no pack-side spawn code. Swamp is also on-theme for a frog pack. See docs/worldgen.md +
+  // SKY FROGS: the overworld is forced to a single swamp biome. This is load-bearing for Tier 1.
+  // The pack disables all six PF default spawns and re-adds the Cave Slime (the Tier 1 starter
+  // species) to minecraft:swamp via kubejs/data/skyfrogs/.../add_cave_slime_island.json (weight 200).
+  // Cave Slime is a MONSTER with PF's light-based placement rule, so a dark-room farm on the swamp
+  // island produces Cave Slimes. Swamp is also on-theme for a frog pack.
+  // NOTE: this only works if SkyblockBuilder spawn protection is off near origin - see
+  // config/skyblockbuilder/spawn.json5 (spawnProtectionRadius = 0). At the default radius the
+  // `mobs_spawn` protection suppresses spawns on the starter island. See docs/worldgen.md +
   // docs/kubejs_overrides.md Pillar 2.
   "biomes": {
     "minecraft:overworld": {
