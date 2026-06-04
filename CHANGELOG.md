@@ -4,6 +4,27 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+## [0.2.1] - 2026-06-04
+
+Bug-fix and quality-of-life release on top of the v0.2.0 campaign beta. Fixes two Mekanism-chapter blockers found in playtest and adds three QoL mods.
+
+### Added
+- **AppleSkin** - saturation and exact food-value overlay on the HUD and item tooltips. (#53)
+- **Fast Leaf Decay** - leaves break shortly after their supporting logs are removed. (#54)
+- **FTB Filter System** - smart item filters for Modular Routers / AE2.
+
+### Fixed
+- **Steel quest was uncompletable.** It required Mekanism's steel ingot, but AlmostUnified makes the AllTheOres steel ingot the only craftable one. The quest now accepts the AllTheOres Steel Ingot. (#51)
+- **Couldn't make Steel Slimes.** The Metallurgic Infuser rejected survival-obtained Iron Slime buckets (an NBT-matching bug); the recipe now takes a Bucket of Iron Slime Milk + carbon. (#52)
+- Refreshed the packwiz integrity index (stale file hashes left by the steel-fix commits). (#56)
+
+### Changed
+- CI: bumped `actions/checkout` v4 -> v6 and `actions/setup-python` v5 -> v6. (#48, #49)
+- Tooling: the quest validator now understands FTB filter-item tasks; added a GitHub Issues workflow guide (`docs/github_issues_best_practices.md`).
+
+### World-breaking
+- (none)
+
 ## [0.2.0] - 2026-06-02
 
 **First complete-campaign beta.** All six Productive Frogs species tiers are built and playable end-to-end - Cave (ores), Geode (gems), Bog (organics), Tide (the ocean + jetpacks), Infernal (the Nether, via a real fortress expedition), and Void (the End, via a dragon expedition) - capped by the singularity endgame and the Sky Frogs Master Frog trophy. This supersedes the v0.1.0 alpha (Tiers 0-4); the full detail of everything in the build is below. Beta: balance, polish, and art are still in progress. A fresh world is recommended (the Void tier ships a traditional vanilla End).
@@ -115,4 +136,6 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 ### Fixed
 ```
 
-[Unreleased]: https://github.com/Flatts3000/sky-frogs/compare/main...HEAD
+[Unreleased]: https://github.com/Flatts3000/sky-frogs/compare/v0.2.1...HEAD
+[0.2.1]: https://github.com/Flatts3000/sky-frogs/compare/v0.2.0...v0.2.1
+[0.2.0]: https://github.com/Flatts3000/sky-frogs/releases/tag/v0.2.0
