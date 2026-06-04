@@ -36,6 +36,16 @@ ITEM_ALLOWLIST = REPO / "tools" / "data" / "item_ids.txt"
 ERROR, WARN, INFO = "ERROR", "WARN", "INFO"
 HEX_POSITIVE = set("01234567")
 
+# FTB Quests "filter" task items: the item id is a virtual filter, and matching is driven
+# by the embedded filter expression (e.g. components."ftbfiltersystem:filter":
+# "item_tag(c:ingots/steel)"), NOT by item-id/component equality. Verified from the FTB
+# Quests bytecode: ItemTask.test -> ItemMatchingSystem.doesItemMatch checks getFilterAdapter
+# first and delegates to the adapter's filter test, never consulting match_components for a
+# filter stack; only NON-filter items fall through to the component-equality path. So filter
+# items are exempt from Q-ITEM-EXISTS (not a registry item) and Q-MATCH-COMPONENTS (the
+# filter expression IS the matcher; match_components is N/A and ignored at runtime).
+FILTER_ITEMS = {"ftbfiltersystem:smart_filter"}
+
 
 # --------------------------------------------------------------------------- #
 # Minimal SNBT parser
@@ -301,6 +311,11 @@ def components_repr(item) -> str:
     return json.dumps(comps, sort_keys=True)
 
 
+def is_filter_item(item) -> bool:
+    """True if the task item is an FTB Quests filter item (matched by expression)."""
+    return isinstance(item, dict) and item.get("id") in FILTER_ITEMS
+
+
 # --------------------------------------------------------------------------- #
 # Checks
 # --------------------------------------------------------------------------- #
@@ -410,6 +425,8 @@ def check_match_components(chapters, ctx):
         qid = q.get("id", "")
         for t in item_tasks(q):
             item = t.get("item")
+            if is_filter_item(item):  # filter expression is the matcher; match_components N/A
+                continue
             if components_repr(item):  # has a component filter
                 mc = t.get("match_components")
                 if mc is None:
@@ -505,6 +522,8 @@ def check_item_exists(chapters, ctx):
         stacks = []
         for t in item_tasks(q):
             it = t.get("item")
+            if is_filter_item(it):  # virtual filter item, not a registry item
+                continue
             if isinstance(it, dict) and it.get("id"):
                 stacks.append((it["id"], t.get("id", qid)))
         for r in q.get("rewards", []) or []:

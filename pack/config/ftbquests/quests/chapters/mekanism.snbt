@@ -97,7 +97,7 @@
 			}]
 			tasks: [{
 				id: "6ECA15000000000C"
-				item: { count: 1, id: "mekanism:ingot_steel" }
+				item: { components: { "ftbfiltersystem:filter": "item_tag(c:ingots/steel)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 0.0d

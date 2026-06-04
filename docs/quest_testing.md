@@ -93,7 +93,7 @@ quest), **WARN** is a smell worth a human look.
 
 | ID | Sev | Rule | Encodes |
 |----|-----|------|---------|
-| **Q-MATCH-COMPONENTS** | ERROR | any item task whose `item` carries a `components` filter MUST set `match_components` (`strict` or `fuzzy`) | **the tier-skip exploit** - the single highest-value check |
+| **Q-MATCH-COMPONENTS** | ERROR | any item task whose `item` carries a `components` filter MUST set `match_components` (`strict` or `fuzzy`) - except FTB filter items (`ftbfiltersystem:smart_filter`), which match by their filter expression, not component equality, so `match_components` is N/A | **the tier-skip exploit** - the single highest-value check |
 | **Q-NO-DUP-TASK** | ERROR | within a chapter, no two quests share an identical `(item_id, components)` task. If two quests check the same item with the same (or no) discriminator, one completing auto-completes the other | copy-paste where two quests check the same variant |
 | **Q-VARIANT-DISTINCT** | WARN | in a known resource-chain chapter (cave/geode/bog/tide_frogs), each resource quest checks a *distinct* `slime_variant` / `Variant` (no two quests target copper) | silent copy-paste of the variant id |
 
@@ -121,7 +121,7 @@ through `Q-ID-POSITIVE` / `Q-ID-UNIQUE`, and their granted items through `Q-ITEM
 
 | ID | Sev | Rule | Encodes |
 |----|-----|------|---------|
-| **Q-ITEM-EXISTS** | ERROR | every item id referenced in a task/reward exists in the pack's registry | the "Missing Item" version-gap bugs (sweetslime pinned too low, etc.) |
+| **Q-ITEM-EXISTS** | ERROR | every item id referenced in a task/reward exists in the pack's registry (FTB filter items like `ftbfiltersystem:smart_filter` are exempt - they are virtual task items matched by a filter expression, not registry entries) | the "Missing Item" version-gap bugs (sweetslime pinned too low, etc.) |
 | **Q-VARIANT-MADE** | WARN | for each resource quest, the `slime_variant` / `Variant` it checks is actually produced by a shipped recipe (a `*_slime_chain.js` step or a `SLIME_TIERS` row in `dissolution_slime_recipes.js`) | quest-vs-recipe drift (a quest for a variant no recipe makes) |
 | **Q-FROGLIGHT-IS-CHECK** | WARN | per-tier *resource* quests check the variant Froglight (`configurable_froglight` + `slime_variant`), not the smelted resource, per the froglight-check principle (documented exceptions: Your First Iron Ingot, the main Mekanism Steel quest) | the no-bypass design law |
 
