@@ -88,6 +88,7 @@ Each entry here directly maps to one or more PF category slime variants (see [`p
 | **Waystones**         | Teleportation network                                                 |
 | **Easy Villagers**    | Trade with villagers from blocks (no need for trading halls)          |
 | **AppleSkin** (SHIPPED) | Saturation + exact food-value overlay on the HUD and item tooltips (client-side QoL) |
+| **Fast Leaf Decay** (SHIPPED) | Leaves break/fall quickly once supporting logs are removed - QoL for tree farms (tree-felling itself is handled by FTB Ultimine) |
 | **Farmer's Delight** + **Cooking for Blockheads** + **Croptopia** + **Farmer's Croptopia** + **Farming for Blockheads** + **Right Click Harvest** + **Squat Grow** | Skyblock food economy   |
 | **Mouse Tweaks** + **Inventory Tweaks** + **Crafting Tweaks** + **Polymorph** | Inventory ergonomics                              |
 | **Trash Slot** + **Trash Cans** | Discard items                                              |
