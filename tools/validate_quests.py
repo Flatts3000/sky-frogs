@@ -36,6 +36,27 @@ ITEM_ALLOWLIST = REPO / "tools" / "data" / "item_ids.txt"
 ERROR, WARN, INFO = "ERROR", "WARN", "INFO"
 HEX_POSITIVE = set("01234567")
 
+# FTB Quests "filter" task items: the item id is a virtual filter, and matching is driven
+# by the embedded filter expression (e.g. components."ftbfiltersystem:filter":
+# "item_tag(c:ingots/steel)"), NOT by item-id/component equality. Verified from the FTB
+# Quests bytecode: ItemTask.test -> ItemMatchingSystem.doesItemMatch checks getFilterAdapter
+# first and delegates to the adapter's filter test, never consulting match_components for a
+# filter stack; only NON-filter items fall through to the component-equality path. So filter
+# items are exempt from Q-MATCH-COMPONENTS (the filter expression IS the matcher;
+# match_components is N/A and ignored at runtime).
+#
+# They are NOT exempt from Q-ITEM-EXISTS: a filter item is a *real* registered item once the
+# FTB Filter System mod (ftbfiltersystem) ships in the pack, so it must appear in
+# item_ids.txt like anything else. (Exempting it once masked a Missing Item - a smart_filter
+# task authored while the mod was not installed rendered as "Missing Item" in-game but passed
+# the validator. Keep the registry check live so a filter item from an absent mod is caught.)
+#
+# The Q-MATCH-COMPONENTS exemption also requires the filter-expression component to be present
+# and non-empty - a smart_filter with no expression is an authoring mistake and must NOT be
+# exempted (it should fall through to the normal checks and get flagged).
+FILTER_ITEMS = {"ftbfiltersystem:smart_filter"}
+FILTER_EXPR_COMPONENT = "ftbfiltersystem:filter"
+
 
 # --------------------------------------------------------------------------- #
 # Minimal SNBT parser
@@ -301,6 +322,20 @@ def components_repr(item) -> str:
     return json.dumps(comps, sort_keys=True)
 
 
+def is_filter_item(item) -> bool:
+    """True if the task item is a well-formed FTB Quests filter item.
+
+    Requires both the filter item id AND a non-empty filter-expression component. A
+    smart_filter with no expression is an authoring mistake, so it is NOT treated as a
+    filter item - it falls through to Q-ITEM-EXISTS / Q-MATCH-COMPONENTS and gets flagged.
+    """
+    if not isinstance(item, dict) or item.get("id") not in FILTER_ITEMS:
+        return False
+    comps = item.get("components")
+    expr = comps.get(FILTER_EXPR_COMPONENT) if isinstance(comps, dict) else None
+    return isinstance(expr, str) and expr.strip() != ""
+
+
 # --------------------------------------------------------------------------- #
 # Checks
 # --------------------------------------------------------------------------- #
@@ -410,6 +445,8 @@ def check_match_components(chapters, ctx):
         qid = q.get("id", "")
         for t in item_tasks(q):
             item = t.get("item")
+            if is_filter_item(item):  # filter expression is the matcher; match_components N/A
+                continue
             if components_repr(item):  # has a component filter
                 mc = t.get("match_components")
                 if mc is None:
@@ -505,6 +542,10 @@ def check_item_exists(chapters, ctx):
         stacks = []
         for t in item_tasks(q):
             it = t.get("item")
+            # NOTE: filter items (ftbfiltersystem:smart_filter) are NOT exempt here. They
+            # are real registered items once the FTB Filter System mod ships in the pack, so
+            # they MUST appear in item_ids.txt - exempting them once masked a Missing Item
+            # (a smart_filter task while the mod wasn't installed). Let the registry check run.
             if isinstance(it, dict) and it.get("id"):
                 stacks.append((it["id"], t.get("id", qid)))
         for r in q.get("rewards", []) or []:

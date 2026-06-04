@@ -569,7 +569,7 @@
 	quest.6ECA15000000000E.quest_subtitle: "Machine shells."
 	quest.6ECA15000000000E.title: "Steel Casing"
 	quest.6ECA150000000011.quest_desc: [
-		"Steel doesn't have to come one infuse at a time. In the &eMetallurgic Infuser&r, infuse an &bIron Slime in a Bucket&r with &fcarbon&r (coal or charcoal) and it comes out a &7Steel Slime in a Bucket&r - the same iron-and-carbon trick that makes steel itself."
+		"Steel doesn't have to come one infuse at a time. In the &eMetallurgic Infuser&r, infuse a &bBucket of Iron Slime Milk&r with &fcarbon&r (coal or charcoal) and it comes out a &7Steel Slime in a Bucket&r - the same iron-and-carbon trick that makes steel itself."
 		""
 		"Feed it to a Cave Frog and turn in the &bSteel Froglight&r it leaves. Smelt it for steel, the same metal the infuser makes, now pouring off a frog."
 	]

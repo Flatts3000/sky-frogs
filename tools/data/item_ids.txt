@@ -10229,6 +10229,7 @@ framedblocks:framed_wrench
 framedblocks:framing_saw
 framedblocks:phantom_paste
 framedblocks:powered_framing_saw
+ftbfiltersystem:smart_filter
 ftblibrary:icon_item
 ftbquests:barrier
 ftbquests:book

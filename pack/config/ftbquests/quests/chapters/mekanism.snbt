@@ -84,7 +84,7 @@
 		{
 			dependencies: ["6ECA150000000008"]
 			icon: {
-				id: "mekanism:ingot_steel"
+				id: "alltheores:steel_ingot"
 			}
 			id: "6ECA15000000000B"
 			rewards: [{
@@ -97,7 +97,7 @@
 			}]
 			tasks: [{
 				id: "6ECA15000000000C"
-				item: { count: 1, id: "mekanism:ingot_steel" }
+				item: { count: 1, id: "alltheores:steel_ingot" }
 				type: "item"
 			}]
 			x: 0.0d
