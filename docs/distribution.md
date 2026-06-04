@@ -1,6 +1,6 @@
 # Distribution
 
-> **Status:** DRAFT — non-canonical except for the CurseForge-only call (decided 2026-05-23, see `docs/backlog.md`). Versioning policy, changelog format, and release workflow are first-draft proposals.
+> **Status:** DRAFT — non-canonical except for the CurseForge-only call (decided 2026-05-23, see `docs/backlog.md`). Versioning policy and changelog format are first-draft proposals; the release workflow is implemented (`.github/workflows/release.yml`).
 
 How Sky Frogs ships, where players install it from, and how releases happen.
 
@@ -24,8 +24,8 @@ GitHub Releases mirrors each tag's CF zip + server zip for transparency, rollbac
 
 - [x] **Claim CurseForge slug `sky-frogs`** — submitted 2026-05-29 with the v0.1.0 alpha file (file id `8167200`) at project ID `1558075`. Project + file are queued for CF moderation (typically 1-3 business days); not yet confirmed live.
 - [x] **GitHub repo** — `Flatts3000/sky-frogs` exists; community health files landed.
-- [x] **CurseForge API token** — reuses the token from `productive-frogs/.env` (same author account). For CI, save as GitHub secret `CF_API_TOKEN`.
-- [x] **CurseForge project ID** — `1558075`. Save as `CF_PROJECT_ID` GitHub secret when wiring `release.yml`.
+- [x] **CurseForge API token** — reuses the token from `productive-frogs/.env` (`CURSEFORGE_API_KEY`, same author account). Set as the repo secret **`CF_API_TOKEN`** consumed by `release.yml`.
+- [x] **CurseForge project ID** — `1558075`. Hardcoded in `release.yml`'s `env` (public, not a secret).
 - [ ] **Branding assets** — upload logo / banner / hero / gallery to the CF project page. See [`pack_metadata.md`](./pack_metadata.md) for asset spec.
 
 ### CF upload API quirks discovered on first submission
@@ -48,13 +48,14 @@ git tag v0.1.0
 git push origin v0.1.0
 ```
 
-The `release.yml` GitHub Action takes over:
+`.github/workflows/release.yml` (**shipped**) takes over:
 
-1. Checks out the tag commit.
-2. Runs `tools/build_cf_zip.sh` (planned) — `packwiz refresh && packwiz curseforge export`.
-3. Creates a GitHub release with the CF zip + server zip attached and a changelog excerpt from `CHANGELOG.md`.
-4. Uploads the CF zip to CurseForge via API.
-5. Sets `game_versions: [1.21.1]`, `loaders: [neoforge]` on the CF release.
+1. Checks out the tag and asserts `pack/pack.toml`'s version matches the tag (bump it before tagging).
+2. Installs packwiz and runs `packwiz refresh && packwiz curseforge export` (inline — there is no separate `build_cf_zip.sh`).
+3. Creates a GitHub release with the CF zip attached and the matching `## [x.y.z]` section of `CHANGELOG.md` as the notes (marked prerelease for `0.x` and `-suffix` tags).
+4. Uploads the CF zip to CurseForge via the upload API, sending `gameVersions: [11779, 10150]` and `releaseType: beta` for `0.x` (`release` otherwise).
+
+Requires the repo secret **`CF_API_TOKEN`** (the CF upload token). If it is unset, step 4 is skipped with a warning and the GitHub release still ships. The CF project id (`1558075`) is hardcoded in the workflow `env` — it is public, not a secret.
 
 Manual release path (fallback) if the action fails: download the artifact from the GitHub release page, upload manually via the CurseForge web UI.
 

@@ -1,0 +1,128 @@
+name: Release
+
+# Tag-driven release. Cut one with:
+#   (bump pack/pack.toml version + update CHANGELOG.md, commit, then)
+#   git tag vX.Y.Z && git push origin vX.Y.Z
+#
+# This builds the CurseForge export, creates a GitHub release with the zip and the
+# matching CHANGELOG section, and uploads the file to CurseForge.
+#
+# Requires repo secret CF_API_TOKEN (the CurseForge *upload* token, same one in
+# productive-frogs/.env as CURSEFORGE_API_KEY). If it is unset, the CurseForge step is
+# skipped with a warning and the GitHub release still ships (upload the asset manually).
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write # create GitHub releases
+
+env:
+  CF_PROJECT_ID: "1558075"
+  # Modpack-class game-version IDs (NOT the mod-class ones); see docs/distribution.md.
+  # MC 1.21.1 modpack = 11779, NeoForge = 10150. A Java-version ID must NOT be sent for modpacks.
+  CF_GAME_VERSIONS: "[11779, 10150]"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Resolve version from tag
+        id: ver
+        run: echo "version=${GITHUB_REF_NAME#v}" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: stable
+
+      - name: Install packwiz
+        run: |
+          go install github.com/packwiz/packwiz@latest
+          echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
+
+      - name: Guard - pack.toml version matches the tag
+        run: |
+          pack_ver=$(grep -E '^version *= *' pack/pack.toml | head -1 | sed -E 's/.*"([^"]+)".*/\1/')
+          if [ "$pack_ver" != "${{ steps.ver.outputs.version }}" ]; then
+            echo "::error::pack.toml version ($pack_ver) does not match tag (${{ steps.ver.outputs.version }}). Bump pack.toml before tagging."
+            exit 1
+          fi
+
+      - name: Build CurseForge export
+        id: build
+        run: |
+          cd pack
+          packwiz refresh
+          packwiz curseforge export
+          zip=$(ls *.zip)
+          echo "zip_path=pack/$zip" >> "$GITHUB_OUTPUT"
+          echo "built: pack/$zip"
+
+      - name: Extract changelog section and build CF metadata
+        env:
+          VERSION: ${{ steps.ver.outputs.version }}
+          CF_GAME_VERSIONS: ${{ env.CF_GAME_VERSIONS }}
+        run: |
+          python3 - <<'PY'
+          import json, os, re
+          version = os.environ["VERSION"]
+          text = open("CHANGELOG.md", encoding="utf-8").read()
+          m = re.search(r"## \[" + re.escape(version) + r"\][^\n]*\n(.*?)(?=\n## \[)", text, re.S)
+          cl = (m.group(1).strip() if m else f"Release {version}")
+          open("release_notes.md", "w", encoding="utf-8").write(cl)
+          release_type = "beta" if version.startswith("0.") else "release"
+          json.dump(
+              {
+                  "changelog": cl,
+                  "changelogType": "markdown",
+                  "displayName": f"Sky Frogs {version}",
+                  "gameVersions": json.loads(os.environ["CF_GAME_VERSIONS"]),
+                  "releaseType": release_type,
+              },
+              open("cf_meta.json", "w", encoding="utf-8"),
+          )
+          print("release_type:", release_type, "| changelog chars:", len(cl))
+          PY
+
+      - name: Create GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          prerelease=""
+          case "${{ steps.ver.outputs.version }}" in
+            0.*|*-*) prerelease="--prerelease" ;;
+          esac
+          gh release create "${GITHUB_REF_NAME}" \
+            --title "${GITHUB_REF_NAME}" \
+            --notes-file release_notes.md \
+            $prerelease \
+            "${{ steps.build.outputs.zip_path }}"
+
+      - name: Upload to CurseForge
+        env:
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+        run: |
+          if [ -z "$CF_API_TOKEN" ]; then
+            echo "::warning::CF_API_TOKEN not set - skipping CurseForge upload. The GitHub release shipped; upload the asset manually via the CF web UI."
+            exit 0
+          fi
+          resp=$(curl -s -w '\n%{http_code}' -X POST \
+            -H "X-Api-Token: $CF_API_TOKEN" \
+            -F "metadata=<cf_meta.json" \
+            -F "file=@${{ steps.build.outputs.zip_path }}" \
+            "https://minecraft.curseforge.com/api/projects/${CF_PROJECT_ID}/upload-file")
+          body=$(printf '%s' "$resp" | sed '$d')
+          code=$(printf '%s' "$resp" | tail -n1)
+          echo "HTTP $code: $body"
+          if [ "$code" != "200" ]; then
+            echo "::error::CurseForge upload failed (HTTP $code): $body"
+            exit 1
+          fi
+          fileid=$(printf '%s' "$body" | python3 -c "import sys, json; print(json.load(sys.stdin)['id'])")
+          url="https://www.curseforge.com/minecraft/modpacks/sky-frogs/files/$fileid"
+          echo "CurseForge file: $url"
+          echo "### CurseForge file [$fileid]($url)" >> "$GITHUB_STEP_SUMMARY"
