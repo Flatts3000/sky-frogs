@@ -43,8 +43,12 @@ HEX_POSITIVE = set("01234567")
 # first and delegates to the adapter's filter test, never consulting match_components for a
 # filter stack; only NON-filter items fall through to the component-equality path. So filter
 # items are exempt from Q-ITEM-EXISTS (not a registry item) and Q-MATCH-COMPONENTS (the
-# filter expression IS the matcher; match_components is N/A and ignored at runtime).
+# filter expression IS the matcher; match_components is N/A and ignored at runtime). The
+# exemption requires the filter-expression component to be present and non-empty - a
+# smart_filter with no expression is an authoring mistake and must NOT be exempted (it
+# should fall through to the normal checks and get flagged).
 FILTER_ITEMS = {"ftbfiltersystem:smart_filter"}
+FILTER_EXPR_COMPONENT = "ftbfiltersystem:filter"
 
 
 # --------------------------------------------------------------------------- #
@@ -312,8 +316,17 @@ def components_repr(item) -> str:
 
 
 def is_filter_item(item) -> bool:
-    """True if the task item is an FTB Quests filter item (matched by expression)."""
-    return isinstance(item, dict) and item.get("id") in FILTER_ITEMS
+    """True if the task item is a well-formed FTB Quests filter item.
+
+    Requires both the filter item id AND a non-empty filter-expression component. A
+    smart_filter with no expression is an authoring mistake, so it is NOT treated as a
+    filter item - it falls through to Q-ITEM-EXISTS / Q-MATCH-COMPONENTS and gets flagged.
+    """
+    if not isinstance(item, dict) or item.get("id") not in FILTER_ITEMS:
+        return False
+    comps = item.get("components")
+    expr = comps.get(FILTER_EXPR_COMPONENT) if isinstance(comps, dict) else None
+    return isinstance(expr, str) and expr.strip() != ""
 
 
 # --------------------------------------------------------------------------- #
