@@ -42,11 +42,18 @@ HEX_POSITIVE = set("01234567")
 # Quests bytecode: ItemTask.test -> ItemMatchingSystem.doesItemMatch checks getFilterAdapter
 # first and delegates to the adapter's filter test, never consulting match_components for a
 # filter stack; only NON-filter items fall through to the component-equality path. So filter
-# items are exempt from Q-ITEM-EXISTS (not a registry item) and Q-MATCH-COMPONENTS (the
-# filter expression IS the matcher; match_components is N/A and ignored at runtime). The
-# exemption requires the filter-expression component to be present and non-empty - a
-# smart_filter with no expression is an authoring mistake and must NOT be exempted (it
-# should fall through to the normal checks and get flagged).
+# items are exempt from Q-MATCH-COMPONENTS (the filter expression IS the matcher;
+# match_components is N/A and ignored at runtime).
+#
+# They are NOT exempt from Q-ITEM-EXISTS: a filter item is a *real* registered item once the
+# FTB Filter System mod (ftbfiltersystem) ships in the pack, so it must appear in
+# item_ids.txt like anything else. (Exempting it once masked a Missing Item - a smart_filter
+# task authored while the mod was not installed rendered as "Missing Item" in-game but passed
+# the validator. Keep the registry check live so a filter item from an absent mod is caught.)
+#
+# The Q-MATCH-COMPONENTS exemption also requires the filter-expression component to be present
+# and non-empty - a smart_filter with no expression is an authoring mistake and must NOT be
+# exempted (it should fall through to the normal checks and get flagged).
 FILTER_ITEMS = {"ftbfiltersystem:smart_filter"}
 FILTER_EXPR_COMPONENT = "ftbfiltersystem:filter"
 
@@ -535,8 +542,10 @@ def check_item_exists(chapters, ctx):
         stacks = []
         for t in item_tasks(q):
             it = t.get("item")
-            if is_filter_item(it):  # virtual filter item, not a registry item
-                continue
+            # NOTE: filter items (ftbfiltersystem:smart_filter) are NOT exempt here. They
+            # are real registered items once the FTB Filter System mod ships in the pack, so
+            # they MUST appear in item_ids.txt - exempting them once masked a Missing Item
+            # (a smart_filter task while the mod wasn't installed). Let the registry check run.
             if isinstance(it, dict) and it.get("id"):
                 stacks.append((it["id"], t.get("id", qid)))
         for r in q.get("rewards", []) or []:

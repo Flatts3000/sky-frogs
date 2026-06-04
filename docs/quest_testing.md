@@ -121,7 +121,7 @@ through `Q-ID-POSITIVE` / `Q-ID-UNIQUE`, and their granted items through `Q-ITEM
 
 | ID | Sev | Rule | Encodes |
 |----|-----|------|---------|
-| **Q-ITEM-EXISTS** | ERROR | every item id referenced in a task/reward exists in the pack's registry (FTB filter items like `ftbfiltersystem:smart_filter` are exempt - they are virtual task items matched by a filter expression, not registry entries) | the "Missing Item" version-gap bugs (sweetslime pinned too low, etc.) |
+| **Q-ITEM-EXISTS** | ERROR | every item id referenced in a task/reward exists in the pack's registry. **Filter items (`ftbfiltersystem:smart_filter`) are NOT exempt** - they are real registered items only when the FTB Filter System mod ships, so they must be in `item_ids.txt`; a smart_filter task with the mod absent renders as "Missing Item" in-game and this check catches it | the "Missing Item" version-gap bugs (sweetslime pinned too low, a filter item whose mod isn't installed, etc.) |
 | **Q-VARIANT-MADE** | WARN | for each resource quest, the `slime_variant` / `Variant` it checks is actually produced by a shipped recipe (a `*_slime_chain.js` step or a `SLIME_TIERS` row in `dissolution_slime_recipes.js`) | quest-vs-recipe drift (a quest for a variant no recipe makes) |
 | **Q-FROGLIGHT-IS-CHECK** | WARN | per-tier *resource* quests check the variant Froglight (`configurable_froglight` + `slime_variant`), not the smelted resource, per the froglight-check principle (documented exceptions: Your First Iron Ingot, the main Mekanism Steel quest) | the no-bypass design law |
 
