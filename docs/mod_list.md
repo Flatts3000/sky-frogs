@@ -84,9 +84,10 @@ Each entry here directly maps to one or more PF category slime variants (see [`p
 | **FTB Ultimine**      | Hold a key to mine veins (mostly cosmetic in this pack)               |
 | **FTB Essentials**    | /home, /tpa, etc.                                                     |
 | **FTB Ranks**         | Server-side permission ranks                                          |
-| **FTB Filter System** | Smart item filters in routers/AE                                      |
+| **FTB Filter System** (SHIPPED) | Smart item filters in routers/AE; also backs the questbook's tag-based tasks (the Steel quest uses `item_tag(c:ingots/steel)` via `ftbfiltersystem:smart_filter`)                                      |
 | **Waystones**         | Teleportation network                                                 |
 | **Easy Villagers**    | Trade with villagers from blocks (no need for trading halls)          |
+| **AppleSkin** (SHIPPED) | Saturation + exact food-value overlay on the HUD and item tooltips (client-side QoL) |
 | **Farmer's Delight** + **Cooking for Blockheads** + **Croptopia** + **Farmer's Croptopia** + **Farming for Blockheads** + **Right Click Harvest** + **Squat Grow** | Skyblock food economy   |
 | **Mouse Tweaks** + **Inventory Tweaks** + **Crafting Tweaks** + **Polymorph** | Inventory ergonomics                              |
 | **Trash Slot** + **Trash Cans** | Discard items                                              |
