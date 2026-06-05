@@ -318,7 +318,7 @@ hash = "4aa4170ba30c9aea7358dafdb637afab38f5a49e7a7798838d9222f0121ce66c"
 
 [[files]]
 file = "config/productivefrogs-common.toml"
-hash = "62cc9815d8e8234d05376ecbada5301cf38ccc6bde048b41b5b75453366ac5c9"
+hash = "33e6c6fa6a44a66e62b209fb12006cd940b84257dc80287e510dd0cb95a8b528"
 
 [[files]]
 file = "config/skyblockbuilder/dimensions.json5"
