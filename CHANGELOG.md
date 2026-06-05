@@ -4,6 +4,24 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-06-05
+
+Quality and balance pass on the v0.2 beta: a faster opening, a smoother Cave Slime farm, a drawer-crafting fix, and a mod removal (hence the minor bump).
+
+### Removed
+- **Handcrafted.** Its cupboard recipes collided with Functional Storage drawers and broke drawer autocrafting in Refined Storage (#62). Removed rather than chase the recipe conflict. **Heads-up:** any placed Handcrafted furniture in an existing world shows as missing content after updating - it was decorative only.
+
+### Changed
+- **Faster opening:** tadpole growth cut from 20 min to 3 min, so your first frogs arrive in ~6 minutes instead of ~23. (#63)
+- **Cave Slime farm:** tripled the Cave Slime spawn weight (200 -> 600) so slimes dominate the dark-room pool, and the "A Dark Room" quest now prescribes a minimum room size - at least 5x5 across and 3 blocks tall, with bigger rooms spawning faster. (#65)
+
+### Fixed
+- **Refined Storage drawers** now craft and autocraft correctly instead of defaulting to cupboards. (#62)
+
+### Internal
+- Added a `cf-comments` tool + skill to read CurseForge feedback and triage it into GitHub issues.
+- CI: the release workflow now runs on `actions/setup-go@v6` (Node 24).
+
 ## [0.2.2] - 2026-06-04
 
 Hotfix: Cave Slimes now spawn on the starter island.
@@ -143,7 +161,8 @@ Bug-fix and quality-of-life release on top of the v0.2.0 campaign beta. Fixes tw
 ### Fixed
 ```
 
-[Unreleased]: https://github.com/Flatts3000/sky-frogs/compare/v0.2.2...HEAD
+[Unreleased]: https://github.com/Flatts3000/sky-frogs/compare/v0.3.0...HEAD
+[0.3.0]: https://github.com/Flatts3000/sky-frogs/compare/v0.2.2...v0.3.0
 [0.2.2]: https://github.com/Flatts3000/sky-frogs/compare/v0.2.1...v0.2.2
 [0.2.1]: https://github.com/Flatts3000/sky-frogs/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/Flatts3000/sky-frogs/releases/tag/v0.2.0
