@@ -1,12 +1,19 @@
-// Sky Frogs - Tier 6 (Void) recipes: the End-portal enabler + the Master Frog trophy.
+// Sky Frogs - Tier 6 (Void) recipes: the End Cake (the way in) + the Master Frog trophy.
 //
-// 1) END PORTAL FRAME. A void skyblock generates no stronghold, so there is no vanilla
-//    End portal to find. road_to_void's "Frame the Void" quest asks for 12 frames; this
-//    recipe is how you get them. It is NOT gated by a condition - it is gated by its
-//    ingredients: glowstone + soul_sand are Infernal-frog resources (nether roster), so
-//    the recipe is unreachable until Tier 5 is running, which is exactly the Void gate.
-//    Frames carry no eye (you still craft 12 loose eyes of ender to activate the ring).
-//    Yields 4 per craft (3 crafts = a full 12-frame ring) to keep the grind sane.
+// 1) END CAKE (Ex Deorum). A void skyblock generates no stronghold, so there is no vanilla
+//    End portal to find. The gate used to be a hand-built 12-frame portal ring, which proved
+//    a trap in practice - frames must face inward, and a wrong-facing ring silently never
+//    lights (CF report #8041724) - so the gate is now Ex Deorum's End Cake: place it, take
+//    a bite, arrive in the End. One cake has 6 slices = 6 trips. Ex Deorum's default recipe
+//    needs crushed end stone, a chicken-and-egg on this skyblock (end stone comes from the
+//    Void frog you don't have yet), so we override it with a vanilla-cake-shaped recipe:
+//    milk on top (plain milk OR any Slime Milk - the frog-native path), eyes of ender where
+//    the sugar goes, wheat base. The eyes (pearl + Infernal blaze powder) keep it Tier 5+
+//    gated. The #productivefrogs:slime_milk_buckets tag is built in slime_milk_tags.js.
+//    KNOWN ASYMMETRY (intentional): plain milk buckets return their empty bucket, but
+//    Slime Milk buckets are consumed whole - milk_bucket_no_remainder.js clears their
+//    crafting remainder pack-wide (the slime-chain bucket-dupe fix; selftest asserts it),
+//    and vanilla crafting has no per-recipe remainder override. Quest text says so.
 //
 // 2) MASTER FROG. The campaign capstone, crafted in a regular crafting table from the
 //    Ultimate Singularity - which itself demands one singularity for every vanilla froglight
@@ -17,20 +24,24 @@
 //    no per-variant component matcher needed). Output is the KubeJS trophy item
 //    (kubejs:master_frog, registered in startup_scripts/master_frog_item.js).
 ServerEvents.recipes(event => {
-  // End portal frame - skyblock enabler (Infernal-gated by ingredients).
-  event.shaped(
-    Item.of('minecraft:end_portal_frame', 4),
-    [
-      'GGG',
-      'SOS',
-      'SSS'
-    ],
-    {
-      G: 'minecraft:glowstone',
-      S: 'minecraft:soul_sand',
-      O: 'minecraft:obsidian'
-    }
-  ).id('kubejs:void/end_portal_frame')
+  // End Cake - the End gate (Infernal-gated by its eyes of ender).
+  if (Platform.isLoaded('exdeorum')) {
+    event.remove({ id: 'exdeorum:end_cake' })
+    event.shaped(
+      'exdeorum:end_cake',
+      [
+        'MMM',
+        'PEP',
+        'WWW'
+      ],
+      {
+        M: ['minecraft:milk_bucket', '#productivefrogs:slime_milk_buckets'],
+        P: 'minecraft:ender_eye',
+        E: '#c:eggs',
+        W: 'minecraft:wheat'
+      }
+    ).id('kubejs:void/end_cake')
+  }
 
   // Master Frog - regular crafting table capstone craft. The Ultimate Singularity is already
   // the gated endgame item, so the final trophy just needs a vanilla 3x3 grid (no EC table).

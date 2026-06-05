@@ -16,6 +16,16 @@ Living tracker of Sky Frogs playtest bugs, limitations, and accepted-for-now qui
 
 ## Open
 
+### 🟣 End portal won't open with 12 frames + eyes (Tier 6 gate redesigned to the End Cake)
+The `road_to_void` gate asked players to hand-build a 12-frame End portal. A manually placed ring only lights when **every frame faces inward**, and a wrong-facing frame fails silently - the quest text documented the gotcha, but it still hard-blocked a player at the campaign's climax. **Reported on CurseForge by eager_goodall7 2026-06-05 (comment #8041724). Tracked in [#68](https://github.com/Flatts3000/sky-frogs/issues/68).**
+
+**Fix (on `feat/end-cake-gate`, pending playtest):** the gate is now Ex Deorum's **End Cake** (the ATM10SKY pattern) - bake it (milk-or-Slime-Milk x3 / eye-egg-eye / wheat x3; the default crushed-end-stone recipe is overridden since end stone is Void-frog-gated here), place it, take a bite, arrive on the obsidian platform. 6 slices per cake. The `kubejs:void/end_portal_frame` recipe is removed; "Frame the Void" became "Bake the End Cake"; the eyes quest dropped 12 -> 2. New `#productivefrogs:slime_milk_buckets` tag (`slime_milk_tags.js`) backs the "any Slime Milk" milk slot. **Player-facing workaround on current versions:** stand inside the 3x3 hole while placing each frame so it faces you, then socket all 12 eyes.
+
+### 🟣 Echo shard slime uncraftable: Chorus Froglight gives popped chorus (PF bug, fix upstream)
+The echo shard slime dissolution recipe and the chorus Singularity both want raw `minecraft:chorus_fruit`, but PF's Chorus Froglight smelts to `minecraft:popped_chorus_fruit` - the **only** variant of all 70 where the froglight output differs from the `primer_item`. The frog loop therefore can't feed the echo shard step. **Reported on CurseForge by eager_goodall7 2026-06-05 (same comment, split per one-issue-per-problem). Tracked in [#69](https://github.com/Flatts3000/sky-frogs/issues/69), blocked-upstream.**
+
+**Fix (shipped upstream, pin bumped on `feat/end-cake-gate`, pending playtest):** PF **1.9.2** makes the Chorus Froglight smelt to raw chorus fruit (PF #139/#140); the pack pin moved 1.8.1 -> 1.9.2 and the existing chorus-keyed recipes (echo-shard dissolution row, chorus Singularity) are correct as-is. **Workaround on older versions:** harvest chorus plants on the outer End islands for raw chorus fruit.
+
 ### 🟢 Cave Slimes don't spawn on the starter island (SkyblockBuilder spawn protection)
 The Tier 1 dark-room farm produces no Cave Slimes near the world-origin starter island. n3twoik found that running `/skyblock create` to make a new island (thousands of blocks out) made them spawn. **Reported on CurseForge by rerezcb + n3twoik 2026-06-04. Tracked in [#58](https://github.com/Flatts3000/sky-frogs/issues/58).**
 

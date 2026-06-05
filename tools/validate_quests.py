@@ -512,6 +512,38 @@ def check_lang(chapters, ctx):
     return f
 
 
+COLOR_CODE_RE = re.compile(r"&[0-9a-fk-or]")
+DESC_ARRAY_RE = re.compile(r"quest\.[0-9A-F]+\.quest_desc: \[(.*?)\n\t\]", re.S)
+DESC_ELEM_RE = re.compile(r'"((?:[^"\\]|\\.)*)"')
+
+
+def check_desc_midbreak(chapters, ctx):
+    """Q-DESC-MIDBREAK (ERROR ,/- | WARN no punctuation) - a quest_desc element that
+    ends mid-sentence followed by "" renders as a blank line splitting the sentence
+    in-game (each array element is its own line; FTB auto-wraps within an element).
+    Author whole paragraphs per element; keep "" only between true paragraphs."""
+    if not LANG_FILE.exists():
+        return []
+    f = []
+    text = LANG_FILE.read_text(encoding="utf-8")
+    for m in DESC_ARRAY_RE.finditer(text):
+        line_no = text.count("\n", 0, m.start()) + 1
+        elems = DESC_ELEM_RE.findall(m.group(1))
+        for i, elem in enumerate(elems[:-2]):
+            if not (elem and elems[i + 1] == "" and elems[i + 2]):
+                continue
+            stripped = COLOR_CODE_RE.sub("", elem).rstrip()
+            if stripped.endswith((",", "-")):
+                f.append(Finding(ERROR, "Q-DESC-MIDBREAK", LANG_FILE.name, line_no,
+                                 f"desc element ends mid-sentence ({stripped[-25:]!r}) before a "
+                                 f"blank line - join the fragments into one paragraph element"))
+            elif not re.search(r"[.!?:)\]}\"']$", stripped):
+                f.append(Finding(WARN, "Q-DESC-MIDBREAK", LANG_FILE.name, line_no,
+                                 f"desc element ends without punctuation ({stripped[-25:]!r}) "
+                                 f"before a blank line - mid-sentence break? join if so"))
+    return f
+
+
 DASH_RE = re.compile("[—–]")
 
 
@@ -679,6 +711,7 @@ CHECKS = [
     check_match_components,
     check_dup_tasks,
     check_lang,
+    check_desc_midbreak,
     check_dashes,
     check_item_exists,
     check_variant_made,

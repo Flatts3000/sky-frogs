@@ -5,7 +5,7 @@
 	filename: "road_to_void"
 	group: "0C4F0E0000000006"
 	icon: {
-		id: "minecraft:end_portal_frame"
+		id: "exdeorum:end_cake"
 	}
 	id: "601D000000000001"
 	order_index: 0
@@ -47,7 +47,7 @@
 			}]
 			tasks: [{
 				id: "601D000000000006"
-				item: { count: 12, id: "minecraft:ender_eye" }
+				item: { count: 2, id: "minecraft:ender_eye" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -56,7 +56,7 @@
 		{
 			dependencies: ["601D000000000005"]
 			icon: {
-				id: "minecraft:end_portal_frame"
+				id: "exdeorum:end_cake"
 			}
 			id: "601D000000000008"
 			rewards: [{
@@ -67,7 +67,7 @@
 			}]
 			tasks: [{
 				id: "601D000000000009"
-				item: { count: 12, id: "minecraft:end_portal_frame" }
+				item: { count: 1, id: "exdeorum:end_cake" }
 				type: "item"
 			}]
 			x: 0.0d
