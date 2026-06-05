@@ -67,7 +67,7 @@ Void follows the same per-tier shape (a "Road to" gateway + a species chapter + 
 
 | Chapter             | File | Covers                                                |
 |---------------------|------|--------------------------------------------------------|
-| Road to the Void    | `road_to_void.snbt` | The **dragon expedition** gateway: ender pearls (dark-room endermen) -> eyes -> a crafted 12-frame End portal (frog-farmed glowstone + soul sand, since no stronghold generates) -> Into the End -> **Slay the Dragon** -> the frog sub-chain (frogspawn -> slime -> milk -> First Ender Pearl). |
+| Road to the Void    | `road_to_void.snbt` | The **dragon expedition** gateway: ender pearls (dark-room endermen) -> 2 eyes -> bake the **End Cake** (milk/Slime Milk + egg + wheat + the eyes; each slice teleports to the End, since no stronghold generates) -> Into the End -> **Slay the Dragon** -> the frog sub-chain (frogspawn -> slime -> milk -> First Ender Pearl). |
 | Void Frogs          | `void_frogs.snbt` | The End resource chain: end_stone -> chorus_fruit -> echo_shard -> sculk -> **shulker_shell** Froglight checks. |
 | The Ultimate Table  | `the_ultimate_table.snbt` | The Void **new verb**: **Extended Crafting**. Black iron -> luminessence -> basic/advanced/elite/**ultimate** crafting tables -> the **Quantum Compressor**. |
 | Master Pond         | `master_pond.snbt` | The endgame: froglight Singularities (one per species, a proof-of-automation gate) -> the **Ultimate Singularity** -> the **Sky Frogs Master Frog** trophy + a closing epilogue. |
@@ -138,7 +138,7 @@ infernal_frogs ------------+
    |                       |
 the_network                | (Infernal new verb: Refined Storage)
    |
-road_to_void   (End expedition: eyes -> crafted End portal -> slay the dragon)
+road_to_void   (End expedition: eyes -> End Cake -> slay the dragon)
    |                       |
 void_frogs                 |
    |                       |

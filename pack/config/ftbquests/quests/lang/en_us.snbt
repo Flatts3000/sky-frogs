@@ -985,36 +985,38 @@
 	quest.601D000000000002.quest_desc: [
 		"The End is out there, past the void. To reach it you need &eEnder Pearls&r - and out here,"
 		""
-		"&dEndermen&r spawn in full darkness. Wall off a dark room (or hunt the Nether's warped forest) and gather &e12&r."
+		"&dEndermen&r spawn in full darkness. Wall off a dark room (or hunt the Nether's warped forest) and gather &e12&r:"
+		""
+		"two become &aEyes of Ender&r, and the rest prime the &dVoid Spawnery&r once you're through."
 	]
 	quest.601D000000000002.quest_subtitle: "The void wants a key."
 	quest.601D000000000002.title: "Pearls from the Dark"
 	quest.601D000000000005.quest_desc: [
 		"Pearls plus &cBlaze Powder&r - your Infernal frog already makes the powder - become &aEyes of Ender&r."
 		""
-		"Craft &a12&r, one per portal frame."
+		"Craft &a2&r: the cake wants a pair."
 	]
 	quest.601D000000000005.quest_subtitle: "Pearl plus powder."
 	quest.601D000000000005.title: "Eyes of Ender"
 	quest.601D000000000008.quest_desc: [
-		"No stronghold floats in the void, so there is no portal to find. Build your own: &eglowstone&r"
+		"No stronghold floats in the void, so there is no portal to find. You bake your way in instead."
 		""
-		"and &esoul sand&r press into &5End Portal Frames&r. You need &e12&r to ring the portal."
+		"The &dEnd Cake&r follows the old family recipe: &e3 buckets of milk&r across the top - &aplain milk"
+		""
+		"or any Slime Milk your frogs produce&r - an &eegg&r between &a2 Eyes of Ender&r, and &e3 wheat&r below."
+		""
+		"The buckets come back empty. The cake does not come back at all."
 	]
-	quest.601D000000000008.quest_subtitle: "If the world won't give you a portal, make one."
-	quest.601D000000000008.title: "Frame the Void"
+	quest.601D000000000008.quest_subtitle: "If the world won't give you a portal, bake one."
+	quest.601D000000000008.title: "Bake the End Cake"
 	quest.601D00000000000B.quest_desc: [
-		"No stronghold floats in the void, so build the portal by hand. Lay the 12 frames in a square -"
+		"Set the &dEnd Cake&r down somewhere you trust and &etake a bite&r. Each slice teleports whoever"
 		""
-		"three to a side - ringing an empty &e3x3&r hole. &lStand inside the hole as you place each frame&r so"
+		"eats it straight to the End - &e6 slices&r per cake, so one bake covers a few trips (or a team)."
 		""
-		"it faces inward (the green eye-socket points back at you); a frame facing the wrong way won't light."
-		""
-		"Then right-click an &aEye of Ender&r into all 12 sockets. The twelfth eye tears the portal open."
-		""
-		"Jump in - you'll land on an obsidian platform beside the central island. Mind the drop."
+		"You'll land on an obsidian platform beside the central island. Mind the drop, and mind &dher&r."
 	]
-	quest.601D00000000000B.quest_subtitle: "Build the portal the world won't give you."
+	quest.601D00000000000B.quest_subtitle: "Eat the portal the world won't give you."
 	quest.601D00000000000B.title: "Into the End"
 	quest.601D00000000000E.quest_desc: [
 		"The &5Ender Dragon&r guards the central island. This is the fight the whole pack has been"

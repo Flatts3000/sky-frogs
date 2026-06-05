@@ -242,7 +242,7 @@ hash = "bb94f55d7b7bc2e4aa85e26b1da33cd05bb102433e727adcab8864b7c6fc7603"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_void.snbt"
-hash = "be77e856661b4be9a009c9b5851e2666bea6ab48189d2309ca32faffe6dad2ab"
+hash = "54e1ccf0f4a958cef5ce850a2d6eadf5217c39d18aecd4a565e42c5d16e4b7ef"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/scaling_the_colony.snbt"
@@ -286,7 +286,7 @@ hash = "2e69afacf774749222ca1e925dc94d32e6c3db8bef4557aa33144751c2770206"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "2b8cf12edfa92b274c50c959db9b24b5ed05118f5594e24390090768af01c80d"
+hash = "7b4b23d75fc7a6f6f38ff892a4066e70a5a26272114cb992cfcb39acb3a0818d"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
@@ -473,6 +473,10 @@ file = "kubejs/server_scripts/selftest.js"
 hash = "4507b563aacc7e8333ee7eb44062b5fe84cd8629dc61acd033b6c9058051bbd6"
 
 [[files]]
+file = "kubejs/server_scripts/slime_milk_tags.js"
+hash = "83a1969dd667ffd6a407a0a3568f3b1db92499c584ba63a4f066ef98fe40a65d"
+
+[[files]]
 file = "kubejs/server_scripts/steel_slime_infusing.js"
 hash = "f7a1dba3be8a3396fbf9249fe5c289f3ed7c823a8790e073bdfe6a471cc62cd0"
 
@@ -482,7 +486,7 @@ hash = "2b6735fc64ee708364b30526b4d5d7b703cfc80e624eb8f6f2098f6a0b2b192d"
 
 [[files]]
 file = "kubejs/server_scripts/void_recipes.js"
-hash = "6fcd714abc5f7be382f7aafe0ebed1d90c2b17a2a19e801dedfdfb86a0e315e0"
+hash = "cfea6917acf3e267e321cdeabe0b7242fa5144bc8fe1b3846a6b98cbdac32a0f"
 
 [[files]]
 file = "kubejs/startup_scripts/master_frog_item.js"
