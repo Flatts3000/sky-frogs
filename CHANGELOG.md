@@ -10,6 +10,9 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 ### Removed
 - **The craftable End Portal Frame recipe** (`kubejs:void/end_portal_frame`, glowstone + soul sand + obsidian). The End Cake is the way in; no orientation trap remains. Frames already placed in existing worlds keep working. (#68)
 
+### Fixed
+- **Echo shard slime is craftable again:** Productive Frogs 1.8.1 -> **1.9.2** fixes the Chorus Froglight to smelt to raw chorus fruit instead of popped chorus - the only variant whose froglight output didn't match its primer item - unblocking the echo-shard slime chain and the chorus Singularity (#69). The bump also brings PF 1.8.2 (placed-milk drain timing), 1.8.3 (Coal/Blaze Froglights burn as furnace fuel), and 1.9.0 (Refined Storage support).
+
 ### Internal
 - New `#productivefrogs:slime_milk_buckets` item tag, built at runtime in `slime_milk_tags.js` via a regex over the registered per-variant milk buckets (PF ships no grouping tag for its 70 buckets).
 
