@@ -44,3 +44,9 @@ logs/
 
 # Reference pack (downloaded artifacts, not part of our work)
 *.zip
+
+# Local triage state for tools/cf_comments.py (which CF comments have been seen)
+tools/data/cf_comments_seen_*.json
+
+# Local per-user Claude Code settings (not shared)
+.claude/settings.local.json
