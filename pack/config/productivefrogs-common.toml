@@ -12,3 +12,14 @@
 	# Pairs with the spawnery_primer/cave tag override, which gates Cave on cobblestone
 	# instead of the iron-ingot default (iron is frog-gated here and would soft-lock the loop).
 	enabled = true
+
+[lifecycle]
+	# Opening pace. Productive Frogs' defaults are hatch 3600t (3 min) + tadpole growth
+	# 24000t (20 min) = a ~23 min wait for the player's first frogs after pouring the Welcome
+	# chapter's frogspawn bottle (CurseForge feedback, sky-frogs#63). Sky Frogs cuts tadpole
+	# growth to 3 min to match hatch, so first frogs arrive in ~6 min. Applies to every species'
+	# lifecycle, not just the opener; tadpoles can still be sped up further by feeding slimeballs.
+	# Only tadpoleGrowthTicks is overridden here: hatchTicks stays at PF's 3-min default and
+	# breedingCooldownTicks (the re-breed cadence, not the first-frog wait) at PF's 5-min default,
+	# both filled by NeoForge on load - per this file's minimal-override policy.
+	tadpoleGrowthTicks = 3600
