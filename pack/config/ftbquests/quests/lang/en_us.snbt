@@ -268,6 +268,8 @@
 	quest.54E5F6A1B2C30001.quest_desc: [
 		"&aCave Slimes&r keep to the dark. Wall off a room, cap it against the sky, and snuff the light - then wait."
 		""
+		"Size matters: Cave Slimes come big and small, and the big ones need headroom. Build it &eat least 5x5 across and 3 blocks tall&r inside - any smaller and a low ceiling only spawns the little ones (and the odd zombie). 5x5 is the minimum; the wider the dark floor the faster they come, so a 9x9 or bigger hall fills up far quicker."
+		""
 		"They'll start turning up. Cut them down for &eslime balls&r: fuel, frog feed, and the first link in every chain that follows."
 		""
 		"Here's a &6Sophisticated Backpack&r for the haul - you'll be carrying plenty before the frogs start pulling their weight."

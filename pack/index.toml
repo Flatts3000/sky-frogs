@@ -286,7 +286,7 @@ hash = "2e69afacf774749222ca1e925dc94d32e6c3db8bef4557aa33144751c2770206"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "3ad7817ffabf3cd66538e1ad7a715db93a0b0c4a4591bc0a78faca405f70a114"
+hash = "2b8cf12edfa92b274c50c959db9b24b5ed05118f5594e24390090768af01c80d"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
@@ -414,7 +414,7 @@ hash = "42d8057fd56d926e1cdacbc98c5b42a195823b5b0b79316f5f6666339c04e094"
 
 [[files]]
 file = "kubejs/data/skyfrogs/neoforge/biome_modifier/add_cave_slime_island.json"
-hash = "7b229ff45dfddb7a42fc5d7bd6cb33bdca7b2b3edd6dabc721ad79d321eeeb54"
+hash = "3d1efae74d0feea991c76ad9ff9c6fc842b15c2872d39f9d8bc73c1c7f6bddb2"
 
 [[files]]
 file = "kubejs/server_scripts/anti.js"
