@@ -985,7 +985,7 @@
 		""
 		"The &dEnd Cake&r follows the old family recipe: &e3 buckets of milk&r across the top - &aMilk Buckets or any Slime Milk your frogs produce&r - an &eegg&r between &a2 Eyes of Ender&r, and &e3 wheat&r below."
 		""
-		"The buckets come back empty. The cake does not come back at all."
+		"Plain &eMilk Buckets&r hand their empty buckets back; &dSlime Milk&r bakes in, bucket and all. The cake does not come back either way."
 	]
 	quest.601D000000000008.quest_subtitle: "If the world won't give you a portal, bake one."
 	quest.601D000000000008.title: "Bake the End Cake"

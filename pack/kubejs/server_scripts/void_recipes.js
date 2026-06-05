@@ -10,6 +10,10 @@
 //    milk on top (plain milk OR any Slime Milk - the frog-native path), eyes of ender where
 //    the sugar goes, wheat base. The eyes (pearl + Infernal blaze powder) keep it Tier 5+
 //    gated. The #productivefrogs:slime_milk_buckets tag is built in slime_milk_tags.js.
+//    KNOWN ASYMMETRY (intentional): plain milk buckets return their empty bucket, but
+//    Slime Milk buckets are consumed whole - milk_bucket_no_remainder.js clears their
+//    crafting remainder pack-wide (the slime-chain bucket-dupe fix; selftest asserts it),
+//    and vanilla crafting has no per-recipe remainder override. Quest text says so.
 //
 // 2) MASTER FROG. The campaign capstone, crafted in a regular crafting table from the
 //    Ultimate Singularity - which itself demands one singularity for every vanilla froglight

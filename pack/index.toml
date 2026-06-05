@@ -286,7 +286,7 @@ hash = "2e69afacf774749222ca1e925dc94d32e6c3db8bef4557aa33144751c2770206"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "5435427c321b41e898c849d27bb317f76ba48358994a0d313fe59b15252f35d5"
+hash = "0048861432e5d2b9eadf35f185d2313a1099102f9c89d4b3f8c1554ffa43cecf"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
@@ -486,7 +486,7 @@ hash = "2b6735fc64ee708364b30526b4d5d7b703cfc80e624eb8f6f2098f6a0b2b192d"
 
 [[files]]
 file = "kubejs/server_scripts/void_recipes.js"
-hash = "cfea6917acf3e267e321cdeabe0b7242fa5144bc8fe1b3846a6b98cbdac32a0f"
+hash = "4da022d194f4b02c325e804648190c9daccbe231ef9dcfa91c001b24c0d3caa1"
 
 [[files]]
 file = "kubejs/startup_scripts/master_frog_item.js"
