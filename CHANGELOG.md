@@ -4,6 +4,10 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+## [0.4.0] - 2026-06-05
+
+The Tier 6 End gate redesign: bake your way into the End instead of wrestling portal frames, plus the upstream chorus fix. Both reported by eager_goodall7 on CurseForge - thanks!
+
 ### Changed
 - **The End gate is now the End Cake.** The hand-built 12-frame End portal proved a trap - frames must face inward and a wrong-facing ring silently never lights, which hard-blocked a player at the campaign's climax (#68). The `road_to_void` gateway now bakes Ex Deorum's **End Cake** instead: 3 buckets of milk (plain milk **or any Slime Milk** via the new `#productivefrogs:slime_milk_buckets` tag), an egg between 2 eyes of ender, 3 wheat. Place it and take a bite to reach the End; each cake holds 6 teleports. The eyes-of-ender quest drops from 12 to 2 to match.
 
@@ -15,6 +19,7 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ### Internal
 - New `#productivefrogs:slime_milk_buckets` item tag, built at runtime in `slime_milk_tags.js` via a regex over the registered per-variant milk buckets (PF ships no grouping tag for its 70 buckets).
+- Repaired 23 quest descriptions whose sentences were shattered across blank-line paragraph breaks (manual hard-wraps in the lang arrays); `validate_quests.py` grew a `Q-DESC-MIDBREAK` check so the class can't recur.
 
 ## [0.3.0] - 2026-06-05
 
@@ -173,7 +178,8 @@ Bug-fix and quality-of-life release on top of the v0.2.0 campaign beta. Fixes tw
 ### Fixed
 ```
 
-[Unreleased]: https://github.com/Flatts3000/sky-frogs/compare/v0.3.0...HEAD
+[Unreleased]: https://github.com/Flatts3000/sky-frogs/compare/v0.4.0...HEAD
+[0.4.0]: https://github.com/Flatts3000/sky-frogs/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/Flatts3000/sky-frogs/compare/v0.2.2...v0.3.0
 [0.2.2]: https://github.com/Flatts3000/sky-frogs/compare/v0.2.1...v0.2.2
 [0.2.1]: https://github.com/Flatts3000/sky-frogs/compare/v0.2.0...v0.2.1
