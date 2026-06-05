@@ -105,7 +105,6 @@ Each entry here directly maps to one or more PF category slime variants (see [`p
 | **Chipped** + **Rechiseled** + **Rechiseled: Chipped** | Hundreds of decorative variants per base block (frog-farmed stone/dirt/etc. -> build blocks) |
 | **Chisel Reborn** + **Chisel-Chipped Integration** | Classic in-world chiseling, bridged into the Chipped catalog          |
 | **FramedBlocks**      | Camouflage / "framed" blocks (slabs, slopes, panes textured with any block)          |
-| **Handcrafted**       | Furniture proper (chairs, tables, benches, shelves, dishware)                         |
 | **Supplementaries**   | Decoration grab-bag (signs, lamps, planters, faucets; some functional)               |
 | **Macaw's** suite (10 mods) | Bridges, Doors, Windows, Roofs, Fences & Walls, Trapdoors, Paths & Pavings, Lights & Lamps, Paintings, Furniture - the workhorse build-decor set |
 | **Connected Glass** + **Glassential** | Seamless/decorative glass; light-passing and one-way variants         |
@@ -142,6 +141,7 @@ Each entry here directly maps to one or more PF category slime variants (see [`p
 | **Blood Magic**       | Same — strong progression that would dwarf the frog loop              |
 | **Quark**             | Overlaps with many of our QoL choices; risk of feature bloat          |
 | **Twilight Forest** / other dimensional adventure mods | We want the player on their skyblock, not exploring a new dimension. End remains the only adventure dimension. |
+| **Handcrafted** | Dropped 2026-06-05 - its cupboard recipes collide with Functional Storage drawers, and the alternate-craft picker doesn't surface in Refined Storage, so drawers couldn't be autocrafted (#62). Removed rather than chase the recipe-conflict resolution. Reconsider if the conflict is resolvable upstream. |
 
 This list will shift as we playtest. Anything moved into or out of the pack needs a corresponding KubeJS-overrides and quest-book update.
 
