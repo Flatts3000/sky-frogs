@@ -286,7 +286,7 @@ hash = "2e69afacf774749222ca1e925dc94d32e6c3db8bef4557aa33144751c2770206"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "7b4b23d75fc7a6f6f38ff892a4066e70a5a26272114cb992cfcb39acb3a0818d"
+hash = "c98e2d5aa7a28a751cd738ae8f0ba333f35299ca268e446ee86137d1e8e9f276"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"

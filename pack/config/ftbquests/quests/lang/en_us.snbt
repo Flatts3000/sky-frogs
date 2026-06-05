@@ -847,9 +847,7 @@
 	quest.51F0000000000002.quest_subtitle: "The Nether chain opens."
 	quest.51F0000000000002.title: "Beyond Netherrack"
 	quest.51F0000000000005.quest_desc: [
-		"&eNether quartz&r at last - comparators, observers, and the &bQuartz Enriched Iron&r that"
-		""
-		"&eRefined Storage&r runs on. Turn in the &bQuartz Froglight&r."
+		"&eNether quartz&r at last - comparators, observers, and the &bQuartz Enriched Iron&r that &eRefined Storage&r runs on. Turn in the &bQuartz Froglight&r."
 	]
 	quest.51F0000000000005.quest_subtitle: "The gate so many recipes wanted."
 	quest.51F0000000000005.title: "Quartz"
@@ -876,17 +874,13 @@
 	quest.51F0000000000011.quest_subtitle: "Powder without the rods."
 	quest.51F0000000000011.title: "Blaze"
 	quest.51F0000000000014.quest_desc: [
-		"&8Netherite scrap&r - smelted from ancient debris no skyblock should reach. Four scrap plus gold"
-		""
-		"makes a &8Netherite Ingot&r and the best gear in the game. The Infernal crown. Turn in the &bNetherite Scrap Froglight&r."
+		"&8Netherite scrap&r - smelted from ancient debris no skyblock should reach. Four scrap plus gold makes a &8Netherite Ingot&r and the best gear in the game. The Infernal crown. Turn in the &bNetherite Scrap Froglight&r."
 	]
 	quest.51F0000000000014.quest_subtitle: "The metal at the bottom."
 	quest.51F0000000000014.title: "Netherite Scrap"
 	chapter.52E0000000000001.title: "The Network"
 	quest.52E0000000000002.quest_desc: [
-		"Every &eRefined Storage&r part starts here: &biron&r forged with &enether quartz&r. Until the"
-		""
-		"Infernal frog gave you quartz, none of this was buildable. Now it all is."
+		"Every &eRefined Storage&r part starts here: &biron&r forged with &enether quartz&r. Until the Infernal frog gave you quartz, none of this was buildable. Now it all is."
 	]
 	quest.52E0000000000002.quest_subtitle: "The key the whole network turns on."
 	quest.52E0000000000002.title: "Quartz Enriched Iron"
@@ -926,16 +920,12 @@
 	quest.52E0000000000019.quest_subtitle: "Craft straight from storage."
 	quest.52E0000000000019.title: "Crafting Grid"
 	quest.52E000000000001C.quest_desc: [
-		"A &ePattern Grid&r records a recipe; an &eAutocrafter&r runs it on demand. Request an item and the network"
-		""
-		"crafts the whole tree itself. The Infernal verb, complete - the network now runs the base for you."
+		"A &ePattern Grid&r records a recipe; an &eAutocrafter&r runs it on demand. Request an item and the network crafts the whole tree itself. The Infernal verb, complete - the network now runs the base for you."
 	]
 	quest.52E000000000001C.quest_subtitle: "Ask, and it builds."
 	quest.52E000000000001C.title: "Autocrafting"
 	quest.5140000000000002.quest_desc: [
-		"There's no Nether to raid, they said. There is now - you just have to build the door. Make"
-		""
-		"10 &eobsidian&r for a portal frame (skip the corners), craft a &eflint and steel&r, and raise it. The void Nether waits beyond."
+		"There's no Nether to raid, they said. There is now - you just have to build the door. Make 10 &eobsidian&r for a portal frame (skip the corners), craft a &eflint and steel&r, and raise it. The void Nether waits beyond."
 	]
 	quest.5140000000000002.quest_subtitle: "Tide gave you wings. Now use them."
 	quest.5140000000000002.title: "A Portal to the Nether"
@@ -945,9 +935,7 @@
 	quest.5140000000000007.quest_subtitle: "Step through."
 	quest.5140000000000007.title: "Into the Nether"
 	quest.514000000000000A.quest_desc: [
-		"Somewhere out in the dark a &cNether Fortress&r floats. Find it, fly to it, mine its &enether brick&r -"
-		""
-		"the only thing the void Nether hands out, and the key to the Infernal frog."
+		"Somewhere out in the dark a &cNether Fortress&r floats. Find it, fly to it, mine its &enether brick&r - the only thing the void Nether hands out, and the key to the Infernal frog."
 	]
 	quest.514000000000000A.quest_subtitle: "The one thing you can't make yet."
 	quest.514000000000000A.title: "Raid a Fortress"
@@ -959,9 +947,7 @@
 	quest.514000000000000D.quest_subtitle: "Feed the brick to the Spawnery."
 	quest.514000000000000D.title: "Infernal Frogspawn"
 	quest.5140000000000010.quest_desc: [
-		"Same &eDissolution Chamber&r from the Tide. Feed it a &bNautilus Shell&r and &eprismarine&r filler"
-		""
-		"for a &cNetherrack Slime in a Bucket&r."
+		"Same &eDissolution Chamber&r from the Tide. Feed it a &bNautilus Shell&r and &eprismarine&r filler for a &cNetherrack Slime in a Bucket&r."
 	]
 	quest.5140000000000010.quest_subtitle: "The chamber's first hellish brew."
 	quest.5140000000000010.title: "A Bucket of Netherrack Slime"
@@ -971,9 +957,7 @@
 	quest.5140000000000013.quest_subtitle: "Netherrack Slime Milk."
 	quest.5140000000000013.title: "Milk It"
 	quest.5140000000000016.quest_desc: [
-		"Your Infernal frog eats a Netherrack Slime and leaves a &bNetherrack Froglight&r. Smelt it for"
-		""
-		"&cnetherrack&r. From here the frog gives you the whole Nether - no more portal trips."
+		"Your Infernal frog eats a Netherrack Slime and leaves a &bNetherrack Froglight&r. Smelt it for &cnetherrack&r. From here the frog gives you the whole Nether - no more portal trips."
 	]
 	quest.5140000000000016.quest_subtitle: "Tier 5 opens."
 	quest.5140000000000016.title: "First Netherrack"
@@ -983,9 +967,7 @@
 	chapter.6EC0000000000001.title: "The Ultimate Table"
 	chapter.6A0D000000000001.title: "Master Pond"
 	quest.601D000000000002.quest_desc: [
-		"The End is out there, past the void. To reach it you need &eEnder Pearls&r - and out here,"
-		""
-		"&dEndermen&r spawn in full darkness. Wall off a dark room (or hunt the Nether's warped forest) and gather &e12&r:"
+		"The End is out there, past the void. To reach it you need &eEnder Pearls&r - and out here, &dEndermen&r spawn in full darkness. Wall off a dark room (or hunt the Nether's warped forest) and gather &e12&r:"
 		""
 		"two become &aEyes of Ender&r, and the rest prime the &dVoid Spawnery&r once you're through."
 	]
@@ -1001,27 +983,21 @@
 	quest.601D000000000008.quest_desc: [
 		"No stronghold floats in the void, so there is no portal to find. You bake your way in instead."
 		""
-		"The &dEnd Cake&r follows the old family recipe: &e3 buckets of milk&r across the top - &aplain milk"
-		""
-		"or any Slime Milk your frogs produce&r - an &eegg&r between &a2 Eyes of Ender&r, and &e3 wheat&r below."
+		"The &dEnd Cake&r follows the old family recipe: &e3 buckets of milk&r across the top - &aplain milk or any Slime Milk your frogs produce&r - an &eegg&r between &a2 Eyes of Ender&r, and &e3 wheat&r below."
 		""
 		"The buckets come back empty. The cake does not come back at all."
 	]
 	quest.601D000000000008.quest_subtitle: "If the world won't give you a portal, bake one."
 	quest.601D000000000008.title: "Bake the End Cake"
 	quest.601D00000000000B.quest_desc: [
-		"Set the &dEnd Cake&r down somewhere you trust and &etake a bite&r. Each slice teleports whoever"
-		""
-		"eats it straight to the End - &e6 slices&r per cake, so one bake covers a few trips (or a team)."
+		"Set the &dEnd Cake&r down somewhere you trust and &etake a bite&r. Each slice teleports whoever eats it straight to the End - &e6 slices&r per cake, so one bake covers a few trips (or a team)."
 		""
 		"You'll land on an obsidian platform beside the central island. Mind the drop, and mind &dher&r."
 	]
 	quest.601D00000000000B.quest_subtitle: "Eat the portal the world won't give you."
 	quest.601D00000000000B.title: "Into the End"
 	quest.601D00000000000E.quest_desc: [
-		"The &5Ender Dragon&r guards the central island. This is the fight the whole pack has been"
-		""
-		"walking toward. Bring beds, bring jetpacks, bring patience - then put it down."
+		"The &5Ender Dragon&r guards the central island. This is the fight the whole pack has been walking toward. Bring beds, bring jetpacks, bring patience - then put it down."
 	]
 	quest.601D00000000000E.quest_subtitle: "The fight the pack was walking toward."
 	quest.601D00000000000E.title: "Slay the Dragon"
@@ -1040,9 +1016,7 @@
 	quest.601D000000000014.quest_subtitle: "Bottle the void."
 	quest.601D000000000014.title: "A Bucket of Ender Pearl Slime"
 	quest.601D000000000017.quest_desc: [
-		"Run the slime through the Slime Milker for a &bBucket of Ender Pearl Slime Milk&r - the food"
-		""
-		"that turns a frog's light into &eender pearls&r."
+		"Run the slime through the Slime Milker for a &bBucket of Ender Pearl Slime Milk&r - the food that turns a frog's light into &eender pearls&r."
 	]
 	quest.601D000000000017.quest_subtitle: "One more bucket."
 	quest.601D000000000017.title: "Milk It"
@@ -1090,16 +1064,12 @@
 	quest.60F0000000000011.quest_subtitle: "Boxes that come with you."
 	quest.60F0000000000011.title: "Shulker Shell"
 	quest.6EC0000000000002.quest_desc: [
-		"The endgame's crafting spine is &6Extended Crafting&r. It starts plain: iron plus black dye"
-		""
-		"(your Tide frog's ink) makes &7Black Iron&r. Everything here builds from it."
+		"The endgame's crafting spine is &6Extended Crafting&r. It starts plain: iron plus black dye (your Tide frog's ink) makes &7Black Iron&r. Everything here builds from it."
 	]
 	quest.6EC0000000000002.quest_subtitle: "Iron, dyed for greater things."
 	quest.6EC0000000000002.title: "Black Iron"
 	quest.6EC0000000000005.quest_desc: [
-		"&eGlowstone, redstone, and gunpowder&r fuse into &eLuminessence&r - the spark inside every"
-		""
-		"Extended Crafting component. Make some; you will need a lot."
+		"&eGlowstone, redstone, and gunpowder&r fuse into &eLuminessence&r - the spark inside every Extended Crafting component. Make some; you will need a lot."
 	]
 	quest.6EC0000000000005.quest_subtitle: "The spark in the machine."
 	quest.6EC0000000000005.title: "Luminessence"
@@ -1121,68 +1091,44 @@
 	quest.6EC000000000000E.quest_subtitle: "Seven by seven."
 	quest.6EC000000000000E.title: "The Elite Table"
 	quest.6EC0000000000011.quest_desc: [
-		"&69x9&r, crowned with an emerald block. The biggest grid in the pack, and the only one that"
-		""
-		"can craft a Master Frog. Build the &6Ultimate Table&r."
+		"&69x9&r, crowned with an emerald block. The biggest grid in the pack, and the only one that can craft a Master Frog. Build the &6Ultimate Table&r."
 	]
 	quest.6EC0000000000011.quest_subtitle: "Nine by nine. The big one."
 	quest.6EC0000000000011.title: "The Ultimate Table"
 	quest.6EC0000000000014.quest_desc: [
-		"The &dUltimate Catalyst&r is what the Quantum Compressor burns to fold thousands of items"
-		""
-		"into one. Craft one to feed the compressor."
+		"The &dUltimate Catalyst&r is what the Quantum Compressor burns to fold thousands of items into one. Craft one to feed the compressor."
 	]
 	quest.6EC0000000000014.quest_subtitle: "Fuel for the fold."
 	quest.6EC0000000000014.title: "The Ultimate Catalyst"
 	quest.6EC0000000000017.quest_desc: [
-		"The &dQuantum Compressor&r presses a thousand of a frog's resource into a single &bSingularity&r -"
-		""
-		"one for every resource the frogs make. It runs on power - wire it to your Mekanism grid. Build it;"
-		""
-		"the endgame starts here."
+		"The &dQuantum Compressor&r presses a thousand of a frog's resource into a single &bSingularity&r - one for every resource the frogs make. It runs on power - wire it to your Mekanism grid. Build it; the endgame starts here."
 	]
 	quest.6EC0000000000017.quest_subtitle: "A thousand of a haul, one cube."
 	quest.6EC0000000000017.title: "The Quantum Compressor"
 	quest.6A0D000000000002.quest_desc: [
-		"You have cleared the dragon and built the compressor. One task remains: prove the frogs run"
-		""
-		"without you. Each &bSingularity&r swallows a thousand of a frog's resource - you cannot hand-make"
-		""
-		"that many. Only a running farm can. There is one singularity for every resource your frogs make:"
+		"You have cleared the dragon and built the compressor. One task remains: prove the frogs run without you. Each &bSingularity&r swallows a thousand of a frog's resource - you cannot hand-make that many. Only a running farm can. There is one singularity for every resource your frogs make:"
 		""
 		"forty in all. The Ultimate Singularity wants every one."
 	]
 	quest.6A0D000000000002.quest_subtitle: "Prove the frogs run without you."
 	quest.6A0D000000000002.title: "The Long Compression"
 	quest.6A0D000000000005.quest_desc: [
-		"Point your iron-frog farm at the Quantum Compressor and wait. A thousand iron folds into a"
-		""
-		"single &bIron Singularity&r - the first of forty, one for every resource the frogs make, from"
-		""
-		"iron to shulker shells. Start here; you will want them all."
+		"Point your iron-frog farm at the Quantum Compressor and wait. A thousand iron folds into a single &bIron Singularity&r - the first of forty, one for every resource the frogs make, from iron to shulker shells. Start here; you will want them all."
 	]
 	quest.6A0D000000000005.quest_subtitle: "A thousand iron, one cube."
 	quest.6A0D000000000005.title: "Your First Singularity"
 	quest.6A0D000000000008.quest_desc: [
-		"Gather one Singularity for every resource the frogs make - all forty - and crystallize them"
-		""
-		"together in the Ultimate Table into the &dUltimate Singularity&r: the densest form of everything"
-		""
-		"your frogs ever made. This is the proof you automated every last farm."
+		"Gather one Singularity for every resource the frogs make - all forty - and crystallize them together in the Ultimate Table into the &dUltimate Singularity&r: the densest form of everything your frogs ever made. This is the proof you automated every last farm."
 	]
 	quest.6A0D000000000008.quest_subtitle: "The densest frog there is."
 	quest.6A0D000000000008.title: "The Ultimate Singularity"
 	quest.6A0D00000000000B.quest_desc: [
-		"Set the Ultimate Singularity in a crafting table, ring it with Froglights, and craft the"
-		""
-		"&aSky Frogs Master Frog&r. It does nothing. It is everything."
+		"Set the Ultimate Singularity in a crafting table, ring it with Froglights, and craft the &aSky Frogs Master Frog&r. It does nothing. It is everything."
 	]
 	quest.6A0D00000000000B.quest_subtitle: "The trophy at the end of the pond."
 	quest.6A0D00000000000B.title: "The Sky Frogs Master Frog"
 	quest.6A0D00000000000E.quest_desc: [
-		"Set it on a shelf. You started on a speck of dirt with a bottle of frogspawn, and you turned"
-		""
-		"frogs into the entire world - ore, gem, bog, ocean, nether, and void."
+		"Set it on a shelf. You started on a speck of dirt with a bottle of frogspawn, and you turned frogs into the entire world - ore, gem, bog, ocean, nether, and void."
 		""
 		"There is nothing left to mine. Thanks for playing Sky Frogs."
 	]
