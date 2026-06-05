@@ -758,11 +758,6 @@ hash = "2e29a5406617e1321bacd122b915834b7f38ea6cc2e59f2b1dc9d677ab51955b"
 metafile = true
 
 [[files]]
-file = "mods/handcrafted.pw.toml"
-hash = "d573695d37296209dc06495d359c4b283ffa6640bcfe8aa9c9b59eb420891788"
-metafile = true
-
-[[files]]
 file = "mods/industrial-foregoing-souls.pw.toml"
 hash = "a997c2462d8501aca9e25e7659cfcafd0736f6ff16bdfc46f0a4020500299328"
 metafile = true
