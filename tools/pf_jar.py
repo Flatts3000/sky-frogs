@@ -16,22 +16,49 @@ from __future__ import annotations
 import glob
 import json
 import os
+import re
 import zipfile
 
 VARIANT_PREFIX = "data/productivefrogs/productivefrogs/slime_variant/"
 
-_JAR_PATTERNS = [
-    os.path.expanduser("~/curseforge/minecraft/Instances/Sky Frogs/mods/productivefrogs-*.jar"),
-    "C:/Users/User/curseforge/minecraft/Instances/Sky Frogs/mods/productivefrogs-*.jar",
+_REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+_PW_TOML = os.path.join(_REPO, "pack", "mods", "productive-frogs.pw.toml")
+
+_MODS_DIRS = [
+    os.path.expanduser("~/curseforge/minecraft/Instances/Sky Frogs/mods"),
+    "C:/Users/User/curseforge/minecraft/Instances/Sky Frogs/mods",
 ]
 
 
+def pinned_filename() -> str | None:
+    """The jar filename the pack PINS (pack/mods/productive-frogs.pw.toml), or None."""
+    try:
+        text = open(_PW_TOML, encoding="utf-8").read()
+    except OSError:
+        return None
+    m = re.search(r'^filename\s*=\s*"([^"]+)"', text, re.M)
+    return m.group(1) if m else None
+
+
 def find_jar(explicit: str | None = None) -> str | None:
-    """Path to the PF jar, or None. `explicit` (e.g. --jar/--pf-jar) wins."""
+    """Path to the PF jar, or None. `explicit` (e.g. --jar/--pf-jar) wins.
+
+    Auto-discovery prefers the EXACT pinned filename from the pw.toml - this both
+    guarantees pin/jar agreement and sidesteps the lexicographic-version trap
+    (sorted() ranks '...1.9.2.jar' after '...1.11.0.jar', so a stale leftover jar
+    would win a latest-by-name pick). The bare glob is only a fallback for when
+    the pw.toml is unreadable; callers that care about staleness should compare
+    os.path.basename(jar) against pinned_filename().
+    """
     if explicit:
         return explicit if os.path.exists(explicit) else None
-    for pat in _JAR_PATTERNS:
-        matches = sorted(glob.glob(pat))
+    pinned = pinned_filename()
+    for d in _MODS_DIRS:
+        if pinned:
+            exact = os.path.join(d, pinned)
+            if os.path.exists(exact):
+                return exact
+        matches = sorted(glob.glob(os.path.join(d, "productivefrogs-*.jar")))
         if matches:
             return matches[-1]
     return None

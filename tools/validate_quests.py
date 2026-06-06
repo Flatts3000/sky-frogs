@@ -688,9 +688,7 @@ def check_singularity_ingredient(chapters, ctx):
     """
     variants = ctx["pf_variants"]
     if variants is None:
-        return [Finding(INFO, "Q-SINGULARITY-INGREDIENT", "-", 0,
-                        "not run: no productivefrogs jar found (sync_instance.py populates the "
-                        "dev instance; or pass --pf-jar PATH)")]
+        return []  # Q-PF-JAR (emitted by the loader) already says why
     if not SINGULARITY_DIR.exists():
         return []
     f = []
@@ -745,8 +743,7 @@ def check_dissolution_threading(chapters, ctx):
     """
     variants = ctx["pf_variants"]
     if variants is None:
-        return [Finding(INFO, "Q-DISSOLUTION-THREADING", "-", 0,
-                        "not run: no productivefrogs jar found")]
+        return []  # Q-PF-JAR (emitted by the loader) already says why
     if not DISSOLUTION_JS.exists():
         return [Finding(INFO, "Q-DISSOLUTION-THREADING", "-", 0,
                         "not run: dissolution_slime_recipes.js not found")]
@@ -756,11 +753,16 @@ def check_dissolution_threading(chapters, ctx):
     def line_of(pos):
         return text.count("\n", 0, pos) + 1
 
+    reported_missing: set[str] = set()
+
     def primer(variant, pos, f):
         vdata = variants.get(variant)
         if vdata is None:
-            f.append(Finding(ERROR, "Q-DISSOLUTION-THREADING", fname, line_of(pos),
-                             f"row for '{variant}': no such slime_variant in the pinned PF jar"))
+            if variant not in reported_missing:  # one finding per missing variant, not per use
+                reported_missing.add(variant)
+                f.append(Finding(ERROR, "Q-DISSOLUTION-THREADING", fname, line_of(pos),
+                                 f"row for '{variant}': no such slime_variant in the pinned "
+                                 f"PF jar"))
             return None
         return vdata.get("primer_item")
 
@@ -772,6 +774,19 @@ def check_dissolution_threading(chapters, ctx):
 
     # --- vanilla chains: group rows under their tier header, in file order
     heads = [(m.start(), m.group(1)) for m in TIER_HEAD_RE.finditer(text, 0, tiers_region_end)]
+
+    # Parser sanity guard (review finding on PR #110): a source-format change that
+    # the regexes no longer match would otherwise parse ZERO rows and pass green
+    # vacuously. Today's floor: 6 tiers, 41 chain rows, 8 modded rows - assert a
+    # conservative minimum so format drift is a loud ERROR, not a silent skip.
+    n_chain_rows = len(CHAIN_ROW_RE.findall(text, 0, tiers_region_end))
+    n_modded_rows = len(MODDED_ROW_RE.findall(text, tiers_region_end))
+    if len(heads) < 6 or n_chain_rows < 35 or (modded_at >= 0 and n_modded_rows < 1):
+        return [Finding(ERROR, "Q-DISSOLUTION-THREADING", fname, 0,
+                        f"parser found only {len(heads)} tier heads / {n_chain_rows} chain rows "
+                        f"/ {n_modded_rows} modded rows (expected >=6 / >=35 / >=1) - the file "
+                        f"format drifted away from the regexes; update the parser in "
+                        f"tools/validate_quests.py before trusting this check")]
     prev_tier_last_variant = None
     for hi, (hpos, tier) in enumerate(heads):
         hend = heads[hi + 1][0] if hi + 1 < len(heads) else tiers_region_end
@@ -907,20 +922,44 @@ CHECKS = [
 # --------------------------------------------------------------------------- #
 # Main
 # --------------------------------------------------------------------------- #
-def load_pf_variants(explicit_jar: str | None) -> dict | None:
-    """Variant data from the pinned PF jar, or None when no jar is locatable
-    (the dependent checks skip with INFO - e.g. CI without the dev instance)."""
+def load_pf_variants(explicit_jar: str | None) -> tuple[dict | None, list[Finding]]:
+    """(variant data from the PF jar, findings about how it was loaded).
+
+    None variants => the jar-dependent checks skip; the findings say WHY, and the
+    distinctions matter (code-review findings on PR #110):
+      - no jar at all          -> INFO  (CI without the dev instance; by design)
+      - jar present, unreadable -> WARN (corrupt/partial download is NOT a clean skip)
+      - jar != the pinned filename -> WARN + skip (validating against the WRONG PF
+        version produces false greens AND false reds; run sync_instance.py first).
+    An explicit --pf-jar bypasses the staleness comparison (a deliberate override,
+    e.g. validating against a CDN download before syncing).
+    """
     jar = pf_jar.find_jar(explicit_jar)
     if jar is None:
-        return None
+        return None, [Finding(INFO, "Q-PF-JAR", "-", 0,
+                              "jar checks not run: no productivefrogs jar found "
+                              "(tools/sync_instance.py populates the dev instance; "
+                              "or pass --pf-jar PATH)")]
+    if not explicit_jar:
+        pinned = pf_jar.pinned_filename()
+        actual = Path(jar).name
+        if pinned and actual != pinned:
+            return None, [Finding(WARN, "Q-PF-JAR", actual, 0,
+                                  f"jar on disk is {actual} but the pack pins {pinned} - "
+                                  f"STALE jar would make the jar checks lie in both "
+                                  f"directions; run tools/sync_instance.py (MC closed). "
+                                  f"Jar checks skipped.")]
     try:
-        return pf_jar.load_variants(jar)
-    except Exception:
-        return None
+        return pf_jar.load_variants(jar), []
+    except Exception as e:
+        return None, [Finding(WARN, "Q-PF-JAR", Path(jar).name, 0,
+                              f"jar exists but is unreadable ({type(e).__name__}: {e}) - "
+                              f"corrupt or partial download? Jar checks skipped.")]
 
 
 def run(pf_jar_path: str | None = None):
     chapters = load_chapters()
+    pf_variants, jar_findings = load_pf_variants(pf_jar_path)
     ctx = {
         "quest_ids": {q.get("id") for _, q in iter_quests(chapters)},
         "group_ids": load_group_ids(),
@@ -928,9 +967,9 @@ def run(pf_jar_path: str | None = None):
         "item_allowlist": load_item_allowlist(),
         "makeable_variants": makeable_variants(),
         "reward_tables": load_reward_tables(),
-        "pf_variants": load_pf_variants(pf_jar_path),
+        "pf_variants": pf_variants,
     }
-    findings: list[Finding] = []
+    findings: list[Finding] = list(jar_findings)
     for check in CHECKS:
         findings.extend(check(chapters, ctx))
     n_quests = sum(len(ch.quests) for ch in chapters)
