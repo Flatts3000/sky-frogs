@@ -18,7 +18,7 @@ All six tiers (Welcome -> Cave -> Geode -> Bog -> Tide -> Infernal -> Void) are 
 | **1. Tier 0 playable** ✅ | `0.0.x` pre-alpha | Bootstrap loop: cobble gen + dark-room cave_slime farm → iron |
 | **2. First Iron Froglight** ✅ | `0.1.0` alpha | Productive Frogs integrated; Tier 1 (Cave) reachable |
 | **3. Mid-tier alpha** ✅ | `0.2.0` → `0.5.0` | Tiers 2-5 (Geode, Bog, Tide, Infernal) built |
-| **4. Feature-complete** | `0.6.0` → `0.9.0` | Tier 6 (Void) endgame + per-mod side chapters + reward/polish passes |
+| **4. Feature-complete** | `0.6.0` ✅ → `0.9.0` | Tier 6 (Void) endgame ✅ + per-mod side chapters (#109 pending) + reward/polish passes. (Reality note: the release train ran ahead of this table - content was tier-complete by v0.2/v0.3, and v0.3-v0.6.0 became community-driven polish/mod releases. v0.6.0 shipped 2026-06-06: Powah + Flux Networks with the full frog-farmable material set, the QoL wave, and the Discord-linked welcome chapter.) |
 | **5. v1.0 launch** | `1.0.0` | Polish, balance pass, branding assets, CF page live |
 | **6. Maintenance** | `1.x.y` | Mod updates, content additions, hotfixes |
 

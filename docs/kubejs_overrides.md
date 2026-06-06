@@ -104,7 +104,7 @@ BlockEvents.rightClicked(event => {
 
 Per PF's `ParentSpeciesEntry`, six parent species map to the six categories. Because progression is **species-gated** (see [`progression.md`](./progression.md)), only the *current* species should ever be obtainable, so the pack owns spawn policy entirely and PF just supplies a light-based placement-rule hook.
 
-Tier mapping (built): Tier 0 Welcome (cave_slime farm bootstrap) -> Tier 1 **CAVE** -> Tier 2 **GEODE** -> Tier 3 **BOG**. Cave is the Tier 1 starter species. Tide / Infernal / Void are not built yet.
+Tier mapping (built, all six): Tier 0 Welcome (cave_slime farm bootstrap) -> Tier 1 **CAVE** -> Tier 2 **GEODE** -> Tier 3 **BOG** -> Tier 4 **TIDE** -> Tier 5 **INFERNAL** -> Tier 6 **VOID**. Cave is the Tier 1 starter species.
 
 | Parent entity                    | Category  | Tier   | How the player gets it in Sky Frogs                            |
 |----------------------------------|-----------|--------|----------------------------------------------------------------|

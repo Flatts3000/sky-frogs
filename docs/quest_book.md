@@ -43,10 +43,10 @@ These are the 17 chapter files that exist in `config/ftbquests/quests/chapters/`
 
 | Tier group | Chapter file                  | Covers                                                |
 |------------|-------------------------------|--------------------------------------------------------|
-| Tier 0     | `welcome.snbt`                | Bootstrap: cobble gen, second water source via Ex Deorum barrel, dark-room **cave_slime** farm, slime collection. Final reward: a Bottle of **Cave** Frog Frogspawn. Includes a **cooldown-repeatable "Replacement Frog egg" emergency quest** for when frogs die / jump off the island. |
+| Tier 0     | `welcome.snbt`                | Bootstrap: cobble gen, second water source via Ex Deorum barrel, dark-room **cave_slime** farm, slime collection. Final reward: a Bottle of **Cave** Frog Frogspawn. Includes a **cooldown-repeatable "Replacement Frog egg" emergency quest** for when frogs die / jump off the island, and **Join the Pond** (#111): a dependency-free Discord-invite quest with a clickable badge image. |
 | Tier 1: Cave | `your_first_iron_ingot.snbt` | The tutorial tier: place frogspawn, breed, infuse, feed, smelt -> first iron ingot. (The deliberate `iron_ingot` froglight-check exception, see below.) |
 | Tier 1: Cave | `scaling_the_colony.snbt`    | Scale the Cave loop: breeding via Sweetslime, frog stats, Slime Milker, the iron -> copper -> gold -> coal -> glow_ink_sac -> redstone resource chain. |
-| Tier 1: Cave | `cave_frogs.snbt`            | The Cave species' resource quests + the Geode-gateway capstone (lean by design; modded Cave metals live in their tech chapters). |
+| Tier 1: Cave | `cave_frogs.snbt`            | The Cave species' resource quests + the Geode-gateway capstone (lean by design; modded Cave metals live in their tech chapters - osmium/steel in `mekanism.snbt` today; Powah's uraninite + energized steel await the planned **Powered Up** side chapter, #109). |
 | Tier 1: Cave | `storage_and_crafting.snbt`  | The Cave-tier **new verb**: crafting upgrades / storage (Sophisticated + Functional storage, quartz-free networks). |
 | Tier 2: Geode | `road_to_geode.snbt`        | Gateway: prime the Spawnery with **redstone** for Geode frogspawn, run the lapis seed-chain bridge. |
 | Tier 2: Geode | `geode_frogs.snbt`          | The Geode species: lapis -> tuff -> calcite -> amethyst -> emerald -> diamond, plus a **Slime Milk catalyst** branch off the diamond capstone (Count -> Speed -> Quantity -> Infinite Count; PF v1.7.0). |

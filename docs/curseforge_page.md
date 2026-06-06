@@ -46,6 +46,7 @@ Everything from your first iron to the endgame comes through **Resource Frogs**:
 - **No mining shortcuts.** Laser drills, quarries, digital miners - recipe-stripped or hidden. The frogs are the path, and the pack enforces it. (Builders get one curated exception: a string-mesh sieve over dirt and moss that drops saplings and garden flora - decor only, never resources.)
 - **Cross-mod by JSON.** Any modded resource can be made frog-farmable with a single `slime_variant` JSON file, so the whole modded-resource ecosystem plugs into the same loop. No Java, no source-fork.
 - **A questbook that actually guides you.** FTB Quests walks every tier: a chapter per species, plus side chapters for the tech mods. If you're lost, the answer's in the book.
+- **Built from player feedback.** Most updates start as somebody's Discord message or CurseForge comment - the welcome chapter hands you the invite (or click Join the Pond in-game).
 
 ## How to Play (your first hour)
 
@@ -78,16 +79,18 @@ The full mod list is in the repo at [`docs/mod_list.md`](https://github.com/Flat
 
 - **Productive Frogs** - the core mod. Six frog species, hand-operated appliances, datapack-driven slime variants.
 - **Skyblock Builder** - void worldgen, the starter island, per-player island UI.
-- **Ex Deorum** - crucibles, the porcelain bucket, rain-collection barrels (your second water source), and the End Cake (your ticket to the dragon). Resource sieving is disabled in this pack - Tier 0 runs on a dark-room slime farm - but a small builders' sieve lane drops decor flora.
+- **Ex Deorum** - crucibles, the porcelain bucket, rain-collection barrels (your second water source), and the End Cake (your ticket to the dragon). Resource sieving is disabled in this pack - Tier 0 runs on a dark-room slime farm - but a small builders' sieve lane drops decor flora and starter food seeds.
 - **FTB Quests + Library + Teams + Chunks + Ranks + Essentials** - questbook, claims, party support, server admin, `/home` / `/spawn`.
 - **JEI + Jade** - recipe browser and in-world block info. Standard quality-of-life.
 - **Sodium + Lithium + FerriteCore + ModernFix** - the standard performance stack.
 - **Mekanism** (Tier 2 verb) - power, Metallurgic Infuser, Enrichment Chamber.
+- **Powah! + Flux Networks** (the power-scaling arc) - Furnator to Reactor, wireless energy everywhere - and every Powah material plus Flux Dust is frog-farmable. On a void skyblock, the frog is the uranium mine.
 - **Just Dire Things + Building Gadgets 2** (Tier 3 verb) - utility / automation toys; the JDT goo and gadget chain.
-- **Industrial Foregoing** (Tier 4 gateway) - the Dissolution Chamber is the pack's slime engine; resource-threaded chamber recipes for every tier.
+- **Industrial Foregoing + IF Souls** (Tier 4 gateway) - the Dissolution Chamber is the pack's slime engine; resource-threaded chamber recipes for every tier. Souls adds an optional Tier 6 flex: summon and farm the Warden, entirely from frog-farmed sculk.
 - **Iron Jetpacks** (Tier 4 verb) - FE-charged flight; what makes the void-Nether fortress run feasible.
 - **Refined Storage** (Tier 5 verb) - the digital storage + autocrafting network, gated on nether quartz.
 - **Extended Crafting** (Tier 6 verb + endgame) - the tiered crafting tables and the Quantum Compressor that turns froglights into singularities, ending in the Master Frog trophy.
+- **Quality of life, the modern set** - GraveStone (your items wait for you), Inventory Essentials (bulk ctrl-shift-click moves), Cable Facades (hide pipes in any block), Extreme Sound Muffler (silence the plap plaps, per sound), Botany Pots + Botany Trees (toolless self-tending planters - trees included).
 
 Every bundled mod keeps its own license; see each mod's CurseForge page. The pack's own content (configs, KubeJS, datapacks, questbook, branding) is MIT.
 
