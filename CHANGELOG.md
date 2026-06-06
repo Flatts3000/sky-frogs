@@ -5,6 +5,7 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 ## [Unreleased]
 
 ### Changed
+- **Productive Frogs 1.10.0 -> 1.11.0**: Flux Networks and full Powah compat upstream (both dormant here until those mods ship - the PF half of #84 is done), niotic/nitro crystal color fix, and **the Blaze resource is now the blaze rod** (primer and Froglight smelt output; was blaze powder). The pack follows: the netherite scrap slime's chamber input is a blaze rod, the Blaze Singularity compresses rods, and the Blaze quest icon/text match. Existing blaze slimes, Froglights, buckets, and milk carry over untouched; the Spawnery's Infernal primer is still blaze powder (one rod crafts two).
 - **Cobblegen Galore curated** (#90): the netherrack, obsidian, and tuff generator recipes are removed - all three outputs are frog resources (Infernal x2, Geode) and singularity inputs, and the #85 ruling stands: no easy way to make resources that frogs are meant to make. The seven builders' stone generators (stone, cobblestone, granite, diorite, andesite, basalt, cobbled deepslate) are untouched; the curation is default-deny, so any generator a future mod update adds stays disabled until reviewed.
 
 ### Added

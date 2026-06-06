@@ -42,7 +42,7 @@ hash = "702d3ab8615c4715ab152efcea7caa4bfe7a5d28c14999f5470e9581f8c03744"
 
 [[files]]
 file = "config/extendedcrafting/singularities/blaze.json"
-hash = "b229236e4d394439f2fb849431a4aab2efb76560bae57cfe3237a325363e8dcb"
+hash = "a8b10656634e2c6f771db0783cb1a0cfa3dac44a00bfa9cdda1c0e7587bb867f"
 
 [[files]]
 file = "config/extendedcrafting/singularities/calcite.json"
@@ -218,7 +218,7 @@ hash = "ad642501aadd8ced3a65d7fd2bc33fa58abfab43ad54cf512f9416d5d2c70050"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/infernal_frogs.snbt"
-hash = "0e4478337626dd09776d9fc7b060900903bbb147956b24b07850c883ac604dcb"
+hash = "8f0949b7c0546c930066e5376aeeb5390a3dd48c1b700fded5aa6998d22b8a4e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/master_pond.snbt"
@@ -290,7 +290,7 @@ hash = "2e69afacf774749222ca1e925dc94d32e6c3db8bef4557aa33144751c2770206"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "d11551d10951aa3924ec32c479bc525a9996af1b5250f09998dc598cae1a4961"
+hash = "0a1d8e4bc75cc1c4d1fbaf8eb3ed9aeb67377e9a9da93dad2bb82300fd0c8be1"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
@@ -446,7 +446,7 @@ hash = "a14f0b3014ad482f9b04ef079202394670f76a749bccb93ed36bb3e41c1810dc"
 
 [[files]]
 file = "kubejs/server_scripts/dissolution_slime_recipes.js"
-hash = "db4e5f78b695a685047a8f1f4127edf786c10b5d68fb7c25a59233efcbe3c563"
+hash = "00bb1add574ac9230450ef3e3d57347eb6453fbdc5fe49e0ea4ff968d4bce169"
 
 [[files]]
 file = "kubejs/server_scripts/dump_items.js"
@@ -1028,7 +1028,7 @@ metafile = true
 
 [[files]]
 file = "mods/productive-frogs.pw.toml"
-hash = "776056cdf5b578e9693fea68cbeef49fdb69700db41eec4681e26025fd551925"
+hash = "5675e6faf5e9d9c96323f0be19099237f6a0ab18f6baa6c7e5a64fa570493faf"
 metafile = true
 
 [[files]]

@@ -14,6 +14,7 @@ The pack's load-bearing core mod (CurseForge slug `productive-frogs`, project-id
 | -> 1.8.1 | 2026-05-30 | Slime Bucket fixes (dispenser release, no water dump, size-1 release). No item-id/recipe changes; pack unaffected. |
 | -> 1.9.2 | 2026-06-05 | 1.8.2: placed-milk source drain timing. 1.8.3: Coal/Blaze Froglights as furnace fuel. 1.9.0: Refined Storage support. **1.9.2: Chorus Froglight smelts to raw chorus fruit** (was popped - the lone primer/output mismatch among all variants; unblocked the echo-shard chain + chorus Singularity; pack #69, CF report by eager_goodall7). |
 | -> 1.10.0 | 2026-06-06 | **Obsidian + refined_obsidian reclassed cave -> infernal** (PF #143, requested as pack #79 / productive-frogs#142). The Infernal frog produces the obsidian froglight the pack's `infernal_frogs` chain depends on. Migration-free: the variants were unobtainable before pack v0.5.0. |
+| -> 1.11.0 | 2026-06-06 | **Flux Networks compat** (Infernal `flux_dust` variant, PF #147 - the PF half of pack #84) + the full **Powah ladder** (energized_steel/uraninite Cave, dry_ice Tide; neither mod shipped yet, both dormant). **The Blaze resource became the ROD** (primer + smelt output, was powder; PF #148/#151) - pack remapped its three blaze_powder references: the netherite_scrap dissolution input, the blaze singularity ingredient (regenerated), and the Blaze quest icon/text. Spawnery Infernal primer unchanged (still powder). Existing blaze slimes/froglights/milk migrate untouched. |
 
 Standing notes:
 
