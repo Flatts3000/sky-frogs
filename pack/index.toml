@@ -742,6 +742,11 @@ hash = "dff824171060c79b327a4880c2f0546c727a041a489ef3af643ec2dcd9cd0c48"
 metafile = true
 
 [[files]]
+file = "mods/flux-networks.pw.toml"
+hash = "ad8209e472d463c9fcd19ca708fcd9c1a4a1bc69c9f0ca22efeacb414e9ab7a8"
+metafile = true
+
+[[files]]
 file = "mods/forgiving-void.pw.toml"
 hash = "7c851811a62225d04e8fb9d402afab76ae647df9cfae7c619e2d89e1e1ba4e52"
 metafile = true
@@ -819,6 +824,11 @@ metafile = true
 [[files]]
 file = "mods/gravestone-mod.pw.toml"
 hash = "678a73946ad0708c24ee921f168a0cda9b410ce260a814f845f0223d8d861b57"
+metafile = true
+
+[[files]]
+file = "mods/guideme.pw.toml"
+hash = "10c6e9563ce848472a6e817c05f5801da01a0d941bee2bf9ba7a0e848cf0a334"
 metafile = true
 
 [[files]]
@@ -1029,6 +1039,11 @@ metafile = true
 [[files]]
 file = "mods/polymorph.pw.toml"
 hash = "8b725f1822c0feab9e51bef600f2ee6f4c26efbb55aa3ee9073a027f1f134202"
+metafile = true
+
+[[files]]
+file = "mods/powah-rearchitected.pw.toml"
+hash = "10ebd1464d46e82fb7dc2f341d5b675e569633db4e8ff8286cdc529119d5f2e6"
 metafile = true
 
 [[files]]
