@@ -84,10 +84,18 @@ ItemEvents.modifyTooltips(event => {
   }
   // 4.11.10's jar is full of STALE assets - models and lang keys for items the
   // mod no longer registers (wallet, advanced_loot_box, ...), so a hardcoded
-  // id list keeps throwing "Item with ID ... does not exist" as the roster
-  // drifts. Resolve each id defensively instead (same Item.of().isEmpty()
-  // pattern as the selftest canaries): registered ids get the tooltip,
-  // unregistered ids are skipped - they can't appear in-game anyway.
+  // id list keeps erroring as the roster drifts. Item.of() on an unknown id
+  // THROWS in this KubeJS (the selftest canaries survive it only because every
+  // check is try/catch-wrapped), so existence is probed inside a catch - the
+  // one construction that cannot error. Registered ids get the tooltip; stale
+  // ids are skipped (they cannot appear in-game anyway).
+  const itemExists = id => {
+    try {
+      return !Item.of(id).isEmpty()
+    } catch (e) {
+      return false
+    }
+  }
   const severed = [
     'opolisutilities:catalogue',
     'opolisutilities:catalogue_book',
@@ -97,24 +105,21 @@ ItemEvents.modifyTooltips(event => {
     'opolisutilities:elite_loot_box',
     'opolisutilities:wallet'
   ]
-  severed.forEach(id => {
-    if (Item.of(id).isEmpty()) {
-      return // stale asset, item not registered in this build
-    }
+  severed.filter(itemExists).forEach(id => {
     event.add(id, [
       Text.red('⚠ Disabled in Sky Frogs'),
       Text.gray('No shop economy here - quests and frogs provide.')
     ])
   })
 
-  if (!Item.of('opolisutilities:fluid_generator').isEmpty()) {
+  if (itemExists('opolisutilities:fluid_generator')) {
     event.add('opolisutilities:fluid_generator', [
       Text.red('⚠ Disabled in Sky Frogs'),
       Text.gray('Fluids are frog business (coming to Productive Frogs).')
     ])
   }
 
-  if (!Item.of('opolisutilities:resource_generator').isEmpty()) {
+  if (itemExists('opolisutilities:resource_generator')) {
     event.add('opolisutilities:resource_generator', [
       Text.green('The Builders\' Stone Lane'),
       Text.gray('Generates the stone variants no frog produces.'),
