@@ -13,11 +13,11 @@
 | Tier | Species | Resource theme (built unless noted) |
 |------|---------|-----------------------------------------|
 | 0    | *(bootstrap)* | Get on your feet + a cave_slime farm |
-| 1    | **Cave**     | Ores & metals: iron -> copper -> gold -> coal -> redstone (the built chain). Lapis moved to Geode in PF 1.5.1; diamond is a Geode resource; obsidian omitted (an unquested Cave variant - unreachable on skyblock without a diamond pickaxe). |
+| 1    | **Cave**     | Ores & metals: iron -> copper -> gold -> coal -> glow_ink_sac -> redstone (the built chain; glow ink joined in v0.5.0, #79). Lapis moved to Geode in PF 1.5.1; diamond is a Geode resource; obsidian moved to Infernal in PF 1.10.0. |
 | 2    | **Geode**    | Gems & crystals: lapis -> tuff -> calcite -> amethyst -> emerald -> diamond |
 | 3    | **Bog**      | Organic & swamp: dirt -> mud -> clay_ball -> moss -> mycelium -> lily_pad -> leather -> feather -> plastic -> pink_slime (the last two are Industrial Foregoing items; IF is a hard pack dependency) |
 | 4    | **Tide**     | Aquatic: prismarine -> prismarine_crystals -> sponge -> ink_sac -> sea_pickle -> nautilus_shell (the built chain). |
-| 5    | **Infernal** | Nether: netherrack -> quartz -> glowstone -> soul_sand -> soul_soil -> blaze -> netherite_scrap (the built chain; netherite scrap is the endgame capstone). |
+| 5    | **Infernal** | Nether: netherrack -> obsidian -> quartz -> glowstone -> soul_sand -> soul_soil -> blaze -> netherite_scrap (the built chain; obsidian joined in v0.5.0 as netherrack's portal-stone partner, #79; netherite scrap is the endgame capstone). |
 | 6    | **Void**     | End & endgame: ender pearl, end stone, chorus fruit, echo shard, sculk, shulker shell. Earned by a one-time dragon expedition; ends in the Master Frog trophy. |
 
 Modded resources per tier are PF's conditional variants — they register only when the relevant mod ships in the pack, so the actual per-tier resource set tracks the Sky Frogs mod list.
@@ -95,7 +95,7 @@ Estimated playtime: **30–60 min**.
 
 - Hatch Cave Frogs from the Tier 0 reward.
 - Farm Cave Slimes (dark room) and/or place Cave Slime Milk sources.
-- Infuse with ore primers → Iron → Copper → Gold → Coal → Redstone Slimes (+ modded metals if those mods ship). (Lapis and diamond are Geode resources; obsidian is omitted - an unquested Cave variant.)
+- Infuse with ore primers → Iron → Copper → Gold → Coal → Glow Ink → Redstone Slimes (+ modded metals if those mods ship). (Lapis and diamond are Geode resources; obsidian is an Infernal variant as of PF 1.10.0.)
 - Cave Frogs → Configurable Froglights → smelt → ingots.
 - **New verb:** crafting upgrades / storage. Sophisticated + Functional storage, with quartz-free network recipes (the Cave-tier "Storage and Crafting" interlude).
 - **Gate to Tier 2:** prime the Spawnery with **redstone** for a Bottle of Geode Frogspawn, then run the Geode seed-chain.
@@ -141,7 +141,7 @@ Estimated playtime: **3–6 hours**.
 **Chapters:** *Road to Infernal* (gateway) + *Infernal Frogs* (the nether resource chain) + *The Network* (the Refined Storage verb). **Built.** The Nether without a Nether - the Infernal frog produces the materials a void skyblock otherwise can't reach.
 
 - Infernal Frogs + Infernal Slimes, Dissolution-Chamber only (filler = prismarine, a Tide resource - netherrack would be circular).
-- The roster: netherrack (in `road_to_infernal`), then quartz, glowstone, soul_sand, soul_soil, blaze, **netherite_scrap** in `infernal_frogs`. Netherite is the vanilla-endgame capstone (kept in Infernal, not deferred to Void).
+- The roster: netherrack (in `road_to_infernal`), then obsidian (v0.5.0, the portal-stone partner), quartz, glowstone, soul_sand, soul_soil, blaze, **netherite_scrap** in `infernal_frogs`. Netherite is the vanilla-endgame capstone (kept in Infernal, not deferred to Void).
 - **New verb:** **Refined Storage** (RS 2.0), the `the_network` chapter - the digital storage + autocrafting network (Quartz Enriched Iron -> Controller -> Grid -> Disk Drive -> External Storage -> Import/Export -> Crafting Grid -> Autocrafting). Gated on nether quartz, which only the Infernal frog produces.
 - **Gate to Tier 6:** the **dragon expedition** (the `road_to_void` gateway). Farm ender pearls from dark-room endermen, craft 2 eyes of ender, and (since no stronghold generates on a void skyblock) bake Ex Deorum's **End Cake** - 3 buckets of milk (plain milk or any Slime Milk via the `#productivefrogs:slime_milk_buckets` tag), an egg between the 2 eyes, 3 wheat. Each of its 6 slices teleports the eater to the End. Slay the dragon. The Tide jetpack verb makes the void-island crossings feasible; the dragon kill gates the endgame. (Replaced the hand-built 12-frame End portal on 2026-06-05 - the frames-must-face-inward gotcha hard-blocked a player; CF #8041724.)
 

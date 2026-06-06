@@ -112,9 +112,9 @@ Capture order: Tier 1 first (reachable in the alpha); the rest as later tiers go
 
 ## Links
 
+- **Community Discord:** [discord.gg/r6MhZ73nsM](https://discord.gg/r6MhZ73nsM) - chat, support, suggestions, and release announcements
 - **Source code:** [github.com/Flatts3000/sky-frogs](https://github.com/Flatts3000/sky-frogs)
 - **Bug reports:** [GitHub Issues](https://github.com/Flatts3000/sky-frogs/issues)
-- **Questions / suggestions:** [GitHub Discussions](https://github.com/Flatts3000/sky-frogs/discussions)
 - **The underlying mod:** [Productive Frogs on CurseForge](https://www.curseforge.com/minecraft/mc-mods/productive-frogs)
 
 ---

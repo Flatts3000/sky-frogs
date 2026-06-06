@@ -1,0 +1,22 @@
+# Productive Frogs pin history
+
+The pack's load-bearing core mod (CurseForge slug `productive-frogs`, project-id `1552728`, published 2026-05-25). Current pin lives in [`CLAUDE.md`](../CLAUDE.md) Versioning targets and `pack/mods/productive-frogs.pw.toml`. Pull newer files with `packwiz update productive-frogs`; afterwards run `python tools/sync_instance.py` (with Minecraft closed) to mirror the jar into the dev instance.
+
+| Version | Date | What it brought / why the pack moved |
+|---|---|---|
+| 1.0.1 -> 1.2.0 | 2026-05-25 | First adoption. 1.2.0 unlocked the 57-variant resource set, component-driven Slime Milk, data-driven spawn eggs. |
+| -> 1.3.0 -> 1.4.0 -> 1.4.3 | 2026-05-26 | 1.3.0: `mod_loaded`-gated cross-mod crush recipes. **1.4.0: the Spawnery** (the pack enables it). 1.4.1-1.4.3: Jade appliance tooltips + Geode/Tide/Void roster rebalancing. |
+| -> 1.5.0 -> 1.5.1 -> 1.5.2 | 2026-05-27 | **1.5.0: frog stats (Appetite/Bounty/Reach) + breeding via Sweetslime** - the Scaling the Colony chapter depends on it. 1.5.1 moved Lapis Cave -> Geode. 1.5.2 patch. |
+| -> 1.5.3 | 2026-05-28 | JEI recipe pages for the Spawnery + Slime Milker (closed the "no recipe in JEI" gap; tag-driven, pack primer overrides show through). |
+| -> 1.6.0 | 2026-05-29 | The organic Bog roster (dirt/mud/clay_ball/moss/mycelium/lily_pad/leather/feather + IF plastic/pink_slime) the Tier 3 chapters consume. |
+| -> 1.7.0 | 2026-05-29 | The four Slime Milk catalysts (Count/Speed/Quantity/Infinite Count). Pack introduced them via a Geode-diamond-gated quest branch; the Quantity recipe is overridden glowstone -> redstone in `catalyst_recipes.js` (glowstone is Infernal-gated). |
+| -> 1.8.0 | 2026-05-30 | **BREAKING: per-variant Slime Milk.** The single `slime_milk_bucket` (variant in a component) became per-variant items `<variant>_slime_milk_bucket` so tank-and-pipe automation preserves the variant. Pack remapped all 11 milk-bucket references (seed-chain scripts + iron/lapis/dirt quest tasks). Upstream, placed milk/buckets from pre-1.8 worlds turn to air - re-mill from Slime Buckets. |
+| -> 1.8.1 | 2026-05-30 | Slime Bucket fixes (dispenser release, no water dump, size-1 release). No item-id/recipe changes; pack unaffected. |
+| -> 1.9.2 | 2026-06-05 | 1.8.2: placed-milk source drain timing. 1.8.3: Coal/Blaze Froglights as furnace fuel. 1.9.0: Refined Storage support. **1.9.2: Chorus Froglight smelts to raw chorus fruit** (was popped - the lone primer/output mismatch among all variants; unblocked the echo-shard chain + chorus Singularity; pack #69, CF report by eager_goodall7). |
+| -> 1.10.0 | 2026-06-06 | **Obsidian + refined_obsidian reclassed cave -> infernal** (PF #143, requested as pack #79 / productive-frogs#142). The Infernal frog produces the obsidian froglight the pack's `infernal_frogs` chain depends on. Migration-free: the variants were unobtainable before pack v0.5.0. |
+
+Standing notes:
+
+- PF ships **no slime-milk-bucket tag**, so the pack's `slime_milk_tags.js` (regex-built `#productivefrogs:slime_milk_buckets`) stays load-bearing for the End Cake recipe.
+- PF is **CurseForge-only** (same FTB-stack constraint as the pack); `packwiz cf add productive-frogs`.
+- When a bump changes item ids, recipes, or variant categories, re-run the threading audit (table chains vs dissolution rows vs PF data) and `tools/validate_quests.py` - Q-SINGULARITY-COVERAGE and Q-VARIANT-MADE catch the common drift classes.

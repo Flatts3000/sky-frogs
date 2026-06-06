@@ -104,6 +104,7 @@ quest), **WARN** is a smell worth a human look.
 | **Q-LANG-TITLE** | ERROR | every quest has a `quest.<id>.title` in `lang/en_us.snbt` (FTB wipes inline titles; missing = blank quest) | inline-text-gets-wiped rule |
 | **Q-LANG-ORPHAN** | WARN | every `quest.<id>.{title,quest_desc}` in lang maps to a real quest id | dead lang entries from deleted/renumbered quests |
 | **Q-NO-DASHES** | ERROR | no em-dash (U+2014) or en-dash (U+2013) in any authored lang value | house rule (ASCII punctuation only) |
+| **Q-DESC-MIDBREAK** | ERROR (`,`/`-` endings) / WARN (no terminal punctuation) | no `quest_desc` array element ends mid-sentence before a `""` blank line - each element renders as its own line in-game, so manual hard-wraps shatter sentences across paragraph gaps. Author whole paragraphs per element; FTB auto-wraps | the 2026-06-05 playtest screenshot: 23 Tier 4-6 descs authored with line-per-element + `""` separators read as broken sentences in-game |
 
 #### Reward tables (the loot-crate class)
 
@@ -124,6 +125,7 @@ through `Q-ID-POSITIVE` / `Q-ID-UNIQUE`, and their granted items through `Q-ITEM
 | **Q-ITEM-EXISTS** | ERROR | every item id referenced in a task/reward exists in the pack's registry. **Filter items (`ftbfiltersystem:smart_filter`) are NOT exempt** - they are real registered items only when the FTB Filter System mod ships, so they must be in `item_ids.txt`; a smart_filter task with the mod absent renders as "Missing Item" in-game and this check catches it | the "Missing Item" version-gap bugs (sweetslime pinned too low, a filter item whose mod isn't installed, etc.) |
 | **Q-VARIANT-MADE** | WARN | for each resource quest, the `slime_variant` / `Variant` it checks is actually produced by a shipped recipe (a `*_slime_chain.js` step or a `SLIME_TIERS` row in `dissolution_slime_recipes.js`) | quest-vs-recipe drift (a quest for a variant no recipe makes) |
 | **Q-FROGLIGHT-IS-CHECK** | WARN | per-tier *resource* quests check the variant Froglight (`configurable_froglight` + `slime_variant`), not the smelted resource, per the froglight-check principle (documented exceptions: Your First Iron Ingot, the main Mekanism Steel quest) | the no-bypass design law |
+| **Q-SINGULARITY-COVERAGE** | ERROR (no producing recipe) / WARN (no froglight quest) | every singularity with `inUltimateSingularity: true` in `config/extendedcrafting/singularities/` maps to a variant that (a) some shipped recipe produces and (b) some chapter quests via froglight check | the #79 class: glow_ink_sac + obsidian were demanded by the Ultimate Singularity but had no recipe and no quest - the campaign capstone was uncraftable. A future PF variant addition cannot silently reopen the gap |
 
 `Q-ITEM-EXISTS` needs the set of valid item ids, committed as `tools/data/item_ids.txt`
 (currently 20,317 ids). Regenerate it after a mod-list change: in the dev instance, `/reload`

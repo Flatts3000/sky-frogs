@@ -34,13 +34,15 @@ Slime species supply the variety inside each tier — adding a new modded resour
 
 ## Status
 
-**Early development.** The packwiz tree, FTB utility stack, JEI, Jade, KubeJS, and Productive Frogs v1.6.0 (from CurseForge) are in place, and Tiers 0-3 (Cave, Geode, Bog) are built: 10 FTB Quests chapters, the per-tier slime seed-chains, and the supporting KubeJS overrides (Mekanism automation and Industrial Foregoing among them). Tiers 4-6 (Tide, Infernal, Void) are next.
+**Beta - the complete campaign is live on [CurseForge](https://www.curseforge.com/minecraft/modpacks/sky-frogs).** All six species tiers (Cave, Geode, Bog, Tide, Infernal, Void) are built and playable end-to-end - 21 FTB Quests chapters, the per-tier slime chains, the dragon expedition, and the singularity endgame capped by the Master Frog trophy. Releases are tag-driven and ship to GitHub + CurseForge automatically; balance, polish, and art are still in motion, driven by player feedback (CurseForge comments and the community Discord).
 
-Docs in [`docs/`](./docs/) describe the built Tiers 0-3 and sketch the rest (Tide / Infernal / Void); the later tiers and finer design decisions are still up for revision.
+Docs in [`docs/`](./docs/) describe the built campaign; [`CHANGELOG.md`](./CHANGELOG.md) tracks every release.
 
 ## Quick navigation
 
 For players:
+- [Play it: Sky Frogs on CurseForge](https://www.curseforge.com/minecraft/modpacks/sky-frogs)
+- [Community Discord](https://discord.gg/r6MhZ73nsM) - chat, support, suggestions, release announcements
 - [Concept and core loop](./docs/design_overview.md)
 - [Tier-by-tier journey](./docs/progression.md)
 - [Mod list and selection criteria](./docs/mod_list.md)
