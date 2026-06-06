@@ -21,6 +21,10 @@ file = "config/almostunified/unification/materials.json"
 hash = "16292b67fb727ff48461e686518ce6d46a86a36b0510fdcf5f5dd83791707ea5"
 
 [[files]]
+file = "config/botanypots.json"
+hash = "ac5961eea9ed569a011675e8e7a54efd795a488d0a60c0a1355d18fb5b0753e0"
+
+[[files]]
 file = "config/exdeorum-server.toml"
 hash = "a9029472f7a7435e2f54c4827589a0dabca28e522fb1fa6257a814cdf83d64f1"
 
@@ -565,6 +569,11 @@ metafile = true
 [[files]]
 file = "mods/botany-pots.pw.toml"
 hash = "7fa0c360b22811152168f61e17a5d1c881eab1079b199f39f53c2508cdd27c9b"
+metafile = true
+
+[[files]]
+file = "mods/botany-trees.pw.toml"
+hash = "50020be4a6c811b85a9085c93df65a6d7f2e9b28db5bac3c9ac72a84004da9e6"
 metafile = true
 
 [[files]]
