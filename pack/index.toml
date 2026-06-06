@@ -469,6 +469,10 @@ file = "kubejs/server_scripts/log_recipes.js"
 hash = "5c10c058739efefeed7b3d87b2adad36228609e5d2abae61a8466c3e49d41ee6"
 
 [[files]]
+file = "kubejs/server_scripts/opolis_curation.js"
+hash = "85a474a59c95b66361f3fc0c981e02a054b7f1c77c16d7ad019b49c2fbd4f528"
+
+[[files]]
 file = "kubejs/server_scripts/osmium_slime_bucket.js"
 hash = "fcd826f0045add7d9a2dc7c8b1cd4306787be6625e61c23d63db5d010cd9b504"
 
@@ -528,6 +532,16 @@ metafile = true
 [[files]]
 file = "mods/balm.pw.toml"
 hash = "a0f52f47c27d6ccdbee89735e459ff955ba09cdf499ef42bc901f8426be75253"
+metafile = true
+
+[[files]]
+file = "mods/bbl-core.pw.toml"
+hash = "cebdcb1385797ab0167a1e4bb725fbd3366eb05925bbc6e2496c961a6567ccf4"
+metafile = true
+
+[[files]]
+file = "mods/bbl-utility.pw.toml"
+hash = "cb1b2387a3b7640b3878045521aee5e8f1a5fc342df729aade33730d5d4f8d80"
 metafile = true
 
 [[files]]

@@ -1,0 +1,13 @@
+name = "BBL Utility"
+filename = "opolisutilities-1.21.1-4.11.10.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "1b06eef5e9f3a64f374f6674f544e8bc9422dcbc"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6386754
+project-id = 649644
