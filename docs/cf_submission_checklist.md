@@ -32,11 +32,11 @@ Go to <https://www.curseforge.com/dashboard/projects/create>.
 | **Slug** | `sky-frogs` (auto-derived from name; verify it isn't taken) |
 | **Summary** (≤120 chars) | `A skyblock where frogs do the mining. Breed Resource Frogs, feed them slimes, and watch the ore, gems, and ender pearls fall out.` |
 | **Categories** | `Skyblock` (primary), `Quests` (secondary). Add `Tech` if a third slot exists. |
-| **Description** | Paste the body of [`cf_description.md`](./cf_description.md) - everything below the leading HTML comment. It is already paste-ready (no meta labels to strip); the `# Sky Frogs` heading down through the License section goes straight into the CF Description field. (`curseforge_page.md` is the meta-doc that `cf_description.md` is derived from; edit copy there first, then regenerate this file.) |
+| **Description** | Paste from [`curseforge_page.md`](./curseforge_page.md) - everything below the `PASTE MARKER` comment. It is paste-ready (no meta labels to strip): the `# Sky Frogs` heading down through the License section goes straight into the CF Description field. (The doc is the single source of truth; the old derived `cf_description.md` was consolidated into it 2026-06-06.) |
 | **License** | `MIT` (pack content). The page copy already includes the "each bundled mod retains its own license" disclaimer. |
 | **Source code URL** | `https://github.com/Flatts3000/sky-frogs` |
 | **Issue tracker** | `https://github.com/Flatts3000/sky-frogs/issues` |
-| **Discord** | Skip unless one exists. |
+| **Discord** | `https://discord.gg/r6MhZ73nsM` (the community server, Terraform-managed in `sky-frogs-community`). |
 | **Cover image** | Upload `pack/icon.png` (or a banner if you have one - 512x288 is the CF banner size, but the icon doubles as cover for the alpha). |
 
 Click **Submit for review**. CF moderation: typically 1-3 business days.

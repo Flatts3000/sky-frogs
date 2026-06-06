@@ -3,7 +3,7 @@
 
 CurseForge's author upload API only uploads FILES - it cannot set the project
 description (that is dashboard-only; the description source of truth is
-docs/cf_description.md, pasted manually).
+docs/curseforge_page.md - paste everything below its PASTE MARKER manually).
 
 The API token is read from the CURSEFORGE_API_KEY environment variable, or, if
 unset, from productive-frogs/.env (same author account; see docs/distribution.md).
