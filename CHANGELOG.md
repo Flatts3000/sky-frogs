@@ -4,6 +4,10 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+## [0.6.0] - 2026-06-06
+
+The power-and-polish update, and the most community-driven release yet: two power mods join with every one of their materials frog-farmable on day one, the pond gets quieter, your cables get prettier, your pots grow trees, your stuff survives dying, and the welcome chapter now hands you a Discord invite - because most of this release started as somebody's Discord message.
+
 ### Fixed
 - **The IF Laser Drill is actually disabled now** (playtest catch): the Ore Laser Base and its 46 ore-from-thin-air recipes were live in JEI all along - an old code note wrongly assumed Industrial Foregoing shipped without them. The whole family is stripped (ore recipes, the lava/ether fluid recipes, and the three machine crafts), with DISABLED tooltips. Laser lenses stay craftable as inert decor. Ores and fluids come from frogs.
 
@@ -12,7 +16,7 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 - **Cobblegen Galore curated** (#90): the netherrack, obsidian, and tuff generator recipes are removed - all three outputs are frog resources (Infernal x2, Geode) and singularity inputs, and the #85 ruling stands: no easy way to make resources that frogs are meant to make. The seven builders' stone generators (stone, cobblestone, granite, diorite, andesite, basalt, cobbled deepslate) are untouched; the curation is default-deny, so any generator a future mod update adds stays disabled until reviewed.
 
 ### Added
-- **Join the Pond** (#111): the welcome chapter now invites you to the community Discord - click the lily pad floating beside the first quest to open the invite (`discord.gg/r6MhZ73nsM`). Half of this very update started as Discord messages; come say hi. Zero-effort checkmark quest, gates nothing.
+- **Join the Pond** (#111): the welcome chapter now invites you to the community Discord - click the Discord badge floating beside the first quest to open the invite (`discord.gg/r6MhZ73nsM`). Half of this very update started as Discord messages; come say hi. Zero-effort checkmark quest, gates nothing.
 - **Powah! (Rearchitected) 6.2.8** (#105, + GuideME): the power-scaling arc. Furnator to Reactor, Energy Cells, the Energizing Orb - and **your frogs farm every Powah material** as of Productive Frogs 1.11: uraninite and energized steel from Cave, dry ice from Tide, blazing from Infernal, niotic/spirited/nitro from Void. On a void skyblock with no ore gen, the Cave pool's split-discovery rolls your first uraninite - the frog is the uranium mine.
 - **Flux Networks 8.0.0** (#84): wireless power across your whole base, no cable runs (or facade them where you keep them). **Flux Dust is frog-farmable** (Infernal, alongside obsidian) as of Productive Frogs 1.11 - and the classic bootstrap still works: drop redstone onto obsidian.
 - **Dissolution Chamber rows for all eight new variants** - with a new law for modded resources: the chamber input is the resource ITSELF (make energized steel in the Orb before a frog will farm it; drop the redstone on the obsidian yourself first). Vanilla chains keep their prior-resource threading; modded variants are self-keyed so the mod's own mechanic stays in the loop. Uraninite's first copy still comes from Cave-pool split-discovery (its Orb recipes all want ore this skyblock doesn't have); the chamber scales it from one.
