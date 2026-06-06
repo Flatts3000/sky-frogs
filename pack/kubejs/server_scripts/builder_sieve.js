@@ -65,7 +65,10 @@ ServerEvents.recipes(event => {
       ['minecraft:bamboo',             0.08],
       // ground-cover building plants
       ['minecraft:sugar_cane',         0.08],
-      ['minecraft:cactus',             0.05]
+      ['minecraft:cactus',             0.05],
+      // Ex Deorum's grass seeds (right-click dirt -> grass block) - was in the
+      // mod's own dirt defaults; re-added on player request (#87, bizarr0).
+      ['exdeorum:grass_seeds',         0.10]
     ]],
     ['minecraft:moss_block', [
       // the garden lane
