@@ -470,7 +470,7 @@ hash = "5c10c058739efefeed7b3d87b2adad36228609e5d2abae61a8466c3e49d41ee6"
 
 [[files]]
 file = "kubejs/server_scripts/opolis_curation.js"
-hash = "0e1be167540777e73a43069da6ed256e9aa66793948a6159929caafc50372c9c"
+hash = "8e749553a12a5d57d6b7cda6418aabcf67c85b1eeb06c28fed29a2bfbef28aff"
 
 [[files]]
 file = "kubejs/server_scripts/osmium_slime_bucket.js"
@@ -491,6 +491,10 @@ hash = "f7a1dba3be8a3396fbf9249fe5c289f3ed7c823a8790e073bdfe6a471cc62cd0"
 [[files]]
 file = "kubejs/server_scripts/storage_quartz_free.js"
 hash = "2b6735fc64ee708364b30526b4d5d7b703cfc80e624eb8f6f2098f6a0b2b192d"
+
+[[files]]
+file = "kubejs/server_scripts/upstream_recipe_fixes.js"
+hash = "85ff968924b832734cc32eee91704bf2125e0d4dea475be9b4c039c7790dc542"
 
 [[files]]
 file = "kubejs/server_scripts/void_recipes.js"

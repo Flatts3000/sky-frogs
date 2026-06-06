@@ -82,11 +82,13 @@ ItemEvents.modifyTooltips(event => {
   if (!Platform.isLoaded('opolisutilities')) {
     return
   }
+  // NOTE: no wallet entry - 4.11.10 ships stale wallet ASSETS (model + lang)
+  // but never registers the item (no Wallet class in the jar). Referencing it
+  // throws "Item with ID ... does not exist" even with the mod loaded.
   const severed = [
     'opolisutilities:catalogue',
     'opolisutilities:catalogue_book',
     'opolisutilities:b_bucks',
-    'opolisutilities:wallet',
     'opolisutilities:basic_loot_box',
     'opolisutilities:advanced_loot_box',
     'opolisutilities:elite_loot_box'
