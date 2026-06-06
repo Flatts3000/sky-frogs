@@ -5,6 +5,7 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 ## [Unreleased]
 
 ### Added
+- **The Builders' Sieve** (Discord suggestion by Dergib, #76): a curated, manual-only sieving lane for decor - oak sieve + string mesh over **dirt** (every overworld sapling, bamboo, sugar cane, cactus) and **moss** (azaleas, vines, glow lichen, dripleaf, all the flowers). Strictly cosmetic flora: Ex Deorum's default drop tables (ores/gems/seeds) stay disabled, the other five meshes stay dead, and the Mechanical Sieve stays uncraftable. Resources still come from the frogs.
 - **Performance stack** (Discord suggestion, #73): Sodium 0.6.13 (client rendering + a far better video settings screen), Lithium 0.15.3, FerriteCore 7.0.3, ModernFix 5.27.11 - the same four ATM10SKY runs on this MC/loader.
 - **Configured 2.6.3** (Discord suggestion, #74): edit most mods' configs from inside the game instead of digging through files.
 

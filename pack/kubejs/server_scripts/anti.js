@@ -2,9 +2,14 @@
 //
 // Sky Frogs' identity is "frogs are the resource path." Anything that lets a player
 // generate resources by another route gets removed. Tier 0 is a dark-room slime farm,
-// NOT sieving, so Ex Deorum's sieve mechanic is disabled wholesale here. Ex Deorum
+// NOT sieving, so Ex Deorum's DEFAULT sieve recipes are disabled here. Ex Deorum
 // stays in the pack for crucibles + barrels (the second-water-source mechanic) and the
-// porcelain bucket - we only kill sieving.
+// porcelain bucket.
+//
+// ONE deliberate exception (#76): builder_sieve.js re-adds a curated string-mesh
+// lane over dirt/moss dropping cosmetic flora only (saplings, bamboo, flowers) -
+// decor variety, zero progression resources. Every removal below is id-anchored to
+// ^exdeorum: so it can only ever strip the mod's DEFAULTS, never that curated lane.
 //
 // All IDs/recipe-types below were verified against Ex Deorum's 1.21.1 source.
 
@@ -21,30 +26,33 @@ BlockEvents.rightClicked(event => {
 })
 
 ServerEvents.recipes(event => {
-  // 1. Kill the sieving MECHANIC. Removing these two recipe types disables every
-  //    sieve variant at once - manual, compressed, and the Mechanical Sieve all
-  //    consume the same `sieve` / `compressed_sieve` recipe types.
-  event.remove({ type: 'exdeorum:sieve' })
-  event.remove({ type: 'exdeorum:compressed_sieve' })
+  // RULE FOR EVERY REMOVAL IN THIS BLOCK: anchor it to the source mod's id space.
+  // Unanchored removals also eat curated kubejs:* re-adds (builder_sieve.js) -
+  // silently, with no error. Use these constants; do not inline a bare filter.
+  const EXDEORUM_DEFAULTS = /^exdeorum:/
+  const MEKANISM_DEFAULTS = /^mekanism:/
 
-  // 2. Strip the sieve BLOCK crafting recipes so players can't craft an inert sieve.
-  //    Ex Deorum generates one per wood material (oak_sieve, acacia_compressed_sieve,
-  //    mechanical_sieve, ...); the regex catches all of them, including modded woods
-  //    and any added via config, without enumerating. Process recipe ids contain
-  //    slashes and don't match. Digits are allowed in the wood segment because some
-  //    modded wood registry names contain them.
+  // 1. Kill the DEFAULT sieving drop tables (ores, gems, seeds - the progression
+  //    bypass). The curated kubejs:builder_sieve/* lane is untouchable by these.
+  event.remove({ type: 'exdeorum:sieve', id: EXDEORUM_DEFAULTS })
+  event.remove({ type: 'exdeorum:compressed_sieve', id: EXDEORUM_DEFAULTS })
+
+  // 2. Strip the sieve BLOCK crafting recipes. Ex Deorum generates one per wood
+  //    material (oak_sieve, acacia_compressed_sieve, mechanical_sieve, ...); the
+  //    regex catches all of them without enumerating. builder_sieve.js re-adds
+  //    ONLY the oak sieve, under a kubejs id this regex cannot match. The
+  //    Mechanical Sieve stays uncraftable - the builders' lane is manual-only.
   event.remove({ id: /^exdeorum:[a-z0-9_]+_sieve$/ })
 
-  // 3. Strip mesh crafting. Meshes only feed sieves, so they're dead weight now.
-  //    The `#exdeorum:sieve_meshes` tag covers all six (string/flint/iron/golden/
-  //    diamond/netherite) and auto-extends if the mod adds more.
-  event.remove({ output: '#exdeorum:sieve_meshes' })
+  // 3. Strip mesh crafting. builder_sieve.js re-adds the STRING mesh only; the
+  //    other five stay dead weight and keep their tooltip.
+  event.remove({ output: '#exdeorum:sieve_meshes', id: EXDEORUM_DEFAULTS })
 
   // 4. Mining shortcuts from tech mods. The Mekanism Digital Miner is an automated ore
   //    miner - a direct bypass of the frog loop - so strip its recipe now that Mekanism
   //    is in the pack. (Inert in the void overworld, but live once the player reaches
   //    the Nether/End, so disable it outright per Pillar 1.)
-  event.remove({ output: 'mekanism:digital_miner' })
+  event.remove({ output: 'mekanism:digital_miner', id: MEKANISM_DEFAULTS })
 
   // --- Scaffold: uncomment per mod as more automated-mining mods land.
   //     (Kept inert until the mods exist so KubeJS doesn't log unmatched-recipe noise.)
@@ -54,9 +62,9 @@ ServerEvents.recipes(event => {
 
 // Flag the meshes in JEI/tooltips so the omission reads as intentional, not a bug.
 // Per-ID (not tag) because that's the verified-working modifyTooltips signature.
+// The STRING mesh is the one live mesh (the builders' lane) and gets its own text.
 ItemEvents.modifyTooltips(event => {
   const meshes = [
-    'exdeorum:string_mesh',
     'exdeorum:flint_mesh',
     'exdeorum:iron_mesh',
     'exdeorum:golden_mesh',
@@ -65,9 +73,23 @@ ItemEvents.modifyTooltips(event => {
   ]
   meshes.forEach(id => event.add(id, [
     Text.red('⚠ Disabled in Sky Frogs'),
-    Text.gray('No sieving here - the frogs handle resources.'),
-    Text.gray('Build a dark-room slime farm instead.')
+    Text.gray('Only the String Mesh sifts here (decor flora).'),
+    Text.gray('Resources come from the frogs - build a slime farm.')
   ]))
+
+  // Shared header for the two live builders'-lane items so the copy can't drift.
+  const builderSieveTooltip = [
+    Text.green('The Builders\' Sieve'),
+    Text.gray('Sift dirt or moss for saplings, bamboo, and garden flora.'),
+    Text.gray('Decor only, manual only - resources still come from the frogs.')
+  ]
+  event.add('exdeorum:string_mesh', builderSieveTooltip)
+  event.add('exdeorum:oak_sieve', builderSieveTooltip)
+
+  event.add('exdeorum:mechanical_sieve', [
+    Text.red('⚠ Disabled in Sky Frogs'),
+    Text.gray('The builders\' sieve lane is manual-only.')
+  ])
 
   event.add('mekanism:digital_miner', [
     Text.red('⚠ Disabled in Sky Frogs'),
