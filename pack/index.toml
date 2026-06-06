@@ -278,7 +278,7 @@ hash = "60ba3c990a63c8055a7a400613febaf1f32c8ce7376c53830b40f15ee2fb96a9"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
-hash = "b8862d43d2bcf3dc25638c7c1c824c2f0f3ac4391ccfa047b71a879660ff208d"
+hash = "a8e06063bf2967e3899c3fc4826aeb9d8e15c581bfcd6ee299cc4a1e7e0adac4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/your_first_iron_ingot.snbt"
@@ -290,7 +290,7 @@ hash = "2e69afacf774749222ca1e925dc94d32e6c3db8bef4557aa33144751c2770206"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "2bc301bdc847d2fbb556533516856b42c7a11f464c9040648bd174284192d57b"
+hash = "0a28a94d69b20616d38ddba72e3fa3c2c967fe5209a5c9dcd476165e76afa358"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
@@ -367,6 +367,10 @@ hash = "1c1d0f44c05de8fdb363596c142c3fd1551317881c44153dee6a74463ea66337"
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/master_frog.png"
 hash = "0d3cc76779315ec45b9b240837bb6753cc9bdec57e13a88bb4d948132f7a80b5"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/quests/discord.png"
+hash = "317716854cc50fc09f751b375c8e598e2e6fd966d1e7c51f4b751935e2cb58e4"
 
 [[files]]
 file = "kubejs/data/productivefrogs/neoforge/biome_modifier/add_bog_slime_spawn.json"
