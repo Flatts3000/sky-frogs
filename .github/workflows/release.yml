@@ -127,3 +127,48 @@ jobs:
           url="https://www.curseforge.com/minecraft/modpacks/sky-frogs/files/$fileid"
           echo "CurseForge file: $url"
           echo "### CurseForge file [$fileid]($url)" >> "$GITHUB_STEP_SUMMARY"
+
+      # Full release notes -> the Discord #changelog channel. The #announcements
+      # GitHub-release embed truncates long bodies; this posts the whole CHANGELOG
+      # section, chunked under Discord's 2000-char message cap on line boundaries.
+      # The webhook lives in sky-frogs-community Terraform (discord_webhook.changelog);
+      # the secret is set from `terraform output -raw changelog_webhook_url`.
+      - name: Post release notes to Discord #changelog
+        if: always() # notes should land even if the CurseForge upload failed
+        env:
+          DISCORD_CHANGELOG_WEBHOOK: ${{ secrets.DISCORD_CHANGELOG_WEBHOOK }}
+          VERSION: ${{ steps.ver.outputs.version }}
+        run: |
+          if [ -z "$DISCORD_CHANGELOG_WEBHOOK" ]; then
+            echo "::warning::DISCORD_CHANGELOG_WEBHOOK not set - skipping the Discord changelog post."
+            exit 0
+          fi
+          python3 - <<'PY'
+          import json, os, time, urllib.request
+
+          hook = os.environ["DISCORD_CHANGELOG_WEBHOOK"]
+          version = os.environ["VERSION"]
+          notes = open("release_notes.md", encoding="utf-8").read().strip()
+          gh_url = f"https://github.com/{os.environ.get('GITHUB_REPOSITORY', 'Flatts3000/sky-frogs')}/releases/tag/v{version}"
+
+          header = f"# Sky Frogs v{version}\n<{gh_url}>"
+          chunks, cur = [header], ""
+          for line in notes.splitlines():
+              if len(cur) + len(line) + 1 > 1900:  # headroom under the 2000 cap
+                  chunks.append(cur)
+                  cur = line
+              else:
+                  cur = f"{cur}\n{line}" if cur else line
+          if cur:
+              chunks.append(cur)
+
+          for i, chunk in enumerate(chunks):
+              payload = json.dumps({"content": chunk, "allowed_mentions": {"parse": []}}).encode()
+              req = urllib.request.Request(
+                  hook, data=payload,
+                  headers={"Content-Type": "application/json", "User-Agent": "sky-frogs-release"})
+              with urllib.request.urlopen(req) as resp:
+                  resp.read()
+              time.sleep(1)  # stay friendly with the webhook rate limit
+          print(f"posted {len(chunks)} message(s) to #changelog")
+          PY
