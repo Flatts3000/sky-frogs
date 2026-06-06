@@ -84,14 +84,15 @@ ItemEvents.modifyTooltips(event => {
   }
   // 4.11.10's jar is full of STALE assets - models and lang keys for items the
   // mod no longer registers (wallet, advanced_loot_box, ...), so a hardcoded
-  // id list keeps erroring as the roster drifts. Item.of() on an unknown id
-  // THROWS in this KubeJS (the selftest canaries survive it only because every
-  // check is try/catch-wrapped), so existence is probed inside a catch - the
-  // one construction that cannot error. Registered ids get the tooltip; stale
-  // ids are skipped (they cannot appear in-game anyway).
+  // id list keeps erroring as the roster drifts. CRITICAL API NOTE: Item.of()
+  // on an unknown id does not throw a catchable exception - KubeJS's parser
+  // LOGS the error to the console screen itself, so try/catch around it still
+  // leaves a red error on /reload (proven in playtest rounds 3-5). The only
+  // silent probe is Item.exists(), a direct registry lookup with no stack
+  // parsing (method verified present in kubejs-2101.7.2 ItemWrapper).
   const itemExists = id => {
     try {
-      return !Item.of(id).isEmpty()
+      return Item.exists(id)
     } catch (e) {
       return false
     }
