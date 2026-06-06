@@ -19,30 +19,22 @@ Usage:
     python tools/gen_singularities.py [--jar PATH_TO_PRODUCTIVEFROGS_JAR]
 """
 import argparse
-import glob
 import json
 import os
 import sys
-import zipfile
+
+import pf_jar
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT_DIR = os.path.join(REPO, "pack", "config", "extendedcrafting", "singularities")
 LANG = os.path.join(REPO, "pack", "kubejs", "assets", "extendedcrafting", "lang", "en_us.json")
-VARIANT_PREFIX = "data/productivefrogs/productivefrogs/slime_variant/"
 
 
 def find_jar(explicit):
-    if explicit:
-        return explicit
-    patterns = [
-        os.path.expanduser("~/curseforge/minecraft/Instances/Sky Frogs/mods/productivefrogs-*.jar"),
-        "C:/Users/User/curseforge/minecraft/Instances/Sky Frogs/mods/productivefrogs-*.jar",
-    ]
-    for pat in patterns:
-        matches = sorted(glob.glob(pat))
-        if matches:
-            return matches[-1]
-    sys.exit("Could not locate a productivefrogs jar; pass --jar PATH explicitly.")
+    jar = pf_jar.find_jar(explicit)
+    if jar is None:
+        sys.exit("Could not locate a productivefrogs jar; pass --jar PATH explicitly.")
+    return jar
 
 
 def title(slug):
@@ -58,38 +50,30 @@ def main():
     lang = {}
     written = []
     skipped = []
-    with zipfile.ZipFile(jar) as archive:
-        names = sorted(
-            n for n in archive.namelist()
-            if n.startswith(VARIANT_PREFIX) and n.endswith(".json")
-        )
-        for name in names:
-            data = json.loads(archive.read(name))
-            variant = name[len(VARIANT_PREFIX):-len(".json")]
-            primer = data.get("primer_item", "")
-            if "neoforge:conditions" in data or not primer.startswith("minecraft:"):
-                skipped.append(variant)
-                continue
-            key = "singularity.extendedcrafting.%s" % variant
-            obj = {
-                "name": key,
-                "colors": [
-                    format(data["primary_color"] & 0xFFFFFF, "06x"),
-                    format(data["secondary_color"] & 0xFFFFFF, "06x"),
-                ],
-                "ingredient": {"item": primer},
-                "inUltimateSingularity": True,
-            }
-            path = os.path.join(OUT_DIR, "%s.json" % variant)
-            with open(path, "w", encoding="utf-8", newline="\n") as handle:
-                json.dump(obj, handle, indent=2)
-                handle.write("\n")
-            # EC's SingularityItem renders the display name as "%s Singularity" (its own
-            # item.extendedcrafting.singularity lang), filling %s with this value - so emit the
-            # BARE resource name here, NOT "<X> Singularity", or it doubles to "Iron Singularity
-            # Singularity". Matches EC's own convention (singularity.extendedcrafting.iron = "Iron").
-            lang[key] = title(variant)
-            written.append(variant)
+    for variant, data in sorted(pf_jar.load_variants(jar).items()):
+        if not pf_jar.is_vanilla(data):
+            skipped.append(variant)
+            continue
+        key = "singularity.extendedcrafting.%s" % variant
+        obj = {
+            "name": key,
+            "colors": [
+                format(data["primary_color"] & 0xFFFFFF, "06x"),
+                format(data["secondary_color"] & 0xFFFFFF, "06x"),
+            ],
+            "ingredient": {"item": data["primer_item"]},
+            "inUltimateSingularity": True,
+        }
+        path = os.path.join(OUT_DIR, "%s.json" % variant)
+        with open(path, "w", encoding="utf-8", newline="\n") as handle:
+            json.dump(obj, handle, indent=2)
+            handle.write("\n")
+        # EC's SingularityItem renders the display name as "%s Singularity" (its own
+        # item.extendedcrafting.singularity lang), filling %s with this value - so emit the
+        # BARE resource name here, NOT "<X> Singularity", or it doubles to "Iron Singularity
+        # Singularity". Matches EC's own convention (singularity.extendedcrafting.iron = "Iron").
+        lang[key] = title(variant)
+        written.append(variant)
 
     with open(LANG, "w", encoding="utf-8", newline="\n") as handle:
         json.dump(lang, handle, indent=2, ensure_ascii=False)
