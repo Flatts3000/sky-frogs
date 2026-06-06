@@ -97,7 +97,7 @@
 	quest.21B2C3D4E5F60011.quest_subtitle: "Saplings and sticks."
 	quest.21B2C3D4E5F60011.title: "Strip the Leaves"
 	quest.21B2C3D4E5F60021.quest_desc: [
-		"Build an Oak Crucible and prop a torch beneath it. Drop your leaves in; the heat slowly wrings them out into water."
+		"Build an Oak Crucible and drop your leaves in - they steep into water all on their own, no heat required. (Heat sources under a crucible matter later, when stone crucibles melt cobble into lava.)"
 		""
 		"Slow, free, and entirely yours."
 	]
