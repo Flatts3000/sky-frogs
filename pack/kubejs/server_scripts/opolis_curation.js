@@ -32,6 +32,10 @@ ServerEvents.recipes(event => {
   event.remove({ type: 'opolisutilities:catalogue', id: OPOLIS_DEFAULTS })
   event.remove({ output: 'opolisutilities:catalogue', id: OPOLIS_DEFAULTS })
   event.remove({ output: 'opolisutilities:catalogue_book', id: OPOLIS_DEFAULTS })
+  // Future-proofing (self code review): loot boxes flow ONLY from the
+  // catalogue type today, but if a later build adds a crafting recipe for
+  // one, it dies here instead of leaking back in.
+  event.remove({ output: /^opolisutilities:[a-z_]*loot_box$/, id: OPOLIS_DEFAULTS })
 
   // Ruling 4: no fluid generation outside the (planned) frog loop. Block
   // crafting + both fluid recipes go.
@@ -106,16 +110,17 @@ ItemEvents.modifyTooltips(event => {
     'opolisutilities:elite_loot_box',
     'opolisutilities:wallet'
   ]
+  const disabledHeader = Text.red('⚠ Disabled in Sky Frogs')
   severed.filter(itemExists).forEach(id => {
     event.add(id, [
-      Text.red('⚠ Disabled in Sky Frogs'),
+      disabledHeader,
       Text.gray('No shop economy here - quests and frogs provide.')
     ])
   })
 
   if (itemExists('opolisutilities:fluid_generator')) {
     event.add('opolisutilities:fluid_generator', [
-      Text.red('⚠ Disabled in Sky Frogs'),
+      disabledHeader,
       Text.gray('Fluids are frog business (coming to Productive Frogs).')
     ])
   }
