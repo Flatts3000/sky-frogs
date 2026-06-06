@@ -5,7 +5,7 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 ## [Unreleased]
 
 ### Changed
-- **Cobblegen Galore curated** (#90): the netherrack, obsidian, and tuff generator recipes are removed - all three outputs are frog resources (Infernal x2, Geode) and singularity inputs, and the #85 ruling stands: no easy way to make resources that frogs are meant to make. The seven builders' stone generators (stone, cobblestone, granite, diorite, andesite, basalt, cobbled deepslate) are untouched.
+- **Cobblegen Galore curated** (#90): the netherrack, obsidian, and tuff generator recipes are removed - all three outputs are frog resources (Infernal x2, Geode) and singularity inputs, and the #85 ruling stands: no easy way to make resources that frogs are meant to make. The seven builders' stone generators (stone, cobblestone, granite, diorite, andesite, basalt, cobbled deepslate) are untouched; the curation is default-deny, so any generator a future mod update adds stays disabled until reviewed.
 
 ### Added
 - **GraveStone Mod 1.0.24** (#92, requested by RayRayZCB on Discord): your items and XP now wait in a grave at your death point instead of despawning in 5 minutes - timely, with the Warden and the dragon both in the campaign. Obituary included; ghosts off. (Corail Tombstone was considered and declined: its perk/teleport progression is a parallel economy.)
