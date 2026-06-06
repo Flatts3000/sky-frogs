@@ -418,7 +418,7 @@ hash = "3d1efae74d0feea991c76ad9ff9c6fc842b15c2872d39f9d8bc73c1c7f6bddb2"
 
 [[files]]
 file = "kubejs/server_scripts/anti.js"
-hash = "be59c759a6312df2d859e9a6d949570718fa6a77567d8222e019333ce159a033"
+hash = "a151d8f2f58d652418efea5197c06eeed5338f8e773237611c457c72b122736b"
 
 [[files]]
 file = "kubejs/server_scripts/bog_slime_chain.js"
