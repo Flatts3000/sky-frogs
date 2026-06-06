@@ -629,6 +629,50 @@ def check_variant_made(chapters, ctx):
     return f
 
 
+SINGULARITY_DIR = REPO / "pack" / "config" / "extendedcrafting" / "singularities"
+
+
+def check_singularity_coverage(chapters, ctx):
+    """Q-SINGULARITY-COVERAGE - every singularity the Ultimate demands must be farmable.
+
+    The Ultimate Singularity auto-includes every singularity JSON with
+    inUltimateSingularity: true, so each one's variant needs (a) a recipe that
+    produces its slime (ERROR - without it the Ultimate is uncraftable, the #79
+    class) and (b) a froglight quest somewhere (WARN - the one-quest-per-resource
+    design law). Guards against a future PF variant addition silently reopening
+    the gap.
+    """
+    if not SINGULARITY_DIR.exists():
+        return [Finding(INFO, "Q-SINGULARITY-COVERAGE", "-", 0,
+                        "not run: no extendedcrafting/singularities directory")]
+    makeable = ctx["makeable_variants"]
+    quested: set[str] = set()
+    for ch, q in iter_quests(chapters):
+        for t in item_tasks(q):
+            comps = (t.get("item") or {}).get("components") or {}
+            sv = comps.get("productivefrogs:slime_variant")
+            if isinstance(sv, str) and sv.startswith("productivefrogs:"):
+                quested.add(sv.split(":", 1)[1])
+    f = []
+    for p in sorted(SINGULARITY_DIR.glob("*.json")):
+        try:
+            data = json.loads(p.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        if not data.get("inUltimateSingularity"):
+            continue
+        variant = p.stem
+        if makeable and variant not in makeable:
+            f.append(Finding(ERROR, "Q-SINGULARITY-COVERAGE", p.name, 0,
+                             f"the Ultimate Singularity demands '{variant}' but no shipped "
+                             f"recipe produces its slime - the Ultimate is uncraftable (#79)"))
+        if variant not in quested:
+            f.append(Finding(WARN, "Q-SINGULARITY-COVERAGE", p.name, 0,
+                             f"singularity variant '{variant}' has no froglight quest in any "
+                             f"chapter (one-quest-per-resource law)"))
+    return f
+
+
 TABLE_REWARD_TYPES = {"loot", "random", "choice"}
 
 
@@ -715,6 +759,7 @@ CHECKS = [
     check_dashes,
     check_item_exists,
     check_variant_made,
+    check_singularity_coverage,
     check_reward_tables,
     check_hide_until,
 ]

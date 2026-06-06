@@ -45,7 +45,14 @@ const SLIME_TIERS = [
     ['copper',   'minecraft:iron_ingot'],
     ['gold',     'minecraft:copper_ingot'],
     ['coal',     'minecraft:gold_ingot'],
-    ['redstone', 'minecraft:coal']
+    // Chain insertion (#79): glow_ink_sac was originally skipped, but the Ultimate
+    // Singularity demands all forty resources. It slots in BEFORE redstone, which
+    // stays the chapter capstone and the resource Geode's lapis bridges off (that
+    // boundary is unchanged). Table chain (cave_slime_chain.js) and the cave_frogs
+    // quests thread identically. (obsidian, the other stray, lives in the INFERNAL
+    // block below - quested at Tier 5; PF reclasses it infernal in #142.)
+    ['glow_ink_sac', 'minecraft:coal'],
+    ['redstone',     'minecraft:glow_ink_sac']
   ]],
   ['GEODE', 'minecraft:gravel', [
     ['lapis',    'minecraft:redstone'],      // bridges from Cave's last
@@ -77,7 +84,14 @@ const SLIME_TIERS = [
   ]],
   ['INFERNAL', 'minecraft:prismarine', [
     ['netherrack',      'minecraft:nautilus_shell'],   // bridges from Tide's last; filler is prismarine (Tide, mass-renewable - netherrack would be circular)
-    ['quartz',          'minecraft:netherrack'],
+    // Chain insertion (#79): obsidian pairs with netherrack as the portal stones,
+    // quested in infernal_frogs right after it. Chamber-only (Tier 5 has no
+    // crafting-table chain). netherite_scrap stays the capstone and the resource
+    // Void's ender_pearl bridges off (that boundary is unchanged). Requires PF with
+    // obsidian reclassed cave -> infernal (productive-frogs#142) - the pin bump
+    // lands in this same PR.
+    ['obsidian',        'minecraft:netherrack'],
+    ['quartz',          'minecraft:obsidian'],
     ['glowstone_dust',  'minecraft:quartz'],
     ['soul_sand',       'minecraft:glowstone_dust'],
     ['soul_soil',       'minecraft:soul_sand'],
