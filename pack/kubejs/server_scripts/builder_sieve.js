@@ -68,7 +68,18 @@ ServerEvents.recipes(event => {
       ['minecraft:cactus',             0.05],
       // Ex Deorum's grass seeds (right-click dirt -> grass block) - was in the
       // mod's own dirt defaults; re-added on player request (#87, bizarr0).
-      ['exdeorum:grass_seeds',         0.10]
+      ['exdeorum:grass_seeds',         0.10],
+      // The default FOOD lane, restored by maintainer ruling 2026-06-06 at Ex
+      // Deorum's own chances. Food is not a frog resource - the farming economy
+      // is already open (Croptopia/Farmer's Delight) - so this bypasses nothing;
+      // it just gives Tier 0 islands a seed source besides luck.
+      ['minecraft:wheat_seeds',        0.125],
+      ['minecraft:pumpkin_seeds',      0.10],
+      ['minecraft:melon_seeds',        0.10],
+      ['minecraft:beetroot_seeds',     0.10],
+      ['minecraft:potato',             0.10],
+      ['minecraft:carrot',             0.10],
+      ['minecraft:poisonous_potato',   0.05]
     ]],
     ['minecraft:moss_block', [
       // the garden lane

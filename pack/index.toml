@@ -426,7 +426,7 @@ hash = "7d709697917aa9ac8400d9e25ec546cbea3721d0479862431fcc25c9eccd553a"
 
 [[files]]
 file = "kubejs/server_scripts/builder_sieve.js"
-hash = "4ddf750a1a57d4bef2a34ca1cbfbcc5b47e799a604686fc51ec6943131b1e270"
+hash = "7fc1b84352305140a459487c178f7248a87a2419d07993ff38a549371e3ad5d1"
 
 [[files]]
 file = "kubejs/server_scripts/catalyst_recipes.js"

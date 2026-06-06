@@ -5,7 +5,7 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 ## [Unreleased]
 
 ### Added
-- **Grass seeds in the Builders' Sieve** dirt lane (10%) - turn void dirt into grass blocks for lawns (Discord suggestion by bizarr0, #87).
+- **The Builders' Sieve dirt lane grows**: grass seeds at 10% (Discord suggestion by bizarr0, #87 - right-click dirt for grass blocks) plus the classic food lane restored at Ex Deorum's own chances - wheat/pumpkin/melon/beetroot seeds, potatoes, carrots, and the occasional poisonous potato. Food is not a frog resource, so nothing is bypassed; Tier 0 islands just get a seed source besides luck.
 - **Industrial Foregoing Souls is back** - with its Warden actually reachable this time. A Discord member's correction (the v0.5.0 removal note was wrong: Ex Deorum's **Sculk Core** makes placed shriekers summon-capable) exposed that the only real gap was a shrieker source. The pack now adds a **Sculk Shrieker recipe** from frog-farmed materials (sculk + echo shards + a bone block), so the chain runs: Void frogs -> shrieker + Sculk Core -> three shrieks -> Warden -> Soul Laser. (#75, #82)
 
 ## [0.5.0] - 2026-06-06
