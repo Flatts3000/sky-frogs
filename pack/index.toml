@@ -418,11 +418,15 @@ hash = "3d1efae74d0feea991c76ad9ff9c6fc842b15c2872d39f9d8bc73c1c7f6bddb2"
 
 [[files]]
 file = "kubejs/server_scripts/anti.js"
-hash = "6abf6ad5b3630206acadfa47d12ecfa68eaaf3b42d1f383f014f008815f0ea66"
+hash = "be59c759a6312df2d859e9a6d949570718fa6a77567d8222e019333ce159a033"
 
 [[files]]
 file = "kubejs/server_scripts/bog_slime_chain.js"
 hash = "7d709697917aa9ac8400d9e25ec546cbea3721d0479862431fcc25c9eccd553a"
+
+[[files]]
+file = "kubejs/server_scripts/builder_sieve.js"
+hash = "0550c4c5339b3bbf58fd770f732ac1779ba3d0fb455d8ce6bedcd1ddbe91878f"
 
 [[files]]
 file = "kubejs/server_scripts/catalyst_recipes.js"
