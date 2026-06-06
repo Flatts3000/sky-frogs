@@ -93,7 +93,7 @@ Each entry here directly maps to one or more PF category slime variants (see [`p
 | **Mouse Tweaks** + **Inventory Tweaks** + **Crafting Tweaks** + **Polymorph** | Inventory ergonomics                              |
 | **Trash Slot** + **Trash Cans** | Discard items                                              |
 | **Just Enough Mekanism Multiblocks** | Visual multiblock previews                                    |
-| **Searchables**, **Controlling**, **Configured** (SHIPPED 2026-06-06, pinned 2.6.3 per ATM10SKY; in-game config editing, Discord suggestion #74), **Jamlib**, **YACL** | Settings UX                                |
+| **Searchables**, **Controlling**, **Configured** (SHIPPED 2026-06-06, pinned 2.6.3 per ATM10SKY; in-game config editing, Discord suggestion #74), **JamLib**, **YACL** | Settings UX                                |
 | **Tips Mod**          | Loading-screen tips (custom Sky Frogs tips — TBD)                     |
 | **Patchouli** + **Guideme** | In-game manuals (used by many of the above mods)                   |
 | **Bookshelf**, **Placebo**, **Cucumber**, **Resourceful Lib**, **LibX**, **Nirvana Lib**, **Konkrete**, **EpheroLib**, **EdivadLib**, **mcjtylib**, **Titanium**, **SuperMartijn642 Core/Config Lib**, **PolyLib**, **SilentLib**, **Curios**, **CodeChickenLib**, **Architectury**, **GeckoLib**, **Balm**, **Common Networking**, **Athena**, **Fusion**, **Moonlight**, **Cloth Config**, **Fzzy Config**, **JamLib**, **JustDireThings** | Required libraries / coremods |
