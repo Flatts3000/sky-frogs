@@ -4,6 +4,9 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+### Added
+- **Industrial Foregoing Souls is back** - with its Warden actually reachable this time. A Discord member's correction (the v0.5.0 removal note was wrong: Ex Deorum's **Sculk Core** makes placed shriekers summon-capable) exposed that the only real gap was a shrieker source. The pack now adds a **Sculk Shrieker recipe** from frog-farmed materials (sculk + echo shards + a bone block), so the chain runs: Void frogs -> shrieker + Sculk Core -> three shrieks -> Warden -> Soul Laser. (#75, #82)
+
 ## [0.5.0] - 2026-06-06
 
 The community-suggestions release: the endgame's last crafting gap closed, a decor sieve for builders, a proper performance stack, and a dead mod removed (hence the minor bump). Every change in here traces to player feedback - CurseForge comments and the new community Discord.
