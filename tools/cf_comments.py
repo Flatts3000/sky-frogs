@@ -26,7 +26,9 @@ Discord relay: pass --discord-webhook <url> (or set DISCORD_CF_WEBHOOK) and each
 comment is also posted as an embed to the community server's #cf-feedback channel.
 The webhook URL comes from the sky-frogs-community repo:
     terraform output -raw cf_feedback_webhook_url
-Relay only fires in new-comments mode (not --all / --json) so it can't replay history.
+Relay fires only in default new-comments mode - never under --all, --json, or --peek
+(those either replay history or skip the seen-state update, and the relay guarantee
+is one Discord post per comment, ever).
 """
 
 from __future__ import annotations
@@ -91,8 +93,10 @@ def fetch_all(pid: int) -> list[dict]:
     index, total = 0, None
     while True:
         page = fetch_page(pid, index)
-        # minimal shape check - this API is undocumented, unauthenticated input
-        if not isinstance(page, dict) or not isinstance(page.get("data", []), list):
+        # minimal shape check - this API is undocumented, unauthenticated input.
+        # No default on the get: a missing "data" key must fail fast, not read
+        # as an empty page ("no comments") masking an API regression.
+        if not isinstance(page, dict) or not isinstance(page.get("data"), list):
             raise SystemExit(f"CurseForge returned an unexpected response shape for project {pid}.")
         data = page.get("data") or []
         out.extend(data)
@@ -171,7 +175,7 @@ def post_discord(webhook: str, pid: int, rows: list[dict]) -> None:
             cid = 0
         text = " ".join((r.get("text") or "").split())
         if len(text) > 1900:
-            text = text[:1900] + " [...]"
+            text = text[:1894] + " [...]"  # suffix included, total stays <= 1900
         author = " ".join(author_name(r).split())[:80] or "unknown"
         reply = f" (reply to #{r['_parent']})" if r.get("_parent") else ""
         embed = {
@@ -211,7 +215,7 @@ def main() -> int:
         "--discord-webhook",
         default=os.environ.get("DISCORD_CF_WEBHOOK"),
         help="Discord webhook URL to mirror NEW comments to #cf-feedback "
-        "(default: $DISCORD_CF_WEBHOOK; ignored with --all/--json)",
+        "(default: $DISCORD_CF_WEBHOOK; ignored with --all/--json/--peek)",
     )
     args = ap.parse_args()
 
@@ -240,7 +244,10 @@ def main() -> int:
             print(f"{indent}#{r.get('id')} - {author_name(r)} - {fmt_date(r.get('datePosted'))}{pin}{reply}")
             print(f"{indent}  {text}\n")
 
-    if args.discord_webhook and not args.all and not args.json and shown:
+    # Relay only when this run also MARKS the comments seen - --peek skips
+    # save_seen, so relaying under it would re-mirror the same comments on
+    # every peek (history replay into #cf-feedback).
+    if args.discord_webhook and not args.all and not args.json and not args.peek and shown:
         post_discord(args.discord_webhook, pid, shown)
         print(f"  [discord] mirrored {len(shown)} comment(s) to #cf-feedback")
 
