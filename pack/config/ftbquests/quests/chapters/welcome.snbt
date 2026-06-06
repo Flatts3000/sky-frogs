@@ -13,7 +13,7 @@
 			click: "https://discord.gg/r6MhZ73nsM"
 			height: 1.0d
 			hover: ["Join the Sky Frogs Discord!"]
-			image: "minecraft:textures/item/lily_pad.png"
+			image: "minecraft:textures/block/lily_pad.png"
 			rotation: 0.0d
 			width: 1.0d
 			x: 3.0d
