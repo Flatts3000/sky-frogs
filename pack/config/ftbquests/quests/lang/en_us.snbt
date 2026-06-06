@@ -874,11 +874,11 @@
 	quest.51F000000000000E.quest_subtitle: "Blue fire country."
 	quest.51F000000000000E.title: "Soul Soil"
 	quest.51F0000000000011.quest_desc: [
-		"&cBlaze powder&r - brewing stands, magic fuel, and the road to the End. No blaze hunt required."
+		"&cBlaze rods&r - brewing stands, magic fuel, and the road to the End. No blaze hunt required, and each rod crafts into two powder."
 		""
 		"Turn in the &bBlaze Froglight&r."
 	]
-	quest.51F0000000000011.quest_subtitle: "Powder without the rods."
+	quest.51F0000000000011.quest_subtitle: "Rods without the blaze."
 	quest.51F0000000000011.title: "Blaze"
 	quest.51F0000000000014.quest_desc: [
 		"&8Netherite scrap&r - smelted from ancient debris no skyblock should reach. Four scrap plus gold makes a &8Netherite Ingot&r and the best gear in the game. The Infernal crown. Turn in the &bNetherite Scrap Froglight&r."
@@ -988,7 +988,7 @@
 	quest.601D000000000002.quest_subtitle: "The void wants a key."
 	quest.601D000000000002.title: "Pearls from the Dark"
 	quest.601D000000000005.quest_desc: [
-		"Pearls plus &cBlaze Powder&r - your Infernal frog already makes the powder - become &aEyes of Ender&r."
+		"Pearls plus &cBlaze Powder&r - one rod from your Infernal frog crafts into two - become &aEyes of Ender&r."
 		""
 		"Craft &a2&r: the cake wants a pair."
 	]

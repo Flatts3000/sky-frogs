@@ -154,7 +154,7 @@
 		{
 			dependencies: ["51F000000000000E"]
 			icon: {
-				id: "minecraft:blaze_powder"
+				id: "minecraft:blaze_rod"
 			}
 			id: "51F0000000000011"
 			rewards: [{

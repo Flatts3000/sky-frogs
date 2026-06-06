@@ -96,7 +96,9 @@ const SLIME_TIERS = [
     ['soul_sand',       'minecraft:glowstone_dust'],
     ['soul_soil',       'minecraft:soul_sand'],
     ['blaze',           'minecraft:soul_soil'],
-    ['netherite_scrap', 'minecraft:blaze_powder']
+    // PF 1.11.0 (#148): the Blaze resource is the ROD (primer + smelt output),
+    // not the powder - the threading input follows it.
+    ['netherite_scrap', 'minecraft:blaze_rod']
   ]],
   ['VOID', 'minecraft:soul_soil', [
     ['ender_pearl',   'minecraft:netherite_scrap'],     // bridges from Infernal's last; filler is soul_soil (Infernal, mass-renewable - end_stone would be circular)
