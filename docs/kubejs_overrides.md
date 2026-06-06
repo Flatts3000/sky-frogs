@@ -29,11 +29,13 @@ Shipped in [`pack/kubejs/server_scripts/anti.js`](../pack/kubejs/server_scripts/
 
 | Target                                    | Mod                    | Why disabled                                   |
 |-------------------------------------------|------------------------|------------------------------------------------|
-| `exdeorum:sieve` recipe type              | Ex Deorum              | Kills the sieving mechanic wholesale (manual + Mechanical Sieve share this type) |
-| `exdeorum:compressed_sieve` recipe type   | Ex Deorum              | Same, for the compressed-sieve variant         |
-| `exdeorum:<wood>_sieve` block crafting    | Ex Deorum              | Strips all sieve-block crafts via regex so no inert sieve can be built |
-| `#exdeorum:sieve_meshes` tag              | Ex Deorum              | Meshes only feed sieves, so they're dead weight |
+| `exdeorum:sieve` recipe type (default, id-anchored `^exdeorum:`) | Ex Deorum | Kills the DEFAULT sieve drop tables (ores/gems/seeds - the progression bypass); the curated `kubejs:builder_sieve/*` lane is exempt by id |
+| `exdeorum:compressed_sieve` recipe type (id-anchored) | Ex Deorum | Same, for the compressed-sieve variant; no curated recipes exist for it |
+| `exdeorum:<wood>_sieve` block crafting    | Ex Deorum              | Strips all sieve-block crafts via regex; `builder_sieve.js` re-adds ONLY the oak sieve under a kubejs id. The Mechanical Sieve stays uncraftable (the lane is manual-only) |
+| `#exdeorum:sieve_meshes` tag (id-anchored) | Ex Deorum             | Five of six meshes stay dead weight; the STRING mesh is re-added for the builders' lane |
 | `mekanism:digital_miner`                  | Mekanism               | Automated ore miner = a direct frog-loop bypass |
+
+**The one deliberate exception (#76):** [`builder_sieve.js`](../pack/kubejs/server_scripts/builder_sieve.js) reopens a curated lane - oak sieve + string mesh over **dirt** (saplings of every overworld wood, bamboo, sugar cane, cactus) and **moss** (azaleas, vines, glow lichen, dripleaf, every small/tall flower). Cosmetic and building flora only; no ores, gems, mob drops, or progression materials. Dirt is composter-cheap at Tier 0; moss is a Bog frog resource.
 
 The Actually Additions mining lens and the IF laser drill are **scaffold lines kept commented** in `anti.js` (those mods aren't in the pack, and live `event.remove` on unmatched ids logs noise). The only live mining-shortcut disable is the Mekanism Digital Miner.
 

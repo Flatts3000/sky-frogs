@@ -29,8 +29,10 @@ back to reading the logged-in comments page with the Playwright MCP.
 **Discord relay:** `--discord-webhook <url>` (or env `DISCORD_CF_WEBHOOK`) also mirrors each
 NEW comment as an embed into the community server's private `#cf-feedback` channel. The
 webhook URL lives in the `sky-frogs-community` repo's Terraform state:
-`terraform output -raw cf_feedback_webhook_url`. Relay only fires in new-comments mode
-(never with `--all`/`--json`), so it cannot replay history; failures are warn-and-continue.
+`terraform output -raw cf_feedback_webhook_url`. Relay fires only in default new-comments
+mode - never with `--all`/`--json` (history) **or `--peek`** (peek skips the seen-state
+update, so relaying there would re-mirror the same comments every run). The guarantee is
+one Discord post per comment, ever; failures are warn-and-continue.
 
 ## 2. Triage each new comment
 
