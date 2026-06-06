@@ -577,6 +577,11 @@ hash = "8d91e416f8944d06519a4d065d89f4a76cba7cf9ac7398f91f19e977a31b6ba0"
 metafile = true
 
 [[files]]
+file = "mods/configured.pw.toml"
+hash = "e1652216456cb6c5026b3e6b48d98b1509457eb6d974e18002af4ec3bf040ffa"
+metafile = true
+
+[[files]]
 file = "mods/connected-glass.pw.toml"
 hash = "ba633190e61bd7b32e412cb628a83fdd09b53b7ef8a036f1669687c719a99cc2"
 metafile = true
@@ -687,6 +692,11 @@ hash = "0d13e70b59a7f4623237f6b03e22368235d123030f36f18312fd20a8f7d2e459"
 metafile = true
 
 [[files]]
+file = "mods/ferritecore.pw.toml"
+hash = "dff824171060c79b327a4880c2f0546c727a041a489ef3af643ec2dcd9cd0c48"
+metafile = true
+
+[[files]]
 file = "mods/forgiving-void.pw.toml"
 hash = "7c851811a62225d04e8fb9d402afab76ae647df9cfae7c619e2d89e1e1ba4e52"
 metafile = true
@@ -762,11 +772,6 @@ hash = "2e29a5406617e1321bacd122b915834b7f38ea6cc2e59f2b1dc9d677ab51955b"
 metafile = true
 
 [[files]]
-file = "mods/industrial-foregoing-souls.pw.toml"
-hash = "a997c2462d8501aca9e25e7659cfcafd0736f6ff16bdfc46f0a4020500299328"
-metafile = true
-
-[[files]]
 file = "mods/industrial-foregoing.pw.toml"
 hash = "c307c6f682a2ddff8181191b1070bae08c11482eccef8ea3d0428ea63ac08d6e"
 metafile = true
@@ -829,6 +834,11 @@ metafile = true
 [[files]]
 file = "mods/libx.pw.toml"
 hash = "5fae6a137e68aa9408d87d1dfc419d4450eec49c0c57c02a2d6756c3fca69a44"
+metafile = true
+
+[[files]]
+file = "mods/lithium.pw.toml"
+hash = "3b41e84ca0e5bd93f05eddcdff3f47b38e8bb9863b9bbb4bf05991098487a8a5"
 metafile = true
 
 [[files]]
@@ -909,6 +919,11 @@ metafile = true
 [[files]]
 file = "mods/mob-grinding-utils.pw.toml"
 hash = "ed334bd8ff25757d72ac569a854f0a846b786d7704c2c36ebd95c00b97c7a6fe"
+metafile = true
+
+[[files]]
+file = "mods/modernfix.pw.toml"
+hash = "7b4034d9410e0b1aec27f383f289f93337ab1491db0aff5f771612bfa0e9b1b4"
 metafile = true
 
 [[files]]
@@ -1044,6 +1059,11 @@ metafile = true
 [[files]]
 file = "mods/skyblock-builder.pw.toml"
 hash = "036970b515dc649df33a4dc7804de3b92296c83f8a2ad7b44d7e6c5713cd00d1"
+metafile = true
+
+[[files]]
+file = "mods/sodium.pw.toml"
+hash = "f3c75c6d415e4d68307d972ed30ced99ba05968c7ff85301154a60fc42eeed95"
 metafile = true
 
 [[files]]

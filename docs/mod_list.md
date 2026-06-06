@@ -42,7 +42,7 @@ Each entry here directly maps to one or more PF category slime variants (see [`p
 | **ATO - All the Ores** (SHIPPED) | Cross-mod ore set (osmium etc.)                                | Cave. PF's osmium `slime_variant` is gated on ATO being loaded; supplies the osmium the Mekanism bootstrap primes. |
 | **Cobblegen Galore** (SHIPPED) | Configurable block generators (cobblestone -> gravel hammer path) | Infrastructure. Source of the **Geode gravel filler** for the seed-chains (alongside Ex Deorum). |
 | **Immersive Engineering** | Hop graphite coke, copper, aluminum, silver, nickel, uranium      | Bog, Cave (candidate)                                 |
-| **Industrial Foregoing** + **Industrial Foregoing Souls** (SHIPPED) | Latex, plastic, pink slime, biofuel       | **Bog-tier verb.** Plastic is hard-gated behind the Bog plastic-frog (`if_plastic_gate.js`); pink_slime is the **Bog capstone** (`bog_slime_chain.js`), not Tide. |
+| **Industrial Foregoing** (SHIPPED) | Latex, plastic, pink slime, biofuel       | **Bog-tier verb.** Plastic is hard-gated behind the Bog plastic-frog (`if_plastic_gate.js`); pink_slime is the **Bog capstone** (`bog_slime_chain.js`), not Tide. The **Souls** addon was dropped 2026-06-06 (see section 8). |
 | **Powah!**            | Uraninite, niotic crystal, energizing orb resources                    | Cave, Void                                            |
 | **Ender IO**          | Vibrant alloy components, capacitors, glite                            | Void (advanced)                                       |
 | **Applied Energistics 2** + **AE2 Things** + **Advanced AE** + **ExtendedAE** + **MegaCells** + **Applied Mekanistics** + **AppliedFlux** + **ae2wtlib** + **ae2importexportcard** + **ae2jeiintegration** + **soulplied_energistics** | Storage logistics + certus quartz, fluix, sky stone | Geode (certus, fluix), Void (sky stone) |
@@ -93,7 +93,7 @@ Each entry here directly maps to one or more PF category slime variants (see [`p
 | **Mouse Tweaks** + **Inventory Tweaks** + **Crafting Tweaks** + **Polymorph** | Inventory ergonomics                              |
 | **Trash Slot** + **Trash Cans** | Discard items                                              |
 | **Just Enough Mekanism Multiblocks** | Visual multiblock previews                                    |
-| **Searchables**, **Controlling**, **Configured**, **Jamlib**, **YACL** | Settings UX                                |
+| **Searchables**, **Controlling**, **Configured** (SHIPPED 2026-06-06, pinned 2.6.3 per ATM10SKY; in-game config editing, Discord suggestion #74), **Jamlib**, **YACL** | Settings UX                                |
 | **Tips Mod**          | Loading-screen tips (custom Sky Frogs tips — TBD)                     |
 | **Patchouli** + **Guideme** | In-game manuals (used by many of the above mods)                   |
 | **Bookshelf**, **Placebo**, **Cucumber**, **Resourceful Lib**, **LibX**, **Nirvana Lib**, **Konkrete**, **EpheroLib**, **EdivadLib**, **mcjtylib**, **Titanium**, **SuperMartijn642 Core/Config Lib**, **PolyLib**, **SilentLib**, **Curios**, **CodeChickenLib**, **Architectury**, **GeckoLib**, **Balm**, **Common Networking**, **Athena**, **Fusion**, **Moonlight**, **Cloth Config**, **Fzzy Config**, **JamLib**, **JustDireThings** | Required libraries / coremods |
@@ -121,9 +121,10 @@ Each entry here directly maps to one or more PF category slime variants (see [`p
 
 | Mod                   | Role                                                                  |
 |-----------------------|------------------------------------------------------------------------|
-| **Lithium**           | Server-side performance — game logic optimization                    |
-| **FerriteCore**       | Memory savings                                                       |
-| **ModernFix**         | Startup + runtime mixins                                             |
+| **Sodium** (SHIPPED 2026-06-06) | Client rendering performance + better video settings UI. Pinned 0.6.13 stable (the ATM10SKY build; latest CF file is an 0.8 alpha). Client-side only. Discord suggestion #73. |
+| **Lithium** (SHIPPED 2026-06-06)          | Server-side performance — game logic optimization (0.15.3, per ATM10SKY)  |
+| **FerriteCore** (SHIPPED 2026-06-06)      | Memory savings (7.0.3, per ATM10SKY)                                 |
+| **ModernFix** (SHIPPED 2026-06-06)        | Startup + runtime mixins (5.27.11)                                   |
 | **Clumps**            | Combine XP orbs                                                       |
 | **Fast Leaf Decay**   | Reduce tick load from decaying leaves                                 |
 | **NoChatReports**     | Strip chat reporting capability — server-tuning preference            |
@@ -142,6 +143,7 @@ Each entry here directly maps to one or more PF category slime variants (see [`p
 | **Quark**             | Overlaps with many of our QoL choices; risk of feature bloat          |
 | **Twilight Forest** / other dimensional adventure mods | We want the player on their skyblock, not exploring a new dimension. End remains the only adventure dimension. |
 | **Handcrafted** | Dropped 2026-06-05 - its cupboard recipes collide with Functional Storage drawers, and the alternate-craft picker doesn't surface in Refined Storage, so drawers couldn't be autocrafted (#62). Removed rather than chase the recipe-conflict resolution. Reconsider if the conflict is resolvable upstream. |
+| **Industrial Foregoing Souls** | Dropped 2026-06-06 - its entire loop (Soul Laser harvesting a captured Warden for Soul Surges) is unreachable on a void skyblock: no Ancient City generates and player-placed Sculk Shriekers cannot summon Wardens. Never quested or scripted; flagged as dead content by an endgame player (#75). ATM10SKY makes the same omission. Reconsider only if a Warden-summon path is ever added. |
 
 This list will shift as we playtest. Anything moved into or out of the pack needs a corresponding KubeJS-overrides and quest-book update.
 
