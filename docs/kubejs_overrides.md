@@ -35,9 +35,19 @@ Shipped in [`pack/kubejs/server_scripts/anti.js`](../pack/kubejs/server_scripts/
 | `#exdeorum:sieve_meshes` tag (id-anchored) | Ex Deorum             | Five of six meshes stay dead weight; the STRING mesh is re-added for the builders' lane |
 | `mekanism:digital_miner`                  | Mekanism               | Automated ore miner = a direct frog-loop bypass |
 
-**The one deliberate exception (#76):** [`builder_sieve.js`](../pack/kubejs/server_scripts/builder_sieve.js) reopens a curated lane - oak sieve + string mesh over **dirt** (saplings of every overworld wood, bamboo, sugar cane, cactus) and **moss** (azaleas, vines, glow lichen, dripleaf, every small/tall flower). Cosmetic and building flora only; no ores, gems, mob drops, or progression materials. Dirt is composter-cheap at Tier 0; moss is a Bog frog resource.
+**The one deliberate exception (#76):** [`builder_sieve.js`](../pack/kubejs/server_scripts/builder_sieve.js) reopens a curated lane - oak sieve + string mesh over **dirt** (saplings of every overworld wood, bamboo, sugar cane, cactus, plus grass seeds and the food-seed lane as of #87/#91) and **moss** (azaleas, vines, glow lichen, dripleaf, every small/tall flower). Cosmetic and building flora plus food seeds only; no ores, gems, mob drops, or progression materials. Dirt is composter-cheap at Tier 0; moss is a Bog frog resource.
 
 The Actually Additions mining lens and the IF laser drill are **scaffold lines kept commented** in `anti.js` (those mods aren't in the pack, and live `event.remove` on unmatched ids logs noise). The only live mining-shortcut disable is the Mekanism Digital Miner.
+
+**Per-mod curation scripts (the Pillar 1 pattern, one file per curated mod):**
+
+| Script | Mod | What it curates |
+|---|---|---|
+| [`anti.js`](../pack/kubejs/server_scripts/anti.js) + [`builder_sieve.js`](../pack/kubejs/server_scripts/builder_sieve.js) | Ex Deorum, Mekanism | Default sieving stripped; the curated builders' lane; Digital Miner |
+| [`opolis_curation.js`](../pack/kubejs/server_scripts/opolis_curation.js) | Opolis Utilities (BBL Utility) | Six #85 rulings: stone-lane Resource Generator, severed Fluid Generator + Catalogue/B-Bucks economy, glow_squid/squid summons stripped |
+| [`upstream_recipe_fixes.js`](../pack/kubejs/server_scripts/upstream_recipe_fixes.js) | Iron Furnaces | A different category: removals of BROKEN upstream recipes (unparseable ATM-metal upgrades), not design disables - future broken-recipe fixes belong here |
+
+Conventions every curation file follows: removals **id-anchored to the source mod's namespace** (so curated `kubejs:*` re-adds are untouchable), `Platform.isLoaded` guards on every event that touches the mod's ids, and item probing via **`Item.exists()`** never `Item.of()` (whose parse errors LOG past any try/catch - learned on #86).
 
 **Pattern (as shipped in `anti.js`):**
 
