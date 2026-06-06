@@ -54,10 +54,24 @@ ServerEvents.recipes(event => {
   //    the Nether/End, so disable it outright per Pillar 1.)
   event.remove({ output: 'mekanism:digital_miner', id: MEKANISM_DEFAULTS })
 
+  // 5. The IF Laser Drill family (playtest catch 2026-06-06: the scaffold note
+  //    below claimed this content was absent, but IF ships it and JEI showed the
+  //    Ore Laser Base live). Double Pillar 1 violation: laser_drill_ore is 46
+  //    recipes of ores/gems/resources from thin air, and laser_drill_fluid
+  //    produces LAVA and ether (fluid generation is planned FROG business, the
+  //    #85 ruling-4 screen). Strip the production recipe types AND the three
+  //    machine crafts. Laser lenses stay craftable - inert glass decor without
+  //    a base to socket into.
+  const IF_DEFAULTS = /^industrialforegoing:/
+  event.remove({ type: 'industrialforegoing:laser_drill_ore', id: IF_DEFAULTS })
+  event.remove({ type: 'industrialforegoing:laser_drill_fluid', id: IF_DEFAULTS })
+  event.remove({ id: 'industrialforegoing:laser_drill' })
+  event.remove({ id: 'industrialforegoing:ore_laser_base' })
+  event.remove({ id: 'industrialforegoing:fluid_laser_base' })
+
   // --- Scaffold: uncomment per mod as more automated-mining mods land.
   //     (Kept inert until the mods exist so KubeJS doesn't log unmatched-recipe noise.)
   // event.remove({ type: 'actuallyadditions:mining_lens' })       // Actually Additions
-  // event.remove({ type: 'industrialforegoing:laser_drill_ore' }) // Industrial Foregoing
 })
 
 // Flag the meshes in JEI/tooltips so the omission reads as intentional, not a bug.
@@ -95,4 +109,16 @@ ItemEvents.modifyTooltips(event => {
     Text.red('⚠ Disabled in Sky Frogs'),
     Text.gray('Automated mining bypasses the frogs - not in this pack.')
   ])
+
+  // The IF laser drill family (see the recipes block). Same eager-resolution
+  // caveat as opolis_curation.js: guard on the mod before naming its ids.
+  if (Platform.isLoaded('industrialforegoing')) {
+    const laserTooltip = [
+      Text.red('⚠ Disabled in Sky Frogs'),
+      Text.gray('Ores and fluids from a laser bypass the frogs - not in this pack.')
+    ]
+    event.add('industrialforegoing:laser_drill', laserTooltip)
+    event.add('industrialforegoing:ore_laser_base', laserTooltip)
+    event.add('industrialforegoing:fluid_laser_base', laserTooltip)
+  }
 })

@@ -34,10 +34,11 @@ Shipped in [`pack/kubejs/server_scripts/anti.js`](../pack/kubejs/server_scripts/
 | `exdeorum:<wood>_sieve` block crafting    | Ex Deorum              | Strips all sieve-block crafts via regex; `builder_sieve.js` re-adds ONLY the oak sieve under a kubejs id. The Mechanical Sieve stays uncraftable (the lane is manual-only) |
 | `#exdeorum:sieve_meshes` tag (id-anchored) | Ex Deorum             | Five of six meshes stay dead weight; the STRING mesh is re-added for the builders' lane |
 | `mekanism:digital_miner`                  | Mekanism               | Automated ore miner = a direct frog-loop bypass |
+| `industrialforegoing:laser_drill_ore` + `laser_drill_fluid` recipe types (id-anchored) + the laser_drill / ore_laser_base / fluid_laser_base machine crafts | Industrial Foregoing | 46 ore recipes from thin air + lava/ether fluid generation - double violation (Pillar 1 + the #85 fluids ruling). Lenses stay craftable (inert without a base). Playtest catch 2026-06-06 |
 
 **The one deliberate exception (#76):** [`builder_sieve.js`](../pack/kubejs/server_scripts/builder_sieve.js) reopens a curated lane - oak sieve + string mesh over **dirt** (saplings of every overworld wood, bamboo, sugar cane, cactus, plus grass seeds and the food-seed lane as of #87/#91) and **moss** (azaleas, vines, glow lichen, dripleaf, every small/tall flower). Cosmetic and building flora plus food seeds only; no ores, gems, mob drops, or progression materials. Dirt is composter-cheap at Tier 0; moss is a Bog frog resource.
 
-The Actually Additions mining lens and the IF laser drill are **scaffold lines kept commented** in `anti.js` (those mods aren't in the pack, and live `event.remove` on unmatched ids logs noise). The only live mining-shortcut disable is the Mekanism Digital Miner.
+The Actually Additions mining lens is the one **scaffold line kept commented** in `anti.js` (AA isn't in the pack, and live `event.remove` on unmatched ids logs noise). The IF laser drill scaffold turned out to be a false comfort - the content was live all along (JEI playtest catch, 2026-06-06) - and is now a real disable alongside the Mekanism Digital Miner.
 
 **Per-mod curation scripts (the Pillar 1 pattern, one file per curated mod):**
 
