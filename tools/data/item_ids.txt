@@ -10955,9 +10955,6 @@ industrialforegoing:white_laser_lens
 industrialforegoing:wither_builder
 industrialforegoing:world_transporter_type
 industrialforegoing:yellow_laser_lens
-industrialforegoingsouls:soul_laser_base
-industrialforegoingsouls:soul_network_pipe
-industrialforegoingsouls:soul_surge
 ironfurnaces:allthemodium_furnace
 ironfurnaces:augment_blasting
 ironfurnaces:augment_factory

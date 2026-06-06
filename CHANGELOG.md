@@ -4,6 +4,13 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+### Added
+- **Performance stack** (Discord suggestion, #73): Sodium 0.6.13 (client rendering + a far better video settings screen), Lithium 0.15.3, FerriteCore 7.0.3, ModernFix 5.27.11 - the same four ATM10SKY runs on this MC/loader.
+- **Configured 2.6.3** (Discord suggestion, #74): edit most mods' configs from inside the game instead of digging through files.
+
+### Removed
+- **Industrial Foregoing Souls** (#75). Its entire loop needs a captured Warden, and no Warden can exist on a void skyblock (no Ancient City; player-placed shriekers can't summon one). It was never quested - dead content, reported by an endgame player. **Heads-up:** any placed Soul Laser / soul pipe blocks become missing content.
+
 ## [0.4.0] - 2026-06-05
 
 The Tier 6 End gate redesign: bake your way into the End instead of wrestling portal frames, plus the upstream chorus fix. Both reported by eager_goodall7 on CurseForge - thanks!
