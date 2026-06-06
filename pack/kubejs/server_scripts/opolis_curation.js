@@ -82,30 +82,43 @@ ItemEvents.modifyTooltips(event => {
   if (!Platform.isLoaded('opolisutilities')) {
     return
   }
-  // NOTE: no wallet entry - 4.11.10 ships stale wallet ASSETS (model + lang)
-  // but never registers the item (no Wallet class in the jar). Referencing it
-  // throws "Item with ID ... does not exist" even with the mod loaded.
+  // 4.11.10's jar is full of STALE assets - models and lang keys for items the
+  // mod no longer registers (wallet, advanced_loot_box, ...), so a hardcoded
+  // id list keeps throwing "Item with ID ... does not exist" as the roster
+  // drifts. Resolve each id defensively instead (same Item.of().isEmpty()
+  // pattern as the selftest canaries): registered ids get the tooltip,
+  // unregistered ids are skipped - they can't appear in-game anyway.
   const severed = [
     'opolisutilities:catalogue',
     'opolisutilities:catalogue_book',
     'opolisutilities:b_bucks',
     'opolisutilities:basic_loot_box',
     'opolisutilities:advanced_loot_box',
-    'opolisutilities:elite_loot_box'
+    'opolisutilities:elite_loot_box',
+    'opolisutilities:wallet'
   ]
-  severed.forEach(id => event.add(id, [
-    Text.red('⚠ Disabled in Sky Frogs'),
-    Text.gray('No shop economy here - quests and frogs provide.')
-  ]))
+  severed.forEach(id => {
+    if (Item.of(id).isEmpty()) {
+      return // stale asset, item not registered in this build
+    }
+    event.add(id, [
+      Text.red('⚠ Disabled in Sky Frogs'),
+      Text.gray('No shop economy here - quests and frogs provide.')
+    ])
+  })
 
-  event.add('opolisutilities:fluid_generator', [
-    Text.red('⚠ Disabled in Sky Frogs'),
-    Text.gray('Fluids are frog business (coming to Productive Frogs).')
-  ])
+  if (!Item.of('opolisutilities:fluid_generator').isEmpty()) {
+    event.add('opolisutilities:fluid_generator', [
+      Text.red('⚠ Disabled in Sky Frogs'),
+      Text.gray('Fluids are frog business (coming to Productive Frogs).')
+    ])
+  }
 
-  event.add('opolisutilities:resource_generator', [
-    Text.green('The Builders\' Stone Lane'),
-    Text.gray('Generates the stone variants no frog produces.'),
-    Text.gray('Granite to red sandstone - decor supply, not an economy.')
-  ])
+  if (!Item.of('opolisutilities:resource_generator').isEmpty()) {
+    event.add('opolisutilities:resource_generator', [
+      Text.green('The Builders\' Stone Lane'),
+      Text.gray('Generates the stone variants no frog produces.'),
+      Text.gray('Granite to red sandstone - decor supply, not an economy.')
+    ])
+  }
 })
