@@ -1,0 +1,132 @@
+type = fancymenu_layout
+
+layout-meta {
+  identifier = title_screen
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 1765000000000
+  is_enabled = true
+  randommode = false
+  randomgroup = 1
+  randomonlyfirsttime = false
+  layout_index = 0
+  [loading_requirement_container_meta:f5f32861-d46a-4adb-a1bf-ffd095b89d0a-1765000000000] = [groups:][instances:]
+}
+
+layout_action_executable_blocks {
+}
+
+element {
+  button_element_executable_block_identifier = e880b205-c430-4e03-b739-bdefb5bb9d50-1765000000000
+  [executable_action_instance:52fbd6fb-ba60-4bdc-a1c7-1c4038b828d1-1765000000000][action_type:openlink] = https://discord.gg/r6MhZ73nsM
+  [executable_block:e880b205-c430-4e03-b739-bdefb5bb9d50-1765000000000][type:generic] = [executables:52fbd6fb-ba60-4bdc-a1c7-1c4038b828d1-1765000000000;]
+  backgroundnormal = [source:local]/config/fancymenu/assets/discord_gray.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/discord_color.png
+  restartbackgroundanimations = true
+  nine_slice_custom_background = false
+  nine_slice_border_x = 5
+  nine_slice_border_y = 5
+  navigatable = true
+  widget_active_state_requirement_container_identifier = 6fa8dd14-45d4-4fc1-9f19-40d2d3dd79c8-1765000000000
+  [loading_requirement_container_meta:6fa8dd14-45d4-4fc1-9f19-40d2d3dd79c8-1765000000000] = [groups:][instances:]
+  is_template = false
+  template_apply_width = false
+  template_apply_height = false
+  template_apply_posx = false
+  template_apply_posy = false
+  template_apply_opacity = false
+  template_apply_visibility = false
+  template_apply_label = false
+  template_share_with = buttons
+  nine_slice_slider_handle = false
+  nine_slice_slider_handle_border_x = 5
+  nine_slice_slider_handle_border_y = 5
+  element_type = custom_button
+  instance_identifier = 4a5490ec-f797-4539-84fd-5ce02f6d81c8-1765000000000
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 1920
+  auto_sizing_base_screen_height = 1018
+  sticky_anchor = false
+  anchor_point = bottom-left
+  x = 10
+  y = -64
+  width = 96
+  height = 23
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = e930b089-475a-4768-8a0e-f6636d693738-1765000000000
+  [loading_requirement_container_meta:e930b089-475a-4768-8a0e-f6636d693738-1765000000000] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
+}
+
+element {
+  button_element_executable_block_identifier = b9316e56-8dc1-494c-bd83-00f1a91adb18-1765000000000
+  [executable_action_instance:9f8f214d-5c17-4313-b249-b688fce658d4-1765000000000][action_type:openlink] = https://github.com/Flatts3000/sky-frogs
+  [executable_block:b9316e56-8dc1-494c-bd83-00f1a91adb18-1765000000000][type:generic] = [executables:9f8f214d-5c17-4313-b249-b688fce658d4-1765000000000;]
+  backgroundnormal = [source:local]/config/fancymenu/assets/github_gray.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/github_color.png
+  restartbackgroundanimations = true
+  nine_slice_custom_background = false
+  nine_slice_border_x = 5
+  nine_slice_border_y = 5
+  navigatable = true
+  widget_active_state_requirement_container_identifier = 5afb0e33-137e-4652-8184-4780116b6d80-1765000000000
+  [loading_requirement_container_meta:5afb0e33-137e-4652-8184-4780116b6d80-1765000000000] = [groups:][instances:]
+  is_template = false
+  template_apply_width = false
+  template_apply_height = false
+  template_apply_posx = false
+  template_apply_posy = false
+  template_apply_opacity = false
+  template_apply_visibility = false
+  template_apply_label = false
+  template_share_with = buttons
+  nine_slice_slider_handle = false
+  nine_slice_slider_handle_border_x = 5
+  nine_slice_slider_handle_border_y = 5
+  element_type = custom_button
+  instance_identifier = 2827a2b2-66a0-42cf-879d-4d93553078c4-1765000000000
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 1920
+  auto_sizing_base_screen_height = 1018
+  sticky_anchor = false
+  anchor_point = bottom-left
+  x = 10
+  y = -36
+  width = 96
+  height = 23
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 74926a31-20ef-4135-96ab-8bd342c457c9-1765000000000
+  [loading_requirement_container_meta:74926a31-20ef-4135-96ab-8bd342c457c9-1765000000000] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
+}
