@@ -244,9 +244,10 @@ def main() -> int:
             print(f"{indent}#{r.get('id')} - {author_name(r)} - {fmt_date(r.get('datePosted'))}{pin}{reply}")
             print(f"{indent}  {text}\n")
 
-    # Relay only when this run also MARKS the comments seen - --peek skips
-    # save_seen, so relaying under it would re-mirror the same comments on
-    # every peek (history replay into #cf-feedback).
+    # Relay only when this run also MARKS the comments seen. --peek and --json
+    # both skip save_seen (see the guard below), so relaying under either would
+    # re-mirror the same comments on every run; --all would replay the entire
+    # page regardless of seen-state. Default mode is the only safe lane.
     if args.discord_webhook and not args.all and not args.json and not args.peek and shown:
         post_discord(args.discord_webhook, pid, shown)
         print(f"  [discord] mirrored {len(shown)} comment(s) to #cf-feedback")
