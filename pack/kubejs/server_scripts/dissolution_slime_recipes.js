@@ -110,6 +110,28 @@ const SLIME_TIERS = [
   ]]
 ]
 
+// MODDED variants follow a DIFFERENT law (maintainer ruling 2026-06-06, PR #106):
+// the chamber input is the variant's OWN resource - self-keyed, not threaded.
+// The player must create the resource through the mod's native mechanic first
+// (Energizing Orb, redstone dropped on obsidian) before the frog loop can take
+// over; the chamber then turns one held resource into a dedicated slime instead
+// of waiting on more Cave-pool split-discovery rolls. Tier fillers per the
+// standing law. Uraninite is the one variant with NO craft path on this skyblock
+// (the orb's uraninite recipes all need ore/uranium) - its first copy comes from
+// split-discovery, and this row scales it from there.
+//
+// [category stamp, tier filler, variant, the variant's own resource, owning mod]
+const MODDED_SELF_KEYED = [
+  ['CAVE',     'minecraft:stone',      'uraninite',       'powah:uraninite',           'powah'],
+  ['CAVE',     'minecraft:stone',      'energized_steel', 'powah:steel_energized',     'powah'],
+  ['TIDE',     'minecraft:mycelium',   'dry_ice',         'powah:dry_ice',             'powah'],
+  ['INFERNAL', 'minecraft:prismarine', 'blazing',         'powah:crystal_blazing',     'powah'],
+  ['INFERNAL', 'minecraft:prismarine', 'flux_dust',       'fluxnetworks:flux_dust',    'fluxnetworks'],
+  ['VOID',     'minecraft:soul_soil',  'niotic',          'powah:crystal_niotic',      'powah'],
+  ['VOID',     'minecraft:soul_soil',  'spirited',        'powah:crystal_spirited',    'powah'],
+  ['VOID',     'minecraft:soul_soil',  'nitro',           'powah:crystal_nitro',       'powah']
+]
+
 ServerEvents.recipes(event => {
   if (!Platform.isLoaded('industrialforegoing')) {
     return
@@ -149,5 +171,40 @@ ServerEvents.recipes(event => {
       // but the slime_variant registry has no global-uniqueness guarantee across tiers).
       }).id(`kubejs:dissolution_slime/${category.toLowerCase()}_${variant}`)
     })
+  })
+
+  // The modded self-keyed rows (see MODDED_SELF_KEYED above). Same chamber shape,
+  // each additionally guarded on its owning mod so an absent mod leaves no recipe
+  // referencing missing ids.
+  MODDED_SELF_KEYED.forEach(row => {
+    const category = row[0]
+    const filler = row[1]
+    const variant = row[2]
+    const ownResource = row[3]
+    const ownerMod = row[4]
+    if (!Platform.isLoaded(ownerMod)) {
+      return
+    }
+
+    event.custom({
+      type: 'industrialforegoing:dissolution_chamber',
+      input: [
+        { item: ownResource },
+        { item: filler },
+        { item: filler },
+        { item: filler },
+        { item: filler },
+        { item: 'productivefrogs:sweetslime' },
+        { item: 'productivefrogs:sweetslime' },
+        { item: 'productivefrogs:sweetslime' }
+      ],
+      inputFluid: { fluid: 'industrialforegoing:latex', amount: 100 },
+      output: {
+        id: 'productivefrogs:slime_bucket',
+        count: 1,
+        components: { 'minecraft:bucket_entity_data': { Variant: `productivefrogs:${variant}`, Category: category } }
+      },
+      processingTime: 200
+    }).id(`kubejs:dissolution_slime/${category.toLowerCase()}_${variant}`)
   })
 })
