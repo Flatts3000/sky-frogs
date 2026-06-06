@@ -794,6 +794,11 @@ hash = "2e29a5406617e1321bacd122b915834b7f38ea6cc2e59f2b1dc9d677ab51955b"
 metafile = true
 
 [[files]]
+file = "mods/gravestone-mod.pw.toml"
+hash = "678a73946ad0708c24ee921f168a0cda9b410ce260a814f845f0223d8d861b57"
+metafile = true
+
+[[files]]
 file = "mods/industrial-foregoing-souls.pw.toml"
 hash = "a997c2462d8501aca9e25e7659cfcafd0736f6ff16bdfc46f0a4020500299328"
 metafile = true
@@ -801,6 +806,11 @@ metafile = true
 [[files]]
 file = "mods/industrial-foregoing.pw.toml"
 hash = "c307c6f682a2ddff8181191b1070bae08c11482eccef8ea3d0428ea63ac08d6e"
+metafile = true
+
+[[files]]
+file = "mods/inventory-essentials.pw.toml"
+hash = "69a36327ba1adab87891fe28173daf114eee534c810c770d5fbff6b6968209d0"
 metafile = true
 
 [[files]]

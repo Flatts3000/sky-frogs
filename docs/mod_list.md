@@ -89,9 +89,10 @@ Each entry here directly maps to one or more PF category slime variants (see [`p
 | **Waystones**         | Teleportation network                                                 |
 | **Easy Villagers**    | Trade with villagers from blocks (no need for trading halls)          |
 | **AppleSkin** (SHIPPED) | Saturation + exact food-value overlay on the HUD and item tooltips (client-side QoL) |
+| **GraveStone Mod** (SHIPPED 2026-06-06, 1.0.24 per Techopolis/Skyopolis) | Grave at your death point holding items + XP, obituary paper; ghost spawning off by default. Chosen over Corail Tombstone (whose perk/teleport progression conflicts with the pack's no-parallel-economy rulings). Complements FTB Essentials /back. (#92, requested by RayRayZCB on Discord) |
 | **Fast Leaf Decay** (SHIPPED) | Leaves break/fall quickly once supporting logs are removed - QoL for tree farms (tree-felling itself is handled by FTB Ultimine) |
 | **Farmer's Delight** + **Cooking for Blockheads** + **Croptopia** + **Farmer's Croptopia** + **Farming for Blockheads** + **Right Click Harvest** + **Squat Grow** | Skyblock food economy   |
-| **Mouse Tweaks** + **Inventory Tweaks** + **Crafting Tweaks** + **Polymorph** | Inventory ergonomics                              |
+| **Mouse Tweaks** + **Inventory Tweaks** + **Crafting Tweaks** + **Polymorph** + **Inventory Essentials** (SHIPPED 2026-06-06, 21.1.2 per Techopolis/OceanBlock 2; ctrl-shift-click bulk transfers, Discord suggestion #88) | Inventory ergonomics                              |
 | **Trash Slot** + **Trash Cans** | Discard items                                              |
 | **Just Enough Mekanism Multiblocks** | Visual multiblock previews                                    |
 | **Searchables**, **Controlling**, **Configured** (SHIPPED 2026-06-06, pinned 2.6.3 per ATM10SKY; in-game config editing, Discord suggestion #74), **JamLib**, **YACL** | Settings UX                                |
