@@ -12,6 +12,7 @@
       },
       "damage_harvest_tool": {
         "//": "Determines if the item in the harvest tool slot should take durability damage.",
+        "//skyfrogs": "OVERRIDDEN (#96/PR #97): pots are toolless in Sky Frogs - tools never wear out. The only other override in this file is default_harvest_stack.",
         "//default": true,
         "value": false
       },
@@ -30,6 +31,7 @@
           "will not need to use shears or silk touch in pots in order to get certain item  ",
           "drops.                                                                          "
         ],
+        "//skyfrogs": "OVERRIDDEN (#96/PR #97): phantom shears - an empty tool slot acts as shears, so leaves and other shears-gated drops work toollessly. Plain shears suffice: the silk-touch loot branches are 'alternatives' fallbacks that a shears match short-circuits. Unknown keys like these comments are ignored by the parser (GSON).",
         "//default": {},
         "value": {
           "id": "minecraft:shears",
