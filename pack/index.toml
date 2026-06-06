@@ -278,7 +278,7 @@ hash = "60ba3c990a63c8055a7a400613febaf1f32c8ce7376c53830b40f15ee2fb96a9"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
-hash = "2686d04333dfbace1db38a2fa463bf35e16d8788c3085092dec201dccfaaf48b"
+hash = "addad16a5a76caf3e14c8deb4e07783d33900df4f072619aedf6237ccab45907"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/your_first_iron_ingot.snbt"
@@ -290,7 +290,7 @@ hash = "2e69afacf774749222ca1e925dc94d32e6c3db8bef4557aa33144751c2770206"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "0a1d8e4bc75cc1c4d1fbaf8eb3ed9aeb67377e9a9da93dad2bb82300fd0c8be1"
+hash = "2bc301bdc847d2fbb556533516856b42c7a11f464c9040648bd174284192d57b"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
