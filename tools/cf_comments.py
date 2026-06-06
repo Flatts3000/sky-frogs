@@ -91,6 +91,9 @@ def fetch_all(pid: int) -> list[dict]:
     index, total = 0, None
     while True:
         page = fetch_page(pid, index)
+        # minimal shape check - this API is undocumented, unauthenticated input
+        if not isinstance(page, dict) or not isinstance(page.get("data", []), list):
+            raise SystemExit(f"CurseForge returned an unexpected response shape for project {pid}.")
         data = page.get("data") or []
         out.extend(data)
         pg = page.get("pagination") or {}
@@ -158,22 +161,35 @@ def post_discord(webhook: str, pid: int, rows: list[dict]) -> None:
     """
     page = PROJECT_PAGES.get(pid)
     for r in rows:
+        # Comment text + author names are attacker-controlled (any CF account).
+        # Embeds can't fire @everyone pings today, but allowed_mentions below
+        # locks that in; ids are coerced to int so hostile values can't reach
+        # the deep link or footer as strings (security audit S-5/S-6).
+        try:
+            cid = int(r.get("id", 0))
+        except (TypeError, ValueError):
+            cid = 0
         text = " ".join((r.get("text") or "").split())
         if len(text) > 1900:
             text = text[:1900] + " [...]"
+        author = " ".join(author_name(r).split())[:80] or "unknown"
         reply = f" (reply to #{r['_parent']})" if r.get("_parent") else ""
         embed = {
-            "title": f"{author_name(r)} on comment page{reply}" if reply else f"New comment by {author_name(r)}",
+            "title": f"{author} on comment page{reply}" if reply else f"New comment by {author}",
             "description": text or "(no text)",
             "color": CF_ORANGE,
-            "footer": {"text": f"project {pid} | comment #{r.get('id')}"},
+            "footer": {"text": f"project {pid} | comment #{cid}"},
         }
         ts = r.get("datePosted")
         if isinstance(ts, (int, float)):
             embed["timestamp"] = datetime.fromtimestamp(ts / 1000, tz=timezone.utc).isoformat()
-        if page:
-            embed["url"] = f"{page}?comment={r.get('id')}"
-        payload = json.dumps({"username": "CurseForge Comments", "embeds": [embed]}).encode("utf-8")
+        if page and cid:
+            embed["url"] = f"{page}?comment={cid}"
+        payload = json.dumps({
+            "username": "CurseForge Comments",
+            "embeds": [embed],
+            "allowed_mentions": {"parse": []},  # never resolve mentions from relayed content
+        }).encode("utf-8")
         req = urllib.request.Request(
             webhook, data=payload, headers={"Content-Type": "application/json", "User-Agent": UA}
         )
