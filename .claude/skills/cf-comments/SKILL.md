@@ -26,6 +26,12 @@ only fresh feedback. Replies are shown threaded under their parent. If it ever r
 non-JSON / a 403 (the endpoint is undocumented and could change, or hit Cloudflare), fall
 back to reading the logged-in comments page with the Playwright MCP.
 
+**Discord relay:** `--discord-webhook <url>` (or env `DISCORD_CF_WEBHOOK`) also mirrors each
+NEW comment as an embed into the community server's private `#cf-feedback` channel. The
+webhook URL lives in the `sky-frogs-community` repo's Terraform state:
+`terraform output -raw cf_feedback_webhook_url`. Relay only fires in new-comments mode
+(never with `--all`/`--json`), so it cannot replay history; failures are warn-and-continue.
+
 ## 2. Triage each new comment
 
 Classify and act per [`docs/github_issues_best_practices.md`](../../../docs/github_issues_best_practices.md):
