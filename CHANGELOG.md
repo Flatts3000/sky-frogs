@@ -7,11 +7,8 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 ### Added
 - **GraveStone Mod 1.0.24** (#92, requested by RayRayZCB on Discord): your items and XP now wait in a grave at your death point instead of despawning in 5 minutes - timely, with the Warden and the dragon both in the campaign. Obituary included; ghosts off. (Corail Tombstone was considered and declined: its perk/teleport progression is a parallel economy.)
 - **Inventory Essentials 21.1.2** (#88, Discord suggestion): ctrl-shift-click moves every stack of an item at once, plus single-item and bulk modifier-click transfers - the one gap in the Mouse/Inventory/Crafting Tweaks lineup.
-<<<<<<< HEAD
 - **Opolis Utilities (BBL Utility) 4.11.10**, curated per six maintainer rulings (#85): the QoL slice ships whole (Drying/Soaking Tables, Cloche, Item Repairer, Home/Death Stones, Breaker/Placer/Crafters, Clicker, Redstone Clock), the **Resource Generator becomes the Builders' Stone Lane** (generates only the 13 stone variants no frog produces - granite to red sandstone), and the rest is severed: no Fluid Generator (fluids are planned frog business), no Catalogue/B-Bucks shop economy, no glow squid/squid summons (their drops are frog resources). Severed items carry DISABLED tooltips.
-=======
 - **The Builders' Sieve dirt lane grows**: grass seeds at 10% (Discord suggestion by bizarr0, #87 - right-click dirt for grass blocks) plus the classic food lane restored at Ex Deorum's own chances - wheat/pumpkin/melon/beetroot seeds, potatoes, carrots, and the occasional poisonous potato. Food is not a frog resource, so nothing is bypassed; Tier 0 islands just get a seed source besides luck.
->>>>>>> origin/main
 - **Industrial Foregoing Souls is back** - with its Warden actually reachable this time. A Discord member's correction (the v0.5.0 removal note was wrong: Ex Deorum's **Sculk Core** makes placed shriekers summon-capable) exposed that the only real gap was a shrieker source. The pack now adds a **Sculk Shrieker recipe** from frog-farmed materials (sculk + echo shards + a bone block), so the chain runs: Void frogs -> shrieker + Sculk Core -> three shrieks -> Warden -> Soul Laser. (#75, #82)
 
 ## [0.5.0] - 2026-06-06
