@@ -568,6 +568,11 @@ hash = "7fa0c360b22811152168f61e17a5d1c881eab1079b199f39f53c2508cdd27c9b"
 metafile = true
 
 [[files]]
+file = "mods/botany-trees.pw.toml"
+hash = "50020be4a6c811b85a9085c93df65a6d7f2e9b28db5bac3c9ac72a84004da9e6"
+metafile = true
+
+[[files]]
 file = "mods/building-gadgets.pw.toml"
 hash = "88908286eebea979713b5626891f634317fcc4c5a5bd4ec0c9444a33863a4518"
 metafile = true
