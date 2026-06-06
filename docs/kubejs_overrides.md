@@ -45,6 +45,7 @@ The Actually Additions mining lens and the IF laser drill are **scaffold lines k
 |---|---|---|
 | [`anti.js`](../pack/kubejs/server_scripts/anti.js) + [`builder_sieve.js`](../pack/kubejs/server_scripts/builder_sieve.js) | Ex Deorum, Mekanism | Default sieving stripped; the curated builders' lane; Digital Miner |
 | [`opolis_curation.js`](../pack/kubejs/server_scripts/opolis_curation.js) | Opolis Utilities (BBL Utility) | Six #85 rulings: stone-lane Resource Generator, severed Fluid Generator + Catalogue/B-Bucks economy, glow_squid/squid summons stripped |
+| [`cobblegen_curation.js`](../pack/kubejs/server_scripts/cobblegen_curation.js) | Cobblegen Galore | #90 ruling: the netherrack/obsidian/tuff blockgen recipes stripped (all three outputs are frog resources + singularity inputs); the seven builders' stone generators stay |
 | [`upstream_recipe_fixes.js`](../pack/kubejs/server_scripts/upstream_recipe_fixes.js) | Iron Furnaces | A different category: removals of BROKEN upstream recipes (unparseable ATM-metal upgrades), not design disables - future broken-recipe fixes belong here |
 
 Conventions every curation file follows: removals **id-anchored to the source mod's namespace** (so curated `kubejs:*` re-adds are untouchable), `Platform.isLoaded` guards on every event that touches the mod's ids, and item probing via **`Item.exists()`** never `Item.of()` (whose parse errors LOG past any try/catch - learned on #86).

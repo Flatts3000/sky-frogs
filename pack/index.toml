@@ -437,6 +437,10 @@ file = "kubejs/server_scripts/cave_slime_chain.js"
 hash = "e098ff5faec0ba926aa916ebd6a90563fd2a45b276c86b55eac75c52cd134111"
 
 [[files]]
+file = "kubejs/server_scripts/cobblegen_curation.js"
+hash = "7d5622c68f84203ffa71672a1fcc9f68851b377359827340b20422178a919e8e"
+
+[[files]]
 file = "kubejs/server_scripts/dissolution_slime_recipes.js"
 hash = "db4e5f78b695a685047a8f1f4127edf786c10b5d68fb7c25a59233efcbe3c563"
 
