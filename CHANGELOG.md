@@ -17,7 +17,7 @@ The community-suggestions release: the endgame's last crafting gap closed, a dec
 - **Configured 2.6.3** (Discord suggestion, #74): edit most mods' configs from inside the game instead of digging through files.
 
 ### Removed
-- **Industrial Foregoing Souls** (#75). Its entire loop needs a captured Warden, and no Warden can exist on a void skyblock (no Ancient City; player-placed shriekers can't summon one). It was never quested - dead content, reported by an endgame player. **Heads-up:** any placed Soul Laser / soul pipe blocks become missing content.
+- **Industrial Foregoing Souls** (#75). Its entire loop needs a captured Warden, which was unreachable in this pack - it was never quested, dead content, reported by an endgame player. **Heads-up:** any placed Soul Laser / soul pipe blocks become missing content. *(Correction, 2026-06-06, credit to a sharp-eyed Discord member: the original note blamed vanilla's "player-placed shriekers can't summon" rule, but Ex Deorum's Sculk Core specifically overrides that. The actual blocker in Sky Frogs is that no sculk shrieker source ships - Ex Deorum's shrieker drop lives in the netherite-mesh sieve lane this pack disables. A frog-farmable Warden path is therefore buildable if ever wanted; tracked in #82.)*
 
 ## [0.4.0] - 2026-06-05
 
