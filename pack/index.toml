@@ -490,7 +490,7 @@ hash = "2b6735fc64ee708364b30526b4d5d7b703cfc80e624eb8f6f2098f6a0b2b192d"
 
 [[files]]
 file = "kubejs/server_scripts/void_recipes.js"
-hash = "4da022d194f4b02c325e804648190c9daccbe231ef9dcfa91c001b24c0d3caa1"
+hash = "e12f06e03bff7e7944e1380be66aeb5644b191b7a47345092660565933ede5a9"
 
 [[files]]
 file = "kubejs/startup_scripts/master_frog_item.js"
@@ -773,6 +773,11 @@ metafile = true
 [[files]]
 file = "mods/glassential-renewed.pw.toml"
 hash = "2e29a5406617e1321bacd122b915834b7f38ea6cc2e59f2b1dc9d677ab51955b"
+metafile = true
+
+[[files]]
+file = "mods/industrial-foregoing-souls.pw.toml"
+hash = "a997c2462d8501aca9e25e7659cfcafd0736f6ff16bdfc46f0a4020500299328"
 metafile = true
 
 [[files]]

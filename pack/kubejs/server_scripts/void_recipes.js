@@ -43,6 +43,27 @@ ServerEvents.recipes(event => {
     ).id('kubejs:void/end_cake')
   }
 
+  // Sculk Shrieker - the missing link in the Warden chain (#82, credit to a Discord
+  // member's correction). Ex Deorum's Sculk Core (4 echo shards + ender pearl, all
+  // Void frog resources) makes a placed shrieker Warden-summon-capable, but the
+  // mod's only shrieker SOURCE is its netherite-mesh sieve drop, which Pillar 1
+  // disables. This recipe restores the link from frog-farmed materials: sculk ring,
+  // echo-shard prongs, a bone block for the ribs. Three shrieks and the Warden
+  // answers - which is what Industrial Foregoing Souls' Soul Laser wants.
+  event.shaped(
+    'minecraft:sculk_shrieker',
+    [
+      'SES',
+      'EBE',
+      'SES'
+    ],
+    {
+      S: 'minecraft:sculk',
+      E: 'minecraft:echo_shard',
+      B: 'minecraft:bone_block'
+    }
+  ).id('kubejs:void/sculk_shrieker')
+
   // Master Frog - regular crafting table capstone craft. The Ultimate Singularity is already
   // the gated endgame item, so the final trophy just needs a vanilla 3x3 grid (no EC table).
   // Guarded on EC only because the Ultimate Singularity (the U key) is an Extended Crafting item.
