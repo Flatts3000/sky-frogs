@@ -4,6 +4,10 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+## [0.5.0] - 2026-06-06
+
+The community-suggestions release: the endgame's last crafting gap closed, a decor sieve for builders, a proper performance stack, and a dead mod removed (hence the minor bump). Every change in here traces to player feedback - CurseForge comments and the new community Discord.
+
 ### Fixed
 - **The Ultimate Singularity is craftable again** (#79, reported by eager_goodall7): `glow_ink_sac` and `obsidian` were the only 2 of the 40 required resources with no slime recipe and no quest. **Glow Ink** joins the Cave chain before redstone (coal -> glow ink -> redstone; redstone stays the capstone and the Geode bridge), with table + chamber recipes and a `cave_frogs` quest. **Obsidian** joins the Infernal chain as netherrack's portal-stone partner (netherrack -> obsidian -> quartz), chamber-only, quested in `infernal_frogs`. Ships with **Productive Frogs 1.10.0**, which reclasses obsidian (and refined_obsidian) cave -> infernal (productive-frogs#142/#143) so the Infernal frog is the one that produces them. `validate_quests.py` grew `Q-SINGULARITY-COVERAGE` so a future variant can never silently reopen this gap.
 
@@ -189,7 +193,8 @@ Bug-fix and quality-of-life release on top of the v0.2.0 campaign beta. Fixes tw
 ### Fixed
 ```
 
-[Unreleased]: https://github.com/Flatts3000/sky-frogs/compare/v0.4.0...HEAD
+[Unreleased]: https://github.com/Flatts3000/sky-frogs/compare/v0.5.0...HEAD
+[0.5.0]: https://github.com/Flatts3000/sky-frogs/compare/v0.4.0...v0.5.0
 [0.4.0]: https://github.com/Flatts3000/sky-frogs/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/Flatts3000/sky-frogs/compare/v0.2.2...v0.3.0
 [0.2.2]: https://github.com/Flatts3000/sky-frogs/compare/v0.2.1...v0.2.2
