@@ -61,6 +61,7 @@ Each entry here directly maps to one or more PF category slime variants (see [`p
 |-----------------------|------------------------------------------------------------------------|
 | **Flux Networks**     | Wireless power transport — keeps the build tidy                       |
 | **Pipez**             | Cheap pipes for early-game item/fluid transfer                        |
+| **Cable Facades** (SHIPPED 2026-06-06, 1.5.1 per Techopolis/Skyopolis) | Wrap pipes/cables in any block's texture - machine rooms read as builds, not spaghetti. Default allowlist already covers Pipez + the Mekanism cable family; pure decor (facade = dyes + wool, wrench = iron). (#100, suggested by Dergib on Discord) |
 | **Modular Routers**   | Item routing                                                          |
 | **Super Factory Manager** | Programmable factory automation (endgame)                          |
 | **XNet** + **XNetGases** | Channeled item/fluid/gas transport                                 |
