@@ -1,10 +1,14 @@
 // Sky Frogs - Cave seed-chain recipes.
 //
 // Each Cave resource's "slime in a bucket" is crafted from the PRIOR resource's
-// Slime Milk, threading a seed-chain: iron -> copper -> gold -> coal -> redstone.
+// Slime Milk, threading a seed-chain:
+//   iron -> copper -> gold -> coal -> glow_ink_sac -> obsidian -> redstone.
 // (iron is the bootstrap from the Your First Iron Ingot chapter; the steps below
-// produce the rest. Lapis moved to Geode; obsidian is deferred to the Infernal
-// gate; glow_ink_sac is omitted - it's not a stone-and-ore resource.)
+// produce the rest. Lapis moved to Geode. glow_ink_sac and obsidian were
+// originally skipped as off-theme/deferred, but the Ultimate Singularity demands
+// every vanilla froglight resource (#79), and PF classes both as Cave - so they
+// slot in before redstone, which stays the chapter capstone AND the resource the
+// Geode boundary threads off (lapis takes redstone; that bridge is unchanged).)
 //
 // Per-step recipe (shapeless, 9 items):
 //   1x <prior> Slime Milk bucket  (what you convert from; supplies the bucket too)
@@ -22,7 +26,9 @@ ServerEvents.recipes(event => {
     ['iron', 'copper'],
     ['copper', 'gold'],
     ['gold', 'coal'],
-    ['coal', 'redstone']
+    ['coal', 'glow_ink_sac'],
+    ['glow_ink_sac', 'obsidian'],
+    ['obsidian', 'redstone']
   ]
 
   chain.forEach(step => {

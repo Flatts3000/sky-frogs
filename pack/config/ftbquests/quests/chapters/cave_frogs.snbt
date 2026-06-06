@@ -129,6 +129,30 @@
 		{
 			dependencies: ["7CA7E000C0DE000B"]
 			icon: {
+				id: "minecraft:glow_ink_sac"
+			}
+			id: "7CA7E000C0DE0023"
+			shape: "square"
+			rewards: [{
+				id: "7CA7E000C0DE0025"
+				item: {
+					count: 1
+					id: "functionalstorage:compacting_drawer"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7CA7E000C0DE0024"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:glow_ink_sac" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7CA7E000C0DE0023"]
+			icon: {
 				id: "minecraft:redstone"
 			}
 			id: "7CA7E000C0DE000E"
@@ -148,7 +172,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 6.0d
+			y: 7.5d
 		}
 	]
 }
