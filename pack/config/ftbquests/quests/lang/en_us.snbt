@@ -17,6 +17,15 @@
 	chapter_group.0C4F0E0000000002.title: "Tier 2: Geode"
 	chapter_group.0C4F0E0000000003.title: "Tier 3: Bog"
 	chapter_group.0C4F0E0000000004.title: "Tier 4: Tide"
+	quest.111D15C0DE000001.quest_desc: [
+		"Sky Frogs is built from player feedback - half of every update starts as somebody's message on the community Discord. Bugs, suggestions, screenshots of your pond: it all shapes the pack."
+		""
+		"Click the &9Discord badge&r floating above this quest to open an invite, or type &bdiscord.gg/r6MhZ73nsM&r into your browser."
+		""
+		"No pressure - tick the box either way and get back to your frogs."
+	]
+	quest.111D15C0DE000001.quest_subtitle: "The other frogs are waiting."
+	quest.111D15C0DE000001.title: "Join the Pond"
 	quest.01A8E068925B319F.quest_desc: [
 		"You're stranded on a speck of dirt in the void. No ore, no mineshafts, not so much as a mountain to feel bad about."
 		""

@@ -8,6 +8,18 @@
 		id: "productivefrogs:cave_frog_egg"
 	}
 	id: "784143B9C5D63814"
+	images: [
+		{
+			click: "https://discord.gg/r6MhZ73nsM"
+			height: 1.0d
+			hover: ["Join the Sky Frogs Discord!"]
+			image: "kubejs:textures/quests/discord.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.0d
+			y: -1.5d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -29,6 +41,19 @@
 				type: "checkmark"
 			}]
 			x: 0.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "minecraft:lily_pad"
+			}
+			id: "111D15C0DE000001"
+			shape: "diamond"
+			tasks: [{
+				id: "111D15C0DE000002"
+				type: "checkmark"
+			}]
+			x: 3.0d
 			y: 0.0d
 		}
 		{

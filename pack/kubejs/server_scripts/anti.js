@@ -111,12 +111,16 @@ ItemEvents.modifyTooltips(event => {
   ])
 
   // The IF laser drill family (see the recipes block). Same eager-resolution
-  // caveat as opolis_curation.js: guard on the mod before naming its ids.
+  // caveat as opolis_curation.js: guard on the mod before naming its ids in
+  // event.add. RHINO QUIRK (seen live on /reload): a const declared INSIDE the
+  // if-block throws "TypeError: redeclaration of var" - KubeJS's Rhino scopes
+  // const to the function, so block-level consts collide with their own hoisted
+  // binding. Declare at callback top level like every other const in this file.
+  const laserTooltip = [
+    Text.red('⚠ Disabled in Sky Frogs'),
+    Text.gray('Ores and fluids from a laser bypass the frogs - not in this pack.')
+  ]
   if (Platform.isLoaded('industrialforegoing')) {
-    const laserTooltip = [
-      Text.red('⚠ Disabled in Sky Frogs'),
-      Text.gray('Ores and fluids from a laser bypass the frogs - not in this pack.')
-    ]
     event.add('industrialforegoing:laser_drill', laserTooltip)
     event.add('industrialforegoing:ore_laser_base', laserTooltip)
     event.add('industrialforegoing:fluid_laser_base', laserTooltip)
