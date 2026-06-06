@@ -90,6 +90,7 @@ Each entry here directly maps to one or more PF category slime variants (see [`p
 | **Waystones**         | Teleportation network                                                 |
 | **Easy Villagers**    | Trade with villagers from blocks (no need for trading halls)          |
 | **AppleSkin** (SHIPPED) | Saturation + exact food-value overlay on the HUD and item tooltips (client-side QoL) |
+| **Extreme Sound Muffler** (SHIPPED 2026-06-06, 3.55 per ATM10SKY; client-side) | Per-sound muffling - toggle individual sounds globally or via radius anchors. The frog-farm answer: deafen the plap plaps, keep everything else. Unanimous precedent (all 5 local reference packs ship it). Default config on purpose - muffling stays opt-in for players who like the frogs audible. (#103, suggested by Dergib on Discord) |
 | **GraveStone Mod** (SHIPPED 2026-06-06, 1.0.24 per Techopolis/Skyopolis) | Grave at your death point holding items + XP, obituary paper; ghost spawning off by default. Chosen over Corail Tombstone (whose perk/teleport progression conflicts with the pack's no-parallel-economy rulings). Complements FTB Essentials /back. (#92, requested by RayRayZCB on Discord) |
 | **Fast Leaf Decay** (SHIPPED) | Leaves break/fall quickly once supporting logs are removed - QoL for tree farms (tree-felling itself is handled by FTB Ultimine) |
 | **Farmer's Delight** + **Cooking for Blockheads** + **Croptopia** + **Farmer's Croptopia** + **Farming for Blockheads** + **Right Click Harvest** + **Squat Grow** | Skyblock food economy   |
