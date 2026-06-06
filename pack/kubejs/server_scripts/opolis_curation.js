@@ -75,12 +75,18 @@ ServerEvents.recipes(event => {
 })
 
 // Flag the severed economy in tooltips so the omission reads as intentional.
+// Guarded like the recipes event: tooltip registration resolves item ids
+// EAGERLY, so an absent mod throws "Item with ID ... does not exist" on
+// /reload (seen live when the junctioned script ran before the jar synced).
 ItemEvents.modifyTooltips(event => {
+  if (!Platform.isLoaded('opolisutilities')) {
+    return
+  }
   const severed = [
     'opolisutilities:catalogue',
     'opolisutilities:catalogue_book',
     'opolisutilities:b_bucks',
-    'opolisutilities:b_bucks_wallet',
+    'opolisutilities:wallet',
     'opolisutilities:basic_loot_box',
     'opolisutilities:advanced_loot_box',
     'opolisutilities:elite_loot_box'

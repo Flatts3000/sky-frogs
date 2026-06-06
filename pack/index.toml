@@ -470,7 +470,7 @@ hash = "5c10c058739efefeed7b3d87b2adad36228609e5d2abae61a8466c3e49d41ee6"
 
 [[files]]
 file = "kubejs/server_scripts/opolis_curation.js"
-hash = "85a474a59c95b66361f3fc0c981e02a054b7f1c77c16d7ad019b49c2fbd4f528"
+hash = "0e1be167540777e73a43069da6ed256e9aa66793948a6159929caafc50372c9c"
 
 [[files]]
 file = "kubejs/server_scripts/osmium_slime_bucket.js"
