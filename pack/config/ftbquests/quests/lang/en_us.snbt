@@ -744,28 +744,28 @@
 	quest.70E0000000000017.quest_subtitle: "Cold storage."
 	quest.70E0000000000017.title: "Dry Ice"
 	quest.70E000000000001A.quest_desc: [
-		"Orb your Infernal frog's &cblaze rods&r into &cBlazing Crystal&r and the generator ladder opens for real. Make one yourself, chamber it, frog it."
+		"The Orb wants &cblaze powder&r - four of it - for a &cBlazing Crystal&r. Your Infernal frog makes the rods; each rod cracks into two powder. Make a crystal yourself, chamber it, frog it."
 		""
 		"Turn in the &bBlazing Froglight&r."
 	]
-	quest.70E000000000001A.quest_subtitle: "Rods in, crystal out."
+	quest.70E000000000001A.quest_subtitle: "Powder in, crystal out."
 	quest.70E000000000001A.title: "Blazing Crystal"
 	quest.70E000000000001D.quest_desc: [
-		"Orbed from &bdiamonds&r. You know the loop by now: orb one, slime it, let the frogs carry the load."
+		"Orbed from &bdiamonds&r - the crystal half is Geode-easy. The slime half rides a &5Void frog&r, so the farm waits for Tier 6."
 		""
 		"Turn in the &bNiotic Froglight&r."
 	]
 	quest.70E000000000001D.quest_subtitle: "Diamonds, energized."
 	quest.70E000000000001D.title: "Niotic Crystal"
 	quest.70E0000000000020.quest_desc: [
-		"Orbed from &aemeralds&r - the second-highest rung on the ladder."
+		"Orbed from &aemeralds&r - the second-highest rung on the ladder. Like Niotic, the slime is &5Void frog&r business."
 		""
 		"Turn in the &bSpirited Froglight&r."
 	]
 	quest.70E0000000000020.quest_subtitle: "Emeralds with a work ethic."
 	quest.70E0000000000020.title: "Spirited Crystal"
 	quest.70E0000000000023.quest_desc: [
-		"The top of Powah's ladder - Nitro-tier machines outpace everything below by an order of magnitude."
+		"The top of Powah's ladder - and the Orb prices it accordingly: a &enether star&r (yes, that star), two redstone blocks, and a block of Blazing Crystal. Nitro machines outpace everything below by an order of magnitude; the slime, as ever up here, rides a &5Void frog&r."
 		""
 		"Turn in the &bNitro Froglight&r."
 	]
