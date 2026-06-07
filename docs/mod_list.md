@@ -127,6 +127,7 @@ Each entry here directly maps to one or more PF category slime variants (see [`p
 | Mod                   | Role                                                                  |
 |-----------------------|------------------------------------------------------------------------|
 | **Sodium** (SHIPPED 2026-06-06) | Client rendering performance + better video settings UI. Pinned 0.6.13 stable (the ATM10SKY build; latest CF file is an 0.8 alpha). Client-side only. Discord suggestion #73. |
+| **FancyMenu** + **Konkrete** + **Melody** (SHIPPED 2026-06-06, 3.8.1 per ATM10SKY; client-side) | Branded title screen (#89): Discord + GitHub buttons live now; wordmark + void panorama slots wired, awaiting art. The frog splash pool ships separately as a vanilla asset override (`kubejs/assets/minecraft/texts/splashes.txt`). |
 | **Lithium** (SHIPPED 2026-06-06)          | Server-side performance — game logic optimization (0.15.3, per ATM10SKY)  |
 | **FerriteCore** (SHIPPED 2026-06-06)      | Memory savings (7.0.3, per ATM10SKY)                                 |
 | **ModernFix** (SHIPPED 2026-06-06)        | Startup + runtime mixins (5.27.11)                                   |

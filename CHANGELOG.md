@@ -4,6 +4,9 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+### Added
+- **A title screen that knows what pack it is** (#89, first pass): FancyMenu 3.8.1 (+ Konkrete/Melody, all client-side) with Discord and GitHub buttons on the title screen, and a fully frog-themed splash pool ("Frogs, not pickaxes!", "Plap plap plap plap plap", 28 in all). The **Sky Frogs wordmark** (single line of mossy-stone lettering, a lily pad for the O) replaces the Minecraft logo over the vanilla panorama, with Discord and GitHub buttons bottom-right.
+
 ## [0.6.0] - 2026-06-06
 
 The power-and-polish update, and the most community-driven release yet: two power mods join with every one of their materials frog-farmable on day one, the pond gets quieter, your cables get prettier, your pots grow trees, your stuff survives dying, and the welcome chapter now hands you a Discord invite - because most of this release started as somebody's Discord message.

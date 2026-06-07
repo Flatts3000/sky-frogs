@@ -197,6 +197,34 @@ file = "config/extendedcrafting/singularities/tuff.json"
 hash = "88253f517aa225d78788808c359990cbe10edb930607cc0456cfe87dde96c971"
 
 [[files]]
+file = "config/fancymenu/assets/discord_color.png"
+hash = "59c8f01b45d6a42b517bd4c36ff0d9c355538a14d33a9e907ba734768f494865"
+
+[[files]]
+file = "config/fancymenu/assets/discord_gray.png"
+hash = "0816d3148a6ee128db4f4f63eb0e369e3b12e2a0f9033727f3772356eeb91cd3"
+
+[[files]]
+file = "config/fancymenu/assets/github_color.png"
+hash = "1a47b29fdd65a7ac03af9c75337bd6d732374c4a3c5ba7e545aa77a8998f55d2"
+
+[[files]]
+file = "config/fancymenu/assets/github_gray.png"
+hash = "1d5be92bff09cfc3cb90bd7b0fd78f2a29f555bec27c8d00fdd7ec68d714076c"
+
+[[files]]
+file = "config/fancymenu/assets/wordmark.png"
+hash = "e4e82959325bf7a6dcf109aa9e3e1ae71653710afcd2c6fc0ae8a960ca61ba23"
+
+[[files]]
+file = "config/fancymenu/customizablemenus.txt"
+hash = "4c68ab99c906dd487952f61bf33c0635039a8bbff3f02099e3cd8272fe51b4aa"
+
+[[files]]
+file = "config/fancymenu/customization/sky_frogs_title.txt"
+hash = "87468bfeeebd738fb79307fa5e8abaf68690eb0f6d474df2e4b83cca28703336"
+
+[[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
 hash = "df445ffea5b103d5c372e233a3afe5e7538c40c54c886246cf0c7de7301de4b7"
 
@@ -371,6 +399,10 @@ hash = "0d3cc76779315ec45b9b240837bb6753cc9bdec57e13a88bb4d948132f7a80b5"
 [[files]]
 file = "kubejs/assets/kubejs/textures/quests/discord.png"
 hash = "317716854cc50fc09f751b375c8e598e2e6fd966d1e7c51f4b751935e2cb58e4"
+
+[[files]]
+file = "kubejs/assets/minecraft/texts/splashes.txt"
+hash = "b1d22117b1aff7f2d5c65142a316f1d83154baa36d5e942e24bb5fe4c53f160b"
 
 [[files]]
 file = "kubejs/data/productivefrogs/neoforge/biome_modifier/add_bog_slime_spawn.json"
@@ -716,6 +748,11 @@ hash = "afc2a75076b1d08fa430fa531e368a40af74652099c14d194f7ee78d89ddd8ac"
 metafile = true
 
 [[files]]
+file = "mods/fancymenu.pw.toml"
+hash = "8e9f44992c6edb947b094f304d573bef5edd3bdc0e4e5f572d0c34b92ab028d9"
+metafile = true
+
+[[files]]
 file = "mods/farmers-delight.pw.toml"
 hash = "efc2c4fe9e2cc169aff61a6b7a41ea9bc7a22a90aadf0776b22de647ddf3cef6"
 metafile = true
@@ -901,6 +938,11 @@ hash = "f61a3526d323d232fbac74dedb5d89e07f45981db1c5a705c66dbe5da7507a68"
 metafile = true
 
 [[files]]
+file = "mods/konkrete.pw.toml"
+hash = "05aa5d04a38f1c1829e39056462b003a8cd313e22c5cd9e015a8bb413a14fdc7"
+metafile = true
+
+[[files]]
 file = "mods/kubejs.pw.toml"
 hash = "018fd970193f808f8c28f873d8b8c69ac9ba134712c7db27fc8d639cb226c9a6"
 metafile = true
@@ -988,6 +1030,11 @@ metafile = true
 [[files]]
 file = "mods/mekanism.pw.toml"
 hash = "290b13afab94146d1159d821b73c8c98f5299b4df75fd28e826f9fd409e9bb40"
+metafile = true
+
+[[files]]
+file = "mods/melody.pw.toml"
+hash = "331f9551b85f075a6398c8cf1d9ced0d2c0b643ab4db6ea1609666846c0208f1"
 metafile = true
 
 [[files]]
