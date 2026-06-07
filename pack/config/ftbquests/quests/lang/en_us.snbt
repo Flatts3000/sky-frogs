@@ -1019,9 +1019,11 @@
 	chapter.5140000000000001.title: "Road to Infernal"
 	chapter.51F0000000000001.title: "Infernal Frogs"
 	quest.3E17000000000002.quest_desc: [
-		"Productive Frogs' &eCrucible&r is a heated basin that melts &bFroglights&r into the real thing - no GUI, no power, just heat from the block below. Iron and bricks build it, and your hammer's clay chain fires the bricks."
+		"Remember the &eOak Crucible&r wringing water out of leaves? Meet its big sibling: a &fbrick-and-iron basin&r that melts &bFroglights&r back into the real thing - no GUI, no power, just heat rising from whatever block sits underneath."
 		""
-		"Craft a &eCrucible&r and park it over a torch."
+		"The build is &firon&r and &cbricks&r: hammer cobblestone down to clay, smelt the clay into bricks, and frame them in iron."
+		""
+		"Craft the &eCrucible&r and park it over a &etorch&r to start."
 	]
 	quest.3E17000000000002.quest_subtitle: "Soup's on."
 	quest.3E17000000000002.title: "The Froglight Crucible"
