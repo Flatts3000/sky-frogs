@@ -522,7 +522,7 @@ hash = "659f7a086b994e6c47b0b7f0e37fbc037a7417fc1ab924455c60cd4a0d08f4e8"
 
 [[files]]
 file = "kubejs/server_scripts/flux_ritual_obsidian.js"
-hash = "b19a1813635ab6fa6bc7d91144c03c180b3afb4d2aa80460502100ee8cbb6e05"
+hash = "7e7cc0f779d70500b8ddacb93fec2cc9b018aefde0ded407586a9159b00419c2"
 
 [[files]]
 file = "kubejs/server_scripts/geode_slime_chain.js"
