@@ -329,6 +329,10 @@ file = "config/ftbquests/quests/chapters/scaling_the_colony.snbt"
 hash = "01e3daf039dfc3825421110e6b725a231d1800991a7db361549309424070cc42"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/sister_ponds.snbt"
+hash = "3ef42d2c16bda2ef56b7ff0572776a8dae70b031ee2c29a534f70e742a468534"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/storage_and_crafting.snbt"
 hash = "82985606c836b899b610960f68c44ecee4a4e8a0e452e51e768a166323d20d0e"
 
@@ -357,6 +361,10 @@ file = "config/ftbquests/quests/chapters/welcome.snbt"
 hash = "a8e06063bf2967e3899c3fc4826aeb9d8e15c581bfcd6ee299cc4a1e7e0adac4"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/whole_pond.snbt"
+hash = "074ac42af5b9aaa3fe24c1226a047b58555d2a4ce94a4881d96b7e1e7ef10080"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/your_first_iron_ingot.snbt"
 hash = "52abeaa3a79ca598c6395d70b633e6af01420d7c690f55da8a9d394d16683364"
 
@@ -366,7 +374,7 @@ hash = "2e69afacf774749222ca1e925dc94d32e6c3db8bef4557aa33144751c2770206"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "b45f99676a5962de9ee05c7f41709e2054ec57ccf8fc41e23eae4c2f42ffbaa5"
+hash = "c6efbd72658db73d0fb949983191131dc54e5506a3ee51758f50521fd3383f74"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
@@ -554,7 +562,7 @@ hash = "a14f0b3014ad482f9b04ef079202394670f76a749bccb93ed36bb3e41c1810dc"
 
 [[files]]
 file = "kubejs/server_scripts/dissolution_slime_recipes.js"
-hash = "e356af640701f3388def245dc762de5c54406f7be5483bd6eb3da9517ea8a223"
+hash = "131be9fe4ce9483f22603d73e3cd0efbe4deb913dcbb64c1dace05e6d615c055"
 
 [[files]]
 file = "kubejs/server_scripts/dump_items.js"

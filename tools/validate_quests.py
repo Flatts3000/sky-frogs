@@ -727,7 +727,7 @@ CHAIN_ROW_RE = re.compile(r"\[\s*'([a-z_]+)'\s*,\s*'([a-z0-9_:.]+)'\s*\]")
 TIER_HEAD_RE = re.compile(r"\[\s*'([A-Z_]+)'\s*,\s*'([a-z0-9_:.]+)'\s*,\s*\[")
 # A modded self-keyed row: ['CATEGORY', 'filler', 'variant', 'ns:item', 'mod']  (5 elements)
 MODDED_ROW_RE = re.compile(
-    r"\[\s*'([A-Z_]+)'\s*,\s*'[a-z0-9_:.]+'\s*,\s*'([a-z_]+)'\s*,\s*'([a-z0-9_:.]+)'\s*,\s*'([a-z_]+)'\s*\]")
+    r"\[\s*'([A-Z_]+)'\s*,\s*'[a-z0-9_:.]+'\s*,\s*'([a-z_]+)'\s*,\s*'(#?[a-z0-9_:./]+)'\s*,\s*'([a-z_]+)'\s*\]")
 # Threading exceptions: variants whose chamber input deliberately breaks the
 # prior-resource law. iron has nothing pre-Cave to thread off (bone meal mirrors
 # the table bootstrap).
@@ -831,11 +831,17 @@ def check_dissolution_threading(chapters, ctx):
                                  f"found {inp!r}"))
             primer(variant, pos, f)  # still flags variants PF no longer ships
             continue
-        expect = primer(variant, pos, f)
+        vdata = variants.get(variant)
+        if vdata is None:
+            primer(variant, pos, f)  # reports the missing variant once
+            continue
+        # tag-primed variants (PF primer_tag) expect '#<tag>'; item-primed, primer_item
+        expect = vdata.get("primer_item") or (
+            "#" + vdata["primer_tag"] if vdata.get("primer_tag") else None)
         if expect is not None and inp != expect:
             f.append(Finding(ERROR, "Q-DISSOLUTION-THREADING", fname, line_of(pos),
                              f"[self-keyed] '{variant}' input is {inp!r} but its own "
-                             f"primer_item is {expect!r} - the make-it-first law (PR #106) "
+                             f"primer is {expect!r} - the make-it-first law (PR #106) "
                              f"requires the variant's own resource"))
     return f
 
