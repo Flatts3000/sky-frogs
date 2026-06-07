@@ -779,7 +779,7 @@
 	quest.70E0000000000026.quest_subtitle: "Serious FE."
 	quest.70E0000000000026.title: "The Uraninite Reactor"
 	quest.70E0000000000029.quest_desc: [
-		"&dFlux Dust&r is born in a ritual: &credstone&r thrown onto &8obsidian&r that rests on &8bedrock&r. And yes - your island HAS bedrock. One block, at its bottom-center: the heart your starter platform was built around. Dig down at spawn and you will find it."
+		"&dFlux Dust&r is born in a ritual: &credstone&r thrown onto &8obsidian&r that rests on &8bedrock&r. And yes - islands born in this era of the pack HAVE bedrock: one block at bottom-center, the heart the platform was built around. Dig down at spawn and see."
 		""
 		"Set obsidian on the heart, toss redstone on top, then &epunch the obsidian&r (left-click) to compress it into dust. Once you own a &dFlux Block&r, that works as the anvil too. No heart handy? A crafting grid presses one dust from &credstone&r sandwiched between two &8obsidian&r."
 		""
