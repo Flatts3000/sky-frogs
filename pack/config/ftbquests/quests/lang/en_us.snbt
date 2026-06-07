@@ -781,7 +781,7 @@
 	quest.70E0000000000029.quest_desc: [
 		"&dFlux Dust&r is born in a ritual: &credstone&r thrown onto &8obsidian&r that rests on &8bedrock&r. And yes - your island HAS bedrock. One block, at its bottom-center: the heart your starter platform was built around. Dig down at spawn and you will find it."
 		""
-		"Set obsidian on the heart, toss redstone on top, then &epunch the obsidian&r (left-click) to compress it into dust. Once you own a &dFlux Block&r, that works as the anvil too."
+		"Set obsidian on the heart, toss redstone on top, then &epunch the obsidian&r (left-click) to compress it into dust. Once you own a &dFlux Block&r, that works as the anvil too. No heart handy? A crafting grid presses one dust from &credstone&r sandwiched between two &8obsidian&r."
 		""
 		"The first dust primes your Infernal frog for the rest. Make &a4&r."
 	]
