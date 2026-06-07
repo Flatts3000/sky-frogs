@@ -5,7 +5,7 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 ## [Unreleased]
 
 ### Added
-- **A title screen that knows what pack it is** (#89, first pass): FancyMenu 3.8.1 (+ Konkrete/Melody, all client-side) with Discord and GitHub buttons on the title screen, and a fully frog-themed splash pool ("Frogs, not pickaxes!", "Plap plap plap plap plap", 28 in all). The Sky Frogs wordmark and void panorama land in a follow-up once the art is ready - the layout slots are wired for them.
+- **A title screen that knows what pack it is** (#89, first pass): FancyMenu 3.8.1 (+ Konkrete/Melody, all client-side) with Discord and GitHub buttons on the title screen, and a fully frog-themed splash pool ("Frogs, not pickaxes!", "Plap plap plap plap plap", 28 in all). The **Sky Frogs wordmark** (mossy-stone lettering, a frog on the S, a lily pad for the O) replaces the Minecraft logo, and a **golden-hour island-over-the-void scene** replaces the panorama - both AI-generated and maintainer-approved.
 
 ## [0.6.0] - 2026-06-06
 

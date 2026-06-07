@@ -197,6 +197,10 @@ file = "config/extendedcrafting/singularities/tuff.json"
 hash = "88253f517aa225d78788808c359990cbe10edb930607cc0456cfe87dde96c971"
 
 [[files]]
+file = "config/fancymenu/assets/background.png"
+hash = "abb79ce1e5e633e083473e6fa71f1b33383005bf42324adff690846d8a8a2591"
+
+[[files]]
 file = "config/fancymenu/assets/discord_color.png"
 hash = "59c8f01b45d6a42b517bd4c36ff0d9c355538a14d33a9e907ba734768f494865"
 
@@ -213,8 +217,12 @@ file = "config/fancymenu/assets/github_gray.png"
 hash = "1d5be92bff09cfc3cb90bd7b0fd78f2a29f555bec27c8d00fdd7ec68d714076c"
 
 [[files]]
+file = "config/fancymenu/assets/wordmark.png"
+hash = "c749518f9c6fa216ed344010b64d8a4179d8f010d183d96af76ad13b20b0bb6e"
+
+[[files]]
 file = "config/fancymenu/customization/sky_frogs_title.txt"
-hash = "3170a0552059b237685dfb6018d631c913fc16b402aae84bc992c4b144a931a0"
+hash = "d03fec822963d2e8d31b70deb25a39a1f2378e32c4dee69ec7cb8898e9378aab"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
