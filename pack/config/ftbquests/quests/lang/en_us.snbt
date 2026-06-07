@@ -1028,9 +1028,9 @@
 	quest.3E17000000000002.quest_subtitle: "Soup's on."
 	quest.3E17000000000002.title: "The Froglight Crucible"
 	quest.3E17000000000005.quest_desc: [
-		"Hotter is faster. The ladder climbs from &etorch&r to &6campfire&r to &cfire&r to &6lava&r - and Froglights burn too: a placed &6Lava Froglight&r heats like lava, a &cBlaze Froglight&r burns hotter than fire, and Powah's &cBlazing Crystal Froglight&r is the hottest plate in the mod. Your farmed decor doubles as the smelter's fire."
+		"The ladder climbs from &etorch&r to &6campfire&r to &cfire&r to &6lava&r - and Froglights burn too: a placed &6Lava Froglight&r heats like lava, a &cBlaze Froglight&r burns hotter than fire, and Powah's &cBlazing Crystal Froglight&r is the hottest plate in the mod. Your farmed decor doubles as the smelter's fire. JEI's heat-ladder category lists every source."
 		""
-		"JEI's new heat-ladder category lists every source. Tick when you have heat under your basin."
+		"Craft a &6campfire&r - the first real step up from the torch."
 	]
 	quest.3E17000000000005.quest_subtitle: "Hotter is faster."
 	quest.3E17000000000005.title: "Feed the Fire"

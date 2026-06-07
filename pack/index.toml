@@ -298,7 +298,7 @@ hash = "c36d172452126b9782e71e0c3dbb8edadc32e2acb59aeee9704a3a2f19b97c43"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/melting_point.snbt"
-hash = "1b15fa805114f580e68b47b5df70e705c7b2ed228a47b09dbed8c5b40230e5d4"
+hash = "9ca9ea4a59a82d17174d98455dae084a9bec4fa390c2042cf8947bd89573b56f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/powered_up.snbt"
@@ -366,7 +366,7 @@ hash = "2e69afacf774749222ca1e925dc94d32e6c3db8bef4557aa33144751c2770206"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "66d2ff6e9f6e6b0caf84fc402ce6afcd6772896c7247983f9b41d56ce249539b"
+hash = "30349d246b237c2d1dfdc78f586e07585f873b0f7ba204ff4d988df7cea352a3"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
