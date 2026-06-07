@@ -4,6 +4,12 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+### Fixed
+- **The Water and Lava Singularities are gone - they were uncraftable** (#131, reported by Dergib on Discord): both demanded 1000 of an item with zero sources on a void skyblock (kelp and pointed dripstone - no ocean, no caves, sand sieving disabled, and the fluid-pair Froglights melt to fluid rather than smelting to an item). The **Ultimate Singularity now wants 48**; mid-campaign players will see its recipe shrink, and already-crafted Water/Lava Singularities become inert curios. The exclusion lives in the generator, so future PF bumps cannot resurrect the pair.
+
+### Added
+- **Kelp sifts from moss** (#131, Dergib's suggestion, accepted): the Builders' Sieve moss lane gains kelp at Ex Deorum's own 10% - with its singularity gone, kelp is decor and dried-kelp food again, exactly what the lane is for.
+
 ## [0.7.1] - 2026-06-07
 
 A same-day title-screen patch: the menu stops showing players its editing scaffolding, and the wordmark is rebuilt by hand in the authentic vanilla title style - mossy mangrove green, the look of the update that brought frogs to the game.

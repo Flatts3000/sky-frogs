@@ -83,6 +83,11 @@ ServerEvents.recipes(event => {
     ]],
     ['minecraft:moss_block', [
       // the garden lane
+      // Kelp joins by maintainer ruling (#131, suggested by Dergib): with the
+      // Water Singularity removed, kelp is decor/food again (dried kelp, kelp
+      // blocks) - the wet plant in the wet lane, at Ex Deorum's own sand-sieve
+      // chance. Vanilla growth takes water columns the island can build.
+      ['minecraft:kelp',               0.10],
       ['minecraft:flowering_azalea',   0.05],
       ['minecraft:glow_lichen',        0.08],
       ['minecraft:vine',               0.08],

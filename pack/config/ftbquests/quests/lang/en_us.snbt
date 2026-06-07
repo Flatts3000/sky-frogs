@@ -1436,7 +1436,7 @@
 	quest.6EC0000000000017.quest_subtitle: "A thousand of a haul, one cube."
 	quest.6EC0000000000017.title: "The Quantum Compressor"
 	quest.6A0D000000000002.quest_desc: [
-		"You have cleared the dragon and built the compressor. One task remains: prove the frogs run without you. Each &bSingularity&r swallows a thousand of a frog's resource - you cannot hand-make that many. Only a running farm can. There is one singularity for every resource your frogs make:"
+		"You have cleared the dragon and built the compressor. One task remains: prove the frogs run without you. Each &bSingularity&r swallows a thousand of a frog's resource - you cannot hand-make that many. Only a running farm can. There is one singularity for every resource your frogs make - except water and lava, which pour rather than press:"
 		""
 		"The Ultimate Singularity wants every one - check its recipe for the full roster (it grows as the frogs learn new resources)."
 	]
