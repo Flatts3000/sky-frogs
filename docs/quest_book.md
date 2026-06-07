@@ -39,7 +39,7 @@ Sky Frogs does **not** mirror this organization. SBR is mod-sprawled (one chapte
 
 ### Built chapters (Tiers 0-5)
 
-These are the 17 chapter files that exist in `config/ftbquests/quests/chapters/`. They sit under five chapter groups (`chapter_groups.snbt`): "Tier 1: Cave", "Tier 2: Geode", "Tier 3: Bog", "Tier 4: Tide", "Tier 5: Infernal"; Welcome stays ungrouped at the top. Note the **"Road to <tier>" gateway-chapter pattern**: each later tier opens with a short gateway chapter that crafts the next species' frogspawn (Spawnery + primer) and runs the seed-chain bridge, before the species' own chapter.
+These are the 23 chapter files that exist in `config/ftbquests/quests/chapters/`. They sit under five chapter groups (`chapter_groups.snbt`): "Tier 1: Cave", "Tier 2: Geode", "Tier 3: Bog", "Tier 4: Tide", "Tier 5: Infernal"; Welcome stays ungrouped at the top. Note the **"Road to <tier>" gateway-chapter pattern**: each later tier opens with a short gateway chapter that crafts the next species' frogspawn (Spawnery + primer) and runs the seed-chain bridge, before the species' own chapter.
 
 | Tier group | Chapter file                  | Covers                                                |
 |------------|-------------------------------|--------------------------------------------------------|
@@ -47,6 +47,7 @@ These are the 17 chapter files that exist in `config/ftbquests/quests/chapters/`
 | Tier 1: Cave | `your_first_iron_ingot.snbt` | The tutorial tier: place frogspawn, breed, infuse, feed, smelt -> first iron ingot. (The deliberate `iron_ingot` froglight-check exception, see below.) |
 | Tier 1: Cave | `scaling_the_colony.snbt`    | Scale the Cave loop: breeding via Sweetslime, frog stats, Slime Milker, the iron -> copper -> gold -> coal -> glow_ink_sac -> redstone resource chain. |
 | Tier 1: Cave | `cave_frogs.snbt`            | The Cave species' resource quests + the Geode-gateway capstone (lean by design; modded Cave metals live in their tech chapters - osmium/steel in `mekanism.snbt`, Powah's uraninite + energized steel in `powered_up.snbt`). |
+| Tier 1: Cave | `melting_point.snbt`         | The **Froglight Crucible + Casting Mold** questline (#123), between Cave Frogs and Storage & Crafting: build the basin (iron + hammer-chain bricks), the heat ladder, the Water and Lava froglight quests (fluid-bucket slime crafts), the Mold, and The Tower ore-doubling capstone. |
 | Tier 1: Cave | `storage_and_crafting.snbt`  | The Cave-tier **new verb**: crafting upgrades / storage (Sophisticated + Functional storage, quartz-free networks). |
 | Tier 2: Geode | `road_to_geode.snbt`        | Gateway: prime the Spawnery with **redstone** for Geode frogspawn, run the lapis seed-chain bridge. |
 | Tier 2: Geode | `geode_frogs.snbt`          | The Geode species: lapis -> tuff -> calcite -> amethyst -> emerald -> diamond, plus a **Slime Milk catalyst** branch off the diamond capstone (Count -> Speed -> Quantity -> Infinite Count; PF v1.7.0). |

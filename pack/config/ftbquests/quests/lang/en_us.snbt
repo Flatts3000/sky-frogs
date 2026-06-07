@@ -1340,17 +1340,17 @@
 	quest.6A0D000000000002.quest_desc: [
 		"You have cleared the dragon and built the compressor. One task remains: prove the frogs run without you. Each &bSingularity&r swallows a thousand of a frog's resource - you cannot hand-make that many. Only a running farm can. There is one singularity for every resource your frogs make:"
 		""
-		"forty in all. The Ultimate Singularity wants every one."
+		"The Ultimate Singularity wants every one - check its recipe for the full roster (it grows as the frogs learn new resources)."
 	]
 	quest.6A0D000000000002.quest_subtitle: "Prove the frogs run without you."
 	quest.6A0D000000000002.title: "The Long Compression"
 	quest.6A0D000000000005.quest_desc: [
-		"Point your iron-frog farm at the Quantum Compressor and wait. A thousand iron folds into a single &bIron Singularity&r - the first of forty, one for every resource the frogs make, from iron to shulker shells. Start here; you will want them all."
+		"Point your iron-frog farm at the Quantum Compressor and wait. A thousand iron folds into a single &bIron Singularity&r - the first of many, one for every resource the frogs make, from iron to shulker shells. Start here; you will want them all."
 	]
 	quest.6A0D000000000005.quest_subtitle: "A thousand iron, one cube."
 	quest.6A0D000000000005.title: "Your First Singularity"
 	quest.6A0D000000000008.quest_desc: [
-		"Gather one Singularity for every resource the frogs make - all forty - and crystallize them together in the Ultimate Table into the &dUltimate Singularity&r: the densest form of everything your frogs ever made. This is the proof you automated every last farm."
+		"Gather one Singularity for every resource the frogs make - every last one - and crystallize them together in the Ultimate Table into the &dUltimate Singularity&r: the densest form of everything your frogs ever made. This is the proof you automated every last farm."
 	]
 	quest.6A0D000000000008.quest_subtitle: "The densest frog there is."
 	quest.6A0D000000000008.title: "The Ultimate Singularity"

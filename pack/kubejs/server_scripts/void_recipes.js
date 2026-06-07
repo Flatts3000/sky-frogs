@@ -17,7 +17,8 @@
 //
 // 2) MASTER FROG. The campaign capstone, crafted in a regular crafting table from the
 //    Ultimate Singularity - which itself demands one singularity for every vanilla froglight
-//    resource (all 40; config/extendedcrafting/singularities/*.json), so
+//    resource (one per vanilla variant - 50 as of PF 1.13, the set grows with
+//    PF's roster; config/extendedcrafting/singularities/*.json), so
 //    the whole pack is compressed into that one input - ringed by six Froglights (the species'
 //    light) with sweetslime accents. The "every resource" rule is enforced upstream in the
 //    Ultimate Singularity, so plain froglight ingredients here are intentional (robust,

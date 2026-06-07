@@ -4,7 +4,7 @@ These JSONs are **generated** by `tools/gen_singularities.py` from Productive Fr
 data - **one singularity per vanilla froglight resource**. Re-run the generator when PF adds or
 removes vanilla variants; do not hand-edit individual files.
 
-There is one singularity for **every vanilla resource the frogs make** - 40 in all, across the six
+There is one singularity for **every vanilla resource the frogs make** - one per vanilla variant (50 as of PF 1.13; the set grows with PF's roster), across the six
 species:
 
 | Species | Count | Resources |
@@ -20,7 +20,7 @@ Modded variants (steel, osmium, certus_quartz, inferium, ...) are skipped - thos
 pinned. Each singularity's two-color gradient is copied from its frog variant's own
 `primary_color` / `secondary_color`, so the cube matches the frog that feeds it.
 
-**The Ultimate Singularity = all 40.** Every file is flagged `inUltimateSingularity: true`, and EC
+**The Ultimate Singularity = the full set.** Every file is flagged `inUltimateSingularity: true`, and EC
 7.0.8 ships zero default singularities, so the auto-generated Ultimate Singularity recipe
 (`ultimateSingularityRecipe = true` in `../../extendedcrafting-common.toml`) requires exactly these
 40 - nothing foreign leaks in. The Ultimate Singularity then crafts the **Master Frog**
@@ -28,8 +28,8 @@ pinned. Each singularity's two-color gradient is copied from its frog variant's 
 frog" capstone.
 
 **Proof of automation.** At `defaultMaterialsRequired = 1000`, each singularity needs a thousand of
-its resource (40,000 items + 40 Ultimate Catalysts across the full set) - you cannot hand-make that
-many, so a finished Ultimate Singularity means you automated all 40 froglight farms. Per-singularity
+its resource (1,000 items per resource + one Ultimate Catalyst each, across the full set) - you cannot hand-make that
+many, so a finished Ultimate Singularity means you automated every froglight farm. Per-singularity
 counts are tunable via the optional `materialCount` field if a specific resource should cost less.
 
 **Why the smelted resource and not the Froglight directly.** Productive Frogs ships ONE Froglight

@@ -34,7 +34,7 @@ hash = "6902720ca14e78f2ee14f60711c5a7e9f3601cc454627af22e6b10087f644fbb"
 
 [[files]]
 file = "config/extendedcrafting/singularities/README.md"
-hash = "eee848322416a75e2b4c6bebd2cdbc9ba5e2474567029a89a80b4a7a64805223"
+hash = "e5d0a4fc55d9a969141ce41f5afe91b19aff9f5292866f4ed2c673151231ad3c"
 
 [[files]]
 file = "config/extendedcrafting/singularities/amethyst.json"
@@ -366,7 +366,7 @@ hash = "2e69afacf774749222ca1e925dc94d32e6c3db8bef4557aa33144751c2770206"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "86949cd79274b8964623674eee2bbfb6f2b6d24ee113730237ab82095215594d"
+hash = "b45f99676a5962de9ee05c7f41709e2054ec57ccf8fc41e23eae4c2f42ffbaa5"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
@@ -458,7 +458,7 @@ hash = "317716854cc50fc09f751b375c8e598e2e6fd966d1e7c51f4b751935e2cb58e4"
 
 [[files]]
 file = "kubejs/assets/minecraft/texts/splashes.txt"
-hash = "b1d22117b1aff7f2d5c65142a316f1d83154baa36d5e942e24bb5fe4c53f160b"
+hash = "02714cf4995ee24ecc6b39f0fe422a2627c6d16d4353f256150e83de77eee7a2"
 
 [[files]]
 file = "kubejs/client_scripts/opolis_jei_hide.js"
@@ -618,7 +618,7 @@ hash = "06990d1e0160108d321a985b2b0c61dd34a05e1c4e971f62538681b11d73fb90"
 
 [[files]]
 file = "kubejs/server_scripts/void_recipes.js"
-hash = "e12f06e03bff7e7944e1380be66aeb5644b191b7a47345092660565933ede5a9"
+hash = "2a2800e71b8e5c6351d5f79f292c336c4606acdb9b61e14037f200675add385c"
 
 [[files]]
 file = "kubejs/startup_scripts/master_frog_item.js"
