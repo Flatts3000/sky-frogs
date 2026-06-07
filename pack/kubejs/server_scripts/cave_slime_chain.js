@@ -36,6 +36,28 @@ ServerEvents.recipes(event => {
     ['breeze_rod', 'redstone']
   ]
 
+  // The FLUID PAIR (maintainer ruling): water + lava slimes craft like the chain
+  // steps but keyed on the FLUID BUCKET instead of a prior Slime Milk - water
+  // from a barrel, lava from the Tier 0 cobble crucible. Outside the seed chain
+  // on purpose; vanilla bucket remainders apply (the empty bucket comes back).
+  const fluids = { water: 'minecraft:water_bucket', lava: 'minecraft:lava_bucket' }
+  Object.keys(fluids).forEach(variant => {
+    event.shapeless(
+      `productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:${variant}",Category:"CAVE"}]`,
+      [
+        fluids[variant],
+        'minecraft:stone',
+        'minecraft:stone',
+        'minecraft:stone',
+        'minecraft:stone',
+        'productivefrogs:sweetslime',
+        'productivefrogs:sweetslime',
+        'productivefrogs:sweetslime',
+        'productivefrogs:frog_egg[productivefrogs:contained_category="cave"]'
+      ]
+    )
+  })
+
   chain.forEach(step => {
     const from = step[0]
     const to = step[1]

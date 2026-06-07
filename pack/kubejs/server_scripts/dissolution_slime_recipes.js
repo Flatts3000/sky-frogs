@@ -143,11 +143,13 @@ const SLIME_TIERS = [
 // [category stamp, tier filler, variant, the variant's own resource, owning mod]
 const MODDED_SELF_KEYED = [
   // Two VANILLA exceptions live in the self-keyed table (maintainer ruling): the
-  // fluid pair stays out of the Cave seed chain. Their inputs are their own
-  // item-form resources (kelp / pointed dripstone); 'minecraft' is always loaded,
-  // so the per-row guard is a no-op for these.
-  ['CAVE',     'minecraft:stone',      'water',           'minecraft:kelp',            'minecraft'],
-  ['CAVE',     'minecraft:stone',      'lava',            'minecraft:pointed_dripstone', 'minecraft'],
+  // fluid pair stays out of the Cave seed chain, and their inputs are the FLUID
+  // BUCKETS - water from a barrel, lava from the Tier 0 cobble crucible, both
+  // honestly obtainable day one (unlike kelp/dripstone, which only the frogs
+  // make). The validator carries a matching documented exception. 'minecraft'
+  // is always loaded, so the per-row guard is a no-op for these.
+  ['CAVE',     'minecraft:stone',      'water',           'minecraft:water_bucket',    'minecraft'],
+  ['CAVE',     'minecraft:stone',      'lava',            'minecraft:lava_bucket',     'minecraft'],
   ['CAVE',     'minecraft:stone',      'uraninite',       'powah:uraninite',           'powah'],
   ['CAVE',     'minecraft:stone',      'energized_steel', 'powah:steel_energized',     'powah'],
   ['TIDE',     'minecraft:mycelium',   'dry_ice',         'powah:dry_ice',             'powah'],

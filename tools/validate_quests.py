@@ -732,6 +732,10 @@ MODDED_ROW_RE = re.compile(
 # prior-resource law. iron has nothing pre-Cave to thread off (bone meal mirrors
 # the table bootstrap).
 THREADING_EXCEPTIONS = {"iron": "minecraft:bone_meal"}
+# Self-keyed rows whose input deliberately is NOT the variant's primer_item: the
+# fluid pair takes the FLUID BUCKETS (day-one obtainable; the primers kelp /
+# pointed_dripstone are frog-only). Maintainer ruling on the PF 1.13 sweep.
+SELF_KEYED_EXCEPTIONS = {"water": "minecraft:water_bucket", "lava": "minecraft:lava_bucket"}
 
 
 def check_dissolution_threading(chapters, ctx):
@@ -819,6 +823,14 @@ def check_dissolution_threading(chapters, ctx):
     # --- modded self-keyed rows: input must equal the variant's own primer
     for m in MODDED_ROW_RE.finditer(text, tiers_region_end):
         pos, variant, inp = m.start(), m.group(2), m.group(3)
+        if variant in SELF_KEYED_EXCEPTIONS:
+            if inp != SELF_KEYED_EXCEPTIONS[variant]:
+                f.append(Finding(ERROR, "Q-DISSOLUTION-THREADING", fname, line_of(pos),
+                                 f"[self-keyed] '{variant}' is the documented fluid-bucket "
+                                 f"exception and must take {SELF_KEYED_EXCEPTIONS[variant]!r}, "
+                                 f"found {inp!r}"))
+            primer(variant, pos, f)  # still flags variants PF no longer ships
+            continue
         expect = primer(variant, pos, f)
         if expect is not None and inp != expect:
             f.append(Finding(ERROR, "Q-DISSOLUTION-THREADING", fname, line_of(pos),
