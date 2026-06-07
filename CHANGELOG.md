@@ -4,6 +4,10 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+### Fixed
+- **Opolis loot boxes actually stay severed now** (#115, reported by Dergib on Discord): slimes were dropping Basic Loot Boxes - labeled DISABLED, yet openable for dirt and cobblestone. The #85 curation cut the recipes but missed BBL Core's global loot modifier and the boxes' own loot tables. Mob drops are off (`Mob Drop Chance = 1.0`) and all three box loot tables are overridden empty, so boxes already in your chests open to nothing. Curation lesson recorded: screen mods for global loot modifiers, not just recipes.
+- **The ghost ATM furnace recipes are gone from JEI** (#116, reported by Dergib on Discord): Iron Furnaces ships its Allthemodium/Vibranium/Unobtainium FURNACE recipes unconditioned (unlike the upgrades, which are properly mod-gated), so they rendered in JEI with empty ingredient tags - uncraftable bait. Removed; and no, ATM ores are not planned for the pack.
+
 ### Added
 - **A title screen that knows what pack it is** (#89, first pass): FancyMenu 3.8.1 (+ Konkrete/Melody, all client-side) with Discord and GitHub buttons on the title screen, and a fully frog-themed splash pool ("Frogs, not pickaxes!", "Plap plap plap plap plap", 28 in all). The **Sky Frogs wordmark** (single line of mossy-stone lettering, a lily pad for the O) replaces the Minecraft logo over the vanilla panorama, with Discord and GitHub buttons bottom-right.
 
