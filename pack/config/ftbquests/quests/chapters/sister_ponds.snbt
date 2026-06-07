@@ -13,48 +13,6 @@
 	quests: [
 		{
 			icon: {
-				id: "alltheores:aluminum_ingot"
-			}
-			id: "70DDE8959C46DE77"
-			tasks: [{
-				id: "70DDD45BE9E10C4C"
-				item: { components: { "productivefrogs:slime_variant": "productivefrogs:aluminum" }, count: 1, id: "productivefrogs:configurable_froglight" }
-				match_components: "strict"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 0.0d
-		}
-		{
-			icon: {
-				id: "alltheores:lead_ingot"
-			}
-			id: "70DDD75E3D26ECE7"
-			tasks: [{
-				id: "70DD45912B04E88D"
-				item: { components: { "productivefrogs:slime_variant": "productivefrogs:lead" }, count: 1, id: "productivefrogs:configurable_froglight" }
-				match_components: "strict"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 1.5d
-		}
-		{
-			icon: {
-				id: "alltheores:nickel_ingot"
-			}
-			id: "70DD1B4FCB046228"
-			tasks: [{
-				id: "70DD09C66B2AC3AC"
-				item: { components: { "productivefrogs:slime_variant": "productivefrogs:nickel" }, count: 1, id: "productivefrogs:configurable_froglight" }
-				match_components: "strict"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 3.0d
-		}
-		{
-			icon: {
 				id: "alltheores:osmium_ingot"
 			}
 			id: "70DD9CE8D28270C3"
@@ -65,76 +23,6 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 4.5d
-		}
-		{
-			icon: {
-				id: "alltheores:silver_ingot"
-			}
-			id: "70DD3DED432660AC"
-			tasks: [{
-				id: "70DD45B3E18F3F81"
-				item: { components: { "productivefrogs:slime_variant": "productivefrogs:silver" }, count: 1, id: "productivefrogs:configurable_froglight" }
-				match_components: "strict"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 6.0d
-		}
-		{
-			icon: {
-				id: "alltheores:tin_ingot"
-			}
-			id: "70DD42E9DCA61D0A"
-			tasks: [{
-				id: "70DDA27E2D54AB57"
-				item: { components: { "productivefrogs:slime_variant": "productivefrogs:tin" }, count: 1, id: "productivefrogs:configurable_froglight" }
-				match_components: "strict"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 7.5d
-		}
-		{
-			icon: {
-				id: "alltheores:uranium_ingot"
-			}
-			id: "70DD227DBEE3A633"
-			tasks: [{
-				id: "70DD1543EF513F47"
-				item: { components: { "productivefrogs:slime_variant": "productivefrogs:uranium" }, count: 1, id: "productivefrogs:configurable_froglight" }
-				match_components: "strict"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 9.0d
-		}
-		{
-			icon: {
-				id: "alltheores:zinc_ingot"
-			}
-			id: "70DD8FDCBCF1C143"
-			tasks: [{
-				id: "70DD98AA58EE30FF"
-				item: { components: { "productivefrogs:slime_variant": "productivefrogs:zinc" }, count: 1, id: "productivefrogs:configurable_froglight" }
-				match_components: "strict"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 10.5d
-		}
-		{
-			icon: {
-				id: "powah:uraninite"
-			}
-			id: "70DDF22219138525"
-			tasks: [{
-				id: "70DDDDF463311CCC"
-				item: { components: { "productivefrogs:slime_variant": "productivefrogs:uraninite" }, count: 1, id: "productivefrogs:configurable_froglight" }
-				match_components: "strict"
-				type: "item"
-			}]
-			x: 2.0d
 			y: 0.0d
 		}
 		{
@@ -149,7 +37,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 1.5d
+			y: 0.0d
 		}
 		{
 			icon: {
@@ -163,7 +51,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 3.0d
+			y: 1.5d
 		}
 		{
 			icon: {
@@ -177,7 +65,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 4.5d
+			y: 3.0d
 		}
 		{
 			icon: {
@@ -191,7 +79,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 6.0d
+			y: 4.5d
 		}
 		{
 			icon: {
@@ -205,7 +93,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 7.5d
+			y: 6.0d
 		}
 		{
 			icon: {
@@ -219,7 +107,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 9.0d
+			y: 7.5d
 		}
 		{
 			icon: {
@@ -293,20 +181,6 @@
 		}
 		{
 			icon: {
-				id: "mekanism:fluorite_gem"
-			}
-			id: "70DDCD212AE52B37"
-			tasks: [{
-				id: "70DD4E903E550599"
-				item: { components: { "productivefrogs:slime_variant": "productivefrogs:fluorite" }, count: 1, id: "productivefrogs:configurable_froglight" }
-				match_components: "strict"
-				type: "item"
-			}]
-			x: 6.0d
-			y: 1.5d
-		}
-		{
-			icon: {
 				id: "mekanism:ingot_refined_obsidian"
 			}
 			id: "70DD872930906038"
@@ -317,7 +191,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 3.0d
+			y: 1.5d
 		}
 		{
 			icon: {
@@ -362,7 +236,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["70DDE8959C46DE77", "70DDD75E3D26ECE7", "70DD1B4FCB046228", "70DD9CE8D28270C3", "70DD3DED432660AC", "70DD42E9DCA61D0A", "70DD227DBEE3A633", "70DD8FDCBCF1C143", "70DDF22219138525", "70DD8655ED1C027C", "70DD4189CF5B59C4", "70DDFF714569D134", "70DD6F2CFCE78A17", "70DD2DA496EE8E42", "70DDB24A799921BC", "70DD8519EEC1B004", "70DD8B76266B84E5", "70DD24314911C52A", "70DD11972EEAF468", "70DD8BDEB27E47C3", "70DDCD212AE52B37", "70DD872930906038", "70DD52504B7A1FAD", "70DD8A8DA15CC882", "70DD3C94BA8BD5DD"]
+			dependencies: ["70DD9CE8D28270C3", "70DD8655ED1C027C", "70DD4189CF5B59C4", "70DDFF714569D134", "70DD6F2CFCE78A17", "70DD2DA496EE8E42", "70DDB24A799921BC", "70DD8519EEC1B004", "70DD8B76266B84E5", "70DD24314911C52A", "70DD11972EEAF468", "70DD8BDEB27E47C3", "70DD872930906038", "70DD52504B7A1FAD", "70DD8A8DA15CC882", "70DD3C94BA8BD5DD"]
 			icon: {
 				id: "productivefrogs:sweetslime"
 			}

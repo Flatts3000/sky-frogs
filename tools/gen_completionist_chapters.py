@@ -44,6 +44,19 @@ MODDED_PREFIX = "70DD"   # Sister Ponds id block
 VANILLA_CHAPTER_ID = VANILLA_PREFIX + "000000000001"
 MODDED_CHAPTER_ID = MODDED_PREFIX + "000000000001"
 
+# Variants whose RESOURCE has no craft path in this pack (no ore gen, and no
+# recipe makes the item) - the census only lists what a player can actually
+# finish, so these are excluded (maintainer ruling). Their self-keyed chamber
+# rows STAY: if one ever rolls out of split-discovery, the row scales it.
+#   - ATO metals except osmium: ingots only come from ore/raw, which don't exist
+#     here (osmium has the redstone-milk bootstrap recipe)
+#   - fluorite: Mekanism ore-processing only
+#   - uraninite: every Powah orb recipe for it wants ore or uranium ingot
+UNCRAFTABLE = {
+    "aluminum", "lead", "nickel", "silver", "tin", "uranium", "zinc",
+    "fluorite", "uraninite",
+}
+
 # Mod ids that ship in the pack (variant conditions reference these).
 LOADED_MODS = {
     "alltheores", "mekanism", "industrialforegoing", "refinedstorage",
@@ -190,7 +203,7 @@ def main():
         if pf_jar.is_vanilla(d):
             continue
         mod = variant_mod(d) or (d.get("primer_item") or ":").split(":")[0]
-        if mod in LOADED_MODS:
+        if mod in LOADED_MODS and n not in UNCRAFTABLE:
             modded.setdefault(mod, []).append(n)
     for mod in modded:
         modded[mod].sort(key=column_key(variants))
