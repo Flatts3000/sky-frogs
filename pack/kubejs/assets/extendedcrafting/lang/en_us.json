@@ -16,9 +16,11 @@
   "singularity.extendedcrafting.glow_ink_sac": "Glow Ink Sac",
   "singularity.extendedcrafting.glowstone_dust": "Glowstone Dust",
   "singularity.extendedcrafting.gold": "Gold",
+  "singularity.extendedcrafting.ice": "Ice",
   "singularity.extendedcrafting.ink_sac": "Ink Sac",
   "singularity.extendedcrafting.iron": "Iron",
   "singularity.extendedcrafting.lapis": "Lapis",
+  "singularity.extendedcrafting.lava": "Lava",
   "singularity.extendedcrafting.leather": "Leather",
   "singularity.extendedcrafting.lily_pad": "Lily Pad",
   "singularity.extendedcrafting.moss": "Moss",
@@ -35,8 +37,10 @@
   "singularity.extendedcrafting.sculk": "Sculk",
   "singularity.extendedcrafting.sea_pickle": "Sea Pickle",
   "singularity.extendedcrafting.shulker_shell": "Shulker Shell",
+  "singularity.extendedcrafting.snow": "Snow",
   "singularity.extendedcrafting.soul_sand": "Soul Sand",
   "singularity.extendedcrafting.soul_soil": "Soul Soil",
   "singularity.extendedcrafting.sponge": "Sponge",
-  "singularity.extendedcrafting.tuff": "Tuff"
+  "singularity.extendedcrafting.tuff": "Tuff",
+  "singularity.extendedcrafting.water": "Water"
 }

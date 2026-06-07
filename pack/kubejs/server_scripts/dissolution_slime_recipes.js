@@ -80,7 +80,14 @@ const SLIME_TIERS = [
     ['sponge',              'minecraft:prismarine_crystals'],
     ['ink_sac',             'minecraft:sponge'],
     ['sea_pickle',          'minecraft:ink_sac'],
-    ['nautilus_shell',      'minecraft:sea_pickle']
+    // PF 1.12.0 (#155): the frozen family melts into water - ice -> snow -> water
+    // slot before the capstone so nautilus_shell keeps the Tide->Infernal bridge.
+    // water's item-form resource is KELP (fluids aren't items; PF picked the
+    // Tide-native stand-in), which is why nautilus threads off kelp now.
+    ['ice',                 'minecraft:sea_pickle'],
+    ['snow',                'minecraft:ice'],
+    ['water',               'minecraft:snow_block'],
+    ['nautilus_shell',      'minecraft:kelp']
   ]],
   ['INFERNAL', 'minecraft:prismarine', [
     ['netherrack',      'minecraft:nautilus_shell'],   // bridges from Tide's last; filler is prismarine (Tide, mass-renewable - netherrack would be circular)
@@ -90,7 +97,11 @@ const SLIME_TIERS = [
     // Void's ender_pearl bridges off (that boundary is unchanged). Requires PF with
     // obsidian reclassed cave -> infernal (productive-frogs#142) - the pin bump
     // lands in this same PR.
-    ['obsidian',        'minecraft:netherrack'],
+    // PF 1.12.0 (#155): lava is proto-obsidian - it slots between netherrack and
+    // obsidian, and its item-form resource is MAGMA_BLOCK (PF's Infernal stand-in
+    // for a fluid), which is what obsidian threads off now.
+    ['lava',            'minecraft:netherrack'],
+    ['obsidian',        'minecraft:magma_block'],
     ['quartz',          'minecraft:obsidian'],
     ['glowstone_dust',  'minecraft:quartz'],
     ['soul_sand',       'minecraft:glowstone_dust'],

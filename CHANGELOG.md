@@ -4,6 +4,11 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+> **Heads-up for endgame players:** the Ultimate Singularity now demands **44** singularities (was 40) - PF 1.12 adds ice, snow, water, and lava as vanilla variants, each with its own Singularity. Already-crafted Ultimates are unaffected; mid-campaign players will see the recipe grow.
+
+### Changed
+- **Productive Frogs 1.11.0 -> 1.12.0**: the **Froglight Crucible** and **Casting Mold** arrive - melt Froglights into real fluids over a heat source (water and lava become renewable; metal Froglights melt at ore-doubling yield; IF's plastic and pink slime get their liquids), then cast molten metal back to ingots. This is the liquid-crafting future the Discord was promised. Four new vanilla variants ride along: **Ice and Snow** (Tide - no cold biome needed ever again, and Powah's Dry Ice finally orb-crafts from frog-made blue ice), **Water** (Tide, item-form kelp) and **Lava** (Infernal, item-form magma block). All four get chamber rows (ice -> snow -> water before the nautilus capstone; lava before obsidian as proto-obsidian), Singularities, and quests. (#108, PF#155)
+
 ### Fixed
 - **Flux Dust is actually obtainable now** (#120, reported by Dergib on Discord; island idea by StephJ2Fan): Flux Networks' dust ritual needs obsidian resting on BEDROCK - and a void skyblock had none, so the first dust was impossible. Now **every new starter island carries one bedrock block at its bottom-center** - the island's heart - so the mod's real ritual works at home, exactly as Flux Networks intended. Alongside it, a crafting recipe presses one dust from redstone sandwiched between two obsidian - the ritual's economics in grid form, for anywhere the heart isn't.
 

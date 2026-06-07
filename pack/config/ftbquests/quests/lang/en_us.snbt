@@ -737,7 +737,7 @@
 	quest.70E0000000000014.quest_subtitle: "The frog is the uranium mine."
 	quest.70E0000000000014.title: "Uraninite"
 	quest.70E0000000000017.quest_desc: [
-		"Powah's coolant - reactors and thermo setups want it cold. Same story as uraninite for now: no ice on this skyblock means no Orb recipe, so your first &bDry Ice&r rolls out of the &3Tide pool&r by split-discovery."
+		"Powah's coolant - reactors and thermo setups want it cold. The Orb presses &bDry Ice&r from two &bblue ice&r - and blue ice is just 81 of your &bIce frog's&r produce, packed twice. (The Tide pool can also roll a Dry Ice Slime by split-discovery, if the frogs beat you to it.)"
 		""
 		"Turn in the &bDry Ice Froglight&r."
 	]
@@ -920,6 +920,27 @@
 	quest.7D00000000000011.quest_desc: ["The last of the tide: &bNautilus Shell&r, the shell that aims a Conduit. Smelt the &bNautilus Shell Froglight&r and the aquatic roster is yours, top to bottom."]
 	quest.7D00000000000011.quest_subtitle: "The Tide's treasure."
 	quest.7D00000000000011.title: "Nautilus Shell"
+	quest.7D00000000000020.quest_desc: [
+		"No cold biome ever forms out here - &bice&r exists because a frog makes it. Nine ice pack to packed ice, nine packed to &bblue ice&r: the whole frozen family unlocks from this one variant."
+		""
+		"Turn in the &bIce Froglight&r. (Placement note: Froglights glow, and ice melts under bright light - do not light an ice farm with its own produce.)"
+	]
+	quest.7D00000000000020.quest_subtitle: "Winter, imported."
+	quest.7D00000000000020.title: "Ice"
+	quest.7D00000000000023.quest_desc: [
+		"&fSnow&r never falls on the void either. Snow blocks from the frog mean snow layers, snowballs, and snow golems - build the blizzard yourself."
+		""
+		"Turn in the &bSnow Froglight&r."
+	]
+	quest.7D00000000000023.quest_subtitle: "Let it frog."
+	quest.7D00000000000023.title: "Snow"
+	quest.7D00000000000026.quest_desc: [
+		"The Tide frog's strangest trick: a &9Water Froglight&r melts into a real bucket of water in the &eFroglight Crucible&r (heat under a basin - Productive Frogs' new toy). Its item-form resource is &akelp&r, the Tide-native stand-in, which is what the chamber and the Singularity count."
+		""
+		"Turn in the &bWater Froglight&r."
+	]
+	quest.7D00000000000026.quest_subtitle: "The ocean, bottled."
+	quest.7D00000000000026.title: "Water"
 	quest.7F00000000000002.quest_desc: [
 		"Your island has spread out under you, and walking it is getting old. Time to fly. &eIron Jetpacks&r runs on the metals your frogs already make and the &bRF&r your Geode machines already spin."
 		""
@@ -1008,6 +1029,13 @@
 	quest.51F0000000000017.quest_subtitle: "The portal stone, on tap."
 	quest.51F0000000000017.title: "Obsidian"
 	chapter.52E0000000000001.title: "The Network"
+	quest.51F000000000001B.quest_desc: [
+		"&6Lava&r joins the roster as proto-obsidian: the &cLava Froglight&r melts into a real lava bucket in the &eFroglight Crucible&r, and its item-form resource is the &cmagma block&r - which is exactly what the obsidian chain threads off next."
+		""
+		"Turn in the &bLava Froglight&r."
+	]
+	quest.51F000000000001B.quest_subtitle: "The floor is renewable."
+	quest.51F000000000001B.title: "Lava"
 	quest.52E0000000000002.quest_desc: [
 		"Every &eRefined Storage&r part starts here: &biron&r forged with &enether quartz&r. Until the Infernal frog gave you quartz, none of this was buildable. Now it all is."
 	]
