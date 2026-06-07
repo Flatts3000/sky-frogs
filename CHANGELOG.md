@@ -4,6 +4,10 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+## [0.7.1] - 2026-06-07
+
+A same-day title-screen patch: the menu stops showing players its editing scaffolding, and the wordmark is rebuilt by hand in the authentic vanilla title style - mossy mangrove green, the look of the update that brought frogs to the game.
+
 ### Fixed
 - **FancyMenu no longer greets players in customization mode** (#130, reported by Dergib on Discord): the pack shipped layouts but no FancyMenu options, so fresh installs got the editing overlay on the title screen. The pack now ships `config/fancymenu/options.txt` with [modpack mode](https://docs.fancymenu.net/docs/en-US/modpacks) on - no overlays, no hotkeys, no welcome screen, just the finished menu. Tinkerers can flip `modpack_mode` back to `false` in that file.
 
