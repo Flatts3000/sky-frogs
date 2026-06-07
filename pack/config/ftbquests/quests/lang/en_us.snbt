@@ -781,7 +781,7 @@
 	quest.70E0000000000029.quest_desc: [
 		"&dFlux Dust&r is born in a ritual: &credstone&r thrown onto &8obsidian&r that rests on &8bedrock&r. And yes - your island HAS bedrock. One block, at its bottom-center: the heart your starter platform was built around. Dig down at spawn and you will find it."
 		""
-		"Set obsidian on the heart, toss redstone on top, and watch it transmute. (Older islands without the heart: there is a crafting recipe - redstone around obsidian - and once you own a &dFlux Block&r, the ritual works on that too.)"
+		"Set obsidian on the heart, toss redstone on top, and watch it transmute. Once you own a &dFlux Block&r, the ritual works on that too. (Islands older than this update have no heart - keep splitting your &cInfernal&r slimes and a &dFlux Dust Slime&r will roll out by split-discovery.)"
 		""
 		"The first dust primes your Infernal frog for the rest. Make &a4&r."
 	]
