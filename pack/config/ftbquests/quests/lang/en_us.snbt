@@ -1021,7 +1021,7 @@
 	quest.3E17000000000002.quest_desc: [
 		"Remember the &eOak Crucible&r wringing water out of leaves? Meet its big sibling: a &fbrick-and-iron basin&r that melts &bFroglights&r into &9fluids&r - water, lava, molten metal - no GUI, no power, just heat rising from whatever block sits underneath."
 		""
-		"The build is &firon&r and &cbricks&r: hammer cobblestone down to clay, smelt the clay into bricks, and frame them in iron."
+		"The build is &firon&r and &cbricks&r: hammer cobblestone all the way down to &7dust&r, mix the dust into a &9water barrel&r for clay, smelt the clay into bricks, and frame them in iron."
 		""
 		"Craft the &eCrucible&r and park it over a &etorch&r to start."
 	]
