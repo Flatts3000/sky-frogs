@@ -1,0 +1,354 @@
+{
+	autofocus_id: "70E0000000000004"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "powered_up"
+	group: "0C4F0E0000000003"
+	icon: {
+		id: "powah:energizing_orb"
+	}
+	id: "70E0000000000001"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7B06000000000008"]
+			icon: {
+				id: "powah:dielectric_paste"
+			}
+			id: "70E0000000000004"
+			shape: "hexagon"
+			size: 1.5d
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "70E0000000000003"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "70E0000000000002"
+				item: { count: 4, id: "powah:dielectric_paste" }
+				type: "item"
+			}]
+			x: 0d
+			y: 0d
+		}
+		{
+			dependencies: ["70E0000000000004"]
+			icon: {
+				id: "powah:furnator_starter"
+			}
+			id: "70E0000000000007"
+			rewards: [{
+				id: "70E0000000000006"
+				item: {
+					count: 2
+					id: "powah:capacitor_basic_tiny"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "70E0000000000005"
+				item: { count: 1, id: "powah:furnator_starter" }
+				type: "item"
+			}]
+			x: 0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["70E0000000000007"]
+			icon: {
+				id: "powah:energy_cell_starter"
+			}
+			id: "70E000000000000B"
+			rewards: [{
+				id: "70E0000000000009"
+				item: {
+					count: 16
+					id: "cable_facades:facade"
+				}
+				type: "item"
+			}, {
+				id: "70E000000000000A"
+				item: {
+					count: 1
+					id: "cable_facades:facade_wrench"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "70E0000000000008"
+				item: { count: 1, id: "powah:energy_cell_starter" }
+				type: "item"
+			}]
+			x: 0d
+			y: 3d
+		}
+		{
+			dependencies: ["70E000000000000B"]
+			icon: {
+				id: "powah:energizing_orb"
+			}
+			id: "70E000000000000E"
+			rewards: [{
+				id: "70E000000000000D"
+				item: {
+					count: 2
+					id: "powah:energizing_rod_starter"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "70E000000000000C"
+				item: { count: 1, id: "powah:energizing_orb" }
+				type: "item"
+			}]
+			x: 0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["70E000000000000E"]
+			icon: {
+				id: "powah:steel_energized"
+			}
+			id: "70E0000000000011"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "70E0000000000010"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "70E000000000000F"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:energized_steel" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 0d
+			y: 6d
+		}
+		{
+			dependencies: ["70E0000000000011"]
+			icon: {
+				id: "powah:uraninite"
+			}
+			id: "70E0000000000014"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "70E0000000000013"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "70E0000000000012"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:uraninite" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["70E0000000000014"]
+			icon: {
+				id: "powah:dry_ice"
+			}
+			id: "70E0000000000017"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "70E0000000000016"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "70E0000000000015"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:dry_ice" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 0d
+			y: 9d
+		}
+		{
+			dependencies: ["70E0000000000017"]
+			icon: {
+				id: "powah:crystal_blazing"
+			}
+			id: "70E000000000001A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "70E0000000000019"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "70E0000000000018"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:blazing" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["70E000000000001A"]
+			icon: {
+				id: "powah:crystal_niotic"
+			}
+			id: "70E000000000001D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "70E000000000001C"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "70E000000000001B"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:niotic" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 0d
+			y: 12d
+		}
+		{
+			dependencies: ["70E000000000001D"]
+			icon: {
+				id: "powah:crystal_spirited"
+			}
+			id: "70E0000000000020"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "70E000000000001F"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "70E000000000001E"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:spirited" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["70E0000000000020"]
+			icon: {
+				id: "powah:crystal_nitro"
+			}
+			id: "70E0000000000023"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "70E0000000000022"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "70E0000000000021"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:nitro" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 0d
+			y: 15d
+		}
+		{
+			dependencies: ["70E0000000000023"]
+			icon: {
+				id: "powah:reactor_starter"
+			}
+			id: "70E0000000000026"
+			shape: "hexagon"
+			size: 1.5d
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "70E0000000000025"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "70E0000000000024"
+				item: { count: 1, id: "powah:reactor_starter" }
+				type: "item"
+			}]
+			x: 0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["70E000000000001A"]
+			icon: {
+				id: "fluxnetworks:flux_dust"
+			}
+			id: "70E0000000000029"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "70E0000000000028"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "70E0000000000027"
+				item: { count: 4, id: "fluxnetworks:flux_dust" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 12d
+		}
+		{
+			dependencies: ["70E0000000000029"]
+			icon: {
+				id: "fluxnetworks:flux_dust"
+			}
+			id: "70E000000000002C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "70E000000000002B"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "70E000000000002A"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:flux_dust" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["70E000000000002C"]
+			icon: {
+				id: "fluxnetworks:flux_controller"
+			}
+			id: "70E0000000000031"
+			rewards: [{
+				id: "70E0000000000030"
+				item: {
+					count: 1
+					id: "fluxnetworks:basic_flux_storage"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "70E000000000002D"
+					item: { count: 1, id: "fluxnetworks:flux_controller" }
+					type: "item"
+				}
+				{
+					id: "70E000000000002E"
+					item: { count: 1, id: "fluxnetworks:flux_plug" }
+					type: "item"
+				}
+				{
+					id: "70E000000000002F"
+					item: { count: 1, id: "fluxnetworks:flux_point" }
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: 15d
+		}
+	]
+}

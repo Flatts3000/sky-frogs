@@ -257,6 +257,10 @@ file = "config/ftbquests/quests/chapters/mekanism.snbt"
 hash = "c36d172452126b9782e71e0c3dbb8edadc32e2acb59aeee9704a3a2f19b97c43"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/powered_up.snbt"
+hash = "2d6401117d0f70c126613f15b1810e79b7ab13d6aa17e5999696f5e2fd867716"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/road_to_bog.snbt"
 hash = "c9261e257601e8a8304ef8d5a5904d39e503e4e44797aa78a452450bd6a7e53f"
 
@@ -318,7 +322,7 @@ hash = "2e69afacf774749222ca1e925dc94d32e6c3db8bef4557aa33144751c2770206"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "0a28a94d69b20616d38ddba72e3fa3c2c967fe5209a5c9dcd476165e76afa358"
+hash = "9b40e4207d9fb0ff607ace3bf3b806762dbacc7e32e3340aec0e556d9a3ce45e"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"

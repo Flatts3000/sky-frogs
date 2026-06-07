@@ -258,11 +258,14 @@ def makeable_variants() -> set[str]:
     # Variant: '...' (KubeJS object literals, single-quoted, e.g. steel_slime_infusing.js).
     out_stamp = re.compile(r"""Variant:\s*["']productivefrogs:([a-z_]+)["']""")
     tier_row = re.compile(r"\[\s*'([a-z_]+)'\s*,\s*'[^']+'\s*\]")
+    # MODDED_SELF_KEYED rows (PR #106) are 5-element: [CATEGORY, filler, variant, resource, mod]
+    modded_row = re.compile(r"\[\s*'[A-Z_]+'\s*,\s*'[^']+'\s*,\s*'([a-z_]+)'\s*,")
     for js in RECIPE_DIR.glob("*.js"):
         text = js.read_text(encoding="utf-8")
         variants.update(out_stamp.findall(text))
         if js.name == "dissolution_slime_recipes.js":
             variants.update(tier_row.findall(text))
+            variants.update(modded_row.findall(text))
     return variants
 
 

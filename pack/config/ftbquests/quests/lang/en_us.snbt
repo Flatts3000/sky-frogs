@@ -11,6 +11,7 @@
 	chapter.784143B9C5D63814.title: "Welcome"
 	chapter.7B06000000000001.title: "Bog Frogs"
 	chapter.7CA7E000C0DE0001.title: "Cave Frogs"
+	chapter.70E0000000000001.title: "Powered Up"
 	chapter.7D00000000000001.title: "Drowned Riches"
 	chapter.7F00000000000001.title: "Take Flight"
 	chapter_group.0C4F0E0000000001.title: "Tier 1: Cave"
@@ -150,7 +151,7 @@
 	quest.2A5700000A57000B.quest_subtitle: "Clay into terracotta."
 	quest.2A5700000A57000B.title: "Fired Earth"
 	quest.2A5700000A57000F.quest_desc: [
-		"Five terracotta around a flower pot builds a &aBotany Pot&r - a self-tending planter. Drop in soil and a crop and it grows on its own, no farmland or sky needed."
+		"Five terracotta around a flower pot builds a &aBotany Pot&r - a self-tending planter. Drop in soil and a crop and it grows on its own, no farmland or sky needed. Trees too: give a pot a sapling and it runs the whole orchard."
 		""
 		"Here's your first crop: &asugar cane&r. Plant it and you've got a renewable source of sugar - which is about to matter a great deal."
 	]
@@ -695,6 +696,109 @@
 	quest.79D9A7438B1DD129.quest_desc: ["Plant a sapling, grow a tree, punch it. Everything starts with wood - even a frog empire."]
 	quest.79D9A7438B1DD129.quest_subtitle: "Something under your feet."
 	quest.79D9A7438B1DD129.title: "Wood to Stand On"
+	quest.70E0000000000004.quest_desc: [
+		"Powah runs on &edielectric paste&r: three coals, two of your Bog frog's &bclay&r, and a bucket of lava. Every machine in this chapter is built on the stuff."
+		""
+		"Mash up &a4&r."
+	]
+	quest.70E0000000000004.quest_subtitle: "The clay gate."
+	quest.70E0000000000004.title: "Dielectric Paste"
+	quest.70E0000000000007.quest_desc: [
+		"Paste, a tiny capacitor, a casing, and a plain furnace build the &eFurnator&r - Powah's starter generator. Feed it anything that burns; your Coal frog has opinions."
+		""
+		"Mekanism's Heat Generator got you here. This chapter is the scaling arc."
+	]
+	quest.70E0000000000007.quest_subtitle: "A furnace that makes FE instead of food."
+	quest.70E0000000000007.title: "The Furnator"
+	quest.70E000000000000B.quest_desc: [
+		"An &eEnergy Cell&r buffers the Furnator's output so machines sip instead of starve."
+		""
+		"Cable runs come next - the reward helps you hide them inside any block you like."
+	]
+	quest.70E000000000000B.quest_subtitle: "Store it before you spill it."
+	quest.70E000000000000B.title: "Bottled Lightning"
+	quest.70E000000000000E.quest_desc: [
+		"The &eEnergizing Orb&r crafts by burning raw FE: ring it with &eEnergizing Rods&r, give it power, drop materials in. Everything above starter tier comes through this thing."
+	]
+	quest.70E000000000000E.quest_subtitle: "Crafting, but with voltage."
+	quest.70E000000000000E.title: "The Energizing Orb"
+	quest.70E0000000000011.quest_desc: [
+		"Orb &firon&r and &6gold&r into &eEnergized Steel&r - then the pack's law kicks in: &amake a resource yourself once, and the Dissolution Chamber will slime it&r. Chamber a steel into an Energized Steel Slime, feed a Cave frog, and never orb it by hand again."
+		""
+		"Turn in the &bEnergized Steel Froglight&r."
+	]
+	quest.70E0000000000011.quest_subtitle: "Iron and gold walk into an orb."
+	quest.70E0000000000011.title: "Energized Steel"
+	quest.70E0000000000014.quest_desc: [
+		"There is no uraninite ore on a void skyblock, and the Orb cannot conjure it from nothing. Your first uraninite is a &aCave pool surprise&r: keep splitting Cave slimes and one day a &aUraninite Slime&r rolls out - that is split-discovery. One slime is all the chamber needs to scale the farm."
+		""
+		"Turn in the &bUraninite Froglight&r."
+	]
+	quest.70E0000000000014.quest_subtitle: "The frog is the uranium mine."
+	quest.70E0000000000014.title: "Uraninite"
+	quest.70E0000000000017.quest_desc: [
+		"Powah's coolant - reactors and thermo setups want it cold. Same story as uraninite for now: no ice on this skyblock means no Orb recipe, so your first &bDry Ice&r rolls out of the &3Tide pool&r by split-discovery."
+		""
+		"Turn in the &bDry Ice Froglight&r."
+	]
+	quest.70E0000000000017.quest_subtitle: "Cold storage."
+	quest.70E0000000000017.title: "Dry Ice"
+	quest.70E000000000001A.quest_desc: [
+		"Orb your Infernal frog's &cblaze rods&r into &cBlazing Crystal&r and the generator ladder opens for real. Make one yourself, chamber it, frog it."
+		""
+		"Turn in the &bBlazing Froglight&r."
+	]
+	quest.70E000000000001A.quest_subtitle: "Rods in, crystal out."
+	quest.70E000000000001A.title: "Blazing Crystal"
+	quest.70E000000000001D.quest_desc: [
+		"Orbed from &bdiamonds&r. You know the loop by now: orb one, slime it, let the frogs carry the load."
+		""
+		"Turn in the &bNiotic Froglight&r."
+	]
+	quest.70E000000000001D.quest_subtitle: "Diamonds, energized."
+	quest.70E000000000001D.title: "Niotic Crystal"
+	quest.70E0000000000020.quest_desc: [
+		"Orbed from &aemeralds&r - the second-highest rung on the ladder."
+		""
+		"Turn in the &bSpirited Froglight&r."
+	]
+	quest.70E0000000000020.quest_subtitle: "Emeralds with a work ethic."
+	quest.70E0000000000020.title: "Spirited Crystal"
+	quest.70E0000000000023.quest_desc: [
+		"The top of Powah's ladder - Nitro-tier machines outpace everything below by an order of magnitude."
+		""
+		"Turn in the &bNitro Froglight&r."
+	]
+	quest.70E0000000000023.quest_subtitle: "Handle with tongs."
+	quest.70E0000000000023.title: "Nitro Crystal"
+	quest.70E0000000000026.quest_desc: [
+		"The &eReactor&r is a multiblock that sips &auraninite&r and pays out more FE than everything else in this chapter combined. Your uraninite frogs have been waiting for this."
+		""
+		"Build a &eStarter Reactor&r."
+	]
+	quest.70E0000000000026.quest_subtitle: "Serious FE."
+	quest.70E0000000000026.title: "The Uraninite Reactor"
+	quest.70E0000000000029.quest_desc: [
+		"&dFlux Dust&r is born, not crafted: throw &credstone&r onto &8obsidian&r and it transmutes where it lands. Four dust starts a network - and the first one primes your Infernal frog for the rest."
+		""
+		"Make &a4 Flux Dust&r."
+	]
+	quest.70E0000000000029.quest_subtitle: "Drop redstone on obsidian. Really."
+	quest.70E0000000000029.title: "Flux Dust"
+	quest.70E000000000002C.quest_desc: [
+		"You made the dust yourself, so the chamber law is satisfied: slime it, feed the &cInfernal frog&r, and flux becomes a farm."
+		""
+		"Turn in the &bFlux Dust Froglight&r."
+	]
+	quest.70E000000000002C.quest_subtitle: "The frog does wireless too."
+	quest.70E000000000002C.title: "Flux on Tap"
+	quest.70E0000000000031.quest_desc: [
+		"A &dFlux Controller&r runs the network, a &dPlug&r drinks FE in, a &dPoint&r pours it out - anywhere, any dimension, no cables. Your Reactor on one island, your machines on every other."
+		""
+		"Build all three."
+	]
+	quest.70E0000000000031.quest_subtitle: "Power without wires."
+	quest.70E0000000000031.title: "The Network Is Live"
 	quest.7B06000000000002.quest_desc: [
 		"The Bog frog eats more than dirt. Each new resource threads off the &elast one's Slime Milk&r - mud from dirt, clay from mud, on down the swamp."
 		""
