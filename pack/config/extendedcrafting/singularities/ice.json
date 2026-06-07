@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.ice",
+  "colors": [
+    "a8d8f0",
+    "6fa8c8"
+  ],
+  "ingredient": {
+    "item": "minecraft:ice"
+  },
+  "inUltimateSingularity": true
+}

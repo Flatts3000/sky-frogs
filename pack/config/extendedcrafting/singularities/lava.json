@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.lava",
+  "colors": [
+    "d45a12",
+    "943f0d"
+  ],
+  "ingredient": {
+    "item": "minecraft:pointed_dripstone"
+  },
+  "inUltimateSingularity": true
+}

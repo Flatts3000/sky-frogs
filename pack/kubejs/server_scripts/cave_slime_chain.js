@@ -2,7 +2,7 @@
 //
 // Each Cave resource's "slime in a bucket" is crafted from the PRIOR resource's
 // Slime Milk, threading a seed-chain:
-//   iron -> copper -> gold -> coal -> glow_ink_sac -> redstone.
+//   iron -> copper -> gold -> coal -> glow_ink_sac -> breeze_rod -> redstone.
 // (iron is the bootstrap from the Your First Iron Ingot chapter; the steps below
 // produce the rest. Lapis moved to Geode. glow_ink_sac was originally skipped as
 // off-theme, but the Ultimate Singularity demands every vanilla froglight
@@ -29,8 +29,34 @@ ServerEvents.recipes(event => {
     ['copper', 'gold'],
     ['gold', 'coal'],
     ['coal', 'glow_ink_sac'],
-    ['glow_ink_sac', 'redstone']
+    // PF 1.13.0 (#161): breeze_rod joins before redstone (the capstone + Geode
+    // bridge). water + lava are deliberately NOT chain steps - the fluid pair is
+    // self-keyed in the chamber (dissolution_slime_recipes.js) per maintainer ruling.
+    ['glow_ink_sac', 'breeze_rod'],
+    ['breeze_rod', 'redstone']
   ]
+
+  // The FLUID PAIR (maintainer ruling): water + lava slimes craft like the chain
+  // steps but keyed on the FLUID BUCKET instead of a prior Slime Milk - water
+  // from a barrel, lava from the Tier 0 cobble crucible. Outside the seed chain
+  // on purpose; vanilla bucket remainders apply (the empty bucket comes back).
+  const fluids = { water: 'minecraft:water_bucket', lava: 'minecraft:lava_bucket' }
+  Object.keys(fluids).forEach(variant => {
+    event.shapeless(
+      `productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:${variant}",Category:"CAVE"}]`,
+      [
+        fluids[variant],
+        'minecraft:stone',
+        'minecraft:stone',
+        'minecraft:stone',
+        'minecraft:stone',
+        'productivefrogs:sweetslime',
+        'productivefrogs:sweetslime',
+        'productivefrogs:sweetslime',
+        'productivefrogs:frog_egg[productivefrogs:contained_category="cave"]'
+      ]
+    )
+  })
 
   chain.forEach(step => {
     const from = step[0]

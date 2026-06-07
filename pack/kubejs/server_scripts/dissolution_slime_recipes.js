@@ -52,7 +52,12 @@ const SLIME_TIERS = [
     // quests thread identically. (obsidian, the other stray, lives in the INFERNAL
     // block below - quested at Tier 5; PF reclasses it infernal in #142.)
     ['glow_ink_sac', 'minecraft:coal'],
-    ['redstone',     'minecraft:glow_ink_sac']
+    // PF 1.13.0 (#161): breeze_rod slots before redstone, which stays the capstone
+    // and the Geode bridge per the #79 insertion precedent. (water + lava are Cave
+    // variants too, but the maintainer keeps the FLUID pair OUT of the seed chain -
+    // they live as self-keyed rows below, like the modded variants.)
+    ['breeze_rod',   'minecraft:glow_ink_sac'],
+    ['redstone',     'minecraft:breeze_rod']
   ]],
   ['GEODE', 'minecraft:gravel', [
     ['lapis',    'minecraft:redstone'],      // bridges from Cave's last
@@ -71,7 +76,11 @@ const SLIME_TIERS = [
     ['lily_pad',   'minecraft:mycelium'],
     ['leather',    'minecraft:lily_pad'],
     ['feather',    'minecraft:leather'],
-    ['plastic',    'minecraft:feather'],
+    // PF 1.13.0 (#161): the Bog mob-drop stragglers slot before the modded tail;
+    // pink_slime stays the capstone and the Tide bridge.
+    ['armadillo_scute', 'minecraft:feather'],
+    ['honeycomb',  'minecraft:armadillo_scute'],
+    ['plastic',    'minecraft:honeycomb'],
     ['pink_slime', 'industrialforegoing:plastic']
   ]],
   ['TIDE', 'minecraft:mycelium', [
@@ -80,7 +89,14 @@ const SLIME_TIERS = [
     ['sponge',              'minecraft:prismarine_crystals'],
     ['ink_sac',             'minecraft:sponge'],
     ['sea_pickle',          'minecraft:ink_sac'],
-    ['nautilus_shell',      'minecraft:sea_pickle']
+    // PF 1.12.0 (#155): the frozen family slots before the capstone so
+    // nautilus_shell keeps the Tide->Infernal bridge. (water lived here for one
+    // pin, then re-homed to Cave in PF 1.13 - the Crucible's fluids are day-one
+    // business.) turtle_scute joins in 1.13.
+    ['ice',                 'minecraft:sea_pickle'],
+    ['snow',                'minecraft:ice'],
+    ['turtle_scute',        'minecraft:snow_block'],
+    ['nautilus_shell',      'minecraft:turtle_scute']
   ]],
   ['INFERNAL', 'minecraft:prismarine', [
     ['netherrack',      'minecraft:nautilus_shell'],   // bridges from Tide's last; filler is prismarine (Tide, mass-renewable - netherrack would be circular)
@@ -96,9 +112,11 @@ const SLIME_TIERS = [
     ['soul_sand',       'minecraft:glowstone_dust'],
     ['soul_soil',       'minecraft:soul_sand'],
     ['blaze',           'minecraft:soul_soil'],
-    // PF 1.11.0 (#148): the Blaze resource is the ROD (primer + smelt output),
-    // not the powder - the threading input follows it.
-    ['netherite_scrap', 'minecraft:blaze_rod']
+    // PF 1.11.0 (#148): the Blaze resource is the ROD (primer + smelt output).
+    // PF 1.13.0 (#161): ghast_tear slots before the capstone; netherite_scrap
+    // stays the capstone and the Void bridge.
+    ['ghast_tear',      'minecraft:blaze_rod'],
+    ['netherite_scrap', 'minecraft:ghast_tear']
   ]],
   ['VOID', 'minecraft:soul_soil', [
     ['ender_pearl',   'minecraft:netherite_scrap'],     // bridges from Infernal's last; filler is soul_soil (Infernal, mass-renewable - end_stone would be circular)
@@ -106,7 +124,9 @@ const SLIME_TIERS = [
     ['chorus_fruit',  'minecraft:end_stone'],
     ['echo_shard',    'minecraft:chorus_fruit'],         // prior variant chorus_fruit's resource (raw, its primer_item)
     ['sculk',         'minecraft:echo_shard'],
-    ['shulker_shell', 'minecraft:sculk']
+    // PF 1.13.0 (#161): phantom_membrane slots before the capstone.
+    ['phantom_membrane', 'minecraft:sculk'],
+    ['shulker_shell', 'minecraft:phantom_membrane']
   ]]
 ]
 
@@ -122,6 +142,14 @@ const SLIME_TIERS = [
 //
 // [category stamp, tier filler, variant, the variant's own resource, owning mod]
 const MODDED_SELF_KEYED = [
+  // Two VANILLA exceptions live in the self-keyed table (maintainer ruling): the
+  // fluid pair stays out of the Cave seed chain, and their inputs are the FLUID
+  // BUCKETS - water from a barrel, lava from the Tier 0 cobble crucible, both
+  // honestly obtainable day one (unlike kelp/dripstone, which only the frogs
+  // make). The validator carries a matching documented exception. 'minecraft'
+  // is always loaded, so the per-row guard is a no-op for these.
+  ['CAVE',     'minecraft:stone',      'water',           'minecraft:water_bucket',    'minecraft'],
+  ['CAVE',     'minecraft:stone',      'lava',            'minecraft:lava_bucket',     'minecraft'],
   ['CAVE',     'minecraft:stone',      'uraninite',       'powah:uraninite',           'powah'],
   ['CAVE',     'minecraft:stone',      'energized_steel', 'powah:steel_energized',     'powah'],
   ['TIDE',     'minecraft:mycelium',   'dry_ice',         'powah:dry_ice',             'powah'],

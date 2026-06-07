@@ -203,6 +203,54 @@
 		{
 			dependencies: ["7B06000000000017"]
 			icon: {
+				id: "minecraft:armadillo_scute"
+			}
+			id: "7B06000000000022"
+			shape: "square"
+			rewards: [{
+				id: "7B06000000000024"
+				item: {
+					count: 1
+					id: "functionalstorage:oak_1"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7B06000000000023"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:armadillo_scute" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["7B06000000000022"]
+			icon: {
+				id: "minecraft:honeycomb"
+			}
+			id: "7B06000000000025"
+			shape: "square"
+			rewards: [{
+				id: "7B06000000000027"
+				item: {
+					count: 1
+					id: "functionalstorage:oak_1"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7B06000000000026"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:honeycomb" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["7B06000000000025"]
+			icon: {
 				id: "industrialforegoing:plastic"
 			}
 			id: "7B0600000000001A"
@@ -222,7 +270,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 12.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["7B0600000000001A"]
@@ -256,7 +304,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 13.5d
+			y: 16.5d
 		}
 	]
 }

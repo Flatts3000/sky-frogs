@@ -178,6 +178,30 @@
 		{
 			dependencies: ["51F0000000000011"]
 			icon: {
+				id: "minecraft:ghast_tear"
+			}
+			id: "51F000000000001E"
+			shape: "square"
+			rewards: [{
+				id: "51F0000000000020"
+				item: {
+					count: 1
+					id: "functionalstorage:compacting_drawer"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "51F000000000001F"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:ghast_tear" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["51F000000000001E"]
+			icon: {
 				id: "minecraft:netherite_scrap"
 			}
 			id: "51F0000000000014"
@@ -195,7 +219,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 10.5d
+			y: 12.0d
 		}
 	]
 }

@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.armadillo_scute",
+  "colors": [
+    "b37773",
+    "6f3b3c"
+  ],
+  "ingredient": {
+    "item": "minecraft:armadillo_scute"
+  },
+  "inUltimateSingularity": true
+}

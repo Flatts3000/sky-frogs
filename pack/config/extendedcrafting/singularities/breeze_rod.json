@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.breeze_rod",
+  "colors": [
+    "9491c3",
+    "3a5a85"
+  ],
+  "ingredient": {
+    "item": "minecraft:breeze_rod"
+  },
+  "inUltimateSingularity": true
+}

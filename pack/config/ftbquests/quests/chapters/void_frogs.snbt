@@ -130,6 +130,30 @@
 		{
 			dependencies: ["60F000000000000E"]
 			icon: {
+				id: "minecraft:phantom_membrane"
+			}
+			id: "60F0000000000014"
+			shape: "square"
+			rewards: [{
+				id: "60F0000000000016"
+				item: {
+					count: 1
+					id: "functionalstorage:compacting_drawer"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "60F0000000000015"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:phantom_membrane" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["60F0000000000014"]
+			icon: {
 				id: "minecraft:shulker_shell"
 			}
 			id: "60F0000000000011"
@@ -147,7 +171,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 7.5d
+			y: 9.0d
 		}
 	]
 }

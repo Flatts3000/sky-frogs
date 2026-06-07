@@ -11,6 +11,7 @@
 	chapter.784143B9C5D63814.title: "Welcome"
 	chapter.7B06000000000001.title: "Bog Frogs"
 	chapter.7CA7E000C0DE0001.title: "Cave Frogs"
+	chapter.3E17000000000001.title: "Melting Point"
 	chapter.70E0000000000001.title: "Powered Up"
 	chapter.7D00000000000001.title: "Drowned Riches"
 	chapter.7F00000000000001.title: "Take Flight"
@@ -737,7 +738,7 @@
 	quest.70E0000000000014.quest_subtitle: "The frog is the uranium mine."
 	quest.70E0000000000014.title: "Uraninite"
 	quest.70E0000000000017.quest_desc: [
-		"Powah's coolant - reactors and thermo setups want it cold. Same story as uraninite for now: no ice on this skyblock means no Orb recipe, so your first &bDry Ice&r rolls out of the &3Tide pool&r by split-discovery."
+		"Powah's coolant - reactors and thermo setups want it cold. The Orb presses &bDry Ice&r from two &bblue ice&r - and blue ice is just 81 of your &bIce frog's&r produce, packed twice. (The Tide pool can also roll a Dry Ice Slime by split-discovery, if the frogs beat you to it.)"
 		""
 		"Turn in the &bDry Ice Froglight&r."
 	]
@@ -849,6 +850,48 @@
 	]
 	quest.7B0600000000001D.quest_subtitle: "The Bog's prize."
 	quest.7B0600000000001D.title: "Pink Slime"
+	quest.7CA7E000C0DE0026.quest_desc: [
+		"A &fbreeze rod&r without a trial chamber in sight - the Cave frog farms what the Breeze drops, wind charges and all."
+		""
+		"Turn in the &bBreeze Rod Froglight&r."
+	]
+	quest.7CA7E000C0DE0026.quest_subtitle: "Catch the wind."
+	quest.7CA7E000C0DE0026.title: "Breeze Rod"
+	quest.7D00000000000029.quest_desc: [
+		"&aTurtle scutes&r without the beach nursery - no eggs, no babies, no waiting. The Tide frog skips the whole life cycle."
+		""
+		"Turn in the &bTurtle Scute Froglight&r."
+	]
+	quest.7D00000000000029.quest_subtitle: "Shell, expedited."
+	quest.7D00000000000029.title: "Turtle Scute"
+	quest.51F000000000001E.quest_desc: [
+		"&fGhast tears&r - regeneration potions and End crystals - without crying over a fireball. The Infernal frog weeps them on demand."
+		""
+		"Turn in the &bGhast Tear Froglight&r."
+	]
+	quest.51F000000000001E.quest_subtitle: "No tissue required."
+	quest.51F000000000001E.title: "Ghast Tear"
+	quest.60F0000000000014.quest_desc: [
+		"&dPhantom membranes&r - slow falling and elytra repair - without ever skipping a night's sleep. The Void frog handles the insomnia."
+		""
+		"Turn in the &bPhantom Membrane Froglight&r."
+	]
+	quest.60F0000000000014.quest_subtitle: "Sleep well anyway."
+	quest.60F0000000000014.title: "Phantom Membrane"
+	quest.7B06000000000022.quest_desc: [
+		"&6Armadillo scutes&r - wolf armor - from a frog instead of a brush. The Bog covers the savanna's job."
+		""
+		"Turn in the &bArmadillo Scute Froglight&r."
+	]
+	quest.7B06000000000022.quest_subtitle: "Roll with it."
+	quest.7B06000000000022.title: "Armadillo Scute"
+	quest.7B06000000000025.quest_desc: [
+		"&eHoneycomb&r - waxed copper, hives, candles - with zero bees bothered. The Bog frog is the apiary now."
+		""
+		"Turn in the &bHoneycomb Froglight&r."
+	]
+	quest.7B06000000000025.quest_subtitle: "Unbeelievable."
+	quest.7B06000000000025.title: "Honeycomb"
 	quest.7CA7E000C0DE0002.quest_desc: [
 		"You've pulled iron out of a frog. The Cave frog handles everything else the pickaxe used to: copper, gold, coal, lapis, redstone, obsidian - and the modded metals besides."
 		""
@@ -920,6 +963,20 @@
 	quest.7D00000000000011.quest_desc: ["The last of the tide: &bNautilus Shell&r, the shell that aims a Conduit. Smelt the &bNautilus Shell Froglight&r and the aquatic roster is yours, top to bottom."]
 	quest.7D00000000000011.quest_subtitle: "The Tide's treasure."
 	quest.7D00000000000011.title: "Nautilus Shell"
+	quest.7D00000000000020.quest_desc: [
+		"No cold biome ever forms out here - &bice&r exists because a frog makes it. Nine ice pack to packed ice, nine packed to &bblue ice&r: the whole frozen family unlocks from this one variant."
+		""
+		"Turn in the &bIce Froglight&r. (Placement note: Froglights glow, and ice melts under bright light - do not light an ice farm with its own produce.)"
+	]
+	quest.7D00000000000020.quest_subtitle: "Winter, imported."
+	quest.7D00000000000020.title: "Ice"
+	quest.7D00000000000023.quest_desc: [
+		"&fSnow&r never falls on the void either. Snow blocks from the frog mean snow layers, snowballs, and snow golems - build the blizzard yourself."
+		""
+		"Turn in the &bSnow Froglight&r."
+	]
+	quest.7D00000000000023.quest_subtitle: "Let it frog."
+	quest.7D00000000000023.title: "Snow"
 	quest.7F00000000000002.quest_desc: [
 		"Your island has spread out under you, and walking it is getting old. Time to fly. &eIron Jetpacks&r runs on the metals your frogs already make and the &bRF&r your Geode machines already spin."
 		""
@@ -961,6 +1018,52 @@
 	chapter_group.0C4F0E0000000005.title: "Tier 5: Infernal"
 	chapter.5140000000000001.title: "Road to Infernal"
 	chapter.51F0000000000001.title: "Infernal Frogs"
+	quest.3E17000000000002.quest_desc: [
+		"Remember the &eOak Crucible&r wringing water out of leaves? Meet its big sibling: a &fbrick-and-iron basin&r that melts &bFroglights&r into &9fluids&r - water, lava, molten metal - no GUI, no power, just heat rising from whatever block sits underneath."
+		""
+		"The build is &firon&r and &cbricks&r: hammer cobblestone all the way down to &7dust&r, mix the dust into a &9water barrel&r for clay, smelt the clay into bricks, and frame them in iron."
+		""
+		"Craft the &eCrucible&r and park it over a &etorch&r to start."
+	]
+	quest.3E17000000000002.quest_subtitle: "Soup's on."
+	quest.3E17000000000002.title: "The Froglight Crucible"
+	quest.3E17000000000005.quest_desc: [
+		"The ladder climbs from &etorch&r to &6campfire&r to &cfire&r to &6lava&r - and Froglights burn too: a placed &6Lava Froglight&r heats like lava, a &cBlaze Froglight&r burns hotter than fire, and Powah's &cBlazing Crystal Froglight&r is the hottest plate in the mod. Your farmed decor doubles as the smelter's fire. JEI's heat-ladder category lists every source."
+		""
+		"Craft a &6campfire&r - the first real step up from the torch."
+	]
+	quest.3E17000000000005.quest_subtitle: "Hotter is faster."
+	quest.3E17000000000005.title: "Feed the Fire"
+	quest.3E17000000000008.quest_desc: [
+		"A &9Water Froglight&r melts into a full &9bucket of water&r - farmable water, from your &aCave frog&r of all things. The way in is the same craft as every Cave slime, keyed on the fluid itself: a &9water bucket&r, four stone, three sweetslime, and a Cave frogspawn bottle. (The bucket comes back empty.)"
+		""
+		"Turn in the &bWater Froglight&r."
+	]
+	quest.3E17000000000008.quest_subtitle: "The ocean, bottled."
+	quest.3E17000000000008.title: "Water"
+	quest.3E1700000000000B.quest_desc: [
+		"A &6Lava Froglight&r melts into a full &6bucket of lava&r - renewable, no more cobble-crucible babysitting, which is poetic: a &6lava bucket&r from that very crucible, four stone, three sweetslime, and a Cave frogspawn bottle craft the &6Lava Slime&r that retires it. The whole loop runs at Tier 1."
+		""
+		"Turn in the &bLava Froglight&r."
+	]
+	quest.3E1700000000000B.quest_subtitle: "The floor is renewable."
+	quest.3E1700000000000B.title: "Lava"
+	quest.3E1700000000000E.quest_desc: [
+		"The &eCasting Mold&r turns molten metal back into &fingots&r - pour with a bucket, pipe it, or skip the plumbing entirely: stack &cheat&r, &eCrucible&r, &eMold&r into a three-block tower and the Mold drinks straight from the basin."
+		""
+		"{image:kubejs:textures/quests/casting_tower.png width:220 height:181 align:center}"
+		""
+		"Craft a &eCasting Mold&r."
+	]
+	quest.3E1700000000000E.quest_subtitle: "Pour one out."
+	quest.3E1700000000000E.title: "The Casting Mold"
+	quest.3E17000000000011.quest_desc: [
+		"Now the payoff: a metal &bFroglight&r melts into &etwo ingots&r worth of molten metal - the Crucible is this pack's ore doubling. Tower it up, hopper Froglights in, and let the Mold spit ingots while you do anything else."
+		""
+		"Tick when your tower casts its first doubled ingot."
+	]
+	quest.3E17000000000011.quest_subtitle: "Two for one."
+	quest.3E17000000000011.title: "The Tower"
 	quest.51F0000000000002.quest_desc: [
 		"Netherrack was just the floor. Now the &cInfernal&r frog gives you everything the Nether was hiding:"
 		""
@@ -1237,17 +1340,17 @@
 	quest.6A0D000000000002.quest_desc: [
 		"You have cleared the dragon and built the compressor. One task remains: prove the frogs run without you. Each &bSingularity&r swallows a thousand of a frog's resource - you cannot hand-make that many. Only a running farm can. There is one singularity for every resource your frogs make:"
 		""
-		"forty in all. The Ultimate Singularity wants every one."
+		"The Ultimate Singularity wants every one - check its recipe for the full roster (it grows as the frogs learn new resources)."
 	]
 	quest.6A0D000000000002.quest_subtitle: "Prove the frogs run without you."
 	quest.6A0D000000000002.title: "The Long Compression"
 	quest.6A0D000000000005.quest_desc: [
-		"Point your iron-frog farm at the Quantum Compressor and wait. A thousand iron folds into a single &bIron Singularity&r - the first of forty, one for every resource the frogs make, from iron to shulker shells. Start here; you will want them all."
+		"Point your iron-frog farm at the Quantum Compressor and wait. A thousand iron folds into a single &bIron Singularity&r - the first of many, one for every resource the frogs make, from iron to shulker shells. Start here; you will want them all."
 	]
 	quest.6A0D000000000005.quest_subtitle: "A thousand iron, one cube."
 	quest.6A0D000000000005.title: "Your First Singularity"
 	quest.6A0D000000000008.quest_desc: [
-		"Gather one Singularity for every resource the frogs make - all forty - and crystallize them together in the Ultimate Table into the &dUltimate Singularity&r: the densest form of everything your frogs ever made. This is the proof you automated every last farm."
+		"Gather one Singularity for every resource the frogs make - every last one - and crystallize them together in the Ultimate Table into the &dUltimate Singularity&r: the densest form of everything your frogs ever made. This is the proof you automated every last farm."
 	]
 	quest.6A0D000000000008.quest_subtitle: "The densest frog there is."
 	quest.6A0D000000000008.title: "The Ultimate Singularity"

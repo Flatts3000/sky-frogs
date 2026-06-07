@@ -732,6 +732,10 @@ MODDED_ROW_RE = re.compile(
 # prior-resource law. iron has nothing pre-Cave to thread off (bone meal mirrors
 # the table bootstrap).
 THREADING_EXCEPTIONS = {"iron": "minecraft:bone_meal"}
+# Self-keyed rows whose input deliberately is NOT the variant's primer_item: the
+# fluid pair takes the FLUID BUCKETS (day-one obtainable; the primers kelp /
+# pointed_dripstone are frog-only). Maintainer ruling on the PF 1.13 sweep.
+SELF_KEYED_EXCEPTIONS = {"water": "minecraft:water_bucket", "lava": "minecraft:lava_bucket"}
 
 
 def check_dissolution_threading(chapters, ctx):
@@ -819,12 +823,103 @@ def check_dissolution_threading(chapters, ctx):
     # --- modded self-keyed rows: input must equal the variant's own primer
     for m in MODDED_ROW_RE.finditer(text, tiers_region_end):
         pos, variant, inp = m.start(), m.group(2), m.group(3)
+        if variant in SELF_KEYED_EXCEPTIONS:
+            if inp != SELF_KEYED_EXCEPTIONS[variant]:
+                f.append(Finding(ERROR, "Q-DISSOLUTION-THREADING", fname, line_of(pos),
+                                 f"[self-keyed] '{variant}' is the documented fluid-bucket "
+                                 f"exception and must take {SELF_KEYED_EXCEPTIONS[variant]!r}, "
+                                 f"found {inp!r}"))
+            primer(variant, pos, f)  # still flags variants PF no longer ships
+            continue
         expect = primer(variant, pos, f)
         if expect is not None and inp != expect:
             f.append(Finding(ERROR, "Q-DISSOLUTION-THREADING", fname, line_of(pos),
                              f"[self-keyed] '{variant}' input is {inp!r} but its own "
                              f"primer_item is {expect!r} - the make-it-first law (PR #106) "
                              f"requires the variant's own resource"))
+    return f
+
+
+
+# The crafting-table seed chains that must MIRROR the chamber chains (#125 - the
+# breeze-slime gap: a variant added to SLIME_TIERS but not to its tier's table
+# chain ships with a chamber recipe and no crafting recipe). Cave/Geode/Bog only:
+# Tide and later are chamber-only by design law.
+TABLE_CHAINS = {
+    "cave_slime_chain.js": "CAVE",
+    "geode_slime_chain.js": "GEODE",
+    "bog_slime_chain.js": "BOG",
+}
+TABLE_PAIR_RE = re.compile(r"\[\s*'([a-z_]+)'\s*,\s*'([a-z_]+)'\s*\]")
+
+
+def check_table_chain_mirror(chapters, ctx):
+    """Q-TABLE-CHAIN-MIRROR (ERROR) - no jar needed (pack file vs pack file).
+
+    Every [from, to] step in a *_slime_chain.js must be an ADJACENT pair in the
+    same tier's SLIME_TIERS block (or a bridge from the previous tier's last
+    variant into the tier's first). A step that skips variants means someone
+    extended the chamber chain and forgot the table chain - exactly the breeze
+    gap. Partial coverage at the ends is allowed (bootstraps live elsewhere).
+    """
+    if not DISSOLUTION_JS.exists():
+        return []
+    diss = DISSOLUTION_JS.read_text(encoding="utf-8")
+    modded_at = diss.find("MODDED_SELF_KEYED")
+    end = modded_at if modded_at >= 0 else len(diss)
+    heads = [(m.start(), m.group(1)) for m in TIER_HEAD_RE.finditer(diss, 0, end)]
+    tier_seq: dict[str, list[str]] = {}
+    tier_order: list[str] = []
+    for hi, (hpos, tier) in enumerate(heads):
+        hend = heads[hi + 1][0] if hi + 1 < len(heads) else end
+        tier_seq[tier] = [m.group(1) for m in CHAIN_ROW_RE.finditer(diss, hpos, hend)]
+        tier_order.append(tier)
+    if not tier_seq:
+        return []  # the threading check's parser guard already screams
+
+    f = []
+    for fname, tier in TABLE_CHAINS.items():
+        path = RECIPE_DIR / fname
+        if not path.exists():
+            continue
+        text = path.read_text(encoding="utf-8")
+        pairs = TABLE_PAIR_RE.findall(text)
+        if not pairs:
+            f.append(Finding(ERROR, "Q-TABLE-CHAIN-MIRROR", fname, 0,
+                             "parser found no [from, to] chain pairs - format drift? "
+                             "update TABLE_PAIR_RE before trusting this check"))
+            continue
+        seq = tier_seq.get(tier, [])
+        prev_last = None
+        ti = tier_order.index(tier) if tier in tier_order else -1
+        if ti > 0:
+            prev = tier_seq[tier_order[ti - 1]]
+            prev_last = prev[-1] if prev else None
+        for frm, to in pairs:
+            if to not in seq:
+                f.append(Finding(ERROR, "Q-TABLE-CHAIN-MIRROR", fname, 0,
+                                 f"table step '{frm}' -> '{to}': output variant is not in the "
+                                 f"{tier} chamber chain"))
+                continue
+            if frm in seq:
+                fi, ti2 = seq.index(frm), seq.index(to)
+                if ti2 != fi + 1:
+                    skipped = seq[fi + 1:ti2] if ti2 > fi else []
+                    detail = (f"skips {', '.join(skipped)}" if skipped
+                              else "is out of order vs the chamber chain")
+                    f.append(Finding(ERROR, "Q-TABLE-CHAIN-MIRROR", fname, 0,
+                                     f"table step '{frm}' -> '{to}' {detail} - the chamber "
+                                     f"chain ({tier}) and the table chain disagree (the "
+                                     f"breeze-slime gap, #125)"))
+            elif frm == prev_last:
+                if seq and to != seq[0]:
+                    f.append(Finding(ERROR, "Q-TABLE-CHAIN-MIRROR", fname, 0,
+                                     f"bridge step '{frm}' -> '{to}' should land on the "
+                                     f"{tier} chain's first variant ('{seq[0]}')"))
+            else:
+                f.append(Finding(ERROR, "Q-TABLE-CHAIN-MIRROR", fname, 0,
+                                 f"table step '{frm}' -> '{to}': '{frm}' is neither in the "
+                                 f"{tier} chamber chain nor the previous tier's last variant"))
     return f
 
 
@@ -917,6 +1012,7 @@ CHECKS = [
     check_singularity_coverage,
     check_singularity_ingredient,
     check_dissolution_threading,
+    check_table_chain_mirror,
     check_reward_tables,
     check_hide_until,
 ]

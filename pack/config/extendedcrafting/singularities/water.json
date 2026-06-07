@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.water",
+  "colors": [
+    "3f76e4",
+    "2c53a0"
+  ],
+  "ingredient": {
+    "item": "minecraft:kelp"
+  },
+  "inUltimateSingularity": true
+}

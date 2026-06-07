@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.turtle_scute",
+  "colors": [
+    "43b146",
+    "226e44"
+  ],
+  "ingredient": {
+    "item": "minecraft:turtle_scute"
+  },
+  "inUltimateSingularity": true
+}

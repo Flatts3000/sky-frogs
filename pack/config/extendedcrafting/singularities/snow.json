@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.snow",
+  "colors": [
+    "f5fafa",
+    "c8d8dc"
+  ],
+  "ingredient": {
+    "item": "minecraft:snow_block"
+  },
+  "inUltimateSingularity": true
+}

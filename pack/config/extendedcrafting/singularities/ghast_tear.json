@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.ghast_tear",
+  "colors": [
+    "c0e0e0",
+    "374b4b"
+  ],
+  "ingredient": {
+    "item": "minecraft:ghast_tear"
+  },
+  "inUltimateSingularity": true
+}
