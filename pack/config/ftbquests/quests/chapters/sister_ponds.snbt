@@ -3,12 +3,12 @@
 	default_hide_dependency_lines: true
 	default_quest_shape: ""
 	filename: "sister_ponds"
-	group: "0C4F0E0000000006"
+	group: "0C4F0E0000000007"
 	icon: {
 		id: "productivefrogs:sweetslime"
 	}
 	id: "70DD000000000001"
-	order_index: 5
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{

@@ -266,7 +266,7 @@ hash = "646054924d778a3a68a212c4ea0ec54d321fdce98d23720aed1a618682ffcfd8"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "df445ffea5b103d5c372e233a3afe5e7538c40c54c886246cf0c7de7301de4b7"
+hash = "338768fb497fa6c1544e4db8ed91aa7773ee683566fc3db2aebf6319a1c54fb4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/bog_frogs.snbt"
@@ -330,7 +330,7 @@ hash = "01e3daf039dfc3825421110e6b725a231d1800991a7db361549309424070cc42"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/sister_ponds.snbt"
-hash = "24fda105d2dd3317ed40b35569d68a4970fb30d88d70180d75737e7b9a0a4d2d"
+hash = "81245ad001103b0f0bb3f94301c6a5386b52e15183c57b2d120d086dbe0f1581"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/storage_and_crafting.snbt"
@@ -362,7 +362,7 @@ hash = "a8e06063bf2967e3899c3fc4826aeb9d8e15c581bfcd6ee299cc4a1e7e0adac4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/whole_pond.snbt"
-hash = "9a499dfa6d59d900952265a580abb33d62683b856c5105912a4ea190e12427a1"
+hash = "f4438c3518231a7e37f6b94b2e39433fa7e93ebadfa17f7d1fbdfa8ea7c85051"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/your_first_iron_ingot.snbt"
@@ -374,7 +374,7 @@ hash = "2e69afacf774749222ca1e925dc94d32e6c3db8bef4557aa33144751c2770206"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "4c501288e7614d6305d8597925f109e00e6d86e7628b93638917754b9ff1110c"
+hash = "411f8a57aaaddc0365a914d862b62a3cf11b1ff5732baac1dee0b741167b0874"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"

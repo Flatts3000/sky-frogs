@@ -35,7 +35,7 @@ CHAPTERS = os.path.join(REPO, "pack", "config", "ftbquests", "quests", "chapters
 LANG = os.path.join(REPO, "pack", "config", "ftbquests", "quests", "lang", "en_us.snbt")
 ITEM_IDS = os.path.join(REPO, "tools", "data", "item_ids.txt")
 
-GROUP = "0C4F0E0000000006"  # Tier 6: Void (the victory-lap shelf)
+GROUP = "0C4F0E0000000007"  # Completionist (the victory-lap shelf after Tier 6)
 GOODFOOD = "9151543141235425281L"
 
 VANILLA_PREFIX = "7F0C"  # The Whole Pond id block
@@ -267,7 +267,7 @@ def main():
     chapter = (f'{{\n\tautofocus_id: "{cap_q}"\n\tdefault_hide_dependency_lines: true\n'
                f'\tdefault_quest_shape: ""\n\tfilename: "whole_pond"\n\tgroup: "{GROUP}"\n'
                f'\ticon: {{\n\t\tid: "minecraft:lily_pad"\n\t}}\n\tid: "{VANILLA_CHAPTER_ID}"\n'
-               f"\torder_index: 4\n\tquest_links: [ ]\n\tquests: [\n"
+               f"\torder_index: 0\n\tquest_links: [ ]\n\tquests: [\n"
                + "\n".join(quests) + "\n\t]\n}\n")
     open(os.path.join(CHAPTERS, "whole_pond.snbt"), "w", encoding="utf-8", newline="\n").write(chapter)
 
@@ -307,7 +307,7 @@ def main():
     chapter = (f'{{\n\tautofocus_id: "{cap_q}"\n\tdefault_hide_dependency_lines: true\n'
                f'\tdefault_quest_shape: ""\n\tfilename: "sister_ponds"\n\tgroup: "{GROUP}"\n'
                f'\ticon: {{\n\t\tid: "productivefrogs:sweetslime"\n\t}}\n\tid: "{MODDED_CHAPTER_ID}"\n'
-               f"\torder_index: 5\n\tquest_links: [ ]\n\tquests: [\n"
+               f"\torder_index: 1\n\tquest_links: [ ]\n\tquests: [\n"
                + "\n".join(quests) + "\n\t]\n}\n")
     open(os.path.join(CHAPTERS, "sister_ponds.snbt"), "w", encoding="utf-8", newline="\n").write(chapter)
 

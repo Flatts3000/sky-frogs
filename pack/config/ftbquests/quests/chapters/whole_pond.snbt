@@ -3,12 +3,12 @@
 	default_hide_dependency_lines: true
 	default_quest_shape: ""
 	filename: "whole_pond"
-	group: "0C4F0E0000000006"
+	group: "0C4F0E0000000007"
 	icon: {
 		id: "minecraft:lily_pad"
 	}
 	id: "7F0C000000000001"
-	order_index: 4
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
