@@ -349,6 +349,10 @@ file = "config/ftbquests/quests/reward_tables/7F60000000000001.snbt"
 hash = "4aa4170ba30c9aea7358dafdb637afab38f5a49e7a7798838d9222f0121ce66c"
 
 [[files]]
+file = "config/opolis_utilities.toml"
+hash = "33faeeef58e91692718060fb1f18637595136d039debf5d258d3f20c662773a8"
+
+[[files]]
 file = "config/productivefrogs-common.toml"
 hash = "33e6c6fa6a44a66e62b209fb12006cd940b84257dc80287e510dd0cb95a8b528"
 
@@ -403,6 +407,22 @@ hash = "317716854cc50fc09f751b375c8e598e2e6fd966d1e7c51f4b751935e2cb58e4"
 [[files]]
 file = "kubejs/assets/minecraft/texts/splashes.txt"
 hash = "b1d22117b1aff7f2d5c65142a316f1d83154baa36d5e942e24bb5fe4c53f160b"
+
+[[files]]
+file = "kubejs/client_scripts/opolis_jei_hide.js"
+hash = "1ff55fa099c6f9092a89d5d9cff3b03c3a24aaa6f5cb2e0becd33ded9649f1c0"
+
+[[files]]
+file = "kubejs/data/opolisutilities/loot_table/loot_boxes/advanced_loot_box.json"
+hash = "af73bfdbddd392cbfcf94acfc3638cdeb8cc8f69f70341727b8e174504a838d3"
+
+[[files]]
+file = "kubejs/data/opolisutilities/loot_table/loot_boxes/basic_loot_box.json"
+hash = "af73bfdbddd392cbfcf94acfc3638cdeb8cc8f69f70341727b8e174504a838d3"
+
+[[files]]
+file = "kubejs/data/opolisutilities/loot_table/loot_boxes/elite_loot_box.json"
+hash = "af73bfdbddd392cbfcf94acfc3638cdeb8cc8f69f70341727b8e174504a838d3"
 
 [[files]]
 file = "kubejs/data/productivefrogs/neoforge/biome_modifier/add_bog_slime_spawn.json"
@@ -538,7 +558,7 @@ hash = "2b6735fc64ee708364b30526b4d5d7b703cfc80e624eb8f6f2098f6a0b2b192d"
 
 [[files]]
 file = "kubejs/server_scripts/upstream_recipe_fixes.js"
-hash = "85ff968924b832734cc32eee91704bf2125e0d4dea475be9b4c039c7790dc542"
+hash = "06990d1e0160108d321a985b2b0c61dd34a05e1c4e971f62538681b11d73fb90"
 
 [[files]]
 file = "kubejs/server_scripts/void_recipes.js"
