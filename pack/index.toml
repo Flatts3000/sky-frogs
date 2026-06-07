@@ -322,7 +322,7 @@ hash = "2e69afacf774749222ca1e925dc94d32e6c3db8bef4557aa33144751c2770206"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "70b19e0576d2fbfbc3ffe8bd177e210be73105f7d89db81a9b0509b0357e6cb3"
+hash = "db18830c27ba278bcbc5a17f67dd09e824974d4e51a28ecb703f10c76e3d9fce"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
@@ -382,7 +382,7 @@ hash = "01a923d8ace87245560207e60d49b658dc1cef5607e87593894f8a604ab4e880"
 
 [[files]]
 file = "config/skyblockbuilder/templates/islands/default.nbt"
-hash = "dafc46e19f19eb74b5bb96d994886f411c10343437577d212cdd149fd920409d"
+hash = "307548a7c605fbea486576f1a5f5aa18c013f167d20ca37fbd2a4095bd621a8b"
 
 [[files]]
 file = "config/skyblockbuilder/world.json5"
