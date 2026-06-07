@@ -4,6 +4,10 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+## [0.7.2] - 2026-06-07
+
+An endgame unblocker: the two Singularities nobody could ever craft are gone, the Ultimate wants 48, and kelp finds its way into the moss sieve.
+
 ### Fixed
 - **The Water and Lava Singularities are gone - they were uncraftable** (#131, reported by Dergib on Discord): both demanded 1000 of an item with zero sources on a void skyblock (kelp and pointed dripstone - no ocean, no caves, sand sieving disabled, and the fluid-pair Froglights melt to fluid rather than smelting to an item). The **Ultimate Singularity now wants 48**; mid-campaign players will see its recipe shrink, and already-crafted Water/Lava Singularities become inert curios. The exclusion lives in the generator, so future PF bumps cannot resurrect the pair.
 
