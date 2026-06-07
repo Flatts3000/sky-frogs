@@ -11,6 +11,7 @@
 	chapter.784143B9C5D63814.title: "Welcome"
 	chapter.7B06000000000001.title: "Bog Frogs"
 	chapter.7CA7E000C0DE0001.title: "Cave Frogs"
+	chapter.3E17000000000001.title: "Melting Point"
 	chapter.70E0000000000001.title: "Powered Up"
 	chapter.7D00000000000001.title: "Drowned Riches"
 	chapter.7F00000000000001.title: "Take Flight"
@@ -934,13 +935,6 @@
 	]
 	quest.7D00000000000023.quest_subtitle: "Let it frog."
 	quest.7D00000000000023.title: "Snow"
-	quest.7D00000000000026.quest_desc: [
-		"The Tide frog's strangest trick: a &9Water Froglight&r melts into a real bucket of water in the &eFroglight Crucible&r (heat under a basin - Productive Frogs' new toy). Its item-form resource is &akelp&r, the Tide-native stand-in, which is what the chamber and the Singularity count."
-		""
-		"Turn in the &bWater Froglight&r."
-	]
-	quest.7D00000000000026.quest_subtitle: "The ocean, bottled."
-	quest.7D00000000000026.title: "Water"
 	quest.7F00000000000002.quest_desc: [
 		"Your island has spread out under you, and walking it is getting old. Time to fly. &eIron Jetpacks&r runs on the metals your frogs already make and the &bRF&r your Geode machines already spin."
 		""
@@ -982,6 +976,48 @@
 	chapter_group.0C4F0E0000000005.title: "Tier 5: Infernal"
 	chapter.5140000000000001.title: "Road to Infernal"
 	chapter.51F0000000000001.title: "Infernal Frogs"
+	quest.3E17000000000002.quest_desc: [
+		"Productive Frogs' &eCrucible&r is a heated basin that melts &bFroglights&r into the real thing - no GUI, no power, just heat from the block below. Iron and bricks build it, and your hammer's clay chain fires the bricks."
+		""
+		"Craft a &eCrucible&r and park it over a torch."
+	]
+	quest.3E17000000000002.quest_subtitle: "Soup's on."
+	quest.3E17000000000002.title: "The Froglight Crucible"
+	quest.3E17000000000005.quest_desc: [
+		"Hotter is faster. The ladder climbs from &etorch&r to &6campfire&r to &cfire&r to &6lava&r - and Froglights burn too: a placed &6Lava Froglight&r heats like lava, a &cBlaze Froglight&r burns hotter than fire, and Powah's &cBlazing Crystal Froglight&r is the hottest plate in the mod. Your farmed decor doubles as the smelter's fire."
+		""
+		"JEI's new heat-ladder category lists every source. Tick when you have heat under your basin."
+	]
+	quest.3E17000000000005.quest_subtitle: "Hotter is faster."
+	quest.3E17000000000005.title: "Feed the Fire"
+	quest.3E17000000000008.quest_desc: [
+		"A &9Water Froglight&r melts into a full &9bucket of water&r - the ocean, farmable. Its item-form resource is &akelp&r (fluids are not items), which is what the chamber and its Singularity count."
+		""
+		"Turn in the &bWater Froglight&r."
+	]
+	quest.3E17000000000008.quest_subtitle: "The ocean, bottled."
+	quest.3E17000000000008.title: "Water"
+	quest.3E1700000000000B.quest_desc: [
+		"A &6Lava Froglight&r melts into a full &6bucket of lava&r - renewable, no cobble-crucible babysitting. The variant is &cInfernal&r business (its item-form is the &cmagma block&r), so the frog half waits for Tier 5 even though the basin is ready now."
+		""
+		"Turn in the &bLava Froglight&r."
+	]
+	quest.3E1700000000000B.quest_subtitle: "The floor is renewable."
+	quest.3E1700000000000B.title: "Lava"
+	quest.3E1700000000000E.quest_desc: [
+		"The &eCasting Mold&r turns molten metal back into &fingots&r - pour with a bucket, pipe it, or skip the plumbing entirely: stack &cheat&r, &eCrucible&r, &eMold&r into a three-block tower and the Mold drinks straight from the basin."
+		""
+		"Craft a &eCasting Mold&r."
+	]
+	quest.3E1700000000000E.quest_subtitle: "Pour one out."
+	quest.3E1700000000000E.title: "The Casting Mold"
+	quest.3E17000000000011.quest_desc: [
+		"Now the payoff: a metal &bFroglight&r melts into &etwo ingots&r worth of molten metal - the Crucible is this pack's ore doubling. Tower it up, hopper Froglights in, and let the Mold spit ingots while you do anything else."
+		""
+		"Tick when your tower casts its first doubled ingot."
+	]
+	quest.3E17000000000011.quest_subtitle: "Two for one."
+	quest.3E17000000000011.title: "The Tower"
 	quest.51F0000000000002.quest_desc: [
 		"Netherrack was just the floor. Now the &cInfernal&r frog gives you everything the Nether was hiding:"
 		""
@@ -1029,13 +1065,6 @@
 	quest.51F0000000000017.quest_subtitle: "The portal stone, on tap."
 	quest.51F0000000000017.title: "Obsidian"
 	chapter.52E0000000000001.title: "The Network"
-	quest.51F000000000001B.quest_desc: [
-		"&6Lava&r joins the roster as proto-obsidian: the &cLava Froglight&r melts into a real lava bucket in the &eFroglight Crucible&r, and its item-form resource is the &cmagma block&r - which is exactly what the obsidian chain threads off next."
-		""
-		"Turn in the &bLava Froglight&r."
-	]
-	quest.51F000000000001B.quest_subtitle: "The floor is renewable."
-	quest.51F000000000001B.title: "Lava"
 	quest.52E0000000000002.quest_desc: [
 		"Every &eRefined Storage&r part starts here: &biron&r forged with &enether quartz&r. Until the Infernal frog gave you quartz, none of this was buildable. Now it all is."
 	]

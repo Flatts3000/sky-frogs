@@ -254,7 +254,7 @@ hash = "3363b1feccb9dd967513a7203c82dfc81dc693f9b2f0a4e475f026543242e4ee"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/drowned_riches.snbt"
-hash = "8edc49f129387fec0e7da90c186e6b00880765e3577c426b2a0310b4a8d9b063"
+hash = "7c343a3f7268f590eb9a8f3dbbf8bd6f835ccf1cee014cc04aff31ef53818f58"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/geode_frogs.snbt"
@@ -262,7 +262,7 @@ hash = "ad642501aadd8ced3a65d7fd2bc33fa58abfab43ad54cf512f9416d5d2c70050"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/infernal_frogs.snbt"
-hash = "794b32f143c260faae8f94cad0e0b108c7ec0c69941d8100ad3f0060c687c6e1"
+hash = "8f0949b7c0546c930066e5376aeeb5390a3dd48c1b700fded5aa6998d22b8a4e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/master_pond.snbt"
@@ -271,6 +271,10 @@ hash = "c91aefc0366e21bdcafa5415dc89c1d56e5249099a0e1579c36aebe3373572fb"
 [[files]]
 file = "config/ftbquests/quests/chapters/mekanism.snbt"
 hash = "c36d172452126b9782e71e0c3dbb8edadc32e2acb59aeee9704a3a2f19b97c43"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/melting_point.snbt"
+hash = "1b15fa805114f580e68b47b5df70e705c7b2ed228a47b09dbed8c5b40230e5d4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/powered_up.snbt"
@@ -302,7 +306,7 @@ hash = "01e3daf039dfc3825421110e6b725a231d1800991a7db361549309424070cc42"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/storage_and_crafting.snbt"
-hash = "58271c8c5e3648bd813f226f8a340896e4715394d7274982cb690051051fb289"
+hash = "82985606c836b899b610960f68c44ecee4a4e8a0e452e51e768a166323d20d0e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/take_flight.snbt"
@@ -338,7 +342,7 @@ hash = "2e69afacf774749222ca1e925dc94d32e6c3db8bef4557aa33144751c2770206"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "29299a7b01517cf4cdf7ee994a569e239a4be9c092ad48bb1a0808e46b7366a5"
+hash = "4c6733e6357569b8641a4df7e5bf7badcce3d2a0dacf4c8a736fc8af246db0d9"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"

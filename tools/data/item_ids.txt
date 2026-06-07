@@ -15978,6 +15978,7 @@ productivefrogs:bog_frog_spawn_egg
 productivefrogs:bog_slime_spawn_egg
 productivefrogs:bog_tadpole_spawn_egg
 productivefrogs:calcite_slime_milk_bucket
+productivefrogs:casting_mold
 productivefrogs:cave_frog_egg
 productivefrogs:cave_frog_spawn_egg
 productivefrogs:cave_slime_spawn_egg
@@ -15988,6 +15989,7 @@ productivefrogs:coal_slime_milk_bucket
 productivefrogs:configurable_froglight
 productivefrogs:copper_slime_milk_bucket
 productivefrogs:count_catalyst
+productivefrogs:crucible
 productivefrogs:diamond_slime_milk_bucket
 productivefrogs:dirt_slime_milk_bucket
 productivefrogs:echo_shard_slime_milk_bucket
