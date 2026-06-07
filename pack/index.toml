@@ -409,6 +409,10 @@ file = "kubejs/assets/minecraft/texts/splashes.txt"
 hash = "b1d22117b1aff7f2d5c65142a316f1d83154baa36d5e942e24bb5fe4c53f160b"
 
 [[files]]
+file = "kubejs/client_scripts/opolis_jei_hide.js"
+hash = "1ff55fa099c6f9092a89d5d9cff3b03c3a24aaa6f5cb2e0becd33ded9649f1c0"
+
+[[files]]
 file = "kubejs/data/opolisutilities/loot_table/loot_boxes/advanced_loot_box.json"
 hash = "af73bfdbddd392cbfcf94acfc3638cdeb8cc8f69f70341727b8e174504a838d3"
 

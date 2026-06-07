@@ -5,7 +5,7 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 ## [Unreleased]
 
 ### Fixed
-- **Opolis loot boxes actually stay severed now** (#115, reported by Dergib on Discord): slimes were dropping Basic Loot Boxes - labeled DISABLED, yet openable for dirt and cobblestone. The #85 curation cut the recipes but missed BBL Core's global loot modifier and the boxes' own loot tables. Mob drops are off (`Mob Drop Chance = 1.0`) and all three box loot tables are overridden empty, so boxes already in your chests open to nothing. Curation lesson recorded: screen mods for global loot modifiers, not just recipes.
+- **Opolis loot boxes actually stay severed now** (#115, reported by Dergib on Discord): slimes were dropping Basic Loot Boxes - labeled DISABLED, yet openable for dirt and cobblestone. The #85 curation cut the recipes but missed BBL Core's global loot modifier and the boxes' own loot tables. Mob drops are off (`Mob Drop Chance = 1.0`), all three box loot tables are overridden empty (boxes already in your chests open to nothing), and the box items are hidden from JEI entirely - no loot boxes from BBL, anywhere. Curation lesson recorded: screen mods for global loot modifiers, not just recipes.
 - **The ghost ATM furnace recipes are gone from JEI** (#116, reported by Dergib on Discord): Iron Furnaces ships its Allthemodium/Vibranium/Unobtainium FURNACE recipes unconditioned (unlike the upgrades, which are properly mod-gated), so they rendered in JEI with empty ingredient tags - uncraftable bait. Removed; and no, ATM ores are not planned for the pack.
 
 ### Added
