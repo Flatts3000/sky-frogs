@@ -1,49 +1,49 @@
-// Sky Frogs - a second surface for the Flux Dust ritual (#120, maintainer ruling).
+// Sky Frogs - a third anvil for the Flux Dust ritual (#120, maintainer ruling).
 //
-// Flux Networks hardcodes its anvil check (EventHandler bytecode): thrown
-// redstone transmutes only on obsidian that rests on BEDROCK or a FLUX BLOCK -
-// no tag, no config. The pack adds a third arrangement: obsidian resting on
-// OBSIDIAN. Both blocks are Infernal-frog-farmable, so the ritual works
-// anywhere at the tier that owns it - new islands also carry one bedrock at
-// their heart (the FN-native arrangement, and the one its JEI page shows).
+// Flux Networks hardcodes its anvil check (EventHandler bytecode): LEFT-CLICK
+// obsidian resting on BEDROCK or a FLUX BLOCK and the redstone items sitting on
+// top compress into flux dust - no tag, no config, and its JEI category shows
+// exactly those two arrangements. The pack adds a third: obsidian resting on
+// OBSIDIAN (both Infernal-frog-farmable), trigger-compatible with the mod's own
+// flow ("Left click the Obsidian"). New islands also carry one bedrock at their
+// heart for the FN-native arrangement.
 //
-// Implementation: a light poll. Every 10 ticks, redstone item entities resting
-// on an obsidian-on-obsidian stack become flux dust 1:1 (stack-preserving),
-// mirroring FN's own economics. FN ignores this arrangement entirely, so the
-// two handlers can't double-fire on the same entity.
-let sfFluxTick = 0
-
-ServerEvents.tick(event => {
+// Click-triggered like FN's - no tick polling. FN ignores obsidian-on-obsidian,
+// so the two handlers can't double-fire. JEI can't be taught FN's custom
+// category from a script, so discoverability lives in an information page on
+// flux dust (client_scripts/flux_jei_info.js) and the Powered Up quest.
+BlockEvents.leftClicked(event => {
   if (!Platform.isLoaded('fluxnetworks')) {
     return
   }
-  sfFluxTick++
-  if (sfFluxTick % 10 !== 0) {
+  const { block, level } = event
+  if (String(block.id) !== 'minecraft:obsidian') {
     return
   }
-  event.server.levels.forEach(level => {
-    level.entities.forEach(entity => {
-      if (entity.type !== 'minecraft:item') {
-        return
-      }
-      const stack = entity.item
-      if (!stack || stack.id !== 'minecraft:redstone') {
-        return
-      }
-      const bx = Math.floor(entity.x)
-      const by = Math.floor(entity.y)
-      const bz = Math.floor(entity.z)
-      // a resting item floats just above the surface: floor(y) is the air cell,
-      // one below is the block it sits on, two below is the anvil
-      if (level.getBlock(bx, by - 1, bz).id !== 'minecraft:obsidian') {
-        return
-      }
-      if (level.getBlock(bx, by - 2, bz).id !== 'minecraft:obsidian') {
-        return
-      }
-      entity.item = Item.of('fluxnetworks:flux_dust', stack.count)
-      level.runCommandSilent(`particle minecraft:portal ${entity.x} ${entity.y + 0.3} ${entity.z} 0.2 0.2 0.2 0.5 24`)
-      level.runCommandSilent(`playsound minecraft:block.respawn_anchor.charge block @a ${bx} ${by} ${bz} 0.6 1.4`)
-    })
+  if (String(level.getBlock(block.x, block.y - 1, block.z).id) !== 'minecraft:obsidian') {
+    return
+  }
+  let converted = 0
+  level.entities.forEach(entity => {
+    if (entity.type !== 'minecraft:item') {
+      return
+    }
+    const stack = entity.item
+    if (!stack || stack.id !== 'minecraft:redstone') {
+      return
+    }
+    // only the items sitting in the column directly above the clicked obsidian
+    if (Math.floor(entity.x) !== block.x || Math.floor(entity.z) !== block.z) {
+      return
+    }
+    if (Math.floor(entity.y) !== block.y + 1) {
+      return
+    }
+    entity.item = Item.of('fluxnetworks:flux_dust', stack.count)
+    converted += stack.count
   })
+  if (converted > 0) {
+    level.runCommandSilent(`particle minecraft:portal ${block.x + 0.5} ${block.y + 1.3} ${block.z + 0.5} 0.2 0.2 0.2 0.5 24`)
+    level.runCommandSilent(`playsound minecraft:block.respawn_anchor.charge block @a ${block.x} ${block.y} ${block.z} 0.6 1.4`)
+  }
 })
