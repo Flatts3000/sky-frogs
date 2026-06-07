@@ -1,0 +1,736 @@
+{
+	autofocus_id: "7F0C831A136C804F"
+	default_hide_dependency_lines: true
+	default_quest_shape: ""
+	filename: "whole_pond"
+	group: "0C4F0E0000000007"
+	icon: {
+		id: "minecraft:lily_pad"
+	}
+	id: "7F0C000000000001"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				id: "minecraft:breeze_rod"
+			}
+			id: "7F0CF29DB73D11CC"
+			tasks: [{
+				id: "7F0C615E11BB030B"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:breeze_rod" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -10.5d
+		}
+		{
+			icon: {
+				id: "minecraft:coal"
+			}
+			id: "7F0C1F0404468D14"
+			tasks: [{
+				id: "7F0CB43833560579"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:coal" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -10.5d
+		}
+		{
+			icon: {
+				id: "minecraft:copper_ingot"
+			}
+			id: "7F0C8F27BA64A79A"
+			tasks: [{
+				id: "7F0C1154ABF5ED83"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:copper" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -9.0d
+		}
+		{
+			icon: {
+				id: "minecraft:glow_ink_sac"
+			}
+			id: "7F0CA53880BC7A6D"
+			tasks: [{
+				id: "7F0CA29D6A57BE6B"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:glow_ink_sac" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: -2.25d
+			y: -8.25d
+		}
+		{
+			icon: {
+				id: "minecraft:gold_ingot"
+			}
+			id: "7F0C08FCFC02F3AB"
+			tasks: [{
+				id: "7F0CED5C0030DDF1"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:gold" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 2.25d
+			y: -8.25d
+		}
+		{
+			icon: {
+				id: "minecraft:iron_ingot"
+			}
+			id: "7F0C6914A6819ED4"
+			tasks: [{
+				id: "7F0CE1F205DFB078"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:iron" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: -1.125d
+			y: -7.5d
+		}
+		{
+			icon: {
+				id: "minecraft:pointed_dripstone"
+			}
+			id: "7F0C31B58CD4653B"
+			tasks: [{
+				id: "7F0C29B1A2648A7B"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:lava" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 1.125d
+			y: -7.5d
+		}
+		{
+			icon: {
+				id: "minecraft:redstone"
+			}
+			id: "7F0C0CDE0B405058"
+			tasks: [{
+				id: "7F0C9F1DD597331A"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:redstone" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.375d
+		}
+		{
+			icon: {
+				id: "minecraft:kelp"
+			}
+			id: "7F0C4AAC932E525B"
+			tasks: [{
+				id: "7F0C186D97F87AAE"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:water" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: -2.25d
+			y: -6.375d
+		}
+		{
+			icon: {
+				id: "minecraft:armadillo_scute"
+			}
+			id: "7F0CEC69E81A8BE2"
+			tasks: [{
+				id: "7F0CB754440F4341"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:armadillo_scute" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.75d
+		}
+		{
+			icon: {
+				id: "minecraft:clay_ball"
+			}
+			id: "7F0CAF38409B6B3F"
+			tasks: [{
+				id: "7F0C0DC02BDF0E44"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:clay_ball" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: -1.875d
+			y: -3.0d
+		}
+		{
+			icon: {
+				id: "minecraft:dirt"
+			}
+			id: "7F0C30C40C1A2F28"
+			tasks: [{
+				id: "7F0C9690BCC3AAE3"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:dirt" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 1.875d
+			y: -3.0d
+		}
+		{
+			icon: {
+				id: "minecraft:feather"
+			}
+			id: "7F0CCE7E40CD1CC9"
+			tasks: [{
+				id: "7F0C87D12A59C432"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:feather" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: -0.9d
+			y: -1.875d
+		}
+		{
+			icon: {
+				id: "minecraft:honeycomb"
+			}
+			id: "7F0CE14B1CC487F0"
+			tasks: [{
+				id: "7F0CEC40B1128AB0"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:honeycomb" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 0.9d
+			y: -1.875d
+		}
+		{
+			icon: {
+				id: "minecraft:leather"
+			}
+			id: "7F0C65B418B98523"
+			tasks: [{
+				id: "7F0C8DD70D1B4B77"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:leather" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -0.75d
+		}
+		{
+			icon: {
+				id: "minecraft:lily_pad"
+			}
+			id: "7F0CD2AD9A3494A2"
+			tasks: [{
+				id: "7F0CC8ABCF2DB745"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:lily_pad" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: -1.875d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "minecraft:moss_block"
+			}
+			id: "7F0C10BE42096CF4"
+			tasks: [{
+				id: "7F0C74CCC4F9B89D"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:moss" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 1.875d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "minecraft:mud"
+			}
+			id: "7F0C7903906CF76B"
+			tasks: [{
+				id: "7F0C45888A2D2879"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:mud" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.125d
+		}
+		{
+			icon: {
+				id: "minecraft:mycelium"
+			}
+			id: "7F0CD99AF2E70805"
+			tasks: [{
+				id: "7F0CFBAC4D1276A4"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:mycelium" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: -0.9d
+			y: 2.25d
+		}
+		{
+			icon: {
+				id: "minecraft:amethyst_shard"
+			}
+			id: "7F0CE6B091CA7425"
+			tasks: [{
+				id: "7F0C6AC2A819F366"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:amethyst" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: -3.375d
+			y: -4.125d
+		}
+		{
+			icon: {
+				id: "minecraft:calcite"
+			}
+			id: "7F0CB4D22DB96E87"
+			tasks: [{
+				id: "7F0C1B5024E56D2B"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:calcite" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: -4.875d
+			y: -4.875d
+		}
+		{
+			icon: {
+				id: "minecraft:diamond"
+			}
+			id: "7F0C785DFABE16B8"
+			tasks: [{
+				id: "7F0C9FBC7A008C24"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:diamond" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: -6.375d
+			y: -6.375d
+		}
+		{
+			icon: {
+				id: "minecraft:emerald"
+			}
+			id: "7F0C3A9D7A352B20"
+			tasks: [{
+				id: "7F0C3C0444EEDC41"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:emerald" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -5.25d
+		}
+		{
+			icon: {
+				id: "minecraft:lapis_lazuli"
+			}
+			id: "7F0CA4F53C20C80A"
+			tasks: [{
+				id: "7F0C85D929D8C096"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:lapis" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: -6.75d
+			y: -7.875d
+		}
+		{
+			icon: {
+				id: "minecraft:tuff"
+			}
+			id: "7F0C210B70B11718"
+			tasks: [{
+				id: "7F0CC4F4F45E8A8A"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:tuff" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: -5.25d
+			y: -3.375d
+		}
+		{
+			icon: {
+				id: "minecraft:ice"
+			}
+			id: "7F0C6801F5DBE153"
+			tasks: [{
+				id: "7F0CEA005E869EE1"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:ice" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 3.375d
+			y: -4.125d
+		}
+		{
+			icon: {
+				id: "minecraft:ink_sac"
+			}
+			id: "7F0C16E51FF89C7B"
+			tasks: [{
+				id: "7F0C305F473B8A68"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:ink_sac" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 4.875d
+			y: -4.875d
+		}
+		{
+			icon: {
+				id: "minecraft:nautilus_shell"
+			}
+			id: "7F0C88B30F157872"
+			tasks: [{
+				id: "7F0CC3C7B89FED36"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:nautilus_shell" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -6.0d
+		}
+		{
+			icon: {
+				id: "minecraft:prismarine_shard"
+			}
+			id: "7F0CB96114C5C6F3"
+			tasks: [{
+				id: "7F0C3C28D49399A4"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:prismarine" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 6.375d
+			y: -6.375d
+		}
+		{
+			icon: {
+				id: "minecraft:prismarine_crystals"
+			}
+			id: "7F0C7F54AA1CAEB1"
+			tasks: [{
+				id: "7F0C5B4E8E7EECFA"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:prismarine_crystals" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -5.25d
+		}
+		{
+			icon: {
+				id: "minecraft:sea_pickle"
+			}
+			id: "7F0C8CF21B82AFF7"
+			tasks: [{
+				id: "7F0CEA9B02F7E34C"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:sea_pickle" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 6.75d
+			y: -7.875d
+		}
+		{
+			icon: {
+				id: "minecraft:snow_block"
+			}
+			id: "7F0C63CFDDB7AB0D"
+			tasks: [{
+				id: "7F0C4D054256A098"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:snow" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 5.25d
+			y: -3.375d
+		}
+		{
+			icon: {
+				id: "minecraft:sponge"
+			}
+			id: "7F0C0C68D7AE34F1"
+			tasks: [{
+				id: "7F0C6716F79A094D"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:sponge" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 4.125d
+			y: -2.625d
+		}
+		{
+			icon: {
+				id: "minecraft:turtle_scute"
+			}
+			id: "7F0C08E2CA8CEE6D"
+			tasks: [{
+				id: "7F0CD953F622E501"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:turtle_scute" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 5.625d
+			y: -4.125d
+		}
+		{
+			icon: {
+				id: "minecraft:blaze_rod"
+			}
+			id: "7F0C7A6E7E6FF8BC"
+			tasks: [{
+				id: "7F0CE676B84806EA"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:blaze" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: -3.375d
+			y: 2.25d
+		}
+		{
+			icon: {
+				id: "minecraft:ghast_tear"
+			}
+			id: "7F0CA72272297E4A"
+			tasks: [{
+				id: "7F0CF3065E2367F6"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:ghast_tear" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: -4.875d
+			y: 3.375d
+		}
+		{
+			icon: {
+				id: "minecraft:glowstone_dust"
+			}
+			id: "7F0C8DDD71191971"
+			tasks: [{
+				id: "7F0CFD3BA36A51BF"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:glowstone_dust" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 4.875d
+		}
+		{
+			icon: {
+				id: "minecraft:netherite_scrap"
+			}
+			id: "7F0C7F54359837D9"
+			tasks: [{
+				id: "7F0CFAE6D330A6FE"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:netherite_scrap" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: -6.375d
+			y: 6.375d
+		}
+		{
+			icon: {
+				id: "minecraft:netherrack"
+			}
+			id: "7F0C39A7048DC61E"
+			tasks: [{
+				id: "7F0CC5FEFE29E7D2"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:netherrack" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 5.25d
+		}
+		{
+			icon: {
+				id: "minecraft:obsidian"
+			}
+			id: "7F0C069E8A3CB1BC"
+			tasks: [{
+				id: "7F0CC94A004DC743"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:obsidian" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: -6.75d
+			y: 7.875d
+		}
+		{
+			icon: {
+				id: "minecraft:quartz"
+			}
+			id: "7F0CCA7DD1C5C3F0"
+			tasks: [{
+				id: "7F0C4D7B5BCB137E"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:quartz" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: -5.25d
+			y: 1.5d
+		}
+		{
+			icon: {
+				id: "minecraft:soul_sand"
+			}
+			id: "7F0CE7842B59D668"
+			tasks: [{
+				id: "7F0CC311D63B6198"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:soul_sand" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: -4.125d
+			y: 4.125d
+		}
+		{
+			icon: {
+				id: "minecraft:soul_soil"
+			}
+			id: "7F0C69EDC3550408"
+			tasks: [{
+				id: "7F0C25793244E266"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:soul_soil" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: -5.625d
+			y: 4.125d
+		}
+		{
+			icon: {
+				id: "minecraft:chorus_fruit"
+			}
+			id: "7F0CA0BDBEA09C67"
+			tasks: [{
+				id: "7F0CC70E9FB89DC6"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:chorus_fruit" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 3.375d
+			y: 2.25d
+		}
+		{
+			icon: {
+				id: "minecraft:echo_shard"
+			}
+			id: "7F0C86B4736048BE"
+			tasks: [{
+				id: "7F0CA68493A36B48"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:echo_shard" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 4.875d
+			y: 3.375d
+		}
+		{
+			icon: {
+				id: "minecraft:end_stone"
+			}
+			id: "7F0C4637FB6F2985"
+			tasks: [{
+				id: "7F0CFF714ADB470C"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:end_stone" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 4.875d
+		}
+		{
+			icon: {
+				id: "minecraft:ender_pearl"
+			}
+			id: "7F0CD0A688774E3F"
+			tasks: [{
+				id: "7F0CE70D5965AAC9"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:ender_pearl" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 6.375d
+			y: 6.375d
+		}
+		{
+			icon: {
+				id: "minecraft:phantom_membrane"
+			}
+			id: "7F0CEFBC82A9F1DB"
+			tasks: [{
+				id: "7F0CA1580432CB03"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:phantom_membrane" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 5.25d
+		}
+		{
+			icon: {
+				id: "minecraft:sculk"
+			}
+			id: "7F0C0597B23C28B8"
+			tasks: [{
+				id: "7F0C4103FA8E1E22"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:sculk" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 6.75d
+			y: 7.875d
+		}
+		{
+			icon: {
+				id: "minecraft:shulker_shell"
+			}
+			id: "7F0C4A07248764ED"
+			tasks: [{
+				id: "7F0C8E313D607D50"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:shulker_shell" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 5.25d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7F0CF29DB73D11CC", "7F0C1F0404468D14", "7F0C8F27BA64A79A", "7F0CA53880BC7A6D", "7F0C08FCFC02F3AB", "7F0C6914A6819ED4", "7F0C31B58CD4653B", "7F0C0CDE0B405058", "7F0C4AAC932E525B", "7F0CEC69E81A8BE2", "7F0CAF38409B6B3F", "7F0C30C40C1A2F28", "7F0CCE7E40CD1CC9", "7F0CE14B1CC487F0", "7F0C65B418B98523", "7F0CD2AD9A3494A2", "7F0C10BE42096CF4", "7F0C7903906CF76B", "7F0CD99AF2E70805", "7F0CE6B091CA7425", "7F0CB4D22DB96E87", "7F0C785DFABE16B8", "7F0C3A9D7A352B20", "7F0CA4F53C20C80A", "7F0C210B70B11718", "7F0C6801F5DBE153", "7F0C16E51FF89C7B", "7F0C88B30F157872", "7F0CB96114C5C6F3", "7F0C7F54AA1CAEB1", "7F0C8CF21B82AFF7", "7F0C63CFDDB7AB0D", "7F0C0C68D7AE34F1", "7F0C08E2CA8CEE6D", "7F0C7A6E7E6FF8BC", "7F0CA72272297E4A", "7F0C8DDD71191971", "7F0C7F54359837D9", "7F0C39A7048DC61E", "7F0C069E8A3CB1BC", "7F0CCA7DD1C5C3F0", "7F0CE7842B59D668", "7F0C69EDC3550408", "7F0CA0BDBEA09C67", "7F0C86B4736048BE", "7F0C4637FB6F2985", "7F0CD0A688774E3F", "7F0CEFBC82A9F1DB", "7F0C0597B23C28B8", "7F0C4A07248764ED"]
+			icon: {
+				id: "minecraft:lily_pad"
+			}
+			id: "7F0C831A136C804F"
+			shape: "hexagon"
+			size: 2.0d
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7F0CEAB829E8FC63"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "7F0CF9CE4CC6B780"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+	]
+}

@@ -136,9 +136,9 @@ const SLIME_TIERS = [
 // (Energizing Orb, redstone dropped on obsidian) before the frog loop can take
 // over; the chamber then turns one held resource into a dedicated slime instead
 // of waiting on more Cave-pool split-discovery rolls. Tier fillers per the
-// standing law. Uraninite is the one variant with NO craft path on this skyblock
-// (the orb's uraninite recipes all need ore/uranium) - its first copy comes from
-// split-discovery, and this row scales it from there.
+// standing law. Every variant here has a craft path (PR #126): the ATO metals
+// chain off osmium milk (ato_slime_chain.js), fluorite enriches from calcite
+// (fluorite_enriching.js), and uraninite orb-crafts from chain-farmed uranium.
 //
 // [category stamp, tier filler, variant, the variant's own resource, owning mod]
 const MODDED_SELF_KEYED = [
@@ -157,7 +157,27 @@ const MODDED_SELF_KEYED = [
   ['INFERNAL', 'minecraft:prismarine', 'flux_dust',       'fluxnetworks:flux_dust',    'fluxnetworks'],
   ['VOID',     'minecraft:soul_soil',  'niotic',          'powah:crystal_niotic',      'powah'],
   ['VOID',     'minecraft:soul_soil',  'spirited',        'powah:crystal_spirited',    'powah'],
-  ['VOID',     'minecraft:soul_soil',  'nitro',           'powah:crystal_nitro',       'powah']
+  ['VOID',     'minecraft:soul_soil',  'nitro',           'powah:crystal_nitro',       'powah'],
+  // The census sweep (#121): every quested modded variant gets its self-keyed
+  // row. Tag-primed variants (PF primer_tag) take a '#tag' input - the chamber
+  // accepts tag ingredients, mirroring PF's own priming exactly. Osmium joins
+  // for chamber parity (review catch on PR #126): its BOOTSTRAP stays the table
+  // recipe in osmium_slime_bucket.js (redstone milk), but it scales here like
+  // every other census variant - the ATO chain's root frog included.
+  ['CAVE',     'minecraft:stone',      'osmium',          '#c:ingots/osmium',          'alltheores'],
+  ['CAVE',     'minecraft:stone',      'aluminum',        '#c:ingots/aluminum',        'alltheores'],
+  ['CAVE',     'minecraft:stone',      'lead',            '#c:ingots/lead',            'alltheores'],
+  ['CAVE',     'minecraft:stone',      'nickel',          '#c:ingots/nickel',          'alltheores'],
+  ['CAVE',     'minecraft:stone',      'silver',          '#c:ingots/silver',          'alltheores'],
+  ['CAVE',     'minecraft:stone',      'tin',             '#c:ingots/tin',             'alltheores'],
+  ['CAVE',     'minecraft:stone',      'uranium',         '#c:ingots/uranium',         'alltheores'],
+  ['CAVE',     'minecraft:stone',      'zinc',            '#c:ingots/zinc',            'alltheores'],
+  ['GEODE',    'minecraft:gravel',     'fluorite',        '#c:gems/fluorite',          'mekanism'],
+  ['GEODE',    'minecraft:gravel',     'basic_processor', 'refinedstorage:basic_processor', 'refinedstorage'],
+  ['GEODE',    'minecraft:gravel',     'improved_processor', 'refinedstorage:improved_processor', 'refinedstorage'],
+  ['GEODE',    'minecraft:gravel',     'advanced_processor', 'refinedstorage:advanced_processor', 'refinedstorage'],
+  ['INFERNAL', 'minecraft:prismarine', 'refined_obsidian', '#c:ingots/refined_obsidian', 'mekanism'],
+  ['INFERNAL', 'minecraft:prismarine', 'quartz_enriched_iron', 'refinedstorage:quartz_enriched_iron', 'refinedstorage']
 ]
 
 ServerEvents.recipes(event => {
@@ -214,10 +234,14 @@ ServerEvents.recipes(event => {
       return
     }
 
+    // '#'-prefixed inputs are TAGS (tag-primed variants); plain ids are items.
+    const inputIng = ownResource.startsWith('#')
+      ? { tag: ownResource.substring(1) }
+      : { item: ownResource }
     event.custom({
       type: 'industrialforegoing:dissolution_chamber',
       input: [
-        { item: ownResource },
+        inputIng,
         { item: filler },
         { item: filler },
         { item: filler },
