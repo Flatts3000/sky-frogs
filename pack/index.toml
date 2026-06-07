@@ -338,7 +338,7 @@ hash = "82985606c836b899b610960f68c44ecee4a4e8a0e452e51e768a166323d20d0e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/take_flight.snbt"
-hash = "72409c9c7e206f819236d400210692be566f7720527f269a8dd8d534ffb84243"
+hash = "638403b962ac40c7b3ed6a0a33bbefcc8f0f25d0a99c9927c7ee1137121db740"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/the_network.snbt"
@@ -374,7 +374,7 @@ hash = "2e69afacf774749222ca1e925dc94d32e6c3db8bef4557aa33144751c2770206"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "411f8a57aaaddc0365a914d862b62a3cf11b1ff5732baac1dee0b741167b0874"
+hash = "bf2c9d1e20ef98f0b7313ec0757b80fb201f59c3d1cef10c76e5f26e41fdb8e8"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
@@ -587,6 +587,10 @@ hash = "1ce10ec7c6a5e04ebe7a9b4c39d72021927075f2aafab7dd3a9614816d5ec558"
 [[files]]
 file = "kubejs/server_scripts/geode_slime_chain.js"
 hash = "8be182ebb786e6b76e62dfa47b96dbaebe45138a398dfb2ccd7c10ddf2ebfca9"
+
+[[files]]
+file = "kubejs/server_scripts/heavy_core_recipe.js"
+hash = "1d0381f85d5c059cda58f7e9424329aa7264f672c47670cd4c1e259783e8352e"
 
 [[files]]
 file = "kubejs/server_scripts/if_plastic_gate.js"

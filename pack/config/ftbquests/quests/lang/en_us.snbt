@@ -1097,6 +1097,16 @@
 	quest.7F00000000000017.quest_desc: ["The &eUltimate Coil&r tops it out with &femerald&r, the Geode capstone gem - the fastest jetpack in the pack. The void is yours to cross."]
 	quest.7F00000000000017.quest_subtitle: "The whole sky."
 	quest.7F00000000000017.title: "Ultimate Coil"
+	quest.7F0000000000001A.quest_desc: [
+		"No trial chambers generate over the void, so the vaults' prize comes from the press instead: the &eDissolution Chamber&r squeezes a &bHeavy Core&r out of &f4 iron blocks&r and &f4 prismarine&r under latex. Dense Cave ore, Tide stone - the chamber does the compacting so no ominous vault has to."
+	]
+	quest.7F0000000000001A.quest_subtitle: "Vault treasure, frog-pressed."
+	quest.7F0000000000001A.title: "The Heavy Core"
+	quest.7F0000000000001D.quest_desc: [
+		"A &bBreeze Rod&r on the core and the &bMace&r is yours. Its smash scales with how far you FALL - and you just built a jetpack. Climb, cut thrust, land the hit; one &bbreeze rod&r also crafts &f4 wind charges&r to bounce yourself skyward mid-fight. Gravity is a weapon now."
+	]
+	quest.7F0000000000001D.quest_subtitle: "What goes up..."
+	quest.7F0000000000001D.title: "Drop the Hammer"
 	task.2A5700000A570003.title: "Got it"
 	task.2A5700000A570023.title: "Breed two frogs with Sweetslime"
 	task.570A6E0000000015.title: "Storage, sorted"
