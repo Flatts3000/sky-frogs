@@ -322,7 +322,7 @@ hash = "2e69afacf774749222ca1e925dc94d32e6c3db8bef4557aa33144751c2770206"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "9aa99e042ae20e7c307461ad620a99b727f81882ef5a50992bee12a80718fc9a"
+hash = "5c75f41d3eb40a482e54037486ce4d49a3103b4f400de875963f7f24c38e9314"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
@@ -411,10 +411,6 @@ hash = "317716854cc50fc09f751b375c8e598e2e6fd966d1e7c51f4b751935e2cb58e4"
 [[files]]
 file = "kubejs/assets/minecraft/texts/splashes.txt"
 hash = "b1d22117b1aff7f2d5c65142a316f1d83154baa36d5e942e24bb5fe4c53f160b"
-
-[[files]]
-file = "kubejs/client_scripts/flux_jei_info.js"
-hash = "4b4bf9ec85a8b0355d93aac3327cd40f2b3e89111868d41da4f3390a07bf917a"
 
 [[files]]
 file = "kubejs/client_scripts/opolis_jei_hide.js"
@@ -519,10 +515,6 @@ hash = "5daea9934a436ef217fee39ebf13a15e4a82516ebd46763dcd9ba307951bd492"
 [[files]]
 file = "kubejs/server_scripts/first_join.js"
 hash = "659f7a086b994e6c47b0b7f0e37fbc037a7417fc1ab924455c60cd4a0d08f4e8"
-
-[[files]]
-file = "kubejs/server_scripts/flux_ritual_obsidian.js"
-hash = "7e7cc0f779d70500b8ddacb93fec2cc9b018aefde0ded407586a9159b00419c2"
 
 [[files]]
 file = "kubejs/server_scripts/geode_slime_chain.js"
