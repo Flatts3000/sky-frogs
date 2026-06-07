@@ -4,6 +4,9 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+### Fixed
+- **Flux Dust is actually obtainable now** (#120, reported by Dergib on Discord): Flux Networks' dust ritual needs obsidian resting on BEDROCK - and a void skyblock has none, so the first dust was impossible (and the new Flux quest taught it anyway). The pack adds a bootstrap crafting recipe (4 redstone + obsidian -> 4 dust, the End Cake precedent); once you own a Flux Block, the mod's real ritual works on it. Quest text teaches both paths.
+
 ### Added
 - **The Powered Up chapter** (#109): the v0.6.0 power mods get their questline - 15 quests in a new Bog-rooted side chapter that climbs the whole campaign. Dielectric paste (your Bog frog's clay) opens the Furnator; the Energizing Orb teaches the pack's make-it-first law (orb a resource yourself once and the Dissolution Chamber will slime it); Uraninite and Dry Ice explain split-discovery (the only way to a first roll on a skyblock with no ore and no ice); the crystal ladder runs Blazing -> Niotic -> Spirited -> Nitro; the Flux Networks branch teaches the redstone-on-obsidian craft and goes wireless; the Starter Reactor caps it. All eight modded variants get froglight-check quests. Also: the Botany Pot quest now mentions trees, and the Energy Cell quest gifts a stack of Cable Facades for the cable runs ahead. (The Aerial Pearl stays unquested pending the jetpack-overlap verdict.)
 

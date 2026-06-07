@@ -779,11 +779,13 @@
 	quest.70E0000000000026.quest_subtitle: "Serious FE."
 	quest.70E0000000000026.title: "The Uraninite Reactor"
 	quest.70E0000000000029.quest_desc: [
-		"&dFlux Dust&r is born, not crafted: throw &credstone&r onto &8obsidian&r and it transmutes where it lands. Four dust starts a network - and the first one primes your Infernal frog for the rest."
+		"Flux Networks' own ritual throws &credstone&r onto &8obsidian&r resting on &8bedrock&r - which this world does not have. So the pack adds a crafting recipe: &credstone&r around &8obsidian&r makes your first &dFlux Dust&r."
+		""
+		"Once you own a &dFlux Block&r, the real ritual works on it - drop redstone onto obsidian-on-flux-block and watch it transmute. And the first dust primes your Infernal frog for the rest."
 		""
 		"Make &a4 Flux Dust&r."
 	]
-	quest.70E0000000000029.quest_subtitle: "Drop redstone on obsidian. Really."
+	quest.70E0000000000029.quest_subtitle: "No bedrock? No problem."
 	quest.70E0000000000029.title: "Flux Dust"
 	quest.70E000000000002C.quest_desc: [
 		"You made the dust yourself, so the chamber law is satisfied: slime it, feed the &cInfernal frog&r, and flux becomes a farm."

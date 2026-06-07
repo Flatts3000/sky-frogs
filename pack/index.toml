@@ -322,7 +322,7 @@ hash = "2e69afacf774749222ca1e925dc94d32e6c3db8bef4557aa33144751c2770206"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "2badbc0894da61cfa46e39a4fd4195e6f1b2cb2a20b62eef5b50ab62d6e6b281"
+hash = "70b19e0576d2fbfbc3ffe8bd177e210be73105f7d89db81a9b0509b0357e6cb3"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
@@ -515,6 +515,10 @@ hash = "5daea9934a436ef217fee39ebf13a15e4a82516ebd46763dcd9ba307951bd492"
 [[files]]
 file = "kubejs/server_scripts/first_join.js"
 hash = "659f7a086b994e6c47b0b7f0e37fbc037a7417fc1ab924455c60cd4a0d08f4e8"
+
+[[files]]
+file = "kubejs/server_scripts/flux_dust_bootstrap.js"
+hash = "d1c4a5a8fb83032c579c1b521f46390d72ca63e1c90147a143a5bc3ef585d0a6"
 
 [[files]]
 file = "kubejs/server_scripts/geode_slime_chain.js"
