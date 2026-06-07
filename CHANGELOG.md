@@ -4,6 +4,9 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+### Fixed
+- **FancyMenu no longer greets players in customization mode** (#130, reported by Dergib on Discord): the pack shipped layouts but no FancyMenu options, so fresh installs got the editing overlay on the title screen. The pack now ships `config/fancymenu/options.txt` with [modpack mode](https://docs.fancymenu.net/docs/en-US/modpacks) on - no overlays, no hotkeys, no welcome screen, just the finished menu. Tinkerers can flip `modpack_mode` back to `false` in that file.
+
 ### Changed
 - **The title-screen wordmark is hand-built now, not AI-generated** (maintainer rule: no AI assets fronting the pack). The new SKY FROGS logo is rendered with Ewan Howell's Minecraft Title Generator (the community-standard Blockbench plugin; renders free to use) in the authentic vanilla title style: **Minecraft Ten** font, **Mangrove (Wild Update)** texture - the look of the very update that brought frogs to Minecraft. Recipe documented in `docs/branding.md`, reproducible in five minutes.
 
