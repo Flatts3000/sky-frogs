@@ -136,9 +136,9 @@ const SLIME_TIERS = [
 // (Energizing Orb, redstone dropped on obsidian) before the frog loop can take
 // over; the chamber then turns one held resource into a dedicated slime instead
 // of waiting on more Cave-pool split-discovery rolls. Tier fillers per the
-// standing law. Uraninite is the one variant with NO craft path on this skyblock
-// (the orb's uraninite recipes all need ore/uranium) - its first copy comes from
-// split-discovery, and this row scales it from there.
+// standing law. Every variant here has a craft path (PR #126): the ATO metals
+// chain off osmium milk (ato_slime_chain.js), fluorite enriches from calcite
+// (fluorite_enriching.js), and uraninite orb-crafts from chain-farmed uranium.
 //
 // [category stamp, tier filler, variant, the variant's own resource, owning mod]
 const MODDED_SELF_KEYED = [

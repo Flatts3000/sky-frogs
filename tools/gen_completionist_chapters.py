@@ -44,18 +44,10 @@ MODDED_PREFIX = "70DD"   # Sister Ponds id block
 VANILLA_CHAPTER_ID = VANILLA_PREFIX + "000000000001"
 MODDED_CHAPTER_ID = MODDED_PREFIX + "000000000001"
 
-# Variants whose RESOURCE has no craft path in this pack (no ore gen, and no
-# recipe makes the item) - the census only lists what a player can actually
-# finish, so these are excluded (maintainer ruling). Their self-keyed chamber
-# rows STAY: if one ever rolls out of split-discovery, the row scales it.
-#   - ATO metals except osmium: ingots only come from ore/raw, which don't exist
-#     here (osmium has the redstone-milk bootstrap recipe)
-#   - fluorite: Mekanism ore-processing only
-#   - uraninite: every Powah orb recipe for it wants ore or uranium ingot
-UNCRAFTABLE = {
-    "aluminum", "lead", "nickel", "silver", "tin", "uranium", "zinc",
-    "fluorite", "uraninite",
-}
+# Every loaded-mod variant is craftable, so the census lists them all
+# (maintainer ruling, reversing the brief only-craftable cut): the ATO metals
+# chain off osmium milk (ato_slime_chain.js), fluorite enriches from calcite
+# (fluorite_enriching.js), and uraninite orb-crafts from chain-farmed uranium.
 
 # Mod ids that ship in the pack (variant conditions reference these).
 LOADED_MODS = {
@@ -74,10 +66,13 @@ MOD_ORDER = ["alltheores", "powah", "refinedstorage", "mekanism",
              "industrialforegoing", "fluxnetworks"]
 
 # Column order within a mod: progression rank where the mod HAS a ladder,
-# else tier order then name. Powah = the material ladder (orb energy cost),
+# else tier order then name. ATO = the osmium seed-chain order
+# (ato_slime_chain.js), Powah = the material ladder (orb energy cost),
 # RS = base material then processor tiers, IF = the Bog chain order.
 TIERS = ["cave", "geode", "bog", "tide", "infernal", "void"]
 VARIANT_RANK = {
+    "osmium": 0, "aluminum": 1, "lead": 2, "nickel": 3,
+    "silver": 4, "tin": 5, "uranium": 6, "zinc": 7,
     "uraninite": 0, "energized_steel": 1, "dry_ice": 2, "blazing": 3,
     "niotic": 4, "spirited": 5, "nitro": 6,
     "quartz_enriched_iron": 0, "basic_processor": 1,
@@ -203,7 +198,7 @@ def main():
         if pf_jar.is_vanilla(d):
             continue
         mod = variant_mod(d) or (d.get("primer_item") or ":").split(":")[0]
-        if mod in LOADED_MODS and n not in UNCRAFTABLE:
+        if mod in LOADED_MODS:
             modded.setdefault(mod, []).append(n)
     for mod in modded:
         modded[mod].sort(key=column_key(variants))

@@ -330,7 +330,7 @@ hash = "01e3daf039dfc3825421110e6b725a231d1800991a7db361549309424070cc42"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/sister_ponds.snbt"
-hash = "55d6d2f4e1edef9e1f45b4f77b39c9b7ccae5597df448f6b963814822aca87a9"
+hash = "24fda105d2dd3317ed40b35569d68a4970fb30d88d70180d75737e7b9a0a4d2d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/storage_and_crafting.snbt"
@@ -374,7 +374,7 @@ hash = "2e69afacf774749222ca1e925dc94d32e6c3db8bef4557aa33144751c2770206"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "2dc24b0cd30cc49b87bd52a058f3167b988dc096f694fc2a4a5ae09cc20f8895"
+hash = "4c501288e7614d6305d8597925f109e00e6d86e7628b93638917754b9ff1110c"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
@@ -541,6 +541,10 @@ file = "kubejs/server_scripts/anti.js"
 hash = "de6ab3e255fee591531e0441258e4229b412a5fc38d4e0782feb31842809e530"
 
 [[files]]
+file = "kubejs/server_scripts/ato_slime_chain.js"
+hash = "ad2f91c5cce4e29d4b70957c3f43d6a82a12cda1e06a1859cb895466dec61b09"
+
+[[files]]
 file = "kubejs/server_scripts/bog_slime_chain.js"
 hash = "10f9f445bed9956cc95e8f184070f5b57b5329046d6fbaa076a53956b73fddc6"
 
@@ -562,7 +566,7 @@ hash = "a14f0b3014ad482f9b04ef079202394670f76a749bccb93ed36bb3e41c1810dc"
 
 [[files]]
 file = "kubejs/server_scripts/dissolution_slime_recipes.js"
-hash = "131be9fe4ce9483f22603d73e3cd0efbe4deb913dcbb64c1dace05e6d615c055"
+hash = "3918e933a66186c07b97af8f59ca29721cce0cd39224aa3d6427ed902bb9a9fd"
 
 [[files]]
 file = "kubejs/server_scripts/dump_items.js"
@@ -571,6 +575,10 @@ hash = "5daea9934a436ef217fee39ebf13a15e4a82516ebd46763dcd9ba307951bd492"
 [[files]]
 file = "kubejs/server_scripts/first_join.js"
 hash = "659f7a086b994e6c47b0b7f0e37fbc037a7417fc1ab924455c60cd4a0d08f4e8"
+
+[[files]]
+file = "kubejs/server_scripts/fluorite_enriching.js"
+hash = "1eacc89c80b5dc8422eb4c2a855ffede352bfc7c89fed9584da8447eeaf8384c"
 
 [[files]]
 file = "kubejs/server_scripts/flux_dust_recipe.js"
