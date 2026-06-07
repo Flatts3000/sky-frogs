@@ -41,8 +41,16 @@ file = "config/extendedcrafting/singularities/amethyst.json"
 hash = "702d3ab8615c4715ab152efcea7caa4bfe7a5d28c14999f5470e9581f8c03744"
 
 [[files]]
+file = "config/extendedcrafting/singularities/armadillo_scute.json"
+hash = "b92c0a9401db3c39e81c09989eaf333112c00b247236404a00e4c1d29cceb2e3"
+
+[[files]]
 file = "config/extendedcrafting/singularities/blaze.json"
 hash = "a8b10656634e2c6f771db0783cb1a0cfa3dac44a00bfa9cdda1c0e7587bb867f"
+
+[[files]]
+file = "config/extendedcrafting/singularities/breeze_rod.json"
+hash = "8dd2152077bbc2f2d9f84a8289f81f6e1e4856893831e4318ced152a3041679e"
 
 [[files]]
 file = "config/extendedcrafting/singularities/calcite.json"
@@ -93,6 +101,10 @@ file = "config/extendedcrafting/singularities/feather.json"
 hash = "44f49dcd01305219007676cae782fb4666cc9514d182e4b8a17442c84987f393"
 
 [[files]]
+file = "config/extendedcrafting/singularities/ghast_tear.json"
+hash = "2cf4eb9a19c4146991c45b00d05db28ff0b83cfaf760535d723936134bf1c196"
+
+[[files]]
 file = "config/extendedcrafting/singularities/glow_ink_sac.json"
 hash = "9e8e606b9f862afcb0dc249e751d73ba34db54e314eb357e53bec64f8a69a2d9"
 
@@ -103,6 +115,10 @@ hash = "f6a32c6da10b499ca7406a065b9dffa25831603dcfa6745c8ace6ab3d8f7655b"
 [[files]]
 file = "config/extendedcrafting/singularities/gold.json"
 hash = "e2b9a48904a1e86ffe538ec63307ba29f12a10789d9386d8493261f195573a4c"
+
+[[files]]
+file = "config/extendedcrafting/singularities/honeycomb.json"
+hash = "b6a2ef343a262418081771357ddb9d4a9381c8a9eb6e33f44ea4a84226d92fc2"
 
 [[files]]
 file = "config/extendedcrafting/singularities/ice.json"
@@ -122,7 +138,7 @@ hash = "6556f64a50dcde58ee76dbded69a7b2eca61bd9abef7e6617761f4d75b08ebd8"
 
 [[files]]
 file = "config/extendedcrafting/singularities/lava.json"
-hash = "fb75885dd3609f792924a018fe0d1caed6fcea7ee09fc370bfa0ec9aa0c29b15"
+hash = "abb0c08fc19560d38464be17a7839e07226e3081edbffd37ff034b4b8ecc5fae"
 
 [[files]]
 file = "config/extendedcrafting/singularities/leather.json"
@@ -159,6 +175,10 @@ hash = "e37d9e4ab3de913a9ffd3045cde91d1211b72a54e836a04c308cb4ab5b7087aa"
 [[files]]
 file = "config/extendedcrafting/singularities/obsidian.json"
 hash = "c163c9275b9e3106fbf02a72a20d34a1fb86300eedec56fd8c515063eb80fb5f"
+
+[[files]]
+file = "config/extendedcrafting/singularities/phantom_membrane.json"
+hash = "9bdb9c3b14883e8992486da1abd7a41bfb760ce8b88d17c0676123d32e7e6447"
 
 [[files]]
 file = "config/extendedcrafting/singularities/prismarine.json"
@@ -209,6 +229,10 @@ file = "config/extendedcrafting/singularities/tuff.json"
 hash = "88253f517aa225d78788808c359990cbe10edb930607cc0456cfe87dde96c971"
 
 [[files]]
+file = "config/extendedcrafting/singularities/turtle_scute.json"
+hash = "be0083479256abbedbcda3a838dcc80d3fce1cfd81913704947e25f83d8c16f5"
+
+[[files]]
 file = "config/extendedcrafting/singularities/water.json"
 hash = "90f71a44e607b2ff980c6a06d52e76548a9c55d95298a415102b687a11742c3c"
 
@@ -246,15 +270,15 @@ hash = "df445ffea5b103d5c372e233a3afe5e7538c40c54c886246cf0c7de7301de4b7"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/bog_frogs.snbt"
-hash = "2ce495feeac76793034a7fab08a12562188f2fa3802bb63bfb3515816958d206"
+hash = "97fe3b2964400d8ffffcc246f8aa649b72512a2f465d80fe1adac023d86b09b4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/cave_frogs.snbt"
-hash = "3363b1feccb9dd967513a7203c82dfc81dc693f9b2f0a4e475f026543242e4ee"
+hash = "301fc40ac49d3c50bfe0f61308a481ea52d0762b344190b563d49b89723a0b4f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/drowned_riches.snbt"
-hash = "7c343a3f7268f590eb9a8f3dbbf8bd6f835ccf1cee014cc04aff31ef53818f58"
+hash = "928f7560a5017a9b9fba45a6977d7a9991399836cdd980900ca2a1c48bc3901e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/geode_frogs.snbt"
@@ -262,7 +286,7 @@ hash = "ad642501aadd8ced3a65d7fd2bc33fa58abfab43ad54cf512f9416d5d2c70050"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/infernal_frogs.snbt"
-hash = "8f0949b7c0546c930066e5376aeeb5390a3dd48c1b700fded5aa6998d22b8a4e"
+hash = "07c2cd128b1f07a3a5449c1fae355d77df079e61dc6d910e64b052aa9d0717fd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/master_pond.snbt"
@@ -326,7 +350,7 @@ hash = "39e9f83466356e54d1c99bb72debb8b3370b787273f8ce3cd23115a9dbaaafec"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/void_frogs.snbt"
-hash = "60ba3c990a63c8055a7a400613febaf1f32c8ce7376c53830b40f15ee2fb96a9"
+hash = "16790918f87f8958ffee21a0332f51a72e39cc6c9cd5b8e7a6239139ac8cc242"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
@@ -342,7 +366,7 @@ hash = "2e69afacf774749222ca1e925dc94d32e6c3db8bef4557aa33144751c2770206"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "4c6733e6357569b8641a4df7e5bf7badcce3d2a0dacf4c8a736fc8af246db0d9"
+hash = "02cff7e09d69eda95623e71518c9df2e99e0414a35c67075109347b7cc509f46"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
@@ -418,7 +442,7 @@ hash = "0fdbebfaceb8b88bc78fcbe8abe8d6bfb27c0f8f10838e08e900cce1fc6a6911"
 
 [[files]]
 file = "kubejs/assets/extendedcrafting/lang/en_us.json"
-hash = "84a4cce01b2b451889f5d76a072dc631de70022d0aae3dd7be8ca167361f04f1"
+hash = "9319855a31b4812c494efc53f43e1a8a2755163941ef5ed432f526f343a07802"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/master_frog.png"
@@ -526,7 +550,7 @@ hash = "a14f0b3014ad482f9b04ef079202394670f76a749bccb93ed36bb3e41c1810dc"
 
 [[files]]
 file = "kubejs/server_scripts/dissolution_slime_recipes.js"
-hash = "cb911712962db540154b248abf31fe5ffa317fc6c96abafc46abc1762354c5ca"
+hash = "50b54937ff09bc642cdea3fdafdc10e4fa0e9497da694047835e0b76ea15b115"
 
 [[files]]
 file = "kubejs/server_scripts/dump_items.js"
@@ -1152,7 +1176,7 @@ metafile = true
 
 [[files]]
 file = "mods/productive-frogs.pw.toml"
-hash = "db8200dec7b690955fc670444fa97da1adc3ef57f7ac49b86ed1bdb3bf777a0a"
+hash = "fa772a7a514ee089b794888fb8e6e5124016fd006edd3ab0bd4b9896e0702540"
 metafile = true
 
 [[files]]

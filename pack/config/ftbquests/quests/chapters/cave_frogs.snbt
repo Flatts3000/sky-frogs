@@ -153,6 +153,30 @@
 		{
 			dependencies: ["7CA7E000C0DE0023"]
 			icon: {
+				id: "minecraft:breeze_rod"
+			}
+			id: "7CA7E000C0DE0026"
+			shape: "square"
+			rewards: [{
+				id: "7CA7E000C0DE0028"
+				item: {
+					count: 1
+					id: "functionalstorage:compacting_drawer"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7CA7E000C0DE0027"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:breeze_rod" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["7CA7E000C0DE0026"]
+			icon: {
 				id: "minecraft:redstone"
 			}
 			id: "7CA7E000C0DE000E"
@@ -172,7 +196,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 7.5d
+			y: 9.0d
 		}
 	]
 }

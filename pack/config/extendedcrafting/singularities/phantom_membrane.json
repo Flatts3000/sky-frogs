@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.phantom_membrane",
+  "colors": [
+    "c2baa3",
+    "795f70"
+  ],
+  "ingredient": {
+    "item": "minecraft:phantom_membrane"
+  },
+  "inUltimateSingularity": true
+}

@@ -52,7 +52,15 @@ const SLIME_TIERS = [
     // quests thread identically. (obsidian, the other stray, lives in the INFERNAL
     // block below - quested at Tier 5; PF reclasses it infernal in #142.)
     ['glow_ink_sac', 'minecraft:coal'],
-    ['redstone',     'minecraft:glow_ink_sac']
+    // PF 1.13.0 (#164/#161): water + lava re-home to Cave (they feed the Crucible's
+    // renewable-fluid lane and fluids are day-one resources), and breeze_rod joins.
+    // Item-form resources: water = kelp, lava = pointed_dripstone (cave-native,
+    // changed from magma_block in the move). redstone stays the capstone and the
+    // Geode bridge, per the #79 insertion precedent.
+    ['water',        'minecraft:glow_ink_sac'],
+    ['lava',         'minecraft:kelp'],
+    ['breeze_rod',   'minecraft:pointed_dripstone'],
+    ['redstone',     'minecraft:breeze_rod']
   ]],
   ['GEODE', 'minecraft:gravel', [
     ['lapis',    'minecraft:redstone'],      // bridges from Cave's last
@@ -71,7 +79,11 @@ const SLIME_TIERS = [
     ['lily_pad',   'minecraft:mycelium'],
     ['leather',    'minecraft:lily_pad'],
     ['feather',    'minecraft:leather'],
-    ['plastic',    'minecraft:feather'],
+    // PF 1.13.0 (#161): the Bog mob-drop stragglers slot before the modded tail;
+    // pink_slime stays the capstone and the Tide bridge.
+    ['armadillo_scute', 'minecraft:feather'],
+    ['honeycomb',  'minecraft:armadillo_scute'],
+    ['plastic',    'minecraft:honeycomb'],
     ['pink_slime', 'industrialforegoing:plastic']
   ]],
   ['TIDE', 'minecraft:mycelium', [
@@ -80,14 +92,14 @@ const SLIME_TIERS = [
     ['sponge',              'minecraft:prismarine_crystals'],
     ['ink_sac',             'minecraft:sponge'],
     ['sea_pickle',          'minecraft:ink_sac'],
-    // PF 1.12.0 (#155): the frozen family melts into water - ice -> snow -> water
-    // slot before the capstone so nautilus_shell keeps the Tide->Infernal bridge.
-    // water's item-form resource is KELP (fluids aren't items; PF picked the
-    // Tide-native stand-in), which is why nautilus threads off kelp now.
+    // PF 1.12.0 (#155): the frozen family slots before the capstone so
+    // nautilus_shell keeps the Tide->Infernal bridge. (water lived here for one
+    // pin, then re-homed to Cave in PF 1.13 - the Crucible's fluids are day-one
+    // business.) turtle_scute joins in 1.13.
     ['ice',                 'minecraft:sea_pickle'],
     ['snow',                'minecraft:ice'],
-    ['water',               'minecraft:snow_block'],
-    ['nautilus_shell',      'minecraft:kelp']
+    ['turtle_scute',        'minecraft:snow_block'],
+    ['nautilus_shell',      'minecraft:turtle_scute']
   ]],
   ['INFERNAL', 'minecraft:prismarine', [
     ['netherrack',      'minecraft:nautilus_shell'],   // bridges from Tide's last; filler is prismarine (Tide, mass-renewable - netherrack would be circular)
@@ -97,19 +109,17 @@ const SLIME_TIERS = [
     // Void's ender_pearl bridges off (that boundary is unchanged). Requires PF with
     // obsidian reclassed cave -> infernal (productive-frogs#142) - the pin bump
     // lands in this same PR.
-    // PF 1.12.0 (#155): lava is proto-obsidian - it slots between netherrack and
-    // obsidian, and its item-form resource is MAGMA_BLOCK (PF's Infernal stand-in
-    // for a fluid), which is what obsidian threads off now.
-    ['lava',            'minecraft:netherrack'],
-    ['obsidian',        'minecraft:magma_block'],
+    ['obsidian',        'minecraft:netherrack'],
     ['quartz',          'minecraft:obsidian'],
     ['glowstone_dust',  'minecraft:quartz'],
     ['soul_sand',       'minecraft:glowstone_dust'],
     ['soul_soil',       'minecraft:soul_sand'],
     ['blaze',           'minecraft:soul_soil'],
-    // PF 1.11.0 (#148): the Blaze resource is the ROD (primer + smelt output),
-    // not the powder - the threading input follows it.
-    ['netherite_scrap', 'minecraft:blaze_rod']
+    // PF 1.11.0 (#148): the Blaze resource is the ROD (primer + smelt output).
+    // PF 1.13.0 (#161): ghast_tear slots before the capstone; netherite_scrap
+    // stays the capstone and the Void bridge.
+    ['ghast_tear',      'minecraft:blaze_rod'],
+    ['netherite_scrap', 'minecraft:ghast_tear']
   ]],
   ['VOID', 'minecraft:soul_soil', [
     ['ender_pearl',   'minecraft:netherite_scrap'],     // bridges from Infernal's last; filler is soul_soil (Infernal, mass-renewable - end_stone would be circular)
@@ -117,7 +127,9 @@ const SLIME_TIERS = [
     ['chorus_fruit',  'minecraft:end_stone'],
     ['echo_shard',    'minecraft:chorus_fruit'],         // prior variant chorus_fruit's resource (raw, its primer_item)
     ['sculk',         'minecraft:echo_shard'],
-    ['shulker_shell', 'minecraft:sculk']
+    // PF 1.13.0 (#161): phantom_membrane slots before the capstone.
+    ['phantom_membrane', 'minecraft:sculk'],
+    ['shulker_shell', 'minecraft:phantom_membrane']
   ]]
 ]
 

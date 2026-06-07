@@ -850,6 +850,48 @@
 	]
 	quest.7B0600000000001D.quest_subtitle: "The Bog's prize."
 	quest.7B0600000000001D.title: "Pink Slime"
+	quest.7CA7E000C0DE0026.quest_desc: [
+		"A &fbreeze rod&r without a trial chamber in sight - the Cave frog farms what the Breeze drops, wind charges and all."
+		""
+		"Turn in the &bBreeze Rod Froglight&r."
+	]
+	quest.7CA7E000C0DE0026.quest_subtitle: "Catch the wind."
+	quest.7CA7E000C0DE0026.title: "Breeze Rod"
+	quest.7D00000000000029.quest_desc: [
+		"&aTurtle scutes&r without the beach nursery - no eggs, no babies, no waiting. The Tide frog skips the whole life cycle."
+		""
+		"Turn in the &bTurtle Scute Froglight&r."
+	]
+	quest.7D00000000000029.quest_subtitle: "Shell, expedited."
+	quest.7D00000000000029.title: "Turtle Scute"
+	quest.51F000000000001E.quest_desc: [
+		"&fGhast tears&r - regeneration potions and End crystals - without crying over a fireball. The Infernal frog weeps them on demand."
+		""
+		"Turn in the &bGhast Tear Froglight&r."
+	]
+	quest.51F000000000001E.quest_subtitle: "No tissue required."
+	quest.51F000000000001E.title: "Ghast Tear"
+	quest.60F0000000000014.quest_desc: [
+		"&dPhantom membranes&r - slow falling and elytra repair - without ever skipping a night's sleep. The Void frog handles the insomnia."
+		""
+		"Turn in the &bPhantom Membrane Froglight&r."
+	]
+	quest.60F0000000000014.quest_subtitle: "Sleep well anyway."
+	quest.60F0000000000014.title: "Phantom Membrane"
+	quest.7B06000000000022.quest_desc: [
+		"&6Armadillo scutes&r - wolf armor - from a frog instead of a brush. The Bog covers the savanna's job."
+		""
+		"Turn in the &bArmadillo Scute Froglight&r."
+	]
+	quest.7B06000000000022.quest_subtitle: "Roll with it."
+	quest.7B06000000000022.title: "Armadillo Scute"
+	quest.7B06000000000025.quest_desc: [
+		"&eHoneycomb&r - waxed copper, hives, candles - with zero bees bothered. The Bog frog is the apiary now."
+		""
+		"Turn in the &bHoneycomb Froglight&r."
+	]
+	quest.7B06000000000025.quest_subtitle: "Unbeelievable."
+	quest.7B06000000000025.title: "Honeycomb"
 	quest.7CA7E000C0DE0002.quest_desc: [
 		"You've pulled iron out of a frog. The Cave frog handles everything else the pickaxe used to: copper, gold, coal, lapis, redstone, obsidian - and the modded metals besides."
 		""
@@ -991,14 +1033,14 @@
 	quest.3E17000000000005.quest_subtitle: "Hotter is faster."
 	quest.3E17000000000005.title: "Feed the Fire"
 	quest.3E17000000000008.quest_desc: [
-		"A &9Water Froglight&r melts into a full &9bucket of water&r - the ocean, farmable. Its item-form resource is &akelp&r (fluids are not items), which is what the chamber and its Singularity count."
+		"A &9Water Froglight&r melts into a full &9bucket of water&r - farmable water, from your &aCave frog&r of all things. Its item-form resource is &akelp&r (fluids are not items), which is what the chamber and its Singularity count."
 		""
 		"Turn in the &bWater Froglight&r."
 	]
 	quest.3E17000000000008.quest_subtitle: "The ocean, bottled."
 	quest.3E17000000000008.title: "Water"
 	quest.3E1700000000000B.quest_desc: [
-		"A &6Lava Froglight&r melts into a full &6bucket of lava&r - renewable, no cobble-crucible babysitting. The variant is &cInfernal&r business (its item-form is the &cmagma block&r), so the frog half waits for Tier 5 even though the basin is ready now."
+		"A &6Lava Froglight&r melts into a full &6bucket of lava&r - renewable, no cobble-crucible babysitting. The variant is &aCave&r business like the basin itself (its item-form is &fpointed dripstone&r, the cave's own lava-maker), so the whole loop runs at Tier 1."
 		""
 		"Turn in the &bLava Froglight&r."
 	]

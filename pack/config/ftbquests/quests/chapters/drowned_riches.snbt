@@ -179,6 +179,30 @@
 		{
 			dependencies: ["7D00000000000023"]
 			icon: {
+				id: "minecraft:turtle_scute"
+			}
+			id: "7D00000000000029"
+			shape: "square"
+			rewards: [{
+				id: "7D0000000000002B"
+				item: {
+					count: 1
+					id: "functionalstorage:oak_1"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7D0000000000002A"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:turtle_scute" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["7D00000000000029"]
+			icon: {
 				id: "minecraft:nautilus_shell"
 			}
 			id: "7D00000000000011"
@@ -197,7 +221,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 10.5d
+			y: 12.0d
 		}
 	]
 }
