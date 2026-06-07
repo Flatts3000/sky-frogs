@@ -1051,6 +1051,8 @@
 	quest.3E1700000000000E.quest_desc: [
 		"The &eCasting Mold&r turns molten metal back into &fingots&r - pour with a bucket, pipe it, or skip the plumbing entirely: stack &cheat&r, &eCrucible&r, &eMold&r into a three-block tower and the Mold drinks straight from the basin."
 		""
+		"{image:kubejs:textures/quests/casting_tower.png width:220 height:181 align:center}"
+		""
 		"Craft a &eCasting Mold&r."
 	]
 	quest.3E1700000000000E.quest_subtitle: "Pour one out."

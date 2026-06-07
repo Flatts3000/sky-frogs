@@ -366,7 +366,7 @@ hash = "2e69afacf774749222ca1e925dc94d32e6c3db8bef4557aa33144751c2770206"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "231d4ae0eee338ee616fcd6520b2d5927f7d49f66ddaf4034af3e7e794c05811"
+hash = "cfca2e6025380e9dbe1c47289233fc86505cca1751cecd519e117d6f5273ad6f"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
@@ -447,6 +447,10 @@ hash = "9319855a31b4812c494efc53f43e1a8a2755163941ef5ed432f526f343a07802"
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/master_frog.png"
 hash = "0d3cc76779315ec45b9b240837bb6753cc9bdec57e13a88bb4d948132f7a80b5"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/quests/casting_tower.png"
+hash = "015db18b5bcebe9258b6d25b285c3cdfc6defdb951679f5c7d4f91d0e4c8fb48"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/quests/discord.png"
