@@ -137,10 +137,6 @@ file = "config/extendedcrafting/singularities/lapis.json"
 hash = "6556f64a50dcde58ee76dbded69a7b2eca61bd9abef7e6617761f4d75b08ebd8"
 
 [[files]]
-file = "config/extendedcrafting/singularities/lava.json"
-hash = "abb0c08fc19560d38464be17a7839e07226e3081edbffd37ff034b4b8ecc5fae"
-
-[[files]]
 file = "config/extendedcrafting/singularities/leather.json"
 hash = "8b25754e47ddd45ad7dda5a1e51245325c33cb9af3dae79f9b211828c8d5bb27"
 
@@ -231,10 +227,6 @@ hash = "88253f517aa225d78788808c359990cbe10edb930607cc0456cfe87dde96c971"
 [[files]]
 file = "config/extendedcrafting/singularities/turtle_scute.json"
 hash = "be0083479256abbedbcda3a838dcc80d3fce1cfd81913704947e25f83d8c16f5"
-
-[[files]]
-file = "config/extendedcrafting/singularities/water.json"
-hash = "90f71a44e607b2ff980c6a06d52e76548a9c55d95298a415102b687a11742c3c"
 
 [[files]]
 file = "config/fancymenu/assets/discord_color.png"
@@ -378,7 +370,7 @@ hash = "2e69afacf774749222ca1e925dc94d32e6c3db8bef4557aa33144751c2770206"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "bf2c9d1e20ef98f0b7313ec0757b80fb201f59c3d1cef10c76e5f26e41fdb8e8"
+hash = "324f7697a55d0390d4cf37c50e6de25c7751cf4836cac287629fd5702b47939d"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
@@ -454,7 +446,7 @@ hash = "0fdbebfaceb8b88bc78fcbe8abe8d6bfb27c0f8f10838e08e900cce1fc6a6911"
 
 [[files]]
 file = "kubejs/assets/extendedcrafting/lang/en_us.json"
-hash = "9319855a31b4812c494efc53f43e1a8a2755163941ef5ed432f526f343a07802"
+hash = "1cbfff07cfe874a35c8e11edd0e62f52a4771bacc11e0cc823e4b3c819cb14a9"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/master_frog.png"
@@ -554,7 +546,7 @@ hash = "10f9f445bed9956cc95e8f184070f5b57b5329046d6fbaa076a53956b73fddc6"
 
 [[files]]
 file = "kubejs/server_scripts/builder_sieve.js"
-hash = "7fc1b84352305140a459487c178f7248a87a2419d07993ff38a549371e3ad5d1"
+hash = "0f3419cb4249975b1aa3fc48986f9332dd7f73f2bf9e0790b0689d68f60511cb"
 
 [[files]]
 file = "kubejs/server_scripts/catalyst_recipes.js"

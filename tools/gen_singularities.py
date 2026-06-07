@@ -29,6 +29,13 @@ REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT_DIR = os.path.join(REPO, "pack", "config", "extendedcrafting", "singularities")
 LANG = os.path.join(REPO, "pack", "kubejs", "assets", "extendedcrafting", "lang", "en_us.json")
 
+# The FLUID PAIR gets no singularity (maintainer ruling, #131): water and lava
+# are fluid resources - their froglights melt in the Crucible and have no
+# farmable item-form (the primer items kelp / pointed_dripstone have NO source
+# on this skyblock, which made both singularities uncraftable and the Ultimate
+# with them). Excluded HERE so a PF pin bump cannot resurrect the pair.
+EXCLUDED = {"water", "lava"}
+
 
 def find_jar(explicit):
     jar = pf_jar.find_jar(explicit)
@@ -51,7 +58,7 @@ def main():
     written = []
     skipped = []
     for variant, data in sorted(pf_jar.load_variants(jar).items()):
-        if not pf_jar.is_vanilla(data):
+        if not pf_jar.is_vanilla(data) or variant in EXCLUDED:
             skipped.append(variant)
             continue
         key = "singularity.extendedcrafting.%s" % variant
@@ -75,6 +82,15 @@ def main():
         lang[key] = title(variant)
         written.append(variant)
 
+    # The generator owns the folder: delete singularity JSONs for variants that
+    # are excluded or no longer vanilla, so removals propagate without hand-rm
+    # (added with the #131 fluid-pair exclusion).
+    removed = []
+    for name in os.listdir(OUT_DIR):
+        if name.endswith(".json") and name[:-5] not in written:
+            os.remove(os.path.join(OUT_DIR, name))
+            removed.append(name[:-5])
+
     with open(LANG, "w", encoding="utf-8", newline="\n") as handle:
         json.dump(lang, handle, indent=2, ensure_ascii=False)
         handle.write("\n")
@@ -82,7 +98,9 @@ def main():
     print("Source jar: %s" % os.path.basename(jar))
     print("Wrote %d vanilla singularities + %d lang entries." % (len(written), len(lang)))
     print("  " + ", ".join(written))
-    print("Skipped %d modded variants." % len(skipped))
+    print("Skipped %d modded/excluded variants." % len(skipped))
+    if removed:
+        print("Removed %d stale singularity file(s): %s" % (len(removed), ", ".join(removed)))
 
 
 if __name__ == "__main__":

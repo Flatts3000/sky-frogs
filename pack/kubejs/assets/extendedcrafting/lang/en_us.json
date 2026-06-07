@@ -24,7 +24,6 @@
   "singularity.extendedcrafting.ink_sac": "Ink Sac",
   "singularity.extendedcrafting.iron": "Iron",
   "singularity.extendedcrafting.lapis": "Lapis",
-  "singularity.extendedcrafting.lava": "Lava",
   "singularity.extendedcrafting.leather": "Leather",
   "singularity.extendedcrafting.lily_pad": "Lily Pad",
   "singularity.extendedcrafting.moss": "Moss",
@@ -47,6 +46,5 @@
   "singularity.extendedcrafting.soul_soil": "Soul Soil",
   "singularity.extendedcrafting.sponge": "Sponge",
   "singularity.extendedcrafting.tuff": "Tuff",
-  "singularity.extendedcrafting.turtle_scute": "Turtle Scute",
-  "singularity.extendedcrafting.water": "Water"
+  "singularity.extendedcrafting.turtle_scute": "Turtle Scute"
 }
