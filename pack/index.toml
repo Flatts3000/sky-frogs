@@ -221,6 +221,10 @@ file = "config/fancymenu/assets/wordmark.png"
 hash = "c749518f9c6fa216ed344010b64d8a4179d8f010d183d96af76ad13b20b0bb6e"
 
 [[files]]
+file = "config/fancymenu/customizablemenus.txt"
+hash = "4c68ab99c906dd487952f61bf33c0635039a8bbff3f02099e3cd8272fe51b4aa"
+
+[[files]]
 file = "config/fancymenu/customization/sky_frogs_title.txt"
 hash = "d03fec822963d2e8d31b70deb25a39a1f2378e32c4dee69ec7cb8898e9378aab"
 
