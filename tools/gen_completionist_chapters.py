@@ -34,7 +34,6 @@ REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CHAPTERS = os.path.join(REPO, "pack", "config", "ftbquests", "quests", "chapters")
 LANG = os.path.join(REPO, "pack", "config", "ftbquests", "quests", "lang", "en_us.snbt")
 ITEM_IDS = os.path.join(REPO, "tools", "data", "item_ids.txt")
-MODS_DIR = os.path.join(REPO, "pack", "mods")
 
 GROUP = "0C4F0E0000000006"  # Tier 6: Void (the victory-lap shelf)
 GOODFOOD = "9151543141235425281L"
@@ -64,6 +63,12 @@ MOD_LABELS = {  # column order + display
 }
 MOD_ORDER = ["alltheores", "powah", "refinedstorage", "mekanism",
              "industrialforegoing", "fluxnetworks"]
+# The three registries above are hand-maintained and consumed independently
+# (LOADED_MODS gates inclusion, MOD_ORDER drives column emission, MOD_LABELS
+# titles them) - a mod present in one but not the others would be SILENTLY
+# dropped from the census. Keep them identical or fail loudly (PR #126 review).
+assert LOADED_MODS == set(MOD_ORDER) == set(MOD_LABELS), \
+    "LOADED_MODS / MOD_ORDER / MOD_LABELS drifted - the three mod registries must list the same mods"
 
 # Column order within a mod: progression rank where the mod HAS a ladder,
 # else tier order then name. ATO = the osmium seed-chain order
@@ -167,6 +172,9 @@ def variant_mod(data: dict) -> str | None:
 
 def quest_block(qid, tid, icon, variant, x, y, deps=None, rewards=None,
                 task=None, shape=None, size=None):
+    # The half-step art units x1.5 produce float artifacts (0.6 * 1.5 ->
+    # 0.8999999999999999); round so the emitted SNBT reads as drawn.
+    x, y = round(x, 4), round(y, 4)
     dep_line = ""
     if deps:
         dep_line = "\t\t\tdependencies: [" + ", ".join(f'"{d}"' for d in deps) + "]\n"
@@ -201,6 +209,14 @@ def main():
         if mod in LOADED_MODS:
             modded.setdefault(mod, []).append(n)
     for mod in modded:
+        # A ranked column with an unranked newcomer would SILENTLY sort it to
+        # the bottom, breaking the progression order (the exact playtest catch
+        # that created VARIANT_RANK). Fail loudly instead (PR #126 review).
+        if any(n in VARIANT_RANK for n in modded[mod]):
+            unranked = [n for n in modded[mod] if n not in VARIANT_RANK]
+            if unranked:
+                sys.exit(f"mod '{mod}' sorts by VARIANT_RANK but {', '.join(unranked)} "
+                         f"has no rank entry - add it so the column keeps progression order")
         modded[mod].sort(key=column_key(variants))
 
     lang: list[str] = []
@@ -300,7 +316,15 @@ def main():
     text = re.sub(r"\t(?:quest\.(?:" + VANILLA_PREFIX + "|" + MODDED_PREFIX + r")[0-9A-F]+|chapter\.(?:"
                   + VANILLA_CHAPTER_ID + "|" + MODDED_CHAPTER_ID + r"))\.[a-z_]+:(?: \[[\s\S]*?\n\t\]|[^\n]*)\n",
                   "", text)
+    # The splice lands just above the Cave Frogs lang block (7CA7 prefix) so the
+    # census keys sit together. That chapter is NOT this script's to control -
+    # if its keys ever vanish (regenerated ids, hand edit, FTB rewrite), exit
+    # with a real message instead of an AttributeError (PR #126 review).
     anchor = re.search(r"\tquest\.7CA7", text)
+    if anchor is None:
+        sys.exit("lang splice anchor 'quest.7CA7' (the Cave Frogs block) not found in "
+                 "en_us.snbt - pick a new anchor in gen_completionist_chapters.py "
+                 "before regenerating")
     block = "\n".join(lang) + "\n"
     text = text[:anchor.start()] + block + text[anchor.start():]
     open(LANG, "w", encoding="utf-8", newline="\n").write(text)

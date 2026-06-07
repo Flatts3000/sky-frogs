@@ -362,7 +362,7 @@ hash = "a8e06063bf2967e3899c3fc4826aeb9d8e15c581bfcd6ee299cc4a1e7e0adac4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/whole_pond.snbt"
-hash = "074ac42af5b9aaa3fe24c1226a047b58555d2a4ce94a4881d96b7e1e7ef10080"
+hash = "9a499dfa6d59d900952265a580abb33d62683b856c5105912a4ea190e12427a1"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/your_first_iron_ingot.snbt"
@@ -566,7 +566,7 @@ hash = "a14f0b3014ad482f9b04ef079202394670f76a749bccb93ed36bb3e41c1810dc"
 
 [[files]]
 file = "kubejs/server_scripts/dissolution_slime_recipes.js"
-hash = "3918e933a66186c07b97af8f59ca29721cce0cd39224aa3d6427ed902bb9a9fd"
+hash = "881ff388f2971b834c7a6cd149bced5b917a8a49a7873f97fa2ef29111e8b940"
 
 [[files]]
 file = "kubejs/server_scripts/dump_items.js"

@@ -190,7 +190,7 @@
 				match_components: "strict"
 				type: "item"
 			}]
-			x: -0.8999999999999999d
+			x: -0.9d
 			y: -1.875d
 		}
 		{
@@ -204,7 +204,7 @@
 				match_components: "strict"
 				type: "item"
 			}]
-			x: 0.8999999999999999d
+			x: 0.9d
 			y: -1.875d
 		}
 		{
@@ -274,7 +274,7 @@
 				match_components: "strict"
 				type: "item"
 			}]
-			x: -0.8999999999999999d
+			x: -0.9d
 			y: 2.25d
 		}
 		{

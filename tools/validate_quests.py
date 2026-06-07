@@ -929,6 +929,67 @@ def check_table_chain_mirror(chapters, ctx):
     return f
 
 
+# The ATO seed chain mirrors the chamber's MODDED_SELF_KEYED alltheores rows the
+# same way the tier table chains mirror SLIME_TIERS (the #125 drift class,
+# re-opened by the PR #126 review): a metal added to one surface but not the
+# other ships a census quest with no bootstrap, or a chain step with no scaling
+# row, and nothing else screams. Osmium is the chain ROOT - bootstrapped by
+# osmium_slime_bucket.js, never a chain output - so it is exempt from the
+# output-coverage direction but must still hold a chamber row.
+ATO_CHAIN_JS = "ato_slime_chain.js"
+ATO_CHAIN_ROOT = "osmium"
+
+
+def check_ato_chain_mirror(chapters, ctx):
+    """Q-ATO-CHAIN-MIRROR (ERROR) - no jar needed (pack file vs pack file).
+
+    The [from, to] steps in ato_slime_chain.js must form ONE connected chain
+    rooted at osmium, and the set of chain outputs must equal the chamber's
+    alltheores self-keyed rows minus the root. Either direction of drift is the
+    breeze-slime gap (#125) transplanted to the modded table.
+    """
+    path = RECIPE_DIR / ATO_CHAIN_JS
+    if not path.exists() or not DISSOLUTION_JS.exists():
+        return []
+    diss = DISSOLUTION_JS.read_text(encoding="utf-8")
+    modded_at = diss.find("MODDED_SELF_KEYED")
+    ato_rows = [m.group(2) for m in MODDED_ROW_RE.finditer(diss, max(modded_at, 0))
+                if m.group(4) == "alltheores"]
+    pairs = TABLE_PAIR_RE.findall(path.read_text(encoding="utf-8"))
+    if not pairs or not ato_rows:
+        return [Finding(ERROR, "Q-ATO-CHAIN-MIRROR", ATO_CHAIN_JS, 0,
+                        f"parser found {len(pairs)} chain pairs / {len(ato_rows)} alltheores "
+                        f"chamber rows (expected >=1 each) - format drift; update the parser "
+                        f"in tools/validate_quests.py before trusting this check")]
+
+    f = []
+    if pairs[0][0] != ATO_CHAIN_ROOT:
+        f.append(Finding(ERROR, "Q-ATO-CHAIN-MIRROR", ATO_CHAIN_JS, 0,
+                         f"chain starts at '{pairs[0][0]}' but the root must be "
+                         f"'{ATO_CHAIN_ROOT}' (the osmium_slime_bucket.js bootstrap)"))
+    for i in range(1, len(pairs)):
+        if pairs[i][0] != pairs[i - 1][1]:
+            f.append(Finding(ERROR, "Q-ATO-CHAIN-MIRROR", ATO_CHAIN_JS, 0,
+                             f"chain breaks between '{pairs[i - 1][1]}' and step "
+                             f"'{pairs[i][0]}' -> '{pairs[i][1]}' - each step must take the "
+                             f"prior step's output milk"))
+    outputs = {to for _, to in pairs}
+    if ATO_CHAIN_ROOT not in ato_rows:
+        f.append(Finding(ERROR, "Q-ATO-CHAIN-MIRROR", "dissolution_slime_recipes.js", 0,
+                         f"'{ATO_CHAIN_ROOT}' has no alltheores self-keyed chamber row - the "
+                         f"chain root scales in the chamber like every census variant"))
+    for v in ato_rows:
+        if v != ATO_CHAIN_ROOT and v not in outputs:
+            f.append(Finding(ERROR, "Q-ATO-CHAIN-MIRROR", ATO_CHAIN_JS, 0,
+                             f"'{v}' has an alltheores chamber row but no chain step crafts "
+                             f"its slime - a census quest with no bootstrap (the #125 gap)"))
+    for v in sorted(outputs - set(ato_rows)):
+        f.append(Finding(ERROR, "Q-ATO-CHAIN-MIRROR", ATO_CHAIN_JS, 0,
+                         f"chain step outputs '{v}' but it has no alltheores self-keyed "
+                         f"chamber row - no scaling path once the first frog exists"))
+    return f
+
+
 TABLE_REWARD_TYPES = {"loot", "random", "choice"}
 
 
@@ -1019,6 +1080,7 @@ CHECKS = [
     check_singularity_ingredient,
     check_dissolution_threading,
     check_table_chain_mirror,
+    check_ato_chain_mirror,
     check_reward_tables,
     check_hide_until,
 ]

@@ -160,7 +160,11 @@ const MODDED_SELF_KEYED = [
   ['VOID',     'minecraft:soul_soil',  'nitro',           'powah:crystal_nitro',       'powah'],
   // The census sweep (#121): every quested modded variant gets its self-keyed
   // row. Tag-primed variants (PF primer_tag) take a '#tag' input - the chamber
-  // accepts tag ingredients, mirroring PF's own priming exactly.
+  // accepts tag ingredients, mirroring PF's own priming exactly. Osmium joins
+  // for chamber parity (review catch on PR #126): its BOOTSTRAP stays the table
+  // recipe in osmium_slime_bucket.js (redstone milk), but it scales here like
+  // every other census variant - the ATO chain's root frog included.
+  ['CAVE',     'minecraft:stone',      'osmium',          '#c:ingots/osmium',          'alltheores'],
   ['CAVE',     'minecraft:stone',      'aluminum',        '#c:ingots/aluminum',        'alltheores'],
   ['CAVE',     'minecraft:stone',      'lead',            '#c:ingots/lead',            'alltheores'],
   ['CAVE',     'minecraft:stone',      'nickel',          '#c:ingots/nickel',          'alltheores'],
