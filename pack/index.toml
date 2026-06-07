@@ -330,7 +330,7 @@ hash = "01e3daf039dfc3825421110e6b725a231d1800991a7db361549309424070cc42"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/sister_ponds.snbt"
-hash = "3ef42d2c16bda2ef56b7ff0572776a8dae70b031ee2c29a534f70e742a468534"
+hash = "eb50bea849fcacb21a81a73982f5bc1885683c784506aaca01f8b1678ad75fb5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/storage_and_crafting.snbt"
@@ -374,7 +374,7 @@ hash = "2e69afacf774749222ca1e925dc94d32e6c3db8bef4557aa33144751c2770206"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "c6efbd72658db73d0fb949983191131dc54e5506a3ee51758f50521fd3383f74"
+hash = "a1d51ed1cd2b9e91c48a3e7effb1fafa7159430709815d7b32f4dc9c7b6abe8b"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"

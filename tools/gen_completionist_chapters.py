@@ -60,6 +60,27 @@ MOD_LABELS = {  # column order + display
 MOD_ORDER = ["alltheores", "powah", "refinedstorage", "mekanism",
              "industrialforegoing", "fluxnetworks"]
 
+# Column order within a mod: progression rank where the mod HAS a ladder,
+# else tier order then name. Powah = the material ladder (orb energy cost),
+# RS = base material then processor tiers, IF = the Bog chain order.
+TIERS = ["cave", "geode", "bog", "tide", "infernal", "void"]
+VARIANT_RANK = {
+    "uraninite": 0, "energized_steel": 1, "dry_ice": 2, "blazing": 3,
+    "niotic": 4, "spirited": 5, "nitro": 6,
+    "quartz_enriched_iron": 0, "basic_processor": 1,
+    "improved_processor": 2, "advanced_processor": 3,
+    "plastic": 0, "pink_slime": 1,
+}
+
+
+def column_key(variants):
+    def key(name):
+        if name in VARIANT_RANK:
+            return (0, VARIANT_RANK[name], name)
+        cat = variants[name].get("category", "")
+        return (1, TIERS.index(cat) if cat in TIERS else 9, name)
+    return key
+
 # Icons for variants whose jar data has no primer_item (tag-primed).
 ICON_OVERRIDES = {
     "aluminum": "alltheores:aluminum_ingot",
@@ -171,6 +192,8 @@ def main():
         mod = variant_mod(d) or (d.get("primer_item") or ":").split(":")[0]
         if mod in LOADED_MODS:
             modded.setdefault(mod, []).append(n)
+    for mod in modded:
+        modded[mod].sort(key=column_key(variants))
 
     lang: list[str] = []
     used_ids: set[str] = set()

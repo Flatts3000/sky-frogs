@@ -125,31 +125,17 @@
 		}
 		{
 			icon: {
-				id: "powah:crystal_blazing"
+				id: "powah:uraninite"
 			}
-			id: "70DDFF714569D134"
+			id: "70DDF22219138525"
 			tasks: [{
-				id: "70DD71102A296354"
-				item: { components: { "productivefrogs:slime_variant": "productivefrogs:blazing" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				id: "70DDDDF463311CCC"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:uraninite" }, count: 1, id: "productivefrogs:configurable_froglight" }
 				match_components: "strict"
 				type: "item"
 			}]
 			x: 2.0d
 			y: 0.0d
-		}
-		{
-			icon: {
-				id: "powah:dry_ice"
-			}
-			id: "70DD4189CF5B59C4"
-			tasks: [{
-				id: "70DDA1575F371CD2"
-				item: { components: { "productivefrogs:slime_variant": "productivefrogs:dry_ice" }, count: 1, id: "productivefrogs:configurable_froglight" }
-				match_components: "strict"
-				type: "item"
-			}]
-			x: 2.0d
-			y: 1.5d
 		}
 		{
 			icon: {
@@ -163,7 +149,35 @@
 				type: "item"
 			}]
 			x: 2.0d
+			y: 1.5d
+		}
+		{
+			icon: {
+				id: "powah:dry_ice"
+			}
+			id: "70DD4189CF5B59C4"
+			tasks: [{
+				id: "70DDA1575F371CD2"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:dry_ice" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 2.0d
 			y: 3.0d
+		}
+		{
+			icon: {
+				id: "powah:crystal_blazing"
+			}
+			id: "70DDFF714569D134"
+			tasks: [{
+				id: "70DD71102A296354"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:blazing" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.5d
 		}
 		{
 			icon: {
@@ -173,20 +187,6 @@
 			tasks: [{
 				id: "70DDB3727D4F030A"
 				item: { components: { "productivefrogs:slime_variant": "productivefrogs:niotic" }, count: 1, id: "productivefrogs:configurable_froglight" }
-				match_components: "strict"
-				type: "item"
-			}]
-			x: 2.0d
-			y: 4.5d
-		}
-		{
-			icon: {
-				id: "powah:crystal_nitro"
-			}
-			id: "70DDB24A799921BC"
-			tasks: [{
-				id: "70DD5D55B2F4AAAA"
-				item: { components: { "productivefrogs:slime_variant": "productivefrogs:nitro" }, count: 1, id: "productivefrogs:configurable_froglight" }
 				match_components: "strict"
 				type: "item"
 			}]
@@ -209,12 +209,12 @@
 		}
 		{
 			icon: {
-				id: "powah:uraninite"
+				id: "powah:crystal_nitro"
 			}
-			id: "70DDF22219138525"
+			id: "70DDB24A799921BC"
 			tasks: [{
-				id: "70DDDDF463311CCC"
-				item: { components: { "productivefrogs:slime_variant": "productivefrogs:uraninite" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				id: "70DD5D55B2F4AAAA"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:nitro" }, count: 1, id: "productivefrogs:configurable_froglight" }
 				match_components: "strict"
 				type: "item"
 			}]
@@ -223,12 +223,12 @@
 		}
 		{
 			icon: {
-				id: "refinedstorage:advanced_processor"
+				id: "refinedstorage:quartz_enriched_iron"
 			}
-			id: "70DD11972EEAF468"
+			id: "70DD8519EEC1B004"
 			tasks: [{
-				id: "70DD32C1B62011FA"
-				item: { components: { "productivefrogs:slime_variant": "productivefrogs:advanced_processor" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				id: "70DD51443AE965BD"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:quartz_enriched_iron" }, count: 1, id: "productivefrogs:configurable_froglight" }
 				match_components: "strict"
 				type: "item"
 			}]
@@ -265,45 +265,17 @@
 		}
 		{
 			icon: {
-				id: "refinedstorage:quartz_enriched_iron"
+				id: "refinedstorage:advanced_processor"
 			}
-			id: "70DD8519EEC1B004"
+			id: "70DD11972EEAF468"
 			tasks: [{
-				id: "70DD51443AE965BD"
-				item: { components: { "productivefrogs:slime_variant": "productivefrogs:quartz_enriched_iron" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				id: "70DD32C1B62011FA"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:advanced_processor" }, count: 1, id: "productivefrogs:configurable_froglight" }
 				match_components: "strict"
 				type: "item"
 			}]
 			x: 4.0d
 			y: 4.5d
-		}
-		{
-			icon: {
-				id: "mekanism:fluorite_gem"
-			}
-			id: "70DDCD212AE52B37"
-			tasks: [{
-				id: "70DD4E903E550599"
-				item: { components: { "productivefrogs:slime_variant": "productivefrogs:fluorite" }, count: 1, id: "productivefrogs:configurable_froglight" }
-				match_components: "strict"
-				type: "item"
-			}]
-			x: 6.0d
-			y: 0.0d
-		}
-		{
-			icon: {
-				id: "mekanism:ingot_refined_obsidian"
-			}
-			id: "70DD872930906038"
-			tasks: [{
-				id: "70DDA6D53AC5218B"
-				item: { components: { "productivefrogs:slime_variant": "productivefrogs:refined_obsidian" }, count: 1, id: "productivefrogs:configurable_froglight" }
-				match_components: "strict"
-				type: "item"
-			}]
-			x: 6.0d
-			y: 1.5d
 		}
 		{
 			icon: {
@@ -317,21 +289,35 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 3.0d
+			y: 0.0d
 		}
 		{
 			icon: {
-				id: "industrialforegoing:pink_slime"
+				id: "mekanism:fluorite_gem"
 			}
-			id: "70DD8A8DA15CC882"
+			id: "70DDCD212AE52B37"
 			tasks: [{
-				id: "70DDC7E8CDF9648E"
-				item: { components: { "productivefrogs:slime_variant": "productivefrogs:pink_slime" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				id: "70DD4E903E550599"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:fluorite" }, count: 1, id: "productivefrogs:configurable_froglight" }
 				match_components: "strict"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 0.0d
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			icon: {
+				id: "mekanism:ingot_refined_obsidian"
+			}
+			id: "70DD872930906038"
+			tasks: [{
+				id: "70DDA6D53AC5218B"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:refined_obsidian" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
 		}
 		{
 			icon: {
@@ -341,6 +327,20 @@
 			tasks: [{
 				id: "70DD87916BEAA25D"
 				item: { components: { "productivefrogs:slime_variant": "productivefrogs:plastic" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "industrialforegoing:pink_slime"
+			}
+			id: "70DD8A8DA15CC882"
+			tasks: [{
+				id: "70DDC7E8CDF9648E"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:pink_slime" }, count: 1, id: "productivefrogs:configurable_froglight" }
 				match_components: "strict"
 				type: "item"
 			}]
@@ -362,7 +362,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["70DDE8959C46DE77", "70DDD75E3D26ECE7", "70DD1B4FCB046228", "70DD9CE8D28270C3", "70DD3DED432660AC", "70DD42E9DCA61D0A", "70DD227DBEE3A633", "70DD8FDCBCF1C143", "70DDFF714569D134", "70DD4189CF5B59C4", "70DD8655ED1C027C", "70DD6F2CFCE78A17", "70DDB24A799921BC", "70DD2DA496EE8E42", "70DDF22219138525", "70DD11972EEAF468", "70DD8B76266B84E5", "70DD24314911C52A", "70DD8519EEC1B004", "70DDCD212AE52B37", "70DD872930906038", "70DD8BDEB27E47C3", "70DD8A8DA15CC882", "70DD52504B7A1FAD", "70DD3C94BA8BD5DD"]
+			dependencies: ["70DDE8959C46DE77", "70DDD75E3D26ECE7", "70DD1B4FCB046228", "70DD9CE8D28270C3", "70DD3DED432660AC", "70DD42E9DCA61D0A", "70DD227DBEE3A633", "70DD8FDCBCF1C143", "70DDF22219138525", "70DD8655ED1C027C", "70DD4189CF5B59C4", "70DDFF714569D134", "70DD6F2CFCE78A17", "70DD2DA496EE8E42", "70DDB24A799921BC", "70DD8519EEC1B004", "70DD8B76266B84E5", "70DD24314911C52A", "70DD11972EEAF468", "70DD8BDEB27E47C3", "70DDCD212AE52B37", "70DD872930906038", "70DD52504B7A1FAD", "70DD8A8DA15CC882", "70DD3C94BA8BD5DD"]
 			icon: {
 				id: "productivefrogs:sweetslime"
 			}
