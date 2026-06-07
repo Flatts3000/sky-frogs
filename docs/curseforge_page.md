@@ -46,6 +46,7 @@ Everything from your first iron to the endgame comes through **Resource Frogs**:
 - **No mining shortcuts.** Laser drills, quarries, digital miners - recipe-stripped or hidden. The frogs are the path, and the pack enforces it. (Builders get one curated exception: a string-mesh sieve over dirt and moss that drops saplings and garden flora - decor only, never resources.)
 - **Cross-mod by JSON.** Any modded resource can be made frog-farmable with a single `slime_variant` JSON file, so the whole modded-resource ecosystem plugs into the same loop. No Java, no source-fork.
 - **A questbook that actually guides you.** FTB Quests walks every tier: a chapter per species, plus side chapters for the tech mods. If you're lost, the answer's in the book.
+- **A completionist victory lap.** Two census chapters count every froglight in the pack - the vanilla fifty laid out as an actual tree frog, the modded twenty-five column by column - and every name on the list is genuinely craftable. No lottery tickets, no dead checkboxes.
 - **Built from player feedback.** Most updates start as somebody's Discord message or CurseForge comment - the welcome chapter hands you the invite (or click Join the Pond in-game).
 
 ## How to Play (your first hour)
