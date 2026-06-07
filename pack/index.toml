@@ -254,7 +254,7 @@ hash = "1d5be92bff09cfc3cb90bd7b0fd78f2a29f555bec27c8d00fdd7ec68d714076c"
 
 [[files]]
 file = "config/fancymenu/assets/wordmark.png"
-hash = "4d2547cbad904394f4e84403233bdc8aac20acddb563fe1c5b2c848aa38d3b04"
+hash = "bd5a6a4b373188f78619cfe8813585a1b778b72cb0ed6237735d54010f9ec3d0"
 
 [[files]]
 file = "config/fancymenu/customizablemenus.txt"
@@ -262,7 +262,7 @@ hash = "4c68ab99c906dd487952f61bf33c0635039a8bbff3f02099e3cd8272fe51b4aa"
 
 [[files]]
 file = "config/fancymenu/customization/sky_frogs_title.txt"
-hash = "646054924d778a3a68a212c4ea0ec54d321fdce98d23720aed1a618682ffcfd8"
+hash = "6b7e3b650a12b5c2295ced20cb78228e5dac48adf8612bf30e2f36c48bcf0782"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"

@@ -29,6 +29,9 @@ __pycache__/
 .claude/settings.local.json
 .claude/scheduled_tasks.lock
 
+# Playwright MCP session artifacts (browser-automation snapshots/downloads)
+.playwright-mcp/
+
 # OS junk
 .DS_Store
 Thumbs.db
