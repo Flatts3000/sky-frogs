@@ -366,7 +366,7 @@ hash = "2e69afacf774749222ca1e925dc94d32e6c3db8bef4557aa33144751c2770206"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "cfca2e6025380e9dbe1c47289233fc86505cca1751cecd519e117d6f5273ad6f"
+hash = "5e4110933096090e0e1e384e1d3491c792e3984bcfe40d8de50d8138f5279915"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
@@ -546,7 +546,7 @@ hash = "0a97a7117e479eb05b1d2b4e5e5a3fee8da64adc3c14c923244a0da5d4ecc024"
 
 [[files]]
 file = "kubejs/server_scripts/cave_slime_chain.js"
-hash = "d14deced8639d0e54cfa6be5801886b2fa7807ae9c8f251f959e4c7eca8224de"
+hash = "415b070682d79086f5fd6359fda1b314e6e973bfb3bdab8bfa97ba600ee038fc"
 
 [[files]]
 file = "kubejs/server_scripts/cobblegen_curation.js"
@@ -554,7 +554,7 @@ hash = "a14f0b3014ad482f9b04ef079202394670f76a749bccb93ed36bb3e41c1810dc"
 
 [[files]]
 file = "kubejs/server_scripts/dissolution_slime_recipes.js"
-hash = "50b54937ff09bc642cdea3fdafdc10e4fa0e9497da694047835e0b76ea15b115"
+hash = "2d02b89c4e0fafd02319150660fba6711cd7010d46c4f8e68a4a2eb9a6f8e72d"
 
 [[files]]
 file = "kubejs/server_scripts/dump_items.js"

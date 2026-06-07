@@ -2,7 +2,7 @@
 //
 // Each Cave resource's "slime in a bucket" is crafted from the PRIOR resource's
 // Slime Milk, threading a seed-chain:
-//   iron -> copper -> gold -> coal -> glow_ink_sac -> water -> lava -> breeze_rod -> redstone.
+//   iron -> copper -> gold -> coal -> glow_ink_sac -> breeze_rod -> redstone.
 // (iron is the bootstrap from the Your First Iron Ingot chapter; the steps below
 // produce the rest. Lapis moved to Geode. glow_ink_sac was originally skipped as
 // off-theme, but the Ultimate Singularity demands every vanilla froglight
@@ -29,12 +29,10 @@ ServerEvents.recipes(event => {
     ['copper', 'gold'],
     ['gold', 'coal'],
     ['coal', 'glow_ink_sac'],
-    // PF 1.13.0 (#164/#161): water + lava re-homed to Cave and breeze_rod joined -
-    // same insertion point as the chamber chain (dissolution_slime_recipes.js):
-    // before redstone, which stays the capstone and the Geode bridge.
-    ['glow_ink_sac', 'water'],
-    ['water', 'lava'],
-    ['lava', 'breeze_rod'],
+    // PF 1.13.0 (#161): breeze_rod joins before redstone (the capstone + Geode
+    // bridge). water + lava are deliberately NOT chain steps - the fluid pair is
+    // self-keyed in the chamber (dissolution_slime_recipes.js) per maintainer ruling.
+    ['glow_ink_sac', 'breeze_rod'],
     ['breeze_rod', 'redstone']
   ]
 

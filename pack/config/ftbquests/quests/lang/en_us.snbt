@@ -1035,14 +1035,14 @@
 	quest.3E17000000000005.quest_subtitle: "Hotter is faster."
 	quest.3E17000000000005.title: "Feed the Fire"
 	quest.3E17000000000008.quest_desc: [
-		"A &9Water Froglight&r melts into a full &9bucket of water&r - farmable water, from your &aCave frog&r of all things. Its item-form resource is &akelp&r (fluids are not items), which is what the chamber and its Singularity count."
+		"A &9Water Froglight&r melts into a full &9bucket of water&r - farmable water, from your &aCave frog&r of all things. Its item-form resource is &akelp&r (fluids are not items): chamber a kelp into a &9Water Slime&r, or let the Cave pool roll one by split-discovery. The fluid pair sits outside the seed chain on purpose."
 		""
 		"Turn in the &bWater Froglight&r."
 	]
 	quest.3E17000000000008.quest_subtitle: "The ocean, bottled."
 	quest.3E17000000000008.title: "Water"
 	quest.3E1700000000000B.quest_desc: [
-		"A &6Lava Froglight&r melts into a full &6bucket of lava&r - renewable, no cobble-crucible babysitting. The variant is &aCave&r business like the basin itself (its item-form is &fpointed dripstone&r, the cave's own lava-maker), so the whole loop runs at Tier 1."
+		"A &6Lava Froglight&r melts into a full &6bucket of lava&r - renewable, no cobble-crucible babysitting. The variant is &aCave&r business like the basin itself: chamber a &fpointed dripstone&r (the cave's own lava-maker) into a &6Lava Slime&r, or wait for a Cave-pool roll. The whole loop runs at Tier 1."
 		""
 		"Turn in the &bLava Froglight&r."
 	]

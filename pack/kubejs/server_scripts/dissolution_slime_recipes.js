@@ -52,14 +52,11 @@ const SLIME_TIERS = [
     // quests thread identically. (obsidian, the other stray, lives in the INFERNAL
     // block below - quested at Tier 5; PF reclasses it infernal in #142.)
     ['glow_ink_sac', 'minecraft:coal'],
-    // PF 1.13.0 (#164/#161): water + lava re-home to Cave (they feed the Crucible's
-    // renewable-fluid lane and fluids are day-one resources), and breeze_rod joins.
-    // Item-form resources: water = kelp, lava = pointed_dripstone (cave-native,
-    // changed from magma_block in the move). redstone stays the capstone and the
-    // Geode bridge, per the #79 insertion precedent.
-    ['water',        'minecraft:glow_ink_sac'],
-    ['lava',         'minecraft:kelp'],
-    ['breeze_rod',   'minecraft:pointed_dripstone'],
+    // PF 1.13.0 (#161): breeze_rod slots before redstone, which stays the capstone
+    // and the Geode bridge per the #79 insertion precedent. (water + lava are Cave
+    // variants too, but the maintainer keeps the FLUID pair OUT of the seed chain -
+    // they live as self-keyed rows below, like the modded variants.)
+    ['breeze_rod',   'minecraft:glow_ink_sac'],
     ['redstone',     'minecraft:breeze_rod']
   ]],
   ['GEODE', 'minecraft:gravel', [
@@ -145,6 +142,12 @@ const SLIME_TIERS = [
 //
 // [category stamp, tier filler, variant, the variant's own resource, owning mod]
 const MODDED_SELF_KEYED = [
+  // Two VANILLA exceptions live in the self-keyed table (maintainer ruling): the
+  // fluid pair stays out of the Cave seed chain. Their inputs are their own
+  // item-form resources (kelp / pointed dripstone); 'minecraft' is always loaded,
+  // so the per-row guard is a no-op for these.
+  ['CAVE',     'minecraft:stone',      'water',           'minecraft:kelp',            'minecraft'],
+  ['CAVE',     'minecraft:stone',      'lava',            'minecraft:pointed_dripstone', 'minecraft'],
   ['CAVE',     'minecraft:stone',      'uraninite',       'powah:uraninite',           'powah'],
   ['CAVE',     'minecraft:stone',      'energized_steel', 'powah:steel_energized',     'powah'],
   ['TIDE',     'minecraft:mycelium',   'dry_ice',         'powah:dry_ice',             'powah'],
