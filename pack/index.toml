@@ -477,6 +477,10 @@ file = "config/toastcontrol-client.toml"
 hash = "7d8bd1b950b7c740f805a5f0bf4d9c742882556bf60c42f257da7c40a7402ffe"
 
 [[files]]
+file = "config/torchmaster.toml"
+hash = "e94915d0511f4ed5056bef01b0fdace8c12cdb2a88c32755c6fa8b2b0f638c4c"
+
+[[files]]
 file = "icon.png"
 hash = "0fdbebfaceb8b88bc78fcbe8abe8d6bfb27c0f8f10838e08e900cce1fc6a6911"
 
@@ -1363,6 +1367,11 @@ metafile = true
 [[files]]
 file = "mods/toast-control.pw.toml"
 hash = "29d1e04030fcbdad4ee91eb9bc0b0d6b8907ffe967c9bd0543e8bb7e3dab5282"
+metafile = true
+
+[[files]]
+file = "mods/torchmaster.pw.toml"
+hash = "4acd0daed52188d2ccd8277953e697113aebf89c1bd6b1049a1e859f8eb26ce3"
 metafile = true
 
 [[files]]

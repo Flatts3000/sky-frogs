@@ -4,6 +4,9 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+### Added
+- **Torchmaster** (#134, suggested by Dergib on Discord): the Mega Torch keeps hostile natural spawns off your island. The pack ships a config exempting every Productive Frogs slime from the torch - your swamp's cave slimes keep spawning right next to it, only the actual menaces stay away.
+
 ### Changed
 - **Productive Frogs 1.13.0 -> 1.14.0.** The frogs learn boss farming and potion work:
   - **Brewed Froglights**: splash or linger a potion onto a slime before its frog eats it and the Froglight captures the effect - placed, it is a toggleable aura (good or bad: Poison perimeter, Regeneration room); held, it buffs you; with Curios it rides a dedicated Froglight charm slot.

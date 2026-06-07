@@ -1,0 +1,13 @@
+#Sky Frogs override (#134, suggested by Dergib on Discord): the Mega Torch
+#blocks MONSTER-category natural spawns, and Productive Frogs' species slimes
+#ARE monster-category natural spawns - the pack adds cave_slime to the swamp
+#island (add_cave_slime_island.json), and that Tier 0 farm is the economy's
+#front door. Without these exemptions, a Mega Torch placed to stop creepers
+#silently starves the frogs. The '-' prefix removes an entity from the torch's
+#block list, allowing its spawns. resource_slime is bucket/sprinkler-placed
+#(not a natural spawn) but is exempted belt-and-suspenders for mods that
+#route spawns through the same checks.
+#
+#Only this key is pinned; NeoForge fills in every other Torchmaster option at
+#its mod default on first load.
+megaTorchEntityBlockListOverrides = ["-productivefrogs:cave_slime", "-productivefrogs:geode_slime", "-productivefrogs:bog_slime", "-productivefrogs:tide_slime", "-productivefrogs:infernal_slime", "-productivefrogs:void_slime", "-productivefrogs:resource_slime"]
