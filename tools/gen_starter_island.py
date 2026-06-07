@@ -2,9 +2,12 @@
 """Generate the Sky Frogs starter-island structure NBT for SkyblockBuilder.
 
 A deliberately minimal, chestless platform: a 5x5 footprint, 3 blocks deep -
-two layers of dirt topped with grass_block. There is NO chest (first-join items
-come from KubeJS `first_join.js`) and NO pre-placed tree (the player grows one
-from the granted saplings).
+two layers of dirt topped with grass_block, with ONE bedrock block at the
+bottom-center (the island's heart). The bedrock is Flux Networks' dust anvil
+(#120): the mod's ritual compresses thrown redstone against obsidian-on-bedrock,
+and a void skyblock generates none anywhere else. There is NO chest (first-join
+items come from KubeJS `first_join.js`) and NO pre-placed tree (the player grows
+one from the granted saplings).
 
 Output: pack/config/skyblockbuilder/templates/islands/default.nbt
 (gzipped vanilla structure NBT, DataVersion 3955 = MC 1.21.1).
@@ -35,14 +38,18 @@ def build():
             "Name": String("minecraft:grass_block"),
             "Properties": Compound({"snowy": String("false")}),
         }),
+        Compound({"Name": String("minecraft:bedrock")}),
     ])
     blocks = []
+    cx, cz = SX // 2, SZ // 2
     for y in range(SY):
         state = 1 if y == SY - 1 else 0  # grass on top, dirt below
         for x in range(SX):
             for z in range(SZ):
+                # the island's heart: one bedrock at bottom-center (#120)
+                s = 2 if (y == 0 and x == cx and z == cz) else state
                 blocks.append(Compound({
-                    "state": Int(state),
+                    "state": Int(s),
                     "pos": List[Int]([Int(x), Int(y), Int(z)]),
                 }))
     return Compound({

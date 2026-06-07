@@ -779,11 +779,13 @@
 	quest.70E0000000000026.quest_subtitle: "Serious FE."
 	quest.70E0000000000026.title: "The Uraninite Reactor"
 	quest.70E0000000000029.quest_desc: [
-		"&dFlux Dust&r is born, not crafted: throw &credstone&r onto &8obsidian&r and it transmutes where it lands. Four dust starts a network - and the first one primes your Infernal frog for the rest."
+		"&dFlux Dust&r is born in a ritual: &credstone&r thrown onto &8obsidian&r that rests on &8bedrock&r. And yes - islands born in this era of the pack HAVE bedrock: one block at bottom-center, the heart the platform was built around. Dig down at spawn and see."
 		""
-		"Make &a4 Flux Dust&r."
+		"Set obsidian on the heart, toss redstone on top, then &epunch the obsidian&r (left-click) to compress it into dust. Once you own a &dFlux Block&r, that works as the anvil too. No heart handy? A crafting grid presses one dust from &credstone&r sandwiched between two &8obsidian&r."
+		""
+		"The first dust primes your Infernal frog for the rest. Make &a4&r."
 	]
-	quest.70E0000000000029.quest_subtitle: "Drop redstone on obsidian. Really."
+	quest.70E0000000000029.quest_subtitle: "Your island kept a secret."
 	quest.70E0000000000029.title: "Flux Dust"
 	quest.70E000000000002C.quest_desc: [
 		"You made the dust yourself, so the chamber law is satisfied: slime it, feed the &cInfernal frog&r, and flux becomes a farm."
