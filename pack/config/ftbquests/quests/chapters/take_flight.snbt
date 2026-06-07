@@ -164,6 +164,48 @@
 			y: 9.0d
 		}
 		{
+			dependencies: ["7F0000000000000B"]
+			icon: {
+				id: "minecraft:heavy_core"
+			}
+			id: "7F0000000000001A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7F0000000000001C"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "7F0000000000001B"
+				item: { count: 1, id: "minecraft:heavy_core" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7F0000000000001A"]
+			icon: {
+				id: "minecraft:mace"
+			}
+			id: "7F0000000000001D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7F0000000000001F"
+				table_id: 9172988016023568385L
+				type: "loot"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "7F0000000000001E"
+				item: { count: 1, id: "minecraft:mace" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 4.5d
+		}
+		{
 			dependencies: ["7F00000000000014"]
 			icon: {
 				id: "ironjetpacks:ultimate_coil"
