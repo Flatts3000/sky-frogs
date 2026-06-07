@@ -1019,7 +1019,7 @@
 	chapter.5140000000000001.title: "Road to Infernal"
 	chapter.51F0000000000001.title: "Infernal Frogs"
 	quest.3E17000000000002.quest_desc: [
-		"Remember the &eOak Crucible&r wringing water out of leaves? Meet its big sibling: a &fbrick-and-iron basin&r that melts &bFroglights&r back into the real thing - no GUI, no power, just heat rising from whatever block sits underneath."
+		"Remember the &eOak Crucible&r wringing water out of leaves? Meet its big sibling: a &fbrick-and-iron basin&r that melts &bFroglights&r into &9fluids&r - water, lava, molten metal - no GUI, no power, just heat rising from whatever block sits underneath."
 		""
 		"The build is &firon&r and &cbricks&r: hammer cobblestone down to clay, smelt the clay into bricks, and frame them in iron."
 		""
