@@ -33,10 +33,13 @@ ServerEvents.recipes(event => {
     ['moss', 'mycelium'],
     ['mycelium', 'lily_pad'],
     ['lily_pad', 'leather'],
-    ['leather', 'feather']
+    ['leather', 'feather'],
+    // PF 1.13.0 (#161): the Bog stragglers - same insertion as the chamber chain.
+    ['feather', 'armadillo_scute'],
+    ['armadillo_scute', 'honeycomb']
   ]
   if (Platform.isLoaded('industrialforegoing')) {
-    chain.push(['feather', 'plastic'])      // plastic = the Industrial Foregoing gate
+    chain.push(['honeycomb', 'plastic'])    // plastic = the Industrial Foregoing gate
     chain.push(['plastic', 'pink_slime'])   // pink slime = Bog capstone
   }
   chain.forEach(step => {

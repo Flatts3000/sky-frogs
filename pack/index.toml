@@ -534,7 +534,7 @@ hash = "de6ab3e255fee591531e0441258e4229b412a5fc38d4e0782feb31842809e530"
 
 [[files]]
 file = "kubejs/server_scripts/bog_slime_chain.js"
-hash = "7d709697917aa9ac8400d9e25ec546cbea3721d0479862431fcc25c9eccd553a"
+hash = "10f9f445bed9956cc95e8f184070f5b57b5329046d6fbaa076a53956b73fddc6"
 
 [[files]]
 file = "kubejs/server_scripts/builder_sieve.js"
