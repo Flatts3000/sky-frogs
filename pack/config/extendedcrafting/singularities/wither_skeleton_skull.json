@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.wither_skeleton_skull",
+  "colors": [
+    "323232",
+    "171717"
+  ],
+  "ingredient": {
+    "item": "minecraft:wither_skeleton_skull"
+  },
+  "inUltimateSingularity": true
+}

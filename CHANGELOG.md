@@ -4,6 +4,16 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+### Changed
+- **Productive Frogs 1.13.0 -> 1.14.0.** The frogs learn boss farming and potion work:
+  - **Brewed Froglights**: splash or linger a potion onto a slime before its frog eats it and the Froglight captures the effect - placed, it is a toggleable aura (good or bad: Poison perimeter, Regeneration room); held, it buffs you; with Curios it rides a dedicated Froglight charm slot.
+  - **Boss resources**: Wither Skeleton Skull and Nether Star (Infernal), Dragon Egg and Dragon Breath (Void) become farmable - prime the first slime with the real drop, then wall the farm behind a catalyst altar (boss Slime Milk inflicts Wither on you, not the slimes).
+  - **Five new vanilla resources**: bone, string, gunpowder, rotten flesh (Bog) and magma cream (Infernal), plus **Refined Glowstone** (Mekanism, Infernal).
+  - Resource Slimes render their inner block again (snow/ice/mob-drop batch).
+- **The Ultimate Singularity wants 57** (was 48): one Singularity per new resource, boss trophies included - a thousand Nether Stars is exactly the kind of automation this endgame exists to prove.
+- **The slime chains grew**: Bog's chamber + crafting-table chains thread the four mob drops in after honeycomb (string is the new bridge into plastic), magma cream slots before the Infernal capstone, and the boss slimes are deliberately self-keyed in the Dissolution Chamber - each boss slime costs one real drop, so the chamber never bypasses the kill.
+- **The census frog grew**: The Whole Pond now counts 59 vanilla froglights (the Bog body widened, both back limbs thickened), Sister Ponds counts 26.
+
 ## [0.7.2] - 2026-06-07
 
 An endgame unblocker: the two Singularities nobody could ever craft are gone, the Ultimate wants 48, and kelp finds its way into the moss sieve.

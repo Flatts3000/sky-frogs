@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.magma_cream",
+  "colors": [
+    "d8cc4f",
+    "5c4221"
+  ],
+  "ingredient": {
+    "item": "minecraft:magma_cream"
+  },
+  "inUltimateSingularity": true
+}
