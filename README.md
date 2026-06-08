@@ -56,6 +56,8 @@ For contributors:
 - [Open questions and known risks](./docs/backlog.md)
 - [How to contribute](./CONTRIBUTING.md)
 
+> **No bounties.** This project doesn't offer bounties or use Opire/Algora; bounty-platform commands are ignored, and unsolicited bot PRs are closed unreviewed. See [CONTRIBUTING](./CONTRIBUTING.md#no-bounties-no-automated-prs).
+
 ## Building locally
 
 `pack/` is initialized with packwiz. From inside `pack/`:

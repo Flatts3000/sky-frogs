@@ -2,6 +2,12 @@
 
 Thanks for your interest in contributing! Sky Frogs is a **content modpack** built around [Productive Frogs](https://github.com/Flatts3000/productive-frogs). This document covers how to file issues, what kinds of contributions are welcome here vs. upstream, and how to submit pull requests.
 
+## No bounties, no automated PRs
+
+This project does **not** offer bounties and does not participate in Opire, Algora, or any other third-party bounty platform. There is no payment for any issue or pull request. Comments invoking bounty-platform commands (`/opire`, `/algora`, `/try`, and the like) are ignored, and an issue showing up on a bounty board does not mean one is offered here.
+
+**Unsolicited automated / bot pull requests are closed without review.** Machine-generated "automated fix by [bot]" PRs consistently target the wrong loader or Minecraft version, fail to compile, and exist to farm bounty platforms or contribution history. If you are a human who genuinely wants to work on an issue, say so in a comment first, then open the PR yourself.
+
 ## Scope: what belongs in this repo
 
 Sky Frogs ships only pack-side content. **Java code does not live here.** If a contribution would require new mod behavior — new blocks, items, entities, hooks, or registry-level changes — file it against [Productive Frogs](https://github.com/Flatts3000/productive-frogs/issues) instead and reference the pack-side need.
