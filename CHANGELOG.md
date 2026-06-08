@@ -4,6 +4,10 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+## [0.9.1] - 2026-06-08
+
+A crafting-fidelity patch: the recipe picker now works inside Refined Storage grids, and mossy cobblestone is back to coming only from the Metallurgic Infuser the way the quest intends.
+
 ### Added
 - **Polymorphic Refined Storage** (#137, reported by Dergib on Discord): the Polymorph recipe picker now works inside Refined Storage's Crafting and Pattern grids. When two mods share a recipe (the two chisels, for one), you can finally pick which result you want from within an RS grid instead of being stuck with whichever one wins by default.
 
