@@ -202,6 +202,30 @@
 		{
 			dependencies: ["51F000000000001E"]
 			icon: {
+				id: "minecraft:magma_cream"
+			}
+			id: "51F0000000000021"
+			shape: "square"
+			rewards: [{
+				id: "51F0000000000023"
+				item: {
+					count: 1
+					id: "functionalstorage:compacting_drawer"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "51F0000000000022"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:magma_cream" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["51F0000000000021"]
+			icon: {
 				id: "minecraft:netherite_scrap"
 			}
 			id: "51F0000000000014"
@@ -219,7 +243,45 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 12.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["51F0000000000011"]
+			icon: {
+				id: "minecraft:splash_potion"
+			}
+			id: "51F0000000000024"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "51F0000000000026"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "51F0000000000025"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["51F0000000000024"]
+			icon: {
+				id: "productivefrogs:configurable_froglight"
+			}
+			id: "51F0000000000027"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "51F0000000000029"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "51F0000000000028"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 9.0d
 		}
 	]
 }

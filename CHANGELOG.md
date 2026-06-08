@@ -6,6 +6,9 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ### Added
 - **Torchmaster** (#134, suggested by Dergib on Discord): the Mega Torch keeps hostile natural spawns off your island. The pack ships a config exempting every Productive Frogs slime from the torch - your swamp's cave slimes keep spawning right next to it, only the actual menaces stay away.
+- **Trophy Pond - the boss campaign chapter** (Void group): two wings and a capstone. The Wither wing takes you from a fortress skull to a skull farm to summoning the Wither with your own produce to farming Nether Stars. The Dragon wing takes the world's one Dragon Egg and teaches the chamber loop that multiplies it (the catalyst altar wants seven eggs; the world has one - the math is the quest), then respawns the dragon to bottle its breath. Apex Pond caps it: all four boss Froglights, the food chain reordered.
+- **Five new resource quests**: bone, gunpowder, rotten flesh, and string thread into the Bog chain after honeycomb; magma cream slots before the Infernal capstone. Same froglight-check law as every resource quest.
+- **Brewed Froglights get their intro**: a two-quest branch off the Blaze quest - splash a potion on a slime, the Froglight captures the effect as a toggleable aura, then wear it in the Curios charm slot. Honor-system checkmarks, on purpose.
 
 ### Changed
 - **Productive Frogs 1.13.0 -> 1.14.0.** The frogs learn boss farming and potion work:
