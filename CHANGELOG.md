@@ -4,6 +4,10 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+## [0.9.0] - 2026-06-08
+
+The frogs make friends with Just Dire Things - its metals, gems, and fuels all farm through the loop now - and the Slime Churn lets you turn milk back into bucketed slimes with no slime to chase.
+
 ### Changed
 - **Productive Frogs 1.14.0 -> 1.15.0.** The frogs make friends with Just Dire Things:
   - **Just Dire Things, farmed through frogs**: Ferricore (Cave), Blazegold and Celestigem (Infernal), and Eclipse Alloy (Void) become frog-farmable - prime a slime with the ingot or gem, feed the matching frog, smelt the Froglight back. Three JDT fuels (Blaze Ember, Voidflame Coal, Eclipse Ember) farm too, melting in the Froglight Crucible straight into refined fuel and skipping JDT's own coal-refining chain. JDT is now the seventh column in Sister Ponds (the modded census grows 26 -> 33).
