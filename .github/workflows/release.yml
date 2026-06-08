@@ -130,6 +130,7 @@ jobs:
         run: gh release upload "${GITHUB_REF_NAME}" "${{ steps.serverbuild.outputs.zip }}" --clobber
 
       - name: Upload to CurseForge
+        id: cf
         env:
           CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
         run: |
@@ -150,9 +151,49 @@ jobs:
             exit 1
           fi
           fileid=$(printf '%s' "$body" | python3 -c "import sys, json; print(json.load(sys.stdin)['id'])")
+          echo "fileid=$fileid" >> "$GITHUB_OUTPUT"
           url="https://www.curseforge.com/minecraft/modpacks/sky-frogs/files/$fileid"
           echo "CurseForge file: $url"
           echo "### CurseForge file [$fileid]($url)" >> "$GITHUB_STEP_SUMMARY"
+
+      # The server pack rides to CurseForge as an ADDITIONAL FILE of the client
+      # file (parentFileID): CF shows it under the client file's "Additional
+      # Files", inheriting its game versions. A child upload must NOT send
+      # gameVersions (CF rejects that), so the metadata carries only
+      # parentFileID + changelog + displayName. Skipped unless the server build
+      # succeeded AND the client upload returned a file id (token present).
+      - name: Upload server pack to CurseForge
+        if: steps.serverbuild.outcome == 'success' && steps.cf.outputs.fileid != ''
+        env:
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          PARENT_ID: ${{ steps.cf.outputs.fileid }}
+          VERSION: ${{ steps.ver.outputs.version }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          json.dump({
+              "changelog": f"Dedicated-server pack for Sky Frogs {os.environ['VERSION']}. "
+                           "Unzip, accept the EULA, run setup.sh / setup.bat. See INSTALL.md.",
+              "changelogType": "text",
+              "displayName": f"Sky Frogs {os.environ['VERSION']} (server)",
+              "parentFileID": int(os.environ["PARENT_ID"]),
+          }, open("server_meta.json", "w"))
+          PY
+          resp=$(curl -s -w '\n%{http_code}' -X POST \
+            -H "X-Api-Token: $CF_API_TOKEN" \
+            -F "metadata=<server_meta.json" \
+            -F "file=@${{ steps.serverbuild.outputs.zip }}" \
+            "https://minecraft.curseforge.com/api/projects/${CF_PROJECT_ID}/upload-file")
+          body=$(printf '%s' "$resp" | sed '$d')
+          code=$(printf '%s' "$resp" | tail -n1)
+          echo "HTTP $code: $body"
+          if [ "$code" != "200" ]; then
+            echo "::error::CurseForge server-pack upload failed (HTTP $code): $body"
+            exit 1
+          fi
+          sid=$(printf '%s' "$body" | python3 -c "import sys, json; print(json.load(sys.stdin)['id'])")
+          echo "CurseForge server file id: $sid (child of $PARENT_ID)"
+          echo "### CurseForge server file \`$sid\` (additional file of \`$PARENT_ID\`)" >> "$GITHUB_STEP_SUMMARY"
 
       # Full release notes -> the Discord #changelog channel. The #announcements
       # GitHub-release embed truncates long bodies; this posts the whole CHANGELOG

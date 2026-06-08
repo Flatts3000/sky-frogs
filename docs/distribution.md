@@ -108,7 +108,7 @@ The NeoForge installer and server jars are NOT bundled - the host's `setup.sh`/`
 
 **Boot smoke test (local, before trusting a tag):** `python tools/build_server.py --out build/server --no-zip`, then install NeoForge into that dir (`java -jar neoforge-<ver>-installer.jar --installServer`), set `eula=true`, and run it - it should print `Done (...)! For help, type "help"`. v0.8.0 was validated this way (clean boot, Skyblock Builder generated spawn). Boot-testing in CI is a possible future hardening; today it is a manual gate.
 
-Server pack is uploaded to GitHub Releases only — CurseForge's server-pack workflow is per-platform and clunky. Pack hosts pull from GH Releases.
+The server pack is attached to the GitHub release AND uploaded to CurseForge as an **additional file** of the client file (`parentFileID`), so it shows under the client file's "Additional Files" on the CF page, inheriting its game versions. A `parentFileID` child upload must omit `gameVersions` (CF rejects them on child files), so its metadata carries only `parentFileID` + `changelog` + `displayName`. The CurseForge server upload is gated on the client upload succeeding (it needs the parent file id) and on the server build succeeding; if either is skipped or fails, the GitHub release still carries the server zip.
 
 ## Cross-promotion / discoverability
 
