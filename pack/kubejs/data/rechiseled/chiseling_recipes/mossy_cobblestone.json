@@ -88,5 +88,5 @@
       "stairs": "rechiseled:mossy_cobblestone_worn_stripes_stairs"
     }
   ],
-  "overwrite": false
+  "overwrite": true
 }

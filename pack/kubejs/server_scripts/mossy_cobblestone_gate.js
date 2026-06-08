@@ -16,7 +16,13 @@
 //     the datapack override at data/rechiseled/chiseling_recipes/cobblestone.json,
 //     which strips every mossy entry from the cobblestone group; a self-contained
 //     mossy_cobblestone group keeps cosmetic chiseling for players who already hold
-//     real mossy cobblestone)
+//     real mossy cobblestone). BOTH override files set "overwrite": true - with the
+//     mod's default "overwrite": false, Rechiseled MERGES same-id recipes and the
+//     stripped mossy entry comes right back; overwrite:true makes ours replace it.
+//
+// Chipped is deliberately left alone: its mason-table recipe takes mossy cobblestone
+// to make mossy cobblestone variants (gated behind already having the real block),
+// so it is not a bypass.
 //
 // This script removes the recipe-manager paths. It does NOT touch the Mekanism
 // Metallurgic Infuser recipe (output mossy_cobblestone, input cobblestone + Bio) -

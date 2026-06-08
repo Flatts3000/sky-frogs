@@ -574,11 +574,11 @@ hash = "42d8057fd56d926e1cdacbc98c5b42a195823b5b0b79316f5f6666339c04e094"
 
 [[files]]
 file = "kubejs/data/rechiseled/chiseling_recipes/cobblestone.json"
-hash = "bea282a45e3a1722799cd7a010511c6693fb5764f7336d2333409bf955b37388"
+hash = "1ff5696c5fa8ca228f4fd8e8e36753769bf479d72beaacb61f6da2822aeebd39"
 
 [[files]]
 file = "kubejs/data/rechiseled/chiseling_recipes/mossy_cobblestone.json"
-hash = "c4466c3dcbb971b5db79f563eb54a8d091f7b508938f14943a3e9f6724a2d4eb"
+hash = "90da348ef2970bb05378495850ce2b938bde1cdf2e61d0599fe9e4f12668fe04"
 
 [[files]]
 file = "kubejs/data/skyfrogs/neoforge/biome_modifier/add_cave_slime_island.json"
@@ -658,7 +658,7 @@ hash = "5c10c058739efefeed7b3d87b2adad36228609e5d2abae61a8466c3e49d41ee6"
 
 [[files]]
 file = "kubejs/server_scripts/mossy_cobblestone_gate.js"
-hash = "dc4b9b8692582cf8ef86c4b25afee0d11fcff19529a87e78dc9f901dffb836a7"
+hash = "8c0fbd8430e34f680a0f698db94c134dec6dba8af240899654438d5601c2ad02"
 
 [[files]]
 file = "kubejs/server_scripts/opolis_curation.js"
