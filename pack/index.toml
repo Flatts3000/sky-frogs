@@ -386,7 +386,7 @@ hash = "39e9f83466356e54d1c99bb72debb8b3370b787273f8ce3cd23115a9dbaaafec"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/trophy_pond.snbt"
-hash = "919c4bd23e5ea6fb435648ecfe2cd39d79f46a54af7edb4c53c1743323aafd3e"
+hash = "53c406dbeaa7af781ecef82d7879e6cfb544053b9c580b5e088e05092a5792da"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/void_frogs.snbt"
@@ -410,7 +410,7 @@ hash = "2e69afacf774749222ca1e925dc94d32e6c3db8bef4557aa33144751c2770206"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "5ea3b7b5273ca0d25cc971653dd8617844444a3bc4860795a1a4754bcf561a87"
+hash = "92c4811ffe3af7df23bb709f85fa08e1818967321497d9adbb7556925f871f82"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"

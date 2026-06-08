@@ -12,7 +12,26 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["51F0000000000014"]
+			icon: {
+				id: "productivefrogs:wither_skeleton_skull_slime_milk_bucket"
+			}
+			id: "7807000000000029"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "780700000000002B"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "780700000000002A"
+				type: "checkmark"
+			}]
+			x: 0.75d
+			y: -1.5d
+		}
+		{
+			dependencies: ["51F0000000000014", "7807000000000029"]
 			icon: {
 				id: "productivefrogs:wither_skeleton_skull_catalyst"
 			}
@@ -114,7 +133,7 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["601D00000000000E"]
+			dependencies: ["601D00000000000E", "7807000000000029"]
 			icon: {
 				id: "productivefrogs:dragon_egg_catalyst"
 			}

@@ -1039,15 +1039,22 @@
 	]
 	quest.51F0000000000027.quest_subtitle: "Wearable weather."
 	quest.51F0000000000027.title: "Charmed, I'm Sure"
+	quest.7807000000000029.quest_desc: [
+		"Every farm in this chapter runs on &5boss Slime Milk&r - and boss milk is &ctoxic&r. Stand in a boss milk pool and the &cWither&r takes you, trophies or not. The slimes bathe in it. The frogs wade through it. YOU stay on the shore. Your pond is about to grow places that are not for you."
+		""
+		"Build accordingly: glass between you and every pool, and let the frogs do the wading. Check the box once you have made peace with this."
+	]
+	quest.7807000000000029.quest_subtitle: "The pond bites back."
+	quest.7807000000000029.title: "Do Not Touch the Milk"
 	quest.7807000000000002.quest_desc: [
 		"The frogs have learned &5boss farming&r, and every boss farm is built the same way: six &5catalysts&r of the boss's own substance pressed against all six faces of a Slime Milk source - the &daltar&r that spawns slimes from milk on its own. Start at the fortress: &fwither skeletons&r drop skulls. Show me &eone&r; the other six go straight into the build. (The jetpack helps. The Mace helps more.)"
 		""
-		"Eight soul sand around each skull: &esix Wither Skeleton Skull Catalysts&r. Build the altar like a reactor core - walled off, fed from outside, tended by things that cannot &cWither&r. Jade counts the faces."
+		"Eight soul sand around a skull makes one &eWither Skeleton Skull Catalyst&r - craft six. Place a source of Skull Slime Milk and set a catalyst against each of its six faces; once all six are on, the milk spawns Skull Slimes by itself. Mouse over the milk - Jade shows the face count."
 	]
 	quest.7807000000000002.quest_subtitle: "Heads will roll."
 	quest.7807000000000002.title: "Skull Harvest"
 	quest.7807000000000005.quest_desc: [
-		"Ring a Skull Slime Milk source with your six catalysts and the pool comes alive: Skull Slimes rising out of the milk, frogs queuing at the rim. About that milk - it is &cpoison&r. Stand in it and the &cWither&r takes you. The slimes bathe in it. The frogs wade through it. YOU stay on the shore. Your pond has places that are not for you anymore."
+		"Ring a Skull Slime Milk source with your six catalysts and the pool comes alive: Skull Slimes rising out of the milk, frogs queuing at the rim - and you on the shore, like you promised."
 		""
 		"Turn in the &bWither Skeleton Skull Froglight&r."
 	]
