@@ -784,7 +784,7 @@ def check_dissolution_threading(chapters, ctx):
 
     # Parser sanity guard (review finding on PR #110): a source-format change that
     # the regexes no longer match would otherwise parse ZERO rows and pass green
-    # vacuously. Today's counts: 6 tiers, 55 chain rows, 29 modded rows (PF 1.14) -
+    # vacuously. Today's counts: 6 tiers, 55 chain rows, 36 modded rows (PF 1.15) -
     # assert a conservative minimum so format drift is a loud ERROR, not a silent skip.
     n_chain_rows = len(CHAIN_ROW_RE.findall(text, 0, tiers_region_end))
     n_modded_rows = len(MODDED_ROW_RE.findall(text, tiers_region_end))

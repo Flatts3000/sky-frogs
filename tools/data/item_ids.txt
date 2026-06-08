@@ -16044,6 +16044,7 @@ productivefrogs:sea_pickle_slime_milk_bucket
 productivefrogs:shulker_shell_slime_milk_bucket
 productivefrogs:silver_slime_milk_bucket
 productivefrogs:slime_bucket
+productivefrogs:slime_churn
 productivefrogs:slime_milker
 productivefrogs:soul_sand_slime_milk_bucket
 productivefrogs:soul_soil_slime_milk_bucket

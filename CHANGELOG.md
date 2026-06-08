@@ -4,6 +4,11 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+### Changed
+- **Productive Frogs 1.14.0 -> 1.15.0.** The frogs make friends with Just Dire Things:
+  - **Just Dire Things, farmed through frogs**: Ferricore (Cave), Blazegold and Celestigem (Infernal), and Eclipse Alloy (Void) become frog-farmable - prime a slime with the ingot or gem, feed the matching frog, smelt the Froglight back. Three JDT fuels (Blaze Ember, Voidflame Coal, Eclipse Ember) farm too, melting in the Froglight Crucible straight into refined fuel and skipping JDT's own coal-refining chain. JDT is now the seventh column in Sister Ponds (the modded census grows 26 -> 33).
+  - **The Slime Churn**: a hand-operated block that runs the Slime Milker backwards - load a variant's Slime Milk bucket plus empties and it fills them with that variant's Slime Buckets, on the same rules (and catalysts) a placed milk source spawns by. No entity to chase; loop the emptied bucket back in for a self-feeding line. Quested in Tools and Things (Bog tier).
+
 ## [0.8.0] - 2026-06-07
 
 The boss farming update: the frogs go to war. Productive Frogs 1.14 makes the Wither and the dragon renewable - and Trophy Pond, a whole new chapter, walks you through entombing their toxic milk in catalysts of their own substance. Along the way: potions brewed straight into Froglights, four new Bog resources and a fifth for the Infernal, a Mega Torch that knows not to starve your frogs, and a world where dragon eggs finally obey YOU.

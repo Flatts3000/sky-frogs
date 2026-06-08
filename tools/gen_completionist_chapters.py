@@ -51,7 +51,7 @@ MODDED_CHAPTER_ID = MODDED_PREFIX + "000000000001"
 # Mod ids that ship in the pack (variant conditions reference these).
 LOADED_MODS = {
     "alltheores", "mekanism", "industrialforegoing", "refinedstorage",
-    "powah", "fluxnetworks",
+    "powah", "fluxnetworks", "justdirethings",
 }
 MOD_LABELS = {  # column order + display
     "alltheores": "All the Ores",
@@ -60,9 +60,10 @@ MOD_LABELS = {  # column order + display
     "mekanism": "Mekanism",
     "industrialforegoing": "Industrial Foregoing",
     "fluxnetworks": "Flux Networks",
+    "justdirethings": "Just Dire Things",
 }
 MOD_ORDER = ["alltheores", "powah", "refinedstorage", "mekanism",
-             "industrialforegoing", "fluxnetworks"]
+             "industrialforegoing", "fluxnetworks", "justdirethings"]
 # The three registries above are hand-maintained and consumed independently
 # (LOADED_MODS gates inclusion, MOD_ORDER drives column emission, MOD_LABELS
 # titles them) - a mod present in one but not the others would be SILENTLY
@@ -83,6 +84,11 @@ VARIANT_RANK = {
     "quartz_enriched_iron": 0, "basic_processor": 1,
     "improved_processor": 2, "advanced_processor": 3,
     "plastic": 0, "pink_slime": 1,
+    # Just Dire Things (#188): the material ladder (Ferricore t1 -> Eclipse
+    # Alloy t4) first, then the Crucible fuel lane (Blaze/Voidflame/Eclipse
+    # Ember). Material-then-fuel reads as JDT's own progression.
+    "ferricore": 0, "blazegold": 1, "celestigem": 2, "eclipsealloy": 3,
+    "blaze_ember": 4, "voidflame": 5, "eclipse_ember": 6,
 }
 
 
@@ -94,7 +100,11 @@ def column_key(variants):
         return (1, TIERS.index(cat) if cat in TIERS else 9, name)
     return key
 
-# Icons for variants whose jar data has no primer_item (tag-primed).
+# Explicit census icons. Takes PRECEDENCE over primer_item (so a variant whose
+# primer is not the intuitive icon can override it): used for tag-primed
+# variants that have no primer_item AND for the JDT fuels, whose primer is a
+# coal tier but whose payoff (and the more recognizable icon) is the refined
+# fuel bucket the Crucible melts the Froglight into.
 ICON_OVERRIDES = {
     "aluminum": "alltheores:aluminum_ingot",
     "lead": "alltheores:lead_ingot",
@@ -108,6 +118,16 @@ ICON_OVERRIDES = {
     "fluorite": "mekanism:fluorite_gem",
     "refined_obsidian": "mekanism:ingot_refined_obsidian",
     "refined_glowstone": "mekanism:ingot_refined_glowstone",
+    # JDT tag-primed materials (#188); celestigem is item-primed (resolves on
+    # its own).
+    "ferricore": "justdirethings:ferricore_ingot",
+    "blazegold": "justdirethings:blazegold_ingot",
+    "eclipsealloy": "justdirethings:eclipsealloy_ingot",
+    # The JDT fuels prime off a coal tier, but the Crucible melts the Froglight
+    # to the refined fuel bucket - show that, not the coal.
+    "blaze_ember": "justdirethings:refined_t2_fluid_bucket",
+    "voidflame": "justdirethings:refined_t3_fluid_bucket",
+    "eclipse_ember": "justdirethings:refined_t4_fluid_bucket",
 }
 
 # --------------------------------------------------------------------------- #
@@ -246,7 +266,7 @@ def main():
         for name, (zx, zy) in zip(names, slots):
             qid = claim(det_id(VANILLA_PREFIX, name))
             tid = claim(det_id(VANILLA_PREFIX, name, "task"))
-            icon = variants[name].get("primer_item") or ICON_OVERRIDES.get(name) \
+            icon = ICON_OVERRIDES.get(name) or variants[name].get("primer_item") \
                 or f"minecraft:{name}"
             if icon not in allow:
                 icon = "productivefrogs:configurable_froglight"
@@ -285,7 +305,7 @@ def main():
         for row, name in enumerate(modded[mod]):
             qid = claim(det_id(MODDED_PREFIX, name))
             tid = claim(det_id(MODDED_PREFIX, name, "task"))
-            icon = variants[name].get("primer_item") or ICON_OVERRIDES.get(name) \
+            icon = ICON_OVERRIDES.get(name) or variants[name].get("primer_item") \
                 or "productivefrogs:configurable_froglight"
             if icon not in allow:
                 icon = "productivefrogs:configurable_froglight"

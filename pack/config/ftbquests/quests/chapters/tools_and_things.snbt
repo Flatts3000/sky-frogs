@@ -34,6 +34,26 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["7B0600000000000B"]
+			icon: {
+				id: "productivefrogs:slime_churn"
+			}
+			id: "1F00000000000020"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1F00000000000022"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "1F00000000000021"
+				item: { count: 1, id: "productivefrogs:slime_churn" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
 			dependencies: ["1F00000000000002"]
 			icon: {
 				id: "justdirethings:ferricore_ingot"
@@ -118,7 +138,7 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["1F00000000000002"]
+			dependencies: ["6E0DE0000000000B"]
 			icon: {
 				id: "buildinggadgets2:gadget_exchanging"
 			}
@@ -136,11 +156,11 @@
 				item: { count: 1, id: "buildinggadgets2:gadget_exchanging" }
 				type: "item"
 			}]
-			x: 1.5d
+			x: 2.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["1F00000000000011"]
+			dependencies: ["6E0DE0000000000B"]
 			icon: {
 				id: "buildinggadgets2:gadget_copy_paste"
 			}
@@ -160,7 +180,7 @@
 				item: { count: 1, id: "buildinggadgets2:gadget_copy_paste" }
 				type: "item"
 			}]
-			x: 1.5d
+			x: 2.0d
 			y: 1.5d
 		}
 	]

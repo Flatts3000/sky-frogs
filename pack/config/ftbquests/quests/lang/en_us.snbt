@@ -54,6 +54,13 @@
 	]
 	quest.1F00000000000002.quest_subtitle: "Just Dire Things begins."
 	quest.1F00000000000002.title: "First Goo"
+	quest.1F00000000000020.quest_desc: [
+		"Tired of pouring out &eSlime Milk&r and chasing down every slime it spawns? The &eSlime Churn&r does the catching for you. Load a bucket of any variant's &eSlime Milk&r and a stack of empties, and it fills them with that variant's &bSlime in a Bucket&r - same cadence, same per-bucket budget, same catalysts as a placed milk pool, with no slime to chase and no entity at all."
+		""
+		"Craft a &eSlime Churn&r."
+	]
+	quest.1F00000000000020.quest_subtitle: "The Milker, in reverse."
+	quest.1F00000000000020.title: "The Slime Churn"
 	quest.1F00000000000005.quest_desc: [
 		"&fFerricore&r is JDT's iron - the metal every Simple machine downstream needs. Grow &fraw ferricore&r on your &ePrimogel Soil&r (right-click the soil with a raw resource to seed it), then smelt the raw ore to a &bFerricore Ingot&r."
 		""
@@ -942,6 +949,13 @@
 	quest.70DD52504B7A1FAD.title: "Plastic (Industrial Foregoing)"
 	quest.70DD8A8DA15CC882.title: "Pink Slime (Industrial Foregoing)"
 	quest.70DD3C94BA8BD5DD.title: "Flux Dust (Flux Networks)"
+	quest.70DD094F71ACB4A4.title: "Ferricore (Just Dire Things)"
+	quest.70DDCDB366848F36.title: "Blazegold (Just Dire Things)"
+	quest.70DDAAEA0EA55AAA.title: "Celestigem (Just Dire Things)"
+	quest.70DDE576AB2A4D82.title: "Eclipsealloy (Just Dire Things)"
+	quest.70DDC713FC1F7A30.title: "Blaze Ember (Just Dire Things)"
+	quest.70DD39115A47C69E.title: "Voidflame (Just Dire Things)"
+	quest.70DD37EF0BD0D556.title: "Eclipse Ember (Just Dire Things)"
 	quest.70DD831A136C804F.quest_desc: [
 		"Every modded resource the loaded mods taught your frogs - one column per neighbor. The sister ponds send their regards."
 	]
