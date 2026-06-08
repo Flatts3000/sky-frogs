@@ -1,7 +1,9 @@
 // Sky Frogs - Bog slime chain (Tier 3). Mirrors the Geode chain.
 //
 // Bog is the organic/swamp species: dirt, mud, clay, moss, mycelium, lily pad,
-// leather, feather - plus Industrial Foregoing plastic + pink slime when IF is loaded.
+// leather, feather, then the mob-drop wing (armadillo scute, honeycomb, bone,
+// gunpowder, rotten flesh, string) - plus Industrial Foregoing plastic + pink
+// slime when IF is loaded.
 //
 // Bog's themed crafting block is MOSSY COBBLESTONE (Cave uses plain stone). Every step
 // - the diamond -> dirt bridge bootstrap and every chain step after it - takes 4 mossy

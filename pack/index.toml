@@ -482,7 +482,7 @@ hash = "7d8bd1b950b7c740f805a5f0bf4d9c742882556bf60c42f257da7c40a7402ffe"
 
 [[files]]
 file = "config/torchmaster.toml"
-hash = "e94915d0511f4ed5056bef01b0fdace8c12cdb2a88c32755c6fa8b2b0f638c4c"
+hash = "67bd8baa8e45b838ccf897f18b6e09bcfac42a0d04b8ba47e9de534a283f6538"
 
 [[files]]
 file = "icon.png"
@@ -586,7 +586,7 @@ hash = "ad2f91c5cce4e29d4b70957c3f43d6a82a12cda1e06a1859cb895466dec61b09"
 
 [[files]]
 file = "kubejs/server_scripts/bog_slime_chain.js"
-hash = "c89ea909d2cb439f08e6c0ab569d122ed3bf883a447a8a9a4357771e80ae42ce"
+hash = "b8cdf1e226c9396e6b864cc6dd25e0f4ea8687ba68ba3bfb8367d4a928f59ab3"
 
 [[files]]
 file = "kubejs/server_scripts/builder_sieve.js"

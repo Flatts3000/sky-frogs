@@ -9,5 +9,8 @@
 #route spawns through the same checks.
 #
 #Only this key is pinned; NeoForge fills in every other Torchmaster option at
-#its mod default on first load.
-megaTorchEntityBlockListOverrides = ["-productivefrogs:cave_slime", "-productivefrogs:geode_slime", "-productivefrogs:bog_slime", "-productivefrogs:tide_slime", "-productivefrogs:infernal_slime", "-productivefrogs:void_slime", "-productivefrogs:resource_slime"]
+#its mod default on first load. The [General] header is LOAD-BEARING: the mod's
+#config spec pushes a "General" section (builder.push("General"), verified in
+#the 21.1.9 bytecode), so a bare top-level key would silently never bind.
+[General]
+	megaTorchEntityBlockListOverrides = ["-productivefrogs:cave_slime", "-productivefrogs:geode_slime", "-productivefrogs:bog_slime", "-productivefrogs:tide_slime", "-productivefrogs:infernal_slime", "-productivefrogs:void_slime", "-productivefrogs:resource_slime"]
