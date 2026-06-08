@@ -1040,21 +1040,23 @@
 	quest.51F0000000000027.quest_subtitle: "Wearable weather."
 	quest.51F0000000000027.title: "Charmed, I'm Sure"
 	quest.7807000000000029.quest_desc: [
-		"Every farm in this chapter runs on &5boss Slime Milk&r - and boss milk is &ctoxic&r. Stand in a boss milk pool and the &cWither&r takes you, trophies or not. The slimes bathe in it. The frogs wade through it. YOU stay on the shore. Your pond is about to grow places that are not for you."
+		"Every farm in this chapter runs on &5boss Slime Milk&r - and boss milk is &ctoxic&r. Stand in a boss milk pool and the &cWither&r takes you, trophies or not. The slimes bathe in it. The frogs wade through it. You cannot."
 		""
-		"Build accordingly: glass between you and every pool, and let the frogs do the wading. Check the box once you have made peace with this."
+		"The cure is &5containment&r: each boss's &ecatalyst blocks&r, crafted from the boss's own substance, entomb the milk behind all six of its faces. Sealed, the poison works FOR you - the pool spawns slimes on its own and cannot reach you. Unsealed, it is just a hazard; the farm will not even run. Until the sixth face is on, keep your distance."
+		""
+		"Check the box once you have made peace with this."
 	]
 	quest.7807000000000029.quest_subtitle: "The pond bites back."
 	quest.7807000000000029.title: "Do Not Touch the Milk"
 	quest.7807000000000002.quest_desc: [
-		"The frogs have learned &5boss farming&r, and every boss farm is built the same way: six &5catalysts&r of the boss's own substance pressed against all six faces of a Slime Milk source - the &daltar&r that spawns slimes from milk on its own. Start at the fortress: &fwither skeletons&r drop skulls. Show me &eone&r; the other six go straight into the build. (The jetpack helps. The Mace helps more.)"
+		"The frogs have learned &5boss farming&r, and every boss farm is built the same way: the toxic milk gets &5entombed&r in six &ecatalyst blocks&r of the boss's own substance, one against each face - contained, it spawns slimes for you instead of Withering you. Start at the fortress: &fwither skeletons&r drop skulls. Show me &eone&r; the other six go straight into the containment. (The jetpack helps. The Mace helps more.)"
 		""
-		"Eight soul sand around a skull makes one &eWither Skeleton Skull Catalyst&r - craft six. Place a source of Skull Slime Milk and set a catalyst against each of its six faces; once all six are on, the milk spawns Skull Slimes by itself. Mouse over the milk - Jade shows the face count."
+		"Eight soul sand around a skull makes one &eWither Skeleton Skull Catalyst&r - craft six. Place a source of Skull Slime Milk and seal a catalyst against each of its six faces. Mouse over the milk - Jade shows the face count."
 	]
 	quest.7807000000000002.quest_subtitle: "Heads will roll."
 	quest.7807000000000002.title: "Skull Harvest"
 	quest.7807000000000005.quest_desc: [
-		"Ring a Skull Slime Milk source with your six catalysts and the pool comes alive: Skull Slimes rising out of the milk, frogs queuing at the rim - and you on the shore, like you promised."
+		"Seal a Skull Slime Milk source inside its six catalysts and the tomb comes alive: Skull Slimes rising out of milk that can no longer touch you, frogs queuing at the rim. The poison is still in there. That is the point."
 		""
 		"Turn in the &bWither Skeleton Skull Froglight&r."
 	]
@@ -1066,7 +1068,7 @@
 	quest.7807000000000008.quest_subtitle: "You built this fight from scratch. Six times."
 	quest.7807000000000008.title: "The Withering"
 	quest.780700000000000B.quest_desc: [
-		"The star altar's pool shines like a beacon and will kill you faster than any of the six Withers that fed it. From the shore, watch the frogs manufacture the rarest drop in the game."
+		"The star pool shines like a beacon through its obsidian containment - and only those six catalysts keep it from killing you faster than any of the six Withers that fed it. Watch the frogs manufacture the rarest drop in the game from the safe side of the seal."
 		""
 		"Turn in the &bNether Star Froglight&r."
 	]
@@ -1080,7 +1082,7 @@
 	quest.780700000000000E.quest_subtitle: "One per customer - repealed."
 	quest.780700000000000E.title: "A Clutch of Eggs"
 	quest.7807000000000011.quest_desc: [
-		"Six eggs in end stone brick, ringing a pool of Egg Slime Milk that spawns Egg Slimes on its own - behind glass, where its &cpoison&r cannot reach you. The frogs do the rest."
+		"Six eggs in end stone brick, entombing a pool of Egg Slime Milk - its &cpoison&r sealed inside the very blocks it paid for, spawning Egg Slimes on its own. The frogs do the rest."
 		""
 		"Turn in the &bDragon Egg Froglight&r."
 	]
@@ -1089,7 +1091,7 @@
 	quest.7807000000000014.quest_desc: [
 		"You are respawning dragons on a schedule now anyway - this time bring &dglass bottles&r. When she breathes purple at you, catch it. Politely. Show me &eone bottle&r, fill six more, and wrap purpur around each: &esix Dragon Breath Catalysts&r."
 		""
-		"Just do not lean over the milk."
+		"The catalysts hold the milk's &cpoison&r in. Keep your end of the bargain: never pry one loose while the pool is wet."
 	]
 	quest.7807000000000014.quest_subtitle: "CPR for dragons."
 	quest.7807000000000014.title: "Breath of Fresh End"
@@ -1101,7 +1103,7 @@
 	quest.7807000000000017.quest_subtitle: "Industrial-scale exhalation."
 	quest.7807000000000017.title: "Dragon Breath"
 	quest.780700000000001A.quest_desc: [
-		"Wither skull, nether star, dragon egg, dragon breath - the four trophies no farm was ever supposed to produce, and your pond produces all of them. Parts of that pond would kill you to stand in now. The frogs do not mind. The bosses are renewable. You are the apex."
+		"Wither skull, nether star, dragon egg, dragon breath - the four trophies no farm was ever supposed to produce, and your pond produces all of them. Parts of that pond would kill you, if the catalysts were not holding the poison in. The frogs do not mind either way. The bosses are renewable. You are the apex."
 	]
 	quest.780700000000001A.quest_subtitle: "The food chain has a new top."
 	quest.780700000000001A.title: "Apex Pond"
