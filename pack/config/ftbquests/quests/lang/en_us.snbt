@@ -1040,9 +1040,9 @@
 	quest.51F0000000000027.quest_subtitle: "Wearable weather."
 	quest.51F0000000000027.title: "Charmed, I'm Sure"
 	quest.7807000000000002.quest_desc: [
-		"The frogs have learned &5boss farming&r, and every boss farm is built the same way: six &5catalysts&r of the boss's own substance pressed against all six faces of a Slime Milk source - the &daltar&r that spawns slimes from milk on its own. Start at the fortress: &fwither skeletons&r drop skulls, and you need &esix&r. (The jetpack helps. The Mace helps more.)"
+		"The frogs have learned &5boss farming&r, and every boss farm is built the same way: six &5catalysts&r of the boss's own substance pressed against all six faces of a Slime Milk source - the &daltar&r that spawns slimes from milk on its own. Start at the fortress: &fwither skeletons&r drop skulls. Show me &eone&r; the other six go straight into the build. (The jetpack helps. The Mace helps more.)"
 		""
-		"Then eight soul sand around each skull: &esix Wither Skeleton Skull Catalysts&r. Build the altar like a reactor core - walled off, fed from outside, tended by things that cannot &cWither&r. Jade counts the faces."
+		"Eight soul sand around each skull: &esix Wither Skeleton Skull Catalysts&r. Build the altar like a reactor core - walled off, fed from outside, tended by things that cannot &cWither&r. Jade counts the faces."
 	]
 	quest.7807000000000002.quest_subtitle: "Heads will roll."
 	quest.7807000000000002.title: "Skull Harvest"
@@ -1054,7 +1054,7 @@
 	quest.7807000000000005.quest_subtitle: "The bone orchard."
 	quest.7807000000000005.title: "Wither Skeleton Skull"
 	quest.7807000000000008.quest_desc: [
-		"Three skulls and four soul sand summon the &5Wither&r - and your altar grows both. Build it somewhere you do not love, put it down, take the &fNether Star&r. Then do it again. &eSix stars&r, then eight obsidian around each: &esix Nether Star Catalysts&r. The first beacon is on you."
+		"Three skulls and four soul sand summon the &5Wither&r - and your altar grows both. Build it somewhere you do not love, put it down, take the &fNether Star&r. Show me &eone star&r - then do it six more times, because eight obsidian around each makes the &esix Nether Star Catalysts&r the next altar wants. The first beacon is on you."
 	]
 	quest.7807000000000008.quest_subtitle: "You built this fight from scratch. Six times."
 	quest.7807000000000008.title: "The Withering"
@@ -1066,9 +1066,9 @@
 	quest.780700000000000B.quest_subtitle: "Beacons, plural."
 	quest.780700000000000B.title: "Nether Star"
 	quest.780700000000000E.quest_desc: [
-		"Vanilla law says ONE &dDragon Egg&r per world, ever. This pack repeals it: every dragon you respawn and slay lays another. Four &dEnd Crystals&r (frog-farmed ghast tears, glass, an Eye of Ender) on the portal rim bring her back; the kill drops an egg, every time. You need &esix&r."
+		"Vanilla law says ONE &dDragon Egg&r per world, ever. This pack repeals it: every dragon you respawn and slay lays another. Four &dEnd Crystals&r (frog-farmed ghast tears, glass, an Eye of Ender) on the portal rim bring her back; the kill drops an egg, every time. Show me &eone&r - and farm six more for the build."
 		""
-		"Then end stone bricks around each: &esix Dragon Egg Catalysts&r - the altar the world's old math could never afford."
+		"End stone bricks around each: &esix Dragon Egg Catalysts&r - the altar the world's old math could never afford."
 	]
 	quest.780700000000000E.quest_subtitle: "One per customer - repealed."
 	quest.780700000000000E.title: "A Clutch of Eggs"
@@ -1080,7 +1080,7 @@
 	quest.7807000000000011.quest_subtitle: "From one egg, a clutch."
 	quest.7807000000000011.title: "Dragon Egg"
 	quest.7807000000000014.quest_desc: [
-		"You are respawning dragons on a schedule now anyway - this time bring &dglass bottles&r. When she breathes purple at you, catch it. Politely. &eSix bottles&r, then purpur around each: &esix Dragon Breath Catalysts&r."
+		"You are respawning dragons on a schedule now anyway - this time bring &dglass bottles&r. When she breathes purple at you, catch it. Politely. Show me &eone bottle&r, fill six more, and wrap purpur around each: &esix Dragon Breath Catalysts&r."
 		""
 		"Just do not lean over the milk."
 	]
