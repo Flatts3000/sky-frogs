@@ -50,7 +50,7 @@
 				item: { count: 1, id: "productivefrogs:slime_churn" }
 				type: "item"
 			}]
-			x: 2.0d
+			x: -2.0d
 			y: 0.0d
 		}
 		{
