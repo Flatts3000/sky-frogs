@@ -1040,58 +1040,54 @@
 	quest.51F0000000000027.quest_subtitle: "Wearable weather."
 	quest.51F0000000000027.title: "Charmed, I'm Sure"
 	quest.7807000000000002.quest_desc: [
-		"The frogs have learned &5boss farming&r - but every boss farm starts with the genuine article. Wither skeletons in the fortress drop &fskulls&r; bring one home. (The jetpack helps. The Mace helps more.)"
+		"The frogs have learned &5boss farming&r, and every boss farm is built the same way: six &5catalysts&r of the boss's own substance pressed against all six faces of a Slime Milk source - the &daltar&r that spawns slimes from milk on its own. Start at the fortress: &fwither skeletons&r drop skulls, and you need &esix&r. (The jetpack helps. The Mace helps more.)"
 		""
-		"Having a &fWither Skeleton Skull&r in your inventory completes this - it is not consumed. You will want it."
+		"Then eight soul sand around each skull: &esix Wither Skeleton Skull Catalysts&r. Build the altar like a reactor core - walled off, fed from outside, tended by things that cannot &cWither&r. Jade counts the faces."
 	]
 	quest.7807000000000002.quest_subtitle: "Heads will roll."
 	quest.7807000000000002.title: "Skull Harvest"
 	quest.7807000000000005.quest_desc: [
-		"Two roads to a skull farm. The &dDissolution Chamber&r presses a real skull into a Skull Slime directly - one skull per slime. Or go full ritual: craft &5Wither Skeleton Skull Catalysts&r (8 soul sand around a skull) and build the &daltar&r - a catalyst against all six faces of a Skull Slime Milk source. Jade counts the faces for you."
-		""
-		"One more thing about boss milk: it is &cpoison&r. Stand in a boss Slime Milk pool and the &cWither&r takes you. The slimes bathe in it. The frogs wade through it. YOU stay on the shore. Your pond has places that are not for you anymore."
+		"Ring a Skull Slime Milk source with your six catalysts and the pool comes alive: Skull Slimes rising out of the milk, frogs queuing at the rim. About that milk - it is &cpoison&r. Stand in it and the &cWither&r takes you. The slimes bathe in it. The frogs wade through it. YOU stay on the shore. Your pond has places that are not for you anymore."
 		""
 		"Turn in the &bWither Skeleton Skull Froglight&r."
 	]
 	quest.7807000000000005.quest_subtitle: "The bone orchard."
 	quest.7807000000000005.title: "Wither Skeleton Skull"
 	quest.7807000000000008.quest_desc: [
-		"Three skulls from your farm, four soul sand from your frogs: the &5Wither&r assembles entirely from froglight produce. Summon it somewhere you do not love, put it down, and take the &fNether Star&r."
-		""
-		"Having a &fNether Star&r completes this - it is not consumed. The first beacon is on you."
+		"Three skulls and four soul sand summon the &5Wither&r - and your altar grows both. Build it somewhere you do not love, put it down, take the &fNether Star&r. Then do it again. &eSix stars&r, then eight obsidian around each: &esix Nether Star Catalysts&r. The first beacon is on you."
 	]
-	quest.7807000000000008.quest_subtitle: "You built this fight from scratch."
+	quest.7807000000000008.quest_subtitle: "You built this fight from scratch. Six times."
 	quest.7807000000000008.title: "The Withering"
 	quest.780700000000000B.quest_desc: [
-		"A &fNether Star&r farm: catalysts are 8 obsidian around a star, or skip the altar and chamber-press stars into slimes one at a time. Either way, the frogs now manufacture the rarest drop in the game."
+		"The star altar's pool shines like a beacon and will kill you faster than any of the six Withers that fed it. From the shore, watch the frogs manufacture the rarest drop in the game."
 		""
 		"Turn in the &bNether Star Froglight&r."
 	]
 	quest.780700000000000B.quest_subtitle: "Beacons, plural."
 	quest.780700000000000B.title: "Nether Star"
 	quest.780700000000000E.quest_desc: [
-		"The dragon died (you were there) and left exactly one &dDragon Egg&r. There is no second egg. Whatever you do next, do not waste it - the frogs have plans."
+		"Vanilla law says ONE &dDragon Egg&r per world, ever. This pack repeals it: every dragon you respawn and slay lays another. Four &dEnd Crystals&r (frog-farmed ghast tears, glass, an Eye of Ender) on the portal rim bring her back; the kill drops an egg, every time. You need &esix&r."
 		""
-		"Having the &dDragon Egg&r in your inventory completes this - it is NOT consumed. Keep it. You need it."
+		"Then end stone bricks around each: &esix Dragon Egg Catalysts&r - the altar the world's old math could never afford."
 	]
-	quest.780700000000000E.quest_subtitle: "One per customer, ever."
-	quest.780700000000000E.title: "One Egg, Singular"
+	quest.780700000000000E.quest_subtitle: "One per customer - repealed."
+	quest.780700000000000E.title: "A Clutch of Eggs"
 	quest.7807000000000011.quest_desc: [
-		"Run the math on the altar: six &dDragon Egg Catalysts&r need six eggs, priming needs a seventh - and the world contains ONE. The altar cannot be your FIRST egg farm. The &dDissolution Chamber&r is the bootstrap: your one egg becomes an Egg Slime, a frog eats it, and the Froglight smelts back into an egg. Around the loop again. A frog with &aBounty&r turns the loop into a surplus - and the surplus buys the altar."
+		"Six eggs in end stone brick, ringing a pool of Egg Slime Milk that spawns Egg Slimes on its own - behind glass, where its &cpoison&r cannot reach you. The frogs do the rest."
 		""
 		"Turn in the &bDragon Egg Froglight&r."
 	]
-	quest.7807000000000011.quest_subtitle: "The egg comes first. Then more eggs."
+	quest.7807000000000011.quest_subtitle: "From one egg, a clutch."
 	quest.7807000000000011.title: "Dragon Egg"
 	quest.7807000000000014.quest_desc: [
-		"&dDragon's breath&r needs a live dragon, and you killed yours. Respawn it: four &dEnd Crystals&r (frog-farmed ghast tears, glass, an Eye of Ender) on the portal's rim. When it breathes purple at you, catch some in a glass bottle. Politely."
+		"You are respawning dragons on a schedule now anyway - this time bring &dglass bottles&r. When she breathes purple at you, catch it. Politely. &eSix bottles&r, then purpur around each: &esix Dragon Breath Catalysts&r."
 		""
-		"Having a bottle of &dDragon's Breath&r completes this."
+		"Just do not lean over the milk."
 	]
 	quest.7807000000000014.quest_subtitle: "CPR for dragons."
 	quest.7807000000000014.title: "Breath of Fresh End"
 	quest.7807000000000017.quest_desc: [
-		"Catalysts of purpur around a bottle, or one bottle per slime in the chamber - the dragon's exhale, mass-produced by amphibians. Lingering potions forever."
+		"The dragon's exhale, mass-produced by amphibians while she sleeps it off in the End. Lingering potions forever."
 		""
 		"Turn in the &bDragon Breath Froglight&r."
 	]
@@ -1102,34 +1098,6 @@
 	]
 	quest.780700000000001A.quest_subtitle: "The food chain has a new top."
 	quest.780700000000001A.title: "Apex Pond"
-	quest.780700000000001D.quest_desc: [
-		"Six &5Wither Skeleton Skull Catalysts&r - eight soul sand around a skull, each - pressed against all six faces of a Skull Slime Milk source. That is the &daltar&r: slimes spawn from milk no chamber feeds - and from milk you must never touch. Build it like a reactor core: walled off, fed from outside, tended by things that cannot &cWither&r."
-		""
-		"Craft all &esix catalysts&r. Jade counts the faces once they are placed."
-	]
-	quest.780700000000001D.quest_subtitle: "Six heads are better than one."
-	quest.780700000000001D.title: "The Skull Altar"
-	quest.7807000000000020.quest_desc: [
-		"Eight obsidian around a &fNether Star&r, six times over. Forty-eight obsidian and six stars sounds steep until you remember both now come out of ponds."
-		""
-		"Craft all &esix Nether Star Catalysts&r and ring a Star Slime Milk source. The pool at its center shines like a beacon and will kill you faster than the Wither that guarded the star ever could."
-	]
-	quest.7807000000000020.quest_subtitle: "A constellation, arranged."
-	quest.7807000000000020.title: "The Star Altar"
-	quest.7807000000000023.quest_desc: [
-		"The math that was impossible an hour ago: &dsix Dragon Egg Catalysts&r, six eggs (end stone bricks around each). Your loop made eggs renewable; now spend the surplus on the altar the world could never afford, and the milk spawns Egg Slimes on its own - behind glass, where its &cpoison&r cannot reach you."
-		""
-		"Craft all &esix catalysts&r."
-	]
-	quest.7807000000000023.quest_subtitle: "From one egg, a clutch."
-	quest.7807000000000023.title: "The Egg Altar"
-	quest.7807000000000026.quest_desc: [
-		"Purpur around a bottle of &ddragon's breath&r, six times. The breath farm fills the bottles; the altar makes sure you never bother the dragon again. Just do not lean over the milk."
-		""
-		"Craft all &esix Dragon Breath Catalysts&r."
-	]
-	quest.7807000000000026.quest_subtitle: "Save your breath. Six of them."
-	quest.7807000000000026.title: "The Breath Altar"
 	chapter.7807000000000001.title: "Trophy Pond"
 	quest.7CA7E000C0DE0002.quest_desc: [
 		"You've pulled iron out of a frog. The Cave frog handles everything else the pickaxe used to: copper, gold, coal, lapis, redstone, obsidian - and the modded metals besides."

@@ -14,7 +14,7 @@
 		{
 			dependencies: ["51F0000000000014"]
 			icon: {
-				id: "minecraft:wither_skeleton_skull"
+				id: "productivefrogs:wither_skeleton_skull_catalyst"
 			}
 			id: "7807000000000002"
 			rewards: [{
@@ -23,11 +23,18 @@
 				table_id: 9177773090627649537L
 				type: "loot"
 			}]
-			tasks: [{
-				id: "7807000000000003"
-				item: { count: 1, id: "minecraft:wither_skeleton_skull" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "7807000000000003"
+					item: { count: 6, id: "minecraft:wither_skeleton_skull" }
+					type: "item"
+				}
+				{
+					id: "780700000000001E"
+					item: { count: 6, id: "productivefrogs:wither_skeleton_skull_catalyst" }
+					type: "item"
+				}
+			]
 			x: -1.5d
 			y: 0.0d
 		}
@@ -58,27 +65,7 @@
 		{
 			dependencies: ["7807000000000005"]
 			icon: {
-				id: "productivefrogs:wither_skeleton_skull_catalyst"
-			}
-			id: "780700000000001D"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "780700000000001F"
-				table_id: 9177773090627649537L
-				type: "loot"
-			}]
-			tasks: [{
-				id: "780700000000001E"
-				item: { count: 6, id: "productivefrogs:wither_skeleton_skull_catalyst" }
-				type: "item"
-			}]
-			x: -1.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["780700000000001D"]
-			icon: {
-				id: "minecraft:nether_star"
+				id: "productivefrogs:nether_star_catalyst"
 			}
 			id: "7807000000000008"
 			rewards: [{
@@ -87,13 +74,20 @@
 				table_id: 9177773090627649537L
 				type: "loot"
 			}]
-			tasks: [{
-				id: "7807000000000009"
-				item: { count: 1, id: "minecraft:nether_star" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "7807000000000009"
+					item: { count: 6, id: "minecraft:nether_star" }
+					type: "item"
+				}
+				{
+					id: "7807000000000021"
+					item: { count: 6, id: "productivefrogs:nether_star_catalyst" }
+					type: "item"
+				}
+			]
 			x: -1.5d
-			y: 4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["7807000000000008"]
@@ -117,32 +111,12 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: 6.0d
-		}
-		{
-			dependencies: ["780700000000000B"]
-			icon: {
-				id: "productivefrogs:nether_star_catalyst"
-			}
-			id: "7807000000000020"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "7807000000000022"
-				table_id: 9177773090627649537L
-				type: "loot"
-			}]
-			tasks: [{
-				id: "7807000000000021"
-				item: { count: 6, id: "productivefrogs:nether_star_catalyst" }
-				type: "item"
-			}]
-			x: -1.5d
-			y: 7.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["601D00000000000E"]
 			icon: {
-				id: "minecraft:dragon_egg"
+				id: "productivefrogs:dragon_egg_catalyst"
 			}
 			id: "780700000000000E"
 			rewards: [{
@@ -151,11 +125,18 @@
 				table_id: 9178336040581070849L
 				type: "loot"
 			}]
-			tasks: [{
-				id: "780700000000000F"
-				item: { count: 1, id: "minecraft:dragon_egg" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "780700000000000F"
+					item: { count: 6, id: "minecraft:dragon_egg" }
+					type: "item"
+				}
+				{
+					id: "7807000000000024"
+					item: { count: 6, id: "productivefrogs:dragon_egg_catalyst" }
+					type: "item"
+				}
+			]
 			x: 1.5d
 			y: 0.0d
 		}
@@ -184,29 +165,9 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["7807000000000011"]
-			icon: {
-				id: "productivefrogs:dragon_egg_catalyst"
-			}
-			id: "7807000000000023"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "7807000000000025"
-				table_id: 9178336040581070849L
-				type: "loot"
-			}]
-			tasks: [{
-				id: "7807000000000024"
-				item: { count: 6, id: "productivefrogs:dragon_egg_catalyst" }
-				type: "item"
-			}]
-			x: 1.5d
-			y: 3.0d
-		}
-		{
 			dependencies: ["780700000000000E"]
 			icon: {
-				id: "minecraft:dragon_breath"
+				id: "productivefrogs:dragon_breath_catalyst"
 			}
 			id: "7807000000000014"
 			rewards: [{
@@ -215,11 +176,18 @@
 				table_id: 9178336040581070849L
 				type: "loot"
 			}]
-			tasks: [{
-				id: "7807000000000015"
-				item: { count: 1, id: "minecraft:dragon_breath" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "7807000000000015"
+					item: { count: 6, id: "minecraft:dragon_breath" }
+					type: "item"
+				}
+				{
+					id: "7807000000000027"
+					item: { count: 6, id: "productivefrogs:dragon_breath_catalyst" }
+					type: "item"
+				}
+			]
 			x: 3.0d
 			y: 1.5d
 		}
@@ -248,27 +216,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["7807000000000017"]
-			icon: {
-				id: "productivefrogs:dragon_breath_catalyst"
-			}
-			id: "7807000000000026"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "7807000000000028"
-				table_id: 9178336040581070849L
-				type: "loot"
-			}]
-			tasks: [{
-				id: "7807000000000027"
-				item: { count: 6, id: "productivefrogs:dragon_breath_catalyst" }
-				type: "item"
-			}]
-			x: 3.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["7807000000000020", "7807000000000023", "7807000000000026"]
+			dependencies: ["780700000000000B", "7807000000000011", "7807000000000017"]
 			icon: {
 				id: "minecraft:dragon_egg"
 			}
@@ -286,7 +234,7 @@
 				type: "checkmark"
 			}]
 			x: 0.75d
-			y: 9.0d
+			y: 6.0d
 		}
 	]
 }

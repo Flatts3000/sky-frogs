@@ -386,7 +386,7 @@ hash = "39e9f83466356e54d1c99bb72debb8b3370b787273f8ce3cd23115a9dbaaafec"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/trophy_pond.snbt"
-hash = "b05de23e52e954e6beec6d5795688cf009fa26f97ce696b48a25f087ea23a969"
+hash = "f3daa39c5e3b2f089de7b712e20224684cfaa804a86c34321236c69feb030dff"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/void_frogs.snbt"
@@ -410,7 +410,7 @@ hash = "2e69afacf774749222ca1e925dc94d32e6c3db8bef4557aa33144751c2770206"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "825d1e4c122774e9e37800c9d1b26721ca4abfc5f7c7bea41473de5df9738c48"
+hash = "2cdf69d1b1387991b83b27d125be22592b15ef8218373125c31c5e3811a21e04"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
@@ -1186,6 +1186,11 @@ metafile = true
 [[files]]
 file = "mods/modular-routers.pw.toml"
 hash = "6a91ada52e4fcdb1c4d3867f1ddd784a99d51fa41c433aad41e5ddef70c0dec2"
+metafile = true
+
+[[files]]
+file = "mods/more-dragon-eggs.pw.toml"
+hash = "6526d0de1fe5acd6a4fa0135b8b7bcd7fc09bd481f85e7f8221db633ff58e676"
 metafile = true
 
 [[files]]
