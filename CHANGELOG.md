@@ -7,6 +7,9 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 ### Added
 - **Polymorphic Refined Storage** (#137, reported by Dergib on Discord): the Polymorph recipe picker now works inside Refined Storage's Crafting and Pattern grids. When two mods share a recipe (the two chisels, for one), you can finally pick which result you want from within an RS grid instead of being stuck with whichever one wins by default.
 
+### Changed
+- **Mossy cobblestone is gated to the Metallurgic Infuser** (reported by Dergib on Discord). Mossy cobblestone is the Bog tier's filler block, and the "Mossy Cobblestone" quest teaches the intended path: infuse cobblestone with Bio in Mekanism's Metallurgic Infuser. The cheap bypasses are now closed - the vanilla `cobblestone + vine` and `cobblestone + moss block` crafting recipes are removed, Rechiseled can no longer chisel cobblestone into mossy cobblestone (a self-contained mossy group still lets you chisel cosmetic mossy variants once you hold the real thing), and Ex Deorum's `grass seeds -> moss block` craft is gone (moss block is a Bog frog resource, not a Tier 0 sieve product). The Infuser recipe itself is untouched.
+
 ## [0.9.0] - 2026-06-08
 
 The frogs make friends with Just Dire Things - its metals, gems, and fuels all farm through the loop now - and the Slime Churn lets you turn milk back into bucketed slimes with no slime to chase.
