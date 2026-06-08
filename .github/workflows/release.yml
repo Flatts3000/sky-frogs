@@ -171,11 +171,15 @@ jobs:
         run: |
           python3 - <<'PY'
           import json, os
+          version = os.environ["VERSION"]
+          # releaseType is REQUIRED even on a parentFileID child upload (only
+          # gameVersions is forbidden there - CF errorCode 1002 otherwise).
           json.dump({
-              "changelog": f"Dedicated-server pack for Sky Frogs {os.environ['VERSION']}. "
+              "changelog": f"Dedicated-server pack for Sky Frogs {version}. "
                            "Unzip, accept the EULA, run setup.sh / setup.bat. See INSTALL.md.",
               "changelogType": "text",
-              "displayName": f"Sky Frogs {os.environ['VERSION']} (server)",
+              "displayName": f"Sky Frogs {version} (server)",
+              "releaseType": "beta" if version.startswith("0.") else "release",
               "parentFileID": int(os.environ["PARENT_ID"]),
           }, open("server_meta.json", "w"))
           PY
