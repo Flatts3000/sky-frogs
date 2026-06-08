@@ -433,7 +433,7 @@
 		}
 		{
 			icon: {
-				id: "justdirethings:coal_t2"
+				id: "justdirethings:refined_t2_fluid_bucket"
 			}
 			id: "70DDC713FC1F7A30"
 			tasks: [{
@@ -447,7 +447,7 @@
 		}
 		{
 			icon: {
-				id: "justdirethings:coal_t3"
+				id: "justdirethings:refined_t3_fluid_bucket"
 			}
 			id: "70DD39115A47C69E"
 			tasks: [{
@@ -461,7 +461,7 @@
 		}
 		{
 			icon: {
-				id: "justdirethings:coal_t4"
+				id: "justdirethings:refined_t4_fluid_bucket"
 			}
 			id: "70DD37EF0BD0D556"
 			tasks: [{

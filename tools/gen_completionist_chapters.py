@@ -100,7 +100,11 @@ def column_key(variants):
         return (1, TIERS.index(cat) if cat in TIERS else 9, name)
     return key
 
-# Icons for variants whose jar data has no primer_item (tag-primed).
+# Explicit census icons. Takes PRECEDENCE over primer_item (so a variant whose
+# primer is not the intuitive icon can override it): used for tag-primed
+# variants that have no primer_item AND for the JDT fuels, whose primer is a
+# coal tier but whose payoff (and the more recognizable icon) is the refined
+# fuel bucket the Crucible melts the Froglight into.
 ICON_OVERRIDES = {
     "aluminum": "alltheores:aluminum_ingot",
     "lead": "alltheores:lead_ingot",
@@ -114,11 +118,16 @@ ICON_OVERRIDES = {
     "fluorite": "mekanism:fluorite_gem",
     "refined_obsidian": "mekanism:ingot_refined_obsidian",
     "refined_glowstone": "mekanism:ingot_refined_glowstone",
-    # JDT tag-primed materials (#188); celestigem + the three fuels are
-    # item-primed (primer_item is in the allowlist) so they need no override.
+    # JDT tag-primed materials (#188); celestigem is item-primed (resolves on
+    # its own).
     "ferricore": "justdirethings:ferricore_ingot",
     "blazegold": "justdirethings:blazegold_ingot",
     "eclipsealloy": "justdirethings:eclipsealloy_ingot",
+    # The JDT fuels prime off a coal tier, but the Crucible melts the Froglight
+    # to the refined fuel bucket - show that, not the coal.
+    "blaze_ember": "justdirethings:refined_t2_fluid_bucket",
+    "voidflame": "justdirethings:refined_t3_fluid_bucket",
+    "eclipse_ember": "justdirethings:refined_t4_fluid_bucket",
 }
 
 # --------------------------------------------------------------------------- #
@@ -257,7 +266,7 @@ def main():
         for name, (zx, zy) in zip(names, slots):
             qid = claim(det_id(VANILLA_PREFIX, name))
             tid = claim(det_id(VANILLA_PREFIX, name, "task"))
-            icon = variants[name].get("primer_item") or ICON_OVERRIDES.get(name) \
+            icon = ICON_OVERRIDES.get(name) or variants[name].get("primer_item") \
                 or f"minecraft:{name}"
             if icon not in allow:
                 icon = "productivefrogs:configurable_froglight"
@@ -296,7 +305,7 @@ def main():
         for row, name in enumerate(modded[mod]):
             qid = claim(det_id(MODDED_PREFIX, name))
             tid = claim(det_id(MODDED_PREFIX, name, "task"))
-            icon = variants[name].get("primer_item") or ICON_OVERRIDES.get(name) \
+            icon = ICON_OVERRIDES.get(name) or variants[name].get("primer_item") \
                 or "productivefrogs:configurable_froglight"
             if icon not in allow:
                 icon = "productivefrogs:configurable_froglight"
