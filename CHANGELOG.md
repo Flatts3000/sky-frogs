@@ -4,9 +4,13 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+## [0.8.0] - 2026-06-07
+
+The boss farming update: the frogs go to war. Productive Frogs 1.14 makes the Wither and the dragon renewable - and Trophy Pond, a whole new chapter, walks you through entombing their toxic milk in catalysts of their own substance. Along the way: potions brewed straight into Froglights, four new Bog resources and a fifth for the Infernal, a Mega Torch that knows not to starve your frogs, and a world where dragon eggs finally obey YOU.
+
 ### Added
 - **Torchmaster** (#134, suggested by Dergib on Discord): the Mega Torch keeps hostile natural spawns off your island. The pack ships a config exempting every Productive Frogs slime from the torch - your swamp's cave slimes keep spawning right next to it, only the actual menaces stay away.
-- **Trophy Pond - the boss campaign chapter** (Void group): two wings and a capstone. Each boss arc is a trophy hunt (six of the real drop) into an altar build (six catalysts of the boss's own substance, ringing a Slime Milk source) into the Froglight. The Wither wing runs fortress skulls into Withers into Nether Stars; the Dragon wing respawns the dragon for eggs and bottled breath. The story: boss milk Withers its keeper, and the catalyst blocks exist to ENTOMB it - the boss's own substance sealing all six faces, turning poison into a farm. Apex Pond caps it with all four boss Froglights.
+- **Trophy Pond - the boss campaign chapter** (Void group): an intro warning ("Do Not Touch the Milk"), two wings, and a capstone. Each boss arc is a trophy hunt (show one real drop; six more go into the build) into a containment build (six catalysts of the boss's own substance, sealing every face of a Slime Milk source) into the Froglight. The Wither wing runs fortress skulls into Withers into Nether Stars; the Dragon wing respawns the dragon for eggs and bottled breath. The story: boss milk Withers its keeper, and the catalyst blocks exist to ENTOMB it - sealed, the poison farms FOR you. Apex Pond caps it with all four boss Froglights.
 - **More Dragon Eggs** (5.0, the ATM10-family mixin by Darkere): every dragon kill drops a Dragon Egg. Without it, vanilla's one-egg-per-world law makes the six-egg Dragon Egg altar mathematically impossible.
 - **Five new resource quests**: bone, gunpowder, rotten flesh, and string thread into the Bog chain after honeycomb; magma cream slots before the Infernal capstone. Same froglight-check law as every resource quest.
 - **Brewed Froglights get their intro**: a two-quest branch off the Blaze quest - splash a potion on a slime, the Froglight captures the effect as a toggleable aura, then wear it in the Curios charm slot. Honor-system checkmarks, on purpose.
