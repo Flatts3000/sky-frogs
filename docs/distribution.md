@@ -97,12 +97,16 @@ For 0.x releases the changelog can be brisk; for 1.x and beyond, write player-fa
 
 ## Server pack
 
-Each release ships a `sky-frogs-server-<version>.zip` alongside the client artifact. Built by `tools/build_server.sh` (TBD), which:
+Each release ships a `sky-frogs-server-<version>.zip` alongside the client artifact. Built by `tools/build_server.py` and wired into `release.yml` (the "Build dedicated-server pack" + "Attach server pack to the release" steps, gated `continue-on-error` so a CurseForge download hiccup never sinks the client release). The script:
 
-1. Resolves all mod jars locally via `packwiz install`.
-2. Copies `config/`, `defaultconfigs/`, `kubejs/`, `mods/` into a fresh directory.
-3. Adds `install.bat`, `install.sh`, `user_jvm_args.txt` (NeoForge installer scripts).
-4. Zips the lot.
+1. Resolves the **server+both-side** mod jars via `packwiz-installer -s server` (the same canonical tool `sync_instance.py` uses). Client-only mods are skipped by their `side` tag - so a client-only mod mistagged `both` would ship to the server and can crash boot. The `side` field in `pack/mods/*.pw.toml` is load-bearing for the server pack; the local boot smoke test (below) is what proves the tags are right. Mods excluded from the CurseForge third-party API (e.g. More Overlays Updated) cannot be fetched by packwiz-installer - those must be `side = "client"` (correct anyway for pure-client mods) or bundled another way.
+2. Copies `config/`, `defaultconfigs/`, `kubejs/` from the pack into the build dir (packwiz-installer only fetches `mods/`).
+3. Writes `setup.sh` / `setup.bat` (first-run: download the NeoForge installer, `--installServer`, hand off to NeoForge's own `run.sh`/`run.bat`), `user_jvm_args.txt` (`-Xmx6G` default), `eula.txt` (`eula=false` - the host accepts it), `server.properties` (`level-type=skyblockbuilder:skyblock` so a fresh world is the void skyblock), and `INSTALL.md`.
+4. Zips the lot to `dist/sky-frogs-server-<version>.zip`.
+
+The NeoForge installer and server jars are NOT bundled - the host's `setup.sh`/`setup.bat` downloads NeoForge on first run, so the zip stays small (mods + data + scripts).
+
+**Boot smoke test (local, before trusting a tag):** `python tools/build_server.py --out build/server --no-zip`, then install NeoForge into that dir (`java -jar neoforge-<ver>-installer.jar --installServer`), set `eula=true`, and run it - it should print `Done (...)! For help, type "help"`. v0.8.0 was validated this way (clean boot, Skyblock Builder generated spawn). Boot-testing in CI is a possible future hardening; today it is a manual gate.
 
 Server pack is uploaded to GitHub Releases only — CurseForge's server-pack workflow is per-platform and clunky. Pack hosts pull from GH Releases.
 

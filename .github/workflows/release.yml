@@ -45,6 +45,12 @@ jobs:
           go install github.com/packwiz/packwiz@latest
           echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
 
+      - name: Set up Java 21 (for the server-pack build)
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+
       - name: Guard - pack.toml version matches the tag
         run: |
           pack_ver=$(grep -E '^version *= *' pack/pack.toml | head -1 | sed -E 's/.*"([^"]+)".*/\1/')
@@ -102,6 +108,26 @@ jobs:
             --notes-file release_notes.md \
             $prerelease \
             "${{ steps.build.outputs.zip_path }}"
+
+      # Dedicated-server pack: packwiz-installer resolves the server+both-side
+      # jars (client-only mods are skipped via their `side` tag), bundles the
+      # pack's config/kubejs + NeoForge launch scripts, and zips it. Attached to
+      # the same release as a second artifact. If the build fails (e.g. a CF
+      # third-party-download block), the release still stands with the client zip.
+      - name: Build dedicated-server pack
+        id: serverbuild
+        continue-on-error: true
+        run: |
+          python3 tools/build_server.py
+          zip=$(ls dist/sky-frogs-server-*.zip)
+          echo "zip=$zip" >> "$GITHUB_OUTPUT"
+          echo "built: $zip"
+
+      - name: Attach server pack to the release
+        if: steps.serverbuild.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload "${GITHUB_REF_NAME}" "${{ steps.serverbuild.outputs.zip }}" --clobber
 
       - name: Upload to CurseForge
         env:
