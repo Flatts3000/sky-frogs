@@ -57,8 +57,6 @@
 	quest.1F00000000000020.quest_desc: [
 		"Tired of pouring out &eSlime Milk&r and chasing down every slime it spawns? The &eSlime Churn&r does the catching for you. Load a bucket of any variant's &eSlime Milk&r and a stack of empties, and it fills them with that variant's &bSlime in a Bucket&r - same cadence, same per-bucket budget, same catalysts as a placed milk pool, with no slime to chase and no entity at all."
 		""
-		"The spent milk bucket drains as it works and pops out its own slot, so a hopper pulling the slime buckets never grabs an empty - feed the empty back into the input for a hands-off loop. Built from &fplanks&r, a &emoss block&r, a &fslime ball&r, and &fpacked mud&r, all Bog-era staples."
-		""
 		"Craft a &eSlime Churn&r."
 	]
 	quest.1F00000000000020.quest_subtitle: "The Milker, in reverse."

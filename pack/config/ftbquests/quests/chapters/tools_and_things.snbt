@@ -34,7 +34,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["1F00000000000002"]
+			dependencies: ["7B0600000000000E"]
 			icon: {
 				id: "productivefrogs:slime_churn"
 			}
@@ -138,7 +138,7 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["1F00000000000002"]
+			dependencies: ["7B0600000000000E"]
 			icon: {
 				id: "buildinggadgets2:gadget_exchanging"
 			}
@@ -156,7 +156,7 @@
 				item: { count: 1, id: "buildinggadgets2:gadget_exchanging" }
 				type: "item"
 			}]
-			x: 1.5d
+			x: 2.0d
 			y: 0.0d
 		}
 		{
@@ -180,7 +180,7 @@
 				item: { count: 1, id: "buildinggadgets2:gadget_copy_paste" }
 				type: "item"
 			}]
-			x: 1.5d
+			x: 2.0d
 			y: 1.5d
 		}
 	]
