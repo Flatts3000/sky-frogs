@@ -1,0 +1,259 @@
+{
+	autofocus_id: "780700000000001A"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "trophy_pond"
+	group: "0C4F0E0000000006"
+	icon: {
+		id: "minecraft:nether_star"
+	}
+	id: "7807000000000001"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				id: "productivefrogs:wither_skeleton_skull_slime_milk_bucket"
+			}
+			id: "7807000000000029"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "780700000000002B"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "780700000000002A"
+				type: "checkmark"
+			}]
+			x: 0.75d
+			y: -1.5d
+		}
+		{
+			dependencies: ["51F0000000000014", "7807000000000029"]
+			icon: {
+				id: "productivefrogs:wither_skeleton_skull_catalyst"
+			}
+			id: "7807000000000002"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7807000000000004"
+				table_id: 9177773090627649537L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "7807000000000003"
+					item: { count: 1, id: "minecraft:wither_skeleton_skull" }
+					type: "item"
+				}
+				{
+					id: "780700000000001E"
+					item: { count: 6, id: "productivefrogs:wither_skeleton_skull_catalyst" }
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7807000000000002"]
+			icon: {
+				id: "minecraft:wither_skeleton_skull"
+			}
+			id: "7807000000000005"
+			shape: "square"
+			rewards: [{
+				id: "7807000000000007"
+				item: {
+					count: 1
+					id: "functionalstorage:compacting_drawer"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7807000000000006"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:wither_skeleton_skull" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7807000000000005"]
+			icon: {
+				id: "productivefrogs:nether_star_catalyst"
+			}
+			id: "7807000000000008"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "780700000000000A"
+				table_id: 9177773090627649537L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "7807000000000009"
+					item: { count: 1, id: "minecraft:nether_star" }
+					type: "item"
+				}
+				{
+					id: "7807000000000021"
+					item: { count: 6, id: "productivefrogs:nether_star_catalyst" }
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7807000000000008"]
+			icon: {
+				id: "minecraft:nether_star"
+			}
+			id: "780700000000000B"
+			shape: "square"
+			rewards: [{
+				id: "780700000000000D"
+				item: {
+					count: 1
+					id: "functionalstorage:compacting_drawer"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "780700000000000C"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:nether_star" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["601D00000000000E", "7807000000000029"]
+			icon: {
+				id: "productivefrogs:dragon_egg_catalyst"
+			}
+			id: "780700000000000E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7807000000000010"
+				table_id: 9178336040581070849L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "780700000000000F"
+					item: { count: 1, id: "minecraft:dragon_egg" }
+					type: "item"
+				}
+				{
+					id: "7807000000000024"
+					item: { count: 6, id: "productivefrogs:dragon_egg_catalyst" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["780700000000000E"]
+			icon: {
+				id: "minecraft:dragon_egg"
+			}
+			id: "7807000000000011"
+			shape: "square"
+			rewards: [{
+				id: "7807000000000013"
+				item: {
+					count: 1
+					id: "functionalstorage:compacting_drawer"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7807000000000012"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:dragon_egg" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["780700000000000E"]
+			icon: {
+				id: "productivefrogs:dragon_breath_catalyst"
+			}
+			id: "7807000000000014"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7807000000000016"
+				table_id: 9178336040581070849L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "7807000000000015"
+					item: { count: 1, id: "minecraft:dragon_breath" }
+					type: "item"
+				}
+				{
+					id: "7807000000000027"
+					item: { count: 6, id: "productivefrogs:dragon_breath_catalyst" }
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7807000000000014"]
+			icon: {
+				id: "minecraft:dragon_breath"
+			}
+			id: "7807000000000017"
+			shape: "square"
+			rewards: [{
+				id: "7807000000000019"
+				item: {
+					count: 1
+					id: "functionalstorage:compacting_drawer"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7807000000000018"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:dragon_breath" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["780700000000000B", "7807000000000011", "7807000000000017"]
+			icon: {
+				id: "minecraft:dragon_egg"
+			}
+			id: "780700000000001A"
+			shape: "hexagon"
+			size: 1.5d
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "780700000000001C"
+				table_id: 9178336040581070849L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "780700000000001B"
+				type: "checkmark"
+			}]
+			x: 0.75d
+			y: 6.0d
+		}
+	]
+}

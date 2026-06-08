@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.rotten_flesh",
+  "colors": [
+    "a4512a",
+    "3e1f0c"
+  ],
+  "ingredient": {
+    "item": "minecraft:rotten_flesh"
+  },
+  "inUltimateSingularity": true
+}

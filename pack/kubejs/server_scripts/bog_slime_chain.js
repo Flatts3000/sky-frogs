@@ -1,7 +1,9 @@
 // Sky Frogs - Bog slime chain (Tier 3). Mirrors the Geode chain.
 //
 // Bog is the organic/swamp species: dirt, mud, clay, moss, mycelium, lily pad,
-// leather, feather - plus Industrial Foregoing plastic + pink slime when IF is loaded.
+// leather, feather, then the mob-drop wing (armadillo scute, honeycomb, bone,
+// gunpowder, rotten flesh, string) - plus Industrial Foregoing plastic + pink
+// slime when IF is loaded.
 //
 // Bog's themed crafting block is MOSSY COBBLESTONE (Cave uses plain stone). Every step
 // - the diamond -> dirt bridge bootstrap and every chain step after it - takes 4 mossy
@@ -36,10 +38,15 @@ ServerEvents.recipes(event => {
     ['leather', 'feather'],
     // PF 1.13.0 (#161): the Bog stragglers - same insertion as the chamber chain.
     ['feather', 'armadillo_scute'],
-    ['armadillo_scute', 'honeycomb']
+    ['armadillo_scute', 'honeycomb'],
+    // PF 1.14.0: the mob-drop wave - same insertion as the chamber chain.
+    ['honeycomb', 'bone'],
+    ['bone', 'gunpowder'],
+    ['gunpowder', 'rotten_flesh'],
+    ['rotten_flesh', 'string']
   ]
   if (Platform.isLoaded('industrialforegoing')) {
-    chain.push(['honeycomb', 'plastic'])    // plastic = the Industrial Foregoing gate
+    chain.push(['string', 'plastic'])       // plastic = the Industrial Foregoing gate
     chain.push(['plastic', 'pink_slime'])   // pink slime = Bog capstone
   }
   chain.forEach(step => {

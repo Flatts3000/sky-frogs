@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.string",
+  "colors": [
+    "e9e9e9",
+    "2f4547"
+  ],
+  "ingredient": {
+    "item": "minecraft:string"
+  },
+  "inUltimateSingularity": true
+}

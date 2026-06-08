@@ -153,6 +153,20 @@
 		}
 		{
 			icon: {
+				id: "minecraft:bone"
+			}
+			id: "7F0C3EF244E87F03"
+			tasks: [{
+				id: "7F0C770F9A0441D6"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:bone" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: -1.875d
+			y: -3.0d
+		}
+		{
+			icon: {
 				id: "minecraft:clay_ball"
 			}
 			id: "7F0CAF38409B6B3F"
@@ -162,7 +176,7 @@
 				match_components: "strict"
 				type: "item"
 			}]
-			x: -1.875d
+			x: 1.875d
 			y: -3.0d
 		}
 		{
@@ -176,8 +190,8 @@
 				match_components: "strict"
 				type: "item"
 			}]
-			x: 1.875d
-			y: -3.0d
+			x: -0.9d
+			y: -1.875d
 		}
 		{
 			icon: {
@@ -190,8 +204,22 @@
 				match_components: "strict"
 				type: "item"
 			}]
-			x: -0.9d
+			x: 0.9d
 			y: -1.875d
+		}
+		{
+			icon: {
+				id: "minecraft:gunpowder"
+			}
+			id: "7F0CDF266AD9BFBC"
+			tasks: [{
+				id: "7F0C33E41FAD9B7E"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:gunpowder" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: -2.1d
+			y: -1.125d
 		}
 		{
 			icon: {
@@ -204,8 +232,8 @@
 				match_components: "strict"
 				type: "item"
 			}]
-			x: 0.9d
-			y: -1.875d
+			x: 2.1d
+			y: -1.125d
 		}
 		{
 			icon: {
@@ -232,8 +260,8 @@
 				match_components: "strict"
 				type: "item"
 			}]
-			x: -1.875d
-			y: 0.0d
+			x: -1.05d
+			y: 0.15d
 		}
 		{
 			icon: {
@@ -246,8 +274,8 @@
 				match_components: "strict"
 				type: "item"
 			}]
-			x: 1.875d
-			y: 0.0d
+			x: 1.05d
+			y: 0.15d
 		}
 		{
 			icon: {
@@ -260,8 +288,8 @@
 				match_components: "strict"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 1.125d
+			x: -2.1d
+			y: 0.9d
 		}
 		{
 			icon: {
@@ -274,8 +302,36 @@
 				match_components: "strict"
 				type: "item"
 			}]
-			x: -0.9d
-			y: 2.25d
+			x: 2.1d
+			y: 0.9d
+		}
+		{
+			icon: {
+				id: "minecraft:rotten_flesh"
+			}
+			id: "7F0C4F757551CCD6"
+			tasks: [{
+				id: "7F0CF9987A9DC2A9"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:rotten_flesh" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.275d
+		}
+		{
+			icon: {
+				id: "minecraft:string"
+			}
+			id: "7F0CBD5E2266A91C"
+			tasks: [{
+				id: "7F0C9680456B066C"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:string" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: -1.05d
+			y: 2.4d
 		}
 		{
 			icon: {
@@ -531,6 +587,34 @@
 		}
 		{
 			icon: {
+				id: "minecraft:magma_cream"
+			}
+			id: "7F0C5D17869EB495"
+			tasks: [{
+				id: "7F0C0F4D1D586B4D"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:magma_cream" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: -6.375d
+			y: 6.375d
+		}
+		{
+			icon: {
+				id: "minecraft:nether_star"
+			}
+			id: "7F0CBEFC70BD2EE8"
+			tasks: [{
+				id: "7F0C96F8AF68443F"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:nether_star" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 5.25d
+		}
+		{
+			icon: {
 				id: "minecraft:netherite_scrap"
 			}
 			id: "7F0C7F54359837D9"
@@ -540,8 +624,8 @@
 				match_components: "strict"
 				type: "item"
 			}]
-			x: -6.375d
-			y: 6.375d
+			x: -6.75d
+			y: 7.875d
 		}
 		{
 			icon: {
@@ -554,8 +638,8 @@
 				match_components: "strict"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 5.25d
+			x: -5.25d
+			y: 1.5d
 		}
 		{
 			icon: {
@@ -568,8 +652,8 @@
 				match_components: "strict"
 				type: "item"
 			}]
-			x: -6.75d
-			y: 7.875d
+			x: -4.125d
+			y: 4.125d
 		}
 		{
 			icon: {
@@ -582,8 +666,8 @@
 				match_components: "strict"
 				type: "item"
 			}]
-			x: -5.25d
-			y: 1.5d
+			x: -5.625d
+			y: 4.125d
 		}
 		{
 			icon: {
@@ -596,8 +680,8 @@
 				match_components: "strict"
 				type: "item"
 			}]
-			x: -4.125d
-			y: 4.125d
+			x: -6.0d
+			y: 2.625d
 		}
 		{
 			icon: {
@@ -610,8 +694,22 @@
 				match_components: "strict"
 				type: "item"
 			}]
-			x: -5.625d
-			y: 4.125d
+			x: -3.75d
+			y: 0.75d
+		}
+		{
+			icon: {
+				id: "minecraft:wither_skeleton_skull"
+			}
+			id: "7F0C6CC451D05B68"
+			tasks: [{
+				id: "7F0C3643950169D6"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:wither_skeleton_skull" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: -6.75d
+			y: 1.125d
 		}
 		{
 			icon: {
@@ -629,6 +727,34 @@
 		}
 		{
 			icon: {
+				id: "minecraft:dragon_breath"
+			}
+			id: "7F0C219B0FA62997"
+			tasks: [{
+				id: "7F0C0DC6397DC609"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:dragon_breath" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 4.875d
+			y: 3.375d
+		}
+		{
+			icon: {
+				id: "minecraft:dragon_egg"
+			}
+			id: "7F0C5DF32BECE5EE"
+			tasks: [{
+				id: "7F0CE68023F13E61"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:dragon_egg" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 4.875d
+		}
+		{
+			icon: {
 				id: "minecraft:echo_shard"
 			}
 			id: "7F0C86B4736048BE"
@@ -638,8 +764,8 @@
 				match_components: "strict"
 				type: "item"
 			}]
-			x: 4.875d
-			y: 3.375d
+			x: 6.375d
+			y: 6.375d
 		}
 		{
 			icon: {
@@ -652,8 +778,8 @@
 				match_components: "strict"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 4.875d
+			x: 7.5d
+			y: 5.25d
 		}
 		{
 			icon: {
@@ -666,8 +792,8 @@
 				match_components: "strict"
 				type: "item"
 			}]
-			x: 6.375d
-			y: 6.375d
+			x: 6.75d
+			y: 7.875d
 		}
 		{
 			icon: {
@@ -680,8 +806,8 @@
 				match_components: "strict"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 5.25d
+			x: 5.25d
+			y: 1.5d
 		}
 		{
 			icon: {
@@ -694,8 +820,8 @@
 				match_components: "strict"
 				type: "item"
 			}]
-			x: 6.75d
-			y: 7.875d
+			x: 4.125d
+			y: 4.125d
 		}
 		{
 			icon: {
@@ -708,11 +834,11 @@
 				match_components: "strict"
 				type: "item"
 			}]
-			x: 5.25d
-			y: 1.5d
+			x: 5.625d
+			y: 4.125d
 		}
 		{
-			dependencies: ["7F0CF29DB73D11CC", "7F0C1F0404468D14", "7F0C8F27BA64A79A", "7F0CA53880BC7A6D", "7F0C08FCFC02F3AB", "7F0C6914A6819ED4", "7F0C31B58CD4653B", "7F0C0CDE0B405058", "7F0C4AAC932E525B", "7F0CEC69E81A8BE2", "7F0CAF38409B6B3F", "7F0C30C40C1A2F28", "7F0CCE7E40CD1CC9", "7F0CE14B1CC487F0", "7F0C65B418B98523", "7F0CD2AD9A3494A2", "7F0C10BE42096CF4", "7F0C7903906CF76B", "7F0CD99AF2E70805", "7F0CE6B091CA7425", "7F0CB4D22DB96E87", "7F0C785DFABE16B8", "7F0C3A9D7A352B20", "7F0CA4F53C20C80A", "7F0C210B70B11718", "7F0C6801F5DBE153", "7F0C16E51FF89C7B", "7F0C88B30F157872", "7F0CB96114C5C6F3", "7F0C7F54AA1CAEB1", "7F0C8CF21B82AFF7", "7F0C63CFDDB7AB0D", "7F0C0C68D7AE34F1", "7F0C08E2CA8CEE6D", "7F0C7A6E7E6FF8BC", "7F0CA72272297E4A", "7F0C8DDD71191971", "7F0C7F54359837D9", "7F0C39A7048DC61E", "7F0C069E8A3CB1BC", "7F0CCA7DD1C5C3F0", "7F0CE7842B59D668", "7F0C69EDC3550408", "7F0CA0BDBEA09C67", "7F0C86B4736048BE", "7F0C4637FB6F2985", "7F0CD0A688774E3F", "7F0CEFBC82A9F1DB", "7F0C0597B23C28B8", "7F0C4A07248764ED"]
+			dependencies: ["7F0CF29DB73D11CC", "7F0C1F0404468D14", "7F0C8F27BA64A79A", "7F0CA53880BC7A6D", "7F0C08FCFC02F3AB", "7F0C6914A6819ED4", "7F0C31B58CD4653B", "7F0C0CDE0B405058", "7F0C4AAC932E525B", "7F0CEC69E81A8BE2", "7F0C3EF244E87F03", "7F0CAF38409B6B3F", "7F0C30C40C1A2F28", "7F0CCE7E40CD1CC9", "7F0CDF266AD9BFBC", "7F0CE14B1CC487F0", "7F0C65B418B98523", "7F0CD2AD9A3494A2", "7F0C10BE42096CF4", "7F0C7903906CF76B", "7F0CD99AF2E70805", "7F0C4F757551CCD6", "7F0CBD5E2266A91C", "7F0CE6B091CA7425", "7F0CB4D22DB96E87", "7F0C785DFABE16B8", "7F0C3A9D7A352B20", "7F0CA4F53C20C80A", "7F0C210B70B11718", "7F0C6801F5DBE153", "7F0C16E51FF89C7B", "7F0C88B30F157872", "7F0CB96114C5C6F3", "7F0C7F54AA1CAEB1", "7F0C8CF21B82AFF7", "7F0C63CFDDB7AB0D", "7F0C0C68D7AE34F1", "7F0C08E2CA8CEE6D", "7F0C7A6E7E6FF8BC", "7F0CA72272297E4A", "7F0C8DDD71191971", "7F0C5D17869EB495", "7F0CBEFC70BD2EE8", "7F0C7F54359837D9", "7F0C39A7048DC61E", "7F0C069E8A3CB1BC", "7F0CCA7DD1C5C3F0", "7F0CE7842B59D668", "7F0C69EDC3550408", "7F0C6CC451D05B68", "7F0CA0BDBEA09C67", "7F0C219B0FA62997", "7F0C5DF32BECE5EE", "7F0C86B4736048BE", "7F0C4637FB6F2985", "7F0CD0A688774E3F", "7F0CEFBC82A9F1DB", "7F0C0597B23C28B8", "7F0C4A07248764ED"]
 			icon: {
 				id: "minecraft:lily_pad"
 			}

@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.dragon_breath",
+  "colors": [
+    "dbcde4",
+    "8c658b"
+  ],
+  "ingredient": {
+    "item": "minecraft:dragon_breath"
+  },
+  "inUltimateSingularity": true
+}

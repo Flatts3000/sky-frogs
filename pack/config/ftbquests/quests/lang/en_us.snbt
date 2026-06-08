@@ -861,15 +861,19 @@
 	quest.7F0C0CDE0B405058.title: "Redstone"
 	quest.7F0C4AAC932E525B.title: "Water"
 	quest.7F0CEC69E81A8BE2.title: "Armadillo Scute"
+	quest.7F0C3EF244E87F03.title: "Bone"
 	quest.7F0CAF38409B6B3F.title: "Clay Ball"
 	quest.7F0C30C40C1A2F28.title: "Dirt"
 	quest.7F0CCE7E40CD1CC9.title: "Feather"
+	quest.7F0CDF266AD9BFBC.title: "Gunpowder"
 	quest.7F0CE14B1CC487F0.title: "Honeycomb"
 	quest.7F0C65B418B98523.title: "Leather"
 	quest.7F0CD2AD9A3494A2.title: "Lily Pad"
 	quest.7F0C10BE42096CF4.title: "Moss"
 	quest.7F0C7903906CF76B.title: "Mud"
 	quest.7F0CD99AF2E70805.title: "Mycelium"
+	quest.7F0C4F757551CCD6.title: "Rotten Flesh"
+	quest.7F0CBD5E2266A91C.title: "String"
 	quest.7F0CE6B091CA7425.title: "Amethyst"
 	quest.7F0CB4D22DB96E87.title: "Calcite"
 	quest.7F0C785DFABE16B8.title: "Diamond"
@@ -888,13 +892,18 @@
 	quest.7F0C7A6E7E6FF8BC.title: "Blaze"
 	quest.7F0CA72272297E4A.title: "Ghast Tear"
 	quest.7F0C8DDD71191971.title: "Glowstone Dust"
+	quest.7F0C5D17869EB495.title: "Magma Cream"
+	quest.7F0CBEFC70BD2EE8.title: "Nether Star"
 	quest.7F0C7F54359837D9.title: "Netherite Scrap"
 	quest.7F0C39A7048DC61E.title: "Netherrack"
 	quest.7F0C069E8A3CB1BC.title: "Obsidian"
 	quest.7F0CCA7DD1C5C3F0.title: "Quartz"
 	quest.7F0CE7842B59D668.title: "Soul Sand"
 	quest.7F0C69EDC3550408.title: "Soul Soil"
+	quest.7F0C6CC451D05B68.title: "Wither Skeleton Skull"
 	quest.7F0CA0BDBEA09C67.title: "Chorus Fruit"
+	quest.7F0C219B0FA62997.title: "Dragon Breath"
+	quest.7F0C5DF32BECE5EE.title: "Dragon Egg"
 	quest.7F0C86B4736048BE.title: "Echo Shard"
 	quest.7F0C4637FB6F2985.title: "End Stone"
 	quest.7F0CD0A688774E3F.title: "Ender Pearl"
@@ -928,6 +937,7 @@
 	quest.70DD11972EEAF468.title: "Advanced Processor (Refined Storage)"
 	quest.70DD8BDEB27E47C3.title: "Steel (Mekanism)"
 	quest.70DDCD212AE52B37.title: "Fluorite (Mekanism)"
+	quest.70DDC61CE7A31EAF.title: "Refined Glowstone (Mekanism)"
 	quest.70DD872930906038.title: "Refined Obsidian (Mekanism)"
 	quest.70DD52504B7A1FAD.title: "Plastic (Industrial Foregoing)"
 	quest.70DD8A8DA15CC882.title: "Pink Slime (Industrial Foregoing)"
@@ -980,6 +990,124 @@
 	]
 	quest.7B06000000000025.quest_subtitle: "Unbeelievable."
 	quest.7B06000000000025.title: "Honeycomb"
+	quest.7B06000000000028.quest_desc: [
+		"&fBones&r - bone meal, bone blocks, and every wolf's undying loyalty - without a single skeleton seeing sunrise. The Bog frog supplies the orthopedics."
+		""
+		"Turn in the &bBone Froglight&r."
+	]
+	quest.7B06000000000028.quest_subtitle: "Dem dry bones."
+	quest.7B06000000000028.title: "Bone"
+	quest.7B0600000000002B.quest_desc: [
+		"&7Gunpowder&r - TNT, fireworks, rockets for the elytra you will eventually earn - and not one creeper consulted. The Bog frog is the powder keg."
+		""
+		"Turn in the &bGunpowder Froglight&r."
+	]
+	quest.7B0600000000002B.quest_subtitle: "Boom, sorted."
+	quest.7B0600000000002B.title: "Gunpowder"
+	quest.7B0600000000002E.quest_desc: [
+		"&2Rotten flesh&r - cleric trade fodder and emergency rations you will regret. Some resources are about volume, not glamour; the frogs do not judge."
+		""
+		"Turn in the &bRotten Flesh Froglight&r."
+	]
+	quest.7B0600000000002E.quest_subtitle: "It's a living."
+	quest.7B0600000000002E.title: "Rotten Flesh"
+	quest.7B06000000000031.quest_desc: [
+		"&fString&r - bows, fishing rods, scaffolding, wool four-at-a-time - no spider, no cave, no ceiling ambush. The Bog frog spins it on demand."
+		""
+		"Turn in the &bString Froglight&r."
+	]
+	quest.7B06000000000031.quest_subtitle: "No strings attached."
+	quest.7B06000000000031.title: "String"
+	quest.51F0000000000021.quest_desc: [
+		"&6Magma cream&r - fire resistance potions and magma blocks - without bothering a single magma cube. Pairs beautifully with a tier built on lava."
+		""
+		"Turn in the &bMagma Cream Froglight&r."
+	]
+	quest.51F0000000000021.quest_subtitle: "Slippery when hot."
+	quest.51F0000000000021.title: "Magma Cream"
+	quest.51F0000000000024.quest_desc: [
+		"Brew a &dsplash&r or &dlingering potion&r and throw it at a slime - any slime - before its frog eats it. The Froglight that drops &dcaptures the effect&r. Place it and right-click to toggle: while the aura is on, everything in range gets the effect, good or bad - a &aRegeneration&r room heals you, a &cPoison&r perimeter greets your guests. Held in hand, it buffs just you."
+		""
+		"Blaze rods from the frog, nether wart on frog-made soul sand: the brewing stand was already yours. This one is on the honor system - check the box once you have bottled your first aura."
+	]
+	quest.51F0000000000024.quest_subtitle: "The frog sommelier."
+	quest.51F0000000000024.title: "Pop the Cork"
+	quest.51F0000000000027.quest_desc: [
+		"With Curios installed, a brewed Froglight rides a dedicated &dFroglight charm slot&r and buffs you while worn - the aura without giving up a hand or a hotbar slot. One light, one slot, always on."
+		""
+		"Honor system again: check the box once you are wearing the weather."
+	]
+	quest.51F0000000000027.quest_subtitle: "Wearable weather."
+	quest.51F0000000000027.title: "Charmed, I'm Sure"
+	quest.7807000000000029.quest_desc: [
+		"Every farm in this chapter runs on &5boss Slime Milk&r - and boss milk is &ctoxic&r. Stand in a boss milk pool and the &cWither&r takes you, trophies or not. The slimes bathe in it. The frogs wade through it. You cannot."
+		""
+		"The cure is &5containment&r: each boss's &ecatalyst blocks&r, crafted from the boss's own substance, entomb the milk behind all six of its faces. Sealed, the poison works FOR you - the pool spawns slimes on its own and cannot reach you. Unsealed, it is just a hazard; the farm will not even run. Until the sixth face is on, keep your distance."
+		""
+		"Check the box once you have made peace with this."
+	]
+	quest.7807000000000029.quest_subtitle: "The pond bites back."
+	quest.7807000000000029.title: "Do Not Touch the Milk"
+	quest.7807000000000002.quest_desc: [
+		"The frogs have learned &5boss farming&r, and every boss farm is built the same way: the toxic milk gets &5entombed&r in six &ecatalyst blocks&r of the boss's own substance, one against each face - contained, it spawns slimes for you instead of Withering you. Start at the fortress: &fwither skeletons&r drop skulls. Show me &eone&r; the other six go straight into the containment. (The jetpack helps. The Mace helps more.)"
+		""
+		"Eight soul sand around a skull makes one &eWither Skeleton Skull Catalyst&r - craft six. Place a source of Skull Slime Milk and seal a catalyst against each of its six faces. Mouse over the milk - Jade shows the face count."
+	]
+	quest.7807000000000002.quest_subtitle: "Heads will roll."
+	quest.7807000000000002.title: "Skull Harvest"
+	quest.7807000000000005.quest_desc: [
+		"Seal a Skull Slime Milk source inside its six catalysts and the tomb comes alive: Skull Slimes rising out of milk that can no longer touch you, frogs queuing at the rim. The poison is still in there. That is the point."
+		""
+		"Turn in the &bWither Skeleton Skull Froglight&r."
+	]
+	quest.7807000000000005.quest_subtitle: "The bone orchard."
+	quest.7807000000000005.title: "Wither Skeleton Skull"
+	quest.7807000000000008.quest_desc: [
+		"Three skulls and four soul sand summon the &5Wither&r - and your altar grows both. Build it somewhere you do not love, put it down, take the &fNether Star&r. Show me &eone star&r - then do it six more times, because eight obsidian around each makes the &esix Nether Star Catalysts&r the next altar wants. The first beacon is on you."
+	]
+	quest.7807000000000008.quest_subtitle: "You built this fight from scratch. Six times."
+	quest.7807000000000008.title: "The Withering"
+	quest.780700000000000B.quest_desc: [
+		"The star pool shines like a beacon through its obsidian containment - and only those six catalysts keep it from killing you faster than any of the six Withers that fed it. Watch the frogs manufacture the rarest drop in the game from the safe side of the seal."
+		""
+		"Turn in the &bNether Star Froglight&r."
+	]
+	quest.780700000000000B.quest_subtitle: "Beacons, plural."
+	quest.780700000000000B.title: "Nether Star"
+	quest.780700000000000E.quest_desc: [
+		"Vanilla law says ONE &dDragon Egg&r per world, ever. This pack repeals it: every dragon you respawn and slay lays another. Four &dEnd Crystals&r (frog-farmed ghast tears, glass, an Eye of Ender) on the portal rim bring her back; the kill drops an egg, every time. Show me &eone&r - and farm six more for the build."
+		""
+		"End stone bricks around each: &esix Dragon Egg Catalysts&r - the altar the world's old math could never afford."
+	]
+	quest.780700000000000E.quest_subtitle: "One per customer - repealed."
+	quest.780700000000000E.title: "A Clutch of Eggs"
+	quest.7807000000000011.quest_desc: [
+		"Six eggs in end stone brick, entombing a pool of Egg Slime Milk - its &cpoison&r sealed inside the very blocks it paid for, spawning Egg Slimes on its own. The frogs do the rest."
+		""
+		"Turn in the &bDragon Egg Froglight&r."
+	]
+	quest.7807000000000011.quest_subtitle: "From one egg, a clutch."
+	quest.7807000000000011.title: "Dragon Egg"
+	quest.7807000000000014.quest_desc: [
+		"You are respawning dragons on a schedule now anyway - this time bring &dglass bottles&r. When she breathes purple at you, catch it. Politely. Show me &eone bottle&r, fill six more, and wrap purpur around each: &esix Dragon Breath Catalysts&r."
+		""
+		"The catalysts hold the milk's &cpoison&r in. Keep your end of the bargain: never pry one loose while the pool is wet."
+	]
+	quest.7807000000000014.quest_subtitle: "CPR for dragons."
+	quest.7807000000000014.title: "Breath of Fresh End"
+	quest.7807000000000017.quest_desc: [
+		"The dragon's exhale, mass-produced by amphibians while she sleeps it off in the End. Lingering potions forever."
+		""
+		"Turn in the &bDragon Breath Froglight&r."
+	]
+	quest.7807000000000017.quest_subtitle: "Industrial-scale exhalation."
+	quest.7807000000000017.title: "Dragon Breath"
+	quest.780700000000001A.quest_desc: [
+		"Wither skull, nether star, dragon egg, dragon breath - the four trophies no farm was ever supposed to produce, and your pond produces all of them. Parts of that pond would kill you, if the catalysts were not holding the poison in. The frogs do not mind either way. The bosses are renewable. You are the apex."
+	]
+	quest.780700000000001A.quest_subtitle: "The food chain has a new top."
+	quest.780700000000001A.title: "Apex Pond"
+	chapter.7807000000000001.title: "Trophy Pond"
 	quest.7CA7E000C0DE0002.quest_desc: [
 		"You've pulled iron out of a frog. The Cave frog handles everything else the pickaxe used to: copper, gold, coal, lapis, redstone, obsidian - and the modded metals besides."
 		""

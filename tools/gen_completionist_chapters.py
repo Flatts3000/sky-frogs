@@ -107,6 +107,7 @@ ICON_OVERRIDES = {
     "steel": "mekanism:ingot_steel",
     "fluorite": "mekanism:fluorite_gem",
     "refined_obsidian": "mekanism:ingot_refined_obsidian",
+    "refined_glowstone": "mekanism:ingot_refined_glowstone",
 }
 
 # --------------------------------------------------------------------------- #
@@ -122,11 +123,13 @@ ZONES = {
              (0, -6), (-1.5, -5.5), (1.5, -5.5),
              (-0.75, -5), (0.75, -5), (0, -4.25),
              (-1.5, -4.25), (1.5, -4.25), (-0.75, -3.5), (0.75, -3.5)],
-    # body (Bog, 10 today, 12 slots)
+    # body (Bog, 14 today, 16 slots - widened for the PF 1.14 mob-drop wave)
     "bog": [(0, -2.5), (-1.25, -2), (1.25, -2),
-            (-0.6, -1.25), (0.6, -1.25), (0, -0.5),
-            (-1.25, 0), (1.25, 0), (0, 0.75),
-            (-0.6, 1.5), (0.6, 1.5), (0, 2.25)],
+            (-0.6, -1.25), (0.6, -1.25),
+            (-1.4, -0.75), (1.4, -0.75), (0, -0.5),
+            (-0.7, 0.1), (0.7, 0.1),
+            (-1.4, 0.6), (1.4, 0.6), (0, 0.85),
+            (-0.7, 1.6), (0.7, 1.6), (0, 2.35)],
     # front-left limb + 3 toes (Geode, 6 today, 8 slots)
     "geode": [(-2.25, -2.75), (-3.25, -3.25),
               (-4.25, -4.25), (-5, -3.5), (-4.5, -5.25),  # toes
@@ -135,14 +138,17 @@ ZONES = {
     "tide": [(2.25, -2.75), (3.25, -3.25), (3, -4),
              (4.25, -4.25), (5, -3.5), (4.5, -5.25),     # toes
              (3.5, -2.25), (2.75, -1.75), (3.75, -2.75), (4, -1.75)],
-    # back-left limb + toes (Infernal, 9 today, 10 slots)
+    # back-left limb + toes (Infernal, 12 today, 14 slots - the boss wave
+    # thickened the thigh; extras APPEND so earlier slots stay put)
     "infernal": [(-2.25, 1.5), (-3.25, 2.25), (-3, 3.25),
                  (-4.25, 4.25), (-5, 3.5), (-4.5, 5.25),  # toes
-                 (-3.5, 1), (-2.75, 2.75), (-3.75, 2.75), (-4, 1.75)],
-    # back-right limb + toes (Void, 7 today, 10 slots)
+                 (-3.5, 1), (-2.75, 2.75), (-3.75, 2.75), (-4, 1.75),
+                 (-2.5, 0.5), (-4.5, 0.75), (-4.75, 2.5), (-5.25, 4.5)],
+    # back-right limb + toes (Void, 9 today, 14 slots - mirrors Infernal)
     "void": [(2.25, 1.5), (3.25, 2.25), (3, 3.25),
              (4.25, 4.25), (5, 3.5), (4.5, 5.25),         # toes
-             (3.5, 1), (2.75, 2.75), (3.75, 2.75), (4, 1.75)],
+             (3.5, 1), (2.75, 2.75), (3.75, 2.75), (4, 1.75),
+             (2.5, 0.5), (4.5, 0.75), (4.75, 2.5), (5.25, 4.5)],
 }
 CAPSTONE_POS = (0, 4.0)  # below the body: the lily pad the frog sits toward
 

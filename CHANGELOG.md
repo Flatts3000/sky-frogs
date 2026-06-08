@@ -4,6 +4,23 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+### Added
+- **Torchmaster** (#134, suggested by Dergib on Discord): the Mega Torch keeps hostile natural spawns off your island. The pack ships a config exempting every Productive Frogs slime from the torch - your swamp's cave slimes keep spawning right next to it, only the actual menaces stay away.
+- **Trophy Pond - the boss campaign chapter** (Void group): two wings and a capstone. Each boss arc is a trophy hunt (six of the real drop) into an altar build (six catalysts of the boss's own substance, ringing a Slime Milk source) into the Froglight. The Wither wing runs fortress skulls into Withers into Nether Stars; the Dragon wing respawns the dragon for eggs and bottled breath. The story: boss milk Withers its keeper, and the catalyst blocks exist to ENTOMB it - the boss's own substance sealing all six faces, turning poison into a farm. Apex Pond caps it with all four boss Froglights.
+- **More Dragon Eggs** (5.0, the ATM10-family mixin by Darkere): every dragon kill drops a Dragon Egg. Without it, vanilla's one-egg-per-world law makes the six-egg Dragon Egg altar mathematically impossible.
+- **Five new resource quests**: bone, gunpowder, rotten flesh, and string thread into the Bog chain after honeycomb; magma cream slots before the Infernal capstone. Same froglight-check law as every resource quest.
+- **Brewed Froglights get their intro**: a two-quest branch off the Blaze quest - splash a potion on a slime, the Froglight captures the effect as a toggleable aura, then wear it in the Curios charm slot. Honor-system checkmarks, on purpose.
+
+### Changed
+- **Productive Frogs 1.13.0 -> 1.14.0.** The frogs learn boss farming and potion work:
+  - **Brewed Froglights**: splash or linger a potion onto a slime before its frog eats it and the Froglight captures the effect - placed, it is a toggleable aura (good or bad: Poison perimeter, Regeneration room); held, it buffs you; with Curios it rides a dedicated Froglight charm slot.
+  - **Boss resources**: Wither Skeleton Skull and Nether Star (Infernal), Dragon Egg and Dragon Breath (Void) become farmable - prime the first slime with the real drop, then wall the farm behind a catalyst altar (boss Slime Milk inflicts Wither on you, not the slimes).
+  - **Five new vanilla resources**: bone, string, gunpowder, rotten flesh (Bog) and magma cream (Infernal), plus **Refined Glowstone** (Mekanism, Infernal).
+  - Resource Slimes render their inner block again (snow/ice/mob-drop batch).
+- **The Ultimate Singularity wants 57** (was 48): one Singularity per new resource, boss trophies included - a thousand Nether Stars is exactly the kind of automation this endgame exists to prove.
+- **The slime chains grew**: Bog's chamber + crafting-table chains thread the four mob drops in after honeycomb (string is the new bridge into plastic), magma cream slots before the Infernal capstone, and the boss slimes are deliberately self-keyed in the Dissolution Chamber - each boss slime costs one real drop, so the chamber never bypasses the kill.
+- **The census frog grew**: The Whole Pond now counts 59 vanilla froglights (the Bog body widened, both back limbs thickened), Sister Ponds counts 26.
+
 ## [0.7.2] - 2026-06-07
 
 An endgame unblocker: the two Singularities nobody could ever craft are gone, the Ultimate wants 48, and kelp finds its way into the moss sieve.

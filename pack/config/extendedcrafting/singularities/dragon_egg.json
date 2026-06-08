@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.dragon_egg",
+  "colors": [
+    "110a13",
+    "08080c"
+  ],
+  "ingredient": {
+    "item": "minecraft:dragon_egg"
+  },
+  "inUltimateSingularity": true
+}

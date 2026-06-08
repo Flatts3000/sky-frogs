@@ -80,7 +80,14 @@ const SLIME_TIERS = [
     // pink_slime stays the capstone and the Tide bridge.
     ['armadillo_scute', 'minecraft:feather'],
     ['honeycomb',  'minecraft:armadillo_scute'],
-    ['plastic',    'minecraft:honeycomb'],
+    // PF 1.14.0: the mob-drop wave (bone/gunpowder/rotten_flesh/string) slots
+    // after honeycomb per the #161 precedent, alphabetical; the modded tail
+    // keeps plastic -> pink_slime as the capstone and the Tide bridge.
+    ['bone',         'minecraft:honeycomb'],
+    ['gunpowder',    'minecraft:bone'],
+    ['rotten_flesh', 'minecraft:gunpowder'],
+    ['string',       'minecraft:rotten_flesh'],
+    ['plastic',    'minecraft:string'],
     ['pink_slime', 'industrialforegoing:plastic']
   ]],
   ['TIDE', 'minecraft:mycelium', [
@@ -116,7 +123,11 @@ const SLIME_TIERS = [
     // PF 1.13.0 (#161): ghast_tear slots before the capstone; netherite_scrap
     // stays the capstone and the Void bridge.
     ['ghast_tear',      'minecraft:blaze_rod'],
-    ['netherite_scrap', 'minecraft:ghast_tear']
+    // PF 1.14.0: magma_cream slots before the capstone per the #161 precedent.
+    // (The tier's BOSS resources - nether_star, wither_skeleton_skull - stay
+    // OUT of the seed chain; they live as self-keyed rows below.)
+    ['magma_cream',     'minecraft:ghast_tear'],
+    ['netherite_scrap', 'minecraft:magma_cream']
   ]],
   ['VOID', 'minecraft:soul_soil', [
     ['ender_pearl',   'minecraft:netherite_scrap'],     // bridges from Infernal's last; filler is soul_soil (Infernal, mass-renewable - end_stone would be circular)
@@ -150,6 +161,15 @@ const MODDED_SELF_KEYED = [
   // is always loaded, so the per-row guard is a no-op for these.
   ['CAVE',     'minecraft:stone',      'water',           'minecraft:water_bucket',    'minecraft'],
   ['CAVE',     'minecraft:stone',      'lava',            'minecraft:lava_bucket',     'minecraft'],
+  // The PF 1.14 BOSS resources are vanilla but deliberately self-keyed, NOT
+  // threaded: PF's own design demands you prime the first slime with the real
+  // drop (kill the wither, spend the egg), and a self-keyed chamber row keeps
+  // exactly those economics - one earned drop per slime. Threading them off a
+  // farmable resource would let the chamber bypass the boss kill entirely.
+  ['INFERNAL', 'minecraft:prismarine', 'wither_skeleton_skull', 'minecraft:wither_skeleton_skull', 'minecraft'],
+  ['INFERNAL', 'minecraft:prismarine', 'nether_star',     'minecraft:nether_star',     'minecraft'],
+  ['VOID',     'minecraft:soul_soil',  'dragon_egg',      'minecraft:dragon_egg',      'minecraft'],
+  ['VOID',     'minecraft:soul_soil',  'dragon_breath',   'minecraft:dragon_breath',   'minecraft'],
   ['CAVE',     'minecraft:stone',      'uraninite',       'powah:uraninite',           'powah'],
   ['CAVE',     'minecraft:stone',      'energized_steel', 'powah:steel_energized',     'powah'],
   ['TIDE',     'minecraft:mycelium',   'dry_ice',         'powah:dry_ice',             'powah'],
@@ -177,6 +197,7 @@ const MODDED_SELF_KEYED = [
   ['GEODE',    'minecraft:gravel',     'improved_processor', 'refinedstorage:improved_processor', 'refinedstorage'],
   ['GEODE',    'minecraft:gravel',     'advanced_processor', 'refinedstorage:advanced_processor', 'refinedstorage'],
   ['INFERNAL', 'minecraft:prismarine', 'refined_obsidian', '#c:ingots/refined_obsidian', 'mekanism'],
+  ['INFERNAL', 'minecraft:prismarine', 'refined_glowstone', '#c:ingots/refined_glowstone', 'mekanism'],
   ['INFERNAL', 'minecraft:prismarine', 'quartz_enriched_iron', 'refinedstorage:quartz_enriched_iron', 'refinedstorage']
 ]
 
