@@ -1049,7 +1049,7 @@
 	quest.7807000000000005.quest_desc: [
 		"Two roads to a skull farm. The &dDissolution Chamber&r presses a real skull into a Skull Slime directly - one skull per slime. Or go full ritual: craft &5Wither Skeleton Skull Catalysts&r (8 soul sand around a skull) and build the &daltar&r - a catalyst against all six faces of a Skull Slime Milk source. Jade counts the faces for you."
 		""
-		"Fair warning: boss Slime Milk inflicts &cWither&r on YOU. Wall the pool off and let the frogs work."
+		"One more thing about boss milk: it is &cpoison&r. Stand in a boss Slime Milk pool and the &cWither&r takes you. The slimes bathe in it. The frogs wade through it. YOU stay on the shore. Your pond has places that are not for you anymore."
 		""
 		"Turn in the &bWither Skeleton Skull Froglight&r."
 	]
@@ -1098,12 +1098,12 @@
 	quest.7807000000000017.quest_subtitle: "Industrial-scale exhalation."
 	quest.7807000000000017.title: "Dragon Breath"
 	quest.780700000000001A.quest_desc: [
-		"Wither skull, nether star, dragon egg, dragon breath - the four trophies no farm was ever supposed to produce, and your pond produces all of them. The bosses are renewable. You are the apex."
+		"Wither skull, nether star, dragon egg, dragon breath - the four trophies no farm was ever supposed to produce, and your pond produces all of them. Parts of that pond would kill you to stand in now. The frogs do not mind. The bosses are renewable. You are the apex."
 	]
 	quest.780700000000001A.quest_subtitle: "The food chain has a new top."
 	quest.780700000000001A.title: "Apex Pond"
 	quest.780700000000001D.quest_desc: [
-		"Six &5Wither Skeleton Skull Catalysts&r - eight soul sand around a skull, each - pressed against all six faces of a Skull Slime Milk source. That is the &daltar&r: slimes spawn from the milk with no chamber feedstock, the true automation. Your skull farm pays for its own upgrade."
+		"Six &5Wither Skeleton Skull Catalysts&r - eight soul sand around a skull, each - pressed against all six faces of a Skull Slime Milk source. That is the &daltar&r: slimes spawn from milk no chamber feeds - and from milk you must never touch. Build it like a reactor core: walled off, fed from outside, tended by things that cannot &cWither&r."
 		""
 		"Craft all &esix catalysts&r. Jade counts the faces once they are placed."
 	]
@@ -1112,19 +1112,19 @@
 	quest.7807000000000020.quest_desc: [
 		"Eight obsidian around a &fNether Star&r, six times over. Forty-eight obsidian and six stars sounds steep until you remember both now come out of ponds."
 		""
-		"Craft all &esix Nether Star Catalysts&r and ring a Star Slime Milk source."
+		"Craft all &esix Nether Star Catalysts&r and ring a Star Slime Milk source. The pool at its center shines like a beacon and will kill you faster than the Wither that guarded the star ever could."
 	]
 	quest.7807000000000020.quest_subtitle: "A constellation, arranged."
 	quest.7807000000000020.title: "The Star Altar"
 	quest.7807000000000023.quest_desc: [
-		"The math that was impossible an hour ago: &dsix Dragon Egg Catalysts&r, six eggs (end stone bricks around each). Your loop made eggs renewable; now spend the surplus on the altar the world could never afford, and the milk spawns Egg Slimes on its own."
+		"The math that was impossible an hour ago: &dsix Dragon Egg Catalysts&r, six eggs (end stone bricks around each). Your loop made eggs renewable; now spend the surplus on the altar the world could never afford, and the milk spawns Egg Slimes on its own - behind glass, where its &cpoison&r cannot reach you."
 		""
 		"Craft all &esix catalysts&r."
 	]
 	quest.7807000000000023.quest_subtitle: "From one egg, a clutch."
 	quest.7807000000000023.title: "The Egg Altar"
 	quest.7807000000000026.quest_desc: [
-		"Purpur around a bottle of &ddragon's breath&r, six times. The breath farm fills the bottles; the altar makes sure you never bother the dragon again."
+		"Purpur around a bottle of &ddragon's breath&r, six times. The breath farm fills the bottles; the altar makes sure you never bother the dragon again. Just do not lean over the milk."
 		""
 		"Craft all &esix Dragon Breath Catalysts&r."
 	]
