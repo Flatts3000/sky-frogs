@@ -1294,6 +1294,11 @@ hash = "75ff68dd0bfb30f2ff97f170ffbb74d5b6aaa791416c4a0559d09ac8778561ba"
 metafile = true
 
 [[files]]
+file = "mods/rs-polymorph.pw.toml"
+hash = "bd553a1988c1079115753f340075afa3e6f96218af26b35b26c6216b9effd5de"
+metafile = true
+
+[[files]]
 file = "mods/runelic.pw.toml"
 hash = "ece6606ae5a408eb1683f68596db5f4ff1ee28bd0293043ed99794ffa6e33d64"
 metafile = true

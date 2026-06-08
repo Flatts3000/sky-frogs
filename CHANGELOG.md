@@ -4,6 +4,9 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+### Added
+- **Polymorphic Refined Storage** (#137, reported by Dergib on Discord): the Polymorph recipe picker now works inside Refined Storage's Crafting and Pattern grids. When two mods share a recipe (the two chisels, for one), you can finally pick which result you want from within an RS grid instead of being stuck with whichever one wins by default.
+
 ## [0.9.0] - 2026-06-08
 
 The frogs make friends with Just Dire Things - its metals, gems, and fuels all farm through the loop now - and the Slime Churn lets you turn milk back into bucketed slimes with no slime to chase.

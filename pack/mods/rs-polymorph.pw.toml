@@ -1,0 +1,13 @@
+name = "Polymorphic Refined Storage"
+filename = "rspolymorph-neoforge-1.21.1-1.2.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "827f97af73d68a118bb408c8e7cffca37d3b3306"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8206119
+project-id = 1492934
