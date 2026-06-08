@@ -376,7 +376,105 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["70DD9CE8D28270C3", "70DDE8959C46DE77", "70DDD75E3D26ECE7", "70DD1B4FCB046228", "70DD3DED432660AC", "70DD42E9DCA61D0A", "70DD227DBEE3A633", "70DD8FDCBCF1C143", "70DDF22219138525", "70DD8655ED1C027C", "70DD4189CF5B59C4", "70DDFF714569D134", "70DD6F2CFCE78A17", "70DD2DA496EE8E42", "70DDB24A799921BC", "70DD8519EEC1B004", "70DD8B76266B84E5", "70DD24314911C52A", "70DD11972EEAF468", "70DD8BDEB27E47C3", "70DDCD212AE52B37", "70DDC61CE7A31EAF", "70DD872930906038", "70DD52504B7A1FAD", "70DD8A8DA15CC882", "70DD3C94BA8BD5DD"]
+			icon: {
+				id: "justdirethings:ferricore_ingot"
+			}
+			id: "70DD094F71ACB4A4"
+			tasks: [{
+				id: "70DD68F506402D9F"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:ferricore" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "justdirethings:blazegold_ingot"
+			}
+			id: "70DDCDB366848F36"
+			tasks: [{
+				id: "70DDC54A5DC80A82"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:blazegold" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			icon: {
+				id: "justdirethings:celestigem"
+			}
+			id: "70DDAAEA0EA55AAA"
+			tasks: [{
+				id: "70DDB98EA08626C4"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:celestigem" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 3.0d
+		}
+		{
+			icon: {
+				id: "justdirethings:eclipsealloy_ingot"
+			}
+			id: "70DDE576AB2A4D82"
+			tasks: [{
+				id: "70DD306CAAC48CEE"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:eclipsealloy" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 4.5d
+		}
+		{
+			icon: {
+				id: "justdirethings:coal_t2"
+			}
+			id: "70DDC713FC1F7A30"
+			tasks: [{
+				id: "70DD377F9795DA03"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:blaze_ember" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 6.0d
+		}
+		{
+			icon: {
+				id: "justdirethings:coal_t3"
+			}
+			id: "70DD39115A47C69E"
+			tasks: [{
+				id: "70DDE927B6DEC3F1"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:voidflame" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 7.5d
+		}
+		{
+			icon: {
+				id: "justdirethings:coal_t4"
+			}
+			id: "70DD37EF0BD0D556"
+			tasks: [{
+				id: "70DDBC17B7545C33"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:eclipse_ember" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["70DD9CE8D28270C3", "70DDE8959C46DE77", "70DDD75E3D26ECE7", "70DD1B4FCB046228", "70DD3DED432660AC", "70DD42E9DCA61D0A", "70DD227DBEE3A633", "70DD8FDCBCF1C143", "70DDF22219138525", "70DD8655ED1C027C", "70DD4189CF5B59C4", "70DDFF714569D134", "70DD6F2CFCE78A17", "70DD2DA496EE8E42", "70DDB24A799921BC", "70DD8519EEC1B004", "70DD8B76266B84E5", "70DD24314911C52A", "70DD11972EEAF468", "70DD8BDEB27E47C3", "70DDCD212AE52B37", "70DDC61CE7A31EAF", "70DD872930906038", "70DD52504B7A1FAD", "70DD8A8DA15CC882", "70DD3C94BA8BD5DD", "70DD094F71ACB4A4", "70DDCDB366848F36", "70DDAAEA0EA55AAA", "70DDE576AB2A4D82", "70DDC713FC1F7A30", "70DD39115A47C69E", "70DD37EF0BD0D556"]
 			icon: {
 				id: "productivefrogs:sweetslime"
 			}
@@ -393,7 +491,7 @@
 				id: "70DDF9CE4CC6B780"
 				type: "checkmark"
 			}]
-			x: 5d
+			x: 6d
 			y: -2.5d
 		}
 	]

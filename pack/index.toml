@@ -362,7 +362,7 @@ hash = "01e3daf039dfc3825421110e6b725a231d1800991a7db361549309424070cc42"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/sister_ponds.snbt"
-hash = "7b9e18d7d6b81a6751a508a6754ffa28bd4751fcf7b648a1f156398870397744"
+hash = "bb209bf78ecbc1a24e74a1535396eba34b653cf6a50ceda15da4e7f31995f108"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/storage_and_crafting.snbt"
@@ -410,7 +410,7 @@ hash = "2e69afacf774749222ca1e925dc94d32e6c3db8bef4557aa33144751c2770206"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "a3d96a771c06d2fbb25ce6c2b49ae81a011024d409953d3eb988966f742666be"
+hash = "5769eed798793565257e5c7e7ecfa5346c7d948c57eb8a5190442b8074eea53d"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
@@ -606,7 +606,7 @@ hash = "a14f0b3014ad482f9b04ef079202394670f76a749bccb93ed36bb3e41c1810dc"
 
 [[files]]
 file = "kubejs/server_scripts/dissolution_slime_recipes.js"
-hash = "8f33be742e1a816d4f2e86571d31e1849f54f3a8a1f2463b9bcdbbd351dc24a3"
+hash = "1f1f73f1067189dc8db5953a42f1a8473726daa060ff35633c28ea38afe88421"
 
 [[files]]
 file = "kubejs/server_scripts/dump_items.js"
@@ -1245,7 +1245,7 @@ metafile = true
 
 [[files]]
 file = "mods/productive-frogs.pw.toml"
-hash = "4c192ae425090a7ff524a695597894020dd122530e51d2e1e2b56c48cf481f97"
+hash = "aa6841c6bcb094aca824c2608d0e402a4ff35cf47bcab7547b3c4d39f3545c59"
 metafile = true
 
 [[files]]

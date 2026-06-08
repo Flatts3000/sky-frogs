@@ -198,7 +198,19 @@ const MODDED_SELF_KEYED = [
   ['GEODE',    'minecraft:gravel',     'advanced_processor', 'refinedstorage:advanced_processor', 'refinedstorage'],
   ['INFERNAL', 'minecraft:prismarine', 'refined_obsidian', '#c:ingots/refined_obsidian', 'mekanism'],
   ['INFERNAL', 'minecraft:prismarine', 'refined_glowstone', '#c:ingots/refined_glowstone', 'mekanism'],
-  ['INFERNAL', 'minecraft:prismarine', 'quartz_enriched_iron', 'refinedstorage:quartz_enriched_iron', 'refinedstorage']
+  ['INFERNAL', 'minecraft:prismarine', 'quartz_enriched_iron', 'refinedstorage:quartz_enriched_iron', 'refinedstorage'],
+  // Just Dire Things (PF 1.15, #188): four materials + three Crucible fuels.
+  // Materials are tag-primed (ferricore/blazegold/eclipsealloy) or item-primed
+  // (celestigem); the fuels prime off JDT's coal tiers (coal_t2/t3/t4) - the
+  // Froglight melts in the Crucible straight to the refined fuel, skipping
+  // JDT's own coal-refining chain. Self-keyed per the make-it-first law.
+  ['CAVE',     'minecraft:stone',      'ferricore',     '#c:ingots/ferricore',     'justdirethings'],
+  ['INFERNAL', 'minecraft:prismarine', 'blazegold',     '#c:ingots/blazegold',     'justdirethings'],
+  ['INFERNAL', 'minecraft:prismarine', 'celestigem',    'justdirethings:celestigem', 'justdirethings'],
+  ['INFERNAL', 'minecraft:prismarine', 'blaze_ember',   'justdirethings:coal_t2',  'justdirethings'],
+  ['VOID',     'minecraft:soul_soil',  'eclipsealloy',  '#c:ingots/eclipsealloy',  'justdirethings'],
+  ['VOID',     'minecraft:soul_soil',  'voidflame',     'justdirethings:coal_t3',  'justdirethings'],
+  ['VOID',     'minecraft:soul_soil',  'eclipse_ember', 'justdirethings:coal_t4',  'justdirethings']
 ]
 
 ServerEvents.recipes(event => {

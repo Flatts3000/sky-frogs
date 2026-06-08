@@ -942,6 +942,13 @@
 	quest.70DD52504B7A1FAD.title: "Plastic (Industrial Foregoing)"
 	quest.70DD8A8DA15CC882.title: "Pink Slime (Industrial Foregoing)"
 	quest.70DD3C94BA8BD5DD.title: "Flux Dust (Flux Networks)"
+	quest.70DD094F71ACB4A4.title: "Ferricore (Just Dire Things)"
+	quest.70DDCDB366848F36.title: "Blazegold (Just Dire Things)"
+	quest.70DDAAEA0EA55AAA.title: "Celestigem (Just Dire Things)"
+	quest.70DDE576AB2A4D82.title: "Eclipsealloy (Just Dire Things)"
+	quest.70DDC713FC1F7A30.title: "Blaze Ember (Just Dire Things)"
+	quest.70DD39115A47C69E.title: "Voidflame (Just Dire Things)"
+	quest.70DD37EF0BD0D556.title: "Eclipse Ember (Just Dire Things)"
 	quest.70DD831A136C804F.quest_desc: [
 		"Every modded resource the loaded mods taught your frogs - one column per neighbor. The sister ponds send their regards."
 	]
