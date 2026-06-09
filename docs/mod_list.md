@@ -20,7 +20,7 @@ Any mod that fails all three is rejected.
 
 | Mod                   | Role                                                                 | Notes                                                |
 |-----------------------|----------------------------------------------------------------------|------------------------------------------------------|
-| **Productive Frogs**  | The mod the pack is built around                                     | Published on CurseForge (1.21.1 / NeoForge). Pinned at **1.16.0** (The Terrarium automation multiblock; brewed froglights, boss resources, the Slime Churn, and Just Dire Things support arrived across 1.14-1.15. Full bump history in [`pf_pin_history.md`](./pf_pin_history.md)). |
+| **Productive Frogs**  | The mod the pack is built around                                     | Published on CurseForge (1.21.1 / NeoForge). Pinned at **1.17.0** (Frog Legs and Fairy Tales - frog legs/soup, the Frog Net, Froglight Cleaver, Princess's Kiss, config toggles; the Terrarium arrived 1.16, brewed froglights/boss resources/Slime Churn/Just Dire Things across 1.14-1.15. Full bump history in [`pf_pin_history.md`](./pf_pin_history.md)). |
 
 ### 2. Skyblock fundamentals
 
