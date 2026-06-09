@@ -497,5 +497,25 @@
 			x: 0.0d
 			y: 10.5d
 		}
+		{
+			dependencies: ["54E5F6A1B2C30031"]
+			icon: {
+				id: "productivefrogs:frog_net"
+			}
+			id: "54E5F6A1B2C30041"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "54E5F6A1B2C30043"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "54E5F6A1B2C30042"
+				item: { count: 1, id: "productivefrogs:frog_net" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
 	]
 }

@@ -1674,4 +1674,25 @@
 	]
 	quest.6A0D00000000000E.quest_subtitle: "Thanks for playing."
 	quest.6A0D00000000000E.title: "You Out-Frogged the Game"
+	quest.54E5F6A1B2C30041.quest_desc: [
+		"A reusable net that scoops a frog into the item with a right-click and sets it back down where you right-click a block. The frog rides along &awhole&r - species, bred Appetite/Bounty/Reach, name, all of it - so you can move a prize frog without leashing it across the water (or killing it)."
+		""
+		"Six string and a stick - cheap enough to keep on your hotbar from day one. Relocate your starter frog, rearrange a pond, or restock a Terrarium later, no leash required."
+	]
+	quest.54E5F6A1B2C30041.quest_subtitle: "Catch and carry, stats intact."
+	quest.54E5F6A1B2C30041.title: "The Frog Net"
+	quest.780700000000002C.quest_desc: [
+		"The active-play answer to the passive pond: a sword that drops a Resource Slime's &bFroglight&r when it lands the kill. It hits harder than netherite and shrugs off fire, Looting raises the yield, and a brewed slime's effect carries onto the Froglight - exactly as if a frog had eaten it."
+		""
+		"Forged from the bosses' own light: two &bNether Star Froglights&r and a &bDragon Egg Froglight&r, wrapped in &fDragon's Breath&r. Pure endgame - you can only build it once the Trophy Pond's hardest resources are farming."
+	]
+	quest.780700000000002C.quest_subtitle: "Harvest the light by hand."
+	quest.780700000000002C.title: "The Froglight Cleaver"
+	quest.601D00000000001D.quest_desc: [
+		"Slaying the Ender Dragon - the princess - leaves behind a &dPrincess's Kiss&r. Right-click any frog with it and, in a shower of particles, the frog becomes a &evillager&r: a plain, unemployed one, free to take any job."
+		""
+		"One Kiss bootstraps an entire trading economy off your pond - which is exactly why it waits behind the dragon. Net the frog you want to transform first if it is a prize one; the Kiss does not care which frog, only that it is a frog."
+	]
+	quest.601D00000000001D.quest_subtitle: "The dragon was the princess all along."
+	quest.601D00000000001D.title: "Princess's Kiss"
 }

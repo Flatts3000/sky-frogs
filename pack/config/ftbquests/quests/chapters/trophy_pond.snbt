@@ -255,5 +255,26 @@
 			x: 0.75d
 			y: 6.0d
 		}
+		{
+			dependencies: ["780700000000000B", "7807000000000011"]
+			icon: {
+				id: "productivefrogs:froglight_cleaver"
+			}
+			id: "780700000000002C"
+			shape: "diamond"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "780700000000002E"
+				table_id: 9178336040581070849L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "780700000000002D"
+				item: { count: 1, id: "productivefrogs:froglight_cleaver" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
 	]
 }
