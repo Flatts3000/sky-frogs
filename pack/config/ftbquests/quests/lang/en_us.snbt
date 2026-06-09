@@ -1432,7 +1432,7 @@
 	quest.53A000000000000E.quest_subtitle: "Where the light comes out."
 	quest.53A000000000000E.title: "The Hatch"
 	quest.53A0000000000011.quest_desc: [
-		"Seal it into a box. The interior is &e5 wide, 5 deep, 4 tall&r; wrap it in a one-block shell of any solid block (mud is a tagged option if you want a non-cube look). The &eController&r, your &eIncubators&r, and the &eHatch&r sit on the walls facing IN; the &eSprinklers&r line the ceiling. No machines on corners or edges."
+		"Seal it into a box. The interior is &e5 wide, 5 deep, 4 tall&r; wrap it in a one-block shell of any solid block. The &eController&r, your &eIncubators&r, and the &eHatch&r sit on the walls facing IN; the &eSprinklers&r line the ceiling. No machines on corners or edges."
 		""
 		"&7Right-click the Controller&r - it tells you the formed state and points at the first wrong block until it reads &aformed&r. That readout is your blueprint; build to whatever it asks for."
 		""
