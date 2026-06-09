@@ -36,7 +36,7 @@
 		{
 			dependencies: ["71DE000000000002"]
 			icon: {
-				id: "industrialforegoing:fluid_extractor"
+				id: "industrialforegoing:latex_bucket"
 			}
 			id: "71DE000000000005"
 			rewards: [{
@@ -47,7 +47,7 @@
 			}]
 			tasks: [{
 				id: "71DE000000000006"
-				item: { count: 1, id: "industrialforegoing:fluid_extractor" }
+				item: { count: 1, id: "industrialforegoing:latex_bucket" }
 				type: "item"
 			}]
 			x: -1.5d

@@ -4,7 +4,7 @@
 // vanilla resource, mirroring the Cave/Geode/Bog crafting-table seed chains, just
 // transposed into the IF machine:
 //
-//   fluid:  100 mb industrialforegoing:latex   (tap it from logs with a Fluid Extractor)
+//   fluid:  100 mb industrialforegoing:latex   (melt a plastic Froglight in the PF Crucible)
 //   items:  1x prior resource                   (see threading note below)
 //           4x tier filler block
 //           3x productivefrogs:sweetslime

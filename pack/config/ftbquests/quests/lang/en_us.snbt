@@ -94,7 +94,7 @@
 	quest.1F00000000000017.quest_desc: [
 		"A &eFluid Collector&r reaches into the block in front of it and slurps the fluid source - water, lava, latex, anything bucketable - into its internal tank."
 		""
-		"Pipe it into your Fluid Extractor's latex line, your cobblegen's water feed, anywhere a bucket would have done. Bucket by hand never again."
+		"Pipe it into your &bDissolution Chamber&r's latex intake, your cobblegen's water feed, anywhere a bucket would have done. Bucket by hand never again."
 	]
 	quest.1F00000000000017.quest_subtitle: "Scoop fluids, no bucket."
 	quest.1F00000000000017.title: "Fluid Collector"
@@ -659,14 +659,14 @@
 	quest.71DE000000000002.quest_subtitle: "Industrial Foregoing arrives."
 	quest.71DE000000000002.title: "The Machine Frame"
 	quest.71DE000000000005.quest_desc: [
-		"Set a &eFluid Extractor&r against a &flog&r and it slowly bleeds the wood for &fLiquid Latex&r."
+		"&fLatex&r is the fluid the &bDissolution Chamber&r runs on, and your frogs already make it. Melt a &bplastic Froglight&r in the &eCrucible&r - the same block that bootstrapped your lava - and it renders down into a bucket of &fLiquid Latex&r."
 		""
-		"Latex is the fluid the &bDissolution Chamber&r runs on - keep a tank of it."
+		"No Fluid Extractor, no rubber trees - the plastic frog is the source. Fill a bucket and keep a tank of it for the Chamber."
 	]
-	quest.71DE000000000005.quest_subtitle: "Sap into plastic."
-	quest.71DE000000000005.title: "Tapping Latex"
+	quest.71DE000000000005.quest_subtitle: "Melt a plastic Froglight in the Crucible."
+	quest.71DE000000000005.title: "A Bucket of Latex"
 	quest.71DE000000000008.quest_desc: [
-		"Industrial Foregoing's &eDissolution Chamber&r dissolves a pile of items in a fluid and presses out something new. Frame it with &fplastic&r (your &bplastic slime&r already supplies it), feed it &flatex&r from the Fluid Extractor, and it becomes the pack's &eslime engine&r."
+		"Industrial Foregoing's &eDissolution Chamber&r dissolves a pile of items in a fluid and presses out something new. Frame it with &fplastic&r (your &bplastic slime&r already supplies it), feed it the &flatex&r you rendered from a plastic Froglight, and it becomes the pack's &eslime engine&r."
 		""
 		"Every variant in &eCave&r, &eGeode&r, &eBog&r, and &eTide&r has a chamber recipe: feed it a prior resource (within a tier, the previous variant's; at a tier boundary, the previous tier's last) + tier filler + sweetslime + latex, and out comes that variant's &bSlime in a Bucket&r. Iron is the exception - it threads off &fbone meal&r. Cave, Geode, and Bog also have hand-craft chains; from &eTide&r on, the chamber is the only way."
 		""

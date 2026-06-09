@@ -354,7 +354,7 @@ hash = "fa05669d1460252eb3be3b64a6786100318fbd64e99085de35ad9d8485fb9c94"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_tide.snbt"
-hash = "bb94f55d7b7bc2e4aa85e26b1da33cd05bb102433e727adcab8864b7c6fc7603"
+hash = "2405b69e735452635c0d9663fb8d89b1ef7e25615d83c9336147d9d8a7bf6806"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_void.snbt"
@@ -418,7 +418,7 @@ hash = "4889c5e7d4a8179b45e68f0ac00119529ed49ba68f20624b36e996bb0d60ddd0"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "11bbc95460ef9af12d123a5f24612a1c48495adf0a42363caa9927fe4519d897"
+hash = "5cfcf80a45f837b2ec843c464d3397b20042544c3701f90d145599f331f75426"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
@@ -630,7 +630,7 @@ hash = "a14f0b3014ad482f9b04ef079202394670f76a749bccb93ed36bb3e41c1810dc"
 
 [[files]]
 file = "kubejs/server_scripts/dissolution_slime_recipes.js"
-hash = "1f1f73f1067189dc8db5953a42f1a8473726daa060ff35633c28ea38afe88421"
+hash = "14792694cdc1da50e0126908a68c17ca75bcb19fadd4a29a9f682805c6101800"
 
 [[files]]
 file = "kubejs/server_scripts/dump_items.js"
