@@ -4,6 +4,17 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+## [0.10.1] - 2026-06-09
+
+A polish patch from community feedback: clearer quest hints and the official server in your multiplayer list.
+
+### Added
+- **The Sky Frogs server is in your multiplayer tab.** The pack now ships the official server (`skyfrogs.benbenlaw.com`) via BBL Core, so it's right there in the multiplayer list on first launch - plus `/modpack` and `/discord` commands wired up.
+
+### Changed
+- **The questbook points you at the infinite-milk fix.** The early "Milk It" quest now tells you the Geode-tier Infinite Count Catalyst makes a Slime Milk source never run dry, so milk depletion reads as "fix incoming," not a dead end (Discord feedback - players were getting stuck thinking milk couldn't be automated).
+- **Terrarium quest clarifications.** The Sprinklers quest notes you can pull milk back out with an empty bucket; the Incubators quest explains the 8-frog cap is the incubators' release ceiling (not a hard limit - you can lead more in by hand) and that you run several incubators for throughput.
+
 ## [0.10.0] - 2026-06-08
 
 The automation update: Productive Frogs 1.16 brings The Terrarium - a sealed multiblock that runs the frog loop hands-off - and the pack gives it a full build-it-yourself chapter in the Infernal tier.
