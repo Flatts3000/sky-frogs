@@ -1406,7 +1406,7 @@
 	quest.53A0000000000005.quest_desc: [
 		"The &eTerrarium Controller&r is the brain: it takes &bSlime Milk&r piped or clicked into its outward face and rations it out to the &eSprinklers&r in the ceiling. Build it first - the whole structure forms around it."
 		""
-		"Glowstone, a quartz block, blaze rods, magma cream, nether bricks. Place it flat against a wall with its face pointing OUT of the box."
+		"It must go in one of the Terrarium's walls, flat against the interior with its face pointing OUT of the box. Recipe: glowstone, a quartz block, blaze rods, magma cream, nether bricks."
 	]
 	quest.53A0000000000005.quest_subtitle: "The brain of the box."
 	quest.53A0000000000005.title: "Terrarium Controller"
