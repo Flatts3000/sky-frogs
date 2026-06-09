@@ -16008,6 +16008,8 @@ productivefrogs:geode_tadpole_spawn_egg
 productivefrogs:glow_ink_sac_slime_milk_bucket
 productivefrogs:glowstone_dust_slime_milk_bucket
 productivefrogs:gold_slime_milk_bucket
+productivefrogs:hatch
+productivefrogs:incubator
 productivefrogs:infernal_frog_egg
 productivefrogs:infernal_frog_spawn_egg
 productivefrogs:infernal_slime_spawn_egg
@@ -16050,9 +16052,11 @@ productivefrogs:soul_sand_slime_milk_bucket
 productivefrogs:soul_soil_slime_milk_bucket
 productivefrogs:spawnery
 productivefrogs:speed_catalyst
+productivefrogs:sprinkler
 productivefrogs:sponge_slime_milk_bucket
 productivefrogs:steel_slime_milk_bucket
 productivefrogs:sweetslime
+productivefrogs:terrarium_controller
 productivefrogs:tide_frog_egg
 productivefrogs:tide_frog_spawn_egg
 productivefrogs:tide_slime_spawn_egg

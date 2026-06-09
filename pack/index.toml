@@ -373,6 +373,10 @@ file = "config/ftbquests/quests/chapters/take_flight.snbt"
 hash = "638403b962ac40c7b3ed6a0a33bbefcc8f0f25d0a99c9927c7ee1137121db740"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/terrarium.snbt"
+hash = "6d1d2df491615ec8052254096ee532b84956e757c39c4ad31c66ca44004922bb"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/the_network.snbt"
 hash = "fb08b45462b0d6160d8429bea1ccea3a3b36cfdb1c3183c3810b794b389e29d7"
 
@@ -410,7 +414,7 @@ hash = "2e69afacf774749222ca1e925dc94d32e6c3db8bef4557aa33144751c2770206"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "331156dc196cd7339a4337bad2248c7a1a01004ccf7fe1768ec5f54227e5a7fd"
+hash = "81e52186747a9d2530a2dce86fb2cde1ae41c418a6b0a1eed7789aad5a98cf0d"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
@@ -503,6 +507,10 @@ hash = "015db18b5bcebe9258b6d25b285c3cdfc6defdb951679f5c7d4f91d0e4c8fb48"
 [[files]]
 file = "kubejs/assets/kubejs/textures/quests/discord.png"
 hash = "317716854cc50fc09f751b375c8e598e2e6fd966d1e7c51f4b751935e2cb58e4"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/quests/terrarium.png"
+hash = "b150dc1feb4cce0577220676be094868e6fbcc1a611d2b14b315affd5a98111c"
 
 [[files]]
 file = "kubejs/assets/minecraft/texts/splashes.txt"
@@ -1257,7 +1265,7 @@ metafile = true
 
 [[files]]
 file = "mods/productive-frogs.pw.toml"
-hash = "aa6841c6bcb094aca824c2608d0e402a4ff35cf47bcab7547b3c4d39f3545c59"
+hash = "97464fae444bc3b5ae8fb98f762df2c3a9a96298b48560e2b0b3a20a582e4677"
 metafile = true
 
 [[files]]
