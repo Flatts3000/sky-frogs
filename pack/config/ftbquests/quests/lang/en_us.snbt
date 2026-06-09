@@ -1415,12 +1415,14 @@
 	quest.53A0000000000008.quest_desc: [
 		"&eSprinklers&r make up the ceiling of the box and rain slimes down into it, spawning on the exact same rules a placed Slime Milk source uses - cadence, per-bucket budget, and &dcatalysts&r (Speed, Quantity, Count, Endless) all carry through from the milk. You need &eat least one&r; up to 25 fit a ceiling, so make as many as you want for faster rain."
 		""
-		"Drop a catalyst on a Sprinkler from above to upgrade it in place."
+		"Drop a catalyst on a Sprinkler from above to upgrade it in place. Need to change the variant or reclaim the milk? Right-click a Sprinkler with an &eempty bucket&r to pull its Slime Milk back out."
 	]
 	quest.53A0000000000008.quest_subtitle: "Indoor weather, made of slime."
 	quest.53A0000000000008.title: "Sprinklers"
 	quest.53A000000000000B.quest_desc: [
 		"&eIncubators&r raise frogspawn and tadpoles into frogs &ainside the box&r, stats intact over the whole lifecycle. Frogs bred in the cavity lay back into an Incubator (not water), so the line keeps itself stocked. A Sweetslime right-clicked in speeds incubation."
+		""
+		"One Incubator raises &eone frog at a time&r and stops releasing at the frog cap (8 by default) - so run &eseveral&r for throughput and feed them Sweetslimes. That cap is just the Incubators' release ceiling, not a wall on the cavity: you can always lead or carry extra frogs in by hand."
 		""
 		"At least one is required. Place it on a wall, face pointing IN."
 	]
