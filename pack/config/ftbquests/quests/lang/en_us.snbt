@@ -472,6 +472,8 @@
 		""
 		"Pour that milk out and it spawns &aIron Slimes&r, but the source isn't bottomless - it runs dry after a batch. Milk the slimes you catch for fresh buckets and the cycle feeds itself."
 		""
+		"That refill loop is your answer until the &2Geode&r tier, where &bSlime Milk catalysts&r change the game: the &bInfinite Count Catalyst&r makes a source &enever run dry&r. That's the real automation unlock - drop one in a pool and it pours forever, untouched. So don't fret the depletion now; the permanent fix is a tier away."
+		""
 		"Take a &eDiamond Stick&r for your trouble - it'll make building out your base a good deal faster."
 	]
 	quest.6C1F0A2B3D4E5F6D.quest_subtitle: "Iron Slime Milk."
