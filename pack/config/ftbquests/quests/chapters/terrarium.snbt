@@ -74,7 +74,7 @@
 			}]
 			tasks: [{
 				id: "53A0000000000009"
-				item: { count: 4, id: "productivefrogs:sprinkler" }
+				item: { count: 1, id: "productivefrogs:sprinkler" }
 				type: "item"
 			}]
 			x: -2.0d

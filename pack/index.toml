@@ -374,7 +374,7 @@ hash = "638403b962ac40c7b3ed6a0a33bbefcc8f0f25d0a99c9927c7ee1137121db740"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/terrarium.snbt"
-hash = "a0d061634c2f3e66d66e169a3c785d0cf0cd3b74752c02426ddf76adc51f349e"
+hash = "49247acdc3381abee4adf0f23958c3cd3912e33b4695447fd83dbdb9bd349c7a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/the_network.snbt"
@@ -414,7 +414,7 @@ hash = "2e69afacf774749222ca1e925dc94d32e6c3db8bef4557aa33144751c2770206"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "5bf477aae9ccef12d144f40c3a5979cb419c5bde46991edfbe7b53095a814a41"
+hash = "f891dbf023865f74a1d7d35f0550a864ba0e5678a6456da2ef836f2ba1ba7ec8"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"

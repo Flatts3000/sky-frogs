@@ -1411,7 +1411,7 @@
 	quest.53A0000000000005.quest_subtitle: "The brain of the box."
 	quest.53A0000000000005.title: "Terrarium Controller"
 	quest.53A0000000000008.quest_desc: [
-		"&eSprinklers&r go on the ceiling and rain slimes into the box, spawning on the exact same rules a placed Slime Milk source uses - cadence, per-bucket budget, and &dcatalysts&r (Speed, Quantity, Count, Endless) all carry through from the milk. Up to 25 fit a ceiling; craft a handful to start."
+		"&eSprinklers&r make up the ceiling of the box and rain slimes down into it, spawning on the exact same rules a placed Slime Milk source uses - cadence, per-bucket budget, and &dcatalysts&r (Speed, Quantity, Count, Endless) all carry through from the milk. You need &eat least one&r; up to 25 fit a ceiling, so make as many as you want for faster rain."
 		""
 		"Drop a catalyst on a Sprinkler from above to upgrade it in place."
 	]
@@ -1448,7 +1448,7 @@
 	quest.53A0000000000014.quest_subtitle: "Turn on the rain."
 	quest.53A0000000000014.title: "Prime the Sprinklers"
 	quest.53A0000000000017.quest_desc: [
-		"Load &efrogspawn or tadpoles&r into the Incubators. They mature into frogs inside the box, eat the slimes the Sprinklers drop, and the Froglights land in the Hatch. Keep an Infernal frog in there and you have an Infernal-resource factory."
+		"Load &efrogspawn or tadpoles&r into the Incubators. They mature into frogs inside the box, eat the slimes the Sprinklers drop, and the Froglights land in the Hatch. Stock it with any species - whatever frog lives in there, that resource farms itself."
 		""
 		"Check this off once a frog is living in the Terrarium."
 	]
