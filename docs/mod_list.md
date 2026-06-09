@@ -142,7 +142,17 @@ Each entry here directly maps to one or more PF category slime variants (see [`p
 | **NeoAuth**           | Local-auth helper for offline launchers                               |
 | **Pylons** + **Trenzalore**  | Server housekeeping                                            |
 
-### 8. Mods we are NOT shipping (and why)
+### 8. Adventure, enchanting & gear
+
+| Mod                   | Role                                                                  |
+|-----------------------|------------------------------------------------------------------------|
+| **Apotheosis** (`apotheosis`, SHIPPED 2026-06-09, 1.21.1-8.5.4) | Affix-loot + boss + adventure layer by Shadows_of_Fire. Adds affixed gear (drops from mobs at a 7.5% default chance; salvages into Apotheosis's own gem/sigil economy, **not** vanilla resources - so it feeds its own progression, not the frog-resource spine), gems/gem-cutting, augmenting/reforging, and natural mini-boss invasions. Most of the deadly/worldgen/Rogue-Spawner content is **skyblock-inert** (a void skyblock generates no overworld terrain for it to spawn in). Added on the maintainer's call (Discord) to enrich combat and the endgame. **Tuning held for playtest** - the open knobs are the affix spawn rate, boss-invasion frequency on the island, and how Apothic Enchanting reshapes the pack's early Enchanting Table grant. |
+| **Apothic Enchanting** (`apothic-enchanting`, dep) | The reworked enchanting system (eterna/quanta/arcana drawn from enchanting-stat blocks, the Enchantment Library, higher tiers). Hard dependency of Apotheosis core; changes how the early Enchanting Table reward behaves. |
+| **Apothic Attributes** (`apothic-attributes`, dep) | Attribute framework the affixes hang off (also raises vanilla attribute caps). Hard dep of core. |
+| **Apothic Spawners** (`apothic-spawners`, dep) | Spawner capture/modification. Hard dep of core, but inert here - no mob spawners generate on a void skyblock to capture. |
+| **Patchouli** (dep) | Guidebook library for Apotheosis's in-game manual (shared with other shipped mods). |
+
+### 9. Mods we are NOT shipping (and why)
 
 | Mod                   | Why excluded                                                          |
 |-----------------------|------------------------------------------------------------------------|

@@ -7,6 +7,7 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 ### Added
 - **Elevators** (OpenBlocks Elevator): place colored elevator blocks at the same spot on different floors, jump to go up and sneak to drop down - quick vertical travel for multi-level bases, no flying required.
 - **Time in a Bottle**: store passing time in a bottle and spend it to fast-forward a block - speed up your machines and farms on demand. (Both suggested by Dergib on Discord.)
+- **Apotheosis**: an affix-loot, enchanting, and boss layer - affixed gear drops from mobs (and salvages into its own gem/sigil economy, not vanilla resources), a reworked enchanting system, gems and gem-cutting, and the occasional mini-boss invasion. Brought in to enrich combat and the endgame; most of its deadly/worldgen content stays dormant on a void skyblock. Balance tuning (affix rate, boss frequency, the enchanting rework vs. the early Enchanting Table) is pending playtest. Ships with its hard dependencies Apothic Enchanting, Apothic Attributes, Apothic Spawners, and Patchouli.
 
 ### Fixed
 - **Emergency items now actually hand you a sapling.** The quest book's empty-inventory recovery had its cooldown set but its item list left empty, so the safety net gave nothing. It now grants one oak sapling - the standard skyblock anti-softlock for a wiped-out player who lost their only renewable wood source.
