@@ -25,7 +25,7 @@ Do the standing PF-bump sweep first, on a feature branch, and merge it before re
 
 1. `git checkout main && git pull` - start from latest, working tree clean.
 2. **CHANGELOG.md**: rename the `## [Unreleased]` section to `## [X.Y.Z] - YYYY-MM-DD`, add a one-line summary blurb under the heading, and leave a fresh empty `## [Unreleased]` above it. The heading MUST be exactly `## [X.Y.Z]` - `release.yml` regex-extracts that section for the GitHub release notes and the CurseForge changelog. ASCII punctuation only (no em/en dashes).
-3. **pack/pack.toml**: bump `version = "X.Y.Z"`. It MUST equal the tag - the workflow's guard step fails the release otherwise.
+3. **pack/pack.toml**: bump `version = "X.Y.Z"`. It MUST equal the tag - the workflow's guard step fails the release otherwise. While you're at it, bump `"Modpack Version"` in `pack/config/bbl/core/modpack.toml` to match (cosmetic - it feeds BBL Core's `/modpack` command; the update-checker keys off the Project ID, not this string - but keep it in sync).
 4. `python tools/pack_refresh.py` - regenerates `index.toml` and updates pack.toml's `[index]` hash. **Stage `pack/index.toml` AND `pack/pack.toml` in the SAME commit** as the version bump; nothing else auto-catches a stale index (the #55 -> #56 follow-up).
 5. Commit: `commit "chore: release vX.Y.Z" "<one-line body>"` on `main` (this is the authorized exception to no-direct-commits-on-main).
 6. `git push`
