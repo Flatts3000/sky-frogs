@@ -418,7 +418,7 @@ hash = "4889c5e7d4a8179b45e68f0ac00119529ed49ba68f20624b36e996bb0d60ddd0"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "5cfcf80a45f837b2ec843c464d3397b20042544c3701f90d145599f331f75426"
+hash = "97201b6eedfe70231ea238ecd01563fa2e89a075832477d8698e4877e5c1a305"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
@@ -1303,7 +1303,7 @@ metafile = true
 
 [[files]]
 file = "mods/productive-frogs.pw.toml"
-hash = "97464fae444bc3b5ae8fb98f762df2c3a9a96298b48560e2b0b3a20a582e4677"
+hash = "6523b2efd0ff3c6171f2d07467734161dfa88dd4fb3ad9c698d433c74bbbaebc"
 metafile = true
 
 [[files]]

@@ -1422,21 +1422,21 @@
 	quest.53A000000000000B.quest_desc: [
 		"&eIncubators&r raise frogspawn and tadpoles into frogs &ainside the box&r, stats intact over the whole lifecycle. Frogs bred in the cavity lay back into an Incubator (not water), so the line keeps itself stocked. A Sweetslime right-clicked in speeds incubation."
 		""
-		"One Incubator raises &eone frog at a time&r and stops releasing at the frog cap (8 by default) - so run &eseveral&r for throughput and feed them Sweetslimes. That cap is just the Incubators' release ceiling, not a wall on the cavity: you can always lead or carry extra frogs in by hand."
+		"One Incubator raises &eone frog at a time&r and stops releasing at the frog cap (8 by default) - so run &eseveral&r for throughput and feed them Sweetslimes. That cap is just the Incubators' release ceiling, not a wall on the cavity: you can always lead, net, or carry extra frogs in by hand."
 		""
-		"At least one is required. Place it on a wall, face pointing IN."
+		"Incubators are &eoptional&r - the box forms with none. Add them only if you want frogs raised and bred in place; otherwise stock the Terrarium yourself. Each one goes on a wall, face pointing IN."
 	]
 	quest.53A000000000000B.quest_subtitle: "A nursery with the lights on."
 	quest.53A000000000000B.title: "Incubators"
 	quest.53A000000000000E.quest_desc: [
-		"The &eHatch&r is the output: Froglights drop &bstraight into it&r - no item entity bouncing around the cavity - and it vacuums up any loose slimeballs or magma cream too. It opens as a chest and pipes out its outward face. When it fills, the frogs stop eating until you clear it (nothing is ever voided)."
+		"The &eHatch&r is the output: Froglights drop &bstraight into it&r - no item entity bouncing around the cavity - and it vacuums up any loose slimeballs, magma cream, or raw frog legs (from a frog that died inside) too. It opens as a chest and pipes out its outward face. When it fills, the frogs stop eating until you clear it (nothing is ever voided)."
 		""
 		"Exactly one. On a wall, facing IN."
 	]
 	quest.53A000000000000E.quest_subtitle: "Where the light comes out."
 	quest.53A000000000000E.title: "The Hatch"
 	quest.53A0000000000011.quest_desc: [
-		"Seal it into a box. The interior is &e5 wide, 5 deep, 4 tall&r; wrap it in a one-block shell of any solid block. The &eController&r, your &eIncubators&r, and the &eHatch&r sit on the walls facing IN; the &eSprinklers&r line the ceiling. No machines on corners or edges."
+		"Seal it into a box. The interior is &e5 wide, 5 deep, 4 tall&r; wrap it in a one-block shell of any solid block. The &eController&r and the &eHatch&r sit on the walls facing IN (any &eIncubators&r you add go on the walls facing IN too); the &eSprinklers&r line the ceiling. No machines on corners or edges."
 		""
 		"&7Right-click the Controller&r - it tells you the formed state and points at the first wrong block until it reads &aformed&r. That readout is your blueprint; build to whatever it asks for."
 		""
@@ -1452,7 +1452,7 @@
 	quest.53A0000000000014.quest_subtitle: "Turn on the rain."
 	quest.53A0000000000014.title: "Prime the Sprinklers"
 	quest.53A0000000000017.quest_desc: [
-		"Load &efrogspawn or tadpoles&r into the Incubators. They mature into frogs inside the box, eat the slimes the Sprinklers drop, and the Froglights land in the Hatch. Stock it with any species - whatever frog lives in there, that resource farms itself."
+		"Get a frog living inside. Load &efrogspawn or tadpoles&r into an Incubator to raise one in place - or, if you skipped Incubators, lead or &enet&r a frog in directly. It eats the slimes the Sprinklers drop, and the Froglights land in the Hatch. Any species works - whatever frog lives in there, that resource farms itself."
 		""
 		"Check this off once a frog is living in the Terrarium."
 	]
