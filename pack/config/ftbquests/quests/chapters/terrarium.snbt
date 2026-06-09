@@ -8,6 +8,14 @@
 		id: "productivefrogs:terrarium_controller"
 	}
 	id: "53A0000000000001"
+	images: [{
+		height: 0.0d
+		image: "kubejs:textures/quests/terrarium.png"
+		rotation: 0.0d
+		width: 5.0d
+		x: 6.0d
+		y: 3.5d
+	}]
 	order_index: 3
 	quest_links: [ ]
 	quests: [

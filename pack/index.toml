@@ -374,7 +374,7 @@ hash = "638403b962ac40c7b3ed6a0a33bbefcc8f0f25d0a99c9927c7ee1137121db740"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/terrarium.snbt"
-hash = "1868152da41126abff193ecb3a9e701e316f93ee5ada85908b8145dc742165b6"
+hash = "a0d061634c2f3e66d66e169a3c785d0cf0cd3b74752c02426ddf76adc51f349e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/the_network.snbt"
@@ -507,6 +507,10 @@ hash = "015db18b5bcebe9258b6d25b285c3cdfc6defdb951679f5c7d4f91d0e4c8fb48"
 [[files]]
 file = "kubejs/assets/kubejs/textures/quests/discord.png"
 hash = "317716854cc50fc09f751b375c8e598e2e6fd966d1e7c51f4b751935e2cb58e4"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/quests/terrarium.png"
+hash = "bd5f932fc6bd096f0d5c162ae5965b1095e84dacd4938b25032f27cf40e3e8e2"
 
 [[files]]
 file = "kubejs/assets/minecraft/texts/splashes.txt"
