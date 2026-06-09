@@ -4,6 +4,10 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+## [0.11.0] - 2026-06-09
+
+The Frog Legs and Fairy Tales update: Productive Frogs 1.17 brings frog legs, the Frog Net, the Froglight Cleaver, and Princess's Kiss (all quested), Apotheosis joins as a combat/enchanting/loot layer, and Elevators + Time in a Bottle round out the QoL - plus two progression fixes from Discord.
+
 ### Added
 - **Elevators** (OpenBlocks Elevator): place colored elevator blocks at the same spot on different floors, jump to go up and sneak to drop down - quick vertical travel for multi-level bases, no flying required.
 - **Time in a Bottle**: store passing time in a bottle and spend it to fast-forward a block - speed up your machines and farms on demand. (Both suggested by Dergib on Discord.)
