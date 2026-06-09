@@ -1404,7 +1404,7 @@
 	quest.53A0000000000002.quest_subtitle: "Frog farming, sealed and self-running."
 	quest.53A0000000000002.title: "The Terrarium"
 	quest.53A0000000000005.quest_desc: [
-		"The &eTerrarium Controller&r is the brain: it takes &bSlime Milk&r piped or clicked into its outward face and rations it out to the &eSprinklers&r in the ceiling. Build it first - the whole structure forms around it."
+		"The &eTerrarium Controller&r is the brain: it takes &bSlime Milk&r piped or clicked into its outward face and rations it out to the &eSprinklers&r in the ceiling. It does &cnot accept boss Slime Milk&r, though - the wither and dragon trophies stay on their catalyst altars. Build it first - the whole structure forms around it."
 		""
 		"It takes the place of one wall block - on a flat face, not a corner or edge - facing OUT of the box. The walls themselves can be &aany solid block&r, so build the shell from whatever you like. Recipe: glowstone, a quartz block, blaze rods, magma cream, nether bricks."
 	]
