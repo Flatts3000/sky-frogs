@@ -210,5 +210,25 @@
 			x: 0.0d
 			y: 10.5d
 		}
+		{
+			dependencies: ["601D00000000000E"]
+			icon: {
+				id: "productivefrogs:princess_kiss"
+			}
+			id: "601D00000000001D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "601D00000000001F"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "601D00000000001E"
+				item: { count: 1, id: "productivefrogs:princess_kiss" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.5d
+		}
 	]
 }

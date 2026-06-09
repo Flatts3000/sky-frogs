@@ -237,7 +237,7 @@
 		{
 			dependencies: ["780700000000000B", "7807000000000011", "7807000000000017"]
 			icon: {
-				id: "minecraft:dragon_egg"
+				id: "productivefrogs:froglight_cleaver"
 			}
 			id: "780700000000001A"
 			shape: "hexagon"
@@ -250,7 +250,8 @@
 			}]
 			tasks: [{
 				id: "780700000000001B"
-				type: "checkmark"
+				item: { count: 1, id: "productivefrogs:froglight_cleaver" }
+				type: "item"
 			}]
 			x: 0.75d
 			y: 6.0d

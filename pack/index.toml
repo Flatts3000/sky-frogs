@@ -358,7 +358,7 @@ hash = "2405b69e735452635c0d9663fb8d89b1ef7e25615d83c9336147d9d8a7bf6806"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_void.snbt"
-hash = "54e1ccf0f4a958cef5ce850a2d6eadf5217c39d18aecd4a565e42c5d16e4b7ef"
+hash = "00f911927c0a1a506391e5bda63c91710be7216819cd7067e0181fb2a1f311d4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/scaling_the_colony.snbt"
@@ -394,7 +394,7 @@ hash = "d605261a2e885e06b6dd7d4f6a1f0e5a383a7318ec917a052983672d828e9f94"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/trophy_pond.snbt"
-hash = "53c406dbeaa7af781ecef82d7879e6cfb544053b9c580b5e088e05092a5792da"
+hash = "956fc3d100853f08a464d5f0a39683e4120ec3c4a47f596271a01aa1afa34ba5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/void_frogs.snbt"
@@ -402,7 +402,7 @@ hash = "16790918f87f8958ffee21a0332f51a72e39cc6c9cd5b8e7a6239139ac8cc242"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
-hash = "a8e06063bf2967e3899c3fc4826aeb9d8e15c581bfcd6ee299cc4a1e7e0adac4"
+hash = "aa282c9c8d9e319f47132bf67ae364eb1c1cfcd06d010925402480de9f6feafb"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/whole_pond.snbt"
@@ -418,7 +418,7 @@ hash = "4889c5e7d4a8179b45e68f0ac00119529ed49ba68f20624b36e996bb0d60ddd0"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "97201b6eedfe70231ea238ecd01563fa2e89a075832477d8698e4877e5c1a305"
+hash = "350e7f2bde82f26a05a75df2b8423fd8b74d4dbdf8a79c046eccb0bb35c26351"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
