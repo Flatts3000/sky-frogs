@@ -51,7 +51,7 @@ Do the standing PF-bump sweep first, on a feature branch, and merge it before re
 - **`releaseType`**: `0.x` -> `beta`, `1.x+` -> `release` (the workflow derives this; CF requires it even on the server child upload).
 - **Secrets**: `CF_API_TOKEN` and `DISCORD_CHANGELOG_WEBHOOK` are repo secrets. If unset, those steps warn-and-skip (the GitHub release still ships); upload/post manually.
 - **Server-pack build** is `continue-on-error` - a CurseForge third-party-download hiccup won't sink the client release, but check it actually built. A client-only mod mistagged `side = "both"` can break the server build; see [`distribution.md`](./distribution.md) server-pack section.
-- **`actions/setup-java@v4`** is Node-20 (deprecated); bump to a Node-24 version when convenient.
+- **`actions/setup-java`** is pinned at `@v5` (Node-24); the old `@v4` was Node-20, force-deprecated by GitHub on 2026-06-16. Keep workflow actions on Node-24 majors.
 
 ---
 
