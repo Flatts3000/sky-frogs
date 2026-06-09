@@ -26,6 +26,7 @@ All design docs are DRAFT. When you settle a question, drop the DRAFT banner on 
 - [`docs/pack_metadata.md`](./docs/pack_metadata.md) — pack identity, versioning policy, asset spec
 - [`docs/repo_layout.md`](./docs/repo_layout.md) — packwiz tree, CI shape, helper scripts
 - [`docs/distribution.md`](./docs/distribution.md) — CurseForge release workflow
+- [`docs/release_checklist.md`](./docs/release_checklist.md) — step-by-step do-list for cutting a release (the PF-bump sweep, version bump, tag, pipeline verify)
 - [`docs/curseforge_page.md`](./docs/curseforge_page.md) — public-facing CurseForge listing copy (hook, features, FAQ, mod credits) — edit here first, push to CF
 - [`docs/branding.md`](./docs/branding.md) — visual identity spec: category color palette (sourced from PF's `Category.tintArgb()`), asset list, logo/hero composition guidelines
 - [`docs/roadmap.md`](./docs/roadmap.md) — phase-by-phase path from current state to v1.0 launch, with explicit user-vs-Claude ownership per deliverable
@@ -96,4 +97,4 @@ packwiz curseforge export                # build the .zip for CurseForge
 
 Quest-authoring guardrail: after editing any `config/ftbquests/quests/` file, run `python tools/validate_quests.py` (a clean exit is required; the `.githooks/pre-commit` hook and the `validate-quests` CI workflow enforce it). The in-game runtime smoke test is `/sf_selftest` (op level 2) after a `/reload`.
 
-Releases will be tag-driven (`git tag v0.x.y && git push origin v0.x.y`) once `.github/workflows/release.yml` lands. See [`docs/distribution.md`](./docs/distribution.md).
+Releases are tag-driven: bump `pack/pack.toml` + update `CHANGELOG.md`, then `git tag v0.x.y && git push origin v0.x.y` fires `.github/workflows/release.yml` (builds the CF client + server packs, GitHub release, CurseForge upload, Discord post). Follow [`docs/release_checklist.md`](./docs/release_checklist.md) step by step; [`docs/distribution.md`](./docs/distribution.md) has the why.

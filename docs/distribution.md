@@ -40,6 +40,8 @@ So the canonical `gameVersions` payload for any Sky Frogs file going forward is 
 
 ## Release workflow
 
+> For the step-by-step do-list (version pick, PF-bump sweep, version bump, tag, pipeline verify, gotchas), follow [`release_checklist.md`](./release_checklist.md). This section is the narrative.
+
 Once everything's set up, releases are a tag push:
 
 ```sh
