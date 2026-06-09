@@ -4,6 +4,10 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+### Added
+- **Elevators** (OpenBlocks Elevator): place colored elevator blocks at the same spot on different floors, jump to go up and sneak to drop down - quick vertical travel for multi-level bases, no flying required.
+- **Time in a Bottle**: store passing time in a bottle and spend it to fast-forward a block - speed up your machines and farms on demand. (Both suggested by Dergib on Discord.)
+
 ## [0.10.1] - 2026-06-09
 
 A polish patch from community feedback: clearer quest hints and the official server in your multiplayer list.
