@@ -1399,7 +1399,7 @@
 	quest.53A0000000000002.quest_desc: [
 		"You have farmed every Infernal resource by hand - priming slimes, pouring milk, catching frogs, picking up Froglights. The &eTerrarium&r ends the hand-holding: a sealed box of frog farming that runs itself. Milk goes in one wall, Froglights come out another, and you never open the lid."
 		""
-		"Everything it needs is on your Infernal shopping list already - quartz, glowstone, blaze rods, magma cream, nether brick. Time to automate the swamp's hottest neighbour."
+		"Everything it needs is on your Infernal shopping list already - quartz, glowstone, blaze rods, magma cream, nether brick."
 	]
 	quest.53A0000000000002.quest_subtitle: "Frog farming, sealed and self-running."
 	quest.53A0000000000002.title: "The Terrarium"
