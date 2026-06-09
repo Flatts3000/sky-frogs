@@ -52,3 +52,49 @@ Do the standing PF-bump sweep first, on a feature branch, and merge it before re
 - **Secrets**: `CF_API_TOKEN` and `DISCORD_CHANGELOG_WEBHOOK` are repo secrets. If unset, those steps warn-and-skip (the GitHub release still ships); upload/post manually.
 - **Server-pack build** is `continue-on-error` - a CurseForge third-party-download hiccup won't sink the client release, but check it actually built. A client-only mod mistagged `side = "both"` can break the server build; see [`distribution.md`](./distribution.md) server-pack section.
 - **`actions/setup-java@v4`** is Node-20 (deprecated); bump to a Node-24 version when convenient.
+
+---
+
+# The v1.0 launch (the 0.x -> 1.0 gate)
+
+`1.0.0` is a milestone, not a routine tag: it's the promise that the pack is stable, polished, and ready for a broad audience. Everything above (section 2 onward) still applies to the actual tag cut - this section is the **readiness gate** that must pass *before* you run it. Don't tag `1.0.0` until every box here is checked (or consciously waived).
+
+The content campaign is already complete (all six tiers + Trophy Pond + Terrarium + the Completionist census, content-sized by the theme+arc principle - **not** the old "~750 quests / 22 chapters" SBR-scale target, which is superseded; see [`quest_book.md`](./quest_book.md)). So 1.0 is mostly polish, art, and launch ops, not new content.
+
+## Content + balance
+
+- [ ] **No soft-locks** - a fresh world is completable spawn -> Master Frog with no dead ends. Playtest each tier transition (or have testers do it); confirm the `progression.md` time estimates roughly hold.
+- [ ] **Open issues triaged** - close or consciously defer everything in the milestone. (Standing open: #82 Warden quests.)
+- [ ] **Slime variant catalog complete** - every shipped mod has at least one variant per applicable category (the Sister Ponds census is the audit surface).
+- [ ] **`/sf_selftest` green** on a fresh world after `/reload`, and `tools/validate_quests.py` clean.
+- [ ] **(Optional) difficulty config** - the deferred `config/skyfrogs.json` (spawn rates / milk counts / drop chances) if easy/normal/hard presets make the 1.0 cut.
+
+## Art + branding (the big remaining bucket)
+
+- [ ] **Master Frog trophy final art** - replace the placeholder texture (`kubejs/assets/kubejs/textures/item/master_frog.png`) with a real model/texture. The endgame payoff shouldn't ship as a spawn-egg glyph. (backlog)
+- [ ] **Branding assets complete** per [`branding.md`](./branding.md): logo set, pack icon, CF banner, hero shot, full gallery (one set piece per tier + the singularity/Terrarium builds), social card, demo gif. (Title-screen wordmark is done.) **NOT AI-generated** - maintainer rule.
+- [ ] **(Optional) custom main menu** - packmenu panorama + Tips Mod loading tips with Sky-Frogs-specific copy.
+
+## Public-facing copy
+
+- [ ] **CHANGELOG cleaned for players** - the 1.0 notes read like player-facing release notes, not dev shorthand. ASCII punctuation.
+- [ ] **CurseForge page polished** - hook, features, How-to-play, FAQ, mod credits all current ([`curseforge_page.md`](./curseforge_page.md) is the source; edit there, push to CF). No SBR / Productive Bees comparisons in public copy (maintainer rule).
+- [ ] **README / docs** - drop the DRAFT banners on docs whose decisions are now settled.
+
+## Legal
+
+- [ ] **Final license audit** - every bundled mod's license permits redistribution in a CurseForge pack. Most are fine (MIT / GPL / ARR-with-modpack-permission); chase explicit permission for any outlier. `NOTICE.md` reflects the bundled set.
+
+## Versioning flip (takes effect at 1.0)
+
+- [ ] **SemVer changes meaning post-1.0**: world-breaking changes now bump **major** (`2.0.0`) and must be called out loudly at the top of the CHANGELOG section. Minor = new content, patch = fixes (unchanged).
+- [ ] **`releaseType` flips to `release`** - the workflow already derives `release` for `1.x+` (vs `beta` for `0.x`), so CurseForge will mark 1.0 a full release automatically. No action, just be aware the prerelease flag drops off the GitHub release too.
+
+## Launch ops (after the tag is live + verified)
+
+- [ ] **r/feedthebeast announcement** post.
+- [ ] **Cross-link from the Productive Frogs CurseForge page** ("Now featured in the Sky Frogs modpack").
+- [ ] **Discord announcement** beyond the automated #changelog post.
+- [ ] **(Optional) launch-day let's-player / devlog** per the marketing backlog.
+
+Then run sections 2-4 above to cut and verify the `v1.0.0` tag.

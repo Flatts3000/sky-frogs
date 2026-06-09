@@ -128,9 +128,11 @@ Note: the built tier order is Cave=Tier 1 (the starter), Geode=Tier 2, Bog=Tier 
 
 **Goal:** the pack is ready for a broad public release.
 
+> The actionable, current gate lives in [`release_checklist.md`](./release_checklist.md) ("The v1.0 launch") - work that list. The deliverables below are the original Phase 5 sketch, kept for context.
+
 **Deliverables:**
 - [ ] All v0.1 success criteria from [`docs/design_overview.md`](./design_overview.md) met.
-- [ ] All v1.0 success criteria met (~750 quests across ~22 chapters, all categories have 5+ slime variants).
+- [x] ~~All v1.0 success criteria met (~750 quests across ~22 chapters...).~~ **Superseded** - the "~750 quests / 22 chapters" SBR-scale target was dropped for the theme+arc chapter-sizing principle (see [`quest_book.md`](./quest_book.md)). The content campaign is complete at 329 quests / 27 chapters (v0.10.0); 1.0 is now polish/art/launch, not quest volume.
 - [ ] **Branding assets complete** per [`docs/branding.md`](./branding.md): logo set, pack icon, CF banner, hero, full gallery, social card, demo gif.
 - [ ] **(Optional) `packmenu` + Tips Mod** added with custom title screen, panorama, loading-screen tips.
 - [ ] CHANGELOG cleaned up for public-facing release notes (less technical, more player-friendly).
