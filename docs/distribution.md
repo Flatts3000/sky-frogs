@@ -1,6 +1,6 @@
 # Distribution
 
-> **Status:** DRAFT — non-canonical except for the CurseForge-only call (decided 2026-05-23, see `docs/backlog.md`). Versioning policy and changelog format are first-draft proposals; the release workflow is implemented (`.github/workflows/release.yml`).
+> **Status:** Current and in active use. The pack is live on CurseForge, releases ship via `.github/workflows/release.yml` (client + dedicated-server packs to both CurseForge and GitHub), and the versioning/changelog policy here is the one we follow. See [`release_checklist.md`](./release_checklist.md) for the step-by-step.
 
 How Sky Frogs ships, where players install it from, and how releases happen.
 
@@ -22,7 +22,7 @@ GitHub Releases mirrors each tag's CF zip + server zip for transparency, rollbac
 
 ## Setup checklist (one-time, before v0.1)
 
-- [x] **Claim CurseForge slug `sky-frogs`** — submitted 2026-05-29 with the v0.1.0 alpha file (file id `8167200`) at project ID `1558075`. Project + file are queued for CF moderation (typically 1-3 business days); not yet confirmed live.
+- [x] **Claim CurseForge slug `sky-frogs`** - live at project ID `1558075` ([curseforge.com/minecraft/modpacks/sky-frogs](https://www.curseforge.com/minecraft/modpacks/sky-frogs)). Approved past first-submission moderation; every tagged release now uploads automatically.
 - [x] **GitHub repo** — `Flatts3000/sky-frogs` exists; community health files landed.
 - [x] **CurseForge API token** — reuses the token from `productive-frogs/.env` (`CURSEFORGE_API_KEY`, same author account). Set as the repo secret **`CF_API_TOKEN`** consumed by `release.yml`.
 - [x] **CurseForge project ID** — `1558075`. Hardcoded in `release.yml`'s `env` (public, not a secret).

@@ -1,6 +1,6 @@
 # Mod List
 
-> **Status:** PARTIAL DRAFT. The Tier 0-3 mod stack is **shipped and pinned** in `pack/mods/*.pw.toml` (Productive Frogs, Mekanism family, Industrial Foregoing family, Ex Deorum, Cobblegen Galore, ATO, the FTB/QoL utility stack). The rest of this list is still **candidate** framing for Tier 4-6 and beyond - expect it to be cut and reshaped. Entries are tagged **SHIPPED** where they're pinned in the pack today.
+> **Status:** Current. The full six-tier mod stack is **shipped and pinned** in `pack/mods/*.pw.toml` - the verb mods for every tier (Mekanism, Industrial Foregoing, Just Dire Things + Building Gadgets, Iron Jetpacks, Refined Storage, Extended Crafting) plus the substrate (Productive Frogs 1.16.0, Ex Deorum, Skyblock Builder), the QoL/utility stack, and the recent adds (Torchmaster, More Dragon Eggs, Polymorphic Refined Storage). `pack/mods/*.pw.toml` is the authoritative pinned set; entries below tagged **SHIPPED** are in the pack, untagged ones are candidates not currently bundled.
 
 This document captures both the shipped Tier 0-3 stack and the **candidate mod categories** for later tiers. Concrete version pins live in `pack/mods/*.pw.toml`.
 
@@ -20,7 +20,7 @@ Any mod that fails all three is rejected.
 
 | Mod                   | Role                                                                 | Notes                                                |
 |-----------------------|----------------------------------------------------------------------|------------------------------------------------------|
-| **Productive Frogs**  | The mod the pack is built around                                     | Published on CurseForge (1.21.1 / NeoForge). Pinned at **v1.11.0** (Flux Networks + full Powah compat, blaze rod resource; full bump history in [`pf_pin_history.md`](./pf_pin_history.md)). |
+| **Productive Frogs**  | The mod the pack is built around                                     | Published on CurseForge (1.21.1 / NeoForge). Pinned at **1.16.0** (The Terrarium automation multiblock; brewed froglights, boss resources, the Slime Churn, and Just Dire Things support arrived across 1.14-1.15. Full bump history in [`pf_pin_history.md`](./pf_pin_history.md)). |
 
 ### 2. Skyblock fundamentals
 

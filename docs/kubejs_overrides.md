@@ -1,6 +1,6 @@
 # KubeJS Overrides
 
-> **Status:** PARTIAL DRAFT. The Tier 0-3 overrides documented here are **built and live** in `pack/kubejs/server_scripts/` (anti, seed-chains, spawnery primers, the storage/plastic/steel/log overrides). Only the Tier 4-6 specifics (Tide / Infernal / Void variants and their forced recipes) remain a sketch.
+> **Status:** Current. All six tiers' overrides are **built and live** in `pack/kubejs/server_scripts/` - the anti-bypass disables, the Cave/Geode/Bog crafting-table seed-chains, the Dissolution Chamber rows for every tier (Cave through Void, plus the modded self-keyed rows), the spawnery primers, and the gap-filler/gating scripts (storage/plastic/steel/log, catalyst recipes, the mossy-cobblestone gate, JDT recipes, the boss + Heavy Core presses). Tide and later are chamber-only by design (no crafting-table chain). Treat the per-tier "sketch/Not built" notes below as historical - everything is shipped; cross-check `pack/kubejs/server_scripts/` for the authoritative file list.
 
 The KubeJS surface is where Sky Frogs enforces its identity: **frogs are the resource path.** This document catalogues the shipped disables, additions, and reshapings, plus the design laws they follow. Sky Bees Reborn's KubeJS is cross-referenced for syntax patterns only; Sky Frogs answered "what should the player NOT be allowed to do?" on its own terms.
 

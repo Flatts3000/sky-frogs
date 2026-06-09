@@ -57,10 +57,13 @@ Three differences justify a distinct pack:
 
 ## Success Criteria for v1.0
 
-1. ~750 quests across ~22 chapters (parity with Sky Bees Reborn).
-2. All six PF categories have at least 5 slime variants each, including 2+ cross-mod variants.
-3. Endgame creative item is reachable through pure frog-farming with no exploit shortcut.
-4. CurseForge page live with stable release cadence.
+> The "~750 quests / 22 chapters" parity-with-SBR target is **superseded** - chapters are sized by theme + arc, not a quest-count quota (see [`quest_book.md`](./quest_book.md)). The campaign is content-complete at 27 chapters / ~329 quests; the remaining v1.0 gate is polish/art/launch, tracked in [`release_checklist.md`](./release_checklist.md) ("The v1.0 launch").
+
+1. The full six-tier campaign is completable spawn -> Master Frog with no soft-locks, plus the Trophy Pond boss campaign and the Terrarium automation chapter. ✅ built; balance still in motion.
+2. Every shipped mod with applicable resources has a slime variant per category - the Sister Ponds census is the audit surface (33 modded variants across 7 mods today). ✅
+3. Endgame Master Frog trophy reachable through pure frog-farming with no exploit shortcut. ✅
+4. Branding/art complete (Master Frog final model + the `branding.md` gallery) and the final license audit done - the open v1.0 work.
+5. CurseForge page live with stable release cadence. ✅
 
 ## Open design questions
 
