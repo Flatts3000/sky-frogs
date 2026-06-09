@@ -1,0 +1,22 @@
+#Modpack Configuration Settings
+["Custom server in multiplayer Screen"]
+	#Name of the server
+	"Server Name" = "Sky Frogs"
+	#IP of the server
+	"Server IP" = "skyfrogs.benbenlaw.com"
+
+["Discord URL use /discord command to get the link"]
+	#Add a URL to link your discord, BBL Discord = https://discord.gg/benbenlaw
+	"Discord URL" = "https://discord.gg/r6MhZ73nsM"
+
+["Modpack information handy for modpack makers use /modpack in game to get the information"]
+	#Modpack name
+	"Modpack name" = "Sky Frogs"
+	#Modpack Version
+	"Modpack Version" = "0.10.0"
+
+["Check if the modpack has any updates available"]
+	#Check if the modpack has any updates available, default = false
+	"Update Checker" = true
+	#Project ID for the modpack, found on curse forge
+	"Project ID" = 1558075
