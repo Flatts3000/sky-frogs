@@ -1396,6 +1396,70 @@
 	]
 	quest.52E000000000001C.quest_subtitle: "Ask, and it builds."
 	quest.52E000000000001C.title: "Autocrafting"
+	quest.53A0000000000002.quest_desc: [
+		"You have farmed every Infernal resource by hand - priming slimes, pouring milk, catching frogs, picking up Froglights. The &eTerrarium&r ends the hand-holding: a sealed box of frog farming that runs itself. Milk goes in one wall, Froglights come out another, and you never open the lid."
+		""
+		"Everything it needs is on your Infernal shopping list already - quartz, glowstone, blaze rods, magma cream, nether brick. Time to automate the swamp's hottest neighbour."
+	]
+	quest.53A0000000000002.quest_subtitle: "Frog farming, sealed and self-running."
+	quest.53A0000000000002.title: "The Terrarium"
+	quest.53A0000000000005.quest_desc: [
+		"The &eTerrarium Controller&r is the brain and the front door: it takes &bSlime Milk&r piped into its outward face and rations it out to the Sprinklers. Build it first - the whole structure forms around it."
+		""
+		"Glowstone, a quartz block, blaze rods, magma cream, nether bricks. Place it flat against a wall with its face pointing OUT of the box."
+	]
+	quest.53A0000000000005.quest_subtitle: "The brain of the box."
+	quest.53A0000000000005.title: "Terrarium Controller"
+	quest.53A0000000000008.quest_desc: [
+		"&eSprinklers&r go on the ceiling and rain slimes into the box, spawning on the exact same rules a placed Slime Milk source uses - cadence, per-bucket budget, and &dcatalysts&r (Speed, Quantity, Count, Endless) all carry through from the milk. Up to 25 fit a ceiling; craft a handful to start."
+		""
+		"Drop a catalyst on a Sprinkler from above to upgrade it in place."
+	]
+	quest.53A0000000000008.quest_subtitle: "Indoor weather, made of slime."
+	quest.53A0000000000008.title: "Sprinklers"
+	quest.53A000000000000B.quest_desc: [
+		"&eIncubators&r raise frogspawn and tadpoles into frogs &ainside the box&r, stats intact over the whole lifecycle. Frogs bred in the cavity lay back into an Incubator (not water), so the line keeps itself stocked. A Sweetslime right-clicked in speeds incubation."
+		""
+		"At least one is required. Place it on a wall, face pointing IN."
+	]
+	quest.53A000000000000B.quest_subtitle: "A nursery with the lights on."
+	quest.53A000000000000B.title: "Incubators"
+	quest.53A000000000000E.quest_desc: [
+		"The &eHatch&r is the output: Froglights drop &bstraight into it&r - no item entity bouncing around the cavity - and it vacuums up any loose slimeballs or magma cream too. It opens as a chest and pipes out its outward face. When it fills, the frogs stop eating until you clear it (nothing is ever voided)."
+		""
+		"Exactly one. On a wall, facing IN."
+	]
+	quest.53A000000000000E.quest_subtitle: "Where the light comes out."
+	quest.53A000000000000E.title: "The Hatch"
+	quest.53A0000000000011.quest_desc: [
+		"Seal it into a box. The interior is &e5 wide, 5 deep, 4 tall&r; wrap it in a one-block shell of any solid block (mud is a tagged option if you want a non-cube look). The &eController&r, your &eIncubators&r, and the &eHatch&r sit on the walls facing IN; the &eSprinklers&r line the ceiling. No machines on corners or edges."
+		""
+		"&7Right-click the Controller&r - it tells you the formed state and points at the first wrong block until it reads &aformed&r. That readout is your blueprint; build to whatever it asks for."
+		""
+		"Check this off once the Controller says the Terrarium is formed."
+	]
+	quest.53A0000000000011.quest_subtitle: "Five by five by four, shell it in."
+	quest.53A0000000000011.title: "Seal the Box"
+	quest.53A0000000000014.quest_desc: [
+		"Pipe (or pour) a bucket of &bSlime Milk&r into the Controller's outward face. It buffers one variant at a time and feeds the Sprinklers, which start raining that variant's slimes. Wire it from your milk farm and the rain never stops."
+		""
+		"Check this off once slimes are falling from the Sprinklers."
+	]
+	quest.53A0000000000014.quest_subtitle: "Turn on the rain."
+	quest.53A0000000000014.title: "Prime the Sprinklers"
+	quest.53A0000000000017.quest_desc: [
+		"Load &efrogspawn or tadpoles&r into the Incubators. They mature into frogs inside the box, eat the slimes the Sprinklers drop, and the Froglights land in the Hatch. Keep an Infernal frog in there and you have an Infernal-resource factory."
+		""
+		"Check this off once a frog is living in the Terrarium."
+	]
+	quest.53A0000000000017.quest_subtitle: "Move the frogs in."
+	quest.53A0000000000017.title: "Stock the Incubators"
+	quest.53A000000000001A.quest_desc: [
+		"Milk in one wall, Froglights out another, frogs and slimes you never have to touch. The Terrarium runs the loop you spent six tiers learning by hand. Wire its Hatch into storage and walk away - the swamp tends itself now."
+	]
+	quest.53A000000000001A.quest_subtitle: "Hands off. It runs itself."
+	quest.53A000000000001A.title: "Hands Off"
+	chapter.53A0000000000001.title: "The Terrarium"
 	quest.5140000000000002.quest_desc: [
 		"There's no Nether to raid, they said. There is now - you just have to build the door. Make 10 &eobsidian&r for a portal frame (skip the corners), craft a &eflint and steel&r, and raise it. The void Nether waits beyond."
 	]

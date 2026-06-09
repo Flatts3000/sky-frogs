@@ -4,6 +4,12 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+### Added
+- **The Terrarium chapter** (Infernal tier): Productive Frogs 1.16 ships The Terrarium - a sealed 5x4x5 multiblock that runs the whole frog loop hands-off (a Controller pipes Slime Milk to ceiling Sprinklers that rain slimes, Incubators raise stat-intact frogs, and a Hatch collects the Froglights for piping out). The new chapter walks you through it: craft the four blocks, seal the box (right-click the Controller and it tells you what's wrong until it reads "formed"), prime the sprinklers, stock the incubators, and walk away. It's the pack's first automation of the frog loop - the Infernal-tier payoff for six tiers of doing it by hand.
+
+### Changed
+- **Productive Frogs 1.15.0 -> 1.16.0** (The Terrarium). No roster change - machinery only - so singularities and the census are unchanged.
+
 ## [0.9.1] - 2026-06-08
 
 A crafting-fidelity patch: the recipe picker now works inside Refined Storage grids, and mossy cobblestone is back to coming only from the Metallurgic Infuser the way the quest intends.

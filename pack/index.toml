@@ -373,6 +373,10 @@ file = "config/ftbquests/quests/chapters/take_flight.snbt"
 hash = "638403b962ac40c7b3ed6a0a33bbefcc8f0f25d0a99c9927c7ee1137121db740"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/terrarium.snbt"
+hash = "1868152da41126abff193ecb3a9e701e316f93ee5ada85908b8145dc742165b6"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/the_network.snbt"
 hash = "fb08b45462b0d6160d8429bea1ccea3a3b36cfdb1c3183c3810b794b389e29d7"
 
@@ -410,7 +414,7 @@ hash = "2e69afacf774749222ca1e925dc94d32e6c3db8bef4557aa33144751c2770206"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "331156dc196cd7339a4337bad2248c7a1a01004ccf7fe1768ec5f54227e5a7fd"
+hash = "85be6e42344d29323687e2e9efd8f27e2b04aa5894c21ba2f89821a39b587533"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
@@ -1257,7 +1261,7 @@ metafile = true
 
 [[files]]
 file = "mods/productive-frogs.pw.toml"
-hash = "aa6841c6bcb094aca824c2608d0e402a4ff35cf47bcab7547b3c4d39f3545c59"
+hash = "97464fae444bc3b5ae8fb98f762df2c3a9a96298b48560e2b0b3a20a582e4677"
 metafile = true
 
 [[files]]

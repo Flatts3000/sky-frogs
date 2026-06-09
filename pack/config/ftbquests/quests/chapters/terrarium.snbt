@@ -1,0 +1,194 @@
+{
+	autofocus_id: "53A0000000000002"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "terrarium"
+	group: "0C4F0E0000000005"
+	icon: {
+		id: "productivefrogs:terrarium_controller"
+	}
+	id: "53A0000000000001"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["51F0000000000014"]
+			icon: {
+				id: "productivefrogs:terrarium_controller"
+			}
+			id: "53A0000000000002"
+			shape: "hexagon"
+			size: 1.5d
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "53A0000000000004"
+				table_id: 9177773090627649537L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "53A0000000000003"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["53A0000000000002"]
+			icon: {
+				id: "productivefrogs:terrarium_controller"
+			}
+			id: "53A0000000000005"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "53A0000000000007"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "53A0000000000006"
+				item: { count: 1, id: "productivefrogs:terrarium_controller" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["53A0000000000005"]
+			icon: {
+				id: "productivefrogs:sprinkler"
+			}
+			id: "53A0000000000008"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "53A000000000000A"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "53A0000000000009"
+				item: { count: 4, id: "productivefrogs:sprinkler" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["53A0000000000005"]
+			icon: {
+				id: "productivefrogs:incubator"
+			}
+			id: "53A000000000000B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "53A000000000000D"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "53A000000000000C"
+				item: { count: 1, id: "productivefrogs:incubator" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["53A0000000000005"]
+			icon: {
+				id: "productivefrogs:hatch"
+			}
+			id: "53A000000000000E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "53A0000000000010"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "53A000000000000F"
+				item: { count: 1, id: "productivefrogs:hatch" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["53A0000000000008", "53A000000000000B", "53A000000000000E"]
+			icon: {
+				id: "minecraft:mud"
+			}
+			id: "53A0000000000011"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "53A0000000000013"
+				table_id: 9177773090627649537L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "53A0000000000012"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["53A0000000000011"]
+			icon: {
+				id: "productivefrogs:iron_slime_milk_bucket"
+			}
+			id: "53A0000000000014"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "53A0000000000016"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "53A0000000000015"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["53A0000000000011"]
+			icon: {
+				id: "productivefrogs:infernal_frog_egg"
+			}
+			id: "53A0000000000017"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "53A0000000000019"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "53A0000000000018"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["53A0000000000014", "53A0000000000017"]
+			icon: {
+				id: "productivefrogs:configurable_froglight"
+			}
+			id: "53A000000000001A"
+			shape: "hexagon"
+			size: 1.5d
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "53A000000000001C"
+				table_id: 9177773090627649537L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "53A000000000001B"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+	]
+}
