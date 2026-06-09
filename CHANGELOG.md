@@ -4,6 +4,10 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+## [0.10.0] - 2026-06-08
+
+The automation update: Productive Frogs 1.16 brings The Terrarium - a sealed multiblock that runs the frog loop hands-off - and the pack gives it a full build-it-yourself chapter in the Infernal tier.
+
 ### Added
 - **The Terrarium chapter** (Infernal tier): Productive Frogs 1.16 ships The Terrarium - a sealed 5x4x5 multiblock that runs the whole frog loop hands-off (a Controller pipes Slime Milk to ceiling Sprinklers that rain slimes, Incubators raise stat-intact frogs, and a Hatch collects the Froglights for piping out). The new chapter walks you through it: craft the four blocks, seal the box (right-click the Controller and it tells you what's wrong until it reads "formed"), prime the sprinklers, stock the incubators, and walk away. It's the pack's first automation of the frog loop - the Infernal-tier payoff for six tiers of doing it by hand.
 
