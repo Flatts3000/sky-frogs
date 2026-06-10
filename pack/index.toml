@@ -485,6 +485,10 @@ file = "config/skyblockbuilder/world.json5"
 hash = "83840d5fcef99ccd9e9b788b3efb57fb3807131a6c6ad9bf72f2ba1cd93e6377"
 
 [[files]]
+file = "config/solcarrot-server.toml"
+hash = "645482d67e0cc071fa60bc82e47469bc574c0ccd78f6773c5495c1d772101728"
+
+[[files]]
 file = "config/sophisticatedbackpacks-server.toml"
 hash = "cca194a6e4977e0a1a5483e83597ffa54c8d0c611a251f5c7f3bff134de42c95"
 
@@ -639,6 +643,10 @@ hash = "5daea9934a436ef217fee39ebf13a15e4a82516ebd46763dcd9ba307951bd492"
 [[files]]
 file = "kubejs/server_scripts/first_join.js"
 hash = "659f7a086b994e6c47b0b7f0e37fbc037a7417fc1ab924455c60cd4a0d08f4e8"
+
+[[files]]
+file = "kubejs/server_scripts/flint_recipe.js"
+hash = "8abc87339e5a96f7ae5fbcb054fd312a0521389f4b098349e762f5b9341cb6ba"
 
 [[files]]
 file = "kubejs/server_scripts/fluorite_enriching.js"
@@ -1423,6 +1431,11 @@ metafile = true
 [[files]]
 file = "mods/sophisticated-storage.pw.toml"
 hash = "8e87d947e258a9009357169f1f1ff88d3dac32cd61e58e8de2d365c8e4194fd2"
+metafile = true
+
+[[files]]
+file = "mods/spice-of-life-carrot-edition.pw.toml"
+hash = "e520ad446364dff7dd50896108a96140f3f5598b72003dade5b17308fa9ef2a9"
 metafile = true
 
 [[files]]

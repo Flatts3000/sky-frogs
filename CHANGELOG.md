@@ -5,6 +5,8 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 ## [Unreleased]
 
 ### Added
+- **Spice of Life: Carrot Edition**: eating a variety of foods grants bonus max hearts, rewarding the pack's broad food economy. Tuned reward-only - you start at vanilla 10 hearts (never lower), the first bonus heart comes at just 10 unique foods, and you don't lose earned hearts when you die. (#160, suggested on Discord.)
+- **Flint from gravel.** A shapeless recipe: 3 gravel -> 1 flint, so flint (for Flint & Steel and the Nether portal) has a reliable source on a void skyblock instead of relying on gravel's random drop. (#159, suggested on Discord.)
 - **New pack logo / icon.** The frog on a cloud sky with a two-row "SKY FROGS" wordmark in the authentic Minecraft title style (Minecraft Ten + mangrove texture, the same generator as the title screen). Ships as the 256x256 launcher icon (`pack/icon.png`); 512 master in `branding/`.
 - **Ender Storage**: color-frequency wireless storage - EnderChest, EnderPouch, and EnderTank, all sharing inventory by dye-code across any distance (and dimensions). Wireless access to your base from the field, and wireless fluid hauling via the tank. (Suggested by Dergib on Discord.)
 - **Craft any slime back from its Froglight.** Once you've got a variant's Froglight, you can craft it straight into that variant's Slime in a Bucket: an empty bucket + 4 tier-filler + 3 sweetslime around the Froglight in the center. A recovery/scaling path for every slime (vanilla and modded) - the Froglight is proof you already have the frog, so it doesn't skip any gate. (Suggested by Dergib on Discord.)
