@@ -732,10 +732,18 @@ MODDED_ROW_RE = re.compile(
 # prior-resource law. iron has nothing pre-Cave to thread off (bone meal mirrors
 # the table bootstrap).
 THREADING_EXCEPTIONS = {"iron": "minecraft:bone_meal"}
-# Self-keyed rows whose input deliberately is NOT the variant's primer_item: the
-# fluid pair takes the FLUID BUCKETS (day-one obtainable; the primers kelp /
-# pointed_dripstone are frog-only). Maintainer ruling on the PF 1.13 sweep.
-SELF_KEYED_EXCEPTIONS = {"water": "minecraft:water_bucket", "lava": "minecraft:lava_bucket"}
+# Self-keyed rows whose input deliberately is NOT the variant's primer (item or
+# tag). The fluid pair takes the FLUID BUCKETS (day-one obtainable; the primers
+# kelp / pointed_dripstone are frog-only; PF 1.13 maintainer ruling). Fluorite
+# takes the concrete mekanism:fluorite_gem instead of its #c:gems/fluorite primer
+# tag: ATO and Mekanism both register a fluorite into that tag, but only the
+# Mekanism gem is obtainable here, and the concrete item makes the recipe
+# reverse-resolvable in JEI's "uses" page (Discord, Dergib).
+SELF_KEYED_EXCEPTIONS = {
+    "water": "minecraft:water_bucket",
+    "lava": "minecraft:lava_bucket",
+    "fluorite": "mekanism:fluorite_gem",
+}
 
 
 def check_dissolution_threading(chapters, ctx):
@@ -826,7 +834,7 @@ def check_dissolution_threading(chapters, ctx):
         if variant in SELF_KEYED_EXCEPTIONS:
             if inp != SELF_KEYED_EXCEPTIONS[variant]:
                 f.append(Finding(ERROR, "Q-DISSOLUTION-THREADING", fname, line_of(pos),
-                                 f"[self-keyed] '{variant}' is the documented fluid-bucket "
+                                 f"[self-keyed] '{variant}' is a documented self-keyed "
                                  f"exception and must take {SELF_KEYED_EXCEPTIONS[variant]!r}, "
                                  f"found {inp!r}"))
             primer(variant, pos, f)  # still flags variants PF no longer ships

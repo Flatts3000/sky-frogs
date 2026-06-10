@@ -192,7 +192,14 @@ const MODDED_SELF_KEYED = [
   ['CAVE',     'minecraft:stone',      'tin',             '#c:ingots/tin',             'alltheores'],
   ['CAVE',     'minecraft:stone',      'uranium',         '#c:ingots/uranium',         'alltheores'],
   ['CAVE',     'minecraft:stone',      'zinc',            '#c:ingots/zinc',            'alltheores'],
-  ['GEODE',    'minecraft:gravel',     'fluorite',        '#c:gems/fluorite',          'mekanism'],
+  // fluorite takes the Mekanism gem ITEM, not the #c:gems/fluorite TAG. ATO and
+  // Mekanism both register a fluorite into that tag, but only mekanism:fluorite_gem
+  // is obtainable here (PF's froglight smelts to it; calcite enriches to it; ATO's
+  // needs ore-gen a void skyblock lacks). The concrete item makes the recipe
+  // reverse-resolvable in JEI's "uses" page - a tag input there left the calcite
+  // -> fluorite -> slime path looking absent (Discord, Dergib). Validator exempts
+  // it via SELF_KEYED_EXCEPTIONS.
+  ['GEODE',    'minecraft:gravel',     'fluorite',        'mekanism:fluorite_gem',     'mekanism'],
   ['GEODE',    'minecraft:gravel',     'basic_processor', 'refinedstorage:basic_processor', 'refinedstorage'],
   ['GEODE',    'minecraft:gravel',     'improved_processor', 'refinedstorage:improved_processor', 'refinedstorage'],
   ['GEODE',    'minecraft:gravel',     'advanced_processor', 'refinedstorage:advanced_processor', 'refinedstorage'],
