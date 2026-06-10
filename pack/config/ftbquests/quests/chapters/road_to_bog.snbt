@@ -66,6 +66,47 @@
 		{
 			dependencies: ["70B0000000000002"]
 			icon: {
+				id: "mekanism:crusher"
+			}
+			id: "70B0000000000014"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "70B0000000000016"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "70B0000000000015"
+				item: { count: 1, id: "mekanism:crusher" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["70B0000000000014"]
+			icon: {
+				id: "mekanism:bio_fuel"
+			}
+			id: "70B0000000000017"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "70B0000000000019"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}]
+			tasks: [{
+				count: 8L
+				id: "70B0000000000018"
+				item: { count: 1, id: "mekanism:bio_fuel" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["70B0000000000017"]
+			icon: {
 				id: "minecraft:mossy_cobblestone"
 			}
 			id: "70B0000000000011"
@@ -81,7 +122,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 3.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["70B0000000000011"]
@@ -108,7 +149,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 4.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["70B0000000000005"]
@@ -128,7 +169,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 6.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["70B0000000000008"]
@@ -153,7 +194,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 7.5d
+			y: 10.5d
 		}
 	]
 }

@@ -342,7 +342,7 @@ hash = "7cfcf36b5bcabbed136c1eef0f692f301642d8a44a92904f4c3caf045e9ccb53"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_bog.snbt"
-hash = "c9261e257601e8a8304ef8d5a5904d39e503e4e44797aa78a452450bd6a7e53f"
+hash = "f023740d6a65256a29ed1a9454f167b7a8c774cba364b54b9d4a6508cc25a809"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_geode.snbt"
@@ -418,7 +418,7 @@ hash = "4889c5e7d4a8179b45e68f0ac00119529ed49ba68f20624b36e996bb0d60ddd0"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "350e7f2bde82f26a05a75df2b8423fd8b74d4dbdf8a79c046eccb0bb35c26351"
+hash = "0f6bb80f701e0f189e114cd250829421cab03effc850fa498f561edeb5dd9f95"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"

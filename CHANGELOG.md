@@ -4,6 +4,9 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+### Added
+- **Crusher + Bio Fuel quests in the Bog tier.** Two new quests in `road_to_bog` before Mossy Cobblestone, spelling out the missing intermediate step: craft a Mekanism **Crusher** to grind plant matter into **Bio Fuel**, the infusion material the Metallurgic Infuser drinks to turn cobblestone mossy. The chain (Crusher -> Bio Fuel -> Mossy Cobblestone) was implied by the Mossy Cobblestone quest text but never quested; now the player is walked through it.
+
 ## [0.12.0] - 2026-06-10
 
 A content-and-polish drop: a real pack logo/icon, Productive Frogs 1.18 + 1.19 (Lava Froglights as furnace fuel, the Crucible melting stone to lava), Spice of Life food variety, Ender Storage, craft-any-slime-from-its-Froglight, a reliable flint recipe, and the fluorite JEI fix.
