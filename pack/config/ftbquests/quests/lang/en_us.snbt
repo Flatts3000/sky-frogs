@@ -50,7 +50,7 @@
 	quest.1F00000000000002.quest_desc: [
 		"Just Dire Things runs on &eGoo&r. Mix &fclay balls&r, &fmycelium&r, &frotten flesh&r, and &fsugar&r into a &ePrimogel Goo Block&r - the tier-1 entry into JDT's farming and machines. Mycelium comes off your Bog mycelium frog."
 		""
-		"Place the goo, top it with &ePrimogel Soil&r, and you've got a JDT seed bed. Direwolf20's mod is opening up."
+		"Place the goo down and stack blocks against its sides - it slowly spreads into each one, transmuting it into a raw resource. Direwolf20's mod is opening up."
 	]
 	quest.1F00000000000002.quest_subtitle: "Just Dire Things begins."
 	quest.1F00000000000002.title: "First Goo"
@@ -62,7 +62,7 @@
 	quest.1F00000000000020.quest_subtitle: "The Milker, in reverse."
 	quest.1F00000000000020.title: "The Slime Churn"
 	quest.1F00000000000005.quest_desc: [
-		"&fFerricore&r is JDT's iron - the metal every Simple machine downstream needs. Grow &fraw ferricore&r on your &ePrimogel Soil&r (right-click the soil with a raw resource to seed it), then smelt the raw ore to a &bFerricore Ingot&r."
+		"&fFerricore&r is JDT's iron - the metal every Simple machine downstream needs. Stack &firon blocks&r against your &ePrimogel Goo&r and it spreads into each one over a couple of minutes, turning it into &fRaw Ferricore Ore&r. Mine the ore and smelt the raw ferricore to a &bFerricore Ingot&r."
 		""
 		"Stock up. Everything Direwolf20 makes from here takes ferricore."
 	]
