@@ -837,6 +837,11 @@ hash = "8d91e416f8944d06519a4d065d89f4a76cba7cf9ac7398f91f19e977a31b6ba0"
 metafile = true
 
 [[files]]
+file = "mods/codechicken-lib-1-8.pw.toml"
+hash = "2bbc57f2edb0c4045b2b46f0126e109d9a8cf72153cd7084cb78f6e3311adb38"
+metafile = true
+
+[[files]]
 file = "mods/configured.pw.toml"
 hash = "e1652216456cb6c5026b3e6b48d98b1509457eb6d974e18002af4ec3bf040ffa"
 metafile = true
@@ -904,6 +909,11 @@ metafile = true
 [[files]]
 file = "mods/edivadlib.pw.toml"
 hash = "e2271f01117b2e3469832199b0830aacd678be821b4a4121fadd1805e0256195"
+metafile = true
+
+[[files]]
+file = "mods/ender-storage-1-8.pw.toml"
+hash = "b4085a5772cddefe655155a25d0d24d2f8f34017c61d9cd786d7a9868abf9092"
 metafile = true
 
 [[files]]
