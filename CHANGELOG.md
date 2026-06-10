@@ -7,6 +7,9 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 ### Added
 - **Ender Storage**: color-frequency wireless storage - EnderChest, EnderPouch, and EnderTank, all sharing inventory by dye-code across any distance (and dimensions). Wireless access to your base from the field, and wireless fluid hauling via the tank. (Suggested by Dergib on Discord.)
 
+### Fixed
+- **Fluorite slime now shows its recipe in JEI.** The Bucket of Fluorite Slime took the `c:gems/fluorite` tag, which both Mekanism and ATO register a fluorite into - so JEI's "uses" page for the Mekanism fluorite you actually get (from the calcite Enrichment Chamber recipe) didn't reverse-resolve the tag and the path looked missing. It now takes the concrete `mekanism:fluorite_gem` (the only fluorite obtainable on a void skyblock), so the calcite -> fluorite -> slime chain is discoverable end to end. (Discord report, Dergib.)
+
 ## [0.11.0] - 2026-06-09
 
 The Frog Legs and Fairy Tales update: Productive Frogs 1.17 brings frog legs, the Frog Net, the Froglight Cleaver, and Princess's Kiss (all quested), Apotheosis joins as a combat/enchanting/loot layer, and Elevators + Time in a Bottle round out the QoL - plus two progression fixes from Discord.
