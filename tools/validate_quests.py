@@ -743,6 +743,10 @@ SELF_KEYED_EXCEPTIONS = {
     "water": "minecraft:water_bucket",
     "lava": "minecraft:lava_bucket",
     "fluorite": "mekanism:fluorite_gem",
+    # silicon's #c:silicon primer tag also covers ae2:silicon (no AE2 here), so the
+    # dissolution row self-keys on the concrete refinedstorage:silicon to stay
+    # JEI-reverse-resolvable - same rationale as fluorite.
+    "silicon": "refinedstorage:silicon",
 }
 
 
