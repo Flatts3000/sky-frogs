@@ -6,6 +6,7 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ### Added
 - **Ender Storage**: color-frequency wireless storage - EnderChest, EnderPouch, and EnderTank, all sharing inventory by dye-code across any distance (and dimensions). Wireless access to your base from the field, and wireless fluid hauling via the tank. (Suggested by Dergib on Discord.)
+- **Craft any slime back from its Froglight.** Once you've got a variant's Froglight, you can craft it straight into that variant's Slime in a Bucket: an empty bucket + 4 tier-filler + 3 sweetslime around the Froglight in the center. A recovery/scaling path for every slime (vanilla and modded) - the Froglight is proof you already have the frog, so it doesn't skip any gate. (Suggested by Dergib on Discord.)
 
 ### Fixed
 - **Fluorite slime now shows its recipe in JEI.** The Bucket of Fluorite Slime took the `c:gems/fluorite` tag, which both Mekanism and ATO register a fluorite into - so JEI's "uses" page for the Mekanism fluorite you actually get (from the calcite Enrichment Chamber recipe) didn't reverse-resolve the tag and the path looked missing. It now takes the concrete `mekanism:fluorite_gem` (the only fluorite obtainable on a void skyblock), so the calcite -> fluorite -> slime chain is discoverable end to end. (Discord report, Dergib.)
