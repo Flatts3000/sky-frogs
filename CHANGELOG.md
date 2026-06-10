@@ -4,6 +4,9 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+### Changed
+- **Productive Frogs 1.19.0 -> 1.19.1 "Survival of the Fittest".** Tuning only: the default frog-stat improvement chance rises from `0.20` to `0.40` per stat, so a breed now improves at least one of the three stats about 78% of the time (up from ~49%) - a brisker climb to a maxed frog without a giveaway (a single breed still usually moves one or two stats, not all three). The pack doesn't pin this value, so the new default flows through from the jar with no pack-side change. Zero roster drift (singularities 57, census 34, froglight recipes 101). (Prompted by Discord feedback that breeding felt slow.)
+
 ## [0.12.0] - 2026-06-10
 
 A content-and-polish drop: a real pack logo/icon, Productive Frogs 1.18 + 1.19 (Lava Froglights as furnace fuel, the Crucible melting stone to lava), Spice of Life food variety, Ender Storage, craft-any-slime-from-its-Froglight, a reliable flint recipe, and the fluorite JEI fix.
