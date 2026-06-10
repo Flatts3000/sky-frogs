@@ -16,7 +16,7 @@ Do the standing PF-bump sweep first, on a feature branch, and merge it before re
 
 1. `cd pack && packwiz update productive-frogs -y`
 2. `python tools/sync_instance.py` (Minecraft closed) - mirrors the new jar into the dev instance.
-3. `python tools/gen_singularities.py` and `python tools/gen_completionist_chapters.py` - regenerate from the new jar. Inspect `git status`: if new vanilla variants landed, the singularity JSONs / census chapters change (and the census frog may need redrawing if a zone overflows - the generator exits loudly). Machinery-only bumps show zero drift.
+3. `python tools/gen_singularities.py`, `python tools/gen_completionist_chapters.py`, and `python tools/gen_froglight_slime_recipes.py` - regenerate from the new jar. Inspect `git status`: if new vanilla variants landed, the singularity JSONs / census chapters / froglight-slime recipes change (and the census frog may need redrawing if a zone overflows - the generator exits loudly). Machinery-only bumps show zero drift; a new variant adds one froglight-slime recipe automatically.
 4. Add any **new item ids** the bump introduced (blocks, items used as quest icons/tasks) to `tools/data/item_ids.txt` - the dump predates the new version, so hand-add them (verify against the jar). Q-ITEM-EXISTS needs them.
 5. `python tools/validate_quests.py` - must exit 0.
 6. Read the PF release notes and quest/wire any new content per the usual pattern (chamber rows, census columns, chapters). Update CLAUDE.md's pin line + `docs/pf_pin_history.md`.
