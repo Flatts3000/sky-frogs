@@ -84,6 +84,8 @@ The wordmark "Sky Frogs" pairs to the right of the silhouette (horizontal lockup
 
 **The title-screen wordmark** (`pack/config/fancymenu/assets/wordmark.png`, 2048x373 transparent PNG) is NOT AI-generated (maintainer rule): it is rendered with the [Minecraft Title Generator](https://ewanhowell.com/plugins/minecraft-title-generator/) Blockbench plugin by Ewan Howell (renders free to use) - text "SKY FROGS", font **Minecraft Ten** (the authentic vanilla title font), texture **Mangrove (Wild Update)** (the texture style of the update that added frogs to the game), default auto camera, 2k render, antialiasing on. Reproducible in ~5 minutes: Blockbench (web or app) > install the plugin > File > New > Minecraft Title > those settings > Render tab > Save render.
 
+**The pack logo / icon (SHIPPED 2026-06-10)** - `pack/icon.png` (256x256 launcher thumbnail) and `branding/logo.png` (512 master). The frog render sits up top on a cloud sky, with a **two-row** "SKY" / "FROGS" wordmark in front in the lower portion. The two-row wordmark (`branding/wordmark_two_row.png`) is a fresh render from the same Minecraft Title Generator (Minecraft Ten + Mangrove) as the title-screen wordmark - rendered as two text rows (row 1 = SKY on top, row 0 = FROGS below), NOT a split of the single-row wordmark (splitting warps the per-word perspective). Composited deterministically with Pillow (no AI art). Source assets: the maintainer's transparent frog render + a cloud-sky background.
+
 Avoid:
 - Photo-realistic frog renderings — clashes with Minecraft's blocky idiom.
 - Multiple frogs overlapping — at small sizes they smear into a blob.
