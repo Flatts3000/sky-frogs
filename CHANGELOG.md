@@ -4,6 +4,10 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+## [0.12.0] - 2026-06-10
+
+A content-and-polish drop: a real pack logo/icon, Productive Frogs 1.18 + 1.19 (Lava Froglights as furnace fuel, the Crucible melting stone to lava), Spice of Life food variety, Ender Storage, craft-any-slime-from-its-Froglight, a reliable flint recipe, and the fluorite JEI fix.
+
 ### Added
 - **Spice of Life: Carrot Edition**: eating a variety of foods grants bonus max hearts, rewarding the pack's broad food economy. Tuned reward-only - you start at vanilla 10 hearts (never lower), the first bonus heart comes at just 10 unique foods, and you don't lose earned hearts when you die. (#160, suggested on Discord.)
 - **Flint from gravel.** A shapeless recipe: 3 gravel -> 1 flint, so flint (for Flint & Steel and the Nether portal) has a reliable source on a void skyblock instead of relying on gravel's random drop. (#159, suggested on Discord.)
