@@ -10,6 +10,14 @@ Step-by-step for cutting a Sky Frogs release. The narrative/why lives in [`distr
 
 Only release what is already on `main`. Quest/reward content must have been playtested before its PR merged (the standing hold rule), so by release time it is already vetted.
 
+## 0.5. Check the NeoForge pin is current and not a known-bad build
+
+The loader pin in `pack/pack.toml` (`[versions] neoforge`) needs the same periodic-bump hygiene as the PF pin - a stale loader silently ships a buggy build to every new downloader. Before cutting a release:
+
+1. Compare the pin against the latest 21.1.x: `curl -s https://maven.neoforged.net/releases/net/neoforged/neoforge/maven-metadata.xml | grep -oE "21\.1\.[0-9]+" | sort -t. -k3 -n | tail -3`.
+2. If the pin is several patches behind, bump it to the latest 21.1.x (edit `pack/pack.toml` + the references in `CLAUDE.md` / `docs/pack_metadata.md` / `docs/cf_submission_checklist.md`), and **launch-test the dev instance on the new loader** before shipping.
+3. Watch for known-bad builds: **21.1.230** applied the `GuiGraphics` tooltip patch unreliably and crashed some fresh installs at load (Apotheosis `GuiGraphicsAccessor` / `tooltipStack`); fixed by 21.1.233 (v0.13.1). A crash that is fresh-install- or machine-specific and survives reinstalls is a loader-build smell - suspect the pin first.
+
 ## 1. If this release includes a Productive Frogs pin bump
 
 Do the standing PF-bump sweep first, on a feature branch, and merge it before releasing:

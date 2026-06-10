@@ -4,6 +4,13 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+## [0.13.1] - 2026-06-10
+
+A launch-crash hotfix: bumps the pinned loader off a flaky NeoForge build.
+
+### Fixed
+- **Some fresh installs crashed on the loading screen (no crash report).** The pack pinned NeoForge `21.1.230`, which applied its `GuiGraphics` tooltip patch unreliably on certain machines; when the field was missing, Apotheosis's required tooltip accessor failed to apply and the game closed ~10-15s into loading with no crash report. Bumped the pinned loader to **NeoForge 21.1.233** (latest 21.1.x), which patches reliably. Diagnosed from a player log (Apotheosis `GuiGraphicsAccessor` / `tooltipStack`); the same bad build also hit other NeoForge 1.21.1 packs. No mod or content changes.
+
 ## [0.13.0] - 2026-06-10
 
 A QoL-and-fixes drop: Refined Storage gains infinite-range wireless (the Interdimensional Wireless Transmitter) and tiered cables, frogs breed up faster (Productive Frogs 1.19.1), the Refined Storage silicon variant is fully integrated into the Dissolution Chamber and the census, and the Just Dire Things goo quests now describe the real goo-spreading mechanic.
