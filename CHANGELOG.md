@@ -4,6 +4,9 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+### Added
+- **Ender Storage**: color-frequency wireless storage - EnderChest, EnderPouch, and EnderTank, all sharing inventory by dye-code across any distance (and dimensions). Wireless access to your base from the field, and wireless fluid hauling via the tank. (Suggested by Dergib on Discord.)
+
 ## [0.11.0] - 2026-06-09
 
 The Frog Legs and Fairy Tales update: Productive Frogs 1.17 brings frog legs, the Frog Net, the Froglight Cleaver, and Princess's Kiss (all quested), Apotheosis joins as a combat/enchanting/loot layer, and Elevators + Time in a Bottle round out the QoL - plus two progression fixes from Discord.
