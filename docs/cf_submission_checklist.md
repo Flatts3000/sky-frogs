@@ -70,7 +70,7 @@ From the approved project dashboard, **Files** -> **Upload File**:
 | **Display name** | `Sky Frogs v0.1.0 (alpha)` |
 | **Release type** | **Alpha** (mark it explicitly so curious players know expectations) |
 | **Game version** | `1.21.1` (pick by name; the web form resolves the modpack-class ID for you - only the API needs the raw `11779`) |
-| **Mod loader** | `NeoForge` (version `21.1.230` if asked) |
+| **Mod loader** | `NeoForge` (version `21.1.233` if asked) |
 | **Java version** | Skip - the modpack class does not take a Java-version selector (CF rejects one on the API; the web form omits the field). Java is implied by the loader. |
 | **Changelog** | First release - paste the `## [Unreleased]` block from `CHANGELOG.md` and retitle to `## [v0.1.0] - YYYY-MM-DD`. |
 
