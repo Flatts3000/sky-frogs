@@ -200,6 +200,12 @@ const MODDED_SELF_KEYED = [
   // -> fluorite -> slime path looking absent (Discord, Dergib). Validator exempts
   // it via SELF_KEYED_EXCEPTIONS.
   ['GEODE',    'minecraft:gravel',     'fluorite',        'mekanism:fluorite_gem',     'mekanism'],
+  // silicon is RS's base material (smelt nether quartz -> refinedstorage:silicon).
+  // Self-keyed on the concrete item, NOT its #c:silicon primer tag: the tag also
+  // covers ae2:silicon, which this pack never ships (no AE2), so a tag input would
+  // half-resolve and leave the smelt-quartz path looking absent in JEI's "uses"
+  // page - the same fix fluorite got. Validator exempts it via SELF_KEYED_EXCEPTIONS.
+  ['GEODE',    'minecraft:gravel',     'silicon',         'refinedstorage:silicon',    'refinedstorage'],
   ['GEODE',    'minecraft:gravel',     'basic_processor', 'refinedstorage:basic_processor', 'refinedstorage'],
   ['GEODE',    'minecraft:gravel',     'improved_processor', 'refinedstorage:improved_processor', 'refinedstorage'],
   ['GEODE',    'minecraft:gravel',     'advanced_processor', 'refinedstorage:advanced_processor', 'refinedstorage'],
