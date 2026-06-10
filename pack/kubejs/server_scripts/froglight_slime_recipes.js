@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:bucket',
         F: 'minecraft:gravel',
         S: 'productivefrogs:sweetslime',
-        G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:advanced_processor' } }
+        G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:advanced_processor"]'
       }
     ).id('kubejs:froglight_slime/advanced_processor')
   }
@@ -32,7 +32,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:bucket',
         F: 'minecraft:stone',
         S: 'productivefrogs:sweetslime',
-        G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:aluminum' } }
+        G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:aluminum"]'
       }
     ).id('kubejs:froglight_slime/aluminum')
   }
@@ -43,7 +43,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:gravel',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:amethyst' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:amethyst"]'
     }
   ).id('kubejs:froglight_slime/amethyst')
   if (Platform.isLoaded('mythicmetals')) {
@@ -54,7 +54,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:bucket',
         F: 'minecraft:mycelium',
         S: 'productivefrogs:sweetslime',
-        G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:aquarium' } }
+        G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:aquarium"]'
       }
     ).id('kubejs:froglight_slime/aquarium')
   }
@@ -65,7 +65,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:mossy_cobblestone',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:armadillo_scute' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:armadillo_scute"]'
     }
   ).id('kubejs:froglight_slime/armadillo_scute')
   if (Platform.isLoaded('refinedstorage')) {
@@ -76,7 +76,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:bucket',
         F: 'minecraft:gravel',
         S: 'productivefrogs:sweetslime',
-        G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:basic_processor' } }
+        G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:basic_processor"]'
       }
     ).id('kubejs:froglight_slime/basic_processor')
   }
@@ -87,7 +87,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:prismarine',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:blaze' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:blaze"]'
     }
   ).id('kubejs:froglight_slime/blaze')
   if (Platform.isLoaded('justdirethings')) {
@@ -98,7 +98,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:bucket',
         F: 'minecraft:prismarine',
         S: 'productivefrogs:sweetslime',
-        G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:blaze_ember' } }
+        G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:blaze_ember"]'
       }
     ).id('kubejs:froglight_slime/blaze_ember')
   }
@@ -110,7 +110,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:bucket',
         F: 'minecraft:prismarine',
         S: 'productivefrogs:sweetslime',
-        G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:blazegold' } }
+        G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:blazegold"]'
       }
     ).id('kubejs:froglight_slime/blazegold')
   }
@@ -122,7 +122,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:bucket',
         F: 'minecraft:prismarine',
         S: 'productivefrogs:sweetslime',
-        G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:blazing' } }
+        G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:blazing"]'
       }
     ).id('kubejs:froglight_slime/blazing')
   }
@@ -133,7 +133,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:mossy_cobblestone',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:bone' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:bone"]'
     }
   ).id('kubejs:froglight_slime/bone')
   if (Platform.isLoaded('create')) {
@@ -144,7 +144,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:bucket',
         F: 'minecraft:stone',
         S: 'productivefrogs:sweetslime',
-        G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:brass' } }
+        G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:brass"]'
       }
     ).id('kubejs:froglight_slime/brass')
   }
@@ -155,7 +155,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:stone',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:breeze_rod' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:breeze_rod"]'
     }
   ).id('kubejs:froglight_slime/breeze_rod')
   event.shaped(
@@ -165,7 +165,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:gravel',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:calcite' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:calcite"]'
     }
   ).id('kubejs:froglight_slime/calcite')
   if (Platform.isLoaded('justdirethings')) {
@@ -176,7 +176,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:bucket',
         F: 'minecraft:prismarine',
         S: 'productivefrogs:sweetslime',
-        G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:celestigem' } }
+        G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:celestigem"]'
       }
     ).id('kubejs:froglight_slime/celestigem')
   }
@@ -188,7 +188,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:bucket',
         F: 'minecraft:gravel',
         S: 'productivefrogs:sweetslime',
-        G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:certus_quartz' } }
+        G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:certus_quartz"]'
       }
     ).id('kubejs:froglight_slime/certus_quartz')
   }
@@ -199,7 +199,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:soul_soil',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:chorus_fruit' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:chorus_fruit"]'
     }
   ).id('kubejs:froglight_slime/chorus_fruit')
   event.shaped(
@@ -209,7 +209,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:mossy_cobblestone',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:clay_ball' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:clay_ball"]'
     }
   ).id('kubejs:froglight_slime/clay_ball')
   event.shaped(
@@ -219,7 +219,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:stone',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:coal' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:coal"]'
     }
   ).id('kubejs:froglight_slime/coal')
   event.shaped(
@@ -229,7 +229,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:stone',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:copper' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:copper"]'
     }
   ).id('kubejs:froglight_slime/copper')
   event.shaped(
@@ -239,7 +239,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:gravel',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:diamond' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:diamond"]'
     }
   ).id('kubejs:froglight_slime/diamond')
   event.shaped(
@@ -249,7 +249,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:mossy_cobblestone',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:dirt' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:dirt"]'
     }
   ).id('kubejs:froglight_slime/dirt')
   event.shaped(
@@ -259,7 +259,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:soul_soil',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:dragon_breath' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:dragon_breath"]'
     }
   ).id('kubejs:froglight_slime/dragon_breath')
   event.shaped(
@@ -269,7 +269,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:soul_soil',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:dragon_egg' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:dragon_egg"]'
     }
   ).id('kubejs:froglight_slime/dragon_egg')
   if (Platform.isLoaded('powah')) {
@@ -280,7 +280,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:bucket',
         F: 'minecraft:mycelium',
         S: 'productivefrogs:sweetslime',
-        G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:dry_ice' } }
+        G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:dry_ice"]'
       }
     ).id('kubejs:froglight_slime/dry_ice')
   }
@@ -291,7 +291,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:soul_soil',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:echo_shard' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:echo_shard"]'
     }
   ).id('kubejs:froglight_slime/echo_shard')
   if (Platform.isLoaded('justdirethings')) {
@@ -302,7 +302,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:bucket',
         F: 'minecraft:soul_soil',
         S: 'productivefrogs:sweetslime',
-        G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:eclipse_ember' } }
+        G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:eclipse_ember"]'
       }
     ).id('kubejs:froglight_slime/eclipse_ember')
   }
@@ -314,7 +314,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:bucket',
         F: 'minecraft:soul_soil',
         S: 'productivefrogs:sweetslime',
-        G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:eclipsealloy' } }
+        G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:eclipsealloy"]'
       }
     ).id('kubejs:froglight_slime/eclipsealloy')
   }
@@ -325,7 +325,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:gravel',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:emerald' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:emerald"]'
     }
   ).id('kubejs:froglight_slime/emerald')
   event.shaped(
@@ -335,7 +335,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:soul_soil',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:end_stone' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:end_stone"]'
     }
   ).id('kubejs:froglight_slime/end_stone')
   event.shaped(
@@ -345,7 +345,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:soul_soil',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:ender_pearl' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:ender_pearl"]'
     }
   ).id('kubejs:froglight_slime/ender_pearl')
   if (Platform.isLoaded('powah')) {
@@ -356,7 +356,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:bucket',
         F: 'minecraft:stone',
         S: 'productivefrogs:sweetslime',
-        G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:energized_steel' } }
+        G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:energized_steel"]'
       }
     ).id('kubejs:froglight_slime/energized_steel')
   }
@@ -367,7 +367,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:mossy_cobblestone',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:feather' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:feather"]'
     }
   ).id('kubejs:froglight_slime/feather')
   if (Platform.isLoaded('justdirethings')) {
@@ -378,7 +378,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:bucket',
         F: 'minecraft:stone',
         S: 'productivefrogs:sweetslime',
-        G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:ferricore' } }
+        G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:ferricore"]'
       }
     ).id('kubejs:froglight_slime/ferricore')
   }
@@ -390,7 +390,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:bucket',
         F: 'minecraft:gravel',
         S: 'productivefrogs:sweetslime',
-        G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:fluix' } }
+        G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:fluix"]'
       }
     ).id('kubejs:froglight_slime/fluix')
   }
@@ -402,7 +402,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:bucket',
         F: 'minecraft:gravel',
         S: 'productivefrogs:sweetslime',
-        G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:fluorite' } }
+        G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:fluorite"]'
       }
     ).id('kubejs:froglight_slime/fluorite')
   }
@@ -414,7 +414,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:bucket',
         F: 'minecraft:prismarine',
         S: 'productivefrogs:sweetslime',
-        G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:flux_dust' } }
+        G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:flux_dust"]'
       }
     ).id('kubejs:froglight_slime/flux_dust')
   }
@@ -425,7 +425,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:prismarine',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:ghast_tear' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:ghast_tear"]'
     }
   ).id('kubejs:froglight_slime/ghast_tear')
   event.shaped(
@@ -435,7 +435,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:stone',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:glow_ink_sac' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:glow_ink_sac"]'
     }
   ).id('kubejs:froglight_slime/glow_ink_sac')
   event.shaped(
@@ -445,7 +445,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:prismarine',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:glowstone_dust' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:glowstone_dust"]'
     }
   ).id('kubejs:froglight_slime/glowstone_dust')
   event.shaped(
@@ -455,7 +455,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:stone',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:gold' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:gold"]'
     }
   ).id('kubejs:froglight_slime/gold')
   event.shaped(
@@ -465,7 +465,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:mossy_cobblestone',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:gunpowder' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:gunpowder"]'
     }
   ).id('kubejs:froglight_slime/gunpowder')
   event.shaped(
@@ -475,7 +475,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:mossy_cobblestone',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:honeycomb' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:honeycomb"]'
     }
   ).id('kubejs:froglight_slime/honeycomb')
   event.shaped(
@@ -485,7 +485,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:mycelium',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:ice' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:ice"]'
     }
   ).id('kubejs:froglight_slime/ice')
   if (Platform.isLoaded('refinedstorage')) {
@@ -496,7 +496,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:bucket',
         F: 'minecraft:gravel',
         S: 'productivefrogs:sweetslime',
-        G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:improved_processor' } }
+        G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:improved_processor"]'
       }
     ).id('kubejs:froglight_slime/improved_processor')
   }
@@ -508,7 +508,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:bucket',
         F: 'minecraft:soul_soil',
         S: 'productivefrogs:sweetslime',
-        G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:inferium' } }
+        G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:inferium"]'
       }
     ).id('kubejs:froglight_slime/inferium')
   }
@@ -519,7 +519,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:mycelium',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:ink_sac' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:ink_sac"]'
     }
   ).id('kubejs:froglight_slime/ink_sac')
   event.shaped(
@@ -529,7 +529,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:stone',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:iron' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:iron"]'
     }
   ).id('kubejs:froglight_slime/iron')
   event.shaped(
@@ -539,7 +539,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:gravel',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:lapis' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:lapis"]'
     }
   ).id('kubejs:froglight_slime/lapis')
   event.shaped(
@@ -549,7 +549,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:stone',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:lava' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:lava"]'
     }
   ).id('kubejs:froglight_slime/lava')
   if (Platform.isLoaded('alltheores')) {
@@ -560,7 +560,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:bucket',
         F: 'minecraft:stone',
         S: 'productivefrogs:sweetslime',
-        G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:lead' } }
+        G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:lead"]'
       }
     ).id('kubejs:froglight_slime/lead')
   }
@@ -571,7 +571,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:mossy_cobblestone',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:leather' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:leather"]'
     }
   ).id('kubejs:froglight_slime/leather')
   event.shaped(
@@ -581,7 +581,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:mossy_cobblestone',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:lily_pad' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:lily_pad"]'
     }
   ).id('kubejs:froglight_slime/lily_pad')
   event.shaped(
@@ -591,7 +591,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:prismarine',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:magma_cream' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:magma_cream"]'
     }
   ).id('kubejs:froglight_slime/magma_cream')
   event.shaped(
@@ -601,7 +601,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:mossy_cobblestone',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:moss' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:moss"]'
     }
   ).id('kubejs:froglight_slime/moss')
   event.shaped(
@@ -611,7 +611,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:mossy_cobblestone',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:mud' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:mud"]'
     }
   ).id('kubejs:froglight_slime/mud')
   event.shaped(
@@ -621,7 +621,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:mossy_cobblestone',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:mycelium' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:mycelium"]'
     }
   ).id('kubejs:froglight_slime/mycelium')
   if (Platform.isLoaded('mythicmetals')) {
@@ -632,7 +632,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:bucket',
         F: 'minecraft:soul_soil',
         S: 'productivefrogs:sweetslime',
-        G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:mythril' } }
+        G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:mythril"]'
       }
     ).id('kubejs:froglight_slime/mythril')
   }
@@ -643,7 +643,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:mycelium',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:nautilus_shell' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:nautilus_shell"]'
     }
   ).id('kubejs:froglight_slime/nautilus_shell')
   event.shaped(
@@ -653,7 +653,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:prismarine',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:nether_star' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:nether_star"]'
     }
   ).id('kubejs:froglight_slime/nether_star')
   event.shaped(
@@ -663,7 +663,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:prismarine',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:netherite_scrap' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:netherite_scrap"]'
     }
   ).id('kubejs:froglight_slime/netherite_scrap')
   event.shaped(
@@ -673,7 +673,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:prismarine',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:netherrack' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:netherrack"]'
     }
   ).id('kubejs:froglight_slime/netherrack')
   if (Platform.isLoaded('alltheores')) {
@@ -684,7 +684,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:bucket',
         F: 'minecraft:stone',
         S: 'productivefrogs:sweetslime',
-        G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:nickel' } }
+        G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:nickel"]'
       }
     ).id('kubejs:froglight_slime/nickel')
   }
@@ -696,7 +696,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:bucket',
         F: 'minecraft:soul_soil',
         S: 'productivefrogs:sweetslime',
-        G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:niotic' } }
+        G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:niotic"]'
       }
     ).id('kubejs:froglight_slime/niotic')
   }
@@ -708,7 +708,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:bucket',
         F: 'minecraft:soul_soil',
         S: 'productivefrogs:sweetslime',
-        G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:nitro' } }
+        G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:nitro"]'
       }
     ).id('kubejs:froglight_slime/nitro')
   }
@@ -719,7 +719,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:prismarine',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:obsidian' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:obsidian"]'
     }
   ).id('kubejs:froglight_slime/obsidian')
   if (Platform.isLoaded('mythicmetals')) {
@@ -730,7 +730,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:bucket',
         F: 'minecraft:soul_soil',
         S: 'productivefrogs:sweetslime',
-        G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:orichalcum' } }
+        G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:orichalcum"]'
       }
     ).id('kubejs:froglight_slime/orichalcum')
   }
@@ -742,7 +742,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:bucket',
         F: 'minecraft:stone',
         S: 'productivefrogs:sweetslime',
-        G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:osmium' } }
+        G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:osmium"]'
       }
     ).id('kubejs:froglight_slime/osmium')
   }
@@ -753,7 +753,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:soul_soil',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:phantom_membrane' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:phantom_membrane"]'
     }
   ).id('kubejs:froglight_slime/phantom_membrane')
   if (Platform.isLoaded('industrialforegoing')) {
@@ -764,7 +764,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:bucket',
         F: 'minecraft:mossy_cobblestone',
         S: 'productivefrogs:sweetslime',
-        G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:pink_slime' } }
+        G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:pink_slime"]'
       }
     ).id('kubejs:froglight_slime/pink_slime')
   }
@@ -776,7 +776,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:bucket',
         F: 'minecraft:mossy_cobblestone',
         S: 'productivefrogs:sweetslime',
-        G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:plastic' } }
+        G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:plastic"]'
       }
     ).id('kubejs:froglight_slime/plastic')
   }
@@ -787,7 +787,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:mycelium',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:prismarine' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:prismarine"]'
     }
   ).id('kubejs:froglight_slime/prismarine')
   event.shaped(
@@ -797,7 +797,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:mycelium',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:prismarine_crystals' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:prismarine_crystals"]'
     }
   ).id('kubejs:froglight_slime/prismarine_crystals')
   event.shaped(
@@ -807,7 +807,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:prismarine',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:quartz' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:quartz"]'
     }
   ).id('kubejs:froglight_slime/quartz')
   if (Platform.isLoaded('refinedstorage')) {
@@ -818,7 +818,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:bucket',
         F: 'minecraft:prismarine',
         S: 'productivefrogs:sweetslime',
-        G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:quartz_enriched_iron' } }
+        G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:quartz_enriched_iron"]'
       }
     ).id('kubejs:froglight_slime/quartz_enriched_iron')
   }
@@ -829,7 +829,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:stone',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:redstone' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:redstone"]'
     }
   ).id('kubejs:froglight_slime/redstone')
   if (Platform.isLoaded('mekanism')) {
@@ -840,7 +840,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:bucket',
         F: 'minecraft:prismarine',
         S: 'productivefrogs:sweetslime',
-        G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:refined_glowstone' } }
+        G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:refined_glowstone"]'
       }
     ).id('kubejs:froglight_slime/refined_glowstone')
   }
@@ -852,7 +852,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:bucket',
         F: 'minecraft:prismarine',
         S: 'productivefrogs:sweetslime',
-        G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:refined_obsidian' } }
+        G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:refined_obsidian"]'
       }
     ).id('kubejs:froglight_slime/refined_obsidian')
   }
@@ -863,7 +863,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:mossy_cobblestone',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:rotten_flesh' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:rotten_flesh"]'
     }
   ).id('kubejs:froglight_slime/rotten_flesh')
   event.shaped(
@@ -873,7 +873,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:soul_soil',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:sculk' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:sculk"]'
     }
   ).id('kubejs:froglight_slime/sculk')
   event.shaped(
@@ -883,7 +883,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:mycelium',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:sea_pickle' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:sea_pickle"]'
     }
   ).id('kubejs:froglight_slime/sea_pickle')
   event.shaped(
@@ -893,7 +893,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:soul_soil',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:shulker_shell' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:shulker_shell"]'
     }
   ).id('kubejs:froglight_slime/shulker_shell')
   event.shaped(
@@ -903,7 +903,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:gravel',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:silicon' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:silicon"]'
     }
   ).id('kubejs:froglight_slime/silicon')
   if (Platform.isLoaded('alltheores')) {
@@ -914,7 +914,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:bucket',
         F: 'minecraft:stone',
         S: 'productivefrogs:sweetslime',
-        G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:silver' } }
+        G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:silver"]'
       }
     ).id('kubejs:froglight_slime/silver')
   }
@@ -925,7 +925,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:mycelium',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:snow' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:snow"]'
     }
   ).id('kubejs:froglight_slime/snow')
   event.shaped(
@@ -935,7 +935,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:prismarine',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:soul_sand' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:soul_sand"]'
     }
   ).id('kubejs:froglight_slime/soul_sand')
   event.shaped(
@@ -945,7 +945,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:prismarine',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:soul_soil' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:soul_soil"]'
     }
   ).id('kubejs:froglight_slime/soul_soil')
   if (Platform.isLoaded('powah')) {
@@ -956,7 +956,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:bucket',
         F: 'minecraft:soul_soil',
         S: 'productivefrogs:sweetslime',
-        G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:spirited' } }
+        G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:spirited"]'
       }
     ).id('kubejs:froglight_slime/spirited')
   }
@@ -967,7 +967,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:mycelium',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:sponge' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:sponge"]'
     }
   ).id('kubejs:froglight_slime/sponge')
   if (Platform.isLoaded('mekanism')) {
@@ -978,7 +978,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:bucket',
         F: 'minecraft:stone',
         S: 'productivefrogs:sweetslime',
-        G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:steel' } }
+        G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:steel"]'
       }
     ).id('kubejs:froglight_slime/steel')
   }
@@ -989,7 +989,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:mossy_cobblestone',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:string' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:string"]'
     }
   ).id('kubejs:froglight_slime/string')
   if (Platform.isLoaded('mysticalagriculture')) {
@@ -1000,7 +1000,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:bucket',
         F: 'minecraft:soul_soil',
         S: 'productivefrogs:sweetslime',
-        G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:supremium' } }
+        G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:supremium"]'
       }
     ).id('kubejs:froglight_slime/supremium')
   }
@@ -1012,7 +1012,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:bucket',
         F: 'minecraft:stone',
         S: 'productivefrogs:sweetslime',
-        G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:tin' } }
+        G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:tin"]'
       }
     ).id('kubejs:froglight_slime/tin')
   }
@@ -1023,7 +1023,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:gravel',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:tuff' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:tuff"]'
     }
   ).id('kubejs:froglight_slime/tuff')
   event.shaped(
@@ -1033,7 +1033,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:mycelium',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:turtle_scute' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:turtle_scute"]'
     }
   ).id('kubejs:froglight_slime/turtle_scute')
   if (Platform.isLoaded('powah')) {
@@ -1044,7 +1044,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:bucket',
         F: 'minecraft:stone',
         S: 'productivefrogs:sweetslime',
-        G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:uraninite' } }
+        G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:uraninite"]'
       }
     ).id('kubejs:froglight_slime/uraninite')
   }
@@ -1056,7 +1056,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:bucket',
         F: 'minecraft:stone',
         S: 'productivefrogs:sweetslime',
-        G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:uranium' } }
+        G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:uranium"]'
       }
     ).id('kubejs:froglight_slime/uranium')
   }
@@ -1068,7 +1068,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:bucket',
         F: 'minecraft:soul_soil',
         S: 'productivefrogs:sweetslime',
-        G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:voidflame' } }
+        G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:voidflame"]'
       }
     ).id('kubejs:froglight_slime/voidflame')
   }
@@ -1079,7 +1079,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:stone',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:water' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:water"]'
     }
   ).id('kubejs:froglight_slime/water')
   event.shaped(
@@ -1089,7 +1089,7 @@ ServerEvents.recipes(event => {
       B: 'minecraft:bucket',
       F: 'minecraft:prismarine',
       S: 'productivefrogs:sweetslime',
-      G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:wither_skeleton_skull' } }
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:wither_skeleton_skull"]'
     }
   ).id('kubejs:froglight_slime/wither_skeleton_skull')
   if (Platform.isLoaded('alltheores')) {
@@ -1100,7 +1100,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:bucket',
         F: 'minecraft:stone',
         S: 'productivefrogs:sweetslime',
-        G: { type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], components: { 'productivefrogs:slime_variant': 'productivefrogs:zinc' } }
+        G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:zinc"]'
       }
     ).id('kubejs:froglight_slime/zinc')
   }

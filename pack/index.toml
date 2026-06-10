@@ -650,7 +650,7 @@ hash = "1ce10ec7c6a5e04ebe7a9b4c39d72021927075f2aafab7dd3a9614816d5ec558"
 
 [[files]]
 file = "kubejs/server_scripts/froglight_slime_recipes.js"
-hash = "de7c1904e8e5aad9ec327d7f3af33b53f247d9ee366282f316c2339007eee190"
+hash = "5d1f1d3151fee203284936a5fa4bedc147eaf9c9d11011f9b3308f16d56df1cf"
 
 [[files]]
 file = "kubejs/server_scripts/geode_slime_chain.js"

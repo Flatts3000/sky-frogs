@@ -89,9 +89,14 @@ def main() -> None:
             'productivefrogs:slime_bucket[minecraft:bucket_entity_data='
             '{Variant:"productivefrogs:%s",Category:"%s"}]' % (variant, cat.upper())
         )
+        # KubeJS's event.shaped keymap rejects a raw {type:neoforge:components,...}
+        # ingredient object (it only parses a plain item/tag or a list). Use the
+        # bracket-string component form instead - the same Item-with-components
+        # syntax the output string uses, which KubeJS parses into a component
+        # ingredient that matches a Froglight carrying this slime_variant.
         froglight = (
-            "{ type: 'neoforge:components', items: ['productivefrogs:configurable_froglight'], "
-            "components: { 'productivefrogs:slime_variant': 'productivefrogs:%s' } }" % variant
+            '\'productivefrogs:configurable_froglight'
+            '[productivefrogs:slime_variant="productivefrogs:%s"]\'' % variant
         )
         ind = "  "
         if modid:
