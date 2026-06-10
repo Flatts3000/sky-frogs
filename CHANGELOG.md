@@ -4,6 +4,10 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+## [0.13.0] - 2026-06-10
+
+A QoL-and-fixes drop: Refined Storage gains infinite-range wireless (the Interdimensional Wireless Transmitter) and tiered cables, frogs breed up faster (Productive Frogs 1.19.1), the Refined Storage silicon variant is fully integrated into the Dissolution Chamber and the census, and the Just Dire Things goo quests now describe the real goo-spreading mechanic.
+
 ### Added
 - **Interdimensional Wireless Transmitter** (+ **Cable Tiers** and its **Refined Types** dependency): Refined Storage addons matching the main ATM10 pack's RS set. The transmitter broadcasts your network to a Wireless Grid at **infinite, cross-dimensional range**, fixing the base 48-block wireless cap (Discord report, Dergib). It's endgame-gated by recipe (4 Wireless Transmitters + 4 Nether Stars + an Elytra) - boss-tier nether stars are frog-farmable and the Elytra comes from the vanilla End's cities. Cable Tiers adds faster tiered cables; Refined Types is its dependency (and a general FE storage disk).
 
