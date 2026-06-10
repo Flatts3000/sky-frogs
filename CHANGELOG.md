@@ -4,6 +4,9 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+### Added
+- **Interdimensional Wireless Transmitter** (+ **Cable Tiers** and its **Refined Types** dependency): Refined Storage addons matching the main ATM10 pack's RS set. The transmitter broadcasts your network to a Wireless Grid at **infinite, cross-dimensional range**, fixing the base 48-block wireless cap (Discord report, Dergib). It's endgame-gated by recipe (4 Wireless Transmitters + 4 Nether Stars + an Elytra) - boss-tier nether stars are frog-farmable and the Elytra comes from the vanilla End's cities. Cable Tiers adds faster tiered cables; Refined Types is its dependency (and a general FE storage disk).
+
 ### Changed
 - **Productive Frogs 1.19.0 -> 1.19.1 "Survival of the Fittest".** Tuning only: the default frog-stat improvement chance rises from `0.20` to `0.40` per stat, so a breed now improves at least one of the three stats about 78% of the time (up from ~49%) - a brisker climb to a maxed frog without a giveaway (a single breed still usually moves one or two stats, not all three). The pack doesn't pin this value, so the new default flows through from the jar with no pack-side change. Zero roster drift (singularities 57, census 34, froglight recipes 101). (Prompted by Discord feedback that breeding felt slow.)
 
