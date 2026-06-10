@@ -52,7 +52,7 @@
 			weight: 5.0f
 		}
 		{
-			count: 4
+			count: 1
 			id: "7F3B000000000015"
 			item: {
 				count: 1
