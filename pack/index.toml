@@ -819,6 +819,11 @@ hash = "debc76a386e1486c139c7cc56a22f3054acfc25aa24f61322bb00e62e2ea01b9"
 metafile = true
 
 [[files]]
+file = "mods/cable-tiers.pw.toml"
+hash = "300ab42d0160703505d1bb836334c3e0f077e13c2bb39b5cf7f5cc2d6fb27dee"
+metafile = true
+
+[[files]]
 file = "mods/chipped.pw.toml"
 hash = "3024466ae43de66612dc5ec4cfe5b3a273f71cee29fc6940308798a817d561b6"
 metafile = true
@@ -1086,6 +1091,11 @@ metafile = true
 [[files]]
 file = "mods/industrial-foregoing.pw.toml"
 hash = "c307c6f682a2ddff8181191b1070bae08c11482eccef8ea3d0428ea63ac08d6e"
+metafile = true
+
+[[files]]
+file = "mods/interdimensional-wireless-transmitter.pw.toml"
+hash = "d094c5c4cf873481273c416d53eaa5210f7711f935ef3a02c48577958cbce39d"
 metafile = true
 
 [[files]]
@@ -1361,6 +1371,11 @@ metafile = true
 [[files]]
 file = "mods/refined-storage.pw.toml"
 hash = "8388fcc060ea2b7b3126297538a4c5663f9884c940c31297f697e8739f441aa2"
+metafile = true
+
+[[files]]
+file = "mods/refined-types.pw.toml"
+hash = "ecd47c4a62178610b749901485b14f1a5804ac974bb351517ba303b64d2d9375"
 metafile = true
 
 [[files]]
