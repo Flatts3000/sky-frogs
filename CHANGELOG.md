@@ -7,6 +7,10 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 ### Changed
 - **Productive Frogs 1.19.0 -> 1.19.1 "Survival of the Fittest".** Tuning only: the default frog-stat improvement chance rises from `0.20` to `0.40` per stat, so a breed now improves at least one of the three stats about 78% of the time (up from ~49%) - a brisker climb to a maxed frog without a giveaway (a single breed still usually moves one or two stats, not all three). The pack doesn't pin this value, so the new default flows through from the jar with no pack-side change. Zero roster drift (singularities 57, census 34, froglight recipes 101). (Prompted by Discord feedback that breeding felt slow.)
 
+### Fixed
+- **Silicon is craftable in the Dissolution Chamber and quested in Sister Ponds.** The Refined Storage silicon variant (the only PF variant gated `ae2 OR refinedstorage`) was missing its Dissolution Chamber recipe and its census quest, leaving the Froglight smelt-back as its only path - which read as circular. It now has a self-keyed chamber recipe (smelt nether quartz -> RS Silicon -> prime a slime) and a Sister Ponds entry; the census generator now picks the loaded provider for multi-provider variants. (#168, Discord report.)
+- **JDT goo/ferricore quest text corrected.** "First Goo" and "Ferricore Ingot" described a non-existent "right-click the soil to seed it" mechanic that stuck a player. They now describe JDT's real goo-spreading: place Primogel Goo and stack iron blocks against it, and each spreads into Raw Ferricore Ore to mine and smelt. (#170, Discord report.)
+
 ## [0.12.0] - 2026-06-10
 
 A content-and-polish drop: a real pack logo/icon, Productive Frogs 1.18 + 1.19 (Lava Froglights as furnace fuel, the Crucible melting stone to lava), Spice of Life food variety, Ender Storage, craft-any-slime-from-its-Froglight, a reliable flint recipe, and the fluorite JEI fix.
