@@ -4,6 +4,13 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+### Changed
+- **Productive Frogs 1.19.1 -> 1.20.0 "Full Bloom".** PF hit its stable 1.0 milestone (out of beta). The jump also folds in 1.19.2, which **fixes the Jade tadpole "Growing time" readout** (it now shows the real remaining time when a pack speeds up tadpole growth - the Bog tadpole that read ~10m draining too fast), stops the Slime Bucket from dumping a water source on release, and stops foreign fluids from washing away Slime Milk pools; plus a standalone Advancements tab (complementary to the quest book). No new variants or items - zero roster drift (singularities 57, census 34, froglight recipes 101); pin-only on the pack side.
+- **The Bog quest chain is now two lanes.** The long Bog chapter is split into a canonical spine (organics + Industrial Foregoing, the path to Tide) and a terminal mob-drop lane (bone -> gunpowder -> ... -> honeycomb) that branches off the Pink Slime capstone. The mob lane bootstraps from bone meal and chains down, so the un-farmable drops (armadillo scute, honeycomb) come from the chain - no armadillos or bees needed. All quest IDs preserved, so existing completion survives.
+
+### Fixed
+- **The Bog reward crate gives one spyglass, not four.** It had been lumped into a uniform x4 group; a spyglass is a reusable tool you only need one of.
+
 ## [0.13.1] - 2026-06-10
 
 A launch-crash hotfix: bumps the pinned loader off a flaky NeoForge build.
