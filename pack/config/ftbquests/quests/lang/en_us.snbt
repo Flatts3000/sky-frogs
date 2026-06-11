@@ -1552,9 +1552,9 @@
 	quest.601D000000000011.quest_subtitle: "The last species."
 	quest.601D000000000011.title: "Void Frogspawn"
 	quest.601D000000000014.quest_desc: [
-		"Catch an &5Ender Pearl Slime&r in a bucket - the seed of the Void milk chain."
+		"Feed your &eDissolution Chamber&r &fnetherite scrap&r and &fsoul soil&r filler for an &5Ender Pearl Slime in a Bucket&r - the seed of the Void milk chain."
 		""
-		"(The Dissolution Chamber makes these too, if you would rather automate it.)"
+		"(Rather do it by hand? Prime a slime with an &eender pearl&r and catch it. Either way, this is the bucket the milk chain runs on.)"
 	]
 	quest.601D000000000014.quest_subtitle: "Bottle the void."
 	quest.601D000000000014.title: "A Bucket of Ender Pearl Slime"
