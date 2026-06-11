@@ -1554,7 +1554,7 @@
 	quest.601D000000000014.quest_desc: [
 		"Feed your &eDissolution Chamber&r &fnetherite scrap&r and &fsoul soil&r filler for an &5Ender Pearl Slime in a Bucket&r - the seed of the Void milk chain."
 		""
-		"(Rather do it by hand? Prime a slime with an &eender pearl&r and catch it. Either way, this is the bucket the milk chain runs on.)"
+		"(Rather do it by hand? Prime a &5Void Slime&r with an &eender pearl&r and catch it. Either way, this is the bucket the milk chain runs on.)"
 	]
 	quest.601D000000000014.quest_subtitle: "Bottle the void."
 	quest.601D000000000014.title: "A Bucket of Ender Pearl Slime"
