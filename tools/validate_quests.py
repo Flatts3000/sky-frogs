@@ -731,7 +731,14 @@ MODDED_ROW_RE = re.compile(
 # Threading exceptions: variants whose chamber input deliberately breaks the
 # prior-resource law. iron has nothing pre-Cave to thread off (bone meal mirrors
 # the table bootstrap).
-THREADING_EXCEPTIONS = {"iron": "minecraft:bone_meal"}
+# Threaded-chain rows whose input is NOT the prior variant's resource - bootstraps
+# that seed a (sub-)chain off an obtainable item. `iron` seeds the Cave chain off
+# bone_meal (no pre-Cave resource). `bone` seeds the terminal Bog mob-drop lane off
+# bone_meal too - the bone resource itself is claimed by the next link (gunpowder<-bone),
+# so a bone<-bone seed would collide; the rest of that lane chains off bone, so the
+# un-farmable drops (armadillo_scute, honeycomb) come down-chain. (The Cave iron and
+# Bog bone both seed off bone_meal but never collide - different tier filler.)
+THREADING_EXCEPTIONS = {"iron": "minecraft:bone_meal", "bone": "minecraft:bone_meal"}
 # Self-keyed rows whose input deliberately is NOT the variant's primer (item or
 # tag). The fluid pair takes the FLUID BUCKETS (day-one obtainable; the primers
 # kelp / pointed_dripstone are frog-only; PF 1.13 maintainer ruling). Fluorite
@@ -796,8 +803,10 @@ def check_dissolution_threading(chapters, ctx):
 
     # Parser sanity guard (review finding on PR #110): a source-format change that
     # the regexes no longer match would otherwise parse ZERO rows and pass green
-    # vacuously. Today's counts: 6 tiers, 55 chain rows, 36 modded rows (PF 1.15) -
-    # assert a conservative minimum so format drift is a loud ERROR, not a silent skip.
+    # vacuously. Today's counts: 7 tier heads (the 6 tiers, with BOG split into a
+    # canonical block + a terminal mob-drop block at the end of SLIME_TIERS) and ~55
+    # chain rows - assert a conservative minimum so format drift is a loud ERROR, not
+    # a silent skip. (The < 6 floor still holds at 7 heads.)
     n_chain_rows = len(CHAIN_ROW_RE.findall(text, 0, tiers_region_end))
     n_modded_rows = len(MODDED_ROW_RE.findall(text, tiers_region_end))
     if len(heads) < 6 or n_chain_rows < 35 or (modded_at >= 0 and n_modded_rows < 1):
@@ -890,8 +899,13 @@ def check_table_chain_mirror(chapters, ctx):
     tier_order: list[str] = []
     for hi, (hpos, tier) in enumerate(heads):
         hend = heads[hi + 1][0] if hi + 1 < len(heads) else end
-        tier_seq[tier] = [m.group(1) for m in CHAIN_ROW_RE.finditer(diss, hpos, hend)]
-        tier_order.append(tier)
+        rows = [m.group(1) for m in CHAIN_ROW_RE.finditer(diss, hpos, hend)]
+        # A tier can span multiple SLIME_TIERS blocks (Bog has a canonical block plus
+        # a terminal mob-drop block placed at the end of the array). Combine them in
+        # file order so the mirror sees the tier's whole variant set as one sequence.
+        tier_seq.setdefault(tier, []).extend(rows)
+        if tier not in tier_order:
+            tier_order.append(tier)
     if not tier_seq:
         return []  # the threading check's parser guard already screams
 

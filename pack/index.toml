@@ -306,7 +306,7 @@ hash = "338768fb497fa6c1544e4db8ed91aa7773ee683566fc3db2aebf6319a1c54fb4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/bog_frogs.snbt"
-hash = "126cdea828e27437a23a2ba209a0a7d6844522d8d6a632e1aeb718c2bbb0ee72"
+hash = "b32ff2bd2be2ea206c6a5329898576583a25770b7d4271b768b9275cfc28055c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/cave_frogs.snbt"
@@ -418,7 +418,7 @@ hash = "4889c5e7d4a8179b45e68f0ac00119529ed49ba68f20624b36e996bb0d60ddd0"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "1bba87eef4efbc05f5c72d0d56783fce92020e4624cfb1ab70bd57ef974d5833"
+hash = "53eaf0c3b60ce5422b8df8293d56e202c423c0e4de3ada433db22d92df803cf4"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
@@ -614,7 +614,7 @@ hash = "ad2f91c5cce4e29d4b70957c3f43d6a82a12cda1e06a1859cb895466dec61b09"
 
 [[files]]
 file = "kubejs/server_scripts/bog_slime_chain.js"
-hash = "b8cdf1e226c9396e6b864cc6dd25e0f4ea8687ba68ba3bfb8367d4a928f59ab3"
+hash = "bfb25ece8d594a4a8d552f4206e94d4024d68ac2c7b117922d6a8e1a45f17920"
 
 [[files]]
 file = "kubejs/server_scripts/builder_sieve.js"
@@ -634,7 +634,7 @@ hash = "a14f0b3014ad482f9b04ef079202394670f76a749bccb93ed36bb3e41c1810dc"
 
 [[files]]
 file = "kubejs/server_scripts/dissolution_slime_recipes.js"
-hash = "942b6b1dc98d31f9866f1a56bf84db9957e6f995e850927fc221bafca6371841"
+hash = "c013b3d61c5f90d5c4ebc590d8bb44cb31ffa5deae955ab05f7cedc51575face"
 
 [[files]]
 file = "kubejs/server_scripts/dump_items.js"
