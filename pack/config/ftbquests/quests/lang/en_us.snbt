@@ -840,14 +840,14 @@
 	quest.7B06000000000011.quest_desc: ["&2Lily Pads&r from your &emycelium milk&r - the swamp's surface, and a step toward open water."]
 	quest.7B06000000000011.quest_subtitle: "A frog's favorite seat."
 	quest.7B06000000000011.title: "Lily Pad"
-	quest.7B06000000000014.quest_desc: ["The swamp's animals leave a trace: &6leather&r from your &elily pad milk&r. Books, armor, frames - no cows required."]
+	quest.7B06000000000014.quest_desc: ["The swamp's animals leave a trace: &6leather&r from your &estring milk&r. Books, armor, frames - no cows required."]
 	quest.7B06000000000014.quest_subtitle: "No cow needed."
 	quest.7B06000000000014.title: "Leather"
 	quest.7B06000000000017.quest_desc: ["&fFeathers&r from your &eleather milk&r - arrows, and the light touch a void island can't otherwise get."]
 	quest.7B06000000000017.quest_subtitle: "No chicken either."
 	quest.7B06000000000017.title: "Feather"
 	quest.7B0600000000001A.quest_desc: [
-		"The swamp turns synthetic. &fPlastic&r from your &efeather milk&r - and since the &cnormal latex recipe is gone&r, this frog is now the &lonly&r source of plastic in the pack."
+		"The swamp turns synthetic. &fPlastic&r from your &elily pad milk&r - and since the &cnormal latex recipe is gone&r, this frog is now the &lonly&r source of plastic in the pack."
 		""
 		"Plastic is the key to &eIndustrial Foregoing&r - most of its machines need it - so the bog just became mandatory tech."
 	]

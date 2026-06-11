@@ -67,6 +67,11 @@ const SLIME_TIERS = [
     ['emerald',  'minecraft:amethyst_shard'],
     ['diamond',  'minecraft:emerald']
   ]],
+  // BOG canonical lane (organics + Industrial Foregoing tail) - the spine to Tide.
+  // The eight mob-drop variants are NO LONGER threaded here; they live in their own
+  // terminal sub-chain at the END of this array (see "BOG mob-drop lane" below).
+  // plastic re-threads off lily_pad so this lane stands alone; pink_slime stays the
+  // capstone and the Tide bridge.
   ['BOG', 'minecraft:mossy_cobblestone', [
     ['dirt',       'minecraft:diamond'],            // bridges from Geode's last
     ['mud',        'minecraft:dirt'],
@@ -74,21 +79,8 @@ const SLIME_TIERS = [
     ['moss',       'minecraft:clay_ball'],
     ['mycelium',   'minecraft:moss_block'],
     ['lily_pad',   'minecraft:mycelium'],
-    ['leather',    'minecraft:lily_pad'],
-    ['feather',    'minecraft:leather'],
-    // PF 1.13.0 (#161): the Bog mob-drop stragglers slot before the modded tail;
-    // pink_slime stays the capstone and the Tide bridge.
-    ['armadillo_scute', 'minecraft:feather'],
-    ['honeycomb',  'minecraft:armadillo_scute'],
-    // PF 1.14.0: the mob-drop wave (bone/gunpowder/rotten_flesh/string) slots
-    // after honeycomb per the #161 precedent, alphabetical; the modded tail
-    // keeps plastic -> pink_slime as the capstone and the Tide bridge.
-    ['bone',         'minecraft:honeycomb'],
-    ['gunpowder',    'minecraft:bone'],
-    ['rotten_flesh', 'minecraft:gunpowder'],
-    ['string',       'minecraft:rotten_flesh'],
-    ['plastic',    'minecraft:string'],
-    ['pink_slime', 'industrialforegoing:plastic']
+    ['plastic',    'minecraft:lily_pad'],           // re-threaded off lily_pad (mob drops removed from this lane)
+    ['pink_slime', 'industrialforegoing:plastic']   // capstone + the Tide bridge
   ]],
   ['TIDE', 'minecraft:mycelium', [
     ['prismarine',          'industrialforegoing:pink_slime'],  // bridges from Bog's last
@@ -138,6 +130,29 @@ const SLIME_TIERS = [
     // PF 1.13.0 (#161): phantom_membrane slots before the capstone.
     ['phantom_membrane', 'minecraft:sculk'],
     ['shulker_shell', 'minecraft:phantom_membrane']
+  ]],
+  // BOG mob-drop lane (terminal). Placed LAST in SLIME_TIERS deliberately: the
+  // threading validator tracks the prior tier's last variant sequentially, and Tide
+  // bridges off Bog's pink_slime - so this second BOG block must NOT sit between the
+  // canonical Bog block and Tide. Here at the end, nothing bridges off it.
+  //
+  // `bone` bootstraps off BONE MEAL (a THREADING_EXCEPTION, like iron<-bone_meal) -
+  // abundant (composter, or one skeleton bone -> 3 meal). It can't seed off its own
+  // `bone` resource, because the next link `gunpowder<-bone` already claims it and the
+  // chamber can't tell two same-input recipes apart (same Bog filler) - hence bone
+  // meal for the seed, bone for the second. The iron<-bone_meal collision is avoided
+  // because iron is Cave (stone filler) vs Bog's mossy cobblestone. gunpowder then
+  // threads off bone and the rest chain down, so the un-farmable drops (armadillo_scute
+  // - no armadillos; honeycomb - no bees) come from the chain.
+  ['BOG', 'minecraft:mossy_cobblestone', [
+    ['bone',            'minecraft:bone_meal'],     // bootstrap off bone meal (THREADING_EXCEPTION; the bone resource is claimed by gunpowder below)
+    ['gunpowder',       'minecraft:bone'],
+    ['rotten_flesh',    'minecraft:gunpowder'],
+    ['string',          'minecraft:rotten_flesh'],
+    ['leather',         'minecraft:string'],
+    ['feather',         'minecraft:leather'],
+    ['armadillo_scute', 'minecraft:feather'],
+    ['honeycomb',       'minecraft:armadillo_scute']
   ]]
 ]
 
