@@ -544,14 +544,14 @@
 	quest.6E0DE00000000017.quest_desc: [
 		"A &bRapid Catalyst&r (two &fsweetslime&r and &fsugar&r) makes a source spit slimes out faster. Toss it in the pool like the last one."
 		""
-		"Speed climbs to a cap, so a few per source is plenty."
+		"The boost climbs to a cap, so a few per source is plenty."
 	]
 	quest.6E0DE00000000017.quest_subtitle: "Faster slime."
 	quest.6E0DE00000000017.title: "Rapid Catalyst"
 	quest.6E0DE0000000001A.quest_desc: [
 		"A &bTeeming Catalyst&r (two &fsweetslime&r and &fredstone&r) makes a source spawn more slimes at once - more bodies per batch for your frogs to eat."
 		""
-		"Like Speed, it climbs to a cap."
+		"Like the Rapid Catalyst, it climbs to a cap."
 	]
 	quest.6E0DE0000000001A.quest_subtitle: "Bigger batches."
 	quest.6E0DE0000000001A.title: "Teeming Catalyst"
