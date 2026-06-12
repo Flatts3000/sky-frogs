@@ -22,7 +22,7 @@ The Mekanism `Enrichment Chamber` quest promises "frog metals, doubled." The fir
 
 | Chapter | Quest | Bug | Fix |
 |---------|-------|-----|-----|
-| tools_and_things | First Goo | "mix in mycelium" - real `gooblock_tier1` uses **dirt** (clay+dirt+rotten flesh+sugar) | name dirt |
+| ~~tools_and_things~~ | ~~First Goo~~ | ~~"mix in mycelium" - real uses dirt~~ | **REJECTED** - pack overrides gooblock to mycelium (`jdt_recipes.js`); original text was right, "dirt" edit reverted |
 | tools_and_things | First Goo / Ferricore | invented "seed the soil" mechanic; real is `goospread` into an adjacent **iron block** | rewrite to goospread |
 | tools_and_things | First Goo | "Primogel Goo Block" - item is **Primogel Goo** | drop "Block" |
 | tools_and_things | Slime Churn | output named "Slime in a Bucket" - real is **Bucket of [Variant] Slime** | rename |
@@ -63,6 +63,9 @@ The pack calls the species-unlock item "Bottle of <Species> Frog **Frogspawn**" 
 
 1. **mekanism / Enrichment Chamber "doubling impossible":** REJECTED. The doubling ships in PF's own datapack (`data/productivefrogs/recipe/mekanism/*.json`). Quest text is correct.
 2. **mekanism / Steel task item id mismatch:** REJECTED. AlmostUnified (`config/almostunified/unification/materials.json`, `mod_priorities: [minecraft, alltheores, mekanism]`) unifies `c:ingots/steel` and rewrites the Mekanism steel-ingot recipe output to `alltheores:steel_ingot` - the exact item the task requires. The task is completable; no structural fix needed. (The Steel *text* fix - naming the second carbon infusion - still stands; that's about recipe steps, not item identity.)
+3. **tools_and_things / First Goo "mycelium is fabricated":** REJECTED. Pack KubeJS override `kubejs/server_scripts/jdt_recipes.js` re-issues `gooblock_tier1` with a **mycelium** center (gating JDT behind the Bog mycelium frog). The original "mycelium" text was correct; the "dirt" edit was reverted. The goospread + "Primogel Goo" naming fixes in the same quest stand.
+
+All three rejected findings were the same failure mode - a recipe/item-rewriting layer (PF datapack, AlmostUnified, pack KubeJS override) skipped in favor of the raw mod jar - and all three were caught by the maintainer, not the agents. The standing release-checklist gate now lists the full authority order.
 
 ## Cross-cutting decision RESOLVED
 

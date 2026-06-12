@@ -48,7 +48,7 @@
 	quest.05BFA1537298A589.quest_subtitle: "The whole pitch, in three words."
 	quest.05BFA1537298A589.title: "Frogs, Not Pickaxes"
 	quest.1F00000000000002.quest_desc: [
-		"Just Dire Things runs on &eGoo&r. Craft &fclay balls&r, &fdirt&r, &frotten flesh&r, and &fsugar&r into a block of &ePrimogel Goo&r - your way into Direwolf20's machines."
+		"Just Dire Things runs on &eGoo&r. Craft &fclay balls&r, &fmycelium&r, &frotten flesh&r, and &fsugar&r into a block of &ePrimogel Goo&r - your way into Direwolf20's machines. The mycelium comes off your &aBog frog&r."
 		""
 		"Place the goo, then set a &firon block&r or &fcoal block&r right next to it. The goo slowly creeps into that block and turns it into a raw ore. Mine the ore and you're off."
 	]
@@ -1533,7 +1533,7 @@
 	quest.601D000000000008.quest_subtitle: "If the world won't give you a portal, bake one."
 	quest.601D000000000008.title: "Bake the End Cake"
 	quest.601D00000000000B.quest_desc: [
-		"Set the &dEnd Cake&r down somewhere you trust and &etake a bite&r. Each bite teleports whoever eats it straight to the End, and one cake feeds &eseveral trips&r - enough for a few runs (or a team)."
+		"Set the &dEnd Cake&r down somewhere you trust and &etake a bite&r. Each bite teleports whoever eats it straight to the End - take another whenever you need to go back."
 		""
 		"You'll land on an obsidian platform beside the central island. Mind the drop, and mind &dher&r."
 	]
