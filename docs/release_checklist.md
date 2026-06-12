@@ -29,6 +29,15 @@ Do the standing PF-bump sweep first, on a feature branch, and merge it before re
 5. `python tools/validate_quests.py` - must exit 0.
 6. Read the PF release notes and quest/wire any new content per the usual pattern (chamber rows, census columns, chapters). Update CLAUDE.md's pin line + `docs/pf_pin_history.md`.
 
+## 1.5. Quest-text editorial review (standing pre-release gate)
+
+Any release that touched quest text (`config/ftbquests/quests/lang/en_us.snbt`) or shipped new chapters needs an editorial check before it goes out. The full corpus was reviewed once for v1.0 (issue #169, audit at `docs/audits/quest_editorial_2026_06_11/`); from here on, review what changed:
+
+1. For every quest whose text describes a mod mechanic, **ground-truth it against the actual mod, not memory** - in authority order: pack KubeJS overrides (`pack/kubejs/`), then **Productive Frogs' own datapack** (`data/productivefrogs/recipe/` inside the jar), then **AlmostUnified** unification (`config/almostunified/unification/materials.json` rewrites unified dust/ingot/gem item ids by mod priority), then the named mod's jar. The recurring failure mode is LLM-authored text inventing a plausible mechanic, or declaring one "missing" because a hidden datapack/unification layer was skipped (both bit issue #169).
+2. Check terminology (player-facing item names match in-game lang; "Froglight" not "Configurable Froglight"; "Bottle of <Species> Frog Eggs" not "Frogspawn"), ASCII-only punctuation (no em/en dashes), and balanced `&` color codes.
+3. Generated census chapters (`whole_pond`, `sister_ponds`): fix text in `tools/gen_completionist_chapters.py` and regenerate, never the lang file directly.
+4. `python tools/validate_quests.py` must exit 0.
+
 ## 2. Cut the release (on `main`, clean tree)
 
 1. `git checkout main && git pull` - start from latest, working tree clean.

@@ -4,6 +4,11 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+### Changed
+- **Holistic editorial pass over all quest text (issue #169).** Reviewed every quest across all 27 chapters for factual accuracy, voice, terminology, and formatting - ground-truthing each described mechanic against the mod jars, Productive Frogs' own datapack, and AlmostUnified rather than memory. Fixed roughly 33 accuracy bugs, the kind a player following the text would get stuck on, including: the Just Dire Things goo block is mixed with dirt (not mycelium) and spreads into an adjacent iron/coal block (the real goospread mechanic, not the invented "seed the soil" step that triggered this review); the sea lantern recipe (5 prismarine crystals + 4 shards); the Cave Redstone slime threads off breeze-rod milk; the Mekanism steel chain needs a second carbon infusion before smelting; the Geode Slime Milk catalysts now use their real in-game names (Bountiful / Rapid / Teeming / Endless); and the Item Collector, End Cake, and Disk Drive descriptions match their actual recipes/limits.
+- **Species-unlock item renamed "Frogspawn" -> "Bottle of <Species> Frog Eggs" in all quest text.** Matches Productive Frogs' real item name, so a new player can find it in JEI. ~21 strings across the gateway chapters.
+- **Census titles corrected** (generated chapters): the Powah crystals now read "Blazing/Niotic/Spirited/Nitro Crystal", "Eclipsealloy" -> "Eclipse Alloy", and the vanilla "Clay Ball" -> "Clay", all matching the in-game names. Fixed in `tools/gen_completionist_chapters.py`; quest IDs are deterministic so completion survives.
+
 ## [0.14.0] - 2026-06-10
 
 A content-and-fixes drop: the Bog quest chain splits into two lanes (a clean spine to Tide plus an optional mob-drop lane), Productive Frogs reaches its stable 1.0 ("Full Bloom") with the Jade tadpole-timer and Slime Milk fluid fixes, and the Bog reward crate stops handing out four spyglasses.
