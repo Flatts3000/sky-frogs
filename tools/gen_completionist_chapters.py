@@ -180,7 +180,22 @@ def det_id(prefix: str, key: str, salt: str = "") -> str:
     return prefix + h[:12]
 
 
+# Variant slugs whose in-game display name a plain title_case() gets wrong (issue #169).
+# Keyed on the variant slug; value is the exact name shown in-game (and in JEI), so the
+# census title matches what the player is hunting for. Verified against the mod jars' lang.
+DISPLAY_OVERRIDES = {
+    "clay_ball": "Clay",             # PF froglight display is "Clay Froglight" (not "Clay Ball")
+    "blazing": "Blazing Crystal",    # Powah
+    "niotic": "Niotic Crystal",      # Powah
+    "spirited": "Spirited Crystal",  # Powah
+    "nitro": "Nitro Crystal",        # Powah
+    "eclipsealloy": "Eclipse Alloy", # Just Dire Things renders it two words
+}
+
+
 def title_case(slug: str) -> str:
+    if slug in DISPLAY_OVERRIDES:
+        return DISPLAY_OVERRIDES[slug]
     return " ".join(w.capitalize() for w in slug.split("_"))
 
 

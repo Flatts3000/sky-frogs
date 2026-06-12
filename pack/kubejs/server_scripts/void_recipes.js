@@ -4,7 +4,8 @@
 //    End portal to find. The gate used to be a hand-built 12-frame portal ring, which proved
 //    a trap in practice - frames must face inward, and a wrong-facing ring silently never
 //    lights (CF report #8041724) - so the gate is now Ex Deorum's End Cake: place it, take
-//    a bite, arrive in the End. One cake has 6 slices = 6 trips. Ex Deorum's default recipe
+//    a bite, arrive in the End. The cake eats in bites like a vanilla cake (7 bites = 7
+//    trips); the quest text deliberately states no fixed count. Ex Deorum's default recipe
 //    needs crushed end stone, a chicken-and-egg on this skyblock (end stone comes from the
 //    Void frog you don't have yet), so we override it with a vanilla-cake-shaped recipe:
 //    milk on top (plain milk OR any Slime Milk - the frog-native path), eyes of ender where
