@@ -434,7 +434,9 @@
 		""
 		"Frogs jump, and they jump high. You're on an island in the void: a frog that clears your wall isn't hopping back, it's gone for good. Don't trust a low fence - build the walls tall, or cap the whole pen with a roof or an overhang."
 		""
-		"Drop a little &bwater&r inside while you're at it. That's where your frog eggs go next."
+		"Sink a &bwater&r pool into the floor - aim for &b3x3 and two deep&r. It's where frog eggs hatch and where a breeding pair goes to lay, and a roomy pool breeds far more reliably than a one-block puddle."
+		""
+		"Floor the pen with &emud&r. Frogs and just-grown tadpoles sit on it safely instead of suffocating against bare walls."
 	]
 	quest.6C1F0A2B3D4E5F61.quest_subtitle: "Build them a home."
 	quest.6C1F0A2B3D4E5F61.title: "A Place for Frogs"
