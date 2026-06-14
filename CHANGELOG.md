@@ -14,6 +14,9 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 - **Species-unlock item renamed "Frogspawn" -> "Bottle of <Species> Frog Eggs" in all quest text.** Matches Productive Frogs' real item name, so a new player can find it in JEI. ~21 strings across the gateway chapters.
 - **Census titles corrected** (generated chapters): the Powah crystals now read "Blazing/Niotic/Spirited/Nitro Crystal", "Eclipsealloy" -> "Eclipse Alloy", and the vanilla "Clay Ball" -> "Clay", all matching the in-game names. Fixed in `tools/gen_completionist_chapters.py`; quest IDs are deterministic so completion survives.
 
+### Fixed
+- **Mobs no longer drop affixed Froglight Cleavers (issue #184).** Apotheosis was treating the Productive Frogs Froglight Cleaver - the crafted boss-tier endgame weapon - as affixable loot, so an over-statted affixed copy could drop from the mob farm and bypass the whole endgame. The Cleaver is now excluded from Apotheosis affix loot via the mod's own `loot_category_overrides` data map (set to `apotheosis:none`, the same exclusion the mod uses for shulker shells). The affix system is otherwise untouched - other gear still rolls affixes normally.
+
 ## [0.14.0] - 2026-06-10
 
 A content-and-fixes drop: the Bog quest chain splits into two lanes (a clean spine to Tide plus an optional mob-drop lane), Productive Frogs reaches its stable 1.0 ("Full Bloom") with the Jade tadpole-timer and Slime Milk fluid fixes, and the Bog reward crate stops handing out four spyglasses.
