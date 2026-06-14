@@ -22,6 +22,7 @@ The docs are living maintenance reference for the built pack. Keep them current 
 - [`docs/mod_list.md`](./docs/mod_list.md) — what ships and why; selection criteria
 - [`docs/kubejs_overrides.md`](./docs/kubejs_overrides.md) — the four pillars (anti, parent spawn, slime variants, recipe forcing)
 - [`docs/quest_book.md`](./docs/quest_book.md) — FTB Quests chapter outline
+- [`docs/patchouli_guide.md`](./docs/patchouli_guide.md) — how the pack extends Productive Frogs' in-game Patchouli guide (`productivefrogs:guide`) with a Sky Frogs category; the resource-pack merge path + the assets-not-junctioned dev caveat
 - [`docs/worldgen.md`](./docs/worldgen.md) — void skyblock setup, starter island, parent species distribution
 - [`docs/pack_metadata.md`](./docs/pack_metadata.md) — pack identity, versioning policy, asset spec
 - [`docs/repo_layout.md`](./docs/repo_layout.md) — packwiz tree, CI shape, helper scripts

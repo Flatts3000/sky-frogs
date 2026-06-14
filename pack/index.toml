@@ -529,6 +529,26 @@ file = "kubejs/assets/minecraft/texts/splashes.txt"
 hash = "02714cf4995ee24ecc6b39f0fe422a2627c6d16d4353f256150e83de77eee7a2"
 
 [[files]]
+file = "kubejs/assets/productivefrogs/patchouli_books/guide/en_us/categories/sky_frogs.json"
+hash = "eb3e4c3a732bb85700bca54ce97ce3d3beb1d7d6bfafc9b6f1bf2d4c6d8281a3"
+
+[[files]]
+file = "kubejs/assets/productivefrogs/patchouli_books/guide/en_us/entries/sky_frogs/dissolution_chamber.json"
+hash = "e3a5b7cfc2a15c4348db2e67f2a59b0e18d4a610c6a0a37a2b62d2393f2afcb5"
+
+[[files]]
+file = "kubejs/assets/productivefrogs/patchouli_books/guide/en_us/entries/sky_frogs/pack_changes.json"
+hash = "3f84a2218323a6fe96f8765d203c363cf8df16267aaffb2d8ebd4912d5837629"
+
+[[files]]
+file = "kubejs/assets/productivefrogs/patchouli_books/guide/en_us/entries/sky_frogs/singularity_endgame.json"
+hash = "21128b3eebc81b35f70aff097ffbb7c9906e7cc1430cf4d941f1be6451545cdd"
+
+[[files]]
+file = "kubejs/assets/productivefrogs/patchouli_books/guide/en_us/entries/sky_frogs/welcome.json"
+hash = "77bfc3f3d12ed417bf56959f0cb22383b21dd4360645f96b20981ba9440bb40b"
+
+[[files]]
 file = "kubejs/client_scripts/opolis_jei_hide.js"
 hash = "1ff55fa099c6f9092a89d5d9cff3b03c3a24aaa6f5cb2e0becd33ded9649f1c0"
 
