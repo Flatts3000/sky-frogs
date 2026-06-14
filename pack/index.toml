@@ -418,7 +418,7 @@ hash = "4889c5e7d4a8179b45e68f0ac00119529ed49ba68f20624b36e996bb0d60ddd0"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "b8fbbe86e60bf037e27c9a1ebcab627bde155619a742805a5efff387a70bdbb4"
+hash = "2a197c26826423f4b45fee22c899e4917e1f9512a8b9e92ec7c3cb04afd9f350"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
@@ -642,7 +642,7 @@ hash = "5daea9934a436ef217fee39ebf13a15e4a82516ebd46763dcd9ba307951bd492"
 
 [[files]]
 file = "kubejs/server_scripts/first_join.js"
-hash = "659f7a086b994e6c47b0b7f0e37fbc037a7417fc1ab924455c60cd4a0d08f4e8"
+hash = "d32ea4b5796d4250f932ad9100a5ca081ce4c09adffd689e6a9cd6c337d4f126"
 
 [[files]]
 file = "kubejs/server_scripts/flint_recipe.js"
@@ -1335,7 +1335,7 @@ metafile = true
 
 [[files]]
 file = "mods/productive-frogs.pw.toml"
-hash = "1efbc50d02d30b001da3ad631ca19bf6f544d2d3c741c575456e3b3daafca703"
+hash = "745d0ec5d4a7cb8223a70de83eada6a233231f0c063c698dea798d2c551476f1"
 metafile = true
 
 [[files]]

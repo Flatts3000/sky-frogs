@@ -216,7 +216,7 @@
 		""
 		"Stats run &b1 to 10&r. Frogs hatched from eggs start low (1-3); a &l10/10/10&r frog is the long game, and breeding is the only road there."
 		""
-		"Each baby's stat is rolled from its parents: roughly &a2 in 5&r it climbs a point above the better parent, about &b3 in 10&r it slips back toward their average, otherwise it holds at the better of the two. So breed your &lbest with your best&r - over generations the whole line drifts upward."
+		"Each baby's stats start at the &eaverage&r of its parents, then each one has a chance to &aclimb a point higher&r - and every breed bumps at least one stat, so a pairing is never wasted. A baby never drops below the parents' average, so you can't breed backward. Pair your &lbest with your best&r to hold a high average and climb toward &l10/10/10&r; mixing in a weak frog just drags the average down. (The flip side of averaging: breed a high-&aAppetite&r frog with a high-&eBounty&r one to merge their strengths into a balanced frog.)"
 		""
 		"Pair off two frogs to begin."
 	]
