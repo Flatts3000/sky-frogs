@@ -42,11 +42,12 @@ Everything from your first iron to the endgame comes through **Resource Frogs**:
 ## Features
 
 - **Species-gated progression.** Six frog species, unlocked in order - **Cave, Geode, Bog, Tide, Infernal, Void** - each one a whole new family of resources. Finish one species' chapter to bootstrap the next.
-- **You already know the controls.** Every interaction is a vanilla right-click: glass bottles, slimeballs, water buckets, frogspawn. No custom UIs to learn.
+- **You already know the controls.** Every interaction is a vanilla right-click: glass bottles, slimeballs, water buckets, frog eggs. No custom UIs to learn.
 - **No mining shortcuts.** Laser drills, quarries, digital miners - recipe-stripped or hidden. The frogs are the path, and the pack enforces it. (Builders get one curated exception: a string-mesh sieve over dirt and moss that drops saplings and garden flora - decor only, never resources.)
 - **Cross-mod by JSON.** Any modded resource can be made frog-farmable with a single `slime_variant` JSON file, so the whole modded-resource ecosystem plugs into the same loop. No Java, no source-fork.
 - **A questbook that actually guides you.** FTB Quests walks every tier: a chapter per species, plus side chapters for the tech mods. If you're lost, the answer's in the book.
-- **A completionist victory lap.** Two census chapters count every froglight in the pack - the vanilla fifty laid out as an actual tree frog, the modded twenty-five column by column - and every name on the list is genuinely craftable. No lottery tickets, no dead checkboxes.
+- **An illustrated field guide, too.** Productive Frogs' in-game Patchouli guide is in your inventory from the first login (and craftable if you lose it), with a Sky Frogs section covering the void-skyblock specifics - a reference shelf alongside the step-by-step quests.
+- **A completionist victory lap.** Two census chapters count every froglight in the pack - the full vanilla roster laid out as an actual tree frog, the modded set column by column - and every name on the list is genuinely craftable. No lottery tickets, no dead checkboxes.
 - **Built from player feedback.** Most updates start as somebody's Discord message or CurseForge comment - the welcome chapter hands you the invite (or click Join the Pond in-game).
 
 ## How to Play (your first hour)
@@ -56,7 +57,7 @@ Everything from your first iron to the endgame comes through **Resource Frogs**:
 3. **Get a second water source.** An Ex Deorum barrel catches rain; bottle it onto your island for an infinite water square.
 4. **Wall off a dark room** - at least 5x5 and 3 tall. **Cave Slimes** spawn in the dark here; they're your first ore source, and bigger rooms fill faster.
 5. **Farm them** for slimeballs, and keep an eye out for the occasional Iron Slime.
-6. **Finish the Welcome chapter** and you're handed a **Bottle of Cave Frog Frogspawn** (a breeding pair's worth).
+6. **Finish the Welcome chapter** and you're handed a **Bottle of Cave Frog Eggs** (a breeding pair's worth).
 7. **Pour it on water.** Cave Frogs hatch. Feed one an Iron Slime, an **Iron Froglight** drops, smelt it: your first iron.
 
 By the end of a session, iron is a frog's problem, not yours. The book drives the rest.
@@ -72,7 +73,7 @@ By the end of a session, iron is a frog's problem, not yours. The book drives th
 | 5    | Infernal | The Nether, earned by one real fortress trip: obsidian, quartz, glowstone, blaze, netherite |
 | 6    | Void     | The End and endgame: ender pearls, end stone, chorus, echo shards, sculk, shulker shells (earned by a real dragon expedition) |
 
-Each tier extends with modded resources as those mods ship in the pack. The endgame: compress a thousand of each of the frogs' resources into its own Singularity (a proof you automated every farm - fifty of them and counting), fold the full set into the Ultimate Singularity, and craft the **Sky Frogs Master Frog**, a trophy that says you out-frogged the game.
+Each tier extends with modded resources as those mods ship in the pack. The endgame: compress a thousand of each of the frogs' resources into its own Singularity (a proof you automated every farm - one per vanilla resource), fold the full set into the Ultimate Singularity, and craft the **Sky Frogs Master Frog**, a trophy that says you out-frogged the game.
 
 ## Mod Highlights
 
@@ -110,7 +111,7 @@ Yes, but never required. Productive Frogs is hand-operated by design; the pack i
 Yes. Each release ships a server pack alongside the client. Party support via FTB Teams, claims via FTB Chunks, `/home` and `/tpa` via FTB Essentials. Balance is single-player-tuned for now; multiplayer tuning is a later stretch goal.
 
 **Will my world break on updates?**
-Pre-1.0: possibly. Any world wipe is called out in the changelog. Post-1.0: world-breaking changes bump the major version and get flagged in **bold** at the top of the release notes. Hotfixes and content additions never break worlds.
+Not on a normal update. Now that the pack is 1.0, world-breaking changes bump the major version and get flagged in **bold** at the top of the release notes; hotfixes and content additions never break worlds.
 
 **Modrinth release?**
 Not planned. The FTB utility stack and Productive Frogs are CurseForge-only, and Modrinth forbids inlining CF mods as overrides. FTB Quests is load-bearing for the campaign, so CF stays the sole channel.
