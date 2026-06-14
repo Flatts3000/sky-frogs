@@ -840,6 +840,15 @@
 	quest.7B06000000000011.quest_desc: ["&2Lily Pads&r from your &emycelium milk&r - the swamp's surface, and a step toward open water."]
 	quest.7B06000000000011.quest_subtitle: "A frog's favorite seat."
 	quest.7B06000000000011.title: "Lily Pad"
+	quest.7B06000000000034.quest_desc: [
+		"Tired of leashing frogs to keep them in place? Right-click a placed &alily pad&r with a &dSweetslime&r and it becomes a &aSweetslimed Lily Pad&r."
+		""
+		"The nearest frog walks over and settles on it - one frog per pad. It keeps eating same-species slimes in range and dropping &eFroglights&r right there, so park one over a hopper beside a &eSlime Milk&r source for hands-off collection. Break the pad to free the frog."
+		""
+		"Make one, then check this off. (Your &9field guide&r has the full page.)"
+	]
+	quest.7B06000000000034.quest_subtitle: "Pin a frog, no leash."
+	quest.7B06000000000034.title: "A Frog Perch"
 	quest.7B06000000000014.quest_desc: ["The swamp's animals leave a trace: &6leather&r from your &estring milk&r. Books, armor, frames - no cows required."]
 	quest.7B06000000000014.quest_subtitle: "No cow needed."
 	quest.7B06000000000014.title: "Leather"

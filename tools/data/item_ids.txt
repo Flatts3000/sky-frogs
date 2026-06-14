@@ -16056,6 +16056,7 @@ productivefrogs:sprinkler
 productivefrogs:sponge_slime_milk_bucket
 productivefrogs:steel_slime_milk_bucket
 productivefrogs:sweetslime
+productivefrogs:sweetslimed_lily_pad
 productivefrogs:terrarium_controller
 productivefrogs:tide_frog_egg
 productivefrogs:tide_frog_spawn_egg
