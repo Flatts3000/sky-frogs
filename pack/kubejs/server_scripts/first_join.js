@@ -12,8 +12,8 @@
 // The Productive Frogs field guide (a Patchouli book, PF 1.21+) is granted under its OWN
 // guard, NOT the first-join one, so that players who already joined before the book existed
 // still receive it once on their next login - "every player gets it when they start."
-// The book is also craftable (vanilla book + slime ball -> productivefrogs:guide_book),
-// so a lost copy is replaceable.
+// The book is also craftable (vanilla book + slime ball -> a patchouli:guide_book carrying
+// the productivefrogs:guide book), so a lost copy is replaceable.
 
 PlayerEvents.loggedIn(event => {
   const { player } = event
@@ -28,12 +28,12 @@ PlayerEvents.loggedIn(event => {
   }
 
   // One-time guide-book grant for EVERY player (new or returning). Separate guard so
-  // pre-existing saves get it once too. Inert if Patchouli somehow is not loaded.
-  if (!data.contains('skyfrogs:guideBookGranted')) {
+  // pre-existing saves get it once too. The guard is only set once the book is actually
+  // given, so a load without Patchouli doesn't burn the flag - it retries on a later login
+  // if Patchouli is added.
+  if (!data.contains('skyfrogs:guideBookGranted') && Platform.isLoaded('patchouli')) {
     data.putBoolean('skyfrogs:guideBookGranted', true)
-    if (Platform.isLoaded('patchouli')) {
-      player.give(Item.of('patchouli:guide_book[patchouli:book="productivefrogs:guide"]'))
-      player.tell(Text.green('A Productive Frogs field guide has been added to your inventory - flip through it any time.'))
-    }
+    player.give(Item.of('patchouli:guide_book[patchouli:book="productivefrogs:guide"]'))
+    player.tell(Text.green('A Productive Frogs field guide has been added to your inventory - flip through it any time.'))
   }
 })

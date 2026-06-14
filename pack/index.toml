@@ -642,7 +642,7 @@ hash = "5daea9934a436ef217fee39ebf13a15e4a82516ebd46763dcd9ba307951bd492"
 
 [[files]]
 file = "kubejs/server_scripts/first_join.js"
-hash = "d32ea4b5796d4250f932ad9100a5ca081ce4c09adffd689e6a9cd6c337d4f126"
+hash = "4395f4787961c6dff55e01517e41c8e4712acdef10af391c661363ff8a364bec"
 
 [[files]]
 file = "kubejs/server_scripts/flint_recipe.js"
