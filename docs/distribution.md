@@ -63,10 +63,12 @@ Manual release path (fallback) if the action fails: download the artifact from t
 
 ## Versioning policy (recap from pack_metadata.md)
 
-- **`v0.x.y`** — pre-1.0. `x` for playtest milestones, `y` for hotfixes.
-- **`v1.0.0`** — first feature-complete release.
-- **`v1.x` post-1.0** — `x` for content additions / mod additions, `y` for configs-only fixes.
-- **Breaking changes** that require world wipes bump the **major** version. Communicate loudly.
+**v1.0.0 shipped 2026-06-14** (out of beta), so post-1.0 SemVer is in effect: **major** = world-breaking, **minor** = new content, **patch** = fixes.
+
+- **`v0.x.y`** — pre-1.0 (historical). `x` for playtest milestones, `y` for hotfixes.
+- **`v1.0.0`** — the launch release (out of beta).
+- **`v1.x` post-1.0** — `x` (minor) for content additions / mod additions, `y` (patch) for configs-only fixes.
+- **Breaking changes** that require world wipes bump the **major** version (`2.0.0`). Communicate loudly.
 
 ## Changelog format
 

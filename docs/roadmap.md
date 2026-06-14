@@ -6,9 +6,9 @@ The path from "pack scaffold boots in a launcher" to "Sky Frogs v1.0 lives on Cu
 
 ## Where we are right now
 
-The pack is **live on CurseForge** (the v0.12.x line), shipping tag-driven releases (client + dedicated-server packs) to CurseForge and GitHub. Productive Frogs is pinned at **1.19.0** (Stone Soup). The frog loop and full campaign are built and merged: a couple dozen KubeJS override scripts (anti.js, first_join.js, the per-tier slime chains, the Dissolution Chamber engine + every tier's rows, the spawnery primers, the storage/plastic/steel/log/catalyst/mossy-gate/JDT/boss overrides) and **27 quest chapters / ~331 quests spanning all six tiers** plus the Trophy Pond boss campaign, the Terrarium automation chapter, and the Completionist census. The mod set spans every tier's verb (Mekanism, Industrial Foregoing, Just Dire Things + Building Gadgets, Iron Jetpacks, Refined Storage, Extended Crafting) plus Powah/Flux Networks, Apotheosis (a combat/enchanting/loot layer), the decoration suite, and the QoL stack.
+The pack is **live on CurseForge** (v1.0.0, shipped 2026-06-14), shipping tag-driven releases (client + dedicated-server packs) to CurseForge and GitHub. Productive Frogs is pinned at **1.21.0** (By the Book). The frog loop and full campaign are built and merged: a couple dozen KubeJS override scripts (anti.js, first_join.js, the per-tier slime chains, the Dissolution Chamber engine + every tier's rows, the spawnery primers, the storage/plastic/steel/log/catalyst/mossy-gate/JDT/boss overrides) and **27 quest chapters / ~335 quests spanning all six tiers** plus the Trophy Pond boss campaign, the Terrarium automation chapter, and the Completionist census. The mod set spans every tier's verb (Mekanism, Industrial Foregoing, Just Dire Things + Building Gadgets, Iron Jetpacks, Refined Storage, Extended Crafting) plus Powah/Flux Networks, Apotheosis (a combat/enchanting/loot layer), the decoration suite, and the QoL stack.
 
-All six tiers (Welcome -> Cave -> Geode -> Bog -> Tide -> Infernal -> Void) are built and playable end to end, through the Master Pond endgame and the Sky Frogs Master Frog trophy. The content campaign is complete; remaining work is balance, art, and optional side chapters.
+All six tiers (Welcome -> Cave -> Geode -> Bog -> Tide -> Infernal -> Void) are built and playable end to end, through the Master Pond endgame and the Sky Frogs Master Frog trophy. The content campaign is complete and v1.0.0 has shipped; the remaining post-1.0 work is the three consciously-waived launch-gate items (Master Frog final art, the branding gallery, the license audit), plus balance and optional side chapters.
 
 ## Phases at a glance
 
@@ -19,7 +19,7 @@ All six tiers (Welcome -> Cave -> Geode -> Bog -> Tide -> Infernal -> Void) are 
 | **2. First Iron Froglight** ✅ | `0.1.0` alpha | Productive Frogs integrated; Tier 1 (Cave) reachable |
 | **3. Mid-tier alpha** ✅ | `0.2.0` → `0.5.0` | Tiers 2-5 (Geode, Bog, Tide, Infernal) built |
 | **4. Feature-complete** | `0.6.0` ✅ → `0.9.0` | Tier 6 (Void) endgame ✅ + per-mod side chapters (#109 ✅ shipped v0.7.0) + reward/polish passes. (Reality note: the release train ran ahead of this table - content was tier-complete by v0.2/v0.3, and v0.3+ became community-driven polish/mod releases. v0.6.0 shipped 2026-06-06: Powah + Flux Networks, the QoL wave, the Discord-linked welcome chapter. v0.7.0 shipped 2026-06-07: the completionist update - census chapters in their own Completionist section, every modded resource craftable, PF 1.13 + the Melting Point chapter, the Powered Up chapter, the chamber-pressed Heavy Core/Mace, the FancyMenu title screen.) |
-| **5. v1.0 launch** | `1.0.0` | Polish, balance pass, branding assets, CF page live |
+| **5. v1.0 launch** (done) | `1.0.0` (shipped 2026-06-14) | Polish, balance pass, CF page live; gate consciously waived on Master Frog art / branding gallery / license audit (now post-1.0) |
 | **6. Maintenance** | `1.x.y` | Mod updates, content additions, hotfixes |
 
 ## Phase 1 — Tier 0 playable ✅
@@ -124,22 +124,22 @@ Note: the built tier order is Cave=Tier 1 (the starter), Geode=Tier 2, Bog=Tier 
 **I drive:**
 - All authored content.
 
-## Phase 5 — v1.0 launch
+## Phase 5 — v1.0 launch (shipped 2026-06-14)
 
 **Goal:** the pack is ready for a broad public release.
 
-> The actionable, current gate lives in [`release_checklist.md`](./release_checklist.md) ("The v1.0 launch") - work that list. The deliverables below are the original Phase 5 sketch, kept for context.
+> **v1.0.0 shipped 2026-06-14**, out of beta, live on CurseForge (client + dedicated-server packs). The launch gate was met with **three items consciously waived** as post-1.0 follow-ups: the **Master Frog final art** (still a placeholder texture), the **branding gallery** (`branding.md`), and the **final license audit**. The historical gate checklist lives in [`release_checklist.md`](./release_checklist.md) ("The v1.0 launch"). The deliverables below are the original Phase 5 sketch, kept for context.
 
 **Deliverables:**
-- [ ] All v0.1 success criteria from [`docs/design_overview.md`](./design_overview.md) met.
-- [x] ~~All v1.0 success criteria met (~750 quests across ~22 chapters...).~~ **Superseded** - the "~750 quests / 22 chapters" SBR-scale target was dropped for the theme+arc chapter-sizing principle (see [`quest_book.md`](./quest_book.md)). The content campaign is complete at 329 quests / 27 chapters (v0.10.0); 1.0 is now polish/art/launch, not quest volume.
-- [ ] **Branding assets complete** per [`docs/branding.md`](./branding.md): logo set, pack icon, CF banner, hero, full gallery, social card, demo gif.
-- [ ] **(Optional) `packmenu` + Tips Mod** added with custom title screen, panorama, loading-screen tips.
-- [ ] CHANGELOG cleaned up for public-facing release notes (less technical, more player-friendly).
-- [ ] CurseForge page polished: hook, features, How-to-play, FAQ all updated.
-- [ ] **Final license audit** — verify every bundled mod's license allows redistribution.
+- [x] All v0.1 success criteria from [`docs/design_overview.md`](./design_overview.md) met.
+- [x] ~~All v1.0 success criteria met (~750 quests across ~22 chapters...).~~ **Superseded** - the "~750 quests / 22 chapters" SBR-scale target was dropped for the theme+arc chapter-sizing principle (see [`quest_book.md`](./quest_book.md)). The content campaign is complete at ~335 quests / 27 chapters; 1.0 was polish/launch, not quest volume.
+- [ ] **Branding assets complete** per [`docs/branding.md`](./branding.md): logo set, pack icon, CF banner, hero, full gallery, social card, demo gif. **Waived at 1.0; post-1.0 follow-up.** (Logo/icon/title-screen wordmark are done.)
+- [x] **(Optional) `packmenu` + Tips Mod** - the FancyMenu title screen shipped (v0.7.0).
+- [x] CHANGELOG cleaned up for public-facing release notes (less technical, more player-friendly).
+- [x] CurseForge page polished: hook, features, How-to-play, FAQ all updated.
+- [ ] **Final license audit** — verify every bundled mod's license allows redistribution. **Waived at 1.0; post-1.0 follow-up.**
 - [ ] r/feedthebeast announcement post + cross-link from PF mod page on CurseForge.
-- [ ] Tag `v1.0.0`, release.
+- [x] Tag `v1.0.0`, release. **Done 2026-06-14.**
 
 **You drive:**
 - All visual assets.

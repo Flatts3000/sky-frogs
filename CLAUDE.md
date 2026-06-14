@@ -4,7 +4,7 @@ Guidance for Claude Code working in this repo.
 
 ## What this is
 
-**Sky Frogs** is a modpack (not a mod) built around [Productive Frogs](../productive-frogs). The pack is **live on CurseForge and content-complete** (currently on the v0.12.x line; see [`CHANGELOG.md`](./CHANGELOG.md) for the exact release): all six tiers, the Trophy Pond boss campaign, the Terrarium automation chapter, and the Completionist census are built and shipping. The core design is **settled** - frogs are the resource spine, the six-tier order (Cave -> Geode -> Bog -> Tide -> Infernal -> Void) is fixed, the froglight-check law and per-tier verbs are in place. The docs in `docs/` are maintenance reference for that built pack, not exploratory drafts; remaining work is balance, art, and the v1.0 launch polish (see [`docs/release_checklist.md`](./docs/release_checklist.md)).
+**Sky Frogs** is a modpack (not a mod) built around [Productive Frogs](../productive-frogs). The pack is **live on CurseForge and content-complete** (**v1.0.0 shipped 2026-06-14, out of beta**; see [`CHANGELOG.md`](./CHANGELOG.md) for the exact release): all six tiers, the Trophy Pond boss campaign, the Terrarium automation chapter, and the Completionist census are built and shipping. The core design is **settled** - frogs are the resource spine, the six-tier order (Cave -> Geode -> Bog -> Tide -> Infernal -> Void) is fixed, the froglight-check law and per-tier verbs are in place. The docs in `docs/` are maintenance reference for that built pack, not exploratory drafts; remaining work is post-1.0 polish: the Master Frog final art (still placeholder), the branding gallery, and the license audit (see [`docs/release_checklist.md`](./docs/release_checklist.md)).
 
 A read-only reference copy of Sky Bees Reborn lives at [`../sky-bees-reborn-reference/extracted/`](../sky-bees-reborn-reference/) as a **study object** — its `kubejs/server_scripts/`, `config/ftbquests/quests/`, and mod selection are useful for seeing how the genre has been solved before. They are **not** templates to mirror. Sky Frogs needs its own answers. When pulling patterns from SBR, attribute the inspiration but justify the choice on Sky-Frogs-specific grounds.
 
@@ -30,7 +30,7 @@ The docs are living maintenance reference for the built pack. Keep them current 
 - [`docs/release_checklist.md`](./docs/release_checklist.md) — step-by-step do-list for cutting a release (the PF-bump sweep, version bump, tag, pipeline verify)
 - [`docs/curseforge_page.md`](./docs/curseforge_page.md) — public-facing CurseForge listing copy (hook, features, FAQ, mod credits) — edit here first, push to CF
 - [`docs/branding.md`](./docs/branding.md) — visual identity spec: category color palette (sourced from PF's `Category.tintArgb()`), asset list, logo/hero composition guidelines
-- [`docs/roadmap.md`](./docs/roadmap.md) — phase-by-phase path from current state to v1.0 launch, with explicit user-vs-Claude ownership per deliverable
+- [`docs/roadmap.md`](./docs/roadmap.md) — phase-by-phase path to the v1.0 launch (shipped 2026-06-14); now tracks post-1.0 work, with explicit user-vs-Claude ownership per deliverable
 - [`docs/backlog.md`](./docs/backlog.md) — open questions, deferred features, known risks
 - [`docs/pf_pin_history.md`](./docs/pf_pin_history.md) — Productive Frogs bump-by-bump pin history (what each version brought, breaking changes)
 - [`CHANGELOG.md`](./CHANGELOG.md) — Keep a Changelog format; `[Unreleased]` captures work landed on `main` since last tag

@@ -27,12 +27,12 @@
 
 ## Version Scheme
 
-Semantic versioning with a leading `0.` until v1.0:
+Semantic versioning. **v1.0.0 shipped 2026-06-14** (out of beta), so post-1.0 SemVer is now in effect: **major** = world-breaking, **minor** = new content, **patch** = fixes.
 
-- **`v0.x.y` — pre-1.0.** `x` bumps on each minor playtest milestone; `y` bumps on hotfixes.
-- **`v1.0.0`** — first "feature complete" release: all six tiers, ~750 quests, all dimensions wired.
-- **`v1.x` — post-1.0.** `x` bumps when adding new mods, new chapters, or significant balance changes; `y` bumps on configs-only / KubeJS-only fixes.
-- **Breaking changes** (world wipes, mod removals that drop player items) bump the **major** version. World safety matters; warn loudly in changelogs.
+- **`v0.x.y` — pre-1.0 (historical).** `x` bumped on each minor playtest milestone; `y` bumped on hotfixes.
+- **`v1.0.0`** — the launch release: all six tiers + the Trophy Pond boss campaign + the Terrarium + the Completionist census, out of beta.
+- **`v1.x` — post-1.0.** `x` (minor) bumps when adding new mods, new chapters, or significant balance changes; `y` (patch) bumps on configs-only / KubeJS-only fixes.
+- **Breaking changes** (world wipes, mod removals that drop player items) bump the **major** version (`2.0.0`). World safety matters; warn loudly at the top of the changelog section.
 
 ## Distribution Channels
 

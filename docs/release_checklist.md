@@ -2,11 +2,13 @@
 
 Step-by-step for cutting a Sky Frogs release. The narrative/why lives in [`distribution.md`](./distribution.md); this is the do-list. Releases are **tag-driven** - pushing a `vX.Y.Z` tag fires `.github/workflows/release.yml`, which builds + publishes everything.
 
-## 0. Pick the version (SemVer, pre-1.0)
+## 0. Pick the version (SemVer)
 
-- **patch** (`0.9.0 -> 0.9.1`): bug fixes, recipe gating, doc/QoL only - no new content.
-- **minor** (`0.9.1 -> 0.10.0`): new content (a chapter, a mod, a tier, a PF feature wave).
-- **major** (`-> 1.0.0+`): reserved for the v1.0 launch; post-1.0, world-breaking changes bump major and are called out loudly in the CHANGELOG.
+Post-1.0 SemVer is now in effect (v1.0.0 shipped 2026-06-14):
+
+- **patch** (`1.0.0 -> 1.0.1`): bug fixes, recipe gating, doc/QoL only - no new content.
+- **minor** (`1.0.1 -> 1.1.0`): new content (a chapter, a mod, a tier, a PF feature wave).
+- **major** (`-> 2.0.0`): world-breaking changes (world wipes, mod removals that drop player items) - called out loudly at the top of the CHANGELOG section.
 
 Only release what is already on `main`. Quest/reward content must have been playtested before its PR merged (the standing hold rule), so by release time it is already vetted.
 
@@ -74,7 +76,9 @@ Any release that touched quest text (`config/ftbquests/quests/lang/en_us.snbt`) 
 
 # The v1.0 launch (the 0.x -> 1.0 gate)
 
-`1.0.0` is a milestone, not a routine tag: it's the promise that the pack is stable, polished, and ready for a broad audience. Everything above (section 2 onward) still applies to the actual tag cut - this section is the **readiness gate** that must pass *before* you run it. Don't tag `1.0.0` until every box here is checked (or consciously waived).
+> **DONE: v1.0.0 shipped 2026-06-14**, out of beta, live on CurseForge. The gate below was passed with **three items consciously waived** as post-1.0 follow-ups: the **Master Frog final art** (still a placeholder texture), the **branding gallery** (`branding.md`), and the **final license audit**. This section is retained as historical reference for the 1.0 readiness criteria; the checkboxes are not a live to-do list anymore.
+
+`1.0.0` is a milestone, not a routine tag: it's the promise that the pack is stable, polished, and ready for a broad audience. Everything above (section 2 onward) still applies to the actual tag cut - this section is the **readiness gate** that gated the 1.0 launch. The gate was passed (or boxes consciously waived) before the tag was cut.
 
 The content campaign is already complete (all six tiers + Trophy Pond + Terrarium + the Completionist census, content-sized by the theme+arc principle - **not** the old "~750 quests / 22 chapters" SBR-scale target, which is superseded; see [`quest_book.md`](./quest_book.md)). So 1.0 is mostly polish, art, and launch ops, not new content.
 
