@@ -4,6 +4,10 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-06-14
+
+Sky Frogs 1.0 - out of beta. The full pack: all six tiers (Cave through Void), the Trophy Pond boss campaign, the Terrarium automation chapter, and the Completionist census, complete and shipping as a stable release. This launch also lands a full editorial pass over every quest, Productive Frogs 1.21 (an in-game field guide granted on join, the Sweetslimed Lily Pad perch, and reworked breeding), a Sky Frogs section in that guide, new Crusher and Bio Fuel quests in the Bog tier, and an Apotheosis loot fix.
+
 ### Added
 - **Crusher + Bio Fuel quests in the Bog tier.** Two new quests in `road_to_bog` before Mossy Cobblestone, spelling out the missing intermediate step: craft a Mekanism **Crusher** to grind plant matter into **Bio Fuel**, the infusion material the Metallurgic Infuser drinks to turn cobblestone mossy. The chain (Crusher -> Bio Fuel -> Mossy Cobblestone) was implied by the Mossy Cobblestone quest text but never quested; now the player is walked through it.
 - **A Sky Frogs section in the field guide.** The pack now extends the Productive Frogs guide book with its own "Sky Frogs (Pack)" category - the void-skyblock premise, the Dissolution Chamber slime engine, the recipe swaps that differ from stock PF (quartz-free storage, the redstone Teeming catalyst, the per-tier Spawnery primers), and the singularity endgame. It merges into the same book rather than shipping a second one, so there's one guide to flip through.
