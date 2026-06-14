@@ -19,7 +19,7 @@ All six tiers (Welcome -> Cave -> Geode -> Bog -> Tide -> Infernal -> Void) are 
 | **2. First Iron Froglight** ✅ | `0.1.0` alpha | Productive Frogs integrated; Tier 1 (Cave) reachable |
 | **3. Mid-tier alpha** ✅ | `0.2.0` → `0.5.0` | Tiers 2-5 (Geode, Bog, Tide, Infernal) built |
 | **4. Feature-complete** | `0.6.0` ✅ → `0.9.0` | Tier 6 (Void) endgame ✅ + per-mod side chapters (#109 ✅ shipped v0.7.0) + reward/polish passes. (Reality note: the release train ran ahead of this table - content was tier-complete by v0.2/v0.3, and v0.3+ became community-driven polish/mod releases. v0.6.0 shipped 2026-06-06: Powah + Flux Networks, the QoL wave, the Discord-linked welcome chapter. v0.7.0 shipped 2026-06-07: the completionist update - census chapters in their own Completionist section, every modded resource craftable, PF 1.13 + the Melting Point chapter, the Powered Up chapter, the chamber-pressed Heavy Core/Mace, the FancyMenu title screen.) |
-| **5. v1.0 launch** (done) | `1.0.0` (shipped 2026-06-14) | Polish, balance pass, CF page live; gate consciously waived on Master Frog art / branding gallery / license audit (now post-1.0) |
+| **5. v1.0 launch** ✅ | `1.0.0` (shipped 2026-06-14) | Polish, balance pass, CF page live; gate consciously waived on Master Frog art / branding gallery / license audit (now post-1.0) |
 | **6. Maintenance** | `1.x.y` | Mod updates, content additions, hotfixes |
 
 ## Phase 1 — Tier 0 playable ✅
@@ -124,7 +124,7 @@ Note: the built tier order is Cave=Tier 1 (the starter), Geode=Tier 2, Bog=Tier 
 **I drive:**
 - All authored content.
 
-## Phase 5 — v1.0 launch (shipped 2026-06-14)
+## Phase 5 — v1.0 launch ✅ (shipped 2026-06-14)
 
 **Goal:** the pack is ready for a broad public release.
 
