@@ -5,6 +5,7 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 ## [Unreleased]
 
 ### Added
+- **Crusher + Bio Fuel quests in the Bog tier.** Two new quests in `road_to_bog` before Mossy Cobblestone, spelling out the missing intermediate step: craft a Mekanism **Crusher** to grind plant matter into **Bio Fuel**, the infusion material the Metallurgic Infuser drinks to turn cobblestone mossy. The chain (Crusher -> Bio Fuel -> Mossy Cobblestone) was implied by the Mossy Cobblestone quest text but never quested; now the player is walked through it.
 - **A Sky Frogs section in the field guide.** The pack now extends the Productive Frogs guide book with its own "Sky Frogs (Pack)" category - the void-skyblock premise, the Dissolution Chamber slime engine, the recipe swaps that differ from stock PF (quartz-free storage, the redstone Teeming catalyst, the per-tier Spawnery primers), and the singularity endgame. It merges into the same book rather than shipping a second one, so there's one guide to flip through.
 - **The Productive Frogs field guide is now in everyone's hands.** PF 1.21 ships an in-game Patchouli guide book (`productivefrogs:guide`), and the pack grants it to **every player on join** - new players get it on first login, and anyone who already started a world gets it once on their next login (a one-time grant separate from the quest-book first-join, in `first_join.js`). It stays craftable too (a vanilla book + a slime ball). The book is built to be extended, so the pack can later add its own pages without forking it.
 

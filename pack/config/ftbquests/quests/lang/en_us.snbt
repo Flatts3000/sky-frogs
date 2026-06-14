@@ -651,6 +651,20 @@
 	]
 	quest.70B0000000000011.quest_subtitle: "Stone goes green."
 	quest.70B0000000000011.title: "Mossy Cobblestone"
+	quest.70B0000000000014.quest_desc: [
+		"Mossy cobblestone starts with &aBio Fuel&r, and Bio Fuel needs a grinder."
+		""
+		"Craft a &eMekanism Crusher&r. Feed it any plant matter - saplings, leaves, your spare frog-farmed organics - and it grinds them into &aBio Fuel&r."
+	]
+	quest.70B0000000000014.quest_subtitle: "Grind it down."
+	quest.70B0000000000014.title: "The Crusher"
+	quest.70B0000000000017.quest_desc: [
+		"Run plant matter through the &eCrusher&r to stock up on &aBio Fuel&r - eight to start."
+		""
+		"The &eMetallurgic Infuser&r drinks Bio Fuel as its &bBiomass&r infusion - that's what turns cobblestone mossy. Keep a supply on hand; the Bog slime chain runs on it."
+	]
+	quest.70B0000000000017.quest_subtitle: "The swamp's infusion."
+	quest.70B0000000000017.title: "Bio Fuel"
 	quest.71DE000000000002.quest_desc: [
 		"Industrial Foregoing's machines all bolt onto a &eMachine Frame&r, and the humblest is the &ePity Machine Frame&r - logs, iron, and a block of redstone, no plastic required."
 		""
