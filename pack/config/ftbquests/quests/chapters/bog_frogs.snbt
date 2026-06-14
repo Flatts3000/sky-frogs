@@ -155,6 +155,28 @@
 		{
 			dependencies: ["7B06000000000011"]
 			icon: {
+				id: "productivefrogs:sweetslimed_lily_pad"
+			}
+			id: "7B06000000000034"
+			shape: "square"
+			rewards: [{
+				id: "7B06000000000036"
+				item: {
+					count: 4
+					id: "productivefrogs:sweetslime"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7B06000000000035"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["7B06000000000011"]
+			icon: {
 				id: "industrialforegoing:plastic"
 			}
 			id: "7B0600000000001A"
