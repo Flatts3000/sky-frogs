@@ -22,7 +22,7 @@ hash = "16292b67fb727ff48461e686518ce6d46a86a36b0510fdcf5f5dd83791707ea5"
 
 [[files]]
 file = "config/bbl/core/modpack.toml"
-hash = "110b834d93af9c53df2c39266e6d22c0df9a9b9de37fe0565ed6449fddcb4c00"
+hash = "ff1c9e2e40996569726acb34c6bf21b2def489732e78abe31ec831f2a6d0ed9f"
 
 [[files]]
 file = "config/botanypots.json"
@@ -306,7 +306,7 @@ hash = "338768fb497fa6c1544e4db8ed91aa7773ee683566fc3db2aebf6319a1c54fb4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/bog_frogs.snbt"
-hash = "126cdea828e27437a23a2ba209a0a7d6844522d8d6a632e1aeb718c2bbb0ee72"
+hash = "bc9eedbd6871c7f44d4f3ad2eb4c44feb6686a76a367b68f395eafe32c0acdf8"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/cave_frogs.snbt"
@@ -366,7 +366,7 @@ hash = "01e3daf039dfc3825421110e6b725a231d1800991a7db361549309424070cc42"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/sister_ponds.snbt"
-hash = "b9c5d8b058175829e4d32283c691b2ebcfc83ef59d35cd8ada9e24f2c73f0f17"
+hash = "8ab3c89b2fc794162a5e9917d105be7c44da6e4bf862bfbc496e09fafccebce3"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/storage_and_crafting.snbt"
@@ -418,7 +418,7 @@ hash = "4889c5e7d4a8179b45e68f0ac00119529ed49ba68f20624b36e996bb0d60ddd0"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "0f6bb80f701e0f189e114cd250829421cab03effc850fa498f561edeb5dd9f95"
+hash = "9b1d0815f9cf0a9092952f14712171658f4e1f225d85877a3802148c6330daa9"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
@@ -434,7 +434,7 @@ hash = "a5193119bbfdda93f1bb65da9d462c4b8f9f08bc348ab8b4ca0daceacd3e66a0"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F3B000000000001.snbt"
-hash = "8ca209449607510d4524afe24e4eede19fb258d2f07fe8c88d064538355255b2"
+hash = "361516521ba5c4d5cc6608f8e6914583ffdb7559442063d39116a842d0287228"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F4D000000000001.snbt"
@@ -529,8 +529,32 @@ file = "kubejs/assets/minecraft/texts/splashes.txt"
 hash = "02714cf4995ee24ecc6b39f0fe422a2627c6d16d4353f256150e83de77eee7a2"
 
 [[files]]
+file = "kubejs/assets/productivefrogs/patchouli_books/guide/en_us/categories/sky_frogs.json"
+hash = "eb3e4c3a732bb85700bca54ce97ce3d3beb1d7d6bfafc9b6f1bf2d4c6d8281a3"
+
+[[files]]
+file = "kubejs/assets/productivefrogs/patchouli_books/guide/en_us/entries/sky_frogs/dissolution_chamber.json"
+hash = "e3a5b7cfc2a15c4348db2e67f2a59b0e18d4a610c6a0a37a2b62d2393f2afcb5"
+
+[[files]]
+file = "kubejs/assets/productivefrogs/patchouli_books/guide/en_us/entries/sky_frogs/pack_changes.json"
+hash = "3f84a2218323a6fe96f8765d203c363cf8df16267aaffb2d8ebd4912d5837629"
+
+[[files]]
+file = "kubejs/assets/productivefrogs/patchouli_books/guide/en_us/entries/sky_frogs/singularity_endgame.json"
+hash = "21128b3eebc81b35f70aff097ffbb7c9906e7cc1430cf4d941f1be6451545cdd"
+
+[[files]]
+file = "kubejs/assets/productivefrogs/patchouli_books/guide/en_us/entries/sky_frogs/welcome.json"
+hash = "77bfc3f3d12ed417bf56959f0cb22383b21dd4360645f96b20981ba9440bb40b"
+
+[[files]]
 file = "kubejs/client_scripts/opolis_jei_hide.js"
 hash = "1ff55fa099c6f9092a89d5d9cff3b03c3a24aaa6f5cb2e0becd33ded9649f1c0"
+
+[[files]]
+file = "kubejs/data/apotheosis/data_maps/item/loot_category_overrides.json"
+hash = "67c9b3721505cad22e23fffae0421e26d12b29314b7a94ee5b2c713395347c44"
 
 [[files]]
 file = "kubejs/data/opolisutilities/loot_table/loot_boxes/advanced_loot_box.json"
@@ -614,7 +638,7 @@ hash = "ad2f91c5cce4e29d4b70957c3f43d6a82a12cda1e06a1859cb895466dec61b09"
 
 [[files]]
 file = "kubejs/server_scripts/bog_slime_chain.js"
-hash = "b8cdf1e226c9396e6b864cc6dd25e0f4ea8687ba68ba3bfb8367d4a928f59ab3"
+hash = "bfb25ece8d594a4a8d552f4206e94d4024d68ac2c7b117922d6a8e1a45f17920"
 
 [[files]]
 file = "kubejs/server_scripts/builder_sieve.js"
@@ -634,7 +658,7 @@ hash = "a14f0b3014ad482f9b04ef079202394670f76a749bccb93ed36bb3e41c1810dc"
 
 [[files]]
 file = "kubejs/server_scripts/dissolution_slime_recipes.js"
-hash = "d861ff1f82f8a402a48e3bb950f878690d8afdebb0dc02c81bbacda26dea484c"
+hash = "c013b3d61c5f90d5c4ebc590d8bb44cb31ffa5deae955ab05f7cedc51575face"
 
 [[files]]
 file = "kubejs/server_scripts/dump_items.js"
@@ -642,7 +666,7 @@ hash = "5daea9934a436ef217fee39ebf13a15e4a82516ebd46763dcd9ba307951bd492"
 
 [[files]]
 file = "kubejs/server_scripts/first_join.js"
-hash = "659f7a086b994e6c47b0b7f0e37fbc037a7417fc1ab924455c60cd4a0d08f4e8"
+hash = "4395f4787961c6dff55e01517e41c8e4712acdef10af391c661363ff8a364bec"
 
 [[files]]
 file = "kubejs/server_scripts/flint_recipe.js"
@@ -718,7 +742,7 @@ hash = "06990d1e0160108d321a985b2b0c61dd34a05e1c4e971f62538681b11d73fb90"
 
 [[files]]
 file = "kubejs/server_scripts/void_recipes.js"
-hash = "2a2800e71b8e5c6351d5f79f292c336c4606acdb9b61e14037f200675add385c"
+hash = "f5b2c527b2ff91e22a318a8364584be8a99ad276043bb2df5eb5c026c54868a5"
 
 [[files]]
 file = "kubejs/startup_scripts/master_frog_item.js"
@@ -816,6 +840,11 @@ metafile = true
 [[files]]
 file = "mods/cable-facades.pw.toml"
 hash = "debc76a386e1486c139c7cc56a22f3054acfc25aa24f61322bb00e62e2ea01b9"
+metafile = true
+
+[[files]]
+file = "mods/cable-tiers.pw.toml"
+hash = "300ab42d0160703505d1bb836334c3e0f077e13c2bb39b5cf7f5cc2d6fb27dee"
 metafile = true
 
 [[files]]
@@ -1089,6 +1118,11 @@ hash = "c307c6f682a2ddff8181191b1070bae08c11482eccef8ea3d0428ea63ac08d6e"
 metafile = true
 
 [[files]]
+file = "mods/interdimensional-wireless-transmitter.pw.toml"
+hash = "d094c5c4cf873481273c416d53eaa5210f7711f935ef3a02c48577958cbce39d"
+metafile = true
+
+[[files]]
 file = "mods/inventory-essentials.pw.toml"
 hash = "69a36327ba1adab87891fe28173daf114eee534c810c770d5fbff6b6968209d0"
 metafile = true
@@ -1325,7 +1359,7 @@ metafile = true
 
 [[files]]
 file = "mods/productive-frogs.pw.toml"
-hash = "15a20477fba2c08308fe3dbf030770d9fca36427a57627424f9473662d0c670e"
+hash = "745d0ec5d4a7cb8223a70de83eada6a233231f0c063c698dea798d2c551476f1"
 metafile = true
 
 [[files]]
@@ -1361,6 +1395,11 @@ metafile = true
 [[files]]
 file = "mods/refined-storage.pw.toml"
 hash = "8388fcc060ea2b7b3126297538a4c5663f9884c940c31297f697e8739f441aa2"
+metafile = true
+
+[[files]]
+file = "mods/refined-types.pw.toml"
+hash = "ecd47c4a62178610b749901485b14f1a5804ac974bb351517ba303b64d2d9375"
 metafile = true
 
 [[files]]

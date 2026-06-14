@@ -6,6 +6,49 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ### Added
 - **Crusher + Bio Fuel quests in the Bog tier.** Two new quests in `road_to_bog` before Mossy Cobblestone, spelling out the missing intermediate step: craft a Mekanism **Crusher** to grind plant matter into **Bio Fuel**, the infusion material the Metallurgic Infuser drinks to turn cobblestone mossy. The chain (Crusher -> Bio Fuel -> Mossy Cobblestone) was implied by the Mossy Cobblestone quest text but never quested; now the player is walked through it.
+- **A Sky Frogs section in the field guide.** The pack now extends the Productive Frogs guide book with its own "Sky Frogs (Pack)" category - the void-skyblock premise, the Dissolution Chamber slime engine, the recipe swaps that differ from stock PF (quartz-free storage, the redstone Teeming catalyst, the per-tier Spawnery primers), and the singularity endgame. It merges into the same book rather than shipping a second one, so there's one guide to flip through.
+- **The Productive Frogs field guide is now in everyone's hands.** PF 1.21 ships an in-game Patchouli guide book (`productivefrogs:guide`), and the pack grants it to **every player on join** - new players get it on first login, and anyone who already started a world gets it once on their next login (a one-time grant separate from the quest-book first-join, in `first_join.js`). It stays craftable too (a vanilla book + a slime ball). The book is built to be extended, so the pack can later add its own pages without forking it.
+
+### Changed
+- **Productive Frogs 1.20.0 -> 1.21.0 "By the Book".** Brings the in-game field guide (above), a new **Sweetslimed Lily Pad perch** (right-click a placed lily pad with a Sweetslime so a Resource Frog claims it and holds position - handy over a hopper by a Slime Milk source), a **boss-altar fix** (a sealed altar no longer traps its slime inside the source block), and a **breeding rework**: an offspring's stats are now the average of its parents and then have a chance to climb higher, breeding never goes backward, and every breed improves at least one stat. The pack pins no breeding config, so the new model flows through; the **Raising the Line** quest text was rewritten to match (its old odds-based wording is now inaccurate). No new resource variants, so the census, singularities, and froglight recipes are unchanged.
+- **Holistic editorial pass over all quest text (issue #169).** Reviewed every quest across all 27 chapters for factual accuracy, voice, terminology, and formatting - ground-truthing each described mechanic against the mod jars, Productive Frogs' own datapack, and AlmostUnified rather than memory. Fixed roughly 30 accuracy bugs, the kind a player following the text would get stuck on, including: the Just Dire Things Primogel Goo now describes the real goospread mechanic (the goo spreads into an adjacent iron/coal block and turns it into raw ore - not the invented "seed the soil" step that triggered this review); the sea lantern recipe (5 prismarine crystals + 4 shards); the Cave Redstone slime threads off breeze-rod milk; the Mekanism steel chain needs a second carbon infusion before smelting; the Geode Slime Milk catalysts now use their real in-game names (Bountiful / Rapid / Teeming / Endless); and the Item Collector and Disk Drive descriptions match their actual recipes/limits.
+- **Species-unlock item renamed "Frogspawn" -> "Bottle of <Species> Frog Eggs" in all quest text.** Matches Productive Frogs' real item name, so a new player can find it in JEI. ~21 strings across the gateway chapters.
+- **Census titles corrected** (generated chapters): the Powah crystals now read "Blazing/Niotic/Spirited/Nitro Crystal", "Eclipsealloy" -> "Eclipse Alloy", and the vanilla "Clay Ball" -> "Clay", all matching the in-game names. Fixed in `tools/gen_completionist_chapters.py`; quest IDs are deterministic so completion survives.
+
+### Fixed
+- **Mobs no longer drop affixed Froglight Cleavers (issue #184).** Apotheosis was treating the Productive Frogs Froglight Cleaver - the crafted boss-tier endgame weapon - as affixable loot, so an over-statted affixed copy could drop from the mob farm and bypass the whole endgame. The Cleaver is now excluded from Apotheosis affix loot via the mod's own `loot_category_overrides` data map (set to `apotheosis:none`, the same exclusion the mod uses for shulker shells). The affix system is otherwise untouched - other gear still rolls affixes normally.
+
+## [0.14.0] - 2026-06-10
+
+A content-and-fixes drop: the Bog quest chain splits into two lanes (a clean spine to Tide plus an optional mob-drop lane), Productive Frogs reaches its stable 1.0 ("Full Bloom") with the Jade tadpole-timer and Slime Milk fluid fixes, and the Bog reward crate stops handing out four spyglasses.
+
+### Changed
+- **Productive Frogs 1.19.1 -> 1.20.0 "Full Bloom".** PF hit its stable 1.0 milestone (out of beta). The jump also folds in 1.19.2, which **fixes the Jade tadpole "Growing time" readout** (it now shows the real remaining time when a pack speeds up tadpole growth - the Bog tadpole that read ~10m draining too fast), stops the Slime Bucket from dumping a water source on release, and stops foreign fluids from washing away Slime Milk pools; plus a standalone Advancements tab (complementary to the quest book). No new variants or items - zero roster drift (singularities 57, census 34, froglight recipes 101); pin-only on the pack side.
+- **The Bog quest chain is now two lanes.** The long Bog chapter is split into a canonical spine (organics + Industrial Foregoing, the path to Tide) and a terminal mob-drop lane (bone -> gunpowder -> ... -> honeycomb) that branches off the Pink Slime capstone. The mob lane bootstraps from bone meal and chains down, so the un-farmable drops (armadillo scute, honeycomb) come from the chain - no armadillos or bees needed. All quest IDs preserved, so existing completion survives.
+
+### Fixed
+- **The Bog reward crate gives one spyglass, not four.** It had been lumped into a uniform x4 group; a spyglass is a reusable tool you only need one of.
+
+## [0.13.1] - 2026-06-10
+
+A launch-crash hotfix: bumps the pinned loader off a flaky NeoForge build.
+
+### Fixed
+- **Some fresh installs crashed on the loading screen (no crash report).** The pack pinned NeoForge `21.1.230`, which applied its `GuiGraphics` tooltip patch unreliably on certain machines; when the field was missing, Apotheosis's required tooltip accessor failed to apply and the game closed ~10-15s into loading with no crash report. Bumped the pinned loader to **NeoForge 21.1.233** (latest 21.1.x), which patches reliably. Diagnosed from a player log (Apotheosis `GuiGraphicsAccessor` / `tooltipStack`); the same bad build also hit other NeoForge 1.21.1 packs. No mod or content changes.
+
+## [0.13.0] - 2026-06-10
+
+A QoL-and-fixes drop: Refined Storage gains infinite-range wireless (the Interdimensional Wireless Transmitter) and tiered cables, frogs breed up faster (Productive Frogs 1.19.1), the Refined Storage silicon variant is fully integrated into the Dissolution Chamber and the census, and the Just Dire Things goo quests now describe the real goo-spreading mechanic.
+
+### Added
+- **Interdimensional Wireless Transmitter** (+ **Cable Tiers** and its **Refined Types** dependency): Refined Storage addons matching the main ATM10 pack's RS set. The transmitter broadcasts your network to a Wireless Grid at **infinite, cross-dimensional range**, fixing the base 48-block wireless cap (Discord report, Dergib). It's endgame-gated by recipe (4 Wireless Transmitters + 4 Nether Stars + an Elytra) - boss-tier nether stars are frog-farmable and the Elytra comes from the vanilla End's cities. Cable Tiers adds faster tiered cables; Refined Types is its dependency (and a general FE storage disk).
+
+### Changed
+- **Productive Frogs 1.19.0 -> 1.19.1 "Survival of the Fittest".** Tuning only: the default frog-stat improvement chance rises from `0.20` to `0.40` per stat, so a breed now improves at least one of the three stats about 78% of the time (up from ~49%) - a brisker climb to a maxed frog without a giveaway (a single breed still usually moves one or two stats, not all three). The pack doesn't pin this value, so the new default flows through from the jar with no pack-side change. Zero roster drift (singularities 57, census 34, froglight recipes 101). (Prompted by Discord feedback that breeding felt slow.)
+
+### Fixed
+- **Silicon is craftable in the Dissolution Chamber and quested in Sister Ponds.** The Refined Storage silicon variant (the only PF variant gated `ae2 OR refinedstorage`) was missing its Dissolution Chamber recipe and its census quest, leaving the Froglight smelt-back as its only path - which read as circular. It now has a self-keyed chamber recipe (smelt nether quartz -> RS Silicon -> prime a slime) and a Sister Ponds entry; the census generator now picks the loaded provider for multi-provider variants. (#168, Discord report.)
+- **JDT goo/ferricore quest text corrected.** "First Goo" and "Ferricore Ingot" described a non-existent "right-click the soil to seed it" mechanic that stuck a player. They now describe JDT's real goo-spreading: place Primogel Goo and stack iron blocks against it, and each spreads into Raw Ferricore Ore to mine and smelt. (#170, Discord report.)
 
 ## [0.12.0] - 2026-06-10
 

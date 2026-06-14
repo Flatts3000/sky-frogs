@@ -1,9 +1,11 @@
 // Sky Frogs - Bog slime chain (Tier 3). Mirrors the Geode chain.
 //
-// Bog is the organic/swamp species: dirt, mud, clay, moss, mycelium, lily pad,
-// leather, feather, then the mob-drop wing (armadillo scute, honeycomb, bone,
-// gunpowder, rotten flesh, string) - plus Industrial Foregoing plastic + pink
-// slime when IF is loaded.
+// Bog is the organic/swamp species, split into two lanes:
+//  - canonical (the spine to Tide): dirt, mud, clay, moss, mycelium, lily pad, then
+//    Industrial Foregoing plastic + pink slime when IF is loaded.
+//  - mob-drop lane (terminal): bone (the bootstrap, made from bone meal), then
+//    gunpowder, rotten flesh, string, leather, feather, armadillo scute, honeycomb -
+//    chained off bone so the un-farmable drops (scute/honeycomb) need no special mob.
 //
 // Bog's themed crafting block is MOSSY COBBLESTONE (Cave uses plain stone). Every step
 // - the diamond -> dirt bridge bootstrap and every chain step after it - takes 4 mossy
@@ -27,27 +29,46 @@ ServerEvents.recipes(event => {
     ]
   )
 
-  // The organic chain proper (mossy cobblestone, same as the bridge).
+  // bone bootstrap: the mob-drop lane seeds off BONE MEAL (abundant - composter, or
+  // one skeleton bone -> 3 meal), like the dirt bridge above - NOT from a prior frog's
+  // milk. It seeds off bone meal rather than bone because the next link (bone milk ->
+  // gunpowder) claims the bone resource; two recipes on the same input would collide.
+  // The rest of the lane chains off bone below, so the un-farmable drops
+  // (armadillo_scute - no armadillos; honeycomb - no bees) come down-chain.
+  event.shapeless(
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:bone",Category:"BOG"}]',
+    [
+      'minecraft:bone_meal',
+      'minecraft:mossy_cobblestone', 'minecraft:mossy_cobblestone', 'minecraft:mossy_cobblestone', 'minecraft:mossy_cobblestone',
+      'productivefrogs:sweetslime', 'productivefrogs:sweetslime', 'productivefrogs:sweetslime',
+      'productivefrogs:frog_egg[productivefrogs:contained_category="bog"]'
+    ]
+  )
+
+  // Two lanes (mirrors the chamber chain in dissolution_slime_recipes.js):
+  //  - canonical (organics + Industrial Foregoing tail): the spine to Tide.
+  //  - mob-drop lane: terminal, bootstrapped off the bone slime above.
+  // Every [from, to] step below is an adjacent pair in the chamber chain, so the
+  // Q-TABLE-CHAIN-MIRROR check stays green.
   const chain = [
+    // canonical lane
     ['dirt', 'mud'],
     ['mud', 'clay_ball'],       // clay variant id is clay_ball (Froglight smelts to clay_ball)
     ['clay_ball', 'moss'],
     ['moss', 'mycelium'],
     ['mycelium', 'lily_pad'],
-    ['lily_pad', 'leather'],
-    ['leather', 'feather'],
-    // PF 1.13.0 (#161): the Bog stragglers - same insertion as the chamber chain.
-    ['feather', 'armadillo_scute'],
-    ['armadillo_scute', 'honeycomb'],
-    // PF 1.14.0: the mob-drop wave - same insertion as the chamber chain.
-    ['honeycomb', 'bone'],
+    // mob-drop lane (off the bone bootstrap), terminal
     ['bone', 'gunpowder'],
     ['gunpowder', 'rotten_flesh'],
-    ['rotten_flesh', 'string']
+    ['rotten_flesh', 'string'],
+    ['string', 'leather'],
+    ['leather', 'feather'],
+    ['feather', 'armadillo_scute'],
+    ['armadillo_scute', 'honeycomb']
   ]
   if (Platform.isLoaded('industrialforegoing')) {
-    chain.push(['string', 'plastic'])       // plastic = the Industrial Foregoing gate
-    chain.push(['plastic', 'pink_slime'])   // pink slime = Bog capstone
+    chain.push(['lily_pad', 'plastic'])     // plastic re-threads off lily_pad (the Industrial Foregoing gate)
+    chain.push(['plastic', 'pink_slime'])   // pink slime = Bog capstone + Tide bridge
   }
   chain.forEach(step => {
     const from = step[0]

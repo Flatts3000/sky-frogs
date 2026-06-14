@@ -1,0 +1,27 @@
+{
+  "name": "The Singularity Endgame",
+  "icon": "kubejs:master_frog",
+  "category": "productivefrogs:sky_frogs",
+  "sortnum": 300,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The Void tier ends in Extended Crafting. Once a resource farms itself, you compress it: a thousand of it crushed into a single Singularity, one per vanilla Froglight resource."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "extendedcrafting:compressor",
+      "text": "The Quantum Compressor does the squeezing. Feed it the smelted resource - not the Froglight - plus an Ultimate Catalyst, and out comes that resource's Singularity. The catalyst is consumed each time."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "extendedcrafting:ultimate_singularity",
+      "text": "Gather every Singularity and fold the whole set together in the Ultimate Crafting Table to make one Ultimate Singularity - proof you automated every last farm."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "kubejs:master_frog",
+      "text": "Ring the Ultimate Singularity with Froglights, drop a Sweetslime in each bottom corner, and craft the Sky Frogs Master Frog. It does nothing. It is everything."
+    }
+  ]
+}

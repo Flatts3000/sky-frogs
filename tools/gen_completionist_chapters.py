@@ -81,8 +81,8 @@ VARIANT_RANK = {
     "silver": 4, "tin": 5, "uranium": 6, "zinc": 7,
     "uraninite": 0, "energized_steel": 1, "dry_ice": 2, "blazing": 3,
     "niotic": 4, "spirited": 5, "nitro": 6,
-    "quartz_enriched_iron": 0, "basic_processor": 1,
-    "improved_processor": 2, "advanced_processor": 3,
+    "silicon": 0, "quartz_enriched_iron": 1, "basic_processor": 2,
+    "improved_processor": 3, "advanced_processor": 4,
     "plastic": 0, "pink_slime": 1,
     # Just Dire Things (#188): the material ladder (Ferricore t1 -> Eclipse
     # Alloy t4) first, then the Crucible fuel lane (Blaze/Voidflame/Eclipse
@@ -180,7 +180,22 @@ def det_id(prefix: str, key: str, salt: str = "") -> str:
     return prefix + h[:12]
 
 
+# Variant slugs whose in-game display name a plain title_case() gets wrong (issue #169).
+# Keyed on the variant slug; value is the exact name shown in-game (and in JEI), so the
+# census title matches what the player is hunting for. Verified against the mod jars' lang.
+DISPLAY_OVERRIDES = {
+    "clay_ball": "Clay",             # PF froglight display is "Clay Froglight" (not "Clay Ball")
+    "blazing": "Blazing Crystal",    # Powah
+    "niotic": "Niotic Crystal",      # Powah
+    "spirited": "Spirited Crystal",  # Powah
+    "nitro": "Nitro Crystal",        # Powah
+    "eclipsealloy": "Eclipse Alloy", # Just Dire Things renders it two words
+}
+
+
 def title_case(slug: str) -> str:
+    if slug in DISPLAY_OVERRIDES:
+        return DISPLAY_OVERRIDES[slug]
     return " ".join(w.capitalize() for w in slug.split("_"))
 
 
@@ -192,8 +207,17 @@ def variant_mod(data: dict) -> str | None:
     c = data.get("neoforge:conditions")
     if not c:
         return None
-    m = re.search(r'"modid":\s*"([a-z_0-9]+)"', json.dumps(c))
-    return m.group(1) if m else None
+    mods = re.findall(r'"modid":\s*"([a-z_0-9]+)"', json.dumps(c))
+    if not mods:
+        return None
+    # Multi-provider variants (only silicon today: an `or` of ae2 / refinedstorage)
+    # list several modids. Take the one this pack actually loads, not just the first
+    # in the JSON - else silicon binds to ae2 (listed first, never shipped here) and
+    # falls out of the census entirely.
+    for m in mods:
+        if m in LOADED_MODS:
+            return m
+    return mods[0]
 
 
 def quest_block(qid, tid, icon, variant, x, y, deps=None, rewards=None,

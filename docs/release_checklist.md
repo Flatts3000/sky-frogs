@@ -10,6 +10,14 @@ Step-by-step for cutting a Sky Frogs release. The narrative/why lives in [`distr
 
 Only release what is already on `main`. Quest/reward content must have been playtested before its PR merged (the standing hold rule), so by release time it is already vetted.
 
+## 0.5. Check the NeoForge pin is current and not a known-bad build
+
+The loader pin in `pack/pack.toml` (`[versions] neoforge`) needs the same periodic-bump hygiene as the PF pin - a stale loader silently ships a buggy build to every new downloader. Before cutting a release:
+
+1. Compare the pin against the latest 21.1.x: `curl -s https://maven.neoforged.net/releases/net/neoforged/neoforge/maven-metadata.xml | grep -oE "21\.1\.[0-9]+" | sort -t. -k3 -n | tail -3`.
+2. If the pin is several patches behind, bump it to the latest 21.1.x (edit `pack/pack.toml` + the references in `CLAUDE.md` / `docs/pack_metadata.md` / `docs/cf_submission_checklist.md`), and **launch-test the dev instance on the new loader** before shipping.
+3. Watch for known-bad builds: **21.1.230** applied the `GuiGraphics` tooltip patch unreliably and crashed some fresh installs at load (Apotheosis `GuiGraphicsAccessor` / `tooltipStack`); fixed by 21.1.233 (v0.13.1). A crash that is fresh-install- or machine-specific and survives reinstalls is a loader-build smell - suspect the pin first.
+
 ## 1. If this release includes a Productive Frogs pin bump
 
 Do the standing PF-bump sweep first, on a feature branch, and merge it before releasing:
@@ -20,6 +28,15 @@ Do the standing PF-bump sweep first, on a feature branch, and merge it before re
 4. Add any **new item ids** the bump introduced (blocks, items used as quest icons/tasks) to `tools/data/item_ids.txt` - the dump predates the new version, so hand-add them (verify against the jar). Q-ITEM-EXISTS needs them.
 5. `python tools/validate_quests.py` - must exit 0.
 6. Read the PF release notes and quest/wire any new content per the usual pattern (chamber rows, census columns, chapters). Update CLAUDE.md's pin line + `docs/pf_pin_history.md`.
+
+## 1.5. Quest-text editorial review (standing pre-release gate)
+
+Any release that touched quest text (`config/ftbquests/quests/lang/en_us.snbt`) or shipped new chapters needs an editorial check before it goes out. The full corpus was reviewed once for v1.0 (issue #169, audit at `docs/audits/quest_editorial_2026_06_11/`); from here on, review what changed:
+
+1. For every quest whose text describes a mod mechanic, **ground-truth it against the actual mod, not memory** - in authority order: pack KubeJS overrides (`pack/kubejs/`), then **Productive Frogs' own datapack** (`data/productivefrogs/recipe/` inside the jar), then **AlmostUnified** unification (`config/almostunified/unification/materials.json` rewrites unified dust/ingot/gem item ids by mod priority), then the named mod's jar. The recurring failure mode is LLM-authored text inventing a plausible mechanic, or declaring one "missing" because a hidden datapack/unification layer was skipped (both bit issue #169).
+2. Check terminology (player-facing item names match in-game lang; "Froglight" not "Configurable Froglight"; "Bottle of <Species> Frog Eggs" not "Frogspawn"), ASCII-only punctuation (no em/en dashes), and balanced `&` color codes.
+3. Generated census chapters (`whole_pond`, `sister_ponds`): fix text in `tools/gen_completionist_chapters.py` and regenerate, never the lang file directly.
+4. `python tools/validate_quests.py` must exit 0.
 
 ## 2. Cut the release (on `main`, clean tree)
 
