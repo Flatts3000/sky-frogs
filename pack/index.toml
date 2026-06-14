@@ -553,6 +553,10 @@ file = "kubejs/client_scripts/opolis_jei_hide.js"
 hash = "1ff55fa099c6f9092a89d5d9cff3b03c3a24aaa6f5cb2e0becd33ded9649f1c0"
 
 [[files]]
+file = "kubejs/data/apotheosis/data_maps/item/loot_category_overrides.json"
+hash = "67c9b3721505cad22e23fffae0421e26d12b29314b7a94ee5b2c713395347c44"
+
+[[files]]
 file = "kubejs/data/opolisutilities/loot_table/loot_boxes/advanced_loot_box.json"
 hash = "af73bfdbddd392cbfcf94acfc3638cdeb8cc8f69f70341727b8e174504a838d3"
 
