@@ -1,0 +1,24 @@
+{
+  "name": "Pack Changes to Know",
+  "icon": "minecraft:redstone",
+  "category": "productivefrogs:sky_frogs",
+  "sortnum": 200,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "A few recipes are changed so a void skyblock can actually reach them. If a recipe you remember asks for something you cannot make yet, check here first."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Storage is quartz-free. Sophisticated and Functional Storage controllers normally want nether quartz; here they take redstone with a comparator or repeater instead, so a storage network is available long before the Infernal tier."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The Teeming catalyst uses redstone, not glowstone. Glowstone is Infernal-gated, so the Slime Milk catalyst recipe was swapped to redstone - craftable as soon as you reach the Geode diamond branch."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Each tier's Spawnery primer is something you already have. Prime with cobblestone for Cave, redstone for Geode, an Enriched Diamond for Bog, Pink Slime for Tide, Nether Bricks for Infernal, and an Ender Pearl for Void."
+    }
+  ]
+}

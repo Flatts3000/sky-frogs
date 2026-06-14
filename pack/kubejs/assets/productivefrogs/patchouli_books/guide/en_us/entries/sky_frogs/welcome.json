@@ -1,0 +1,16 @@
+{
+  "name": "Welcome to Sky Frogs",
+  "icon": "productivefrogs:configurable_froglight",
+  "category": "productivefrogs:sky_frogs",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Sky Frogs is a void skyblock - no ground to mine, no ores, no caves, no stronghold. Frogs are the whole economy: feed a Resource Slime to its matching Frog and it hands back a Froglight you smelt into the resource. Every metal, gem, and drop is just a frog you have not met yet."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The quest book drives progression, tier by tier: Cave, Geode, Bog, Tide, Infernal, then Void. Treat this guide as the reference shelf - the pages here cover the few things specific to this pack, where it bends stock Productive Frogs to fit a world with nothing to dig."
+    }
+  ]
+}

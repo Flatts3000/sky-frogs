@@ -1,0 +1,17 @@
+{
+  "name": "The Dissolution Chamber",
+  "icon": "industrialforegoing:dissolution_chamber",
+  "category": "productivefrogs:sky_frogs",
+  "sortnum": 100,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Industrial Foregoing's Dissolution Chamber is this pack's slime engine. From the Tide tier on it is the only way to make Resource Slimes - the early hand-craft chains stop, and the chamber takes over for every tier after."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "industrialforegoing:dissolution_chamber",
+      "text": "Each recipe dissolves a pile of items in latex and presses out a Slime in a Bucket. The shape is always the same: 100 mB latex (melt a Plastic Froglight in the Crucible), the prior resource, four tier-filler blocks, and three Sweetslime. Check JEI for the exact resource each variant takes."
+    }
+  ]
+}
