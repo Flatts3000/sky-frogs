@@ -31,16 +31,22 @@ ServerEvents.recipes(event => {
   })
 
   // Functional Storage - controllers + extensions, plain and framed. All share the
-  // IBI/CDC/IBI shape; only the result id and the corner ingredient differ (stones
-  // for the plain blocks, iron nuggets for the framed variants, matching stock).
-  // quartz_block -> redstone_block; comparator -> repeater. The drawer slot keeps
-  // its component-stripping type so any drawer (with upgrades) still works.
+  // IBI/CDC/IBI shape. Stock keeps each pair distinct two ways: the CORNER (stones for
+  // the plain blocks, iron nuggets for the framed pair) AND the CENTER (comparator for
+  // the controllers, repeater for the extensions). quartz_block -> redstone_block in the
+  // B slot. The comparator needs nether quartz, so the quartz-free controller takes a
+  // redstone_block center instead - denser than the extension's repeater, preserving the
+  // stock "controller is the costlier craft" hierarchy. The repeater is already quartz-
+  // free, so the extensions keep it. Keeping the center distinct per role is load-bearing:
+  // collapsing both onto repeater made controller + extension byte-for-byte identical
+  // recipes with two different outputs, an ambiguous-craft bug (#186). The drawer slot
+  // keeps its component-stripping type so any drawer (with upgrades) still works.
   const drawer = { type: 'functionalstorage:tag_without_component', tag: 'functionalstorage:drawer' }
   const functionalControllers = [
-    { id: 'functionalstorage:storage_controller', corner: 'c:stones' },
-    { id: 'functionalstorage:controller_extension', corner: 'c:stones' },
-    { id: 'functionalstorage:framed_storage_controller', corner: 'c:nuggets/iron' },
-    { id: 'functionalstorage:framed_controller_extension', corner: 'c:nuggets/iron' }
+    { id: 'functionalstorage:storage_controller', corner: 'c:stones', center: 'minecraft:redstone_block' },
+    { id: 'functionalstorage:controller_extension', corner: 'c:stones', center: 'minecraft:repeater' },
+    { id: 'functionalstorage:framed_storage_controller', corner: 'c:nuggets/iron', center: 'minecraft:redstone_block' },
+    { id: 'functionalstorage:framed_controller_extension', corner: 'c:nuggets/iron', center: 'minecraft:repeater' }
   ]
   functionalControllers.forEach(recipe => {
     event.remove({ id: recipe.id })
@@ -51,7 +57,7 @@ ServerEvents.recipes(event => {
       key: {
         B: { item: 'minecraft:redstone_block' },
         C: drawer,
-        D: { item: 'minecraft:repeater' },
+        D: { item: recipe.center },
         I: { tag: recipe.corner }
       },
       result: { count: 1, id: recipe.id }

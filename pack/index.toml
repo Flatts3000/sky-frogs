@@ -734,7 +734,7 @@ hash = "f7a1dba3be8a3396fbf9249fe5c289f3ed7c823a8790e073bdfe6a471cc62cd0"
 
 [[files]]
 file = "kubejs/server_scripts/storage_quartz_free.js"
-hash = "2b6735fc64ee708364b30526b4d5d7b703cfc80e624eb8f6f2098f6a0b2b192d"
+hash = "877bdc671914bab81a513cd249b2cb647e887efe22e30177c030f1600ba986cd"
 
 [[files]]
 file = "kubejs/server_scripts/upstream_recipe_fixes.js"
