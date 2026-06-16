@@ -1,6 +1,6 @@
 # Mod List
 
-> **Status:** Current. The full six-tier mod stack is **shipped and pinned** in `pack/mods/*.pw.toml` - the verb mods for every tier (Mekanism, Industrial Foregoing, Just Dire Things + Building Gadgets, Iron Jetpacks, Refined Storage, Extended Crafting) plus the substrate (Productive Frogs 1.16.0, Ex Deorum, Skyblock Builder), the QoL/utility stack, and the recent adds (Torchmaster, More Dragon Eggs, Polymorphic Refined Storage, OpenBlocks Elevator, Time in a Bottle). `pack/mods/*.pw.toml` is the authoritative pinned set; entries below tagged **SHIPPED** are in the pack, untagged ones are candidates not currently bundled.
+> **Status:** Current. The full six-tier mod stack is **shipped and pinned** in `pack/mods/*.pw.toml` - the verb mods for every tier (Mekanism, Industrial Foregoing, Just Dire Things + Building Gadgets, Iron Jetpacks, Refined Storage, Extended Crafting) plus the substrate (Productive Frogs 1.22.0, Ex Deorum, Skyblock Builder), the QoL/utility stack, and the recent adds (Torchmaster, More Dragon Eggs, Polymorphic Refined Storage, OpenBlocks Elevator, Time in a Bottle). `pack/mods/*.pw.toml` is the authoritative pinned set; entries below tagged **SHIPPED** are in the pack, untagged ones are candidates not currently bundled.
 
 This document captures both the shipped Tier 0-3 stack and the **candidate mod categories** for later tiers. Concrete version pins live in `pack/mods/*.pw.toml`.
 
@@ -20,7 +20,7 @@ Any mod that fails all three is rejected.
 
 | Mod                   | Role                                                                 | Notes                                                |
 |-----------------------|----------------------------------------------------------------------|------------------------------------------------------|
-| **Productive Frogs**  | The mod the pack is built around                                     | Published on CurseForge (1.21.1 / NeoForge). Pinned at **1.19.0** (Stone Soup - Lava Froglights burn as furnace fuel + the Crucible melts stone/gravel/netherrack to lava; config switches arrived 1.18, Frog Legs and Fairy Tales 1.17, the Terrarium 1.16, brewed froglights/boss resources/Slime Churn/Just Dire Things across 1.14-1.15. Full bump history in [`pf_pin_history.md`](./pf_pin_history.md)). |
+| **Productive Frogs**  | The mod the pack is built around                                     | Published on CurseForge (1.21.1 / NeoForge). Pinned at **1.22.0** (Apex Predators - two boss-tier automated farms, the End Dragon Altar and the Wither Altar, both harvesting existing boss froglight variants with no new resource variants. Full bump history in [`pf_pin_history.md`](./pf_pin_history.md)). |
 
 ### 2. Skyblock fundamentals
 

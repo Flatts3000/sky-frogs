@@ -2,7 +2,7 @@
 
 > **Status:** All six tiers (Welcome, Cave, Geode, Bog, Tide, Infernal, Void) are built and live, through the Master Pond endgame and the Sky Frogs Master Frog trophy. The premise (frog species gate progress) and the order (Cave -> Geode -> Bog -> Tide -> Infernal -> Void) are settled. The content campaign is complete; remaining work is balance, art (the Master Frog texture), and optional modded-variant expansion.
 >
-> **Version note:** the pack consumes **Productive Frogs 1.16.0** (the full roster through the mob-drop + boss resources, per-variant Slime Milk that survives pipe automation, the four Slime Milk catalysts, the Crucible/Mold, Brewed Froglights, the Slime Churn, and **The Terrarium** automation multiblock). All six tiers plus the Trophy Pond boss campaign and the Terrarium chapter are built against this pin and live. The full bump-by-bump pin history is in [`pf_pin_history.md`](./pf_pin_history.md); the pack `packwiz update`s to newer PF as it publishes.
+> **Version note:** the pack consumes **Productive Frogs 1.22.0** (Apex Predators - the full roster through the mob-drop + boss resources, per-variant Slime Milk that survives pipe automation, the four Slime Milk catalysts, the Crucible/Mold, Brewed Froglights, the Slime Churn, **The Terrarium** automation multiblock, and the End Dragon + Wither boss-farm altars). All six tiers plus the Trophy Pond boss campaign and the Terrarium chapter are built against this pin and live. The full bump-by-bump pin history is in [`pf_pin_history.md`](./pf_pin_history.md); the pack `packwiz update`s to newer PF as it publishes.
 
 ## The premise
 
