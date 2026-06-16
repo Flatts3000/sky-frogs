@@ -4,8 +4,15 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-06-16
+
+A maintenance release: Productive Frogs jumps to 1.22.0 "Apex Predators", bringing two contained, repeatable boss farms (an Ender Dragon altar and a Wither altar), and the Functional Storage controllers stop colliding with their extension recipes.
+
 ### Changed
 - **Productive Frogs 1.21.0 -> 1.22.0 "Apex Predators".** Adds two boss-tier automated farms with no new resource variants. The **End Dragon Altar**: build it on the End exit portal for a hands-off, repeatable Ender Dragon harvest - a replica dragon rises and is devoured by a special frog, dropping a Dragon Breath Froglight, a renewable Dragon Egg Froglight, the Princess's Kiss, and XP into a hatch you can pipe with hoppers (no real boss, no portal regrowth). The **Wither Altar**: after your first Wither kill, its Nether Star crafts the altar's keystone, and from then on you summon and farm a contained replica Wither in a soul-forged arena for a Nether Star Froglight and XP - no boss bar, no exploding blocks. Both altars harvest the existing boss froglight variants, so the census, singularities, and froglight recipes are unchanged (zero drift). The pack pins no boss config, so both altars are available at the boss tier; the new altar blocks are not quested yet (deferred to a follow-up).
+
+### Fixed
+- **Functional Storage controllers no longer share a recipe with their extension blocks (#186).** The pack's quartz-free storage rewrite had accidentally given the Storage Controller and its Controller Extension (and the framed pair) the exact same recipe, so crafting one could hand back the other, and a crafting-station's output picker got stuck on the wrong result. The controllers now use a distinct redstone-block center, so every block has its own unambiguous recipe. (Reported by tamsen2207 on Discord.)
 
 ## [1.0.0] - 2026-06-14
 
