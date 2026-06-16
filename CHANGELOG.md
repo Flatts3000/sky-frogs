@@ -4,6 +4,9 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+### Changed
+- **Productive Frogs 1.21.0 -> 1.22.0 "Apex Predators".** Adds two boss-tier automated farms with no new resource variants. The **End Dragon Altar**: build it on the End exit portal for a hands-off, repeatable Ender Dragon harvest - a replica dragon rises and is devoured by a special frog, dropping a Dragon Breath Froglight, a renewable Dragon Egg Froglight, the Princess's Kiss, and XP into a hatch you can pipe with hoppers (no real boss, no portal regrowth). The **Wither Altar**: after your first Wither kill, its Nether Star crafts the altar's keystone, and from then on you summon and farm a contained replica Wither in a soul-forged arena for a Nether Star Froglight and XP - no boss bar, no exploding blocks. Both altars harvest the existing boss froglight variants, so the census, singularities, and froglight recipes are unchanged (zero drift). The pack pins no boss config, so both altars are available at the boss tier; the new altar blocks are not quested yet (deferred to a follow-up).
+
 ## [1.0.0] - 2026-06-14
 
 Sky Frogs 1.0 - out of beta. The full pack: all six tiers (Cave through Void), the Trophy Pond boss campaign, the Terrarium automation chapter, and the Completionist census, complete and shipping as a stable release. This launch also lands a full editorial pass over every quest, Productive Frogs 1.21 (an in-game field guide granted on join, the Sweetslimed Lily Pad perch, and reworked breeding), a Sky Frogs section in that guide, new Crusher and Bio Fuel quests in the Bog tier, and an Apotheosis loot fix.
