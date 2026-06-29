@@ -306,11 +306,11 @@ hash = "338768fb497fa6c1544e4db8ed91aa7773ee683566fc3db2aebf6319a1c54fb4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/bog_frogs.snbt"
-hash = "bc9eedbd6871c7f44d4f3ad2eb4c44feb6686a76a367b68f395eafe32c0acdf8"
+hash = "3fecb050e5c20e48733524c4bf5a4f9c286a5c8062c4b60bd506eb244cdcaeb7"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/cave_frogs.snbt"
-hash = "301fc40ac49d3c50bfe0f61308a481ea52d0762b344190b563d49b89723a0b4f"
+hash = "fc6ca47fde065c92710a890973cba75f42f96d12f16ec60216a57f6167ecd5c8"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/drowned_riches.snbt"
@@ -318,11 +318,11 @@ hash = "928f7560a5017a9b9fba45a6977d7a9991399836cdd980900ca2a1c48bc3901e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/geode_frogs.snbt"
-hash = "ad642501aadd8ced3a65d7fd2bc33fa58abfab43ad54cf512f9416d5d2c70050"
+hash = "a8d1d48a34bc7ec0d964e6d2d1a9874bd042d8de30fa1fa60168f5e2ec27eacd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/infernal_frogs.snbt"
-hash = "2e1cd4323ef37589ced9eaf946e5f7c6fc7abc6fe554c676de178edfee0cddf9"
+hash = "fd9e9ca9f4f29b0557098699403e39bf250376ea5cd3882a8ae09048b3b435ba"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/master_pond.snbt"
@@ -346,7 +346,7 @@ hash = "f023740d6a65256a29ed1a9454f167b7a8c774cba364b54b9d4a6508cc25a809"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_geode.snbt"
-hash = "f44b1bfb021cf2b0d003d016b8af40e53f11f734a4335cbf4dc92164c4ba865d"
+hash = "d219055bfc57b92a18004e0ce63b1d30d9b2a7e0cecb36b0e9355ef2fe216231"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_infernal.snbt"
@@ -394,11 +394,11 @@ hash = "d605261a2e885e06b6dd7d4f6a1f0e5a383a7318ec917a052983672d828e9f94"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/trophy_pond.snbt"
-hash = "956fc3d100853f08a464d5f0a39683e4120ec3c4a47f596271a01aa1afa34ba5"
+hash = "31c2cfb4193d0ea052de1e6a0de0995fef2d38737acae767dd57eeded58031ca"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/void_frogs.snbt"
-hash = "16790918f87f8958ffee21a0332f51a72e39cc6c9cd5b8e7a6239139ac8cc242"
+hash = "61ac2bad284fcc1056c2bded0964ad8e0d37e4016006ac8bab5c682bb8788656"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
