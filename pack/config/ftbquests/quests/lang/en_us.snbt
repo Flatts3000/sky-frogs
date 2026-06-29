@@ -1478,14 +1478,14 @@
 	quest.53A000000000000B.quest_subtitle: "A nursery with the lights on."
 	quest.53A000000000000B.title: "Incubators"
 	quest.53A000000000000E.quest_desc: [
-		"The &eHatch&r is the output: Froglights drop &bstraight into it&r - no item entity bouncing around the cavity - and it vacuums up any loose slimeballs, magma cream, or raw frog legs (from a frog that died inside) too. It opens as a chest and pipes out its outward face. When it fills, the frogs stop eating until you clear it (nothing is ever voided)."
+		"The &eTerrarium Hatch&r is the output: Froglights drop &bstraight into it&r - no item entity bouncing around the cavity - and it vacuums up any loose slimeballs, magma cream, or raw frog legs (from a frog that died inside) too. It opens as a chest and pipes out its outward face. When it fills, the frogs stop eating until you clear it (nothing is ever voided)."
 		""
 		"Exactly one. On a wall, facing OUT - placed from outside."
 	]
 	quest.53A000000000000E.quest_subtitle: "Where the light comes out."
-	quest.53A000000000000E.title: "The Hatch"
+	quest.53A000000000000E.title: "The Terrarium Hatch"
 	quest.53A0000000000011.quest_desc: [
-		"Seal it into a box. The interior is &e5 wide, 5 deep, 4 tall&r; wrap it in a one-block shell of any solid block. The &eController&r and the &eHatch&r sit on the walls facing OUT - placed from outside the Terrarium - and any &eIncubators&r you add face OUT too; the &eSprinklers&r line the ceiling. No machines on corners or edges."
+		"Seal it into a box. The interior is &e5 wide, 5 deep, 4 tall&r; wrap it in a one-block shell of any solid block. The &eController&r and the &eTerrarium Hatch&r sit on the walls facing OUT - placed from outside the Terrarium - and any &eIncubators&r you add face OUT too; the &eSprinklers&r line the ceiling. No machines on corners or edges."
 		""
 		"&7Right-click the Controller&r - it tells you the formed state and points at the first wrong block until it reads &aformed&r. That readout is your blueprint; build to whatever it asks for."
 		""
