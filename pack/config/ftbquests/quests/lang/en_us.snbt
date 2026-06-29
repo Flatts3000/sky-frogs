@@ -1153,7 +1153,7 @@
 	quest.780700000000002C.quest_desc: [
 		"You beat the dragon the hard way once. Now you never have to again. Build this altar right on the &eEnd exit portal&r: ring it with &eEnd Crystal Receptacles&r and reinforced froglights, with a &bDragon Egg&r as the capstone."
 		""
-		"Drop an end crystal into each of the four receptacles and a replica dragon rises, charges, and is devoured by &eDragonsbane&r - the frog at the altar's heart. The loot lands in the hatch: a &bDragon Breath Froglight&r, a renewable &bDragon Egg Froglight&r, the &dPrincess's Kiss&r, and XP. Hopper-pipeable, no real boss, no portal to regrow."
+		"Drop an end crystal into each of the four receptacles and a dragon rises, charges, and is devoured by &eDragonsbane&r - the frog at the altar's heart. The loot lands in the hatch: a &bDragon Breath Froglight&r, a renewable &bDragon Egg Froglight&r, the &dPrincess's Kiss&r, and XP - hopper-pipeable, and it leaves the End portal untouched."
 		""
 		"&7Optional&r - a repeatable dragon harvest, if you want one. Craft the &eEnd Dragon Altar Hatch&r to start."
 	]
@@ -1162,11 +1162,11 @@
 	quest.780700000000002F.quest_desc: [
 		"The first Wither you kill the hard way hands you a &bNether Star&r - and that star crafts the &eWithered Star&r, the keystone of an altar that farms Withers with none of the danger."
 		""
-		"Build a soul-forged arena of &eReinforced Soul Sand&r and &bBlaze Rod Froglights&r, then load the full summon - four soul sand and three wither skeleton skulls - into the ritual receptacles. A replica Wither charges in exactly like a real one, blue glow and all, until &eWitherbane&r devours it. Out comes a &bNether Star Froglight&r (smelts back to a star) and XP - no boss bar, no exploding blocks."
+		"Build a soul-forged arena of &eReinforced Soul Sand&r and &bBlaze Rod Froglights&r, then load the full summon - four soul sand and three wither skeleton skulls - into the ritual receptacles. A Wither charges in, blue glow and all, until &eWitherbane&r devours it. Out comes a &bNether Star Froglight&r (smelts back to a star) and XP - no boss bar, no exploding blocks."
 		""
 		"&7Optional&r - a contained, repeatable Nether Star farm. Craft the &eWithered Star&r to begin."
 	]
-	quest.780700000000002F.quest_subtitle: "Cage a Wither that was never real."
+	quest.780700000000002F.quest_subtitle: "A Wither farm, fully contained."
 	quest.780700000000002F.title: "The Wither Altar"
 	chapter.7807000000000001.title: "Trophy Pond"
 	quest.7CA7E000C0DE0002.quest_desc: [
