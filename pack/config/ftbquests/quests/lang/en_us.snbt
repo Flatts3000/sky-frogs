@@ -1627,6 +1627,15 @@
 	]
 	quest.60F000000000000E.quest_subtitle: "It listens."
 	quest.60F000000000000E.title: "Sculk"
+	quest.60F0000000000017.quest_desc: [
+		"Apothic Enchanting tops out with the &bSoul-Touched Sculkshelf&r, and that shelf needs a &dWarden Tendril&r - which only the &cWarden&r drops. There's no natural Deep Dark on a void skyblock, so the Warden has to be summoned by hand."
+		""
+		"Craft a &eSculk Shrieker&r (sculk, echo shards, and a bone block - all off your Void frogs) and place it. A crafted shrieker can't summon on its own, so use Ex Deorum's &eSculk Core&r (four echo shards and an ender pearl) on it to wake that power. Then set it shrieking a few times and the &cWarden&r claws its way up."
+		""
+		"&cCome geared&r - the Warden is the deadliest thing in the game. Beat it for the &dWarden Tendril&r, and with it the top tier of enchanting. Entirely optional: skip the fight if you don't want it."
+	]
+	quest.60F0000000000017.quest_subtitle: "The hardest fight, the best enchants."
+	quest.60F0000000000017.title: "Wake the Warden"
 	quest.60F0000000000011.quest_desc: [
 		"&dShulker Shells&r - shulker boxes, the only portable storage that survives the void."
 		""
