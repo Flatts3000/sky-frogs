@@ -1444,6 +1444,8 @@
 		"&eSprinklers&r make up the ceiling of the box and rain slimes down into it, spawning on the exact same rules a placed Slime Milk source uses - cadence, per-bucket budget, and &dcatalysts&r (Rapid, Teeming, Bountiful, Endless) all carry through from the milk. You need &eat least one&r; up to 25 fit a ceiling, so make as many as you want for faster rain."
 		""
 		"Drop a catalyst on a Sprinkler from above to upgrade it in place. Need to change the variant or reclaim the milk? Right-click a Sprinkler with an &eempty bucket&r to pull its Slime Milk back out."
+		""
+		"&7Redstone control:&r a Sprinkler &epauses while it's powered&r - its held milk and remaining spawns just freeze, and pick back up the moment the signal drops. Each Sprinkler is wired on its own, so you can stage which resources run, flip a lever to pause a box by hand, or run a comparator off a full chest to throttle production when your storage backs up."
 	]
 	quest.53A0000000000008.quest_subtitle: "Indoor weather, made of slime."
 	quest.53A0000000000008.title: "Sprinklers"
