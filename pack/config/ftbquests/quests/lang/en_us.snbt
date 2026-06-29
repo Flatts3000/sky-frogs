@@ -1436,7 +1436,7 @@
 	quest.53A0000000000005.quest_desc: [
 		"The &eTerrarium Controller&r is the brain: it takes &bSlime Milk&r piped or clicked into its outward face and rations it out to the &eSprinklers&r in the ceiling. It does &cnot accept boss Slime Milk&r, though - the wither and dragon trophies stay on their catalyst altars. Build it first - the whole structure forms around it."
 		""
-		"It takes the place of one wall block - on a flat face, not a corner or edge - facing OUT of the box: you set it (and every wall appliance) into the shell from the &eoutside&r, front toward you. It is &enot&r pinned to the height the guide book's diagram happens to show: any non-edge block on a flat wall face works. The walls themselves can be &aany solid block&r, so build the shell from whatever you like. Recipe: glowstone, a quartz block, blaze rods, magma cream, nether bricks."
+		"It takes the place of one wall block - on a flat face, not a corner or edge - facing OUT of the box. It is &enot&r pinned to the height the guide book's diagram happens to show: any non-edge block on a flat wall face works. The walls themselves can be &aany solid block&r, so build the shell from whatever you like. Recipe: glowstone, a quartz block, blaze rods, magma cream, nether bricks."
 	]
 	quest.53A0000000000005.quest_subtitle: "The brain of the box."
 	quest.53A0000000000005.title: "Terrarium Controller"
@@ -1454,19 +1454,19 @@
 		""
 		"One Incubator raises &eone frog at a time&r and stops releasing at the frog cap (8 by default) - so run &eseveral&r for throughput and feed them Sweetslimes. That cap is just the Incubators' release ceiling, not a wall on the cavity: you can always lead, net, or carry extra frogs in by hand."
 		""
-		"Incubators are &eoptional&r - the box forms with none. Add them only if you want frogs raised and bred in place; otherwise stock the Terrarium yourself. Each one goes on a wall, face pointing OUT (toward you, like the other appliances)."
+		"Incubators are &eoptional&r - the box forms with none. Add them only if you want frogs raised and bred in place; otherwise stock the Terrarium yourself. Each one goes on a wall, face pointing IN."
 	]
 	quest.53A000000000000B.quest_subtitle: "A nursery with the lights on."
 	quest.53A000000000000B.title: "Incubators"
 	quest.53A000000000000E.quest_desc: [
 		"The &eHatch&r is the output: Froglights drop &bstraight into it&r - no item entity bouncing around the cavity - and it vacuums up any loose slimeballs, magma cream, or raw frog legs (from a frog that died inside) too. It opens as a chest and pipes out its outward face. When it fills, the frogs stop eating until you clear it (nothing is ever voided)."
 		""
-		"Exactly one. On a wall, facing OUT."
+		"Exactly one. On a wall, facing IN."
 	]
 	quest.53A000000000000E.quest_subtitle: "Where the light comes out."
 	quest.53A000000000000E.title: "The Hatch"
 	quest.53A0000000000011.quest_desc: [
-		"Seal it into a box. The interior is &e5 wide, 5 deep, 4 tall&r; wrap it in a one-block shell of any solid block. The &eController&r and the &eHatch&r sit on the walls facing OUT - placed from outside the Terrarium - and any &eIncubators&r you add face OUT too; the &eSprinklers&r line the ceiling. No machines on corners or edges."
+		"Seal it into a box. The interior is &e5 wide, 5 deep, 4 tall&r; wrap it in a one-block shell of any solid block. The &eController&r and the &eHatch&r sit on the walls facing IN (any &eIncubators&r you add go on the walls facing IN too); the &eSprinklers&r line the ceiling. No machines on corners or edges."
 		""
 		"&7Right-click the Controller&r - it tells you the formed state and points at the first wrong block until it reads &aformed&r. That readout is your blueprint; build to whatever it asks for."
 		""
