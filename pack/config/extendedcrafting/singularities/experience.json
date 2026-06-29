@@ -1,0 +1,11 @@
+{
+  "name": "singularity.extendedcrafting.experience",
+  "colors": [
+    "b8e040",
+    "2a6e54"
+  ],
+  "ingredient": {
+    "item": "minecraft:book"
+  },
+  "inUltimateSingularity": true
+}

@@ -361,6 +361,16 @@ ServerEvents.recipes(event => {
     ).id('kubejs:froglight_slime/energized_steel')
   }
   event.shaped(
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:experience",Category:"VOID"}]',
+    ['BFF', 'FGF', 'SSS'],
+    {
+      B: 'minecraft:bucket',
+      F: 'minecraft:soul_soil',
+      S: 'productivefrogs:sweetslime',
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:experience"]'
+    }
+  ).id('kubejs:froglight_slime/experience')
+  event.shaped(
     'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:feather",Category:"BOG"}]',
     ['BFF', 'FGF', 'SSS'],
     {
