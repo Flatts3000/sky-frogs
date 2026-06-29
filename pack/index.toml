@@ -398,7 +398,7 @@ hash = "956fc3d100853f08a464d5f0a39683e4120ec3c4a47f596271a01aa1afa34ba5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/void_frogs.snbt"
-hash = "16790918f87f8958ffee21a0332f51a72e39cc6c9cd5b8e7a6239139ac8cc242"
+hash = "ccc7b9b6d25812466c2406a6c678e41ee8d56015d40cab8ea27e9d3d0531533e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
@@ -418,7 +418,7 @@ hash = "4889c5e7d4a8179b45e68f0ac00119529ed49ba68f20624b36e996bb0d60ddd0"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "9b1d0815f9cf0a9092952f14712171658f4e1f225d85877a3802148c6330daa9"
+hash = "68b480e53d96f3fc82e5cd00bcbe2e7ec76544139bb5af0608739bdd606659a8"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
