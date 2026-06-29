@@ -67,7 +67,7 @@
 				id: "7B0600000000000A"
 				item: {
 					count: 1
-					id: "functionalstorage:compacting_drawer"
+					id: "functionalstorage:simple_compacting_drawer"
 				}
 				type: "item"
 			}]
@@ -411,7 +411,7 @@
 				id: "7B06000000000027"
 				item: {
 					count: 1
-					id: "functionalstorage:oak_1"
+					id: "functionalstorage:simple_compacting_drawer"
 				}
 				type: "item"
 			}]

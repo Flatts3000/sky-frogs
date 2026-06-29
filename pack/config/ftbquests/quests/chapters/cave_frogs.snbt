@@ -43,7 +43,7 @@
 				id: "7CA7E000C0DE0014"
 				item: {
 					count: 1
-					id: "functionalstorage:compacting_drawer"
+					id: "functionalstorage:simple_compacting_drawer"
 				}
 				type: "item"
 			}]
@@ -113,7 +113,7 @@
 				id: "7CA7E000C0DE0016"
 				item: {
 					count: 1
-					id: "functionalstorage:compacting_drawer"
+					id: "functionalstorage:simple_compacting_drawer"
 				}
 				type: "item"
 			}]
@@ -137,7 +137,7 @@
 				id: "7CA7E000C0DE0025"
 				item: {
 					count: 1
-					id: "functionalstorage:compacting_drawer"
+					id: "functionalstorage:oak_1"
 				}
 				type: "item"
 			}]
@@ -161,7 +161,7 @@
 				id: "7CA7E000C0DE0028"
 				item: {
 					count: 1
-					id: "functionalstorage:compacting_drawer"
+					id: "functionalstorage:oak_1"
 				}
 				type: "item"
 			}]
@@ -185,7 +185,7 @@
 				id: "7CA7E000C0DE0017"
 				item: {
 					count: 1
-					id: "functionalstorage:compacting_drawer"
+					id: "functionalstorage:simple_compacting_drawer"
 				}
 				type: "item"
 			}]

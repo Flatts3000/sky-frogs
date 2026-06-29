@@ -139,7 +139,7 @@
 				id: "7D00000000000022"
 				item: {
 					count: 1
-					id: "functionalstorage:oak_1"
+					id: "functionalstorage:compacting_drawer"
 				}
 				type: "item"
 			}]
@@ -163,7 +163,7 @@
 				id: "7D00000000000025"
 				item: {
 					count: 1
-					id: "functionalstorage:oak_1"
+					id: "functionalstorage:simple_compacting_drawer"
 				}
 				type: "item"
 			}]
