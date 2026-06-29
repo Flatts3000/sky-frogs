@@ -1436,7 +1436,7 @@
 	quest.53A0000000000005.quest_desc: [
 		"The &eTerrarium Controller&r is the brain: it takes &bSlime Milk&r piped or clicked into its outward face and rations it out to the &eSprinklers&r in the ceiling. It does &cnot accept boss Slime Milk&r, though - the wither and dragon trophies stay on their catalyst altars. Build it first - the whole structure forms around it."
 		""
-		"It takes the place of one wall block - on a flat face, not a corner or edge - facing OUT of the box (front toward you, like every wall appliance here). It is &enot&r pinned to the height the guide book's diagram happens to show: any non-edge block on a flat wall face works. The walls themselves can be &aany solid block&r, so build the shell from whatever you like. Recipe: glowstone, a quartz block, blaze rods, magma cream, nether bricks."
+		"It takes the place of one wall block - on a flat face, not a corner or edge - facing OUT of the box: you set it (and every wall appliance) into the shell from the &eoutside&r, front toward you. It is &enot&r pinned to the height the guide book's diagram happens to show: any non-edge block on a flat wall face works. The walls themselves can be &aany solid block&r, so build the shell from whatever you like. Recipe: glowstone, a quartz block, blaze rods, magma cream, nether bricks."
 	]
 	quest.53A0000000000005.quest_subtitle: "The brain of the box."
 	quest.53A0000000000005.title: "Terrarium Controller"
@@ -1466,7 +1466,7 @@
 	quest.53A000000000000E.quest_subtitle: "Where the light comes out."
 	quest.53A000000000000E.title: "The Hatch"
 	quest.53A0000000000011.quest_desc: [
-		"Seal it into a box. The interior is &e5 wide, 5 deep, 4 tall&r; wrap it in a one-block shell of any solid block. The &eController&r and the &eHatch&r sit on the walls facing OUT (any &eIncubators&r you add face OUT too); the &eSprinklers&r line the ceiling. No machines on corners or edges."
+		"Seal it into a box. The interior is &e5 wide, 5 deep, 4 tall&r; wrap it in a one-block shell of any solid block. The &eController&r and the &eHatch&r sit on the walls facing OUT - placed from outside the Terrarium - and any &eIncubators&r you add face OUT too; the &eSprinklers&r line the ceiling. No machines on corners or edges."
 		""
 		"&7Right-click the Controller&r - it tells you the formed state and points at the first wrong block until it reads &aformed&r. That readout is your blueprint; build to whatever it asks for."
 		""
