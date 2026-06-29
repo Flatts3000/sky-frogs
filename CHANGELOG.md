@@ -4,6 +4,10 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+### Changed
+- **Productive Frogs 1.22.0 -> 1.24.0** (two releases). **1.24.0 "Flip the Switch"**: Terrarium **Sprinklers can now be switched off with redstone** - a powered Sprinkler pauses (its held milk and remaining spawns freeze, then resume when the signal drops), and each Sprinkler is controlled on its own, so you can stage which resources run or wire a comparator off a full chest to self-throttle. This directly answers standing Discord requests to toggle slime production against the mob cap (PF #263). **1.23.0 "The Midas Touch"**: adds an opt-in, endgame **Equivalence/transmutation lane** (Alembic -> Mimic Slime -> Midas frog -> Prismatic Froglight -> Distiller, an equivalent-exchange engine) that is **off by default** (`equivalence.enabled`), so the pack is unaffected unless it opts in; it also **fixes the Wither Altar to form in all four orientations** (previously only one compass orientation assembled; PF #247). The 1.22 -> 1.24 jump adds **one new vanilla variant, `experience`** (void category): the sweep regenerated deterministically - singularities **57 -> 58**, froglight->slime recipes **101 -> 102**, vanilla census **59 -> 60** (modded census unchanged at 34), validator clean. The variant is tracked in the census; slotting it into a tier's species chapter is deferred.
+- **Refreshed all other mod pins** via `packwiz update --all` (~37 routine version bumps). Sodium was deliberately held on its stable `0.6.13` rather than the `0.8.x-beta` the non-interactive updater offered.
+
 ## [1.1.0] - 2026-06-16
 
 A maintenance release: Productive Frogs jumps to 1.22.0 "Apex Predators", bringing two contained, repeatable boss farms (an Ender Dragon altar and a Wither altar), and the Functional Storage controllers stop colliding with their extension recipes.
