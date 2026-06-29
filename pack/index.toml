@@ -689,6 +689,10 @@ file = "kubejs/server_scripts/froglight_slime_recipes.js"
 hash = "c71a719a733a5fd0d0541750eb74d3f3e959b3adacfc98569509b14556f9c61d"
 
 [[files]]
+file = "kubejs/server_scripts/fs_compacting_recipes.js"
+hash = "76a04a8c5161ee4e9a78bb33dbfeae3483ebf473614d4a20c66b57685368dea6"
+
+[[files]]
 file = "kubejs/server_scripts/geode_slime_chain.js"
 hash = "8be182ebb786e6b76e62dfa47b96dbaebe45138a398dfb2ccd7c10ddf2ebfca9"
 
