@@ -653,10 +653,6 @@ file = "kubejs/server_scripts/cave_slime_chain.js"
 hash = "386ac78d2424a4a5a46d0d655bc748567821b225bcd499b74075c37bea407ccc"
 
 [[files]]
-file = "kubejs/server_scripts/clay_recipe.js"
-hash = "fa5d1b937bc29f69de87e00bb7e1816cd23df19d43f841bd20c5c3bd0691d5ce"
-
-[[files]]
 file = "kubejs/server_scripts/cobblegen_curation.js"
 hash = "a14f0b3014ad482f9b04ef079202394670f76a749bccb93ed36bb3e41c1810dc"
 
@@ -687,6 +683,10 @@ hash = "1ce10ec7c6a5e04ebe7a9b4c39d72021927075f2aafab7dd3a9614816d5ec558"
 [[files]]
 file = "kubejs/server_scripts/froglight_slime_recipes.js"
 hash = "5d1f1d3151fee203284936a5fa4bedc147eaf9c9d11011f9b3308f16d56df1cf"
+
+[[files]]
+file = "kubejs/server_scripts/fs_compacting_recipes.js"
+hash = "76a04a8c5161ee4e9a78bb33dbfeae3483ebf473614d4a20c66b57685368dea6"
 
 [[files]]
 file = "kubejs/server_scripts/geode_slime_chain.js"
