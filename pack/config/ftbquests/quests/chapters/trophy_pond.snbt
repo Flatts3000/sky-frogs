@@ -256,5 +256,47 @@
 			x: 0.75d
 			y: 6.0d
 		}
+		{
+			dependencies: ["780700000000000B"]
+			optional: true
+			icon: {
+				id: "productivefrogs:withered_star"
+			}
+			id: "780700000000002F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7807000000000031"
+				table_id: 9178336040581070849L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "7807000000000030"
+				item: { count: 1, id: "productivefrogs:withered_star" }
+				type: "item"
+			}]
+			x: -0.75d
+			y: 7.5d
+		}
+		{
+			dependencies: ["7807000000000011", "7807000000000017"]
+			optional: true
+			icon: {
+				id: "productivefrogs:end_dragon_altar_hatch"
+			}
+			id: "780700000000002C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "780700000000002E"
+				table_id: 9178336040581070849L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "780700000000002D"
+				item: { count: 1, id: "productivefrogs:end_dragon_altar_hatch" }
+				type: "item"
+			}]
+			x: 2.25d
+			y: 7.5d
+		}
 	]
 }
