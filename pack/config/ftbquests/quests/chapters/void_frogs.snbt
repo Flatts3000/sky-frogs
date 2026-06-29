@@ -41,7 +41,7 @@
 				id: "60F0000000000007"
 				item: {
 					count: 1
-					id: "functionalstorage:compacting_drawer"
+					id: "functionalstorage:oak_1"
 				}
 				type: "item"
 			}]
@@ -65,7 +65,7 @@
 				id: "60F000000000000A"
 				item: {
 					count: 1
-					id: "functionalstorage:compacting_drawer"
+					id: "functionalstorage:oak_1"
 				}
 				type: "item"
 			}]
@@ -89,7 +89,7 @@
 				id: "60F000000000000D"
 				item: {
 					count: 1
-					id: "functionalstorage:compacting_drawer"
+					id: "functionalstorage:oak_1"
 				}
 				type: "item"
 			}]
@@ -113,7 +113,7 @@
 				id: "60F0000000000010"
 				item: {
 					count: 1
-					id: "functionalstorage:compacting_drawer"
+					id: "functionalstorage:oak_1"
 				}
 				type: "item"
 			}]
@@ -138,7 +138,7 @@
 				id: "60F0000000000016"
 				item: {
 					count: 1
-					id: "functionalstorage:compacting_drawer"
+					id: "functionalstorage:oak_1"
 				}
 				type: "item"
 			}]
@@ -172,6 +172,30 @@
 			}]
 			x: 0.0d
 			y: 9.0d
+		}
+		{
+			dependencies: ["60F000000000000E"]
+			optional: true
+			icon: {
+				id: "minecraft:warden_spawn_egg"
+			}
+			id: "60F0000000000017"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "60F000000000001A"
+				table_id: 9178336040581070849L
+				type: "loot"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				entity: "minecraft:warden"
+				id: "60F0000000000018"
+				type: "kill"
+				value: 1L
+			}]
+			x: 1.5d
+			y: 6.0d
 		}
 	]
 }

@@ -310,23 +310,23 @@ hash = "338768fb497fa6c1544e4db8ed91aa7773ee683566fc3db2aebf6319a1c54fb4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/bog_frogs.snbt"
-hash = "bc9eedbd6871c7f44d4f3ad2eb4c44feb6686a76a367b68f395eafe32c0acdf8"
+hash = "7e4159869867425c05eecfc439b8841880b6b393340b3153d1421b84d0e28e0a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/cave_frogs.snbt"
-hash = "301fc40ac49d3c50bfe0f61308a481ea52d0762b344190b563d49b89723a0b4f"
+hash = "fc6ca47fde065c92710a890973cba75f42f96d12f16ec60216a57f6167ecd5c8"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/drowned_riches.snbt"
-hash = "928f7560a5017a9b9fba45a6977d7a9991399836cdd980900ca2a1c48bc3901e"
+hash = "f4f0d64ff2715fb6d80ab739714f20422bfec8b1c6fb48c43b043febfd9f7a7b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/geode_frogs.snbt"
-hash = "ad642501aadd8ced3a65d7fd2bc33fa58abfab43ad54cf512f9416d5d2c70050"
+hash = "a8d1d48a34bc7ec0d964e6d2d1a9874bd042d8de30fa1fa60168f5e2ec27eacd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/infernal_frogs.snbt"
-hash = "2e1cd4323ef37589ced9eaf946e5f7c6fc7abc6fe554c676de178edfee0cddf9"
+hash = "fd9e9ca9f4f29b0557098699403e39bf250376ea5cd3882a8ae09048b3b435ba"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/master_pond.snbt"
@@ -350,7 +350,7 @@ hash = "f023740d6a65256a29ed1a9454f167b7a8c774cba364b54b9d4a6508cc25a809"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_geode.snbt"
-hash = "f44b1bfb021cf2b0d003d016b8af40e53f11f734a4335cbf4dc92164c4ba865d"
+hash = "d219055bfc57b92a18004e0ce63b1d30d9b2a7e0cecb36b0e9355ef2fe216231"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_infernal.snbt"
@@ -398,11 +398,11 @@ hash = "d605261a2e885e06b6dd7d4f6a1f0e5a383a7318ec917a052983672d828e9f94"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/trophy_pond.snbt"
-hash = "a0768e5b7e46c42dacd11b149d730db562e9314dc2b29d88bc00525e5015eeee"
+hash = "920e120c220a57f4d42335ec3e65d731540a0317dd13dfa615b02aebdad0b665"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/void_frogs.snbt"
-hash = "16790918f87f8958ffee21a0332f51a72e39cc6c9cd5b8e7a6239139ac8cc242"
+hash = "bd56c799873edc456e699116f531518263dfa7626a48fd0d947291d4d58ec2f5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
@@ -422,7 +422,7 @@ hash = "4889c5e7d4a8179b45e68f0ac00119529ed49ba68f20624b36e996bb0d60ddd0"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "2fd61601dd57a654d57dd827d84587de765ef926e7f5b94f4807b82b32f9aeab"
+hash = "d6203ea32ff41a8e3c3a2cc75ffb4e033032f03ea900c43ff70d6d43521d9d2a"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
@@ -687,6 +687,10 @@ hash = "1ce10ec7c6a5e04ebe7a9b4c39d72021927075f2aafab7dd3a9614816d5ec558"
 [[files]]
 file = "kubejs/server_scripts/froglight_slime_recipes.js"
 hash = "c71a719a733a5fd0d0541750eb74d3f3e959b3adacfc98569509b14556f9c61d"
+
+[[files]]
+file = "kubejs/server_scripts/fs_compacting_recipes.js"
+hash = "76a04a8c5161ee4e9a78bb33dbfeae3483ebf473614d4a20c66b57685368dea6"
 
 [[files]]
 file = "kubejs/server_scripts/geode_slime_chain.js"

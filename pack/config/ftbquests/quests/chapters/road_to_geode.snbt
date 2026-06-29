@@ -97,7 +97,7 @@
 				id: "60ADE6000000000A"
 				item: {
 					count: 1
-					id: "functionalstorage:compacting_drawer"
+					id: "functionalstorage:simple_compacting_drawer"
 				}
 				type: "item"
 			}]
