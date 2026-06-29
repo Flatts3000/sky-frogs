@@ -1,13 +1,13 @@
 name = "BBL Utility"
-filename = "opolisutilities-1.21.1-4.11.10.jar"
+filename = "opolisutilities-1.21.1-4.12.5.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "1b06eef5e9f3a64f374f6674f544e8bc9422dcbc"
+hash = "95a7d97eb64cf471cedfaef9e813bad95a0be474"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 6386754
+file-id = 6779986
 project-id = 649644
