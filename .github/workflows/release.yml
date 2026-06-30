@@ -59,6 +59,26 @@ jobs:
             exit 1
           fi
 
+      # Stamp the release version into the configs that carry it, sourced from the
+      # tag (single source of truth). BCC's bcc-common.toml drives the client-vs-server
+      # compatibility check - an unset modpackVersion makes that check a no-op (#205).
+      # BBL's modpack.toml feeds the in-game /modpack readout and has the same drift.
+      # Done before `packwiz refresh` so the export hashes match the stamped files.
+      - name: Stamp modpack version into BCC + BBL configs
+        env:
+          VERSION: ${{ steps.ver.outputs.version }}
+        run: |
+          sed -i -E 's/^(\s*modpackVersion = ").*(")/\1'"$VERSION"'\2/' pack/config/bcc-common.toml
+          sed -i -E 's/^(\s*"Modpack Version" = ").*(")/\1'"$VERSION"'\2/' pack/config/bbl/core/modpack.toml
+          # Hard-fail if either stamp missed (key renamed/format drift) - a silent
+          # no-match would ship the placeholder version and re-break #205 with green CI.
+          grep -qF "modpackVersion = \"$VERSION\"" pack/config/bcc-common.toml \
+            || { echo "::error::BCC stamp failed - modpackVersion not set to $VERSION"; exit 1; }
+          grep -qF "\"Modpack Version\" = \"$VERSION\"" pack/config/bbl/core/modpack.toml \
+            || { echo "::error::BBL stamp failed - Modpack Version not set to $VERSION"; exit 1; }
+          echo "Stamped version $VERSION:"
+          grep -nE 'modpackVersion|Modpack Version' pack/config/bcc-common.toml pack/config/bbl/core/modpack.toml
+
       - name: Build CurseForge export
         id: build
         run: |
