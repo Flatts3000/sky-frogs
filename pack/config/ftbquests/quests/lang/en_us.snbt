@@ -55,7 +55,7 @@
 	quest.1F00000000000002.quest_subtitle: "Just Dire Things begins."
 	quest.1F00000000000002.title: "First Goo"
 	quest.1F00000000000020.quest_desc: [
-		"Tired of pouring out &eSlime Milk&r and chasing down every slime it spawns? The &eSlime Churn&r catches them for you. Load a bucket of any variant's &eSlime Milk&r and a stack of empties, and it fills each one with that variant's &bBucket of Slime&r - same rate, same budget, same catalysts as a placed milk pool, but with no slimes to chase."
+		"The &eSlime Churn&r runs the milk loop without the chase. Load it with a bucket of any variant's &eSlime Milk&r and a stack of empty buckets, and it fills each one with that variant's &bBucket of Slime&r. It matches a hand-placed milk pool exactly (same rate, same budget, same catalysts), except nothing hops away to catch."
 		""
 		"Craft a &eSlime Churn&r."
 	]
@@ -486,15 +486,15 @@
 	quest.6C1F0A2B3D4E5F6A.quest_subtitle: "Iron you can pour."
 	quest.6C1F0A2B3D4E5F6A.title: "Iron Slime in a Bucket"
 	quest.6C1F0A2B3D4E5F6D.quest_desc: [
-		"Drop your &bBucket of Iron Slime&r into the top slot of the Slime Milker and give it a few seconds - it presses the slime down into a bucket of &bIron Slime Milk&r."
+		"Drop your &bBucket of Iron Slime&r into the Slime Milker's top slot. A few seconds and it presses out a bucket of &bIron Slime Milk&r."
 		""
-		"Pour that milk out and it spawns &aIron Slimes&r, but the source isn't bottomless - it runs dry after a batch. Milk the slimes you catch for fresh buckets and the cycle feeds itself."
+		"Empty that bucket on the ground and &aIron Slimes&r spawn from the pool it makes. It isn't bottomless, though. After a batch it runs dry, so milk the slimes you catch for fresh buckets and the loop feeds itself."
 		""
-		"That refill loop carries you to the &2Geode&r tier, where &bSlime Milk catalysts&r arrive. Drop an &bEndless Catalyst&r into a milk pool and it &enever runs dry&r - the real depletion fix is one tier away, so don't sweat it now."
+		"That refill loop holds you until the &2Geode&r tier and its &bSlime Milk catalysts&r. An &bEndless Catalyst&r dropped into a pool keeps it from &eever running dry&r. Not far off now."
 		""
-		"Take a &eDiamond Stick&r for your trouble - it'll make building out your base a good deal faster."
+		"Here's a &eDiamond Stick&r to speed up building out your base."
 	]
-	quest.6C1F0A2B3D4E5F6D.quest_subtitle: "Iron Slime Milk."
+	quest.6C1F0A2B3D4E5F6D.quest_subtitle: "Press out the milk."
 	quest.6C1F0A2B3D4E5F6D.title: "Milk It"
 	quest.6C1F0A2B3D4E5F70.quest_desc: [
 		"Here's where the two paths meet. Drop an &aIron Slime&r in with your &eCave Frogs&r and wait - the frog gulps it down and leaves a glowing &bIron Froglight&r behind, the resource sealed inside."
@@ -1085,9 +1085,9 @@
 	quest.51F0000000000021.quest_subtitle: "Slippery when hot."
 	quest.51F0000000000021.title: "Magma Cream"
 	quest.51F0000000000024.quest_desc: [
-		"Brew a &dsplash&r or &dlingering potion&r and throw it at a slime - any slime - before its frog eats it. The Froglight that drops &dcaptures the effect&r. Place it and right-click to toggle: while the aura is on, everything in range gets the effect, good or bad - a &aRegeneration&r room heals you, a &cPoison&r perimeter greets your guests. Held in hand, it buffs just you."
+		"Brew a &dsplash&r or &dlingering potion&r and throw it at any slime before its frog can eat it. The &dFroglight&r that drops captures the effect. Place it and right-click to switch the aura on, and everything in range feels it, for good or ill. A &aRegeneration&r room patches you up; a &cPoison&r perimeter greets visitors. Held in your hand instead, the buff is yours alone."
 		""
-		"Blaze rods from the frog, nether wart on frog-made soul sand: the brewing stand was already yours. This one is on the honor system - check the box once you have bottled your first aura."
+		"You already have the makings: blaze rods from the frog, nether wart grown on frog-made soul sand, a brewing stand. This one runs on the honor system, so check the box once you've bottled your first aura."
 	]
 	quest.51F0000000000024.quest_subtitle: "The frog sommelier."
 	quest.51F0000000000024.title: "Pop the Cork"
