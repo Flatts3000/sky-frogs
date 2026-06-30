@@ -406,7 +406,7 @@ hash = "bd56c799873edc456e699116f531518263dfa7626a48fd0d947291d4d58ec2f5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
-hash = "aa282c9c8d9e319f47132bf67ae364eb1c1cfcd06d010925402480de9f6feafb"
+hash = "8c3b7e8e8b50308174b03bd05effac98103ca42daccee68429109ea56ebd55a0"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/whole_pond.snbt"

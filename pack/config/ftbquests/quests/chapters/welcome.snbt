@@ -157,7 +157,7 @@
 				type: "checkmark"
 			}]
 			x: 1.5d
-			y: 4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["79D9A7438B1DD129"]
