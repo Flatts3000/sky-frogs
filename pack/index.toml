@@ -694,7 +694,7 @@ hash = "c71a719a733a5fd0d0541750eb74d3f3e959b3adacfc98569509b14556f9c61d"
 
 [[files]]
 file = "kubejs/server_scripts/fs_compacting_recipes.js"
-hash = "76a04a8c5161ee4e9a78bb33dbfeae3483ebf473614d4a20c66b57685368dea6"
+hash = "bb790e3ab56adaf8ad20302b7eedde08c913916eb9ea88014b26c480b9c0d468"
 
 [[files]]
 file = "kubejs/server_scripts/geode_slime_chain.js"
