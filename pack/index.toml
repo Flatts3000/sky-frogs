@@ -25,6 +25,10 @@ file = "config/bbl/core/modpack.toml"
 hash = "63843e0c505a7aae3470346873d4ff8b1c65afc0bb00a0a0aaab0c0dc3c60918"
 
 [[files]]
+file = "config/bcc-common.toml"
+hash = "54361b580836cbeaed99cdd84133074cab573998139d90060da80b37b3673e00"
+
+[[files]]
 file = "config/botanypots.json"
 hash = "ac5961eea9ed569a011675e8e7a54efd795a488d0a60c0a1355d18fb5b0753e0"
 
