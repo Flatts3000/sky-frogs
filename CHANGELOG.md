@@ -4,6 +4,10 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+## [1.4.1] - 2026-06-30
+
+Maintenance release: updates Productive Frogs to 1.24.4 ("Growing Pains"). No pack content or quests changed.
+
 ### Changed
 
 - **Productive Frogs updated to 1.24.4 ("Growing Pains").** A behavior/QoL release: tadpoles that grow up in a tight spot (under a low ceiling, in a one-block pool, wedged in a corner) no longer suffocate - a frog now appears in the nearest space it fits, and waits to mature if there's genuinely no room ([PF #276](https://github.com/Flatts3000/productive-frogs/issues/276)); and tadpoles can now be fed Sweetslime to speed growth, not just slime balls ([PF #277](https://github.com/Flatts3000/productive-frogs/issues/277)). No new variants or items, so the pack's roster is unchanged (singularities 58, froglight recipes 102, census 60/34) and no quests changed.
