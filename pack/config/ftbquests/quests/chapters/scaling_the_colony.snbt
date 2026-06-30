@@ -277,5 +277,18 @@
 			x: 2.0d
 			y: 6.0d
 		}
+		{
+			dependencies: ["2A5700000A570022"]
+			icon: {
+				id: "productivefrogs:cave_frog_spawn_egg"
+			}
+			id: "2A5700000A570034"
+			tasks: [{
+				id: "2A5700000A570035"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 9.0d
+		}
 	]
 }
