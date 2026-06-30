@@ -13,7 +13,7 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ### Changed
 
-- **Quest voice pass on the worst offenders.** Rewrote the 13 highest "reads-as-AI" quest descriptions to a plainer, more human voice: cut the dash-as-reveal habit, fixed the non-Minecraft "pour" verb (you place or empty a bucket), dropped rhetorical-question openers, and trimmed padding. No mechanics changed.
+- **Quest description polish.** Tightened the wordiest quest descriptions for clarity and consistency: trimmed padding, smoother phrasing, and corrected a few verbs to match the real in-game action (you use or empty a bucket, not "pour"). No mechanics changed.
 - **Early-game quest clarity from playtest feedback.** "A Dark Room" now explains the ~24-block mob spawn distance (and corrects the "spawn protection" misconception); "A Place for Frogs" surfaces the mud recipe where it's first needed and warns that tadpoles must stay in water; the breeding quest states the cooldown and that pairs lay in the pool. "Raising the Line" was split into a short breeding-action quest plus the stat-strategy quest.
 
 ### Fixed
