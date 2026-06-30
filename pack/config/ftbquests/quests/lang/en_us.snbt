@@ -181,7 +181,7 @@
 	quest.2A5700000A570015.quest_subtitle: "Compost into soil."
 	quest.2A5700000A570015.title: "Dirt from Decay"
 	quest.2A5700000A570018.quest_desc: [
-		"A glass bottle of water poured onto a block of dirt makes &6mud&r."
+		"Use a glass bottle of water on a block of dirt (right-click it) and the dirt turns to &6mud&r."
 		""
 		"Mud sits just shy of a full block, so dropped items fall straight through it into whatever's below - which is how you'll catch your Froglights. Here are eight more, for &bnine&r total: enough to floor a 3x3 pen."
 	]
@@ -218,10 +218,19 @@
 		""
 		"Each baby's stats start at the &eaverage&r of its parents, then each one has a chance to &aclimb a point higher&r - and every breed bumps at least one stat, so a pairing is never wasted. A baby never drops below the parents' average, so you can't breed backward. Pair your &lbest with your best&r to hold a high average and climb toward &l10/10/10&r; mixing in a weak frog just drags the average down. (The flip side of averaging: breed a high-&aAppetite&r frog with a high-&eBounty&r one to merge their strengths into a balanced frog.)"
 		""
+		"One quirk to expect: after a pair breeds, they need a cooldown before they will breed again (a few minutes), and they lay in the &bwater pool&r, not on land. If a pairing looks like it did nothing, give it time and check they have water."
+		""
 		"Pair off two frogs to begin."
 	]
 	quest.2A5700000A570022.quest_subtitle: "Breed a better frog."
 	quest.2A5700000A570022.title: "Raising the Line"
+	quest.2A5700000A570031.quest_desc: [
+		"Your frogs have earned names. &eName Tags&r craft from &fstring&r and &fpaper&r, and you have both by now: string off your silkworms, paper from your sugar cane."
+		""
+		"Rename a Name Tag on an &eanvil&r, then right-click a frog with it. Here are four more, enough to christen a starting colony."
+	]
+	quest.2A5700000A570031.quest_subtitle: "Give them names."
+	quest.2A5700000A570031.title: "Name Your Frogs"
 	quest.32C3D4E5F6A10001.quest_desc: ["Four sticks make a Crook. Drag it across oak leaves and they give up far more than bare hands would - saplings to replant, and now and then a wriggling &eSilkworm&r."]
 	quest.32C3D4E5F6A10001.quest_subtitle: "For leaves, gently."
 	quest.32C3D4E5F6A10001.title: "A Crook"
@@ -284,6 +293,8 @@
 	quest.43D4E5F6A1B20041.title: "Cobblestone Generator"
 	quest.54E5F6A1B2C30001.quest_desc: [
 		"&aCave Slimes&r keep to the dark. Wall off a room, cap it against the sky, and snuff the light - then wait."
+		""
+		"One catch: nothing spawns within about &b24 blocks&r of you. Build the room, then back off a good way (24 blocks or so, the span of a few houses) and let the dark do its work. That distance isn't 'spawn protection'. Spawn protection only stops you breaking blocks near the world spawn; this is just the game refusing to spawn mobs right on top of you."
 		""
 		"Size matters: Cave Slimes come big and small, and the big ones need headroom. Build it &eat least 5x5 across and 3 blocks tall&r inside - any smaller and a low ceiling only spawns the little ones (and the odd zombie). 5x5 is the minimum; the wider the dark floor the faster they come, so a 9x9 or bigger hall fills up far quicker."
 		""
@@ -436,7 +447,9 @@
 		""
 		"Sink a &bwater&r pool into the floor - aim for &b3x3 and two deep&r. It's where frog eggs hatch and where a breeding pair goes to lay, and a roomy pool breeds far more reliably than a one-block puddle."
 		""
-		"Floor the pen with &emud&r. Frogs and just-grown tadpoles sit on it safely instead of suffocating against bare walls."
+		"Floor the pen with &emud&r. Make it by using a water bottle on a block of dirt. Frogs and just-grown tadpoles sit on it safely instead of suffocating against bare walls."
+		""
+		"A word on tadpoles: they're fragile, and they have to stay in the water until they grow, which takes a couple of minutes. One that ends up on land dies, so keep the pool roomy and leave them in it."
 	]
 	quest.6C1F0A2B3D4E5F61.quest_subtitle: "Build them a home."
 	quest.6C1F0A2B3D4E5F61.title: "A Place for Frogs"
