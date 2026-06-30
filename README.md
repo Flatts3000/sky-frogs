@@ -34,7 +34,7 @@ Slime species supply the variety inside each tier — adding a new modded resour
 
 ## Status
 
-**Out of beta - the complete campaign is live on [CurseForge](https://www.curseforge.com/minecraft/modpacks/sky-frogs) (v1.4.0).** All six species tiers (Cave, Geode, Bog, Tide, Infernal, Void) are built and playable end-to-end - 27 FTB Quests chapters / ~343 quests, the per-tier slime chains, the dragon expedition and singularity endgame capped by the Master Frog trophy, the Trophy Pond boss campaign, the Terrarium automation multiblock, and the Completionist census. Releases are tag-driven and ship to GitHub + CurseForge automatically (client + dedicated-server packs); balance, polish, and art are still in motion, driven by player feedback (CurseForge comments and the community Discord).
+**Out of beta - the complete campaign is live on [CurseForge](https://www.curseforge.com/minecraft/modpacks/sky-frogs) (v1.4.1).** All six species tiers (Cave, Geode, Bog, Tide, Infernal, Void) are built and playable end-to-end - 27 FTB Quests chapters / ~343 quests, the per-tier slime chains, the dragon expedition and singularity endgame capped by the Master Frog trophy, the Trophy Pond boss campaign, the Terrarium automation multiblock, and the Completionist census. Releases are tag-driven and ship to GitHub + CurseForge automatically (client + dedicated-server packs); balance, polish, and art are still in motion, driven by player feedback (CurseForge comments and the community Discord).
 
 Docs in [`docs/`](./docs/) describe the built campaign; [`CHANGELOG.md`](./CHANGELOG.md) tracks every release.
 
