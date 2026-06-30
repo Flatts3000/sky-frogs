@@ -1236,6 +1236,13 @@
 	]
 	quest.7CA7E000C0DE0020.quest_subtitle: "A wall just for you."
 	quest.7CA7E000C0DE0020.title: "Players Only"
+	quest.7CA7E000C0DE0029.quest_desc: [
+		"A &eMob Filter (Slime)&r reads as solid to you and your frogs, but slimes fall straight through it. Build it into the floor of a slime farm: everything that isn't a slime stays up top, while the slimes drop into whatever you set below - a holding pen, a kill chamber, a spot to bucket them."
+		""
+		"Every &7Dark Utilities&r filter is made the same way around a different center item, and a &eslime ball&r in the middle makes this one. With an economy built entirely on slimes, it's the filter you'll reach for most."
+	]
+	quest.7CA7E000C0DE0029.quest_subtitle: "A floor only slimes fall through."
+	quest.7CA7E000C0DE0029.title: "Slimes Only"
 	quest.7D00000000000002.quest_desc: [
 		"You pulled &bprismarine&r out of the void-sea; the rest of the reef follows the same loop. Each &eTide&r resource: chamber its slime, milk it, feed a &eTide Frog&r, smelt the &bFroglight&r."
 		""

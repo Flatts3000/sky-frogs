@@ -103,6 +103,28 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["7CA7E000C0DE0020"]
+			icon: {
+				id: "darkutils:filter_slime"
+			}
+			id: "7CA7E000C0DE0029"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7CA7E000C0DE002B"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "7CA7E000C0DE002A"
+				item: { count: 1, id: "darkutils:filter_slime" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
 			dependencies: ["7CA7E000C0DE0008"]
 			icon: {
 				id: "minecraft:coal"
