@@ -4,6 +4,10 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+## [1.4.0] - 2026-06-30
+
+A small content + fix release: a new optional Cave quest for the Dark Utilities slime filter, Functional Storage drawers now compact Opolis' Mini Coal and Mini Charcoal, and Better Compatibility Checker finally reports the pack version so the client-vs-server match check actually works.
+
 ### Added
 
 - **Optional "Slimes Only" quest** (Cave tier), next to Players Only - the Dark Utilities Mob Filter (Slime) reads as solid to you and your frogs but lets slimes pass through, so you can sort and route the slimes a frog farm produces. ([#209](https://github.com/Flatts3000/sky-frogs/pull/209))
