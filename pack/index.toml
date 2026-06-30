@@ -22,7 +22,7 @@ hash = "16292b67fb727ff48461e686518ce6d46a86a36b0510fdcf5f5dd83791707ea5"
 
 [[files]]
 file = "config/bbl/core/modpack.toml"
-hash = "13bc542bcda332b775161b04f627361542caad626799daac5b24df2bffa24a8d"
+hash = "63843e0c505a7aae3470346873d4ff8b1c65afc0bb00a0a0aaab0c0dc3c60918"
 
 [[files]]
 file = "config/botanypots.json"

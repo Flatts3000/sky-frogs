@@ -4,9 +4,21 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+## [1.3.0] - 2026-06-30
+
+### Added
+
+- **The experience (XP) Void variant is now craftable and quested.** It was census-only before (weight 0, so a Void frog never produces it on its own). A new Dissolution Chamber recipe self-keyed on a book (its primer, mirroring Productive Frogs' slime infusion) makes the experience slime, and an optional quest forking off the Void chain documents the path and the smelt to a Bottle o' Enchanting.
+- **Optional "Name Your Frogs" quest** in Scaling the Colony. Name tags craft from string and paper (both on hand by then); the quest hands you four to christen a starting colony.
+
 ### Changed
 
-- **Productive Frogs 1.24.2 -> 1.24.3 ("Muddy Waters").** PF rewrote frog egg-laying to be footing-aware (a contact lay via `getBlockPosBelowThatAffectsMyMovement()`), so a bred frog now lays its egg even when standing on **mud**, a slab, or other sub-full blocks beside the pool. Fixes [productive-frogs#270](https://github.com/Flatts3000/productive-frogs/issues/270) (surfaced by the community Discord and the pack's own quest copy), where a mud-floored breeding pen never produced eggs - so the "A Place for Frogs" / "Breed Your Frogs" mud-floor guidance is now correct. Pure behavior fix: no new variants/items, zero roster drift (singularities 58, census 60/34, froglight recipes 102), validator clean.
+- **Quest voice pass on the worst offenders.** Rewrote the 13 highest "reads-as-AI" quest descriptions to a plainer, more human voice: cut the dash-as-reveal habit, fixed the non-Minecraft "pour" verb (you place or empty a bucket), dropped rhetorical-question openers, and trimmed padding. No mechanics changed.
+- **Early-game quest clarity from playtest feedback.** "A Dark Room" now explains the ~24-block mob spawn distance (and corrects the "spawn protection" misconception); "A Place for Frogs" surfaces the mud recipe where it's first needed and warns that tadpoles must stay in water; the breeding quest states the cooldown and that pairs lay in the pool. "Raising the Line" was split into a short breeding-action quest plus the stat-strategy quest.
+
+### Fixed
+
+- **Productive Frogs 1.24.2 -> 1.24.3 ("Muddy Waters"):** a bred frog now lays its egg even when standing on **mud**, a slab, or other sub-full blocks beside the pool (a footing-aware contact lay). This fixes [productive-frogs#270](https://github.com/Flatts3000/productive-frogs/issues/270), where a mud-floored breeding pen never produced eggs, so the pack's own mud-floor guidance is finally correct. Pure behavior fix: no new variants/items, zero roster drift.
 
 ## [1.2.0] - 2026-06-29
 
