@@ -1679,6 +1679,13 @@
 	]
 	quest.60F0000000000011.quest_subtitle: "Boxes that come with you."
 	quest.60F0000000000011.title: "Shulker Shell"
+	quest.60F0000000000019.quest_desc: [
+		"A &5Void Frog&r never produces the &eExperience&r variant on its own. You make this one by hand: right-click a &bVoid Slime&r with a plain &fbook&r and it takes on the experience variant. The &eDissolution Chamber&r does the same in bulk, a book run with soul soil, sweetslime, and latex."
+		""
+		"Feed the slime to a Void Frog and turn in the &bExperience Froglight&r it leaves. Smelt that into a &aBottle o' Enchanting&r."
+	]
+	quest.60F0000000000019.quest_subtitle: "The one the frog won't make."
+	quest.60F0000000000019.title: "Experience"
 	quest.6EC0000000000002.quest_desc: [
 		"The endgame's crafting spine is &6Extended Crafting&r. It starts plain: iron plus black dye (your Tide frog's ink) makes &7Black Iron&r. Everything here builds from it."
 	]

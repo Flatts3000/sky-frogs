@@ -197,5 +197,31 @@
 			x: 1.5d
 			y: 6.0d
 		}
+		{
+			dependencies: ["60F0000000000011"]
+			optional: true
+			icon: {
+				id: "minecraft:experience_bottle"
+			}
+			id: "60F0000000000019"
+			rewards: [{
+				count: 8
+				id: "60F000000000001C"
+				item: {
+					count: 1
+					id: "minecraft:experience_bottle"
+				}
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "60F000000000001B"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:experience" }, count: 1, id: "productivefrogs:configurable_froglight" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 9.0d
+		}
 	]
 }
