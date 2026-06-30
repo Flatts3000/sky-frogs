@@ -166,6 +166,30 @@
 			y: 9.0d
 		}
 		{
+			dependencies: ["2A5700000A570022"]
+			icon: {
+				id: "minecraft:name_tag"
+			}
+			id: "2A5700000A570031"
+			optional: true
+			rewards: [{
+				count: 4
+				id: "2A5700000A570033"
+				item: {
+					count: 1
+					id: "minecraft:name_tag"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2A5700000A570032"
+				item: { count: 1, id: "minecraft:name_tag" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.5d
+		}
+		{
 			dependencies: ["2A5700000A570002"]
 			icon: {
 				id: "minecraft:dirt"
@@ -252,6 +276,19 @@
 			}]
 			x: 2.0d
 			y: 6.0d
+		}
+		{
+			dependencies: ["2A5700000A570022"]
+			icon: {
+				id: "productivefrogs:cave_frog_spawn_egg"
+			}
+			id: "2A5700000A570034"
+			tasks: [{
+				id: "2A5700000A570035"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 9.0d
 		}
 	]
 }
