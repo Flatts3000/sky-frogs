@@ -123,3 +123,32 @@ Priority is first-impression + traffic + formula density. Each chapter is one re
 - Subtitles: 245 (all fragment-formula)
 - ` - ` dash-as-reveal occurrences: 301
 - Rhetorical-question openers: ~12
+
+## Appendix A - Verb accuracy audit (the "pour" sweep)
+
+Full pack-wide pass for verbs that name actions Minecraft does not have (rule 9). Generated 2026-06-29. **Line numbers are pre-PR-#201** and have since shifted, re-grep `pour` in `lang/en_us.snbt` before sweeping. The Make Mud case (was line 184) is **already fixed** in #201; the rest remain.
+
+### ERROR (fix - verb names a non-existent action; "place/empty the bucket", not "pour")
+
+| Quest | Phrase | Fix |
+|---|---|---|
+| The Slime Churn | "pouring out Slime Milk" | "placing Slime Milk" |
+| ~~Make Mud~~ | ~~"poured onto a block of dirt"~~ | **DONE in #201** ("use ... on a block of dirt") |
+| Lapis milk | "Pour it out and Lapis Slimes spawn" | "Place the milk and ..." |
+| Milk It (Iron) | "Pour that milk out" | "Place that milk" |
+| Amethyst | "pour out the Amethyst Slime Milk" | "place the Amethyst Slime Milk" |
+| Dirt milk | "Pour it out and Dirt Slimes" | "Place the milk and ..." |
+| Tide eggs | "Pour it on water" | "Tip it onto water" (matches the other tiers) |
+| Copper | "pour out the Copper Slime Milk" | "place the Copper Slime Milk" |
+| Prime the Sprinklers | "Pipe (or pour) a bucket" | "Pipe (or empty) a bucket" |
+| Milk It (Netherrack) | "Pour the slime into a Slime Milker" | "Drop the bucketed slime into the Milker's top slot" |
+
+### WATCH (maintainer confirm before touching)
+
+- **Casting Mold** "pour with a bucket" - if it's just bucket-emptying, fix; if PF surfaces a real cast/pour, keep.
+- **Powah** "Orb"/"Orbed" verb (Energizing Orb) - real machine action, likely fine; confirm it reads clearly.
+- **Botany Pot** "Plant it" - pot-insert vs world-place; likely fine.
+
+### METAPHOR (do NOT touch - deliberate wordplay)
+
+"groundwork is poured"; subtitle "Pour one out"; "water and lava, which pour rather than press"; Fluid Placer "pours"/"Pour fluids"; Fluid Collector "slurps"/"Scoop"; Flux Point "pours it out"; "Iron you can pour"; "Dirt you can pour"; "pouring off a frog"; "scoop from the middle"; Milker "squeezes"/"presses"; "vacuums up".
