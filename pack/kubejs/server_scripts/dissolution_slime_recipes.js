@@ -185,6 +185,12 @@ const MODDED_SELF_KEYED = [
   ['INFERNAL', 'minecraft:prismarine', 'nether_star',     'minecraft:nether_star',     'minecraft'],
   ['VOID',     'minecraft:soul_soil',  'dragon_egg',      'minecraft:dragon_egg',      'minecraft'],
   ['VOID',     'minecraft:soul_soil',  'dragon_breath',   'minecraft:dragon_breath',   'minecraft'],
+  // experience is weight 0 (a Void frog never splits it), so it can't sit in the
+  // threaded VOID chain above. Self-key it on its own primer, a plain book - the
+  // same item PF's slime infusion takes to turn a Void Slime into an Experience
+  // one. Input == primer_item, so the validator's self-keyed law passes with no
+  // SELF_KEYED_EXCEPTIONS entry (unlike water/lava, which key on a bucket).
+  ['VOID',     'minecraft:soul_soil',  'experience',      'minecraft:book',            'minecraft'],
   ['CAVE',     'minecraft:stone',      'uraninite',       'powah:uraninite',           'powah'],
   ['CAVE',     'minecraft:stone',      'energized_steel', 'powah:steel_energized',     'powah'],
   ['TIDE',     'minecraft:mycelium',   'dry_ice',         'powah:dry_ice',             'powah'],

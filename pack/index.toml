@@ -402,7 +402,7 @@ hash = "920e120c220a57f4d42335ec3e65d731540a0317dd13dfa615b02aebdad0b665"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/void_frogs.snbt"
-hash = "bd56c799873edc456e699116f531518263dfa7626a48fd0d947291d4d58ec2f5"
+hash = "d9160abaf8b9630acb0edd55d8e36c2e4f8f186809b0f7fc97de2846a4a263ba"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
@@ -422,7 +422,7 @@ hash = "4889c5e7d4a8179b45e68f0ac00119529ed49ba68f20624b36e996bb0d60ddd0"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "cad5dfa6e9bdcd669f3a8fa49aad52034d0dbbdf28f9075df5590149f9de6c23"
+hash = "8d41786442a05f0b516d94b8d52970506f1d2298348bd8b9b7476d07eb2f55fb"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
@@ -662,7 +662,7 @@ hash = "a14f0b3014ad482f9b04ef079202394670f76a749bccb93ed36bb3e41c1810dc"
 
 [[files]]
 file = "kubejs/server_scripts/dissolution_slime_recipes.js"
-hash = "c013b3d61c5f90d5c4ebc590d8bb44cb31ffa5deae955ab05f7cedc51575face"
+hash = "d9b08d65d39d44508e2afe6fc63559da4ab351eb9db3f8bed6106f2b06c7550e"
 
 [[files]]
 file = "kubejs/server_scripts/dump_items.js"
