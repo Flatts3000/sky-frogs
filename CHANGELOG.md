@@ -4,6 +4,10 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+### Changed
+
+- **Productive Frogs 1.24.2 -> 1.24.3 ("Muddy Waters").** PF rewrote frog egg-laying to be footing-aware (a contact lay via `getBlockPosBelowThatAffectsMyMovement()`), so a bred frog now lays its egg even when standing on **mud**, a slab, or other sub-full blocks beside the pool. Fixes [productive-frogs#270](https://github.com/Flatts3000/productive-frogs/issues/270) (surfaced by the community Discord and the pack's own quest copy), where a mud-floored breeding pen never produced eggs - so the "A Place for Frogs" / "Breed Your Frogs" mud-floor guidance is now correct. Pure behavior fix: no new variants/items, zero roster drift (singularities 58, census 60/34, froglight recipes 102), validator clean.
+
 ## [1.2.0] - 2026-06-29
 
 A content + maintenance release: Productive Frogs moves to the 1.24.2 line (redstone-toggleable Terrarium Sprinklers), three new optional endgame quests (the Warden, the Dragon Altar, the Wither Altar), Functional Storage now compacts clay and snow, and froglight quest drawer rewards fit each resource.
