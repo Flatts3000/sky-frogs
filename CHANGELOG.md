@@ -4,6 +4,15 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+### Added
+
+- **Optional "Slimes Only" quest** (Cave tier), next to Players Only - the Dark Utilities Mob Filter (Slime) reads as solid to you and your frogs but lets slimes pass through, so you can sort and route the slimes a frog farm produces. ([#209](https://github.com/Flatts3000/sky-frogs/pull/209))
+- **Mini Coal and Mini Charcoal now compact in Functional Storage drawers.** Opolis ships these at an 8:1 ratio that a compacting drawer's auto-detect skips; explicit compacting tiers register them, so one drawer spans Mini Coal -> Coal -> Block of Coal (and Mini Charcoal -> Charcoal). ([#206](https://github.com/Flatts3000/sky-frogs/issues/206), [#208](https://github.com/Flatts3000/sky-frogs/pull/208))
+
+### Fixed
+
+- **Better Compatibility Checker now reports a real version.** The pack shipped no `bcc-common.toml`, so its modpack version was an unset placeholder and the client-vs-server match check always passed (green even on a mismatch). The pack now ships the config, and the release pipeline stamps the version from the git tag into it (and the BBL `/modpack` readout), so a mismatch is actually flagged. ([#205](https://github.com/Flatts3000/sky-frogs/issues/205), [#207](https://github.com/Flatts3000/sky-frogs/pull/207))
+
 ## [1.3.0] - 2026-06-30
 
 ### Added
