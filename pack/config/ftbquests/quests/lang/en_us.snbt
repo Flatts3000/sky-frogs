@@ -105,18 +105,10 @@
 	quest.21B2C3D4E5F60011.quest_desc: ["Shear your oak leaves for whole leaf blocks. The Oak Crucible melts them into water."]
 	quest.21B2C3D4E5F60011.quest_subtitle: "Leaves, whole."
 	quest.21B2C3D4E5F60011.title: "Strip the Leaves"
-	quest.21B2C3D4E5F60021.quest_desc: [
-		"Build an Oak Crucible and drop your leaves in - they steep into water all on their own, no heat required. (Heat sources under a crucible matter later, when stone crucibles melt cobble into lava.)"
-		""
-		"Slow, free, and entirely yours."
-	]
+	quest.21B2C3D4E5F60021.quest_desc: ["Build an Oak Crucible, then right-click leaf blocks into it. They melt into water on their own, no heat needed."]
 	quest.21B2C3D4E5F60021.quest_subtitle: "Leaves into water."
 	quest.21B2C3D4E5F60021.title: "The Crucible"
-	quest.21B2C3D4E5F60031.quest_desc: [
-		"Two water sources one block apart make an infinite one - scoop from the middle forever."
-		""
-		"You've got your first water bucket and a barrel (or a crucible) working on the second. Set them a block apart and never ration water again."
-	]
+	quest.21B2C3D4E5F60031.quest_desc: ["Two water sources one block apart make an infinite source in the gap between them."]
 	quest.21B2C3D4E5F60031.quest_subtitle: "An infinite source."
 	quest.21B2C3D4E5F60031.title: "Running Water"
 	quest.2A5700000A570002.quest_desc: [
@@ -266,41 +258,19 @@
 	]
 	quest.43D4E5F6A1B20041.quest_subtitle: "Rock, on tap."
 	quest.43D4E5F6A1B20041.title: "Cobblestone Generator"
-	quest.54E5F6A1B2C30001.quest_desc: [
-		"&aCave Slimes&r keep to the dark. Wall off a room, cap it against the sky, snuff every light, and wait."
-		""
-		"One catch worth knowing: nothing spawns within about &b24 blocks&r of you. Build the room, then step well back, the span of a few houses, and let the dark do its work. That gap isn't 'spawn protection', which only blocks you from breaking blocks near the world spawn. It's just the game refusing to spawn mobs in your lap."
-		""
-		"Size matters too. Cave Slimes come big and small, and the big ones need headroom, so build it &eat least 5x5 across and 3 blocks tall&r inside. Any lower and you only get the little ones (and the odd zombie). 5x5 is the floor; a wider dark floor fills faster, so a 9x9 hall comes in quicker still."
-		""
-		"Cut the slimes down for &eslime balls&r: fuel, frog feed, and the first link in every chain that follows."
-		""
-		"Here's a &6Sophisticated Backpack&r for the haul. You'll be carrying plenty before the frogs start pulling their weight."
-	]
+	quest.54E5F6A1B2C30001.quest_desc: ["&aCave Slimes&r spawn in the dark. Build a sealed, unlit room &eat least 5x5 and 3 blocks tall&r. Nothing spawns within &b24 blocks&r of you, so step away and let it fill, then cut the slimes down for &eslime balls&r."]
 	quest.54E5F6A1B2C30001.quest_subtitle: "Where slimes feel safe."
 	quest.54E5F6A1B2C30001.title: "A Dark Room"
-	quest.54E5F6A1B2C30011.quest_desc: [
-		"A &acomposter&r is seven wooden slabs in a U. Feed it the overflow from your tree farm - spare saplings, leaves, seeds - and it pays you back in &ebone meal&r."
-		""
-		"Bone meal is worth hoarding. It forces crops and saplings up on command, and you'll have a use for it before long."
-	]
+	quest.54E5F6A1B2C30011.quest_desc: ["A &acomposter&r turns spare saplings, leaves, and seeds into &ebone meal&r."]
 	quest.54E5F6A1B2C30011.quest_subtitle: "Rot into green."
 	quest.54E5F6A1B2C30011.title: "A Composter"
-	quest.54E5F6A1B2C30021.quest_desc: [
-		"&aThe Spawnery&r is where life gets made: five cobblestone, three planks, and a scoop of bone meal in the middle. Crude - but it knows the trick stone and swamp forgot."
-		""
-		"Feed it a slime ball to burn and show it the resource you're after, and it draws frog eggs into a bottle."
-		""
-		"Take two &fglass bottles&r to pull from it."
-	]
+	quest.54E5F6A1B2C30021.quest_desc: ["&aThe Spawnery&r runs like a furnace: a &fglass bottle&r, a slime ball for fuel, and a &eprimer&r that sets which frog you get. Out comes that frog's egg in the bottle."]
 	quest.54E5F6A1B2C30021.quest_subtitle: "The frog factory."
 	quest.54E5F6A1B2C30021.title: "The Spawnery"
 	quest.54E5F6A1B2C30031.quest_desc: [
-		"&aPrime the Spawnery with cobblestone&r - that's the Cave frog's calling card - drop in a slime ball to burn, and seat a glass bottle."
+		"Insert &acobblestone&r (the Cave frog's resource), a slime ball for fuel, and a glass bottle into the Spawnery. Out comes a &eBottle of Cave Frog Eggs&r."
 		""
-		"Out comes a &eBottle of Cave Frog Eggs&r. Make &btwo&r: two frogs is a breeding pair, and a breeding pair is a farm that never runs dry."
-		""
-		"That's the last thing you'll build by hand for a while. Tip them onto water and let the frogs take over."
+		"Make &btwo&r for a breeding pair, then right-click them onto a water source block to hatch."
 	]
 	quest.54E5F6A1B2C30031.quest_subtitle: "Your first frogs."
 	quest.54E5F6A1B2C30031.title: "Synthesize Life"
@@ -407,11 +377,11 @@
 	quest.60ADE6000000000B.quest_subtitle: "Blue slime, bottled."
 	quest.60ADE6000000000B.title: "A Lapis Slime in a Bucket"
 	quest.65F6A1B2C3D40001.quest_desc: [
-		"Two quality-of-life tricks the void won't spell out for you:"
+		"Two quality-of-life tricks worth knowing:"
 		""
-		"&aSquat Grow&r - press &eSneak&r next to a sapling or crop and it grows while you squat. Free bone meal, basically. Plant your oak, squat on it, skip the wait."
+		"&aSquat Grow&r - repeatedly sneak next to a sapling or crop and it grows. Plant your oak, squat on it a few times, skip the wait."
 		""
-		"&bFTB Ultimine&r - fell a whole tree or clear a whole crop patch in a single break. Bind the &eUltimine&r key under Options -> Controls if it isn't already, then hold it and break one block; every connected log or crop comes with it."
+		"&bFTB Ultimine&r - break a whole tree or crop patch in one go. Bind the &eUltimine&r key under Options -> Controls, then hold it and break one block; every connected log or crop comes with it."
 	]
 	quest.65F6A1B2C3D40001.quest_subtitle: "Work less, frog more."
 	quest.65F6A1B2C3D40001.title: "Two Shortcuts"
@@ -1618,11 +1588,7 @@
 	]
 	quest.6A0D00000000000E.quest_subtitle: "Thanks for playing."
 	quest.6A0D00000000000E.title: "You Out-Frogged the Game"
-	quest.54E5F6A1B2C30041.quest_desc: [
-		"A reusable net that scoops a frog into the item with a right-click and sets it back down where you right-click a block. The frog rides along &awhole&r - species, bred Appetite/Bounty/Reach, name, all of it - so you can move a prize frog without leashing it across the water (or killing it)."
-		""
-		"Six string and a stick - cheap enough to keep on your hotbar from day one. Relocate your starter frog, rearrange a pond, or restock a Terrarium later, no leash required."
-	]
+	quest.54E5F6A1B2C30041.quest_desc: ["A reusable net: right-click a frog to catch it, right-click a block to set it down. It keeps everything - species, bred Appetite/Bounty/Reach, and name - so you can move a bred-up frog anywhere."]
 	quest.54E5F6A1B2C30041.quest_subtitle: "Catch and carry, stats intact."
 	quest.54E5F6A1B2C30041.title: "The Frog Net"
 	quest.601D00000000001D.quest_desc: [
