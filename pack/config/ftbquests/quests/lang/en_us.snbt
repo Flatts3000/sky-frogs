@@ -24,26 +24,20 @@
 		"Sky Frogs is built from player feedback - half of every update starts as somebody's message on the community Discord. Bugs, suggestions, screenshots of your pond: it all shapes the pack."
 		""
 		"Click the &9Discord badge&r floating above this quest to open an invite, or type &bdiscord.gg/r6MhZ73nsM&r into your browser."
-		""
-		"No pressure - tick the box either way and get back to your frogs."
 	]
 	quest.111D15C0DE000001.quest_subtitle: "The other frogs are waiting."
 	quest.111D15C0DE000001.title: "Join the Pond"
 	quest.01A8E068925B319F.quest_desc: [
-		"You're stranded on a speck of dirt in the void. No ore, no mineshafts, not so much as a mountain to feel bad about."
+		"An island of grass, floating in the void. That's the whole world - no ore under it, nowhere to dig."
 		""
-		"What you've got is &afrogs&r - and out here, that turns out to be the same thing as a mine."
+		"Instead, you hatch your own &afrogs&r. Feed one the right slime and it gives back the resource you'd normally mine for."
 		""
-		"This book is the plan. Follow it and you'll never swing a pickaxe at stone again."
+		"Follow the quest book. Work from Cave tier up to Void tier, hatch frogs that can eat the Wither and the Ender Dragon."
 	]
 	quest.01A8E068925B319F.quest_subtitle: "Start here."
 	quest.01A8E068925B319F.title: "Welcome to Sky Frogs"
 	quest.05BFA1537298A589.quest_desc: [
-		"Here's the whole trick:"
-		""
-		"A &bResource Slime&r, fed to its matching &aFrog&r, comes back out as a &eFroglight&r loaded with that resource. Smelt the Froglight, pocket the ingot."
-		""
-		"Iron, gold, diamond, ender - every one of them is just a frog you haven't met yet."
+		"Instead of mining, you get your materials from &afrogs&r. Feed a &aFrog&r its matching &bResource Slime&r and it makes a &6Froglight&r. Smelt the Froglight to get the resource."
 	]
 	quest.05BFA1537298A589.quest_subtitle: "The whole pitch, in three words."
 	quest.05BFA1537298A589.title: "Frogs, Not Pickaxes"
@@ -69,7 +63,7 @@
 	quest.1F00000000000005.quest_subtitle: "JDT's base metal."
 	quest.1F00000000000005.title: "Ferricore Ingot"
 	quest.1F0000000000000E.quest_desc: [
-		"Done chasing dropped &bFroglights&r across the platform? An &eItem Collector&r vacuums up everything in a radius - Froglights, slimeballs, anything that hits the floor."
+		"Done chasing dropped &6Froglights&r across the platform? An &eItem Collector&r vacuums up everything in a radius - Froglights, slimeballs, anything that hits the floor."
 		""
 		"Sink one into your habitat floor and stop bending over. It takes a diamond, two &fender pearls&r, hoppers, and ferricore - so farm a few enderman in the dark room first."
 		""
@@ -105,28 +99,16 @@
 	]
 	quest.1F0000000000001A.quest_subtitle: "Pour fluids, no bucket."
 	quest.1F0000000000001A.title: "Fluid Placer"
-	quest.21B2C3D4E5F60001.quest_desc: ["Craft an Oak Barrel and leave it out in the weather. It catches rain - which, on an island with one bucket of water, is the start of having two."]
+	quest.21B2C3D4E5F60001.quest_desc: ["Craft an Oak Barrel. It catches rain for more water than the one bucket you start with."]
 	quest.21B2C3D4E5F60001.quest_subtitle: "Water from the sky."
 	quest.21B2C3D4E5F60001.title: "A Rain Barrel"
-	quest.21B2C3D4E5F60011.quest_desc: [
-		"Those shears aren't for sheep. Run them across your oak leaves and the leaves come off as whole blocks - the one thing an Oak Crucible knows how to drink."
-		""
-		"Shear sixteen."
-	]
+	quest.21B2C3D4E5F60011.quest_desc: ["Shear your oak leaves for whole leaf blocks. The Oak Crucible melts them into water."]
 	quest.21B2C3D4E5F60011.quest_subtitle: "Leaves, whole."
 	quest.21B2C3D4E5F60011.title: "Strip the Leaves"
-	quest.21B2C3D4E5F60021.quest_desc: [
-		"Build an Oak Crucible and drop your leaves in - they steep into water all on their own, no heat required. (Heat sources under a crucible matter later, when stone crucibles melt cobble into lava.)"
-		""
-		"Slow, free, and entirely yours."
-	]
+	quest.21B2C3D4E5F60021.quest_desc: ["Build an Oak Crucible, then right-click leaf blocks into it. They melt into water on their own, no heat needed."]
 	quest.21B2C3D4E5F60021.quest_subtitle: "Leaves into water."
 	quest.21B2C3D4E5F60021.title: "The Crucible"
-	quest.21B2C3D4E5F60031.quest_desc: [
-		"Two water sources one block apart make an infinite one - scoop from the middle forever."
-		""
-		"You've got your first water bucket and a barrel (or a crucible) working on the second. Set them a block apart and never ration water again."
-	]
+	quest.21B2C3D4E5F60031.quest_desc: ["Two water sources one block apart make an infinite source in the gap between them."]
 	quest.21B2C3D4E5F60031.quest_subtitle: "An infinite source."
 	quest.21B2C3D4E5F60031.title: "Running Water"
 	quest.2A5700000A570002.quest_desc: [
@@ -236,101 +218,59 @@
 	]
 	quest.2A5700000A570031.quest_subtitle: "Give them names."
 	quest.2A5700000A570031.title: "Name Your Frogs"
-	quest.32C3D4E5F6A10001.quest_desc: ["Four sticks make a Crook. Drag it across oak leaves and they give up far more than bare hands would - saplings to replant, and now and then a wriggling &eSilkworm&r."]
+	quest.32C3D4E5F6A10001.quest_desc: ["Break oak leaves with a Crook for extra drops: saplings to replant, and the occasional &eSilkworm&r."]
 	quest.32C3D4E5F6A10001.quest_subtitle: "For leaves, gently."
 	quest.32C3D4E5F6A10001.title: "A Crook"
-	quest.32C3D4E5F6A10011.quest_desc: [
-		"Crook your leaves until a Silkworm drops, then set it loose on a leaf block. It chews its way outward, infesting the leaves around it."
-		""
-		"Infested leaves are where your string comes from."
-	]
+	quest.32C3D4E5F6A10011.quest_desc: ["Crook oak leaves until a Silkworm drops, then place it on a leaf block. It spreads outward, infesting the leaves around it. Those infested leaves are what give string."]
 	quest.32C3D4E5F6A10011.quest_subtitle: "Shake the trees."
 	quest.32C3D4E5F6A10011.title: "Silkworms"
-	quest.32C3D4E5F6A10021.quest_desc: [
-		"Once your leaves are &efully infested&r, run the Crook back across them - now they shed &fstring&r instead of silkworms. No spider required."
-		""
-		"Here's a &eMagnet&r to vacuum it up while you work. Toggle it on, then crook your way to more than four string for what's next."
-	]
+	quest.32C3D4E5F6A10021.quest_desc: ["Once your leaves are &efully infested&r, crook them again and they drop &fstring&r instead of silkworms. Get four."]
 	quest.32C3D4E5F6A10021.quest_subtitle: "No spiders required."
 	quest.32C3D4E5F6A10021.title: "String from Silk"
-	quest.32C3D4E5F6A10031.quest_desc: [
-		"Four string crafts into wool; three wool and three planks make a bed."
-		""
-		"Sleep through the night and set your spawn somewhere that isn't the open void."
-	]
+	quest.32C3D4E5F6A10031.quest_desc: ["Craft a bed from your string. Sleep in it to skip the night and set your spawn point."]
 	quest.32C3D4E5F6A10031.quest_subtitle: "Skip the night."
 	quest.32C3D4E5F6A10031.title: "A Bed of Your Own"
 	quest.378B93672C31CF5D.quest_desc: [
-		"Your first frog is the &eCave Frog&r. It deals in the things you'd normally swing a pickaxe for: iron, copper, gold, and the rest of the stone-and-ore crowd."
+		"Your first frog is the &eCave Frog&r. It gets you ingots and other cave resources: iron, copper, gold, and the rest of the cave tier."
 		""
-		"Tier 0 is just getting on your feet - water, stone, a dark room, and a slime farm. Then the frogs take over."
-		""
-		"Let's get you there."
+		"First you need to get the basics done. You need glass for bottles, cobblestone, a mob farm for slime balls. Then you'll be able to hatch your first Cave Frog."
 	]
 	quest.378B93672C31CF5D.quest_subtitle: "Everything points at iron."
 	quest.378B93672C31CF5D.title: "The Road to Iron"
-	quest.43D4E5F6A1B20001.quest_desc: ["A wooden pickaxe: three planks, two sticks. It's the one mining tool you'll bother crafting - strictly for cobble. The frogs cover everything else."]
+	quest.43D4E5F6A1B20001.quest_desc: ["A wooden pickaxe will help you get the cobblestone you need."]
 	quest.43D4E5F6A1B20001.quest_subtitle: "Stone beats fist."
 	quest.43D4E5F6A1B20001.title: "Tools of the Trade"
 	quest.43D4E5F6A1B20011.quest_desc: [
-		"Water and lava, one block apart, make cobble forever. You've already got a bucket of each from the Road to Iron - set up the generator and chip off a stack."
+		"A cobblestone generator makes cobblestone wherever flowing lava runs into water. Mine it and it reforms, so you never run out."
 		""
-		"Then take the &eIron Hammer&r. It turns grey rock into other, more useful grey rock."
+		"Let the lava flow into the water, not water onto the lava source: flowing lava makes cobblestone, but a lava source touched by water turns to obsidian."
 	]
 	quest.43D4E5F6A1B20011.quest_subtitle: "The first renewable rock."
 	quest.43D4E5F6A1B20011.title: "Cobblestone"
-	quest.43D4E5F6A1B20021.quest_desc: [
-		"The &eIron Hammer&r earns its keep here: pound cobblestone into gravel, then gravel into sand."
-		""
-		"A beach, one swing at a time."
-	]
+	quest.43D4E5F6A1B20021.quest_desc: ["Use the &eIron Hammer&r to crush cobblestone into gravel, and the gravel into sand."]
 	quest.43D4E5F6A1B20021.quest_subtitle: "Crushed from cobble."
 	quest.43D4E5F6A1B20021.title: "Sand"
-	quest.43D4E5F6A1B20031.quest_desc: ["Smelt that sand into glass. The charcoal you just earned makes fine furnace fuel."]
+	quest.43D4E5F6A1B20031.quest_desc: ["Smelt that sand into glass."]
 	quest.43D4E5F6A1B20031.quest_subtitle: "Sand, meet fire."
 	quest.43D4E5F6A1B20031.title: "Glass"
 	quest.43D4E5F6A1B20041.quest_desc: [
-		"Six smooth stone around two glass blocks builds a &eStone Block Generator&r - it churns out stone on its own, no water-and-lava rig to babysit."
-		""
-		"Tier 0's groundwork is poured. Time to go meet some frogs."
+		"The &eStone Block Generator&r makes cobblestone on its own. Place water on one side, lava on the other, and storage on top."
 	]
 	quest.43D4E5F6A1B20041.quest_subtitle: "Rock, on tap."
-	quest.43D4E5F6A1B20041.title: "Cobblestone Generator"
-	quest.54E5F6A1B2C30001.quest_desc: [
-		"&aCave Slimes&r keep to the dark. Wall off a room, cap it against the sky, snuff every light, and wait."
-		""
-		"One catch worth knowing: nothing spawns within about &b24 blocks&r of you. Build the room, then step well back, the span of a few houses, and let the dark do its work. That gap isn't 'spawn protection', which only blocks you from breaking blocks near the world spawn. It's just the game refusing to spawn mobs in your lap."
-		""
-		"Size matters too. Cave Slimes come big and small, and the big ones need headroom, so build it &eat least 5x5 across and 3 blocks tall&r inside. Any lower and you only get the little ones (and the odd zombie). 5x5 is the floor; a wider dark floor fills faster, so a 9x9 hall comes in quicker still."
-		""
-		"Cut the slimes down for &eslime balls&r: fuel, frog feed, and the first link in every chain that follows."
-		""
-		"Here's a &6Sophisticated Backpack&r for the haul. You'll be carrying plenty before the frogs start pulling their weight."
-	]
+	quest.43D4E5F6A1B20041.title: "Stone Block Generator"
+	quest.54E5F6A1B2C30001.quest_desc: ["&aCave Slimes&r spawn in the dark. Build a sealed, unlit room &eat least 5x5 and 3 blocks tall&r. Nothing spawns within &b24 blocks&r of you, so step away and let it fill, then cut the slimes down for &eslime balls&r."]
 	quest.54E5F6A1B2C30001.quest_subtitle: "Where slimes feel safe."
 	quest.54E5F6A1B2C30001.title: "A Dark Room"
-	quest.54E5F6A1B2C30011.quest_desc: [
-		"A &acomposter&r is seven wooden slabs in a U. Feed it the overflow from your tree farm - spare saplings, leaves, seeds - and it pays you back in &ebone meal&r."
-		""
-		"Bone meal is worth hoarding. It forces crops and saplings up on command, and you'll have a use for it before long."
-	]
+	quest.54E5F6A1B2C30011.quest_desc: ["A &acomposter&r turns spare saplings, leaves, and seeds into &ebone meal&r."]
 	quest.54E5F6A1B2C30011.quest_subtitle: "Rot into green."
 	quest.54E5F6A1B2C30011.title: "A Composter"
-	quest.54E5F6A1B2C30021.quest_desc: [
-		"&aThe Spawnery&r is where life gets made: five cobblestone, three planks, and a scoop of bone meal in the middle. Crude - but it knows the trick stone and swamp forgot."
-		""
-		"Feed it a slime ball to burn and show it the resource you're after, and it draws frog eggs into a bottle."
-		""
-		"Take two &fglass bottles&r to pull from it."
-	]
+	quest.54E5F6A1B2C30021.quest_desc: ["&aThe Spawnery&r runs like a furnace: a &fglass bottle&r, a slime ball for fuel, and a resource that sets which frog you get. Out comes that frog's egg in the bottle."]
 	quest.54E5F6A1B2C30021.quest_subtitle: "The frog factory."
 	quest.54E5F6A1B2C30021.title: "The Spawnery"
 	quest.54E5F6A1B2C30031.quest_desc: [
-		"&aPrime the Spawnery with cobblestone&r - that's the Cave frog's calling card - drop in a slime ball to burn, and seat a glass bottle."
+		"Insert &acobblestone&r (the Cave Frog's resource), a slime ball for fuel, and a glass bottle into the Spawnery. Out comes a &eBottle of Cave Frog Eggs&r."
 		""
-		"Out comes a &eBottle of Cave Frog Eggs&r. Make &btwo&r: two frogs is a breeding pair, and a breeding pair is a farm that never runs dry."
-		""
-		"That's the last thing you'll build by hand for a while. Tip them onto water and let the frogs take over."
+		"Make &btwo&r for a breeding pair, then right-click them onto a water source block to hatch."
 	]
 	quest.54E5F6A1B2C30031.quest_subtitle: "Your first frogs."
 	quest.54E5F6A1B2C30031.title: "Synthesize Life"
@@ -421,7 +361,7 @@
 	quest.60ADE60000000005.quest_subtitle: "Milk the blue."
 	quest.60ADE60000000005.title: "A Bucket of Lapis Slime Milk"
 	quest.60ADE60000000008.quest_desc: [
-		"Feed your Lapis Slimes to a Geode frog and turn in the &bLapis Froglight&r it leaves. Smelt that Froglight for your first &9lapis lazuli&r."
+		"Feed your Lapis Slimes to a Geode frog and turn in the &6Lapis Froglight&r it leaves. Smelt that Froglight for your first &9lapis lazuli&r."
 		""
 		"The gem chain runs on from here - amethyst, emerald, and diamond to cap it - but that's the next chapter."
 		""
@@ -437,11 +377,11 @@
 	quest.60ADE6000000000B.quest_subtitle: "Blue slime, bottled."
 	quest.60ADE6000000000B.title: "A Lapis Slime in a Bucket"
 	quest.65F6A1B2C3D40001.quest_desc: [
-		"Two quality-of-life tricks the void won't spell out for you:"
+		"Two quality-of-life tricks worth knowing:"
 		""
-		"&aSquat Grow&r - press &eSneak&r next to a sapling or crop and it grows while you squat. Free bone meal, basically. Plant your oak, squat on it, skip the wait."
+		"&aSquat Grow&r - repeatedly sneak next to a sapling or crop and it grows. Plant your oak, squat on it a few times, skip the wait."
 		""
-		"&bFTB Ultimine&r - fell a whole tree or clear a whole crop patch in a single break. Bind the &eUltimine&r key under Options -> Controls if it isn't already, then hold it and break one block; every connected log or crop comes with it."
+		"&bFTB Ultimine&r - break a whole tree or crop patch in one go. Bind the &eUltimine&r key under Options -> Controls, then hold it and break one block; every connected log or crop comes with it."
 	]
 	quest.65F6A1B2C3D40001.quest_subtitle: "Work less, frog more."
 	quest.65F6A1B2C3D40001.title: "Two Shortcuts"
@@ -497,14 +437,14 @@
 	quest.6C1F0A2B3D4E5F6D.quest_subtitle: "Press out the milk."
 	quest.6C1F0A2B3D4E5F6D.title: "Milk It"
 	quest.6C1F0A2B3D4E5F70.quest_desc: [
-		"Here's where the two paths meet. Drop an &aIron Slime&r in with your &eCave Frogs&r and wait - the frog gulps it down and leaves a glowing &bIron Froglight&r behind, the resource sealed inside."
+		"Here's where the two paths meet. Drop an &aIron Slime&r in with your &eCave Frogs&r and wait - the frog gulps it down and leaves a glowing &6Iron Froglight&r behind, the resource sealed inside."
 		""
 		"This is the moment the void promised you: a frog making iron out of nothing you had to mine."
 	]
 	quest.6C1F0A2B3D4E5F70.quest_subtitle: "Slime in, Froglight out."
 	quest.6C1F0A2B3D4E5F70.title: "Feed the Frog"
 	quest.6C1F0A2B3D4E5F73.quest_desc: [
-		"One &bIron Froglight&r, one furnace. Smelt it and it runs down into a bar of plain &firon&r."
+		"One &6Iron Froglight&r, one furnace. Smelt it and it runs down into a bar of plain &firon&r."
 		""
 		"There it is - your first iron ingot, grown on an island that had none, and not one swing of a pickaxe to show for it."
 		""
@@ -519,39 +459,23 @@
 	]
 	quest.6E0DE00000000002.quest_subtitle: "The Geode chain opens."
 	quest.6E0DE00000000002.title: "Beyond Lapis"
-	quest.6E0DE00000000005.quest_desc: [
-		"The first crystal in the geode. Craft an &bAmethyst Slime in a Bucket&r from your &ecalcite milk&r (plus four gravel, three sweetslime, and a bottle of Geode Frog Eggs)."
-		""
-		"Then the loop you know: milk it, pour out the Amethyst Slime Milk, feed the slimes to a Geode Frog, and turn in the &bAmethyst Froglight&r. Smelt it for an amethyst shard."
-	]
+	quest.6E0DE00000000005.quest_desc: ["Craft an &bAmethyst Slime in a Bucket&r, feed your &aGeode Frog&r, and turn in the &6Amethyst Froglight&r."]
 	quest.6E0DE00000000005.quest_subtitle: "Purple and pointy."
 	quest.6E0DE00000000005.title: "Amethyst"
-	quest.6E0DE00000000008.quest_desc: [
-		"Craft an &bEmerald Slime in a Bucket&r from your &eamethyst milk&r (plus four gravel, three sweetslime, and a bottle of Geode Frog Eggs)."
-		""
-		"Milk it, feed the slimes to a Geode Frog, and turn in the &bEmerald Froglight&r. Smelt it for an emerald."
-	]
+	quest.6E0DE00000000008.quest_desc: ["Craft an &bEmerald Slime in a Bucket&r, feed your &aGeode Frog&r, and turn in the &6Emerald Froglight&r."]
 	quest.6E0DE00000000008.quest_subtitle: "Villager-grade, frog-made."
 	quest.6E0DE00000000008.title: "Emerald"
-	quest.6E0DE0000000000B.quest_desc: [
-		"The last gem the Geode frog knows. Craft a &bDiamond Slime in a Bucket&r from your &eemerald milk&r (plus four gravel, three sweetslime, and a bottle of Geode Frog Eggs)."
-		""
-		"Milk it, feed the slimes to a Geode Frog, and turn in the &bDiamond Froglight&r - the cap of the gem chain. Smelt it for a diamond."
-	]
+	quest.6E0DE0000000000B.quest_desc: ["Craft a &bDiamond Slime in a Bucket&r, feed your &aGeode Frog&r, and turn in the &6Diamond Froglight&r."]
 	quest.6E0DE0000000000B.quest_subtitle: "From a frog. Really."
 	quest.6E0DE0000000000B.title: "Diamond"
 	quest.6E0DE0000000000E.quest_desc: [
 		"The geode's outer shell. Craft a &bTuff Slime in a Bucket&r from your &elapis milk&r (plus four gravel, three sweetslime, and a bottle of Geode Frog Eggs)."
 		""
-		"Milk it, feed the slimes to a Geode Frog, and turn in the &bTuff Froglight&r - the first stone the Geode frog gives past lapis. Smelt it for tuff."
+		"Milk it, feed the slimes to a Geode Frog, and turn in the &6Tuff Froglight&r - the first stone the Geode frog gives past lapis. Smelt it for tuff."
 	]
 	quest.6E0DE0000000000E.quest_subtitle: "Rough but useful."
 	quest.6E0DE0000000000E.title: "Tuff"
-	quest.6E0DE00000000011.quest_desc: [
-		"The layer under the shell. Craft a &bCalcite Slime in a Bucket&r from your &etuff milk&r (plus four gravel, three sweetslime, and a bottle of Geode Frog Eggs)."
-		""
-		"Milk it, feed the slimes to a Geode Frog, and turn in the &bCalcite Froglight&r. Smelt it for calcite."
-	]
+	quest.6E0DE00000000011.quest_desc: ["Craft a &bCalcite Slime in a Bucket&r, feed your &aGeode Frog&r, and turn in the &6Calcite Froglight&r."]
 	quest.6E0DE00000000011.quest_subtitle: "The geode's pale shell."
 	quest.6E0DE00000000011.title: "Calcite"
 	quest.6E0DE00000000014.quest_desc: [
@@ -585,7 +509,7 @@
 	quest.6ECA150000000002.quest_desc: [
 		"Mekanism runs on &fosmium&r - and the Cave frog has had it all along. Craft an &bOsmium Slime in a Bucket&r from your &eredstone milk&r (plus four stone, three sweetslime, and a bottle of Cave Frog Eggs)."
 		""
-		"Milk it, feed the slimes to a Cave Frog, and turn in the &bOsmium Froglight&r. Smelt it for osmium - no ore, no mining, the metal that opens Mekanism straight off a frog."
+		"Milk it, feed the slimes to a Cave Frog, and turn in the &6Osmium Froglight&r. Smelt it for osmium - no ore, no mining, the metal that opens Mekanism straight off a frog."
 	]
 	quest.6ECA150000000002.quest_subtitle: "Mekanism's starter metal."
 	quest.6ECA150000000002.title: "Osmium"
@@ -612,7 +536,7 @@
 	quest.6ECA150000000011.quest_desc: [
 		"Steel doesn't have to come one infuse at a time. In the &eMetallurgic Infuser&r, infuse a &bBucket of Iron Slime Milk&r with &fcarbon&r (coal or charcoal) and it comes out a &7Steel Slime in a Bucket&r - the same iron-and-carbon trick that makes steel itself."
 		""
-		"Feed it to a Cave Frog and turn in the &bSteel Froglight&r it leaves. Smelt it for steel, the same metal the infuser makes, now pouring off a frog."
+		"Feed it to a Cave Frog and turn in the &6Steel Froglight&r it leaves. Smelt it for steel, the same metal the infuser makes, now pouring off a frog."
 	]
 	quest.6ECA150000000011.quest_subtitle: "Steel, the frog way."
 	quest.6ECA150000000011.title: "Steel Slime"
@@ -627,7 +551,7 @@
 	quest.6ECA150000000017.quest_subtitle: "Powered smelting."
 	quest.6ECA150000000017.title: "Energized Smelter"
 	quest.6ECA15000000001A.quest_desc: [
-		"The payoff. The &eEnrichment Chamber&r is Mekanism's ore-doubler - run a metal &bFroglight&r through it and it splits into &btwo dusts&r. Feed those to the Energized Smelter and one froglight becomes &btwo ingots&r."
+		"The payoff. The &eEnrichment Chamber&r is Mekanism's ore-doubler - run a metal &6Froglight&r through it and it splits into &btwo dusts&r. Feed those to the Energized Smelter and one froglight becomes &btwo ingots&r."
 		""
 		"Your frog metals, doubled. (Gems pass through unchanged - only the metals dust.)"
 		""
@@ -691,7 +615,7 @@
 	quest.71DE000000000002.quest_subtitle: "Industrial Foregoing arrives."
 	quest.71DE000000000002.title: "The Machine Frame"
 	quest.71DE000000000005.quest_desc: [
-		"&fLatex&r is the fluid the &bDissolution Chamber&r runs on, and your frogs already make it. Melt a &bplastic Froglight&r in the &eCrucible&r - the same block that bootstrapped your lava - and it renders down into a bucket of &fLiquid Latex&r."
+		"&fLatex&r is the fluid the &bDissolution Chamber&r runs on, and your frogs already make it. Melt a &6plastic Froglight&r in the &eCrucible&r - the same block that bootstrapped your lava - and it renders down into a bucket of &fLiquid Latex&r."
 		""
 		"No Fluid Extractor, no rubber trees - the plastic frog is the source. Fill a bucket and keep a tank of it for the Chamber."
 	]
@@ -702,7 +626,7 @@
 		""
 		"Every resource slime has a chamber recipe. &eCave&r, &eGeode&r, &eBog&r, and now &eTide&r each take a prior resource, tier filler, sweetslime, and latex, and press out that variant's &bSlime in a Bucket&r. Check JEI for whichever you need. Cave, Geode, and Bog still have hand-craft chains too; from &eTide&r on, the chamber is the only way."
 		""
-		"This chapter, the &eRoad to Tide&r, is the bridge that closes out &eBog&r and opens &eTide&r. Below, you'll prime your first &bTide Frog&r and draw a &bPrismarine Froglight&r out of the sea."
+		"This chapter, the &eRoad to Tide&r, is the bridge that closes out &eBog&r and opens &eTide&r. Below, you'll prime your first &bTide Frog&r and draw a &6Prismarine Froglight&r out of the sea."
 		""
 		"Claim your reward. The engine is online."
 	]
@@ -730,13 +654,13 @@
 	quest.71DE000000000017.quest_subtitle: "Prismarine Slime Milk."
 	quest.71DE000000000017.title: "Milk It"
 	quest.71DE00000000001A.quest_desc: [
-		"Feed a prismarine slime to a &eTide Frog&r and it drops a &bPrismarine Froglight&r. Smelt it for &fprismarine shards&r: ocean stone, no monument required."
+		"Feed a prismarine slime to a &eTide Frog&r and it drops a &6Prismarine Froglight&r. Smelt it for &fprismarine shards&r: ocean stone, no monument required."
 		""
 		"&eTide&r is open. The rest of the aquatic chain - crystals, sponge, ink, sea pickle, nautilus - waits in &eDrowned Riches&r."
 	]
 	quest.71DE00000000001A.quest_subtitle: "Tier 4 opens."
 	quest.71DE00000000001A.title: "First Prismarine"
-	quest.79D9A7438B1DD129.quest_desc: ["Plant a sapling, grow a tree, punch it. Everything starts with wood - even a frog empire."]
+	quest.79D9A7438B1DD129.quest_desc: ["Start by punching wood. Get an oak log from your first tree."]
 	quest.79D9A7438B1DD129.quest_subtitle: "Something under your feet."
 	quest.79D9A7438B1DD129.title: "Wood to Stand On"
 	quest.70E0000000000004.quest_desc: [
@@ -768,49 +692,49 @@
 	quest.70E0000000000011.quest_desc: [
 		"Orb &firon&r and &6gold&r into &eEnergized Steel&r - then the pack's law kicks in: &amake a resource yourself once, and the Dissolution Chamber will slime it&r. Chamber a steel into an Energized Steel Slime, feed a Cave frog, and never orb it by hand again."
 		""
-		"Turn in the &bEnergized Steel Froglight&r."
+		"Turn in the &6Energized Steel Froglight&r."
 	]
 	quest.70E0000000000011.quest_subtitle: "Iron and gold walk into an orb."
 	quest.70E0000000000011.title: "Energized Steel"
 	quest.70E0000000000014.quest_desc: [
 		"No uraninite ore on a void skyblock - but the Orb presses &buraninite&r from &buranium ingots&r. Uranium has no ore here either; it sits near the end of the &aAll the Ores seed chain&r (osmium milk onward, same milk-and-eggs craft as the Cave metals), so raise a &aUranium frog&r and feed the Orb its harvest. A &aUraninite Slime&r can also turn up from a Cave frog's split, but one slime, however you get it, is all the chamber needs to scale the farm."
 		""
-		"Turn in the &bUraninite Froglight&r."
+		"Turn in the &6Uraninite Froglight&r."
 	]
 	quest.70E0000000000014.quest_subtitle: "The frog is the uranium mine."
 	quest.70E0000000000014.title: "Uraninite"
 	quest.70E0000000000017.quest_desc: [
 		"Powah's coolant - reactors and thermo setups want it cold. The Orb presses &bDry Ice&r from two &bblue ice&r - and blue ice is just 81 of your &bIce frog's&r produce, packed twice. (The Tide pool can also roll a Dry Ice Slime by split-discovery, if the frogs beat you to it.)"
 		""
-		"Turn in the &bDry Ice Froglight&r."
+		"Turn in the &6Dry Ice Froglight&r."
 	]
 	quest.70E0000000000017.quest_subtitle: "Cold storage."
 	quest.70E0000000000017.title: "Dry Ice"
 	quest.70E000000000001A.quest_desc: [
 		"The Orb wants &cblaze powder&r - four of it - for a &cBlazing Crystal&r. Your Infernal frog makes the rods; each rod cracks into two powder. Make a crystal yourself, chamber it, frog it."
 		""
-		"Turn in the &bBlazing Froglight&r."
+		"Turn in the &6Blazing Froglight&r."
 	]
 	quest.70E000000000001A.quest_subtitle: "Powder in, crystal out."
 	quest.70E000000000001A.title: "Blazing Crystal"
 	quest.70E000000000001D.quest_desc: [
 		"Orbed from &bdiamonds&r - the crystal half is Geode-easy. The slime half rides a &5Void frog&r, so the farm waits for Tier 6."
 		""
-		"Turn in the &bNiotic Froglight&r."
+		"Turn in the &6Niotic Froglight&r."
 	]
 	quest.70E000000000001D.quest_subtitle: "Diamonds, energized."
 	quest.70E000000000001D.title: "Niotic Crystal"
 	quest.70E0000000000020.quest_desc: [
 		"Orbed from &aemeralds&r - the second-highest rung on the ladder. Like Niotic, the slime is &5Void frog&r business."
 		""
-		"Turn in the &bSpirited Froglight&r."
+		"Turn in the &6Spirited Froglight&r."
 	]
 	quest.70E0000000000020.quest_subtitle: "Emeralds with a work ethic."
 	quest.70E0000000000020.title: "Spirited Crystal"
 	quest.70E0000000000023.quest_desc: [
 		"The top of Powah's ladder - and the Orb prices it accordingly: a &enether star&r (yes, that star), two redstone blocks, and a block of Blazing Crystal. Nitro machines outpace everything below by an order of magnitude; the slime, as ever up here, rides a &5Void frog&r."
 		""
-		"Turn in the &bNitro Froglight&r."
+		"Turn in the &6Nitro Froglight&r."
 	]
 	quest.70E0000000000023.quest_subtitle: "Handle with tongs."
 	quest.70E0000000000023.title: "Nitro Crystal"
@@ -833,7 +757,7 @@
 	quest.70E000000000002C.quest_desc: [
 		"You made the dust yourself, so the chamber law is satisfied: slime it, feed the &cInfernal frog&r, and flux becomes a farm."
 		""
-		"Turn in the &bFlux Dust Froglight&r."
+		"Turn in the &6Flux Dust Froglight&r."
 	]
 	quest.70E000000000002C.quest_subtitle: "The frog does wireless too."
 	quest.70E000000000002C.title: "Flux on Tap"
@@ -847,44 +771,40 @@
 	quest.7B06000000000002.quest_desc: [
 		"The Bog frog eats more than dirt. Each new resource threads off the &elast one's Slime Milk&r - mud from dirt, clay from mud, on down the swamp."
 		""
-		"The loop never changes: prior milk + four mossy cobblestone + three sweetslime + a bottle of Bog Frog Eggs -> the next Slime in a Bucket. Milk it, feed the frog, and it drops the &eFroglight&r."
+		"The loop never changes: prior milk + four mossy cobblestone + three sweetslime + a bottle of Bog Frog Eggs -> the next Slime in a Bucket. Milk it, feed the frog, and it drops the &6Froglight&r."
 		""
-		"Every quest here wants that &eFroglight&r - the frog's own proof - so hand one in before you smelt it into the resource."
+		"Every quest here wants that &6Froglight&r - the frog's own proof - so hand one in before you smelt it into the resource."
 	]
 	quest.7B06000000000002.quest_subtitle: "The Bog chain opens."
 	quest.7B06000000000002.title: "Beyond Dirt"
-	quest.7B06000000000005.quest_desc: ["A &2Mud Slime&r off your &edirt milk&r - turn in its &6Froglight&r, then smelt it for the mud your collectors are built on."]
+	quest.7B06000000000005.quest_desc: ["Craft a &bMud Slime in a Bucket&r, feed your &aBog Frog&r, and turn in the &6Mud Froglight&r."]
 	quest.7B06000000000005.quest_subtitle: "Squelch."
 	quest.7B06000000000005.title: "Mud"
-	quest.7B06000000000008.quest_desc: [
-		"&bClay&r from your &emud milk&r - terracotta, bricks, and flower pots all start here."
-		""
-		"Clay compacts, so here's a &9Compacting Drawer&r to stack it."
-	]
+	quest.7B06000000000008.quest_desc: ["Craft a &bClay Slime in a Bucket&r, feed your &aBog Frog&r, and turn in the &6Clay Froglight&r."]
 	quest.7B06000000000008.quest_subtitle: "Bricks in waiting."
 	quest.7B06000000000008.title: "Clay"
-	quest.7B0600000000000B.quest_desc: ["&aMoss&r from your &eclay milk&r - bonemeal-spreadable ground cover, and a little green in the void."]
+	quest.7B0600000000000B.quest_desc: ["Craft a &bMoss Slime in a Bucket&r, feed your &aBog Frog&r, and turn in the &6Moss Froglight&r."]
 	quest.7B0600000000000B.quest_subtitle: "Soft and spreading."
 	quest.7B0600000000000B.title: "Moss"
-	quest.7B0600000000000E.quest_desc: ["&dMycelium&r from your &emoss milk&r - the fungal mat that grows mushrooms without light."]
+	quest.7B0600000000000E.quest_desc: ["Craft a &bMycelium Slime in a Bucket&r, feed your &aBog Frog&r, and turn in the &6Mycelium Froglight&r."]
 	quest.7B0600000000000E.quest_subtitle: "Mushroom ground."
 	quest.7B0600000000000E.title: "Mycelium"
-	quest.7B06000000000011.quest_desc: ["&2Lily Pads&r from your &emycelium milk&r - the swamp's surface, and a step toward open water."]
+	quest.7B06000000000011.quest_desc: ["Craft a &bLily Pad Slime in a Bucket&r, feed your &aBog Frog&r, and turn in the &6Lily Pad Froglight&r."]
 	quest.7B06000000000011.quest_subtitle: "A frog's favorite seat."
 	quest.7B06000000000011.title: "Lily Pad"
 	quest.7B06000000000034.quest_desc: [
 		"Tired of leashing frogs to keep them in place? Right-click a placed &alily pad&r with a &dSweetslime&r and it becomes a &aSweetslimed Lily Pad&r."
 		""
-		"The nearest frog walks over and settles on it - one frog per pad. It keeps eating same-species slimes in range and dropping &eFroglights&r right there, so park one over a hopper beside a &eSlime Milk&r source for hands-off collection. Break the pad to free the frog."
+		"The nearest frog walks over and settles on it - one frog per pad. It keeps eating same-species slimes in range and dropping &6Froglights&r right there, so park one over a hopper beside a &eSlime Milk&r source for hands-off collection. Break the pad to free the frog."
 		""
 		"Make one, then check this off. (Your &9field guide&r has the full page.)"
 	]
 	quest.7B06000000000034.quest_subtitle: "Pin a frog, no leash."
 	quest.7B06000000000034.title: "A Frog Perch"
-	quest.7B06000000000014.quest_desc: ["The swamp's animals leave a trace: &6leather&r from your &estring milk&r. Books, armor, frames - no cows required."]
+	quest.7B06000000000014.quest_desc: ["Craft a &bLeather Slime in a Bucket&r, feed your &aBog Frog&r, and turn in the &6Leather Froglight&r."]
 	quest.7B06000000000014.quest_subtitle: "No cow needed."
 	quest.7B06000000000014.title: "Leather"
-	quest.7B06000000000017.quest_desc: ["&fFeathers&r from your &eleather milk&r - arrows, and the light touch a void island can't otherwise get."]
+	quest.7B06000000000017.quest_desc: ["Craft a &bFeather Slime in a Bucket&r, feed your &aBog Frog&r, and turn in the &6Feather Froglight&r."]
 	quest.7B06000000000017.quest_subtitle: "No chicken either."
 	quest.7B06000000000017.title: "Feather"
 	quest.7B0600000000001A.quest_desc: [
@@ -1007,81 +927,37 @@
 	quest.70DD831A136C804F.quest_subtitle: "Diplomacy, by froglight."
 	quest.70DD831A136C804F.title: "Sister Ponds"
 	chapter.70DD000000000001.title: "Sister Ponds"
-	quest.7CA7E000C0DE0026.quest_desc: [
-		"A &fbreeze rod&r without a trial chamber in sight - the Cave frog farms what the Breeze drops."
-		""
-		"&bGlow ink milk&r makes the Breeze Rod Slime. Run the loop and turn in the &bBreeze Rod Froglight&r."
-	]
+	quest.7CA7E000C0DE0026.quest_desc: ["Craft a &bBreeze Rod Slime in a Bucket&r, feed your &aCave Frog&r, and turn in the &6Breeze Rod Froglight&r."]
 	quest.7CA7E000C0DE0026.quest_subtitle: "Catch the wind."
 	quest.7CA7E000C0DE0026.title: "Breeze Rod"
-	quest.7D00000000000029.quest_desc: [
-		"&aTurtle scutes&r without the beach nursery - no eggs, no babies, no waiting. The Tide frog skips the whole life cycle."
-		""
-		"Turn in the &bTurtle Scute Froglight&r."
-	]
+	quest.7D00000000000029.quest_desc: ["Craft a &bTurtle Scute Slime in a Bucket&r in a Dissolution Chamber, feed your &aTide Frog&r, and turn in the &6Turtle Scute Froglight&r."]
 	quest.7D00000000000029.quest_subtitle: "Shell, expedited."
 	quest.7D00000000000029.title: "Turtle Scute"
-	quest.51F000000000001E.quest_desc: [
-		"&fGhast tears&r - regeneration potions and End crystals - without crying over a fireball. The Infernal frog weeps them on demand."
-		""
-		"Turn in the &bGhast Tear Froglight&r."
-	]
+	quest.51F000000000001E.quest_desc: ["Craft a &bGhast Tear Slime in a Bucket&r in a Dissolution Chamber, feed your &aInfernal Frog&r, and turn in the &6Ghast Tear Froglight&r."]
 	quest.51F000000000001E.quest_subtitle: "No tissue required."
 	quest.51F000000000001E.title: "Ghast Tear"
-	quest.60F0000000000014.quest_desc: [
-		"&dPhantom membranes&r - slow falling and elytra repair - without ever skipping a night's sleep. The Void frog handles the insomnia."
-		""
-		"Turn in the &bPhantom Membrane Froglight&r."
-	]
+	quest.60F0000000000014.quest_desc: ["Craft a &bPhantom Membrane Slime in a Bucket&r in a Dissolution Chamber, feed your &aVoid Frog&r, and turn in the &6Phantom Membrane Froglight&r."]
 	quest.60F0000000000014.quest_subtitle: "Sleep well anyway."
 	quest.60F0000000000014.title: "Phantom Membrane"
-	quest.7B06000000000022.quest_desc: [
-		"&6Armadillo scutes&r - wolf armor - from a frog instead of a brush. The Bog covers the savanna's job."
-		""
-		"Turn in the &bArmadillo Scute Froglight&r."
-	]
+	quest.7B06000000000022.quest_desc: ["Craft an &bArmadillo Scute Slime in a Bucket&r, feed your &aBog Frog&r, and turn in the &6Armadillo Scute Froglight&r."]
 	quest.7B06000000000022.quest_subtitle: "Roll with it."
 	quest.7B06000000000022.title: "Armadillo Scute"
-	quest.7B06000000000025.quest_desc: [
-		"&eHoneycomb&r - waxed copper, hives, candles - with zero bees bothered. The Bog frog is the apiary now."
-		""
-		"Turn in the &bHoneycomb Froglight&r."
-	]
+	quest.7B06000000000025.quest_desc: ["Craft a &bHoneycomb Slime in a Bucket&r, feed your &aBog Frog&r, and turn in the &6Honeycomb Froglight&r."]
 	quest.7B06000000000025.quest_subtitle: "Unbeelievable."
 	quest.7B06000000000025.title: "Honeycomb"
-	quest.7B06000000000028.quest_desc: [
-		"&fBones&r - bone meal, bone blocks, and every wolf's undying loyalty - without a single skeleton seeing sunrise. The Bog frog supplies the orthopedics."
-		""
-		"Turn in the &bBone Froglight&r."
-	]
+	quest.7B06000000000028.quest_desc: ["Craft a &bBone Slime in a Bucket&r, feed your &aBog Frog&r, and turn in the &6Bone Froglight&r."]
 	quest.7B06000000000028.quest_subtitle: "Dem dry bones."
 	quest.7B06000000000028.title: "Bone"
-	quest.7B0600000000002B.quest_desc: [
-		"&7Gunpowder&r - TNT, fireworks, rockets for the elytra you will eventually earn - and not one creeper consulted. The Bog frog is the powder keg."
-		""
-		"Turn in the &bGunpowder Froglight&r."
-	]
+	quest.7B0600000000002B.quest_desc: ["Craft a &bGunpowder Slime in a Bucket&r, feed your &aBog Frog&r, and turn in the &6Gunpowder Froglight&r."]
 	quest.7B0600000000002B.quest_subtitle: "Boom, sorted."
 	quest.7B0600000000002B.title: "Gunpowder"
-	quest.7B0600000000002E.quest_desc: [
-		"&2Rotten flesh&r - cleric trade fodder and emergency rations you will regret. Some resources are about volume, not glamour; the frogs do not judge."
-		""
-		"Turn in the &bRotten Flesh Froglight&r."
-	]
+	quest.7B0600000000002E.quest_desc: ["Craft a &bRotten Flesh Slime in a Bucket&r, feed your &aBog Frog&r, and turn in the &6Rotten Flesh Froglight&r."]
 	quest.7B0600000000002E.quest_subtitle: "It's a living."
 	quest.7B0600000000002E.title: "Rotten Flesh"
-	quest.7B06000000000031.quest_desc: [
-		"&fString&r - bows, fishing rods, scaffolding, wool four-at-a-time - no spider, no cave, no ceiling ambush. The Bog frog spins it on demand."
-		""
-		"Turn in the &bString Froglight&r."
-	]
+	quest.7B06000000000031.quest_desc: ["Craft a &bString Slime in a Bucket&r, feed your &aBog Frog&r, and turn in the &6String Froglight&r."]
 	quest.7B06000000000031.quest_subtitle: "No strings attached."
 	quest.7B06000000000031.title: "String"
-	quest.51F0000000000021.quest_desc: [
-		"&6Magma cream&r - fire resistance potions and magma blocks - without bothering a single magma cube. Pairs beautifully with a tier built on lava."
-		""
-		"Turn in the &bMagma Cream Froglight&r."
-	]
+	quest.51F0000000000021.quest_desc: ["Craft a &bMagma Cream Slime in a Bucket&r in a Dissolution Chamber, feed your &aInfernal Frog&r, and turn in the &6Magma Cream Froglight&r."]
 	quest.51F0000000000021.quest_subtitle: "Slippery when hot."
 	quest.51F0000000000021.title: "Magma Cream"
 	quest.51F0000000000024.quest_desc: [
@@ -1117,7 +993,7 @@
 	quest.7807000000000005.quest_desc: [
 		"Seal a Skull Slime Milk source inside its six catalysts and the tomb comes alive: Skull Slimes rising out of milk that can no longer touch you, frogs queuing at the rim. The poison is still in there. That is the point."
 		""
-		"Turn in the &bWither Skeleton Skull Froglight&r."
+		"Turn in the &6Wither Skeleton Skull Froglight&r."
 	]
 	quest.7807000000000005.quest_subtitle: "The bone orchard."
 	quest.7807000000000005.title: "Wither Skeleton Skull"
@@ -1129,7 +1005,7 @@
 	quest.780700000000000B.quest_desc: [
 		"The star pool shines like a beacon through its obsidian containment - and only those six catalysts keep it from killing you faster than any of the six Withers that fed it. Watch the frogs manufacture the rarest drop in the game from the safe side of the seal."
 		""
-		"Turn in the &bNether Star Froglight&r."
+		"Turn in the &6Nether Star Froglight&r."
 	]
 	quest.780700000000000B.quest_subtitle: "Beacons, plural."
 	quest.780700000000000B.title: "Nether Star"
@@ -1143,7 +1019,7 @@
 	quest.7807000000000011.quest_desc: [
 		"Six eggs in end stone brick, entombing a pool of Egg Slime Milk - its &cpoison&r sealed inside the very blocks it paid for, spawning Egg Slimes on its own. The frogs do the rest."
 		""
-		"Turn in the &bDragon Egg Froglight&r."
+		"Turn in the &6Dragon Egg Froglight&r."
 	]
 	quest.7807000000000011.quest_subtitle: "From one egg, a clutch."
 	quest.7807000000000011.title: "Dragon Egg"
@@ -1157,21 +1033,21 @@
 	quest.7807000000000017.quest_desc: [
 		"The dragon's exhale, mass-produced by amphibians while she sleeps it off in the End. Lingering potions forever."
 		""
-		"Turn in the &bDragon Breath Froglight&r."
+		"Turn in the &6Dragon Breath Froglight&r."
 	]
 	quest.7807000000000017.quest_subtitle: "Industrial-scale exhalation."
 	quest.7807000000000017.title: "Dragon Breath"
 	quest.780700000000001A.quest_desc: [
-		"The active-play answer to the passive pond, and the apex of the Trophy Pond: a sword that drops a Resource Slime's &bFroglight&r when it lands the kill. It hits harder than netherite, shrugs off fire, Looting raises the yield, and a brewed slime's effect carries onto the Froglight - exactly as if a frog had eaten it."
+		"The active-play answer to the passive pond, and the apex of the Trophy Pond: a sword that drops a Resource Slime's &6Froglight&r when it lands the kill. It hits harder than netherite, shrugs off fire, Looting raises the yield, and a brewed slime's effect carries onto the Froglight - exactly as if a frog had eaten it."
 		""
-		"Forged from the bosses' own light: two &bNether Star Froglights&r and a &bDragon Egg Froglight&r, wrapped in &fDragon's Breath&r. The four trophies no farm was ever supposed to produce, now bound into one blade. You are the apex."
+		"Forged from the bosses' own light: two &6Nether Star Froglights&r and a &6Dragon Egg Froglight&r, wrapped in &fDragon's Breath&r. The four trophies no farm was ever supposed to produce, now bound into one blade. You are the apex."
 	]
 	quest.780700000000001A.quest_subtitle: "Harvest the light by hand."
 	quest.780700000000001A.title: "The Froglight Cleaver"
 	quest.780700000000002C.quest_desc: [
 		"You beat the dragon the hard way once. Now you never have to again. Build this altar right on the &eEnd exit portal&r, ringed with &eEnd Crystal Receptacles&r and reinforced froglights, a &bDragon Egg&r as the capstone."
 		""
-		"Drop an end crystal into each of the four receptacles and a dragon rises, charges, and is devoured by &eDragonsbane&r, the frog at the altar's heart. The loot lands in the hatch, hopper-pipeable, and the real End portal stays untouched: a &bDragon Breath Froglight&r, a renewable &bDragon Egg Froglight&r, the &dPrincess's Kiss&r, and XP."
+		"Drop an end crystal into each of the four receptacles and a dragon rises, charges, and is devoured by &eDragonsbane&r, the frog at the altar's heart. The loot lands in the hatch, hopper-pipeable, and the real End portal stays untouched: a &6Dragon Breath Froglight&r, a renewable &6Dragon Egg Froglight&r, the &dPrincess's Kiss&r, and XP."
 		""
 		"&7Optional&r: a repeatable dragon harvest, if you want one. Craft the &eEnd Dragon Altar Hatch&r to start."
 	]
@@ -1180,7 +1056,7 @@
 	quest.780700000000002F.quest_desc: [
 		"The first Wither you kill the hard way hands you a &bNether Star&r, and that star crafts the &eWithered Star&r, the keystone of an altar that farms Withers with none of the danger."
 		""
-		"Build a soul-forged arena of &eReinforced Soul Sand&r and &bBlaze Rod Froglights&r, then load the full summon into the ritual receptacles: four soul sand and three wither skeleton skulls. A Wither charges in, blue glow and all, until &eWitherbane&r devours it. Out comes a &bNether Star Froglight&r (it smelts back to a star) and XP, with no boss bar and no exploding blocks."
+		"Build a soul-forged arena of &eReinforced Soul Sand&r and &6Blaze Rod Froglights&r, then load the full summon into the ritual receptacles: four soul sand and three wither skeleton skulls. A Wither charges in, blue glow and all, until &eWitherbane&r devours it. Out comes a &6Nether Star Froglight&r (it smelts back to a star) and XP, with no boss bar and no exploding blocks."
 		""
 		"&7Optional&r: a contained, repeatable Nether Star farm. Craft the &eWithered Star&r to begin."
 	]
@@ -1197,36 +1073,20 @@
 	quest.7CA7E000C0DE0005.quest_desc: [
 		"The first new metal off the line. Craft a &bCopper Slime in a Bucket&r from your &eiron milk&r (plus four stone, three sweetslime, and a bottle of Cave Frog Eggs)."
 		""
-		"Then run the loop you already know: milk it, pour out the Copper Slime Milk, feed the slimes to a Cave Frog, and turn in the &bCopper Froglight&r it leaves. Smelt that Froglight for your copper ingot."
+		"Then run the loop you already know: milk it, pour out the Copper Slime Milk, feed the slimes to a Cave Frog, and turn in the &6Copper Froglight&r it leaves. Smelt that Froglight for your copper ingot."
 	]
 	quest.7CA7E000C0DE0005.quest_subtitle: "The first new metal."
 	quest.7CA7E000C0DE0005.title: "Copper"
-	quest.7CA7E000C0DE0008.quest_desc: [
-		"One rung up: &ecopper milk&r becomes a &eGold Slime in a Bucket&r."
-		""
-		"Same loop. Turn in the &bGold Froglight&r, then smelt it for gold."
-	]
+	quest.7CA7E000C0DE0008.quest_desc: ["Craft a &bGold Slime in a Bucket&r, feed your &aCave Frog&r, and turn in the &6Gold Froglight&r."]
 	quest.7CA7E000C0DE0008.quest_subtitle: "Shiny, soft, useful."
 	quest.7CA7E000C0DE0008.title: "Gold"
-	quest.7CA7E000C0DE000B.quest_desc: [
-		"&6Gold milk&r this time, for a &7Coal Slime&r - fuel without a single coal ore in sight."
-		""
-		"Turn in the &bCoal Froglight&r the frog leaves you, then smelt it for coal."
-	]
+	quest.7CA7E000C0DE000B.quest_desc: ["Craft a &bCoal Slime in a Bucket&r, feed your &aCave Frog&r, and turn in the &6Coal Froglight&r."]
 	quest.7CA7E000C0DE000B.quest_subtitle: "Fuel, no ore in sight."
 	quest.7CA7E000C0DE000B.title: "Coal"
-	quest.7CA7E000C0DE000E.quest_desc: [
-		"Last of the Cave line: &bbreeze rod milk&r into a &cRedstone Slime&r."
-		""
-		"Redstone is the spark under everything mechanical, and now it drips out of a frog. Loop it, turn in the &bRedstone Froglight&r, and the Cave is yours top to bottom. Smelt the Froglight for redstone."
-	]
+	quest.7CA7E000C0DE000E.quest_desc: ["Craft a &bRedstone Slime in a Bucket&r, feed your &aCave Frog&r, and turn in the &6Redstone Froglight&r."]
 	quest.7CA7E000C0DE000E.quest_subtitle: "The spark under everything."
 	quest.7CA7E000C0DE000E.title: "Redstone"
-	quest.7CA7E000C0DE0023.quest_desc: [
-		"&7Coal milk&r next, for a &bGlow Ink Sac Slime&r - the deep caves' glow squids, distilled, no squid required."
-		""
-		"Turn in the &bGlow Ink Sac Froglight&r, then smelt it for &bglow ink sacs&r: glowing signs and item frames for the base, and one more resource the endgame will come asking about."
-	]
+	quest.7CA7E000C0DE0023.quest_desc: ["Craft a &bGlow Ink Sac Slime in a Bucket&r, feed your &aCave Frog&r, and turn in the &6Glow Ink Sac Froglight&r."]
 	quest.7CA7E000C0DE0023.quest_subtitle: "Glow without the squid."
 	quest.7CA7E000C0DE0023.title: "Glow Ink"
 	quest.7CA7E000C0DE0020.quest_desc: [
@@ -1244,39 +1104,31 @@
 	quest.7CA7E000C0DE0029.quest_subtitle: "Only slimes get through."
 	quest.7CA7E000C0DE0029.title: "Slimes Only"
 	quest.7D00000000000002.quest_desc: [
-		"You pulled &bprismarine&r out of the void-sea; the rest of the reef follows the same loop. Each &eTide&r resource: chamber its slime, milk it, feed a &eTide Frog&r, smelt the &bFroglight&r."
+		"You pulled &bprismarine&r out of the void-sea; the rest of the reef follows the same loop. Each &eTide&r resource: chamber its slime, milk it, feed a &eTide Frog&r, smelt the &6Froglight&r."
 		""
 		"Eight more to land the full aquatic roster. Claim your reward and dive in."
 	]
 	quest.7D00000000000002.quest_subtitle: "The Tide chain opens."
 	quest.7D00000000000002.title: "Drowned Riches"
-	quest.7D00000000000005.quest_desc: ["Run the loop for &bPrismarine Crystals&r. Smelt the &bPrismarine Crystals Froglight&r into crystals - five crystals plus four prismarine shards make a &esea lantern&r."]
+	quest.7D00000000000005.quest_desc: ["Craft a &bPrismarine Crystals Slime in a Bucket&r in a Dissolution Chamber, feed your &aTide Frog&r, and turn in the &6Prismarine Crystals Froglight&r."]
 	quest.7D00000000000005.quest_subtitle: "The sea glows."
 	quest.7D00000000000005.title: "Prismarine Crystals"
-	quest.7D00000000000008.quest_desc: ["&bSponge&r, with no ocean monument and no guardians in sight. Smelt the &bSponge Froglight&r for a dry sponge - then soak up a puddle of the void."]
+	quest.7D00000000000008.quest_desc: ["Craft a &bSponge Slime in a Bucket&r in a Dissolution Chamber, feed your &aTide Frog&r, and turn in the &6Sponge Froglight&r."]
 	quest.7D00000000000008.quest_subtitle: "Thirsty block."
 	quest.7D00000000000008.title: "Sponge"
-	quest.7D0000000000000B.quest_desc: ["&bInk Sac&r from a frog instead of a squid. Smelt the &bInk Sac Froglight&r for ink - black dye on tap, no fishing required."]
+	quest.7D0000000000000B.quest_desc: ["Craft an &bInk Sac Slime in a Bucket&r in a Dissolution Chamber, feed your &aTide Frog&r, and turn in the &6Ink Sac Froglight&r."]
 	quest.7D0000000000000B.quest_subtitle: "Squid, without the squid."
 	quest.7D0000000000000B.title: "Ink Sac"
-	quest.7D0000000000000E.quest_desc: ["&bSea Pickle&r, the reef's little lanterns. Smelt the &bSea Pickle Froglight&r and light up the shallows."]
+	quest.7D0000000000000E.quest_desc: ["Craft a &bSea Pickle Slime in a Bucket&r in a Dissolution Chamber, feed your &aTide Frog&r, and turn in the &6Sea Pickle Froglight&r."]
 	quest.7D0000000000000E.quest_subtitle: "Glowing and green."
 	quest.7D0000000000000E.title: "Sea Pickle"
-	quest.7D00000000000011.quest_desc: ["The last of the tide: &bNautilus Shell&r, the shell that aims a Conduit. Smelt the &bNautilus Shell Froglight&r and the aquatic roster is yours, top to bottom."]
+	quest.7D00000000000011.quest_desc: ["Craft a &bNautilus Shell Slime in a Bucket&r in a Dissolution Chamber, feed your &aTide Frog&r, and turn in the &6Nautilus Shell Froglight&r."]
 	quest.7D00000000000011.quest_subtitle: "The Tide's treasure."
 	quest.7D00000000000011.title: "Nautilus Shell"
-	quest.7D00000000000020.quest_desc: [
-		"No cold biome ever forms out here - &bice&r exists because a frog makes it. A &ecompacting drawer&r packs nine ice into packed ice, nine packed into &bblue ice&r: the whole frozen family unlocks from this one variant."
-		""
-		"Turn in the &bIce Froglight&r. (Placement note: Froglights glow, and ice melts under bright light - do not light an ice farm with its own produce.)"
-	]
+	quest.7D00000000000020.quest_desc: ["Craft an &bIce Slime in a Bucket&r in a Dissolution Chamber, feed your &aTide Frog&r, and turn in the &6Ice Froglight&r."]
 	quest.7D00000000000020.quest_subtitle: "Winter, imported."
 	quest.7D00000000000020.title: "Ice"
-	quest.7D00000000000023.quest_desc: [
-		"&fSnow&r never falls on the void either. Snow blocks from the frog mean snow layers, snowballs, and snow golems - build the blizzard yourself."
-		""
-		"Turn in the &bSnow Froglight&r."
-	]
+	quest.7D00000000000023.quest_desc: ["Craft a &bSnow Slime in a Bucket&r in a Dissolution Chamber, feed your &aTide Frog&r, and turn in the &6Snow Froglight&r."]
 	quest.7D00000000000023.quest_subtitle: "Let it frog."
 	quest.7D00000000000023.title: "Snow"
 	quest.7F00000000000002.quest_desc: [
@@ -1331,7 +1183,7 @@
 	chapter.5140000000000001.title: "Road to Infernal"
 	chapter.51F0000000000001.title: "Infernal Frogs"
 	quest.3E17000000000002.quest_desc: [
-		"Remember the &eOak Crucible&r wringing water out of leaves? Meet its big sibling: a &fbrick-and-iron basin&r that melts &bFroglights&r into &9fluids&r - water, lava, molten metal - no GUI, no power, just heat rising from the block underneath it."
+		"Remember the &eOak Crucible&r wringing water out of leaves? Meet its big sibling: a &fbrick-and-iron basin&r that melts &6Froglights&r into &9fluids&r - water, lava, molten metal - no GUI, no power, just heat rising from the block underneath it."
 		""
 		"You need &cbricks&r and &firon&r. Hammer cobblestone down to &7dust&r, mix the dust with &9water&r for clay, smelt the clay into bricks, and frame them in iron."
 		""
@@ -1351,14 +1203,14 @@
 	quest.3E17000000000008.quest_desc: [
 		"A &9Water Froglight&r melts into a full &9bucket of water&r - farmable water, from your &aCave frog&r of all things. The way in is the same craft as every Cave slime, keyed on the fluid itself: a &9water bucket&r, four stone, three sweetslime, and a bottle of Cave Frog Eggs. (The bucket comes back empty.)"
 		""
-		"Turn in the &bWater Froglight&r."
+		"Turn in the &6Water Froglight&r."
 	]
 	quest.3E17000000000008.quest_subtitle: "The ocean, bottled."
 	quest.3E17000000000008.title: "Water"
 	quest.3E1700000000000B.quest_desc: [
 		"A &6Lava Froglight&r melts into a full &6bucket of lava&r - renewable, no more cobble-crucible babysitting, which is poetic: a &6lava bucket&r from that very crucible, four stone, three sweetslime, and a bottle of Cave Frog Eggs craft the &6Lava Slime&r that retires it. The whole loop runs at Tier 1."
 		""
-		"Turn in the &bLava Froglight&r."
+		"Turn in the &6Lava Froglight&r."
 	]
 	quest.3E1700000000000B.quest_subtitle: "The floor is renewable."
 	quest.3E1700000000000B.title: "Lava"
@@ -1372,7 +1224,7 @@
 	quest.3E1700000000000E.quest_subtitle: "Pour one out."
 	quest.3E1700000000000E.title: "The Casting Mold"
 	quest.3E17000000000011.quest_desc: [
-		"Now the payoff: a metal &bFroglight&r melts into &etwo ingots&r worth of molten metal - the Crucible is this pack's ore doubling. Tower it up, hopper Froglights in, and let the Mold spit ingots while you do anything else."
+		"Now the payoff: a metal &6Froglight&r melts into &etwo ingots&r worth of molten metal - the Crucible is this pack's ore doubling. Tower it up, hopper Froglights in, and let the Mold spit ingots while you do anything else."
 		""
 		"Tick when your tower casts its first doubled ingot."
 	]
@@ -1385,36 +1237,22 @@
 	]
 	quest.51F0000000000002.quest_subtitle: "The Nether chain opens."
 	quest.51F0000000000002.title: "Beyond Netherrack"
-	quest.51F0000000000005.quest_desc: [
-		"&eNether quartz&r at last - comparators, observers, and the &bQuartz Enriched Iron&r that &eRefined Storage&r runs on. Turn in the &bQuartz Froglight&r."
-	]
+	quest.51F0000000000005.quest_desc: ["Craft a &bQuartz Slime in a Bucket&r in a Dissolution Chamber, feed your &aInfernal Frog&r, and turn in the &6Quartz Froglight&r."]
 	quest.51F0000000000005.quest_subtitle: "The gate so many recipes wanted."
 	quest.51F0000000000005.title: "Quartz"
-	quest.51F0000000000008.quest_desc: [
-		"&eGlowstone&r - for lamps, redstone toys, and beacons to come. Turn in the &bGlowstone Froglight&r."
-	]
+	quest.51F0000000000008.quest_desc: ["Craft a &bGlowstone Slime in a Bucket&r in a Dissolution Chamber, feed your &aInfernal Frog&r, and turn in the &6Glowstone Froglight&r."]
 	quest.51F0000000000008.quest_subtitle: "Light that isn't a torch."
 	quest.51F0000000000008.title: "Glowstone"
-	quest.51F000000000000B.quest_desc: [
-		"&eSoul Sand&r - bubble columns, wither fuel, and soul-speed paths. Turn in the &bSoul Sand Froglight&r."
-	]
+	quest.51F000000000000B.quest_desc: ["Craft a &bSoul Sand Slime in a Bucket&r in a Dissolution Chamber, feed your &aInfernal Frog&r, and turn in the &6Soul Sand Froglight&r."]
 	quest.51F000000000000B.quest_subtitle: "It drags you down."
 	quest.51F000000000000B.title: "Soul Sand"
-	quest.51F000000000000E.quest_desc: [
-		"&eSoul Soil&r - soul campfires and lanterns burn blue. Turn in the &bSoul Soil Froglight&r."
-	]
+	quest.51F000000000000E.quest_desc: ["Craft a &bSoul Soil Slime in a Bucket&r in a Dissolution Chamber, feed your &aInfernal Frog&r, and turn in the &6Soul Soil Froglight&r."]
 	quest.51F000000000000E.quest_subtitle: "Blue fire country."
 	quest.51F000000000000E.title: "Soul Soil"
-	quest.51F0000000000011.quest_desc: [
-		"&cBlaze rods&r - brewing stands, magic fuel, and the road to the End. No blaze hunt required, and each rod crafts into two powder."
-		""
-		"Turn in the &bBlaze Froglight&r."
-	]
+	quest.51F0000000000011.quest_desc: ["Craft a &bBlaze Slime in a Bucket&r in a Dissolution Chamber, feed your &aInfernal Frog&r, and turn in the &6Blaze Froglight&r."]
 	quest.51F0000000000011.quest_subtitle: "Rods without the blaze."
 	quest.51F0000000000011.title: "Blaze"
-	quest.51F0000000000014.quest_desc: [
-		"&8Netherite scrap&r - smelted from ancient debris no skyblock should reach. Four scrap plus gold makes a &8Netherite Ingot&r and the best gear in the game. The Infernal crown. Turn in the &bNetherite Scrap Froglight&r."
-	]
+	quest.51F0000000000014.quest_desc: ["Craft a &bNetherite Scrap Slime in a Bucket&r in a Dissolution Chamber, feed your &aInfernal Frog&r, and turn in the &6Netherite Scrap Froglight&r."]
 	quest.51F0000000000014.quest_subtitle: "The metal at the bottom."
 	quest.51F0000000000014.title: "Netherite Scrap"
 	quest.51F0000000000017.quest_desc: [
@@ -1571,7 +1409,7 @@
 	quest.5140000000000013.quest_subtitle: "Netherrack Slime Milk."
 	quest.5140000000000013.title: "Milk It"
 	quest.5140000000000016.quest_desc: [
-		"Your Infernal frog eats a Netherrack Slime and leaves a &bNetherrack Froglight&r. Smelt it for &cnetherrack&r. From here the frog gives you the whole Nether - no more portal trips."
+		"Your Infernal frog eats a Netherrack Slime and leaves a &6Netherrack Froglight&r. Smelt it for &cnetherrack&r. From here the frog gives you the whole Nether - no more portal trips."
 	]
 	quest.5140000000000016.quest_subtitle: "Tier 5 opens."
 	quest.5140000000000016.title: "First Netherrack"
@@ -1635,7 +1473,7 @@
 	quest.601D000000000017.quest_subtitle: "One more bucket."
 	quest.601D000000000017.title: "Milk It"
 	quest.601D00000000001A.quest_desc: [
-		"Feed the milk, take the &bEnder Pearl Froglight&r, and the &5Void&r frog is yours."
+		"Feed the milk, take the &6Ender Pearl Froglight&r, and the &5Void&r frog is yours."
 		""
 		"Tier 6 opens - the last species, and the road to the endgame."
 	]
@@ -1648,26 +1486,16 @@
 	]
 	quest.60F0000000000002.quest_subtitle: "The End, on tap."
 	quest.60F0000000000002.title: "Beyond the Pearl"
-	quest.60F0000000000005.quest_desc: [
-		"&eEnd Stone&r - the ground of the outer islands, now a frog's job. Turn in the &bEnd Stone Froglight&r."
-	]
+	quest.60F0000000000005.quest_desc: ["Craft an &bEnd Stone Slime in a Bucket&r in a Dissolution Chamber, feed your &aVoid Frog&r, and turn in the &6End Stone Froglight&r."]
 	quest.60F0000000000005.quest_subtitle: "Pale and endless."
 	quest.60F0000000000005.title: "End Stone"
-	quest.60F0000000000008.quest_desc: [
-		"&dChorus Fruit&r - teleport snacks, and popped chorus for purpur. Turn in the &bChorus Fruit Froglight&r."
-	]
+	quest.60F0000000000008.quest_desc: ["Craft a &bChorus Fruit Slime in a Bucket&r in a Dissolution Chamber, feed your &aVoid Frog&r, and turn in the &6Chorus Fruit Froglight&r."]
 	quest.60F0000000000008.quest_subtitle: "A fruit that moves you."
 	quest.60F0000000000008.title: "Chorus Fruit"
-	quest.60F000000000000B.quest_desc: [
-		"&3Echo Shards&r - recovery compasses, straight from the frog instead of the deep dark."
-		""
-		"Turn in the &bEcho Shard Froglight&r."
-	]
+	quest.60F000000000000B.quest_desc: ["Craft an &bEcho Shard Slime in a Bucket&r in a Dissolution Chamber, feed your &aVoid Frog&r, and turn in the &6Echo Shard Froglight&r."]
 	quest.60F000000000000B.quest_subtitle: "The deep dark, skipped."
 	quest.60F000000000000B.title: "Echo Shard"
-	quest.60F000000000000E.quest_desc: [
-		"&3Sculk&r - XP blocks and redstone-by-sound. Turn in the &bSculk Froglight&r."
-	]
+	quest.60F000000000000E.quest_desc: ["Craft a &bSculk Slime in a Bucket&r in a Dissolution Chamber, feed your &aVoid Frog&r, and turn in the &6Sculk Froglight&r."]
 	quest.60F000000000000E.quest_subtitle: "It listens."
 	quest.60F000000000000E.title: "Sculk"
 	quest.60F0000000000017.quest_desc: [
@@ -1679,17 +1507,13 @@
 	]
 	quest.60F0000000000017.quest_subtitle: "The hardest fight, the best enchants."
 	quest.60F0000000000017.title: "Wake the Warden"
-	quest.60F0000000000011.quest_desc: [
-		"&dShulker Shells&r - shulker boxes, the only portable storage that survives the void."
-		""
-		"No shulker hunt required. Turn in the &bShulker Shell Froglight&r."
-	]
+	quest.60F0000000000011.quest_desc: ["Craft a &bShulker Shell Slime in a Bucket&r in a Dissolution Chamber, feed your &aVoid Frog&r, and turn in the &6Shulker Shell Froglight&r."]
 	quest.60F0000000000011.quest_subtitle: "Boxes that come with you."
 	quest.60F0000000000011.title: "Shulker Shell"
 	quest.60F0000000000019.quest_desc: [
 		"A &5Void Frog&r never produces the &eExperience&r variant on its own. You make this one by hand: right-click a &bVoid Slime&r with a plain &fbook&r and it takes on the experience variant. The &eDissolution Chamber&r does the same in bulk, a book run with soul soil, sweetslime, and latex."
 		""
-		"Feed the slime to a Void Frog and turn in the &bExperience Froglight&r it leaves. Smelt that into a &aBottle o' Enchanting&r."
+		"Feed the slime to a Void Frog and turn in the &6Experience Froglight&r it leaves. Smelt that into a &aBottle o' Enchanting&r."
 	]
 	quest.60F0000000000019.quest_subtitle: "The one the frog won't make."
 	quest.60F0000000000019.title: "Experience"
@@ -1764,11 +1588,7 @@
 	]
 	quest.6A0D00000000000E.quest_subtitle: "Thanks for playing."
 	quest.6A0D00000000000E.title: "You Out-Frogged the Game"
-	quest.54E5F6A1B2C30041.quest_desc: [
-		"A reusable net that scoops a frog into the item with a right-click and sets it back down where you right-click a block. The frog rides along &awhole&r - species, bred Appetite/Bounty/Reach, name, all of it - so you can move a prize frog without leashing it across the water (or killing it)."
-		""
-		"Six string and a stick - cheap enough to keep on your hotbar from day one. Relocate your starter frog, rearrange a pond, or restock a Terrarium later, no leash required."
-	]
+	quest.54E5F6A1B2C30041.quest_desc: ["A reusable net: right-click a frog to catch it, right-click a block to set it down. It keeps everything - species, stats, and name - so you can move a frog anywhere."]
 	quest.54E5F6A1B2C30041.quest_subtitle: "Catch and carry, stats intact."
 	quest.54E5F6A1B2C30041.title: "The Frog Net"
 	quest.601D00000000001D.quest_desc: [

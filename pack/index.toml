@@ -410,7 +410,7 @@ hash = "326dc051f381ee12b5e4c746ce008b1ce2f23773b23240582a8861dd17b1e098"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
-hash = "8c3b7e8e8b50308174b03bd05effac98103ca42daccee68429109ea56ebd55a0"
+hash = "282cd334b09bc5871624b326cc6c77726dd4c34b4f51c8b56c302375d9fa099e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/whole_pond.snbt"
@@ -426,7 +426,7 @@ hash = "4889c5e7d4a8179b45e68f0ac00119529ed49ba68f20624b36e996bb0d60ddd0"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "15a715c663f51d68b8955d57b9a8dbe06ae7c9aaeab17b79790d9f0fe29614cd"
+hash = "0bcef42d5bd31762a4feb3a13d98660cabe9bbae3b918ef4bd2fd794b69e624a"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
