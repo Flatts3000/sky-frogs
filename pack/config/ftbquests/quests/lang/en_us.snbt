@@ -30,18 +30,14 @@
 	quest.01A8E068925B319F.quest_desc: [
 		"An island of grass, floating in the void. That's the whole world - no ore under it, nowhere to dig."
 		""
-		"What you've got instead is &afrogs&r. Feed one the right slime and it gives back the resource you'd normally mine for."
+		"Instead, you hatch your own &afrogs&r. Feed one the right slime and it gives back the resource you'd normally mine for."
 		""
-		"Follow the quest book. Work from Cave tier up to Void tier, hatch frogs that can eat the Wither and the Ender Dragon, and fill your pond with all kinds of frog-related goodness."
+		"Follow the quest book. Work from Cave tier up to Void tier, hatch frogs that can eat the Wither and the Ender Dragon."
 	]
 	quest.01A8E068925B319F.quest_subtitle: "Start here."
 	quest.01A8E068925B319F.title: "Welcome to Sky Frogs"
 	quest.05BFA1537298A589.quest_desc: [
-		"Here's the whole trick:"
-		""
-		"A &bResource Slime&r, fed to its matching &aFrog&r, comes back out as a &eFroglight&r loaded with that resource. Smelt the Froglight, pocket the ingot."
-		""
-		"Iron, gold, diamond, ender - every one of them is just a frog you haven't met yet."
+		"Instead of mining, you get your materials from &afrogs&r. Feed a &aFrog&r its matching &bResource Slime&r and it makes a &eFroglight&r. Smelt the Froglight to get the resource."
 	]
 	quest.05BFA1537298A589.quest_subtitle: "The whole pitch, in three words."
 	quest.05BFA1537298A589.title: "Frogs, Not Pickaxes"
@@ -259,11 +255,9 @@
 	quest.32C3D4E5F6A10031.quest_subtitle: "Skip the night."
 	quest.32C3D4E5F6A10031.title: "A Bed of Your Own"
 	quest.378B93672C31CF5D.quest_desc: [
-		"Your first frog is the &eCave Frog&r. It deals in the things you'd normally swing a pickaxe for: iron, copper, gold, and the rest of the stone-and-ore crowd."
+		"Your first frog is the &eCave Frog&r. It gets you ingots and other cave resources: iron, copper, gold, and the rest of the cave tier."
 		""
-		"Tier 0 is just getting on your feet - water, stone, a dark room, and a slime farm. Then the frogs take over."
-		""
-		"Let's get you there."
+		"First you need to get the basics done. You need glass for bottles, cobblestone, a mob farm for slime balls. Then you'll be able to hatch your first Cave Frog."
 	]
 	quest.378B93672C31CF5D.quest_subtitle: "Everything points at iron."
 	quest.378B93672C31CF5D.title: "The Road to Iron"
@@ -718,7 +712,7 @@
 	]
 	quest.71DE00000000001A.quest_subtitle: "Tier 4 opens."
 	quest.71DE00000000001A.title: "First Prismarine"
-	quest.79D9A7438B1DD129.quest_desc: ["Plant a sapling, grow a tree, punch it. Everything starts with wood - even a frog empire."]
+	quest.79D9A7438B1DD129.quest_desc: ["Start by punching wood. Get an oak log from your first tree."]
 	quest.79D9A7438B1DD129.quest_subtitle: "Something under your feet."
 	quest.79D9A7438B1DD129.title: "Wood to Stand On"
 	quest.70E0000000000004.quest_desc: [
