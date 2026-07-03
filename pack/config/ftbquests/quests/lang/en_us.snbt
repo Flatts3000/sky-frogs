@@ -102,11 +102,7 @@
 	quest.21B2C3D4E5F60001.quest_desc: ["Craft an Oak Barrel. It catches rain for more water than the one bucket you start with."]
 	quest.21B2C3D4E5F60001.quest_subtitle: "Water from the sky."
 	quest.21B2C3D4E5F60001.title: "A Rain Barrel"
-	quest.21B2C3D4E5F60011.quest_desc: [
-		"Those shears aren't for sheep. Run them across your oak leaves and the leaves come off as whole blocks - the one thing an Oak Crucible knows how to drink."
-		""
-		"Shear sixteen."
-	]
+	quest.21B2C3D4E5F60011.quest_desc: ["Shear your oak leaves for whole leaf blocks. The Oak Crucible melts them into water."]
 	quest.21B2C3D4E5F60011.quest_subtitle: "Leaves, whole."
 	quest.21B2C3D4E5F60011.title: "Strip the Leaves"
 	quest.21B2C3D4E5F60021.quest_desc: [
@@ -233,25 +229,13 @@
 	quest.32C3D4E5F6A10001.quest_desc: ["Break oak leaves with a Crook for extra drops: saplings to replant, and the occasional &eSilkworm&r."]
 	quest.32C3D4E5F6A10001.quest_subtitle: "For leaves, gently."
 	quest.32C3D4E5F6A10001.title: "A Crook"
-	quest.32C3D4E5F6A10011.quest_desc: [
-		"Crook your leaves until a Silkworm drops, then set it loose on a leaf block. It chews its way outward, infesting the leaves around it."
-		""
-		"Infested leaves are where your string comes from."
-	]
+	quest.32C3D4E5F6A10011.quest_desc: ["Crook oak leaves until a Silkworm drops, then place it on a leaf block. It spreads outward, infesting the leaves around it. Those infested leaves are what give string."]
 	quest.32C3D4E5F6A10011.quest_subtitle: "Shake the trees."
 	quest.32C3D4E5F6A10011.title: "Silkworms"
-	quest.32C3D4E5F6A10021.quest_desc: [
-		"Once your leaves are &efully infested&r, run the Crook back across them - now they shed &fstring&r instead of silkworms. No spider required."
-		""
-		"Here's a &eMagnet&r to vacuum it up while you work. Toggle it on, then crook your way to more than four string for what's next."
-	]
+	quest.32C3D4E5F6A10021.quest_desc: ["Once your leaves are &efully infested&r, crook them again and they drop &fstring&r instead of silkworms. Get four."]
 	quest.32C3D4E5F6A10021.quest_subtitle: "No spiders required."
 	quest.32C3D4E5F6A10021.title: "String from Silk"
-	quest.32C3D4E5F6A10031.quest_desc: [
-		"Four string crafts into wool; three wool and three planks make a bed."
-		""
-		"Sleep through the night and set your spawn somewhere that isn't the open void."
-	]
+	quest.32C3D4E5F6A10031.quest_desc: ["Craft a bed from your string. Sleep in it to skip the night and set your spawn point."]
 	quest.32C3D4E5F6A10031.quest_subtitle: "Skip the night."
 	quest.32C3D4E5F6A10031.title: "A Bed of Your Own"
 	quest.378B93672C31CF5D.quest_desc: [
