@@ -414,7 +414,7 @@
 	]
 	quest.6C1F0A2B3D4E5F6D.quest_subtitle: "Press out the milk."
 	quest.6C1F0A2B3D4E5F6D.title: "Milk It"
-	quest.6C1F0A2B3D4E5F70.quest_desc: ["A &eCave Frog&r eats an &aIron Slime&r and drops an &6Iron Froglight&r."]
+	quest.6C1F0A2B3D4E5F70.quest_desc: ["A &aCave Frog&r eats an &aIron Slime&r and drops an &6Iron Froglight&r."]
 	quest.6C1F0A2B3D4E5F70.quest_subtitle: "Slime in, Froglight out."
 	quest.6C1F0A2B3D4E5F70.title: "Feed the Frog"
 	quest.6C1F0A2B3D4E5F73.quest_desc: ["Smelt the &6Iron Froglight&r in a furnace for an iron ingot."]
