@@ -265,9 +265,9 @@
 	quest.43D4E5F6A1B20001.quest_subtitle: "Stone beats fist."
 	quest.43D4E5F6A1B20001.title: "Tools of the Trade"
 	quest.43D4E5F6A1B20011.quest_desc: [
-		"Water and lava, one block apart, make cobble forever. You've already got a bucket of each from the Road to Iron - set up the generator and chip off a stack."
+		"A cobblestone generator makes cobblestone wherever flowing lava runs into water. Mine it and it reforms, so you never run out."
 		""
-		"Then take the &eIron Hammer&r. It turns grey rock into other, more useful grey rock."
+		"Let the lava flow into the water, not water onto the lava source: flowing lava makes cobblestone, but a lava source touched by water turns to obsidian."
 	]
 	quest.43D4E5F6A1B20011.quest_subtitle: "The first renewable rock."
 	quest.43D4E5F6A1B20011.title: "Cobblestone"
