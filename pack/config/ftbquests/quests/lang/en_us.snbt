@@ -257,18 +257,18 @@
 		"The &eStone Block Generator&r makes cobblestone on its own. Place water on one side, lava on the other, and storage on top."
 	]
 	quest.43D4E5F6A1B20041.quest_subtitle: "Rock, on tap."
-	quest.43D4E5F6A1B20041.title: "Cobblestone Generator"
+	quest.43D4E5F6A1B20041.title: "Stone Block Generator"
 	quest.54E5F6A1B2C30001.quest_desc: ["&aCave Slimes&r spawn in the dark. Build a sealed, unlit room &eat least 5x5 and 3 blocks tall&r. Nothing spawns within &b24 blocks&r of you, so step away and let it fill, then cut the slimes down for &eslime balls&r."]
 	quest.54E5F6A1B2C30001.quest_subtitle: "Where slimes feel safe."
 	quest.54E5F6A1B2C30001.title: "A Dark Room"
 	quest.54E5F6A1B2C30011.quest_desc: ["A &acomposter&r turns spare saplings, leaves, and seeds into &ebone meal&r."]
 	quest.54E5F6A1B2C30011.quest_subtitle: "Rot into green."
 	quest.54E5F6A1B2C30011.title: "A Composter"
-	quest.54E5F6A1B2C30021.quest_desc: ["&aThe Spawnery&r runs like a furnace: a &fglass bottle&r, a slime ball for fuel, and a &eprimer&r that sets which frog you get. Out comes that frog's egg in the bottle."]
+	quest.54E5F6A1B2C30021.quest_desc: ["&aThe Spawnery&r runs like a furnace: a &fglass bottle&r, a slime ball for fuel, and a resource that sets which frog you get. Out comes that frog's egg in the bottle."]
 	quest.54E5F6A1B2C30021.quest_subtitle: "The frog factory."
 	quest.54E5F6A1B2C30021.title: "The Spawnery"
 	quest.54E5F6A1B2C30031.quest_desc: [
-		"Insert &acobblestone&r (the Cave frog's resource), a slime ball for fuel, and a glass bottle into the Spawnery. Out comes a &eBottle of Cave Frog Eggs&r."
+		"Insert &acobblestone&r (the Cave Frog's resource), a slime ball for fuel, and a glass bottle into the Spawnery. Out comes a &eBottle of Cave Frog Eggs&r."
 		""
 		"Make &btwo&r for a breeding pair, then right-click them onto a water source block to hatch."
 	]
@@ -1588,7 +1588,7 @@
 	]
 	quest.6A0D00000000000E.quest_subtitle: "Thanks for playing."
 	quest.6A0D00000000000E.title: "You Out-Frogged the Game"
-	quest.54E5F6A1B2C30041.quest_desc: ["A reusable net: right-click a frog to catch it, right-click a block to set it down. It keeps everything - species, bred Appetite/Bounty/Reach, and name - so you can move a bred-up frog anywhere."]
+	quest.54E5F6A1B2C30041.quest_desc: ["A reusable net: right-click a frog to catch it, right-click a block to set it down. It keeps everything - species, stats, and name - so you can move a frog anywhere."]
 	quest.54E5F6A1B2C30041.quest_subtitle: "Catch and carry, stats intact."
 	quest.54E5F6A1B2C30041.title: "The Frog Net"
 	quest.601D00000000001D.quest_desc: [
