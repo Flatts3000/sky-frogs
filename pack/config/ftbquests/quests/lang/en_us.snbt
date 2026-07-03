@@ -99,7 +99,7 @@
 	]
 	quest.1F0000000000001A.quest_subtitle: "Pour fluids, no bucket."
 	quest.1F0000000000001A.title: "Fluid Placer"
-	quest.21B2C3D4E5F60001.quest_desc: ["Craft an Oak Barrel and leave it out in the weather. It catches rain - which, on an island with one bucket of water, is the start of having two."]
+	quest.21B2C3D4E5F60001.quest_desc: ["Craft an Oak Barrel. It catches rain for more water than the one bucket you start with."]
 	quest.21B2C3D4E5F60001.quest_subtitle: "Water from the sky."
 	quest.21B2C3D4E5F60001.title: "A Rain Barrel"
 	quest.21B2C3D4E5F60011.quest_desc: [
@@ -230,7 +230,7 @@
 	]
 	quest.2A5700000A570031.quest_subtitle: "Give them names."
 	quest.2A5700000A570031.title: "Name Your Frogs"
-	quest.32C3D4E5F6A10001.quest_desc: ["Four sticks make a Crook. Drag it across oak leaves and they give up far more than bare hands would - saplings to replant, and now and then a wriggling &eSilkworm&r."]
+	quest.32C3D4E5F6A10001.quest_desc: ["Break oak leaves with a Crook for extra drops: saplings to replant, and the occasional &eSilkworm&r."]
 	quest.32C3D4E5F6A10001.quest_subtitle: "For leaves, gently."
 	quest.32C3D4E5F6A10001.title: "A Crook"
 	quest.32C3D4E5F6A10011.quest_desc: [
@@ -261,7 +261,7 @@
 	]
 	quest.378B93672C31CF5D.quest_subtitle: "Everything points at iron."
 	quest.378B93672C31CF5D.title: "The Road to Iron"
-	quest.43D4E5F6A1B20001.quest_desc: ["A wooden pickaxe: three planks, two sticks. It's the one mining tool you'll bother crafting - strictly for cobble. The frogs cover everything else."]
+	quest.43D4E5F6A1B20001.quest_desc: ["A wooden pickaxe will help you get the cobblestone you need."]
 	quest.43D4E5F6A1B20001.quest_subtitle: "Stone beats fist."
 	quest.43D4E5F6A1B20001.title: "Tools of the Trade"
 	quest.43D4E5F6A1B20011.quest_desc: [
