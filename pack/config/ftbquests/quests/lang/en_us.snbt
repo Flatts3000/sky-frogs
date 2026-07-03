@@ -386,70 +386,38 @@
 	quest.65F6A1B2C3D40001.quest_subtitle: "Work less, frog more."
 	quest.65F6A1B2C3D40001.title: "Two Shortcuts"
 	quest.6C1F0A2B3D4E5F61.quest_desc: [
-		"Before you hatch a single frog, build them somewhere to live, and somewhere they can't leave."
+		"Before you hatch frogs, build a pen they can't jump out of. Frogs jump high, and one that clears the wall is gone into the void. Build tall walls, or cap it with a roof."
 		""
-		"Frogs jump, and they jump high. You're on an island in the void, so a frog that clears your wall isn't hopping back, it's gone for good. Don't trust a low fence. Build the walls tall, or cap the pen with a roof or an overhang."
+		"Sink a &bwater&r pool into the floor, &b3x3 and two deep&r. Eggs hatch there, and a breeding pair lays there; a roomy pool is more reliable than a one-block puddle."
 		""
-		"Sink a &bwater&r pool into the floor, &b3x3 and two deep&r. It's where eggs hatch and where a breeding pair goes to lay, and a roomy pool works far more reliably than a one-block puddle."
-		""
-		"Floor the pen with &emud&r (make it by using a water bottle on a block of dirt). Frogs and just-grown tadpoles rest on mud safely instead of suffocating against bare walls."
-		""
-		"Tadpoles are fragile. They have to stay in the water until they grow, a couple of minutes, and one stranded on land dies. Keep the pool roomy and leave them be."
+		"Tadpoles are fragile: they must stay in the water the couple of minutes it takes them to grow, and one stranded on land dies."
 	]
 	quest.6C1F0A2B3D4E5F61.quest_subtitle: "Build them a home."
 	quest.6C1F0A2B3D4E5F61.title: "A Place for Frogs"
-	quest.6C1F0A2B3D4E5F64.quest_desc: [
-		"A wall helps. A &eLead&r helps more - clip one to a frog and it stays put while your back is turned."
-		""
-		"Four &fstring&r and one &aslime ball&r make two leads, and you already have both: string from your silkworms, slime balls from the dark room."
-		""
-		"Craft a lead. Leash your frogs the moment they hatch."
-	]
+	quest.6C1F0A2B3D4E5F64.quest_desc: ["A &eLead&r ties a frog to a fence so it can't hop off the island. Leash each frog once it grows up."]
 	quest.6C1F0A2B3D4E5F64.quest_subtitle: "A leash for the ledge."
 	quest.6C1F0A2B3D4E5F64.title: "Keep Them Close"
-	quest.6C1F0A2B3D4E5F67.quest_desc: [
-		"Slimes won't hand over their milk on their own - you need a press."
-		""
-		"The &eSlime Milker&r is it: planks, cobblestone, and a slime ball. Drop a bucketed slime in the top, give it a few seconds, and it squeezes a bucket of that slime's milk back out."
-		""
-		"Build one. And take a spare &fbucket&r - iron's tight out here, and you'll want it for what comes next."
-	]
+	quest.6C1F0A2B3D4E5F67.quest_desc: ["The &eSlime Milker&r takes a &bSlime in a Bucket&r and, a few seconds later, turns it into a bucket of that slime's milk."]
 	quest.6C1F0A2B3D4E5F67.quest_subtitle: "Milk a slime, somehow."
 	quest.6C1F0A2B3D4E5F67.title: "The Slime Milker"
 	quest.6C1F0A2B3D4E5F6A.quest_desc: [
-		"Productive Frogs wants an iron ingot to make an Iron Slime - and you don't have one. So we cheat, exactly once."
+		"Your &aCave Frogs&r will need slimes to eat. First craft an &bIron Slime in a Bucket&r. This is the first of many resource slimes you'll create."
 		""
-		"Combine a &eBottle of Cave Frog Eggs&r, &aslime balls&r, &fstring&r, &6bone meal&r, and that spare &fbucket&r into a &bBucket of Iron Slime&r. It's the only iron-free Iron Slime you'll ever make."
-		""
-		"This is the seed. Every scrap of iron from here on grows out of it."
+		"Hold on to at least one bucket of slime, one bucket of slime milk, or a &6Froglight&r of each resource, or you may have to craft up the chain all over again."
 	]
 	quest.6C1F0A2B3D4E5F6A.quest_subtitle: "Iron you can pour."
 	quest.6C1F0A2B3D4E5F6A.title: "Iron Slime in a Bucket"
 	quest.6C1F0A2B3D4E5F6D.quest_desc: [
-		"Drop your &bBucket of Iron Slime&r into the Slime Milker's top slot. A few seconds and it presses out a bucket of &bIron Slime Milk&r."
+		"Run your &bIron Slime in a Bucket&r through the &eSlime Milker&r for a bucket of &bIron Slime Milk&r."
 		""
-		"Empty that bucket on the ground and &aIron Slimes&r spawn from the pool it makes. It isn't bottomless, though. After a batch it runs dry, so milk the slimes you catch for fresh buckets and the loop feeds itself."
-		""
-		"That refill loop holds you until the &2Geode&r tier and its &bSlime Milk catalysts&r. An &bEndless Catalyst&r dropped into a pool keeps it from &eever running dry&r. Not far off now."
-		""
-		"Here's a &eDiamond Stick&r to speed up building out your base."
+		"Empty that bucket on the ground and it spawns &aIron Slimes&r. The pool runs dry after a batch, so catch and milk those slimes for more buckets to keep it going."
 	]
 	quest.6C1F0A2B3D4E5F6D.quest_subtitle: "Press out the milk."
 	quest.6C1F0A2B3D4E5F6D.title: "Milk It"
-	quest.6C1F0A2B3D4E5F70.quest_desc: [
-		"Here's where the two paths meet. Drop an &aIron Slime&r in with your &eCave Frogs&r and wait - the frog gulps it down and leaves a glowing &6Iron Froglight&r behind, the resource sealed inside."
-		""
-		"This is the moment the void promised you: a frog making iron out of nothing you had to mine."
-	]
+	quest.6C1F0A2B3D4E5F70.quest_desc: ["A &eCave Frog&r eats an &aIron Slime&r and drops an &6Iron Froglight&r."]
 	quest.6C1F0A2B3D4E5F70.quest_subtitle: "Slime in, Froglight out."
 	quest.6C1F0A2B3D4E5F70.title: "Feed the Frog"
-	quest.6C1F0A2B3D4E5F73.quest_desc: [
-		"One &6Iron Froglight&r, one furnace. Smelt it and it runs down into a bar of plain &firon&r."
-		""
-		"There it is - your first iron ingot, grown on an island that had none, and not one swing of a pickaxe to show for it."
-		""
-		"Now scale it. The frogs don't tire."
-	]
+	quest.6C1F0A2B3D4E5F73.quest_desc: ["Smelt the &6Iron Froglight&r in a furnace for an iron ingot."]
 	quest.6C1F0A2B3D4E5F73.quest_subtitle: "No ore was harmed."
 	quest.6C1F0A2B3D4E5F73.title: "Your First Iron Ingot"
 	quest.6E0DE00000000002.quest_desc: [
