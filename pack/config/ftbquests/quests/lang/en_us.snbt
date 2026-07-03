@@ -271,20 +271,14 @@
 	]
 	quest.43D4E5F6A1B20011.quest_subtitle: "The first renewable rock."
 	quest.43D4E5F6A1B20011.title: "Cobblestone"
-	quest.43D4E5F6A1B20021.quest_desc: [
-		"The &eIron Hammer&r earns its keep here: pound cobblestone into gravel, then gravel into sand."
-		""
-		"A beach, one swing at a time."
-	]
+	quest.43D4E5F6A1B20021.quest_desc: ["Use the &eIron Hammer&r to crush cobblestone into gravel, and the gravel into sand."]
 	quest.43D4E5F6A1B20021.quest_subtitle: "Crushed from cobble."
 	quest.43D4E5F6A1B20021.title: "Sand"
-	quest.43D4E5F6A1B20031.quest_desc: ["Smelt that sand into glass. The charcoal you just earned makes fine furnace fuel."]
+	quest.43D4E5F6A1B20031.quest_desc: ["Smelt that sand into glass."]
 	quest.43D4E5F6A1B20031.quest_subtitle: "Sand, meet fire."
 	quest.43D4E5F6A1B20031.title: "Glass"
 	quest.43D4E5F6A1B20041.quest_desc: [
-		"Six smooth stone around two glass blocks builds a &eStone Block Generator&r - it churns out stone on its own, no water-and-lava rig to babysit."
-		""
-		"Tier 0's groundwork is poured. Time to go meet some frogs."
+		"The &eStone Block Generator&r makes cobblestone on its own. Place water on one side, lava on the other, and storage on top."
 	]
 	quest.43D4E5F6A1B20041.quest_subtitle: "Rock, on tap."
 	quest.43D4E5F6A1B20041.title: "Cobblestone Generator"
