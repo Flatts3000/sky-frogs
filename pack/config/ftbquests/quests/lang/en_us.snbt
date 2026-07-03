@@ -24,17 +24,15 @@
 		"Sky Frogs is built from player feedback - half of every update starts as somebody's message on the community Discord. Bugs, suggestions, screenshots of your pond: it all shapes the pack."
 		""
 		"Click the &9Discord badge&r floating above this quest to open an invite, or type &bdiscord.gg/r6MhZ73nsM&r into your browser."
-		""
-		"No pressure - tick the box either way and get back to your frogs."
 	]
 	quest.111D15C0DE000001.quest_subtitle: "The other frogs are waiting."
 	quest.111D15C0DE000001.title: "Join the Pond"
 	quest.01A8E068925B319F.quest_desc: [
-		"You're stranded on a speck of dirt in the void. No ore, no mineshafts, not so much as a mountain to feel bad about."
+		"An island of grass, floating in the void. That's the whole world - no ore under it, nowhere to dig."
 		""
-		"What you've got is &afrogs&r - and out here, that turns out to be the same thing as a mine."
+		"What you've got instead is &afrogs&r. Feed one the right slime and it gives back the resource you'd normally mine for."
 		""
-		"This book is the plan. Follow it and you'll never swing a pickaxe at stone again."
+		"Follow the quest book. Work from Cave tier up to Void tier, hatch frogs that can eat the Wither and the Ender Dragon, and fill your pond with all kinds of frog-related goodness."
 	]
 	quest.01A8E068925B319F.quest_subtitle: "Start here."
 	quest.01A8E068925B319F.title: "Welcome to Sky Frogs"
