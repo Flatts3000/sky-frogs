@@ -815,16 +815,16 @@
 	quest.51F0000000000021.quest_subtitle: "Slippery when hot."
 	quest.51F0000000000021.title: "Magma Cream"
 	quest.51F0000000000024.quest_desc: [
-		"Brew a &dsplash&r or &dlingering potion&r and throw it at any slime before its frog can eat it. The &dFroglight&r that drops captures the effect. Place it and right-click to switch the aura on, and everything in range feels it, for good or ill. A &aRegeneration&r room patches you up; a &cPoison&r perimeter greets visitors. Held in your hand instead, the buff is yours alone."
+		"Brew a &dsplash&r or &dlingering potion&r and throw it at a slime before its frog eats it. The &6Froglight&r that drops carries the potion's effect. Place it and right-click to switch the aura on: everything in range gets the effect. Hold it in your hand instead and the buff is yours alone."
 		""
-		"You already have the makings: blaze rods from the frog, nether wart grown on frog-made soul sand, a brewing stand. This one runs on the honor system, so check the box once you've bottled your first aura."
+		"This one's on the honor system, so check it off once you've made your first brewed Froglight."
 	]
 	quest.51F0000000000024.quest_subtitle: "The frog sommelier."
 	quest.51F0000000000024.title: "Pop the Cork"
 	quest.51F0000000000027.quest_desc: [
-		"With Curios installed, a brewed Froglight rides a dedicated &dFroglight charm slot&r and buffs you while worn - the aura without giving up a hand or a hotbar slot. One light, one slot, always on."
+		"With &dCurios&r installed, a brewed &6Froglight&r goes in its own &dFroglight slot&r and buffs you the whole time it's worn: the same personal effect as holding one, without tying up a hand or a hotbar slot."
 		""
-		"Honor system again: check the box once you are wearing the weather."
+		"Honor system again, so check it off once you're wearing one."
 	]
 	quest.51F0000000000027.quest_subtitle: "Wearable weather."
 	quest.51F0000000000027.title: "Charmed, I'm Sure"
@@ -1058,11 +1058,7 @@
 	]
 	quest.3E17000000000011.quest_subtitle: "Two for one."
 	quest.3E17000000000011.title: "The Tower"
-	quest.51F0000000000002.quest_desc: [
-		"Netherrack was just the floor. Now the &cInfernal&r frog gives you everything the Nether was hiding:"
-		""
-		"obsidian, quartz, glowstone, blaze, and the metal at the bottom of it all."
-	]
+	quest.51F0000000000002.quest_desc: ["The &cInfernal frog&r covers the whole Nether now: obsidian, quartz, glowstone, blaze rods, and netherite scrap at the bottom of the chain. Same loop as every tier before, one resource at a time down the list."]
 	quest.51F0000000000002.quest_subtitle: "The Nether chain opens."
 	quest.51F0000000000002.title: "Beyond Netherrack"
 	quest.51F0000000000005.quest_desc: ["Craft a &bQuartz Slime in a Bucket&r in a Dissolution Chamber, feed your &aInfernal Frog&r, and turn in the &6Quartz Froglight&r."]
@@ -1084,26 +1080,20 @@
 	quest.51F0000000000014.quest_subtitle: "The metal at the bottom."
 	quest.51F0000000000014.title: "Netherite Scrap"
 	quest.51F0000000000017.quest_desc: [
-		"&cNetherrack&r feeds the &eDissolution Chamber&r to make an &8Obsidian Slime&r - the other portal stone, no bucket-and-lava dance required."
+		"The &eDissolution Chamber&r presses an &8Obsidian Slime&r from &cnetherrack&r (plus prismarine filler, sweetslime, and latex)."
 		""
-		"Tier 5 slimes are chamber-only. Raise the Obsidian frog, turn in the &8Obsidian Froglight&r, and smelt it for &8obsidian&r whenever you need it."
+		"From Tier 5 on there's no crafting-table chain, so the chamber is the only way to make these slimes. Feed it to your Infernal frog and turn in the &6Obsidian Froglight&r."
 	]
 	quest.51F0000000000017.quest_subtitle: "The portal stone, on tap."
 	quest.51F0000000000017.title: "Obsidian"
 	chapter.52E0000000000001.title: "The Network"
-	quest.52E0000000000002.quest_desc: [
-		"Every &eRefined Storage&r part starts here: &biron&r forged with &enether quartz&r. Until the Infernal frog gave you quartz, none of this was buildable. Now it all is."
-	]
+	quest.52E0000000000002.quest_desc: ["Most &eRefined Storage&r parts are built from &bQuartz Enriched Iron&r: iron plus nether quartz. Quartz comes from your Infernal frog, so none of the network was buildable until this tier."]
 	quest.52E0000000000002.quest_subtitle: "The key the whole network turns on."
 	quest.52E0000000000002.title: "Quartz Enriched Iron"
-	quest.52E0000000000005.quest_desc: [
-		"The &eController&r is the network. Feed it &bForge Energy&r from your Geode-era Mekanism setup and everything downstream wakes up."
-	]
+	quest.52E0000000000005.quest_desc: ["The &eController&r runs the network. Feed it &bForge Energy&r from your Geode-era Mekanism setup; nothing else works until it has power."]
 	quest.52E0000000000005.quest_subtitle: "The heart that powers it."
 	quest.52E0000000000005.title: "The Controller"
-	quest.52E0000000000008.quest_desc: [
-		"The &eGrid&r is the terminal - search, sort, and pull any item in the network from one screen."
-	]
+	quest.52E0000000000008.quest_desc: ["The &eGrid&r is the network terminal: one screen to search your whole system and pull out any item in it."]
 	quest.52E0000000000008.quest_subtitle: "Your window into everything."
 	quest.52E0000000000008.title: "The Grid"
 	quest.52E000000000000B.quest_desc: [
@@ -1131,9 +1121,7 @@
 	]
 	quest.52E0000000000019.quest_subtitle: "Craft straight from storage."
 	quest.52E0000000000019.title: "Crafting Grid"
-	quest.52E000000000001C.quest_desc: [
-		"A &ePattern Grid&r records a recipe; an &eAutocrafter&r runs it on demand. Request an item and the network crafts the whole tree itself. The Infernal verb, complete - the network now runs the base for you."
-	]
+	quest.52E000000000001C.quest_desc: ["A &ePattern Grid&r records a recipe; an &eAutocrafter&r holds the patterns and crafts on demand. Request an item and the network builds the whole tree for you, sub-recipes and all."]
 	quest.52E000000000001C.quest_subtitle: "Ask, and it builds."
 	quest.52E000000000001C.title: "Autocrafting"
 	quest.53A0000000000002.quest_desc: [
@@ -1204,26 +1192,16 @@
 	quest.53A000000000001A.quest_subtitle: "Hands off. It runs itself."
 	quest.53A000000000001A.title: "Hands Off"
 	chapter.53A0000000000001.title: "The Terrarium"
-	quest.5140000000000002.quest_desc: [
-		"There's no Nether to raid, they said. There is now - you just have to build the door. Make 10 &eobsidian&r for a portal frame (skip the corners), craft a &eflint and steel&r, and raise it. The void Nether waits beyond."
-	]
+	quest.5140000000000002.quest_desc: ["Build a nether portal to get there: frame it with 10 &eobsidian&r (the four corners are optional) and light it with a &eflint and steel&r."]
 	quest.5140000000000002.quest_subtitle: "Tide gave you wings. Now use them."
 	quest.5140000000000002.title: "A Portal to the Nether"
-	quest.5140000000000007.quest_desc: [
-		"Light the portal and walk in. The Nether here is a &cvoid&r - no floor, no ceiling, just dark and your jetpack. Fly."
-	]
+	quest.5140000000000007.quest_desc: ["Step through. This Nether is a &cvoid&r: open air with no ground under it. Wear your jetpack before you walk in, or you will fall with nothing to land on."]
 	quest.5140000000000007.quest_subtitle: "Step through."
 	quest.5140000000000007.title: "Into the Nether"
-	quest.514000000000000A.quest_desc: [
-		"Somewhere out in the dark a &cNether Fortress&r floats. Find it, fly to it, and mine its &eNether Bricks&r - the void Nether's one terrain block, and the key to the Infernal frog."
-	]
+	quest.514000000000000A.quest_desc: ["A &cNether Fortress&r floats somewhere out in the void. Fly to it and mine its &eNether Bricks&r - they prime the Infernal frog next quest."]
 	quest.514000000000000A.quest_subtitle: "The one thing you can't make yet."
 	quest.514000000000000A.title: "Raid a Fortress"
-	quest.514000000000000D.quest_desc: [
-		"Home again. Prime the &eSpawnery&r with your &eNether Bricks&r and it draws a &cBottle of Infernal Frog Eggs&r."
-		""
-		"The fortress trip was the toll; the frog automates the rest."
-	]
+	quest.514000000000000D.quest_desc: ["Prime the &eSpawnery&r with your &eNether Bricks&r and it gives a &cBottle of Infernal Frog Eggs&r."]
 	quest.514000000000000D.quest_subtitle: "Feed the bricks to the Spawnery."
 	quest.514000000000000D.title: "Infernal Frog Eggs"
 	quest.5140000000000010.quest_desc: [
@@ -1236,9 +1214,7 @@
 	]
 	quest.5140000000000013.quest_subtitle: "Netherrack Slime Milk."
 	quest.5140000000000013.title: "Milk It"
-	quest.5140000000000016.quest_desc: [
-		"Your Infernal frog eats a Netherrack Slime and leaves a &6Netherrack Froglight&r. Smelt it for &cnetherrack&r. From here the frog gives you the whole Nether - no more portal trips."
-	]
+	quest.5140000000000016.quest_desc: ["Feed a Netherrack Slime to your Infernal frog for a &6Netherrack Froglight&r, then smelt it for &cnetherrack&r. The rest of the Nether's blocks come off the same frog from here - no more portal trips."]
 	quest.5140000000000016.quest_subtitle: "Tier 5 opens."
 	quest.5140000000000016.title: "First Netherrack"
 	chapter_group.0C4F0E0000000006.title: "Tier 6: Void"
