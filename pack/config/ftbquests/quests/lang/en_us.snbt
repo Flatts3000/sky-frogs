@@ -992,16 +992,16 @@
 	quest.780700000000002F.title: "The Wither Altar"
 	chapter.7807000000000001.title: "Trophy Pond"
 	quest.7CA7E000C0DE0002.quest_desc: [
-		"You've pulled iron out of a frog. The Cave frog covers the rest of the pickaxe's old job: copper, gold, coal, glow ink, breeze rods, and redstone."
+		"You've pulled iron out of a frog. The same Cave Frog gives the rest: copper, gold, coal, glow ink, breeze rods, and redstone."
 		""
-		"Each one is a quest below. Work down the chain - every step threads off the milk from the step before it."
+		"Each is a quest below. Work down the chain in order: every slime bucket is crafted from the milk of the step before it."
 	]
 	quest.7CA7E000C0DE0002.quest_subtitle: "The Cave chain opens."
 	quest.7CA7E000C0DE0002.title: "Beyond Iron"
 	quest.7CA7E000C0DE0005.quest_desc: [
-		"The first new metal off the line. Craft a &bCopper Slime in a Bucket&r from your &eiron milk&r (plus four stone, three sweetslime, and a bottle of Cave Frog Eggs)."
+		"Craft a &bCopper Slime in a Bucket&r from your &eiron milk&r (plus four stone, three sweetslime, and a bottle of Cave Frog Eggs)."
 		""
-		"Then run the loop you already know: milk it, pour out the Copper Slime Milk, feed the slimes to a Cave Frog, and turn in the &6Copper Froglight&r it leaves. Smelt that Froglight for your copper ingot."
+		"Milk it, feed the slimes to a Cave Frog, and turn in the &6Copper Froglight&r. Smelt it for a copper ingot."
 	]
 	quest.7CA7E000C0DE0005.quest_subtitle: "The first new metal."
 	quest.7CA7E000C0DE0005.title: "Copper"
@@ -1017,18 +1017,10 @@
 	quest.7CA7E000C0DE0023.quest_desc: ["Craft a &bGlow Ink Sac Slime in a Bucket&r, feed your &aCave Frog&r, and turn in the &6Glow Ink Sac Froglight&r."]
 	quest.7CA7E000C0DE0023.quest_subtitle: "Glow without the squid."
 	quest.7CA7E000C0DE0023.title: "Glow Ink"
-	quest.7CA7E000C0DE0020.quest_desc: [
-		"A &eMob Filter&r is a solid wall to everything but one kind of thing. The &ePlayer&r filter only lets &fyou&r through, so you can seal a frog pen and still step into it - no ledge-lead needed."
-		""
-		"&7Dark Utilities&r ships the whole family: a &eSlime&r filter (handy when your whole economy is slimes), plus Hostile, Animal, Undead and more, each built the same way around a different center item. A &egolden pickaxe&r in the middle makes this one."
-	]
+	quest.7CA7E000C0DE0020.quest_desc: ["A &eMob Filter&r is a solid block to everything but one kind of thing. The &ePlayer&r filter only lets &fyou&r through, so you can seal a frog pen and still walk in without leaving a gap the frogs can escape through."]
 	quest.7CA7E000C0DE0020.quest_subtitle: "A wall just for you."
 	quest.7CA7E000C0DE0020.title: "Players Only"
-	quest.7CA7E000C0DE0029.quest_desc: [
-		"A &eMob Filter (Slime)&r reads as solid to you and your frogs, but slimes pass straight through it. Build it into your slime farm and it does the sorting for you: slimes go through, everything else - you, your frogs - gets stopped, so you can route the slimes wherever you handle them."
-		""
-		"Every &7Dark Utilities&r filter is made the same way around a different center item, and a &eslime ball&r in the middle makes this one. With an economy built entirely on slimes, it's the filter you'll reach for most."
-	]
+	quest.7CA7E000C0DE0029.quest_desc: ["A &eMob Filter (Slime)&r is solid to you and your frogs, but slimes pass straight through it. Build it into your slime farm and it sorts for you: the slimes pass to wherever you collect them, and nothing else does."]
 	quest.7CA7E000C0DE0029.quest_subtitle: "Only slimes get through."
 	quest.7CA7E000C0DE0029.title: "Slimes Only"
 	quest.7D00000000000002.quest_desc: [
