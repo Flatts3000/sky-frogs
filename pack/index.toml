@@ -1371,7 +1371,7 @@ metafile = true
 
 [[files]]
 file = "mods/productive-frogs.pw.toml"
-hash = "22f459432106b7a4367fc035351e7cb823058f152e0a7f6e39f4d1db5dc5ce7a"
+hash = "8b8cfd678796eb687d1c427a285d6c8da07774e61480fcc68691de1d1e701972"
 metafile = true
 
 [[files]]
@@ -1471,12 +1471,12 @@ metafile = true
 
 [[files]]
 file = "mods/sophisticated-backpacks.pw.toml"
-hash = "ac79566abd65c28e28c61f2d4064ddb8c3a436ce8c0cae56796205c735018042"
+hash = "fd502fdab7ff7b5cfa2926d346abd3609343392291b631e2e7683d919e1965d6"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
-hash = "bf07947f22b76c44347b5c78a09fdb107278f1b3847a48282f01ef4bbc94a86a"
+hash = "87f9453e31e66f9aff610e974888210997938592a3652c2e9d241ba7263194d6"
 metafile = true
 
 [[files]]
