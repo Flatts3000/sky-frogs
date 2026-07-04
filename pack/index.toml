@@ -370,7 +370,7 @@ hash = "00f911927c0a1a506391e5bda63c91710be7216819cd7067e0181fb2a1f311d4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/scaling_the_colony.snbt"
-hash = "dbb393db5acd82de046c0ce165274156de5a9e13cfa3f664140c8a22866e8d14"
+hash = "2c1c82f7991c58e7634459675b827ac82e128a3ddba0112cab74060af7cfacd7"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/sister_ponds.snbt"
@@ -426,7 +426,7 @@ hash = "4889c5e7d4a8179b45e68f0ac00119529ed49ba68f20624b36e996bb0d60ddd0"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "82743ffc65c967f7b248418f9cbc5c395edb0135e8ae3d824025924716e2fc4d"
+hash = "eaf63f45d72333994b1780347da18691a54e85b0c483deed70346ada0631470a"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
