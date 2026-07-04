@@ -522,105 +522,95 @@
 	quest.79D9A7438B1DD129.quest_subtitle: "Something under your feet."
 	quest.79D9A7438B1DD129.title: "Wood to Stand On"
 	quest.70E0000000000004.quest_desc: [
-		"Powah runs on &edielectric paste&r: three coals, two of your Bog frog's &bclay&r, and a bucket of lava. Every machine in this chapter is built on the stuff."
+		"Powah's base component, and every machine in this chapter needs it. Shapeless: three &fcoal&r, two &bclay&r off your &aBog frog&r, and a lava bucket."
 		""
-		"Mash up &a4&r."
+		"One craft makes 24, so a single batch covers the &a4&r this asks for and then some."
 	]
 	quest.70E0000000000004.quest_subtitle: "The clay gate."
 	quest.70E0000000000004.title: "Dielectric Paste"
-	quest.70E0000000000007.quest_desc: [
-		"Paste, a tiny capacitor, a casing, and a plain furnace build the &eFurnator&r - Powah's starter generator. Feed it anything that burns; your Coal frog keeps it stocked."
-		""
-		"Mekanism's Heat Generator got you here. This chapter is the scaling arc."
-	]
+	quest.70E0000000000007.quest_desc: ["Paste, a tiny capacitor, a &edielectric casing&r, and a plain furnace make the &eFurnator&r, Powah's starter generator. It burns any furnace fuel; &fcoal&r off your &aCave frog&r keeps it fed."]
 	quest.70E0000000000007.quest_subtitle: "A furnace that makes FE instead of food."
 	quest.70E0000000000007.title: "The Furnator"
 	quest.70E000000000000B.quest_desc: [
-		"An &eEnergy Cell&r buffers the Furnator's output so machines sip instead of starve."
+		"An &eEnergy Cell&r buffers power between your generator and your machines, so a draw spike doesn't starve anything."
 		""
-		"Cable runs come next - the reward helps you hide them inside any block you like."
+		"The reward is &ecable facades&r: they hide cable runs inside any block you like."
 	]
 	quest.70E000000000000B.quest_subtitle: "Store it before you spill it."
 	quest.70E000000000000B.title: "Bottled Lightning"
-	quest.70E000000000000E.quest_desc: [
-		"The &eEnergizing Orb&r crafts by burning raw FE: ring it with &eEnergizing Rods&r, give it power, drop materials in. Everything above starter tier comes through this thing."
-	]
+	quest.70E000000000000E.quest_desc: ["The &eEnergizing Orb&r is Powah's crafting station. Ring it with &eEnergizing Rods&r, feed it FE, and drop materials in to fuse them. Everything past starter tier is built here."]
 	quest.70E000000000000E.quest_subtitle: "Crafting, but with voltage."
 	quest.70E000000000000E.title: "The Energizing Orb"
 	quest.70E0000000000011.quest_desc: [
-		"Orb &firon&r and &6gold&r into &eEnergized Steel&r - then the pack's law kicks in: &amake a resource yourself once, and the Dissolution Chamber will slime it&r. Chamber a steel into an Energized Steel Slime, feed a Cave frog, and never orb it by hand again."
+		"Orb &firon&r and &6gold&r into &eEnergized Steel&r. That first craft satisfies the pack's chamber law: once you've made a resource by hand, the &eDissolution Chamber&r can slime it."
 		""
-		"Turn in the &6Energized Steel Froglight&r."
+		"Chamber a steel into an Energized Steel Slime, feed a &aCave frog&r, and turn in the &6Energized Steel Froglight&r. No more orbing it by hand."
 	]
 	quest.70E0000000000011.quest_subtitle: "Iron and gold walk into an orb."
 	quest.70E0000000000011.title: "Energized Steel"
 	quest.70E0000000000014.quest_desc: [
-		"No uraninite ore on a void skyblock - but the Orb presses &buraninite&r from &buranium ingots&r. Uranium has no ore here either; it sits near the end of the &aAll the Ores seed chain&r (osmium milk onward, same milk-and-eggs craft as the Cave metals), so raise a &aUranium frog&r and feed the Orb its harvest. A &aUraninite Slime&r can also turn up from a Cave frog's split, but one slime, however you get it, is all the chamber needs to scale the farm."
+		"No uraninite ore out here, but the Orb presses &buraninite&r from &buranium ingots&r. Uranium has no ore either - it's a late link in the &aAll the Ores&r metal chain off your &aCave frog&r (osmium milk onward, same milk-and-eggs craft as the other Cave metals)."
 		""
-		"Turn in the &6Uraninite Froglight&r."
+		"Raise uranium and feed the Orb. A Cave frog can also split off a Uraninite Slime on its own; either way, one slime scales the farm. Turn in the &6Uraninite Froglight&r."
 	]
 	quest.70E0000000000014.quest_subtitle: "The frog is the uranium mine."
 	quest.70E0000000000014.title: "Uraninite"
 	quest.70E0000000000017.quest_desc: [
-		"Powah's coolant - reactors and thermo setups want it cold. The Orb presses &bDry Ice&r from two &bblue ice&r - and blue ice is just 81 of your &bIce frog's&r produce, packed twice. (The Tide pool can also roll a Dry Ice Slime by split-discovery, if the frogs beat you to it.)"
+		"Powah's coolant, for reactors and thermo setups. The Orb presses &bDry Ice&r from two &bblue ice&r, and blue ice is 81 &bice&r packed twice - ice comes off your &eTide frog&r."
 		""
 		"Turn in the &6Dry Ice Froglight&r."
 	]
 	quest.70E0000000000017.quest_subtitle: "Cold storage."
 	quest.70E0000000000017.title: "Dry Ice"
 	quest.70E000000000001A.quest_desc: [
-		"The Orb wants &cblaze powder&r - four of it - for a &cBlazing Crystal&r. Your Infernal frog makes the rods; each rod cracks into two powder. Make a crystal yourself, chamber it, frog it."
+		"The Orb turns four &cblaze powder&r into a &cBlazing Crystal&r - two blaze rods' worth, off your &cInfernal frog&r. Make one, chamber it, feed the Infernal frog."
 		""
 		"Turn in the &6Blazing Froglight&r."
 	]
 	quest.70E000000000001A.quest_subtitle: "Powder in, crystal out."
 	quest.70E000000000001A.title: "Blazing Crystal"
 	quest.70E000000000001D.quest_desc: [
-		"Orbed from &bdiamonds&r - the crystal half is Geode-easy. The slime half rides a &5Void frog&r, so the farm waits for Tier 6."
+		"Orbed from a &bdiamond&r, easy off your Geode frog. The slime rides a &5Void frog&r, so the farm waits for Tier 6."
 		""
 		"Turn in the &6Niotic Froglight&r."
 	]
 	quest.70E000000000001D.quest_subtitle: "Diamonds, energized."
 	quest.70E000000000001D.title: "Niotic Crystal"
 	quest.70E0000000000020.quest_desc: [
-		"Orbed from &aemeralds&r - the second-highest rung on the ladder. Like Niotic, the slime is &5Void frog&r business."
+		"Orbed from an &aemerald&r, one rung below the top. Like Niotic, the slime is &5Void frog&r work."
 		""
 		"Turn in the &6Spirited Froglight&r."
 	]
 	quest.70E0000000000020.quest_subtitle: "Emeralds with a work ethic."
 	quest.70E0000000000020.title: "Spirited Crystal"
 	quest.70E0000000000023.quest_desc: [
-		"The top of Powah's ladder - and the Orb prices it accordingly: a &enether star&r (yes, that star), two redstone blocks, and a block of Blazing Crystal. Nitro machines outpace everything below by an order of magnitude; the slime, as ever up here, rides a &5Void frog&r."
+		"The top of Powah's ladder. The Orb wants a &enether star&r, two redstone blocks, and a block of &cBlazing Crystal&r, and pays out 16 at once. The slime rides a &5Void frog&r, like the rest up here."
 		""
 		"Turn in the &6Nitro Froglight&r."
 	]
 	quest.70E0000000000023.quest_subtitle: "Handle with tongs."
 	quest.70E0000000000023.title: "Nitro Crystal"
 	quest.70E0000000000026.quest_desc: [
-		"The &eReactor&r is a multiblock that sips &auraninite&r and pays out more FE than everything else in this chapter combined. Your uraninite frogs have been waiting for this."
+		"The &eReactor&r is a multiblock that runs on &auraninite&r and puts out far more FE than anything else in this chapter. This is what the uraninite farm was for."
 		""
 		"Build a &eStarter Reactor&r."
 	]
 	quest.70E0000000000026.quest_subtitle: "Serious FE."
 	quest.70E0000000000026.title: "The Uraninite Reactor"
 	quest.70E0000000000029.quest_desc: [
-		"&dFlux Dust&r is born in a ritual: &credstone&r thrown onto &8obsidian&r that rests on &8bedrock&r. And yes - islands born in this era of the pack HAVE bedrock: one block at bottom-center, the heart the platform was built around. Dig down at spawn and see."
+		"&dFlux Dust&r comes from a Flux Networks ritual: &credstone&r dropped onto &8obsidian&r that sits on &8bedrock&r. Islands from this era of the pack have one bedrock block at bottom-center - dig down at spawn to find it."
 		""
-		"Set obsidian on the heart, toss redstone on top, then &epunch the obsidian&r (left-click) to compress it into dust. Once you own a &dFlux Block&r, that works as the anvil too. No heart handy? A crafting grid presses one dust from &credstone&r sandwiched between two &8obsidian&r."
+		"Set obsidian on that block, toss redstone on top, then left-click the obsidian to compress it into dust. No bedrock handy? A crafting grid presses one dust from &credstone&r between two &8obsidian&r."
 		""
-		"The first dust primes your Infernal frog for the rest. Make &a4&r."
+		"The first dust primes your &cInfernal frog&r for the rest. Make &a4&r."
 	]
 	quest.70E0000000000029.quest_subtitle: "Your island kept a secret."
 	quest.70E0000000000029.title: "Flux Dust"
-	quest.70E000000000002C.quest_desc: [
-		"You made the dust yourself, so the chamber law is satisfied: slime it, feed the &cInfernal frog&r, and flux becomes a farm."
-		""
-		"Turn in the &6Flux Dust Froglight&r."
-	]
+	quest.70E000000000002C.quest_desc: ["You made the dust by hand, so the chamber law is satisfied. Chamber it into a Flux Dust Slime, feed your &cInfernal frog&r, and turn in the &6Flux Dust Froglight&r."]
 	quest.70E000000000002C.quest_subtitle: "The frog does wireless too."
 	quest.70E000000000002C.title: "Flux on Tap"
 	quest.70E0000000000031.quest_desc: [
-		"A &dFlux Controller&r runs the network, a &dPlug&r drinks FE in, a &dPoint&r pours it out - anywhere, any dimension, no cables. Your Reactor on one island, your machines on every other."
+		"Flux Networks moves power without cables. A &dFlux Controller&r runs the network, a &dPlug&r feeds FE in, a &dPoint&r takes it out - anywhere, any dimension. Reactor on one island, machines on every other."
 		""
 		"Build all three."
 	]
@@ -735,9 +725,7 @@
 	quest.7F0CEFBC82A9F1DB.title: "Phantom Membrane"
 	quest.7F0C0597B23C28B8.title: "Sculk"
 	quest.7F0C4A07248764ED.title: "Shulker Shell"
-	quest.7F0C831A136C804F.quest_desc: [
-		"Every vanilla resource the frogs make, accounted for. The pond is whole - and so, apparently, are you."
-	]
+	quest.7F0C831A136C804F.quest_desc: ["Every vanilla resource the frogs make, accounted for."]
 	quest.7F0C831A136C804F.quest_subtitle: "Sit. You've earned the lily pad."
 	quest.7F0C831A136C804F.title: "The Whole Pond"
 	chapter.7F0C000000000001.title: "The Whole Pond"
@@ -775,9 +763,7 @@
 	quest.70DDC713FC1F7A30.title: "Blaze Ember (Just Dire Things)"
 	quest.70DD39115A47C69E.title: "Voidflame (Just Dire Things)"
 	quest.70DD37EF0BD0D556.title: "Eclipse Ember (Just Dire Things)"
-	quest.70DD831A136C804F.quest_desc: [
-		"Every modded resource the loaded mods taught your frogs - one column per neighbor. The sister ponds send their regards."
-	]
+	quest.70DD831A136C804F.quest_desc: ["Every modded resource the loaded mods let your frogs make, one column per mod."]
 	quest.70DD831A136C804F.quest_subtitle: "Diplomacy, by froglight."
 	quest.70DD831A136C804F.title: "Sister Ponds"
 	chapter.70DD000000000001.title: "Sister Ponds"
@@ -829,90 +815,90 @@
 	quest.51F0000000000027.quest_subtitle: "Wearable weather."
 	quest.51F0000000000027.title: "Charmed, I'm Sure"
 	quest.7807000000000029.quest_desc: [
-		"Every farm in this chapter runs on &5boss Slime Milk&r - and boss milk is &ctoxic&r. Stand in a boss milk pool and the &cWither&r takes you, trophies or not. The slimes bathe in it. The frogs wade through it. You cannot."
+		"Every farm in this chapter runs on &5boss Slime Milk&r, and it is toxic. Stand in a boss milk pool and it hits you with &cWither&r. The slimes and frogs that live in it are fine; you are not."
 		""
-		"The cure is &5containment&r: each boss's &ecatalyst blocks&r, crafted from the boss's own substance, entomb the milk behind all six of its faces. Sealed, the poison works FOR you - the pool spawns slimes on its own and cannot reach you. Unsealed, it is just a hazard; the farm will not even run. Until the sixth face is on, keep your distance."
-		""
-		"Check the box once you have made peace with this."
+		"You make it safe by sealing it. Each boss source needs a &ecatalyst block&r crafted from that boss's own drop set against all six of its faces. Sealed, it spawns slimes on its own and cannot reach you. Until the sixth face is covered it will not run and it will still hurt you, so keep your distance."
 	]
 	quest.7807000000000029.quest_subtitle: "The pond bites back."
 	quest.7807000000000029.title: "Do Not Touch the Milk"
 	quest.7807000000000002.quest_desc: [
-		"The frogs have learned &5boss farming&r, and every boss farm goes up the same way: the toxic milk gets &5entombed&r in six &ecatalyst blocks&r of the boss's own substance, one against each face. Sealed, it spawns slimes for you instead of Withering you. Start at the fortress, where &fwither skeletons&r drop skulls. Show me &eone&r; the other six go straight into the containment. (The jetpack helps. The Mace helps more.)"
+		"&fWither skeletons&r drop skulls, rarely, at a &cNether fortress&r. You need seven: one to turn in, six for catalysts."
 		""
-		"Eight soul sand around a skull makes one &eWither Skeleton Skull Catalyst&r. Craft six, place a source of Skull Slime Milk, and seal a catalyst against each of its six faces. Mouse over the milk and Jade shows the face count."
+		"&fEight soul sand&r around a skull makes one &eWither Skeleton Skull Catalyst&r. Craft six, place a &5Skull Slime Milk&r source, and seal a catalyst against each of its six faces."
 	]
 	quest.7807000000000002.quest_subtitle: "Heads will roll."
 	quest.7807000000000002.title: "Skull Harvest"
 	quest.7807000000000005.quest_desc: [
-		"Seal a Skull Slime Milk source inside its six catalysts and the tomb comes alive: Skull Slimes rising out of milk that can no longer touch you, frogs queuing at the rim. The poison is still in there. That is the point."
+		"Sealed in its six catalysts, the Skull Slime Milk source spawns Skull Slimes safely for your frogs to eat."
 		""
 		"Turn in the &6Wither Skeleton Skull Froglight&r."
 	]
 	quest.7807000000000005.quest_subtitle: "The bone orchard."
 	quest.7807000000000005.title: "Wither Skeleton Skull"
 	quest.7807000000000008.quest_desc: [
-		"Three skulls and four soul sand summon the &5Wither&r - and your altar grows both. Build it somewhere you do not love, put it down, take the &fNether Star&r. Show me &eone star&r - then do it six more times, because eight obsidian around each makes the &esix Nether Star Catalysts&r the next altar wants. The first beacon is on you."
+		"Summon the &5Wither&r the vanilla way: &f4 soul sand&r and &f3 wither skeleton skulls&r. Each kill drops one &fNether Star&r. Do it somewhere you do not mind blowing up."
+		""
+		"You need seven stars: one to turn in, six for catalysts. &fEight obsidian&r around a star makes one &eNether Star Catalyst&r."
 	]
 	quest.7807000000000008.quest_subtitle: "You built this fight from scratch. Six times."
 	quest.7807000000000008.title: "The Withering"
 	quest.780700000000000B.quest_desc: [
-		"The star pool shines like a beacon through its obsidian containment - and only those six catalysts keep it from killing you faster than any of the six Withers that fed it. Watch the frogs manufacture the rarest drop in the game from the safe side of the seal."
+		"Sealed in its six obsidian catalysts, the Nether Star Slime Milk source spawns Star Slimes for your frogs."
 		""
 		"Turn in the &6Nether Star Froglight&r."
 	]
 	quest.780700000000000B.quest_subtitle: "Beacons, plural."
 	quest.780700000000000B.title: "Nether Star"
 	quest.780700000000000E.quest_desc: [
-		"Vanilla law says ONE &dDragon Egg&r per world, ever. This pack repeals it: every dragon you respawn and slay lays another. Four &dEnd Crystals&r (frog-farmed ghast tears, glass, an Eye of Ender) on the portal rim bring her back; the kill drops an egg, every time. Show me &eone&r - and farm six more for the build."
+		"Vanilla drops one &dDragon Egg&r per world. This pack makes every respawned dragon drop another. Set &f4 End Crystals&r around the End exit portal to bring her back; each kill leaves an egg."
 		""
-		"End stone bricks around each: &esix Dragon Egg Catalysts&r - the altar the world's old math could never afford."
+		"You need seven: one to turn in, six for catalysts. &fEight end stone bricks&r around an egg makes one &eDragon Egg Catalyst&r."
 	]
 	quest.780700000000000E.quest_subtitle: "One per customer - repealed."
 	quest.780700000000000E.title: "A Clutch of Eggs"
 	quest.7807000000000011.quest_desc: [
-		"Six eggs in end stone brick, entombing a pool of Egg Slime Milk - its &cpoison&r sealed inside the very blocks it paid for, spawning Egg Slimes on its own. The frogs do the rest."
+		"Sealed in its six catalysts, the Egg Slime Milk source spawns Egg Slimes for your frogs."
 		""
 		"Turn in the &6Dragon Egg Froglight&r."
 	]
 	quest.7807000000000011.quest_subtitle: "From one egg, a clutch."
 	quest.7807000000000011.title: "Dragon Egg"
 	quest.7807000000000014.quest_desc: [
-		"You are respawning dragons on a schedule now anyway - this time bring &dglass bottles&r. When she breathes purple at you, catch it. Politely. Show me &eone bottle&r, fill six more, and wrap purpur around each: &esix Dragon Breath Catalysts&r."
+		"Scoop the dragon's purple breath cloud with an empty &dglass bottle&r to get &dDragon's Breath&r. You are respawning dragons anyway, so bring bottles."
 		""
-		"The catalysts hold the milk's &cpoison&r in. Keep your end of the bargain: never pry one loose while the pool is wet."
+		"You need seven: one to turn in, six for catalysts. &fEight purpur blocks&r around a bottle of breath makes one &eDragon Breath Catalyst&r."
 	]
 	quest.7807000000000014.quest_subtitle: "CPR for dragons."
 	quest.7807000000000014.title: "Breath of Fresh End"
 	quest.7807000000000017.quest_desc: [
-		"The dragon's exhale, mass-produced by amphibians while she sleeps it off in the End. Lingering potions forever."
+		"Sealed in its six catalysts, the Dragon Breath Slime Milk source spawns Breath Slimes for your frogs."
 		""
 		"Turn in the &6Dragon Breath Froglight&r."
 	]
 	quest.7807000000000017.quest_subtitle: "Industrial-scale exhalation."
 	quest.7807000000000017.title: "Dragon Breath"
 	quest.780700000000001A.quest_desc: [
-		"The active-play answer to the passive pond, and the apex of the Trophy Pond: a sword that drops a Resource Slime's &6Froglight&r when it lands the kill. It hits harder than netherite, shrugs off fire, Looting raises the yield, and a brewed slime's effect carries onto the Froglight - exactly as if a frog had eaten it."
+		"A sword that drops a Resource Slime's &6Froglight&r when it lands the killing blow, brewed effect and all, exactly as if a frog had eaten it. The active-play alternative to the passive pond."
 		""
-		"Forged from the bosses' own light: two &6Nether Star Froglights&r and a &6Dragon Egg Froglight&r, wrapped in &fDragon's Breath&r. The four trophies no farm was ever supposed to produce, now bound into one blade. You are the apex."
+		"Craft it from two &6Nether Star Froglights&r, one &6Dragon Egg Froglight&r, and &dDragon's Breath&r."
 	]
 	quest.780700000000001A.quest_subtitle: "Harvest the light by hand."
 	quest.780700000000001A.title: "The Froglight Cleaver"
 	quest.780700000000002C.quest_desc: [
-		"You beat the dragon the hard way once. Now you never have to again. Build this altar right on the &eEnd exit portal&r, ringed with &eEnd Crystal Receptacles&r and reinforced froglights, a &bDragon Egg&r as the capstone."
+		"A contained, repeatable dragon farm, built right on the real End exit portal, so you have to beat the dragon the hard way first. Her &bDragon Egg&r is the capstone: no egg, no altar."
 		""
-		"Drop an end crystal into each of the four receptacles and a dragon rises, charges, and is devoured by &eDragonsbane&r, the frog at the altar's heart. The loot lands in the hatch, hopper-pipeable, and the real End portal stays untouched: a &6Dragon Breath Froglight&r, a renewable &6Dragon Egg Froglight&r, the &dPrincess's Kiss&r, and XP."
+		"Ring the portal with four &eEnd Crystal Receptacles&r and reinforced froglights, with the &eEnd Dragon Altar Hatch&r at the centre and the egg resting on top. Drop an &fEnd Crystal&r into each of the four receptacles and a replica dragon rises for &eDragonsbane&r to devour. The loot lands in the hatch, hopper-pipeable, and the real portal stays intact: a &6Dragon Breath Froglight&r, a &6Dragon Egg Froglight&r, the &dPrincess's Kiss&r, and XP."
 		""
-		"&7Optional&r: a repeatable dragon harvest, if you want one. Craft the &eEnd Dragon Altar Hatch&r to start."
+		"&7Optional&r: a repeatable dragon harvest. Craft the &eEnd Dragon Altar Hatch&r to start."
 	]
 	quest.780700000000002C.quest_subtitle: "A dragon on tap."
 	quest.780700000000002C.title: "The End Dragon Altar"
 	quest.780700000000002F.quest_desc: [
-		"The first Wither you kill the hard way hands you a &bNether Star&r, and that star crafts the &eWithered Star&r, the keystone of an altar that farms Withers with none of the danger."
+		"A contained, repeatable Wither farm. You still have to kill a Wither the hard way once: the &eWithered Star&r capstone is crafted from a &fNether Star&r."
 		""
-		"Build a soul-forged arena of &eReinforced Soul Sand&r and &6Blaze Rod Froglights&r, then load the full summon into the ritual receptacles: four soul sand and three wither skeleton skulls. A Wither charges in, blue glow and all, until &eWitherbane&r devours it. Out comes a &6Nether Star Froglight&r (it smelts back to a star) and XP, with no boss bar and no exploding blocks."
+		"Build the arena from &6Reinforced Blaze Rod Froglights&r for the shell and &6Reinforced Soul Sand Froglights&r for the floor, with a &eWither Altar Hatch&r at the centre and &eWitherbane&r perched on it. Its ritual wall takes four Soul Sand Receptacles and three Wither Skull Receptacles; load the full vanilla summon each time, &f4 soul sand&r and &f3 wither skeleton skulls&r. A replica Wither charges in and Witherbane eats it before it can act. Each summon drops a &6Nether Star Froglight&r (it smelts back to a star) plus XP, with no boss bar and no block damage."
 		""
-		"&7Optional&r: a contained, repeatable Nether Star farm. Craft the &eWithered Star&r to begin."
+		"&7Optional&r: a hands-off Nether Star farm. Craft the &eWithered Star&r to start."
 	]
 	quest.780700000000002F.quest_subtitle: "A Wither farm, fully contained."
 	quest.780700000000002F.title: "The Wither Altar"
@@ -1125,70 +1111,58 @@
 	quest.52E000000000001C.quest_subtitle: "Ask, and it builds."
 	quest.52E000000000001C.title: "Autocrafting"
 	quest.53A0000000000002.quest_desc: [
-		"You've farmed every Infernal resource by hand: priming slimes, placing milk, catching frogs, picking up Froglights. The &eTerrarium&r ends the hand-holding. It's a sealed box of frog farming that runs itself, milk going in one wall, Froglights coming out another, and you never open the lid."
+		"The &eTerrarium&r is a sealed multiblock that runs the whole frog loop on its own: &bSlime Milk&r pipes in, ceiling &eSprinklers&r rain slimes, frogs eat them, and &6Froglights&r collect in a hatch. No priming slimes, placing milk, or catching frogs by hand."
 		""
-		"Everything it needs is already on your Infernal shopping list: quartz, glowstone, blaze rods, magma cream, nether brick."
+		"Its parts are Infernal-tier materials and basics you already have by now."
 	]
 	quest.53A0000000000002.quest_subtitle: "Frog farming, sealed and self-running."
 	quest.53A0000000000002.title: "The Terrarium"
 	quest.53A0000000000005.quest_desc: [
-		"The &eTerrarium Controller&r is the brain. It takes &bSlime Milk&r piped or clicked into its outward face and rations it out to the &eSprinklers&r in the ceiling. It does &cnot accept boss Slime Milk&r, so the wither and dragon trophies stay on their catalyst altars. Build it first; the whole structure forms around it."
+		"The &eController&r is the brain. Pipe or hand-pour &bSlime Milk&r into its outward face and it rations that milk to the ceiling &eSprinklers&r. It won't take &cboss Slime Milk&r, so wither and dragon milk stay on their catalyst altars."
 		""
-		"It replaces one wall block on a flat face (not a corner or edge), facing OUT of the box. You set it, and every wall appliance, into the shell from the &eoutside&r, front toward you. It is &enot&r pinned to the height the guide book's diagram happens to show; any non-edge block on a flat wall face works. The walls can be &aany solid block&r, so build the shell from whatever you like. Recipe: glowstone, a quartz block, blaze rods, magma cream, nether bricks."
+		"Set it into a flat wall face (not a corner or edge), facing &eOUT&r of the box, placed from outside with the front toward you. Any non-edge spot on a flat face works; it isn't pinned to the height the guide diagram shows. Walls can be &aany solid block&r. Recipe: glowstone, a quartz block, blaze rods, magma cream, nether bricks."
 	]
 	quest.53A0000000000005.quest_subtitle: "The brain of the box."
 	quest.53A0000000000005.title: "Terrarium Controller"
 	quest.53A0000000000008.quest_desc: [
-		"&eSprinklers&r make up the ceiling of the box and rain slimes down into it, spawning on the exact same rules a placed Slime Milk source uses - cadence, per-bucket budget, and &dcatalysts&r (Rapid, Teeming, Bountiful, Endless) all carry through from the milk. You need &eat least one&r; up to 25 fit a ceiling, so make as many as you want for faster rain."
+		"&eSprinklers&r line the ceiling and rain slimes into the box. They spawn on the same rules as a placed &bSlime Milk&r source: cadence, per-bucket budget, and &dcatalysts&r (Rapid, Teeming, Bountiful, Endless) all carry through from the milk. One works; up to 25 fit a 5x5 ceiling, and more means faster rain."
 		""
-		"Drop a catalyst on a Sprinkler from above to upgrade it in place. Need to change the variant or reclaim the milk? Right-click a Sprinkler with an &eempty bucket&r to pull its Slime Milk back out."
+		"Drop a catalyst on a Sprinkler from above to upgrade it in place. Right-click one with an &eempty bucket&r to pull its Slime Milk back out and swap variants."
 		""
-		"&7Redstone control:&r a Sprinkler &epauses while it's powered&r - its held milk and remaining spawns just freeze, and pick back up the moment the signal drops. Each Sprinkler is wired on its own, so you can stage which resources run, flip a lever to pause a box by hand, or run a comparator off a full chest to throttle production when your storage backs up."
+		"&7Redstone:&r a Sprinkler pauses while it's powered - held milk and remaining spawns freeze until the signal drops. Each is wired on its own, so you can flip a lever to pause a box by hand, or run a comparator off a full chest to throttle output when storage backs up."
 	]
 	quest.53A0000000000008.quest_subtitle: "Indoor weather, made of slime."
 	quest.53A0000000000008.title: "Sprinklers"
 	quest.53A000000000000B.quest_desc: [
-		"&eIncubators&r raise eggs and tadpoles into frogs &ainside the box&r, stats intact over the whole lifecycle. Frogs bred in the cavity lay back into an Incubator (not water), so the line keeps itself stocked. A Sweetslime right-clicked in speeds incubation."
+		"&eIncubators&r raise &dbottled frog eggs&r into frogs &ainside the box&r, stats kept over the whole lifecycle. Frogs bred in the cavity lay back into an Incubator instead of seeking water, so the line restocks itself. Right-click one with a &dSweetslime&r to speed it up."
 		""
-		"One Incubator raises &eone frog at a time&r and stops releasing at the frog cap (8 by default) - so run &eseveral&r for throughput and feed them Sweetslimes. That cap is just the Incubators' release ceiling, not a wall on the cavity: you can always lead, net, or carry extra frogs in by hand."
+		"Each Incubator raises &eone frog at a time&r and stops releasing at the frog cap (8 by default), so run &eseveral&r for throughput. That cap is only the release ceiling, not a limit on the cavity: you can still lead, net, or carry extra frogs in by hand."
 		""
-		"Incubators are &eoptional&r - the box forms with none. Add them only if you want frogs raised and bred in place; otherwise stock the Terrarium yourself. Each one goes on a wall, face pointing OUT - placed from outside, like the other appliances."
+		"Incubators are &eoptional&r; the box forms with none. Add them only to breed frogs in place, otherwise stock the Terrarium yourself. Each goes on a wall face, pointing &eOUT&r, placed from outside."
 	]
 	quest.53A000000000000B.quest_subtitle: "A nursery with the lights on."
 	quest.53A000000000000B.title: "Incubators"
 	quest.53A000000000000E.quest_desc: [
-		"The &eTerrarium Hatch&r is the output: Froglights drop &bstraight into it&r - no item entity bouncing around the cavity - and it vacuums up any loose slimeballs, magma cream, or raw frog legs (from a frog that died inside) too. It opens as a chest and pipes out its outward face. When it fills, the frogs stop eating until you clear it (nothing is ever voided)."
+		"The &eHatch&r is the output. &6Froglights&r drop straight into it, with no item entities loose in the cavity, and it also vacuums up any stray slimeballs, magma cream, or raw frog legs (from a frog that died inside). It opens like a chest and pipes out its outward face. When it fills, the frogs stop eating until you clear it; nothing is ever voided."
 		""
-		"Exactly one. On a wall, facing OUT - placed from outside."
+		"Exactly one, on a wall face pointing &eOUT&r, placed from outside."
 	]
 	quest.53A000000000000E.quest_subtitle: "Where the light comes out."
 	quest.53A000000000000E.title: "The Terrarium Hatch"
 	quest.53A0000000000011.quest_desc: [
-		"Seal it into a box. The interior is &e5 wide, 5 deep, 4 tall&r; wrap it in a one-block shell of any solid block. The &eController&r and the &eTerrarium Hatch&r sit on the walls facing OUT - placed from outside the Terrarium - and any &eIncubators&r you add face OUT too; the &eSprinklers&r line the ceiling. No machines on corners or edges."
+		"Wrap the cavity in a one-block shell of &aany solid block&r. The interior is &e5 wide, 5 deep, 4 tall&r. The &eController&r and &eHatch&r sit on wall faces pointing OUT (placed from outside), any &eIncubators&r face OUT too, and the &eSprinklers&r line the ceiling. No machine on a corner or edge; flat faces only."
 		""
-		"&7Right-click the Controller&r - it tells you the formed state and points at the first wrong block until it reads &aformed&r. That readout is your blueprint; build to whatever it asks for."
-		""
-		"Check this off once the Controller says the Terrarium is formed."
+		"&7Right-click the Controller&r: it reports whether the box is formed and points at the first wrong block until it reads &aformed&r. Build to whatever it asks for."
 	]
 	quest.53A0000000000011.quest_subtitle: "Five by five by four, shell it in."
 	quest.53A0000000000011.title: "Seal the Box"
-	quest.53A0000000000014.quest_desc: [
-		"Pipe (or pour) a bucket of &bSlime Milk&r into the Controller's outward face. It buffers one variant at a time and feeds the Sprinklers, which start raining that variant's slimes. Wire it from your milk farm and the rain never stops."
-		""
-		"Check this off once slimes are falling from the Sprinklers."
-	]
+	quest.53A0000000000014.quest_desc: ["Pipe or pour a bucket of &bSlime Milk&r into the &eController's&r outward face. It buffers one variant at a time and feeds the &eSprinklers&r, which start raining that variant's slimes. Wire it to your milk farm and the rain never stops."]
 	quest.53A0000000000014.quest_subtitle: "Turn on the rain."
 	quest.53A0000000000014.title: "Prime the Sprinklers"
-	quest.53A0000000000017.quest_desc: [
-		"Get a frog living inside. Load &eeggs or tadpoles&r into an Incubator to raise one in place - or, if you skipped Incubators, lead or &enet&r a frog in directly. It eats the slimes the Sprinklers drop, and the Froglights land in the Hatch. Any species works - whatever frog lives in there, that resource farms itself."
-		""
-		"Check this off once a frog is living in the Terrarium."
-	]
+	quest.53A0000000000017.quest_desc: ["Get a frog living inside. Load a &dbottled frog egg&r into an &eIncubator&r to raise one in place, or lead or &enet&r a caught frog in directly. It eats the slimes the Sprinklers drop, and its &6Froglights&r land in the &eHatch&r. Whatever species lives in there is the resource that farms itself."]
 	quest.53A0000000000017.quest_subtitle: "Move the frogs in."
 	quest.53A0000000000017.title: "Stock the Incubators"
-	quest.53A000000000001A.quest_desc: [
-		"Milk in one wall, Froglights out another, frogs and slimes you never have to touch. The Terrarium runs the loop you spent six tiers learning by hand. Wire its Hatch into storage and walk away - the swamp tends itself now."
-	]
+	quest.53A000000000001A.quest_desc: ["Milk in one wall, &6Froglights&r out the other, and frogs and slimes you never touch again. The &eTerrarium&r runs the whole loop you spent six tiers doing by hand. Wire the Hatch into storage and walk away."]
 	quest.53A000000000001A.quest_subtitle: "Hands off. It runs itself."
 	quest.53A000000000001A.title: "Hands Off"
 	chapter.53A0000000000001.title: "The Terrarium"
@@ -1334,20 +1308,20 @@
 	quest.6EC0000000000017.quest_subtitle: "A thousand of a haul, one cube."
 	quest.6EC0000000000017.title: "The Quantum Compressor"
 	quest.6A0D000000000002.quest_desc: [
-		"You've cleared the dragon and built the compressor. One task remains: prove the frogs run without you. Each &bSingularity&r swallows a thousand of a frog's resource, more than you could ever hand-make. Only a running farm can. There's one singularity for every resource your frogs make, except water and lava, which pour rather than press:"
+		"You've killed the dragon and built the &dQuantum Compressor&r. What's left is proving the farms run without you. Each &bSingularity&r takes 1,000 of one resource, far more than you'd ever hand-make, so only a running frog farm can keep the compressor fed. You need one for every resource the frogs make."
 		""
-		"The Ultimate Singularity wants the full set, so check its recipe for the roster (it grows as the frogs learn new resources)."
+		"Check the &dUltimate Singularity&r recipe for the full roster; it grows as the frogs learn new resources. Each Singularity also burns an &dUltimate Catalyst&r, so plan on one per resource."
 	]
 	quest.6A0D000000000002.quest_subtitle: "Prove the frogs run without you."
 	quest.6A0D000000000002.title: "The Long Compression"
 	quest.6A0D000000000005.quest_desc: [
-		"Point your iron-frog farm at the Quantum Compressor and wait. A thousand iron folds into a single &bIron Singularity&r - the first of many, one for every resource the frogs make, from iron to shulker shells. Start here; you will want them all."
+		"Feed the &dQuantum Compressor&r 1,000 iron plus an &dUltimate Catalyst&r and it presses out one &bIron Singularity&r. Feed it the smelted ingots, not the Froglights. Wire your iron farm straight in; a thousand by hand is the slow road."
+		""
+		"The first of many. The &dUltimate Singularity&r needs one from every farm you've built."
 	]
 	quest.6A0D000000000005.quest_subtitle: "A thousand iron, one cube."
 	quest.6A0D000000000005.title: "Your First Singularity"
-	quest.6A0D000000000008.quest_desc: [
-		"Gather one Singularity for every resource the frogs make - every last one - and crystallize them together in the Ultimate Crafting Table into the &dUltimate Singularity&r: the densest form of everything your frogs ever made. This is the proof you automated every last farm."
-	]
+	quest.6A0D000000000008.quest_desc: ["Gather one Singularity for every resource the frogs make and combine the whole set in the &6Ultimate Crafting Table&r. Out comes the &dUltimate Singularity&r: proof you automated every last farm."]
 	quest.6A0D000000000008.quest_subtitle: "The densest frog there is."
 	quest.6A0D000000000008.title: "The Ultimate Singularity"
 	quest.6A0D00000000000B.quest_desc: [
