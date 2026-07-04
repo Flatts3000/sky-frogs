@@ -4,6 +4,21 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+## [1.4.2] - 2026-07-03
+
+Editorial + maintenance release: the first three quest chapters rewritten to a clearer, more consistent voice, plus small mod bumps. No new content, no world-breaking changes.
+
+### Changed
+
+- **Welcome, "Your First Iron Ingot," and "Scaling the Colony" chapters rewritten.** Every description now does two jobs and nothing else: teach a player new to Minecraft, and guide an experienced one. Flourish, recipe recitals (the game already shows recipes), and filler are gone. Each mechanic was checked against the actual mods, which corrected several long-standing inaccuracies: frogs give you ingots and resources (not raw ore), the cobblestone generator's flowing-lava-vs-obsidian rule, the automated generator makes cobblestone (not stone), frog stats start at 1/1/1, and the Flower Pot is crafted from bricks.
+- **Froglight names now render one consistent color** (gold) across every quest, so an item name reads the same everywhere and no longer shares a color with Slime-in-a-Bucket.
+- **"Name Your Frogs" rewards an anvil** instead of name tags. Naming is cosmetic, and an anvil is otherwise a steep iron cost on a void island; the quest is optional and its text now says so.
+- **Productive Frogs updated to 1.24.5; Sophisticated Backpacks and Sophisticated Core bumped.** PF 1.24.5 is machinery-only - the roster is unchanged (singularities 58, froglight recipes 102, census 60/34) and no quests changed.
+
+### Fixed
+
+- **The Spawnery quest now requires the Cobblestone quest.** Crafting the Spawnery costs cobblestone, but the frog branch never depended on the branch that teaches cobble-making, so a player could reach it without being shown how. The dependency now gates the teaching in the right order.
+
 ## [1.4.1] - 2026-06-30
 
 Maintenance release: updates Productive Frogs to 1.24.4 ("Growing Pains"). No pack content or quests changed.
