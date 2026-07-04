@@ -303,33 +303,23 @@
 	quest.570A6E000000001F.quest_subtitle: "Void the junk."
 	quest.570A6E000000001F.title: "Take Out the Trash"
 	quest.60ADE60000000002.quest_desc: [
-		"You've wrung every metal the Cave frog knows out of bare stone. Time to look past it - the Geode frog deals in gems and crystals."
+		"The Cave frog gave you metals. The Geode frog gives you gems, starting with lapis."
 		""
-		"Your Spawnery hatched your first Cave frogs from cobblestone; now feed it a slime ball and prime it with &credstone&r instead. Out comes a &dBottle of Geode Frog Eggs&r - tip it onto water for Geode frogs."
+		"Feed the &eSpawnery&r a slime ball, but swap the primer to &credstone&r (cobblestone gave you Cave eggs). It bottles a &dBottle of Geode Frog Eggs&r. Tip it onto water to hatch your Geode frogs."
 	]
 	quest.60ADE60000000002.quest_subtitle: "Tier 2 begins."
 	quest.60ADE60000000002.title: "The Road to Geode"
-	quest.60ADE60000000005.quest_desc: [
-		"Run your &bLapis Slime in a Bucket&r through the &eSlime Milker&r for a bucket of &9Lapis Slime Milk&r."
-		""
-		"Pour it out and Lapis Slimes spawn - the start of real lapis production."
-	]
+	quest.60ADE60000000005.quest_desc: ["Run the &bLapis Slime in a Bucket&r through the &eSlime Milker&r for a bucket of &9Lapis Slime Milk&r. Pour it out and Lapis Slimes start spawning."]
 	quest.60ADE60000000005.quest_subtitle: "Milk the blue."
 	quest.60ADE60000000005.title: "A Bucket of Lapis Slime Milk"
 	quest.60ADE60000000008.quest_desc: [
-		"Feed your Lapis Slimes to a Geode frog and turn in the &6Lapis Froglight&r it leaves. Smelt that Froglight for your first &9lapis lazuli&r."
+		"Feed Lapis Slimes to a Geode frog for a &6Lapis Froglight&r. Turn one in, then smelt the rest for &9lapis lazuli&r."
 		""
-		"The gem chain runs on from here - amethyst, emerald, and diamond to cap it - but that's the next chapter."
-		""
-		"And a &bCompacting Drawer&r to bank the lapis you're about to mass-produce."
+		"The reward &eSimple Compacting Drawer&r packs that lapis into blocks as it fills."
 	]
 	quest.60ADE60000000008.quest_subtitle: "The gems open up."
 	quest.60ADE60000000008.title: "First Lapis"
-	quest.60ADE6000000000B.quest_desc: [
-		"Geode frogs eat Geode slimes, and the first one threads straight off the Cave's last resource."
-		""
-		"Craft a &bLapis Slime in a Bucket&r from a bucket of &credstone Slime Milk&r - plus four gravel, three sweetslime, and a bottle of Geode Frog Eggs."
-	]
+	quest.60ADE6000000000B.quest_desc: ["Craft a &bLapis Slime in a Bucket&r from a bucket of &credstone Slime Milk&r: four gravel, three sweetslime, and a bottle of Geode Frog Eggs. The Cave frog's last resource seeds the Geode frog's first."]
 	quest.60ADE6000000000B.quest_subtitle: "Blue slime, bottled."
 	quest.60ADE6000000000B.title: "A Lapis Slime in a Bucket"
 	quest.65F6A1B2C3D40001.quest_desc: [
@@ -377,9 +367,9 @@
 	quest.6C1F0A2B3D4E5F73.quest_subtitle: "No ore was harmed."
 	quest.6C1F0A2B3D4E5F73.title: "Your First Iron Ingot"
 	quest.6E0DE00000000002.quest_desc: [
-		"You've pulled lapis out of a Geode frog. The same frog has the rest of the gems in it: amethyst, emerald, and diamond - each a step further down the chain."
+		"You pulled lapis out of the Geode frog. It gives the rest of the geode's stones and gems the same way: tuff, calcite, amethyst, emerald, diamond."
 		""
-		"Same loop you ran for the metals, new stones to feed it. Work it down to diamond."
+		"Same loop as the metals, one resource slime per step. Work it down to diamond."
 	]
 	quest.6E0DE00000000002.quest_subtitle: "The Geode chain opens."
 	quest.6E0DE00000000002.title: "Beyond Lapis"
@@ -392,82 +382,66 @@
 	quest.6E0DE0000000000B.quest_desc: ["Craft a &bDiamond Slime in a Bucket&r, feed your &aGeode Frog&r, and turn in the &6Diamond Froglight&r."]
 	quest.6E0DE0000000000B.quest_subtitle: "From a frog. Really."
 	quest.6E0DE0000000000B.title: "Diamond"
-	quest.6E0DE0000000000E.quest_desc: [
-		"The geode's outer shell. Craft a &bTuff Slime in a Bucket&r from your &elapis milk&r (plus four gravel, three sweetslime, and a bottle of Geode Frog Eggs)."
-		""
-		"Milk it, feed the slimes to a Geode Frog, and turn in the &6Tuff Froglight&r - the first stone the Geode frog gives past lapis. Smelt it for tuff."
-	]
+	quest.6E0DE0000000000E.quest_desc: ["Craft a &bTuff Slime in a Bucket&r from your &elapis milk&r (four gravel, three sweetslime, a bottle of Geode Frog Eggs). Milk it, feed a Geode Frog, and turn in the &6Tuff Froglight&r. Smelt it for tuff."]
 	quest.6E0DE0000000000E.quest_subtitle: "Rough but useful."
 	quest.6E0DE0000000000E.title: "Tuff"
 	quest.6E0DE00000000011.quest_desc: ["Craft a &bCalcite Slime in a Bucket&r, feed your &aGeode Frog&r, and turn in the &6Calcite Froglight&r."]
 	quest.6E0DE00000000011.quest_subtitle: "The geode's pale shell."
 	quest.6E0DE00000000011.title: "Calcite"
 	quest.6E0DE00000000014.quest_desc: [
-		"Your Slime Milk sources don't have to run dry so fast. Craft a &bBountiful Catalyst&r (two &fsweetslime&r and a scoop of &fbone meal&r) and drop it straight into a placed &eSlime Milk&r pool."
+		"Slime Milk sources run dry after so many spawns. A &bBountiful Catalyst&r (two &fsweetslime&r, &fbone meal&r) adds to that count: drop it into a placed &eSlime Milk&r pool and the source lasts longer."
 		""
-		"The buff saves to the source - it even rides along if you bucket the source back up. Stack as many as you like; this one has no cap."
+		"The buff saves to the source and survives re-bucketing. No cap on this one, so stack as many as you want."
 	]
 	quest.6E0DE00000000014.quest_subtitle: "More slime per source."
 	quest.6E0DE00000000014.title: "Bountiful Catalyst"
-	quest.6E0DE00000000017.quest_desc: [
-		"A &bRapid Catalyst&r (two &fsweetslime&r and &fsugar&r) makes a source spit slimes out faster. Toss it in the pool like the last one."
-		""
-		"The boost climbs to a cap, so a few per source is plenty."
-	]
+	quest.6E0DE00000000017.quest_desc: ["A &bRapid Catalyst&r (two &fsweetslime&r, &fsugar&r) shortens the time between spawns. Drop it in the pool like the last one. The speed-up caps out, so a few per source is plenty."]
 	quest.6E0DE00000000017.quest_subtitle: "Faster slime."
 	quest.6E0DE00000000017.title: "Rapid Catalyst"
-	quest.6E0DE0000000001A.quest_desc: [
-		"A &bTeeming Catalyst&r (two &fsweetslime&r and &fredstone&r) makes a source spawn more slimes at once - more bodies per batch for your frogs to eat."
-		""
-		"Like the Rapid Catalyst, it climbs to a cap."
-	]
+	quest.6E0DE0000000001A.quest_desc: ["A &bTeeming Catalyst&r (two &fsweetslime&r, &fredstone&r) adds another slime to each spawn. Drop it in like the others. Caps out like the Rapid Catalyst, so a few is enough."]
 	quest.6E0DE0000000001A.quest_subtitle: "Bigger batches."
 	quest.6E0DE0000000001A.title: "Teeming Catalyst"
 	quest.6E0DE0000000001D.quest_desc: [
-		"The big one. Ring eight &bBountiful Catalysts&r around a &fdiamond&r to forge an &bEndless Catalyst&r, then drop it in: that source &enever runs dry&r again."
+		"Ring eight &bBountiful Catalysts&r around a &fdiamond&r to craft an &bEndless Catalyst&r, then drop it into a placed &eSlime Milk&r source. That source never runs dry again."
 		""
-		"This is what the diamonds were for. One per source and you never re-prime it."
+		"One per source and you never re-prime it. This is what the diamonds were for."
 	]
 	quest.6E0DE0000000001D.quest_subtitle: "An endless source."
 	quest.6E0DE0000000001D.title: "Never Runs Dry"
 	quest.6ECA150000000002.quest_desc: [
-		"Mekanism runs on &fosmium&r - and the Cave frog has had it all along. Craft an &bOsmium Slime in a Bucket&r from your &eredstone milk&r (plus four stone, three sweetslime, and a bottle of Cave Frog Eggs)."
+		"Mekanism runs on &fosmium&r, and there's no ore to mine for it here. Craft an &bOsmium Slime in a Bucket&r from your &eredstone Slime Milk&r, four stone, three sweetslime, and a bottle of Cave Frog Eggs."
 		""
-		"Milk it, feed the slimes to a Cave Frog, and turn in the &6Osmium Froglight&r. Smelt it for osmium - no ore, no mining, the metal that opens Mekanism straight off a frog."
+		"Milk it, feed the slimes to a Cave Frog, and smelt the &6Osmium Froglight&r for osmium."
 	]
 	quest.6ECA150000000002.quest_subtitle: "Mekanism's starter metal."
 	quest.6ECA150000000002.title: "Osmium"
-	quest.6ECA150000000005.quest_desc: ["Machines need power. Build a &eHeat Generator&r - Mekanism's starter - and feed it &fcoal&r (your Cave frog makes it) or a bucket of lava. That trickle of Joules runs everything that follows."]
+	quest.6ECA150000000005.quest_desc: ["Mekanism machines run on power. Build a &eHeat Generator&r, the starter, and feed it &fcoal&r (your Cave frog makes it) or a bucket of lava. It's slow, but it powers the early machines."]
 	quest.6ECA150000000005.quest_subtitle: "Electricity arrives."
 	quest.6ECA150000000005.title: "First Power"
-	quest.6ECA150000000008.quest_desc: [
-		"The &eMetallurgic Infuser&r is the gateway machine - it presses one material into another, powered off your generator."
-		""
-		"It's how you turn iron into the enriched iron that becomes steel."
-	]
+	quest.6ECA150000000008.quest_desc: ["The &eMetallurgic Infuser&r presses one material into another, run off your generator's power. It's how you turn iron into &fenriched iron&r, the first step toward steel."]
 	quest.6ECA150000000008.quest_subtitle: "Infuse and combine."
 	quest.6ECA150000000008.title: "The Metallurgic Infuser"
 	quest.6ECA15000000000B.quest_desc: [
-		"In the &eMetallurgic Infuser&r, infuse iron with &fcarbon&r to get &fenriched iron&r, then infuse that with carbon a second time to get &fsteel dust&r. Smelt the dust into a &bSteel Ingot&r."
+		"In the &eMetallurgic Infuser&r, infuse iron with &fcarbon&r (coal or charcoal) to get &fenriched iron&r, then infuse that with carbon again for &fsteel dust&r. Smelt the dust into a &bSteel Ingot&r."
 		""
-		"Steel is the backbone of every Mekanism machine. Bring one back."
+		"Steel goes into nearly every Mekanism machine from here on."
 	]
 	quest.6ECA15000000000B.quest_subtitle: "Iron, hardened."
 	quest.6ECA15000000000B.title: "Steel"
-	quest.6ECA15000000000E.quest_desc: ["A &bSteel Casing&r is the shell every Mekanism machine is built into. Craft one - with casings on hand, the machine line opens up."]
+	quest.6ECA15000000000E.quest_desc: ["A &bSteel Casing&r is the shell every Mekanism machine is built around. Craft one; the machines further down this chapter all need it."]
 	quest.6ECA15000000000E.quest_subtitle: "Machine shells."
 	quest.6ECA15000000000E.title: "Steel Casing"
 	quest.6ECA150000000011.quest_desc: [
-		"Steel doesn't have to come one infuse at a time. In the &eMetallurgic Infuser&r, infuse a &bBucket of Iron Slime Milk&r with &fcarbon&r (coal or charcoal) and it comes out a &7Steel Slime in a Bucket&r - the same iron-and-carbon trick that makes steel itself."
+		"Steel can be a farmed resource instead of one infuse at a time. In the &eMetallurgic Infuser&r, infuse a &bBucket of Iron Slime Milk&r with &fcarbon&r (coal or charcoal) for a &7Steel Slime in a Bucket&r, the same iron-and-carbon step that makes steel."
 		""
-		"Feed it to a Cave Frog and turn in the &6Steel Froglight&r it leaves. Smelt it for steel, the same metal the infuser makes, now pouring off a frog."
+		"Milk it, feed the slimes to a Cave Frog, and smelt the &6Steel Froglight&r for steel."
 	]
 	quest.6ECA150000000011.quest_subtitle: "Steel, the frog way."
 	quest.6ECA150000000011.title: "Steel Slime"
 	quest.6ECA150000000014.quest_desc: [
-		"Up here in the void you're as high as the world goes - and a &eWind Generator&r turns altitude into power. Passive, no fuel, day and night, and the higher it sits the more it makes."
+		"A &eWind Generator&r makes power from altitude: the higher it sits, the more it generates. Out here you're already near the top of the world, so it runs well with no fuel, day or night."
 		""
-		"Build one (a couple of &fEnergy Tablets&r from the Infuser do most of the work) and let the wind run your machines."
+		"Build one. A couple of &fEnergy Tablets&r cover most of the cost, then it runs passively."
 	]
 	quest.6ECA150000000014.quest_subtitle: "Free power, breezy."
 	quest.6ECA150000000014.title: "Wind Generator"
@@ -475,11 +449,9 @@
 	quest.6ECA150000000017.quest_subtitle: "Powered smelting."
 	quest.6ECA150000000017.title: "Energized Smelter"
 	quest.6ECA15000000001A.quest_desc: [
-		"The payoff. The &eEnrichment Chamber&r is Mekanism's ore-doubler - run a metal &6Froglight&r through it and it splits into &btwo dusts&r. Feed those to the Energized Smelter and one froglight becomes &btwo ingots&r."
+		"The &eEnrichment Chamber&r is Mekanism's ore-doubler. Run a metal &6Froglight&r through it and it splits into &btwo dusts&r; feed those to the Energized Smelter and one Froglight becomes &btwo ingots&r."
 		""
-		"Your frog metals, doubled. (Gems pass through unchanged - only the metals dust.)"
-		""
-		"For wiring it all together, a &eBuilding Gadget&r to throw up machine rooms in a click."
+		"Only metals dust this way. Gem Froglights pass through unchanged, so keep smelting those in a furnace."
 	]
 	quest.6ECA15000000001A.quest_subtitle: "Doubling, electrified."
 	quest.6ECA15000000001A.title: "Enrichment Chamber"
