@@ -44,7 +44,7 @@
 	quest.1F00000000000002.quest_desc: [
 		"Just Dire Things runs on &eGoo&r. Craft &fclay balls&r, &frotten flesh&r, &fsugar&r, and a block of &fmycelium&r into &ePrimogel Goo&r. The mycelium is off your &aBog frog&r; in this pack it stands in for the dirt the recipe normally takes."
 		""
-		"Place the goo and set an &firon block&r or &fcoal block&r against it. Over a couple of minutes the goo turns that block into a raw ore. Mine it and you are started."
+		"Place the goo and set an &firon block&r or &fcoal block&r against it. Over a couple of minutes the goo turns that block into a raw ore. Mine it as usual."
 	]
 	quest.1F00000000000002.quest_subtitle: "Just Dire Things begins."
 	quest.1F00000000000002.title: "First Goo"
