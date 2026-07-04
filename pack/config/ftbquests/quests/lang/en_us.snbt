@@ -1103,39 +1103,29 @@
 	chapter.5140000000000001.title: "Road to Infernal"
 	chapter.51F0000000000001.title: "Infernal Frogs"
 	quest.3E17000000000002.quest_desc: [
-		"Remember the &eOak Crucible&r wringing water out of leaves? Meet its big sibling: a &fbrick-and-iron basin&r that melts &6Froglights&r into &9fluids&r - water, lava, molten metal - no GUI, no power, just heat rising from the block underneath it."
-		""
-		"You need &cbricks&r and &firon&r. Hammer cobblestone down to &7dust&r, mix the dust with &9water&r for clay, smelt the clay into bricks, and frame them in iron."
+		"The &eFroglight Crucible&r is a &fbrick-and-iron basin&r that melts &6Froglights&r into &9fluids&r - water, lava, molten metal. It runs on heat from the block underneath it: no power, no GUI."
 		""
 		"Craft the &eCrucible&r and set it over a &etorch&r to start."
 	]
 	quest.3E17000000000002.quest_subtitle: "Soup's on."
 	quest.3E17000000000002.title: "The Froglight Crucible"
 	quest.3E17000000000005.quest_desc: [
-		"Hotter heat melts faster. The ladder climbs &etorch&r, &6campfire&r, &6lava&r, &cfire&r - and Froglights burn too: a placed &6Lava Froglight&r heats like lava, a &cBlaze Froglight&r hotter than fire, and Powah's &cBlazing Crystal Froglight&r is the hottest source in the mod."
+		"Heat comes from the block under the Crucible, and hotter melts faster. Coldest to hottest: &etorch&r, &6campfire&r, &6lava&r, &cfire&r."
 		""
-		"Your farmed decor doubles as the smelter's fire. Check JEI's &eCrucible Heat Sources&r page for the full list."
+		"Some Froglights work as heat sources too: a &6Lava Froglight&r is as hot as lava, a &6Blaze Froglight&r is hotter than fire, and (with Powah) a &6Blazing Crystal Froglight&r is the hottest. JEI's &eCrucible Heat Sources&r page lists them all."
 		""
-		"Craft a &6campfire&r - the first step up from the torch."
+		"Craft a &6campfire&r."
 	]
 	quest.3E17000000000005.quest_subtitle: "Hotter is faster."
 	quest.3E17000000000005.title: "Feed the Fire"
-	quest.3E17000000000008.quest_desc: [
-		"A &9Water Froglight&r melts into a full &9bucket of water&r - farmable water, from your &aCave frog&r of all things. The way in is the same craft as every Cave slime, keyed on the fluid itself: a &9water bucket&r, four stone, three sweetslime, and a bottle of Cave Frog Eggs. (The bucket comes back empty.)"
-		""
-		"Turn in the &6Water Froglight&r."
-	]
+	quest.3E17000000000008.quest_desc: ["A &6Water Froglight&r melts into a &9bucket of water&r using the &eCrucible&r."]
 	quest.3E17000000000008.quest_subtitle: "The ocean, bottled."
 	quest.3E17000000000008.title: "Water"
-	quest.3E1700000000000B.quest_desc: [
-		"A &6Lava Froglight&r melts into a full &6bucket of lava&r - renewable, no more cobble-crucible babysitting, which is poetic: a &6lava bucket&r from that very crucible, four stone, three sweetslime, and a bottle of Cave Frog Eggs craft the &6Lava Slime&r that retires it. The whole loop runs at Tier 1."
-		""
-		"Turn in the &6Lava Froglight&r."
-	]
+	quest.3E1700000000000B.quest_desc: ["A &6Lava Froglight&r melts into a &6bucket of lava&r using the &eCrucible&r."]
 	quest.3E1700000000000B.quest_subtitle: "The floor is renewable."
 	quest.3E1700000000000B.title: "Lava"
 	quest.3E1700000000000E.quest_desc: [
-		"The &eCasting Mold&r turns molten metal back into &fingots&r - pour with a bucket, pipe it, or skip the plumbing entirely: stack &cheat&r, &eCrucible&r, &eMold&r into a three-block tower and the Mold drinks straight from the basin."
+		"The &eCasting Mold&r turns molten metal into &fingots&r. Stack it on the Crucible - &cheat&r, &eCrucible&r, &eMold&r in a column - and it pulls straight from the basin below. Or feed it by pipe."
 		""
 		"{image:kubejs:textures/quests/casting_tower.png width:220 height:181 align:center}"
 		""
@@ -1144,7 +1134,7 @@
 	quest.3E1700000000000E.quest_subtitle: "Pour one out."
 	quest.3E1700000000000E.title: "The Casting Mold"
 	quest.3E17000000000011.quest_desc: [
-		"Now the payoff: a metal &6Froglight&r melts into &etwo ingots&r worth of molten metal - the Crucible is this pack's ore doubling. Tower it up, hopper Froglights in, and let the Mold spit ingots while you do anything else."
+		"A metal &6Froglight&r melts into &etwo ingots&r worth of molten metal - the Crucible is this pack's ore doubling. Build the tower, hopper Froglights in, and it runs hands-free."
 		""
 		"Tick when your tower casts its first doubled ingot."
 	]
