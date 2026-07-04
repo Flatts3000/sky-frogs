@@ -4,6 +4,18 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+## [1.4.3] - 2026-07-04
+
+Editorial release: a full rewrite pass over the rest of the quest book, finishing what 1.4.2 started with the Cave tier. Every remaining quest description was rewritten to a plainer, clearer voice - teach a new player, guide an experienced one, nothing else - and several had their mechanics corrected against the actual mods. No pack content, recipes, or progression changed; no quests were added or removed.
+
+### Changed
+
+- **All remaining quest chapters rewritten** - the Geode, Bog, Tide, Infernal, and Void tiers, plus the Terrarium, Trophy Pond, Master Pond, and Completionist chapters. Descriptions are shorter and plainer, with marketing tone, filler, and forced flourishes cut. Personality now lives in the titles and subtitles; the bodies stick to teaching and guiding.
+
+### Fixed
+
+- **Quest descriptions that misdescribed a mechanic, recipe, item name, or number now match the mods.** Among the corrections: Refined Storage cabling is Quartz Enriched Copper (not Iron); the Terrarium's Incubators seed from bottled frog eggs only (not tadpoles); the Flux Dust ritual is built on bedrock; the Dissolution Chamber is the only slime path from the Tide tier onward (the old copy said Tier 5); and several recipe and reward names were fixed (for example the Simple Compacting Drawer).
+
 ## [1.4.2] - 2026-07-03
 
 Editorial + maintenance release: the first three quest chapters rewritten to a clearer, more consistent voice, plus small mod bumps. No new content, no world-breaking changes.

@@ -1,12 +1,12 @@
 name = "Sky Frogs"
 author = "Flatts3000"
-version = "1.4.2"
+version = "1.4.3"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "fb1cda1dbfad16ff23879a6c6a0c587cd5a691755617af1688b2991946f208a4"
+hash = "809c4792fb981f705c45cf401712f7f84c7e181c32ed9f21677d93c4e54f4652"
 
 [versions]
 minecraft = "1.21.1"
