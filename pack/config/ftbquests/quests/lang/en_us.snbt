@@ -1223,70 +1223,58 @@
 	chapter.6EC0000000000001.title: "The Ultimate Table"
 	chapter.6A0D000000000001.title: "Master Pond"
 	quest.601D000000000002.quest_desc: [
-		"The End is out there, past the void. To reach it you need &eEnder Pearls&r - and out here, &dEndermen&r spawn in full darkness. Wall off a dark room (or hunt the Nether's warped forest) and gather &e12&r:"
+		"You reach the End through &eEnder Pearls&r, and out here that means farming &dEndermen&r yourself. They only spawn in full darkness, so wall off a dark room and let them turn up."
 		""
-		"two become &aEyes of Ender&r, and the rest prime the &dVoid Spawnery&r once you're through."
+		"Two become &aEyes of Ender&r for the cake below; the rest prime the &eSpawnery&r for &5Void&r frogs once you're through."
 	]
 	quest.601D000000000002.quest_subtitle: "The void wants a key."
 	quest.601D000000000002.title: "Pearls from the Dark"
-	quest.601D000000000005.quest_desc: [
-		"Pearls plus &cBlaze Powder&r - one rod from your Infernal frog crafts into two - become &aEyes of Ender&r."
-		""
-		"Craft &a2&r: the cake wants a pair."
-	]
+	quest.601D000000000005.quest_desc: ["Blaze powder comes off your &cInfernal frog&r: each blaze rod cracks into two. Craft &a2&r Eyes of Ender for the cake."]
 	quest.601D000000000005.quest_subtitle: "Pearl plus powder."
 	quest.601D000000000005.title: "Eyes of Ender"
 	quest.601D000000000008.quest_desc: [
-		"No stronghold floats in the void, so there is no portal to find. You bake your way in instead."
+		"A void skyblock has no stronghold and no End portal to find, so you bake your way in."
 		""
-		"The &dEnd Cake&r follows the old family recipe: &e3 buckets of milk&r across the top - &aMilk Buckets or any Slime Milk your frogs produce&r - an &eegg&r between &a2 Eyes of Ender&r, and &e3 wheat&r below."
+		"Same grid as a vanilla cake, with Eyes of Ender where the sugar goes: &e3 milk&r across the top, an &eegg&r between &a2 Eyes of Ender&r, and &e3 wheat&r along the bottom. The milk can be plain &eMilk Buckets&r or any &dSlime Milk&r your frogs make."
 		""
-		"Plain &eMilk Buckets&r hand their empty buckets back; &dSlime Milk&r bakes in, bucket and all. The cake does not come back either way."
+		"Plain &eMilk Buckets&r give their empty buckets back; &dSlime Milk&r bakes in, bucket and all."
 	]
 	quest.601D000000000008.quest_subtitle: "If the world won't give you a portal, bake one."
 	quest.601D000000000008.title: "Bake the End Cake"
 	quest.601D00000000000B.quest_desc: [
-		"Set the &dEnd Cake&r down somewhere you trust and &etake a bite&r. Each bite teleports whoever eats it straight to the End - take another whenever you need to go back."
+		"Place the &dEnd Cake&r and take a bite. It teleports you like an End portal: to the End, and back to the overworld if you bite it from the End side. Each bite spends one trip, so one cake is good for several."
 		""
-		"You'll land on an obsidian platform beside the central island. Mind the drop, and mind &dher&r."
+		"You land on an obsidian platform at the edge of the central island. Mind the drop into the void."
 	]
 	quest.601D00000000000B.quest_subtitle: "Eat the portal the world won't give you."
 	quest.601D00000000000B.title: "Into the End"
-	quest.601D00000000000E.quest_desc: [
-		"The &5Ender Dragon&r guards the central island. This is the fight the whole pack has been walking toward. Bring beds, bring jetpacks, bring patience - then put it down."
-	]
+	quest.601D00000000000E.quest_desc: ["The &5Ender Dragon&r guards the central island, the pack's capstone fight. Take out the End Crystals on the towers first or they heal her; your jetpack gets you up to them. Beds explode in the End, so set one by the dragon and try to sleep for a burst of damage."]
 	quest.601D00000000000E.quest_subtitle: "The fight the pack was walking toward."
 	quest.601D00000000000E.title: "Slay the Dragon"
-	quest.601D000000000011.quest_desc: [
-		"&eEnder Pearl&r primes the Spawnery for &5Void&r slimes. Raise a Void frog and let it lay."
-		""
-		"Turn in a &bBottle of Void Frog Eggs&r."
-	]
+	quest.601D000000000011.quest_desc: ["Prime the &eSpawnery&r with an &eender pearl&r and it bottles a &bBottle of Void Frog Eggs&r."]
 	quest.601D000000000011.quest_subtitle: "The last species."
 	quest.601D000000000011.title: "Void Frog Eggs"
 	quest.601D000000000014.quest_desc: [
-		"Feed your &eDissolution Chamber&r &fnetherite scrap&r and &fsoul soil&r filler for a &5Bucket of Ender Pearl Slime&r - the seed of the Void milk chain."
+		"Run &fnetherite scrap&r through the &eDissolution Chamber&r with &fsoul soil&r filler for a &5Bucket of Ender Pearl Slime&r, the first Void resource slime."
 		""
-		"(Rather do it by hand? Prime a &5Void Slime&r with an &eender pearl&r and catch it. Either way, this is the bucket the milk chain runs on.)"
+		"By hand: prime a wild &5Void Slime&r (they spawn out on the small End islands) with an &eender pearl&r and bucket it. Either way, this seeds the Void milk chain."
 	]
 	quest.601D000000000014.quest_subtitle: "Bottle the void."
 	quest.601D000000000014.title: "A Bucket of Ender Pearl Slime"
-	quest.601D000000000017.quest_desc: [
-		"Run the slime through the Slime Milker for a &bBucket of Ender Pearl Slime Milk&r - the food that turns a frog's light into &eender pearls&r."
-	]
+	quest.601D000000000017.quest_desc: ["Run the &5Ender Pearl Slime&r through the &eSlime Milker&r for a &bBucket of Ender Pearl Slime Milk&r. Pour it out and Ender Pearl Slimes spawn for your &5Void frog&r to eat."]
 	quest.601D000000000017.quest_subtitle: "One more bucket."
 	quest.601D000000000017.title: "Milk It"
 	quest.601D00000000001A.quest_desc: [
-		"Feed the milk, take the &6Ender Pearl Froglight&r, and the &5Void&r frog is yours."
+		"Feed an Ender Pearl Slime to your &5Void frog&r and it drops an &6Ender Pearl Froglight&r. Smelt it for &eender pearls&r."
 		""
-		"Tier 6 opens - the last species, and the road to the endgame."
+		"Tier 6 is open: the last species, and the run-up to the endgame."
 	]
 	quest.601D00000000001A.quest_subtitle: "Tier 6 opens."
 	quest.601D00000000001A.title: "First Ender Pearl"
 	quest.60F0000000000002.quest_desc: [
-		"Ender pearls were just the doorway. The &5Void&r frog hands you the whole End:"
+		"Ender pearls were just the way in. The &5Void&r frog gives you the rest of the End:"
 		""
-		"end stone, chorus fruit, echo shards, sculk, phantom membranes, and the shells the shulkers leave behind."
+		"end stone, chorus fruit, echo shards, sculk, phantom membranes, and shulker shells."
 	]
 	quest.60F0000000000002.quest_subtitle: "The End, on tap."
 	quest.60F0000000000002.title: "Beyond the Pearl"
@@ -1303,11 +1291,11 @@
 	quest.60F000000000000E.quest_subtitle: "It listens."
 	quest.60F000000000000E.title: "Sculk"
 	quest.60F0000000000017.quest_desc: [
-		"Apothic Enchanting tops out with the &bSoul-Touched Sculkshelf&r, and that shelf needs a &dWarden Tendril&r - which only the &cWarden&r drops. There's no natural Deep Dark on a void skyblock, so the Warden has to be summoned by hand."
+		"Apothic Enchanting's best sculk bookshelves need a &dWarden Tendril&r, and only the &cWarden&r drops it. A void skyblock grows no Deep Dark, so you summon the Warden by hand."
 		""
-		"Craft a &eSculk Shrieker&r (sculk, echo shards, and a bone block - all off your Void frogs) and place it. A crafted shrieker can't summon on its own, so use Ex Deorum's &eSculk Core&r (four echo shards and an ender pearl) on it to wake that power. Then set it shrieking a few times and the &cWarden&r claws its way up."
+		"Place a &eSculk Shrieker&r - craft it from sculk and echo shards off your Void frog, plus a bone block - then use Ex Deorum's &eSculk Core&r (four echo shards and an ender pearl) on it. A crafted shrieker can't summon until the Core wakes it. Set it shrieking a few times and the Warden digs up."
 		""
-		"&cCome geared&r - the Warden is the deadliest thing in the game. Beat it for the &dWarden Tendril&r, and with it the top tier of enchanting. Entirely optional: skip the fight if you don't want it."
+		"&cCome geared&r: the Warden is the toughest mob in the game. Kill it for the &dWarden Tendril&r and the top of the enchanting tree. The fight is optional, skip it if you want."
 	]
 	quest.60F0000000000017.quest_subtitle: "The hardest fight, the best enchants."
 	quest.60F0000000000017.title: "Wake the Warden"
@@ -1321,46 +1309,28 @@
 	]
 	quest.60F0000000000019.quest_subtitle: "The one the frog won't make."
 	quest.60F0000000000019.title: "Experience"
-	quest.6EC0000000000002.quest_desc: [
-		"The endgame's crafting spine is &6Extended Crafting&r. It starts plain: iron plus black dye (your Tide frog's ink) makes &7Black Iron&r. Everything here builds from it."
-	]
+	quest.6EC0000000000002.quest_desc: ["Extended Crafting is the endgame crafting line, and every part of it builds up from &7Black Iron&r. Combine an iron ingot with black dye (your Tide frog's ink) for a &7Black Iron Ingot&r."]
 	quest.6EC0000000000002.quest_subtitle: "Iron, dyed for greater things."
 	quest.6EC0000000000002.title: "Black Iron"
-	quest.6EC0000000000005.quest_desc: [
-		"&eGlowstone, redstone, and gunpowder&r fuse into &eLuminessence&r - the spark inside every Extended Crafting component. Make some; you will need a lot."
-	]
+	quest.6EC0000000000005.quest_desc: ["&eLuminessence&r goes into every Extended Crafting component, and components go into every table and catalyst in this chapter. You will burn through it, so make plenty."]
 	quest.6EC0000000000005.quest_subtitle: "The spark in the machine."
 	quest.6EC0000000000005.title: "Luminessence"
-	quest.6EC0000000000008.quest_desc: [
-		"A &63x3&r table that eats the Luminessence components. The first rung of the ladder."
-		""
-		"Craft the &6Basic Table&r."
-	]
+	quest.6EC0000000000008.quest_desc: ["Extended Crafting's recipes run in these tables, not a vanilla bench. The &6Basic Table&r is the first tier, a &63x3&r grid; the tiers scale up to the &69x9&r Ultimate Table."]
 	quest.6EC0000000000008.quest_subtitle: "Bigger than a workbench, barely."
 	quest.6EC0000000000008.title: "The Basic Table"
-	quest.6EC000000000000B.quest_desc: [
-		"&65x5&r now. Feed it a gold block and the basic table. Craft the &6Advanced Table&r."
-	]
+	quest.6EC000000000000B.quest_desc: ["The &6Advanced Table&r is the &65x5&r tier. Build it from the Basic Table and a gold block."]
 	quest.6EC000000000000B.quest_subtitle: "Five by five."
 	quest.6EC000000000000B.title: "The Advanced Table"
-	quest.6EC000000000000E.quest_desc: [
-		"&67x7&r, built on a diamond block. Craft the &6Elite Table&r."
-	]
+	quest.6EC000000000000E.quest_desc: ["The &6Elite Table&r is the &67x7&r tier. Build it from the Advanced Table and a diamond block."]
 	quest.6EC000000000000E.quest_subtitle: "Seven by seven."
 	quest.6EC000000000000E.title: "The Elite Table"
-	quest.6EC0000000000011.quest_desc: [
-		"&69x9&r, crowned with an emerald block. The biggest grid in the pack, and the only one that can craft the &bUltimate Singularity&r - the key to the Master Frog. Build the &6Ultimate Table&r."
-	]
+	quest.6EC0000000000011.quest_desc: ["The &6Ultimate Table&r is the &69x9&r tier, the biggest grid in the pack. Build it from the Elite Table and an emerald block. It is the only grid large enough to craft the &bUltimate Singularity&r, the key to the Master Frog."]
 	quest.6EC0000000000011.quest_subtitle: "Nine by nine. The big one."
 	quest.6EC0000000000011.title: "The Ultimate Table"
-	quest.6EC0000000000014.quest_desc: [
-		"The &dUltimate Catalyst&r is what the Quantum Compressor burns to fold thousands of items into one. Craft one to feed the compressor."
-	]
+	quest.6EC0000000000014.quest_desc: ["The &dUltimate Catalyst&r is the catalyst the Quantum Compressor runs on. It sits in the compressor's catalyst slot and is never used up, so one is all a compressor needs. Craft it before the compressor."]
 	quest.6EC0000000000014.quest_subtitle: "Fuel for the fold."
 	quest.6EC0000000000014.title: "The Ultimate Catalyst"
-	quest.6EC0000000000017.quest_desc: [
-		"The &dQuantum Compressor&r presses a thousand of a frog's resource into a single &bSingularity&r - one for every resource the frogs make. It runs on power - wire it to your Mekanism grid. Build it; the endgame starts here."
-	]
+	quest.6EC0000000000017.quest_desc: ["The &dQuantum Compressor&r presses a thousand of one resource into a single &bSingularity&r, one for every resource your frogs make. It runs on &bFE&r - wire it to your Mekanism grid."]
 	quest.6EC0000000000017.quest_subtitle: "A thousand of a haul, one cube."
 	quest.6EC0000000000017.title: "The Quantum Compressor"
 	quest.6A0D000000000002.quest_desc: [
@@ -1396,9 +1366,9 @@
 	quest.54E5F6A1B2C30041.quest_subtitle: "Catch and carry, stats intact."
 	quest.54E5F6A1B2C30041.title: "The Frog Net"
 	quest.601D00000000001D.quest_desc: [
-		"Slaying the Ender Dragon - the princess - leaves behind a &dPrincess's Kiss&r. Right-click any frog with it and, in a shower of particles, the frog becomes a &evillager&r: a plain, unemployed one, free to take any job."
+		"The &5Ender Dragon&r drops a &dPrincess's Kiss&r. Right-click any frog with it to turn it into a plain, unemployed &evillager&r, free to take any profession. That is how you open villager trading on a skyblock pond."
 		""
-		"One Kiss bootstraps an entire trading economy off your pond - which is exactly why it waits behind the dragon. Net the frog you want to transform first if it is a prize one; the Kiss does not care which frog, only that it is a frog."
+		"It transforms whatever frog you click and works on any of them, so don't spend it on a prize breeder; net a spare frog first."
 	]
 	quest.601D00000000001D.quest_subtitle: "The dragon was the princess all along."
 	quest.601D00000000001D.title: "Princess's Kiss"
