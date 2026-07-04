@@ -235,74 +235,70 @@
 	quest.54E5F6A1B2C30031.quest_subtitle: "Your first frogs."
 	quest.54E5F6A1B2C30031.title: "Synthesize Life"
 	quest.570A6E0000000002.quest_desc: [
-		"The metal's piling up faster than your chests can hold it. Time for storage that grows with you."
+		"A &eSophisticated Storage Barrel&r stores items like a chest, but it takes &fupgrades&r: bigger capacity tiers, auto-pickup, compacting, and more. Everything in this chapter builds on it."
 		""
-		"A &eBarrel&r starts as a plain wooden box - but it takes &fupgrades&r that stack it deeper, pull items in on their own, and pack them down. Craft your first; everything here slots into it."
+		"Craft one."
 	]
 	quest.570A6E0000000002.quest_subtitle: "Somewhere to dump it all."
 	quest.570A6E0000000002.title: "A Barrel of Your Own"
 	quest.570A6E0000000005.quest_desc: [
-		"A barrel climbs through tiers, and the Cave frog hands you exactly what each one wants: &6copper&r, &eiron&r, then &egold&r. Every tier multiplies what it holds."
+		"A &eBarrel&r upgrades through tiers - &6copper&r, &eiron&r, then &egold&r - and each tier holds more. You already farm all three from the Cave frog."
 		""
-		"Work one up to a &eGold Barrel&r."
+		"Upgrade one to a &eGold Barrel&r."
 	]
 	quest.570A6E0000000005.quest_subtitle: "Upgrade the barrel."
-	quest.570A6E0000000005.title: "Bigger on the Inside"
+	quest.570A6E0000000005.title: "Deeper Barrels"
 	quest.570A6E0000000008.quest_desc: [
-		"Here's the real magic. A &eStack Upgrade&r dropped into a barrel doubles what every slot holds - and the higher tiers multiply it further still, so one barrel keeps up with a frog farm."
+		"A &eStack Upgrade&r doubles how much each slot in a barrel holds. Higher tiers multiply it further, so one barrel can keep up with a frog farm."
 		""
 		"Craft one and slot it in."
 	]
 	quest.570A6E0000000008.quest_subtitle: "More per slot."
 	quest.570A6E0000000008.title: "Stack 'Em High"
 	quest.570A6E000000000B.quest_desc: [
-		"A &ePickup Upgrade&r tells a barrel to grab items off the ground around it - no more sweeping up after your frogs."
+		"A &ePickup Upgrade&r makes a barrel pull in items dropped around it. Frog drops land in the barrel instead of on the floor."
 		""
-		"The &asticky piston&r it needs is a slime ball away, and slime is the one thing you're never short of. Craft one."
+		"It needs a &asticky piston&r - a piston plus a slime ball. Craft one."
 	]
 	quest.570A6E000000000B.quest_subtitle: "It picks up after you."
 	quest.570A6E000000000B.title: "Hands-Free Intake"
 	quest.570A6E000000000E.quest_desc: [
-		"&bCompacting Drawers&r each hold one resource by the thousand and auto-pack its nuggets, ingots, and blocks together - one drawer per Cave metal makes a tidy wall."
+		"&bCompacting Drawers&r each hold thousands of one resource and auto-convert its nuggets, ingots, and blocks."
 		""
-		"Tie that wall together: a &eStorage Controller&r linked to your drawers lets you pull from all of them in one spot. (It used to want nether quartz - not in this pack. Stone, redstone, and a repeater do it.)"
+		"A &eStorage Controller&r links a bunch of them so you can pull from every drawer in one spot. Its recipe normally wants nether quartz, but not in this pack - stone, redstone blocks, and a couple of drawers build it."
 	]
 	quest.570A6E000000000E.quest_subtitle: "One block, one item, lots."
 	quest.570A6E000000000E.title: "A Wall of Drawers"
 	quest.570A6E0000000011.quest_desc: [
-		"The last piece for your barrels. A &eStorage Controller&r set against them opens every connected barrel through one searchable window, and a &eStorage Link&r + &eStorage Tool&r reach the ones too far to touch."
+		"The last piece for your barrels. A &eStorage Controller&r connects every barrel touching it into one cluster - deposit into the controller or pipe items in and out, and that one block feeds the whole group. A &eStorage Link&r and the &eStorage Tool&r bring in barrels that aren't touching the pile."
 		""
-		"No power, no nether quartz - just a repeater where the comparator used to go. (The links want &dender pearls&r; your dark room coughs those up.)"
+		"It needs no power, and this pack's recipe drops the nether quartz - a repeater where the comparator used to be. The links need &dender pearls&r, which your dark room already produces."
 		""
-		"This is the storage you live on until the Infernal tier - that's where &eRefined Storage&r takes it digital."
+		"This is the storage you live on until the Infernal tier, where &eRefined Storage&r takes it digital."
 	]
 	quest.570A6E0000000011.quest_subtitle: "A storage network."
-	quest.570A6E0000000011.title: "One Window on Everything"
+	quest.570A6E0000000011.title: "One Block, Every Barrel"
 	quest.570A6E0000000014.quest_desc: [
-		"Barrels that swallow stacks, drawers that pack themselves, one window onto all of it - and the &eCrafting Station&r you've had since day one, pulling parts straight from the pile beside it. The island that began with a single chest now keeps its own house."
+		"You've got the full storage suite now: upgraded barrels, a drawer wall on a controller, fluid storage, a trash can, and the &eCrafting Station&r that pulls parts straight from the storage next to it."
 		""
-		"This is the floor the rest of the pack gets built on. When the Infernal tier lands &eRefined Storage&r, the whole thing goes digital - but that's a long way down the line."
+		"This is the storage the rest of the pack builds on. At the Infernal tier, &eRefined Storage&r takes it digital."
 	]
 	quest.570A6E0000000014.quest_subtitle: "The whole storage suite."
 	quest.570A6E0000000014.title: "A Place for Everything"
 	quest.570A6E0000000019.quest_desc: [
-		"Your drawers handle solids - give liquids the same treatment. A &eFluid Drawer&r is the wet cousin of your drawer wall: planks and a bucket, and it holds a tide of one fluid - water, lava, milk, honey - with the amount right on the face."
+		"A &eFluid Drawer&r is a drawer for liquids: it holds one fluid - water, lava, milk, honey - and shows the amount on its face. Planks and a bucket to craft."
 		""
-		"Best part: it links into the same &eStorage Controller&r as your item drawers, so it joins the network for free."
+		"It links into the same &eStorage Controller&r as your item drawers, so it joins the network."
 	]
 	quest.570A6E0000000019.quest_subtitle: "Store the fluids too."
 	quest.570A6E0000000019.title: "Liquid Assets"
-	quest.570A6E000000001C.quest_desc: [
-		"When a drawer won't cut it, a &eBasic Fluid Tank&r is bulk fluid in a box - just &firon&r and &credstone&r, no machines and no osmium in sight."
-		""
-		"Pick it up full and haul it wherever you need. It's the right home for the &6lava&r you'll be stockpiling to feed the machines a few tiers from now."
-	]
+	quest.570A6E000000001C.quest_desc: ["A &eBasic Fluid Tank&r stores one fluid in bulk, and it's just &firon&r and &credstone&r - no Mekanism machines or osmium needed. Break it and it keeps what's inside, so you can pick it up full and move it."]
 	quest.570A6E000000001C.quest_subtitle: "A fluid tank."
 	quest.570A6E000000001C.title: "Tanks a Lot"
 	quest.570A6E000000001F.quest_desc: [
-		"Not everything's worth a slot. An &eItem Trash Can&r quietly voids whatever you feed it - the cobble your generator won't stop making, junk mob drops, the fourth stack of rotten flesh."
+		"An &eItem Trash Can&r permanently deletes any item you feed it."
 		""
-		"Set its filter so it only eats what you tell it to, drop a hopper on top, and forget it."
+		"Set its filter so it only voids what you choose, then hopper items in."
 	]
 	quest.570A6E000000001F.quest_subtitle: "Void the junk."
 	quest.570A6E000000001F.title: "Take Out the Trash"
