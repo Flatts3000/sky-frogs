@@ -111,111 +111,71 @@
 	quest.21B2C3D4E5F60031.quest_desc: ["Two water sources one block apart make an infinite source in the gap between them."]
 	quest.21B2C3D4E5F60031.quest_subtitle: "An infinite source."
 	quest.21B2C3D4E5F60031.title: "Running Water"
-	quest.2A5700000A570002.quest_desc: [
-		"You've been hand-feeding slimes to frogs and carrying Froglights to the furnace one at a time. It works - it just doesn't scale."
-		""
-		"This chapter makes the operation self-sustaining: first a renewable food-and-breeding supply, then the pipes and collectors to run the slime loop without you."
-		""
-		"It starts, oddly enough, by pulverizing cobblestone."
-	]
+	quest.2A5700000A570002.quest_desc: ["So far you've fed slimes and smelted Froglights by hand. This chapter automates both: a renewable food-and-breeding supply, then hoppers and furnaces to run the loop without you."]
 	quest.2A5700000A570002.quest_subtitle: "Let the colony run itself."
 	quest.2A5700000A570002.title: "Hands Off"
-	quest.2A5700000A570005.quest_desc: [
-		"Botany Pots are built from clay, and clay starts as &7cobblestone&r run through a Hammer."
-		""
-		"Pound cobblestone into gravel, gravel into sand, and sand into &eDust&r. You already have the Iron Hammer from the cobble quest - put it to work."
-	]
+	quest.2A5700000A570005.quest_desc: ["With your &eIron Hammer&r, crush cobblestone into gravel, gravel into sand, and sand into &eDust&r. The Dust makes clay later."]
 	quest.2A5700000A570005.quest_subtitle: "Cobble into dust."
 	quest.2A5700000A570005.title: "Grind It Down"
-	quest.2A5700000A570008.quest_desc: [
-		"Fill an Ex Deorum &bBarrel&r with water, drop the &eDust&r in, and it settles into a block of &fclay&r."
-		""
-		"Same barrel that catches your rainwater - it just does chemistry too."
-	]
+	quest.2A5700000A570008.quest_desc: ["Put your &eDust&r in an Oak Barrel full of water and it turns into a block of &fclay&r. Same barrel you use for rainwater."]
 	quest.2A5700000A570008.quest_subtitle: "Dust into clay."
 	quest.2A5700000A570008.title: "Just Add Water"
-	quest.2A5700000A57000B.quest_desc: [
-		"Now bake it. Smelt a clay block into &eTerracotta&r. Crumble clay into clay balls, smelt those into bricks, and three bricks make a &eFlower Pot&r."
-		""
-		"You'll want &bfive terracotta&r and one flower pot for what's next, so keep the barrel running."
-	]
+	quest.2A5700000A57000B.quest_desc: ["Smelt clay into &eTerracotta&r, and clay balls into bricks for a &eFlower Pot&r. You'll need five terracotta and one flower pot for the &aBotany Pot&r next."]
 	quest.2A5700000A57000B.quest_subtitle: "Clay into terracotta."
 	quest.2A5700000A57000B.title: "Fired Earth"
 	quest.2A5700000A57000F.quest_desc: [
-		"Five terracotta around a flower pot builds a &aBotany Pot&r - a self-tending planter. Drop in soil and a crop and it grows on its own, no farmland or sky needed. Trees too: give a pot a sapling and it runs the whole orchard."
+		"A &aBotany Pot&r is a self-tending planter: add soil and a crop and it grows on its own. Saplings work too - it'll grow a tree."
 		""
-		"Here's your first crop: &asugar cane&r. Plant it and you've got a renewable source of sugar - which is about to matter a great deal."
+		"Plant &asugar cane&r in one for a steady supply of sugar, which you'll need next."
 	]
 	quest.2A5700000A57000F.quest_subtitle: "A pot for plants."
 	quest.2A5700000A57000F.title: "A Pot to Grow In"
-	quest.2A5700000A570012.quest_desc: [
-		"Sugar cane crafts into &fsugar&r. Sugar plus a &aslime ball&r makes &dSweetslime&r - the one treat a frog will breed for."
-		""
-		"Sweetslime is the key to everything ahead: breed your frogs into a real colony with it, and it's the binding agent for coaxing brand-new resource slimes out of the ones you've already got."
-	]
+	quest.2A5700000A570012.quest_desc: ["&dSweetslime&r is what you feed frogs to breed them, and the ingredient for crafting new resource slimes from the ones you have. Make it from sugar and a &aslime ball&r."]
 	quest.2A5700000A570012.quest_subtitle: "Sugar, the frog way."
 	quest.2A5700000A570012.title: "Sweet Tooth"
-	quest.2A5700000A570015.quest_desc: [
-		"Dirt is finite up here - until you start &amaking&r it."
-		""
-		"Fill an Ex Deorum &eBarrel&r with organic scraps - saplings, leaves, seeds, the overflow from your tree farm - and it rots down into a block of &6dirt&r. Free earth, forever."
-	]
+	quest.2A5700000A570015.quest_desc: ["Fill an Oak Barrel with organic scraps - saplings, leaves, seeds - and it composts into a block of &6dirt&r."]
 	quest.2A5700000A570015.quest_subtitle: "Compost into soil."
 	quest.2A5700000A570015.title: "Dirt from Decay"
 	quest.2A5700000A570018.quest_desc: [
-		"Use a glass bottle of water on a block of dirt (right-click it) and the dirt turns to &6mud&r."
+		"Right-click a block of dirt with a water bottle and it turns to &6mud&r."
 		""
-		"Mud sits just shy of a full block, so dropped items fall straight through it into whatever's below - which is how you'll catch your Froglights. Here are eight more, for &bnine&r total: enough to floor a 3x3 pen."
+		"Mud sits just shy of a full block, so dropped items fall straight through it to whatever's below - that's how you'll catch your Froglights. Floor a 3x3 pen with it, nine blocks."
 	]
 	quest.2A5700000A570018.quest_subtitle: "Wet dirt, on purpose."
 	quest.2A5700000A570018.title: "Make Mud"
-	quest.2A5700000A57001B.quest_desc: [
-		"A &7hopper&r under each mud block swallows whatever falls through it."
-		""
-		"Craft one to prove the recipe - here are eight more, for &bnine&r total: one beneath every square of your 3x3 mud floor."
-	]
+	quest.2A5700000A57001B.quest_desc: ["Put a &7hopper&r under each of the nine mud blocks to catch the Froglights that fall through."]
 	quest.2A5700000A57001B.quest_subtitle: "Catch what drops."
 	quest.2A5700000A57001B.title: "A Floor of Hoppers"
 	quest.2A5700000A57001E.quest_desc: [
-		"The last piece. Craft an &eIron Furnace&r - unlike a vanilla one, it can push its finished output straight into an adjacent inventory. Open it and toggle &eAuto Output&r on."
+		"Craft an &eIron Furnace&r. Unlike a vanilla one, it can push its output into an adjacent inventory - open it and toggle &eAuto Output&r on."
 		""
-		"Stand your frog on the 3x3 mud floor. Funnel the nine hoppers beneath it into the Iron Furnace, and set a chest against its output side. Now Froglights drop through the mud, ride the hoppers into the furnace, get smelted into ingots, and stack up in the chest - all while you're off doing something else."
-		""
-		"A frog that mines iron in its sleep."
+		"Set your frog on the mud floor, run the hoppers into the Iron Furnace, and put a chest on its output side. Now each Froglight the frog drops smelts into iron and lands in the chest on its own."
 	]
 	quest.2A5700000A57001E.quest_subtitle: "Smelt while you sleep."
 	quest.2A5700000A57001E.title: "Hands-Free Froglights"
 	quest.2A5700000A570022.quest_desc: [
-		"You've got &dSweetslime&r now - which means you can &abreed your frogs&r."
+		"Feed &dSweetslime&r to two grown frogs of the same species and they'll breed and lay frogspawn in the &bwater pool&r - one Sweetslime per frog."
 		""
-		"Feed it to two grown frogs and they'll pair off and breed, laying in the &bwater pool&r."
-		""
-		"After a pairing they need a cooldown before they will breed again (a few minutes), so don't expect babies back to back. If a pairing looks like it did nothing, give it time and check they have water, since they only lay in the pool, never on land."
-		""
-		"Pair off two frogs to begin. The next quest, &bRaising the Line&r, is where breeding gets interesting."
+		"After a pairing there's a few-minute cooldown before they'll breed again. If nothing seems to happen, give it time and check they have water: frogs only lay in the pool, never on land."
 	]
 	quest.2A5700000A570022.quest_subtitle: "Pair them off."
 	quest.2A5700000A570022.title: "Breed Your Frogs"
 	quest.2A5700000A570034.quest_desc: [
-		"Breeding isn't just &omore&r frogs. Done right, it's &lbetter&r ones."
+		"Breeding makes better frogs, not just more."
 		""
-		"Every Resource Frog carries three stats. Point &bJade&r at a frog, tadpole, or primed egg to read them:"
+		"Every Resource Frog has three stats. Look at a frog, tadpole, or egg to read them in the tooltip:"
 		""
 		"&aAppetite&r: how fast it eats. Higher means a shorter cooldown between slimes, so more Froglights per minute."
-		"&eBounty&r: how many Froglights it drops per slime fed. Higher means more output from the same slime."
-		"&bReach&r: how far it senses slimes. Higher means less piling slimes against its nose."
+		"&eBounty&r: how many Froglights it drops per slime. Higher means more output from the same slime."
+		"&bReach&r: how far it senses slimes. Higher means one frog covers a bigger pen."
 		""
-		"Stats run &b1 to 10&r. Egg-hatched frogs start low, around 1 to 3. A &l10/10/10&r frog is the long game, and breeding is the only road there."
+		"Stats run &b1 to 10&r. A frog hatched from the Spawnery starts at &b1/1/1&r, and breeding is the only way to raise them."
 		""
-		"A baby's stats start at the &eaverage&r of its parents, and each stat then has a chance to &aclimb a point higher&r. Every breed lifts at least one, and a baby never drops below the parents' average, so you can't breed backward. The rule that follows: pair your &lbest with your best&r to hold a high average and climb toward &l10/10/10&r. A weak frog in the mix just drags the average down. (Averaging cuts the other way too. Breed a high-&aAppetite&r frog with a high-&eBounty&r one and the pair meets in the middle, balanced.)"
+		"A baby's stats start at the &eaverage&r of its parents, then each stat has a chance to &aclimb one higher&r. Every breed lifts at least one, and a baby never drops below the parents' average - so pair your &lbest with your best&r to keep the average high. A weak frog in the mix drags it down."
 	]
 	quest.2A5700000A570034.quest_subtitle: "Breed a better frog."
 	quest.2A5700000A570034.title: "Raising the Line"
-	quest.2A5700000A570031.quest_desc: [
-		"Your frogs have earned names. &eName Tags&r craft from &fstring&r and &fpaper&r, and you have both by now: string off your silkworms, paper from your sugar cane."
-		""
-		"Rename a Name Tag on an &eanvil&r, then right-click a frog with it. Here are four more, enough to christen a starting colony."
-	]
+	quest.2A5700000A570031.quest_desc: ["Naming your frogs is just for fun; it doesn't change how they work. Rename a &eName Tag&r on an &eanvil&r, then right-click a frog to name it."]
 	quest.2A5700000A570031.quest_subtitle: "Give them names."
 	quest.2A5700000A570031.title: "Name Your Frogs"
 	quest.32C3D4E5F6A10001.quest_desc: ["Break oak leaves with a Crook for extra drops: saplings to replant, and the occasional &eSilkworm&r."]

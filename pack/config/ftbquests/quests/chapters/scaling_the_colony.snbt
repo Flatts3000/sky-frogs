@@ -173,12 +173,8 @@
 			id: "2A5700000A570031"
 			optional: true
 			rewards: [{
-				count: 4
 				id: "2A5700000A570033"
-				item: {
-					count: 1
-					id: "minecraft:name_tag"
-				}
+				item: { count: 1, id: "minecraft:anvil" }
 				type: "item"
 			}]
 			tasks: [{
