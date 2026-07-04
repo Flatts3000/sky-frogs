@@ -422,7 +422,7 @@
 	quest.6ECA15000000000E.quest_subtitle: "Machine shells."
 	quest.6ECA15000000000E.title: "Steel Casing"
 	quest.6ECA150000000011.quest_desc: [
-		"Steel can be a farmed resource instead of one infuse at a time. In the &eMetallurgic Infuser&r, infuse a &bBucket of Iron Slime Milk&r with &fcarbon&r (coal or charcoal) for a &7Steel Slime in a Bucket&r, the same iron-and-carbon step that makes steel."
+		"Steel can be a farmed resource instead of one infuse at a time. In the &eMetallurgic Infuser&r, infuse your &biron Slime Milk&r with &fcarbon&r (coal or charcoal) for a &7Steel Slime in a Bucket&r, the same iron-and-carbon step that makes steel."
 		""
 		"Milk it, feed the slimes to a Cave Frog, and smelt the &6Steel Froglight&r for steel."
 	]
@@ -763,7 +763,7 @@
 	quest.70DDC713FC1F7A30.title: "Blaze Ember (Just Dire Things)"
 	quest.70DD39115A47C69E.title: "Voidflame (Just Dire Things)"
 	quest.70DD37EF0BD0D556.title: "Eclipse Ember (Just Dire Things)"
-	quest.70DD831A136C804F.quest_desc: ["Every modded resource the loaded mods let your frogs make, one column per mod."]
+	quest.70DD831A136C804F.quest_desc: ["Every modded resource the frogs make, accounted for."]
 	quest.70DD831A136C804F.quest_subtitle: "Diplomacy, by froglight."
 	quest.70DD831A136C804F.title: "Sister Ponds"
 	chapter.70DD000000000001.title: "Sister Ponds"
@@ -938,7 +938,7 @@
 	quest.7D00000000000002.quest_desc: [
 		"You've got &bprismarine&r. Every other Tide resource runs the same loop: chamber the slime, milk it, feed a &eTide Frog&r, then smelt the &6Froglight&r it drops."
 		""
-		"Eight more below to finish the aquatic set. Claim your reward and get started."
+		"Eight more below to finish the aquatic set."
 	]
 	quest.7D00000000000002.quest_subtitle: "The Tide chain opens."
 	quest.7D00000000000002.title: "Drowned Riches"
@@ -963,7 +963,7 @@
 	quest.7D00000000000023.quest_desc: ["Craft a &bSnow Slime in a Bucket&r in a Dissolution Chamber, feed your &aTide Frog&r, and turn in the &6Snow Froglight&r."]
 	quest.7D00000000000023.quest_subtitle: "Let it frog."
 	quest.7D00000000000023.title: "Snow"
-	quest.7F00000000000002.quest_desc: ["Time to fly. &eIron Jetpacks&r builds from metals your frogs already make and runs on the &bRF&r your Geode machines spin, so there's no new resource to farm."]
+	quest.7F00000000000002.quest_desc: ["&eIron Jetpacks&r builds from metals your frogs already make and runs on the &bRF&r your Geode machines spin, so there's no new resource to farm."]
 	quest.7F00000000000002.quest_subtitle: "Leave the ground behind."
 	quest.7F00000000000002.title: "Take Flight"
 	quest.7F00000000000005.quest_desc: ["Start with a &eLeather Strap&r - &fleather&r from your Bog frog, &firon nuggets&r from your Cave one. It's the harness everything else bolts onto."]
@@ -1068,7 +1068,7 @@
 	quest.51F0000000000017.quest_desc: [
 		"The &eDissolution Chamber&r presses an &8Obsidian Slime&r from &cnetherrack&r (plus prismarine filler, sweetslime, and latex)."
 		""
-		"From Tier 5 on there's no crafting-table chain, so the chamber is the only way to make these slimes. Feed it to your Infernal frog and turn in the &6Obsidian Froglight&r."
+		"Like Tide, Infernal has no crafting-table chain, so the chamber is the only way to make these slimes. Feed it to your Infernal frog and turn in the &6Obsidian Froglight&r."
 	]
 	quest.51F0000000000017.quest_subtitle: "The portal stone, on tap."
 	quest.51F0000000000017.title: "Obsidian"
@@ -1120,7 +1120,7 @@
 	quest.53A0000000000005.quest_desc: [
 		"The &eController&r is the brain. Pipe or hand-pour &bSlime Milk&r into its outward face and it rations that milk to the ceiling &eSprinklers&r. It won't take &cboss Slime Milk&r, so wither and dragon milk stay on their catalyst altars."
 		""
-		"Set it into a flat wall face (not a corner or edge), facing &eOUT&r of the box, placed from outside with the front toward you. Any non-edge spot on a flat face works; it isn't pinned to the height the guide diagram shows. Walls can be &aany solid block&r. Recipe: glowstone, a quartz block, blaze rods, magma cream, nether bricks."
+		"Set it into a flat wall face (not a corner or edge), facing &eOUT&r of the box, placed from outside with the front toward you. Any non-edge spot on a flat face works; it isn't pinned to the height the guide diagram shows. Walls can be &aany solid block&r."
 	]
 	quest.53A0000000000005.quest_subtitle: "The brain of the box."
 	quest.53A0000000000005.title: "Terrarium Controller"
