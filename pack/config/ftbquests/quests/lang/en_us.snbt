@@ -42,60 +42,50 @@
 	quest.05BFA1537298A589.quest_subtitle: "The whole pitch, in three words."
 	quest.05BFA1537298A589.title: "Frogs, Not Pickaxes"
 	quest.1F00000000000002.quest_desc: [
-		"Just Dire Things runs on &eGoo&r. Craft &fclay balls&r, &fmycelium&r, &frotten flesh&r, and &fsugar&r into a block of &ePrimogel Goo&r - your way into Direwolf20's machines. The mycelium comes off your &aBog frog&r."
+		"Just Dire Things runs on &eGoo&r. Craft &fclay balls&r, &frotten flesh&r, &fsugar&r, and a block of &fmycelium&r into &ePrimogel Goo&r. The mycelium is off your &aBog frog&r; in this pack it stands in for the dirt the recipe normally takes."
 		""
-		"Place the goo, then set a &firon block&r or &fcoal block&r right next to it. The goo slowly creeps into that block and turns it into a raw ore. Mine the ore and you're off."
+		"Place the goo and set an &firon block&r or &fcoal block&r against it. Over a couple of minutes the goo turns that block into a raw ore. Mine it and you are started."
 	]
 	quest.1F00000000000002.quest_subtitle: "Just Dire Things begins."
 	quest.1F00000000000002.title: "First Goo"
-	quest.1F00000000000020.quest_desc: [
-		"The &eSlime Churn&r runs the milk loop without the chase. Load it with a bucket of any variant's &eSlime Milk&r and a stack of empty buckets, and it fills each one with that variant's &bBucket of Slime&r. It matches a hand-placed milk pool exactly (same rate, same budget, same catalysts), except nothing hops away to catch."
-		""
-		"Craft a &eSlime Churn&r."
-	]
+	quest.1F00000000000020.quest_desc: ["The &eSlime Churn&r bottles slimes instead of spawning them. Load it with a bucket of any &eSlime Milk&r and a stack of empty buckets; it fills each one with that variant's &bBucket of Slime&r, on the same rate, budget, and catalysts as a placed milk pool. Nothing spawns in the world, so there is nothing to chase down."]
 	quest.1F00000000000020.quest_subtitle: "The Milker, in reverse."
 	quest.1F00000000000020.title: "The Slime Churn"
-	quest.1F00000000000005.quest_desc: [
-		"&fFerricore&r is JDT's iron - the metal every Simple machine downstream needs. Set &firon blocks&r against your &ePrimogel Goo&r and it creeps into each one over a couple of minutes, turning it into &fRaw Ferricore Ore&r. Mine the ore and smelt it to a &bFerricore Ingot&r."
-		""
-		"Stock up. Everything Direwolf20 makes from here takes ferricore."
-	]
+	quest.1F00000000000005.quest_desc: ["&fFerricore&r is JDT's iron. Set &firon blocks&r against your &ePrimogel Goo&r and each turns into &fRaw Ferricore Ore&r after a couple of minutes; mine it and smelt for a &bFerricore Ingot&r. Stock up, because the Fluid Collector, Fluid Placer, and Item Collector ahead all take ferricore."]
 	quest.1F00000000000005.quest_subtitle: "JDT's base metal."
 	quest.1F00000000000005.title: "Ferricore Ingot"
 	quest.1F0000000000000E.quest_desc: [
-		"Done chasing dropped &6Froglights&r across the platform? An &eItem Collector&r vacuums up everything in a radius - Froglights, slimeballs, anything that hits the floor."
+		"An &eItem Collector&r vacuums up everything that lands on the floor in a radius: &6Froglights&r, slimeballs, stray drops. Sink one into your habitat floor by the frogs and stop walking the platform to pick them up."
 		""
-		"Sink one into your habitat floor and stop bending over. It takes a diamond, two &fender pearls&r, hoppers, and ferricore - so farm a few enderman in the dark room first."
-		""
-		"Claim your reward."
+		"It needs an &fender pearl&r alongside a diamond, hoppers, and ferricore, so farm an enderman in the dark room first if you have not."
 	]
 	quest.1F0000000000000E.quest_subtitle: "An item magnet."
 	quest.1F0000000000000E.title: "Vacuum the Floor"
 	quest.1F00000000000011.quest_desc: [
-		"Building Gadgets 2 gives you fast block-placement tools. The &eExchanging Gadget&r swaps one block for another in place - refurbish your habitat or re-skin a wall without tearing it down first."
+		"The &eExchanging Gadget&r (Building Gadgets 2) swaps one block for another in place: re-skin a wall or refurbish your habitat without tearing it down first."
 		""
-		"(Mekanism hands you the basic &bBuilding Gadget&r as the Enrichment Chamber reward if you took that path; this is the next step up.)"
+		"You met the &bBuilding Gadget&r as the Enrichment Chamber reward back in Mekanism; the Exchanging Gadget is its counterpart for swapping blocks, not an upgrade of it."
 	]
 	quest.1F00000000000011.quest_subtitle: "Swap blocks in bulk."
 	quest.1F00000000000011.title: "Exchanging Gadget"
 	quest.1F00000000000014.quest_desc: [
-		"The &eCopy/Paste Gadget&r captures a shape into a &bTemplate&r and stamps it anywhere - build one frog habitat, paste it ten times, turn one corner of the platform into a whole pond."
+		"The &eCopy/Paste Gadget&r captures a shape into a &bTemplate&r and stamps it back down anywhere. Build one frog habitat, then paste copies across the platform instead of rebuilding each by hand."
 		""
-		"Your reward, the &bTemplate Manager&r, lets you name and save those templates to reuse later."
+		"Your reward, the &bTemplate Manager&r, names and saves those templates so you can reuse them later."
 	]
 	quest.1F00000000000014.quest_subtitle: "Build it twice."
 	quest.1F00000000000014.title: "Copy, Paste"
 	quest.1F00000000000017.quest_desc: [
-		"A &eFluid Collector&r reaches into the block in front of it and slurps the fluid source - water, lava, latex, anything bucketable - into its internal tank."
+		"A &eFluid Collector&r drains the fluid source in front of it (water, lava, latex, anything you could bucket) into an internal tank you can pipe out."
 		""
-		"Pipe it into your &bDissolution Chamber&r's latex intake, your cobblegen's water feed, anywhere a bucket would have done. Bucket by hand never again."
+		"Feed it into your &bDissolution Chamber&r's latex intake or a cobblegen's water feed, anywhere you were hauling buckets by hand."
 	]
 	quest.1F00000000000017.quest_subtitle: "Scoop fluids, no bucket."
 	quest.1F00000000000017.title: "Fluid Collector"
 	quest.1F0000000000001A.quest_desc: [
-		"The other half of the pair. A &eFluid Placer&r pours from its tank into the block in front of it - infinite water spreads, lava cobblegens, automated infrastructure that fills itself."
+		"The &eFluid Placer&r is the reverse: it pours from its tank into the block in front of it. Use it to feed a cobblegen its water or lava."
 		""
-		"Pair it with a Fluid Collector and you've got a closed-loop fluid circuit."
+		"Pair it with a &eFluid Collector&r for a closed loop: one drains a source, the other places it where you need it."
 	]
 	quest.1F0000000000001A.quest_subtitle: "Pour fluids, no bucket."
 	quest.1F0000000000001A.title: "Fluid Placer"
@@ -455,51 +445,35 @@
 	]
 	quest.6ECA15000000001A.quest_subtitle: "Doubling, electrified."
 	quest.6ECA15000000001A.title: "Enrichment Chamber"
-	quest.70B0000000000002.quest_desc: [
-		"Cave gave you ore, Geode gave you gems and machines - the swamp gives you &aearth itself&r."
-		""
-		"Prime the &eSpawnery&r with your &dEnriched Diamond&r (plus a slime ball for fuel). Out comes a &2Bottle of Bog Frog Eggs&r - your first swamp frog."
-	]
+	quest.70B0000000000002.quest_desc: ["Prime the &eSpawnery&r with your &dEnriched Diamond&r, fueled by a slime ball. Out comes a &2Bottle of Bog Frog Eggs&r."]
 	quest.70B0000000000002.quest_subtitle: "Tier 3 begins."
 	quest.70B0000000000002.title: "The Road to Bog"
-	quest.70B0000000000005.quest_desc: ["Craft a &2Dirt Slime in a Bucket&r from a bucket of &bdiamond Slime Milk&r - plus four &amossy cobblestone&r, three sweetslime, and your bottle of Bog Frog Eggs. The mossy stone marks the crossover from the mineral tiers into the organic swamp."]
+	quest.70B0000000000005.quest_desc: ["Craft a &2Dirt Slime in a Bucket&r from a bucket of &bdiamond Slime Milk&r plus four &amossy cobblestone&r, three sweetslime, and your bottle of Bog Frog Eggs. Every Bog resource after this uses the same craft with the previous resource's Slime Milk."]
 	quest.70B0000000000005.quest_subtitle: "Dirt you can pour."
 	quest.70B0000000000005.title: "A Dirt Slime in a Bucket"
 	quest.70B0000000000008.quest_desc: ["Run the Dirt Slime through the &eSlime Milker&r for a bucket of &2Dirt Slime Milk&r. Pour it out and Dirt Slimes start spawning on their own."]
 	quest.70B0000000000008.quest_subtitle: "Milk the brown."
 	quest.70B0000000000008.title: "A Bucket of Dirt Slime Milk"
 	quest.70B000000000000B.quest_desc: [
-		"Feed Dirt Slimes to your Bog Frog and it drops a &6Dirt Froglight&r. Turn one in - then smelt the rest into dirt, renewable land straight off the frog."
+		"Feed Dirt Slimes to your Bog Frog and it drops a &6Dirt Froglight&r. Turn one in, then smelt the rest for dirt - renewable land off the frog."
 		""
-		"The swamp is open. Every organic the bog has is a frog away now."
+		"The rest of the Bog chain - mud, clay, moss, mycelium, lily pad - runs off the same loop."
 	]
 	quest.70B000000000000B.quest_subtitle: "The Bog's foundation."
 	quest.70B000000000000B.title: "Dirt"
-	quest.70B000000000000E.quest_desc: [
-		"The swamp won't take a raw diamond - it wants it &dEnriched&r."
-		""
-		"Run a &bdiamond&r through the &eEnrichment Chamber&r (your Geode capstone machine). The Enriched Diamond is the seed for everything Bog."
-	]
+	quest.70B000000000000E.quest_desc: ["Run a &bdiamond&r through the &eEnrichment Chamber&r to make an &dEnriched Diamond&r. It primes the Spawnery for your first Bog frog."]
 	quest.70B000000000000E.quest_subtitle: "Crush it for more."
 	quest.70B000000000000E.title: "Enrich a Diamond"
-	quest.70B0000000000011.quest_desc: [
-		"Stone doesn't belong in a swamp - it has to go &amossy&r first."
-		""
-		"Infuse &7cobblestone&r with &aBiomass&r in the &eMetallurgic Infuser&r (10 mB each). Mossy cobblestone is the organic stand-in for plain stone that seeds the first Bog slime."
-	]
+	quest.70B0000000000011.quest_desc: ["Infuse &7cobblestone&r with &aBiomass&r in the &eMetallurgic Infuser&r, 10 mB each. Mossy cobblestone is the Bog tier's filler - every slime step in this chain takes four of it."]
 	quest.70B0000000000011.quest_subtitle: "Stone goes green."
 	quest.70B0000000000011.title: "Mossy Cobblestone"
-	quest.70B0000000000014.quest_desc: [
-		"Mossy cobblestone starts with &aBio Fuel&r, and Bio Fuel needs a grinder."
-		""
-		"Craft a &eMekanism Crusher&r. Feed it any plant matter - saplings, leaves, your spare frog-farmed organics - and it grinds them into &aBio Fuel&r."
-	]
+	quest.70B0000000000014.quest_desc: ["Craft a &eMekanism Crusher&r. Feed it plant matter - saplings, leaves, any spare organics - and it grinds out &aBio Fuel&r."]
 	quest.70B0000000000014.quest_subtitle: "Grind it down."
 	quest.70B0000000000014.title: "The Crusher"
 	quest.70B0000000000017.quest_desc: [
-		"Run plant matter through the &eCrusher&r to stock up on &aBio Fuel&r - eight to start."
+		"Run plant matter through the &eCrusher&r for &aBio Fuel&r - eight to start."
 		""
-		"The &eMetallurgic Infuser&r drinks Bio Fuel as its &bBiomass&r infusion - that's what turns cobblestone mossy. Keep a supply on hand; the Bog slime chain runs on it."
+		"The &eMetallurgic Infuser&r takes Bio Fuel as its &bBiomass&r infusion, and that's what turns cobblestone mossy. Keep a stock; the whole Bog chain runs on it."
 	]
 	quest.70B0000000000017.quest_subtitle: "The swamp's infusion."
 	quest.70B0000000000017.title: "Bio Fuel"
@@ -665,11 +639,9 @@
 	quest.70E0000000000031.quest_subtitle: "Power without wires."
 	quest.70E0000000000031.title: "The Network Is Live"
 	quest.7B06000000000002.quest_desc: [
-		"The Bog frog eats more than dirt. Each new resource threads off the &elast one's Slime Milk&r - mud from dirt, clay from mud, on down the swamp."
+		"The Bog frog gives the swamp's resources, each made from the one before it: mud from dirt, clay from mud, on down the chain."
 		""
-		"The loop never changes: prior milk + four mossy cobblestone + three sweetslime + a bottle of Bog Frog Eggs -> the next Slime in a Bucket. Milk it, feed the frog, and it drops the &6Froglight&r."
-		""
-		"Every quest here wants that &6Froglight&r - the frog's own proof - so hand one in before you smelt it into the resource."
+		"Same loop as the earlier tiers: prior &eSlime Milk&r plus four mossy cobblestone, three sweetslime, and a bottle of Bog Frog Eggs makes the next &2Slime in a Bucket&r. Work it down."
 	]
 	quest.7B06000000000002.quest_subtitle: "The Bog chain opens."
 	quest.7B06000000000002.title: "Beyond Dirt"
@@ -689,11 +661,9 @@
 	quest.7B06000000000011.quest_subtitle: "A frog's favorite seat."
 	quest.7B06000000000011.title: "Lily Pad"
 	quest.7B06000000000034.quest_desc: [
-		"Tired of leashing frogs to keep them in place? Right-click a placed &alily pad&r with a &dSweetslime&r and it becomes a &aSweetslimed Lily Pad&r."
+		"Right-click a placed &alily pad&r with a &dSweetslime&r to make a &aSweetslimed Lily Pad&r. The nearest frog walks over and perches on it - one frog per pad - and stays put instead of wandering off."
 		""
-		"The nearest frog walks over and settles on it - one frog per pad. It keeps eating same-species slimes in range and dropping &6Froglights&r right there, so park one over a hopper beside a &eSlime Milk&r source for hands-off collection. Break the pad to free the frog."
-		""
-		"Make one, then check this off. (Your &9field guide&r has the full page.)"
+		"It keeps eating its slimes in range and dropping &6Froglights&r on the spot. Set one over a hopper next to a &eSlime Milk&r pool for hands-free collection. Break the pad to free the frog."
 	]
 	quest.7B06000000000034.quest_subtitle: "Pin a frog, no leash."
 	quest.7B06000000000034.title: "A Frog Perch"
@@ -704,16 +674,16 @@
 	quest.7B06000000000017.quest_subtitle: "No chicken either."
 	quest.7B06000000000017.title: "Feather"
 	quest.7B0600000000001A.quest_desc: [
-		"The swamp turns synthetic. &fPlastic&r from your &elily pad milk&r - and since the &cnormal latex-to-plastic recipe is gone&r, this frog is now the &lonly&r source of plastic in the pack."
+		"&fPlastic&r comes from your &elily pad milk&r: smelt the plastic &6Froglight&r for it. The pack removes Industrial Foregoing's normal plastic recipe (smelting dry rubber), so this frog is the &lonly&r source of plastic in the pack."
 		""
-		"Plastic is the key to &eIndustrial Foregoing&r - most of its machines need it - so the bog just became mandatory tech."
+		"Industrial Foregoing machines need plastic to build, so there is no progressing that mod without the Bog frog."
 	]
 	quest.7B0600000000001A.quest_subtitle: "Slime, refined."
 	quest.7B0600000000001A.title: "Plastic"
 	quest.7B0600000000001D.quest_desc: [
-		"The apex of the swamp: &dPink Slime&r from your &eplastic milk&r - Industrial Foregoing's living synthetic."
+		"&dPink Slime&r is the last Bog resource, made from your &eplastic milk&r. Smelt the &6Froglight&r for Industrial Foregoing's pink slime."
 		""
-		"You've arrived. Take a full set of machine tuning - &bSpeed&r, &aEfficiency&r, and &eProcessing&r addons (tier 2) - and put your IF line into overdrive."
+		"The reward is a full set of tier 2 machine addons - &bSpeed&r, &aEfficiency&r, and &eProcessing&r - to tune your Industrial Foregoing machines."
 	]
 	quest.7B0600000000001D.quest_subtitle: "The Bog's prize."
 	quest.7B0600000000001D.title: "Pink Slime"
