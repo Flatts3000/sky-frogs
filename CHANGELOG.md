@@ -10,10 +10,11 @@ Editorial + maintenance release: the first three quest chapters rewritten to a c
 
 ### Changed
 
-- **Welcome, "Your First Iron Ingot," and "Scaling the Colony" chapters rewritten.** Every description now does two jobs and nothing else: teach a player new to Minecraft, and guide an experienced one. Flourish, recipe recitals (the game already shows recipes), and filler are gone. Each mechanic was checked against the actual mods, which corrected several long-standing inaccuracies: frogs give you ingots and resources (not raw ore), the cobblestone generator's flowing-lava-vs-obsidian rule, the automated generator makes cobblestone (not stone), frog stats start at 1/1/1, and the Flower Pot is crafted from bricks.
+- **The first three quest chapters (Welcome, Your First Iron Ingot, Scaling the Colony) rewritten** for clearer, tighter descriptions, with several mechanics corrected against the actual mods.
 - **Froglight names now render one consistent color** (gold) across every quest, so an item name reads the same everywhere and no longer shares a color with Slime-in-a-Bucket.
 - **"Name Your Frogs" rewards an anvil** instead of name tags. Naming is cosmetic, and an anvil is otherwise a steep iron cost on a void island; the quest is optional and its text now says so.
-- **Productive Frogs updated to 1.24.5; Sophisticated Backpacks and Sophisticated Core bumped.** PF 1.24.5 is machinery-only - the roster is unchanged (singularities 58, froglight recipes 102, census 60/34) and no quests changed.
+- **Productive Frogs updated to 1.24.5 ("Deep Breath").** A hotfix: **Resource Frogs and their tadpoles no longer drown.** Vanilla frogs breathe underwater, but ours never could - a frog kept in a flooded pen or a submerged farm chamber would quietly run out of air and die while the vanilla frog beside it swam on, a bug present since the mod's first release. They now breathe underwater exactly like their vanilla cousins. No new variants or items, so the roster is unchanged (singularities 58, froglight recipes 102, census 60/34) and no quests changed.
+- **Sophisticated Backpacks and Sophisticated Core bumped** to their latest 1.21.1 builds.
 
 ### Fixed
 
