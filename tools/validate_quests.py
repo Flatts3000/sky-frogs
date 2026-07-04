@@ -923,25 +923,36 @@ def check_dissolution_modded_coverage(chapters, ctx):
     diss_text = DISSOLUTION_JS.read_text(encoding="utf-8")
     modded_at = diss_text.find("MODDED_SELF_KEYED")
     non_circular: set[str] = set()
+    n_stamp = 0
     for js in RECIPE_DIR.glob("*.js"):
         if js.name == FROGLIGHT_RECIPE_JS:
             continue
         text = diss_text if js.name == DISSOLUTION_JS.name else js.read_text(encoding="utf-8")
-        non_circular.update(OUT_STAMP_RE.findall(text))
+        stamps = OUT_STAMP_RE.findall(text)
+        n_stamp += len(stamps)
+        non_circular.update(stamps)
         if js.name == DISSOLUTION_JS.name:
             end = modded_at if modded_at >= 0 else len(text)
             non_circular.update(m.group(1) for m in CHAIN_ROW_RE.finditer(text, 0, end))
             non_circular.update(m.group(2) for m in MODDED_ROW_RE.finditer(text, max(modded_at, 0)))
+    n_modded = len(MODDED_ROW_RE.findall(diss_text, max(modded_at, 0)))
 
-    # Parser guard (the PR #110 lesson): the jar exposes modded variants but we parsed
-    # zero sources -> the recipe format drifted from the regexes and this check would
-    # otherwise flag EVERY variant as circular-only. Fail loudly, don't trust it.
-    if exposed and not non_circular:
+    # Parser-drift guard (the PR #110 lesson; the #221 Copilot review sharpened it).
+    # The two parsers that source EXPOSED modded variants are MODDED_ROW_RE (the
+    # self-keyed table) and OUT_STAMP_RE (the bespoke steel/osmium buckets + the chain
+    # scripts). Guarding on `non_circular` being non-empty misses their drift, because
+    # non_circular also holds the vanilla SLIME_TIERS rows (CHAIN_ROW_RE) and is thus
+    # ~never empty - and an intersection guard slips too, since plastic/pink_slime are
+    # 2-element rows CHAIN_ROW_RE still catches. Key the guard on the modded-source
+    # counts: if either matched nothing, the format drifted - fail once, don't spam a
+    # per-variant miss for every modded variant. (Same count-minimum style as the
+    # threading check's own guard.)
+    if exposed and (n_modded == 0 or n_stamp == 0):
         return [Finding(ERROR, "Q-DISSOLUTION-COVERAGE", DISSOLUTION_JS.name, 0,
-                        f"parsed 0 non-circular slime sources but the jar exposes "
-                        f"{len(exposed)} loaded-mod variants - the recipe format drifted "
-                        f"from the parser; update tools/validate_quests.py before trusting "
-                        f"this check")]
+                        f"modded-source parsers matched nothing (self-keyed rows={n_modded}, "
+                        f"bespoke stamps={n_stamp}) while the jar exposes {len(exposed)} "
+                        f"loaded-mod variants - the recipe format drifted from the parser; "
+                        f"update tools/validate_quests.py before trusting this check")]
 
     line = diss_text.count("\n", 0, modded_at) + 1 if modded_at >= 0 else 0
     f = []
