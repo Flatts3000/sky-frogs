@@ -478,42 +478,30 @@
 	quest.70B0000000000017.quest_subtitle: "The swamp's infusion."
 	quest.70B0000000000017.title: "Bio Fuel"
 	quest.71DE000000000002.quest_desc: [
-		"Industrial Foregoing's machines all bolt onto a &eMachine Frame&r, and the humblest is the &ePity Machine Frame&r - logs, iron, and a block of redstone, no plastic required."
+		"Every Industrial Foregoing machine needs a &eMachine Frame&r as its core. The &ePity Machine Frame&r is the cheapest and takes no plastic: logs, iron, and a block of redstone."
 		""
-		"Craft one. The &bDissolution Chamber&r bolts onto it."
+		"The &bDissolution Chamber&r is built on this one."
 	]
 	quest.71DE000000000002.quest_subtitle: "Industrial Foregoing arrives."
 	quest.71DE000000000002.title: "The Machine Frame"
 	quest.71DE000000000005.quest_desc: [
-		"&fLatex&r is the fluid the &bDissolution Chamber&r runs on, and your frogs already make it. Melt a &6plastic Froglight&r in the &eCrucible&r - the same block that bootstrapped your lava - and it renders down into a bucket of &fLiquid Latex&r."
+		"The &bDissolution Chamber&r runs on &flatex&r. Melt a &6plastic Froglight&r in the &eCrucible&r for a full bucket of it, no rubber trees or Fluid Extractor needed."
 		""
-		"No Fluid Extractor, no rubber trees - the plastic frog is the source. Fill a bucket and keep a tank of it for the Chamber."
+		"Keep a tank of latex on hand for the Chamber."
 	]
 	quest.71DE000000000005.quest_subtitle: "Melt a plastic Froglight in the Crucible."
 	quest.71DE000000000005.title: "A Bucket of Latex"
 	quest.71DE000000000008.quest_desc: [
-		"Industrial Foregoing's &eDissolution Chamber&r dissolves a pile of items in a fluid and presses out something new. Frame it with &fplastic&r (your &bplastic slime&r supplies it), feed it the &flatex&r you rendered from a plastic Froglight, and it becomes the pack's &eslime engine&r."
+		"The &eDissolution Chamber&r dissolves items in a fluid and presses out something new. Here it makes resource slimes: a prior resource, tier filler, sweetslime, and a bit of &flatex&r press into that variant's &bSlime in a Bucket&r. Check JEI for the one you need."
 		""
-		"Every resource slime has a chamber recipe. &eCave&r, &eGeode&r, &eBog&r, and now &eTide&r each take a prior resource, tier filler, sweetslime, and latex, and press out that variant's &bSlime in a Bucket&r. Check JEI for whichever you need. Cave, Geode, and Bog still have hand-craft chains too; from &eTide&r on, the chamber is the only way."
-		""
-		"This chapter, the &eRoad to Tide&r, is the bridge that closes out &eBog&r and opens &eTide&r. Below, you'll prime your first &bTide Frog&r and draw a &6Prismarine Froglight&r out of the sea."
-		""
-		"Claim your reward. The engine is online."
+		"Cave, Geode, and Bog have crafting-table chains too. From &eTide&r on, the Chamber is the only way to make a resource slime."
 	]
 	quest.71DE000000000008.quest_subtitle: "The Dissolution Chamber."
 	quest.71DE000000000008.title: "The Slime Engine"
-	quest.71DE00000000000E.quest_desc: [
-		"You closed out &eBog&r with &bpink slime&r - it's also your key to the sea. Feed &bpink slime&r to the &eSpawnery&r to prime it for &eTide&r, and it bottles a &bBottle of Tide Frog Eggs&r."
-		""
-		"Pour it on water. &eTide Frogs&r hatch: the aquatic species, hungry for sponge, prismarine, and ink."
-	]
+	quest.71DE00000000000E.quest_desc: ["Prime the &eSpawnery&r with &bpink slime&r, your Bog capstone, for a &bBottle of Tide Frog Eggs&r. Pour it on water to hatch your &eTide Frogs&r."]
 	quest.71DE00000000000E.quest_subtitle: "Prime for the sea."
 	quest.71DE00000000000E.title: "Tide Frog Eggs"
-	quest.71DE000000000014.quest_desc: [
-		"From here on, the &eDissolution Chamber&r is the only way to make resource slimes - no more crafting-table chains. Feed it &fpink slime&r + &fmycelium&r + &fsweetslime&r and &flatex&r, and it presses out a &bBucket of Prismarine Slime&r, your first aquatic resource slime."
-		""
-		"&eTide&r and every tier after it runs on the chamber."
-	]
+	quest.71DE000000000014.quest_desc: ["Your first chamber slime. Feed the &eDissolution Chamber&r &bpink slime&r as the prior resource and it presses out a &bBucket of Prismarine Slime&r. JEI has the full recipe."]
 	quest.71DE000000000014.quest_subtitle: "The ocean in a bucket."
 	quest.71DE000000000014.title: "A Bucket of Prismarine Slime"
 	quest.71DE000000000017.quest_desc: [
@@ -524,9 +512,9 @@
 	quest.71DE000000000017.quest_subtitle: "Prismarine Slime Milk."
 	quest.71DE000000000017.title: "Milk It"
 	quest.71DE00000000001A.quest_desc: [
-		"Feed a prismarine slime to a &eTide Frog&r and it drops a &6Prismarine Froglight&r. Smelt it for &fprismarine shards&r: ocean stone, no monument required."
+		"Feed a prismarine slime to a &eTide Frog&r for a &6Prismarine Froglight&r, then smelt it for &fprismarine shards&r."
 		""
-		"&eTide&r is open. The rest of the aquatic chain - crystals, sponge, ink, sea pickle, nautilus - waits in &eDrowned Riches&r."
+		"&eTide&r is open. The rest of the aquatic resources are in &eDrowned Riches&r."
 	]
 	quest.71DE00000000001A.quest_subtitle: "Tier 4 opens."
 	quest.71DE00000000001A.title: "First Prismarine"
@@ -962,9 +950,9 @@
 	quest.7CA7E000C0DE0029.quest_subtitle: "Only slimes get through."
 	quest.7CA7E000C0DE0029.title: "Slimes Only"
 	quest.7D00000000000002.quest_desc: [
-		"You pulled &bprismarine&r out of the void-sea; the rest of the reef follows the same loop. Each &eTide&r resource: chamber its slime, milk it, feed a &eTide Frog&r, smelt the &6Froglight&r."
+		"You've got &bprismarine&r. Every other Tide resource runs the same loop: chamber the slime, milk it, feed a &eTide Frog&r, then smelt the &6Froglight&r it drops."
 		""
-		"Eight more to land the full aquatic roster. Claim your reward and dive in."
+		"Eight more below to finish the aquatic set. Claim your reward and get started."
 	]
 	quest.7D00000000000002.quest_subtitle: "The Tide chain opens."
 	quest.7D00000000000002.title: "Drowned Riches"
@@ -989,46 +977,38 @@
 	quest.7D00000000000023.quest_desc: ["Craft a &bSnow Slime in a Bucket&r in a Dissolution Chamber, feed your &aTide Frog&r, and turn in the &6Snow Froglight&r."]
 	quest.7D00000000000023.quest_subtitle: "Let it frog."
 	quest.7D00000000000023.title: "Snow"
-	quest.7F00000000000002.quest_desc: [
-		"Your island has spread out under you, and walking it is getting old. Time to fly. &eIron Jetpacks&r runs on the metals your frogs already make and the &bRF&r your Geode machines already spin."
-		""
-		"No new resource to chase - just a new way to move."
-	]
+	quest.7F00000000000002.quest_desc: ["Time to fly. &eIron Jetpacks&r builds from metals your frogs already make and runs on the &bRF&r your Geode machines spin, so there's no new resource to farm."]
 	quest.7F00000000000002.quest_subtitle: "Leave the ground behind."
 	quest.7F00000000000002.title: "Take Flight"
 	quest.7F00000000000005.quest_desc: ["Start with a &eLeather Strap&r - &fleather&r from your Bog frog, &firon nuggets&r from your Cave one. It's the harness everything else bolts onto."]
 	quest.7F00000000000005.quest_subtitle: "The jetpack's harness."
 	quest.7F00000000000005.title: "Leather Strap"
-	quest.7F00000000000008.quest_desc: ["A &eBasic Coil&r - &firon&r, &fredstone&r, and a &fstick&r - is the heart of the cheapest jetpack. Cave resources, all of it."]
+	quest.7F00000000000008.quest_desc: ["A &eBasic Coil&r is the heart of the cheapest jetpack. The coil is what sets your jetpack's tier; this is the bottom rung."]
 	quest.7F00000000000008.quest_subtitle: "The first engine."
 	quest.7F00000000000008.title: "Basic Coil"
-	quest.7F0000000000000B.quest_desc: ["Build an &bIron Jetpack&r: the coil plus an iron &eenergy cell&r, &ethruster&r, and &ecapacitor&r on the strap. Wear it in a &eCurios&r back slot (or over your chestplate) - you're a pilot now."]
+	quest.7F0000000000000B.quest_desc: ["Build the &bIron Jetpack&r: the coil and strap plus an iron cell, thruster, and capacitor. Wear it in a &eCurios&r back slot, or straight over your chestplate."]
 	quest.7F0000000000000B.quest_subtitle: "Your first jetpack."
 	quest.7F0000000000000B.title: "Off the Ground"
 	quest.7F0000000000000E.quest_desc: [
-		"A jetpack is dead weight without power. Charge it from any &bForge Energy&r source - a &eMekanism&r energy cube or cable off your Geode setup - then hold jump and lift off. Tap hover to hang in place."
+		"The jetpack needs charge. Top it off from any &bForge Energy&r source - a &eMekanism&r energy cube, or a cable off your Geode setup - then hold jump to lift off. Tap hover to hang in place."
 		""
 		"&aClaim this once you've flown.&r"
 	]
 	quest.7F0000000000000E.quest_subtitle: "Charge it, then soar."
 	quest.7F0000000000000E.title: "Fuel and Fly"
-	quest.7F00000000000011.quest_desc: ["An &eAdvanced Coil&r swaps the iron for &fgold&r - a faster, higher jetpack. Your Cave gold frog has you covered."]
+	quest.7F00000000000011.quest_desc: ["An &eAdvanced Coil&r swaps the iron for &fgold&r: a faster, higher jetpack. Gold comes off your Cave frog."]
 	quest.7F00000000000011.quest_subtitle: "Higher, faster."
 	quest.7F00000000000011.title: "Advanced Coil"
-	quest.7F00000000000014.quest_desc: ["The &eElite Coil&r runs on &fdiamond&r. Geode gem-tier mobility: climb higher, burn fuel slower."]
+	quest.7F00000000000014.quest_desc: ["An &eElite Coil&r runs on &fdiamond&r: higher still, and easier on fuel."]
 	quest.7F00000000000014.quest_subtitle: "Most of the sky."
 	quest.7F00000000000014.title: "Elite Coil"
-	quest.7F00000000000017.quest_desc: ["The &eUltimate Coil&r tops it out with &femerald&r from your Geode frog - the fastest jetpack in the pack. The void is yours to cross."]
+	quest.7F00000000000017.quest_desc: ["The &eUltimate Coil&r caps the line with &femerald&r from your Geode frog - the fastest jetpack in the pack."]
 	quest.7F00000000000017.quest_subtitle: "The whole sky."
 	quest.7F00000000000017.title: "Ultimate Coil"
-	quest.7F0000000000001A.quest_desc: [
-		"No trial chambers generate over the void, so the vaults' prize comes from the press instead: the &eDissolution Chamber&r squeezes a &bHeavy Core&r out of &f4 iron blocks&r and &f4 prismarine&r under latex. Dense Cave ore, Tide stone - the chamber does the compacting so no ominous vault has to."
-	]
+	quest.7F0000000000001A.quest_desc: ["No trial chambers generate over the void, so the &bHeavy Core&r comes from the press instead. The &eDissolution Chamber&r squeezes one out of &f4 iron blocks&r and &f4 prismarine&r under latex."]
 	quest.7F0000000000001A.quest_subtitle: "Vault treasure, frog-pressed."
 	quest.7F0000000000001A.title: "The Heavy Core"
-	quest.7F0000000000001D.quest_desc: [
-		"A &bBreeze Rod&r on the core and the &bMace&r is yours. Its smash scales with how far you FALL - and you just built a jetpack. Climb, cut thrust, land the hit; one &bbreeze rod&r also crafts &f4 wind charges&r to bounce yourself skyward mid-fight. Gravity is a weapon now."
-	]
+	quest.7F0000000000001D.quest_desc: ["Add a &bBreeze Rod&r to the core for the &bMace&r. Its smash damage scales with how far you fall - and you just built a jetpack, so climb, cut thrust, and land the hit from height. One breeze rod also crafts into &f4 wind charges&r to bounce yourself back up mid-fight."]
 	quest.7F0000000000001D.quest_subtitle: "What goes up..."
 	quest.7F0000000000001D.title: "Drop the Hammer"
 	task.2A5700000A570003.title: "Got it"
