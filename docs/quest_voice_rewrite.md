@@ -1,8 +1,8 @@
 # Quest Voice Rewrite
 
-**Status:** Spec / not started. Implementation is held until the user gives the go (see [`../CLAUDE.md`](../CLAUDE.md) and the memory note `feedback-quest-copy-reads-as-ai`).
+**Status:** Editorial pass **SHIPPED** - v1.4.2 (chapters 1-3) and v1.4.3 (all remaining), covering every P0-P3 chapter in section 5. Measured against the section 9 baseline it cut the loudest mechanical tells hard: dash-as-reveal **301 -> 47**, rhetorical-question openers **~12 -> 0**, and the wordy/long descriptions trimmed (the regenerated ranking in [`quest_rewrite_candidates.md`](./quest_rewrite_candidates.md) is now **0 HIGH / 21 MED**, down from 0 HIGH / 91 MED). What it did **not** do: reach the section-8 "near-zero dashes" definition of done (47 dash-reveals remain), rework the P4 generated census chapters, or settle whether players still read the copy as AI - that perception check is a playtest question and stays the user's call (see [`../CLAUDE.md`](../CLAUDE.md) and the memory note `feedback-quest-copy-reads-as-ai`). Treat the rest of this doc as the standing voice spec plus the residual worklist, not an unstarted project.
 
-**Owner of the problem:** player feedback says the quest descriptions "look like AI." This doc specs the fix.
+**Owner of the problem:** player feedback says the quest descriptions "look like AI." This doc specs the fix; the v1.4.2-v1.4.3 editorial pass is its first execution.
 
 ---
 
@@ -54,43 +54,43 @@ Counts taken from `pack/config/ftbquests/quests/lang/en_us.snbt` on 2026-06-29:
 Priority is first-impression + traffic + formula density. Each chapter is one reviewable unit: rewrite -> human review -> calibrate.
 
 ### P0 - calibration sample (do first, prove the voice)
-- [ ] `welcome` - first thing every player reads
-- [ ] `cave_frogs` - Tier 1 species, first resource loop
+- [x] `welcome` - first thing every player reads
+- [x] `cave_frogs` - Tier 1 species, first resource loop
 
-> After P0, the user reviews and edits. Their edits recalibrate the spec before any P1 work begins.
+> Historical workflow: P0 shipped first as the calibration sample, the user reviewed, and their edits recalibrated the spec before the P1-P3 chapters followed in v1.4.3. All are now shipped; the boxes above track that.
 
 ### P1 - early game, high traffic
-- [ ] `your_first_iron_ingot`
-- [ ] `storage_and_crafting` (kicker-formula heavy)
-- [ ] `tools_and_things` (kicker-formula heavy)
-- [ ] `scaling_the_colony`
-- [ ] `road_to_geode`
-- [ ] `geode_frogs`
+- [x] `your_first_iron_ingot`
+- [x] `storage_and_crafting` (kicker-formula heavy)
+- [x] `tools_and_things` (kicker-formula heavy)
+- [x] `scaling_the_colony`
+- [x] `road_to_geode`
+- [x] `geode_frogs`
 
 ### P2 - mid game
-- [ ] `powered_up`
-- [ ] `mekanism`
-- [ ] `melting_point`
-- [ ] `road_to_bog`
-- [ ] `bog_frogs`
-- [ ] `road_to_tide`
-- [ ] `drowned_riches`
-- [ ] `take_flight`
+- [x] `powered_up`
+- [x] `mekanism`
+- [x] `melting_point`
+- [x] `road_to_bog`
+- [x] `bog_frogs`
+- [x] `road_to_tide`
+- [x] `drowned_riches`
+- [x] `take_flight`
 
 ### P3 - late game / endgame
-- [ ] `road_to_infernal`
-- [ ] `infernal_frogs`
-- [ ] `the_network`
-- [ ] `terrarium`
-- [ ] `road_to_void`
-- [ ] `void_frogs`
-- [ ] `the_ultimate_table`
-- [ ] `master_pond`
-- [ ] `trophy_pond`
+- [x] `road_to_infernal`
+- [x] `infernal_frogs`
+- [x] `the_network`
+- [x] `terrarium`
+- [x] `road_to_void`
+- [x] `void_frogs`
+- [x] `the_ultimate_table`
+- [x] `master_pond`
+- [x] `trophy_pond`
 
 ### P4 - generated (edit the generator, not the lang)
-- [ ] `sister_ponds` - via `gen_completionist_chapters.py` template
-- [ ] `whole_pond` - via `gen_completionist_chapters.py` template
+- [~] `sister_ponds` - templated in the generator; via `gen_completionist_chapters.py` template
+- [~] `whole_pond` - templated in the generator; via `gen_completionist_chapters.py` template
 
 ## 6. Workflow
 
@@ -116,13 +116,20 @@ Priority is first-impression + traffic + formula density. Each chapter is one re
 - Generated chapters (P4) addressed at the generator if their text needs it.
 - Branch merged only after user sign-off.
 
-## 9. Baseline metrics (2026-06-29, pre-rewrite)
+## 9. Metrics (pre-rewrite vs current)
 
-- Quest titles: 339
-- Quests with descriptions: 245
-- Subtitles: 245 (all fragment-formula)
-- ` - ` dash-as-reveal occurrences: 301
-- Rhetorical-question openers: ~12
+Regenerate the current column with `python tools/score_quest_voice.py --check` and a `grep` on the lang file.
+
+| Signal | 2026-06-29 (pre-rewrite) | 2026-07-05 (post v1.4.3) |
+| --- | --- | --- |
+| Quest titles | 339 | 383 |
+| Quests with descriptions | 245 | 249 |
+| Subtitles | 245 (all fragment-formula) | 249 (still mostly short kickers) |
+| ` - ` dash-as-reveal occurrences | 301 | **47** |
+| Rhetorical-question openers | ~12 | **0** |
+| Candidate score distribution | 0 HIGH / 91 MED / 153 LOW / 3 CLEAN | 0 HIGH / 21 MED / 214 LOW / 14 CLEAN |
+
+The dash-as-reveal count fell ~85% but is not yet near-zero (section 8), and subtitles are still predominantly short fragments (spec rule 4 only partly applied). Those two are the bulk of the residual worklist in `quest_rewrite_candidates.md`.
 
 ## Appendix A - Verb accuracy audit (the "pour" sweep)
 
