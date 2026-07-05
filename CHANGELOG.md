@@ -4,6 +4,14 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+## [1.4.4] - 2026-07-05
+
+Maintenance release: updates Productive Frogs to 1.24.6 ("Fresh Coat"). No pack content or quests changed.
+
+### Changed
+
+- **Productive Frogs updated to 1.24.6 ("Fresh Coat").** A texture refresh backported from the 2.x line: sharper contents art for the Slime Bucket and Tadpole Bucket, each now with a proper bucket base of its own, and upgraded Slime Milk fluid textures. Slime Milk tints to its variant, so every milk in the mod gets the nicer look. Purely cosmetic - no recipes, data, or saves change, and the roster is unchanged (singularities 58, froglight recipes 102, census 60/34), so no quests changed.
+
 ## [1.4.3] - 2026-07-04
 
 Editorial release: a full rewrite pass over the rest of the quest book, finishing what 1.4.2 started with the Cave tier. Every remaining quest description was rewritten to a plainer, clearer voice - teach a new player, guide an experienced one, nothing else - and several had their mechanics corrected against the actual mods. No pack content, recipes, or progression changed; no quests were added or removed.
