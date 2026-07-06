@@ -4,6 +4,8 @@
 
 Parking lot for open questions, deferred features, and post-1.0 ideas. Move items into proper docs when they crystallize into design decisions.
 
+> **Sky Frogs 2 vision material** lives in [`sky_frogs_2_feedback.md`](./sky_frogs_2_feedback.md) - captured player feedback (Eebag, v1.4.1 run) kept as design input for a possible sequel. **Hold, don't build**; not for the current pack, and not to be filed as issues.
+
 ## Open design questions
 
 ### Productive Frogs feature requests blocking pack work
