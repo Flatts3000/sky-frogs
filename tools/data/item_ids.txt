@@ -21202,6 +21202,7 @@ sophisticatedstorage:upgrade_base
 sophisticatedstorage:void_upgrade
 sophisticatedstorage:warped_storage_connector
 sophisticatedstorage:xp_pump_upgrade
+spawndetective:spawn_probe
 supplementaries:altimeter
 supplementaries:antique_ink
 supplementaries:ash

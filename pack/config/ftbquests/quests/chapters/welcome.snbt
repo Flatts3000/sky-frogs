@@ -58,6 +58,29 @@
 		}
 		{
 			dependencies: ["01A8E068925B319F"]
+			icon: {
+				id: "spawndetective:spawn_probe"
+			}
+			id: "6A5B4C3D2E1F0001"
+			optional: true
+			rewards: [{
+				id: "6A5B4C3D2E1F0003"
+				item: {
+					count: 1
+					id: "spawndetective:spawn_probe"
+				}
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "6A5B4C3D2E1F0002"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["01A8E068925B319F"]
 			id: "05BFA1537298A589"
 			rewards: [{
 				exclude_from_claim_all: true
