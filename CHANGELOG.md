@@ -4,6 +4,12 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+## [1.5.1] - 2026-07-24
+
+### Fixed
+
+- **Spawn Detective's report screen is no longer blurred out.** Opening the Spawn Probe report with Minecraft's Menu Background Blur on (the default) smeared the whole report, and it was only readable if you turned that setting off. Updates Spawn Detective to 0.1.0-alpha.2, which draws the report on top of the blur instead of under it, so it stays sharp whatever your video settings.
+
 ## [1.5.0] - 2026-07-24
 
 ### Added

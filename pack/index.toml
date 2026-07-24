@@ -1486,7 +1486,7 @@ metafile = true
 
 [[files]]
 file = "mods/spawn-detective.pw.toml"
-hash = "e41893b88997270053df40c5c9a1abfb9c7d83d3977a49ced824bdf528a74796"
+hash = "f44e3726bdf6e1df4057c3bee351a76511626ad42087abc05bb9ed109c31708b"
 metafile = true
 
 [[files]]
