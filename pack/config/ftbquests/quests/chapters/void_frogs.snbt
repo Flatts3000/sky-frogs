@@ -110,16 +110,25 @@
 			}
 			id: "60F0000000000030"
 			rewards: [{
-				exclude_from_claim_all: true
 				id: "60F0000000000032"
-				table_id: 9178336040581070849L
-				type: "loot"
-			}]
-			tasks: [{
-				id: "60F0000000000031"
-				item: { count: 1, id: "productivefrogs:virtual_terrarium" }
+				item: {
+					count: 1
+					id: "productivefrogs:vt_upgrade_bounty"
+				}
 				type: "item"
 			}]
+			tasks: [
+				{
+					id: "60F0000000000031"
+					item: { count: 1, id: "productivefrogs:virtual_terrarium" }
+					type: "item"
+				}
+				{
+					id: "60F0000000000033"
+					item: { count: 1, id: "productivefrogs:virtual_terrarium_dome" }
+					type: "item"
+				}
+			]
 			x: -1.5d
 			y: 4.5d
 		}

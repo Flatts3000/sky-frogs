@@ -636,11 +636,11 @@
 	quest.7B06000000000005.quest_subtitle: "Squelch."
 	quest.7B06000000000005.title: "Mud"
 	quest.7B06000000000040.quest_desc: [
-		"A milk source you can pipe and forget. Pour any &eSlime Milk&r into the Basin and it spawns that variant's slimes around itself, on the same budget as a placed pool. The difference: a placed pool drains away and has to be re-laid, but the Basin just empties and waits for the next bucket, so you can run a pipe into one and leave it."
+		"Spawns slimes without a milk pool on your floor. Pour any &eSlime Milk&r into the Basin and it spawns that variant's slimes around it, but the milk stays sealed inside the block, so there's no flowing Slime Milk placed in the world."
 		""
-		"Breaking it loses the milk inside, so drain it back to a bucket first. It refuses boss milk."
+		"Pipe it in or top it up by hand. It's waterloggable, so you can sink it into a pool, and it won't take boss milk."
 	]
-	quest.7B06000000000040.quest_subtitle: "Pipe it and walk away."
+	quest.7B06000000000040.quest_subtitle: "Milk that stays put."
 	quest.7B06000000000040.title: "The Slime Milk Basin"
 	quest.7B06000000000008.quest_desc: ["Craft a &bClay Slime in a Bucket&r, feed your &aBog Frog&r, and turn in the &6Clay Froglight&r."]
 	quest.7B06000000000008.quest_subtitle: "Bricks in waiting."
@@ -1278,9 +1278,9 @@
 	quest.60F000000000000B.quest_subtitle: "The deep dark, skipped."
 	quest.60F000000000000B.title: "Echo Shard"
 	quest.60F0000000000030.quest_desc: [
-		"One frog's entire eat loop, sealed in two blocks. Put the glass &bDisplay Dome&r on the &bProcessor&r to form it, drop in a frog with the Frog Net, and pour in that species' &eSlime Milk&r. It runs on its own and drops the output out the bottom. Nothing spawns loose on the ground, and it takes no floor space."
+		"A one-frog Terrarium in two blocks. Set the &bDome&r on the &bProcessor&r, net a frog in, and feed it its milk. It eats and produces Froglights."
 		""
-		"One frog at normal speed, so a full Terrarium still out-produces it. The trade is a hidden, hands-off build with no upkeep. Four upgrade slots (more output, faster cycles, a Smelter or Melter, an RF Overclock) tune it; the in-game guide has the details."
+		"No more worrying about too many slimes in your world. This block produces more than a full Terrarium once you add upgrades."
 	]
 	quest.60F0000000000030.quest_subtitle: "Sealed under glass."
 	quest.60F0000000000030.title: "The Virtual Terrarium"
