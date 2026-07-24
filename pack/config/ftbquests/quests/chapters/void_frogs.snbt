@@ -106,6 +106,35 @@
 		{
 			dependencies: ["60F000000000000B"]
 			icon: {
+				id: "productivefrogs:virtual_terrarium"
+			}
+			id: "60F0000000000030"
+			rewards: [{
+				id: "60F0000000000032"
+				item: {
+					count: 1
+					id: "productivefrogs:vt_upgrade_bounty"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "60F0000000000031"
+					item: { count: 1, id: "productivefrogs:virtual_terrarium" }
+					type: "item"
+				}
+				{
+					id: "60F0000000000033"
+					item: { count: 1, id: "productivefrogs:virtual_terrarium_dome" }
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["60F000000000000B"]
+			icon: {
 				id: "minecraft:sculk"
 			}
 			id: "60F000000000000E"

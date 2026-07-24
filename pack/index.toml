@@ -314,7 +314,7 @@ hash = "338768fb497fa6c1544e4db8ed91aa7773ee683566fc3db2aebf6319a1c54fb4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/bog_frogs.snbt"
-hash = "7e4159869867425c05eecfc439b8841880b6b393340b3153d1421b84d0e28e0a"
+hash = "7e146a8c9f335dcd6721283c45466a029f977e4377a499950710499e192ffe36"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/cave_frogs.snbt"
@@ -406,7 +406,7 @@ hash = "920e120c220a57f4d42335ec3e65d731540a0317dd13dfa615b02aebdad0b665"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/void_frogs.snbt"
-hash = "326dc051f381ee12b5e4c746ce008b1ce2f23773b23240582a8861dd17b1e098"
+hash = "a4c47196360efbcd5ec6cf8a8e2ceb17f2ba6f65538f916a5d7ecc19a12b3a11"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
@@ -426,7 +426,7 @@ hash = "4889c5e7d4a8179b45e68f0ac00119529ed49ba68f20624b36e996bb0d60ddd0"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "4a0b8b46cce60128705aed63b608464b5d4826883c6a40dbba8eb136ffa91970"
+hash = "79c0a0c74393d6982bddfed6b46416f298b5c4d6b9a2dcb6a65fc5f8dc505d9d"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
@@ -754,7 +754,7 @@ hash = "06990d1e0160108d321a985b2b0c61dd34a05e1c4e971f62538681b11d73fb90"
 
 [[files]]
 file = "kubejs/server_scripts/void_recipes.js"
-hash = "f5b2c527b2ff91e22a318a8364584be8a99ad276043bb2df5eb5c026c54868a5"
+hash = "559a63b36fbaa90f22aa23cffc4b41c7ecf6ee30041189e76e53c238343f939e"
 
 [[files]]
 file = "kubejs/startup_scripts/master_frog_item.js"
@@ -1371,7 +1371,7 @@ metafile = true
 
 [[files]]
 file = "mods/productive-frogs.pw.toml"
-hash = "da5ba087985f39b124bfe776bdcaf75574ffb8108a4b4547041832251742a250"
+hash = "65fa5237787f52baeb9f40b645df8b543ee09c4ec4dc3c35c05c29cea7631903"
 metafile = true
 
 [[files]]

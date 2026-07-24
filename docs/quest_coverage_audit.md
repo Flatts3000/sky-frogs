@@ -10,12 +10,12 @@
 
 An enabled PF feature with no quest. Ordered by priority.
 
-Two quests to add, both from PF 1.25.0, both gated on the bump landing on CurseForge before they can be built (their item ids don't exist in the pinned jar yet):
+**RESOLVED 2026-07-24: both quests built on the 1.25.0 bump** (branch `chore/pf-1.25.0`). See the CHANGELOG `[Unreleased]` and `docs/pf_pin_history.md`.
 
-| # | Feature | PF version | Placement (decided) | Status |
-|---|---------|-----------|--------------------|--------|
-| 1 | **Virtual Terrarium** (+ Display Dome + 5 upgrades) | 1.25.0 (NEW) | **Void tier** (maintainer). Stock recipe is only ~Infernal (ender eye = overworld ender pearl + blaze powder; needs the Terrarium Controller). **Gate: KubeJS recipe override requiring a void Froglight** (decided 2026-07-24) - matches the pack's froglight-check law. Specific void variant TBD (suggest the void capstone, shulker_shell). | To build after bump |
-| 2 | **Slime Milk Basin** | 1.25.0 (NEW) | **~Bog tier** - recipe-gated: 8x packed mud + slime ball | To build after bump |
+| # | Feature | PF version | Placement | Status |
+|---|---------|-----------|-----------|--------|
+| 1 | **Virtual Terrarium** (+ Display Dome + 5 upgrades) | 1.25.0 | **Void** - quest in `void_frogs` (quest `60F0000000000030`), gated on the Echo Shard quest. Recipe void-gated by a KubeJS override in `void_recipes.js` swapping the stock amethyst blocks for **echo shards** (void-only on this skyblock). Chose echo shard over a component-froglight ingredient - component-match recipes are unproven here and would risk playtest churn; echo shard is a plain item that's proven-robust and still genuinely void-only. | **Built** |
+| 2 | **Slime Milk Basin** | 1.25.0 | **Bog** - quest in `bog_frogs` (quest `7B06000000000040`), gated on the Mud quest; self-gated by its stock packed-mud recipe. | **Built** |
 
 Everything else in the mod is quested (see the full table). Everything below is **no quest by decision** (maintainer, 2026-07-24), not a gap:
 
