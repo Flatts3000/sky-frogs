@@ -15,12 +15,12 @@ An enabled PF feature with no quest. Ordered by priority.
 | 1 | **Virtual Terrarium** (+ Display Dome + 5 upgrades) | 1.25.0 (NEW) | Void | **Unquested** |
 | 2 | **Slime Milk Basin** | 1.25.0 (NEW) | mid (any milk) | **Unquested** |
 | 3 | **Frog Legs food chain** (raw / cooked / soup) | 1.17.0 | Cave-early | **Unquested** |
-| 4 | **Tadpole Bucket** (`resource_tadpole_bucket`) | ~1.17 | Cave-early | **Unquested** |
-| 5 | **Potion of Hopping** | 1.17.0 | mid | **Unquested** |
-| 6 | **Sprinkler redstone switch** | 1.24.0 | Infernal (Terrarium) | Partial - Sprinkler is quested, the redstone control isn't mentioned |
+| 4 | **Potion of Hopping** | 1.17.0 | mid | **Unquested** |
 
-Everything else in the mod is quested (see the full table). Two things that look like gaps but are not:
+Everything else in the mod is quested (see the full table). Things that look like gaps but are not:
 
+- **Tadpole Bucket** (`resource_tadpole_bucket`) - **no quest by decision** (maintainer, 2026-07-24). Not a gap; do not quest.
+- **Sprinkler redstone switch** (1.24.0) - **no quest by decision** (maintainer, 2026-07-24). The Sprinkler is quested; the redstone control is a refinement the pack deliberately leaves to the guide. Do not quest.
 - **Equivalence / Midas lane** (Alembic, Mimic Slime/Milk, Midas frog, Prismatic Froglight, Distiller - PF 1.23.0). **Off by default** (`equivalence.enabled`), and the pack's `productivefrogs-common.toml` does not enable it, so none of it is craftable in-pack. Correctly unquested. If the pack ever opts in, this whole lane needs a chapter.
 - **Reinforced boss Froglights + the three receptacles.** These are build sub-components of the two boss altars, folded into the altar quests rather than tasked individually. Not a gap.
 
@@ -36,7 +36,7 @@ You asked especially about new features. Both 1.25.0 additions are unquested and
 
 Both are new item/block ids, so on the bump they must be hand-added to `tools/data/item_ids.txt` (the dump predates 1.25.0) or `Q-ITEM-EXISTS` will fail once they are tasked. New ids: `virtual_terrarium`, `virtual_terrarium_dome`, `vt_upgrade_bounty`, `vt_upgrade_appetite`, `vt_upgrade_smelter`, `vt_upgrade_melter`, `vt_upgrade_overclock`, `slime_milk_basin`.
 
-The older gaps (Frog Legs, Tadpole Bucket, Potion of Hopping) are lower stakes - small QoL/food content that has sat unquested since 1.17.0 without complaint. Worth a small optional cluster in an early chapter if you want completeness, but not blocking.
+The older gaps (Frog Legs, Potion of Hopping) are lower stakes - small food/consumable content that has sat unquested since 1.17.0 without complaint. Worth a small optional pair in an early chapter if you want completeness, but not blocking.
 
 ---
 
@@ -54,7 +54,7 @@ Frogs, the six species (Cave/Geode/Bog/Tide/Infernal/Void), Resource Slimes, Sli
 | Slime Churn | Yes | `sister_ponds` (JDT) |
 | Crucible + Casting Mold | Yes | `melting_point` |
 | Terrarium Controller / Sprinkler / Incubator / Hatch | Yes | `terrarium` |
-| Sprinkler **redstone switch** (1.24.0) | Partial | Sprinkler quested; redstone control not called out |
+| Sprinkler **redstone switch** (1.24.0) | No, by decision | Sprinkler quested; redstone control left to the guide (maintainer call) |
 | **Virtual Terrarium** + Dome + upgrades (1.25.0) | **No** | - |
 | **Slime Milk Basin** (1.25.0) | **No** | - |
 
@@ -69,7 +69,7 @@ Frogs, the six species (Cave/Geode/Bog/Tide/Infernal/Void), Resource Slimes, Sli
 | Brewed Froglights + Curios slot | Yes | "Charmed, I'm Sure" |
 | Princess's Kiss | Yes | `road_to_void` (dragon drop) |
 | **Frog Legs / Soup** (raw/cooked/soup) | **No** | - |
-| **Tadpole Bucket** | **No** | - |
+| Tadpole Bucket | No, by decision | Maintainer call 2026-07-24 - do not quest |
 | **Potion of Hopping** | **No** | - |
 
 ### Boss tier and endgame - fully quested
