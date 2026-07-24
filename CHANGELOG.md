@@ -4,6 +4,8 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+## [1.5.0] - 2026-07-24
+
 ### Added
 
 - **Productive Frogs updated to 1.25.0 ("Second Helpings"), with quests for its two new blocks.** The **Virtual Terrarium** runs one frog's whole loop hands-off inside two blocks (Processor + glass Display Dome): drop in a netted frog, pour in its milk, and it drops the output out the bottom with nothing loose on the ground and no floor space used. Four upgrade slots tune output, speed, smelting/melting, and an RF overclock. Its quest lives in the Void tier and it's gated to Void by recipe (it takes echo shards, which only the Void frog produces here). The **Slime Milk Basin** is a milk source you can pipe and leave: pour in any Slime Milk and it spawns that variant's slimes on the same budget as a placed pool, but when it runs dry it just waits for the next bucket instead of draining away. Its quest lives in the Bog tier. The update also fixes the Terrarium Hatch shift-click item dupe and stops a dispenser from wiping Slime Milk's catalysts when it scoops the bucket.
