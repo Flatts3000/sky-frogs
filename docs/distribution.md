@@ -112,7 +112,32 @@ The NeoForge installer and server jars are NOT bundled - the host's `setup.sh`/`
 
 **Boot smoke test (local, before trusting a tag):** `python tools/build_server.py --out build/server --no-zip`, then install NeoForge into that dir (`java -jar neoforge-<ver>-installer.jar --installServer`), set `eula=true`, and run it - it should print `Done (...)! For help, type "help"`. v0.8.0 was validated this way (clean boot, Skyblock Builder generated spawn). Boot-testing in CI is a possible future hardening; today it is a manual gate.
 
-The server pack is attached to the GitHub release AND uploaded to CurseForge as an **additional file** of the client file (`parentFileID`), so it shows under the client file's "Additional Files" on the CF page, inheriting its game versions. A `parentFileID` child upload must omit `gameVersions` (CF rejects them on child files), so its metadata carries only `parentFileID` + `changelog` + `displayName`. The CurseForge server upload is gated on the client upload succeeding (it needs the parent file id) and on the server build succeeding; if either is skipped or fails, the GitHub release still carries the server zip.
+The server pack is attached to the GitHub release AND uploaded to CurseForge as an **additional file** of the client file (`parentFileID`), so it shows under the client file's "Additional Files" on the CF page, inheriting its game versions. A `parentFileID` child upload must omit `gameVersions` (CF rejects them on child files), so its metadata carries only `parentFileID` + `changelog` + `displayName`. The CurseForge server upload is gated on the client upload succeeding (it needs the parent file id) and on the server build succeeding; if either is skipped or fails, the workflow's final gate step fails the run so a client-only release can't pass as green.
+
+### Typing it as a Server Pack (manual, once per release)
+
+An additional file and a **Server Pack** are not the same thing on CurseForge:
+
+| | attached via `parentFileID` | typed as Server Pack |
+|---|---|---|
+| Public on the file page | yes | yes |
+| Humans can download it | yes | yes |
+| `serverPackFileId` / `isServerPack` set in CF's Core API | **no** | yes |
+| Host one-click deploys find it | **no** | yes |
+
+That second column is what server hosts read - BisectHosting, Akliz, Nodecraft, Pterodactyl eggs, and `itzg/docker-minecraft-server`'s `AUTO_CURSEFORGE` mode all resolve a pack's server files through `serverPackFileId`. Untyped, they fall back to per-mod downloads or fail outright.
+
+**The upload API cannot set it.** The documented `upload-file` metadata is `changelog`, `changelogType`, `displayName`, `parentFileID`, `gameVersions`, `gameVersionNames`, `releaseType`, `isMarkedForManualRelease`, `relations` - and nothing else; `update-file` is the same minus `parentFileID`. CurseForge support confirmed to the author of the community upload action that no documented way exists, and sending `isServerPack: true` in the metadata is silently ignored ([henkelmax/upload-curseforge-modpack-action#1](https://github.com/henkelmax/upload-curseforge-modpack-action/issues/1)).
+
+So it is a manual Authors Console step after each release (the workflow prints it as a job-summary reminder):
+
+1. [authors.curseforge.com/projects/1558075/files](https://authors.curseforge.com/projects/1558075/files)
+2. Open the client file, then the attached `(server)` file.
+3. Set **Additional File Info** from `None` to `Server Pack`, save.
+
+Verify with `python tools/check_server_pack_flag.py` (no API key needed - it reads `hasServerPack` off the CF website's own v1 API). Exit 0 = typed, 1 = not.
+
+**Backlog:** every file from `v0.1.0` through `v1.4.4` (29 published, all of them) is untyped - the flag was never known about, so it was never set. The 1.4.x line is what matters for current players; older files can stay as-is.
 
 ## Cross-promotion / discoverability
 

@@ -4,6 +4,10 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+### Fixed
+
+- **Server packs are now flagged as Server Packs on CurseForge.** Every release since v0.1.0 attached `sky-frogs-server-<version>.zip` to its client file, so the download has always been public - but CurseForge never treated it as a *typed* server pack, which is what server hosts read to offer one-click installs. The release pipeline now prints the manual Authors Console step (CurseForge's upload API has no field for it), fails the run outright if a release ships without a server pack at all, and `tools/check_server_pack_flag.py` audits published files so this can't silently regress.
+
 ## [1.4.4] - 2026-07-05
 
 Maintenance release: updates Productive Frogs to 1.24.6 ("Fresh Coat"). No pack content or quests changed.
