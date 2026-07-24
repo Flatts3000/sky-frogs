@@ -219,6 +219,37 @@ jobs:
           echo "CurseForge server file id: $sid (child of $PARENT_ID)"
           echo "### CurseForge server file \`$sid\` (additional file of \`$PARENT_ID\`)" >> "$GITHUB_STEP_SUMMARY"
 
+      # `parentFileID` publishes the zip under "Additional Files" but does NOT type it
+      # as a CurseForge *Server Pack*. There is no upload-API field that does - the
+      # documented metadata is changelog / changelogType / displayName / parentFileID /
+      # gameVersions / gameVersionNames / releaseType / isMarkedForManualRelease /
+      # relations, and nothing else. CF support confirmed no documented way exists, and
+      # sending `isServerPack: true` is silently ignored
+      # (henkelmax/upload-curseforge-modpack-action#1). So the flag is a manual Authors
+      # Console step, once per release. Until it's set, CF's Core API leaves
+      # `serverPackFileId` unset and host one-click deploys can't find the pack.
+      - name: Remind - type the server pack in the Authors Console
+        if: steps.serverbuild.outcome == 'success' && steps.cf.outputs.fileid != ''
+        env:
+          VERSION: ${{ steps.ver.outputs.version }}
+        run: |
+          {
+            echo "## Manual step required: type the server pack"
+            echo
+            echo "The CurseForge upload API cannot flag a child file as a Server Pack, so"
+            echo "\`sky-frogs-server-${VERSION}.zip\` is live as a plain additional file until this is done by hand:"
+            echo
+            echo "1. <https://authors.curseforge.com/projects/${CF_PROJECT_ID}/files>"
+            echo "2. Open **Sky Frogs ${VERSION}**, then the attached **Sky Frogs ${VERSION} (server)** file."
+            echo "3. Set **Additional File Info** from \`None\` to \`Server Pack\`, and save."
+            echo
+            echo "Verify with: \`python tools/check_server_pack_flag.py --version ${VERSION}\`"
+            echo
+            echo "Until it is set, server hosts (BisectHosting / Akliz / Nodecraft / Pterodactyl,"
+            echo "itzg \`AUTO_CURSEFORGE\`) cannot auto-install the pack - they read \`serverPackFileId\`."
+          } >> "$GITHUB_STEP_SUMMARY"
+          echo "::notice::Manual step - set 'Additional File Info' to 'Server Pack' on the ${VERSION} server file, then run tools/check_server_pack_flag.py"
+
       # Full release notes -> the Discord #changelog channel. The #announcements
       # GitHub-release embed truncates long bodies; this posts the whole CHANGELOG
       # section, chunked under Discord's 2000-char message cap on line boundaries.
@@ -263,3 +294,20 @@ jobs:
               time.sleep(1)  # stay friendly with the webhook rate limit
           print(f"posted {len(chunks)} message(s) to #changelog")
           PY
+
+      # Completeness gate, deliberately LAST. Shipping a server pack alongside every
+      # release is the standard, so a release that went out client-only must not show a
+      # green check. Everything that could publish has already published by this point -
+      # this step only refuses to call the run successful. The server-pack build stays
+      # `continue-on-error` so a CurseForge download hiccup can't block the client
+      # release; this is what makes that failure loud instead of silent.
+      - name: Gate - release must include a server pack
+        if: always()
+        run: |
+          if [ "${{ steps.serverbuild.outcome }}" != "success" ]; then
+            echo "::error::Server pack did NOT build - ${GITHUB_REF_NAME} shipped CLIENT-ONLY. The client release stands; rebuild the server pack (python tools/build_server.py) and attach it manually to both the GitHub release and CurseForge."
+            echo "## Incomplete release: no server pack" >> "$GITHUB_STEP_SUMMARY"
+            echo "\`${GITHUB_REF_NAME}\` shipped client-only. See the \"Build dedicated-server pack\" step for the failure." >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+          echo "Server pack shipped with ${GITHUB_REF_NAME}."

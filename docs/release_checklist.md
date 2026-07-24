@@ -62,6 +62,16 @@ Any release that touched quest text (`config/ftbquests/quests/lang/en_us.snbt`) 
 - [ ] CurseForge shows the new client file, with the server pack under its "Additional Files".
 - [ ] Discord #changelog has the release post.
 
+## 4.5. Type the server pack on CurseForge (manual - the API can't)
+
+Attaching the zip is not the same as CurseForge treating it as a **Server Pack**. Only the typed form sets `serverPackFileId` in CF's Core API, which is what server hosts (BisectHosting / Akliz / Nodecraft / Pterodactyl, `itzg` `AUTO_CURSEFORGE`) read to auto-install the pack. There is no upload-API field for it - see [`distribution.md`](./distribution.md#typing-it-as-a-server-pack-manual-once-per-release).
+
+- [ ] [authors.curseforge.com/projects/1558075/files](https://authors.curseforge.com/projects/1558075/files) -> open **Sky Frogs X.Y.Z** -> the attached **(server)** file.
+- [ ] Set **Additional File Info**: `None` -> `Server Pack`. Save.
+- [ ] `python tools/check_server_pack_flag.py --version X.Y.Z` exits 0.
+
+The release job prints this as a summary reminder, so it's visible on the run page too.
+
 ## Gotchas (learned the hard way)
 
 - **Version must match the tag** (workflow guard) - bump pack.toml before tagging.
@@ -69,7 +79,8 @@ Any release that touched quest text (`config/ftbquests/quests/lang/en_us.snbt`) 
 - **CHANGELOG heading format is load-bearing** - `## [X.Y.Z]` exactly, or the notes/CF-metadata extraction misses the section.
 - **`releaseType`**: `0.x` -> `beta`, `1.x+` -> `release` (the workflow derives this; CF requires it even on the server child upload).
 - **Secrets**: `CF_API_TOKEN` and `DISCORD_CHANGELOG_WEBHOOK` are repo secrets. If unset, those steps warn-and-skip (the GitHub release still ships); upload/post manually.
-- **Server-pack build** is `continue-on-error` - a CurseForge third-party-download hiccup won't sink the client release, but check it actually built. A client-only mod mistagged `side = "both"` can break the server build; see [`distribution.md`](./distribution.md) server-pack section.
+- **Server-pack build** is `continue-on-error` - a CurseForge third-party-download hiccup won't sink the client release. The final "Gate - release must include a server pack" step then fails the run, so a client-only release shows red instead of a green check. A client-only mod mistagged `side = "both"` can break the server build; see [`distribution.md`](./distribution.md) server-pack section.
+- **A published server pack is still untyped** until you set "Additional File Info" -> "Server Pack" by hand (step 4.5). CF's upload API has no field for it, so nothing in CI can do it for you - and the CF page looks correct either way, which is why it went unnoticed through v1.4.4. `tools/check_server_pack_flag.py` is the only reliable check.
 - **`actions/setup-java`** is pinned at `@v5` (Node-24); the old `@v4` was Node-20, force-deprecated by GitHub on 2026-06-16. Keep workflow actions on Node-24 majors.
 
 ---
