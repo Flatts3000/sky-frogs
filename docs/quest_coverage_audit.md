@@ -10,17 +10,20 @@
 
 An enabled PF feature with no quest. Ordered by priority.
 
-| # | Feature | PF version | Tier | Status |
-|---|---------|-----------|------|--------|
-| 1 | **Virtual Terrarium** (+ Display Dome + 5 upgrades) | 1.25.0 (NEW) | Void | **Unquested** |
-| 2 | **Slime Milk Basin** | 1.25.0 (NEW) | mid (any milk) | **Unquested** |
-| 3 | **Frog Legs food chain** (raw / cooked / soup) | 1.17.0 | Cave-early | **Unquested** |
-| 4 | **Potion of Hopping** | 1.17.0 | mid | **Unquested** |
+Two quests to add, both from PF 1.25.0, both gated on the bump landing on CurseForge before they can be built (their item ids don't exist in the pinned jar yet):
 
-Everything else in the mod is quested (see the full table). Things that look like gaps but are not:
+| # | Feature | PF version | Placement (decided) | Status |
+|---|---------|-----------|--------------------|--------|
+| 1 | **Virtual Terrarium** (+ Display Dome + 5 upgrades) | 1.25.0 (NEW) | **Void tier** (maintainer). Stock recipe is only ~Infernal (ender eye = overworld ender pearl + blaze powder; needs the Terrarium Controller). **Gate: KubeJS recipe override requiring a void Froglight** (decided 2026-07-24) - matches the pack's froglight-check law. Specific void variant TBD (suggest the void capstone, shulker_shell). | To build after bump |
+| 2 | **Slime Milk Basin** | 1.25.0 (NEW) | **~Bog tier** - recipe-gated: 8x packed mud + slime ball | To build after bump |
 
-- **Tadpole Bucket** (`resource_tadpole_bucket`) - **no quest by decision** (maintainer, 2026-07-24). Not a gap; do not quest.
-- **Sprinkler redstone switch** (1.24.0) - **no quest by decision** (maintainer, 2026-07-24). The Sprinkler is quested; the redstone control is a refinement the pack deliberately leaves to the guide. Do not quest.
+Everything else in the mod is quested (see the full table). Everything below is **no quest by decision** (maintainer, 2026-07-24), not a gap:
+
+- **Potion of Hopping** - dropped. Its only brewing recipe is awkward potion + **raw frog legs** (glowstone upgrades to Hopping II), and raw frog legs drop only from killing a frog (the Frog Net relocates, it doesn't yield legs). Questing it pushes the same frog-killing the Frog Legs decision rejects, so it's out too.
+- **Frog Legs / Soup** (raw / cooked / soup) - questing it pushes players to kill their own resource frogs.
+- **Tadpole Bucket** (`resource_tadpole_bucket`) - not worth a quest.
+- **Sprinkler redstone switch** (1.24.0) - the Sprinkler is quested; the redstone control is a refinement the pack leaves to the guide.
+- **Equivalence / Midas lane** (1.23.0) - `equivalence.enabled` defaults off and the pack doesn't enable it, so nothing in the lane is craftable.
 - **Equivalence / Midas lane** (Alembic, Mimic Slime/Milk, Midas frog, Prismatic Froglight, Distiller - PF 1.23.0). **Off by default** (`equivalence.enabled`), and the pack's `productivefrogs-common.toml` does not enable it, so none of it is craftable in-pack. Correctly unquested. If the pack ever opts in, this whole lane needs a chapter.
 - **Reinforced boss Froglights + the three receptacles.** These are build sub-components of the two boss altars, folded into the altar quests rather than tasked individually. Not a gap.
 
@@ -30,13 +33,13 @@ Everything else in the mod is quested (see the full table). Things that look lik
 
 You asked especially about new features. Both 1.25.0 additions are unquested and both are genuine automation upgrades a player would want pointed at:
 
-1. **Virtual Terrarium - highest priority.** It is a whole void-tier automation machine (Processor + Dome, netted frog, milk in, results out the bottom, four upgrade slots, RF Overclock). It is the hidden/hands-off counterpart to the full Terrarium and lands late, so it belongs in a Void-tier chapter - either extending `terrarium.snbt` or as a short branch off `the_ultimate_table` / `master_pond`. Teach: form it (Dome on Processor), feed the frog its own-species milk (Mimic Milk for Midas), and the upgrade slots (Bounty/Appetite, Smelter *or* Melter, Overclock needs power). It ships with a full guide entry, so the quest can stay short and point at the guide.
+1. **Virtual Terrarium - highest priority.** It is a whole void-tier automation machine (Processor + Dome, netted frog, milk in, results out the bottom, four upgrade slots, RF Overclock). **Placement decided (maintainer, 2026-07-24): void tier, gated by void recipes.** Note the stock recipe does NOT gate to void on its own: `virtual_terrarium` = 4x ender eye + 4x amethyst block + Terrarium Controller; ender pearls come from overworld endermen (dark-room farmable, even on skyblock), so the real stock gate is blaze powder + the Controller = Infernal. **Gate decided (2026-07-24): KubeJS recipe override requiring a void Froglight** (`productivefrogs:configurable_froglight` with a void `slime_variant` component), matching the pack's froglight-check law - the same component-ingredient pattern used in `dissolution_slime_recipes.js` / `froglight_slime_recipes.js`. Swap it in for one of the stock ingredients (e.g. the 4 amethyst blocks, since the 3x3 is already full). Suggest the void capstone variant `shulker_shell` for a true-endgame gate; confirm the variant at build. The Dome (`tinted_glass` + `amethyst_shard`) is Geode-cheap; the Processor is the part to gate. Teach: form it (Dome on Processor), feed the frog its own-species milk (Mimic Milk for Midas), and the upgrade slots (Bounty/Appetite, Smelter *or* Melter, Overclock needs power). Full guide entry ships, so the quest can stay short.
 
-2. **Slime Milk Basin - second.** A pipeable, leave-alone milk source: pour milk in, it spawns that variant's slimes on the same budget as a placed pool, and when it runs dry it just waits for the next bucket instead of draining away. This is the "automate your milk" upgrade and fits wherever the pack first introduces piping/automation (Geode automation tier, or as a Terrarium-adjacent convenience). Teach the one real gotcha: breaking it loses the milk inside, and it refuses boss-tier milk (not an altar bypass).
+2. **Slime Milk Basin - second.** A pipeable, leave-alone milk source: pour milk in, it spawns that variant's slimes on the same budget as a placed pool, and when it runs dry it just waits for the next bucket instead of draining away. **Placement decided (maintainer, 2026-07-24): by its crafting recipe** - 8x packed mud + 1 slime ball, which is cheap and mud-centric, so it lands around the Bog tier where mud is trivially available. Confirm the exact chapter at build time against where packed mud first comes free. Teach the one real gotcha: breaking it loses the milk inside, and it refuses boss-tier milk (not an altar bypass).
 
 Both are new item/block ids, so on the bump they must be hand-added to `tools/data/item_ids.txt` (the dump predates 1.25.0) or `Q-ITEM-EXISTS` will fail once they are tasked. New ids: `virtual_terrarium`, `virtual_terrarium_dome`, `vt_upgrade_bounty`, `vt_upgrade_appetite`, `vt_upgrade_smelter`, `vt_upgrade_melter`, `vt_upgrade_overclock`, `slime_milk_basin`.
 
-The older gaps (Frog Legs, Potion of Hopping) are lower stakes - small food/consumable content that has sat unquested since 1.17.0 without complaint. Worth a small optional pair in an early chapter if you want completeness, but not blocking.
+No other new quests. Frog Legs, Potion of Hopping, the Tadpole Bucket, and the Sprinkler redstone switch are all deliberately unquested (see the summary list above) - the first two because they push players to kill their own frogs.
 
 ---
 
