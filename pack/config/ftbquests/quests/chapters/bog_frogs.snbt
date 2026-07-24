@@ -12,6 +12,26 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["7B06000000000005"]
+			icon: {
+				id: "productivefrogs:slime_milk_basin"
+			}
+			id: "7B06000000000040"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7B06000000000042"
+				table_id: 9167921466442776577L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "7B06000000000041"
+				item: { count: 1, id: "productivefrogs:slime_milk_basin" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
 			dependencies: ["70B000000000000B"]
 			icon: {
 				id: "minecraft:moss_block"

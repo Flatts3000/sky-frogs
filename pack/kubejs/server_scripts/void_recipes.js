@@ -66,6 +66,31 @@ ServerEvents.recipes(event => {
     }
   ).id('kubejs:void/sculk_shrieker')
 
+  // Virtual Terrarium (PF 1.25.0) - void-gate it. The stock recipe (EAE/ATA/EAE with
+  // E=ender_eye, A=amethyst_block, T=terrarium_controller) reads as endgame but is only
+  // Infernal-gated in practice: ender pearls come from overworld endermen (dark-room
+  // farmable even on this void skyblock), so the real stock gate is blaze powder + the
+  // Controller. We swap the four amethyst blocks for echo shards, which on a void skyblock
+  // come ONLY from the Void frog (no ancient cities generate), so the machine can't be
+  // built until the void tier - matching where its quest lives (void_frogs, gated on the
+  // Echo Shard quest). Amethyst is dropped, not added: the 3x3 grid is already full.
+  if (Platform.isLoaded('productivefrogs')) {
+    event.remove({ id: 'productivefrogs:virtual_terrarium' })
+    event.shaped(
+      'productivefrogs:virtual_terrarium',
+      [
+        'EAE',
+        'ATA',
+        'EAE'
+      ],
+      {
+        E: 'minecraft:ender_eye',
+        A: 'minecraft:echo_shard',
+        T: 'productivefrogs:terrarium_controller'
+      }
+    ).id('kubejs:void/virtual_terrarium')
+  }
+
   // Master Frog - regular crafting table capstone craft. The Ultimate Singularity is already
   // the gated endgame item, so the final trophy just needs a vanilla 3x3 grid (no EC table).
   // Guarded on EC only because the Ultimate Singularity (the U key) is an Extended Crafting item.
