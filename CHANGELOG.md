@@ -4,6 +4,10 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+### Added
+
+- **Added Spawn Detective, with an optional Welcome-chapter quest that grants its Spawn Probe.** The probe tells you why a mob won't spawn on a block: light, the floor, the mob cap, or you standing too close. It checks the game's real spawn rules instead of guessing. Hold it, pick a mob, and read any block live with Jade to find the dead spots in a dark room. Client and server; adds one item, no world content.
+
 ### Fixed
 
 - **Server packs are now flagged as Server Packs on CurseForge.** Every release since v0.1.0 attached `sky-frogs-server-<version>.zip` to its client file, so the download has always been public - but CurseForge never treated it as a *typed* server pack, which is what server hosts read to offer one-click installs. The release pipeline now prints the manual Authors Console step (CurseForge's upload API has no field for it), fails the run outright if a release ships without a server pack at all, and `tools/check_server_pack_flag.py` audits published files so this can't silently regress.

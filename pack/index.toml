@@ -410,7 +410,7 @@ hash = "326dc051f381ee12b5e4c746ce008b1ce2f23773b23240582a8861dd17b1e098"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
-hash = "282cd334b09bc5871624b326cc6c77726dd4c34b4f51c8b56c302375d9fa099e"
+hash = "ab02d18a0d7af7a890c71c254f901c18edbc97a7359404c4fd96f18a054c776b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/whole_pond.snbt"
@@ -426,7 +426,7 @@ hash = "4889c5e7d4a8179b45e68f0ac00119529ed49ba68f20624b36e996bb0d60ddd0"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "3e4b80402d08af5d7d6bf3130d834ec8c1db3129a8d2b59f8c4417da6d76da49"
+hash = "4a0b8b46cce60128705aed63b608464b5d4826883c6a40dbba8eb136ffa91970"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
@@ -1482,6 +1482,11 @@ metafile = true
 [[files]]
 file = "mods/sophisticated-storage.pw.toml"
 hash = "0ad60e4fb5e88aa55a6ee65f5e5a7f79cd4274ad8ec30fba9ff50673d34ed0b4"
+metafile = true
+
+[[files]]
+file = "mods/spawn-detective.pw.toml"
+hash = "e41893b88997270053df40c5c9a1abfb9c7d83d3977a49ced824bdf528a74796"
 metafile = true
 
 [[files]]

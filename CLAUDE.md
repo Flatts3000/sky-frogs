@@ -11,6 +11,7 @@ A read-only reference copy of Sky Bees Reborn lives at [`../sky-bees-reborn-refe
 ### Sibling repos on this machine
 
 - `../productive-frogs` — the Java mod this pack is built around. File issues there for anything that needs new mod behavior.
+- `../spawn-detective` - our own utility mod (CurseForge slug `spawn-detective`, project-id `1621450`, MIT, 1.21.1/NeoForge both-side). A Spawn Probe that replays MC's spawn pipeline to report why a mob won't spawn on a block; bundled in the pack and granted as an optional Welcome-chapter quest reward. File mod-behavior issues there.
 - `../sky-bees-reborn-reference/extracted/` — read-only SBR reference. Useful subpaths: `kubejs/server_scripts/anti.js`, `kubejs/server_scripts/productivebees.js`, `config/ftbquests/quests/`, `kubejs/data/productivebees/productivebees/`.
 
 ### Doc map (start here)

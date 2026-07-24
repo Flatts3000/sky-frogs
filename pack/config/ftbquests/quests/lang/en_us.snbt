@@ -36,6 +36,15 @@
 	]
 	quest.01A8E068925B319F.quest_subtitle: "Start here."
 	quest.01A8E068925B319F.title: "Welcome to Sky Frogs"
+	quest.6A5B4C3D2E1F0001.quest_desc: [
+		"A &aSpawn Probe&r for your dark rooms. When a mob farm won't spawn anything, it checks the block against the game's real spawn rules and names the one blocking it: light level, the floor, a full mob cap, or you standing too close."
+		""
+		"Sneak-right-click the floor of your dark room to anchor it, then pick &aCave Slime&r from the list and the probe tells you whether it can spawn on that block. Walk off and right-click the air to read it from a distance."
+		""
+		"A slime needs more than one block of clear space, so every block right against your walls reads as blocked. Not a probe error, just the edge of the room being dead floor for them."
+	]
+	quest.6A5B4C3D2E1F0001.quest_subtitle: "It's rarely the light."
+	quest.6A5B4C3D2E1F0001.title: "Why Won't It Spawn?"
 	quest.05BFA1537298A589.quest_desc: [
 		"Instead of mining, you get your materials from &afrogs&r. Feed a &aFrog&r its matching &bResource Slime&r and it makes a &6Froglight&r. Smelt the Froglight to get the resource."
 	]
