@@ -6,7 +6,7 @@
 
 ## The premise
 
-**Frog species gate progression.** Each Productive Frogs species is a self-contained quest group ("tier"). You complete one species' line to unlock the next. There is no separate resource-tier abstraction — the species *is* the tier, and each species owns a thematic family of resources (inherited from PF's slime-variant data).
+**Frog species gate progression.** Each Productive Frogs species is a self-contained quest group ("tier"). You complete one species' line to unlock the next. There is no separate resource-tier abstraction - the species *is* the tier, and each species owns a thematic family of resources (inherited from PF's slime-variant data).
 
 **Order (settled):**
 
@@ -20,7 +20,7 @@
 | 5    | **Infernal** | Nether: netherrack -> obsidian -> quartz -> glowstone -> soul_sand -> soul_soil -> blaze -> netherite_scrap (the built chain; obsidian joined in v0.5.0 as netherrack's portal-stone partner, #79; netherite scrap is the endgame capstone). |
 | 6    | **Void**     | End & endgame: ender pearl, end stone, chorus fruit, echo shard, sculk, shulker shell. Earned by a one-time dragon expedition; ends in the Master Frog trophy. |
 
-Modded resources per tier are PF's conditional variants — they register only when the relevant mod ships in the pack, so the actual per-tier resource set tracks the Sky Frogs mod list.
+Modded resources per tier are PF's conditional variants - they register only when the relevant mod ships in the pack, so the actual per-tier resource set tracks the Sky Frogs mod list.
 
 ## Design principles
 
@@ -76,9 +76,9 @@ Once a species is unlocked:
 5. **Process.** Smelt the Froglight → the resource. (Crush+smelt via a tech mod → 2×, later.)
 6. **Scale.** Milk Resource Slimes through a **Slime Milker** for more milk sources; hoppers + water streams move everything.
 
-## Tier 0 — Bootstrap
+## Tier 0 - Bootstrap
 
-The Welcome quest chapter. Player spawns on the starter island with the first-join grant (saplings, water + lava buckets, food, quest book). No frog content yet — the goal is a slime farm and your first Cave frogs.
+The Welcome quest chapter. Player spawns on the starter island with the first-join grant (saplings, water + lava buckets, food, quest book). No frog content yet - the goal is a slime farm and your first Cave frogs.
 
 - **Wood → tools → crafting table.**
 - **Cobblestone generator** (vanilla water + lava).
@@ -87,11 +87,11 @@ The Welcome quest chapter. Player spawns on the starter island with the first-jo
 - **Collect slimeballs**, and split-discover the occasional resource slime.
 - **Complete the chapter → reward: a Bottle of Cave Frog Eggs** (a breeding pair's worth). Place it on water to begin Tier 1.
 
-Estimated playtime: **30–60 min**.
+Estimated playtime: **30-60 min**.
 
-## Tier 1 — Cave (the ore engine)
+## Tier 1 - Cave (the ore engine)
 
-**Chapter:** *Cave* (working title). The foundational tier — this is where "frogs replace mining" becomes real.
+**Chapter:** *Cave* (working title). The foundational tier - this is where "frogs replace mining" becomes real.
 
 - Hatch Cave Frogs from the Tier 0 reward.
 - Farm Cave Slimes (dark room) and/or place Cave Slime Milk sources.
@@ -100,9 +100,9 @@ Estimated playtime: **30–60 min**.
 - **New verb:** crafting upgrades / storage. Sophisticated + Functional storage, with quartz-free network recipes (the Cave-tier "Storage and Crafting" interlude).
 - **Gate to Tier 2:** prime the Spawnery with **redstone** for a Bottle of Geode Frog Eggs, then run the Geode seed-chain.
 
-Estimated playtime: **3–6 hours** (it's the widest tier — most resources live here).
+Estimated playtime: **3-6 hours** (it's the widest tier - most resources live here).
 
-## Tier 2 — Geode (gems)
+## Tier 2 - Geode (gems)
 
 **Chapter:** *Geode*. Faceted materials for better tooling, and the tier where automation arrives.
 
@@ -112,9 +112,9 @@ Estimated playtime: **3–6 hours** (it's the widest tier — most resources liv
 - **Slime Milk catalysts** (PF v1.7.0): a short branch off the diamond capstone introduces the four catalysts (Bountiful / Rapid / Teeming / Endless - PF's in-game names; formerly Count / Speed / Quantity / Infinite Count) that buff placed Slime Milk sources. The Endless catalyst's recipe needs a diamond, so it gates naturally here; the Teeming catalyst is re-issued with redstone instead of glowstone for skyblock (`catalyst_recipes.js`).
 - **Gate to Tier 3:** prime the Spawnery with **enriched diamond** (a Mekanism craft) for Bog Frog Eggs, then run the Bog seed-chain.
 
-Estimated playtime: **3–5 hours**.
+Estimated playtime: **3-5 hours**.
 
-## Tier 3 — Bog (organics & mob-drops)
+## Tier 3 - Bog (organics & mob-drops)
 
 **Chapter:** *Bog*. The overworld/swamp catch-all: the renewable source of organic materials a skyblock normally grinds for.
 
@@ -123,9 +123,9 @@ Estimated playtime: **3–5 hours**.
 - **New verb:** **Just Dire Things tier-1 progression** + Building Gadgets 2 side branch (the `tools_and_things.snbt` chapter). Spine: Primogel Goo Block (mycelium-gated) -> Ferricore Ingot -> Fluid Collector -> Fluid Placer -> Item Collector (hexagon capstone). Optionals: Exchanging Gadget -> Copy/Paste Gadget (BG side). Mekanism RF from Geode powers the JDT machines.
 - **Gate to Tier 4:** complete `bog_frogs` (capstone = pink_slime). That unlocks the `road_to_tide` chapter, which holds the Industrial Foregoing spine (Pity Machine Frame -> Fluid Extractor -> **Dissolution Chamber**, the pack's slime engine for the Cave/Geode/Bog/Tide chamber recipes; iron bootstraps off bone meal). The chapter then **bridges into Tide** as two converging paths: a **machine path** (Pity Machine Frame -> Fluid Extractor -> Dissolution Chamber) and a **frog path** (Tide Frog Eggs, Spawnery primed with pink_slime), meeting at the first **Prismarine slime** (made in the chamber), then a single tail: milk -> first **Prismarine Froglight** (capstone). **Tide and every later tier are Dissolution-Chamber-only** - there's no crafting-table slime chain (the chamber is already built by Tier 4). The rest of the aquatic chain (crystals, sponge, ink_sac, sea_pickle, nautilus_shell) is wired in the TIDE Dissolution rows and waits on the `drowned_riches` species chapter.
 
-Estimated playtime: **3–5 hours**.
+Estimated playtime: **3-5 hours**.
 
-## Tier 4 — Tide (aquatic)
+## Tier 4 - Tide (aquatic)
 
 **Chapters:** *Drowned Riches* (the aquatic resource chain) + *Take Flight* (the jetpack verb). **Built.** Ocean materials without an ocean.
 
@@ -134,9 +134,9 @@ Estimated playtime: **3–5 hours**.
 - **New verb:** jetpacks (Iron Jetpacks), the `take_flight` chapter - coil-tiered mobility (iron -> gold -> diamond -> emerald) on frog-farmed metals + Geode RF.
 - **Gate to Tier 5:** the Nether expedition (the `road_to_infernal` gateway). Build a portal, fly the void Nether on your jetpack to a fortress, mine nether brick, and prime the Spawnery with it for the Infernal Frog Eggs. The Tide mobility verb is the literal key to Infernal.
 
-Estimated playtime: **3–6 hours**.
+Estimated playtime: **3-6 hours**.
 
-## Tier 5 — Infernal (nether)
+## Tier 5 - Infernal (nether)
 
 **Chapters:** *Road to Infernal* (gateway) + *Infernal Frogs* (the nether resource chain) + *The Network* (the Refined Storage verb). **Built.** The Nether without a Nether - the Infernal frog produces the materials a void skyblock otherwise can't reach.
 
@@ -147,9 +147,9 @@ Estimated playtime: **3–6 hours**.
 - **Boss campaign (Trophy Pond):** off the Infernal capstone, the wither and dragon trophies (wither skull, nether star, dragon egg, dragon breath) become farmable via catalyst altars - their Slime Milk is toxic, so they stay hand-walled. Sits with the endgame (after Master Pond) but unlocks here.
 - **Gate to Tier 6:** the **dragon expedition** (the `road_to_void` gateway). Farm ender pearls from dark-room endermen, craft 2 eyes of ender, and (since no stronghold generates on a void skyblock) bake Ex Deorum's **End Cake** - 3 buckets of milk (plain milk or any Slime Milk via the `#productivefrogs:slime_milk_buckets` tag), an egg between the 2 eyes, 3 wheat. Each of its 6 slices teleports the eater to the End. Slay the dragon. The Tide jetpack verb makes the void-island crossings feasible; the dragon kill gates the endgame. (Replaced the hand-built 12-frame End portal on 2026-06-05 - the frames-must-face-inward gotcha hard-blocked a player; CF #8041724.)
 
-Estimated playtime: **6–10 hours**.
+Estimated playtime: **6-10 hours**.
 
-## Tier 6 — Void (end & endgame). Built.
+## Tier 6 - Void (end & endgame). Built.
 
 **Chapters:** *Road to the Void* (the dragon expedition gateway) + *Void Frogs* (the End resource chain) + *The Ultimate Table* (the Extended Crafting verb) + *Master Pond* (the singularity endgame). **Built.** The End without a stronghold, and a frog for every resource in the game.
 
@@ -162,7 +162,7 @@ Estimated playtime: **15+ hours** to fully clear.
 
 ## Total estimated runtime
 
-**~40–70 hours** from fresh world to creative trophy, single-player normal difficulty.
+**~40-70 hours** from fresh world to creative trophy, single-player normal difficulty.
 
 ## Chapter-to-tier mapping (preview)
 

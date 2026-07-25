@@ -15,15 +15,15 @@ If you discover a security vulnerability in the Sky Frogs pack, **please do not 
 
 A modpack's threat surface is small but non-empty. Realistic concerns:
 
-- **Malicious KubeJS scripts** — pack-shipped scripts that exfiltrate data, abuse file system access, or execute commands beyond their intended sandbox.
-- **Recipe injection / progression bypasses** — KubeJS overrides or datapack JSONs that unintentionally allow item duplication, creative-mode access in survival, or other exploit shortcuts that bypass the intended progression. (Treated as a security issue when the bypass affects multiplayer servers.)
-- **Server crashes / denial of service** — pack content (configs, KubeJS, datapack overrides) that causes a server to crash or hang on specific player actions.
-- **Resource exhaustion** — pack-introduced loops, infinite recipes, or unbounded data structures that exhaust memory or CPU.
-- **Supply chain** — a bundled mod's `pack.toml` entry pointing to the wrong jar (CDN poisoning, typo-squatted slug, etc.).
+- **Malicious KubeJS scripts** - pack-shipped scripts that exfiltrate data, abuse file system access, or execute commands beyond their intended sandbox.
+- **Recipe injection / progression bypasses** - KubeJS overrides or datapack JSONs that unintentionally allow item duplication, creative-mode access in survival, or other exploit shortcuts that bypass the intended progression. (Treated as a security issue when the bypass affects multiplayer servers.)
+- **Server crashes / denial of service** - pack content (configs, KubeJS, datapack overrides) that causes a server to crash or hang on specific player actions.
+- **Resource exhaustion** - pack-introduced loops, infinite recipes, or unbounded data structures that exhaust memory or CPU.
+- **Supply chain** - a bundled mod's `pack.toml` entry pointing to the wrong jar (CDN poisoning, typo-squatted slug, etc.).
 
 ### What is NOT in scope here
 
-These belong upstream — file with the relevant project, not this repo:
+These belong upstream - file with the relevant project, not this repo:
 
 - A vulnerability in a bundled mod's own code → that mod's issue tracker.
 - A vulnerability in Productive Frogs → [productive-frogs/security/advisories/new](https://github.com/Flatts3000/productive-frogs/security/advisories/new).
@@ -37,7 +37,7 @@ If you're unsure whether something qualifies, report it privately to us and we'l
 - **Initial assessment**: within 14 days.
 - **Fix + disclosure**: timing varies by severity. Critical issues get a hotfix release on CurseForge; lower-severity issues land in the next regular release.
 
-This is a hobby OSS project — timelines are best-effort, not contractual.
+This is a hobby OSS project - timelines are best-effort, not contractual.
 
 ## Disclosure
 

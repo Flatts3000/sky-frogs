@@ -23,11 +23,11 @@ Six frog categories define the tier progression:
 | 5    | Infernal   | Quartz, glowstone, blaze, soul sand, netherite scrap, the boss trophies |
 | 6    | Void       | End stone, chorus, echo shard, sculk, shulker, dragon egg/breath |
 
-Slime species supply the variety inside each tier — adding a new modded resource is a single `slime_variant/*.json` drop, never a Java change.
+Slime species supply the variety inside each tier - adding a new modded resource is a single `slime_variant/*.json` drop, never a Java change.
 
 ## Design pillars
 
-- **Vanilla-feeling mechanics.** Productive Frogs leans on vanilla idioms — frogspawn, slimeballs, water bottles, lead-based mob transport. Every interaction is right-click on a block; no custom UIs.
+- **Vanilla-feeling mechanics.** Productive Frogs leans on vanilla idioms - frogspawn, slimeballs, water bottles, lead-based mob transport. Every interaction is right-click on a block; no custom UIs.
 - **Category-based progression.** Six clear tiers (Cave / Geode / Bog / Tide / Infernal / Void) anchor the questbook in a structure that stays legible as more frog and slime variants ship.
 - **Cross-mod compat is the design center.** Drop a JSON, get a frog-eats-that-thing variant. Community PRs adding new modded resources need zero Java work.
 - **Mining shortcuts disabled by design.** Laser drills, mining lenses, digital miners, and quarry cards are recipe-stripped or hidden from JEI. The frog tree is the path; the pack enforces it.
@@ -69,14 +69,14 @@ packwiz update --all           # bump every mod to its latest 1.21.1 NeoForge re
 packwiz curseforge export      # build the CF zip
 ```
 
-Install packwiz with `go install github.com/packwiz/packwiz@latest` — packwiz has no GitHub releases or winget package; Go install is the only path.
+Install packwiz with `go install github.com/packwiz/packwiz@latest` - packwiz has no GitHub releases or winget package; Go install is the only path.
 
 ## Distribution
 
 **CurseForge only.** The FTB utility stack (FTB Library / Quests / Teams / Chunks / Ranks / Essentials) is CurseForge-only, and Modrinth's policy rejects packs that inline CF jars as overrides. Since FTB Quests is the canonical questbook for this kind of pack, Modrinth isn't viable. GitHub Releases mirrors each tag's artifacts for transparency; players install from CurseForge.
 
-The pack page copy lives in [`docs/curseforge_page.md`](./docs/curseforge_page.md) — edit there first, push to CurseForge.
+The pack page copy lives in [`docs/curseforge_page.md`](./docs/curseforge_page.md) - edit there first, push to CurseForge.
 
 ## License
 
-[MIT](./LICENSE) for the pack-authored content (KubeJS scripts, configs, datapacks, questbook, branding, docs). Each bundled mod retains its own license — see [`NOTICE.md`](./NOTICE.md) for scope details.
+[MIT](./LICENSE) for the pack-authored content (KubeJS scripts, configs, datapacks, questbook, branding, docs). Each bundled mod retains its own license - see [`NOTICE.md`](./NOTICE.md) for scope details.

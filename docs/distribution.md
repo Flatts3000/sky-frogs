@@ -9,7 +9,7 @@ How Sky Frogs ships, where players install it from, and how releases happen.
 | Channel             | URL pattern                                          | Format        | Primary? |
 |---------------------|------------------------------------------------------|---------------|----------|
 | **CurseForge**      | `curseforge.com/minecraft/modpacks/sky-frogs`        | manifest zip  | Yes      |
-| **GitHub Releases** | `github.com/Flatts3000/sky-frogs/releases`           | CF zip + server zip mirror | Artifact mirror — not an install path |
+| **GitHub Releases** | `github.com/Flatts3000/sky-frogs/releases`           | CF zip + server zip mirror | Artifact mirror - not an install path |
 
 **CurseForge is the sole player-facing channel.** Modrinth was considered but ruled out:
 
@@ -23,10 +23,10 @@ GitHub Releases mirrors each tag's CF zip + server zip for transparency, rollbac
 ## Setup checklist (one-time, before v0.1)
 
 - [x] **Claim CurseForge slug `sky-frogs`** - live at project ID `1558075` ([curseforge.com/minecraft/modpacks/sky-frogs](https://www.curseforge.com/minecraft/modpacks/sky-frogs)). Approved past first-submission moderation; every tagged release now uploads automatically.
-- [x] **GitHub repo** — `Flatts3000/sky-frogs` exists; community health files landed.
-- [x] **CurseForge API token** — reuses the token from `productive-frogs/.env` (`CURSEFORGE_API_KEY`, same author account). Set as the repo secret **`CF_API_TOKEN`** consumed by `release.yml`.
-- [x] **CurseForge project ID** — `1558075`. Hardcoded in `release.yml`'s `env` (public, not a secret).
-- [ ] **Branding assets** — upload logo / banner / hero / gallery to the CF project page. See [`pack_metadata.md`](./pack_metadata.md) for asset spec.
+- [x] **GitHub repo** - `Flatts3000/sky-frogs` exists; community health files landed.
+- [x] **CurseForge API token** - reuses the token from `productive-frogs/.env` (`CURSEFORGE_API_KEY`, same author account). Set as the repo secret **`CF_API_TOKEN`** consumed by `release.yml`.
+- [x] **CurseForge project ID** - `1558075`. Hardcoded in `release.yml`'s `env` (public, not a secret).
+- [ ] **Branding assets** - upload logo / banner / hero / gallery to the CF project page. See [`pack_metadata.md`](./pack_metadata.md) for asset spec.
 
 ### CF upload API quirks discovered on first submission
 
@@ -53,11 +53,11 @@ git push origin v0.1.0
 `.github/workflows/release.yml` (**shipped**) takes over:
 
 1. Checks out the tag and asserts `pack/pack.toml`'s version matches the tag (bump it before tagging).
-2. Installs packwiz and runs `packwiz refresh && packwiz curseforge export` (inline — there is no separate `build_cf_zip.sh`).
+2. Installs packwiz and runs `packwiz refresh && packwiz curseforge export` (inline - there is no separate `build_cf_zip.sh`).
 3. Creates a GitHub release with the CF zip attached and the matching `## [x.y.z]` section of `CHANGELOG.md` as the notes (marked prerelease for `0.x` and `-suffix` tags).
 4. Uploads the CF zip to CurseForge via the upload API, sending `gameVersions: [11779, 10150]` and `releaseType: beta` for `0.x` (`release` otherwise).
 
-Requires the repo secret **`CF_API_TOKEN`** (the CF upload token). If it is unset, step 4 is skipped with a warning and the GitHub release still ships. The CF project id (`1558075`) is hardcoded in the workflow `env` — it is public, not a secret.
+Requires the repo secret **`CF_API_TOKEN`** (the CF upload token). If it is unset, step 4 is skipped with a warning and the GitHub release still ships. The CF project id (`1558075`) is hardcoded in the workflow `env` - it is public, not a secret.
 
 Manual release path (fallback) if the action fails: download the artifact from the GitHub release page, upload manually via the CurseForge web UI.
 
@@ -65,9 +65,9 @@ Manual release path (fallback) if the action fails: download the artifact from t
 
 **v1.0.0 shipped 2026-06-14** (out of beta), so post-1.0 SemVer is in effect: **major** = world-breaking, **minor** = new content, **patch** = fixes.
 
-- **`v0.x.y`** — pre-1.0 (historical). `x` for playtest milestones, `y` for hotfixes.
-- **`v1.0.0`** — the launch release (out of beta).
-- **`v1.x` post-1.0** — `x` (minor) for content additions / mod additions, `y` (patch) for configs-only fixes.
+- **`v0.x.y`** - pre-1.0 (historical). `x` for playtest milestones, `y` for hotfixes.
+- **`v1.0.0`** - the launch release (out of beta).
+- **`v1.x` post-1.0** - `x` (minor) for content additions / mod additions, `y` (patch) for configs-only fixes.
 - **Breaking changes** that require world wipes bump the **major** version (`2.0.0`). Communicate loudly.
 
 ## Changelog format
@@ -94,7 +94,7 @@ Manual release path (fallback) if the action fails: download the artifact from t
 - (none)
 
 ### World-breaking
-- (none — fresh world recommended but not required)
+- (none - fresh world recommended but not required)
 ```
 
 For 0.x releases the changelog can be brisk; for 1.x and beyond, write player-facing notes (avoid technical jargon).
@@ -143,13 +143,13 @@ Verify with `python tools/check_server_pack_flag.py` (no API key needed - it rea
 
 For initial launch (v0.1):
 
-- **r/feedthebeast** subreddit announcement post — link CurseForge, GitHub.
-- **r/Minecraft** modded showcase post (optional, lower priority — usually noisy).
-- **Cross-link from Productive Frogs mod page** on CurseForge — should mention "Now featured in the Sky Frogs modpack!"
+- **r/feedthebeast** subreddit announcement post - link CurseForge, GitHub.
+- **r/Minecraft** modded showcase post (optional, lower priority - usually noisy).
+- **Cross-link from Productive Frogs mod page** on CurseForge - should mention "Now featured in the Sky Frogs modpack!"
 
 Avoid:
-- Cross-posting to /r/Minecraft general — wrong audience.
-- Self-promotion in unrelated mod project pages — bad form.
+- Cross-posting to /r/Minecraft general - wrong audience.
+- Self-promotion in unrelated mod project pages - bad form.
 
 ## Update policy
 
@@ -161,27 +161,27 @@ Avoid:
 
 The CurseForge project page should contain:
 
-- **One-paragraph hook** — "Skyblock where frogs replace mining."
-- **A short feature list** — five bullets.
-- **A "How to play" section** — first-island steps from `progression.md` Tier 0.
-- **A screenshot gallery** — 4-6 in-game screenshots showing each tier's frog and its outputs.
-- **Mod credits** — link to every bundled mod's listing page.
-- **A short FAQ** — "Why frogs not bees? Is this related to Productive Bees? Can I add my own modded resource as a frog target?"
+- **One-paragraph hook** - "Skyblock where frogs replace mining."
+- **A short feature list** - five bullets.
+- **A "How to play" section** - first-island steps from `progression.md` Tier 0.
+- **A screenshot gallery** - 4-6 in-game screenshots showing each tier's frog and its outputs.
+- **Mod credits** - link to every bundled mod's listing page.
+- **A short FAQ** - "Why frogs not bees? Is this related to Productive Bees? Can I add my own modded resource as a frog target?"
 - **Cross-link to GitHub repo** for issue reporting and source.
 
 ## Issue reporting
 
-- **Bugs:** GitHub Issues — `github.com/Flatts3000/sky-frogs/issues`. Template: pack version, MC version, mod loader version, steps to reproduce, log excerpt.
+- **Bugs:** GitHub Issues - `github.com/Flatts3000/sky-frogs/issues`. Template: pack version, MC version, mod loader version, steps to reproduce, log excerpt.
 - **Balance feedback:** GitHub Discussions.
-- **Suggestions for new mods to include:** GitHub Discussions, tagged `mod-suggestion`. Most will be declined per the [`mod_list.md`](./mod_list.md) selection criteria — that's fine, it's about being intentional, not blanket-rejecting.
+- **Suggestions for new mods to include:** GitHub Discussions, tagged `mod-suggestion`. Most will be declined per the [`mod_list.md`](./mod_list.md) selection criteria - that's fine, it's about being intentional, not blanket-rejecting.
 
 ## License notes (recap)
 
-MIT for pack-authored content only. CurseForge has a "license" field — set to MIT but include in the description: *"Each bundled mod retains its own license. Refer to each mod's CurseForge page for license terms."*
+MIT for pack-authored content only. CurseForge has a "license" field - set to MIT but include in the description: *"Each bundled mod retains its own license. Refer to each mod's CurseForge page for license terms."*
 
 ## Open distribution questions
 
 - Do we set up a **dedicated server template** (Pterodactyl egg, Docker compose) for community hosts? Defer to post-v1.0 unless community demand emerges.
 - Do we offer a **client launcher one-click install** beyond the CurseForge launcher? E.g., `prismlauncher://...` URLs. Probably overengineering for v0.1.
 - Should we ship a **localization workflow** (Crowdin? Weblate?) for community translations? Defer; en_us only at v1.0.
-- **Sponsorship / donations** — do we accept? If so, Ko-fi link in pack pages. Decision is the author's call, not a technical question.
+- **Sponsorship / donations** - do we accept? If so, Ko-fi link in pack pages. Decision is the author's call, not a technical question.

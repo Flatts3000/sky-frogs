@@ -1,12 +1,12 @@
 # Worldgen
 
-> **Status:** DRAFT — non-canonical. Skyblock Builder is a candidate, not a commitment. Starter island contents, dimension strategy, and parent-species seeding approach are all open. The "void overworld" assumption itself is up for revisiting — a different generator could give Sky Frogs a distinct opening.
+> **Status:** DRAFT - non-canonical. Skyblock Builder is a candidate, not a commitment. Starter island contents, dimension strategy, and parent-species seeding approach are all open. The "void overworld" assumption itself is up for revisiting - a different generator could give Sky Frogs a distinct opening.
 
 How the player's world is generated, what's on the starting island, and how dimension-specific Productive Frogs parent species are seeded without their natural biomes.
 
 ## Generator
 
-**Skyblock Builder** (mod ID `skyblockbuilder`) — same generator Sky Bees Reborn uses. Provides:
+**Skyblock Builder** (mod ID `skyblockbuilder`) - same generator Sky Bees Reborn uses. Provides:
 
 - A void Overworld with a single configurable starting structure (the island template).
 - Per-player island system: each player or team gets their own island.
@@ -25,16 +25,16 @@ A **5x5 dirt platform topped with grass**, shipped as a custom SkyblockBuilder t
 - 1× water bucket
 - 1× lava bucket
 - (No food in the grant - food comes from early quest rewards instead.)
-- (FTB Quests book auto-opened on first join — no inventory slot needed)
+- (FTB Quests book auto-opened on first join - no inventory slot needed)
 
 The grant is intentionally minimal. The player builds everything else from these primitives:
 
-1. **Cobble generator** — vanilla water + lava (one bucket each, placed adjacent → infinite cobble).
-2. **Second water source** — the grant has only 1 water bucket, which is 1 source. Infinite water needs 2 sources adjacent (the standard vanilla pattern). The player gets the second source via **Ex Deorum's rain-collection barrel** — set a barrel outside, wait for rain to fill it, bucket out → second source → vanilla infinite water square. This gives Ex Deorum a load-bearing Tier 0 role beyond just "extras."
-3. **Mob farm** — built from the cobble. `productivefrogs:cave_slime` (the Cave parent, Sky Frogs' Tier 1 starter species) spawns here: the pack adds cave_slime to the island biome and PF's light-based placement rule lets it spawn in the dark. Player collects slimeballs and occasionally split-discovers Iron Slimes via PF's `SlimeSplitDiscoveryHandler`.
-4. **First Resource Frog** — Welcome quest chapter rewards a **Bottle of Cave Frog Frogspawn** at completion (a breeding pair's worth; `productivefrogs:frog_egg` with `contained_category: cave`). Pour it on water to start the Cave frogs.
+1. **Cobble generator** - vanilla water + lava (one bucket each, placed adjacent → infinite cobble).
+2. **Second water source** - the grant has only 1 water bucket, which is 1 source. Infinite water needs 2 sources adjacent (the standard vanilla pattern). The player gets the second source via **Ex Deorum's rain-collection barrel** - set a barrel outside, wait for rain to fill it, bucket out → second source → vanilla infinite water square. This gives Ex Deorum a load-bearing Tier 0 role beyond just "extras."
+3. **Mob farm** - built from the cobble. `productivefrogs:cave_slime` (the Cave parent, Sky Frogs' Tier 1 starter species) spawns here: the pack adds cave_slime to the island biome and PF's light-based placement rule lets it spawn in the dark. Player collects slimeballs and occasionally split-discovers Iron Slimes via PF's `SlimeSplitDiscoveryHandler`.
+4. **First Resource Frog** - Welcome quest chapter rewards a **Bottle of Cave Frog Frogspawn** at completion (a breeding pair's worth; `productivefrogs:frog_egg` with `contained_category: cave`). Pour it on water to start the Cave frogs.
 
-The first Iron Configurable Froglight is the first iron source — smelting it gives the first iron ingot. No sieving, no Ex Deorum hammers needed.
+The first Iron Configurable Froglight is the first iron source - smelting it gives the first iron ingot. No sieving, no Ex Deorum hammers needed.
 
 Why inventory grant, not a chest: modern skyblock packs put first-join items directly in the player's inventory. Lower friction (no "where do I open this?"), survives the player breaking the chest before taking everything, KubeJS hook guards against re-granting on re-login.
 
@@ -50,9 +50,9 @@ Why minimal grant: the design wants the player engaged with the mob-farm loop wi
 ### Nether
 - **Type:** void (or near-void)
 - **Y-range:** standard nether
-- **Access:** unlocked via Tier 4 quest reward (Nether Portal Kit — 14 obsidian + 1 flint+steel, granted as a quest reward).
+- **Access:** unlocked via Tier 4 quest reward (Nether Portal Kit - 14 obsidian + 1 flint+steel, granted as a quest reward).
 - **Biomes:** standard nether biomes, all reachable. Player can build a small nether base for ambient atmosphere; infernal frogs farm everything in their skyblock.
-- **Surface generation:** intentionally minimal — we override most ore generation via KubeJS to force the frog path. Nether quartz, basalt deltas, etc. exist but yields are sparse.
+- **Surface generation:** intentionally minimal - we override most ore generation via KubeJS to force the frog path. Nether quartz, basalt deltas, etc. exist but yields are sparse.
 
 ### End
 - **Type:** **traditional vanilla End** (central island + ender dragon + the outer end-island ring with end cities, ships, and chorus forests). **Settled 2026-06-01, built.** Only the Overworld is a void skyblock; the End is full vanilla.
@@ -61,10 +61,10 @@ Why minimal grant: the design wants the player engaged with the mob-farm loop wi
 - **Why vanilla, not void:** the dragon fight is the campaign's climax and needs proper End geometry; the outer islands provide end cities, elytra, and the chorus/end-stone the Void frog also farms. A void End would lose all of that.
 
 ### Custom dimensions (RFTools, Compact Machines)
-- **Compact Machines:** kept — used heavily in late-game builds.
-- **RFTools dimensions:** disabled in v0.x — too easy to bypass progression by spawning a custom dimension with whatever ore generation you want. Reconsider for v1.x with carefully-tuned dimlet costs.
+- **Compact Machines:** kept - used heavily in late-game builds.
+- **RFTools dimensions:** disabled in v0.x - too easy to bypass progression by spawning a custom dimension with whatever ore generation you want. Reconsider for v1.x with carefully-tuned dimlet costs.
 
-## Productive Frogs parent species — the void problem
+## Productive Frogs parent species - the void problem
 
 Productive Frogs ships six parent slime species, each conceptually tied to a vanilla biome:
 
@@ -90,5 +90,5 @@ This makes the bootstrap reliable (Cave spawns in the dark room) and enforces ga
 ### Open worldgen questions
 
 - Verify in-game that KubeJS's `data/` overrides PF's biome modifiers (so the `neoforge:none` disables take), and that `cave_slime` then spawns in a dark room on the swamp island.
-- Should we ship a custom dimension for "frog paradise" lategame — a void dimension with maximized frog spawn rates? Defer to v1.x; see [`backlog.md`](./backlog.md).
-- Skyblock Builder vs. **Lost Cities** — both viable void generators. Skyblock Builder wins on UX (per-player island UI). Lost Cities would give a totally different feel (player starts in a ruined city). Locked in on Skyblock Builder.
+- Should we ship a custom dimension for "frog paradise" lategame - a void dimension with maximized frog spawn rates? Defer to v1.x; see [`backlog.md`](./backlog.md).
+- Skyblock Builder vs. **Lost Cities** - both viable void generators. Skyblock Builder wins on UX (per-player island UI). Lost Cities would give a totally different feel (player starts in a ruined city). Locked in on Skyblock Builder.

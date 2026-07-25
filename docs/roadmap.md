@@ -2,11 +2,11 @@
 
 > **Status:** living document. Phases are sequencing, not deadlines. Treat checkboxes as work units, not commitments. Update as scope shifts.
 
-The path from "pack scaffold boots in a launcher" to "Sky Frogs v1.0 lives on CurseForge." Written for an author building their first modpack — explicit about what code/scripts handle vs. what the human has to do directly.
+The path from "pack scaffold boots in a launcher" to "Sky Frogs v1.0 lives on CurseForge." Written for an author building their first modpack - explicit about what code/scripts handle vs. what the human has to do directly.
 
 ## Where we are right now
 
-The pack is **live on CurseForge** (v1.4.4, shipped 2026-07-05), shipping tag-driven releases (client + dedicated-server packs) to CurseForge and GitHub. Productive Frogs is pinned at **1.24.6** (Fresh Coat - a cosmetic bucket / Slime Milk texture refresh). The frog loop and full campaign are built and merged: a couple dozen KubeJS override scripts (anti.js, first_join.js, the per-tier slime chains, the Dissolution Chamber engine + every tier's rows, the spawnery primers, the storage/plastic/steel/log/catalyst/mossy-gate/JDT/boss overrides) and **27 quest chapters / ~343 quests spanning all six tiers** plus the Trophy Pond boss campaign (with the optional Dragon + Wither altar quests), the Terrarium automation chapter, the Completionist census, and the optional Void-tier Warden expedition. The mod set spans every tier's verb (Mekanism, Industrial Foregoing, Just Dire Things + Building Gadgets, Iron Jetpacks, Refined Storage, Extended Crafting) plus Powah/Flux Networks, Apotheosis (a combat/enchanting/loot layer), the decoration suite, and the QoL stack.
+The pack is **live on CurseForge** (v1.5.1, shipped 2026-07-24), shipping tag-driven releases (client + dedicated-server packs) to CurseForge and GitHub. Productive Frogs is pinned at **1.25.2** (Soul Forge - the Wither Altar recipe fix, on top of 1.25.0's Virtual Terrarium and Slime Milk Basin). The frog loop and full campaign are built and merged: a couple dozen KubeJS override scripts (anti.js, first_join.js, the per-tier slime chains, the Dissolution Chamber engine + every tier's rows, the spawnery primers, the storage/plastic/steel/log/catalyst/mossy-gate/JDT/boss/void overrides) and **27 quest chapters / 346 quests spanning all six tiers** plus the Trophy Pond boss campaign (with the optional Dragon + Wither altar quests), the Terrarium automation chapter, the Completionist census, and the optional Void-tier Warden expedition. The mod set spans every tier's verb (Mekanism, Industrial Foregoing, Just Dire Things + Building Gadgets, Iron Jetpacks, Refined Storage, Extended Crafting) plus Powah/Flux Networks, Apotheosis (a combat/enchanting/loot layer), the decoration suite, and the QoL stack.
 
 All six tiers (Welcome -> Cave -> Geode -> Bog -> Tide -> Infernal -> Void) are built and playable end to end, through the Master Pond endgame and the Sky Frogs Master Frog trophy. The content campaign is complete and v1.0.0 has shipped; the remaining post-1.0 work is the three consciously-waived launch-gate items (Master Frog final art, the branding gallery, the license audit), plus balance and optional side chapters.
 
@@ -22,9 +22,9 @@ All six tiers (Welcome -> Cave -> Geode -> Bog -> Tide -> Infernal -> Void) are 
 | **5. v1.0 launch** ✅ | `1.0.0` (shipped 2026-06-14) | Polish, balance pass, CF page live; gate consciously waived on Master Frog art / branding gallery / license audit (now post-1.0) |
 | **6. Maintenance** | `1.x.y` | Mod updates, content additions, hotfixes |
 
-## Phase 1 — Tier 0 playable ✅
+## Phase 1 - Tier 0 playable ✅
 
-**Goal:** a fresh world is playable to first iron ingot without crashes or dead ends. No frogs yet — just the bootstrap loop.
+**Goal:** a fresh world is playable to first iron ingot without crashes or dead ends. No frogs yet - just the bootstrap loop.
 
 **Blockers:**
 - Category-typed frog egg must exist as a PF item (so it can be a quest reward). PF ships placeable frog eggs that hatch a tadpole with no priming step, so this is satisfied.
@@ -46,7 +46,7 @@ All six tiers (Welcome -> Cave -> Geode -> Bog -> Tide -> Infernal -> Void) are 
 - Write the FTB Quests `welcome.snbt` SNBT.
 - Document the Ex Deorum barrel water-collection mechanic specifics during implementation.
 
-## Phase 2 — First Iron Froglight (v0.1 alpha) ✅
+## Phase 2 - First Iron Froglight (v0.1 alpha) ✅
 
 **Goal:** a player can follow the questbook from spawn to producing their first Iron Configurable Froglight. The pack's core loop is provable.
 
@@ -74,7 +74,7 @@ All six tiers (Welcome -> Cave -> Geode -> Bog -> Tide -> Infernal -> Void) are 
 - Updated docs / CHANGELOG.
 - Tag + release workflow scaffolding.
 
-## Phase 3 — Mid-tier alpha (v0.2 → v0.5)
+## Phase 3 - Mid-tier alpha (v0.2 → v0.5)
 
 **Goal:** the mid-tiers each become playable, one per minor release. Each tier layers ONE new verb onto the frog loop (anti-repetition).
 
@@ -99,22 +99,22 @@ Note: the built tier order is Cave=Tier 1 (the starter), Geode=Tier 2, Bog=Tier 
 
 **You drive:**
 - Decide which tech mods ship in each minor release (the mod selection criteria in [`docs/mod_list.md`](./mod_list.md) apply).
-- Playtest each tier — they should each take 2-8 hours per progression.md estimates.
+- Playtest each tier - they should each take 2-8 hours per progression.md estimates.
 - Capture the tier's screenshot for the CF gallery.
 
 **I drive:**
 - Mod additions via packwiz, KubeJS overrides, quest authoring, slime variants.
 
-## Phase 4 — Feature-complete (v0.6 → v0.9)
+## Phase 4 - Feature-complete (v0.6 → v0.9)
 
 **Goal:** Tier 6 (Void) reachable; per-mod side chapters added; endgame creative trophy exists.
 
 **Deliverables:**
 - [x] Tier 6 chapters: `road_to_void` (dragon-expedition gateway) + `void_frogs` (End chain) + `the_ultimate_table` (Extended Crafting verb). **Built 2026-06-01.**
 - [x] Endgame singularity loop (`master_pond.snbt`): froglight Singularities -> Ultimate Singularity -> Master Frog. **Built.**
-- [x] **Sky Frogs Master Frog trophy item** — shipped as a KubeJS-defined item (`kubejs:master_frog`) with a placeholder texture; final 3D art remains a [`backlog.md`](./backlog.md) item.
+- [x] **Sky Frogs Master Frog trophy item** - shipped as a KubeJS-defined item (`kubejs:master_frog`) with a placeholder texture; final 3D art remains a [`backlog.md`](./backlog.md) item.
 - [ ] Per-mod side chapters: one for each significant tech mod (Mekanism, AE2, IF, Powah, EnderIO, etc.). These are optional-but-recommended infrastructure guides.
-- [ ] Full slime variant catalog — every shipped mod has at least one variant per applicable category.
+- [ ] Full slime variant catalog - every shipped mod has at least one variant per applicable category.
 
 **You drive:**
 - Endgame trophy design (visual + reward UX).
@@ -124,7 +124,7 @@ Note: the built tier order is Cave=Tier 1 (the starter), Geode=Tier 2, Bog=Tier 
 **I drive:**
 - All authored content.
 
-## Phase 5 — v1.0 launch ✅ (shipped 2026-06-14)
+## Phase 5 - v1.0 launch ✅ (shipped 2026-06-14)
 
 **Goal:** the pack is ready for a broad public release.
 
@@ -137,7 +137,7 @@ Note: the built tier order is Cave=Tier 1 (the starter), Geode=Tier 2, Bog=Tier 
 - [x] **(Optional) `packmenu` + Tips Mod** - the FancyMenu title screen shipped (v0.7.0).
 - [x] CHANGELOG cleaned up for public-facing release notes (less technical, more player-friendly).
 - [x] CurseForge page polished: hook, features, How-to-play, FAQ all updated.
-- [ ] **Final license audit** — verify every bundled mod's license allows redistribution. **Waived at 1.0; post-1.0 follow-up.**
+- [ ] **Final license audit** - verify every bundled mod's license allows redistribution. **Waived at 1.0; post-1.0 follow-up.**
 - [ ] r/feedthebeast announcement post + cross-link from PF mod page on CurseForge.
 - [x] Tag `v1.0.0`, release. **Done 2026-06-14.**
 
@@ -150,7 +150,7 @@ Note: the built tier order is Cave=Tier 1 (the starter), Geode=Tier 2, Bog=Tier 
 - Polish passes on docs, KubeJS, quest balance, configs.
 - Pre-launch QA checklist.
 
-## Phase 6 — Maintenance
+## Phase 6 - Maintenance
 
 **Goal:** keep the pack alive past launch.
 
@@ -164,16 +164,16 @@ Note: the built tier order is Cave=Tier 1 (the starter), Geode=Tier 2, Bog=Tier 
 1. ~~**Productive Frogs V1 might not be feature-complete** by v0.1 target. Slime Milker is the load-bearing block for Tier 1 scale-up.~~ RESOLVED: PF 1.5.3 shipped the Slime Milker (with JEI pages), so the scale-up beat is unblocked.
 2. **Skyblock Builder / Ex Deorum staying on 1.21.1.** If either mod dies and we need to migrate MC versions, the entire bootstrap design needs rework. Track those mods' release activity.
 3. **CurseForge approval delay** on first project submission. CF is our sole channel; an approval delay = no launch. Submit the empty CF project as soon as you're ready to claim the slug, well before v0.1.
-4. **License compatibility** — one or two bundled mods might require explicit author permission to redistribute in a pack. Audit before v0.1.
+4. **License compatibility** - one or two bundled mods might require explicit author permission to redistribute in a pack. Audit before v0.1.
 
 ## Decision points coming up
 
 (In rough order. Each one is a question for you when we hit it.)
 
 - **Tier 4 (Tide) verb** - which new verb does Tide layer onto the frog loop? (Cave=storage, Geode=automation, Bog=IF; Tide is open.)
-- **Endgame trophy** — KubeJS item vs. resourcepack-overridden item (Phase 4).
+- **Endgame trophy** - KubeJS item vs. resourcepack-overridden item (Phase 4).
 - **Custom panorama / main menu** for v0.1 or defer to v1.0.
 
 ## How to update this roadmap
 
-When a deliverable lands, check it off in the relevant phase. When a phase completes, mark it ✅ in the "Phases at a glance" table. When scope or sequencing changes, edit the phases — don't add notes around them. The roadmap is a snapshot of the current plan, not a history of past plans.
+When a deliverable lands, check it off in the relevant phase. When a phase completes, mark it ✅ in the "Phases at a glance" table. When scope or sequencing changes, edit the phases - don't add notes around them. The roadmap is a snapshot of the current plan, not a history of past plans.

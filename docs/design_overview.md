@@ -6,8 +6,8 @@
 
 Two pieces of existing Minecraft content seeded this pack:
 
-1. **Sky Bees Reborn** (NeoForge 1.21.1, by Anderzz) — a void skyblock where [Productive Bees](https://www.curseforge.com/minecraft/mc-mods/productive-bees) is the only viable resource generator. Automated mining alternatives (laser drills, mining lenses) are disabled, forcing the player through the bee-breeding tree.
-2. **Productive Frogs** — a content mod by the same author as this pack that generalizes the vanilla `frog-eats-magma-cube-drops-froglight` mechanic into a Productive-Bees-shaped loop. Frogs of one of six categories eat slimes of matching categories and drop tier-specific Configurable Froglights.
+1. **Sky Bees Reborn** (NeoForge 1.21.1, by Anderzz) - a void skyblock where [Productive Bees](https://www.curseforge.com/minecraft/mc-mods/productive-bees) is the only viable resource generator. Automated mining alternatives (laser drills, mining lenses) are disabled, forcing the player through the bee-breeding tree.
+2. **Productive Frogs** - a content mod by the same author as this pack that generalizes the vanilla `frog-eats-magma-cube-drops-froglight` mechanic into a Productive-Bees-shaped loop. Frogs of one of six categories eat slimes of matching categories and drop tier-specific Configurable Froglights.
 
 Sky Frogs is what you get when you swap the Productive Bees pillar of Sky Bees Reborn for Productive Frogs and rebuild the surrounding scaffolding around the category model.
 
@@ -32,7 +32,7 @@ Each tier corresponds to one or more questbook chapters and to one category in t
 Three differences justify a distinct pack:
 
 1. **Frog mechanics are more vanilla-feeling.** Productive Frogs leans on existing vanilla idioms (frogspawn, slimeballs, water buckets, glass bottles) for nearly every interaction. There is no custom UI for breeding; everything is right-click on a block. Sky Bees Reborn inherits Productive Bees' (excellent but) heavier UX of bottler, centrifuge, honey treats, honey gen, etc.
-2. **Smaller frog roster, deeper slime roster.** Six frogs, dozens of slime species. Players never have a giant unmemorable bee zoo; instead, they have six well-loved frogs and a sprawling slime ecosystem. This makes questbook design cleaner — six top-level chapters for the frog tiers, and per-resource side quests for slime variants.
+2. **Smaller frog roster, deeper slime roster.** Six frogs, dozens of slime species. Players never have a giant unmemorable bee zoo; instead, they have six well-loved frogs and a sprawling slime ecosystem. This makes questbook design cleaner - six top-level chapters for the frog tiers, and per-resource side quests for slime variants.
 3. **Data-driven extensibility is the design center.** Adding a modded resource to the pack is a single JSON file (`slime_variant/<name>.json`) plus a tag entry, never a Java change. Sky Frogs leans into this hard: pack-side KubeJS scripts generate dozens of `slime_variant` JSONs from the mods we ship, and a community-PR pattern is "drop a JSON, get a frog-eats-that-thing variant."
 
 ## What this pack is NOT

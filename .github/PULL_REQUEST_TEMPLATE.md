@@ -1,5 +1,5 @@
 <!--
-  Thanks for contributing! Please fill out the sections below. Brevity is fine —
+  Thanks for contributing! Please fill out the sections below. Brevity is fine  - 
   the goal is to give the reviewer the context they need to evaluate the change.
 -->
 
@@ -11,20 +11,20 @@
 
 <!-- Check all that apply -->
 
-- [ ] `feat` — new pack content (quests, variants, configs, scripts)
-- [ ] `fix` — bug fix (broken quest, mis-tagged item, wrong recipe)
-- [ ] `refactor` — restructuring with no player-visible change
-- [ ] `docs` — documentation only
-- [ ] `chore` — tooling, build, or infrastructure
-- [ ] `ci` — CI/CD changes
-- [ ] `perf` — load-time or runtime performance
+- [ ] `feat` - new pack content (quests, variants, configs, scripts)
+- [ ] `fix` - bug fix (broken quest, mis-tagged item, wrong recipe)
+- [ ] `refactor` - restructuring with no player-visible change
+- [ ] `docs` - documentation only
+- [ ] `chore` - tooling, build, or infrastructure
+- [ ] `ci` - CI/CD changes
+- [ ] `perf` - load-time or runtime performance
 
 ## Scope Check
 
 <!-- Sky Frogs ships pack-side content only. Confirm this change doesn't require Java. -->
 
 - [ ] This change is pack-side only (KubeJS, configs, datapack JSON, quests, docs)
-- [ ] If a Java change is implied, a corresponding issue exists on [productive-frogs](https://github.com/Flatts3000/productive-frogs/issues) — link it below
+- [ ] If a Java change is implied, a corresponding issue exists on [productive-frogs](https://github.com/Flatts3000/productive-frogs/issues) - link it below
 
 ## Design / Docs Impact
 
@@ -43,7 +43,7 @@
 - [ ] Loaded the pack in a fresh world and verified the change
 - [ ] Verified affected quest chapter loads and is satisfiable
 - [ ] Checked `latest.log` for new errors / warnings
-- [ ] N/A — docs-only
+- [ ] N/A - docs-only
 
 ## Checklist
 

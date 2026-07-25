@@ -16,8 +16,8 @@ this repository:
 
 ## Bundled and referenced mods
 
-Mods bundled with the pack — or referenced by `packwiz` manifests and
-downloaded at install time — each retain their own license. Refer to each
+Mods bundled with the pack - or referenced by `packwiz` manifests and
+downloaded at install time - each retain their own license. Refer to each
 mod's distribution page on
 [CurseForge](https://www.curseforge.com/minecraft/modpacks/sky-frogs) for
 licensing terms.

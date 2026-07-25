@@ -1,6 +1,6 @@
 ---
 name: Feature Request
-about: Propose a pack-level change — new quest, new override, design tweak
+about: Propose a pack-level change - new quest, new override, design tweak
 title: "[Feature] "
 labels: ["enhancement"]
 assignees: []
@@ -27,8 +27,8 @@ assignees: []
 
 - [ ] Fits v0.1 scope (core tier progression)
 - [ ] Belongs in v1.x (after feature-complete)
-- [ ] Belongs in [productive-frogs](https://github.com/Flatts3000/productive-frogs) — this needs Java
-- [ ] Not sure — maintainer please advise
+- [ ] Belongs in [productive-frogs](https://github.com/Flatts3000/productive-frogs) - this needs Java
+- [ ] Not sure - maintainer please advise
 
 ## Affected Tier / Chapter
 

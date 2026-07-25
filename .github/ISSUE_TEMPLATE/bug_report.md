@@ -54,13 +54,13 @@ assignees: []
 
 ## Additional Context
 
-<!-- Anything else useful — recent world updates, specific biome/dimension, etc. -->
+<!-- Anything else useful - recent world updates, specific biome/dimension, etc. -->
 
 ## Is this actually a Productive Frogs bug?
 
 <!-- If the issue is with the underlying mod (frogs misbehaving, slimes not dropping
-     froglight, etc.) — file at https://github.com/Flatts3000/productive-frogs/issues
+     froglight, etc.) - file at https://github.com/Flatts3000/productive-frogs/issues
      instead, and link this issue from there. -->
 
 - [ ] No, this is pack-specific (config, quest, KubeJS, datapack override)
-- [ ] Maybe — file here for triage and we'll route upstream if needed
+- [ ] Maybe - file here for triage and we'll route upstream if needed

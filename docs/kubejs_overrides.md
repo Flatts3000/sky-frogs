@@ -13,8 +13,8 @@ kubejs/
   startup_scripts/      # Run before registry freeze. Registry tweaks, fuel definitions.
   server_scripts/       # Run on server start. Recipe add/remove, world rules.
   client_scripts/       # Run on client. JEI/lang tweaks.
-  data/<ns>/            # Datapack overrides — tags, loot tables, recipe JSONs, slime variants.
-  assets/<ns>/          # Resourcepack overrides — lang files, textures.
+  data/<ns>/            # Datapack overrides - tags, loot tables, recipe JSONs, slime variants.
+  assets/<ns>/          # Resourcepack overrides - lang files, textures.
 ```
 
 ## The four pillars
@@ -100,7 +100,7 @@ BlockEvents.rightClicked(event => {
 })
 ```
 
-### Pillar 2: Parent species spawn rules — the pack owns spawning
+### Pillar 2: Parent species spawn rules - the pack owns spawning
 
 Per PF's `ParentSpeciesEntry`, six parent species map to the six categories. Because progression is **species-gated** (see [`progression.md`](./progression.md)), only the *current* species should ever be obtainable, so the pack owns spawn policy entirely and PF just supplies a light-based placement-rule hook.
 
@@ -208,15 +208,15 @@ Sky Bees Reborn ships these additional `server_scripts/`. Sky Frogs analogs:
 
 | SBR script              | Purpose                                      | Sky Frogs equivalent                                                  |
 |-------------------------|----------------------------------------------|------------------------------------------------------------------------|
-| `barrel.js`             | Iron Barrels mob essence handling            | TBD — same pattern if we ship Iron Furnaces/Barrels                    |
+| `barrel.js`             | Iron Barrels mob essence handling            | TBD - same pattern if we ship Iron Furnaces/Barrels                    |
 | `botany_pots.js`        | BotanyPots crop additions                    | Same                                                                   |
 | `enderio.js`            | EnderIO recipe overrides                     | Same                                                                   |
-| `extended_crafting.js`  | Ultimate singularity recipe                  | Same — gated behind Tier 6                                             |
+| `extended_crafting.js`  | Ultimate singularity recipe                  | Same - gated behind Tier 6                                             |
 | `functional_storage.js` | Drawer recipe tweaks                         | Same                                                                   |
 | `heat_sources.js`       | IF/Mek heat source registrations             | Same                                                                   |
 | `market.js`             | Villager trade tweaks                        | Same                                                                   |
-| `minecraft.js`          | Vanilla recipe overrides                     | Same — extensively used                                                |
-| `player_events.js`      | First-join welcome handler                   | Same — opens Sky Frogs Patchouli book on first join                    |
+| `minecraft.js`          | Vanilla recipe overrides                     | Same - extensively used                                                |
+| `player_events.js`      | First-join welcome handler                   | Same - opens Sky Frogs Patchouli book on first join                    |
 | `powah.js`              | Powah recipe gates                           | Same                                                                   |
 | `productivemetalworks.js` | Smeltery recipe tweaks                     | Same                                                                   |
 | `sieve.js`              | Ex Deorum sieve additions / removals         | N/A - Sky Frogs disables sieving in `anti.js`; the bootstrap is the slime seed-chains (Pillar 3), not sieving |
@@ -225,8 +225,8 @@ Sky Bees Reborn ships these additional `server_scripts/`. Sky Frogs analogs:
 ## What we do NOT override
 
 - **Mod internal recipes** that are part of the mod's intended progression but not material-generating. We don't touch Mekanism's reactor recipes, AE2's processor cycles, etc.
-- **Vanilla aesthetic recipes** — wool dyeing, banners, decorations. Untouched.
-- **JEI display rules** — handled in `client_scripts/jei.js` per-mod, but only for the explicitly DISABLED items (we hide them from JEI). Everything else stays default.
+- **Vanilla aesthetic recipes** - wool dyeing, banners, decorations. Untouched.
+- **JEI display rules** - handled in `client_scripts/jei.js` per-mod, but only for the explicitly DISABLED items (we hide them from JEI). Everything else stays default.
 
 ## Resolved KubeJS questions
 

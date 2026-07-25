@@ -1,6 +1,6 @@
 # Pack Metadata
 
-> **Status:** DRAFT — non-canonical. Slugs, version scheme, channel choices, and branding direction are all proposals, not decisions.
+> **Status:** DRAFT - non-canonical. Slugs, version scheme, channel choices, and branding direction are all proposals, not decisions.
 
 ## Identity
 
@@ -11,7 +11,7 @@
 | **CF project ID**| `1558075` (load-bearing for future `release.yml` automation; set as `CF_PROJECT_ID` GitHub secret) |
 | **Author**       | Flatts3000                                                         |
 | **Tagline**      | Skyblock where frogs replace mining                                |
-| **Long pitch**   | A void-skyblock NeoForge 1.21.1 modpack built around Productive Frogs. Iron, gold, diamonds, and beyond are won by breeding Resource Frogs and feeding them matching Resource Slimes — automated mining is disabled. |
+| **Long pitch**   | A void-skyblock NeoForge 1.21.1 modpack built around Productive Frogs. Iron, gold, diamonds, and beyond are won by breeding Resource Frogs and feeding them matching Resource Slimes - automated mining is disabled. |
 | **License**      | MIT (pack content); bundled mods retain their own licenses         |
 | **Source**       | [github.com/Flatts3000/sky-frogs](https://github.com/Flatts3000/sky-frogs) |
 
@@ -19,24 +19,24 @@
 
 | Field            | Value                                                              |
 |------------------|--------------------------------------------------------------------|
-| **MC version**   | `1.21.1` — single version, no multi-version build matrix           |
+| **MC version**   | `1.21.1` - single version, no multi-version build matrix           |
 | **Loader**       | NeoForge `21.1.233` - version pinned in `pack/pack.toml`            |
 | **Java**         | Java 21 (NeoForge 1.21.1 requirement)                              |
 | **Launcher**     | CurseForge launcher (primary); Prism / ATLauncher / MultiMC also work via the CurseForge manifest |
-| **Server**       | Yes — server zip ships alongside client                            |
+| **Server**       | Yes - server zip ships alongside client                            |
 
 ## Version Scheme
 
 Semantic versioning. **v1.0.0 shipped 2026-06-14** (out of beta), so post-1.0 SemVer is now in effect: **major** = world-breaking, **minor** = new content, **patch** = fixes.
 
-- **`v0.x.y` — pre-1.0 (historical).** `x` bumped on each minor playtest milestone; `y` bumped on hotfixes.
-- **`v1.0.0`** — the launch release: all six tiers + the Trophy Pond boss campaign + the Terrarium + the Completionist census, out of beta.
-- **`v1.x` — post-1.0.** `x` (minor) bumps when adding new mods, new chapters, or significant balance changes; `y` (patch) bumps on configs-only / KubeJS-only fixes.
+- **`v0.x.y` - pre-1.0 (historical).** `x` bumped on each minor playtest milestone; `y` bumped on hotfixes.
+- **`v1.0.0`** - the launch release: all six tiers + the Trophy Pond boss campaign + the Terrarium + the Completionist census, out of beta.
+- **`v1.x` - post-1.0.** `x` (minor) bumps when adding new mods, new chapters, or significant balance changes; `y` (patch) bumps on configs-only / KubeJS-only fixes.
 - **Breaking changes** (world wipes, mod removals that drop player items) bump the **major** version (`2.0.0`). World safety matters; warn loudly at the top of the changelog section.
 
 ## Distribution Channels
 
-CurseForge is the sole distribution channel. The FTB utility stack (FTB Library / Quests / Teams / Chunks / Ranks / Essentials) is CurseForge-only, and Modrinth forbids inlining CF jars as overrides — so a Modrinth release isn't possible without dropping FTB Quests, which is non-negotiable. Productive Frogs is also CF-only by the same downstream constraint.
+CurseForge is the sole distribution channel. The FTB utility stack (FTB Library / Quests / Teams / Chunks / Ranks / Essentials) is CurseForge-only, and Modrinth forbids inlining CF jars as overrides - so a Modrinth release isn't possible without dropping FTB Quests, which is non-negotiable. Productive Frogs is also CF-only by the same downstream constraint.
 
 | Channel        | Format            | Notes                                                          |
 |----------------|-------------------|----------------------------------------------------------------|
@@ -49,16 +49,16 @@ Build tool: [`packwiz`](https://github.com/packwiz/packwiz) drives the CF export
 
 - **Pre-1.0:** ship a new `0.x.0` whenever a major content tier becomes playable. Hotfix as needed.
 - **Post-1.0:** monthly minor releases is the aspiration. Hotfixes (`x.y.z` where `z` bumps) ship same-week if a bug is gameplay-blocking.
-- **Mod updates** are bundled into the next minor release unless a critical security or world-corruption fix is published — those get same-day hotfixes.
+- **Mod updates** are bundled into the next minor release unless a critical security or world-corruption fix is published - those get same-day hotfixes.
 
 ## Branding Assets (TBD)
 
-- 256×256 logo (frog silhouette on a void background — TBD)
+- 256×256 logo (frog silhouette on a void background - TBD)
 - 512×288 banner (CurseForge "header" dimensions)
 - 1280×720 hero (CurseForge gallery first slide)
 - A short demo gif (~5s, ~3MB) showing the egg→tadpole→frog→froglight loop
 
-All assets ship from `docs/branding/` (TBD directory). Use the same color palette as the Productive Frogs categories — six accent colors keyed to `Category.tintArgb()`.
+All assets ship from `docs/branding/` (TBD directory). Use the same color palette as the Productive Frogs categories - six accent colors keyed to `Category.tintArgb()`.
 
 ## Required External Accounts
 
@@ -76,11 +76,11 @@ All assets ship from `docs/branding/` (TBD directory). Use the same color palett
 ## Changelog Format
 
 Keep a Changelog format in `CHANGELOG.md` at repo root once we have any releases. Sections per release:
-- **Added** — new mods, new quests, new slime variants
-- **Changed** — recipe overrides, balance tweaks, mod version bumps
-- **Removed** — mod removals (loud warnings if player-facing items vanish)
-- **Fixed** — bug fixes
-- **World-breaking** — anything that requires a fresh world or migration steps
+- **Added** - new mods, new quests, new slime variants
+- **Changed** - recipe overrides, balance tweaks, mod version bumps
+- **Removed** - mod removals (loud warnings if player-facing items vanish)
+- **Fixed** - bug fixes
+- **World-breaking** - anything that requires a fresh world or migration steps
 
 ## Telemetry
 

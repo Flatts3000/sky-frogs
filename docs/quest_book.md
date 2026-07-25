@@ -97,7 +97,7 @@ Aim for **~30-40 quests per chapter** on average (22 × 35 ≈ 770). Distributio
 | Chapter group          | Average quests | Rationale                                             |
 |------------------------|---------------:|--------------------------------------------------------|
 | Welcome                |            18 | Tier 0 bootstrap: spawn, cobble gen, water source, mob farm, slime collection, first frogspawn reward, emergency replacement quest. |
-| Tier 1-6 (6 chapters)  | 50 each = 300 | Densest — these are the spine. Per-resource subquests. |
+| Tier 1-6 (6 chapters)  | 50 each = 300 | Densest - these are the spine. Per-resource subquests. |
 | Productive Frogs       |            30 | Mechanics teaching with explicit per-feature quests    |
 | Tech mods (9 chapters) | 40 each = 360 | Each teaches the mod from zero                         |
 | Dimensions (2)         | 20 each = 40  | Dimension-specific tasks                               |
@@ -185,24 +185,24 @@ Standardized reward tiers (mirror SBR pattern):
 
 ## The Welcome chapter (Tier 0 detail)
 
-Drafted quest spine for the `welcome.snbt` chapter — the only mandatory Tier 0 content:
+Drafted quest spine for the `welcome.snbt` chapter - the only mandatory Tier 0 content:
 
-1. **Plant a sapling** — sapling from first-join grant placed on dirt.
+1. **Plant a sapling** - sapling from first-join grant placed on dirt.
 2. **Harvest wood + craft a wooden axe + pickaxe.**
-3. **Place your water source** — bucket the water onto the platform.
+3. **Place your water source** - bucket the water onto the platform.
 4. **Place your lava source adjacent to water → first cobblestone.** Player understands the vanilla cobble generator.
-5. **Set up an Ex Deorum barrel outside your claim.** (Tooltip: Rain Shield is not in this pack — your claim does get rain inside, but the barrel works anywhere.)
+5. **Set up an Ex Deorum barrel outside your claim.** (Tooltip: Rain Shield is not in this pack - your claim does get rain inside, but the barrel works anywhere.)
 6. **Wait for rain → bucket the second water source.** Now infinite water.
 7. **Mine 64 cobblestone.** Scaling material.
-8. **Build a dark room** — minimum 5×5×3 enclosed space at light level 0.
+8. **Build a dark room** - minimum 5×5×3 enclosed space at light level 0.
 9. **Kill 8 cave slimes.** `productivefrogs:cave_slime` spawns in the dark room because the pack adds `cave_slime` to the (forced) island biome and PF's light-based placement rule does the rest. Reward: a few slimeballs (in case loot RNG was unkind).
 10. **Collect 16 slimeballs total.** Resource bar for frog breeding + crafting.
-11. **(Optional spine branch)** — split-discover a resource slime. Tooltip hint: keep farming, it's random.
+11. **(Optional spine branch)** - split-discover a resource slime. Tooltip hint: keep farming, it's random.
 12. **(Final)** Complete the chapter → **reward: a Bottle of Cave Frog Frogspawn**. Now Tier 1 (Cave) is unlocked.
 
 **Repeatable emergency quest** (always visible in the Welcome chapter):
 
-- **"My frogs are gone"** — visible from the moment the chapter opens; completable at any time.
+- **"My frogs are gone"** - visible from the moment the chapter opens; completable at any time.
   - Cooldown: 1 hour real-time (FTB Quests `cooldown` field).
   - Cost: 4 slimeballs (so the player has to keep the farm running to use it; prevents infinite frog cheese).
   - Reward: a Bottle of Cave Frog Frogspawn.
@@ -212,11 +212,11 @@ The intent is that a player who somehow loses every single frog AND has no frogs
 
 ## Special: the "Master Pond" chapter
 
-Sky Bees Reborn's `master_hive.snbt` chapter is the singularity-grinding endgame. Sky Frogs' equivalent — *Master Pond* — chains the player from "I have all six tiers running" to "I have an Ultimate Singularity" to "I have crafted the Sky Frogs Master Frog trophy."
+Sky Bees Reborn's `master_hive.snbt` chapter is the singularity-grinding endgame. Sky Frogs' equivalent - *Master Pond* - chains the player from "I have all six tiers running" to "I have an Ultimate Singularity" to "I have crafted the Sky Frogs Master Frog trophy."
 
 Loosely:
 
-1. Build a Pond shrine — 6 enclosures, one per tier, each producing 1 Froglight/min.
+1. Build a Pond shrine - 6 enclosures, one per tier, each producing 1 Froglight/min.
 2. Channel into Mekanism Compactors → Singularities (one per resource family).
 3. Combine via Extended Crafting → Ultimate Singularity.
 4. Craft into **Sky Frogs Master Frog** (custom item, 3D model TBD).
@@ -227,6 +227,6 @@ Loosely:
 Per-tier resource quests **detect the variant Froglight** (`productivefrogs:configurable_froglight` carrying a `productivefrogs:slime_variant` component), not the smelted resource, so the frog loop can't be bypassed by obtaining the resource another way. This also settles the old quest-icon question: the Froglight is the check target *and* the natural quest icon (it's already category-colored). Two deliberate exceptions keep an ingot check: **Your First Iron Ingot** (the tutorial that teaches the smelt, gated upstream by its "Feed the Frog" quest) checks `iron_ingot`, and the main Mekanism **Steel** quest checks `ingot_steel` (a Mekanism craft, not a frog resource) while the *optional* steel-slime quest carries the froglight check.
 
 ## Open quest-book questions
-- **Loot bag contents** — do we hand-author or use FTB Quests' weighted reward tables? Hand-authoring scales poorly past ~100 quests; weighted tables are the only viable path. Bake those during quest authoring.
-- **Translatable quest text** — FTB Quests supports lang files. Ship en_us only at v1.0; community translations welcomed via PR.
-- **Patchouli book vs. FTB Quests opening** — Sky Bees Reborn opens FTB Quests directly on first join. We could also ship a Patchouli "Welcome to Sky Frogs" book as a tutorial layer above the questbook. TBD; defer.
+- **Loot bag contents** - do we hand-author or use FTB Quests' weighted reward tables? Hand-authoring scales poorly past ~100 quests; weighted tables are the only viable path. Bake those during quest authoring.
+- **Translatable quest text** - FTB Quests supports lang files. Ship en_us only at v1.0; community translations welcomed via PR.
+- **Patchouli book vs. FTB Quests opening** - Sky Bees Reborn opens FTB Quests directly on first join. We could also ship a Patchouli "Welcome to Sky Frogs" book as a tutorial layer above the questbook. TBD; defer.

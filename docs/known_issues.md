@@ -12,9 +12,17 @@ Living tracker of Sky Frogs playtest bugs, limitations, and accepted-for-now qui
 | 🔵 | Accepted for now. Low priority; may revisit. |
 | 🟢 | Resolved. |
 
+Entries are kept after they are fixed: the diagnosis is the valuable part, and several of these bugs have near-misses that would otherwise be re-derived from scratch.
+
 ---
 
 ## Open
+
+**None.** Every issue below has shipped a verified fix. New bugs are filed as [GitHub issues](https://github.com/Flatts3000/sky-frogs/issues) first (see [`github_issues_best_practices.md`](./github_issues_best_practices.md)); they earn an entry here once the root cause is understood, so the ledger records the diagnosis rather than duplicating issue state.
+
+---
+
+## Resolved
 
 ### 🟢 End portal won't open with 12 frames + eyes (Tier 6 gate redesigned to the End Cake)
 The `road_to_void` gate asked players to hand-build a 12-frame End portal. A manually placed ring only lights when **every frame faces inward**, and a wrong-facing frame fails silently - the quest text documented the gotcha, but it still hard-blocked a player at the campaign's climax. **Reported on CurseForge by eager_goodall7 2026-06-05 (comment #8041724). Tracked in [#68](https://github.com/Flatts3000/sky-frogs/issues/68).**
@@ -81,7 +89,7 @@ In the Welcome chapter the intro spine draws its connecting lines, but the four 
 
 **Root cause (diagnosed 2026-05-27 by diffing the deployed instance file against the repo):** FTB Quests parses object IDs (quest / task / reward / chapter) as **signed 64-bit longs** and only accepts positive values - i.e. a leading hex digit of `0-7`. The hand-authored branch IDs (`F9D9...` for Wood to Stand On, `A1B2...`, `B2C3...`, `C3D4...`, `D4E5...`, `E5F6...`) all lead with `8-F`, so they parse as **negative** longs. On world load FTB rejected them, assigned fresh positive IDs (e.g. `F9D9A7438B1DD129` -> `070AD3ED3E6F8AC0`), and **dropped every `dependencies: ["F9D9A7438B1DD129"]` reference** because that ID no longer resolved - severing the four branches and every quest below them. Confirmed by the perfect correlation: every ID FTB *kept* led with `0-7`, every ID it *regenerated* led with `8-F`.
 
-**Fixed and verified in-game 2026-05-27.** Remapped all 62 negative-leading IDs in `pack/config/ftbquests/quests/chapters/welcome.snbt` into the positive range (leading digit minus 8: `8->0 ... F->7`), via [`tools/fix_quest_ids.py`](../../tools/fix_quest_ids.py). The transform is per-ID-string and deterministic, so dependency references remap identically to the IDs they point at and stay linked; a collision guard aborts if any two IDs would converge. Diff was 79/79 symmetric (only ID lines changed; titles / descriptions / tasks / rewards untouched), all 17 dependency references resolve, and Wood to Stand On again has its 4 dependants. Confirmed in-game after `/ftbquests reload`: the four branches draw their dependency lines and Wood to Stand On lists 4 dependants. **Authoring rule going forward:** any hand-authored FTB Quests ID must lead with hex `0-7` (run `tools/fix_quest_ids.py` over a chapter to normalize).
+**Fixed and verified in-game 2026-05-27.** Remapped all 62 negative-leading IDs in `pack/config/ftbquests/quests/chapters/welcome.snbt` into the positive range (leading digit minus 8: `8->0 ... F->7`), via [`tools/fix_quest_ids.py`](../tools/fix_quest_ids.py). The transform is per-ID-string and deterministic, so dependency references remap identically to the IDs they point at and stay linked; a collision guard aborts if any two IDs would converge. Diff was 79/79 symmetric (only ID lines changed; titles / descriptions / tasks / rewards untouched), all 17 dependency references resolve, and Wood to Stand On again has its 4 dependants. Confirmed in-game after `/ftbquests reload`: the four branches draw their dependency lines and Wood to Stand On lists 4 dependants. **Authoring rule going forward:** any hand-authored FTB Quests ID must lead with hex `0-7` (run `tools/fix_quest_ids.py` over a chapter to normalize).
 
 ### 🟢 No JEI recipe-transfer ("+"/"?") button in the Crafting Station
 Viewing a recipe in JEI while the **Crafting Station** GUI is open shows no recipe-transfer button - the "+" (auto-fill) / "?" (transfer-status) icon JEI normally draws at the bottom-right of a recipe is absent. **Reported 2026-05-26.**
