@@ -982,13 +982,17 @@
 	quest.7F00000000000002.quest_desc: ["&eIron Jetpacks&r builds from metals your frogs already make and runs on the &bRF&r your Geode machines spin, so there's no new resource to farm."]
 	quest.7F00000000000002.quest_subtitle: "Leave the ground behind."
 	quest.7F00000000000002.title: "Take Flight"
-	quest.7F00000000000005.quest_desc: ["Start with a &eLeather Strap&r - &fleather&r from your Bog frog, &firon nuggets&r from your Cave one. It's the harness everything else bolts onto."]
+	quest.7F00000000000005.quest_desc: ["Start with a &eLeather Strap&r: &fleather&r from your Bog frog, &firon nuggets&r from your Cave one. Only the first jetpack uses one."]
 	quest.7F00000000000005.quest_subtitle: "The jetpack's harness."
 	quest.7F00000000000005.title: "Leather Strap"
-	quest.7F00000000000008.quest_desc: ["A &eBasic Coil&r is the heart of the cheapest jetpack. The coil is what sets your jetpack's tier; this is the bottom rung."]
+	quest.7F00000000000008.quest_desc: ["A coil goes into a &eCell&r, and cells build the thrusters and capacitor. Which coil depends on the jetpack: &eBasic&r covers the wood and stone ones. Iron takes the &eAdvanced Coil&r."]
 	quest.7F00000000000008.quest_subtitle: "The first engine."
 	quest.7F00000000000008.title: "Basic Coil"
-	quest.7F0000000000000B.quest_desc: ["Build the &bIron Jetpack&r: the coil and strap plus an iron cell, thruster, and capacitor. Wear it in a &eCurios&r back slot, or straight over your chestplate."]
+	quest.7F0000000000000B.quest_desc: [
+		"Only the &ewood&r jetpack is crafted from scratch, built around the &eLeather Strap&r. After that you upgrade in place: your current jetpack in the middle, the new tier's parts around it. Wood to stone, stone to iron. Iron cells take the &eAdvanced Coil&r, so make one in gold first."
+		""
+		"Wear it in a &eCurios&r back slot, or straight over your chestplate."
+	]
 	quest.7F0000000000000B.quest_subtitle: "Your first jetpack."
 	quest.7F0000000000000B.title: "Off the Ground"
 	quest.7F0000000000000E.quest_desc: [
@@ -998,7 +1002,7 @@
 	]
 	quest.7F0000000000000E.quest_subtitle: "Charge it, then soar."
 	quest.7F0000000000000E.title: "Fuel and Fly"
-	quest.7F00000000000011.quest_desc: ["An &eAdvanced Coil&r swaps the iron for &fgold&r: a faster, higher jetpack. Gold comes off your Cave frog."]
+	quest.7F00000000000011.quest_desc: ["&fGold&r instead of iron. Your iron jetpack's cells already took one of these, and so does the &egold&r jetpack above it. Gold comes off your Cave frog."]
 	quest.7F00000000000011.quest_subtitle: "Higher, faster."
 	quest.7F00000000000011.title: "Advanced Coil"
 	quest.7F00000000000014.quest_desc: ["An &eElite Coil&r runs on &fdiamond&r: higher still, and easier on fuel."]
