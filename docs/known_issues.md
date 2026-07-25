@@ -18,11 +18,27 @@ Entries are kept after they are fixed: the diagnosis is the valuable part, and s
 
 ## Open
 
-**None.** Every issue below has shipped a verified fix. New bugs are filed as [GitHub issues](https://github.com/Flatts3000/sky-frogs/issues) first (see [`github_issues_best_practices.md`](./github_issues_best_practices.md)); they earn an entry here once the root cause is understood, so the ledger records the diagnosis rather than duplicating issue state.
+**None.** Every issue below has shipped a fix; 🟣 marks one still awaiting in-game verification. New bugs are filed as [GitHub issues](https://github.com/Flatts3000/sky-frogs/issues) first (see [`github_issues_best_practices.md`](./github_issues_best_practices.md)); they earn an entry here once the root cause is understood, so the ledger records the diagnosis rather than duplicating issue state.
 
 ---
 
 ## Resolved
+
+### 🟣 Take Flight described a jetpack build path Iron Jetpacks does not have
+The chapter handed the player a **Basic Coil** and then asked for an **Iron Jetpack**, describing it as "the coil and strap plus an iron cell, thruster, and capacitor." Both halves were wrong, and neither is visible without reading the jar. **Reported on Discord by Hunyol (v1.5.2). Tracked in [#233](https://github.com/Flatts3000/sky-frogs/issues/233).**
+
+**Root cause (the part worth keeping).** Iron Jetpacks generates its jetpack recipes in code (`DynamicRecipeManager`), not data, so nothing in the pack's config or KubeJS reveals the shape:
+
+1. **Coils are assigned per tier by position, not by name.** `JetpackRegistry.getCoilForTier` computes `r = index(tier) / tierCount` over the **registered** tiers (creative's `-1` is excluded; disabled jetpacks are never registered), then `r > 0.75` -> Ultimate, `> 0.5` -> Elite, `> 0.25` -> Advanced, else Basic. The pack's 14 stock jetpacks give tiers `[0,1,2,3,4,5]`, so iron (tier 2) is `2/6 = 0.33` -> **Advanced coil (gold)**. Basic serves wood and stone/copper only. The coil is consumed by the **Cell** (`material + coil + redstone`), which builds the **Thruster** (`material + cell + furnace`) and **Capacitor** (`material + cell`); the jetpack recipe contains no coil at all.
+2. **Only the lowest tier is craftable.** `makeJetpackRecipe` returns `null` unless `jetpack.tier == registry.getLowestTier()` (wood here). Every tier above is a `JetpackUpgradeRecipe` with `JetpackTierIngredient.of(tier - 1)` in the centre slot. The real ladder to an Iron Jetpack is **wood -> stone (or copper) -> iron**.
+
+Nothing was broken in game: the Basic Coil crafts, the Iron Jetpack is obtainable via the real ladder, and no task was uncompletable. The defect was confined to the quest book.
+
+**Fix (shipped in PR [#236](https://github.com/Flatts3000/sky-frogs/pull/236)):** copy only. "Off the Ground" now states the ladder and the gold coil the iron cells need; "Basic Coil" says what a coil is for and which tiers it covers; "Leather Strap" no longer claims everything bolts onto it (only the first jetpack uses one); "Advanced Coil" was reworded now that the iron tier already consumed one. No quests added, no config shipped. The alternative considered and declined was shipping `config/ironjetpacks/jetpacks/wood.json` with `"disable": true`, which shifts the mapping to Basic->iron / Advanced->gold / Elite->diamond / Ultimate->emerald and would have made the original copy true - rejected because it ships a config the pack does not carry and invalidates any wood jetpack in an existing save.
+
+**Standing risk, unguarded.** Because the coil mapping is a ratio over the *registered* tier list, anything that adds or disables a jetpack tier - a new mod contributing an ingot tag, or a pack-side `disable` - silently re-maps which coil the iron jetpack needs and makes this copy wrong again. `validate_quests.py` has no Iron Jetpacks drift check (its jar-drift checks cover PF only), so the next regression would surface the same way this one did: a player reporting it. Re-derive the table above after any change to the mod list or `config/ironjetpacks/`.
+
+**Verify in-game:** JEI on `ironjetpacks:jetpack` (iron variant) should show the upgrade grid with a stone or copper jetpack in the centre, and the iron cell should want a gold coil. The fix was written from the jar, not from a live check.
 
 ### 🟢 End portal won't open with 12 frames + eyes (Tier 6 gate redesigned to the End Cake)
 The `road_to_void` gate asked players to hand-build a 12-frame End portal. A manually placed ring only lights when **every frame faces inward**, and a wrong-facing frame fails silently - the quest text documented the gotcha, but it still hard-blocked a player at the campaign's climax. **Reported on CurseForge by eager_goodall7 2026-06-05 (comment #8041724). Tracked in [#68](https://github.com/Flatts3000/sky-frogs/issues/68).**
