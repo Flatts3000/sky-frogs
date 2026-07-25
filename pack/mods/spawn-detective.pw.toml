@@ -1,13 +1,13 @@
 name = "Spawn Detective"
-filename = "spawndetective-1.21.1-0.1.0-alpha.2.jar"
+filename = "spawndetective-1.21.1-0.1.0-alpha.3.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "ade4ff8c8ac70994e59af5149038cf2a97ba7027"
+hash = "5c620f6cc85d9b1b9ee43fbab1c8ea8c942b72b7"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 8503091
+file-id = 8508822
 project-id = 1621450

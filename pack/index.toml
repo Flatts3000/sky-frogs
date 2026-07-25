@@ -1371,7 +1371,7 @@ metafile = true
 
 [[files]]
 file = "mods/productive-frogs.pw.toml"
-hash = "65fa5237787f52baeb9f40b645df8b543ee09c4ec4dc3c35c05c29cea7631903"
+hash = "5c266cdcb69eb6a28cdd662b1ee28dfec23fc643df6217d201801acbc057ade6"
 metafile = true
 
 [[files]]
@@ -1486,7 +1486,7 @@ metafile = true
 
 [[files]]
 file = "mods/spawn-detective.pw.toml"
-hash = "f44e3726bdf6e1df4057c3bee351a76511626ad42087abc05bb9ed109c31708b"
+hash = "5d51ed080df847a9a56456cadecc946e029e510ea36f9e1ed94be414a9fb3a0e"
 metafile = true
 
 [[files]]

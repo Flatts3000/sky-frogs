@@ -4,6 +4,15 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+### Fixed
+
+- **The Wither Altar quest can actually be finished now.** The Trophy Pond quest asks for a Withered Star, and the Withered Star was impossible to craft: it and the Nether Star Catalyst were both a Nether Star ringed in obsidian, so the table only ever gave you the catalyst. The Wither Altar Hatch had the same problem against the End Dragon Altar Hatch. Productive Frogs 1.25.2 gives both Wither Altar pieces their own recipes - the Withered Star is a Nether Star wrapped in soul sand, the Hatch is obsidian and soul sand around a chest - so the whole altar is buildable. The other two recipes are unchanged.
+
+### Changed
+
+- **A Slime Milk source tells you when it has stopped because it is crowded.** A source pauses once too many of its slimes are already nearby, but it used to do that silently, which made it look broken. Look at one with Jade and it now reads "Paused: 30 / 30 Diamond slimes nearby". The limit also counts only that source's own resource instead of its whole species, so you can pack different resources of one species side by side without them fighting over one shared cap. Both come from Productive Frogs 1.25.1.
+- **Spawn Detective updated to 0.1.0-alpha.3.** A green verdict no longer over-promises on a spot the natural spawner almost never picks - on a small platform in a void world every gate passes and the farm still sits empty, so the report now measures how often a spawn attempt anchors at that block's height and shows it beside the verdict. The same rate travels with a mob that only sometimes clears its own rules. The mob caps are also visible again on every surface (report screen, Jade, and the command), and a full cap reads as "competing for a slot" rather than "this block is dead", because a full monster cap is the normal state of an overworld.
+
 ## [1.5.1] - 2026-07-24
 
 ### Fixed
