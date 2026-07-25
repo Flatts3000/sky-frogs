@@ -8,14 +8,22 @@ on:
     paths:
       - "pack/config/ftbquests/**"
       - "pack/kubejs/**"
-      - "tools/validate_quests.py"
+      # tools/*.py, not just validate_quests.py: the validator imports pf_jar,
+      # gen_completionist_chapters and ironjetpacks_tiers, so pinning the trigger to
+      # the entry point alone let a change to a CHECK'S DATA SOURCE skip CI. The job
+      # is a few seconds; triggering on an unrelated tool edit is the cheaper mistake.
+      - "tools/*.py"
       - "tools/data/item_ids.txt"
   push:
     branches: [main]
     paths:
       - "pack/config/ftbquests/**"
       - "pack/kubejs/**"
-      - "tools/validate_quests.py"
+      # tools/*.py, not just validate_quests.py: the validator imports pf_jar,
+      # gen_completionist_chapters and ironjetpacks_tiers, so pinning the trigger to
+      # the entry point alone let a change to a CHECK'S DATA SOURCE skip CI. The job
+      # is a few seconds; triggering on an unrelated tool edit is the cheaper mistake.
+      - "tools/*.py"
       - "tools/data/item_ids.txt"
 
 jobs:
