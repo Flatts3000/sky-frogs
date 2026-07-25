@@ -4,6 +4,10 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+## [1.5.2] - 2026-07-25
+
+Unblocks the Wither Altar, which has been asking for an uncraftable item since v1.2.0. Also updates Spawn Detective and tidies the docs.
+
 ### Fixed
 
 - **The Wither Altar quest can actually be finished now.** The Trophy Pond quest asks for a Withered Star, and the Withered Star was impossible to craft: it and the Nether Star Catalyst were both a Nether Star ringed in obsidian, so the table only ever gave you the catalyst. The Wither Altar Hatch had the same problem against the End Dragon Altar Hatch. Productive Frogs 1.25.2 gives both Wither Altar pieces their own recipes - the Withered Star is a Nether Star wrapped in soul sand, the Hatch is obsidian and soul sand around a chest - so the whole altar is buildable. The other two recipes are unchanged.
