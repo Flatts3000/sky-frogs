@@ -89,6 +89,19 @@ def load_jetpacks(explicit_dir: str | None = None) -> dict[str, dict] | None:
     return merged or None
 
 
+def _tier(cfg: dict) -> int | None:
+    """A config's tier as an int, or None if it is missing or malformed.
+
+    Hand-edited or partially-written configs happen, and this module backs a
+    pre-commit validator - a stray string tier must degrade to "ignore that
+    jetpack", never crash the commit hook for an unrelated quest edit.
+    """
+    try:
+        return int(cfg.get("tier"))
+    except (TypeError, ValueError):
+        return None
+
+
 def registered_tiers(jetpacks: dict[str, dict]) -> list[int]:
     """The sorted tier list the mod builds at registration.
 
@@ -96,11 +109,13 @@ def registered_tiers(jetpacks: dict[str, dict]) -> list[int]:
     registered, and only tiers > -1 join the list (so the creative jetpack's -1
     is excluded). Duplicates collapse - several jetpacks share a tier.
     """
-    tiers = {
-        int(cfg.get("tier", 0))
-        for cfg in jetpacks.values()
-        if not cfg.get("disable", False) and int(cfg.get("tier", 0)) > -1
-    }
+    tiers = set()
+    for cfg in jetpacks.values():
+        if cfg.get("disable", False):
+            continue
+        tier = _tier(cfg)
+        if tier is not None and tier > -1:
+            tiers.add(tier)
     return sorted(tiers)
 
 
@@ -129,7 +144,10 @@ def coil_for(name: str, jetpacks: dict[str, dict]) -> str | None:
     cfg = jetpacks.get(name)
     if cfg is None or cfg.get("disable", False):
         return None
-    return coil_for_tier(int(cfg.get("tier", 0)), registered_tiers(jetpacks))
+    tier = _tier(cfg)
+    if tier is None:
+        return None
+    return coil_for_tier(tier, registered_tiers(jetpacks))
 
 
 def lowest_tier_jetpacks(jetpacks: dict[str, dict]) -> list[str]:
@@ -143,7 +161,7 @@ def lowest_tier_jetpacks(jetpacks: dict[str, dict]) -> list[str]:
         return []
     return sorted(
         n for n, c in jetpacks.items()
-        if not c.get("disable", False) and int(c.get("tier", 0)) == tiers[0]
+        if not c.get("disable", False) and _tier(c) == tiers[0]
     )
 
 
@@ -152,8 +170,11 @@ def tiers_below(name: str, jetpacks: dict[str, dict]) -> list[str]:
     cfg = jetpacks.get(name)
     if cfg is None or cfg.get("disable", False):
         return []
-    target = int(cfg.get("tier", 0)) - 1
+    tier = _tier(cfg)
+    if tier is None:
+        return []
+    target = tier - 1
     return sorted(
         n for n, c in jetpacks.items()
-        if not c.get("disable", False) and int(c.get("tier", 0)) == target
+        if not c.get("disable", False) and _tier(c) == target
     )
