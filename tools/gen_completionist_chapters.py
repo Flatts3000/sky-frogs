@@ -307,9 +307,10 @@ def main():
         task=f'\t\t\ttasks: [{{\n\t\t\t\tid: "{cap_t}"\n\t\t\t\ttype: "checkmark"\n\t\t\t}}]',
         shape="hexagon", size=2.0))
     lang += [
-        f'\tquest.{cap_q}.quest_desc: [',
-        '\t\t"Every vanilla resource the frogs make, accounted for. The pond is whole - and so, apparently, are you."',
-        "\t]",
+        # Single-line array on purpose: FTB collapses a one-string desc onto one
+        # line when it rewrites the file on world save, so emitting that form
+        # keeps a regen a true no-op instead of churning the diff every time.
+        f'\tquest.{cap_q}.quest_desc: ["Every vanilla resource the frogs make, accounted for."]',
         f'\tquest.{cap_q}.quest_subtitle: "Sit. You\'ve earned the lily pad."',
         f'\tquest.{cap_q}.title: "The Whole Pond"',
         f'\tchapter.{VANILLA_CHAPTER_ID}.title: "The Whole Pond"',
@@ -347,9 +348,7 @@ def main():
         task=f'\t\t\ttasks: [{{\n\t\t\t\tid: "{cap_t}"\n\t\t\t\ttype: "checkmark"\n\t\t\t}}]',
         shape="hexagon", size=2.0))
     lang += [
-        f'\tquest.{cap_q}.quest_desc: [',
-        '\t\t"Every modded resource the loaded mods taught your frogs - one column per neighbor. The sister ponds send their regards."',
-        "\t]",
+        f'\tquest.{cap_q}.quest_desc: ["Every modded resource the frogs make, accounted for."]',
         f'\tquest.{cap_q}.quest_subtitle: "Diplomacy, by froglight."',
         f'\tquest.{cap_q}.title: "Sister Ponds"',
         f'\tchapter.{MODDED_CHAPTER_ID}.title: "Sister Ponds"',
@@ -363,8 +362,13 @@ def main():
 
     # ---------------- lang splice (the script owns its keys) ----------------
     text = open(LANG, encoding="utf-8").read()
+    # The value branch order matters (#223). FTB collapses a short array onto one
+    # line when it rewrites the file on world save, so a multi-line-array pattern
+    # tried first will match that single-line "[" and then run on to the NEXT
+    # multi-line "]" in the file, deleting every hand-authored key in between.
+    # Only treat "[" as multi-line when the line actually ends there.
     text = re.sub(r"\t(?:quest\.(?:" + VANILLA_PREFIX + "|" + MODDED_PREFIX + r")[0-9A-F]+|chapter\.(?:"
-                  + VANILLA_CHAPTER_ID + "|" + MODDED_CHAPTER_ID + r"))\.[a-z_]+:(?: \[[\s\S]*?\n\t\]|[^\n]*)\n",
+                  + VANILLA_CHAPTER_ID + "|" + MODDED_CHAPTER_ID + r"))\.[a-z_]+:(?: \[\n[\s\S]*?\n\t\]|[^\n]*)\n",
                   "", text)
     # The splice lands just above the Cave Frogs lang block (7CA7 prefix) so the
     # census keys sit together. That chapter is NOT this script's to control -
