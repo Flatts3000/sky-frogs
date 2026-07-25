@@ -26,6 +26,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import pf_jar  # noqa: E402  (shared PF-jar access; see #101)
+import ironjetpacks_tiers as ijt  # noqa: E402  (shared coil-ladder access; see #233)
 # Reuse the census generator's LOADED_MODS + variant_mod so the validator's notion of
 # an "exposed modded variant" is IDENTICAL to what Sister Ponds actually emits - the
 # reconciliation #167 asks for, without standing up a 4th mod registry to drift.
@@ -1189,6 +1190,69 @@ def check_hide_until(chapters, ctx):
     return f
 
 
+# What the Take Flight copy tells the player, as machine-checkable claims. Each entry
+# is (jetpack, coil it needs, the quest whose text says so). See docs/known_issues.md
+# for the #233 diagnosis - the copy was wrong because Iron Jetpacks picks coils by a
+# jetpack's POSITION in the registered-tier list, so a mod-list or ironjetpacks config
+# change re-maps them with nothing in this repo showing it.
+TAKE_FLIGHT_COIL_CLAIMS = [
+    ("wood", "basic", "Basic Coil"),
+    ("stone", "basic", "Basic Coil"),
+    ("iron", "advanced", "Off the Ground / Basic Coil"),
+    ("gold", "advanced", "Advanced Coil"),
+    ("diamond", "elite", "Elite Coil"),
+    ("emerald", "ultimate", "Ultimate Coil"),
+]
+TAKE_FLIGHT_LANG = "lang/en_us.snbt"
+
+
+def check_jetpack_coils(chapters, ctx):
+    """Q-JETPACK-COIL (ERROR) - the #233 drift class, Take Flight's copy vs the ladder.
+
+    Iron Jetpacks assigns coils by ratio over the registered-tier list and gives a
+    from-scratch recipe to the LOWEST tier only; everything above upgrades from the
+    tier below. Neither fact is visible in this repo, so the chapter's copy silently
+    went wrong once and a player had to report it. This pins every claim that copy
+    makes to the live table. Skips with INFO when no jetpack config is locatable
+    (CI without the dev instance), exactly like the PF-jar checks.
+    """
+    jetpacks = ctx["jetpacks"]
+    if jetpacks is None:
+        return []  # Q-JETPACK-CFG (emitted by the loader) already says why
+    # Chapter.name carries the .snbt suffix - comparing against the bare stem here
+    # silently disabled this check during development, which is the exact failure
+    # mode it guards against. Strip the suffix, don't assume it.
+    if not any(ch.name.removesuffix(".snbt") == "take_flight" for ch in chapters):
+        return []  # chapter retired; the claims went with it
+    f = []
+    for name, expected, quest in TAKE_FLIGHT_COIL_CLAIMS:
+        actual = ijt.coil_for(name, jetpacks)
+        if actual is None:
+            f.append(Finding(ERROR, "Q-JETPACK-COIL", TAKE_FLIGHT_LANG, 0,
+                             f"the '{quest}' quest text describes the {name} jetpack, but it is "
+                             f"absent or disabled in the Iron Jetpacks config - the copy "
+                             f"describes a jetpack players cannot build"))
+        elif actual != expected:
+            f.append(Finding(ERROR, "Q-JETPACK-COIL", TAKE_FLIGHT_LANG, 0,
+                             f"'{quest}' says the {name} jetpack takes the {expected} coil, but "
+                             f"the live tier ladder gives it the {actual} coil "
+                             f"(tiers {ijt.registered_tiers(jetpacks)}). A jetpack was added or "
+                             f"disabled and re-mapped the ratio; fix the quest text and the "
+                             f"table in docs/known_issues.md"))
+    lowest = ijt.lowest_tier_jetpacks(jetpacks)
+    if lowest != ["wood"]:
+        f.append(Finding(ERROR, "Q-JETPACK-COIL", TAKE_FLIGHT_LANG, 0,
+                         f"'Off the Ground' says only the wood jetpack is crafted from scratch, "
+                         f"but the lowest registered tier is now {lowest} - that set is what "
+                         f"takes the Leather Strap recipe; everything else upgrades"))
+    below_iron = ijt.tiers_below("iron", jetpacks)
+    if "stone" not in below_iron:
+        f.append(Finding(ERROR, "Q-JETPACK-COIL", TAKE_FLIGHT_LANG, 0,
+                         f"'Off the Ground' routes the player wood -> stone -> iron, but the "
+                         f"iron jetpack now upgrades from {below_iron or 'nothing'}"))
+    return f
+
+
 CHECKS = [
     check_ids,
     check_dependencies,
@@ -1208,6 +1272,7 @@ CHECKS = [
     check_ato_chain_mirror,
     check_reward_tables,
     check_hide_until,
+    check_jetpack_coils,
 ]
 
 
@@ -1249,9 +1314,26 @@ def load_pf_variants(explicit_jar: str | None) -> tuple[dict | None, list[Findin
                               f"corrupt or partial download? Jar checks skipped.")]
 
 
-def run(pf_jar_path: str | None = None):
+def load_jetpack_cfg(explicit_dir: str | None) -> tuple[dict | None, list[Finding]]:
+    """(Iron Jetpacks configs, findings about how they loaded).
+
+    None => Q-JETPACK-COIL skips. Unlike the PF jar there is no pinned-filename
+    staleness trap to guard: the tier table comes from the mod's own generated
+    config plus anything the pack ships, and both are read fresh every run.
+    """
+    jetpacks = ijt.load_jetpacks(explicit_dir)
+    if jetpacks is None:
+        return None, [Finding(INFO, "Q-JETPACK-CFG", "-", 0,
+                              "jetpack coil checks not run: no Iron Jetpacks config found "
+                              "(the dev instance generates it on first launch; "
+                              "or pass --jetpack-config PATH)")]
+    return jetpacks, []
+
+
+def run(pf_jar_path: str | None = None, jetpack_cfg: str | None = None):
     chapters = load_chapters()
     pf_variants, jar_findings = load_pf_variants(pf_jar_path)
+    jetpacks, jetpack_findings = load_jetpack_cfg(jetpack_cfg)
     ctx = {
         "quest_ids": {q.get("id") for _, q in iter_quests(chapters)},
         "group_ids": load_group_ids(),
@@ -1260,8 +1342,9 @@ def run(pf_jar_path: str | None = None):
         "makeable_variants": makeable_variants(),
         "reward_tables": load_reward_tables(),
         "pf_variants": pf_variants,
+        "jetpacks": jetpacks,
     }
-    findings: list[Finding] = list(jar_findings)
+    findings: list[Finding] = list(jar_findings) + list(jetpack_findings)
     for check in CHECKS:
         findings.extend(check(chapters, ctx))
     n_quests = sum(len(ch.quests) for ch in chapters)
@@ -1274,6 +1357,9 @@ def main(argv=None):
     ap.add_argument("--json", action="store_true", help="emit findings as JSON")
     ap.add_argument("--pf-jar", help="path to the pinned productivefrogs jar (default: the "
                                      "dev instance's mods folder; absent = jar checks skip)")
+    ap.add_argument("--jetpack-config", help="path to an Iron Jetpacks jetpacks/ config dir "
+                                             "(default: the dev instance's; absent = coil "
+                                             "checks skip)")
     args = ap.parse_args(argv)
 
     try:
@@ -1282,7 +1368,7 @@ def main(argv=None):
         pass
 
     try:
-        findings, n_chapters, n_quests = run(args.pf_jar)
+        findings, n_chapters, n_quests = run(args.pf_jar, args.jetpack_config)
     except SNBTError as e:
         print(f"PARSE ERROR: {e}", file=sys.stderr)
         return 1
