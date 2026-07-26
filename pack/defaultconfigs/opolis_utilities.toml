@@ -1,0 +1,7 @@
+["Opolis Utilities Config File"]
+	#Sky Frogs overrides only (#115) - NeoForge fills every other key from defaults.
+	#1.0 = mobs NEVER drop loot boxes (the ruling-3 economy is severed; boxes said
+	#DISABLED in the tooltip while the global loot modifier kept minting them).
+	"Mob Drop Chance" = 1.0
+	"Discord URL" = "https://discord.gg/r6MhZ73nsM"
+	"Modpack name" = "Sky Frogs"

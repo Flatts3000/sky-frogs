@@ -1,0 +1,12 @@
+# Ex Deorum server config - Sky Frogs override.
+#
+# Sky Frogs hands out the entire opening kit through quest rewards, so Ex Deorum's
+# void-world starter freebies are turned off - otherwise the player spawns holding a
+# torch and a wooden watering can they were never meant to get. Only these two keys
+# are overridden; NeoForge fills every other [server] key from the mod's defaults on
+# first load.
+[server]
+	#Whether players in a void world start out with a torch or not.
+	starting_torch = false
+	#Whether players in a void world start out with a full wooden watering can.
+	starting_watering_can = false

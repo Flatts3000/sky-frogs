@@ -68,16 +68,28 @@ jobs:
         env:
           VERSION: ${{ steps.ver.outputs.version }}
         run: |
-          sed -i -E 's/^(\s*modpackVersion = ").*(")/\1'"$VERSION"'\2/' pack/config/bcc-common.toml
+          # bcc-common.toml ships in BOTH config/ and defaultconfigs/ (the latter is
+          # what NeoForge seeds from if the config is ever recreated), so stamp both
+          # or the recreated copy would carry a stale version.
+          for f in pack/config/bcc-common.toml pack/defaultconfigs/bcc-common.toml; do
+            sed -i -E 's/^(\s*modpackVersion = ").*(")/\1'"$VERSION"'\2/' "$f"
+          done
           sed -i -E 's/^(\s*"Modpack Version" = ").*(")/\1'"$VERSION"'\2/' pack/config/bbl/core/modpack.toml
-          # Hard-fail if either stamp missed (key renamed/format drift) - a silent
+          # Hard-fail if any stamp missed (key renamed/format drift) - a silent
           # no-match would ship the placeholder version and re-break #205 with green CI.
-          grep -qF "modpackVersion = \"$VERSION\"" pack/config/bcc-common.toml \
-            || { echo "::error::BCC stamp failed - modpackVersion not set to $VERSION"; exit 1; }
+          for f in pack/config/bcc-common.toml pack/defaultconfigs/bcc-common.toml; do
+            grep -qF "modpackVersion = \"$VERSION\"" "$f" \
+              || { echo "::error::BCC stamp failed - modpackVersion not set to $VERSION in $f"; exit 1; }
+          done
           grep -qF "\"Modpack Version\" = \"$VERSION\"" pack/config/bbl/core/modpack.toml \
             || { echo "::error::BBL stamp failed - Modpack Version not set to $VERSION"; exit 1; }
+          # The two BCC copies must stay byte-identical; check_pack_configs.py enforces
+          # this in CI and locally, so a divergent stamp must fail here too.
+          python3 tools/check_pack_configs.py \
+            || { echo "::error::pack config overrides are not in sync after stamping"; exit 1; }
           echo "Stamped version $VERSION:"
-          grep -nE 'modpackVersion|Modpack Version' pack/config/bcc-common.toml pack/config/bbl/core/modpack.toml
+          grep -nE 'modpackVersion|Modpack Version' pack/config/bcc-common.toml \
+            pack/defaultconfigs/bcc-common.toml pack/config/bbl/core/modpack.toml
 
       - name: Build CurseForge export
         id: build

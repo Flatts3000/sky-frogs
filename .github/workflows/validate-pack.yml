@@ -1,0 +1,36 @@
+name: Validate Pack Configs
+
+# Guards the pack's mod-config overrides. They encode deliberate design decisions
+# (e.g. tadpoleGrowthTicks = 3600, the #63 opening-pace fix), and shipping them only
+# in `pack/config/` is fragile: `config/` is live per-instance state written once at
+# install, so if NeoForge ever recreates the file the pack's values are silently
+# replaced by the mod's own defaults. `pack/defaultconfigs/` is what NeoForge seeds a
+# missing config from, so every override has to exist in both, byte-identical.
+#
+# Deliberately its own workflow rather than a step in validate-quests.yml: the path
+# triggers are disjoint, and a config-only PR should not have to run the quest
+# validator (or vice versa) to get a green check.
+
+on:
+  pull_request:
+    paths:
+      - "pack/config/**"
+      - "pack/defaultconfigs/**"
+      - "tools/check_pack_configs.py"
+  push:
+    branches: [main]
+    paths:
+      - "pack/config/**"
+      - "pack/defaultconfigs/**"
+      - "tools/check_pack_configs.py"
+
+jobs:
+  configs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Check pack config overrides are durable
+        run: python tools/check_pack_configs.py
