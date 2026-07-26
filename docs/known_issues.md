@@ -24,6 +24,22 @@ Entries are kept after they are fixed: the diagnosis is the valuable part, and s
 
 ## Resolved
 
+### 🟣 Grass Seeds and Mycelium Spores did nothing when used on dirt
+Right-clicking dirt with **Grass Seeds** produced no grass block, and **Mycelium Spores** likewise produced no mycelium. Both simply did nothing, with no message. **Reported on Discord by Sam Gomez (v1.5.1).**
+
+**Root cause (upstream, Ex Deorum 3.11).** 3.11 added four tags so pack authors could configure what each spore item spreads onto: `grass_seeds_spreadables`, `mycelium_spores_spreadables`, `warped_nylium_spores_spreadables`, `crimson_nylium_spores_spreadables`. The registration in `EItems` passed the **same constant, `CRIMSON_NYLIUM_SPORES_SPREADABLES`, to all four items** - a copy-paste slip. That tag contains `#c:netherracks` and `#minecraft:nylium`; the grass and mycelium tags contain `#minecraft:dirt`. So the two items whose whole purpose is converting dirt were checking a list dirt is not on, and their use silently no-opped.
+
+Two details worth keeping:
+
+1. **The warped/crimson half of the swap was harmless.** Those two were also pointed at each other, but both tags ship *identical* values (`#c:netherracks`, `#minecraft:nylium`), so behavior was unchanged. Only Grass Seeds and Mycelium Spores actually broke. A pack that customized those tags would have seen the swap; this one does not.
+2. **This mattered more here than in most packs.** Grass Seeds drop from the builders' sieve (`builder_sieve.js`, 10%) and are the **only** grass-block source on a void skyblock. The pack also removes Ex Deorum's `grass_seeds -> moss_block` recipe (`mossy_cobblestone_gate.js`) to protect the Bog-tier mossy cobblestone gate, so the spread-onto-dirt use is the entire remaining point of the item.
+
+**Fix (upstream, Ex Deorum 3.12; pinned in v1.5.3).** Two commits: [`4170f8b9`](https://github.com/thedarkcolour/ExDeorum/commit/4170f8b9) (#187) repointed Grass Seeds and Mycelium Spores at their own tags, and [`b489adba`](https://github.com/thedarkcolour/ExDeorum/commit/b489adba) (#188) un-swapped warped and crimson. Both ship in 3.12. Verified in the pinned jar rather than from the changelog: `EItems.class` now references all four distinct tag constants, where 3.11 referenced only the crimson one. No pack-side change was needed or made.
+
+**Shipped broken in v1.4.4, v1.5.0, v1.5.1, and v1.5.2** - 3.11 was pinned by the mod-pin refresh in [#193](https://github.com/Flatts3000/sky-frogs/pull/193) and nothing in the pack exercised it, so four releases carried it.
+
+**Verify in-game:** sieve until a Grass Seed drops, right-click a dirt block with it, and confirm the block turns to grass.
+
 ### 🟣 Take Flight described a jetpack build path Iron Jetpacks does not have
 The chapter handed the player a **Basic Coil** and then asked for an **Iron Jetpack**, describing it as "the coil and strap plus an iron cell, thruster, and capacitor." Both halves were wrong, and neither is visible without reading the jar. **Reported on Discord by Hunyol (v1.5.2). Tracked in [#233](https://github.com/Flatts3000/sky-frogs/issues/233).**
 
