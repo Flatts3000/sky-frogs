@@ -17,7 +17,22 @@ Only release what is already on `main`. Quest/reward content must have been play
 The loader pin in `pack/pack.toml` (`[versions] neoforge`) needs the same periodic-bump hygiene as the PF pin - a stale loader silently ships a buggy build to every new downloader. Before cutting a release:
 
 1. Compare the pin against the latest 21.1.x: `curl -s https://maven.neoforged.net/releases/net/neoforged/neoforge/maven-metadata.xml | grep -oE "21\.1\.[0-9]+" | sort -t. -k3 -n | tail -3`.
-2. If the pin is several patches behind, bump it to the latest 21.1.x (edit `pack/pack.toml` + the references in `CLAUDE.md` / `docs/pack_metadata.md` / `docs/cf_submission_checklist.md`), and **launch-test the dev instance on the new loader** before shipping.
+2. If the pin is several patches behind, bump it to the latest 21.1.x (edit `pack/pack.toml` + the references in `CLAUDE.md` / `docs/pack_metadata.md` / `docs/cf_submission_checklist.md`), then move the dev instance onto it and **launch-test** before shipping:
+
+   ```sh
+   # quit CurseForge completely first, including the Overwolf tray icon
+   python tools/sync_instance_loader.py --apply
+   # reopen CurseForge, launch, then confirm it stuck:
+   python tools/sync_instance_loader.py        # must exit 0
+   ```
+
+   Three traps, all hit during v1.5.3:
+
+   - **The loader is stored twice and the app-level store wins** (`%LOCALAPPDATA%\Overwolf\Curse\GameInstances\MinecraftGameInstance.json` beats the instance's own `minecraftinstance.json`). Patching one reads back fine and reverts on launch. The helper writes both.
+   - **Never hand-install the loader.** CurseForge installs it from its own catalog; pre-placing NeoForge-installer output under `Install/versions/` makes CurseForge's install task fail with "Failed to launch modpack. An unexpected error occurred." Delete those files and let it do the install.
+   - **The display name is not the folder name.** The junction-linked dev instance is `Instances\Sky Frogs` on disk but shows as **"Sky Frogs (DEV)"**; plain **"Sky Frogs"** is a different, non-junctioned instance.
+
+   Skipping this makes the launch test worthless: it either fails for a reason unrelated to the pack, or passes on a loader you are not shipping. v1.5.3 shipped with no launch test at all because the instance was on 21.1.230 while the pack pinned 21.1.244.
 3. Watch for known-bad builds: **21.1.230** applied the `GuiGraphics` tooltip patch unreliably and crashed some fresh installs at load (Apotheosis `GuiGraphicsAccessor` / `tooltipStack`); fixed by 21.1.233 (v0.13.1). A crash that is fresh-install- or machine-specific and survives reinstalls is a loader-build smell - suspect the pin first.
 4. **After any `packwiz update`, check no mod now demands a newer loader than the pin.** A mod that declares `neoforge [X,)` above the pin does not warn, it refuses to load. Apotheosis has forced the pin up twice (21.1.230 -> 233, then 233 -> 244 for Apotheosis 8.6.0 / Apothic Attributes 2.10.1, both `[21.1.235,)`), so check it first. To sweep every jar in the synced instance:
 
