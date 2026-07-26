@@ -6,7 +6,12 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ### Fixed
 
+- **Grass Seeds and Mycelium Spores work on dirt again.** Ex Deorum 3.11 pointed both of them at the wrong block list, the crimson nylium one, which is netherrack and nylium. Dirt was not on it, so right-clicking dirt with either just did nothing. Grass Seeds drop from the builders' sieve and are the only way to get a grass block out here, so that has been dead since v1.4.4. Ex Deorum 3.12 gives each spore its own list back. (Found by Sam Gomez on Discord.)
 - **Take Flight now describes the jetpack ladder Iron Jetpacks actually has (#233).** The chapter handed you a Basic Coil and then asked for an Iron Jetpack, which is not a recipe that exists: only the wood jetpack is built from parts, and every one above it is an upgrade with your current jetpack in the middle of the grid. The iron tier also wants the Advanced Coil, the gold one, not the Basic. The quests now walk the real path, wood to stone to iron, and say which coil each tier takes. Nothing was blocked before this, the route was just undocumented. (Reported by Hunyol on Discord.)
+
+### Changed
+
+- **NeoForge updated to 21.1.244, and 34 mods moved to their current builds.** Apotheosis and Apothic Attributes now want a loader newer than the one the pack was pinned to, so the loader moves up with them. Sodium also comes off the beta line onto 0.8.12 proper. Nothing changes about how the pack plays.
 
 ## [1.5.2] - 2026-07-25
 

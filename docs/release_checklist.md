@@ -19,6 +19,34 @@ The loader pin in `pack/pack.toml` (`[versions] neoforge`) needs the same period
 1. Compare the pin against the latest 21.1.x: `curl -s https://maven.neoforged.net/releases/net/neoforged/neoforge/maven-metadata.xml | grep -oE "21\.1\.[0-9]+" | sort -t. -k3 -n | tail -3`.
 2. If the pin is several patches behind, bump it to the latest 21.1.x (edit `pack/pack.toml` + the references in `CLAUDE.md` / `docs/pack_metadata.md` / `docs/cf_submission_checklist.md`), and **launch-test the dev instance on the new loader** before shipping.
 3. Watch for known-bad builds: **21.1.230** applied the `GuiGraphics` tooltip patch unreliably and crashed some fresh installs at load (Apotheosis `GuiGraphicsAccessor` / `tooltipStack`); fixed by 21.1.233 (v0.13.1). A crash that is fresh-install- or machine-specific and survives reinstalls is a loader-build smell - suspect the pin first.
+4. **After any `packwiz update`, check no mod now demands a newer loader than the pin.** A mod that declares `neoforge [X,)` above the pin does not warn, it refuses to load. Apotheosis has forced the pin up twice (21.1.230 -> 233, then 233 -> 244 for Apotheosis 8.6.0 / Apothic Attributes 2.10.1, both `[21.1.235,)`), so check it first. To sweep every jar in the synced instance:
+
+   ```sh
+   python - <<'PY'
+   import zipfile, tomllib, os, re
+   PIN = (21, 1, 244)   # keep in sync with pack/pack.toml
+   MODS = r"C:\Users\User\curseforge\minecraft\Instances\Sky Frogs\mods"
+   for jar in sorted(f for f in os.listdir(MODS) if f.endswith(".jar")):
+       try:
+           z = zipfile.ZipFile(os.path.join(MODS, jar))
+           d = tomllib.loads(z.read("META-INF/neoforge.mods.toml").decode())
+       except Exception:
+           continue
+       for deps in d.get("dependencies", {}).values():
+           for dep in deps:
+               if dep.get("modId") != "neoforge":
+                   continue
+               if str(dep.get("type", dep.get("mandatory"))) in ("optional", "False"):
+                   continue
+               m = re.match(r"^[\[(]\s*([0-9.]+)", dep.get("versionRange") or "")
+               if not m:
+                   continue
+               lo = tuple(int(x) for x in m.group(1).split("."))
+               lo += (0,) * (3 - len(lo))
+               if PIN < lo:
+                   print(f"BLOCKER {jar} needs neoforge {dep['versionRange']}")
+   PY
+   ```
 
 ## 1. If this release includes a Productive Frogs pin bump
 
