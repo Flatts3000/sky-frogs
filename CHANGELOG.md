@@ -4,6 +4,10 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+## [1.5.3] - 2026-07-25
+
+Gets Grass Seeds working again, and brings the whole mod list up to current builds.
+
 ### Fixed
 
 - **Grass Seeds and Mycelium Spores work on dirt again.** Ex Deorum 3.11 pointed both of them at the wrong block list, the crimson nylium one, which is netherrack and nylium. Dirt was not on it, so right-clicking dirt with either just did nothing. Grass Seeds drop from the builders' sieve and are the only way to get a grass block out here, so that has been dead since v1.4.4. Ex Deorum 3.12 gives each spore its own list back. (Found by Sam Gomez on Discord.)
