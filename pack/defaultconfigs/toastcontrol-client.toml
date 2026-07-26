@@ -1,0 +1,15 @@
+#Client Configuration
+# Sky Frogs: silence the noisy vanilla toasts. FTB Quests is the progression UI,
+# so the vanilla tutorial hints ("Move with WASD" etc.), recipe-unlock spam, and
+# advancement pop-ups are redundant. Flip any back to false to re-enable.
+[client]
+
+	[client.blocked_toasts]
+		#If advancement toasts are blocked.
+		advancements = true
+		#If recipe toasts are blocked.
+		recipes = true
+		#If system toasts are blocked.
+		system = false
+		#If tutorial toasts are blocked.
+		tutorial = true

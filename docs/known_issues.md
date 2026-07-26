@@ -24,6 +24,23 @@ Entries are kept after they are fixed: the diagnosis is the valuable part, and s
 
 ## Resolved
 
+### 🟣 Pack config overrides were not durable (tadpole growth back at PF's 20 min)
+Sam Gomez reported on Discord (v1.5.2) that **Tadpole Growth Ticks read 24000** - Productive Frogs' own default, a 20 minute wait - where v1.4.4 had given him 3 minutes.
+
+**What was NOT wrong.** The pack has always intended 3 minutes: `pack/config/productivefrogs-common.toml` sets `tadpoleGrowthTicks = 3600`, the fix for [#63](https://github.com/Flatts3000/sky-frogs/issues/63) ("first frogs take ~35 min"). Checked the shipped artifacts rather than the source: **v1.4.4, v1.5.0, v1.5.2 and v1.5.3 client zips all carry 3600**, and so does the v1.5.3 **server pack**. No release ever shipped 24000, and the value could not be reproduced on the dev instance running the same PF 1.25.2 jar. So this was never "every world is broken" - Sam's specific instance had lost the override, and the exact event that did it on his machine is still unknown.
+
+**The real defect, which is structural.** Every pack config override lived only in `pack/config/`. That directory is **live per-instance state, written once at install**. NeoForge backs a config up to `<name>-N.toml.bak` and writes a fresh one whenever the existing file cannot be parsed or restored - the dev instance has five such backups from the 1.16 -> 1.24 era, as PF's config spec grew from 60 keys to 75. When that happens the pack's values are replaced by the mod's defaults, **nothing re-applies them, and nothing reports it**. The player silently gets different gameplay. `sync_instance.py` masks this locally by re-applying indexed config, which is why the dev instance always looked fine.
+
+A false lead worth recording: the spec growing 60 -> 75 keys is *not* itself the trigger. NeoForge's `correct()` fills in missing keys while preserving existing values; only an unparseable/unrestorable file causes the backup-and-recreate. The newest `.bak` predates the 1.4.4 -> 1.5.2 window entirely, so whatever hit Sam was not that.
+
+**Fix shipped.** Every FML-managed override now ships in **both** `pack/config/` and `pack/defaultconfigs/`. `defaultconfigs/` is the directory NeoForge seeds a missing config from - verified against the pinned loader (fancymodloader 4.0.43, NeoForge 21.1.244): `ConfigTracker` checks whether the config file exists and copies `defaultconfigs/<name>.toml` when it does not (`defaultConfigPath` + `Files.copy`), only generating from the mod's spec if no default is supplied. So a recreated config now comes back with the pack's values instead of the mod's.
+
+Nine files are covered (`bcc-common`, `exdeorum-server`, `extendedcrafting-common`, `opolis_utilities`, `productivefrogs-common`, `solcarrot-server`, `sophisticatedbackpacks-server`, `toastcontrol-client`, `torchmaster`). `torchmaster.toml` and `opolis_utilities.toml` lack the `<modid>-<type>` naming convention but were confirmed to be FML-managed by finding the filename string in their own jars. `botanypots.json` is excluded and named explicitly in the script: it is not FML-managed, so `defaultconfigs/` is never consulted for it.
+
+`tools/check_pack_configs.py` enforces byte-identity between the two copies (`--fix` syncs), gated by the `validate-pack` workflow. `release.yml` stamps the modpack version into **both** copies of `bcc-common.toml` and re-runs the check afterward, since only that file is rewritten at export time.
+
+**Verify in-game:** delete `config/productivefrogs-common.toml` from an instance, launch, and confirm the regenerated file reads `tadpoleGrowthTicks = 3600` rather than 24000.
+
 ### 🟣 Grass Seeds and Mycelium Spores did nothing when used on dirt
 Right-clicking dirt with **Grass Seeds** produced no grass block, and **Mycelium Spores** likewise produced no mycelium. Both simply did nothing, with no message. **Reported on Discord by Sam Gomez (v1.5.1).**
 

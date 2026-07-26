@@ -509,6 +509,42 @@ file = "config/torchmaster.toml"
 hash = "67bd8baa8e45b838ccf897f18b6e09bcfac42a0d04b8ba47e9de534a283f6538"
 
 [[files]]
+file = "defaultconfigs/bcc-common.toml"
+hash = "54361b580836cbeaed99cdd84133074cab573998139d90060da80b37b3673e00"
+
+[[files]]
+file = "defaultconfigs/exdeorum-server.toml"
+hash = "a9029472f7a7435e2f54c4827589a0dabca28e522fb1fa6257a814cdf83d64f1"
+
+[[files]]
+file = "defaultconfigs/extendedcrafting-common.toml"
+hash = "6902720ca14e78f2ee14f60711c5a7e9f3601cc454627af22e6b10087f644fbb"
+
+[[files]]
+file = "defaultconfigs/opolis_utilities.toml"
+hash = "33faeeef58e91692718060fb1f18637595136d039debf5d258d3f20c662773a8"
+
+[[files]]
+file = "defaultconfigs/productivefrogs-common.toml"
+hash = "33e6c6fa6a44a66e62b209fb12006cd940b84257dc80287e510dd0cb95a8b528"
+
+[[files]]
+file = "defaultconfigs/solcarrot-server.toml"
+hash = "645482d67e0cc071fa60bc82e47469bc574c0ccd78f6773c5495c1d772101728"
+
+[[files]]
+file = "defaultconfigs/sophisticatedbackpacks-server.toml"
+hash = "cca194a6e4977e0a1a5483e83597ffa54c8d0c611a251f5c7f3bff134de42c95"
+
+[[files]]
+file = "defaultconfigs/toastcontrol-client.toml"
+hash = "7d8bd1b950b7c740f805a5f0bf4d9c742882556bf60c42f257da7c40a7402ffe"
+
+[[files]]
+file = "defaultconfigs/torchmaster.toml"
+hash = "67bd8baa8e45b838ccf897f18b6e09bcfac42a0d04b8ba47e9de534a283f6538"
+
+[[files]]
 file = "icon.png"
 hash = "049a16e83cec1388917af1125c099ee770bcc143678e389d39832e1be6702d24"
 
