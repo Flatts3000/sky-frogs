@@ -20,7 +20,7 @@
 | Field            | Value                                                              |
 |------------------|--------------------------------------------------------------------|
 | **MC version**   | `1.21.1` - single version, no multi-version build matrix           |
-| **Loader**       | NeoForge `21.1.233` - version pinned in `pack/pack.toml`            |
+| **Loader**       | NeoForge `21.1.244` - version pinned in `pack/pack.toml`            |
 | **Java**         | Java 21 (NeoForge 1.21.1 requirement)                              |
 | **Launcher**     | CurseForge launcher (primary); Prism / ATLauncher / MultiMC also work via the CurseForge manifest |
 | **Server**       | Yes - server zip ships alongside client                            |
