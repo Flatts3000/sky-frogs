@@ -85,7 +85,7 @@ jobs:
             || { echo "::error::BBL stamp failed - Modpack Version not set to $VERSION"; exit 1; }
           # The two BCC copies must stay byte-identical; check_pack_configs.py enforces
           # this in CI and locally, so a divergent stamp must fail here too.
-          python tools/check_pack_configs.py \
+          python3 tools/check_pack_configs.py \
             || { echo "::error::pack config overrides are not in sync after stamping"; exit 1; }
           echo "Stamped version $VERSION:"
           grep -nE 'modpackVersion|Modpack Version' pack/config/bcc-common.toml \

@@ -67,9 +67,11 @@ pack/
 │   │       ├── chapters/             # ~22 .snbt files (one per chapter)
 │   │       └── ...
 │   ├── mekanism/
-│   ├── productivefrogs.toml          # our PF config
+│   ├── productivefrogs-common.toml   # our PF config
 │   └── ...
-├── defaultconfigs/                   # FTB-style first-launch config defaults
+├── defaultconfigs/                   # same overrides again - what NeoForge seeds a
+│                                     # MISSING config from, so pack values survive
+│                                     # the file being recreated (check_pack_configs.py)
 ├── kubejs/
 │   ├── startup_scripts/
 │   │   ├── global.js
