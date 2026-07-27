@@ -28,7 +28,8 @@ pinned. Each singularity's two-color gradient is copied from its frog variant's 
 frog" capstone.
 
 **Proof of automation.** At `defaultMaterialsRequired = 1000`, each singularity needs a thousand of
-its resource (1,000 items per resource + one Ultimate Catalyst each, across the full set) - you cannot hand-make that
+its resource (1,000 items per resource across the full set; the Ultimate Catalyst sits in the compressor's
+catalyst slot and is not consumed, so one covers every singularity) - you cannot hand-make that
 many, so a finished Ultimate Singularity means you automated every froglight farm. Per-singularity
 counts are tunable via the optional `materialCount` field if a specific resource should cost less.
 

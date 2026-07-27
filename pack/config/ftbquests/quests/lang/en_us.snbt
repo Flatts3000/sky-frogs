@@ -1337,12 +1337,12 @@
 	quest.6A0D000000000002.quest_desc: [
 		"You've killed the dragon and built the &dQuantum Compressor&r. What's left is proving the farms run without you. Each &bSingularity&r takes 1,000 of one resource, far more than you'd ever hand-make, so only a running frog farm can keep the compressor fed. You need one for every resource the frogs make."
 		""
-		"Check the &dUltimate Singularity&r recipe for the full roster; it grows as the frogs learn new resources. Each Singularity also burns an &dUltimate Catalyst&r, so plan on one per resource."
+		"Check the &dUltimate Singularity&r recipe for the full roster; it grows as the frogs learn new resources. The &dUltimate Catalyst&r stays in the compressor's slot the whole time, so the one you already made covers every Singularity."
 	]
 	quest.6A0D000000000002.quest_subtitle: "Prove the frogs run without you."
 	quest.6A0D000000000002.title: "The Long Compression"
 	quest.6A0D000000000005.quest_desc: [
-		"Feed the &dQuantum Compressor&r 1,000 iron plus an &dUltimate Catalyst&r and it presses out one &bIron Singularity&r. Feed it the smelted ingots, not the Froglights. Wire your iron farm straight in; a thousand by hand is the slow road."
+		"Put the &dUltimate Catalyst&r in the compressor's catalyst slot, feed the &dQuantum Compressor&r 1,000 iron, and it presses out one &bIron Singularity&r. Feed it the smelted ingots, not the Froglights. Wire your iron farm straight in; a thousand by hand is the slow road."
 		""
 		"The first of many. The &dUltimate Singularity&r needs one from every farm you've built."
 	]

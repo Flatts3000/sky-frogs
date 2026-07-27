@@ -11,7 +11,7 @@
     {
       "type": "patchouli:spotlight",
       "item": "extendedcrafting:compressor",
-      "text": "The Quantum Compressor does the squeezing. Feed it the smelted resource - not the Froglight - plus an Ultimate Catalyst, and out comes that resource's Singularity. The catalyst is consumed each time."
+      "text": "The Quantum Compressor does the squeezing. Feed it the smelted resource - not the Froglight - with an Ultimate Catalyst sat in the catalyst slot, and out comes that resource's Singularity. The catalyst is not consumed, so one per compressor is all you need."
     },
     {
       "type": "patchouli:spotlight",

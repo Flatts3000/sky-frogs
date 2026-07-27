@@ -24,6 +24,19 @@ Entries are kept after they are fixed: the diagnosis is the valuable part, and s
 
 ## Resolved
 
+### 🟣 Quest book contradicted itself on whether the Quantum Compressor consumes the Ultimate Catalyst
+Hunyol reported on Discord (v1.5.3) that **The Ultimate Catalyst** and **The Long Compression** say opposite things about the catalyst, and that the former is the correct one. [#241](https://github.com/Flatts3000/sky-frogs/issues/241).
+
+**Ground truth.** The catalyst is **not** consumed. Read from the pinned jar (`ExtendedCrafting-1.21.1-7.0.8`): `CompressorTileEntity.consumeInputs(int)` walks only the `inputs` list of `MaterialInput` records and decrements their counts; `process()` handles energy alone; nothing in `tick()` shrinks or clears the catalyst slot. `CompressorRecipe` holds the catalyst as a plain `Ingredient` used for matching. One catalyst per compressor, forever.
+
+**Why the wrong claim spread.** It was asserted in four places at once, three of them player-facing: the two quest descriptions, the pack's Patchouli entry ("The catalyst is consumed each time"), and the singularities README. The [2026-06-11 editorial audit](./audits/quest_editorial_2026_06_11/the_ultimate_table.md) then marked it **MATCHES** on circular evidence - it cited a `defaultCatalyst` key in `extendedcrafting-common.toml` that **does not exist** in that file, and cited the pack README, which was itself the unverified claim. The same audit's `master_pond.md` recorded the *correct* fact ("reusable, not consumed - EC guide: 'does not get used up'") two files away, and the contradiction went unnoticed because the two chapters were audited separately.
+
+**The lesson.** A "verified against the config" claim is only verified if the key is actually in the file - grep for it. And when a mechanic is described in more than one chapter, the audit has to reconcile the chapters against each other, not just each chapter against the jar. This one shipped for six weeks telling players to plan roughly 58 catalysts where one suffices.
+
+**Fix shipped.** Corrected in all four places, and the stale audit row carries a dated correction rather than being rewritten.
+
+**Verify in-game:** open the quest book at The Long Compression and Your First Singularity, and the Patchouli entry "The Singularity Endgame"; all three should describe a catalyst that stays in its slot.
+
 ### 🟣 Pack config overrides were not durable (tadpole growth back at PF's 20 min)
 Sam Gomez reported on Discord (v1.5.2) that **Tadpole Growth Ticks read 24000** - Productive Frogs' own default, a 20 minute wait - where v1.4.4 had given him 3 minutes.
 
