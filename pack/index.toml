@@ -42,7 +42,7 @@ hash = "6902720ca14e78f2ee14f60711c5a7e9f3601cc454627af22e6b10087f644fbb"
 
 [[files]]
 file = "config/extendedcrafting/singularities/README.md"
-hash = "e5d0a4fc55d9a969141ce41f5afe91b19aff9f5292866f4ed2c673151231ad3c"
+hash = "53d2424d3415398b7d61a85dd0f2c407063df575bc1efb7cb6c03105dd2705fe"
 
 [[files]]
 file = "config/extendedcrafting/singularities/amethyst.json"
@@ -426,7 +426,7 @@ hash = "4889c5e7d4a8179b45e68f0ac00119529ed49ba68f20624b36e996bb0d60ddd0"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "a6b7d89314cd00a931e928bea50905c9746b6f596a65164b6342fcac5680b510"
+hash = "66f846ba34754897dc41390c06855beaa110350b118a76b120ba53c8adcb10dd"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
@@ -586,7 +586,7 @@ hash = "3f84a2218323a6fe96f8765d203c363cf8df16267aaffb2d8ebd4912d5837629"
 
 [[files]]
 file = "kubejs/assets/productivefrogs/patchouli_books/guide/en_us/entries/sky_frogs/singularity_endgame.json"
-hash = "21128b3eebc81b35f70aff097ffbb7c9906e7cc1430cf4d941f1be6451545cdd"
+hash = "8c80245adb2649a487dbd89cfa67e8fd9c8560ead45d4d122d589b8a84a81bfd"
 
 [[files]]
 file = "kubejs/assets/productivefrogs/patchouli_books/guide/en_us/entries/sky_frogs/welcome.json"
