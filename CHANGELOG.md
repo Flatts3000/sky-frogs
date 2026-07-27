@@ -4,6 +4,10 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+### Fixed
+
+- **The quest book no longer tells you to make an Ultimate Catalyst per Singularity (#241).** The Ultimate Catalyst sits in the Quantum Compressor's catalyst slot and stays there; it is not spent. The Long Compression and Your First Singularity both said otherwise, and so did the field guide, which put the bill at roughly 58 catalysts where one covers the whole endgame. All three now describe the slot correctly. (Reported by Hunyol on Discord.)
+
 ## [1.5.3] - 2026-07-25
 
 Gets Grass Seeds working again, and brings the whole mod list up to current builds.
