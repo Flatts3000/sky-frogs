@@ -426,7 +426,7 @@ hash = "4889c5e7d4a8179b45e68f0ac00119529ed49ba68f20624b36e996bb0d60ddd0"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "35c1d7e0670cf183623d77634f7417b6d3ce1b23f2098ff7b0174747633d9f0f"
+hash = "66f846ba34754897dc41390c06855beaa110350b118a76b120ba53c8adcb10dd"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"
@@ -586,7 +586,7 @@ hash = "3f84a2218323a6fe96f8765d203c363cf8df16267aaffb2d8ebd4912d5837629"
 
 [[files]]
 file = "kubejs/assets/productivefrogs/patchouli_books/guide/en_us/entries/sky_frogs/singularity_endgame.json"
-hash = "45303013c8fab5e16dcbdc34cc591671c73649d2939b7c318b33f744f69360fb"
+hash = "8c80245adb2649a487dbd89cfa67e8fd9c8560ead45d4d122d589b8a84a81bfd"
 
 [[files]]
 file = "kubejs/assets/productivefrogs/patchouli_books/guide/en_us/entries/sky_frogs/welcome.json"
