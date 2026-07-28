@@ -63,8 +63,11 @@ def main():
 
     resources = pf_jar.load_froglight_resources(jar)
 
-    lang = {}
-    written = []
+    # Resolve every variant BEFORE writing anything. The ambiguity guard below is
+    # fatal, and a mid-loop exit would leave the folder half-regenerated with the
+    # stale-file sweep never run - a worse state to debug than the PF change that
+    # triggered it.
+    plan = []
     skipped = []
     for variant, data in sorted(pf_jar.load_variants(jar).items()):
         if not pf_jar.is_vanilla(data) or variant in EXCLUDED:
@@ -78,9 +81,15 @@ def main():
         if len(results) != 1:
             sys.exit(
                 "Variant %r has %d Froglight smelt results (%s) - expected exactly 1. A PF "
-                "change needs a ruling: exclude the variant, or pick the resource by hand."
+                "change needs a ruling: exclude the variant, or pick the resource by hand. "
+                "Nothing was written."
                 % (variant, len(results), ", ".join(results) or "none")
             )
+        plan.append((variant, data, results[0]))
+
+    lang = {}
+    written = []
+    for variant, data, resource in plan:
         key = "singularity.extendedcrafting.%s" % variant
         obj = {
             "name": key,
@@ -88,7 +97,7 @@ def main():
                 format(data["primary_color"] & 0xFFFFFF, "06x"),
                 format(data["secondary_color"] & 0xFFFFFF, "06x"),
             ],
-            "ingredient": {"item": results[0]},
+            "ingredient": {"item": resource},
             "inUltimateSingularity": True,
         }
         path = os.path.join(OUT_DIR, "%s.json" % variant)

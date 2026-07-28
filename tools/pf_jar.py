@@ -105,7 +105,15 @@ def load_froglight_resources(jar: str) -> dict[str, list[str]]:
             data = json.loads(archive.read(name))
             if data.get("type") != "minecraft:smelting":
                 continue
-            ingredient = data.get("ingredient") or {}
+            ingredient = data.get("ingredient")
+            # Vanilla's smelting codec also accepts a bare item string or a list of
+            # ingredients. PF uses neither for Froglights (all 99 are the object form
+            # with `items`), but a future format change must drop the variant from the
+            # mapping - where the callers' "expected exactly 1 smelt result" guard turns
+            # it into a loud, accurate error - rather than raise AttributeError here,
+            # which the validator would report as a corrupt jar.
+            if not isinstance(ingredient, dict):
+                continue
             if FROGLIGHT_ITEM not in (ingredient.get("items") or []):
                 continue
             variant = (ingredient.get("components") or {}).get(VARIANT_COMPONENT, "")
