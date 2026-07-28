@@ -24,6 +24,35 @@ Entries are kept after they are fixed: the diagnosis is the valuable part, and s
 
 ## Resolved
 
+### 🟢 World creation crashes on the KubeJS biome modifiers (empty override files on the player's disk, not a pack defect)
+R1shy reported (v1.5.3, Prism Launcher on Arch Linux, fresh install) that creating a world crashed with `Registry loading errors` on `productivefrogs:add_bog_slime_spawn`. [#242](https://github.com/Flatts3000/sky-frogs/issues/242). Kept here because the log signature is distinctive and this will be asked again.
+
+**The tell.** All seven biome modifiers fail with the same `Caused by:` line:
+
+```
+java.lang.IllegalStateException: Not a JSON object: null
+```
+
+`null` is what Gson returns for an **empty stream**. So the file is being read as zero bytes. That is a different failure from a syntax error (which names a line and column), from an unknown registry key, and from a stale `kubejs/data` left by an in-place update - all three of which were plausible before the log arrived, and all three of which are wrong. KubeJS counted the files as present (`Validated 11 files in kubejs/assets/`, `Validated 19 files in kubejs/data/`, both matching the shipped pack exactly); they simply read back with nothing in them.
+
+**Why it is not a KubeJS problem.** Three more places in the same log carry the identical signature, and the last one is outside `kubejs/` entirely:
+
+1. All five Patchouli guide pages - `java.io.EOFException: End of input at line 1 column 1`, Gson's message for a literally empty file.
+2. KubeJS `ClientAssetPacks.inject0` - `NullPointerException: Cannot invoke "com.google.gson.JsonObject.entrySet()" because "json" is null`, the same empty read, earlier in startup.
+3. `SkyblockBuilder: Template with name default.nbt is incorrect.` from `config/skyblockbuilder/templates/islands/default.nbt`. A healthy instance logs `Loaded template "default" from "default.nbt"` instead - worth checking a known-good log to confirm the contrast, since that message is easy to mistake for noise.
+
+Files across two separate override trees came out empty. That is interrupted or partial extraction at install time, and a full disk during install is the usual way it happens.
+
+**Verifying the artifact, which is the step that actually settles it.** "Not reproducible on the dev instance" proves nothing here: that instance is junction-linked to the repo (see [`repo_layout.md`](./repo_layout.md)) and so **never exercises the exported zip**. Check the shipped file instead. For v1.5.3 the GitHub release asset and the CurseForge-hosted file were byte-identical (sha256 `8e9ebc57cb7f6d004f0521d90f29757365a33091a4f55f079113d6428a8338b8`; CurseForge is the copy Prism downloads), 194 entries, **zero** zero-byte files, all 25 JSONs parsed, and `default.nbt` was a valid gzipped NBT compound. The zip left clean and arrived with holes in it.
+
+**Triage recipe.** Ask for the full `latest.log` and read the `Caused by:` - the pasted trace usually stops above it, and it is the only line that separates these four causes. If it says `Not a JSON object: null` or `End of input at line 1 column 1`, have the player run:
+
+```sh
+find <instance>/minecraft -type f -size 0
+```
+
+Zero-byte override files confirm it; the fix is deleting and reinstalling the instance rather than updating in place. If that command prints **nothing**, the files are intact on disk and something is serving them empty at runtime, which would be a real bug worth reopening for.
+
 ### 🟣 Quest book contradicted itself on whether the Quantum Compressor consumes the Ultimate Catalyst
 Hunyol reported on Discord (v1.5.3) that **The Ultimate Catalyst** and **The Long Compression** say opposite things about the catalyst, and that the former is the correct one. [#241](https://github.com/Flatts3000/sky-frogs/issues/241).
 
