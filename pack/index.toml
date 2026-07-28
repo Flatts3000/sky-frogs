@@ -42,7 +42,7 @@ hash = "6902720ca14e78f2ee14f60711c5a7e9f3601cc454627af22e6b10087f644fbb"
 
 [[files]]
 file = "config/extendedcrafting/singularities/README.md"
-hash = "53d2424d3415398b7d61a85dd0f2c407063df575bc1efb7cb6c03105dd2705fe"
+hash = "3d545c4f8988aeb5e0329f58bd3b86e0919eb77436970b769a6b9f0cca4274f2"
 
 [[files]]
 file = "config/extendedcrafting/singularities/amethyst.json"
@@ -118,7 +118,7 @@ hash = "0aa49e86917d8e06facbda2c2249c11b6dcfd8acd31e40911cc61dc13a80dca0"
 
 [[files]]
 file = "config/extendedcrafting/singularities/experience.json"
-hash = "813f819ec1d55df85b18d4ab96dfcb88e551b7f416640115ff743405a8efa4e6"
+hash = "0d6eedab528766411b80852f6110ab90ef46e381c0c55d362084dba0ae8a3afc"
 
 [[files]]
 file = "config/extendedcrafting/singularities/feather.json"

@@ -4,10 +4,17 @@
 The Tier 6 / Void endgame requires one EC singularity per *vanilla* froglight resource (modded
 variants are skipped - they are not pinned in the pack). Each singularity is flagged
 ``inUltimateSingularity`` so EC's auto-generated Ultimate Singularity recipe demands the full set:
-a literal "you automated every frog" capstone. The compressor input is the smelted resource
-(``primer_item``) because EC's singularity ingredient and the Quantum Compressor's Cucumber
-``IngredientWithCount`` input are both item/tag-value only and cannot match a froglight's
-``slime_variant`` data component (see ``pack/config/extendedcrafting/singularities/README.md``).
+a literal "you automated every frog" capstone. The compressor input is the item the variant's
+Froglight SMELTS to - read from PF's own smelting recipes - because EC's singularity ingredient
+and the Quantum Compressor's Cucumber ``IngredientWithCount`` input are both item/tag-value only
+and cannot match a froglight's ``slime_variant`` data component (see
+``pack/config/extendedcrafting/singularities/README.md``).
+
+It reads the smelt result rather than the variant's ``primer_item`` (what you feed a slime to
+make that variant) because the two are NOT interchangeable: they agree for every vanilla variant
+but `experience`, whose primer is ``minecraft:book`` while its Froglight smelts to
+``minecraft:experience_bottle``. Generating off the primer made the Experience Singularity demand
+1000 books - an item the Experience frog never produces (#245).
 
 Each singularity's gradient is taken straight from the frog variant's own
 ``primary_color`` / ``secondary_color`` so the cube matches the frog that feeds it.
@@ -54,6 +61,8 @@ def main():
     args = parser.parse_args()
     jar = find_jar(args.jar)
 
+    resources = pf_jar.load_froglight_resources(jar)
+
     lang = {}
     written = []
     skipped = []
@@ -61,6 +70,17 @@ def main():
         if not pf_jar.is_vanilla(data) or variant in EXCLUDED:
             skipped.append(variant)
             continue
+        # A vanilla variant with no single smelt result has no resource to compress.
+        # Today that cannot happen (only the excluded fluid pair lacks a smelting
+        # recipe, and only the modded `silicon` carries two) - so treat it as a PF
+        # change the maintainer must rule on, not something to guess through.
+        results = resources.get(variant, [])
+        if len(results) != 1:
+            sys.exit(
+                "Variant %r has %d Froglight smelt results (%s) - expected exactly 1. A PF "
+                "change needs a ruling: exclude the variant, or pick the resource by hand."
+                % (variant, len(results), ", ".join(results) or "none")
+            )
         key = "singularity.extendedcrafting.%s" % variant
         obj = {
             "name": key,
@@ -68,7 +88,7 @@ def main():
                 format(data["primary_color"] & 0xFFFFFF, "06x"),
                 format(data["secondary_color"] & 0xFFFFFF, "06x"),
             ],
-            "ingredient": {"item": data["primer_item"]},
+            "ingredient": {"item": results[0]},
             "inUltimateSingularity": True,
         }
         path = os.path.join(OUT_DIR, "%s.json" % variant)

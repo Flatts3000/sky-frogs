@@ -6,6 +6,7 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ### Fixed
 
+- **The Experience Singularity takes Bottles o' Enchanting, not books (#245).** Every other Singularity asks for a thousand of the resource its frog produces. This one asked for books, which the Experience frog does not make - its Froglight smelts to Bottles o' Enchanting. It was craftable, just wrong, and it quietly put you on a second production line the endgame never asks for anywhere else. Nothing else moved: the other 57 Singularities are unchanged. (Reported by Hunyol on Discord.)
 - **The quest book no longer tells you to make an Ultimate Catalyst per Singularity (#241).** The Ultimate Catalyst sits in the Quantum Compressor's catalyst slot and stays there; it is not spent. The Long Compression and Your First Singularity both said otherwise, and so did the field guide, which put the bill at roughly 58 catalysts where one covers the whole endgame. All three now describe the slot correctly. (Reported by Hunyol on Discord.)
 
 ## [1.5.3] - 2026-07-25

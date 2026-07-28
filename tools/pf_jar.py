@@ -20,6 +20,9 @@ import re
 import zipfile
 
 VARIANT_PREFIX = "data/productivefrogs/productivefrogs/slime_variant/"
+RECIPE_PREFIX = "data/productivefrogs/recipe/"
+FROGLIGHT_ITEM = "productivefrogs:configurable_froglight"
+VARIANT_COMPONENT = "productivefrogs:slime_variant"
 
 _REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 _PW_TOML = os.path.join(_REPO, "pack", "mods", "productive-frogs.pw.toml")
@@ -74,6 +77,44 @@ def load_variants(jar: str) -> dict[str, dict]:
                 variant = name[len(VARIANT_PREFIX):-len(".json")]
                 out[variant] = json.loads(archive.read(name))
     return out
+
+
+def load_froglight_resources(jar: str) -> dict[str, list[str]]:
+    """variant name -> the item id(s) its Froglight SMELTS to, straight from the jar.
+
+    This is the resource a variant's frog actually produces, and it is what the pack
+    means by "the resource" everywhere (the Quantum Compressor's singularity input,
+    the froglight-check law). It is NOT always the variant's ``primer_item``: the
+    primer is what you feed a slime to MAKE that variant, and for `experience` the
+    two diverge (primer `minecraft:book`, smelt result `minecraft:experience_bottle`)
+    - which is how the Experience Singularity came to demand books (#245).
+
+    Values are lists because a variant CAN carry more than one smelt recipe when two
+    host mods each register the resource (`silicon` -> ae2 + refinedstorage). No
+    vanilla variant does today; callers decide whether ambiguity is fatal. Sorted,
+    so the generator's output does not depend on zip iteration order.
+
+    The fluid pair (water / lava) has no smelting recipe at all - those Froglights
+    melt in the Crucible - so both are simply absent from the mapping.
+    """
+    out: dict[str, set[str]] = {}
+    with zipfile.ZipFile(jar) as archive:
+        for name in archive.namelist():
+            if not name.startswith(RECIPE_PREFIX) or not name.endswith(".json"):
+                continue
+            data = json.loads(archive.read(name))
+            if data.get("type") != "minecraft:smelting":
+                continue
+            ingredient = data.get("ingredient") or {}
+            if FROGLIGHT_ITEM not in (ingredient.get("items") or []):
+                continue
+            variant = (ingredient.get("components") or {}).get(VARIANT_COMPONENT, "")
+            variant = variant.split(":")[-1]
+            result = data.get("result") or {}
+            result = result.get("id") if isinstance(result, dict) else result
+            if variant and result:
+                out.setdefault(variant, set()).add(result)
+    return {variant: sorted(results) for variant, results in out.items()}
 
 
 def is_vanilla(variant_data: dict) -> bool:
