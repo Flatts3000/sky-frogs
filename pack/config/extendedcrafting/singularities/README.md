@@ -4,6 +4,12 @@ These JSONs are **generated** by `tools/gen_singularities.py` from Productive Fr
 data - **one singularity per vanilla froglight resource**. Re-run the generator when PF adds or
 removes vanilla variants; do not hand-edit individual files.
 
+The `ingredient` is read from PF's own Froglight **smelting recipes**, not from the variant's
+`primer_item` (the item you feed a slime to make that variant). They agree for every vanilla variant
+but `experience`, whose primer is `minecraft:book` while its Froglight smelts to
+`minecraft:experience_bottle` - generating off the primer made that singularity demand 1000 books,
+an item its frog never produces ([#245](https://github.com/Flatts3000/sky-frogs/issues/245)).
+
 There is one singularity for **every vanilla resource the frogs make** - one per vanilla variant (50 as of PF 1.13; the set grows with PF's roster), across the six
 species:
 

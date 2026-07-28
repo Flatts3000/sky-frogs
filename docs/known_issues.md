@@ -53,6 +53,27 @@ find <instance>/minecraft -type f -size 0
 
 Zero-byte override files confirm it; the fix is deleting and reinstalling the instance rather than updating in place. If that command prints **nothing**, the files are intact on disk and something is serving them empty at runtime, which would be a real bug worth reopening for.
 
+### 🟣 The Experience Singularity demanded books instead of the experience bottles the frog makes
+Hunyol reported on Discord (v1.5.3) that the `experience` singularity takes books, "rather than bottles of enchanting as the name would suggest." [#245](https://github.com/Flatts3000/sky-frogs/issues/245).
+
+**Ground truth.** The Experience Froglight smelts to `minecraft:experience_bottle` (`configurable_froglight_experience_to_experience_bottle.json` in `productivefrogs-1.25.2.jar`). The shipped singularity asked for `minecraft:book`.
+
+**Root cause: two PF fields that agree everywhere except here.** `tools/gen_singularities.py` built every singularity's ingredient from the variant's `primer_item` - what you feed a slime to *make* that variant - on the assumption, stated in its own docstring, that the primer equals what the Froglight smelts to. Sweeping the pinned roster, that holds for all 58 vanilla variants but one:
+
+| variant | `primer_item` | Froglight smelts to |
+|---|---|---|
+| experience | `minecraft:book` | `minecraft:experience_bottle` |
+
+This is the **second** time the two fields have diverged. The first was chorus (see below): PF 1.8.1's Chorus Froglight smelted to *popped* chorus while the primer was raw, which broke the echo-shard chain and the chorus singularity, and PF fixed it upstream in 1.9.2. The entry for it called chorus "the **only** variant of all 70 where the froglight output differs from the `primer_item`" - true when written, and exactly the assumption that let this one through. `experience` arrived with PF 1.23.0 and the generator has been quietly wrong about it since.
+
+**Why nothing else caught it.** `Q-SINGULARITY-INGREDIENT` was written to assert the same `primer_item` equality the generator produced, so it validated the generator against itself and could only ever agree. The quest copy was innocent: **Your First Singularity** already says "feed it the smelted ingots, not the Froglights," which is the correct law - the data was what disagreed with it.
+
+**Player impact was mild.** Books are obtainable here (paper from sugar cane, leather from the Bog frog), so nobody was hard-blocked - it just made the Experience frog's own output useless toward its own singularity and quietly demanded a second production line.
+
+**Fix shipped.** The generator and the validator both read the ingredient from PF's Froglight **smelting recipes** now, so the check has an independent source of truth instead of mirroring the generator. Both hard-error if a vanilla variant ever has zero or multiple smelt results rather than guessing. Regenerating moved exactly one file; the other 57 came out byte-identical, which is the proof the refactor is behavior-neutral.
+
+**Verify in-game:** JEI the Experience Singularity - it should ask for 1,000 Bottles o' Enchanting.
+
 ### 🟣 Quest book contradicted itself on whether the Quantum Compressor consumes the Ultimate Catalyst
 Hunyol reported on Discord (v1.5.3) that **The Ultimate Catalyst** and **The Long Compression** say opposite things about the catalyst, and that the former is the correct one. [#241](https://github.com/Flatts3000/sky-frogs/issues/241).
 
