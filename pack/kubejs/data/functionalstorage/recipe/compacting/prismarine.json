@@ -1,0 +1,11 @@
+{
+  "type": "functionalstorage:custom_compacting",
+  "higher_input": {
+    "count": 1,
+    "id": "minecraft:prismarine"
+  },
+  "lower_input": {
+    "count": 4,
+    "id": "minecraft:prismarine_shard"
+  }
+}

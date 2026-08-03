@@ -601,8 +601,24 @@ file = "kubejs/data/apotheosis/data_maps/item/loot_category_overrides.json"
 hash = "67c9b3721505cad22e23fffae0421e26d12b29314b7a94ee5b2c713395347c44"
 
 [[files]]
+file = "kubejs/data/functionalstorage/recipe/compacting/clay.json"
+hash = "cc4d236276c5a7699aebdae24631a41df1cfc85ba28f7048b02d389c753a782c"
+
+[[files]]
 file = "kubejs/data/functionalstorage/recipe/compacting/honeycomb.json"
 hash = "7aa672c1c80519d9714fb87a8a678090a8f24423dc8d784449fd06caa763af6f"
+
+[[files]]
+file = "kubejs/data/functionalstorage/recipe/compacting/magma.json"
+hash = "08d7e6a111b323e3dfb99911ac16713c70352b90c342fca7fb9ba7eebca3de33"
+
+[[files]]
+file = "kubejs/data/functionalstorage/recipe/compacting/prismarine.json"
+hash = "a44a63c4d639d39727dc5454942c81c22bf2558b76a49cba04ac263795594f6a"
+
+[[files]]
+file = "kubejs/data/functionalstorage/recipe/compacting/snow.json"
+hash = "33aa712ef23f369177532c453369513ad42ee26cd000a18e480fe817090fcd85"
 
 [[files]]
 file = "kubejs/data/minecraft/tags/worldgen/world_preset/normal.json"
