@@ -63,7 +63,7 @@
 				id: "1F00000000000007"
 				item: {
 					count: 1
-					id: "functionalstorage:compacting_drawer"
+					id: "functionalstorage:simple_compacting_drawer"
 				}
 				type: "item"
 			}]
