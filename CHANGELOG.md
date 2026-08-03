@@ -4,6 +4,10 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+## [1.6.0] - 2026-08-03
+
+Two new quests off the back of a week of Discord reports, a server that can no longer generate the wrong world, and drawers that finally compact the things frogs make most of.
+
 ### Added
 
 - **The quest book introduces the field guide (#253).** Productive Frogs ships a book of its own, separate from the quest book, with a page for every frog, slime and appliance, and build previews that project the multiblocks into the world before you place anything. You have always been handed one on your first login, but nothing ever said so, and people were losing hours on the boss altars without knowing it was sitting in their inventory. An optional Welcome quest now names it, says what it is for, and hands out another copy if yours went missing. Both altar quests point at it for the build, and they also say plainly that Dragonsbane and Witherbane are frogs. (Reported by RastoMast and Wolley on Discord.)
@@ -574,6 +578,7 @@ Bug-fix and quality-of-life release on top of the v0.2.0 campaign beta. Fixes tw
 ```
 
 [Unreleased]: https://github.com/Flatts3000/sky-frogs/compare/v1.5.3...HEAD
+[1.6.0]: https://github.com/Flatts3000/sky-frogs/compare/v1.5.3...v1.6.0
 [1.5.3]: https://github.com/Flatts3000/sky-frogs/compare/v1.5.2...v1.5.3
 [1.5.2]: https://github.com/Flatts3000/sky-frogs/compare/v1.5.1...v1.5.2
 [1.5.1]: https://github.com/Flatts3000/sky-frogs/compare/v1.5.0...v1.5.1
