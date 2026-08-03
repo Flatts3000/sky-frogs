@@ -81,6 +81,35 @@
 		}
 		{
 			dependencies: ["01A8E068925B319F"]
+			icon: {
+				components: {
+					"patchouli:book": "productivefrogs:guide"
+				}
+				id: "patchouli:guide_book"
+			}
+			id: "2F1E0D0C0B0A0001"
+			optional: true
+			rewards: [{
+				id: "2F1E0D0C0B0A0003"
+				item: {
+					components: {
+						"patchouli:book": "productivefrogs:guide"
+					}
+					count: 1
+					id: "patchouli:guide_book"
+				}
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "2F1E0D0C0B0A0002"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["01A8E068925B319F"]
 			id: "05BFA1537298A589"
 			rewards: [{
 				exclude_from_claim_all: true

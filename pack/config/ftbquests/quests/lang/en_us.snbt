@@ -45,6 +45,13 @@
 	]
 	quest.6A5B4C3D2E1F0001.quest_subtitle: "It's rarely the light."
 	quest.6A5B4C3D2E1F0001.title: "Why Won't It Spawn?"
+	quest.2F1E0D0C0B0A0001.quest_desc: [
+		"Productive Frogs ships its own book, separate from this one. Every frog, slime, and appliance in the mod has a page, and the multiblock entries project a ghost of the build into the world so you can see where each block goes before you place it."
+		""
+		"You are handed a copy when you first join. Lost it? A &fbook&r and a &eslime ball&r make another."
+	]
+	quest.2F1E0D0C0B0A0001.quest_subtitle: "Not this book. The other one."
+	quest.2F1E0D0C0B0A0001.title: "The Field Guide"
 	quest.05BFA1537298A589.quest_desc: [
 		"Instead of mining, you get your materials from &afrogs&r. Feed a &aFrog&r its matching &bResource Slime&r and it makes a &6Froglight&r. Smelt the Froglight to get the resource."
 	]
@@ -903,7 +910,9 @@
 	quest.780700000000002C.quest_desc: [
 		"A contained, repeatable dragon farm, built right on the real End exit portal, so you have to beat the dragon the hard way first. Her &bDragon Egg&r is the capstone: no egg, no altar."
 		""
-		"Ring the portal with four &eEnd Crystal Receptacles&r and reinforced froglights, with the &eEnd Dragon Altar Hatch&r at the centre and the egg resting on top. Drop an &fEnd Crystal&r into each of the four receptacles and a replica dragon rises for &eDragonsbane&r to devour. The loot lands in the hatch, hopper-pipeable, and the real portal stays intact: a &6Dragon Breath Froglight&r, a &6Dragon Egg Froglight&r, the &dPrincess's Kiss&r, and XP."
+		"Ring the portal with four &eEnd Crystal Receptacles&r and reinforced froglights, with the &eEnd Dragon Altar Hatch&r at the centre and the egg resting on top. Drop an &fEnd Crystal&r into each of the four receptacles and a replica dragon rises for the &eDragonsbane&r frog to devour. The loot lands in the hatch, hopper-pipeable, and the real portal stays intact: a &6Dragon Breath Froglight&r, a &6Dragon Egg Froglight&r, the &dPrincess's Kiss&r, and XP."
+		""
+		"Build it from the &fProductive Frogs field guide&r, not from this page. Its altar entry has the diagram and projects the whole thing into the world before you place a block."
 		""
 		"&7Optional&r: a repeatable dragon harvest. Craft the &eEnd Dragon Altar Hatch&r to start."
 	]
@@ -912,7 +921,9 @@
 	quest.780700000000002F.quest_desc: [
 		"A contained, repeatable Wither farm. You still have to kill a Wither the hard way once: the &eWithered Star&r capstone is crafted from a &fNether Star&r."
 		""
-		"Build the arena from &6Reinforced Blaze Rod Froglights&r for the shell and &6Reinforced Soul Sand Froglights&r for the floor, with a &eWither Altar Hatch&r at the centre and &eWitherbane&r perched on it. Its ritual wall takes four Soul Sand Receptacles and three Wither Skull Receptacles; load the full vanilla summon each time, &f4 soul sand&r and &f3 wither skeleton skulls&r. A replica Wither charges in and Witherbane eats it before it can act. Each summon drops a &6Nether Star Froglight&r (it smelts back to a star) plus XP, with no boss bar and no block damage."
+		"Build the arena from &6Reinforced Blaze Rod Froglights&r for the shell and &6Reinforced Soul Sand Froglights&r for the floor, with a &eWither Altar Hatch&r at the centre and the &eWitherbane&r frog perched on it. Its ritual wall takes four Soul Sand Receptacles and three Wither Skull Receptacles; load the full vanilla summon each time, &f4 soul sand&r and &f3 wither skeleton skulls&r. A replica Wither charges in and Witherbane eats it before it can act. Each summon drops a &6Nether Star Froglight&r (it smelts back to a star) plus XP, with no boss bar and no block damage."
+		""
+		"Build it from the &fProductive Frogs field guide&r, not from this page. Its altar entry has the diagram and projects the whole thing into the world before you place a block."
 		""
 		"&7Optional&r: a hands-off Nether Star farm. Craft the &eWithered Star&r to start."
 	]
