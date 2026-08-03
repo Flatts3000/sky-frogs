@@ -601,6 +601,10 @@ file = "kubejs/data/apotheosis/data_maps/item/loot_category_overrides.json"
 hash = "67c9b3721505cad22e23fffae0421e26d12b29314b7a94ee5b2c713395347c44"
 
 [[files]]
+file = "kubejs/data/functionalstorage/recipe/compacting/honeycomb.json"
+hash = "7aa672c1c80519d9714fb87a8a678090a8f24423dc8d784449fd06caa763af6f"
+
+[[files]]
 file = "kubejs/data/opolisutilities/loot_table/loot_boxes/advanced_loot_box.json"
 hash = "af73bfdbddd392cbfcf94acfc3638cdeb8cc8f69f70341727b8e174504a838d3"
 
