@@ -808,6 +808,15 @@
 	quest.7B06000000000025.quest_desc: ["Craft a &bHoneycomb Slime in a Bucket&r, feed your &aBog Frog&r, and turn in the &6Honeycomb Froglight&r."]
 	quest.7B06000000000025.quest_subtitle: "Unbeelievable."
 	quest.7B06000000000025.title: "Honeycomb"
+	quest.7B06000000000043.quest_desc: [
+		"No bee turns up on its own here, but the vanilla route works. Sift &fdirt&r or &fmoss&r for a &fbirch sapling&r and a flower."
+		""
+		"Plant them within two blocks of each other, same height, and grow the tree. Small chance per tree it comes up with a &ebee nest&r on it, bees included. Plant plenty."
+		""
+		"&bSilk Touch&r the nest or the bees stay behind. Then it is normal beekeeping: flowers to breed, a bottle for &6honey&r, four for a honey block."
+	]
+	quest.7B06000000000043.quest_subtitle: "Not a frog, but useful."
+	quest.7B06000000000043.title: "Bees"
 	quest.7B06000000000028.quest_desc: ["Craft a &bBone Slime in a Bucket&r, feed your &aBog Frog&r, and turn in the &6Bone Froglight&r."]
 	quest.7B06000000000028.quest_subtitle: "Dem dry bones."
 	quest.7B06000000000028.title: "Bone"
