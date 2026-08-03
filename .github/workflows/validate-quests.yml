@@ -14,6 +14,14 @@ on:
       # is a few seconds; triggering on an unrelated tool edit is the cheaper mistake.
       - "tools/*.py"
       - "tools/data/item_ids.txt"
+      # pack/mods + pack.toml for the same reason one level out: the pinned jar is a
+      # data source too, and it is SELECTED here. validate_quests reads the pinned
+      # Productive Frogs jar through pf_jar to catch the #101 drift classes, and the
+      # PF pin lives in pack/mods/productive-frogs.pw.toml - so without these the one
+      # check built to catch PF drift was the one check that skipped a PF pin bump.
+      # Found on #264, which updated 19 mods and ran zero checks (#265).
+      - "pack/mods/**"
+      - "pack/pack.toml"
   push:
     branches: [main]
     paths:
@@ -25,6 +33,14 @@ on:
       # is a few seconds; triggering on an unrelated tool edit is the cheaper mistake.
       - "tools/*.py"
       - "tools/data/item_ids.txt"
+      # pack/mods + pack.toml for the same reason one level out: the pinned jar is a
+      # data source too, and it is SELECTED here. validate_quests reads the pinned
+      # Productive Frogs jar through pf_jar to catch the #101 drift classes, and the
+      # PF pin lives in pack/mods/productive-frogs.pw.toml - so without these the one
+      # check built to catch PF drift was the one check that skipped a PF pin bump.
+      # Found on #264, which updated 19 mods and ran zero checks (#265).
+      - "pack/mods/**"
+      - "pack/pack.toml"
 
 jobs:
   validate:
