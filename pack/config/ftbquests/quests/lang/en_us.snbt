@@ -1248,11 +1248,7 @@
 	quest.601D000000000011.quest_desc: ["Prime the &eSpawnery&r with an &eender pearl&r and it bottles a &bBottle of Void Frog Eggs&r."]
 	quest.601D000000000011.quest_subtitle: "The last species."
 	quest.601D000000000011.title: "Void Frog Eggs"
-	quest.601D000000000014.quest_desc: [
-		"Run &fnetherite scrap&r through the &eDissolution Chamber&r with &fsoul soil&r filler for a &5Bucket of Ender Pearl Slime&r, the first Void resource slime."
-		""
-		"By hand: prime a wild &5Void Slime&r (they spawn out on the small End islands) with an &eender pearl&r and bucket it. Either way, this seeds the Void milk chain."
-	]
+	quest.601D000000000014.quest_desc: ["Run &fnetherite scrap&r through the &eDissolution Chamber&r with &fsoul soil&r filler for a &5Bucket of Ender Pearl Slime&r. First Void resource slime, and it seeds the whole Void milk chain."]
 	quest.601D000000000014.quest_subtitle: "Bottle the void."
 	quest.601D000000000014.title: "A Bucket of Ender Pearl Slime"
 	quest.601D000000000017.quest_desc: ["Run the &5Ender Pearl Slime&r through the &eSlime Milker&r for a &bBucket of Ender Pearl Slime Milk&r. Pour it out and Ender Pearl Slimes spawn for your &5Void frog&r to eat."]
@@ -1304,7 +1300,7 @@
 	quest.60F0000000000011.quest_subtitle: "Boxes that come with you."
 	quest.60F0000000000011.title: "Shulker Shell"
 	quest.60F0000000000019.quest_desc: [
-		"A &5Void Frog&r never produces the &eExperience&r variant on its own. You make this one by hand: right-click a &bVoid Slime&r with a plain &fbook&r and it takes on the experience variant. The &eDissolution Chamber&r does the same in bulk, a book run with soul soil, sweetslime, and latex."
+		"A &5Void Frog&r never produces the &eExperience&r variant on its own, so the &eDissolution Chamber&r makes it instead: a plain &fbook&r run with soul soil, sweetslime, and latex."
 		""
 		"Feed the slime to a Void Frog and turn in the &6Experience Froglight&r it leaves. Smelt that into a &aBottle o' Enchanting&r."
 	]
