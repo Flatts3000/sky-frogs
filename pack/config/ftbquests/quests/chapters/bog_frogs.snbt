@@ -444,5 +444,44 @@
 			x: 2.0d
 			y: 21.0d
 		}
+		{
+			dependencies: ["7B06000000000025"]
+			icon: {
+				id: "minecraft:bee_nest"
+			}
+			id: "7B06000000000043"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7B06000000000048"
+				table_id: 9151543141235425281L
+				type: "loot"
+			}]
+			shape: "diamond"
+			tasks: [
+			{
+				id: "7B06000000000044"
+				item: { count: 1, id: "minecraft:birch_sapling" }
+				type: "item"
+			}
+			{
+				id: "7B06000000000045"
+				item: { count: 1, tag: "minecraft:flowers" }
+				type: "item"
+			}
+			{
+				id: "7B06000000000046"
+				item: { count: 1, id: "minecraft:bee_nest" }
+				type: "item"
+			}
+			{
+				id: "7B06000000000047"
+				item: { count: 1, id: "minecraft:honey_bottle" }
+				type: "item"
+			}
+			]
+			x: 4.5d
+			y: 21.0d
+		}
 	]
 }
