@@ -210,8 +210,15 @@ def write_launchers(out: Path, neoforge: str, mc: str) -> None:
         "4. Run `setup.sh` (Linux/Mac) or `setup.bat` (Windows). The first run "
         "downloads + installs NeoForge, then boots the server; later runs boot "
         "directly via NeoForge's own `run.sh` / `run.bat`.\n\n"
-        "The world is a Skyblock Builder void world (`level-type` is preset). "
-        "Java 21 is required.\n",
+        "The world is a Skyblock Builder void world. Java 21 is required.\n\n"
+        "## If you get a normal world instead of the skyblock\n\n"
+        "The pack forces skyblock generation for every world type, so this "
+        "should not happen on a fresh server. If it does, the world was "
+        "already generated before the pack was installed. World generation is "
+        "decided once, at creation, and never re-evaluated.\n\n"
+        "Stop the server, delete the `world/` directory, and start it again. "
+        "That is the only fix; changing settings afterwards does nothing to an "
+        "existing world.\n",
         encoding="utf-8", newline="\n")
     print("wrote launch scripts + INSTALL.md")
 
