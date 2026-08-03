@@ -809,9 +809,9 @@
 	quest.7B06000000000025.quest_subtitle: "Unbeelievable."
 	quest.7B06000000000025.title: "Honeycomb"
 	quest.7B06000000000043.quest_desc: [
-		"No bee turns up on its own here, but the vanilla route works. Sift &fdirt&r or &fmoss&r for a &fbirch sapling&r and a flower."
+		"No bee turns up on its own here, but the vanilla route works. Sift &fdirt&r or &fmoss&r for a &fbirch sapling&r and a &fdandelion&r."
 		""
-		"Plant them within two blocks of each other, same height, and grow the tree. Small chance per tree it comes up with a &ebee nest&r on it, bees included. Plant plenty."
+		"Plant them within two blocks of each other, same height, and grow the tree. Any flower does the job. Small chance per tree it comes up with a &ebee nest&r on it, bees included. Plant plenty."
 		""
 		"&bSilk Touch&r the nest or the bees stay behind. Then it is normal beekeeping: flowers to breed, a bottle for &6honey&r, four for a honey block."
 	]

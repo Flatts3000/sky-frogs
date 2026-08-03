@@ -29,7 +29,7 @@ Objective AI-tell scoring of every quest description, ranked by rewrite priority
 | 21 | MED | 4 | trophy_pond | The End Dragon Altar | long (151w), fragment subtitle |
 | 22 | MED | 4 | trophy_pond | The Wither Altar | long (167w), fragment subtitle |
 | 23 | MED | 4 | welcome | Why Won't It Spawn? | long (119w), fragment subtitle |
-| 24 | LOW | 3 | bog_frogs | Bees | wordy (81w), fragment subtitle |
+| 24 | LOW | 3 | bog_frogs | Bees | wordy (86w), fragment subtitle |
 | 25 | LOW | 3 | infernal_frogs | Pop the Cork | wordy (69w), fragment subtitle |
 | 26 | LOW | 3 | master_pond | You Out-Frogged the Game | 1x dash-reveal, fragment subtitle |
 | 27 | LOW | 3 | mekanism | Energized Smelter | 1x dash-reveal, fragment subtitle |

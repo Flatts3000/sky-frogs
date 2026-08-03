@@ -314,7 +314,7 @@ hash = "338768fb497fa6c1544e4db8ed91aa7773ee683566fc3db2aebf6319a1c54fb4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/bog_frogs.snbt"
-hash = "b0a265127bf179ac5659763f78ac34caa5bf37d00ed4eb3e7b3f1233dc3f878d"
+hash = "7c36ced8253f6a8901e26f244800e3969c5f0f2a2893c83a781256cd2971691c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/cave_frogs.snbt"
@@ -426,7 +426,7 @@ hash = "4889c5e7d4a8179b45e68f0ac00119529ed49ba68f20624b36e996bb0d60ddd0"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "c08e1106f8b050c4477e2de46184f9cbdd6e819094e37f9781da30717fcb4051"
+hash = "4e47dcd98904b5e53c155a07f8bff61368f42a11c23582373a2b5ea35433f0f6"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7F00D00000000001.snbt"

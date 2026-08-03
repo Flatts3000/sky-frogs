@@ -217,7 +217,7 @@ check enforces it forever.
 - `consume_items` (tristate) - take items on submit, vs just hold them. Absent = `data.snbt` default.
 - `only_from_crafting` (tristate) - only count items obtained by crafting.
 - `task_screen_only` (bool) - only submittable via the quest GUI, not auto-detected from inventory.
-- **Tag form:** `item: { tag: "c:ingots/iron", count: 1 }` matches any item in the tag (mutually exclusive with an `id`).
+- **Tag form: DOES NOT WORK. Do not use it.** `item: { tag: "...", count: 1 }` parses, passes `validate_quests.py`, and is silently destroyed the first time the game loads the world. FTB Quests `2101.1.29` cannot resolve it and rewrites the task to `item: { components: { "ftbquests:missing_item": "" }, count: 1, id: "ftbquests:missing_item" }`, leaving a task no player can ever complete. Caught in playtest on the v1.6.0 bees quest, which shipped a `minecraft:flowers` filter and came back as a missing item; the task now names a concrete item instead. Nothing static catches this, because the authored file is well-formed - only a world load reveals it. **Always name a concrete `id`.**
 
 ---
 

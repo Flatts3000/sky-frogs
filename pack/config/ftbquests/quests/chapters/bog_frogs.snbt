@@ -466,7 +466,7 @@
 			}
 			{
 				id: "7B06000000000045"
-				item: { count: 1, tag: "minecraft:flowers" }
+				item: { count: 1, id: "minecraft:dandelion" }
 				type: "item"
 			}
 			{
