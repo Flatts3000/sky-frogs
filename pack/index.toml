@@ -1146,7 +1146,7 @@ metafile = true
 
 [[files]]
 file = "mods/ftb-library-forge.pw.toml"
-hash = "4c996e783683f1a51df88d6af6b57881ff095c8801b0f5ab2969d0d121c137f8"
+hash = "276e79d919c3a698ab2881d784544b7e60bef69b43f44808353bb65d38633cb3"
 metafile = true
 
 [[files]]
@@ -1521,7 +1521,7 @@ metafile = true
 
 [[files]]
 file = "mods/selene.pw.toml"
-hash = "0e806e9224ec274d133d2bcd9e32e7156b63967c1e9bf304dab48be98158da15"
+hash = "dca676ab5504a3806cfecf8ec7ac11ae06f445983cca253cba9e0acaaa3aa00c"
 metafile = true
 
 [[files]]
@@ -1541,7 +1541,7 @@ metafile = true
 
 [[files]]
 file = "mods/skyblock-builder.pw.toml"
-hash = "ca248ea41aa0a67b8b3e80ce8e99da49880eafef076be8f3e4d9ea544065ab26"
+hash = "f72a924ea394f3dcb3beb68869e64d25fde8b7536d19f644c4b5f8d10835b098"
 metafile = true
 
 [[files]]
@@ -1551,17 +1551,17 @@ metafile = true
 
 [[files]]
 file = "mods/sophisticated-backpacks.pw.toml"
-hash = "2d0224e2b630982f82e4af9a48cc5628987aebb470c4ba51ec9bf1efa2d9a375"
+hash = "cad86315899c28529bf4c60b6d8d811a3aa7b73522af53b431735ad9880c8394"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
-hash = "9691e0caa6ebd2d045e862e792aa762b2eb159c359d9c446241d32f731a7e5bb"
+hash = "401bbf58828c38fef76c86360b92971b90869acd4798e2ca600ac722c045f657"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-storage.pw.toml"
-hash = "c700f42611b1e4412c3528b976100e48d7fb992f84f39de37b8db3aa2bb444ce"
+hash = "dba8dfeee802daff55a243abffac047bfca794700abdf42b293ad83d28780516"
 metafile = true
 
 [[files]]
@@ -1591,7 +1591,7 @@ metafile = true
 
 [[files]]
 file = "mods/supplementaries.pw.toml"
-hash = "43177938c13d61cb0796b59dd8d7f3bf521532bb9394ca0867aec89c45d003de"
+hash = "842ffef1c69ad33d4b21f779399c46366009332a375a979ba19dd57e0e1e0162"
 metafile = true
 
 [[files]]
