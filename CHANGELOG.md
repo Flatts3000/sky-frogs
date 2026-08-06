@@ -4,6 +4,10 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+## [1.6.1] - 2026-08-06
+
+A hotfix for the mod that builds the island, and six others brought up to current.
+
 ### Fixed
 
 - **Skyblock Builder can make an island again.** v1.6.0 shipped Skyblock Builder 21.1.32, and that build broke island creation and could put you in the wrong dimension. It was the version's own regression, nothing pack-side, and 21.1.33 hotfixes both. If a world made on v1.6.0 came up wrong, the fix does not repair it: stop, delete the world folder, start again.
