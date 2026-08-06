@@ -4,6 +4,14 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+### Fixed
+
+- **Skyblock Builder can make an island again.** v1.6.0 shipped Skyblock Builder 21.1.32, and that build broke island creation and could put you in the wrong dimension. It was the version's own regression, nothing pack-side, and 21.1.33 hotfixes both. If a world made on v1.6.0 came up wrong, the fix does not repair it: stop, delete the world folder, start again.
+
+### Changed
+
+- **7 mods updated to their current builds.** Skyblock Builder, the Sophisticated suite (Core, Storage, Backpacks), FTB Library, Supplementaries and Moonlight. Nothing changes about how the pack plays, and the loader pin is unchanged. Sodium stays on 0.8.12 for the same reason as last time: the newer build is a beta and the pack has no need of anything in it.
+
 ## [1.6.0] - 2026-08-03
 
 Two new quests off the back of a week of Discord reports, a server that can no longer generate the wrong world, and drawers that finally compact the things frogs make most of.
