@@ -2,6 +2,8 @@
 
 **Status: HOLD, don't build.** This is a captured body of player feedback kept as design input **for a possible Sky Frogs 2**, not a to-do list for the current pack. Nothing here is a committed change. If SF2 happens, this is a primary input; until then it just sits here. Do not file these as GitHub issues against the shipped pack (issues track live state on the current pack; this is future-vision material).
 
+> Companion: [`sky_frogs_1_retrospective.md`](./sky_frogs_1_retrospective.md) covers the same ground from the whole Discord rather than one player. Eebag's core thesis and the retrospective's finding 5 are the same conclusion reached from opposite ends.
+
 ## Source
 
 - **Author:** Eebag (Discord `@Eebag`, id `145697265011523584`), a player who offered to give more feedback / clarification.

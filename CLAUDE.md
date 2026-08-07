@@ -46,6 +46,7 @@ Reference material (consult when working in that area, not part of the pack narr
 - [`docs/github_issues_best_practices.md`](./docs/github_issues_best_practices.md) - the issue/label convention this repo tracks work with
 - [`docs/cf_submission_checklist.md`](./docs/cf_submission_checklist.md) - the one-time CurseForge project submission checklist (distinct from the per-release [`docs/release_checklist.md`](./docs/release_checklist.md))
 - [`docs/sky_frogs_2_feedback.md`](./docs/sky_frogs_2_feedback.md) - captured sequel design input; **held, not a build list** (see the backlog)
+- [`docs/sky_frogs_1_retrospective.md`](./docs/sky_frogs_1_retrospective.md) - the Sky Frogs 1 lessons-learned pass, distilled from the full community Discord export (3,216 human messages, 430 participants, 2026-06-06 to 2026-08-07); **input for the MC 26.x sequel**, not a change list for this pack
 
 ## Versioning targets
 
