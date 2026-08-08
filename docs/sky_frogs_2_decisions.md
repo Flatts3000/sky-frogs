@@ -117,10 +117,74 @@ Derived from the retrospective, non-negotiable:
 - **Recoverable.** If the player destroys their only seed, there is a defined way back. SF1's emergency-items quest is the existing pattern and it was used (players threw away lava buckets and asked for exactly this).
 - **Teaches the loop.** The first ten minutes should introduce milk, the Milker and frogs, not delay them.
 
-### Open
+### Resolved
 
-- What the seed actually is. Not decided. Candidates worth working up rather than picking now, given the Spawnery, the Milker and the emergency-items quest are all existing pack furniture that could carry it.
-- Whether wild slime spawning is off entirely, or off only for Cave. SF1 already disabled all six PF default spawns and added Cave back in; the simplest read of this decision is that the pack now adds nothing back.
+The seed is settled in **D-3** below: slime balls come off the Builders' Sieve, and SF1's existing `iron_slime_bucket.js` recipe turns them into the first slime. Wild slime spawning is off entirely; the pack adds nothing back to natural spawning.
+
+---
+
+## D-3: Slime balls come from sieving dirt
+
+**Decided 2026-08-08.** Resolves the open item in D-2.
+
+The Builders' Sieve gains a **slime ball** drop on the dirt lane. That is the whole change. Wild Cave Slime spawning is deleted (`add_cave_slime_island.json` goes; the pack adds nothing back to natural spawning).
+
+### Why this is smaller than it looks
+
+Tracing SF1's actual Tier 0 turned up something useful: **the dark room's only unique output was slime balls.** Everything downstream is already crafted rather than spawned.
+
+`iron_slime_bucket.js` already conjures the first slime straight into a bucket, from a Cave frog egg, slime balls, string, bone meal and an empty bucket. The frog egg is a Welcome-chapter reward, the bucket comes off the Slime Milker quest, bone meal comes off a composter. Only the slime balls came from the dark room. So the existing bootstrap recipe **is** the seed; it just needed a non-spawning input.
+
+That means D-2 costs one deleted biome modifier and one added sieve line, not a redesign.
+
+### The opening, end to end, with no vanilla spawning anywhere
+
+```
+starter tree
+  -> Crook on leaves        -> Silkworm
+  -> infest tree, harvest   -> String
+  -> String Mesh + Oak Sieve
+  -> sieve DIRT             -> Slime Ball          <- the change
+  -> + Cave frog egg (Welcome reward)
+    + empty bucket (Milker quest)
+    + bone meal (composter)
+  -> Iron Slime in a Bucket (existing recipe, unchanged)
+  -> Slime Milker           -> Iron Slime Milk
+  -> place it               -> never runs dry (D-1)
+  -> Iron Slimes forever    -> frogs eat them -> Iron Froglights
+                            -> killed for more slime balls
+```
+
+Dirt is composter-cheap at Tier 0, so the input is renewable from the starter tree. Nothing in this chain reads light level, player distance, mob cap, difficulty or spawn protection, and it behaves identically on a shared server.
+
+### The silkworm is now load-bearing, and it is 1 in 100
+
+The one thing to get right. Ex Deorum's silkworm is *"a 1 in 100 chance to drop from leaves harvested with a Crook."* In SF1 nobody noticed, because spiders in the dark room gave string. Remove the dark room and the string mesh becomes the real gate, at a worse drop rate than anything we are adding.
+
+**The Welcome chapter hands out a Silkworm (or the String Mesh outright).** This is the established pattern, not a special case: the chapter already grants saplings, the second water source, lava for the cobble generator, food, and the empty bucket. One more line removes a 1-in-100 wall from minute one. The crook and the silkworm stay craftable so the path is still discoverable and repeatable.
+
+### Drop rate
+
+Proposed **0.25 on dirt, string mesh**, well above the lane's existing 0.03 to 0.125.
+
+It should be generous, because it is a gate rather than an economy: within minutes of the first slime the player is killing slimes for slime balls and the sieve stops mattering. At 0.25 the expected wait is about four sieve actions and 95% of players are through in eleven. Tuning it down later is cheap; a slow gate at minute one is exactly the failure the retrospective is about.
+
+Sieved slime balls bypass nothing. Slime balls were already unlimited in SF1 via the dark room, and the frog spine is froglights, not slime balls.
+
+### Accepted tradeoffs
+
+Both were weighed and taken deliberately.
+
+- **RNG at minute one** is the friction retrospective finding 1 is about. The mitigation is the drop rate and the granted silkworm; the recovery story is genuinely better than the alternatives, since "sieve again" needs no cooldown quest and cannot be lost.
+- **The sieve is no longer decoration-only.** SF1 scoped the Builders' Sieve to cosmetic and building flora on purpose (`builder_sieve.js` header, `anti.js` pillar 1). That scoping is hereby amended, not violated: the lane now carries exactly one progression item, the Tier 0 bootstrap, and nothing else. Ores, gems and mob drops stay off it.
+
+### To build
+
+1. `builder_sieve.js`: add `['minecraft:slime_ball', 0.25]` to the dirt lane. Update the file header, which currently promises no progression materials.
+2. Delete `pack/kubejs/data/skyfrogs/neoforge/biome_modifier/add_cave_slime_island.json`.
+3. Welcome chapter: add the Silkworm (or String Mesh) reward, and a quest that teaches crook to silkworm to string.
+4. `anti.js`: update the pillar 1 comment, which states Tier 0 is a dark-room slime farm and not sieving. It is now the opposite.
+5. Quest text: every mention of the dark room goes. SF1 had a whole `A Dark Room` quest (PF #198 was about it under-explaining the 24-block rule); it is deleted, not reworded.
 
 ---
 
@@ -133,3 +197,8 @@ Carried from the retrospective's implications list, still undecided:
 3. Does stat breeding survive, and in what form? The maintainer's own poll went 7 of 13 for "No, its tedious," and D-1 makes frog stats a more load-bearing throughput lever, not less.
 4. What does each tier verb gate, given storage and power were both optional in SF1?
 5. Is multiplayer supported or tolerated?
+
+## Blockers found while scoping, not yet decided
+
+- **Skyblock Builder has no 26.x build.** Newest is 1.21.1 (21.1.34, 2026-08-06). Ex Deorum (4.0 for 26.1.2, 5.x for 26.2), FTB Quests (26.1.2.3) and KubeJS (8.0.4, 26.1.2 beta) have all made the jump; Skyblock Builder has not. This is the same mod that forced SF1's rollback from 1.21.11 to 1.21.1, and it is the one dependency with no substitute in the current list. The fallback is a datapack void world preset plus a structure-placed starter island, which drops the dependency but also drops `/skyblock create` team islands. Needs a decision.
+- **26.1.2 is the only version the whole stack shares.** KubeJS and FTB Quests have nothing for 26.2, and PF 2.x targets 26.1.2. So 26.2 is off the table until that changes, whatever happens with worldgen.
