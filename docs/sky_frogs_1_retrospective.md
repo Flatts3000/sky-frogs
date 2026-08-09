@@ -130,6 +130,10 @@ This is not automatically a fault. The pack's stated goal was *"an intro into Pr
 
 Froglights are one item id carrying a `slime_variant` component. Iron Furnaces is component-blind, which produced three distinct failures: froglights refusing to enter the furnace at all (fixed by restarting the game, which players had to be told individually, over and over, for a month), froglights being converted to the furnace's current variant, and an outright duplication exploit. Filed as [#220] and [#225], reported upstream, never fixed there.
 
+**Resolved 2026-08-09, and the resolution changes the lesson.** Both surviving faces were root-caused by decompiling the mod, and both are the same defect: item identity treated as item id. `split` pools every Froglight into one group and averages the counts, so variants convert into each other (the total is conserved, which is why it read as a dupe to some reporters and as a conversion to others). `hasRecipe` memoises smeltability in a **static `Map<Item, Boolean>`**, so a single variant-less Froglight - the kind Building Gadgets' Copy-Paste Gadget produces - caches `false` against the Froglight item and locks every variant out of every furnace until the process restarts. That is the month of telling people to restart, and it was never a mystery, just unread code.
+
+Both are patched in Productive Frogs 1.25.3 and 1.25.4 as gated mixins. The lesson for the sequel is therefore **not** only "screen mods for component-blind slot handling" - it is that when a bundled mod mishandles our item and its author is inactive, patching it from our own mod is a legitimate, testable option that we now have the infrastructure for. The screening lesson still stands; it is just no longer the only move.
+
 The support cost was enormous and entirely repetitive. The same exchange happens in the transcript at least eight times: player reports it, someone says restart, it works.
 
 This is a general lesson, not an Iron Furnaces one. It is already in the repo memory as a rule: screen mods for component-blind slot handling. SF2 inherits the same item model.
