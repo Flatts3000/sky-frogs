@@ -1,13 +1,13 @@
 name = "Productive Frogs"
-filename = "productivefrogs-1.25.3.jar"
+filename = "productivefrogs-1.25.4.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "c8033c3bf7032d05f08e469424340a75a8a965bc"
+hash = "aa7b42ab06047315a1c693dcae4443f9b0f2e8e2"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 8610007
+file-id = 8610896
 project-id = 1552728

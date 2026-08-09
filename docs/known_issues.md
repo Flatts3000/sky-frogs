@@ -24,6 +24,26 @@ Entries are kept after they are fixed: the diagnosis is the valuable part, and s
 
 ## Resolved
 
+### 🟣 Iron Furnaces refused to accept Froglights at all until a restart (upstream bug, patched in PF)
+**Symptom.** No Froglight would go into any Iron Furnaces furnace, by hand or by pipe, while a vanilla furnace took them fine. Restarting the game fixed it, until it came back. The pack's single most-reported problem: three CurseForge reporters in July 2026 alone (user_qqgd4audept0i3qy, Larronos, user_w647p447peuez0hl) on top of 28 Discord messages from 17 people over the pack's first two months, every one of whom was told to restart.
+
+**Root cause.** `BlockIronFurnaceTileBase.hasRecipe` memoises smeltability in `ModSetup.HAS_RECIPE`, a **static `Map<Item, Boolean>`** that lives for the whole process:
+
+```java
+Item item = stack.getItem();
+return ModSetup.HAS_RECIPE.computeIfAbsent(item, value -> ...isPresent());
+```
+
+`computeIfAbsent` means the first stack of an item ever tested decides the answer for every later stack of that item. Froglight smelting recipes match on the `slime_variant` **component**, so smeltability is a property of the component, not the item. A **variant-less** Froglight genuinely has no recipe, caches `false` against the Froglight item, and from that moment locks every variant out of every Iron Furnace until the process ends.
+
+**Where the variant-less Froglights came from.** Mostly [#249](https://github.com/Flatts3000/sky-frogs/issues/249): Building Gadgets' Copy-Paste Gadget does not copy block-entity data, so pasted Froglights lose their variant. That issue was quietly the trigger for this one. The creative tab is the other source.
+
+That explains every part of the report that made it look unfalsifiable - only Iron Furnaces furnaces affected, restarting fixes it, and it seems random because it depends entirely on which Froglight that session's furnace saw first.
+
+**Fix.** **Productive Frogs 1.25.4**: component-carrying stacks bypass the cache and ask the recipe manager directly; everything else keeps Iron Furnaces' original cached path, so the optimisation survives and plain items are untouched. `compat.ironFurnacesRecipeCacheFix`. Pinned in pack v1.6.2. Same root cause as the entry below - item identity treated as item id - both documented in PF's [ironfurnaces_component_fixes.md](https://github.com/Flatts3000/productive-frogs/blob/mc-1.21.1/docs/ironfurnaces_component_fixes.md).
+
+**Standing obligation.** Same as below: the patch fails open by design, so re-verify on any Iron Furnaces bump.
+
 ### 🟣 Iron Furnaces auto-split converted one Froglight variant into another (upstream bug, patched in PF)
 **Symptom.** With **auto-split** on in a factory Iron Furnace, Froglights fed in from a drawer or network came out as a different variant. Reported by **abyssquidd** (#225, v1.4.3, Functional Storage drawer -> factory furnace) and, as "infinite froglight", by **millllehzh** (#220).
 
@@ -35,7 +55,7 @@ Entries are kept after they are fixed: the diagnosis is the valuable part, and s
 
 **Fix.** Upstream [Qelifern/IronFurnaces#229](https://github.com/Qelifern/IronFurnaces/issues/229) is open and unanswered with their last commit predating the report, so **Productive Frogs 1.25.3** ships a mixin that changes the one comparison and reproduces the rest of the algorithm exactly, so a furnace holding a single item type is unchanged. Applied only when `ironfurnaces` is loaded, non-fatal on failure, switchable via `compat.ironFurnacesAutoSplitFix`. Pinned in pack v1.6.2.
 
-**Standing obligation.** The patch **fails open on purpose** - if a future Iron Furnaces reshapes `split`, it stops applying rather than crashing, which means a broken patch is silent. On any Iron Furnaces bump, check the log for `Applied the data-component fix to Iron Furnaces factory auto-split`. Its absence means unpatched. (PF `docs/ironfurnaces_autosplit_fix.md`.)
+**Standing obligation.** The patch **fails open on purpose** - if a future Iron Furnaces reshapes `split`, it stops applying rather than crashing, which means a broken patch is silent. On any Iron Furnaces bump, check the log for `Applied the data-component fix to Iron Furnaces factory auto-split`. Its absence means unpatched. (PF `docs/ironfurnaces_component_fixes.md`.)
 
 **Still open: #220's duplication face.** `split` conserves count, so it cannot produce "endless stacks with the drawer at 0". Either that report is this same conversion read as a dupe, or it is a separate defect in the storage layer's extraction of component items. Needs a repro before it can be closed.
 

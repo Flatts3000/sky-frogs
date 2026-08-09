@@ -6,6 +6,17 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ### Fixed
 
+- **Iron Furnaces takes your Froglights again.** Some players found that no
+  Froglight would go into an Iron Furnace at all, by hand or by pipe, while a
+  vanilla furnace took them fine, and that restarting the game fixed it until it
+  came back. Iron Furnaces remembers whether an item can be smelted in a list
+  keyed by the item, and every Froglight variant is the same item, so the first
+  Froglight a furnace ever saw decided the answer for all of them until the game
+  closed. A Froglight with no variant on it, the kind a Copy-Paste Gadget makes,
+  has nothing to smelt into, and one of those was enough to lock out every other
+  Froglight for the rest of the session. Froglights are now asked about one at a
+  time. Reported on CurseForge by **user_qqgd4audept0i3qy**, **Larronos** and
+  **user_w647p447peuez0hl**, and on Discord by more people than we can list.
 - **Iron Furnaces no longer turns one Froglight variant into another.** If you
   ran Froglights through a factory Iron Furnace with **auto-split** switched on,
   the furnace treated every Froglight as the same item and levelled the counts
