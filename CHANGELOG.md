@@ -4,6 +4,34 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+### Fixed
+
+- **Iron Furnaces no longer turns one Froglight variant into another.** If you
+  ran Froglights through a factory Iron Furnace with **auto-split** switched on,
+  the furnace treated every Froglight as the same item and levelled the counts
+  across its input slots. Each slot kept its own variant, so a furnace holding
+  64 of one Froglight and 1 of another came out holding 32 and 33. Your total
+  never changed, which is why nothing ever looked wrong; what changed was which
+  variant you owned. It has been in the pack since v1.4.3, and it ran on its
+  own, in either direction - you could lose a stack of Nether Star Froglights or
+  mint one. Anything storing its identity the way a Froglight does was affected
+  the same way. This is Iron Furnaces' bug, reported to them and still open, so
+  the fix ships in Productive Frogs instead: slots are now matched on variant as
+  well as item. A furnace holding one variant behaves exactly as it always did.
+  Thanks to **abyssquidd** (#225) and **millllehzh** (#220) for the reports.
+- **Slimes appear in the pen with your frogs instead of on top of its wall.** A
+  Slime Milk source looked for something solid beside it and put the slime
+  there, so in any pen with a wall or a raised rim next to the milk, slimes
+  landed outside the enclosure, out of reach of the frogs, and could hop away.
+- **A milk source spreads its slimes around the pool** instead of stacking every
+  one of them in the same square, and will not drop them over open air, so a
+  pool built out over a ledge stops feeding slimes to the void.
+
+### Changed
+
+- Productive Frogs 1.25.2 -> **1.25.3** ("Sorting It Out"), which carries all
+  three fixes above.
+
 ## [1.6.1] - 2026-08-06
 
 A hotfix for the mod that builds the island, and six others brought up to current.

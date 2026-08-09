@@ -18,11 +18,27 @@ Entries are kept after they are fixed: the diagnosis is the valuable part, and s
 
 ## Open
 
-**None.** Every issue below has shipped a fix; 🟣 marks one still awaiting in-game verification. New bugs are filed as [GitHub issues](https://github.com/Flatts3000/sky-frogs/issues) first (see [`github_issues_best_practices.md`](./github_issues_best_practices.md)); they earn an entry here once the root cause is understood, so the ledger records the diagnosis rather than duplicating issue state.
+**None.** Every issue below has shipped a fix; 🟣 marks those still awaiting in-game verification. New bugs are filed as [GitHub issues](https://github.com/Flatts3000/sky-frogs/issues) first (see [`github_issues_best_practices.md`](./github_issues_best_practices.md)); they earn an entry here once the root cause is understood, so the ledger records the diagnosis rather than duplicating issue state.
 
 ---
 
 ## Resolved
+
+### 🟣 Iron Furnaces auto-split converted one Froglight variant into another (upstream bug, patched in PF)
+**Symptom.** With **auto-split** on in a factory Iron Furnace, Froglights fed in from a drawer or network came out as a different variant. Reported by **abyssquidd** (#225, v1.4.3, Functional Storage drawer -> factory furnace) and, as "infinite froglight", by **millllehzh** (#220).
+
+**Root cause.** `BlockIronFurnaceTileBase.split` levels the factory input slots by pooling every slot holding "the same item" and averaging the counts, and it decides "the same item" with `stackA.getItem() != stackB.getItem()` - item id only, never components. Every Froglight variant is the single id `productivefrogs:configurable_froglight` carrying its variant in a `slime_variant` component, so the furnace pooled variants that are not the same thing and wrote the averaged counts back into slots that each kept their own variant. 64 of one variant beside 1 of another became 32 and 33.
+
+**The total count is conserved**, which is the whole reason it went unnoticed for months: it is not duplication, it is a silent 1:1 converter running unattended, from the cheapest Froglight a player can farm to the most expensive. Every other path in that class (auto-input, auto-output, internal insert) uses `isSameItemSameComponents` correctly; `split` is the outlier, and it is a regression of Iron Furnaces' own #147, which fixed the same behaviour for 1.19.2 NBT in 2023 before 1.21 replaced NBT with data components.
+
+**Why it could not be fixed pack-side.** The corruption happens inside a block-entity tick. Iron Furnaces exposes no auto-split config, and the only lever a pack has is deleting the Factory augment (`ironfurnaces:augment_factory`), since `split` is only ever called inside the `isFactory()` branch - that removes the feature rather than the bug.
+
+**Fix.** Upstream [Qelifern/IronFurnaces#229](https://github.com/Qelifern/IronFurnaces/issues/229) is open and unanswered with their last commit predating the report, so **Productive Frogs 1.25.3** ships a mixin that changes the one comparison and reproduces the rest of the algorithm exactly, so a furnace holding a single item type is unchanged. Applied only when `ironfurnaces` is loaded, non-fatal on failure, switchable via `compat.ironFurnacesAutoSplitFix`. Pinned in pack v1.6.2.
+
+**Standing obligation.** The patch **fails open on purpose** - if a future Iron Furnaces reshapes `split`, it stops applying rather than crashing, which means a broken patch is silent. On any Iron Furnaces bump, check the log for `Applied the data-component fix to Iron Furnaces factory auto-split`. Its absence means unpatched. (PF `docs/ironfurnaces_autosplit_fix.md`.)
+
+**Still open: #220's duplication face.** `split` conserves count, so it cannot produce "endless stacks with the drawer at 0". Either that report is this same conversion read as a dupe, or it is a separate defect in the storage layer's extraction of component items. Needs a repro before it can be closed.
+
 
 ### 🟢 World creation crashes on the KubeJS biome modifiers (empty override files on the player's disk, not a pack defect)
 R1shy reported (v1.5.3, Prism Launcher on Arch Linux, fresh install) that creating a world crashed with `Registry loading errors` on `productivefrogs:add_bog_slime_spawn`. [#242](https://github.com/Flatts3000/sky-frogs/issues/242). Kept here because the log signature is distinctive and this will be asked again.
