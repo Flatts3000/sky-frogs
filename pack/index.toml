@@ -1151,7 +1151,7 @@ metafile = true
 
 [[files]]
 file = "mods/ftb-quests-forge.pw.toml"
-hash = "bcb262cd4974aa8539786bfe5ff42c2c8737e595b34090131ada06cda5658f80"
+hash = "89cd21d579629da99be6871a9bc877424c89bb37f227868cf952b866efa8211a"
 metafile = true
 
 [[files]]
@@ -1246,12 +1246,12 @@ metafile = true
 
 [[files]]
 file = "mods/jade.pw.toml"
-hash = "e739b7355ab3cfba2e729f8f0b51eafc3d9c3afb19ee30ac7b311631610c5e66"
+hash = "4b0a995f7cfa19951ba585aa320a1f4ef1a755a38b608adcff2f9ddd156b195b"
 metafile = true
 
 [[files]]
 file = "mods/jei.pw.toml"
-hash = "151c6109fbf47211edc068a924e11c4b9a76dd60ce9e1561d467ac5d82dd698e"
+hash = "4002253b9c10dad252ac7c3b4234b47a8f9b2f73cda4bbc8b377ac6c039a4a61"
 metafile = true
 
 [[files]]
@@ -1521,7 +1521,7 @@ metafile = true
 
 [[files]]
 file = "mods/selene.pw.toml"
-hash = "dca676ab5504a3806cfecf8ec7ac11ae06f445983cca253cba9e0acaaa3aa00c"
+hash = "95516744b74966dd45af61f3e9952d1bed0642a3111afcf1788a15629c3ed614"
 metafile = true
 
 [[files]]
@@ -1541,27 +1541,27 @@ metafile = true
 
 [[files]]
 file = "mods/skyblock-builder.pw.toml"
-hash = "f72a924ea394f3dcb3beb68869e64d25fde8b7536d19f644c4b5f8d10835b098"
+hash = "529c9cc77f8b8a6fc82042fddcae97e93217044bd1ae2fd44fba58fe3160dcfb"
 metafile = true
 
 [[files]]
 file = "mods/sodium.pw.toml"
-hash = "3d615c32683131c6a98a7da16c28263c5ca5cf50e4f33029e8c72c3558bb362c"
+hash = "5efed8e315c9d513168cc37fe4d22eece810a05d5afc95582838654ab5398e36"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-backpacks.pw.toml"
-hash = "cad86315899c28529bf4c60b6d8d811a3aa7b73522af53b431735ad9880c8394"
+hash = "d8ee28d1255a77099af055c9ebde539288d1a2f2c15e5694c86dbce1b5b2f128"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
-hash = "401bbf58828c38fef76c86360b92971b90869acd4798e2ca600ac722c045f657"
+hash = "ccf70c25a7a851c789f96c5f68d27ca23f186abef9c563edff751a822f257f96"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-storage.pw.toml"
-hash = "dba8dfeee802daff55a243abffac047bfca794700abdf42b293ad83d28780516"
+hash = "8a4dade9bae6ffbe538800809ca37bef0df502cd3ae7dd6f891cc02e47d6c5cf"
 metafile = true
 
 [[files]]
@@ -1586,7 +1586,7 @@ metafile = true
 
 [[files]]
 file = "mods/supermartijn642s-core-lib.pw.toml"
-hash = "5af259a93fb78cc4116934a02d8870ca1884b587ecfc57a3c90afbf23204a805"
+hash = "2a564db6c642023d1c96df0313894c995787f20e73345db3ca5b13358cf13de9"
 metafile = true
 
 [[files]]

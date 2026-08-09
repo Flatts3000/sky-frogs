@@ -31,6 +31,9 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 - Productive Frogs 1.25.2 -> **1.25.3** ("Sorting It Out"), which carries all
   three fixes above.
+- Ten other mods brought up to current: FTB Quests, Skyblock Builder, Sodium,
+  Moonlight Lib, JEI, Jade, SuperMartijn642's Core Lib, and the Sophisticated
+  Core / Backpacks / Storage set.
 
 ## [1.6.1] - 2026-08-06
 
