@@ -4,6 +4,10 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+## [1.6.2] - 2026-08-09
+
+Iron Furnaces stops eating your Froglights, in both of the ways it was doing it.
+
 ### Fixed
 
 - **Iron Furnaces takes your Froglights again.** Some players found that no
