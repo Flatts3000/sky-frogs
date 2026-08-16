@@ -39,7 +39,7 @@ The loader pin in `pack/pack.toml` (`[versions] neoforge`) needs the same period
    ```sh
    python - <<'PY'
    import zipfile, tomllib, os, re
-   PIN = (21, 1, 244)   # keep in sync with pack/pack.toml
+   PIN = (21, 1, 248)   # keep in sync with pack/pack.toml
    MODS = r"C:\Users\User\curseforge\minecraft\Instances\Sky Frogs\mods"
    for jar in sorted(f for f in os.listdir(MODS) if f.endswith(".jar")):
        try:

@@ -1,7 +1,7 @@
 # Quest coverage audit: Productive Frogs features vs Sky Frogs quests
 
 **Date:** 2026-07-24 (audit), reviewed 2026-07-25
-**PF baseline:** audited against the `1.25.0` ("Second Helpings") feature set while the pin was still `1.24.6`. Both 1.25.0 additions were built during that bump and the pin is now `1.25.2`; 1.25.1 and 1.25.2 added no new features, so the audit still holds. The "priority calls" section below is kept as the record of what was decided and why - it is history, not an open to-do list.
+**PF baseline:** audited against the `1.25.0` ("Second Helpings") feature set while the pin was still `1.24.6`. Both 1.25.0 additions were built during that bump and the pin is now `1.25.4`; 1.25.1 through 1.25.4 added no new features (a Wither Altar recipe fix, slime placement fixes, and the two Iron Furnaces compat mixins), so the audit still holds. The "priority calls" section below is kept as the record of what was decided and why - it is history, not an open to-do list.
 **Method:** the audit spine is Productive Frogs' own in-game guide entries plus its item/block registry (`PFItems.java`, `PFBlocks.java`) - the mod's canonical feature surface. Each feature was cross-referenced against every task, reward, and icon in `pack/config/ftbquests/quests/chapters/*.snbt` and the titles in `lang/en_us.snbt`. "Quested" means a dedicated quest tasks or teaches the feature; an icon-only appearance without a teaching quest does not count.
 
 ---

@@ -1,6 +1,6 @@
 # Pack Metadata
 
-> **Status:** DRAFT - non-canonical. Slugs, version scheme, channel choices, and branding direction are all proposals, not decisions.
+> **Status:** Current for everything that shipped. The slug, the CurseForge project id, the CurseForge-only channel, and the SemVer scheme are all settled and in use - the pack has been live since v1.0.0 (2026-06-14). What is still a proposal is the **asset spec**: the branding gallery and the Master Frog art are open post-1.0 items, and [`branding.md`](./branding.md) marks which parts of that are fixed.
 
 ## Identity
 

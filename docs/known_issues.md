@@ -18,7 +18,31 @@ Entries are kept after they are fixed: the diagnosis is the valuable part, and s
 
 ## Open
 
-**None.** Every issue below has shipped a fix; 🟣 marks those still awaiting in-game verification. New bugs are filed as [GitHub issues](https://github.com/Flatts3000/sky-frogs/issues) first (see [`github_issues_best_practices.md`](./github_issues_best_practices.md)); they earn an entry here once the root cause is understood, so the ledger records the diagnosis rather than duplicating issue state.
+Three, all root-caused and all owned by another mod. New bugs are filed as [GitHub issues](https://github.com/Flatts3000/sky-frogs/issues) first (see [`github_issues_best_practices.md`](./github_issues_best_practices.md)); they earn an entry here once the root cause is understood, so the ledger records the diagnosis rather than duplicating issue state.
+
+### 🟡 A scooped Slime in a Bucket cannot complete the six Slime-in-a-Bucket quests
+
+Six quests take a Slime in a Bucket with `match_components: "strict"` against exactly `{Category, Variant}`. A **crafted** bucket carries exactly those two keys. A **scooped** one carries more: PF calls `Bucketable.saveDefaultDataToBucketTag` first, which writes `Health` unconditionally (plus `NoAI` / `Silent` / `NoGravity` / `Invulnerable` when set), and only then appends `Category` + `Variant`. Strict matching is exact map equality, so the scooped bucket never matches.
+
+No pack-side setting fixes it: `fuzzy` compares whole components too and fails identically, and `none` would let any slime bucket satisfy the iron quest. The quest text for **A Bucket of Ender Pearl Slime** documents the by-hand scoop route, so the pack currently tells players to do the thing that cannot complete the quest.
+
+**Workaround:** craft the bucket rather than scooping one. **Tracked as [#247](https://github.com/Flatts3000/sky-frogs/issues/247), upstream [productive-frogs#357](https://github.com/Flatts3000/productive-frogs/issues/357).** Reported on Discord by Sam Gomez.
+
+### 🔵 The Copy-Paste Gadget pastes Froglights with no variant
+
+Copying a build containing Froglights and pasting it produces variant-less Configurable Froglights. A placed Froglight keeps its variant in a **block entity** (`ConfigurableFroglightBlockEntity`), and Building Gadgets 2 copies block states, not block-entity data, so the variant is dropped on paste.
+
+Worth knowing because a variant-less Froglight is not a harmless cosmetic loss: it is the item that used to poison Iron Furnaces' smeltability cache and lock out every other Froglight for the session (see the first Resolved entry below, fixed in PF 1.25.4). The paste itself is still lossy.
+
+**Tracked as [#249](https://github.com/Flatts3000/sky-frogs/issues/249).** No upstream issue is filed yet.
+
+### 🔵 Three Supplementaries cutting-board recipes fail to parse
+
+Every world load logs three `RecipeManager` errors: `supplementaries:integration/lapis_bricks_salvaging_fd`, `ash_bricks_salvaging_fd` and `quiver_fd`. Their `farmersdelight:cutting` results are written in the pre-1.21 shape (`{"item": ...}`) where MC 1.21.1's ItemStack codec wants `{"id": ...}` - and the same jar uses the correct shape in its other Farmer's Delight recipes, so it is a slip rather than a version mismatch. Farmer's Delight 1.3.2 is the newest 1.21.1 build; nothing accepts these.
+
+Effect: three cutting-board salvage routes do not exist (saddle to leather, lapis bricks to lapis, ash bricks to ash brick), plus four red ERROR lines in every log. Nothing in the pack references them. **Supplementaries 3.8.8 already shipped one of the three broken in v1.6.2**; 3.8.10 added the other two.
+
+**Tracked as [#278](https://github.com/Flatts3000/sky-frogs/issues/278).** Found by the v1.7.0 launch test.
 
 ---
 

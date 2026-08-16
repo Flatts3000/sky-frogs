@@ -137,7 +137,7 @@ So it is a manual Authors Console step after each release (the workflow prints i
 
 Verify with `python tools/check_server_pack_flag.py` (no API key needed - it reads `hasServerPack` off the CF website's own v1 API). Exit 0 = typed, 1 = not.
 
-**Backlog:** every file from `v0.1.0` through `v1.4.4` (29 published, all of them) is untyped - the flag was never known about, so it was never set. The 1.4.x line is what matters for current players; older files can stay as-is.
+**Backlog (audited 2026-08-16, `--all`):** 36 files published, **8 typed** - every release from `v1.4.4` to `v1.6.2`, which is when the flag became part of the release routine. The other 28 are untyped: `v1.4.3` back to `v0.8.0` have a server pack attached but not typed, and `v0.7.2` and older have no server pack at all, from before the pipeline built one. Only the current line matters to a host, so the old files can stay as they are.
 
 ## Cross-promotion / discoverability
 
