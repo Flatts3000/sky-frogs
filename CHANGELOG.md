@@ -4,6 +4,10 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+## [1.7.0] - 2026-08-16
+
+Shaders load now, and the mod list is current again.
+
 ### Added
 
 - **Shaders work now.** The pack ships Iris, so the Shader Packs button is in
