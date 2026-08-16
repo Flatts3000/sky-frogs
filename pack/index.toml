@@ -891,7 +891,7 @@ metafile = true
 
 [[files]]
 file = "mods/balm.pw.toml"
-hash = "381f38bf917d9b1030ba3b28b7abfb55fe1ecc17cb93ef34f83b4246bb17c9a5"
+hash = "48ccf754257a1d140c12e4cee3bd7901392023fcd5a3fc961b7275448459fe73"
 metafile = true
 
 [[files]]
@@ -986,7 +986,7 @@ metafile = true
 
 [[files]]
 file = "mods/construction-sticks.pw.toml"
-hash = "2ba745596551b094106347e9a5898545c11eed25dd28099afd8b28a1c0b87a91"
+hash = "f22871063cbfb6a6220cb82fa4a8b92e7659cc5c9f30987e8eb001fbb2446970"
 metafile = true
 
 [[files]]
@@ -1076,7 +1076,7 @@ metafile = true
 
 [[files]]
 file = "mods/fancymenu.pw.toml"
-hash = "cf6a9b2404ca1e4bcd02f232cc3551024be33b83940ec308aacd00403c1e7959"
+hash = "6786d683ab65ff8a8b69a95215183ce5e2090fc13afa5826b438fc775c2116b9"
 metafile = true
 
 [[files]]
@@ -1151,7 +1151,7 @@ metafile = true
 
 [[files]]
 file = "mods/ftb-quests-forge.pw.toml"
-hash = "89cd21d579629da99be6871a9bc877424c89bb37f227868cf952b866efa8211a"
+hash = "e08ffd391c473a9b108eb5d4033fe511560155b6243033e776caf8d56e6e9b53"
 metafile = true
 
 [[files]]
@@ -1171,7 +1171,7 @@ metafile = true
 
 [[files]]
 file = "mods/ftb-xmod-compat.pw.toml"
-hash = "6a76a2faafbca6e5743c1907e5acf878b0ef75c29807452af8c2655439a1c085"
+hash = "01290866d0c405f7b637961b71b13f36124c897e1f4fc748951a3eaa671dd082"
 metafile = true
 
 [[files]]
@@ -1256,7 +1256,7 @@ metafile = true
 
 [[files]]
 file = "mods/jei.pw.toml"
-hash = "4002253b9c10dad252ac7c3b4234b47a8f9b2f73cda4bbc8b377ac6c039a4a61"
+hash = "047c8620059e1044e547a23cf239d8bcd182f1d9d0584131aec29df6f7c65d8b"
 metafile = true
 
 [[files]]
@@ -1286,7 +1286,7 @@ metafile = true
 
 [[files]]
 file = "mods/libx.pw.toml"
-hash = "5fae6a137e68aa9408d87d1dfc419d4450eec49c0c57c02a2d6756c3fca69a44"
+hash = "c7b8f88bd6fa21b1f6673e1b21e454fbd43583789b171b485ead28de4d8dea1e"
 metafile = true
 
 [[files]]
@@ -1526,7 +1526,7 @@ metafile = true
 
 [[files]]
 file = "mods/selene.pw.toml"
-hash = "95516744b74966dd45af61f3e9952d1bed0642a3111afcf1788a15629c3ed614"
+hash = "ddcc2fd889f5bd73c2b3c8c9f5b798cc26c0c5b6c068da264ffa44bb401a0cf7"
 metafile = true
 
 [[files]]
@@ -1556,17 +1556,17 @@ metafile = true
 
 [[files]]
 file = "mods/sophisticated-backpacks.pw.toml"
-hash = "d8ee28d1255a77099af055c9ebde539288d1a2f2c15e5694c86dbce1b5b2f128"
+hash = "41343a364eeff7106d903f2bb658b91ae8b0ce216ddba103e1be5edb1a27649f"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
-hash = "ccf70c25a7a851c789f96c5f68d27ca23f186abef9c563edff751a822f257f96"
+hash = "9ee0490b06b36ba9bff93af9f75493f3dd4e71a1ab8ce4ee778ee5fdb11eb49c"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-storage.pw.toml"
-hash = "8a4dade9bae6ffbe538800809ca37bef0df502cd3ae7dd6f891cc02e47d6c5cf"
+hash = "b523ab242b94170321935199b1e0a406df1982af891423b970acd10687c9103a"
 metafile = true
 
 [[files]]
@@ -1591,12 +1591,12 @@ metafile = true
 
 [[files]]
 file = "mods/supermartijn642s-core-lib.pw.toml"
-hash = "2a564db6c642023d1c96df0313894c995787f20e73345db3ca5b13358cf13de9"
+hash = "d50dfa866f719fe606d34bb81b0e466c1e6017878fa6b58b405e419ceaf9ee0d"
 metafile = true
 
 [[files]]
 file = "mods/supplementaries.pw.toml"
-hash = "842ffef1c69ad33d4b21f779399c46366009332a375a979ba19dd57e0e1e0162"
+hash = "247b8a745886ca6662f32c703bcd281788ea149df0d6108f74b4e1f8c521bf5b"
 metafile = true
 
 [[files]]
@@ -1621,7 +1621,7 @@ metafile = true
 
 [[files]]
 file = "mods/trash-cans.pw.toml"
-hash = "98796f38bc82aacfb155506a662df4f19a26e810962a1ca2337dd584718badcd"
+hash = "3cd7280f90ef9e2754cf2b6f45b749d1054c6348873a61044ce808dfe977c15a"
 metafile = true
 
 [[files]]

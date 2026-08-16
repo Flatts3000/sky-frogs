@@ -13,6 +13,16 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
   **Nferno**, and **Seeker** had already tried it against the pack with
   Complementary Reimagined and reported back that it worked.
 
+### Changed
+
+- Fourteen mods brought up to current: FTB Quests, JEI, Supplementaries,
+  Moonlight Lib, Balm, LibX, FancyMenu, FTB XMod Compat, Construction Sticks,
+  SuperMartijn642's Core Lib, Trash Cans, and the Sophisticated Core /
+  Backpacks / Storage set. Trash Cans is the one you will notice: its screen
+  now has a tab holding the last six things you threw away, so a misclick is
+  recoverable. Sodium stays on 0.8.12 again, the newer build is still a beta
+  and the renderer is not worth the gamble.
+
 ## [1.6.2] - 2026-08-09
 
 Iron Furnaces stops eating your Froglights, in both of the ways it was doing it.
