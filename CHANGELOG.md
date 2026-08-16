@@ -4,6 +4,15 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+### Added
+
+- **Shaders work now.** The pack ships Iris, so the Shader Packs button is in
+  Video Settings and anything you drop in `shaderpacks/` will load. No shader
+  pack comes with the pack, pick your own. It is client-side, so nobody on a
+  server has to install anything. Asked for on Discord by **kenny7** and
+  **Nferno**, and **Seeker** had already tried it against the pack with
+  Complementary Reimagined and reported back that it worked.
+
 ### Changed
 
 - Fourteen mods brought up to current: FTB Quests, JEI, Supplementaries,
