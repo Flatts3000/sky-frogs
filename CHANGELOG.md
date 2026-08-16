@@ -67,8 +67,11 @@ Iron Furnaces stops eating your Froglights, in both of the ways it was doing it.
 
 ### Changed
 
-- Productive Frogs 1.25.2 -> **1.25.3** ("Sorting It Out"), which carries all
-  three fixes above.
+- Productive Frogs 1.25.2 -> **1.25.4**, which carries all three fixes above:
+  1.25.3 ("Sorting It Out") for the auto-split variant swap and the two Slime
+  Milk placement fixes, 1.25.4 ("Second Opinion") for the furnace that refused
+  Froglights until a restart. (Corrected 2026-08-16: this line originally read
+  "-> 1.25.3", but the tag shipped 1.25.4.)
 - Nine other mods brought up to current: FTB Quests, Skyblock Builder,
   Moonlight Lib, JEI, Jade, SuperMartijn642's Core Lib, and the Sophisticated
   Core / Backpacks / Storage set. Sodium stays on 0.8.12; its newer build is a
