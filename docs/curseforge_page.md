@@ -84,7 +84,7 @@ The full mod list is in the repo at [`docs/mod_list.md`](https://github.com/Flat
 - **Ex Deorum** - crucibles, the porcelain bucket, rain-collection barrels (your second water source), and the End Cake (your ticket to the dragon). Resource sieving is disabled in this pack - Tier 0 runs on a dark-room slime farm - but a small builders' sieve lane drops decor flora and starter food seeds.
 - **FTB Quests + Library + Teams + Chunks + Ranks + Essentials** - questbook, claims, party support, server admin, `/home` / `/spawn`.
 - **JEI + Jade** - recipe browser and in-world block info. Standard quality-of-life.
-- **Sodium + Lithium + FerriteCore + ModernFix** - the standard performance stack.
+- **Sodium + Lithium + FerriteCore + ModernFix + Iris** - the standard performance stack, plus the shader loader.
 - **Mekanism** (Tier 2 verb) - power, Metallurgic Infuser, Enrichment Chamber.
 - **Powah! + Flux Networks** (the power-scaling arc) - Furnator to Reactor, wireless energy everywhere - and every Powah material plus Flux Dust is frog-farmable. On a void skyblock, the frog is the uranium mine.
 - **Just Dire Things + Building Gadgets 2** (Tier 3 verb) - utility / automation toys; the JDT goo and gadget chain.
@@ -106,6 +106,9 @@ Yes; that's the whole design. Drop a single JSON at `data/<namespace>/productive
 
 **Is automation possible?**
 Yes, but never required. Productive Frogs is hand-operated by design; the pack is completable with hoppers, water streams, and patience. Tech mods make it faster, not mandatory.
+
+**Do shaders work?**
+Yes. Iris ships with the pack, so put a shader pack in your instance's `shaderpacks/` folder and pick it under Options -> Video Settings -> Shader Packs. No shader pack is bundled, choose your own. It is client-side, so a server does not need it.
 
 **Server-friendly?**
 Yes. Each release ships a server pack alongside the client. Party support via FTB Teams, claims via FTB Chunks, `/home` and `/tpa` via FTB Essentials. Balance is single-player-tuned for now; multiplayer tuning is a later stretch goal.
