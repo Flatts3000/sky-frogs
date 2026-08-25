@@ -614,9 +614,9 @@
 	quest.70E0000000000026.quest_subtitle: "Serious FE."
 	quest.70E0000000000026.title: "The Uraninite Reactor"
 	quest.70E0000000000029.quest_desc: [
-		"&dFlux Dust&r comes from a Flux Networks ritual: &credstone&r dropped onto &8obsidian&r that sits on &8bedrock&r. Islands from this era of the pack have one bedrock block at bottom-center - dig down at spawn to find it."
+		"&dFlux Dust&r comes from a Flux Networks ritual: &credstone&r crushed between &8bedrock&r and &8obsidian&r. Islands from this era of the pack have one bedrock block at bottom-center - dig down at spawn to find it."
 		""
-		"Set obsidian on that block, toss redstone on top, then left-click the obsidian to compress it into dust. No bedrock handy? A crafting grid presses one dust from &credstone&r between two &8obsidian&r."
+		"Leave the block above the bedrock empty and put the &8obsidian&r one higher, so there is a gap between them. Toss &credstone&r into that gap, then left-click the obsidian. No bedrock handy? A crafting grid presses one dust from &credstone&r between two &8obsidian&r."
 		""
 		"The first dust primes your &cInfernal frog&r for the rest. Make &a4&r."
 	]
