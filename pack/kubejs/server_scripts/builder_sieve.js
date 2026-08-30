@@ -4,8 +4,8 @@
 // whole progression-bypass surface. This file reopens the builders' lane:
 // a manual oak sieve + string mesh over DIRT and MOSS, dropping BUILDING FLORA
 // (saplings, bamboo, flowers, garden plants) plus the VANILLA FOOD PLANTS that
-// have no other source here - the seed lane restored in #87/#91, and the
-// berries and mushrooms the #280 audit found unobtainable. Nothing here touches
+// have no reachable source here - the seed lane restored in #87/#91, and the
+// berries and mushrooms the #280 audit turned up. Nothing here touches
 // the frog spine: no ores, no gems, no mob drops, no progression mats.
 // "More than just oak" for builders - dirt is composter-cheap at Tier 0, moss
 // is a Bog frog resource.
@@ -106,10 +106,16 @@ ServerEvents.recipes(event => {
       // a sweet berry as its input, and sweet berries had none.
       ['minecraft:sweet_berries',      0.03],
       ['minecraft:glow_berries',       0.04],
-      // Mushrooms have NO upstream chance to copy - Ex Deorum only ever consumes
-      // them (compost, crucible, witch water) - so 0.05 is a pack decision. They
-      // were unobtainable outright: Farmer's Delight's colonies are worldgen and
-      // Botany Pots' mushroom crops are block-derived, both circular here.
+      // Mushrooms had exactly ONE path, and it is easy to miss: an Ex Deorum
+      // barrel of water with mycelium on top turns into witch water over 1700
+      // ticks and spits out red and brown mushrooms as byproducts. That is
+      // Bog-tier (mycelium is a Bog frog resource, same as moss), undiscoverable
+      // without reading the mod's data, and #270 proposes deleting the witch
+      // water recipes outright - which would take the mushrooms with them. This
+      // is a second path at the same tier, not a first one. Farmer's Delight's
+      // colonies are worldgen and Botany Pots' mushroom crops are block-derived,
+      // so both are circular here. Ex Deorum ships no mushroom SIEVE recipe, so
+      // 0.05 is a pack decision with no upstream chance to copy.
       ['minecraft:brown_mushroom',     0.05],
       ['minecraft:red_mushroom',       0.05],
       ['minecraft:flowering_azalea',   0.05],

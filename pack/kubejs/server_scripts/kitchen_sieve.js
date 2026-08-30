@@ -25,9 +25,14 @@
 //   under kubejs ids. This file only adds recipes; it crafts nothing.
 // - Recipe ids carry the source namespace because Mama's Herbs and Harvest and
 //   Farmer's Delight both register onion, rice, cabbage_seeds and tomato_seeds.
-// - Every chance sits at or below Ex Deorum's own seed rates (its dirt lane runs
-//   0.10 to 0.125). Each seed is a one-time unlock: plant it once and the crop
-//   re-drops its own seed, so the lane is a door, not an income stream.
+// - Every PER-ENTRY chance sits at or below Ex Deorum's own seed rates (its dirt
+//   lane runs 0.10 to 0.125), but read the BLOCK-level yield before tuning off
+//   that: a sieve action rolls every recipe on the input, so 62 entries average
+//   ~3.96 drops per mud against the dirt lane's ~1.73 across 21. That is
+//   deliberate. Each seed is a one-time unlock - plant it once and the crop
+//   re-drops its own seed - so the lane is a door, not an income stream, and it
+//   should open in a session rather than over a save. A stack of mud is about
+//   250 seeds and clears even a 0.03 sapling ~86% of the time.
 
 ServerEvents.recipes(event => {
   if (!Platform.isLoaded('exdeorum')) {

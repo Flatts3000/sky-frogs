@@ -87,15 +87,18 @@ ItemEvents.modifyTooltips(event => {
   ]
   meshes.forEach(id => event.add(id, [
     Text.red('⚠ Disabled in Sky Frogs'),
-    Text.gray('Only the String Mesh sifts here (decor flora).'),
+    Text.gray('Only the String Mesh sifts here (flora and crop seeds).'),
     Text.gray('Resources come from the frogs - build a slime farm.')
   ]))
 
-  // Shared header for the two live builders'-lane items so the copy can't drift.
+  // Shared header for the two live sieve items so the copy can't drift. This is
+  // the ONLY in-game signpost either lane has - neither is quested - so it has
+  // to name every input, mud included (#280).
   const builderSieveTooltip = [
     Text.green('The Builders\' Sieve'),
-    Text.gray('Sift dirt or moss for saplings, bamboo, and garden flora.'),
-    Text.gray('Decor only, manual only - resources still come from the frogs.')
+    Text.gray('Dirt and moss sift into saplings, flowers and garden flora.'),
+    Text.gray('Mud sifts into crop seeds.'),
+    Text.gray('Manual only - resources still come from the frogs.')
   ]
   event.add('exdeorum:string_mesh', builderSieveTooltip)
   event.add('exdeorum:oak_sieve', builderSieveTooltip)

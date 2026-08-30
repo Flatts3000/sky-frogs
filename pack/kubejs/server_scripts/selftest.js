@@ -38,13 +38,22 @@ const GOOD_FOOD_CANARIES = [
   'noodle_soup', 'squid_ink_pasta', 'baked_cod_stew'
 ]
 
-// Representative slice of the Kitchen Sieve's mud lane (kitchen_sieve.js, #280): the four
-// irregular id shapes (no _seeds suffix, the two sapling spellings) plus the vine-planting
-// grapes, which the sieve is the only source of. A Mama's Herbs and Harvest bump that
-// renames one would silently drop it from the lane with no error anywhere.
+// Every Kitchen Sieve (kitchen_sieve.js, #280) entry whose id does NOT follow the plain
+// <crop>_seeds shape, because those are the ones a Mama's Herbs and Harvest bump could
+// rename and silently drop from the lane with no error anywhere.
+//
+// oats and rice lead the list on purpose: each has a near-identical sibling (oats_item,
+// rice_item) that is the FOOD, not the seed, and the mod's own data is inconsistent about
+// which is which - oats_crop's fortune pool drops `oats` while rice_crop's drops
+// `rice_item`. Picking the wrong one of that pair ships an unplantable item that still
+// resolves, so Item.exists() alone would not catch it; these canaries at least pin the
+// ids we chose, and the pairing is re-checked by hand on a bump.
 const KITCHEN_SEED_CANARIES = [
+  'herbsandharvest:oats', 'herbsandharvest:rice',
   'herbsandharvest:corn_kernels', 'herbsandharvest:garlic_clove', 'herbsandharvest:pinto_beans',
   'herbsandharvest:grapes', 'herbsandharvest:thistle', 'herbsandharvest:sweet_potato',
+  'herbsandharvest:ginger_root', 'herbsandharvest:turmeric_root', 'herbsandharvest:peanuts',
+  'herbsandharvest:peas', 'herbsandharvest:onion',
   'herbsandharvest:avocado_fruit_sapling', 'herbsandharvest:cinnamon_sapling',
   'farmersdelight:rice', 'farmersdelight:onion'
 ]
