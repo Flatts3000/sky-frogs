@@ -4,6 +4,29 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+### Added
+
+- **Mud sifts into seeds.** Put mud in the oak sieve with a string mesh and you
+  get the food mods' seeds: 58 seeds and saplings from Mama's Herbs and Harvest,
+  plus Farmer's Delight's cabbage, tomato, onion and rice. None of them had a
+  source before this. Both mods hand their seeds out through structure chests
+  and wild crops, and a void skyblock generates neither, which is why the Good
+  Food crate kept giving you dishes you had no way to cook. Mud is dirt and a
+  water bottle, so the lane is open from day one. Each seed is a one-time find,
+  since the grown crop drops its own seed. Suggested by **Seeker**, who had
+  already built it as a datapack and handed it over, and backed by
+  **Nic_Knack819**.
+- **Berries and mushrooms sift from moss.** Checking that the seeds above
+  actually covered every recipe turned up sweet berries and glow berries, which
+  the pack had no way to get at all. Sweet berries now come off dirt and moss,
+  glow berries off moss. Mushrooms join them on moss for a different reason:
+  you could already get those, but only as a byproduct of turning a barrel of
+  water into witch water with mycelium on top, which is not something you find
+  without reading the mod's files. This was never only a cooking problem, it
+  also blocked mushroom stew, rabbit stew, suspicious stew and growing any of
+  them in a Botany Pot, since each of those wants a mushroom or a berry you
+  already own.
+
 ## [1.7.0] - 2026-08-16
 
 Shaders load now, and the mod list is current again.

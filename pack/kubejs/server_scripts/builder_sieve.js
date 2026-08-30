@@ -1,16 +1,22 @@
 // Sky Frogs - the Builders' Sieve (#76, suggested by Dergib on Discord).
 //
 // Pillar 1 (anti.js) kills Ex Deorum's DEFAULT sieving - ores, gems, seeds, the
-// whole progression-bypass surface. This file reopens exactly one curated lane:
-// a manual oak sieve + string mesh over DIRT and MOSS, dropping COSMETIC AND
-// BUILDING FLORA ONLY (saplings, bamboo, flowers, garden plants). Nothing here
-// touches the frog spine: no ores, no gems, no mob drops, no progression mats.
+// whole progression-bypass surface. This file reopens the builders' lane:
+// a manual oak sieve + string mesh over DIRT and MOSS, dropping BUILDING FLORA
+// (saplings, bamboo, flowers, garden plants) plus the VANILLA FOOD PLANTS that
+// have no reachable source here - the seed lane restored in #87/#91, and the
+// berries and mushrooms the #280 audit turned up. Nothing here touches
+// the frog spine: no ores, no gems, no mob drops, no progression mats.
 // "More than just oak" for builders - dirt is composter-cheap at Tier 0, moss
 // is a Bog frog resource.
 //
 // Mechanics notes:
-// - Only these string-mesh recipes exist; the other five meshes craft nothing
-//   and stay flagged in anti.js. The compressed sieve has no recipes at all.
+// - This file owns the HARDWARE: anti.js strips Ex Deorum's own oak sieve and
+//   string mesh crafts, and they are re-added below under kubejs ids. The
+//   kitchen lane (kitchen_sieve.js, #280) adds recipes against that same sieve
+//   and mesh, so do not remove either craft without checking there too.
+// - Only string-mesh recipes exist; the other five meshes craft nothing and
+//   stay flagged in anti.js. The compressed sieve has no recipes at all.
 // - The Mechanical Sieve block remains uncraftable (anti.js strips it): this
 //   lane is manual by design - it's decor, not an economy.
 // - Recipe shape mirrors Ex Deorum's own data (binomial result_amount, p =
@@ -70,16 +76,22 @@ ServerEvents.recipes(event => {
       // mod's own dirt defaults; re-added on player request (#87, bizarr0).
       ['exdeorum:grass_seeds',         0.10],
       // The default FOOD lane, restored by maintainer ruling 2026-06-06 at Ex
-      // Deorum's own chances. Food is not a frog resource - the farming economy
-      // is already open (Croptopia/Farmer's Delight) - so this bypasses nothing;
-      // it just gives Tier 0 islands a seed source besides luck.
+      // Deorum's own chances. Food is not a frog resource, so this bypasses
+      // nothing; it just gives Tier 0 islands a seed source besides luck.
+      // The vanilla seeds are the whole of it - the modded food seeds have
+      // their own lane over mud in kitchen_sieve.js (#280).
       ['minecraft:wheat_seeds',        0.125],
       ['minecraft:pumpkin_seeds',      0.10],
       ['minecraft:melon_seeds',        0.10],
       ['minecraft:beetroot_seeds',     0.10],
       ['minecraft:potato',             0.10],
       ['minecraft:carrot',             0.10],
-      ['minecraft:poisonous_potato',   0.05]
+      ['minecraft:poisonous_potato',   0.05],
+      // Sweet berries at Ex Deorum's own dirt chance. Nothing else in the pack
+      // grows them (#280 audit): Ex Deorum's defaults are off, no structure
+      // generates a bush, and Botany Pots' sweet_berry_bush is block-derived, so
+      // it needs a berry to plant a berry.
+      ['minecraft:sweet_berries',      0.05]
     ]],
     ['minecraft:moss_block', [
       // the garden lane
@@ -88,6 +100,24 @@ ServerEvents.recipes(event => {
       // blocks) - the wet plant in the wet lane, at Ex Deorum's own sand-sieve
       // chance. Vanilla growth takes water columns the island can build.
       ['minecraft:kelp',               0.10],
+      // The lush-cave food plants, all three at Ex Deorum's own moss chances
+      // (glow berries at its string-mesh value exactly). Same #280 audit: glow
+      // berries had one path in the whole pack, Mekanism's combiner, which takes
+      // a sweet berry as its input, and sweet berries had none.
+      ['minecraft:sweet_berries',      0.03],
+      ['minecraft:glow_berries',       0.04],
+      // Mushrooms had exactly ONE path, and it is easy to miss: an Ex Deorum
+      // barrel of water with mycelium on top turns into witch water over 1700
+      // ticks and spits out red and brown mushrooms as byproducts. That is
+      // Bog-tier (mycelium is a Bog frog resource, same as moss), undiscoverable
+      // without reading the mod's data, and #270 proposes deleting the witch
+      // water recipes outright - which would take the mushrooms with them. This
+      // is a second path at the same tier, not a first one. Farmer's Delight's
+      // colonies are worldgen and Botany Pots' mushroom crops are block-derived,
+      // so both are circular here. Ex Deorum ships no mushroom SIEVE recipe, so
+      // 0.05 is a pack decision with no upstream chance to copy.
+      ['minecraft:brown_mushroom',     0.05],
+      ['minecraft:red_mushroom',       0.05],
       ['minecraft:flowering_azalea',   0.05],
       ['minecraft:glow_lichen',        0.08],
       ['minecraft:vine',               0.08],
