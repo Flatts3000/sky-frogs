@@ -2,9 +2,11 @@
 //
 // Pillar 1 (anti.js) kills Ex Deorum's DEFAULT sieving - ores, gems, seeds, the
 // whole progression-bypass surface. This file reopens the builders' lane:
-// a manual oak sieve + string mesh over DIRT and MOSS, dropping COSMETIC AND
-// BUILDING FLORA ONLY (saplings, bamboo, flowers, garden plants). Nothing here
-// touches the frog spine: no ores, no gems, no mob drops, no progression mats.
+// a manual oak sieve + string mesh over DIRT and MOSS, dropping BUILDING FLORA
+// (saplings, bamboo, flowers, garden plants) plus the VANILLA FOOD PLANTS that
+// have no other source here - the seed lane restored in #87/#91, and the
+// berries and mushrooms the #280 audit found unobtainable. Nothing here touches
+// the frog spine: no ores, no gems, no mob drops, no progression mats.
 // "More than just oak" for builders - dirt is composter-cheap at Tier 0, moss
 // is a Bog frog resource.
 //
@@ -84,7 +86,12 @@ ServerEvents.recipes(event => {
       ['minecraft:beetroot_seeds',     0.10],
       ['minecraft:potato',             0.10],
       ['minecraft:carrot',             0.10],
-      ['minecraft:poisonous_potato',   0.05]
+      ['minecraft:poisonous_potato',   0.05],
+      // Sweet berries at Ex Deorum's own dirt chance. Nothing else in the pack
+      // grows them (#280 audit): Ex Deorum's defaults are off, no structure
+      // generates a bush, and Botany Pots' sweet_berry_bush is block-derived, so
+      // it needs a berry to plant a berry.
+      ['minecraft:sweet_berries',      0.05]
     ]],
     ['minecraft:moss_block', [
       // the garden lane
@@ -93,6 +100,18 @@ ServerEvents.recipes(event => {
       // blocks) - the wet plant in the wet lane, at Ex Deorum's own sand-sieve
       // chance. Vanilla growth takes water columns the island can build.
       ['minecraft:kelp',               0.10],
+      // The lush-cave food plants, all three at Ex Deorum's own moss chances
+      // (glow berries at its string-mesh value exactly). Same #280 audit: glow
+      // berries had one path in the whole pack, Mekanism's combiner, which takes
+      // a sweet berry as its input, and sweet berries had none.
+      ['minecraft:sweet_berries',      0.03],
+      ['minecraft:glow_berries',       0.04],
+      // Mushrooms have NO upstream chance to copy - Ex Deorum only ever consumes
+      // them (compost, crucible, witch water) - so 0.05 is a pack decision. They
+      // were unobtainable outright: Farmer's Delight's colonies are worldgen and
+      // Botany Pots' mushroom crops are block-derived, both circular here.
+      ['minecraft:brown_mushroom',     0.05],
+      ['minecraft:red_mushroom',       0.05],
       ['minecraft:flowering_azalea',   0.05],
       ['minecraft:glow_lichen',        0.08],
       ['minecraft:vine',               0.08],
