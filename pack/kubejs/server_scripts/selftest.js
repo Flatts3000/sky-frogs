@@ -38,6 +38,17 @@ const GOOD_FOOD_CANARIES = [
   'noodle_soup', 'squid_ink_pasta', 'baked_cod_stew'
 ]
 
+// Representative slice of the Kitchen Sieve's mud lane (kitchen_sieve.js, #280): the four
+// irregular id shapes (no _seeds suffix, the two sapling spellings) plus the vine-planting
+// grapes, which the sieve is the only source of. A Mama's Herbs and Harvest bump that
+// renames one would silently drop it from the lane with no error anywhere.
+const KITCHEN_SEED_CANARIES = [
+  'herbsandharvest:corn_kernels', 'herbsandharvest:garlic_clove', 'herbsandharvest:pinto_beans',
+  'herbsandharvest:grapes', 'herbsandharvest:thistle', 'herbsandharvest:sweet_potato',
+  'herbsandharvest:avocado_fruit_sapling', 'herbsandharvest:cinnamon_sapling',
+  'farmersdelight:rice', 'farmersdelight:onion'
+]
+
 function runSelfTest(source) {
   let pass = 0
   const fails = []
@@ -77,6 +88,18 @@ function runSelfTest(source) {
   GOOD_FOOD_CANARIES.forEach(food => {
     check('good food crate item exists: ' + food, () =>
       !Item.of('farmersdelight:' + food).isEmpty())
+  })
+
+  // 5. The Kitchen Sieve's seeds resolve as real items. The mud lane is the only source
+  //    for any of them on this skyblock, so a renamed id is a permanently missing crop
+  //    rather than a visible error. Skipped cleanly if the host mod is not loaded.
+  KITCHEN_SEED_CANARIES.forEach(seed => {
+    if (!Platform.isLoaded(seed.split(':')[0])) {
+      return
+    }
+    // Item.exists() is a silent registry lookup; Item.of() would log a parse error
+    // past the wrapper on the very id we expect to have gone missing (learned on #86).
+    check('kitchen sieve seed exists: ' + seed, () => Item.exists(seed))
   })
 
   fails.forEach(name => source.sendSystemMessage(Text.red('FAIL: ' + name)))

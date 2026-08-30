@@ -1,7 +1,7 @@
 // Sky Frogs - the Builders' Sieve (#76, suggested by Dergib on Discord).
 //
 // Pillar 1 (anti.js) kills Ex Deorum's DEFAULT sieving - ores, gems, seeds, the
-// whole progression-bypass surface. This file reopens exactly one curated lane:
+// whole progression-bypass surface. This file reopens the builders' lane:
 // a manual oak sieve + string mesh over DIRT and MOSS, dropping COSMETIC AND
 // BUILDING FLORA ONLY (saplings, bamboo, flowers, garden plants). Nothing here
 // touches the frog spine: no ores, no gems, no mob drops, no progression mats.
@@ -9,8 +9,12 @@
 // is a Bog frog resource.
 //
 // Mechanics notes:
-// - Only these string-mesh recipes exist; the other five meshes craft nothing
-//   and stay flagged in anti.js. The compressed sieve has no recipes at all.
+// - This file owns the HARDWARE: anti.js strips Ex Deorum's own oak sieve and
+//   string mesh crafts, and they are re-added below under kubejs ids. The
+//   kitchen lane (kitchen_sieve.js, #280) adds recipes against that same sieve
+//   and mesh, so do not remove either craft without checking there too.
+// - Only string-mesh recipes exist; the other five meshes craft nothing and
+//   stay flagged in anti.js. The compressed sieve has no recipes at all.
 // - The Mechanical Sieve block remains uncraftable (anti.js strips it): this
 //   lane is manual by design - it's decor, not an economy.
 // - Recipe shape mirrors Ex Deorum's own data (binomial result_amount, p =
@@ -70,9 +74,10 @@ ServerEvents.recipes(event => {
       // mod's own dirt defaults; re-added on player request (#87, bizarr0).
       ['exdeorum:grass_seeds',         0.10],
       // The default FOOD lane, restored by maintainer ruling 2026-06-06 at Ex
-      // Deorum's own chances. Food is not a frog resource - the farming economy
-      // is already open (Croptopia/Farmer's Delight) - so this bypasses nothing;
-      // it just gives Tier 0 islands a seed source besides luck.
+      // Deorum's own chances. Food is not a frog resource, so this bypasses
+      // nothing; it just gives Tier 0 islands a seed source besides luck.
+      // The vanilla seeds are the whole of it - the modded food seeds have
+      // their own lane over mud in kitchen_sieve.js (#280).
       ['minecraft:wheat_seeds',        0.125],
       ['minecraft:pumpkin_seeds',      0.10],
       ['minecraft:melon_seeds',        0.10],

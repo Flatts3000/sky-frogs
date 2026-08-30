@@ -4,6 +4,19 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+### Added
+
+- **Mud sifts into seeds.** Put mud in the oak sieve with a string mesh and you
+  get the food mods' seeds: 58 seeds and saplings from Mama's Herbs and Harvest,
+  plus Farmer's Delight's cabbage, tomato, onion and rice. None of them had a
+  source before this. Both mods hand their seeds out through structure chests
+  and wild crops, and a void skyblock generates neither, which is why the Good
+  Food crate kept giving you dishes you had no way to cook. Mud is dirt and a
+  water bottle, so the lane is open from day one. Each seed is a one-time find,
+  since the grown crop drops its own seed. Suggested by **Seeker**, who had
+  already built it as a datapack and handed it over, and backed by
+  **Nic_Knack819**.
+
 ## [1.7.0] - 2026-08-16
 
 Shaders load now, and the mod list is current again.

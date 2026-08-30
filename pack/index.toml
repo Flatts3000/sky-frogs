@@ -730,7 +730,7 @@ hash = "bfb25ece8d594a4a8d552f4206e94d4024d68ac2c7b117922d6a8e1a45f17920"
 
 [[files]]
 file = "kubejs/server_scripts/builder_sieve.js"
-hash = "0f3419cb4249975b1aa3fc48986f9332dd7f73f2bf9e0790b0689d68f60511cb"
+hash = "d5e1e0e5b70f0142eeb06dcfe2336a78bbd32ac3a0d17337108655428ec41b0d"
 
 [[files]]
 file = "kubejs/server_scripts/catalyst_recipes.js"
@@ -797,6 +797,10 @@ file = "kubejs/server_scripts/jdt_recipes.js"
 hash = "0df0fc9e6f4aa4aa4fa621d2431d63fd0ce85d717bce7708878cde811c687de6"
 
 [[files]]
+file = "kubejs/server_scripts/kitchen_sieve.js"
+hash = "41935f76d0e358b3d58bb4e22444a8b142da2b1795ea487a83e74b07389bd67c"
+
+[[files]]
 file = "kubejs/server_scripts/log_recipes.js"
 hash = "5c10c058739efefeed7b3d87b2adad36228609e5d2abae61a8466c3e49d41ee6"
 
@@ -814,7 +818,7 @@ hash = "fcd826f0045add7d9a2dc7c8b1cd4306787be6625e61c23d63db5d010cd9b504"
 
 [[files]]
 file = "kubejs/server_scripts/selftest.js"
-hash = "4507b563aacc7e8333ee7eb44062b5fe84cd8629dc61acd033b6c9058051bbd6"
+hash = "4a10ee5c8b4abc82e23782b3bccb7a276c25e9cdf5c1c9af25926b4e02ad1748"
 
 [[files]]
 file = "kubejs/server_scripts/slime_milk_tags.js"
