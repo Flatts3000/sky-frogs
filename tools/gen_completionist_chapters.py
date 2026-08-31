@@ -203,6 +203,16 @@ def load_allowlist() -> set[str]:
     return {l.strip() for l in open(ITEM_IDS, encoding="utf-8") if l.strip()}
 
 
+# Variants deliberately kept OUT of both census chapters (maintainer ruling).
+# `rainbow` (PF 1.26.0) is primed by the `c:dyes` TAG and carries no mod condition,
+# which makes it the first variant that is neither vanilla-by-primer_item nor owned
+# by a sister mod - so it would fall through both chapters unannounced. It is a dye
+# lane rather than a resource lane and gets no singularity either (see
+# tools/gen_singularities.py EXCLUDED), so it is held out here to match, pending a
+# ruling on whether the Completionist census should cover it.
+CENSUS_EXCLUDED = {"rainbow"}
+
+
 def variant_mod(data: dict) -> str | None:
     c = data.get("neoforge:conditions")
     if not c:
@@ -250,14 +260,37 @@ def main():
     variants = pf_jar.load_variants(pf_jar.find_jar() or sys.exit("no PF jar - run sync_instance.py"))
     allow = load_allowlist()
 
-    vanilla = sorted(n for n, d in variants.items() if pf_jar.is_vanilla(d))
+    # CENSUS_EXCLUDED is applied FIRST, to the whole roster, so the ruling holds no
+    # matter which bucket a variant would otherwise land in. Consulting it only where
+    # a variant is currently unclassifiable would make it a guard-silencer rather than
+    # an exclusion: give `rainbow` a `minecraft:` primer_item upstream and is_vanilla
+    # flips true, the guard never fires, and it is silently added to The Whole Pond and
+    # to the capstone's dependency list - the exact resurrection gen_singularities.py's
+    # EXCLUDED exists to prevent. Same hole via a later mod_loaded condition.
+    censused = {n: d for n, d in variants.items() if n not in CENSUS_EXCLUDED}
+
+    vanilla = sorted(n for n, d in censused.items() if pf_jar.is_vanilla(d))
     modded = {}
-    for n, d in sorted(variants.items()):
+    unclassified = []
+    for n, d in sorted(censused.items()):
         if pf_jar.is_vanilla(d):
             continue
         mod = variant_mod(d) or (d.get("primer_item") or ":").split(":")[0]
         if mod in LOADED_MODS:
             modded.setdefault(mod, []).append(n)
+        elif not mod:
+            # Neither vanilla (no minecraft: primer_item) nor attributable to a mod
+            # (no mod_loaded condition, no primer namespace) - so it lands in NEITHER
+            # census and vanishes without a word. That is the silent-roster-drift class
+            # this generator exists to catch, so refuse rather than drop.
+            unclassified.append(n)
+    if unclassified:
+        sys.exit(
+            "variant(s) %s belong to no census: not vanilla (no minecraft: primer_item) "
+            "and not attributable to a loaded mod (no mod_loaded condition). A PF bump "
+            "needs a ruling: give it a census home, or name it in CENSUS_EXCLUDED with "
+            "the reason. Nothing was written." % ", ".join(repr(n) for n in unclassified)
+        )
     for mod in modded:
         # A ranked column with an unranked newcomer would SILENTLY sort it to
         # the bottom, breaking the progression order (the exact playtest catch

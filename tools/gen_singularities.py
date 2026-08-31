@@ -41,7 +41,15 @@ LANG = os.path.join(REPO, "pack", "kubejs", "assets", "extendedcrafting", "lang"
 # farmable item-form (the primer items kelp / pointed_dripstone have NO source
 # on this skyblock, which made both singularities uncraftable and the Ultimate
 # with them). Excluded HERE so a PF pin bump cannot resurrect the pair.
-EXCLUDED = {"water", "lava"}
+# The DYE variant gets no singularity (maintainer ruling): `rainbow` (PF 1.26.0)
+# is a dye lane, not a resource lane - its Froglight has no smelt result at all,
+# it crafts into all sixteen vanilla dyes by grid SHAPE. There is no single item
+# to compress 1000 of, so a Rainbow Singularity has no coherent ingredient and
+# nothing to prove. It is skipped today only as a side effect of carrying a
+# `primer_tag` instead of a `primer_item` (is_vanilla reads it as modded); naming
+# it HERE makes the ruling explicit, so a PF release that gives it a vanilla
+# primer_item cannot silently pull it back in.
+EXCLUDED = {"water", "lava", "rainbow"}
 
 
 def find_jar(explicit):

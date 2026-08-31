@@ -833,6 +833,16 @@ ServerEvents.recipes(event => {
     ).id('kubejs:froglight_slime/quartz_enriched_iron')
   }
   event.shaped(
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:rainbow",Category:"BOG"}]',
+    ['BFF', 'FGF', 'SSS'],
+    {
+      B: 'minecraft:bucket',
+      F: 'minecraft:mossy_cobblestone',
+      S: 'productivefrogs:sweetslime',
+      G: 'productivefrogs:configurable_froglight[productivefrogs:slime_variant="productivefrogs:rainbow"]'
+    }
+  ).id('kubejs:froglight_slime/rainbow')
+  event.shaped(
     'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:redstone",Category:"CAVE"}]',
     ['BFF', 'FGF', 'SSS'],
     {

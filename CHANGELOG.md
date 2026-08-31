@@ -27,6 +27,40 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
   them in a Botany Pot, since each of those wants a mushroom or a berry you
   already own.
 
+### Changed
+
+- **Twenty-six mods moved up, Productive Frogs among them.** Routine currency
+  pass, nothing forced: JEI, KubeJS, FTB Quests and Teams, Sophisticated
+  Core/Storage/Backpacks, Supplementaries and Moonlight, Sodium, ModernFix,
+  Farmer's Delight, Mama's Herbs and Harvest, Titanium, Skyblock Builder,
+  Torchmaster, Fusion, FancyMenu, Cable Tiers, Cable Facades, Apothic
+  Enchanting, Crafting Tweaks, Construction Sticks, Inventory Essentials and
+  GraveStone. Supplementaries takes the biggest step (3.8.10 to 3.9.6) and wants
+  Moonlight 3.5.2, which came along in the same pass. The set was booted on a
+  dedicated server before shipping: everything loaded, all 31 KubeJS server
+  scripts ran, no failed recipes.
+- **Productive Frogs 1.25.4 to 1.26.0, and there is a new frog product in it.**
+  Show a dye to a slime and it turns Rainbow. A Bog Frog that eats one drops a
+  Rainbow Froglight, and the shape you lay those out in on a crafting table
+  decides which of the sixteen dyes you get - one on its own is white, two side
+  by side is light gray, three in a row is red, on through the set. Every shape
+  pays the same per Froglight, so the deep colours are not a worse deal, they
+  just arrive in bigger batches: one Froglight is eight dye, two is sixteen,
+  three is twenty-four. JEI lists all sixteen shapes. There is one crafting
+  recipe for it on the pack side, the usual Rainbow Froglight to Slime in a
+  Bucket, on mossy cobblestone like the rest of the Bog chain.
+- **The Rainbow Froglight gets no Singularity.** Every other Froglight smelts
+  down to one item, which is the thing the Quantum Compressor asks a thousand of.
+  This one does not smelt at all - it crafts into dyes - so there is nothing to
+  compress and it stays out. Same call as water and lava. It is out of the
+  Completionist census for now too, which is a decision that can go the other
+  way later.
+- Productive Frogs also tidied the Virtual Terrarium's window: the frog in the
+  dome is now drawn in its own species colour, with a slime beside it in the
+  colour of whatever it is currently eating, and no slime when it is idle. A
+  glance at the glass now tells you what the machine is and whether it is
+  running.
+
 ## [1.7.0] - 2026-08-16
 
 Shaders load now, and the mod list is current again.
