@@ -203,6 +203,16 @@ def load_allowlist() -> set[str]:
     return {l.strip() for l in open(ITEM_IDS, encoding="utf-8") if l.strip()}
 
 
+# Variants deliberately kept OUT of both census chapters (maintainer ruling).
+# `rainbow` (PF 1.26.0) is primed by the `c:dyes` TAG and carries no mod condition,
+# which makes it the first variant that is neither vanilla-by-primer_item nor owned
+# by a sister mod - so it would fall through both chapters unannounced. It is a dye
+# lane rather than a resource lane and gets no singularity either (see
+# tools/gen_singularities.py EXCLUDED), so it is held out here to match, pending a
+# ruling on whether the Completionist census should cover it.
+CENSUS_EXCLUDED = {"rainbow"}
+
+
 def variant_mod(data: dict) -> str | None:
     c = data.get("neoforge:conditions")
     if not c:
@@ -252,12 +262,26 @@ def main():
 
     vanilla = sorted(n for n, d in variants.items() if pf_jar.is_vanilla(d))
     modded = {}
+    unclassified = []
     for n, d in sorted(variants.items()):
         if pf_jar.is_vanilla(d):
             continue
         mod = variant_mod(d) or (d.get("primer_item") or ":").split(":")[0]
         if mod in LOADED_MODS:
             modded.setdefault(mod, []).append(n)
+        elif not mod and n not in CENSUS_EXCLUDED:
+            # Neither vanilla (no minecraft: primer_item) nor attributable to a mod
+            # (no mod_loaded condition, no primer namespace) - so it lands in NEITHER
+            # census and vanishes without a word. That is the silent-roster-drift class
+            # this generator exists to catch, so refuse rather than drop.
+            unclassified.append(n)
+    if unclassified:
+        sys.exit(
+            "variant(s) %s belong to no census: not vanilla (no minecraft: primer_item) "
+            "and not attributable to a loaded mod (no mod_loaded condition). A PF bump "
+            "needs a ruling: give it a census home, or name it in CENSUS_EXCLUDED with "
+            "the reason. Nothing was written." % ", ".join(repr(n) for n in unclassified)
+        )
     for mod in modded:
         # A ranked column with an unranked newcomer would SILENTLY sort it to
         # the bottom, breaking the progression order (the exact playtest catch
