@@ -36,8 +36,8 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
   Torchmaster, Fusion, FancyMenu, Cable Tiers, Cable Facades, Apothic
   Enchanting, Crafting Tweaks, Construction Sticks, Inventory Essentials and
   GraveStone. Supplementaries takes the biggest step (3.8.10 to 3.9.6) and wants
-  Moonlight 3.5.2, which came along in the same pass. The whole set was booted
-  on a dedicated server before shipping: every mod loaded, all 31 KubeJS server
+  Moonlight 3.5.2, which came along in the same pass. The set was booted on a
+  dedicated server before shipping: everything loaded, all 31 KubeJS server
   scripts ran, no failed recipes.
 - **Productive Frogs 1.25.4 to 1.26.0, and there is a new frog product in it.**
   Show a dye to a slime and it turns Rainbow. A Bog Frog that eats one drops a

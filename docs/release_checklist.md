@@ -34,7 +34,7 @@ The loader pin in `pack/pack.toml` (`[versions] neoforge`) needs the same period
 
    Skipping this makes the launch test worthless: it either fails for a reason unrelated to the pack, or passes on a loader you are not shipping. v1.5.3 shipped with no launch test at all because the instance was on 21.1.230 while the pack pinned 21.1.244.
 3. Watch for known-bad builds: **21.1.230** applied the `GuiGraphics` tooltip patch unreliably and crashed some fresh installs at load (Apotheosis `GuiGraphicsAccessor` / `tooltipStack`); fixed by 21.1.233 (v0.13.1). A crash that is fresh-install- or machine-specific and survives reinstalls is a loader-build smell - suspect the pin first.
-4. **After any `packwiz update`, check no mod now demands a newer loader than the pin.** A mod that declares `neoforge [X,)` above the pin does not warn, it refuses to load. Apotheosis has forced the pin up twice (21.1.230 -> 233, then 233 -> 244 for Apotheosis 8.6.0 / Apothic Attributes 2.10.1, both `[21.1.235,)`), so check it first. To sweep every jar in the synced instance:
+4. **After any `packwiz update`, check no mod now demands a newer loader than the pin.** A mod that declares `neoforge [X,)` above the pin does not warn, it refuses to load. Apotheosis forced the pin up twice (21.1.230 -> 233, then 233 -> 244 for Apotheosis 8.6.0 / Apothic Attributes 2.10.1, both `[21.1.235,)`), but it is **no longer the highest floor** - as of 2026-08-30 that is **Supplementaries 3.9.6 at `[21.1.247,]`**, then JEI 19.51 at `[21.1.238,)`, leaving the 21.1.248 pin one patch of headroom. So sweep every jar rather than checking one mod:
 
    ```sh
    python - <<'PY'
@@ -62,6 +62,12 @@ The loader pin in `pack/pack.toml` (`[versions] neoforge`) needs the same period
                    print(f"BLOCKER {jar} needs neoforge {dep['versionRange']}")
    PY
    ```
+
+5. **After a mod update that moved any client-side mod, launch the client once before tagging.** The dedicated-server boot test proves a great deal, but it structurally cannot see `side = "client"` jars - it never loads them - and it reads KubeJS's own "0 failed recipes" counter, which does not cover vanilla `RecipeManager` parse failures either. Two things only a client launch clears:
+   - **FancyMenu**, whose `config/fancymenu/customization/sky_frogs_title.txt` layout is written by a specific FancyMenu version. A layout the new build rejects does not crash anything; it silently drops the pack's branded title screen for every player.
+   - **The Sodium / Iris pairing**, which no jar's metadata gates (see [`mod_list.md`](./mod_list.md)) - so a Sodium bump that Iris has not caught up with is invisible to every static check.
+
+   Confirm the title screen renders with its wordmark and the Discord / GitHub buttons, then load a world and check the log for `RecipeManager` errors.
 
 ## 1. If this release includes a Productive Frogs pin bump
 

@@ -36,11 +36,22 @@ Worth knowing because a variant-less Froglight is not a harmless cosmetic loss: 
 
 **Tracked as [#249](https://github.com/Flatts3000/sky-frogs/issues/249).** No upstream issue is filed yet.
 
-### 🔵 Three Supplementaries cutting-board recipes fail to parse
+### 🔵 Six Supplementaries cutting-board recipes fail to parse
 
-Every world load logs three `RecipeManager` errors: `supplementaries:integration/lapis_bricks_salvaging_fd`, `ash_bricks_salvaging_fd` and `quiver_fd`. Their `farmersdelight:cutting` results are written in the pre-1.21 shape (`{"item": ...}`) where MC 1.21.1's ItemStack codec wants `{"id": ...}` - and the same jar uses the correct shape in its other Farmer's Delight recipes, so it is a slip rather than a version mismatch. Farmer's Delight 1.3.2 is the newest 1.21.1 build; nothing accepts these.
+Every world load logs a `RecipeManager` error per broken recipe. All six live under `supplementaries:integration/` and all six write their `farmersdelight:cutting` result in the pre-1.21 shape (`{"item": ...}`) where MC 1.21.1's ItemStack codec wants `{"id": ...}` - and the same jar uses the correct shape in its other Farmer's Delight recipes, so it is a slip rather than a version mismatch. Nothing accepts these; Farmer's Delight is pinned at 1.3.4 and its codec is vanilla's.
 
-Effect: three cutting-board salvage routes do not exist (saddle to leather, lapis bricks to lapis, ash bricks to ash brick), plus four red ERROR lines in every log. Nothing in the pack references them. **Supplementaries 3.8.8 already shipped one of the three broken in v1.6.2**; 3.8.10 added the other two.
+| recipe | salvage route lost |
+|---|---|
+| `lapis_bricks_salvaging_fd` | lapis bricks -> 4 lapis lazuli |
+| `ash_bricks_salvaging_fd` | ash bricks -> 4 ash brick |
+| `quiver_salvaging_fd` | quiver -> 2 leather |
+| `cannon_boat_oak_salvaging_fd` | cannon boat -> oak boat + cannon |
+| `cannon_raft_bamboo_salvaging_fd` | cannon raft -> bamboo raft + cannon |
+| `dispenser_minecart_salvaging_fd` | dispenser minecart -> minecart + dispenser |
+
+Nothing in the pack references any of them, so the only effect is the missing salvage routes and the red ERROR lines. **Supplementaries 3.8.8 shipped one broken in v1.6.2**, 3.8.10 added two more, and **3.9.6 added three more again** (the cannon boat, cannon raft and dispenser minecart rows) - so the count went three -> six on the v1.8.0 mod update, reversing part of the ERROR-line reduction the v1.7.0 notes tracked. The gating flags for the new three (`functional.cannon.cannon_boat`, `redstone.dispenser_minecart`) all default to `enabled = true`, so the conditions pass and the recipes are parsed and fail rather than being skipped.
+
+Not caught by the update's dedicated-server boot test: that reads KubeJS's own "0 failed recipes" counter, which does not cover vanilla `RecipeManager` parse failures.
 
 **Tracked as [#278](https://github.com/Flatts3000/sky-frogs/issues/278).** Found by the v1.7.0 launch test.
 

@@ -260,16 +260,25 @@ def main():
     variants = pf_jar.load_variants(pf_jar.find_jar() or sys.exit("no PF jar - run sync_instance.py"))
     allow = load_allowlist()
 
-    vanilla = sorted(n for n, d in variants.items() if pf_jar.is_vanilla(d))
+    # CENSUS_EXCLUDED is applied FIRST, to the whole roster, so the ruling holds no
+    # matter which bucket a variant would otherwise land in. Consulting it only where
+    # a variant is currently unclassifiable would make it a guard-silencer rather than
+    # an exclusion: give `rainbow` a `minecraft:` primer_item upstream and is_vanilla
+    # flips true, the guard never fires, and it is silently added to The Whole Pond and
+    # to the capstone's dependency list - the exact resurrection gen_singularities.py's
+    # EXCLUDED exists to prevent. Same hole via a later mod_loaded condition.
+    censused = {n: d for n, d in variants.items() if n not in CENSUS_EXCLUDED}
+
+    vanilla = sorted(n for n, d in censused.items() if pf_jar.is_vanilla(d))
     modded = {}
     unclassified = []
-    for n, d in sorted(variants.items()):
+    for n, d in sorted(censused.items()):
         if pf_jar.is_vanilla(d):
             continue
         mod = variant_mod(d) or (d.get("primer_item") or ":").split(":")[0]
         if mod in LOADED_MODS:
             modded.setdefault(mod, []).append(n)
-        elif not mod and n not in CENSUS_EXCLUDED:
+        elif not mod:
             # Neither vanilla (no minecraft: primer_item) nor attributable to a mod
             # (no mod_loaded condition, no primer namespace) - so it lands in NEITHER
             # census and vanishes without a word. That is the silent-roster-drift class
