@@ -4,6 +4,24 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+### Fixed
+
+- **The Rainbow Slime can be made now.** v1.8.0 said frogs make dye, and they
+  did not: there was no way to get a Rainbow Slime in the first place. The only
+  recipe for one was the Froglight smelt-back, which wants the Rainbow Froglight
+  you would have needed the slime to produce. Productive Frogs' own answer is to
+  show a dye to a wild Bog Slime, but this pack spawns Cave Slimes and nothing
+  else, and priming refuses a slime of the wrong species, so that path was never
+  open here. It now takes a dye in the Dissolution Chamber, the same way the
+  Experience Slime takes a book. Reported by **monkeyhealz**.
+- **The check that was supposed to catch that now covers every slime.** A
+  validator has guarded against exactly this loop since #167, but it only looked
+  at slimes belonging to another mod. The Rainbow Slime belongs to no mod and is
+  not primed by a plain item either, so it fell out of the guard without a word,
+  which is the same reason it went missing from both Completionist chapters when
+  it arrived. The guard now asks whether a slime ships in the pack at all, and
+  fails on any that has no way to be made.
+
 ## [1.8.0] - 2026-08-30
 
 Frogs make dye now, and the seeds you were missing come out of mud.

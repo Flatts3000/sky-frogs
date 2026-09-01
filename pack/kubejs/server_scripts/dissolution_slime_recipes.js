@@ -191,6 +191,17 @@ const MODDED_SELF_KEYED = [
   // one. Input == primer_item, so the validator's self-keyed law passes with no
   // SELF_KEYED_EXCEPTIONS entry (unlike water/lava, which key on a bucket).
   ['VOID',     'minecraft:soul_soil',  'experience',      'minecraft:book',            'minecraft'],
+  // rainbow is the DYE lane (PF 1.26.0), and it cannot sit in the threaded BOG
+  // chain: its Froglight has no smelt result, so the row after it would have no
+  // resource to thread off. Self-key it on its own primer, the `c:dyes` TAG -
+  // the same thing PF's slime infusion takes - exactly as `experience` self-keys
+  // on its book. The tag input mirrors the modded tag-primed rows below.
+  //
+  // This row is the variant's ONLY non-circular source (#286). PF primes rainbow
+  // by showing a dye to a plain BOG Slime, and this pack spawns no parent species
+  // but cave_slime, so the priming path PF intends is unreachable here and the
+  // generated Froglight smelt-back was left as the only recipe - a loop.
+  ['BOG',      'minecraft:mossy_cobblestone', 'rainbow',   '#c:dyes',                   'minecraft'],
   ['CAVE',     'minecraft:stone',      'uraninite',       'powah:uraninite',           'powah'],
   ['CAVE',     'minecraft:stone',      'energized_steel', 'powah:steel_energized',     'powah'],
   ['TIDE',     'minecraft:mycelium',   'dry_ice',         'powah:dry_ice',             'powah'],

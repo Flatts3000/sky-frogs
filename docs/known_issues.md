@@ -59,6 +59,33 @@ Not caught by the update's dedicated-server boot test: that reads KubeJS's own "
 
 ## Resolved
 
+### 🟣 The Rainbow Slime had no source at all, so the dye lane was unreachable
+
+**Symptom.** monkeyhealz reported on CurseForge (v1.8.0): "I can't work out how to make the rainbow slime in a bucket - the only recipe requires the froglight - which you can't get until you've made it!" [#286](https://github.com/Flatts3000/sky-frogs/issues/286). Correct on every point. v1.8.0's own headline said frogs make dye now, and no player could reach the lane.
+
+**Root cause, in two layers.**
+
+*The content layer.* Every route was closed at once, which is why it reads as a puzzle rather than a missing recipe:
+
+| route | why it was closed |
+|---|---|
+| priming (PF's intended path) | `SlimeInfusionHandler` takes a plain **parent-species** slime and rejects a wrong-species one. `rainbow` is `category: bog`, so it needs a Bog Slime; the pack spawns only `cave_slime` and overrides all six PF defaults to `neoforge:none` |
+| split discovery | fires only on parent-species splits, drawing from that species' pool (Cave here). `ResourceSlime` splits deliberately do not fire `MobSplitEvent` at all |
+| the chains | no row in `bog_slime_chain.js`, no row in `dissolution_slime_recipes.js` |
+| the Froglight smelt-back | present, and circular by design - it is the recovery recipe, not a source |
+
+Every other variant is reached by a crafted Slime in a Bucket, so the pack had quietly stopped depending on priming years before; `rainbow` was the first variant whose only shipped answer *was* priming.
+
+*The tooling layer, which is the part worth keeping.* `Q-DISSOLUTION-COVERAGE` exists to catch precisely this loop, and has since [#167](https://github.com/Flatts3000/sky-frogs/issues/167) (the `silicon` case). It missed this one because it asked the census generator's question - `not is_vanilla(d)` **and** owning mod in `LOADED_MODS`. `is_vanilla` demands a `minecraft:` **primer_item** and `rainbow` has none; `variant_mod` demands a `mod_loaded` condition and `rainbow` has none. Belonging to neither bucket, it fell out of the guard's input set, so the check passed by never considering it.
+
+This is the **same** hole that dropped it from both Completionist chapters at the 1.26.0 bump. That one was found and given a fatal guard in `gen_completionist_chapters.py`; the identical hole one file over in the validator was not, because nothing connected them. A classification used in three places had been audited in one.
+
+**Fix.** A self-keyed Dissolution Chamber row on the variant's own primer tag, `#c:dyes` - the shape `experience` already uses on `minecraft:book`, and the shape every tag-primed modded variant uses. `rainbow` cannot join the threaded BOG chain: its Froglight has no smelt result, so the row after it would have nothing to thread off.
+
+And the guard was widened to ask whether a variant **ships in game at all** - no mod condition, or a condition naming a loaded mod - instead of sorting it into vanilla-or-modded first. Verified both ways: with the row removed the check names `rainbow` and exits 1; with it restored the run is clean, and no other variant of the 103 trips the wider net.
+
+**The lesson.** A classification that splits a set into buckets will eventually meet a member that belongs to no bucket, and the failure is silence, not an error. Both generators and the validator sorted variants by `is_vanilla` / `variant_mod`; all three had the hole, and fixing it in one place left the other two shipping. When a variant classification changes, grep for every reader of it.
+
 ### 🟣 Iron Furnaces refused to accept Froglights at all until a restart (upstream bug, patched in PF)
 **Symptom.** No Froglight would go into any Iron Furnaces furnace, by hand or by pipe, while a vanilla furnace took them fine. Restarting the game fixed it, until it came back. The pack's single most-reported problem: three CurseForge reporters in July 2026 alone (user_qqgd4audept0i3qy, Larronos, user_w647p447peuez0hl) on top of 28 Discord messages from 17 people over the pack's first two months, every one of whom was told to restart.
 

@@ -901,22 +901,32 @@ DISSOLUTION_COVERAGE_EXCEPTIONS: set[str] = set()
 
 
 def check_dissolution_modded_coverage(chapters, ctx):
-    """Q-DISSOLUTION-COVERAGE (ERROR) - #167.
+    """Q-DISSOLUTION-COVERAGE (ERROR) - #167, widened to every variant by #286.
 
-    Every modded variant the pack EXPOSES (a generated Froglight recipe AND a Sister
-    Ponds census quest) must have a NON-circular slime source: a dissolution row
-    (self-keyed, or a tier-chain step like plastic/pink_slime) or a bespoke
-    bucket/infusing recipe (steel, osmium). Without one, the only way to get the slime
-    is to smelt a Froglight you already have - a loop that reads as broken to players.
-    This is exactly how `silicon` slipped through: an auto-generated Froglight recipe
-    and a census quest, but no dissolution row (fixed on feat/silicon-dissolution-census).
+    Every variant the pack ships IN GAME must have a NON-circular slime source: a
+    dissolution row (self-keyed, or a tier-chain step like plastic/pink_slime) or a
+    bespoke bucket/infusing recipe (steel, osmium). Without one, the only way to get
+    the slime is to smelt a Froglight you already have - a loop that reads as broken
+    to players. This is exactly how `silicon` slipped through: an auto-generated
+    Froglight recipe and a census quest, but no dissolution row (fixed on
+    feat/silicon-dissolution-census).
 
     The dissolution/recipe scripts are HAND-maintained while the Froglight recipes and
     the census are GENERATED from the pinned PF jar; nothing else reconciles them. This
-    check does, by computing "exposed" the SAME way gen_completionist_chapters.py emits
-    the census (not is_vanilla + owning mod in LOADED_MODS, via its variant_mod /
-    LOADED_MODS) and diffing it against the non-circular sources. Skips with INFO when
-    no jar / no dissolution file (mirrors the other jar-dependent checks).
+    check does, by diffing the shipped variant set against the non-circular sources.
+    Skips with INFO when no jar / no dissolution file (mirrors the other jar-dependent
+    checks).
+
+    "In game" is decided by the variant's mod CONDITION, not by how it is primed:
+    no `neoforge:mod_loaded` condition means it loads in every world, and a condition
+    naming a loaded mod means it loads here. The check used to ask the census
+    generator's question instead - `not is_vanilla` AND owning mod in LOADED_MODS -
+    which silently dropped any variant that is neither (`is_vanilla` demands a
+    `minecraft:` primer_item; `variant_mod` demands a condition). PF 1.26.0's
+    `rainbow` is exactly that shape - unconditioned and primed by the `c:dyes` TAG -
+    so it shipped with the Froglight smelt-back as its only recipe and nothing
+    said a word (#286). Priming is PF's own answer for such a variant, but this pack
+    spawns one parent species, so priming cannot be assumed to be a source here.
     """
     variants = ctx["pf_variants"]
     if variants is None:
@@ -925,13 +935,14 @@ def check_dissolution_modded_coverage(chapters, ctx):
         return [Finding(INFO, "Q-DISSOLUTION-COVERAGE", "-", 0,
                         "not run: dissolution_slime_recipes.js not found")]
 
-    # variants the pack exposes = the census generator's own emit rule, verbatim.
+    # Variants the pack ships in game, keyed on the mod CONDITION alone so nothing
+    # can fall between the vanilla and modded buckets the way `rainbow` did (#286).
     exposed: dict[str, str] = {}
     for name, d in variants.items():
-        if pf_jar.is_vanilla(d):
-            continue
-        mod = census.variant_mod(d) or (d.get("primer_item") or ":").split(":")[0]
-        if mod in census.LOADED_MODS:
+        mod = census.variant_mod(d)
+        if mod is None:
+            exposed[name] = "minecraft"   # unconditioned - loads in every world
+        elif mod in census.LOADED_MODS:
             exposed[name] = mod
 
     # non-circular sources: every recipe script EXCEPT the froglight smelt-back, plus
@@ -974,11 +985,12 @@ def check_dissolution_modded_coverage(chapters, ctx):
     f = []
     for name in sorted(set(exposed) - non_circular - DISSOLUTION_COVERAGE_EXCEPTIONS):
         f.append(Finding(ERROR, "Q-DISSOLUTION-COVERAGE", DISSOLUTION_JS.name, line,
-                         f"modded variant '{name}' ({exposed[name]}) is exposed by the pack "
-                         f"(generated Froglight recipe + Sister Ponds census) but has no "
-                         f"non-circular slime source - the Froglight smelt-back is its only "
-                         f"path, which reads as circular. Add a MODDED_SELF_KEYED row to "
-                         f"dissolution_slime_recipes.js (the silicon class, #167)."))
+                         f"variant '{name}' ({exposed[name]}) ships in game and has a "
+                         f"generated Froglight recipe, but no non-circular slime source - "
+                         f"the Froglight smelt-back is its only path, which reads as "
+                         f"circular. Add a SLIME_TIERS step or a MODDED_SELF_KEYED row to "
+                         f"dissolution_slime_recipes.js (the silicon class #167, the "
+                         f"rainbow class #286)."))
     return f
 
 
