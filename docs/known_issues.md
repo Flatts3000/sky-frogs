@@ -18,15 +18,39 @@ Entries are kept after they are fixed: the diagnosis is the valuable part, and s
 
 ## Open
 
-Three, all root-caused and all owned by another mod. New bugs are filed as [GitHub issues](https://github.com/Flatts3000/sky-frogs/issues) first (see [`github_issues_best_practices.md`](./github_issues_best_practices.md)); they earn an entry here once the root cause is understood, so the ledger records the diagnosis rather than duplicating issue state.
+Three, all root-caused. Two are owned by another mod; the third is ours and has a failed fix attempt recorded against it. New bugs are filed as [GitHub issues](https://github.com/Flatts3000/sky-frogs/issues) first (see [`github_issues_best_practices.md`](./github_issues_best_practices.md)); they earn an entry here once the root cause is understood, so the ledger records the diagnosis rather than duplicating issue state.
 
 ### 🟡 A scooped Slime in a Bucket cannot complete the six Slime-in-a-Bucket quests
 
-Six quests take a Slime in a Bucket with `match_components: "strict"` against exactly `{Category, Variant}`. A **crafted** bucket carries exactly those two keys. A **scooped** one carries more: PF calls `Bucketable.saveDefaultDataToBucketTag` first, which writes `Health` unconditionally (plus `NoAI` / `Silent` / `NoGravity` / `Invulnerable` when set), and only then appends `Category` + `Variant`. Strict matching is exact map equality, so the scooped bucket never matches.
+Six quests take a Slime in a Bucket with `match_components: "strict"` against exactly `{Category, Variant}`. A **crafted** bucket carries exactly those two keys. A **scooped** one carries more: PF calls `Bucketable.saveDefaultDataToBucketTag` first, which writes `Health` unconditionally (plus `NoAI` / `Silent` / `NoGravity` / `Invulnerable` when set), and only then appends `Category` + `Variant`. Strict matching is exact map equality, so the scooped bucket never matches. Three reports: **Sam Gomez** and **BreadBelt** on Discord, plus the ender-pearl case in #252. [#247](https://github.com/Flatts3000/sky-frogs/issues/247).
 
-No pack-side setting fixes it: `fuzzy` compares whole components too and fails identically, and `none` would let any slime bucket satisfy the iron quest. The quest text for **A Bucket of Ender Pearl Slime** documents the by-hand scoop route, so the pack currently tells players to do the thing that cannot complete the quest.
+**Upstream did its half.** PF 1.26.0 ([#357](https://github.com/Flatts3000/productive-frogs/issues/357)) stamps a flat `productivefrogs:slime_variant` on both of its producers, and the pack now stamps it on all twelve of its own bucket producers too. Both a crafted and a scooped bucket carry the same identity value.
 
-**Workaround:** craft the bucket rather than scooping one. **Tracked as [#247](https://github.com/Flatts3000/sky-frogs/issues/247), upstream [productive-frogs#357](https://github.com/Flatts3000/productive-frogs/issues/357).** Reported on Discord by Sam Gomez.
+**But switching the tasks to that key under `fuzzy` does not work, and this is the part worth recording**, because it was tried on 2026-09-01, shipped to a playtest, and broke the quest for *everyone* - crafted buckets included - before being reverted the same day.
+
+The reasoning that failed was: "`fuzzy` is `allMatch` over the **task's** components against the player's, so the task's declared set must be a subset and extras are ignored." The first half is right and the second does not follow. From `ItemMatchingSystem` in `ftb-quests-neoforge-2101.1.34.jar`:
+
+```
+areItemStacksEqual(a, b, FUZZY) -> fuzzyMatch(a.getComponents(), b.getComponents())
+fuzzyMatch(m1, m2)             -> m1.stream().allMatch(c -> m2.has(c.type()) && m2.get(c.type()).equals(c.value()))
+```
+
+`ItemStack.getComponents()` is the **prototype-merged** map, not the patch. It contains every component the *item* declares by default, whether or not the task author wrote one. And `slime_bucket` declares one:
+
+```java
+props.stacksTo(1).component(DataComponents.BUCKET_ENTITY_DATA, CustomData.EMPTY)   // PFItems.java
+```
+
+So a task stack declaring only `slime_variant` still streams `bucket_entity_data = CustomData.EMPTY`, and fuzzy then demands the player's bucket hold `EMPTY` there. Every real bucket holds something. **Nothing matches - not scooped, not crafted, not chamber-made.** Vanilla's fish buckets do not declare that default; PF's do.
+
+**So `fuzzy` on a flat key is only subset-matching for items with no conflicting default component.** `take_flight` gets away with it on `ironjetpacks:jetpack_id` because that item declares none.
+
+**Two ways forward, neither taken yet:**
+
+1. **Upstream, one line.** Drop `.component(DataComponents.BUCKET_ENTITY_DATA, CustomData.EMPTY)` from the two bucket items in `PFItems`. Then the task's merged map has no `bucket_entity_data` at all, fuzzy on `slime_variant` genuinely ignores the extras, and both acquisition paths match. Needs checking that nothing relies on the default - `CustomData.update` supplies its own, and vanilla ships without it.
+2. **Pack-side, more machinery.** Move the six to `AdvancementTask` backed by datapack advancements whose `minecraft:inventory_changed` item predicate tests the component. `DataComponentPredicate` *is* a real subset test and ignores `bucket_entity_data` entirely. No upstream dependency, but it loses the task screen's item submission and the "click to view recipes" affordance.
+
+**Workaround meanwhile:** craft the bucket rather than scooping one.
 
 ### 🔵 The Copy-Paste Gadget pastes Froglights with no variant
 

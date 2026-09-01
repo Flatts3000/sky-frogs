@@ -4,6 +4,14 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+### Changed
+
+- **Every Slime in a Bucket the pack makes now carries its variant as a proper
+  identity stamp**, alongside the data it already carried. Nothing changes for
+  you: the buckets look, pour and milk exactly as before. It is groundwork for
+  making the six bucket quests accept a scooped slime, which needs one more
+  change that is not in yet.
+
 ## [1.8.0] - 2026-08-30
 
 Frogs make dye now, and the seeds you were missing come out of mud.
