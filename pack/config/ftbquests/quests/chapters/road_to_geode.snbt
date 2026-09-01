@@ -60,8 +60,8 @@
 			}]
 			tasks: [{
 				id: "60ADE6000000000C"
-				item: { components: { "productivefrogs:slime_variant": "productivefrogs:lapis" }, count: 1, id: "productivefrogs:slime_bucket" }
-				match_components: "fuzzy"
+				item: { components: { "minecraft:bucket_entity_data": { Category: "GEODE", Variant: "productivefrogs:lapis" } }, count: 1, id: "productivefrogs:slime_bucket" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 0.0d

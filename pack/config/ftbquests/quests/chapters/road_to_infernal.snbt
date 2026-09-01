@@ -141,8 +141,8 @@
 			tasks: [
 			{
 				id: "5140000000000011"
-				item: { components: { "productivefrogs:slime_variant": "productivefrogs:netherrack" }, count: 1, id: "productivefrogs:slime_bucket" }
-				match_components: "fuzzy"
+				item: { components: { "minecraft:bucket_entity_data": { Category: "INFERNAL", Variant: "productivefrogs:netherrack" } }, count: 1, id: "productivefrogs:slime_bucket" }
+				match_components: "strict"
 				type: "item"
 			}
 			]

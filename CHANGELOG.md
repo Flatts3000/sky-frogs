@@ -4,22 +4,13 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
-> **Heads up for existing worlds:** a Slime in a Bucket you already had before
-> this update does not carry the new identity stamp and will not tick off the
-> six bucket quests. Craft or scoop a fresh one. Nothing else about the old
-> buckets changes; they still pour out the right slime.
+### Changed
 
-### Fixed
-
-- **Scooping a slime counts for the bucket quests now.** The six gateway quests
-  that ask for a Slime in a Bucket only ever completed if you crafted the
-  bucket. Scoop one off a live slime and nothing happened, which is what Sam
-  Gomez, BreadBelt and the ender pearl report all ran into, and the ender pearl
-  quest went as far as telling you to do it by hand. The variant was buried in
-  the same lump of data that holds the slime's health, so a scooped bucket and
-  a crafted one were different items to the quest even when they were the same
-  slime. Productive Frogs 1.26.0 gave the bucket a proper identity stamp, and
-  the quests now read that instead. Either way of getting the bucket works.
+- **Every Slime in a Bucket the pack makes now carries its variant as a proper
+  identity stamp**, alongside the data it already carried. Nothing changes for
+  you: the buckets look, pour and milk exactly as before. It is groundwork for
+  making the six bucket quests accept a scooped slime, which needs one more
+  change that is not in yet.
 
 ## [1.8.0] - 2026-08-30
 
