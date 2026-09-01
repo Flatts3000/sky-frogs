@@ -4,6 +4,10 @@ Follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [SemV
 
 ## [Unreleased]
 
+## [1.8.1] - 2026-09-01
+
+The dye frogs promised in v1.8.0 are actually reachable now.
+
 ### Fixed
 
 - **The Rainbow Slime can be made now.** v1.8.0 said frogs make dye, and they
