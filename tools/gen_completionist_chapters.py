@@ -275,21 +275,36 @@ def main():
     for n, d in sorted(censused.items()):
         if pf_jar.is_vanilla(d):
             continue
-        mod = variant_mod(d) or (d.get("primer_item") or ":").split(":")[0]
-        if mod in LOADED_MODS:
-            modded.setdefault(mod, []).append(n)
-        elif not mod:
-            # Neither vanilla (no minecraft: primer_item) nor attributable to a mod
-            # (no mod_loaded condition, no primer namespace) - so it lands in NEITHER
-            # census and vanishes without a word. That is the silent-roster-drift class
-            # this generator exists to catch, so refuse rather than drop.
-            unclassified.append(n)
+        # Key on the mod CONDITION alone. The old form fell back to the primer
+        # item's namespace when there was no condition - `variant_mod(d) or
+        # <primer namespace>` - and then only flagged a variant when that came out
+        # FALSY. So a variant with no condition but a primer in some other mod's
+        # namespace (say `ae2:certus_quartz`) resolved to a truthy "ae2", missed
+        # LOADED_MODS, and fell through BOTH branches: dropped from both chapters,
+        # no abort. That is the same silent-classification hole one branch over from
+        # the one this guard was added for, and the fallback bought nothing - swept
+        # against the pinned roster, no variant reached the modded census through it.
+        # Keyed on the condition, the three states are exhaustive and the middle one
+        # is the only silent drop, which is correct.
+        owner = variant_mod(d)
+        if owner is not None:
+            if owner in LOADED_MODS:
+                modded.setdefault(owner, []).append(n)
+            # else: conditioned on a mod this pack does not ship, so it never loads
+            # and belongs in no census. A correct drop, not drift.
+            continue
+        # No mod_loaded condition and not vanilla-by-primer_item: it loads in EVERY
+        # world and lands in NEITHER census, vanishing without a word. That is the
+        # silent-roster-drift class this generator exists to catch (PF 1.26.0's
+        # `rainbow`, primed by the `c:dyes` tag), so refuse rather than drop.
+        unclassified.append(n)
     if unclassified:
         sys.exit(
             "variant(s) %s belong to no census: not vanilla (no minecraft: primer_item) "
-            "and not attributable to a loaded mod (no mod_loaded condition). A PF bump "
-            "needs a ruling: give it a census home, or name it in CENSUS_EXCLUDED with "
-            "the reason. Nothing was written." % ", ".join(repr(n) for n in unclassified)
+            "and carrying no mod_loaded condition, so they load in every world and are "
+            "counted by neither chapter. A PF bump needs a ruling: give it a census "
+            "home, or name it in CENSUS_EXCLUDED with the reason. Nothing was "
+            "written." % ", ".join(repr(n) for n in unclassified)
         )
     for mod in modded:
         # A ranked column with an unranked newcomer would SILENTLY sort it to

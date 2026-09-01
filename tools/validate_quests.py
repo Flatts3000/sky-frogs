@@ -894,29 +894,40 @@ def check_dissolution_threading(chapters, ctx):
 # steel/osmium/iron buckets) and the dissolution rows are non-circular sources.
 FROGLIGHT_RECIPE_JS = "froglight_slime_recipes.js"
 OUT_STAMP_RE = re.compile(r"""Variant:\s*["']productivefrogs:([a-z_]+)["']""")
-# Modded, loaded-mod variants intentionally left froglight-only (none today). Add a
-# slug here WITH a justification if a variant is ever meant to have no make-it-first
-# source, so the guard stays green on purpose rather than by silence.
+# Variants intentionally left froglight-only (none today). Since #286 this silences
+# ANY shipped variant, vanilla included - not just modded ones - so a slug added here
+# can hide a genuine gap in a tier chain. Add one WITH a justification, so the guard
+# stays green on purpose rather than by silence.
 DISSOLUTION_COVERAGE_EXCEPTIONS: set[str] = set()
 
 
 def check_dissolution_modded_coverage(chapters, ctx):
-    """Q-DISSOLUTION-COVERAGE (ERROR) - #167.
+    """Q-DISSOLUTION-COVERAGE (ERROR) - #167, widened to every variant by #286.
 
-    Every modded variant the pack EXPOSES (a generated Froglight recipe AND a Sister
-    Ponds census quest) must have a NON-circular slime source: a dissolution row
-    (self-keyed, or a tier-chain step like plastic/pink_slime) or a bespoke
-    bucket/infusing recipe (steel, osmium). Without one, the only way to get the slime
-    is to smelt a Froglight you already have - a loop that reads as broken to players.
-    This is exactly how `silicon` slipped through: an auto-generated Froglight recipe
-    and a census quest, but no dissolution row (fixed on feat/silicon-dissolution-census).
+    Every variant the pack ships IN GAME must have a NON-circular slime source: a
+    dissolution row (self-keyed, or a tier-chain step like plastic/pink_slime) or a
+    bespoke bucket/infusing recipe (steel, osmium). Without one, the only way to get
+    the slime is to smelt a Froglight you already have - a loop that reads as broken
+    to players. This is exactly how `silicon` slipped through: an auto-generated
+    Froglight recipe and a census quest, but no dissolution row (fixed on
+    feat/silicon-dissolution-census).
 
     The dissolution/recipe scripts are HAND-maintained while the Froglight recipes and
     the census are GENERATED from the pinned PF jar; nothing else reconciles them. This
-    check does, by computing "exposed" the SAME way gen_completionist_chapters.py emits
-    the census (not is_vanilla + owning mod in LOADED_MODS, via its variant_mod /
-    LOADED_MODS) and diffing it against the non-circular sources. Skips with INFO when
-    no jar / no dissolution file (mirrors the other jar-dependent checks).
+    check does, by diffing the shipped variant set against the non-circular sources.
+    Skips with INFO when no jar / no dissolution file (mirrors the other jar-dependent
+    checks).
+
+    "In game" is decided by the variant's mod CONDITION, not by how it is primed:
+    no `neoforge:mod_loaded` condition means it loads in every world, and a condition
+    naming a loaded mod means it loads here. The check used to ask the census
+    generator's question instead - `not is_vanilla` AND owning mod in LOADED_MODS -
+    which silently dropped any variant that is neither (`is_vanilla` demands a
+    `minecraft:` primer_item; `variant_mod` demands a condition). PF 1.26.0's
+    `rainbow` is exactly that shape - unconditioned and primed by the `c:dyes` TAG -
+    so it shipped with the Froglight smelt-back as its only recipe and nothing
+    said a word (#286). Priming is PF's own answer for such a variant, but this pack
+    spawns one parent species, so priming cannot be assumed to be a source here.
     """
     variants = ctx["pf_variants"]
     if variants is None:
@@ -925,13 +936,14 @@ def check_dissolution_modded_coverage(chapters, ctx):
         return [Finding(INFO, "Q-DISSOLUTION-COVERAGE", "-", 0,
                         "not run: dissolution_slime_recipes.js not found")]
 
-    # variants the pack exposes = the census generator's own emit rule, verbatim.
+    # Variants the pack ships in game, keyed on the mod CONDITION alone so nothing
+    # can fall between the vanilla and modded buckets the way `rainbow` did (#286).
     exposed: dict[str, str] = {}
     for name, d in variants.items():
-        if pf_jar.is_vanilla(d):
-            continue
-        mod = census.variant_mod(d) or (d.get("primer_item") or ":").split(":")[0]
-        if mod in census.LOADED_MODS:
+        mod = census.variant_mod(d)
+        if mod is None:
+            exposed[name] = "minecraft"   # unconditioned - loads in every world
+        elif mod in census.LOADED_MODS:
             exposed[name] = mod
 
     # non-circular sources: every recipe script EXCEPT the froglight smelt-back, plus
@@ -952,33 +964,41 @@ def check_dissolution_modded_coverage(chapters, ctx):
             non_circular.update(m.group(1) for m in CHAIN_ROW_RE.finditer(text, 0, end))
             non_circular.update(m.group(2) for m in MODDED_ROW_RE.finditer(text, max(modded_at, 0)))
     n_modded = len(MODDED_ROW_RE.findall(diss_text, max(modded_at, 0)))
+    n_chain = len(CHAIN_ROW_RE.findall(diss_text, 0, modded_at if modded_at >= 0 else len(diss_text)))
 
     # Parser-drift guard (the PR #110 lesson; the #221 Copilot review sharpened it).
-    # The two parsers that source EXPOSED modded variants are MODDED_ROW_RE (the
-    # self-keyed table) and OUT_STAMP_RE (the bespoke steel/osmium buckets + the chain
-    # scripts). Guarding on `non_circular` being non-empty misses their drift, because
-    # non_circular also holds the vanilla SLIME_TIERS rows (CHAIN_ROW_RE) and is thus
-    # ~never empty - and an intersection guard slips too, since plastic/pink_slime are
-    # 2-element rows CHAIN_ROW_RE still catches. Key the guard on the modded-source
-    # counts: if either matched nothing, the format drifted - fail once, don't spam a
-    # per-variant miss for every modded variant. (Same count-minimum style as the
-    # threading check's own guard.)
-    if exposed and (n_modded == 0 or n_stamp == 0):
+    # Guarding on `non_circular` being non-empty misses drift, because it is fed by
+    # three parsers and is ~never empty if any one of them still matches - and an
+    # intersection guard slips too, since plastic/pink_slime are 2-element rows
+    # CHAIN_ROW_RE still catches. Key the guard on per-parser counts instead: if any
+    # matched nothing the format drifted, so fail ONCE rather than spamming a
+    # per-variant miss. (Same count-minimum style as the threading check's own guard.)
+    #
+    # CHAIN_ROW_RE joined the guard with #286. Before the widening it was not
+    # load-bearing here, because only two of its rows (plastic, pink_slime) belonged to
+    # an EXPOSED variant. Now that every shipped variant is in scope, ~30 Tide/Infernal/
+    # Void variants have CHAIN_ROW_RE as their ONLY non-circular source - they have no
+    # table chain, and OUT_STAMP_RE cannot reach them because the dissolution file
+    # builds its Variant string dynamically. Break that regex and the run emits 52
+    # per-variant "add a SLIME_TIERS step" findings, every one of them wrong, instead of
+    # the single drift finding this guard exists to produce.
+    if exposed and (n_modded == 0 or n_stamp == 0 or n_chain == 0):
         return [Finding(ERROR, "Q-DISSOLUTION-COVERAGE", DISSOLUTION_JS.name, 0,
-                        f"modded-source parsers matched nothing (self-keyed rows={n_modded}, "
-                        f"bespoke stamps={n_stamp}) while the jar exposes {len(exposed)} "
-                        f"loaded-mod variants - the recipe format drifted from the parser; "
+                        f"a slime-source parser matched nothing (self-keyed rows={n_modded}, "
+                        f"chain rows={n_chain}, bespoke stamps={n_stamp}) while the jar ships "
+                        f"{len(exposed)} variants - the recipe format drifted from the parser; "
                         f"update tools/validate_quests.py before trusting this check")]
 
     line = diss_text.count("\n", 0, modded_at) + 1 if modded_at >= 0 else 0
     f = []
     for name in sorted(set(exposed) - non_circular - DISSOLUTION_COVERAGE_EXCEPTIONS):
         f.append(Finding(ERROR, "Q-DISSOLUTION-COVERAGE", DISSOLUTION_JS.name, line,
-                         f"modded variant '{name}' ({exposed[name]}) is exposed by the pack "
-                         f"(generated Froglight recipe + Sister Ponds census) but has no "
-                         f"non-circular slime source - the Froglight smelt-back is its only "
-                         f"path, which reads as circular. Add a MODDED_SELF_KEYED row to "
-                         f"dissolution_slime_recipes.js (the silicon class, #167)."))
+                         f"variant '{name}' ({exposed[name]}) ships in game and has a "
+                         f"generated Froglight recipe, but no non-circular slime source - "
+                         f"the Froglight smelt-back is its only path, which reads as "
+                         f"circular. Add a SLIME_TIERS step or a MODDED_SELF_KEYED row to "
+                         f"dissolution_slime_recipes.js (the silicon class #167, the "
+                         f"rainbow class #286)."))
     return f
 
 

@@ -746,7 +746,7 @@ hash = "a14f0b3014ad482f9b04ef079202394670f76a749bccb93ed36bb3e41c1810dc"
 
 [[files]]
 file = "kubejs/server_scripts/dissolution_slime_recipes.js"
-hash = "d9b08d65d39d44508e2afe6fc63559da4ab351eb9db3f8bed6106f2b06c7550e"
+hash = "8c6bd3934b2dc3bfdfe760cab5cb316ed3237f8bb0bceafbb1f375b7ce948f76"
 
 [[files]]
 file = "kubejs/server_scripts/dump_items.js"
