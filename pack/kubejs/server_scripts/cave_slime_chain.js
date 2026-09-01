@@ -20,7 +20,12 @@
 //   -> 1x <next> Slime in a Bucket
 //
 // The output stamps both Variant and Category into bucket_entity_data to match
-// PF's JEI slime-bucket subtype (keyed on the full bucket_entity_data string).
+// PF's JEI slime-bucket subtype (keyed on the full bucket_entity_data string).//
+// Both identity carriers are stamped (#247): the nested bucket_entity_data.Variant
+// that the Slime Milker and the release path read, and the flat
+// productivefrogs:slime_variant component PF 1.26.0 made the stable identity key.
+// The six gateway quests match the component under fuzzy, so a bucket minted with
+// only the tag would not complete the quest it satisfied before.
 
 ServerEvents.recipes(event => {
   // [from-milk variant, output slime-bucket variant]
@@ -43,7 +48,7 @@ ServerEvents.recipes(event => {
   const fluids = { water: 'minecraft:water_bucket', lava: 'minecraft:lava_bucket' }
   Object.keys(fluids).forEach(variant => {
     event.shapeless(
-      `productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:${variant}",Category:"CAVE"}]`,
+      `productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:${variant}",Category:"CAVE"},productivefrogs:slime_variant="productivefrogs:${variant}"]`,
       [
         fluids[variant],
         'minecraft:stone',
@@ -62,7 +67,7 @@ ServerEvents.recipes(event => {
     const from = step[0]
     const to = step[1]
     event.shapeless(
-      `productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:${to}",Category:"CAVE"}]`,
+      `productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:${to}",Category:"CAVE"},productivefrogs:slime_variant="productivefrogs:${to}"]`,
       [
         `productivefrogs:${from}_slime_milk_bucket`,
         'minecraft:stone',

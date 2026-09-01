@@ -144,8 +144,8 @@
 			}]
 			tasks: [{
 				id: "70B0000000000006"
-				item: { components: { "minecraft:bucket_entity_data": { Category: "BOG", Variant: "productivefrogs:dirt" } }, count: 1, id: "productivefrogs:slime_bucket" }
-				match_components: "strict"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:dirt" }, count: 1, id: "productivefrogs:slime_bucket" }
+				match_components: "fuzzy"
 				type: "item"
 			}]
 			x: 0.0d

@@ -18,6 +18,12 @@
 // tuff, calcite, amethyst, emerald, and diamond are all category "geode". The
 // lapis -> ... steps are inert until the Geode Frogs chapter quests guide them;
 // they self-gate on needing the prior resource's milk.
+//
+// Both identity carriers are stamped (#247): the nested bucket_entity_data.Variant
+// that the Slime Milker and the release path read, and the flat
+// productivefrogs:slime_variant component PF 1.26.0 made the stable identity key.
+// The six gateway quests match the component under fuzzy, so a bucket minted with
+// only the tag would not complete the quest it satisfied before.
 
 ServerEvents.recipes(event => {
   // [from-milk variant, output slime-bucket variant]
@@ -34,7 +40,7 @@ ServerEvents.recipes(event => {
     const from = step[0]
     const to = step[1]
     event.shapeless(
-      `productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:${to}",Category:"GEODE"}]`,
+      `productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:${to}",Category:"GEODE"},productivefrogs:slime_variant="productivefrogs:${to}"]`,
       [
         `productivefrogs:${from}_slime_milk_bucket`,
         'minecraft:gravel',

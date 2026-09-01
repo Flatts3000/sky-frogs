@@ -160,8 +160,8 @@
 			}]
 			tasks: [{
 				id: "601D000000000015"
-				item: { components: { "minecraft:bucket_entity_data": { Category: "VOID", Variant: "productivefrogs:ender_pearl" } }, count: 1, id: "productivefrogs:slime_bucket" }
-				match_components: "strict"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:ender_pearl" }, count: 1, id: "productivefrogs:slime_bucket" }
+				match_components: "fuzzy"
 				type: "item"
 			}]
 			x: 0.0d

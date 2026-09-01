@@ -14,7 +14,7 @@
 ServerEvents.recipes(event => {
   if (Platform.isLoaded('refinedstorage')) {
     event.shaped(
-      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:advanced_processor",Category:"GEODE"}]',
+      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:advanced_processor",Category:"GEODE"},productivefrogs:slime_variant="productivefrogs:advanced_processor"]',
       ['BFF', 'FGF', 'SSS'],
       {
         B: 'minecraft:bucket',
@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
   }
   if (Platform.isLoaded('alltheores')) {
     event.shaped(
-      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:aluminum",Category:"CAVE"}]',
+      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:aluminum",Category:"CAVE"},productivefrogs:slime_variant="productivefrogs:aluminum"]',
       ['BFF', 'FGF', 'SSS'],
       {
         B: 'minecraft:bucket',
@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
     ).id('kubejs:froglight_slime/aluminum')
   }
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:amethyst",Category:"GEODE"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:amethyst",Category:"GEODE"},productivefrogs:slime_variant="productivefrogs:amethyst"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -48,7 +48,7 @@ ServerEvents.recipes(event => {
   ).id('kubejs:froglight_slime/amethyst')
   if (Platform.isLoaded('mythicmetals')) {
     event.shaped(
-      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:aquarium",Category:"TIDE"}]',
+      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:aquarium",Category:"TIDE"},productivefrogs:slime_variant="productivefrogs:aquarium"]',
       ['BFF', 'FGF', 'SSS'],
       {
         B: 'minecraft:bucket',
@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
     ).id('kubejs:froglight_slime/aquarium')
   }
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:armadillo_scute",Category:"BOG"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:armadillo_scute",Category:"BOG"},productivefrogs:slime_variant="productivefrogs:armadillo_scute"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -70,7 +70,7 @@ ServerEvents.recipes(event => {
   ).id('kubejs:froglight_slime/armadillo_scute')
   if (Platform.isLoaded('refinedstorage')) {
     event.shaped(
-      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:basic_processor",Category:"GEODE"}]',
+      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:basic_processor",Category:"GEODE"},productivefrogs:slime_variant="productivefrogs:basic_processor"]',
       ['BFF', 'FGF', 'SSS'],
       {
         B: 'minecraft:bucket',
@@ -81,7 +81,7 @@ ServerEvents.recipes(event => {
     ).id('kubejs:froglight_slime/basic_processor')
   }
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:blaze",Category:"INFERNAL"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:blaze",Category:"INFERNAL"},productivefrogs:slime_variant="productivefrogs:blaze"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -92,7 +92,7 @@ ServerEvents.recipes(event => {
   ).id('kubejs:froglight_slime/blaze')
   if (Platform.isLoaded('justdirethings')) {
     event.shaped(
-      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:blaze_ember",Category:"INFERNAL"}]',
+      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:blaze_ember",Category:"INFERNAL"},productivefrogs:slime_variant="productivefrogs:blaze_ember"]',
       ['BFF', 'FGF', 'SSS'],
       {
         B: 'minecraft:bucket',
@@ -104,7 +104,7 @@ ServerEvents.recipes(event => {
   }
   if (Platform.isLoaded('justdirethings')) {
     event.shaped(
-      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:blazegold",Category:"INFERNAL"}]',
+      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:blazegold",Category:"INFERNAL"},productivefrogs:slime_variant="productivefrogs:blazegold"]',
       ['BFF', 'FGF', 'SSS'],
       {
         B: 'minecraft:bucket',
@@ -116,7 +116,7 @@ ServerEvents.recipes(event => {
   }
   if (Platform.isLoaded('powah')) {
     event.shaped(
-      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:blazing",Category:"INFERNAL"}]',
+      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:blazing",Category:"INFERNAL"},productivefrogs:slime_variant="productivefrogs:blazing"]',
       ['BFF', 'FGF', 'SSS'],
       {
         B: 'minecraft:bucket',
@@ -127,7 +127,7 @@ ServerEvents.recipes(event => {
     ).id('kubejs:froglight_slime/blazing')
   }
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:bone",Category:"BOG"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:bone",Category:"BOG"},productivefrogs:slime_variant="productivefrogs:bone"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -138,7 +138,7 @@ ServerEvents.recipes(event => {
   ).id('kubejs:froglight_slime/bone')
   if (Platform.isLoaded('create')) {
     event.shaped(
-      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:brass",Category:"CAVE"}]',
+      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:brass",Category:"CAVE"},productivefrogs:slime_variant="productivefrogs:brass"]',
       ['BFF', 'FGF', 'SSS'],
       {
         B: 'minecraft:bucket',
@@ -149,7 +149,7 @@ ServerEvents.recipes(event => {
     ).id('kubejs:froglight_slime/brass')
   }
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:breeze_rod",Category:"CAVE"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:breeze_rod",Category:"CAVE"},productivefrogs:slime_variant="productivefrogs:breeze_rod"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -159,7 +159,7 @@ ServerEvents.recipes(event => {
     }
   ).id('kubejs:froglight_slime/breeze_rod')
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:calcite",Category:"GEODE"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:calcite",Category:"GEODE"},productivefrogs:slime_variant="productivefrogs:calcite"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -170,7 +170,7 @@ ServerEvents.recipes(event => {
   ).id('kubejs:froglight_slime/calcite')
   if (Platform.isLoaded('justdirethings')) {
     event.shaped(
-      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:celestigem",Category:"INFERNAL"}]',
+      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:celestigem",Category:"INFERNAL"},productivefrogs:slime_variant="productivefrogs:celestigem"]',
       ['BFF', 'FGF', 'SSS'],
       {
         B: 'minecraft:bucket',
@@ -182,7 +182,7 @@ ServerEvents.recipes(event => {
   }
   if (Platform.isLoaded('ae2')) {
     event.shaped(
-      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:certus_quartz",Category:"GEODE"}]',
+      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:certus_quartz",Category:"GEODE"},productivefrogs:slime_variant="productivefrogs:certus_quartz"]',
       ['BFF', 'FGF', 'SSS'],
       {
         B: 'minecraft:bucket',
@@ -193,7 +193,7 @@ ServerEvents.recipes(event => {
     ).id('kubejs:froglight_slime/certus_quartz')
   }
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:chorus_fruit",Category:"VOID"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:chorus_fruit",Category:"VOID"},productivefrogs:slime_variant="productivefrogs:chorus_fruit"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -203,7 +203,7 @@ ServerEvents.recipes(event => {
     }
   ).id('kubejs:froglight_slime/chorus_fruit')
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:clay_ball",Category:"BOG"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:clay_ball",Category:"BOG"},productivefrogs:slime_variant="productivefrogs:clay_ball"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -213,7 +213,7 @@ ServerEvents.recipes(event => {
     }
   ).id('kubejs:froglight_slime/clay_ball')
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:coal",Category:"CAVE"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:coal",Category:"CAVE"},productivefrogs:slime_variant="productivefrogs:coal"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -223,7 +223,7 @@ ServerEvents.recipes(event => {
     }
   ).id('kubejs:froglight_slime/coal')
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:copper",Category:"CAVE"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:copper",Category:"CAVE"},productivefrogs:slime_variant="productivefrogs:copper"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -233,7 +233,7 @@ ServerEvents.recipes(event => {
     }
   ).id('kubejs:froglight_slime/copper')
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:diamond",Category:"GEODE"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:diamond",Category:"GEODE"},productivefrogs:slime_variant="productivefrogs:diamond"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -243,7 +243,7 @@ ServerEvents.recipes(event => {
     }
   ).id('kubejs:froglight_slime/diamond')
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:dirt",Category:"BOG"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:dirt",Category:"BOG"},productivefrogs:slime_variant="productivefrogs:dirt"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -253,7 +253,7 @@ ServerEvents.recipes(event => {
     }
   ).id('kubejs:froglight_slime/dirt')
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:dragon_breath",Category:"VOID"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:dragon_breath",Category:"VOID"},productivefrogs:slime_variant="productivefrogs:dragon_breath"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -263,7 +263,7 @@ ServerEvents.recipes(event => {
     }
   ).id('kubejs:froglight_slime/dragon_breath')
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:dragon_egg",Category:"VOID"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:dragon_egg",Category:"VOID"},productivefrogs:slime_variant="productivefrogs:dragon_egg"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -274,7 +274,7 @@ ServerEvents.recipes(event => {
   ).id('kubejs:froglight_slime/dragon_egg')
   if (Platform.isLoaded('powah')) {
     event.shaped(
-      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:dry_ice",Category:"TIDE"}]',
+      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:dry_ice",Category:"TIDE"},productivefrogs:slime_variant="productivefrogs:dry_ice"]',
       ['BFF', 'FGF', 'SSS'],
       {
         B: 'minecraft:bucket',
@@ -285,7 +285,7 @@ ServerEvents.recipes(event => {
     ).id('kubejs:froglight_slime/dry_ice')
   }
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:echo_shard",Category:"VOID"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:echo_shard",Category:"VOID"},productivefrogs:slime_variant="productivefrogs:echo_shard"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -296,7 +296,7 @@ ServerEvents.recipes(event => {
   ).id('kubejs:froglight_slime/echo_shard')
   if (Platform.isLoaded('justdirethings')) {
     event.shaped(
-      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:eclipse_ember",Category:"VOID"}]',
+      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:eclipse_ember",Category:"VOID"},productivefrogs:slime_variant="productivefrogs:eclipse_ember"]',
       ['BFF', 'FGF', 'SSS'],
       {
         B: 'minecraft:bucket',
@@ -308,7 +308,7 @@ ServerEvents.recipes(event => {
   }
   if (Platform.isLoaded('justdirethings')) {
     event.shaped(
-      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:eclipsealloy",Category:"VOID"}]',
+      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:eclipsealloy",Category:"VOID"},productivefrogs:slime_variant="productivefrogs:eclipsealloy"]',
       ['BFF', 'FGF', 'SSS'],
       {
         B: 'minecraft:bucket',
@@ -319,7 +319,7 @@ ServerEvents.recipes(event => {
     ).id('kubejs:froglight_slime/eclipsealloy')
   }
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:emerald",Category:"GEODE"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:emerald",Category:"GEODE"},productivefrogs:slime_variant="productivefrogs:emerald"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -329,7 +329,7 @@ ServerEvents.recipes(event => {
     }
   ).id('kubejs:froglight_slime/emerald')
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:end_stone",Category:"VOID"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:end_stone",Category:"VOID"},productivefrogs:slime_variant="productivefrogs:end_stone"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -339,7 +339,7 @@ ServerEvents.recipes(event => {
     }
   ).id('kubejs:froglight_slime/end_stone')
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:ender_pearl",Category:"VOID"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:ender_pearl",Category:"VOID"},productivefrogs:slime_variant="productivefrogs:ender_pearl"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -350,7 +350,7 @@ ServerEvents.recipes(event => {
   ).id('kubejs:froglight_slime/ender_pearl')
   if (Platform.isLoaded('powah')) {
     event.shaped(
-      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:energized_steel",Category:"CAVE"}]',
+      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:energized_steel",Category:"CAVE"},productivefrogs:slime_variant="productivefrogs:energized_steel"]',
       ['BFF', 'FGF', 'SSS'],
       {
         B: 'minecraft:bucket',
@@ -361,7 +361,7 @@ ServerEvents.recipes(event => {
     ).id('kubejs:froglight_slime/energized_steel')
   }
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:experience",Category:"VOID"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:experience",Category:"VOID"},productivefrogs:slime_variant="productivefrogs:experience"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -371,7 +371,7 @@ ServerEvents.recipes(event => {
     }
   ).id('kubejs:froglight_slime/experience')
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:feather",Category:"BOG"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:feather",Category:"BOG"},productivefrogs:slime_variant="productivefrogs:feather"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -382,7 +382,7 @@ ServerEvents.recipes(event => {
   ).id('kubejs:froglight_slime/feather')
   if (Platform.isLoaded('justdirethings')) {
     event.shaped(
-      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:ferricore",Category:"CAVE"}]',
+      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:ferricore",Category:"CAVE"},productivefrogs:slime_variant="productivefrogs:ferricore"]',
       ['BFF', 'FGF', 'SSS'],
       {
         B: 'minecraft:bucket',
@@ -394,7 +394,7 @@ ServerEvents.recipes(event => {
   }
   if (Platform.isLoaded('ae2')) {
     event.shaped(
-      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:fluix",Category:"GEODE"}]',
+      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:fluix",Category:"GEODE"},productivefrogs:slime_variant="productivefrogs:fluix"]',
       ['BFF', 'FGF', 'SSS'],
       {
         B: 'minecraft:bucket',
@@ -406,7 +406,7 @@ ServerEvents.recipes(event => {
   }
   if (Platform.isLoaded('mekanism')) {
     event.shaped(
-      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:fluorite",Category:"GEODE"}]',
+      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:fluorite",Category:"GEODE"},productivefrogs:slime_variant="productivefrogs:fluorite"]',
       ['BFF', 'FGF', 'SSS'],
       {
         B: 'minecraft:bucket',
@@ -418,7 +418,7 @@ ServerEvents.recipes(event => {
   }
   if (Platform.isLoaded('fluxnetworks')) {
     event.shaped(
-      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:flux_dust",Category:"INFERNAL"}]',
+      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:flux_dust",Category:"INFERNAL"},productivefrogs:slime_variant="productivefrogs:flux_dust"]',
       ['BFF', 'FGF', 'SSS'],
       {
         B: 'minecraft:bucket',
@@ -429,7 +429,7 @@ ServerEvents.recipes(event => {
     ).id('kubejs:froglight_slime/flux_dust')
   }
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:ghast_tear",Category:"INFERNAL"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:ghast_tear",Category:"INFERNAL"},productivefrogs:slime_variant="productivefrogs:ghast_tear"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -439,7 +439,7 @@ ServerEvents.recipes(event => {
     }
   ).id('kubejs:froglight_slime/ghast_tear')
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:glow_ink_sac",Category:"CAVE"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:glow_ink_sac",Category:"CAVE"},productivefrogs:slime_variant="productivefrogs:glow_ink_sac"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -449,7 +449,7 @@ ServerEvents.recipes(event => {
     }
   ).id('kubejs:froglight_slime/glow_ink_sac')
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:glowstone_dust",Category:"INFERNAL"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:glowstone_dust",Category:"INFERNAL"},productivefrogs:slime_variant="productivefrogs:glowstone_dust"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -459,7 +459,7 @@ ServerEvents.recipes(event => {
     }
   ).id('kubejs:froglight_slime/glowstone_dust')
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:gold",Category:"CAVE"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:gold",Category:"CAVE"},productivefrogs:slime_variant="productivefrogs:gold"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -469,7 +469,7 @@ ServerEvents.recipes(event => {
     }
   ).id('kubejs:froglight_slime/gold')
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:gunpowder",Category:"BOG"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:gunpowder",Category:"BOG"},productivefrogs:slime_variant="productivefrogs:gunpowder"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -479,7 +479,7 @@ ServerEvents.recipes(event => {
     }
   ).id('kubejs:froglight_slime/gunpowder')
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:honeycomb",Category:"BOG"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:honeycomb",Category:"BOG"},productivefrogs:slime_variant="productivefrogs:honeycomb"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -489,7 +489,7 @@ ServerEvents.recipes(event => {
     }
   ).id('kubejs:froglight_slime/honeycomb')
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:ice",Category:"TIDE"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:ice",Category:"TIDE"},productivefrogs:slime_variant="productivefrogs:ice"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -500,7 +500,7 @@ ServerEvents.recipes(event => {
   ).id('kubejs:froglight_slime/ice')
   if (Platform.isLoaded('refinedstorage')) {
     event.shaped(
-      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:improved_processor",Category:"GEODE"}]',
+      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:improved_processor",Category:"GEODE"},productivefrogs:slime_variant="productivefrogs:improved_processor"]',
       ['BFF', 'FGF', 'SSS'],
       {
         B: 'minecraft:bucket',
@@ -512,7 +512,7 @@ ServerEvents.recipes(event => {
   }
   if (Platform.isLoaded('mysticalagriculture')) {
     event.shaped(
-      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:inferium",Category:"VOID"}]',
+      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:inferium",Category:"VOID"},productivefrogs:slime_variant="productivefrogs:inferium"]',
       ['BFF', 'FGF', 'SSS'],
       {
         B: 'minecraft:bucket',
@@ -523,7 +523,7 @@ ServerEvents.recipes(event => {
     ).id('kubejs:froglight_slime/inferium')
   }
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:ink_sac",Category:"TIDE"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:ink_sac",Category:"TIDE"},productivefrogs:slime_variant="productivefrogs:ink_sac"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -533,7 +533,7 @@ ServerEvents.recipes(event => {
     }
   ).id('kubejs:froglight_slime/ink_sac')
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:iron",Category:"CAVE"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:iron",Category:"CAVE"},productivefrogs:slime_variant="productivefrogs:iron"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -543,7 +543,7 @@ ServerEvents.recipes(event => {
     }
   ).id('kubejs:froglight_slime/iron')
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:lapis",Category:"GEODE"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:lapis",Category:"GEODE"},productivefrogs:slime_variant="productivefrogs:lapis"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -553,7 +553,7 @@ ServerEvents.recipes(event => {
     }
   ).id('kubejs:froglight_slime/lapis')
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:lava",Category:"CAVE"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:lava",Category:"CAVE"},productivefrogs:slime_variant="productivefrogs:lava"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -564,7 +564,7 @@ ServerEvents.recipes(event => {
   ).id('kubejs:froglight_slime/lava')
   if (Platform.isLoaded('alltheores')) {
     event.shaped(
-      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:lead",Category:"CAVE"}]',
+      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:lead",Category:"CAVE"},productivefrogs:slime_variant="productivefrogs:lead"]',
       ['BFF', 'FGF', 'SSS'],
       {
         B: 'minecraft:bucket',
@@ -575,7 +575,7 @@ ServerEvents.recipes(event => {
     ).id('kubejs:froglight_slime/lead')
   }
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:leather",Category:"BOG"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:leather",Category:"BOG"},productivefrogs:slime_variant="productivefrogs:leather"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -585,7 +585,7 @@ ServerEvents.recipes(event => {
     }
   ).id('kubejs:froglight_slime/leather')
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:lily_pad",Category:"BOG"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:lily_pad",Category:"BOG"},productivefrogs:slime_variant="productivefrogs:lily_pad"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -595,7 +595,7 @@ ServerEvents.recipes(event => {
     }
   ).id('kubejs:froglight_slime/lily_pad')
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:magma_cream",Category:"INFERNAL"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:magma_cream",Category:"INFERNAL"},productivefrogs:slime_variant="productivefrogs:magma_cream"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -605,7 +605,7 @@ ServerEvents.recipes(event => {
     }
   ).id('kubejs:froglight_slime/magma_cream')
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:moss",Category:"BOG"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:moss",Category:"BOG"},productivefrogs:slime_variant="productivefrogs:moss"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -615,7 +615,7 @@ ServerEvents.recipes(event => {
     }
   ).id('kubejs:froglight_slime/moss')
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:mud",Category:"BOG"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:mud",Category:"BOG"},productivefrogs:slime_variant="productivefrogs:mud"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -625,7 +625,7 @@ ServerEvents.recipes(event => {
     }
   ).id('kubejs:froglight_slime/mud')
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:mycelium",Category:"BOG"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:mycelium",Category:"BOG"},productivefrogs:slime_variant="productivefrogs:mycelium"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -636,7 +636,7 @@ ServerEvents.recipes(event => {
   ).id('kubejs:froglight_slime/mycelium')
   if (Platform.isLoaded('mythicmetals')) {
     event.shaped(
-      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:mythril",Category:"VOID"}]',
+      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:mythril",Category:"VOID"},productivefrogs:slime_variant="productivefrogs:mythril"]',
       ['BFF', 'FGF', 'SSS'],
       {
         B: 'minecraft:bucket',
@@ -647,7 +647,7 @@ ServerEvents.recipes(event => {
     ).id('kubejs:froglight_slime/mythril')
   }
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:nautilus_shell",Category:"TIDE"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:nautilus_shell",Category:"TIDE"},productivefrogs:slime_variant="productivefrogs:nautilus_shell"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -657,7 +657,7 @@ ServerEvents.recipes(event => {
     }
   ).id('kubejs:froglight_slime/nautilus_shell')
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:nether_star",Category:"INFERNAL"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:nether_star",Category:"INFERNAL"},productivefrogs:slime_variant="productivefrogs:nether_star"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -667,7 +667,7 @@ ServerEvents.recipes(event => {
     }
   ).id('kubejs:froglight_slime/nether_star')
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:netherite_scrap",Category:"INFERNAL"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:netherite_scrap",Category:"INFERNAL"},productivefrogs:slime_variant="productivefrogs:netherite_scrap"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -677,7 +677,7 @@ ServerEvents.recipes(event => {
     }
   ).id('kubejs:froglight_slime/netherite_scrap')
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:netherrack",Category:"INFERNAL"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:netherrack",Category:"INFERNAL"},productivefrogs:slime_variant="productivefrogs:netherrack"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -688,7 +688,7 @@ ServerEvents.recipes(event => {
   ).id('kubejs:froglight_slime/netherrack')
   if (Platform.isLoaded('alltheores')) {
     event.shaped(
-      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:nickel",Category:"CAVE"}]',
+      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:nickel",Category:"CAVE"},productivefrogs:slime_variant="productivefrogs:nickel"]',
       ['BFF', 'FGF', 'SSS'],
       {
         B: 'minecraft:bucket',
@@ -700,7 +700,7 @@ ServerEvents.recipes(event => {
   }
   if (Platform.isLoaded('powah')) {
     event.shaped(
-      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:niotic",Category:"VOID"}]',
+      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:niotic",Category:"VOID"},productivefrogs:slime_variant="productivefrogs:niotic"]',
       ['BFF', 'FGF', 'SSS'],
       {
         B: 'minecraft:bucket',
@@ -712,7 +712,7 @@ ServerEvents.recipes(event => {
   }
   if (Platform.isLoaded('powah')) {
     event.shaped(
-      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:nitro",Category:"VOID"}]',
+      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:nitro",Category:"VOID"},productivefrogs:slime_variant="productivefrogs:nitro"]',
       ['BFF', 'FGF', 'SSS'],
       {
         B: 'minecraft:bucket',
@@ -723,7 +723,7 @@ ServerEvents.recipes(event => {
     ).id('kubejs:froglight_slime/nitro')
   }
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:obsidian",Category:"INFERNAL"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:obsidian",Category:"INFERNAL"},productivefrogs:slime_variant="productivefrogs:obsidian"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -734,7 +734,7 @@ ServerEvents.recipes(event => {
   ).id('kubejs:froglight_slime/obsidian')
   if (Platform.isLoaded('mythicmetals')) {
     event.shaped(
-      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:orichalcum",Category:"VOID"}]',
+      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:orichalcum",Category:"VOID"},productivefrogs:slime_variant="productivefrogs:orichalcum"]',
       ['BFF', 'FGF', 'SSS'],
       {
         B: 'minecraft:bucket',
@@ -746,7 +746,7 @@ ServerEvents.recipes(event => {
   }
   if (Platform.isLoaded('alltheores')) {
     event.shaped(
-      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:osmium",Category:"CAVE"}]',
+      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:osmium",Category:"CAVE"},productivefrogs:slime_variant="productivefrogs:osmium"]',
       ['BFF', 'FGF', 'SSS'],
       {
         B: 'minecraft:bucket',
@@ -757,7 +757,7 @@ ServerEvents.recipes(event => {
     ).id('kubejs:froglight_slime/osmium')
   }
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:phantom_membrane",Category:"VOID"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:phantom_membrane",Category:"VOID"},productivefrogs:slime_variant="productivefrogs:phantom_membrane"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -768,7 +768,7 @@ ServerEvents.recipes(event => {
   ).id('kubejs:froglight_slime/phantom_membrane')
   if (Platform.isLoaded('industrialforegoing')) {
     event.shaped(
-      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:pink_slime",Category:"BOG"}]',
+      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:pink_slime",Category:"BOG"},productivefrogs:slime_variant="productivefrogs:pink_slime"]',
       ['BFF', 'FGF', 'SSS'],
       {
         B: 'minecraft:bucket',
@@ -780,7 +780,7 @@ ServerEvents.recipes(event => {
   }
   if (Platform.isLoaded('industrialforegoing')) {
     event.shaped(
-      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:plastic",Category:"BOG"}]',
+      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:plastic",Category:"BOG"},productivefrogs:slime_variant="productivefrogs:plastic"]',
       ['BFF', 'FGF', 'SSS'],
       {
         B: 'minecraft:bucket',
@@ -791,7 +791,7 @@ ServerEvents.recipes(event => {
     ).id('kubejs:froglight_slime/plastic')
   }
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:prismarine",Category:"TIDE"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:prismarine",Category:"TIDE"},productivefrogs:slime_variant="productivefrogs:prismarine"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -801,7 +801,7 @@ ServerEvents.recipes(event => {
     }
   ).id('kubejs:froglight_slime/prismarine')
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:prismarine_crystals",Category:"TIDE"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:prismarine_crystals",Category:"TIDE"},productivefrogs:slime_variant="productivefrogs:prismarine_crystals"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -811,7 +811,7 @@ ServerEvents.recipes(event => {
     }
   ).id('kubejs:froglight_slime/prismarine_crystals')
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:quartz",Category:"INFERNAL"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:quartz",Category:"INFERNAL"},productivefrogs:slime_variant="productivefrogs:quartz"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -822,7 +822,7 @@ ServerEvents.recipes(event => {
   ).id('kubejs:froglight_slime/quartz')
   if (Platform.isLoaded('refinedstorage')) {
     event.shaped(
-      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:quartz_enriched_iron",Category:"INFERNAL"}]',
+      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:quartz_enriched_iron",Category:"INFERNAL"},productivefrogs:slime_variant="productivefrogs:quartz_enriched_iron"]',
       ['BFF', 'FGF', 'SSS'],
       {
         B: 'minecraft:bucket',
@@ -833,7 +833,7 @@ ServerEvents.recipes(event => {
     ).id('kubejs:froglight_slime/quartz_enriched_iron')
   }
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:rainbow",Category:"BOG"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:rainbow",Category:"BOG"},productivefrogs:slime_variant="productivefrogs:rainbow"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -843,7 +843,7 @@ ServerEvents.recipes(event => {
     }
   ).id('kubejs:froglight_slime/rainbow')
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:redstone",Category:"CAVE"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:redstone",Category:"CAVE"},productivefrogs:slime_variant="productivefrogs:redstone"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -854,7 +854,7 @@ ServerEvents.recipes(event => {
   ).id('kubejs:froglight_slime/redstone')
   if (Platform.isLoaded('mekanism')) {
     event.shaped(
-      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:refined_glowstone",Category:"INFERNAL"}]',
+      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:refined_glowstone",Category:"INFERNAL"},productivefrogs:slime_variant="productivefrogs:refined_glowstone"]',
       ['BFF', 'FGF', 'SSS'],
       {
         B: 'minecraft:bucket',
@@ -866,7 +866,7 @@ ServerEvents.recipes(event => {
   }
   if (Platform.isLoaded('mekanism')) {
     event.shaped(
-      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:refined_obsidian",Category:"INFERNAL"}]',
+      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:refined_obsidian",Category:"INFERNAL"},productivefrogs:slime_variant="productivefrogs:refined_obsidian"]',
       ['BFF', 'FGF', 'SSS'],
       {
         B: 'minecraft:bucket',
@@ -877,7 +877,7 @@ ServerEvents.recipes(event => {
     ).id('kubejs:froglight_slime/refined_obsidian')
   }
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:rotten_flesh",Category:"BOG"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:rotten_flesh",Category:"BOG"},productivefrogs:slime_variant="productivefrogs:rotten_flesh"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -887,7 +887,7 @@ ServerEvents.recipes(event => {
     }
   ).id('kubejs:froglight_slime/rotten_flesh')
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:sculk",Category:"VOID"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:sculk",Category:"VOID"},productivefrogs:slime_variant="productivefrogs:sculk"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -897,7 +897,7 @@ ServerEvents.recipes(event => {
     }
   ).id('kubejs:froglight_slime/sculk')
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:sea_pickle",Category:"TIDE"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:sea_pickle",Category:"TIDE"},productivefrogs:slime_variant="productivefrogs:sea_pickle"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -907,7 +907,7 @@ ServerEvents.recipes(event => {
     }
   ).id('kubejs:froglight_slime/sea_pickle')
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:shulker_shell",Category:"VOID"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:shulker_shell",Category:"VOID"},productivefrogs:slime_variant="productivefrogs:shulker_shell"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -917,7 +917,7 @@ ServerEvents.recipes(event => {
     }
   ).id('kubejs:froglight_slime/shulker_shell')
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:silicon",Category:"GEODE"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:silicon",Category:"GEODE"},productivefrogs:slime_variant="productivefrogs:silicon"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -928,7 +928,7 @@ ServerEvents.recipes(event => {
   ).id('kubejs:froglight_slime/silicon')
   if (Platform.isLoaded('alltheores')) {
     event.shaped(
-      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:silver",Category:"CAVE"}]',
+      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:silver",Category:"CAVE"},productivefrogs:slime_variant="productivefrogs:silver"]',
       ['BFF', 'FGF', 'SSS'],
       {
         B: 'minecraft:bucket',
@@ -939,7 +939,7 @@ ServerEvents.recipes(event => {
     ).id('kubejs:froglight_slime/silver')
   }
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:snow",Category:"TIDE"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:snow",Category:"TIDE"},productivefrogs:slime_variant="productivefrogs:snow"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -949,7 +949,7 @@ ServerEvents.recipes(event => {
     }
   ).id('kubejs:froglight_slime/snow')
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:soul_sand",Category:"INFERNAL"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:soul_sand",Category:"INFERNAL"},productivefrogs:slime_variant="productivefrogs:soul_sand"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -959,7 +959,7 @@ ServerEvents.recipes(event => {
     }
   ).id('kubejs:froglight_slime/soul_sand')
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:soul_soil",Category:"INFERNAL"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:soul_soil",Category:"INFERNAL"},productivefrogs:slime_variant="productivefrogs:soul_soil"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -970,7 +970,7 @@ ServerEvents.recipes(event => {
   ).id('kubejs:froglight_slime/soul_soil')
   if (Platform.isLoaded('powah')) {
     event.shaped(
-      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:spirited",Category:"VOID"}]',
+      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:spirited",Category:"VOID"},productivefrogs:slime_variant="productivefrogs:spirited"]',
       ['BFF', 'FGF', 'SSS'],
       {
         B: 'minecraft:bucket',
@@ -981,7 +981,7 @@ ServerEvents.recipes(event => {
     ).id('kubejs:froglight_slime/spirited')
   }
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:sponge",Category:"TIDE"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:sponge",Category:"TIDE"},productivefrogs:slime_variant="productivefrogs:sponge"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -992,7 +992,7 @@ ServerEvents.recipes(event => {
   ).id('kubejs:froglight_slime/sponge')
   if (Platform.isLoaded('mekanism')) {
     event.shaped(
-      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:steel",Category:"CAVE"}]',
+      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:steel",Category:"CAVE"},productivefrogs:slime_variant="productivefrogs:steel"]',
       ['BFF', 'FGF', 'SSS'],
       {
         B: 'minecraft:bucket',
@@ -1003,7 +1003,7 @@ ServerEvents.recipes(event => {
     ).id('kubejs:froglight_slime/steel')
   }
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:string",Category:"BOG"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:string",Category:"BOG"},productivefrogs:slime_variant="productivefrogs:string"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -1014,7 +1014,7 @@ ServerEvents.recipes(event => {
   ).id('kubejs:froglight_slime/string')
   if (Platform.isLoaded('mysticalagriculture')) {
     event.shaped(
-      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:supremium",Category:"VOID"}]',
+      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:supremium",Category:"VOID"},productivefrogs:slime_variant="productivefrogs:supremium"]',
       ['BFF', 'FGF', 'SSS'],
       {
         B: 'minecraft:bucket',
@@ -1026,7 +1026,7 @@ ServerEvents.recipes(event => {
   }
   if (Platform.isLoaded('alltheores')) {
     event.shaped(
-      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:tin",Category:"CAVE"}]',
+      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:tin",Category:"CAVE"},productivefrogs:slime_variant="productivefrogs:tin"]',
       ['BFF', 'FGF', 'SSS'],
       {
         B: 'minecraft:bucket',
@@ -1037,7 +1037,7 @@ ServerEvents.recipes(event => {
     ).id('kubejs:froglight_slime/tin')
   }
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:tuff",Category:"GEODE"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:tuff",Category:"GEODE"},productivefrogs:slime_variant="productivefrogs:tuff"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -1047,7 +1047,7 @@ ServerEvents.recipes(event => {
     }
   ).id('kubejs:froglight_slime/tuff')
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:turtle_scute",Category:"TIDE"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:turtle_scute",Category:"TIDE"},productivefrogs:slime_variant="productivefrogs:turtle_scute"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -1058,7 +1058,7 @@ ServerEvents.recipes(event => {
   ).id('kubejs:froglight_slime/turtle_scute')
   if (Platform.isLoaded('powah')) {
     event.shaped(
-      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:uraninite",Category:"CAVE"}]',
+      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:uraninite",Category:"CAVE"},productivefrogs:slime_variant="productivefrogs:uraninite"]',
       ['BFF', 'FGF', 'SSS'],
       {
         B: 'minecraft:bucket',
@@ -1070,7 +1070,7 @@ ServerEvents.recipes(event => {
   }
   if (Platform.isLoaded('alltheores')) {
     event.shaped(
-      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:uranium",Category:"CAVE"}]',
+      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:uranium",Category:"CAVE"},productivefrogs:slime_variant="productivefrogs:uranium"]',
       ['BFF', 'FGF', 'SSS'],
       {
         B: 'minecraft:bucket',
@@ -1082,7 +1082,7 @@ ServerEvents.recipes(event => {
   }
   if (Platform.isLoaded('justdirethings')) {
     event.shaped(
-      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:voidflame",Category:"VOID"}]',
+      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:voidflame",Category:"VOID"},productivefrogs:slime_variant="productivefrogs:voidflame"]',
       ['BFF', 'FGF', 'SSS'],
       {
         B: 'minecraft:bucket',
@@ -1093,7 +1093,7 @@ ServerEvents.recipes(event => {
     ).id('kubejs:froglight_slime/voidflame')
   }
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:water",Category:"CAVE"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:water",Category:"CAVE"},productivefrogs:slime_variant="productivefrogs:water"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -1103,7 +1103,7 @@ ServerEvents.recipes(event => {
     }
   ).id('kubejs:froglight_slime/water')
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:wither_skeleton_skull",Category:"INFERNAL"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:wither_skeleton_skull",Category:"INFERNAL"},productivefrogs:slime_variant="productivefrogs:wither_skeleton_skull"]',
     ['BFF', 'FGF', 'SSS'],
     {
       B: 'minecraft:bucket',
@@ -1114,7 +1114,7 @@ ServerEvents.recipes(event => {
   ).id('kubejs:froglight_slime/wither_skeleton_skull')
   if (Platform.isLoaded('alltheores')) {
     event.shaped(
-      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:zinc",Category:"CAVE"}]',
+      'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:zinc",Category:"CAVE"},productivefrogs:slime_variant="productivefrogs:zinc"]',
       ['BFF', 'FGF', 'SSS'],
       {
         B: 'minecraft:bucket',

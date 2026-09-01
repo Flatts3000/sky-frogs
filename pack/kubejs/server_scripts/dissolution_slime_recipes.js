@@ -33,6 +33,12 @@
 // don't have it yet - the crafting tables remain the path TO the chamber. Once you
 // have the chamber, you can automate the same slime production via hopper-fed input
 // instead of hand-crafting. The economics are a 1:1 wash; the value is automation.
+//
+// Both identity carriers are stamped (#247): the nested bucket_entity_data.Variant
+// that the Slime Milker and the release path read, and the flat
+// productivefrogs:slime_variant component PF 1.26.0 made the stable identity key.
+// The six gateway quests match the component under fuzzy, so a bucket minted with
+// only the tag would not complete the quest it satisfied before.
 
 // [Category stamp, tier filler block, [[variant, prior-resource], ...]]
 //
@@ -278,7 +284,10 @@ ServerEvents.recipes(event => {
         output: {
           id: 'productivefrogs:slime_bucket',
           count: 1,
-          components: { 'minecraft:bucket_entity_data': { Variant: v, Category: category } }
+          components: {
+            'minecraft:bucket_entity_data': { Variant: v, Category: category },
+            'productivefrogs:slime_variant': v
+          }
         },
         processingTime: 200
       // Category-prefixed id so a future-tier variant can never accidentally collide on
@@ -321,7 +330,10 @@ ServerEvents.recipes(event => {
       output: {
         id: 'productivefrogs:slime_bucket',
         count: 1,
-        components: { 'minecraft:bucket_entity_data': { Variant: `productivefrogs:${variant}`, Category: category } }
+        components: {
+          'minecraft:bucket_entity_data': { Variant: `productivefrogs:${variant}`, Category: category },
+          'productivefrogs:slime_variant': `productivefrogs:${variant}`
+        }
       },
       processingTime: 200
     }).id(`kubejs:dissolution_slime/${category.toLowerCase()}_${variant}`)

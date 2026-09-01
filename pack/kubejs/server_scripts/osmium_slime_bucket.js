@@ -11,11 +11,16 @@
 // and smelt the Froglight for osmium - no ore ever mined. Resolves the Cave->Mekanism
 // gate (Mekanism stops needing a missing ore node and hands the player osmium itself).
 //
-// Output stamps Variant + Category into bucket_entity_data to match PF's JEI subtype.
+// Output stamps Variant + Category into bucket_entity_data to match PF's JEI subtype.//
+// Both identity carriers are stamped (#247): the nested bucket_entity_data.Variant
+// that the Slime Milker and the release path read, and the flat
+// productivefrogs:slime_variant component PF 1.26.0 made the stable identity key.
+// The six gateway quests match the component under fuzzy, so a bucket minted with
+// only the tag would not complete the quest it satisfied before.
 
 ServerEvents.recipes(event => {
   event.shapeless(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:osmium",Category:"CAVE"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:osmium",Category:"CAVE"},productivefrogs:slime_variant="productivefrogs:osmium"]',
     [
       'productivefrogs:redstone_slime_milk_bucket',
       'minecraft:stone',

@@ -16,11 +16,16 @@
 // Each step: prior Slime Milk + 4 mossy cobblestone + 3 sweetslime + a Bog frogspawn ->
 // the next Slime in a Bucket, so you can't skip ahead. Plastic gates Industrial Foregoing
 // and pink slime is the capstone. IF is a required pack dependency; the Platform.isLoaded
-// guard below is dev-safety only (PF's plastic/pink_slime variants are IF-conditioned).
+// guard below is dev-safety only (PF's plastic/pink_slime variants are IF-conditioned).//
+// Both identity carriers are stamped (#247): the nested bucket_entity_data.Variant
+// that the Slime Milker and the release path read, and the flat
+// productivefrogs:slime_variant component PF 1.26.0 made the stable identity key.
+// The six gateway quests match the component under fuzzy, so a bucket minted with
+// only the tag would not complete the quest it satisfied before.
 ServerEvents.recipes(event => {
   // Bridge bootstrap: diamond Slime Milk + mossy cobblestone -> the first Bog (dirt) slime.
   event.shapeless(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:dirt",Category:"BOG"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:dirt",Category:"BOG"},productivefrogs:slime_variant="productivefrogs:dirt"]',
     [
       'productivefrogs:diamond_slime_milk_bucket',
       'minecraft:mossy_cobblestone', 'minecraft:mossy_cobblestone', 'minecraft:mossy_cobblestone', 'minecraft:mossy_cobblestone',
@@ -36,7 +41,7 @@ ServerEvents.recipes(event => {
   // The rest of the lane chains off bone below, so the un-farmable drops
   // (armadillo_scute - no armadillos; honeycomb - no bees) come down-chain.
   event.shapeless(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:bone",Category:"BOG"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:bone",Category:"BOG"},productivefrogs:slime_variant="productivefrogs:bone"]',
     [
       'minecraft:bone_meal',
       'minecraft:mossy_cobblestone', 'minecraft:mossy_cobblestone', 'minecraft:mossy_cobblestone', 'minecraft:mossy_cobblestone',
@@ -74,7 +79,7 @@ ServerEvents.recipes(event => {
     const from = step[0]
     const to = step[1]
     event.shapeless(
-      `productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:${to}",Category:"BOG"}]`,
+      `productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:${to}",Category:"BOG"},productivefrogs:slime_variant="productivefrogs:${to}"]`,
       [
         `productivefrogs:${from}_slime_milk_bucket`,
         'minecraft:mossy_cobblestone', 'minecraft:mossy_cobblestone', 'minecraft:mossy_cobblestone', 'minecraft:mossy_cobblestone',

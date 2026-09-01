@@ -14,7 +14,12 @@
 // the recipe silently refuses it. The per-variant Slime Milk bucket (PF 1.8 split) is a
 // plain item id with no component to match, so it works for every player and stays
 // iron-specific (no steel-from-anything exploit). The output keeps ItemStack.CODEC, which
-// carries the steel variant's bucket_entity_data fine.
+// carries the steel variant's bucket_entity_data fine.//
+// Both identity carriers are stamped (#247): the nested bucket_entity_data.Variant
+// that the Slime Milker and the release path read, and the flat
+// productivefrogs:slime_variant component PF 1.26.0 made the stable identity key.
+// The six gateway quests match the component under fuzzy, so a bucket minted with
+// only the tag would not complete the quest it satisfied before.
 
 ServerEvents.recipes(event => {
   event.custom({
@@ -24,7 +29,10 @@ ServerEvents.recipes(event => {
     output: {
       id: 'productivefrogs:slime_bucket',
       count: 1,
-      components: { 'minecraft:bucket_entity_data': { Variant: 'productivefrogs:steel', Category: 'CAVE' } }
+      components: {
+        'minecraft:bucket_entity_data': { Variant: 'productivefrogs:steel', Category: 'CAVE' },
+        'productivefrogs:slime_variant': 'productivefrogs:steel'
+      }
     },
     per_tick_usage: false
   })

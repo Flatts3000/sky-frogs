@@ -18,15 +18,7 @@ Entries are kept after they are fixed: the diagnosis is the valuable part, and s
 
 ## Open
 
-Three, all root-caused and all owned by another mod. New bugs are filed as [GitHub issues](https://github.com/Flatts3000/sky-frogs/issues) first (see [`github_issues_best_practices.md`](./github_issues_best_practices.md)); they earn an entry here once the root cause is understood, so the ledger records the diagnosis rather than duplicating issue state.
-
-### 🟡 A scooped Slime in a Bucket cannot complete the six Slime-in-a-Bucket quests
-
-Six quests take a Slime in a Bucket with `match_components: "strict"` against exactly `{Category, Variant}`. A **crafted** bucket carries exactly those two keys. A **scooped** one carries more: PF calls `Bucketable.saveDefaultDataToBucketTag` first, which writes `Health` unconditionally (plus `NoAI` / `Silent` / `NoGravity` / `Invulnerable` when set), and only then appends `Category` + `Variant`. Strict matching is exact map equality, so the scooped bucket never matches.
-
-No pack-side setting fixes it: `fuzzy` compares whole components too and fails identically, and `none` would let any slime bucket satisfy the iron quest. The quest text for **A Bucket of Ender Pearl Slime** documents the by-hand scoop route, so the pack currently tells players to do the thing that cannot complete the quest.
-
-**Workaround:** craft the bucket rather than scooping one. **Tracked as [#247](https://github.com/Flatts3000/sky-frogs/issues/247), upstream [productive-frogs#357](https://github.com/Flatts3000/productive-frogs/issues/357).** Reported on Discord by Sam Gomez.
+Two, both root-caused and both owned by another mod. New bugs are filed as [GitHub issues](https://github.com/Flatts3000/sky-frogs/issues) first (see [`github_issues_best_practices.md`](./github_issues_best_practices.md)); they earn an entry here once the root cause is understood, so the ledger records the diagnosis rather than duplicating issue state.
 
 ### 🔵 The Copy-Paste Gadget pastes Froglights with no variant
 
@@ -58,6 +50,29 @@ Not caught by the update's dedicated-server boot test: that reads KubeJS's own "
 ---
 
 ## Resolved
+
+### 🟣 A scooped Slime in a Bucket could not complete the six Slime-in-a-Bucket quests
+
+**Symptom.** The six gateway quests that take a Slime in a Bucket completed when the bucket was crafted and never when it was scooped off a live slime. Three independent reports: **Sam Gomez** on Discord ("it only gave me the quest after crafting the item"), **BreadBelt** on Discord for the netherrack row, and the ender-pearl case in #252. [#247](https://github.com/Flatts3000/sky-frogs/issues/247).
+
+**Root cause.** The variant lived inside a bag of mutable entity state. All six tasks matched `match_components: "strict"` against `minecraft:bucket_entity_data` holding exactly `{Category, Variant}`. A crafted bucket carries those two keys and nothing else; a scooped one runs vanilla's `Bucketable.saveDefaultDataToBucketTag` first, which writes `Health` unconditionally (plus `NoAI` / `Silent` / `NoGravity` / `Invulnerable` / `CustomName` when set) before PF appends `Category` and `Variant`. `strict` is `ItemStack.isSameItemSameComponents`, whole-map equality, so the maps never matched.
+
+**Why only these six of 181 component-matching tasks.** 175 of them match a flat identity string with one value per variant, however the item was obtained - 166 on `productivefrogs:slime_variant` alone. The slime bucket was the only task item whose identity was carried *inside* a compound of live entity state, so it was the only one whose component map depended on how the player got it. Not a quest-authoring slip: the one PF item without a stable identity component.
+
+**Fix, in two halves that had to land together.**
+
+Upstream, PF 1.26.0 ([#357](https://github.com/Flatts3000/productive-frogs/issues/357)) stamps a flat `productivefrogs:slime_variant` on both of its producers rather than stripping the entity state - identity is not entity state, and `Health` and custom names still survive the round trip. It also made the two carriers self-healing: `readVariant` falls back to the component when the tag key is absent, and `checkExtraContent` folds the component back into the tag before spawning, so a component-only bucket still releases the right slime.
+
+Pack-side, both halves:
+
+1. The six tasks now declare `components: { "productivefrogs:slime_variant": "productivefrogs:<v>" }` with `match_components: "fuzzy"`. Decompiling `ftb-quests-neoforge-2101.1.34.jar` settles the mode semantics: `fuzzy` is `allMatch` over the **task's** components against the player's, so the declared set must be a **subset** and extras are ignored. That is why fuzzy works on a flat key and did not on `bucket_entity_data`, whose value differs as a whole - the earlier note that "fuzzy compares whole components and fails identically" was right about that key and wrong as a general claim.
+2. Every bucket the pack mints now carries the component too. Twelve producers wrote only the nested tag and never went through PF's `PFItems.variantSlimeBucket`: the nine bracket-string mints across the four chain scripts plus `iron_slime_bucket.js` and `osmium_slime_bucket.js`, the two Dissolution Chamber outputs, and `steel_slime_infusing.js`. Under fuzzy-on-`slime_variant` a pack-crafted bucket would have failed the very task it satisfied before. The generated 103 rows were fixed in `tools/gen_froglight_slime_recipes.py`, not in its output.
+
+Both carriers are kept on pack buckets rather than moving to the component alone: the tag is what the Slime Milker and the release path read, and keeping it costs nothing.
+
+**Known limitation.** A bucket already sitting in a world from before PF 1.26.0 carries no component and will not match. There is no data fixer, upstream says so plainly. Re-craft or re-scoop it.
+
+**The lesson.** Match on an identity key, never on a container of state that happens to hold one. The quest data was correct for what it could see; the defect was that the item had no identity key to match, and every consumer that filters, pipes or auto-crafts slime buckets was living with the same problem quietly.
 
 ### 🟣 Iron Furnaces refused to accept Froglights at all until a restart (upstream bug, patched in PF)
 **Symptom.** No Froglight would go into any Iron Furnaces furnace, by hand or by pipe, while a vanilla furnace took them fine. Restarting the game fixed it, until it came back. The pack's single most-reported problem: three CurseForge reporters in July 2026 alone (user_qqgd4audept0i3qy, Larronos, user_w647p447peuez0hl) on top of 28 Discord messages from 17 people over the pack's first two months, every one of whom was told to restart.

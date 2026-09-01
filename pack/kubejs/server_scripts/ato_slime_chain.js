@@ -21,6 +21,12 @@
 // The chamber's MODDED_SELF_KEYED rows (dissolution_slime_recipes.js) stay the
 // scaling path: once a metal's first frog exists, one ingot + the chamber
 // skips the milk chain entirely. This table chain is the bootstrap.
+//
+// Both identity carriers are stamped (#247): the nested bucket_entity_data.Variant
+// that the Slime Milker and the release path read, and the flat
+// productivefrogs:slime_variant component PF 1.26.0 made the stable identity key.
+// The six gateway quests match the component under fuzzy, so a bucket minted with
+// only the tag would not complete the quest it satisfied before.
 
 ServerEvents.recipes(event => {
   if (!Platform.isLoaded('alltheores')) {
@@ -42,7 +48,7 @@ ServerEvents.recipes(event => {
     const from = step[0]
     const to = step[1]
     event.shapeless(
-      `productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:${to}",Category:"CAVE"}]`,
+      `productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:${to}",Category:"CAVE"},productivefrogs:slime_variant="productivefrogs:${to}"]`,
       [
         `productivefrogs:${from}_slime_milk_bucket`,
         'minecraft:stone',

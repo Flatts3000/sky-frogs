@@ -350,23 +350,23 @@ hash = "7cfcf36b5bcabbed136c1eef0f692f301642d8a44a92904f4c3caf045e9ccb53"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_bog.snbt"
-hash = "f023740d6a65256a29ed1a9454f167b7a8c774cba364b54b9d4a6508cc25a809"
+hash = "0e6ccf4d266f9f8a23f4635fb2fd752736762f3fcab51781703cdc11bc48d49b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_geode.snbt"
-hash = "d219055bfc57b92a18004e0ce63b1d30d9b2a7e0cecb36b0e9355ef2fe216231"
+hash = "4b0ea1b1a8259d8fd79659b91b08b129a1bcaddfb3fadbe6d52917f2ae423b54"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_infernal.snbt"
-hash = "fa05669d1460252eb3be3b64a6786100318fbd64e99085de35ad9d8485fb9c94"
+hash = "9ec7835adebefd871d91be84afb9738cfabe448ab7a866a1661c72ca074ffdaa"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_tide.snbt"
-hash = "2405b69e735452635c0d9663fb8d89b1ef7e25615d83c9336147d9d8a7bf6806"
+hash = "f0657b28fa734981dc3248652fb5539546205daac83e5a18b41c4f6e5f132fa4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/road_to_void.snbt"
-hash = "00f911927c0a1a506391e5bda63c91710be7216819cd7067e0181fb2a1f311d4"
+hash = "46fd118ef969effda72658bc0f88cdf03f3d9830485a42a161a95677312733f0"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/scaling_the_colony.snbt"
@@ -418,7 +418,7 @@ hash = "5c1a0c5c14426cf1b6dc14ca0e8911953e92f8de47520dc545c8d6451276bce2"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/your_first_iron_ingot.snbt"
-hash = "52abeaa3a79ca598c6395d70b633e6af01420d7c690f55da8a9d394d16683364"
+hash = "af4362901bed6bc3d92695db7c101ade3a6f0ab90d2427f4841190dcbc198428"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -722,11 +722,11 @@ hash = "b283af0354060035a53189310c33c884d4f5d7b6d00ba6744ec34ff00ada509a"
 
 [[files]]
 file = "kubejs/server_scripts/ato_slime_chain.js"
-hash = "ad2f91c5cce4e29d4b70957c3f43d6a82a12cda1e06a1859cb895466dec61b09"
+hash = "f94f601a0eedc0e1784a42311e01e9a6403c1b18b085500a8e449502b5038a10"
 
 [[files]]
 file = "kubejs/server_scripts/bog_slime_chain.js"
-hash = "bfb25ece8d594a4a8d552f4206e94d4024d68ac2c7b117922d6a8e1a45f17920"
+hash = "2c4de54b903edef34363c2825a0b1935836976cdc4d1328362b92161ceb51cc7"
 
 [[files]]
 file = "kubejs/server_scripts/builder_sieve.js"
@@ -738,7 +738,7 @@ hash = "0a97a7117e479eb05b1d2b4e5e5a3fee8da64adc3c14c923244a0da5d4ecc024"
 
 [[files]]
 file = "kubejs/server_scripts/cave_slime_chain.js"
-hash = "386ac78d2424a4a5a46d0d655bc748567821b225bcd499b74075c37bea407ccc"
+hash = "a2e46daaf7aa4ddf775edc5bdbfa90e9ea185930dee1a357d69722523e4ab240"
 
 [[files]]
 file = "kubejs/server_scripts/cobblegen_curation.js"
@@ -746,7 +746,7 @@ hash = "a14f0b3014ad482f9b04ef079202394670f76a749bccb93ed36bb3e41c1810dc"
 
 [[files]]
 file = "kubejs/server_scripts/dissolution_slime_recipes.js"
-hash = "d9b08d65d39d44508e2afe6fc63559da4ab351eb9db3f8bed6106f2b06c7550e"
+hash = "eba4a67cf111694deedb13a1a383b525d6126494f77b8437a39b75e1ce03d3fd"
 
 [[files]]
 file = "kubejs/server_scripts/dump_items.js"
@@ -770,7 +770,7 @@ hash = "1ce10ec7c6a5e04ebe7a9b4c39d72021927075f2aafab7dd3a9614816d5ec558"
 
 [[files]]
 file = "kubejs/server_scripts/froglight_slime_recipes.js"
-hash = "a58bf025e1a8c0bd9f110f737bbd1ddbec0262a31b758cd623b0e821521c4ab2"
+hash = "f046b9b1ec359d61fcff6970be81564afa78ab09594b1cbb595634f749e5734d"
 
 [[files]]
 file = "kubejs/server_scripts/fs_compacting_recipes.js"
@@ -778,7 +778,7 @@ hash = "bb790e3ab56adaf8ad20302b7eedde08c913916eb9ea88014b26c480b9c0d468"
 
 [[files]]
 file = "kubejs/server_scripts/geode_slime_chain.js"
-hash = "8be182ebb786e6b76e62dfa47b96dbaebe45138a398dfb2ccd7c10ddf2ebfca9"
+hash = "1c08900dfa5b807670656a3c56a158a8c520a2dc7180b8aadff5fbe5586957cb"
 
 [[files]]
 file = "kubejs/server_scripts/heavy_core_recipe.js"
@@ -790,7 +790,7 @@ hash = "9b879f61d078ae01e7030e17801166cc20abbaa4ec188b475b0bf26eb0ffc846"
 
 [[files]]
 file = "kubejs/server_scripts/iron_slime_bucket.js"
-hash = "5f8d806e6fea7829f8e5b9b7344ddecf33208f4599eb7e7a2fee34c7a79e3b3e"
+hash = "0f3bb2e3abbcc8777064565c4bb749aae47f37d0b71636576bb495628cee4212"
 
 [[files]]
 file = "kubejs/server_scripts/jdt_recipes.js"
@@ -814,7 +814,7 @@ hash = "02ff76b24e3cd24d337344874b6a234027a9b83512898b0dfa69b5935cbef3a3"
 
 [[files]]
 file = "kubejs/server_scripts/osmium_slime_bucket.js"
-hash = "fcd826f0045add7d9a2dc7c8b1cd4306787be6625e61c23d63db5d010cd9b504"
+hash = "7d5e91096fc1f754eaf9eef18e105435743bbf4a1600adf0bef80c3932b553eb"
 
 [[files]]
 file = "kubejs/server_scripts/selftest.js"
@@ -826,7 +826,7 @@ hash = "83a1969dd667ffd6a407a0a3568f3b1db92499c584ba63a4f066ef98fe40a65d"
 
 [[files]]
 file = "kubejs/server_scripts/steel_slime_infusing.js"
-hash = "f7a1dba3be8a3396fbf9249fe5c289f3ed7c823a8790e073bdfe6a471cc62cd0"
+hash = "f448d5890ca594c561befb7c50e7ec82cc28b50f8acd22470fefaf61908decf0"
 
 [[files]]
 file = "kubejs/server_scripts/storage_quartz_free.js"

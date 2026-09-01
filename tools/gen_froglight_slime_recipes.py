@@ -85,9 +85,16 @@ def main() -> None:
     out.append("")
     out.append("ServerEvents.recipes(event => {")
     for variant, cat, filler, modid in rows:
+        # Both identity carriers, deliberately (#247). The nested
+        # bucket_entity_data.Variant is what the Slime Milker and the release path
+        # read; the flat slime_variant component is the stable identity PF 1.26.0
+        # stamps on its own two producers, and the key the six gateway quests match
+        # on. A pack-minted bucket carrying only the tag would fail those quests.
         result = (
             'productivefrogs:slime_bucket[minecraft:bucket_entity_data='
-            '{Variant:"productivefrogs:%s",Category:"%s"}]' % (variant, cat.upper())
+            '{Variant:"productivefrogs:%s",Category:"%s"},'
+            'productivefrogs:slime_variant="productivefrogs:%s"]'
+            % (variant, cat.upper(), variant)
         )
         # KubeJS's event.shaped keymap rejects a raw {type:neoforge:components,...}
         # ingredient object (it only parses a plain item/tag or a list). Use the

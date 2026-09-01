@@ -9,11 +9,16 @@
 //
 // The output carries the iron variant in bucket_entity_data.Variant, which is exactly
 // what the Slime Milker reads (ResourceTadpoleBucketItem#readVariant) to stamp the
-// matching Iron Slime Milk.
+// matching Iron Slime Milk.//
+// Both identity carriers are stamped (#247): the nested bucket_entity_data.Variant
+// that the Slime Milker and the release path read, and the flat
+// productivefrogs:slime_variant component PF 1.26.0 made the stable identity key.
+// The six gateway quests match the component under fuzzy, so a bucket minted with
+// only the tag would not complete the quest it satisfied before.
 
 ServerEvents.recipes(event => {
   event.shaped(
-    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:iron",Category:"CAVE"}]',
+    'productivefrogs:slime_bucket[minecraft:bucket_entity_data={Variant:"productivefrogs:iron",Category:"CAVE"},productivefrogs:slime_variant="productivefrogs:iron"]',
     [
       'SBS',
       'TKT',

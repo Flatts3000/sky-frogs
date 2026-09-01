@@ -94,8 +94,8 @@
 			}]
 			tasks: [{
 				id: "6C1F0A2B3D4E5F6B"
-				item: { components: { "minecraft:bucket_entity_data": { Category: "CAVE", Variant: "productivefrogs:iron" } }, count: 1, id: "productivefrogs:slime_bucket" }
-				match_components: "strict"
+				item: { components: { "productivefrogs:slime_variant": "productivefrogs:iron" }, count: 1, id: "productivefrogs:slime_bucket" }
+				match_components: "fuzzy"
 				type: "item"
 			}]
 			x: 1.5d
