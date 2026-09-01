@@ -95,21 +95,28 @@ That explains every part of the report that made it look unfalsifiable - only Ir
 **Still open: #220's duplication face.** `split` conserves count, so it cannot produce "endless stacks with the drawer at 0". Either that report is this same conversion read as a dupe, or it is a separate defect in the storage layer's extraction of component items. Needs a repro before it can be closed.
 
 
-### 🟢 "There is no skyblock/void world type to select" (there is not, by design, since v1.6.0)
+### 🟢 "There is no skyblock/void world type to select" (it is already selected, since v1.6.0)
 
 Reported on Discord by **Stay Sleep, Always Woke** (2026-09-01): "i went in and looked for the void/skyblock option when creating a world and its not there", after being told in-channel to select it. [#287](https://github.com/Flatts3000/sky-frogs/issues/287).
 
-**The option is gone on purpose.** #251 (commit `1b351ef`, shipped in v1.6.0) remapped all five vanilla overworld presets to `skyblockbuilder:skyblock` via `pack/kubejs/data/minecraft/worldgen/world_preset/*.json`, and replaced the `minecraft:normal` world-preset tag so the creation screen offers a single entry. It was done because `level-type` in `server.properties` was a single point of failure that hosting panels rewrite. The client-side consequence, not spelled out at the time, is that **every world type now generates the skyblock and there is nothing to choose**.
+**There is nothing to select because it is already selected.** #251 (commit `1b351ef`, shipped in v1.6.0) remapped all five vanilla overworld presets to `skyblockbuilder:skyblock` via `pack/kubejs/data/minecraft/worldgen/world_preset/*.json`, and replaced the `minecraft:normal` world-preset tag so the picker holds a single entry. It was done because `level-type` in `server.properties` was a single point of failure that hosting panels rewrite. The client-side consequence, never spelled out at the time, is that the **World** tab's button already reads **`World Type: Skyblock`** and cycling it does nothing, because there is only the one entry.
 
-So the absence is correct behaviour, and the standing support answer - "make sure you select sky block or void" - has been wrong since v1.6.0. It sends players hunting for a control the pack removed, and not finding it reads as a broken install. Verified on v1.8.0: a fresh single-player world generates the skyblock with nothing selected.
+So the standing support answer - "make sure you select sky block or void" - has been wrong since v1.6.0. It describes a choice that no longer exists, and a player who reads it as "find and click the skyblock option" finds a button they cannot change and concludes the install is broken.
+
+**That button is the diagnostic**, and it is better than asking for a version. Screenshot the World tab:
+
+- Reads **Skyblock** -> the worldgen override is loading correctly. Nothing is wrong with the install.
+- Reads anything else (Default, Large Biomes, ...) -> the pack's `world_preset` overrides are not being applied at all, which narrows straight to cause 1 or 3 below and skips 2.
+
+Verified on v1.8.0 (2026-09-01): the button reads `World Type: Skyblock` with `Customize` greyed out, and a fresh single-player world generates the skyblock.
 
 **When terrain really does generate**, three causes, in this order:
 
-1. **Pack older than v1.6.0.** The override does not exist there. Ask for the version first; it is the cheapest split.
+1. **Pack older than v1.6.0.** The override does not exist there, so the button shows the vanilla list.
 2. **A world created before updating.** Dimension generators are baked at world creation, so the override cannot repair an existing save. Needs a new world. Same caveat `worldgen.md` already carries for the End.
 3. **Partial extraction** - the zero-byte-override case immediately below. Ask for `latest.log` and read the `Caused by:`.
 
-The reporter's pack version plus whether the world is new separates 1 and 2 from 3 in one answer.
+A screenshot of the World tab plus whether the world is new separates all three in one answer: a non-Skyblock button rules out 2, and a Skyblock button rules out 1 and 3.
 
 ### 🟢 World creation crashes on the KubeJS biome modifiers (empty override files on the player's disk, not a pack defect)
 R1shy reported (v1.5.3, Prism Launcher on Arch Linux, fresh install) that creating a world crashed with `Registry loading errors` on `productivefrogs:add_bog_slime_spawn`. [#242](https://github.com/Flatts3000/sky-frogs/issues/242). Kept here because the log signature is distinctive and this will be asked again.

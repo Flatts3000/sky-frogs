@@ -102,7 +102,9 @@ Every bundled mod keeps its own license; see each mod's CurseForge page. The pac
 Because "feed a slime to a frog, get an ingot" is a loop you can explain in one sentence and never tire of. It rides on vanilla idioms (frogspawn, water bottles, slimeballs) so there's almost nothing new to learn, and the six species give the campaign a clean tier-by-tier shape that keeps growing.
 
 **Which world type do I pick when I make a world?**
-Whichever one you like. There is no skyblock or void option to hunt for, and you have not missed a step: since v1.6.0 the pack remaps every world type to the skyblock, so any new world is the right one. Just hit Create. If you get a normal terrain world anyway, it is one of three things - a pack older than v1.6.0, a world you made before you updated (the generator is fixed when a world is created, so an old save keeps what it was born with; make a new one), or an install that extracted badly, which shows up as zero-byte files in the instance and is fixed by deleting and reinstalling rather than updating in place.
+It is already picked. Open the **World** tab and the button reads **World Type: Skyblock** - since v1.6.0 that is the only entry, so clicking it does nothing and there is nothing to choose. Just hit Create.
+
+That button is also the thing to check if you end up in a normal terrain world. If it says Skyblock and you still got terrain, the world was made before you updated: the generator is fixed at creation and cannot be changed afterwards, so make a new one. If it says anything **other** than Skyblock, the pack's worldgen files are not loading, which means either a version older than v1.6.0 or an install that extracted badly - the latter shows up as zero-byte files in the instance and is fixed by deleting and reinstalling rather than updating in place.
 
 **Can I add my own modded resource as a frog target?**
 Yes; that's the whole design. Drop a single JSON at `data/<namespace>/productivefrogs/slime_variant/<name>.json`, wrap it in `neoforge:conditions` for `mod_loaded`, and the matching-species frog will eat it. No Java, no PR to the underlying mod.
